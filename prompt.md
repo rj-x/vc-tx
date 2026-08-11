@@ -60,6 +60,8 @@ Implement a `BarClassifier` that, for each bar, emits a feature vector and a cat
 
 **Context dependency:** several labels reference context ("after a rally," "at resistance," a prior climax for `TEST`). These always use context state **as of the previous bar's close** (see per-bar processing order, Part 3). The classifier never sees context updated with the current bar.
 
+**Structural core vs. context qualifier (general rule):** every label decomposes into a *structural core* (bar anatomy only — direction, spread, volume, close_pos, wicks) and a *context qualifier* (phase, location, prior move). The classifier emits the structural core unconditionally; context qualifiers are applied **at the point of use**. Spawn conditions apply the full qualified label; **hypothesis confirmation events reference the structural core only** — otherwise confirmations become unreachable (e.g., `NO_DEMAND`'s "in a downtrend" qualifier can never be satisfied while the Signal TF is still in `MARKUP` after a buying climax, silently disabling H5's and H2's confirmations). The table below shows the qualified forms; mirrors `EFFORTLESS_DECLINE` and `VALIDATED_DECLINE` (exact sign-flips of their advance counterparts) also exist for the mirrored hypotheses.
+
 Categorical labels (non-exhaustive; all thresholds in config):
 
 | Label | Definition sketch |
@@ -111,10 +113,11 @@ Implement a `HypothesisManager`. A hypothesis is spawned by a signature bar (or 
 **All confirmation and refutation conditions are evaluated on Signal-TF bar closes** unless stated otherwise. Phase and context references *within* hypothesis definitions (e.g., "in an established `MARKUP` phase") refer to the **Signal TF's own** context; the Context TF's phase enters only through the gating rule (Part 5). Initial set (all parameters configurable; each has an exact mirror for the opposite direction):
 
 ### H1. Selling-Climax-and-Test (long) — reversal class
-- **Spawn:** `POTENTIAL_SELLING_CLIMAX` or `SPRING` after a marked decline, near support / new lows. The spawning bar is the **signature bar**.
-- **Confirm:** within 1–5 bars, a `TEST` — low-volume down-probe that holds above the signature bar low — or a `VALIDATED_ADVANCE` off the level.
-- **Refute:** close below the signature bar low, especially on high volume.
-- **Stop:** below signature bar low. **Strength boosters:** Context TF at major support; Context TF phase turning from `MARKDOWN` to `RANGING` or `POST_CLIMAX` (selling).
+- **Signature ownership rule (applies to all hypotheses):** each signature label spawns exactly one hypothesis type — climax labels spawn H1/H1-mirror; `UPTHRUST`/`SPRING` spawn H2/H2-mirror; no label spawns two specs.
+- **Spawn:** `POTENTIAL_SELLING_CLIMAX` after a marked decline, near support / new lows ("near new lows" = lowest low of the trailing lookback *including* the current bar, else the condition can never fire). The spawning bar is the **signature bar**.
+- **Confirm:** within 1–5 bars, a `TEST` — authoritative criteria, checked inline: down-probe coming within a configurable ATR distance of the signature low, holding above it, recovering (close_pos > 0.5), on volume below baseline **and** below a configurable fraction (default 0.5×) of the signature bar's rel_volume — a "test" on climax-comparable volume is the battle resuming, not a test. Alternatively, a `VALIDATED_ADVANCE` off the spawn level (spawn level = the key support level, or the signature bar low when spawned via the new-low condition).
+- **Refute:** close below the signature bar low (any volume; volume logged).
+- **Stop:** below signature bar low. **Strength boosters:** Context TF at major support; Context TF phase turning from `MARKDOWN` to `RANGING` or `POST_CLIMAX` (selling) while open. Boosters sign-flip in the mirror (`MARKUP` → `RANGING`/`POST_CLIMAX` (buying)).
 
 ### H2. Upthrust Reversal (short) — reversal class
 - **Spawn:** `UPTHRUST` after a rally / at resistance or range high.
@@ -123,16 +126,17 @@ Implement a `HypothesisManager`. A hypothesis is spawned by a signature bar (or 
 - **Stop:** above upthrust high.
 
 ### H3. Absorption Breakout (with-trend) — trend class
-- **Spawn:** ≥ 2–3 `ABSORPTION` bars clustered at a key level (within k × ATR), context determining direction: at resistance in an uptrend after basing → long breakout hypothesis; mirror at support in a downtrend.
-- **Confirm:** breakout bar through the level: wide spread, close beyond level, close_pos extreme, volume expansion.
-- **Refute:** wide-range rejection back through the absorption zone on high volume.
-- **Stop:** other side of the absorption cluster.
+- **Spawn:** ≥ 2–3 `ABSORPTION` bars clustered at the *same* key level (within k × ATR; level identity needs a tolerance since swing-derived levels drift — treat levels within a configurable ATR fraction as identical). Direction from Signal-TF context: at resistance in an uptrend → long breakout; mirror at support in a downtrend. **When Signal-TF phase is `RANGING`** (where "trend" is undefined and the impulse/reaction flag is null): direction = out of the range from the boundary where the absorption sits — absorption at the range high → long breakout, at the range low → short.
+- **Zone:** [min(low), max(high)] over the clustered absorption bars — and the zone **extends with each further qualifying absorption bar until confirmation** (later absorption outside a frozen zone would otherwise leave the stop inside the cluster).
+- **Confirm:** breakout bar: wide spread, close_pos extreme, volume expansion, and close beyond **max(level, zone edge in the trade direction)** — a close "through the level" that is still inside the absorption zone is not a breakout.
+- **Refute:** wide-range, high-volume bar closing beyond the *far* side of the zone (not mere re-entry into it).
+- **Stop:** far side of the zone, **computed at graduation time** on the final zone.
 
 ### H4. No-Supply Continuation (long) — trend class
 - **Spawn:** pullback in an established `MARKUP` phase showing declining volume; ≥ 1 `NO_SUPPLY` bar.
 - **Confirm:** up bar with close_pos > 0.7 and volume re-expanding, resuming trend direction.
-- **Refute:** pullback volume expands **and** price closes below the last higher-low formed before the pullback began (the pullback has become an impulse).
-- **Stop:** below pullback low. Mirror: No-Demand Continuation (short).
+- **Refute:** structural break is the trigger, volume expansion is pullback-level state: refute on the bar that closes below the last *confirmed* (k-bar lag) higher-low formed before the pullback began, provided **any** pullback bar showed expanded volume (rel_volume ≥ a configurable multiple). Requiring both on the same bar would miss the realistic sequence (expansion first, break bars later).
+- **Stop:** below the pullback low, **computed at graduation time** (the pullback can deepen after spawn). Mirror: No-Demand Continuation (short).
 
 ### H5. Buying-Climax Fade (short) — reversal class; optional, gated behind a flag
 - **Spawn:** `POTENTIAL_BUYING_CLIMAX` (parabolic volume late in extended uptrend).
@@ -140,7 +144,9 @@ Implement a `HypothesisManager`. A hypothesis is spawned by a signature bar (or 
 - **Refute:** continued advance on sustained volume.
 - **H5 is exempt from the standard MTF gating rule** (its setting is, by definition, Context `MARKUP`). Its sole gate: Context TF extended beyond a configurable ATR multiple from its trend mean. Disabled by default.
 
-**Strength scoring:** start each hypothesis at a base score; increment for each supporting bar (further absorption, additional tests); decrement for bars that contradict the hypothesis without meeting the refutation condition; require score ≥ threshold at confirmation time. Log every transition.
+**Strength scoring:** start each hypothesis at a base score; increment for each supporting bar (further absorption, additional tests); decrement for bars that contradict the hypothesis without meeting the refutation condition; require score ≥ threshold at confirmation time. The confirming bar's own evidence delta is applied before its confirmation check (deliberate). An optional configurable strength floor kills deeply negative hypotheses early (default off — expiry handles them). Log every transition.
+
+**Concurrency:** max one open hypothesis per spec+direction — but log blocked spawns so we can measure how often a stronger signature is suppressed by a weaker open one. Opposite-direction hypotheses may coexist (competing narratives). If two hypotheses graduate on the same bar, the higher strength wins and the conflict is logged; ties → no trade.
 
 ---
 
@@ -155,16 +161,18 @@ Run the identical pipeline (classifier → context → hypotheses) independently
 
 ### Gating rule (per hypothesis class)
 - **Trend class (H3, H4 + mirrors):** graduate only if direction agrees with Context-TF phase (`MARKUP` → longs, `MARKDOWN` → shorts). **Exception for H3:** it also graduates when Context-TF phase is `RANGING`, the absorption cluster sits at a Context-TF range boundary, and the breakout direction points *out of* the range — this is the classic accumulation/distribution-range breakout (the range resolving into a new trend), and without this clause it would be untradeable. Tag such trades `H3_RANGE_BREAK` in results so they can be evaluated separately from with-trend H3.
-- **Reversal class (H1, H2 + mirrors):** graduate if Context-TF phase is (a) `RANGING` and price is at the corresponding range extreme, or (b) `POST_CLIMAX` with matching direction (post-selling-climax permits longs; post-buying-climax permits shorts). A configurable `strict_mode=false` additionally permits reversal trades while Context TF is still in the opposing phase, but only when the Signal-TF hypothesis strength meets a separate, higher threshold (config) — report results with strict mode on and off.
+- **Reversal class (H1, H2 + mirrors):** graduate if Context-TF phase is (a) **in agreement with the trade direction** (`MARKUP` → longs, `MARKDOWN` → shorts) — a Signal-TF reversal in the direction of the Context trend is a with-trend entry (upthrust fading a reaction rally in a Context downtrend; selling climax ending a pullback in a Context uptrend) and is expected to be the highest-conviction setup in the framework; tag these `REV_WITH_TREND` for separate reporting; or (b) `RANGING` and price is at the corresponding range extreme, or (c) `POST_CLIMAX` with matching direction (post-selling-climax permits longs; post-buying-climax permits shorts). A configurable `strict_mode=false` additionally permits reversal trades while Context TF is still in the opposing phase, but only when the Signal-TF hypothesis strength meets a separate, higher threshold (config) — report results with strict mode on and off.
+- **Gate-blocked confirmations (`CONFIRMED_PENDING_GATE`):** a hypothesis whose confirmation event fires while the gate is closed does not die and does not need to re-confirm. It enters `CONFIRMED_PENDING_GATE`: on each subsequent Signal-TF close, only the gate is re-evaluated (refutation conditions remain active; expiry still applies). If the gate opens before expiry, it graduates at that bar's close. All such transitions are logged.
 - **H5:** exempt (see H5).
 
 ### Execution-TF refinement (defined mechanics)
-After a Signal-TF hypothesis graduates: watch up to N execution bars (config, default 10) for a with-direction execution bar with close_pos beyond threshold (> 0.7 for longs, < 0.3 for shorts). Enter at the next execution bar's open. Stop: the tighter of the execution-TF local extreme or the Signal-TF signature extreme (config choice). If no trigger within N execution bars, fall back to entry at the next Execution-TF bar open with the Signal-TF stop (or abandon — config). **The EOD entry embargo (Part 7) overrides refinement:** if the refinement window reaches the embargo without a trigger, the entry is abandoned and logged. Backtest must report results **with and without** execution refinement.
+After a Signal-TF hypothesis graduates: watch up to N execution bars (config, default 10) for a with-direction execution bar with close_pos beyond threshold (> 0.7 for longs, < 0.3 for shorts). Enter at the next execution bar's open. Stop: the tighter of the execution-TF local extreme (lookback configurable, default the bars observed during the refinement window) or the Signal-TF signature extreme (config choice). If no trigger within N execution bars, fall back to entry at the next Execution-TF bar open with the Signal-TF stop (or abandon — config). **Invalidation:** if the parent hypothesis's refutation condition fires on any Signal-TF close during the window, the pending refinement is cancelled (`REFINEMENT_CANCELLED_REFUTED`) — never enter a trade whose premise is already dead. Only one pending refinement may exist at a time; graduations arriving while one is pending are logged, not acted on (consistent with the one-position rule). **The EOD entry embargo (Part 7) overrides refinement:** if the refinement window reaches the embargo without a trigger, the entry is abandoned and logged. Backtest must report results **with and without** execution refinement.
 
 ### Other coordinator duties
 - **Alignment score:** propose and document a formula compositing per-TF phase agreement and open-hypothesis direction agreement. Config flag selects its use: trade filter, sizing multiplier, both, or off.
 - **Divergence tracking:** log reversal evidence migrating upward through the configured stack's timeframes (e.g., absorption appearing on the Execution TF, then the Signal TF, then the Context TF sequentially). **Log-only in v1** — no trading logic on it yet.
 - **Timestamp discipline:** an HTF bar's state is only known at its close. At any LTF bar, the "current" HTF context is the last *closed* HTF bar. Never let a completed HTF bar's values leak into LTF decisions made before that HTF close. This is the most common MTF look-ahead bug — write a unit test for it.
+- **Simultaneous closes:** multiple TFs frequently close at the same timestamp (e.g., 1M, 10M, and H1 all at 10:00). At any shared timestamp, process timeframes in **descending order (highest first)** so a bar that closes at that instant is legitimately part of "last closed HTF state" for the lower TFs processed after it. Unspecified ordering here produces either nondeterminism or an accidental one-bar context lag, and will make the future-perturbation test flaky. Write a unit test asserting the convention.
 
 ---
 
@@ -290,9 +298,10 @@ venv/bin/python scripts/store.py verify
 1. **Step zero — establish trust in the data layer before anything else, in this order:** (a) **Audit** `scripts/collect.py` and `scripts/store.py` read-only first: summarize what each does, trace the full data path (API → raw → clean store), verify correctness (timestamp handling, timezones/DST, dedup, gap behavior, error handling, partial-fetch behavior), and flag any issues found. (b) **Refactor** the output paths to project root per Part 6, with the equivalence proof (no history lost, row counts/checksums match). (c) **Verify the feed and store:** answer the feed-verification questions (Part 6) — preferring inspection of already-collected data over new API calls where possible — and deliver the verification report, including accumulated 1M history per instrument. **Do not begin engine work until all three are complete and the volume question is answered.** If the audit finds bugs affecting already-collected data (e.g., timezone drift, silent gaps), report them before fixing — we need to know whether historical data needs re-validation.
 2. Project skeleton: extend the existing repo — `scripts/` (existing pipeline), `data/` (raw store), `clean_finsa/` (clean store), adding `engine/` (classifier, context, hypotheses, coordinator, broker sim), `backtest/`, `reports/`, `tests/`, `config.yaml` for all thresholds.
 3. Unit tests: bar classifier edge cases (zero spread, missing volume), no-look-ahead tests (the HTF-close timing test, the **future-perturbation test**, and the **precomputed-feature truncation-equivalence test** — see Non-Negotiable section), per-bar processing-order test, hypothesis lifecycle tests, resampling correctness (trading-day boundary, stub bars, session-boundary behavior), collector tests (dedup, gap detection, idempotency), native-vs-resampled consistency test, intrabar 1M-resolution test, EOD force-close and entry-embargo tests, contract-rounding/`SKIPPED_SIZE` test, lockbox-exclusion test.
-4. Run on the collected data; produce the metrics report + narrative samples, stating the usable 1M date range and volume type.
-5. **Before writing code:** restate the hypothesis confirmation/refutation rules and the gating rules as pseudocode and flag any remaining ambiguity or contradiction you find in this spec. Ask questions rather than guessing on ambiguous psychology rules.
-6. Iterate: after the first backtest, we will review per-hypothesis performance and the annotated narrative samples together, then refine thresholds and rules. Expect the hypothesis set to change.
+4. **Synthetic-scenario verification (before any backtest):** construct hand-built bar sequences exercising each hypothesis's full lifecycle and every gate branch — at minimum: upthrust during Context `MARKDOWN` (must graduate as `REV_WITH_TREND`), selling climax + TEST while gated with a Context phase flip afterward (must graduate via `CONFIRMED_PENDING_GATE`), H3 with a growing zone and a false "breakout" inside the zone (must not confirm), H4 with volume expansion and a structural break on different bars (must refute), and a refutation arriving during a pending execution refinement (must cancel). Produce the narrative logs for each; we review them together against the psychology appendix before real data is touched. Every pass so far has found bugs one layer deeper than the last (document → instantiation → runtime trace); this is the execution-layer defense.
+5. Run on the collected data; produce the metrics report + narrative samples, stating the usable 1M date range and volume type.
+6. **Before writing code:** restate the hypothesis confirmation/refutation rules and the gating rules as pseudocode and flag any remaining ambiguity or contradiction you find in this spec. Ask questions rather than guessing on ambiguous psychology rules.
+7. Iterate: after the first backtest, we will review per-hypothesis performance and the annotated narrative samples together, then refine thresholds and rules. Expect the hypothesis set to change.
 
 ## Known simplifications (v1)
 
