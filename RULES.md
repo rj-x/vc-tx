@@ -1,95 +1,146 @@
-# Engine Rules — Pseudocode Restatement (pre-code deliverable)
+# Engine Rules — Pseudocode Restatement v2
 
-Restates Part 3–5 of `prompt.md` as executable logic, per Part 9 step 5.
-Ambiguities are tagged `[A#]` inline and collected at the end with proposed
-resolutions. Nothing here is code yet; this is the contract to agree on.
+v1 ambiguities [A1]–[A17] were ruled on in `audit/engine_rulings.md`, which also
+added second-pass and forensic-pass findings; all are folded in here and the
+prompt has been amended to match. This document is the implementation contract.
 
 Conventions: `cfg.*` = config knob (all land in `config.yaml`). "bar" = the
-just-closed Signal-TF bar unless stated. All features are trailing-relative and
-session-time normalized per Part 2. Every hypothesis has an exact mirror;
-pseudocode is written for the listed direction with `dir`-symmetric predicates.
+just-closed Signal-TF bar unless stated. All features trailing-relative and
+session-time normalized. Every hypothesis has an exact mirror; pseudocode is
+written for the listed direction with dir-symmetric predicates. **Mirror
+strength boosters sign-flip with the hypothesis** (H1-mirror boosts on major
+resistance and MARKUP → RANGING/POST_CLIMAX(buying) transitions).
 
----
+## 0. Labels: structural core vs. context qualifier
 
-## 1. Per-bar processing order (per timeframe, on bar N close)
+Every label decomposes into a **structural core** (bar anatomy only: direction,
+rel_spread, rel_volume, close_pos, wicks) and a **context qualifier** (phase,
+location, prior move), applied at point of use:
+
+- **Spawn conditions** use the fully qualified label.
+- **Confirmation events** reference the **structural core only** (otherwise
+  e.g. NO_DEMAND's "in a downtrend" qualifier is unsatisfiable during `MARKUP`,
+  silently disabling H5's and part of H2's confirmations).
+
+Label set includes the mirrors `EFFORTLESS_DECLINE` / `VALIDATED_DECLINE`
+(exact sign-flips of their advance counterparts).
+
+**TEST — authoritative criteria wherever used:** low-volume probe of a prior
+signature extreme that (i) reaches within `cfg.test_proximity_atr` (1.0) × ATR
+of the extreme, (ii) holds it (long case: low > signature low), (iii) recovers
+(close_pos > 0.5), (iv) rel_volume below baseline, **and (v) rel_volume <
+`cfg.test_vol_vs_signature` (0.5) × the signature bar's rel_volume** — a test
+on climax-comparable volume is the battle resuming, not a test.
+
+**Signature ownership rule:** each signature label spawns exactly one
+hypothesis type — climax labels → H1/H1-mirror; `UPTHRUST`/`SPRING` →
+H2/H2-mirror; no label spawns two specs. (H5 spawns from
+`POTENTIAL_BUYING_CLIMAX` but is disabled by default and gate-exempt; when
+enabled it is the sanctioned exception to single-ownership — H1-mirror and H5
+share the spawn label, distinguished by their confirm paths.)
+
+## 1. Per-bar processing order
+
+On each bar close, per timeframe, strictly:
 
 ```
 1. label, feats = classify(bar_N, context_as_of_bar_N-1)   # never current-bar context
-2. context.update(bar_N, label)          # swings (k-bar confirmation lag), phase,
-                                         # levels, signature registry, volume trend,
-                                         # impulse/reaction flag
-3. hypotheses.step(bar_N, label, feats, context)   # test open, then spawn new
-4. if any hypothesis graduated: emit signal        # broker acts >= bar N+1 open
+2. context.update(bar_N, label)     # swings (k-lag), phase, levels,
+                                    # signature registry, volume trend, impulse/reaction
+3. hypotheses.step(...)             # Sec 2
+4. graduation -> signal             # broker acts >= bar N+1 open
 ```
 
-HTF state visible to any LTF decision = last **closed** HTF bar, always.
+**Simultaneous multi-TF closes** (e.g. 1M/10M/H1 all closing at 10:00): process
+timeframes in **descending order**, so the just-closed HTF bar is part of "last
+closed HTF state" for the lower TFs at the same timestamp. Deterministic,
+unit-tested — unspecified ordering makes the future-perturbation test flaky.
+At any LTF bar, visible HTF context = the last **closed** HTF bar.
 
-## 2. Generic hypothesis lifecycle
+## 2. Hypothesis lifecycle
+
+States: `OPEN → {CONFIRMED_PENDING_GATE, GRADUATED, REFUTED, EXPIRED}`;
+`CONFIRMED_PENDING_GATE → {GRADUATED, REFUTED, EXPIRED}`.
 
 ```
-class Hypothesis:
-    spec            # H1..H5 or mirror
-    dir             # LONG | SHORT
-    signature_bar   # spawning bar (index, high, low, close, features)
-    strength        # starts spec.base_strength
-    age             # bars since signature bar
-
-hypotheses.step(bar, label, feats, ctx):
-    for h in open:                          # oldest first
+hypotheses.step(bar, label_struct, label_qualified, feats, ctx):
+    for h in open (oldest first):
         h.age += 1
-        if h.refuted(bar, ctx):             # refute checked BEFORE confirm:
-            close(h, REFUTED); continue     #   a bar satisfying both kills [conservative]
-        if h.age > h.spec.expiry_bars:
-            close(h, EXPIRED); continue
-        h.strength += h.evidence_delta(bar, label, feats, ctx)      # [A10]
-        if h.age in h.spec.confirm_window and h.confirm_event(bar, label, feats, ctx):
-            if h.strength >= h.spec.min_strength_to_confirm:
-                if mtf_gate_permits(h, context_tf.last_closed_state):
-                    graduate(h)             # -> signal; exec refinement (Sec 9)
-                else:
-                    log(h, CONFIRMED_BUT_GATED)   # stays open, may re-confirm [A2]
-    maybe_spawn(label, feats, ctx)          # dedupe: no second open hypothesis of
-                                            # same spec+dir while one is open [A5]
-    # every transition (spawn/confirm/refute/expire/gate-block/strength change) logged
+        if h.refuted(bar, ctx):  close(h, REFUTED); continue
+            # refute checked BEFORE confirm and BEFORE expiry (conservative);
+            # consequence: an old bar meeting both reports REFUTED, not EXPIRED —
+            # note in outcome stats
+        if h.age > h.spec.expiry_bars:  close(h, EXPIRED); continue
+            # expiry_bars DEFAULTS to top of confirm window; a separate config
+            # value may widen it — the coupling is explicit so knobs can't
+            # silently disagree
+        h.strength += h.evidence_delta(bar, feats, ctx)
+            # deliberate: the confirming bar's own delta applies BEFORE its
+            # confirm check below
+        if cfg.strength_floor_kill.enabled and h.strength < cfg.strength_floor:
+            close(h, KILLED_WEAK)                          # default OFF
+
+        if h.state == CONFIRMED_PENDING_GATE:
+            if mtf_gate_permits(h, ctxTF): graduate(h)     # gate only; no re-confirm
+            continue
+        if h.age in h.spec.confirm_window and h.confirm_event(bar, label_struct, feats):
+            if h.strength >= h.spec.min_strength_to_confirm:   # base 1.0, +1/-0.5,
+                                                               # threshold 1.0 —
+                                                               # near-no-op is deliberate
+                if mtf_gate_permits(h, ctxTF): graduate(h)
+                else: h.state = CONFIRMED_PENDING_GATE; log(h)
+
+    maybe_spawn(label_qualified, feats, ctx)
+        # dedupe: one open hypothesis per spec+direction; blocked spawns LOGGED
+        # (measures stronger-signature-suppressed-by-weaker-open frequency);
+        # opposite directions coexist; same-bar double graduation -> higher
+        # strength wins, conflict logged, tie -> no trade
+    # every transition logged: spawn / blocked-spawn / strength delta / confirm /
+    # pending-gate / gate-block / graduate / refute / expire
 ```
 
-## 3. H1 — Selling-Climax-and-Test (long, reversal). Mirror: [A1]
+## 3. H1 — Selling-Climax-and-Test (long, reversal)
+
+Mirror: Buying-Climax-and-Test (short), from `POTENTIAL_BUYING_CLIMAX`.
+`SPRING` no longer spawns H1 (ownership rule: it spawns H2-mirror).
 
 ```
 spawn on:
-    label in {POTENTIAL_SELLING_CLIMAX, SPRING}
-    and ctx.after_marked_decline            # >= cfg.move_atr_mult (2.0) x ATR, Part 3
-    and (ctx.near_support                   # within cfg.level_atr_mult (0.5) x ATR
-         or bar.low == lowest_low(trailing cfg.new_low_lookback bars))   # [A6]
+    label_qualified == POTENTIAL_SELLING_CLIMAX
+    and ctx.after_marked_decline                 # >= cfg.move_atr_mult (2.0) x ATR
+    and (ctx.near_support                        # within cfg.level_atr_mult (0.5) x ATR
+         or bar.low == lowest_low(trailing cfg.new_low_lookback (50) bars,
+                                  INCLUSIVE of current bar))
+    spawn_level = nearest support level, or signature.low when spawned
+                  via the new-low condition
 
 confirm (window 1..5 bars):
-    ( label == TEST
-      and bar.low > signature.low                          # held
-      and bar.low <= signature.low + cfg.test_proximity_atr x ATR   # actually probed [A4]
-      and feats.close_pos > 0.5 )                          # recovered [A4]
-    or ( label == VALIDATED_ADVANCE
-         and bar.low within cfg.level_atr_mult x ATR of spawn level )   # "off the level" [A7]
+    TEST of signature (Sec 0 criteria, all five)
+    or ( VALIDATED_ADVANCE (structural core)
+         and bar.low within cfg.level_atr_mult x ATR of spawn_level )
 
-refute:  bar.close < signature.low          # volume logged; refutes at ANY volume [A8]
-stop:    signature.low - cfg.stop_buffer_ticks
-strength boosters (+cfg.booster_increment each):
+refute:  bar.close < signature.low               # any volume; volume logged
+stop:    signature.low - cfg.stop_buffer_ticks   # (2 ticks)
+boosters (+cfg.booster_increment, sign-flipped in mirror):
     context_tf at major support; context_tf phase transition
     MARKDOWN -> RANGING or -> POST_CLIMAX(selling) while open
 ```
 
-## 4. H2 — Upthrust Reversal (short, reversal). Mirror: Spring Reversal (long)
+## 4. H2 — Upthrust Reversal (short, reversal)
+
+Mirror: Spring Reversal (long), spawned by `SPRING` (sole owner of that label).
 
 ```
 spawn on:
-    label == UPTHRUST
-    and (ctx.after_rally or ctx.near_resistance or at_range_high(ctx))
-
+    label_qualified == UPTHRUST                  # qualifier: after rally / at
+                                                 # resistance or range high
 confirm (window 1..4 bars):
-    ( label == NO_DEMAND and bar arrives on a rally attempt:
-          bar.close > prev_bar.close or bar within a >=2-bar up-move )   # [A9]
-    or ( feats.direction == DOWN
-         and bar.close < signature.midpoint          # (high+low)/2
-         and feats.rel_volume > prev_bar.rel_volume )        # "expanding" [A9]
+    ( NO_DEMAND (structural core: up bar, narrow spread, low volume)
+      arriving on a rally attempt:
+          bar.close > prev.close or bar is in a >=2-bar up-move )
+    or ( direction == DOWN
+         and bar.close < signature.midpoint
+         and feats.rel_volume > prev.rel_volume )
 
 refute:  bar.close > signature.high
 stop:    signature.high + cfg.stop_buffer_ticks
@@ -99,26 +150,33 @@ stop:    signature.high + cfg.stop_buffer_ticks
 
 ```
 spawn on (checked each bar close):
-    count of ABSORPTION bars within last cfg.h3.cluster_window (10) bars
-        that sit within cfg.level_atr_mult x ATR of the SAME key level Lv
-        >= cfg.h3.min_absorption_bars (2)
-    and direction from context:
-        Lv is resistance and signal_tf trend UP  -> LONG    # "after basing" [A11]
-        Lv is support    and signal_tf trend DOWN -> SHORT
-    zone = [min(low), max(high)] over the clustered absorption bars
+    >= cfg.h3.min_absorption_bars (2) ABSORPTION bars within last
+       cfg.h3.cluster_window (10) bars, each within cfg.level_atr_mult x ATR
+       of the SAME key level Lv
+       # level identity carries cfg.level_identity_atr_frac tolerance —
+       # swing levels drift; "same level" means within that fraction of ATR
+    direction:
+        signal_tf trending: Lv resistance + trend UP -> LONG;
+                            Lv support + trend DOWN -> SHORT
+        signal_tf RANGING:  direction = OUT of the range from the boundary
+                            where the absorption sits (range high -> LONG,
+                            range low -> SHORT)
+    zone = [min(low), max(high)] over clustered absorption bars
+    # ZONE GROWS: each further qualifying absorption bar before confirmation
+    # extends the zone (and refreshes evidence); stop is computed at
+    # GRADUATION on the final zone
 
-confirm (window 1..cfg.h3.confirm_window (8) bars):        # window unspecified in spec [A12]
-    breakout bar through Lv:
-        feats.rel_spread >= cfg.wide_spread_pctile
-        and close beyond Lv (LONG: close > Lv)
-        and close_pos extreme (LONG: > 0.7)
-        and feats.rel_volume >= cfg.h3.breakout_vol_mult
+confirm (window 1..cfg.h3.confirm_window (8) bars from latest cluster bar):
+    breakout bar:
+        rel_spread >= cfg.wide_spread_pctile
+        and close beyond max(Lv, zone edge in trade direction)   # a "breakout"
+                                                                 # inside the zone
+                                                                 # never confirms
+        and close_pos extreme (LONG > 0.7 / SHORT < 0.3)
+        and rel_volume >= cfg.h3.breakout_vol_mult
 
-refute:
-    wide-range bar (rel_spread wide) closing back through the FAR side of zone
-    on rel_volume high                                      # [A13: far side vs re-entry]
-
-stop:    far side of zone -+ cfg.stop_buffer_ticks
+refute:  wide-range bar closing beyond the FAR side of the zone on high volume
+stop:    far side of final zone -+ cfg.stop_buffer_ticks (at graduation)
 gate:    trend rule + RANGE_BREAK exception (Sec 8); tag H3_RANGE_BREAK
 ```
 
@@ -126,132 +184,120 @@ gate:    trend rule + RANGE_BREAK exception (Sec 8); tag H3_RANGE_BREAK
 
 ```
 spawn on:
-    signal_tf phase == MARKUP with age >= cfg.h4.established_min_bars   # "established" [A14]
-    and ctx.impulse_reaction == REACTION            # we are in a pullback
-    and pullback volume declining:
-        mean rel_volume over pullback bars < cfg.h4.pullback_vol_max (1.0)   # [A15]
-    and label == NO_SUPPLY
+    signal_tf phase == MARKUP, age >= cfg.h4.established_min_bars (10)
+    and ctx.impulse_reaction == REACTION
+    and pullback quiet: mean rel_volume over pullback bars
+        < cfg.h4.pullback_vol_max (1.0)
+        # pullback volume SLOPE logged for later evaluation of a stricter
+        # bar-on-bar declining definition
+    and label_qualified == NO_SUPPLY
 
-confirm (window 1..cfg.h4.confirm_window (5) bars):        # unspecified in spec [A12]
-    feats.direction == UP and feats.close_pos > 0.7
-    and feats.rel_volume > pullback mean rel_volume        # "re-expanding" [A15]
+confirm (window 1..cfg.h4.confirm_window (5) bars):
+    direction == UP and close_pos > 0.7
+    and rel_volume > pullback mean rel_volume
 
-refute:
-    pullback volume expanding (rel_volume >= cfg.h4.expand_mult over >=1 bar)
-    AND bar.close < last CONFIRMED higher-low swing before pullback start   # k-bar lag [A16]
+refute (state + trigger — NOT same-bar AND):
+    expansion is pullback-level STATE: any pullback bar with
+        rel_volume >= cfg.h4.expand_mult sets pullback.expanded = true
+    trigger: bar.close < last CONFIRMED (k-lag) higher-low swing before
+        pullback start, while pullback.expanded
+    # the volume expansion and the structural break may arrive on
+    # different bars — the realistic sequence
 
-stop:    min(low) of the pullback - cfg.stop_buffer_ticks
+stop:    min(low) of pullback - cfg.stop_buffer_ticks (computed at GRADUATION —
+         the pullback can deepen after spawn)
 ```
 
-## 7. H5 — Buying-Climax Fade (short, reversal; cfg.h5.enabled = false)
+## 7. H5 — Buying-Climax Fade (short; cfg.h5.enabled = false)
 
 ```
-spawn on:   label == POTENTIAL_BUYING_CLIMAX
-confirm (1..5): label in {UPTHRUST, NO_DEMAND}
+spawn on:   label_qualified == POTENTIAL_BUYING_CLIMAX
+confirm (1..5): UPTHRUST or NO_DEMAND — structural cores
+                (their trend/location qualifiers are unsatisfiable this early
+                after a climax; see Sec 0)
 refute:     cfg.h5.refute_bars (3) consecutive closes above signature.close
-            with rel_volume >= 1.0                          # "sustained" [A17]
-gate (replaces Sec 8 entirely):
-    |context_tf.close - context_tf.trend_mean| > cfg.h5.extension_atr x context_ATR
-    where trend_mean = cfg.h5.ma_period (20) MA on Context TF   # [A17]
+            with rel_volume >= 1.0
+gate (replaces Sec 8):
+    |ctxTF.close - ctxTF.trend_mean| > cfg.h5.extension_atr x ctxTF_ATR
+    trend_mean = cfg.h5.ma_period (20) MA on Context TF
 ```
 
-## 8. MTF gating (evaluated at graduation time, Context-TF = last closed bar)
+## 8. MTF gating (graduation time; ctxTF = last closed Context-TF bar)
 
 ```
 mtf_gate_permits(h, ctxTF):
-    if h.spec == H5: return h5_gate(ctxTF)                 # exempt, Sec 7
+    if h.spec == H5: return h5_gate(ctxTF)
 
-    if h.klass == TREND:                                   # H3, H4 + mirrors
-        if ctxTF.phase == MARKUP    and h.dir == LONG:  return True
-        if ctxTF.phase == MARKDOWN  and h.dir == SHORT: return True
+    if h.klass == TREND:                              # H3, H4 + mirrors
+        if ctxTF.phase == MARKUP   and h.dir == LONG:  return True
+        if ctxTF.phase == MARKDOWN and h.dir == SHORT: return True
         if h.spec == H3 and ctxTF.phase == RANGING
-           and h.zone_level within cfg.level_atr_mult x ctxATR of a ctxTF range boundary
+           and h.zone_level within cfg.level_atr_mult x ctxTF_ATR
+               of a ctxTF range boundary
            and h.dir points OUT of the ctxTF range:
                h.tag = H3_RANGE_BREAK; return True
         return False
 
-    if h.klass == REVERSAL:                                # H1, H2 + mirrors
+    if h.klass == REVERSAL:                           # H1, H2 + mirrors
+        # (a) phase AGREEMENT first — Signal-TF reversal in the direction of
+        # the Context trend is a with-trend entry (upthrust fading a reaction
+        # rally in a Context downtrend), expected highest-conviction setup.
+        # This branch was MISSING from the v1 spec (forensic finding #1).
+        if ctxTF.phase == MARKUP   and h.dir == LONG:
+            h.tag = REV_WITH_TREND; return True
+        if ctxTF.phase == MARKDOWN and h.dir == SHORT:
+            h.tag = REV_WITH_TREND; return True
+        # (b) range extreme
         if ctxTF.phase == RANGING
-           and price within cfg.level_atr_mult x ctxATF of the range extreme
-               opposing h.dir (LONG: range low):  return True
+           and price within cfg.level_atr_mult x ctxTF_ATR of the range
+               extreme opposing h.dir (LONG: range low): return True
+        # (c) post-climax with matching direction
         if ctxTF.phase == POST_CLIMAX
-           and matches(ctxTF.post_climax_dir, h.dir):      # selling-climax -> LONG
-               return True
+           and matches(ctxTF.post_climax_dir, h.dir):  return True
+        # (d) strict mode off: opposing phase, higher strength bar
         if not cfg.strict_mode
-           and ctxTF.phase == opposing_trend(h.dir)        # e.g. MARKDOWN vs LONG
-           and h.strength >= cfg.relaxed_min_strength:     # separate, higher bar
-               return True
+           and ctxTF.phase == opposing_trend(h.dir)
+           and h.strength >= cfg.relaxed_min_strength (3.0): return True
         return False
 ```
 
-ATR in Context-level distance checks is the **Context TF's** ATR (the rule is
-evaluated against Context-TF structure). Results reported strict on AND off.
+Distances against Context-TF structure use the **Context TF's ATR**. Results
+reported strict on AND off; `REV_WITH_TREND` and `H3_RANGE_BREAK` broken out.
 
-## 9. Execution-TF refinement (after graduation; cfg.exec.enabled compared both ways)
+## 9. Execution-TF refinement (cfg.exec.enabled; report with AND without)
 
 ```
-watch up to cfg.exec.window (10) execution bars:
-    trigger = with-direction exec bar with close_pos beyond threshold
-              (LONG > 0.7, SHORT < 0.3)
-    on trigger: enter at NEXT exec bar open
-                stop = tighter_of(exec-TF local extreme, signature extreme)  # cfg choice
-if no trigger in window:
-    cfg.exec.fallback: enter at next exec bar open with Signal-TF stop | abandon
-EOD entry embargo overrides: window reaches embargo -> abandon + log
+on graduation:
+    if a refinement is already pending: log the graduation, do NOT act
+                                        # one pending refinement at a time
+    watch up to cfg.exec.window (10) execution bars:
+        each SIGNAL-TF close during the window: re-check parent refutation;
+            if refuted -> cancel (REFINEMENT_CANCELLED_REFUTED)
+        trigger = with-direction exec bar, close_pos beyond threshold
+                  (LONG > 0.7 / SHORT < 0.3)
+        on trigger: enter at NEXT exec bar open
+            stop = tighter_of(exec-TF local extreme over the bars observed
+                              in the refinement window (default lookback),
+                              Signal-TF signature extreme)     # cfg choice
+    no trigger in window:
+        cfg.exec.fallback: next exec bar open w/ Signal-TF stop | abandon
+    EOD entry embargo overrides everything: window reaches embargo ->
+        abandon + log
 ```
 
----
+## 10. Synthetic-scenario verification (before any backtest)
 
-## Ambiguities & proposed resolutions
+Hand-built bar sequences exercising every gate branch and lifecycle path,
+narrative logs produced and reviewed against the psychology appendix before
+real data is touched. Minimum set:
 
-**Needs your call (psychology / design):**
+1. Upthrust during Context `MARKDOWN` → must graduate tagged `REV_WITH_TREND`.
+2. Selling climax + TEST while gated, Context phase flips afterward → must
+   graduate via `CONFIRMED_PENDING_GATE` without re-confirming.
+3. H3 growing zone with a false "breakout" inside the zone → must NOT confirm;
+   later true breakout beyond max(level, zone edge) → confirms.
+4. H4 with volume expansion and structural break on different bars → must refute.
+5. Refutation arriving during a pending execution refinement → must cancel
+   (`REFINEMENT_CANCELLED_REFUTED`).
 
-- **[A1] H1's mirror collides with H2 and H5.** A literal mirror of H1 spawns
-  from `POTENTIAL_BUYING_CLIMAX` or `UPTHRUST` — but UPTHRUST already spawns H2,
-  and the climax-fade short is H5 (disabled, special gate). Proposal: H1-mirror
-  spawns from `POTENTIAL_BUYING_CLIMAX` **only** (climax-and-test short, normal
-  reversal gating); UPTHRUST spawns only H2; H5 stays as specified (a faster
-  fade without the test requirement, off by default). Alternative: drop
-  H1-mirror entirely and let H2 + H5 cover the short side.
-- **[A2] Gate-blocked confirmation.** When a hypothesis confirms but the
-  Context-TF gate says no: kill it, or keep it open (it may re-confirm on a
-  later bar after the Context phase flips, within its expiry)? Proposal: keep
-  open, log `CONFIRMED_BUT_GATED` each time — the event-study layer records
-  gated confirmations anyway, so both choices stay measurable.
-- **[A3] Missing mirror labels.** Part 2 has `EFFORTLESS_ADVANCE` /
-  `VALIDATED_ADVANCE` but no down-bar equivalents, which the mirrored
-  hypotheses need. Proposal: add `EFFORTLESS_DECLINE` / `VALIDATED_DECLINE`
-  (exact sign-flips).
-- **[A4] What makes a TEST a test.** Proposal: the probe must come within
-  `test_proximity_atr` (default 1.0) × ATR of the signature extreme, hold it
-  (low > signature low), and recover (close_pos > 0.5) on rel_volume below
-  baseline. Too strict / too loose?
-- **[A5] Concurrency & ties.** Proposal: max one open hypothesis per
-  spec+direction; opposite-direction hypotheses may coexist (they're competing
-  narratives); if two graduate on the same bar, take the higher strength and
-  log the conflict; ties → no trade.
-
-**Proposed defaults (config-tunable; will adopt unless you object):**
-
-- **[A6]** "near new lows" = lowest low of trailing `new_low_lookback` (50) bars.
-- **[A7]** "off the level" = confirming bar's low within 0.5 × ATR of spawn level.
-- **[A8]** H1 refutes on any close below signature low (volume logged, not required).
-- **[A9]** "rally attempt" = up-close vs prior bar or ≥2-bar up-move; "expanding
-  volume" = rel_volume above the previous bar's.
-- **[A10]** Strength: base 1.0; +1 per supporting bar (additional signature-
-  consistent label), −0.5 per contradicting bar (strong close against hypothesis
-  direction w/o meeting refutation); confirm requires ≥ 1.0; relaxed-mode
-  reversal gate requires ≥ 3.0.
-- **[A11]** H3 "after basing": the cluster window itself is the base — no extra
-  condition beyond ≥N absorption bars near the level (KISS for v1).
-- **[A12]** Unspecified confirm windows: H3 = 8 bars from cluster completion,
-  H4 = 5 bars from NO_SUPPLY bar.
-- **[A13]** H3 refutation = wide high-volume bar closing beyond the far side of
-  the absorption zone (not mere re-entry into it).
-- **[A14]** "Established MARKUP" = phase age ≥ 10 Signal-TF bars.
-- **[A15]** Pullback volume declining/re-expanding measured vs the pullback's own
-  mean rel_volume (impulse/reaction flag delimits the pullback).
-- **[A16]** H4 refutation uses the last *confirmed* (k-lag) higher-low swing;
-  the confirmation lag is accepted — no peeking at unconfirmed swings.
-- **[A17]** H5 "sustained advance" = 3 consecutive up closes at rel_volume ≥ 1.0;
-  trend mean = 20-period MA on Context TF.
+Plus: simultaneous multi-TF close ordering test (descending-TF rule, Sec 1).

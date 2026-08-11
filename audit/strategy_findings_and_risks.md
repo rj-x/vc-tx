@@ -98,3 +98,20 @@ A 13:30 London volume spike on CPI day is calendar, not psychology — it will g
 **New requirement:** synthetic-scenario verification before any backtest (named cases including `REV_WITH_TREND` and `CONFIRMED_PENDING_GATE` paths), reviewed against the psychology appendix.
 
 **Process lesson:** each review layer (document → instantiation → runtime trace) found bugs invisible to the previous one; the critical gating bug survived four document reviews and was only exposed by tracing runtime state. Next bug class lives in execution — hence the synthetic scenarios.
+
+---
+
+## RULES.md v2 review rulings (2026-08-11)
+
+**All six reviewer findings verified and ratified:** R1 CPG pending window (`pending_gate_max_bars`, default 2× Context/Signal ratio, replaces confirm-window expiry once confirmed — prompt patched); R2 CPG skips strength machinery entirely, floor kill never applies in CPG (prompt patched); R3 two-phase step (evaluate all → resolve conflicts by strength → act once); R4 in-position guard on all entry paths + direct-entry restatement when refinement disabled; R5 evidence semantics — general definition added to prompt, per-hypothesis enumeration required in RULES.md v3; R6 H5 extension gate signed in the fade direction (spec bug, prompt patched). All implementation traps accepted: H3 age re-anchors on each qualifying cluster bar; "outermost in trade direction" wording; H4 pullback boundaries pinned (start = REACTION transition, mean excludes evaluation bar, low at graduation); `zone_level` = the key level Lv; refinement window bar 1 = first exec bar closing strictly after graduation; triggered entry whose fill would land inside the embargo → abandon.
+
+**The three referred rulings:** (1) opposite-direction graduation during pending refinement → **cancel the pending entry** (`REFINEMENT_CANCELLED_OPPOSED`); the opposing hypothesis may begin its own refinement — no position was open, so this is not reverse-and-flip; oscillation bounded by expiry, logged for diagnostics. (2) Confirm-while-understrength → **log-and-lose** for v1 with a `CONFIRM_UNDERSTRENGTH` counter in diagnostics; revisit if the counter is material once thresholds are tuned; no third pending state in v1. (3) `pending_gate_max_bars` default **2× Context/Signal ratio** ratified.
+
+**Spec-bug tally:** two critical defects have now originated in the spec itself (unsigned H5 gate; missing reversal phase-agreement branch) — the spec is not privileged over the restatement; both documents are subject to the same adversarial process.
+
+## Step-zero data findings (from DATA.md — headline implications)
+
+- **Volume is real futures contract counts** (`uk100fut`, ID 70152), not tick volume — the hard gate cleared in the best possible way; absorption hypotheses run undegraded. Cash CFD volume = same series ×4: use ONE series (futures) as canonical; never mix.
+- **URGENT operational requirement: rolling ~30-day provider retention.** Data older than the window is unrecoverable. Scheduled sync (daily; hard ceiling every 3 weeks) is now infrastructure-critical — every missed window is permanently lost backtest data.
+- `uk100fut` is a RAW SPLICE at quarterly rolls — roll-gap handling (prompt Part 6) applies; signature exclusion around roll transitions; Sep-26 expiry watch item.
+- DST session-label bug on US/gold instruments: must be fixed before the NASDAQ portability stage; does not affect FTSE development.
