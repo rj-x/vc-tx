@@ -44,9 +44,8 @@ import sys
 import numpy as np
 import pandas as pd
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-RAW = os.path.join(HERE, "data")
-CLEAN = os.path.join(HERE, "clean_finsa")
+from paths import DATA_DIR as RAW, CLEAN_DIR as CLEAN
+
 LONDON = "Europe/London"
 
 # cash session in LONDON local hours, per instrument
@@ -59,6 +58,8 @@ SESSIONS = {
     "gold":      (13.0, 21.0),   # COMEX active hours
     "goldvar":   (13.0, 21.0),
     "eurusd":    (8.0, 21.0),    # London + NY overlap, the liquid window
+    "uk100fut":  (8.0, 16.5),    # UK 100 rolling future — trade only in FTSE cash hours
+    "uk100sep26": (8.0, 16.5),   # UK 100 Sep-26 outright — roll-verification series
 }
 FEED = {"1min": "minute", "15min": "quarter", "1h": "hour", "1d": "day"}
 BAR_MIN = {"1min": 1, "15min": 15, "1h": 60, "4h": 240, "1d": 1440}
@@ -228,10 +229,16 @@ def verify_one(slug):
 
 def cmd_build(a):
     slugs = list(SESSIONS) if a.instr == ["all"] else a.instr
+    # merge into the existing report so a partial build doesn't clobber
+    # other instruments' entries
+    rp = os.path.join(CLEAN, "_report.json")
     rep = {}
+    if os.path.exists(rp):
+        with open(rp) as f:
+            rep = {k: v for k, v in json.load(f).items() if k in SESSIONS}
     for s in slugs:
         rep[s] = build_one(s)
-    with open(os.path.join(CLEAN, "_report.json"), "w") as f:
+    with open(rp, "w") as f:
         json.dump(rep, f, indent=2, default=str)
     print(f"\nWrote {CLEAN}/")
 

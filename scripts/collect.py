@@ -57,6 +57,10 @@ INSTRUMENTS = {
     "gold":      "68924",   # Gold per 0.1, fixed spread
     "goldvar":   "72302",   # Gold per 0.1, VARIABLE spread
     "eurusd":    "16635",
+    "uk100fut":  "70152",   # UK 100 Rolling Future — futures volume, roll handled by provider
+    "uk100sep26": "72516",  # UK 100 Future (Sep 2026) — outright contract, for roll verification.
+                            # Contract-specific ID (history starts at its 2026-06-11 listing);
+                            # expected to go quiet after expiry ~2026-09-18. See DATA.md.
 }
 INSTRUMENT = "16645"          # default: FTSE 100
 MAX_L = 10000                 # server-side cap per response
@@ -64,8 +68,8 @@ COLS = ["time", "open", "high", "low", "close", "volume"]
 TFS = ["minute", "quarter", "hour", "day"]
 SIDES = ["mid", "bid", "ask"]
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(HERE, "data")
+from paths import DATA_DIR
+
 MANIFEST = os.path.join(DATA_DIR, "_manifest.json")
 
 # how far back to step `m` between pages; also used to sanity-check spacing
