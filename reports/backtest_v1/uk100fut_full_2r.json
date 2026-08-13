@@ -1,0 +1,110 @@
+{
+  "variant": "full_2r",
+  "slug": "uk100fut",
+  "data": {
+    "sessions": 16,
+    "span": [
+      "2026-07-13 07:00:00+00:00",
+      "2026-08-03 15:29:00+00:00"
+    ],
+    "rows_1m": 8160
+  },
+  "cost_model": "CASH-CFD VEHICLE (pre-registered 2026-08-13): signals/levels/stops/R on uk100fut; fills on uk100 measured bid/ask (long entry@ask exit@bid, mirrored), basis-at-entry level mapping, GBP-per-point sizing (min stake 0.5), NO commission; EOD-flat asserted",
+  "metrics": {
+    "overall": {
+      "n": 0
+    }
+  },
+  "tripwire": [],
+  "label_denominators": {
+    "15min": {
+      "classified_bars": 374,
+      "non_null": 58,
+      "frequencies": {
+        "EFFORTLESS_ADVANCE": 30,
+        "EFFORTLESS_DECLINE": 16,
+        "VALIDATED_ADVANCE": 4,
+        "UPTHRUST": 2,
+        "VALIDATED_DECLINE": 4,
+        "ABSORPTION": 1,
+        "TEST": 1
+      }
+    },
+    "1h": {
+      "classified_bars": 88,
+      "non_null": 13,
+      "frequencies": {
+        "EFFORTLESS_ADVANCE": 7,
+        "UPTHRUST": 2,
+        "VALIDATED_ADVANCE": 1,
+        "EFFORTLESS_DECLINE": 3
+      }
+    }
+  },
+  "spawn_fates": {
+    "per_spec": {
+      "H2 SHORT": {
+        "EXPIRED": 2
+      }
+    },
+    "total_spawns": 2
+  },
+  "explicit_zeros": {
+    "EOD_EXIT_trades": 0,
+    "SKIPPED_SIZE": 0,
+    "CONFIRM_UNDERSTRENGTH": 0,
+    "BLOCKED_SPAWNS": 0,
+    "REFINEMENT_CANCELLED_REFUTED": 0,
+    "REFINEMENT_CANCELLED_OPPOSED": 0,
+    "REFINEMENT_ABANDONED_EMBARGO": 0,
+    "ENTRY_ABANDONED_EMBARGO": 0,
+    "SIGNAL_UNACTED_IN_POSITION": 0,
+    "SIGNAL_UNACTED_CONFLICT": 0
+  },
+  "macro_tags": {
+    "calendar": "21 releases (validated)",
+    "funnel": {
+      "SPAWNED": {
+        "outside": 2
+      },
+      "LABEL": {
+        "outside": 56,
+        "near_GBP": 2
+      }
+    },
+    "per_release_tag_counts": {
+      "2026-07-30 11:00:00+00:00 BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)": 2
+    },
+    "tagged_detail": [
+      {
+        "type": "LABEL",
+        "ts": "2026-07-30 10:45:00+00:00",
+        "near": [
+          [
+            "GBP",
+            "BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)",
+            "2026-07-30 11:00:00+00:00"
+          ]
+        ],
+        "payload": "VALIDATED_DECLINE"
+      },
+      {
+        "type": "LABEL",
+        "ts": "2026-07-30 11:15:00+00:00",
+        "near": [
+          [
+            "GBP",
+            "BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)",
+            "2026-07-30 11:00:00+00:00"
+          ]
+        ],
+        "payload": "EFFORTLESS_ADVANCE"
+      }
+    ]
+  },
+  "trades": [],
+  "cross_gap_swings": {
+    "signal_tf": 16,
+    "context_tf": 25
+  }
+}

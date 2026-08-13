@@ -1,0 +1,91 @@
+t=135    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=150    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=165    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=180    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=195    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=210    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=225    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=240    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=255    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=270    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=285    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=300    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=315    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=330    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=345    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=360    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=375    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=390    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=405    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=420    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=435    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=450    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=465    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=480    1h     PHASE                        {'phase': 'MARKDOWN', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=480    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=495    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=510    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=525    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=555    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=570    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=585    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=600    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=600    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=615    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=630    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=645    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=660    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=660    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=675    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=690    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=705    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=720    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=720    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=735    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=750    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=765    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=780    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=780    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=795    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=795    15min  PHASE                        {'phase': 'MARKDOWN', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=810    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=825    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=840    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=840    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=855    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=870    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=885    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=900    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=900    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=915    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=930    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=945    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=960    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=960    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=975    15min  LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash'}
+t=975    15min  PHASE                        {'phase': 'POST_CLIMAX', 'trigger': 'POTENTIAL_SELLING_CLIMAX', 'direction': 1, 'segment': 'cash'}
+t=975           SPAWNED                      [H1#1 LONG s=1.0 OPEN]
+t=990    15min  LABEL                        {'label': 'TEST', 'structural': 'NO_DEMAND', 'segment': 'cash'}
+t=990           STRENGTH                     [H1#1 LONG s=2.0 OPEN] {'delta': 1.0}
+t=990           CONFIRM                      [H1#1 LONG s=2.0 OPEN] {'branch': 'TEST_OF_SIGNATURE'}
+t=990           GATE                         [H1#1 LONG s=2.0 OPEN] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=990           CONFIRMED_PENDING_GATE       [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE]
+t=1005   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1005          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=1020   1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1020   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1020          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=1035   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1035          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=1050   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1050          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=1065   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1065          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
+t=1080   1h     LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash'}
+t=1080   1h     PHASE                        {'phase': 'POST_CLIMAX', 'trigger': 'POTENTIAL_SELLING_CLIMAX', 'direction': 1, 'segment': 'cash'}
+t=1080   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=1080          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': True, 'branch': 'POST_CLIMAX_MATCH'}
+t=1080          GRADUATED                    [H1#1 LONG s=2.0 GRADUATED] {'stop_ref': 78.9, 'stop_dist_at_grad': 3.799999999999997}
+t=1080          ENTRY_SCHEDULED              [H1#1 LONG s=2.0 GRADUATED]

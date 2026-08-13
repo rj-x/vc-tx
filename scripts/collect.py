@@ -291,6 +291,15 @@ def cmd_status(a):
 
 
 def cmd_validate(a):
+    """Exits 1 on any NEW structural issue. Issue counts already recorded in
+    data/_known_issues.json are accepted (shown as 'known'); anything beyond
+    the baseline fails. To accept a newly investigated issue, add it to the
+    baseline file explicitly — never silently."""
+    known_path = os.path.join(DATA_DIR, "_known_issues.json")
+    known = {}
+    if os.path.exists(known_path):
+        with open(known_path) as f:
+            known = json.load(f)
     ok = True
     for slug in INSTRUMENTS:
       for tf in TFS:
@@ -299,16 +308,24 @@ def cmd_validate(a):
             if df is None:
                 continue
             iss = check(df, tf)
-            bad = {k: v for k, v in iss.items() if k != "zero_volume_pct" and v}
+            base = known.get(f"{slug}_{tf}_{side}", {})
+            found = {k: v for k, v in iss.items() if k != "zero_volume_pct" and v}
+            new = {k: v for k, v in found.items() if v > base.get(k, 0)}
+            accepted = {k: v for k, v in found.items() if k not in new}
             step = TF_STEP[tf]
             gaps = df["time"].diff().dropna()
             over = int((gaps > step).sum())
-            print(f"{slug}/{tf}/{side}: {len(df):,} bars | "
-                  f"{'OK' if not bad else 'ISSUES ' + str(bad)} | "
+            status = "OK" if not found else (
+                f"NEW ISSUES {new}" if new else f"known {accepted}")
+            print(f"{slug}/{tf}/{side}: {len(df):,} bars | {status} | "
                   f"zero-volume {iss['zero_volume_pct']}% | "
                   f"{over:,} gaps > one bar (weekends/closures expected)")
-            ok = ok and not bad
-    print("\nAll structural checks passed." if ok else "\nSee issues above.")
+            ok = ok and not new
+    if ok:
+        print("\nAll structural checks passed (known baseline accepted).")
+    else:
+        print("\nNEW issues found — see above.")
+        sys.exit(1)
 
 
 def main():

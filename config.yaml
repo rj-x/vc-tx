@@ -1,0 +1,139 @@
+# Volume-narrative engine configuration.
+# Single source of defaults = RULES.md Sec 11 (lifecycle/hypothesis knobs)
+# plus Part 2/3 label & context thresholds. Engine loads this via
+# engine/config.py; tests may override individual keys.
+
+features:
+  baseline_mode: session_time      # session_time | simple (simple: plain trailing window — used by synthetic tests)
+  baseline_sessions: 20            # session-time bins over prior N sessions
+  simple_baseline_window: 50       # trailing bars (simple mode)
+  min_baseline_obs: 20             # feature warmup: bars/bin observations required before features are valid
+
+labels:                            # Part 2 thresholds (all relative)
+  wide_spread_pctile: 80           # rel_spread percentile >= -> wide
+  narrow_spread_pctile: 25         # <= -> narrow
+  high_volume_mult: 1.5            # rel_volume >= -> high
+  low_volume_mult: 0.7             # rel_volume <= -> low
+  close_pos_hi: 0.8                # advance/decline label close_pos
+  close_pos_lo: 0.2
+  upthrust_close_pos: 0.3          # UPTHRUST close_pos <; SPRING mirror > 0.7
+  wick_frac_min: 0.33              # "large" wick as fraction of spread
+  climax_vol_mult: 2.5             # climax: rel_volume >= this AND
+  climax_spread_pctile: 90         #   rel_spread percentile >= this AND
+  climax_lookback: 20              #   volume is max of this many bars AND trend extended
+  extended_trend_bars: 20          # "late in an extended trend"
+
+context:                           # Part 3
+  swing_k: 3                       # fractal confirmation lag (bars each side)
+  atr_period: 14
+  atr_clip_session_gap: false
+  level_atr_mult: 0.5              # "at a level" = within this x ATR
+  level_identity_atr_frac: 0.25    # same-level tolerance
+  move_atr_mult: 2.0               # "after a rally / marked decline"
+  new_low_lookback: 50             # H1 "near new lows" window (inclusive)
+  ranging_swings: 4                # RANGING: no new extreme for R swings...
+  ranging_bars: 30                 #   ...or B bars, whichever first
+  post_climax_bars: 10             # POST_CLIMAX countdown
+  signature_registry_max_age: 30   # registry entries expire
+  bg_volume_window: 20             # background volume trend
+
+hypotheses:                        # RULES.md Sec 11
+  base_strength: 1.0
+  support_delta: 1.0
+  contra_delta: 0.5
+  evidence_contra_close_pos: 0.3   # LONG: close_pos < this contradicts (SHORT: > 1 - this)
+  min_strength_to_confirm: 1.0     # near-no-op with base 1.0 — deliberate
+  booster_increment: 1.0           # H1 boosters, edge-triggered once per condition
+  strength_floor:
+    enabled: false
+    value: -1.0
+  pending_gate_ctx_ratio_mult: 2   # pending_gate_max_bars = this x Context/Signal ratio
+  test_proximity_atr: 1.0          # TEST criteria (i)
+  test_vol_vs_signature: 0.5       # TEST criteria (v)
+  stop_buffer_ticks: 2
+  h1:
+    confirm_window: 5              # expiry = top of confirm window
+  h2:
+    confirm_window: 4
+  h3:
+    min_absorption_bars: 2
+    cluster_window: 10
+    confirm_window: 8              # from window_anchor (re-anchored)
+    max_total_bars: 24             # lifetime cap from spawn
+    breakout_vol_mult: 1.5
+  h4:
+    established_min_bars: 10
+    pullback_vol_max: 1.0
+    confirm_window: 5
+    expand_mult: 1.5
+  h5:
+    enabled: false
+    confirm_window: 5
+    refute_bars: 3
+    extension_atr: 2.0
+    ma_period: 20
+
+gating:
+  strict_mode: false               # report both
+  relaxed_min_strength: 3.0
+
+execution:                         # RULES.md Sec 9
+  enabled: true                    # report both
+  window: 10                       # exec bars
+  close_pos_trigger: 0.7           # LONG > this / SHORT < 1 - this
+  fallback: enter                  # enter (tag ENTRY_FALLBACK) | abandon
+  stop_choice: tighter_of          # tighter_of | signature
+
+ablation:                          # Part 8 layer ablation (frozen config only)
+  no_location: false               # (i) signatures anywhere spawn hypotheses
+  no_gating: false                 # (ii) every matured hypothesis trades
+  no_confirmation: false           # (iii) entry on the signature bar, no wait
+
+execution_vehicle:                 # Part A pre-registration (2026-08-13)
+  # Deployment reality: signals on uk100fut, execution on the uk100 cash
+  # CFD (spread bet). Justification on record: intraday basis stability
+  # (std 0.19 pts measured 2026-08-13) + EOD-flat means basis steps/drift
+  # never touch an open position.
+  mode: cash_cfd                   # cash_cfd | direct
+  quote_slug: uk100                # execution leg: fills at its bid/ask
+  min_stake_per_point: 0.5         # GBP/pt minimum; below -> SKIPPED_SIZE
+  require_eod_flat: true           # asserted precondition of this model
+  basis_deviation_flag_pts: 3.0    # flag entries whose basis_at_entry deviates from that session's median by more
+
+session_model:                     # Part B extended-hours instrumentation
+  extended_hours: false            # evidential path stays cash-only; the
+                                   # observational run + narrate set true
+  trading_day_anchor_london: 21.5  # futures trading-day boundary (~21:30)
+
+trade:                             # Part 7
+  starting_equity: 100000.0
+  risk_frac: 0.01                  # fixed fractional risk per trade
+  exit_mode: fixed_r               # fixed_r | opposing | context_flip (stop always active)
+  r_target: 2.0                    # fixed_r mode; test 1/2/3
+  time_stop_bars: 30               # Signal-TF bars, all modes
+  commission_per_contract: 2.0     # per side
+  slippage_ticks: 1                # flat slippage fallback (spread model later)
+
+session:                           # Part 7 (per-instrument overrides below)
+  eod_cutoff_min_before_close: 15  # force-flat at close - this
+  entry_embargo_min: 30            # no new entries within this of cutoff
+
+mtf:
+  # stack under test; the stack itself is a staged hyperparameter (Part 8)
+  context_tf: 1h
+  signal_tf: 15min
+  execution_tf: 1min
+
+instruments:
+  uk100fut:
+    session_start_london: 8.0      # cash 08:00-16:30 London
+    session_end_london: 16.5
+    tick_size: 0.5
+    point_value: 10.0              # FTSE future £10/point
+    auction_exclusion_min: 10      # signature exclusion around open/close
+  uk100:
+    session_start_london: 8.0
+    session_end_london: 16.5
+    tick_size: 0.1
+    point_value: 10.0
+    auction_exclusion_min: 10

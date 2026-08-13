@@ -1,0 +1,143 @@
+{
+  "variant": "full_2r",
+  "slug": "uk100",
+  "data": {
+    "sessions": 21,
+    "span": [
+      "2026-07-06 07:00:00+00:00",
+      "2026-08-03 15:29:00+00:00"
+    ],
+    "rows_1m": 10710
+  },
+  "cost_model": "CASH-CFD VEHICLE (pre-registered 2026-08-13): signals/levels/stops/R on uk100; fills on uk100 measured bid/ask (long entry@ask exit@bid, mirrored), basis-at-entry level mapping, GBP-per-point sizing (min stake 0.5), NO commission; EOD-flat asserted",
+  "metrics": {
+    "overall": {
+      "n": 0
+    }
+  },
+  "tripwire": [],
+  "label_denominators": {
+    "15min": {
+      "classified_bars": 544,
+      "non_null": 90,
+      "frequencies": {
+        "EFFORTLESS_ADVANCE": 41,
+        "EFFORTLESS_DECLINE": 31,
+        "SPRING": 3,
+        "VALIDATED_ADVANCE": 5,
+        "ABSORPTION": 1,
+        "TEST": 2,
+        "UPTHRUST": 3,
+        "VALIDATED_DECLINE": 4
+      }
+    },
+    "1h": {
+      "classified_bars": 128,
+      "non_null": 19,
+      "frequencies": {
+        "EFFORTLESS_ADVANCE": 12,
+        "VALIDATED_DECLINE": 1,
+        "UPTHRUST": 1,
+        "VALIDATED_ADVANCE": 1,
+        "EFFORTLESS_DECLINE": 4
+      }
+    }
+  },
+  "spawn_fates": {
+    "per_spec": {
+      "H2 LONG": {
+        "REFUTED": 2,
+        "EXPIRED": 1
+      },
+      "H2 SHORT": {
+        "EXPIRED": 3
+      }
+    },
+    "total_spawns": 6
+  },
+  "explicit_zeros": {
+    "EOD_EXIT_trades": 0,
+    "SKIPPED_SIZE": 0,
+    "CONFIRM_UNDERSTRENGTH": 1,
+    "BLOCKED_SPAWNS": 0,
+    "REFINEMENT_CANCELLED_REFUTED": 0,
+    "REFINEMENT_CANCELLED_OPPOSED": 0,
+    "REFINEMENT_ABANDONED_EMBARGO": 0,
+    "ENTRY_ABANDONED_EMBARGO": 0,
+    "SIGNAL_UNACTED_IN_POSITION": 0,
+    "SIGNAL_UNACTED_CONFLICT": 0
+  },
+  "macro_tags": {
+    "calendar": "21 releases (validated)",
+    "funnel": {
+      "SPAWNED": {
+        "outside": 6
+      },
+      "LABEL": {
+        "outside": 86,
+        "near_USD": 2,
+        "near_GBP": 2
+      }
+    },
+    "per_release_tag_counts": {
+      "2026-07-14 14:00:00+00:00 Fed Chair Warsh testifies (day 1)": 1,
+      "2026-07-15 12:30:00+00:00 US PPI (PPI & Core PPI m/m)": 1,
+      "2026-07-30 11:00:00+00:00 BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)": 2
+    },
+    "tagged_detail": [
+      {
+        "type": "LABEL",
+        "ts": "2026-07-14 13:45:00+00:00",
+        "near": [
+          [
+            "USD",
+            "Fed Chair Warsh testifies (day 1)",
+            "2026-07-14 14:00:00+00:00"
+          ]
+        ],
+        "payload": "EFFORTLESS_ADVANCE"
+      },
+      {
+        "type": "LABEL",
+        "ts": "2026-07-15 12:15:00+00:00",
+        "near": [
+          [
+            "USD",
+            "US PPI (PPI & Core PPI m/m)",
+            "2026-07-15 12:30:00+00:00"
+          ]
+        ],
+        "payload": "TEST"
+      },
+      {
+        "type": "LABEL",
+        "ts": "2026-07-30 10:45:00+00:00",
+        "near": [
+          [
+            "GBP",
+            "BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)",
+            "2026-07-30 11:00:00+00:00"
+          ]
+        ],
+        "payload": "VALIDATED_DECLINE"
+      },
+      {
+        "type": "LABEL",
+        "ts": "2026-07-30 11:15:00+00:00",
+        "near": [
+          [
+            "GBP",
+            "BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)",
+            "2026-07-30 11:00:00+00:00"
+          ]
+        ],
+        "payload": "EFFORTLESS_ADVANCE"
+      }
+    ]
+  },
+  "trades": [],
+  "cross_gap_swings": {
+    "signal_tf": 19,
+    "context_tf": 32
+  }
+}

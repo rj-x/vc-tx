@@ -1,0 +1,135 @@
+{
+  "note": "1min OBSERVATIONAL label study (register ruling 10) - drift-adjusted, segment-split, NEVER pooled with 15min; no threshold or rule may consume 1min labels before walk-forward; checkpoint remains Signal-TF",
+  "autocorrelation_caveat": "adjacent 1min labels share forward windows - rows are NOT independent observations; treat n as overstated",
+  "study": {
+    "drift_bps": {
+      "pre_US_5": 0.23,
+      "pre_US_10": 0.42,
+      "pre_US_20": 0.83,
+      "post_US_5": 0.04,
+      "post_US_10": 0.12,
+      "post_US_20": 0.24
+    },
+    "ABSORPTION": {
+      "n": 28,
+      "signed": false,
+      "raw_5_mean_bps": 2.88,
+      "excess_5_mean_bps": 2.73,
+      "raw_10_mean_bps": 2.86,
+      "excess_10_mean_bps": 2.57,
+      "raw_20_mean_bps": 2.4,
+      "excess_20_mean_bps": 1.82
+    },
+    "APATHY": {
+      "n": 13,
+      "signed": false,
+      "raw_5_mean_bps": 0.04,
+      "excess_5_mean_bps": -0.16,
+      "raw_10_mean_bps": -1.2,
+      "excess_10_mean_bps": -1.58,
+      "raw_20_mean_bps": 0.41,
+      "excess_20_mean_bps": -0.33
+    },
+    "EFFORTLESS_ADVANCE": {
+      "n": 367,
+      "signed": true,
+      "raw_5_mean_bps": 0.92,
+      "excess_5_mean_bps": 0.74,
+      "excess_5_hit": 0.54,
+      "raw_10_mean_bps": 1.19,
+      "excess_10_mean_bps": 0.85,
+      "excess_10_hit": 0.518,
+      "raw_20_mean_bps": 1.8,
+      "excess_20_mean_bps": 1.13,
+      "excess_20_hit": 0.49
+    },
+    "EFFORTLESS_DECLINE": {
+      "n": 361,
+      "signed": true,
+      "raw_5_mean_bps": 0.06,
+      "excess_5_mean_bps": 0.23,
+      "excess_5_hit": 0.508,
+      "raw_10_mean_bps": -0.45,
+      "excess_10_mean_bps": -0.13,
+      "excess_10_hit": 0.508,
+      "raw_20_mean_bps": -1.22,
+      "excess_20_mean_bps": -0.58,
+      "excess_20_hit": 0.49
+    },
+    "NO_SUPPLY": {
+      "n": 1,
+      "signed": true,
+      "raw_5_mean_bps": 4.83,
+      "excess_5_mean_bps": 4.6,
+      "excess_5_hit": 1.0,
+      "raw_10_mean_bps": 3.46,
+      "excess_10_mean_bps": 3.04,
+      "excess_10_hit": 1.0,
+      "raw_20_mean_bps": -7.93,
+      "excess_20_mean_bps": -8.76,
+      "excess_20_hit": 0.0
+    },
+    "SPRING": {
+      "n": 45,
+      "signed": true,
+      "raw_5_mean_bps": 0.48,
+      "excess_5_mean_bps": 0.27,
+      "excess_5_hit": 0.533,
+      "raw_10_mean_bps": 2.24,
+      "excess_10_mean_bps": 1.86,
+      "excess_10_hit": 0.622,
+      "raw_20_mean_bps": 4.1,
+      "excess_20_mean_bps": 3.35,
+      "excess_20_hit": 0.6
+    },
+    "TEST": {
+      "n": 23,
+      "signed": false,
+      "raw_5_mean_bps": 2.55,
+      "excess_5_mean_bps": 2.33,
+      "raw_10_mean_bps": 2.59,
+      "excess_10_mean_bps": 2.19,
+      "raw_20_mean_bps": 1.73,
+      "excess_20_mean_bps": 0.95
+    },
+    "UPTHRUST": {
+      "n": 24,
+      "signed": true,
+      "raw_5_mean_bps": -2.17,
+      "excess_5_mean_bps": -1.99,
+      "excess_5_hit": 0.292,
+      "raw_10_mean_bps": -2.39,
+      "excess_10_mean_bps": -2.03,
+      "excess_10_hit": 0.5,
+      "raw_20_mean_bps": -0.28,
+      "excess_20_mean_bps": 0.43,
+      "excess_20_hit": 0.542
+    },
+    "VALIDATED_ADVANCE": {
+      "n": 73,
+      "signed": true,
+      "raw_5_mean_bps": 0.65,
+      "excess_5_mean_bps": 0.47,
+      "excess_5_hit": 0.548,
+      "raw_10_mean_bps": 2.46,
+      "excess_10_mean_bps": 2.12,
+      "excess_10_hit": 0.534,
+      "raw_20_mean_bps": 4.27,
+      "excess_20_mean_bps": 3.59,
+      "excess_20_hit": 0.589
+    },
+    "VALIDATED_DECLINE": {
+      "n": 75,
+      "signed": true,
+      "raw_5_mean_bps": -1.48,
+      "excess_5_mean_bps": -1.27,
+      "excess_5_hit": 0.413,
+      "raw_10_mean_bps": -1.76,
+      "excess_10_mean_bps": -1.38,
+      "excess_10_hit": 0.48,
+      "raw_20_mean_bps": -1.46,
+      "excess_20_mean_bps": -0.7,
+      "excess_20_hit": 0.432
+    }
+  }
+}

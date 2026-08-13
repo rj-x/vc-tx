@@ -1,0 +1,53 @@
+# narrate replay uk100fut 2026-08-13 06:30:00+00:00 -> 2026-08-13 15:30:00+00:00 stack 1h/15min/1min (narrative-only=True)
+# convention: bars stamped by CLOSE time; store/TradingView open-time stamp = close - TF
+# state @ window start: 1h: phase=RANGING trend=+0 age=0 atr=10.0 close=10859.3 | 15min: phase=RANGING trend=+1 age=2 atr=4.2 close=10850.1; active hypotheses: none
+06:30Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 3, 'swings_wo_extreme': 153, 'bars_since_extreme': 803, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+06:45Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 4, 'swings_wo_extreme': 153, 'bars_since_extreme': 804, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+07:00Z 15min  SWING_CONFIRMED              {'swing': 'L', 'price': np.float64(10841.6), 'occurred_idx': 2111, 'confirmed_idx': 2114, 'lag_bars': 3}
+07:00Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 154, 'bars_since_extreme': 805, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+07:15Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 154, 'bars_since_extreme': 806, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+07:30Z 15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+07:30Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 154, 'bars_since_extreme': 807, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+07:45Z 15min  SWING_CONFIRMED              {'swing': 'H', 'price': np.float64(10870.6), 'occurred_idx': 2114, 'confirmed_idx': 2117, 'lag_bars': 3}
+07:45Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 155, 'bars_since_extreme': 808, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+08:00Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 155, 'bars_since_extreme': 809, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+08:15Z 15min  SWING_CONFIRMED              {'swing': 'L', 'price': np.float64(10808.6), 'occurred_idx': 2116, 'confirmed_idx': 2119, 'lag_bars': 3}
+08:15Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 810, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+08:30Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 811, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+08:45Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 812, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+09:00Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 813, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+09:15Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 814, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+09:30Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 815, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+09:45Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 156, 'bars_since_extreme': 816, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+10:00Z 15min  SWING_CONFIRMED              {'swing': 'H', 'price': np.float64(10842.1), 'occurred_idx': 2123, 'confirmed_idx': 2126, 'lag_bars': 3}
+10:00Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 0, 'swings_wo_extreme': 157, 'bars_since_extreme': 817, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+10:15Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 1, 'swings_wo_extreme': 157, 'bars_since_extreme': 818, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+10:30Z 15min  SWING_CONFIRMED              {'swing': 'L', 'price': np.float64(10828.3), 'occurred_idx': 2125, 'confirmed_idx': 2128, 'lag_bars': 3}
+10:30Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 819, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+10:45Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 820, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+11:00Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 821, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+11:15Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 822, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+11:30Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 823, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+11:45Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 158, 'bars_since_extreme': 824, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+12:00Z 15min  SWING_CONFIRMED              {'swing': 'H', 'price': np.float64(10849.3), 'occurred_idx': 2131, 'confirmed_idx': 2134, 'lag_bars': 3}
+12:00Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 0, 'swings_wo_extreme': 159, 'bars_since_extreme': 825, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+12:15Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 1, 'swings_wo_extreme': 159, 'bars_since_extreme': 826, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+12:30Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 2, 'swings_wo_extreme': 159, 'bars_since_extreme': 827, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+12:45Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 3, 'swings_wo_extreme': 159, 'bars_since_extreme': 828, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+13:00Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 4, 'swings_wo_extreme': 159, 'bars_since_extreme': 829, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+13:15Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 5, 'swings_wo_extreme': 159, 'bars_since_extreme': 830, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+13:30Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 6, 'swings_wo_extreme': 159, 'bars_since_extreme': 831, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+13:45Z 15min  PHASE_EVAL                   {'trend': 1, 'trend_age': 7, 'swings_wo_extreme': 159, 'bars_since_extreme': 832, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+14:00Z 15min  SWING_CONFIRMED              {'swing': 'L', 'price': np.float64(10814.3), 'occurred_idx': 2139, 'confirmed_idx': 2142, 'lag_bars': 3}
+14:00Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 160, 'bars_since_extreme': 833, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+14:15Z 15min  PHASE_EVAL                   {'trend': 0, 'trend_age': 0, 'swings_wo_extreme': 160, 'bars_since_extreme': 834, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+14:30Z 15min  SWING_CONFIRMED              {'swing': 'H', 'price': np.float64(10835.1), 'occurred_idx': 2141, 'confirmed_idx': 2144, 'lag_bars': 3}
+14:30Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 0, 'swings_wo_extreme': 161, 'bars_since_extreme': 835, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+14:45Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 1, 'swings_wo_extreme': 161, 'bars_since_extreme': 836, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+15:00Z 15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+15:00Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 2, 'swings_wo_extreme': 161, 'bars_since_extreme': 837, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+15:15Z 15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+15:15Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 3, 'swings_wo_extreme': 161, 'bars_since_extreme': 838, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+15:30Z 15min  PHASE_EVAL                   {'trend': -1, 'trend_age': 4, 'swings_wo_extreme': 161, 'bars_since_extreme': 839, 'ranging_if': '>=4sw|>=30b', 'post_climax': False, 'verdict': 'RANGING'}
+# state @ window end: 1h: phase=RANGING trend=-1 age=1 atr=20.0 close=10787.6 | 15min: phase=RANGING trend=-1 age=4 atr=12.5 close=10787.6; active hypotheses: none
+# end of window - uk100fut narrated through 2026-08-13 15:30Z

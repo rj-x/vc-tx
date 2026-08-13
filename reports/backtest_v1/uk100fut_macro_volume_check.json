@@ -1,0 +1,38 @@
+{
+  "n": 8,
+  "median_ratio": 1.02,
+  "per_release": [
+    {
+      "release": "2026-07-14 12:30:00+00:00 USD US CPI (CPI & Core CPI m/m & y/y)",
+      "vol_ratio_vs_same_time_other_sessions": 2.8
+    },
+    {
+      "release": "2026-07-14 14:00:00+00:00 USD Fed Chair Warsh testifies (day 1)",
+      "vol_ratio_vs_same_time_other_sessions": 0.89
+    },
+    {
+      "release": "2026-07-15 12:30:00+00:00 USD US PPI (PPI & Core PPI m/m)",
+      "vol_ratio_vs_same_time_other_sessions": 0.9
+    },
+    {
+      "release": "2026-07-15 14:00:00+00:00 USD Fed Chair Warsh testifies (day 2)",
+      "vol_ratio_vs_same_time_other_sessions": 0.79
+    },
+    {
+      "release": "2026-07-30 11:00:00+00:00 GBP BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)",
+      "vol_ratio_vs_same_time_other_sessions": 1.46
+    },
+    {
+      "release": "2026-07-30 12:00:00+00:00 GBP BoE Gov Bailey speaks",
+      "vol_ratio_vs_same_time_other_sessions": 1.05
+    },
+    {
+      "release": "2026-07-30 12:30:00+00:00 USD US Advance GDP q/q & Core PCE Price Index m/m",
+      "vol_ratio_vs_same_time_other_sessions": 1.43
+    },
+    {
+      "release": "2026-08-03 14:00:00+00:00 USD ISM Manufacturing PMI",
+      "vol_ratio_vs_same_time_other_sessions": 1.0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+utc_time,currency,name
+2026-07-14T12:30:00Z,USD,US CPI (CPI & Core CPI m/m & y/y)
+2026-07-14T14:00:00Z,USD,Fed Chair Warsh testifies (day 1)
+2026-07-14T20:00:00Z,GBP,BoE Gov Bailey speaks
+2026-07-15T12:30:00Z,USD,US PPI (PPI & Core PPI m/m)
+2026-07-15T14:00:00Z,USD,Fed Chair Warsh testifies (day 2)
+2026-07-16T06:00:00Z,GBP,UK GDP m/m
+2026-07-21T06:00:00Z,GBP,UK Claimant Count Change
+2026-07-22T06:00:00Z,GBP,UK CPI y/y
+2026-07-29T18:00:00Z,USD,FOMC rate decision & statement (Federal Funds Rate)
+2026-07-29T18:30:00Z,USD,FOMC press conference
+2026-07-30T11:00:00Z,GBP,BoE rate decision (Bank Rate; MPC votes; Monetary Policy Report & Summary)
+2026-07-30T12:00:00Z,GBP,BoE Gov Bailey speaks
+2026-07-30T12:30:00Z,USD,US Advance GDP q/q & Core PCE Price Index m/m
+2026-08-03T14:00:00Z,USD,ISM Manufacturing PMI
+2026-08-07T12:30:00Z,USD,US Non-Farm Payrolls; Unemployment Rate; Average Hourly Earnings
+2026-08-12T12:30:00Z,USD,US CPI (CPI & Core CPI m/m & y/y)
+2026-08-13T06:00:00Z,GBP,UK GDP m/m & Prelim GDP q/q
+2026-08-13T12:30:00Z,USD,US PPI (PPI & Core PPI m/m)
+2026-08-18T06:00:00Z,GBP,UK Claimant Count Change
+2026-08-19T06:00:00Z,GBP,UK CPI y/y
+2026-08-19T18:00:00Z,USD,FOMC Meeting Minutes

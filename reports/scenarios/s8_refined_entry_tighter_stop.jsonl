@@ -1,0 +1,64 @@
+{"ts": 135, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 150, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 165, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 180, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 195, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 210, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 225, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 240, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 255, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 270, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 285, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 300, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 315, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 330, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 345, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 360, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 375, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 390, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 405, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 420, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 435, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 450, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 465, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 480, "tf": "1h", "type": "PHASE", "phase": "MARKDOWN", "trigger": "swing_structure", "segment": "cash"}
+{"ts": 480, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 495, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 510, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 525, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 540, "tf": "1h", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 540, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 555, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 570, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 585, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 600, "tf": "1h", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash"}
+{"ts": 600, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 615, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 630, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 645, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 660, "tf": "1h", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 660, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 675, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 690, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 705, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 720, "tf": "1h", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 720, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 735, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 750, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 765, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 780, "tf": "1h", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash"}
+{"ts": 780, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 795, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 810, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 825, "tf": "15min", "type": "LABEL", "label": "UPTHRUST", "structural": "UPTHRUST", "segment": "cash"}
+{"ts": 825, "tf": "", "type": "SPAWNED", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "OPEN", "age": 0, "strength": 1.0, "tag": null, "confirm_branch": null, "sig_idx": 54}}
+{"ts": 840, "tf": "1h", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": 840, "tf": "15min", "type": "LABEL", "label": "VALIDATED_DECLINE", "structural": "VALIDATED_DECLINE", "segment": "cash"}
+{"ts": 840, "tf": "", "type": "CONFIRM", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "OPEN", "age": 1, "strength": 1.0, "tag": null, "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "branch": "MIDPOINT_BREAK_VOL_EXPANDING"}
+{"ts": 840, "tf": "", "type": "GATE", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "OPEN", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "permitted": true, "branch": "REV_WITH_TREND"}
+{"ts": 840, "tf": "", "type": "GRADUATED", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "stop_ref": 115.20000000000002, "stop_dist_at_grad": 10.300000000000011}
+{"ts": 840, "tf": "", "type": "REFINEMENT_STARTED", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}}
+{"ts": 841, "tf": "", "type": "TRIGGER_CHECK", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "window_bar": 1, "close_pos": 0.857, "with_direction": false, "hit": false}
+{"ts": 842, "tf": "", "type": "TRIGGER_CHECK", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "window_bar": 2, "close_pos": 0.08, "with_direction": true, "hit": true}
+{"ts": 842, "tf": "", "type": "REFINEMENT_TRIGGERED", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}}
+{"ts": 843, "tf": "", "type": "ENTRY", "entry_ts": 843, "dir": -1, "price": 104.10000000000001, "stop": 107.25, "stop_basis": "exec_local", "signature_stop": 115.20000000000002, "exec_local_stop": 107.25, "tag": "ENTRY_REFINED", "gate_tag": "REV_WITH_TREND", "h": {"id": 1, "spec": "H2", "dir": -1, "state": "GRADUATED", "age": 1, "strength": 1.0, "tag": "REV_WITH_TREND", "confirm_branch": "MIDPOINT_BREAK_VOL_EXPANDING", "sig_idx": 54}, "fill": 103.10000000000001}

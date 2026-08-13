@@ -1,0 +1,11 @@
+{
+  "boundary_utc": "2026-08-04T00:00:00+00:00",
+  "frozen_utc": "2026-08-11",
+  "derivation": "Frozen BEFORE any engine run against real data (prompt Part 8). Accumulated 1M spans at freeze: uk100fut/uk100sep26 2026-07-12 -> 2026-08-11 (30d; boundary leaves 7d = 23% and growing), uk100 2026-07-03 -> (32d span pre-boundary; lockbox 8d = 20%), other CFDs 2026-07-05 ->. Single global boundary across instruments and ALL timeframes (context TFs included - context bars after the boundary would leak lockbox information into decisions).",
+  "rules": [
+    "Working set = bars whose open timestamp is strictly before boundary_utc.",
+    "Everything at/after the boundary - including all future accumulation - is lockbox until the next formal iteration round (prompt Part 8).",
+    "The loader enforces this programmatically; lockbox access requires the explicit lockbox_evaluation flag and is logged. It is evaluated against exactly once, when iteration is declared complete.",
+    "Never hand-inspect lockbox data (risk register item 3)."
+  ]
+}

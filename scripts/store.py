@@ -48,19 +48,30 @@ from paths import DATA_DIR as RAW, CLEAN_DIR as CLEAN
 
 LONDON = "Europe/London"
 
-# cash session in LONDON local hours, per instrument
+# cash session in INSTRUMENT-LOCAL hours (SESSION_TZ; default London).
+# US/gold sessions are defined in America/New_York so the in_cash label is
+# correct through the ~2-3 week windows each year when US and UK DST shifts
+# diverge (the old hardcoded London hours were off by one hour there).
 SESSIONS = {
     "uk100":     (8.0, 16.5),    # FTSE cash 08:00-16:30 London
-    "ger40":     (8.0, 16.5),    # Frankfurt 09:00-17:30 CET == 08:00-16:30 London
-    "us500":     (14.5, 21.0),   # NYSE 09:30-16:00 ET == 14:30-21:00 London
-    "us30":      (14.5, 21.0),
-    "ustech100": (14.5, 21.0),
-    "gold":      (13.0, 21.0),   # COMEX active hours
-    "goldvar":   (13.0, 21.0),
+    "ger40":     (8.0, 16.5),    # Frankfurt 09:00-17:30 CET == 08:00-16:30 London (EU DST aligned)
+    "us500":     (9.5, 16.0),    # NYSE 09:30-16:00 ET
+    "us30":      (9.5, 16.0),
+    "ustech100": (9.5, 16.0),
+    "gold":      (8.0, 16.0),    # COMEX active hours, ET
+    "goldvar":   (8.0, 16.0),
     "eurusd":    (8.0, 21.0),    # London + NY overlap, the liquid window
     "uk100fut":  (8.0, 16.5),    # UK 100 rolling future — trade only in FTSE cash hours
     "uk100sep26": (8.0, 16.5),   # UK 100 Sep-26 outright — roll-verification series
 }
+SESSION_TZ = {
+    "us500": "America/New_York", "us30": "America/New_York",
+    "ustech100": "America/New_York",
+    "gold": "America/New_York", "goldvar": "America/New_York",
+}
+# NOTE: 4h resampling stays anchored to London wall time (lwall); for US
+# instruments its cash-open anchor can drift 1h in DST-divergence weeks —
+# accepted for the 4h reference product, revisit if 4h becomes a traded TF.
 FEED = {"1min": "minute", "15min": "quarter", "1h": "hour", "1d": "day"}
 BAR_MIN = {"1min": 1, "15min": 15, "1h": 60, "4h": 240, "1d": 1440}
 TFS = ["1min", "15min", "1h", "4h", "1d"]
@@ -82,7 +93,12 @@ def _label(df, slug, is_daily=False):
     df["ltime"] = lon.hour + lon.minute / 60.0
     df["ldate"] = lon.normalize().tz_localize(None)
     a, b = SESSIONS[slug]
-    df["in_cash"] = True if is_daily else (df["ltime"] >= a) & (df["ltime"] < b)
+    # in_cash is judged in the INSTRUMENT's own timezone (DST-correct);
+    # lwall/ltime/ldate stay London for cross-instrument comparability
+    tz = SESSION_TZ.get(slug, LONDON)
+    loc = df.index.tz_convert(tz)
+    ltime_local = loc.hour + loc.minute / 60.0
+    df["in_cash"] = True if is_daily else (ltime_local >= a) & (ltime_local < b)
     return df
 
 
@@ -158,6 +174,13 @@ def build_one(slug, verbose=True):
             "median_spread_cash": (round(float(cash["spread"].median()), 4)
                                    if cash["spread"].notna().any() else None),
         }
+        if tf == "1min":
+            age_days = (pd.Timestamp.now(tz="UTC") - df.index.max()) / pd.Timedelta(days=1)
+            stats["stale_1min_days"] = round(float(age_days), 1)
+            if age_days > 5:
+                print(f"  !! STALE: newest 1min bar is {age_days:.1f} days old — "
+                      f"the ~30-day retention floor is eroding unsynced history. "
+                      f"Run scripts/sync_daily.sh.")
         if verbose:
             sp = stats[tf]["median_spread_cash"]
             print(f"  {tf:>6}: {len(df):>7,} bars ({len(cash):>6,} cash) "
@@ -240,6 +263,10 @@ def cmd_build(a):
         rep[s] = build_one(s)
     with open(rp, "w") as f:
         json.dump(rep, f, indent=2, default=str)
+    stale = {s: v["stale_1min_days"] for s, v in rep.items()
+             if v.get("stale_1min_days", 0) > 5}
+    if stale:
+        print(f"\n!! STALE 1min data (days since newest bar): {stale}")
     print(f"\nWrote {CLEAN}/")
 
 

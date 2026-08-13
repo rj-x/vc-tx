@@ -1,0 +1,39 @@
+t=135    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=150    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=165    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=180    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=195    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=210    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=225    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=240    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=255    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=255    15min  PHASE                        {'phase': 'MARKUP', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=270    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=285    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=300    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=315    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=330    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=345    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=360    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=375    15min  LABEL                        {'label': 'ABSORPTION', 'structural': 'ABSORPTION', 'segment': 'cash'}
+t=390    15min  LABEL                        {'label': 'ABSORPTION', 'structural': 'ABSORPTION', 'segment': 'cash'}
+t=390    15min  PULLBACK_EXPANDED            {'max_rel_vol': 1.65}
+t=390           SPAWNED                      [H3#1 LONG s=1.0 OPEN]
+t=405    15min  LABEL                        {'label': 'VALIDATED_ADVANCE', 'structural': 'VALIDATED_ADVANCE', 'segment': 'cash'}
+t=420    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=435    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=450    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=465    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=480    1h     PHASE                        {'phase': 'MARKUP', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=480    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=495    15min  LABEL                        {'label': 'ABSORPTION', 'structural': 'ABSORPTION', 'segment': 'cash'}
+t=495           H3_ZONE_EXTENDED             [H3#1 LONG s=2.0 OPEN] {'zone': [111.10000000000001, 111.8]}
+t=495           BLOCKED_SPAWN                {'spec': 'H3', 'dir': 1}
+t=510    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=525    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    15min  LABEL                        {'label': 'VALIDATED_ADVANCE', 'structural': 'VALIDATED_ADVANCE', 'segment': 'cash'}
+t=540           CONFIRM                      [H3#1 LONG s=2.0 OPEN] {'branch': 'ZONE_BREAKOUT'}
+t=540           GATE                         [H3#1 LONG s=2.0 OPEN] {'permitted': True, 'branch': 'TREND_AGREEMENT'}
+t=540           GRADUATED                    [H3#1 LONG s=2.0 GRADUATED] {'stop_ref': 109.10000000000001, 'stop_dist_at_grad': 5.3999999999999915}
+t=540           ENTRY_SCHEDULED              [H3#1 LONG s=2.0 GRADUATED]

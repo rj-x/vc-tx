@@ -1,0 +1,30 @@
+t=135    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=150    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=165    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=180    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=195    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=210    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=225    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=240    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=255    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=255    15min  PHASE                        {'phase': 'MARKUP', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=270    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=285    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=300    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=315    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=330    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=345    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=360    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=375    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash'}
+t=390    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=405    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=420    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=435    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=450    15min  LABEL                        {'label': 'NO_SUPPLY', 'structural': 'NO_SUPPLY', 'segment': 'cash'}
+t=450           SPAWNED                      [H4#1 LONG s=1.0 OPEN]
+t=465    15min  LABEL                        {'label': 'ABSORPTION', 'structural': 'ABSORPTION', 'segment': 'cash'}
+t=465    15min  PULLBACK_EXPANDED            {'max_rel_vol': 1.64}
+t=465           STRENGTH                     [H4#1 LONG s=0.5 OPEN] {'delta': -0.5}
+t=480    1h     PHASE                        {'phase': 'MARKUP', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=480    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=480           REFUTED                      [H4#1 LONG s=0.5 REFUTED]

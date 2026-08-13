@@ -1,0 +1,15 @@
+{
+  "_comment": "Accepted structural-issue baseline for collect.py validate. Each entry: feed -> {check: max accepted count}. validate fails only on counts ABOVE these. Add entries only after investigating the issue (see DATA.md). uk100fut entries: single 2021-10-07 daily bar (zero-volume era), bid open 0.9pt below low + ask mirror \u2014 derived bid/ask artifact, clamped at build; investigated 2026-08-11.",
+  "uk100_day_bid": {
+    "open_outside_hl": 2
+  },
+  "uk100_day_ask": {
+    "close_outside_hl": 2
+  },
+  "uk100fut_day_bid": {
+    "open_outside_hl": 1
+  },
+  "uk100fut_day_ask": {
+    "close_outside_hl": 1
+  }
+}

@@ -1,0 +1,62 @@
+t=135    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=150    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=165    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=180    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=195    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=210    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=225    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=240    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=255    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=270    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=285    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=300    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=315    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=330    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=345    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=360    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=375    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=390    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=405    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=420    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=435    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=450    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=465    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=480    1h     PHASE                        {'phase': 'MARKDOWN', 'trigger': 'swing_structure', 'segment': 'cash'}
+t=480    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=495    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=510    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=525    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=540    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=555    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=570    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=585    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=600    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=600    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=615    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=630    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=645    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=660    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=660    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=675    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=690    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=705    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=720    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=720    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=735    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=750    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=765    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=780    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash'}
+t=780    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=795    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=810    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=825    15min  LABEL                        {'label': 'UPTHRUST', 'structural': 'UPTHRUST', 'segment': 'cash'}
+t=825           SPAWNED                      [H2#1 SHORT s=1.0 OPEN]
+t=840    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
+t=840    15min  LABEL                        {'label': 'VALIDATED_DECLINE', 'structural': 'VALIDATED_DECLINE', 'segment': 'cash'}
+t=840           CONFIRM                      [H2#1 SHORT s=1.0 OPEN] {'branch': 'MIDPOINT_BREAK_VOL_EXPANDING'}
+t=840           GATE                         [H2#1 SHORT s=1.0 OPEN tag=REV_WITH_TREND] {'permitted': True, 'branch': 'REV_WITH_TREND'}
+t=840           GRADUATED                    [H2#1 SHORT s=1.0 GRADUATED tag=REV_WITH_TREND] {'stop_ref': 115.20000000000002, 'stop_dist_at_grad': 10.300000000000011}
+t=840           ENTRY_SCHEDULED              [H2#1 SHORT s=1.0 GRADUATED tag=REV_WITH_TREND]
+t=855           ENTRY                        [H2#1 SHORT s=1.0 GRADUATED tag=REV_WITH_TREND] {'entry_ts': 855, 'dir': -1, 'price': 104.9, 'stop': 115.20000000000002, 'stop_basis': 'signature', 'signature_stop': 115.20000000000002, 'exec_local_stop': None, 'tag': 'ENTRY_DIRECT', 'gate_tag': 'REV_WITH_TREND', 'fill': 103.9}
+t=855    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}

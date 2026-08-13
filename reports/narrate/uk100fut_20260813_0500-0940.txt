@@ -1,0 +1,7 @@
+# narrate replay uk100fut 2026-08-13 05:00:00+00:00 -> 2026-08-13 09:40:00+00:00 stack 1h/15min/1min (narrative-only=True)
+# 05:00Z-07:00Z pre-cash-open: baseline-only (extended-hours data is outside the v1 engine; cash opens 07:00Z)
+# state @ window start: 1h: phase=RANGING trend=-1 age=0 atr=25.3 close=10829.1 | 15min: phase=RANGING trend=-1 age=3 atr=15.6 close=10829.1; active hypotheses: none
+07:30Z 15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE'}
+08:00Z 1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE'}
+# state @ window end: 1h: phase=RANGING trend=-1 age=2 atr=28.3 close=10837.6 | 15min: phase=RANGING trend=+0 age=0 atr=16.1 close=10832.8; active hypotheses: none
+# end of window - uk100fut narrated through 2026-08-13 09:40Z

@@ -1,0 +1,15 @@
+{
+  "flag_threshold_pts": 3.0,
+  "n_entries": 1,
+  "n_flagged": 0,
+  "entries": [
+    {
+      "variant": "uk100fut_abl_no_gating_2r",
+      "entry_ts": "2026-07-22 09:52:00+00:00",
+      "basis_at_entry": 5.0,
+      "session_median": 5.0,
+      "deviation": 0.0,
+      "flagged": false
+    }
+  ]
+}

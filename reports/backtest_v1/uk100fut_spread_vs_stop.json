@@ -1,0 +1,26 @@
+{
+  "spread_source": "uk100",
+  "median_cash_spread_pts": 0.7999999999992724,
+  "per_spec_and_basis": {
+    "H2 SHORT [signature]": {
+      "n": 1,
+      "spread_pct_of_stop": {
+        "median": 1.6,
+        "p25": 1.6,
+        "p75": 1.6,
+        "max": 1.6
+      },
+      "above_15pct_alarm": 0
+    },
+    "H2 SHORT [entered_exec_local]": {
+      "n": 1,
+      "spread_pct_of_stop": {
+        "median": 4.7,
+        "p25": 4.7,
+        "p75": 4.7,
+        "max": 4.7
+      },
+      "above_15pct_alarm": 0
+    }
+  }
+}

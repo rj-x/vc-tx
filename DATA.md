@@ -92,10 +92,12 @@ rolling series (70152) hops contracts.
 
 ## Operational rules
 
-1. **Sync at least every ~3 weeks** (ideally daily/weekly) or 1M history is
-   permanently lost to the ~30-day retention floor:
-   `venv/bin/python scripts/collect.py sync --instr all`
-   then `scripts/store.py build --instr all && scripts/store.py verify`.
+1. **Sync at least every ~3 weeks** (ideally every trading day) or 1M history
+   is permanently lost to the ~30-day retention floor. One command does the
+   whole pipeline (sync all instruments → status → validate → build →
+   verify, logged to `logs/sync/`): `scripts/sync_daily.sh`.
+   **Run manually by the owner** (scheduling was offered and declined —
+   owner prefers manual runs).
 2. Naming: contract-dated slugs carry month+year (`uk100sep26`), so future
    contracts stay unambiguous.
 3. `store.py build --instr <subset>` merges into `_report.json` (fixed
