@@ -262,6 +262,31 @@ def generate_report():
         a(f"Paper trades to date: **{len(trades)}**"
           + ("" if trades else " (first-session silence is the likely and "
              "correct outcome)"))
+        # RECONCILIATION CHECK (prerequisite of the first-live-trade
+        # verification checklist, register 15): live ENTRY events' embedded
+        # bar data vs settled store rows; divergences flagged
+        import pandas as _pd
+        ents = [e for e in evs if e["event"] == "ENTRY"]
+        flags = 0
+        if ents:
+            from engine.store_loader import load_frame as _lf
+            sf = _lf("uk100fut", "1min", narrative_scope=True,
+                     log_fn=lambda m: None)
+            for e in ents:
+                ts = _pd.Timestamp(e["entry_ts"]) - _pd.Timedelta(minutes=1)
+                if ts in sf.index:
+                    if abs(float(e.get("price", 0)) - float(sf.loc[ts, "open"])) > 1e-9:
+                        flags += 1
+                        a(f"- RECONCILE FLAG: entry {e['entry_ts']} price "
+                          f"{e.get('price')} vs settled open "
+                          f"{sf.loc[ts, 'open']}")
+                else:
+                    flags += 1
+                    a(f"- RECONCILE FLAG: entry {e['entry_ts']} has no "
+                      f"settled store row")
+        a(f"Reconciliation (live-vs-settled): {len(ents)} entries checked, "
+          f"**{flags} flagged**"
+          + ("" if ents else " — check ARMED ahead of first trade"))
     else:
         a("No paper ledger yet.")
     a("")

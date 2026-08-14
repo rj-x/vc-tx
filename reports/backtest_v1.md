@@ -127,8 +127,9 @@ In-cash releases inside the working set: **8** · median volume ratio in [releas
 
 ## FORWARD_PAPER (live paper ledger; forward zone)
 
-go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 1 · NOTE 1 · START 2 · STOP 1
+go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 2 · NOTE 1 · START 2 · STOP 2
 Paper trades to date: **0** (first-session silence is the likely and correct outcome)
+Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARMED ahead of first trade
 
 ## Cadence
 
