@@ -46,6 +46,33 @@ def _led(rec, path=None):
         f.write(json.dumps(rec, default=str) + "\n")
 
 
+def guarded(fn, ledger_path=None):
+    """Loud-death wrapper (World A fix, 2026-08-14): the poll loop must not
+    die silently. Exceptions -> EXECUTOR_ERROR (ledger + stderr), loop
+    continues; a dead witness must announce itself."""
+    try:
+        return True, fn()
+    except KeyboardInterrupt:
+        raise
+    except Exception as e:
+        msg = f"{type(e).__name__}: {e}"
+        print(f"# EXECUTOR_ERROR {msg}", file=sys.stderr)
+        try:
+            _led({"event": "EXECUTOR_ERROR", "error": msg,
+                  "ts": str(pd.Timestamp.now(tz='UTC'))}, ledger_path)
+        except Exception:
+            pass
+        return False, None
+
+
+def expect_prints(ts):
+    """Watchdog calendar: the futures feed prints ~24h except the daily
+    ~21:00-22:10 London pause (and weekends)."""
+    lon = pd.Timestamp(ts).tz_convert("Europe/London")
+    lt = lon.hour + lon.minute / 60.0
+    return lon.dayofweek < 5 and not (21.0 <= lt <= 22.17)
+
+
 def reconcile(ledger_path):
     """Dangling ENTRY without EXIT -> RECONCILE_CLOSE (honest hole)."""
     if not os.path.exists(ledger_path):
@@ -121,17 +148,32 @@ def main():
     partial = []
     session_open = None
     print("# paper loop: 1 poll/min (fut mid + cash bid/ask)", file=sys.stderr)
+    quiet_polls = 0
     try:
         while True:
-            try:
-                fut = collector.fetch_page("minute", "mid", n=10, instr=iid)
-                qb = collector.fetch_page("minute", "bid", n=10, instr=qid)
-                qa = collector.fetch_page("minute", "ask", n=10, instr=qid)
-            except Exception as e:
-                print(f"# poll failed: {e}", file=sys.stderr)
+            ok, pages = guarded(lambda: (
+                collector.fetch_page("minute", "mid", n=10, instr=iid),
+                collector.fetch_page("minute", "bid", n=10, instr=qid),
+                collector.fetch_page("minute", "ask", n=10, instr=qid)))
+            if not ok:
                 time.sleep(60)
                 continue
+            fut, qb, qa = pages
+            if fut is None or len(fut) <= 1 or (
+                    last_ts is not None
+                    and fut.iloc[-2]["time"] + pd.Timedelta(minutes=1) <= last_ts):
+                quiet_polls += 1
+                if quiet_polls >= 5 and expect_prints(pd.Timestamp.now(tz="UTC")):
+                    print(f"# WATCHDOG_STALL: {quiet_polls} polls, no new "
+                          f"bars during expected-printing hours",
+                          file=sys.stderr)
+                    _led({"event": "WATCHDOG_STALL", "quiet_polls": quiet_polls,
+                          "ts": str(pd.Timestamp.now(tz='UTC'))})
+                    quiet_polls = 0
+            else:
+                quiet_polls = 0
             if fut is not None and len(fut) > 1:
+                # (processing exceptions also route through guarded below)
                 # PERSIST-THEN-FEED (2026-08-14 finding): steady-state polls
                 # go through the SAME raw->clean collector path as catch-up
                 # and sync (idempotent, deduped), so warm-from-store always
