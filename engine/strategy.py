@@ -33,7 +33,23 @@ def load_definition(path):
     return d
 
 
+def validate_overrides(cfg, overrides):
+    """Every dotted path must exist in the known config tree — a typo'd
+    override that silently no-ops produces trial-log entries that
+    misdescribe what was tested (lab hardening, 2026-08-14)."""
+    for k in overrides or {}:
+        node = cfg.raw()
+        for part in k.split("."):
+            if not isinstance(node, dict) or part not in node:
+                raise ValueError(
+                    f"unknown config path in config_overrides: '{k}' "
+                    f"(failed at '{part}') - refusing: silent no-op "
+                    f"overrides corrupt the trial log")
+            node = node[part]
+
+
 def apply_definition(cfg, d):
+    validate_overrides(cfg, d.get("config_overrides"))
     for k, v in (d.get("config_overrides") or {}).items():
         cfg = cfg.override(k, v)
     if d.get("exit_scheme"):

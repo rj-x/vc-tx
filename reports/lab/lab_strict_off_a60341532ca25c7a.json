@@ -1,0 +1,19 @@
+{
+  "STAMP": "EXPLORATORY - not validation",
+  "definition": "lab_strict_off",
+  "hash": "a60341532ca25c7a",
+  "mode": "engine",
+  "data": {
+    "sessions": 16,
+    "span": [
+      "2026-07-13 07:00:00+00:00",
+      "2026-08-03 15:29:00+00:00"
+    ]
+  },
+  "metrics": {
+    "overall": {
+      "n": 0
+    }
+  },
+  "trades": []
+}
