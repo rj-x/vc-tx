@@ -313,6 +313,10 @@ def live(args):
         return b
 
     session_open_ts = None
+    hb_every = pd.Timedelta(minutes=getattr(args, "heartbeat_min", 15))
+    last_hb = pd.Timestamp.now(tz="UTC")
+    bars_since_label = 0
+    n_ev = len(engine.narrative.events)
     first_poll = True       # startup catch-up bars would poison the latency
     try:                    # stat (their delay is store staleness, not feed)
         while True:
@@ -334,6 +338,7 @@ def live(args):
                         continue
                     if not first_poll:
                         latencies.append((now - close_ts).total_seconds())
+                    bars_since_label += 1
                     if session_open_ts is None or ts_open.date() != session_open_ts.date():
                         session_open_ts = ts_open
                         sid += 1
@@ -358,6 +363,27 @@ def live(args):
                         emit(e)
                     last_ts = close_ts
             first_poll = False
+            new_ev = engine.narrative.events[n_ev:]
+            n_ev = len(engine.narrative.events)
+            if any(e["type"] == "LABEL" and e.get("label") for e in new_ev):
+                bars_since_label = 0
+            now2 = pd.Timestamp.now(tz="UTC")
+            if now2 - last_hb >= hb_every:
+                last_hb = now2
+                from .segments import segment_of
+                seg = (segment_of(last_ts - pd.Timedelta(minutes=1))
+                       if last_ts is not None else "?")
+                parts = []
+                for pipe in (engine.context_pipe, engine.signal_pipe):
+                    c = pipe.ctx
+                    parts.append(f"{pipe.tf} {c.phase}/{c.trend:+d}"
+                                 if c.idx >= 0 else f"{pipe.tf} warming")
+                px = engine.signal_pipe.ctx.close
+                print(f"# ♥ {now2.strftime('%H:%M')}Z last_bar="
+                      f"{last_ts.strftime('%H:%M') if last_ts is not None else '?'}Z "
+                      f"close={px:.1f} | {' | '.join(parts)} | <{seg}> | "
+                      f"{bars_since_label} bars since last label — alive "
+                      f"and unimpressed", file=sys.stderr)
             time.sleep(60)
     except KeyboardInterrupt:
         pass
@@ -395,6 +421,9 @@ def main():
     ap.add_argument("--narrative-only", action="store_true",
                     help="scoped post-lockbox access: narration only")
     ap.add_argument("--live", action="store_true")
+    ap.add_argument("--heartbeat-min", type=int, default=15,
+                    help="live mode: console state heartbeat interval "
+                         "(cosmetic; no events, no artifacts)")
     args = ap.parse_args()
     if args.live:
         live(args)
