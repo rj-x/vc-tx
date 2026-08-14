@@ -75,8 +75,10 @@ def main():
 
     sys.path.insert(0, os.path.join(ROOT, "scripts"))
     import collect as collector
+    import store as store_mod
     iid = collector.INSTRUMENTS[a.instr]
     qid = collector.INSTRUMENTS[cfg.execution_vehicle.quote_slug]
+    qslug = cfg.execution_vehicle.quote_slug
 
     embargo_fn, eod_fn = session_fns(cfg, a.instr)
     inst = cfg.instruments[a.instr]
@@ -94,6 +96,11 @@ def main():
     cash = trading_sessions(df1, cfg.session_model.trading_day_anchor_london)
     bars = build_all_bars(cfg, cash)
     feed(engine, bars, lambda e: None)
+    if engine.broker.position is not None:
+        engine.broker.position = None
+        _led({"event": "WARM_RESIDUAL_CLEARED",
+              "note": "warm replay left a simulated open position; cleared "
+                      "before live decisions - warm state is context only"})
     last_ts = max((b.ts for b in bars["execution"]), default=None)
     # forward coverage begins at go_live_utc: gap measured from the LATER of
     # (warm_through, go_live); pre-stamp time is zone-irrelevant, not downtime
@@ -125,6 +132,24 @@ def main():
                 time.sleep(60)
                 continue
             if fut is not None and len(fut) > 1:
+                # PERSIST-THEN-FEED (2026-08-14 finding): steady-state polls
+                # go through the SAME raw->clean collector path as catch-up
+                # and sync (idempotent, deduped), so warm-from-store always
+                # equals last-processed. Persist BEFORE the engine sees bars.
+                try:
+                    collector.merge_store("minute", "mid", fut.iloc[:-1],
+                                          a.instr)
+                    if qb is not None and len(qb) > 1:
+                        collector.merge_store("minute", "bid", qb.iloc[:-1],
+                                              qslug)
+                    if qa is not None and len(qa) > 1:
+                        collector.merge_store("minute", "ask", qa.iloc[:-1],
+                                              qslug)
+                    store_mod.build_one(a.instr, verbose=False)
+                    store_mod.build_one(qslug, verbose=False)
+                except Exception as e:
+                    print(f"# PERSIST FAILED (feeding engine anyway; sync "
+                          f"will recover): {e}", file=sys.stderr)
                 for _, r in fut.iloc[:-1].iterrows():
                     close_ts = r["time"] + pd.Timedelta(minutes=1)
                     if last_ts is not None and close_ts <= last_ts:
