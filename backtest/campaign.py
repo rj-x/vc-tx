@@ -318,6 +318,9 @@ def annotate_trades(engine, n=10, window_min=90):
 
 def main(slugs=(SLUG, "uk100")):
     os.makedirs(OUT, exist_ok=True)
+    from backtest.ledger import (hypothesis_rows, signature_moment_rows,
+                                 write_ledger)
+    led_h, led_s = [], []
     summary = {}
     for slug in slugs:
         variants = (VARIANTS if slug == SLUG
@@ -328,6 +331,12 @@ def main(slugs=(SLUG, "uk100")):
             res, engine, cfg = run_variant(name, over, slug)
             summary[key] = res
             grads.extend(stop_records(engine.narrative.events, name))
+            led_h.extend(hypothesis_rows(engine.narrative.events,
+                                         engine.broker.trades,
+                                         cfg.mtf.signal_tf, key))
+            if name == "full_2r":
+                led_s.extend(signature_moment_rows(
+                    engine.narrative.events, cfg.mtf.execution_tf, key))
             with open(os.path.join(OUT, f"{key}.json"), "w") as f:
                 json.dump(res, f, indent=2, default=str)
             if name == "full_2r":
@@ -432,6 +441,21 @@ def main(slugs=(SLUG, "uk100")):
                       if hasattr(fe, "_bins") else {})
             under = sum(1 for n in bins_n.values()
                         if n < cfge.features.min_baseline_obs)
+            from backtest.expansion import expansion_study
+            from engine.resample import exec_bars as _xbars
+            spr = dfq[dfq["in_cash"]]["spread"].median() if "spread" in dfq else None
+            xb = _xbars(_tsess(dfx, cfge.session_model.trading_day_anchor_london))
+            with open(os.path.join(OUT, f"{slug}_expansion_study.json"), "w") as f:
+                json.dump(expansion_study(engx.narrative.events, xb,
+                                          cfge.mtf.execution_tf,
+                                          round(float(spr), 2) if spr == spr else None),
+                          f, indent=2, default=str)
+            led_h.extend(hypothesis_rows(engx.narrative.events, [],
+                                         cfge.mtf.signal_tf,
+                                         f"{slug}_extended_observational"))
+            led_s.extend(signature_moment_rows(engx.narrative.events,
+                                               cfge.mtf.execution_tf,
+                                               f"{slug}_extended_observational"))
             with open(os.path.join(OUT, f"{slug}_extended_label_study.json"),
                       "w") as f:
                 json.dump({"note": "OBSERVATIONAL (Part B) - feeds no "
@@ -448,6 +472,9 @@ def main(slugs=(SLUG, "uk100")):
             with open(os.path.join(OUT, f"{slug}_macro_volume_check.json"),
                       "w") as f:
                 json.dump(macro_volume_check(df1), f, indent=2, default=str)
+    write_ledger(led_h, led_s,
+                 os.path.join(ROOT, "reports", "opportunity_ledger.md"),
+                 os.path.join(ROOT, "reports", "opportunity_ledger.csv"))
     with open(os.path.join(OUT, "summary.json"), "w") as f:
         json.dump(summary, f, indent=2, default=str)
     from backtest.report import generate_report

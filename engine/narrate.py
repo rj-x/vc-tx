@@ -195,12 +195,25 @@ def replay(args):
 
     show_tfs = ({_tf(t.strip()) for t in args.show_tf.split(",")}
                 if args.show_tf else None)
-    emit = make_emitter(args, start, end, show_tfs)
+    emit = (lambda e: None) if args.ledger else make_emitter(
+        args, start, end, show_tfs)
 
     # warmup runs silently up to (exclusive of) the window start
     feed(engine, bars, lambda e: None, upto=start - pd.Timedelta(1, "ns"))
     hdr.write(_state_line(engine, "state @ window start") + "\n")
     feed(engine, bars, emit, lo=start - pd.Timedelta(1, "ns"), upto=end)
+    if args.ledger:
+        import csv as _csv
+        from backtest.ledger import (CSV_COLS, hypothesis_rows,
+                                     signature_moment_rows)
+        evs = [e for e in engine.narrative.events
+               if e["ts"] is not None and start <= pd.Timestamp(e["ts"]) <= end]
+        rows = (hypothesis_rows(evs, [], cfg.mtf.signal_tf, "narrate")
+                + signature_moment_rows(evs, cfg.mtf.execution_tf, "narrate"))
+        w = _csv.DictWriter(sys.stdout, fieldnames=CSV_COLS)
+        w.writeheader()
+        for r in rows:
+            w.writerow(r)
     hdr.write(_state_line(engine, "state @ window end") + "\n")
     hdr.write(f"# end of window - {args.instr} narrated through "
               f"{min(end, max(b.ts for b in bars['execution'])).strftime('%Y-%m-%d %H:%M')}Z\n")
@@ -354,6 +367,9 @@ def main():
     ap.add_argument("--stack", help="CONTEXT/SIGNAL/EXEC, e.g. H1/15M/1M")
     ap.add_argument("--show-tf", help="comma list, e.g. 15M,H1")
     ap.add_argument("--format", choices=("txt", "jsonl"), default="txt")
+    ap.add_argument("--ledger", action="store_true",
+                    help="emit opportunity-ledger CSV rows for the window "
+                         "instead of the narrative stream")
     ap.add_argument("--debug-structure", action="store_true",
                     help="emit SWING_CONFIRMED (k-lag) + per-bar PHASE_EVAL")
     ap.add_argument("--narrative-only", action="store_true",

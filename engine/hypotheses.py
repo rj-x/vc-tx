@@ -54,7 +54,8 @@ class Hypothesis:
         return {"id": self.id, "spec": self.spec, "dir": self.dir,
                 "state": self.state, "age": self.age, "strength": self.strength,
                 "tag": self.tag, "confirm_branch": self.confirm_branch,
-                "sig_idx": self.sig_idx}
+                "sig_idx": self.sig_idx, "sig_extreme": self.sig_extreme,
+                "spawn_segment": getattr(self, "spawn_segment", "cash")}
 
 
 # --------------------------------------------------------------------------
@@ -515,6 +516,8 @@ class HypothesisManager:
         self._hyp_seq += 1
         h.id = self._hyp_seq
         h.observational = e.bar.segment != "cash"    # Part B: never trades
+        h.spawn_segment = e.bar.segment
+        h.spawn_ts = e.bar.ts
         if setup:
             setup(h)
         self.active.append(h)

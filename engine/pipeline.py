@@ -23,16 +23,57 @@ class TFPipeline:
         self.ctx = ContextTracker(cfg, tf)
         self.manager = manager            # Signal TF only
 
-    def on_close(self, bar, ctx_tf=None):
+    def _track_session_extremes(self, bar):
+        st = getattr(self, "_sess", None)
+        if st is None or st["sid"] != bar.session_id:
+            self._sess = {"sid": bar.session_id, "hi": bar.high, "lo": bar.low,
+                          "prior_hi": st["hi"] if st else None,
+                          "prior_lo": st["lo"] if st else None}
+        else:
+            st["hi"] = max(st["hi"], bar.high)
+            st["lo"] = min(st["lo"], bar.low)
+
+    def _location(self, px, signal_ctx):
+        """Nearest of session/prior-session extremes and Signal-TF swing
+        levels; signed distance (px - ref) in pts and Signal-TF ATR.
+        Review-surface enrichment only (opportunity ledger)."""
+        st = getattr(self, "_sess", None)
+        cands = {}
+        if st:
+            cands = {"session_high": st["hi"], "session_low": st["lo"],
+                     "prior_session_high": st["prior_hi"],
+                     "prior_session_low": st["prior_lo"]}
+        if signal_ctx is not None and signal_ctx.levels:
+            lv, _ = signal_ctx.nearest_level(px)
+            cands["signal_swing_level"] = lv
+        cands = {k: v for k, v in cands.items() if v is not None}
+        if not cands:
+            return {}
+        ref = min(cands, key=lambda k: abs(px - cands[k]))
+        d = px - cands[ref]
+        atr = signal_ctx.atr if signal_ctx is not None else None
+        return {"location_ref": ref, "location_level": round(cands[ref], 1),
+                "dist_pts": round(d, 1),
+                "dist_signal_atr": round(d / atr, 2) if atr else None}
+
+    def on_close(self, bar, ctx_tf=None, signal_ctx=None):
         # 1. classify with context AS OF THE PREVIOUS bar's close
         feats = self.fe.update(bar)
         cores, structural, qualified = classify(bar, feats, self.ctx, self.cfg)
+        if signal_ctx is not None:          # exec pipe: session extremes
+            self._track_session_extremes(bar)
         if feats.valid and not bar.is_stub:
             # EVERY classified bar emits a LABEL event (audit completeness);
             # label/structural are null for bars matching no core
+            extra = ({"high": bar.high, "low": bar.low, "close": bar.close}
+                     if qualified else {})
+            if qualified and signal_ctx is not None:
+                px = bar.high if qualified == "UPTHRUST" else (
+                    bar.low if qualified == "SPRING" else bar.close)
+                extra.update(self._location(px, signal_ctx))
             self.narrative.log("LABEL", ts=bar.ts, tf=self.tf,
                                label=qualified, structural=structural,
-                               segment=bar.segment)
+                               segment=bar.segment, **extra)
         # 2. update context (stub bars update context but nothing else)
         n_phase = len(self.ctx.phase_log)
         n_swings = getattr(self.ctx, 'swing_count', 0)
@@ -125,7 +166,8 @@ class MTFEngine:
                 self.broker.on_signal_close(signal_bar, self.context_pipe.ctx,
                                             opposing)
         if exec_bar is not None:
-            self.exec_pipe.on_close(exec_bar)     # observational labels only
+            self.exec_pipe.on_close(exec_bar,     # observational labels only
+                                    signal_ctx=self.signal_pipe.ctx)
             self.broker.set_quote(exec_quote)     # cash leg (cash_cfd mode)
             self.broker.on_exec_bar(exec_bar)     # exits before new entries
             self.router.on_exec_bar(exec_bar)

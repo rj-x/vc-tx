@@ -1,102 +1,142 @@
-# Candidate Hypotheses — Pre-Registered Backlog
+# Candidate Hypotheses — pre-registered, walk-forward entry only
 
-**Status: CANDIDATE — not implemented, not consuming data, walk-forward entry only.**
+**Status: CANDIDATE.** Not implemented. Not consuming data. Entry via
+walk-forward only (standing ruling 1 pathway). **Append-only**; amendments
+logged inline, never silent. Guard: no identifier below may appear in
+`engine/` or `backtest/` before walk-forward (`tests/test_candidate_guard.py`).
 
-These specs are pre-registered: written and dated BEFORE any evidence on them exists,
-so they cannot be unconsciously sculpted to fit data seen later. They were motivated by
-discretionary reads of the 2026-08-13 session (see register items 8–10 and ruling 5's
-diagnostic scope). They enter the system, if ever, through the same pipeline as H1–H5:
-pseudocode restatement, adversarial review, synthetic scenarios, walk-forward evaluation,
-ablation, per-hypothesis reporting. Until then the engine must not reference them.
+Provenance: register items 8-10, ruling 5, ruling 1.
 
-Registered: 2026-08-13.
-
----
-
-## H6 (candidate) — Session-Extreme Rejection — reversal class
-
-**Motivating case:** uk100fut 2026-08-13 06:45Z bar — probe of the Asia high (10870.6),
-13.0-pt spread, close_pos 0.25, upper wick 60%, close back through the bar midpoint.
-Structurally an upthrust; invisible to the current system because (a) it printed pre-cash
-and (b) its spread is 98th percentile day-relative but 15th percentile vs its own
-session-time bin (register item 9).
-
-**Deliberate deviations from the H1–H5 conventions (this is what makes it a new
-hypothesis, not a re-tune):**
-- **Day-relative baselines:** spread/volume thresholds measured against the current
-  session's trailing bars, not session-time bins. (Adjudication of day-relative vs
-  time-of-day-relative detection is register item 9; H6 is the day-relative playbook
-  given trade anatomy.)
-- **Volume-agnostic spawn:** no minimum volume condition. Location + rejection anatomy
-  carry the hypothesis; volume features are logged for later analysis, not gated on.
-- **Extended-hours spawn permitted (observational question):** the motivating case is
-  pre-open. Whether H6 may spawn outside cash (with confirmation/entry inside cash only)
-  is a walk-forward design variant to be tested both ways, not assumed.
-
-**Spawn:** a bar that (a) trades within k × ATR of a registered session extreme
-(prior-day high/low, overnight/Asia high/low, current-session high/low once established),
-(b) probes beyond or to it (bar extreme beyond/at the level), (c) closes back through its
-own midpoint against the probe direction (probe up → close_pos < 0.5; mirror for probes
-down), (d) with day-relative spread ≥ a configurable percentile of the current session's
-trailing bars. The spawning bar is the signature bar. Direction: against the probe.
-
-**Confirm:** within 1–4 bars, a close beyond the signature bar's midpoint in the trade
-direction on any bar that does not violate the refutation; OR a structural
-EFFORTLESS/VALIDATED bar in the trade direction.
-
-**Refute:** close beyond the probed extreme in the probe direction (the "rejection" was
-absorbed and the level broke).
-
-**Stop:** beyond the signature bar's probe extreme ± tick buffer.
-
-**Gate relationship:** reversal class, standard reversal gating (phase agreement /
-RANGING at extremes / POST_CLIMAX match / strict-off branch), REV_WITH_TREND tagging
-applies. Mirror is exact (probe of session low → long).
+Two-layer form (adjudicated 2026-08-13, see amendment log): **FROZEN
+ANATOMY** is fixed now and is what walk-forward tests — it cannot be
+adjusted to fit results without a logged amendment. **FREE PARAMETERS** are
+set at walk-forward under the same tuning protocol as H1-H5 thresholds,
+never hand-picked against the candidates' own motivating window.
 
 ---
 
-## H7 (candidate) — Quiet-Decline Reversal at a Session Extreme — reversal class (long)
+## H6 — Session-extreme rejection (registered 2026-08-13)
 
-**Motivating case:** uk100fut 2026-08-13 07:15Z bar — EFFORTLESS_DECLINE printed into the
-session low (10808.6) on below-baseline volume, immediately preceding a ~40-pt recovery.
-Also consistent with the tracked EFFORTLESS_DECLINE excess signal (−19 bps at n=16,
-non-evidential) and with three qualitative observations to date (register ruling 5 notes).
+Motivation: 2026-08-13 06:56Z Asia-high rejection (v2 parking lot) +
+item 9 (the rejection bar: 98th-pctile spread day-relative, 15th vs its
+session-time bin).
 
-**Relationship to the tracked signal:** H7 IS the tracked EFFORTLESS_DECLINE signal given
-location and trade anatomy. Standing ruling 1 already requires that signal to enter only
-through walk-forward as a candidate hypothesis — H7 is that entry, specified in advance.
+### Frozen anatomy
+- **Class:** REVERSAL · **Direction:** SHORT at a session-high rejection ·
+  **Mirror:** LONG at a session-low rejection (exact sign-flip).
+- **Spawn:** a rejection bar AT a session extreme (prior-session high/low or
+  current-session extreme, within proximity of it): wide spread measured
+  **day-relative** (trailing-window percentile, NOT session-time bins),
+  adverse close (close_pos in the lower region for the short), large upper
+  wick. **No volume condition anywhere** (volume-agnostic).
+- **Confirm:** within the window, a bar that fails to re-approach the
+  rejected extreme AND closes beyond the rejection bar's midpoint in the
+  trade direction. Structural only — no volume condition.
+- **Refute:** close beyond the rejected extreme.
+- **Stop:** beyond the rejection bar's extreme (buffered, H1-H5 convention).
+- **Gate:** standard reversal-class gate (RULES Sec 8), no exemptions.
+- **Deliberate deviations from H1-H5 conventions:** (a) day-relative
+  baselines instead of session-time bins — this IS the item-9 experiment;
+  (b) volume-agnostic spawn and confirm — decouples the signature from the
+  thin-session volume-rescaling question; (c) OPEN VARIANT QUESTION, to be
+  A/B'd at walk-forward, not decided now: extended-hours spawns permitted
+  (observational lineage) vs cash-only.
 
-**Spawn:** one or more EFFORTLESS_DECLINE-class bars (structural core: wide spread down,
-close_pos ≤ 0.2, volume BELOW baseline — the defining quiet-ness condition) whose lows
-sit within k × ATR of a registered session extreme (session low, prior-day low,
-overnight low). Signature bar = the bar making the lowest low of the cluster. Direction:
-long. (Baseline convention — session-time vs day-relative — to be tested as a variant
-under item 9; default session-time for consistency with the tracked signal's definition.)
+### Free parameters (schema; set at walk-forward)
+day-relative spread percentile threshold · trailing window length for the
+day-relative baseline · session-extreme proximity (k x ATR) · spawn
+close_pos threshold · wick_frac minimum · confirm window (bars) · confirm
+midpoint-reclaim margin · "fails to re-approach" distance (k x ATR) ·
+stop buffer.
 
-**Confirm:** within 1–5 bars, an up bar with close_pos > 0.7 closing above the signature
-bar's midpoint; volume re-expansion strengthens but is not required (deliberate: the
-motivating phenomenon is demand absence, not demand climax).
+## H7 — Quiet-decline reversal at session extremes (registered 2026-08-13)
 
-**Refute:** close below the signature bar low on EXPANDING volume (quiet continuation
-lower ages the hypothesis; participative continuation kills it — this asymmetry is the
-hypothesis's core claim and must be tested as-written before being "fixed").
+**The formal walk-forward entry for the tracked EFFORTLESS_DECLINE signal
+(standing ruling 1).** Evidence to date (non-evidential): drift-adjusted
+excess -19 bps at +20 bars, n=16, wrong-way vs label sign. **Identity with
+the tracked signal is frozen:** the spawn signature IS the signal ruling 1
+tracks; H7 enters walk-forward only if that signal survives to powered n,
+and dies unregretted otherwise.
 
-**Stop:** below signature bar low ± tick buffer.
+### Frozen anatomy
+- **Class:** REVERSAL · **Direction:** LONG off quiet declines ·
+  **Mirror:** SHORT off quiet advances (exact sign-flip).
+- **Spawn:** an EFFORTLESS_DECLINE-class print (structural core: wide down
+  bar, weak close, volume at/below normal — NOT high) at/near a session
+  extreme (low side), segment recorded at spawn.
+- **Confirm:** within the window, an up bar reclaiming the decline bar's
+  midpoint. Structural; volume may be reported but is not a condition.
+- **Refute — the falsifiable core, FROZEN VERBATIM: quiet ages,
+  participation kills.** Further quiet declines (volume at/below normal)
+  only AGE the hypothesis toward expiry — they never refute, however far
+  price drifts, until the stop-side structural break. A decline on HIGH
+  volume — participation confirming the down move — REFUTES immediately.
+  This asymmetry is the hypothesis: if quiet weakness at an extreme is
+  disguised accumulation, only participative selling falsifies it.
+- **Additional refutation (structural):** close below the quiet-decline
+  sequence low on any volume.
+- **Stop:** below the quiet-decline sequence low (buffered).
+- **Gate:** standard reversal-class gate, no exemptions.
+- **Deviation from H1-H5 conventions:** none beyond the refutation
+  asymmetry above; otherwise a conventional reversal spec.
 
-**Gate relationship:** reversal class, standard reversal gating, REV_WITH_TREND tagging
-applies. Mirror: Quiet-Rally Fade at a session high (EFFORTLESS_ADVANCE into a session
-extreme on below-baseline volume, short) — exact sign-flip.
+### Free parameters (schema; set at walk-forward)
+"quiet" volume ceiling (rel_volume) · "participative" volume floor
+(rel_volume) · session-extreme proximity (k x ATR) · spawn close_pos and
+spread thresholds · confirm window (bars) · midpoint-reclaim margin ·
+sequence-low definition window · stop buffer · segment conditioning
+(which segments spawn).
 
----
+## H8 — Signature-Moment Expansion Bracket (registered 2026-08-13)
 
-## Rules of the backlog
+Motivating cases (observation-only; **no outcome computation on
+post-boundary data**): the 2026-08-11 10:27Z and 15:47Z register
+annotations — one failed directionally, one worked; both preceded movement.
 
-1. Candidates are append-only and dated. Amendments before evaluation are permitted but
-   must be logged as amendments, never silent edits — the point is receipts.
-2. Nothing here may influence thresholds, gating, tracked-signal handling, or any
-   evidential artifact before walk-forward.
-3. New discretionary observations that survive a week's reflection get drafted into this
-   file in full anatomy, same rules. Impressions without anatomy don't enter.
-4. At walk-forward, candidates compete identically with H1–H5 revisions: pseudocode →
-   adversarial review → synthetic scenarios → evaluation → ablation → per-hypothesis
-   reporting. Dying on paper here is a success mode.
+### Frozen anatomy
+- **Class: DIRECTION-AGNOSTIC (new class).** No mirror needed — the bracket
+  is its own mirror.
+- **Spawn:** an exec-TF (1min) reversal-signature print — UPTHRUST or
+  SPRING **structural core**.
+- **Entry:** OCO bracket — buy stop above the signature bar high + buffer,
+  sell stop below the signature bar low − buffer. On fill, stop at the
+  opposite bracket leg. The un-filled leg **cancels or reverses — variant
+  question, A/B at walk-forward**, not decided now.
+- **Refute/expiry:** neither leg fills within N bars.
+- **Core falsifiable claim, FROZEN VERBATIM: signature-bar anatomy predicts
+  imminent range expansion irrespective of direction.**
+- **Cost warning (embedded at registration):** 1min-scale stops vs the
+  measured spread — bracket width is small multiples of spread; the
+  expansion study states spread in the same point units alongside every
+  readout. H8 dies at walk-forward if expansion does not clear spread.
+- **Evidence instrument:** the expansion event study
+  (`uk100fut_expansion_study.json`) — forward realized range and
+  excursions vs matched same-segment baselines, split by the ledger's
+  location columns — is the evidence this candidate faces at walk-forward.
+
+### Free parameters (schema; set at walk-forward)
+bracket buffer · N (fill window, 1min bars) · R-targets · location
+conditioning (none / within k x ATR of extreme — uses the ledger's
+dist_signal_atr, no parallel location logic) · segment conditioning ·
+double-fill handling.
+
+## Amendment log
+
+- 2026-08-13: file created; H6, H7 registered (intent-only sketches).
+- 2026-08-13: H8 registered directly in two-layer form (post-amendment-1 convention); direction-agnostic class introduced; cost warning embedded at registration.
+- 2026-08-13 — **AMENDMENT 1 (two-layer form).** Original registration was
+  intent-only, on the implementer's rationale that pre-specifying detailed
+  rules with the motivating window fresh would fit the design to the data
+  that motivated it. Owner adjudication: the concern is valid but the
+  remedy overcorrects — "a registration too vague to die isn't
+  pre-registered." Resolution: FROZEN ANATOMY (structure, falsifiable
+  cores, deviations) fixed now; FREE PARAMETERS (all numbers) deferred to
+  walk-forward under the H1-H5 tuning protocol, never tuned against the
+  motivating window. This log entry existing and being used is itself the
+  mechanism working.
+- 2026-08-13 — **META-HISTORY (recorded per owner instruction, alongside
+  amendment 1):** first instance of implementer methodological pushback
+  changing a ruling — the candidate-file design adjudication of 2026-08-13;
+  dissent (intent-only, anecdote-fitting concern) -> counter ("too vague to
+  die isn't pre-registered") -> synthesis (frozen anatomy / free
+  parameters), outcome stronger than either original position.
