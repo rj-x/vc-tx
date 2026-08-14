@@ -133,12 +133,18 @@ mtf:
 
 instruments:
   uk100fut:
+    macro_relevance:               # consume-filtered (capture-all in staging)
+      currencies: [GBP, USD]
+      impacts: [High]
     session_start_london: 8.0      # cash 08:00-16:30 London
     session_end_london: 16.5
     tick_size: 0.5
     point_value: 10.0              # FTSE future £10/point
     auction_exclusion_min: 10      # signature exclusion around open/close
   uk100:
+    macro_relevance:
+      currencies: [GBP, USD]
+      impacts: [High]
     session_start_london: 8.0
     session_end_london: 16.5
     tick_size: 0.1

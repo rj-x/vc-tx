@@ -6,15 +6,17 @@ HARD-FAILS on: schema mismatch, non-Z-suffixed or unparseable timestamps,
 non-monotonic ordering, or the NFP anchor violation (any row whose name
 contains "Non-Farm" must sit at 12:30 or 13:30 UTC — US DST-dependent).
 
-Scope contract (register): timestamps/currency only, red-impact only by
-construction; used for ex-post tagging and the macro-spike volume check
+Scope contract (register, amended 2026-08-14): CAPTURE-ALL at staging,
+CONSUME-FILTERED per instrument config (macro_relevance); live schema
+utc_time,currency,impact,name; used for ex-post tagging and the macro-spike volume check
 exclusively; never engine-facing without clock-gating (actuals are
 post-release information).
 """
 
 import pandas as pd
 
-SCHEMA = ["utc_time", "currency", "name"]
+SCHEMA = ["utc_time", "currency", "impact", "name"]
+IMPACTS = {"High", "Medium", "Low", "Holiday"}
 NFP_ANCHORS = {(12, 30), (13, 30)}
 
 
@@ -27,9 +29,15 @@ def load_and_validate(path, warn_fn=print):
     MacroCalendarError. An empty (header-only) file is valid. Warns (never
     fails) via warn_fn when the newest event is stale (>~10 days)."""
     df = pd.read_csv(path)
-    if list(df.columns) != SCHEMA:
-        raise MacroCalendarError(
-            f"{path}: schema {list(df.columns)} != {SCHEMA}")
+    if list(df.columns)[:4] != SCHEMA:      # staging may carry extras
+        raise MacroCalendarError(           # (forecast/previous); live is lean
+            f"{path}: schema {list(df.columns)[:4]} != {SCHEMA}")
+    if not df.empty:
+        bad = ~df["impact"].isin(IMPACTS)
+        if bad.any():
+            raise MacroCalendarError(
+                f"{path}: invalid impact values: "
+                f"{df.loc[bad, 'impact'].unique().tolist()}")
     if df.empty:
         df["ts"] = pd.Series(dtype="datetime64[ns, UTC]")
         return df

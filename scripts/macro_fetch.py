@@ -39,7 +39,6 @@ from paths import ROOT                              # noqa: E402
 PRIMARY = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
 MIRROR = "https://cdn-nfs.faireconomy.media/ff_calendar_thisweek.json"
 STAGING = os.path.join(ROOT, "data", "macro_releases_staging.csv")
-CURRENCIES = {"GBP", "USD"}
 
 
 def fetch_json(url):
@@ -68,17 +67,19 @@ def main():
         sys.exit("FETCH FAILED on primary and mirror — staging untouched")
 
     rows = []
-    for ev in data:
-        if ev.get("impact") != "High" or ev.get("country") not in CURRENCIES:
-            continue
-        ts = pd.Timestamp(ev["date"])
-        if ts.tzinfo is None:
+    for ev in data:                       # CAPTURE-ALL (2026-08-14): every
+        ts = pd.Timestamp(ev["date"])     # currency and impact is staged;
+        if ts.tzinfo is None:             # consumption filters per instrument
             sys.exit(f"REFUSING offset-less timestamp: {ev} — staging untouched")
         rows.append({"utc_time": ts.tz_convert("UTC").strftime("%Y-%m-%dT%H:%M:%SZ"),
                      "currency": ev["country"],
-                     "name": ev.get("title", "").strip()})
-    new = pd.DataFrame(rows, columns=["utc_time", "currency", "name"])
-    print(f"kept {len(new)} (High, {'/'.join(sorted(CURRENCIES))})")
+                     "impact": ev.get("impact", ""),
+                     "name": ev.get("title", "").strip(),
+                     "forecast": ev.get("forecast", ""),   # staging-only cols;
+                     "previous": ev.get("previous", "")})  # live file stays lean
+    new = pd.DataFrame(rows, columns=["utc_time", "currency", "impact",
+                                      "name", "forecast", "previous"])
+    print(f"captured {len(new)} (all currencies/impacts)")
 
     # upsert into staging on (utc_time, name): fresh rows win, prior weeks kept
     if os.path.exists(STAGING):
@@ -93,8 +94,16 @@ def main():
 
     load_and_validate(STAGING)              # same bar as the live calendar
     print(f"\nStaging: {len(merged)} rows ({len(new)} upserted) -> {STAGING} "
-          f"(validated).\nReview and merge into data/macro_releases.csv by "
-          f"hand — this script never touches the live file.")
+          f"(validated).")
+    print("\nStaged rows by currency/impact (merge-gate view):")
+    for (cur, imp), g in merged.groupby(["currency", "impact"]):
+        print(f"  {cur}/{imp}: {len(g)}")
+        for _, r in g.iterrows():
+            print(f"    {r['utc_time']} {r['name'][:60]}")
+    print("\nReview and merge into data/macro_releases.csv by hand "
+          "(live file schema: utc_time,currency,impact,name — drop "
+          "forecast/previous at merge) — this script never touches the "
+          "live file.")
 
 
 if __name__ == "__main__":

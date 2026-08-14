@@ -2,12 +2,24 @@
   "note": "OBSERVATIONAL - working set only; direction-agnostic; location splits from ledger columns; matched baseline = same-segment trailing-5-bar realized-range quintile, signature bars excluded; chop = both bracket legs (sig extreme +/- 0.5 pt nominal buffer) hit within horizon (double-trigger, the -2R failure mode)",
   "median_spread_pts": 0.8,
   "baseline_same_segment": {
+    "overnight_asia_5": {
+      "mean_range": 5.02,
+      "n": 3000
+    },
+    "overnight_asia_15": {
+      "mean_range": 9.23,
+      "n": 3000
+    },
+    "overnight_asia_30": {
+      "mean_range": 13.62,
+      "n": 3000
+    },
     "post_close_5": {
-      "mean_range": 6.58,
+      "mean_range": 6.62,
       "n": 3000
     },
     "post_close_15": {
-      "mean_range": 11.64,
+      "mean_range": 11.68,
       "n": 3000
     },
     "post_close_30": {
@@ -25,18 +37,6 @@
     "pre_open_30": {
       "mean_range": 36.55,
       "n": 960
-    },
-    "overnight_asia_5": {
-      "mean_range": 4.91,
-      "n": 3000
-    },
-    "overnight_asia_15": {
-      "mean_range": 9.08,
-      "n": 3000
-    },
-    "overnight_asia_30": {
-      "mean_range": 13.5,
-      "n": 3000
     },
     "cash_5": {
       "mean_range": 10.73,

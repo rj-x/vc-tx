@@ -187,7 +187,7 @@ def stop_records(events, variant):
     return out
 
 
-def macro_tags(events, sig_tf):
+def macro_tags(events, sig_tf, relevance=None):
     """News dimension of the funnel: SPAWNED and non-null Signal-TF LABEL
     events within ±15 min of a release vs outside, split by release
     currency. Loads the calendar through validation-on-load (engine.macro);
@@ -196,6 +196,9 @@ def macro_tags(events, sig_tf):
     if not os.path.exists(MACRO_CSV):
         return {"calendar": "absent"}
     cal = load_and_validate(MACRO_CSV)          # raises on any violation
+    if relevance is not None:                   # capture-all, consume-filtered
+        cal = cal[cal["currency"].isin(list(relevance.currencies))
+                  & cal["impact"].isin(list(relevance.impacts))]
     if cal.empty:
         return {"calendar": "empty (validated)"}
     rel = list(zip(cal["ts"], cal["currency"], cal["name"]))
@@ -233,7 +236,8 @@ def macro_tags(events, sig_tf):
             "tagged_detail": detail}
 
 
-def macro_volume_check(df1, sessions_col="session_id", window_min=15):
+def macro_volume_check(df1, sessions_col="session_id", window_min=15,
+                       relevance=None):
     """Risk-register finding 2(b): does volume spike at known release
     timestamps? For each in-cash release inside the working set, the
     [release, release+15min) 1M volume vs the same minutes-of-day averaged
@@ -242,6 +246,9 @@ def macro_volume_check(df1, sessions_col="session_id", window_min=15):
     if not os.path.exists(MACRO_CSV):
         return {"calendar": "absent"}
     cal = load_and_validate(MACRO_CSV)
+    if relevance is not None:
+        cal = cal[cal["currency"].isin(list(relevance.currencies))
+                  & cal["impact"].isin(list(relevance.impacts))]
     cash = df1[df1["in_cash"]].copy()
     if cal.empty or cash.empty:
         return {"n": 0}
@@ -289,7 +296,8 @@ def run_variant(name, overrides, slug=SLUG):
                                                  cfg.mtf.context_tf),
         "spawn_fates": spawn_fates(ev),
         "explicit_zeros": explicit_zeros(ev, engine),
-        "macro_tags": macro_tags(ev, cfg.mtf.signal_tf),
+        "macro_tags": macro_tags(ev, cfg.mtf.signal_tf,
+                                 cfg.instruments[slug].get("macro_relevance")),
         # full trade records: every quantitative report claim must be
         # derivable from logged artifacts (standing rule: reports are
         # generated, not written)
@@ -498,7 +506,9 @@ def main(slugs=(SLUG, "uk100")):
         if slug == SLUG:
             with open(os.path.join(OUT, f"{slug}_macro_volume_check.json"),
                       "w") as f:
-                json.dump(macro_volume_check(df1), f, indent=2, default=str)
+                json.dump(macro_volume_check(
+                    df1, relevance=cfg0.instruments[slug].get("macro_relevance")),
+                    f, indent=2, default=str)
     write_ledger(led_h, led_s,
                  os.path.join(ROOT, "reports", "opportunity_ledger.md"),
                  os.path.join(ROOT, "reports", "opportunity_ledger.csv"))
