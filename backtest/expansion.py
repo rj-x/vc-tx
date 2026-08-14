@@ -15,6 +15,12 @@ HORIZONS = (5, 15, 30)
 NOMINAL_BUFFER_PTS = 0.5    # chop-rate nominal bracket buffer (1 tick), stated
 
 
+_REF_CLASS = {"session_high": "session_extreme", "session_low": "session_extreme",
+              "prior_session_high": "prior_session_extreme",
+              "prior_session_low": "prior_session_extreme",
+              "signal_swing_level": "swing_registry"}
+
+
 def _bucket(d):
     if d is None or d == "":
         return "unknown"
@@ -77,7 +83,8 @@ def expansion_study(events, exec_bars, exec_tf, median_spread_pts):
         i = ts_ix.get(e["ts"])
         if i is None:
             continue
-        key = (e.get("segment", "cash"), _bucket(e.get("dist_signal_atr")))
+        key = (e.get("segment", "cash"), _bucket(e.get("dist_signal_atr")),
+               _REF_CLASS.get(e.get("location_ref"), "unknown"))
         seg = e.get("segment", "cash")
         q = (int(np.searchsorted(quint[seg], vol[i]))
              if seg in quint and vol[i] == vol[i] else None)
@@ -108,14 +115,14 @@ def expansion_study(events, exec_bars, exec_tf, median_spread_pts):
                                   "n": len(vals)} if vals else None
 
     out = {"note": "OBSERVATIONAL - working set only; direction-agnostic; "
-                   "location splits from ledger columns; matched baseline = "
+                   "location splits from ledger columns incl. reference-class (session vs prior-session extremes vs swing registry); matched baseline = "
                    "same-segment trailing-5-bar realized-range quintile, "
                    "signature bars excluded; chop = both bracket legs "
                    f"(sig extreme +/- {NOMINAL_BUFFER_PTS} pt nominal buffer) "
                    "hit within horizon (double-trigger, the -2R failure mode)",
            "median_spread_pts": median_spread_pts,
            "baseline_same_segment": base, "by_segment_and_location": {}}
-    for (seg, buck), ks in sorted(groups.items()):
+    for (seg, buck, refc), ks in sorted(groups.items()):
         entry = {}
         for k, vals in ks.items():
             mr = float(np.mean([v["range"] for v in vals]))
@@ -134,5 +141,5 @@ def expansion_study(events, exec_bars, exec_tf, median_spread_pts):
                 "chop_rate": (round(float(np.mean(chops)), 3)
                               if chops else None),
             }
-        out["by_segment_and_location"][f"{seg} [{buck}]"] = entry
+        out["by_segment_and_location"][f"{seg} [{buck}|{refc}]"] = entry
     return out

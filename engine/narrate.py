@@ -220,7 +220,9 @@ def replay(args):
         evs = [e for e in engine.narrative.events
                if e["ts"] is not None and start <= pd.Timestamp(e["ts"]) <= end]
         rows = (hypothesis_rows(evs, [], cfg.mtf.signal_tf, "narrate")
-                + signature_moment_rows(evs, cfg.mtf.execution_tf, "narrate"))
+                + signature_moment_rows(
+                    evs, cfg.mtf.execution_tf, "narrate",
+                    scope=args.ledger_scope.replace("-", "_")))
         w = _csv.DictWriter(sys.stdout, fieldnames=CSV_COLS)
         w.writeheader()
         for r in rows:
@@ -378,6 +380,11 @@ def main():
     ap.add_argument("--stack", help="CONTEXT/SIGNAL/EXEC, e.g. H1/15M/1M")
     ap.add_argument("--show-tf", help="comma list, e.g. 15M,H1")
     ap.add_argument("--format", choices=("txt", "jsonl"), default="txt")
+    ap.add_argument("--ledger-scope", choices=("signatures", "all-labels"),
+                    default="signatures",
+                    help="section-2 rows: reversal signatures only (default) "
+                         "or every structural label at every running TF "
+                         "(add --ladder for ladder-rung rows)")
     ap.add_argument("--ladder", action="store_true",
                     help="classify and display all ladder rungs (observational)")
     ap.add_argument("--ledger", action="store_true",

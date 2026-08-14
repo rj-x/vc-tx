@@ -97,19 +97,29 @@ def hypothesis_rows(events, trades, sig_tf, variant):
     return out
 
 
-def signature_moment_rows(events, exec_tf, variant):
-    """1min SPRING/UPTHRUST prints — signature moments, not hypotheses."""
+def signature_moment_rows(events, exec_tf, variant, scope="signatures"):
+    """Section-2 rows. scope='signatures' (default): 1min SPRING/UPTHRUST
+    prints. scope='all_labels': EVERY structural label at EVERY running TF
+    (narrate needs --ladder for ladder-rung rows). Not hypotheses."""
     out = []
     for e in events:
-        if (e["type"] == "LABEL" and e.get("tf") == exec_tf
-                and e.get("label") in ("SPRING", "UPTHRUST")):
+        if e["type"] != "LABEL" or not e.get("label"):
+            continue
+        if scope == "signatures":
+            if not (e.get("tf") == exec_tf
+                    and e.get("label") in ("SPRING", "UPTHRUST")):
+                continue
+        if True:
             spring = e["label"] == "SPRING"
             out.append({
                 "timestamp_close_iso": _iso(e["ts"]),
                 "timestamp_open_iso": _open_iso(e["ts"], exec_tf),
-                "marker_type": f"{e['label']}_{exec_tf}_OBSERVATIONAL",
-                "price_level": e.get("low") if spring else e.get("high"),
-                "direction": "LONG" if spring else "SHORT",
+                "marker_type": f"{e['label']}_{e.get('tf')}_OBSERVATIONAL",
+                "price_level": (e.get("low") if spring else
+                                e.get("high") if e["label"] == "UPTHRUST"
+                                else e.get("close")),
+                "direction": ("LONG" if spring else
+                              "SHORT" if e["label"] == "UPTHRUST" else ""),
                 "segment": e.get("segment", "cash"),
                 "outcome": "SIGNATURE_MOMENT", "gate_branch": "",
                 "strength_trajectory": "", "variant": variant,
