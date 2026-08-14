@@ -151,3 +151,27 @@ real bugs.
   register/candidate-file amendment is its own commit (append-only
   discipline gains cryptographic dates); code changes commit per completed
   order with the order's one-line summary.
+
+## Paper executor — long-running invocation (recommended)
+
+```bash
+mkdir -p logs/paper
+caffeinate -is nohup venv/bin/python -m engine.paper --instr uk100fut \
+    >> logs/paper/$(date +%F).log 2>&1 &
+echo $! > logs/paper/paper.pid
+```
+
+- `caffeinate -is` keeps the Mac awake (sleep = coverage gap; gaps are
+  honest holes, never backfilled — but avoidable ones are still downtime).
+- `nohup ... &` detaches from the terminal; stdout/stderr append to a
+  dated log in `logs/paper/` (gitignored with the rest of logs/).
+- Stop cleanly with `kill -INT $(cat logs/paper/paper.pid)` — SIGINT writes
+  the ledger STOP record. A crash/kill without STOP is handled at next
+  start by reconcile (RECONCILE_CLOSE + COVERAGE_GAP, per register 15).
+- Check liveness: `tail -f logs/paper/$(date +%F).log` (one poll/min) or
+  `ps -p $(cat logs/paper/paper.pid)`.
+- After each session: commit the ledger delta
+  (`git add reports/paper/ledger.jsonl && git commit -m "paper: session YYYY-MM-DD"`).
+- Ledger and go-live semantics: reports/paper/ledger.jsonl is append-only;
+  the first-ever start stamped go_live_utc (done 2026-08-14) — restarts
+  never restamp.
