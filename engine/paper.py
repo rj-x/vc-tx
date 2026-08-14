@@ -95,7 +95,12 @@ def main():
     bars = build_all_bars(cfg, cash)
     feed(engine, bars, lambda e: None)
     last_ts = max((b.ts for b in bars["execution"]), default=None)
-    gap = pd.Timestamp.now(tz="UTC") - last_ts if last_ts is not None else None
+    # forward coverage begins at go_live_utc: gap measured from the LATER of
+    # (warm_through, go_live); pre-stamp time is zone-irrelevant, not downtime
+    from .store_loader import zones as _zones
+    _gl = _zones()["go_live"]
+    ref = max([t for t in (last_ts, _gl) if t is not None], default=None)
+    gap = pd.Timestamp.now(tz="UTC") - ref if ref is not None else None
     _led({"event": "START", "ts": str(pd.Timestamp.now(tz='UTC')),
           "warm_through": str(last_ts), "coverage_gap": str(gap),
           "definition": d["name"], "hash": d["_hash"]})

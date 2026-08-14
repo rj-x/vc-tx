@@ -1,0 +1,5 @@
+{"event": "START", "ts": "2026-08-14 15:04:10.773886+00:00", "warm_through": "2026-08-14 08:39:00+00:00", "coverage_gap": "0 days 06:25:10.773859", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "COVERAGE_GAP", "from": "2026-08-14 08:39:00+00:00", "note": "downtime hole - decisions never backfilled"}
+{"event": "STOP", "ts": "2026-08-14 15:05:23.738147+00:00", "last_processed": "2026-08-14 15:05:00+00:00"}
+{"event": "START", "ts": "2026-08-14 15:10:36.176699+00:00", "warm_through": "2026-08-14 15:09:00+00:00", "coverage_gap": "0 days 00:01:36.176676", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "NOTE", "ts": "2026-08-14 15:40:51.956417+00:00", "note": "clarifying (register 2026-08-14): the first START's 6h25m COVERAGE_GAP spans pre-stamp lockbox-zone time (08:39Z->15:04Z); forward coverage begins at go_live_utc - that span is zone-irrelevant, not downtime. Gap logic fixed forward to max(warm_through, go_live_utc)."}

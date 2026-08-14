@@ -6,6 +6,8 @@
     "Working set = bars whose open timestamp is strictly before boundary_utc.",
     "Everything at/after the boundary - including all future accumulation - is lockbox until the next formal iteration round (prompt Part 8).",
     "The loader enforces this programmatically; lockbox access requires the explicit lockbox_evaluation flag and is logged. It is evaluated against exactly once, when iteration is declared complete.",
-    "Never hand-inspect lockbox data (risk register item 3)."
-  ]
+    "Never hand-inspect lockbox data (risk register item 3).",
+    "go_live_utc = paper executor first start; lockbox terminal boundary; forward period (go-live ->) is paper-visible live only, never tunable, excluded from walk-forward training like the lockbox."
+  ],
+  "go_live_utc": "2026-08-14 15:04:09.240421+00:00"
 }

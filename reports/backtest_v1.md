@@ -125,6 +125,11 @@ In-cash releases inside the working set: **8** · median volume ratio in [releas
 4. Context-TF stub bar is context-only per spec.
 5. EFFORTLESS_DECLINE excess signal: tracked-not-acted (register ruling 1); enters only via walk-forward if it survives to powered n.
 
+## FORWARD_PAPER (live paper ledger; forward zone)
+
+go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 1 · NOTE 1 · START 2 · STOP 1
+Paper trades to date: **0** (first-session silence is the likely and correct outcome)
+
 ## Cadence
 
 Daily manual sync (`scripts/sync_daily.sh`); weekly campaign (`venv/bin/python -m backtest.campaign` — regenerates this report); lockbox and thresholds untouched. Next formal checkpoint: first powered drift-adjusted label readout or walk-forward feasibility, whichever first.

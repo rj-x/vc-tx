@@ -18,7 +18,7 @@ from engine.paper import _led, reconcile
 from engine.strategy import load_definition
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DRILL = os.path.join(ROOT, "reports", "paper", "drill", "ledger.jsonl")
+DRILL = os.path.join(ROOT, "reports", "paper", "drill", "drill_ledger.jsonl")
 
 
 def _mk_engine(cfg):
@@ -32,6 +32,8 @@ def _mk_engine(cfg):
 def test_simulated_clock_session_drill(tmp_path):
     if os.path.exists(DRILL):
         os.remove(DRILL)
+    _led({"event": "DRILL_BANNER",
+          "note": "SYNTHETIC DRILL - NOT A LIVE LEDGER"}, DRILL)
     root, _ = _synthetic_clean_store(tmp_path, n_sessions=10)
     cfg = scenario_cfg({
         "features.baseline_mode": "session_time",

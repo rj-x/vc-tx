@@ -52,9 +52,11 @@ class TFPipeline:
         ref = min(cands, key=lambda k: abs(px - cands[k]))
         d = px - cands[ref]
         atr = signal_ctx.atr if signal_ctx is not None else None
-        return {"location_ref": ref, "location_level": round(cands[ref], 1),
-                "dist_pts": round(d, 1),
-                "dist_signal_atr": round(d / atr, 2) if atr else None}
+        return {"location_ref": ref,
+                "location_level": float(round(cands[ref], 1)),
+                "dist_pts": float(round(d, 1)),
+                "dist_signal_atr": (float(round(d / atr, 2))
+                                    if atr else None)}
 
     def on_close(self, bar, ctx_tf=None, signal_ctx=None):
         # 1. classify with context AS OF THE PREVIOUS bar's close
@@ -65,8 +67,9 @@ class TFPipeline:
         if feats.valid and not bar.is_stub:
             # EVERY classified bar emits a LABEL event (audit completeness);
             # label/structural are null for bars matching no core
-            extra = ({"high": bar.high, "low": bar.low, "close": bar.close,
-                      "rel_volume": (round(feats.rel_volume, 2)
+            extra = ({"high": float(bar.high), "low": float(bar.low),
+                      "close": float(bar.close),
+                      "rel_volume": (float(round(feats.rel_volume, 2))
                                      if feats.rel_volume else None)}
                      if qualified else {})
             if qualified and signal_ctx is not None:

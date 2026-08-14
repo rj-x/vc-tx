@@ -245,6 +245,26 @@ def generate_report():
       "(register ruling 1); enters only via walk-forward if it survives to "
       "powered n.")
     a("")
+    import json as _j
+    pl = os.path.join(ROOT, "reports", "paper", "ledger.jsonl")
+    a("## FORWARD_PAPER (live paper ledger; forward zone)")
+    a("")
+    if os.path.exists(pl):
+        evs = [_j.loads(l) for l in open(pl)]
+        c = {}
+        for e in evs:
+            c[e["event"]] = c.get(e["event"], 0) + 1
+        lb = _j.load(open(os.path.join(ROOT, "lockbox.json")))
+        a(f"go_live_utc: **{lb.get('go_live_utc', 'UNSTAMPED')}** · ledger "
+          f"events: " + " · ".join(f"{k} {v}" for k, v in sorted(c.items())))
+        trades = [e for e in evs if e["event"] == "EXIT"
+                  and e.get("tag") == "FORWARD_PAPER"]
+        a(f"Paper trades to date: **{len(trades)}**"
+          + ("" if trades else " (first-session silence is the likely and "
+             "correct outcome)"))
+    else:
+        a("No paper ledger yet.")
+    a("")
     a("## Cadence")
     a("")
     a("Daily manual sync (`scripts/sync_daily.sh`); weekly campaign "
