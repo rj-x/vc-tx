@@ -67,8 +67,9 @@ class TFPipeline:
         if feats.valid and not bar.is_stub:
             # EVERY classified bar emits a LABEL event (audit completeness);
             # label/structural are null for bars matching no core
-            extra = ({"high": float(bar.high), "low": float(bar.low),
-                      "close": float(bar.close),
+            extra = ({"open": float(bar.open), "high": float(bar.high),
+                      "low": float(bar.low), "close": float(bar.close),
+                      "volume": float(bar.volume),
                       "rel_volume": (float(round(feats.rel_volume, 2))
                                      if feats.rel_volume else None)}
                      if qualified else {})

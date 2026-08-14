@@ -149,6 +149,7 @@ def main():
     session_open = None
     print("# paper loop: 1 poll/min (fut mid + cash bid/ask)", file=sys.stderr)
     quiet_polls = 0
+    pending_confirm = {}      # time -> (o,h,l,c,v) from previous poll
     try:
         while True:
             ok, pages = guarded(lambda: (
@@ -192,7 +193,16 @@ def main():
                 except Exception as e:
                     print(f"# PERSIST FAILED (feeding engine anyway; sync "
                           f"will recover): {e}", file=sys.stderr)
+                confirmed, nxt = [], {}
                 for _, r in fut.iloc[:-1].iterrows():
+                    key = (r["open"], r["high"], r["low"], r["close"],
+                           r["volume"])
+                    if pending_confirm.get(r["time"]) == key:
+                        confirmed.append(r)       # two successive polls agree
+                    else:
+                        nxt[r["time"]] = key      # await confirmation
+                pending_confirm = nxt
+                for r in confirmed:
                     close_ts = r["time"] + pd.Timedelta(minutes=1)
                     if last_ts is not None and close_ts <= last_ts:
                         continue

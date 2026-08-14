@@ -31,7 +31,7 @@ t=540    15min  LABEL                        {'label': None, 'structural': None,
 t=555    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=570    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=585    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=600    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 285.6, 'low': 280.6, 'close': 281.0, 'rel_volume': 1.0}
+t=600    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 285.0, 'high': 285.6, 'low': 280.6, 'close': 281.0, 'volume': 100.0, 'rel_volume': 1.0}
 t=600    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=615    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=630    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
@@ -43,31 +43,31 @@ t=690    15min  LABEL                        {'label': None, 'structural': None,
 t=705    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=720    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=720    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=735    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 100.3, 'low': 97.8, 'close': 98.0, 'rel_volume': 1.0}
-t=750    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 98.2, 'low': 95.8, 'close': 96.0, 'rel_volume': 1.0}
-t=765    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash', 'high': 97.7, 'low': 95.9, 'close': 97.5, 'rel_volume': 1.0}
-t=780    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 280.6, 'low': 275.6, 'close': 276.0, 'rel_volume': 1.0}
-t=780    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 97.8, 'low': 95.3, 'close': 95.5, 'rel_volume': 1.0}
-t=795    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 95.7, 'low': 93.3, 'close': 93.5, 'rel_volume': 1.0}
+t=735    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 100.0, 'high': 100.3, 'low': 97.8, 'close': 98.0, 'volume': 100.0, 'rel_volume': 1.0}
+t=750    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 98.0, 'high': 98.2, 'low': 95.8, 'close': 96.0, 'volume': 100.0, 'rel_volume': 1.0}
+t=765    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash', 'open': 96.0, 'high': 97.7, 'low': 95.9, 'close': 97.5, 'volume': 100.0, 'rel_volume': 1.0}
+t=780    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 280.0, 'high': 280.6, 'low': 275.6, 'close': 276.0, 'volume': 100.0, 'rel_volume': 1.0}
+t=780    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 97.5, 'high': 97.8, 'low': 95.3, 'close': 95.5, 'volume': 100.0, 'rel_volume': 1.0}
+t=795    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 95.5, 'high': 95.7, 'low': 93.3, 'close': 93.5, 'volume': 100.0, 'rel_volume': 1.0}
 t=795    15min  PHASE                        {'phase': 'MARKDOWN', 'trigger': 'swing_structure', 'segment': 'cash'}
-t=810    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash', 'high': 95.2, 'low': 93.4, 'close': 95.0, 'rel_volume': 1.0}
-t=825    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 95.3, 'low': 92.8, 'close': 93.0, 'rel_volume': 1.0}
+t=810    15min  LABEL                        {'label': 'EFFORTLESS_ADVANCE', 'structural': 'EFFORTLESS_ADVANCE', 'segment': 'cash', 'open': 93.5, 'high': 95.2, 'low': 93.4, 'close': 95.0, 'volume': 100.0, 'rel_volume': 1.0}
+t=825    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 95.0, 'high': 95.3, 'low': 92.8, 'close': 93.0, 'volume': 100.0, 'rel_volume': 1.0}
 t=840    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=840    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 93.2, 'low': 90.8, 'close': 91.0, 'rel_volume': 1.0}
+t=840    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 93.0, 'high': 93.2, 'low': 90.8, 'close': 91.0, 'volume': 100.0, 'rel_volume': 1.0}
 t=855    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=870    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 92.8, 'low': 90.3, 'close': 90.5, 'rel_volume': 1.0}
-t=885    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 90.7, 'low': 88.3, 'close': 88.5, 'rel_volume': 1.0}
+t=870    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 92.5, 'high': 92.8, 'low': 90.3, 'close': 90.5, 'volume': 100.0, 'rel_volume': 1.0}
+t=885    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 90.5, 'high': 90.7, 'low': 88.3, 'close': 88.5, 'volume': 100.0, 'rel_volume': 1.0}
 t=900    1h     LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=900    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=915    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 90.3, 'low': 87.8, 'close': 88.0, 'rel_volume': 1.0}
+t=915    15min  LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 90.0, 'high': 90.3, 'low': 87.8, 'close': 88.0, 'volume': 100.0, 'rel_volume': 1.0}
 t=930    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=945    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=960    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'high': 275.6, 'low': 270.6, 'close': 271.0, 'rel_volume': 1.0}
+t=960    1h     LABEL                        {'label': 'EFFORTLESS_DECLINE', 'structural': 'EFFORTLESS_DECLINE', 'segment': 'cash', 'open': 275.0, 'high': 275.6, 'low': 270.6, 'close': 271.0, 'volume': 100.0, 'rel_volume': 1.0}
 t=960    15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
-t=975    15min  LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash', 'high': 87.7, 'low': 80.9, 'close': 81.7, 'rel_volume': 3.31}
+t=975    15min  LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash', 'open': 87.4, 'high': 87.7, 'low': 80.9, 'close': 81.7, 'volume': 330.0, 'rel_volume': 3.31}
 t=975    15min  PHASE                        {'phase': 'POST_CLIMAX', 'trigger': 'POTENTIAL_SELLING_CLIMAX', 'direction': 1, 'segment': 'cash'}
 t=975           SPAWNED                      [H1#1 LONG s=1.0 OPEN]
-t=990    15min  LABEL                        {'label': 'TEST', 'structural': 'NO_DEMAND', 'segment': 'cash', 'high': 82.80000000000001, 'low': 81.4, 'close': 82.60000000000001, 'rel_volume': 0.56}
+t=990    15min  LABEL                        {'label': 'TEST', 'structural': 'NO_DEMAND', 'segment': 'cash', 'open': 81.7, 'high': 82.80000000000001, 'low': 81.4, 'close': 82.60000000000001, 'volume': 60.0, 'rel_volume': 0.56}
 t=990           STRENGTH                     [H1#1 LONG s=2.0 OPEN] {'delta': 1.0}
 t=990           CONFIRM                      [H1#1 LONG s=2.0 OPEN] {'branch': 'TEST_OF_SIGNATURE'}
 t=990           GATE                         [H1#1 LONG s=2.0 OPEN] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
@@ -83,7 +83,7 @@ t=1050   15min  LABEL                        {'label': None, 'structural': None,
 t=1050          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
 t=1065   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=1065          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': False, 'branch': 'REVERSAL_BLOCKED'}
-t=1080   1h     LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash', 'high': 267.5, 'low': 243.0, 'close': 246.0, 'rel_volume': 4.0}
+t=1080   1h     LABEL                        {'label': 'POTENTIAL_SELLING_CLIMAX', 'structural': 'SELLING_CLIMAX', 'segment': 'cash', 'open': 267.0, 'high': 267.5, 'low': 243.0, 'close': 246.0, 'volume': 400.0, 'rel_volume': 4.0}
 t=1080   1h     PHASE                        {'phase': 'POST_CLIMAX', 'trigger': 'POTENTIAL_SELLING_CLIMAX', 'direction': 1, 'segment': 'cash'}
 t=1080   15min  LABEL                        {'label': None, 'structural': None, 'segment': 'cash'}
 t=1080          GATE_RECHECK                 [H1#1 LONG s=2.0 CONFIRMED_PENDING_GATE] {'permitted': True, 'branch': 'POST_CLIMAX_MATCH'}

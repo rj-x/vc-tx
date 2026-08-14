@@ -2,37 +2,37 @@
 {"ts": 150, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 165, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 180, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 195, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 102.2, "low": 99.7, "close": 102.0, "rel_volume": 1.0}
-{"ts": 210, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.2, "low": 101.8, "close": 104.0, "rel_volume": 1.0}
-{"ts": 225, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "high": 104.1, "low": 102.3, "close": 102.5, "rel_volume": 1.0}
-{"ts": 240, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.7, "low": 102.2, "close": 104.5, "rel_volume": 1.0}
-{"ts": 255, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 106.7, "low": 104.3, "close": 106.5, "rel_volume": 1.0}
+{"ts": 195, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 100.0, "high": 102.2, "low": 99.7, "close": 102.0, "volume": 100.0, "rel_volume": 1.0}
+{"ts": 210, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 102.0, "high": 104.2, "low": 101.8, "close": 104.0, "volume": 100.0, "rel_volume": 1.0}
+{"ts": 225, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 104.0, "high": 104.1, "low": 102.3, "close": 102.5, "volume": 100.0, "rel_volume": 1.0}
+{"ts": 240, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 102.5, "high": 104.7, "low": 102.2, "close": 104.5, "volume": 100.0, "rel_volume": 1.0}
+{"ts": 255, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 104.5, "high": 106.7, "low": 104.3, "close": 106.5, "volume": 100.0, "rel_volume": 1.0}
 {"ts": 255, "tf": "15min", "type": "PHASE", "phase": "MARKUP", "trigger": "swing_structure", "segment": "cash"}
 {"ts": 270, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 285, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 107.2, "low": 104.7, "close": 107.0, "rel_volume": 1.0}
+{"ts": 285, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 105.0, "high": 107.2, "low": 104.7, "close": 107.0, "volume": 100.0, "rel_volume": 1.0}
 {"ts": 300, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 315, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 330, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 109.7, "low": 107.2, "close": 109.5, "rel_volume": 1.0}
+{"ts": 330, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 107.5, "high": 109.7, "low": 107.2, "close": 109.5, "volume": 100.0, "rel_volume": 1.0}
 {"ts": 345, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 360, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 375, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "high": 111.60000000000001, "low": 111.10000000000001, "close": 111.5, "rel_volume": 1.7}
-{"ts": 390, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "high": 111.60000000000001, "low": 111.10000000000001, "close": 111.5, "rel_volume": 1.65}
+{"ts": 375, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "open": 111.2, "high": 111.60000000000001, "low": 111.10000000000001, "close": 111.5, "volume": 170.0, "rel_volume": 1.7}
+{"ts": 390, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "open": 111.2, "high": 111.60000000000001, "low": 111.10000000000001, "close": 111.5, "volume": 170.0, "rel_volume": 1.65}
 {"ts": 390, "tf": "15min", "type": "PULLBACK_EXPANDED", "max_rel_vol": 1.65}
 {"ts": 390, "tf": "", "type": "SPAWNED", "h": {"id": 1, "spec": "H3", "dir": 1, "state": "OPEN", "age": 0, "strength": 1.0, "tag": null, "confirm_branch": null, "sig_idx": 25, "sig_extreme": 111.10000000000001, "spawn_segment": "cash"}}
-{"ts": 405, "tf": "15min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "high": 111.60000000000001, "low": 108.5, "close": 111.5, "rel_volume": 1.9}
+{"ts": 405, "tf": "15min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "open": 108.60000000000001, "high": 111.60000000000001, "low": 108.5, "close": 111.5, "volume": 200.0, "rel_volume": 1.9}
 {"ts": 420, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 435, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 450, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 465, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 480, "tf": "1h", "type": "PHASE", "phase": "MARKUP", "trigger": "swing_structure", "segment": "cash"}
 {"ts": 480, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 495, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "high": 111.8, "low": 111.2, "close": 111.65, "rel_volume": 1.63}
+{"ts": 495, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "open": 111.3, "high": 111.8, "low": 111.2, "close": 111.65, "volume": 175.0, "rel_volume": 1.63}
 {"ts": 495, "tf": "", "type": "H3_ZONE_EXTENDED", "h": {"id": 1, "spec": "H3", "dir": 1, "state": "OPEN", "age": 7, "strength": 2.0, "tag": null, "confirm_branch": null, "sig_idx": 25, "sig_extreme": 111.10000000000001, "spawn_segment": "cash"}, "zone": [111.10000000000001, 111.8]}
 {"ts": 495, "tf": "", "type": "BLOCKED_SPAWN", "spec": "H3", "dir": 1}
 {"ts": 510, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 525, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 540, "tf": "1h", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 540, "tf": "15min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "high": 114.7, "low": 111.3, "close": 114.5, "rel_volume": 1.69}
+{"ts": 540, "tf": "15min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "open": 111.39999999999999, "high": 114.7, "low": 111.3, "close": 114.5, "volume": 185.0, "rel_volume": 1.69}
 {"ts": 540, "tf": "", "type": "CONFIRM", "h": {"id": 1, "spec": "H3", "dir": 1, "state": "OPEN", "age": 10, "strength": 2.0, "tag": null, "confirm_branch": "ZONE_BREAKOUT", "sig_idx": 25, "sig_extreme": 111.10000000000001, "spawn_segment": "cash"}, "branch": "ZONE_BREAKOUT"}
 {"ts": 540, "tf": "", "type": "GATE", "h": {"id": 1, "spec": "H3", "dir": 1, "state": "OPEN", "age": 10, "strength": 2.0, "tag": null, "confirm_branch": "ZONE_BREAKOUT", "sig_idx": 25, "sig_extreme": 111.10000000000001, "spawn_segment": "cash"}, "permitted": true, "branch": "TREND_AGREEMENT"}
 {"ts": 540, "tf": "", "type": "GRADUATED", "h": {"id": 1, "spec": "H3", "dir": 1, "state": "GRADUATED", "age": 10, "strength": 2.0, "tag": null, "confirm_branch": "ZONE_BREAKOUT", "sig_idx": 25, "sig_extreme": 111.10000000000001, "spawn_segment": "cash"}, "stop_ref": 109.10000000000001, "stop_dist_at_grad": 5.3999999999999915}
