@@ -34,6 +34,36 @@ def lockbox_boundary(root=None):
         return pd.Timestamp(json.load(f)["boundary_utc"])
 
 
+def zones(root=None):
+    """Three-zone model (register item 14): working set (-> boundary,
+    freely simulatable) | lockbox (boundary -> go-live: sealed, finite,
+    exactly one walk-forward evaluation) | forward (go-live ->:
+    paper-visible live only, NEVER tunable; walk-forward training may not
+    consume it). go_live_utc is stamped by the paper executor's first
+    start and is terminal for the lockbox."""
+    path = os.path.join(root, "lockbox.json") if root else LOCKBOX_PATH
+    j = json.load(open(path))
+    return {"working_end": pd.Timestamp(j["boundary_utc"]),
+            "go_live": (pd.Timestamp(j["go_live_utc"])
+                        if j.get("go_live_utc") else None)}
+
+
+def stamp_go_live(ts, root=None):
+    """One-shot terminal boundary: first paper go-live. Never overwrites."""
+    path = os.path.join(root, "lockbox.json") if root else LOCKBOX_PATH
+    j = json.load(open(path))
+    if j.get("go_live_utc"):
+        return j["go_live_utc"]
+    j["go_live_utc"] = str(pd.Timestamp(ts))
+    j.setdefault("rules", []).append(
+        "go_live_utc = paper executor first start; lockbox terminal "
+        "boundary; forward period (go-live ->) is paper-visible live only, "
+        "never tunable, excluded from walk-forward training like the lockbox.")
+    with open(path, "w") as f:
+        json.dump(j, f, indent=2)
+    return j["go_live_utc"]
+
+
 def load_frame(slug, tf, root=None, lockbox_evaluation=False,
                narrative_scope=False, log_fn=print):
     """Clean-store frame for slug/tf, lockbox-filtered by default.

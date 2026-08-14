@@ -180,6 +180,13 @@ class MTFEngine:
                                for d in self.manager.last_confirm_dirs)
                 self.broker.on_signal_close(signal_bar, self.context_pipe.ctx,
                                             opposing)
+            sc = self.signal_pipe.ctx
+            lows = [x for x in sc.swings if x["type"] == "L"]
+            highs = [x for x in sc.swings if x["type"] == "H"]
+            self.broker.signal_state = {
+                "atr": sc.atr,
+                "swings": {"low": lows[-1]["price"] if lows else None,
+                           "high": highs[-1]["price"] if highs else None}}
         if exec_bar is not None:
             self.exec_pipe.on_close(exec_bar,     # observational labels only
                                     signal_ctx=self.signal_pipe.ctx)

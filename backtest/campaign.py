@@ -33,11 +33,9 @@ MACRO_CSV = os.path.join(ROOT, "data", "macro_releases.csv")
 
 SLUG = "uk100fut"
 
-BASE_OVERRIDES = {
-    "features.baseline_mode": "session_time",
-    "features.baseline_sessions": 8,        # FLAG: spec default 20; data poverty
-    "features.min_baseline_obs": 5,         # FLAG: idem — warmup = exactly 5 sessions
-}
+from engine.strategy import load_definition as _loaddef
+_FROZEN = _loaddef(os.path.join(ROOT, "definitions", "frozen_v1.yaml"))
+BASE_OVERRIDES = dict(_FROZEN["config_overrides"])   # pure refactor; pinned
 
 VARIANTS = {
     "full_1r": {"trade.exit_mode": "fixed_r", "trade.r_target": 1.0},

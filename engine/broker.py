@@ -24,6 +24,8 @@ fills at the (worse) open.
 
 LONG, SHORT = 1, -1
 
+from .exits import ExitScheme
+
 
 class Broker:
     def __init__(self, cfg, narrative, eod_fn=None, point_value=1.0,
@@ -45,6 +47,13 @@ class Broker:
         self.trades = []
         self.skipped_size = 0
         self.current_quote = None       # cash-leg 1M quote {o,h,l,c,spread}
+        self.scheme = ExitScheme(cfg.trade.get("exit_scheme",
+                                 {"name": cfg.trade.exit_mode
+                                  if cfg.trade.exit_mode == "fixed_points"
+                                  else "r_multiple",
+                                  "r": cfg.trade.get("r_target", 2.0)}),
+                                 tick=tick_size)
+        self.signal_state = {"atr": None, "swings": {}}   # for atr/swing schemes
 
     # ------------------------------------------------------------- quotes
 
@@ -101,7 +110,7 @@ class Broker:
             "entry_ts": entry["entry_ts"], "stop": stop_cash,
             "stop_dist": stop_dist, "stake": stake, "contracts": None,
             "basis_at_entry": basis,
-            "target": (fill + d * t.r_target * stop_dist
+            "target": (self.scheme.target(d, fill, stop_cash)
                        if t.exit_mode == "fixed_r" else None),
             "signal_bars_held": 0, "exit_pending": None, "meta": entry,
         }
@@ -130,8 +139,8 @@ class Broker:
             "entry_ts": entry["entry_ts"], "stop": entry["stop"],
             "stop_dist": stop_dist, "contracts": contracts, "stake": None,
             "basis_at_entry": None,
-            "target": (fill + r if d == LONG else fill - r)
-            if t.exit_mode == "fixed_r" else None,
+            "target": (self.scheme.target(d, fill, entry["stop"])
+                       if t.exit_mode == "fixed_r" else None),
             "signal_bars_held": 0, "exit_pending": None, "meta": entry,
         }
         return True
@@ -159,6 +168,12 @@ class Broker:
         if p["exit_pending"] is not None:
             self._close(bar.ts, o, p["exit_pending"], raw=True)
             return
+        new_stop = self.scheme.update_stop(p, hi, lo,
+                                           self.signal_state["atr"],
+                                           self.signal_state["swings"])
+        if new_stop != p["stop"]:
+            p["stop"] = new_stop
+            self._log("STOP_TRAILED", bar.ts, stop=round(new_stop, 2))
         if (d == LONG and o <= p["stop"]) or (d == SHORT and o >= p["stop"]):
             self._close(bar.ts, o, "STOP_GAP", raw=True)
             return

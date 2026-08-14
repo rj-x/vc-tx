@@ -1,0 +1,15 @@
+# Definition #1 — THE FROZEN CONFIG, expressed in the strategy schema.
+# Pure refactor of the campaign's standing overrides: bit-identical campaign
+# pin required (tests/test_frozen_pin.py). Never fitted.
+name: frozen_v1
+mode: engine            # full hypothesis/gating pipeline (H1-H5 per RULES)
+config_overrides:
+  features.baseline_mode: session_time
+  features.baseline_sessions: 8      # FLAG: data poverty (spec 20)
+  features.min_baseline_obs: 5
+exit_scheme:
+  name: r_multiple
+  r: 2.0
+  stop: {name: beyond_signature_n}
+risk:
+  risk_frac: 0.01
