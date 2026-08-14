@@ -23,6 +23,13 @@ def load_definition(path):
     d["_hash"] = hashlib.sha256(open(path, "rb").read()).hexdigest()[:16]
     if d["mode"] not in ("engine", "signal_rules"):
         raise ValueError(f"unknown mode {d['mode']}")
+    for r in d.get("rules") or []:
+        for c in r.get("all", []):
+            if c.get("type") == "migration":
+                raise NotImplementedError(
+                    "migration conditions are a v1.1 STUB (snapshot wiring "
+                    "pending) - definitions using them are refused until "
+                    "wired; see register item 14")
     return d
 
 

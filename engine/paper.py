@@ -39,10 +39,28 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER = os.path.join(ROOT, "reports", "paper", "ledger.jsonl")
 
 
-def _led(rec):
-    os.makedirs(os.path.dirname(LEDGER), exist_ok=True)
-    with open(LEDGER, "a") as f:
+def _led(rec, path=None):
+    path = path or LEDGER
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a") as f:
         f.write(json.dumps(rec, default=str) + "\n")
+
+
+def reconcile(ledger_path):
+    """Dangling ENTRY without EXIT -> RECONCILE_CLOSE (honest hole)."""
+    if not os.path.exists(ledger_path):
+        return 0
+    entries = [json.loads(l) for l in open(ledger_path)]
+    closes = {e.get("entry_ts") for e in entries if e.get("event") == "EXIT"}
+    n = 0
+    for e in entries:
+        if e.get("event") == "ENTRY" and e["entry_ts"] not in closes:
+            _led({"event": "RECONCILE_CLOSE", "entry_ts": e["entry_ts"],
+                  "note": "position open at crash/restart; closed on "
+                          "reconcile - honest hole, not a backfilled decision",
+                  "ts": str(pd.Timestamp.now(tz='UTC'))}, ledger_path)
+            n += 1
+    return n
 
 
 def main():
@@ -67,16 +85,7 @@ def main():
                        point_value=inst.point_value)
 
     # reconcile any open position from a prior run
-    if os.path.exists(LEDGER):
-        entries = [json.loads(l) for l in open(LEDGER)]
-        opens = [e for e in entries if e.get("event") == "ENTRY"]
-        closes = {e.get("entry_ts") for e in entries if e.get("event") == "EXIT"}
-        dangling = [e for e in opens if e["entry_ts"] not in closes]
-        for e in dangling:
-            _led({"event": "RECONCILE_CLOSE", "entry_ts": e["entry_ts"],
-                  "note": "position open at crash/restart; closed on "
-                          "reconcile - honest hole, not a backfilled decision",
-                  "ts": str(pd.Timestamp.now(tz='UTC'))})
+    reconcile(LEDGER)
 
     # warm from store (working+lockbox+forward all visible to a LIVE
     # process — paper is the forward zone's only legitimate consumer)
