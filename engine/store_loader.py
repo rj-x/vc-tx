@@ -25,7 +25,7 @@ CLEAN_DIR = os.path.join(ROOT, "clean_finsa")
 LOCKBOX_PATH = os.path.join(ROOT, "lockbox.json")
 
 TF_MINUTES = {"1min": 1, "3min": 3, "5min": 5, "10min": 10, "15min": 15,
-              "30min": 30, "1h": 60, "4h": 240, "1d": 1440}
+              "30min": 30, "1h": 60, "4h": 240, "1d": 1440}  # "ladder:<tf>" keys resolve via split
 
 
 def lockbox_boundary(root=None):
@@ -76,7 +76,8 @@ class ClockGatedFeed:
             if not df.index.is_monotonic_increasing:
                 raise ValueError(f"{tf}: frame must be sorted by time")
             self._frames[tf] = df
-            self._close_ts[tf] = df.index + pd.Timedelta(minutes=TF_MINUTES[tf])
+            self._close_ts[tf] = df.index + pd.Timedelta(
+                minutes=TF_MINUTES[tf.split(":")[-1]])
             self._cursor[tf] = 0
         self._clock = None
 

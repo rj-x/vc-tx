@@ -15,7 +15,7 @@ from engine.resample import (cash_sessions, exec_bars, resample_bars,
                              trading_sessions)
 from engine.store_loader import ClockGatedFeed, load_frame
 
-_TFMIN = {"1min": 1, "15min": 15, "30min": 30, "1h": 60}
+_TFMIN = {"1min": 1, "3min": 3, "5min": 5, "15min": 15, "30min": 30, "1h": 60}
 
 
 def session_fns(cfg, slug):
@@ -48,6 +48,12 @@ def build_bars(cfg, slug, root=None, lockbox_evaluation=False):
         sig_tf: resample_bars(cash, _TFMIN[sig_tf], sig_tf),
         ctx_tf: resample_bars(cash, _TFMIN[ctx_tf], ctx_tf),
     }
+    if cfg.session_model.get("ladder"):
+        for tf, m in (("3min", 3), ("5min", 5), ("30min", 30),
+                      ("1min", 1), ("15min", 15), ("1h", 60)):
+            if tf not in bars:
+                bars["ladder:" + tf] = (exec_bars(cash, tf=tf) if m == 1
+                                        else resample_bars(cash, m, tf))
     n_sessions = cash["session_id"].nunique()
     span = (cash.index.min(), cash.index.max())
     return bars, {"sessions": n_sessions, "span": span, "rows_1m": len(cash)}
@@ -85,7 +91,7 @@ def run_backtest(cfg, slug, root=None, lockbox_evaluation=False):
         # each bar at close - tf_minutes: visibility lands EXACTLY at the
         # bar's true close, stub bars included (their nominal slot may be
         # longer than their true duration; the close is what matters).
-        delta = pd.Timedelta(minutes=_TFMIN[tf])
+        delta = pd.Timedelta(minutes=_TFMIN[tf.split(":")[-1]])
         idx = pd.DatetimeIndex([b.ts - delta for b in blist])
         frames[tf] = pd.DataFrame({"i": range(len(blist))}, index=idx)
         barmap[tf] = {b.ts: b for b in blist}
@@ -94,14 +100,16 @@ def run_backtest(cfg, slug, root=None, lockbox_evaluation=False):
     cursors = {tf: 0 for tf in frames}
     exec_tf = cfg.mtf.execution_tf
     clock_steps = sorted({b.ts for b in bars[exec_tf]})
-    order = [cfg.mtf.context_tf, cfg.mtf.signal_tf, exec_tf]
+    order = ([cfg.mtf.context_tf]
+             + [k for k in frames if k.startswith("ladder:")]
+             + [cfg.mtf.signal_tf, exec_tf])
     for ts in clock_steps:
         feed.advance_to(ts)
         closed = {}
         for tf in order:
             rows, cursors[tf] = feed.newly_closed(tf, cursors[tf])
             if len(rows):
-                delta = pd.Timedelta(minutes=_TFMIN[tf])
+                delta = pd.Timedelta(minutes=_TFMIN[tf.split(":")[-1]])
                 closed[tf] = [barmap[tf][i + delta] for i in rows.index]
         # feed every newly closed bar; same-ts bars go in one process() call
         kw = {}
@@ -111,6 +119,10 @@ def run_backtest(cfg, slug, root=None, lockbox_evaluation=False):
             kw["signal_bar"] = closed[cfg.mtf.signal_tf][-1]
         if closed.get(exec_tf):
             kw["exec_bar"] = closed[exec_tf][-1]
+        lb = {k.split(":")[1]: v[-1] for k, v in closed.items()
+              if k.startswith("ladder:")}
+        if lb:
+            kw["ladder_bars"] = lb
         if kw:
             if "exec_bar" in kw:
                 kw["exec_quote"] = qmap.get(ts)

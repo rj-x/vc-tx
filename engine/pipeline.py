@@ -65,7 +65,9 @@ class TFPipeline:
         if feats.valid and not bar.is_stub:
             # EVERY classified bar emits a LABEL event (audit completeness);
             # label/structural are null for bars matching no core
-            extra = ({"high": bar.high, "low": bar.low, "close": bar.close}
+            extra = ({"high": bar.high, "low": bar.low, "close": bar.close,
+                      "rel_volume": (round(feats.rel_volume, 2)
+                                     if feats.rel_volume else None)}
                      if qualified else {})
             if qualified and signal_ctx is not None:
                 px = bar.high if qualified == "UPTHRUST" else (
@@ -147,14 +149,27 @@ class MTFEngine:
         # OBSERVATIONAL instrumentation — labels emitted, nothing consumes
         # them (no manager); closes the Part 5 identical-pipeline deviation
         self.exec_pipe = TFPipeline(cfg, cfg.mtf.execution_tf, self.narrative)
+        # TF-ladder observational classification (2026-08-14): classifier +
+        # context only, no hypothesis manager, structurally (item-10 scoping)
+        self.ladder_pipes = {}
+        if cfg.session_model.get("ladder"):
+            stack = {ctx_tf, sig_tf, cfg.mtf.execution_tf}
+            for tf in ("1h", "30min", "15min", "5min", "3min", "1min"):
+                if tf not in stack:
+                    self.ladder_pipes[tf] = TFPipeline(cfg, tf, self.narrative)
         self.manager = manager
 
     def process(self, ts, context_bar=None, signal_bar=None, exec_bar=None,
-                exec_quote=None):
+                exec_quote=None, ladder_bars=None):
         """All bars passed must close at `ts`. Descending TF order:
-        context -> signal -> execution."""
+        context -> ladder (descending, observational) -> signal -> execution."""
         if context_bar is not None:
             self.context_pipe.on_close(context_bar)
+        if ladder_bars:
+            for tf in ("1h", "30min", "15min", "5min", "3min", "1min"):
+                b = ladder_bars.get(tf)
+                if b is not None and tf in self.ladder_pipes:
+                    self.ladder_pipes[tf].on_close(b)
         if signal_bar is not None:
             # scheduled direct entries execute at the NEXT signal bar's open,
             # i.e. when that bar arrives — before its close is processed

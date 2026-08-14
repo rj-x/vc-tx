@@ -104,6 +104,13 @@ session_model:                     # Part B extended-hours instrumentation
   extended_hours: false            # evidential path stays cash-only; the
                                    # observational run + narrate set true
   trading_day_anchor_london: 21.5  # futures trading-day boundary (~21:30)
+  ladder: false                    # TF-ladder observational classification
+                                   # (observational run + narrate --ladder)
+
+migration:                         # migration-event definition (observational)
+  min_child_labels: 2              # (a) persistence: >=N same-dir child labels
+  recruitment_floor: 1.2           # (c) parent rel_volume >= floor
+
 
 trade:                             # Part 7
   starting_equity: 100000.0

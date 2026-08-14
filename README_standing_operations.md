@@ -137,3 +137,17 @@ The system is designed to fail loudly and specifically. Match the signal, don't 
 
 The last row is not a joke. Suspicion scales with beauty; that ruling has already caught
 real bugs.
+
+## Version control (standing discipline, adopted 2026-08-14)
+
+- Tracked: code, config, RULES/prompt/docs, register & candidate files, and
+  GENERATED report artifacts (`reports/`) — the JSONs and md reports are
+  evidence, not build products; their history is the point.
+- Excluded: raw/clean data stores and logs. **Retention caveat:** the
+  minute feed has a ~30-day rolling floor — the stores are reproducible via
+  sync only within retention; history deepens only by syncing (see DATA.md).
+- Rules: every campaign run's artifact changes are committed (the
+  week-over-week diff of generated artifacts is itself a diagnostic); every
+  register/candidate-file amendment is its own commit (append-only
+  discipline gains cryptographic dates); code changes commit per completed
+  order with the order's one-line summary.

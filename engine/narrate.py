@@ -60,6 +60,8 @@ def build_cfg(args):
     for k, v in BASE_OVERRIDES.items():
         cfg = cfg.override(k, v)
     cfg = cfg.override("session_model.extended_hours", True)   # Part B default
+    if getattr(args, "ladder", False):
+        cfg = cfg.override("session_model.ladder", True)
     if getattr(args, "debug_structure", False):
         cfg = cfg.override("debug.structure", True)
     if args.stack:
@@ -82,8 +84,14 @@ def make_bars(cfg, cash, tf):
 
 
 def build_all_bars(cfg, cash):
-    return {role: make_bars(cfg, cash, getattr(cfg.mtf, f"{role}_tf"))
-            for role in ("context", "signal", "execution")}
+    out = {role: make_bars(cfg, cash, getattr(cfg.mtf, f"{role}_tf"))
+           for role in ("context", "signal", "execution")}
+    if cfg.session_model.get("ladder"):
+        stack = {getattr(cfg.mtf, f"{r}_tf") for r in out}
+        for tf in ("1min", "3min", "5min", "15min", "30min", "1h"):
+            if tf not in stack:
+                out["ladder:" + tf] = make_bars(cfg, cash, tf)
+    return out
 
 
 def feed(engine, bars, emit, lo=None, upto=None):
@@ -92,7 +100,7 @@ def feed(engine, bars, emit, lo=None, upto=None):
     enforced inside), emitting each new narrative event via `emit`.
     Bars with lo < ts <= upto are fed (None = unbounded)."""
     merged = {}
-    for role in ("context", "signal", "execution"):
+    for role in bars:
         for b in bars.get(role, []):
             if upto is not None and b.ts > upto:
                 continue
@@ -102,9 +110,12 @@ def feed(engine, bars, emit, lo=None, upto=None):
     n_seen = len(engine.narrative.events)
     for ts in sorted(merged):
         slot = merged[ts]
+        lb = {k.split(":")[1]: v for k, v in slot.items()
+              if k.startswith("ladder:")}
         engine.process(ts, context_bar=slot.get("context"),
                        signal_bar=slot.get("signal"),
-                       exec_bar=slot.get("execution"))
+                       exec_bar=slot.get("execution"),
+                       ladder_bars=lb or None)
         for e in engine.narrative.events[n_seen:]:
             emit(e)
         n_seen = len(engine.narrative.events)
@@ -367,6 +378,8 @@ def main():
     ap.add_argument("--stack", help="CONTEXT/SIGNAL/EXEC, e.g. H1/15M/1M")
     ap.add_argument("--show-tf", help="comma list, e.g. 15M,H1")
     ap.add_argument("--format", choices=("txt", "jsonl"), default="txt")
+    ap.add_argument("--ladder", action="store_true",
+                    help="classify and display all ladder rungs (observational)")
     ap.add_argument("--ledger", action="store_true",
                     help="emit opportunity-ledger CSV rows for the window "
                          "instead of the narrative stream")

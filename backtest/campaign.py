@@ -428,7 +428,8 @@ def main(slugs=(SLUG, "uk100")):
         if slug == SLUG:
             # Part B: observational extended-hours run (structurally
             # narrative-only outside cash; evidential path above untouched)
-            cfge = make_cfg({"session_model.extended_hours": True})
+            cfge = make_cfg({"session_model.extended_hours": True,
+                             "session_model.ladder": True})
             engx, infox = run_backtest(cfge, slug)
             from engine.resample import trading_sessions as _tsess
             dfx = load_frame(slug, "1min")
@@ -450,6 +451,32 @@ def main(slugs=(SLUG, "uk100")):
                                           cfge.mtf.execution_tf,
                                           round(float(spr), 2) if spr == spr else None),
                           f, indent=2, default=str)
+            from backtest.migration import migration_events, migration_study, LADDER
+            mev = migration_events(engx.narrative.events, cfge)
+            bx15 = bx
+            with open(os.path.join(OUT, f"{slug}_migration.json"), "w") as f:
+                json.dump({"log": [{k: str(v) if isinstance(v, pd.Timestamp)
+                                    else v for k, v in e.items()}
+                                   for e in mev],
+                           "study": migration_study(mev, bx15)},
+                          f, indent=2, default=str)
+            ladder_out = {"nesting_caveat": "higher-TF labels are "
+                          "compositions of lower-TF bars, not independent "
+                          "confirmations; NEVER pool across TFs"}
+            xcash = _tsess(dfx, cfge.session_model.trading_day_anchor_london)
+            from engine.resample import exec_bars as _eb2
+            for tf in LADDER:
+                m = {"1min": 1, "3min": 3, "5min": 5, "15min": 15,
+                     "30min": 30, "1h": 60}[tf]
+                btf = _eb2(xcash, tf) if m == 1 else resample_bars(xcash, m, tf)
+                ladder_out[tf] = {
+                    "study": label_event_study(engx.narrative.events, btf, tf),
+                    "bins": {"n_bins": len(getattr(
+                        engx.ladder_pipes.get(tf, engx.signal_pipe).fe,
+                        "_bins", {}))}}
+            with open(os.path.join(OUT, f"{slug}_ladder_label_studies.json"),
+                      "w") as f:
+                json.dump(ladder_out, f, indent=2, default=str)
             led_h.extend(hypothesis_rows(engx.narrative.events, [],
                                          cfge.mtf.signal_tf,
                                          f"{slug}_extended_observational"))

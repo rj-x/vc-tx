@@ -120,9 +120,40 @@ conditioning (none / within k x ATR of extreme — uses the ledger's
 dist_signal_atr, no parallel location logic) · segment conditioning ·
 double-fill handling.
 
+## H9 — Timeframe-Pressure Migration (registered 2026-08-14)
+
+Motivating observation: discretionary week-review hypothesis of 2026-08-14
+(narrative-only; no outcome computation on post-boundary data).
+
+### Frozen anatomy
+- **Class: DIRECTION-FOLLOWS-PRESSURE (new).** Direction = the migration
+  chain's direction; no separate mirror (the chain signs itself).
+- **Spawn:** a completed migration chain (per the migration-event
+  definition: persistence >= N same-direction child labels within one
+  parent bar; parent closes same-direction; recruitment — parent
+  rel_volume >= floor) reaching the Signal TF.
+- **Confirm:** first Signal-TF bar sustaining the direction (close_pos
+  beyond threshold with volume at or above baseline).
+- **Refute:** a Signal-TF close against the chain direction beyond the
+  chain-origin extreme. **Stop:** beyond the chain-origin extreme.
+- **Gate:** standard trend-class gating.
+- **Frozen core claim, VERBATIM: persistent lower-TF directional pressure
+  that recruits expanding participation at the parent timeframe precedes
+  continuation beyond what the parent label alone predicts; pressure that
+  propagates without participation expansion does not.** The second clause
+  is the falsifiable half and must be tested as-written — the migration
+  study reports recruitment-passing vs recruitment-failing chains
+  separately so it can die cleanly.
+
+### Free parameters (schema; set at walk-forward)
+N per rung · recruitment floor · rung count required · TF-pair set ·
+confirm window and close_pos threshold · proximity/level conditioning
+(none vs k x ATR of a registered extreme).
+
 ## Amendment log
 
 - 2026-08-13: file created; H6, H7 registered (intent-only sketches).
+- 2026-08-14: H9 registered in two-layer form (post-amendment-1 convention); direction-follows-pressure class introduced; recruitment condition's design lineage logged in the register (implementer tautology objection -> owner participant-depth reframe -> recruitment synthesis).
 - 2026-08-13: H8 registered directly in two-layer form (post-amendment-1 convention); direction-agnostic class introduced; cost warning embedded at registration.
 - 2026-08-13 — **AMENDMENT 1 (two-layer form).** Original registration was
   intent-only, on the implementer's rationale that pre-specifying detailed

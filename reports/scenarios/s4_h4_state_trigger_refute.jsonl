@@ -2,27 +2,27 @@
 {"ts": 150, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 165, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 180, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 195, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 102.2, "low": 99.7, "close": 102.0}
-{"ts": 210, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.2, "low": 101.8, "close": 104.0}
-{"ts": 225, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "high": 104.1, "low": 102.3, "close": 102.5}
-{"ts": 240, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.7, "low": 102.2, "close": 104.5}
-{"ts": 255, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 106.7, "low": 104.3, "close": 106.5}
+{"ts": 195, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 102.2, "low": 99.7, "close": 102.0, "rel_volume": 1.0}
+{"ts": 210, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.2, "low": 101.8, "close": 104.0, "rel_volume": 1.0}
+{"ts": 225, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "high": 104.1, "low": 102.3, "close": 102.5, "rel_volume": 1.0}
+{"ts": 240, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 104.7, "low": 102.2, "close": 104.5, "rel_volume": 1.0}
+{"ts": 255, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 106.7, "low": 104.3, "close": 106.5, "rel_volume": 1.0}
 {"ts": 255, "tf": "15min", "type": "PHASE", "phase": "MARKUP", "trigger": "swing_structure", "segment": "cash"}
 {"ts": 270, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 285, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 107.2, "low": 104.7, "close": 107.0}
+{"ts": 285, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 107.2, "low": 104.7, "close": 107.0, "rel_volume": 1.0}
 {"ts": 300, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 315, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 330, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 109.7, "low": 107.2, "close": 109.5}
+{"ts": 330, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 109.7, "low": 107.2, "close": 109.5, "rel_volume": 1.0}
 {"ts": 345, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 360, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 375, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 112.2, "low": 109.7, "close": 112.0}
+{"ts": 375, "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "high": 112.2, "low": 109.7, "close": 112.0, "rel_volume": 1.0}
 {"ts": 390, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 405, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 420, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
 {"ts": 435, "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
-{"ts": 450, "tf": "15min", "type": "LABEL", "label": "NO_SUPPLY", "structural": "NO_SUPPLY", "segment": "cash", "high": 111.50000000000001, "low": 111.00000000000001, "close": 111.05000000000001}
+{"ts": 450, "tf": "15min", "type": "LABEL", "label": "NO_SUPPLY", "structural": "NO_SUPPLY", "segment": "cash", "high": 111.50000000000001, "low": 111.00000000000001, "close": 111.05000000000001, "rel_volume": 0.66}
 {"ts": 450, "tf": "", "type": "SPAWNED", "h": {"id": 1, "spec": "H4", "dir": 1, "state": "OPEN", "age": 0, "strength": 1.0, "tag": null, "confirm_branch": null, "sig_idx": 29, "sig_extreme": 111.00000000000001, "spawn_segment": "cash"}}
-{"ts": 465, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "high": 111.25000000000001, "low": 110.175, "close": 110.375}
+{"ts": 465, "tf": "15min", "type": "LABEL", "label": "ABSORPTION", "structural": "ABSORPTION", "segment": "cash", "high": 111.25000000000001, "low": 110.175, "close": 110.375, "rel_volume": 1.64}
 {"ts": 465, "tf": "15min", "type": "PULLBACK_EXPANDED", "max_rel_vol": 1.64}
 {"ts": 465, "tf": "", "type": "STRENGTH", "h": {"id": 1, "spec": "H4", "dir": 1, "state": "OPEN", "age": 1, "strength": 0.5, "tag": null, "confirm_branch": null, "sig_idx": 29, "sig_extreme": 111.00000000000001, "spawn_segment": "cash"}, "delta": -0.5}
 {"ts": 480, "tf": "1h", "type": "PHASE", "phase": "MARKUP", "trigger": "swing_structure", "segment": "cash"}
