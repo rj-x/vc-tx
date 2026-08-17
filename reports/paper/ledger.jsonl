@@ -18,3 +18,5 @@
 {"event": "COVERAGE_GAP", "from": "2026-08-17 15:06:00+00:00", "note": "downtime hole - decisions never backfilled"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 11, "ts": "2026-08-17 21:11:33.725086+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:16:42.247926+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:21:50.805569+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:26:59.301343+00:00"}
