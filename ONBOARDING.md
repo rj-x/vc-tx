@@ -278,25 +278,36 @@ set still growing toward fold support).
   rollover at the anchor, pin test asserts Friday's bin 1127, 51 green.
   Deployed: NO — post-dates the running processes; goes live at the
   2026-08-17 pause restart.
+- `74c8d7b` — crash-coverage honesty set (UNCLEAN_PREDECESSOR, checkpoint
+  sidecar, predecessor-anchored gaps, retro-log, banner, caveat, README),
+  51 green. Deployed: NO — goes live at the same 2026-08-17 pause restart
+  alongside `0e7ae9c`.
 
 **Open items** (each phrased as a checkable predicate where possible):
 1. 2026-08-17 pause restart lands clean — see watch item above.
-2. Claude Code fix-cycle order sent 2026-08-17 (unclean-predecessor
-   detection; per-poll checkpoint sidecar; coverage-gap anchored on
-   predecessor's last activity not warm_through; retro-log the Monday
-   overnight hole; narrate banner "last cash bar"; register the narrate
-   live/replay warm-scope asymmetry; README register-15 text correction).
-   Check predicate: register + ledger show these landed; if not, the order
-   text is in the session transcript (SESSION-LOCAL) and the findings are
-   re-derivable from `paper.py` (`gap = now − max(warm_through, go_live)`,
-   5-min threshold) and the ledger (Sunday 20:02:59Z START with no STOP).
-3. Canonical-bin regrade of 2026-08-17 morning ladder after settlement:
-   diff replay vs `live_ladder_v4.csv` (label / rel_volume /
-   location_ref); comparator replay must be cash-scoped or the diff must
-   attribute tod-misalignment vs warm-scope causes; near-threshold prints
-   08:21Z (rel 1.37) and 08:25Z (rel 1.08) first. Check predicate: diff
-   artifact archived beside the probe capture.
-4. Thin-tape probe window (post-close regime) — prerequisite to any
+2. Fix-cycle thread CLOSED 2026-08-17 (`74c8d7b` reg 19 → `8a6bba6` →
+   `70a55a9` overturn → `cf90a75` reg 20): crash-coverage set live at
+   restart; death bounded ≈03:10–05:00Z; ledger verified intact through
+   the 13:11Z amendment; fd-1 adjudicated (orphan inode 187405622,
+   20,275 B, full stream, accepted-lost); commit-map archived
+   (`logs/history_surgery/commit-map_2026-08-17`); history-surgery rule
+   registered; "hazard didn't bite today" WITHDRAWN — 10:26Z and 10:39Z
+   are heartbeat-attested, replay-irreproducible (rv 0.51/0.55), open.
+3. Canonical-bin regrade of the 2026-08-17 morning ladder: CLOSED within
+   the fix-cycle thread — 12/12 exact under the cash-scoped comparator,
+   scope-fenced to the 1min layer and the excerpt window (07:09–08:25Z);
+   both near-threshold prints matched. Superseded by the
+   divergence-profile item above for the rest of the session.
+4. Divergence-profile measurement (sent 2026-08-17, non-blocking,
+   post-restart): derive all stamps from the captured heartbeat stream
+   (≥14 afternoon, lower bound), presence-check the full set time-ordered
+   under the matched comparator, test the accumulating-key-pollution
+   hypothesis (predicts a ramp: clean morning → progressive afternoon
+   divergence). Check predicate: profile artifact archived beside the
+   probe capture, referenced from the 0e7ae9c register entry. Orphan-size
+   cross-check: 20,275 B ≈ ~48 labels at ~338 B/label, consistent with
+   heartbeat density.
+5. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
@@ -315,10 +326,10 @@ set still growing toward fold support).
 
 **Known context gaps (do not guess at these — ask or read):**
 - The Strategy Findings & Risk Register file has not been read since the
-  original chat was lost. Its numbering scheme is unverified (README cites
-  "register item 14/15"; the weekend produced "nine findings" — the
-  relationship between these numberings is unknown). RULES.md is NOT the
-  register.
+  original chat was lost. Numbering now partially observable: items run to
+  at least 19 (`74c8d7b` recorded the coverage finding as register 19);
+  the relationship to the weekend's "nine findings" count remains
+  unverified. RULES.md is NOT the register.
 - Backtest v1 results and verdict; which hypotheses the working set
   favors.
 - Sunday process death time: exact minute unrecoverable, but now BOUNDED
