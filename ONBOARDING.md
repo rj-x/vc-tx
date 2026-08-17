@@ -306,18 +306,17 @@ set still growing toward fold support).
    scope-fenced to the 1min layer and the excerpt window (07:09–08:25Z);
    both near-threshold prints matched. Superseded by the
    divergence-profile item above for the rest of the session.
-4. Divergence-profile measurement (specified + queued in `12da08b`,
-   non-blocking for the restart): BLOCKED on the operator scrollback
-   capture — the heartbeat stream is VOLATILE until saved (terminal
-   buffer only; capture steps in the restart watch item above). Once
-   `scrollback_narrate_2026-08-17.txt` is committed: derive all stamps
-   from every "N bars since" line (≥14 afternoon, lower bound — the
-   full-session capture will add 12:11Z→stop), presence-check time-ordered
-   under the matched comparator, test the accumulating-key-pollution
-   ramp hypothesis. Check predicate: profile artifact archived beside the
-   probe capture, referenced from the 0e7ae9c register entry. Orphan-size
-   cross-check already registered: 20,275 B ≈ ~48 labels, consistent with
-   heartbeat density.
+4. Divergence-profile measurement (specified `12da08b`): capture
+   RECOVERED complete (old narrate terminated ~13:43Z; n=407 latency
+   count corroborates; orphan freed at exit — afternoon payloads
+   permanently lost, accepted). Operator to commit capture as
+   `logs/history_surgery/scrollback_narrate_2026-08-17.txt` → study
+   unblocked. Final input: 24 derivable stamps (19 afternoon), 10:39Z and
+   12:52Z double-witnessed; profile spans the 12:56Z 15min regime flip.
+   Bonus register deliverable: full-session latency distribution n=407,
+   min 1s / median 38s / max 63s (single-poll floor). Check predicate:
+   profile artifact archived beside the probe capture, referenced from
+   the 0e7ae9c register entry.
 5. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
 
