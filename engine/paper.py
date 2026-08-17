@@ -66,11 +66,26 @@ def guarded(fn, ledger_path=None):
 
 
 def expect_prints(ts):
-    """Watchdog calendar: the futures feed prints ~24h except the daily
-    ~21:00-22:10 London pause (and weekends)."""
-    lon = pd.Timestamp(ts).tz_convert("Europe/London")
-    lt = lon.hour + lon.minute / 60.0
-    return lon.dayofweek < 5 and not (21.0 <= lt <= 22.17)
+    """Watchdog calendar in PROVIDER TIME — UTC, not London (register
+    finding 24). The feed's day is UTC-anchored (DATA.md ~22:00->~21:00
+    UTC); encoding the pause in London hours fired 11 false
+    WATCHDOG_STALLs 2026-08-17 21:11-22:03Z during the one-hour BST
+    offset (and would have looked "fixed" in GMT months). Measured from
+    the store (2026-08-17): last pre-pause bar opens 20:59Z, first
+    post-pause bar 22:05Z; Sunday reopen 22:05Z. Quiet window
+    [21:00, 22:10) UTC = measured + 5 min reopen margin; weekend quiet
+    Fri 21:00Z -> Sun 22:10Z."""
+    u = pd.Timestamp(ts).tz_convert("UTC")
+    m = u.hour * 60 + u.minute
+    pause_start, pause_end = 21 * 60, 22 * 60 + 10
+    dow = u.dayofweek
+    if dow == 5:                        # Saturday
+        return False
+    if dow == 4:                        # Friday: quiet from the close
+        return m < pause_start
+    if dow == 6:                        # Sunday: quiet until the reopen
+        return m >= pause_end
+    return not (pause_start <= m < pause_end)
 
 
 def reconcile(ledger_path):
