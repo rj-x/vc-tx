@@ -11,6 +11,19 @@ from .bars import Bar
 from .segments import segment_of
 
 
+def canonical_tod(ts_open, anchor_london=21.5):
+    """Minutes since the canonical trading-day anchor (~21:30 London) for a
+    bar OPEN timestamp — the live loops' bin key MUST match the resampler's
+    (tod-misalignment defect, fixed 2026-08-17)."""
+    lon = pd.Timestamp(ts_open).tz_convert("Europe/London")
+    lt = lon.hour + lon.minute / 60.0
+    tday = lon.normalize() + pd.Timedelta(days=1 if lt >= anchor_london else 0)
+    anchor = (tday - pd.Timedelta(days=1)
+              + pd.Timedelta(hours=int(anchor_london),
+                             minutes=int((anchor_london % 1) * 60)))
+    return int((lon - anchor).total_seconds() // 60), tday
+
+
 def trading_sessions(df, anchor_london=21.5):
     """Part B: ALL rows (extended hours included), grouped into futures
     trading days anchored at ~21:30 London; tod_bin = minutes since anchor.

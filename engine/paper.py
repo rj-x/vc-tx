@@ -206,9 +206,10 @@ def main():
                     close_ts = r["time"] + pd.Timedelta(minutes=1)
                     if last_ts is not None and close_ts <= last_ts:
                         continue
-                    if session_open is None or r["time"].date() != session_open.date():
-                        session_open, sid = r["time"], sid + 1
-                    tod = int((r["time"] - session_open).total_seconds() // 60)
+                    from .resample import canonical_tod
+                    tod, tday = canonical_tod(r["time"])
+                    if session_open is None or tday != session_open:
+                        session_open, sid = tday, sid + 1
                     eb = Bar(close_ts, r["open"], r["high"], r["low"],
                              r["close"], r["volume"], tf="1min",
                              session_id=sid, tod_bin=tod)

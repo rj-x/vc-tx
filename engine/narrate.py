@@ -339,10 +339,11 @@ def live(args):
                     if not first_poll:
                         latencies.append((now - close_ts).total_seconds())
                     bars_since_label += 1
-                    if session_open_ts is None or ts_open.date() != session_open_ts.date():
-                        session_open_ts = ts_open
+                    from .resample import canonical_tod
+                    tod, _tday = canonical_tod(ts_open)
+                    if session_open_ts is None or _tday != session_open_ts:
+                        session_open_ts = _tday
                         sid += 1
-                    tod = int((ts_open - session_open_ts).total_seconds() // 60)
                     eb = Bar(close_ts, r["open"], r["high"], r["low"],
                              r["close"], r["volume"],
                              tf=cfg.mtf.execution_tf, session_id=sid,
