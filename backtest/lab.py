@@ -109,7 +109,15 @@ def main():
         engine, info = run_backtest(cfg, a.instr)
 
     m = breakdowns(engine.broker.trades, cfg.trade.starting_equity)
+    # engine commit hash mandatory on lab artifacts (register rule 25a)
+    import subprocess
+    head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
+                          capture_output=True, text=True).stdout.strip()
+    dirty = bool(subprocess.run(["git", "status", "--porcelain",
+                                 "engine/", "backtest/"], cwd=ROOT,
+                                capture_output=True, text=True).stdout.strip())
     res = {"STAMP": "EXPLORATORY - not validation",
+           "engine_commit": head + ("-dirty" if dirty else ""),
            "definition": d["name"], "hash": d["_hash"], "mode": d["mode"],
            "data": {"sessions": info["sessions"],
                     "span": [str(x) for x in info["span"]]},
