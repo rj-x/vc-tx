@@ -141,7 +141,11 @@ candidates through walk-forward); never look at lockbox data outside
   asymmetry *(decays if the paths are aligned — check narrate.py)*.
 - **Sync is manual by owner preference** (DATA.md); ~3 weeks unsynced =
   permanent 1M data loss to the retention floor.
-- **"Six-rung ladder": definition UNVERIFIED** — the ladder post-dates the
+- **Narrate txt output prints only labeled bars** — quiet bars stay quiet
+  by design (emitter skips label=None), so gaps between narrative lines
+  are unlabeled tape, not missing data. Verify continuity against the
+  store, never against the narrative stream.
+- **The "six-rung ladder": definition UNVERIFIED** — the ladder post-dates the
   spec (not in prompt.md); the authoritative definition lives in classifier
   code or the register, neither read this era. Best hypothesis
   (INFERENCE): rungs = the six ladder timeframes in `build_all_bars`
@@ -253,23 +257,21 @@ set still growing toward fold support).
 - `uk100sep26` expiry ~2026-09-18: scenario A/B check in the week after;
   grab the next contract's ID before the roll (DATA.md).
 
-**Live processes (as of 12:30Z 2026-08-17):**
-- Paper executor: START 2026-08-17 06:56:18Z (FACT: ledger), frozen_v1
-  hash a5d7198c (FACT: ledger), on PRE-`0e7ae9c` code (FACT,
-  SESSION-LOCAL: the fix descends from a probe capture ending 07:14Z,
-  after the start — evidence is the 2026-08-17 session transcript; becomes
-  durable when the restart-cycle register entry lands, and is trivially
-  re-derivable from commit timestamps vs the ledger START). Running
-  foreground in a VS Code terminal under caffeinate (FACT: operator
-  paste) — drift from the README's documented nohup procedure; cured at
-  the 2026-08-17 restart.
-- Narrate live --ladder: started same pre-07:00Z window (INFERENCE: first
-  label 07:09Z, heartbeat 07:11Z, warm banner shows last cash bar Fri
-  15:30Z consistent with a pre-cash-open start). Pre-fix; stdout `>` into
-  `live_ladder_v4.csv` (truncates on restart — dated file from the
-  2026-08-17 restart onward).
-- Zero trades ever in the ledger (FACT: ledger 2026-08-17 — every event is
-  lifecycle); the pre-fix era therefore cost nothing evidential.
+**Live processes (as of ~16:00Z 2026-08-17):**
+- Narrate: relaunched ~13:50Z detached (nohup+pid, dated ladder +
+  heartbeat logs under logs/narrate/); post-fix code; banner verified
+  ("last CASH bar", 26 sessions). SURVIVED the 15:0xZ VS Code crash
+  (FACT: pid 37662 alive, no controlling TTY) — nohup migration's first
+  live validation: PASSED.
+- Paper: second unclean death ~15:06Z (VS Code crash #2; pre-migration
+  foreground process). Relaunched 15:42:35Z detached on post-`cf90a75`
+  code (FACT: ledger START); first live UNCLEAN_PREDECESSOR fired
+  correctly; logged coverage_gap 8:47:35 knowingly overstates
+  (warm_through fallback; true hole ≈15:06→15:42, ~36 min; register 21).
+  Exact death bounded ≈15:06–15:08Z (FACT: store gap 15:05→15:33
+  open-stamps, extracted pre-sync — fossil race won; register 21 closed).
+  Post-sync, the register is the hole's sole witness.
+- Zero trades ever in the ledger (FACT: ledger).
 
 **Recent commits that matter:**
 - `a541aed`, `4a649a3` — Sunday seven-fix build (persist-then-feed, loud
@@ -317,7 +319,15 @@ set still growing toward fold support).
    Scope: presence-level only — payload agreement for the 21 matches is
    unmeasurable. Latency floor registered: n=407, min 1s / median 38s /
    max 63s. This supersedes item 2's "two open divergence candidates."
-5. Thin-tape probe window (post-close regime) — prerequisite to any
+5. Cluster-criterion correction CLOSED (`ee017b9`): comparator's
+   structural_cores() was blind to TEST (registry-based qualified label,
+   not a core) — the three "misses" were instrument blindness at
+   TEST-reachable minutes. Registered record: 24/24 at label-presence
+   level; core level unmeasurable-not-failed; pre-fix session shows NO
+   detectable live/replay divergence at any measurable level; warm-state
+   hazard stands on Friday's evidence alone; archived profile annotated
+   in place.
+6. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
