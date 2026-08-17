@@ -1,0 +1,30 @@
+{
+ "STAMP": "EXPLORATORY",
+ "three_class": {
+  "persisted_true": 13,
+  "reann_live_true": 0,
+  "reann_dead": 15
+ },
+ "true": {
+  "n": 16,
+  "rel_vol_median": 1.04,
+  "post_climax_n": 0,
+  "nd_ns_3_gt0_n": 4,
+  "eff_3_gt0_n": 7,
+  "nd_ns_5_gt0_n": 4,
+  "eff_5_gt0_n": 9,
+  "nd_ns_10_gt0_n": 6,
+  "eff_10_gt0_n": 10
+ },
+ "false": {
+  "n": 304,
+  "rel_vol_median": 0.98,
+  "post_climax_n": 0,
+  "nd_ns_3_gt0_n": 48,
+  "eff_3_gt0_n": 70,
+  "nd_ns_5_gt0_n": 68,
+  "eff_5_gt0_n": 103,
+  "nd_ns_10_gt0_n": 90,
+  "eff_10_gt0_n": 164
+ }
+}
