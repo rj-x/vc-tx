@@ -1,0 +1,30 @@
+{
+ "STAMP": "EXPLORATORY",
+ "survival": {
+  "true": {
+   "n": 16,
+   "age>=5": 16,
+   "age>=10": 16,
+   "age>=15": 14
+  },
+  "false": {
+   "n": 304,
+   "age>=5": 302,
+   "age>=10": 275,
+   "age>=15": 238
+  }
+ },
+ "with_prints": {
+  "n": 136,
+  "true_n": 11,
+  "continuation_n": 61,
+  "move_median": -1.8
+ },
+ "without_prints": {
+  "n": 155,
+  "true_n": 5,
+  "continuation_n": 52,
+  "move_median": -4.0
+ },
+ "age10_n": 291
+}
