@@ -1,0 +1,47 @@
+{
+ "STAMP": "EXPLORATORY - descriptive",
+ "R1_contingency": {
+  "n_1m_onsets": 320,
+  "n_confirmed": 16,
+  "n_15m_matched": 28,
+  "matched_precursor_flipped_before_15m (re-announced)": 15,
+  "matched_persisted": 13,
+  "false_lead_rate": 0.95
+ },
+ "T1b": {
+  "n": 320,
+  "n_true": 16,
+  "3min_k1": {
+   "true_lead_agree": 0.25,
+   "false_lead_agree": 0.29
+  },
+  "3min_k2": {
+   "true_lead_agree": 0.38,
+   "false_lead_agree": 0.37
+  },
+  "3min_k3": {
+   "true_lead_agree": 0.44,
+   "false_lead_agree": 0.38
+  },
+  "5min_k1": {
+   "true_lead_agree": 0.38,
+   "false_lead_agree": 0.31
+  },
+  "5min_k2": {
+   "true_lead_agree": 0.38,
+   "false_lead_agree": 0.35
+  },
+  "5min_k3": {
+   "true_lead_agree": 0.5,
+   "false_lead_agree": 0.36
+  },
+  "15m_phase_true": {
+   "RANGING": 16
+  },
+  "15m_phase_false": {
+   "RANGING": 222,
+   "MARKUP": 72,
+   "MARKDOWN": 10
+  }
+ }
+}
