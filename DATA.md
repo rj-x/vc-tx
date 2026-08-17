@@ -103,10 +103,12 @@ rolling series (70152) hops contracts.
 3. `store.py build --instr <subset>` merges into `_report.json` (fixed
    2026-08-11; it previously clobbered other instruments' entries).
 4. Known data quirks: 2 malformed `uk100` daily bid/ask bars (clamped and counted
-   by the store); US/gold cash sessions are hardcoded in London hours and are off
-   by one hour during the ~2–3 week US/UK DST misalignment windows — fix in
-   `store.py` (compute in `America/New_York`) before the NASDAQ portability
-   stage; `data/rates_*.csv` are daily interest rates from other work, not part
-   of this pipeline.
+   by the store); US/gold cash sessions FIXED at commit `6115e8a` (2026-08-13):
+   `store.py` defines them in `America/New_York` via the per-instrument
+   `SESSION_TZ` map, so `in_cash` stays correct through the ~2–3 week US/UK DST
+   misalignment windows (this note previously deferred the fix to the NASDAQ
+   portability stage; the fix predates the deferral note's removal — see
+   register finding 24's family sweep, 2026-08-18); `data/rates_*.csv` are
+   daily interest rates from other work, not part of this pipeline.
 5. Every report must state the volume type used (real futures volume vs ×4-scaled
    futures volume vs unknown) and the usable 1M date range per instrument.
