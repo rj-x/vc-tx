@@ -102,6 +102,23 @@ def _label(df, slug, is_daily=False):
     return df
 
 
+def _atomic_to_csv(df, path):
+    """Store writes are ATOMIC (register finding 23, 2026-08-18): write to a
+    temp file in the same directory, then os.replace. A concurrent reader —
+    a live loop warming from store, or git snapshotting mid-build — sees the
+    old file or the new file, never a truncated one."""
+    tmp = path + ".tmp"
+    df.to_csv(tmp)
+    os.replace(tmp, path)
+
+
+def _atomic_json_dump(obj, path, **kw):
+    tmp = path + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(obj, f, **kw)
+    os.replace(tmp, path)
+
+
 def build_one(slug, verbose=True):
     a, b = SESSIONS[slug]
     if verbose:
@@ -163,7 +180,7 @@ def build_one(slug, verbose=True):
             df["extreme"] = ((r / s).abs() > 12).fillna(False)
 
         df.index.name = "time"
-        df.to_csv(os.path.join(CLEAN, f"{slug}_{tf}.csv"))
+        _atomic_to_csv(df, os.path.join(CLEAN, f"{slug}_{tf}.csv"))
         cash = df[df["in_cash"]]
         stats[tf] = {
             "bars": int(len(df)), "cash_bars": int(len(cash)),
@@ -261,8 +278,7 @@ def cmd_build(a):
             rep = {k: v for k, v in json.load(f).items() if k in SESSIONS}
     for s in slugs:
         rep[s] = build_one(s)
-    with open(rp, "w") as f:
-        json.dump(rep, f, indent=2, default=str)
+    _atomic_json_dump(rep, rp, indent=2, default=str)
     stale = {s: v["stale_1min_days"] for s, v in rep.items()
              if v.get("stale_1min_days", 0) > 5}
     if stale:

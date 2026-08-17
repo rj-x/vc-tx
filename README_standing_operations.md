@@ -143,9 +143,18 @@ real bugs.
 - Tracked: code, config, RULES/prompt/docs, register & candidate files, and
   GENERATED report artifacts (`reports/`) — the JSONs and md reports are
   evidence, not build products; their history is the point.
-- Excluded: raw/clean data stores and logs. **Retention caveat:** the
-  minute feed has a ~30-day rolling floor — the stores are reproducible via
-  sync only within retention; history deepens only by syncing (see DATA.md).
+- Tracked (policy AMENDED 2026-08-18, register finding 23): raw/clean data
+  stores and logs ARE tracked. The original 2026-08-14 text excluded them,
+  but the exclusion was never enacted (`.gitignore` rules stayed commented
+  out; stores/logs have been committed throughout) and the enacted practice
+  is the correct one: the minute feed has a ~30-day rolling retention floor,
+  so committed stores are the ONLY durable history — an untracked store
+  loses everything beyond retention on the first mishap (see DATA.md).
+  Policy follows the safer practice; the README was wrong, not the repo.
+  **Caveat:** store commits made while a build is running were a truncation
+  hazard until atomic writes (store.py `_atomic_to_csv`, finding 23);
+  observed instance: empty `uk100fut_1h.csv` blob in commit `9bcf9ec`,
+  restored in `c3e806b`.
 - Rules: every campaign run's artifact changes are committed (the
   week-over-week diff of generated artifacts is itself a diagnostic); every
   register/candidate-file amendment is its own commit (append-only

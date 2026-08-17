@@ -1,12 +1,8 @@
-# data stores: large, reproducible via sync WITHIN RETENTION (minute feed
-# ~30 days — see README data section; history deepens only by syncing)
-#data/*
-#clean_finsa/
-#logs/
-# hand-maintained/evidence files inside data/ ARE tracked:
-#!data/macro_releases.csv
-#!data/_known_issues.json
+# Data stores and logs are TRACKED deliberately (policy amended 2026-08-18,
+# register finding 23): the minute feed's ~30-day retention floor makes the
+# repo the only durable history. Do not add store/log excludes here.
 venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+*.tmp
