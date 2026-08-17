@@ -115,6 +115,26 @@ def main():
 
     # reconcile any open position from a prior run
     reconcile(LEDGER)
+    # (1)+(3) 2026-08-17: predecessor-anchored coverage. Anchor = clean
+    # STOP's last_processed, else crash checkpoint, else predecessor
+    # warm_through — NEVER this run's warm_through (a post-crash sync can
+    # erase downtime; "warm==last-processed" is false after crash+sync).
+    ck_path = os.path.join(ROOT, "reports", "paper", "checkpoint.json")
+    pred_anchor, unclean = None, False
+    if os.path.exists(LEDGER):
+        evs = [json.loads(l) for l in open(LEDGER)]
+        life = [e for e in evs if e.get("event") in ("START", "STOP")]
+        if life and life[-1]["event"] == "START":
+            unclean = True
+            ck = (json.load(open(ck_path)) if os.path.exists(ck_path) else {})
+            pred_anchor = (ck.get("last_processed")
+                           or life[-1].get("warm_through"))
+            _led({"event": "UNCLEAN_PREDECESSOR",
+                  "predecessor_start": life[-1].get("ts"),
+                  "last_recoverable_activity": str(pred_anchor),
+                  "ts": str(pd.Timestamp.now(tz='UTC'))})
+        elif life and life[-1]["event"] == "STOP":
+            pred_anchor = life[-1].get("last_processed")
 
     # warm from store (working+lockbox+forward all visible to a LIVE
     # process — paper is the forward zone's only legitimate consumer)
@@ -133,7 +153,8 @@ def main():
     # (warm_through, go_live); pre-stamp time is zone-irrelevant, not downtime
     from .store_loader import zones as _zones
     _gl = _zones()["go_live"]
-    ref = max([t for t in (last_ts, _gl) if t is not None], default=None)
+    pa = pd.Timestamp(pred_anchor) if pred_anchor else None
+    ref = max([t for t in (pa, _gl) if t is not None], default=None) or last_ts
     gap = pd.Timestamp.now(tz="UTC") - ref if ref is not None else None
     _led({"event": "START", "ts": str(pd.Timestamp.now(tz='UTC')),
           "warm_through": str(last_ts), "coverage_gap": str(gap),
@@ -236,6 +257,8 @@ def main():
                     engine.process(close_ts, exec_bar=eb, exec_quote=quote,
                                    **slot)
                     last_ts = close_ts
+                    json.dump({"last_processed": str(last_ts)},
+                              open(ck_path, "w"))
                     while n_trades < len(engine.broker.trades):
                         t = engine.broker.trades[n_trades]
                         _led({"event": "EXIT", "tag": "FORWARD_PAPER", **t})

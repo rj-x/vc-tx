@@ -175,3 +175,11 @@ echo $! > logs/paper/paper.pid
 - Ledger and go-live semantics: reports/paper/ledger.jsonl is append-only;
   the first-ever start stamped go_live_utc (done 2026-08-14) — restarts
   never restamp.
+
+**Crash-coverage honesty (2026-08-17, supersedes the positions-only note):**
+restart handles positions (RECONCILE_CLOSE) AND coverage: UNCLEAN_PREDECESSOR
+is emitted when the ledger's last lifecycle event is a START without STOP;
+`reports/paper/checkpoint.json` (overwritten per poll) dates crash deaths to
+the minute; decision-coverage gaps anchor on the predecessor's last activity
+(STOP.last_processed, else checkpoint, else predecessor warm_through) — never
+this run's warm_through, since a post-crash sync can erase downtime.

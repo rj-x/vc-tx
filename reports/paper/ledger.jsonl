@@ -11,3 +11,4 @@
 {"event": "START", "ts": "2026-08-16 20:02:59.762956+00:00", "warm_through": "2026-08-14 19:59:00+00:00", "coverage_gap": "2 days 00:03:59.762938", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
 {"event": "COVERAGE_GAP", "from": "2026-08-14 19:59:00+00:00", "note": "downtime hole - decisions never backfilled"}
 {"event": "START", "ts": "2026-08-17 06:56:18.000359+00:00", "warm_through": "2026-08-17 06:55:00+00:00", "coverage_gap": "0 days 00:01:18.000347", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "COVERAGE_GAP", "ts": "2026-08-17 12:36:26.500640+00:00", "note": "RETRO-LOG (2026-08-17): Sunday-session unclean death -> Monday 06:55Z restart; extent unrecoverable (no checkpoint existed); the 0:01:18 gap logged at Monday START was sync-erased downtime, not true coverage. Decision coverage hole spans the overnight."}

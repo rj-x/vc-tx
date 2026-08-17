@@ -278,7 +278,7 @@ def live(args):
     last_ts = max((b.ts for b in bars["execution"]), default=None)
     n_sessions = cash["session_id"].nunique()
     sid = int(cash["session_id"].max()) if n_sessions else 0
-    print(f"# warmed from store: {n_sessions} sessions, last bar "
+    print(f"# warmed from store: {n_sessions} sessions, last CASH bar "
           f"{last_ts}", file=sys.stderr)
 
     show_tfs = ({_tf(t.strip()) for t in args.show_tf.split(",")}
