@@ -20,3 +20,11 @@
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:16:42.247926+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:21:50.805569+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:26:59.301343+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:32:07.981138+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:37:16.642553+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:42:27.204919+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:47:35.947201+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:52:44.517429+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:57:53.305355+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 22:03:01.946746+00:00"}
+{"event": "NOTE", "ts": "2026-08-17 22:11:49.470539+00:00", "note": "The 11 WATCHDOG_STALL events 2026-08-17 21:11:33Z-22:03:01Z are CALENDAR-OFFSET FALSE POSITIVES (register finding 24): expect_prints encoded the provider's daily pause in London hours; the provider pauses on UTC (store-measured tonight: bars ceased 21:00Z, resumed 22:05Z). One hour of BST offset produced the false window. No stall occurred; the executor was healthy. Calendar re-anchored to UTC at commit 522a5cb (pin test = this incident); fix rides the next natural restart \u2014 the running process still carries the London calendar and may print false stalls 21:00-22:10Z London-offset until then."}
