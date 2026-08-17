@@ -5,3 +5,9 @@
 {"event": "NOTE", "ts": "2026-08-14 15:40:51.956417+00:00", "note": "clarifying (register 2026-08-14): the first START's 6h25m COVERAGE_GAP spans pre-stamp lockbox-zone time (08:39Z->15:04Z); forward coverage begins at go_live_utc - that span is zone-irrelevant, not downtime. Gap logic fixed forward to max(warm_through, go_live_utc)."}
 {"event": "COVERAGE_GAP", "ts": "2026-08-14 19:28:26.461700+00:00", "note": "first-weekend supervision finding: live process silent after 15:23Z label; engine replay grades 16:10Z bar EFFORTLESS_DECLINE -> executor stall (World A). Exact death mode indeterminate: pre-fix session persisted no stderr/events. Data loss nil (sync re-fetched). Fixes queued for Sunday restart."}
 {"event": "STOP", "ts": "2026-08-14 19:38:31.052961+00:00", "last_processed": "2026-08-14 19:37:00+00:00"}
+{"event": "START", "ts": "2026-08-14 19:58:54.789577+00:00", "warm_through": "2026-08-14 16:52:00+00:00", "coverage_gap": "0 days 03:06:54.789563", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "COVERAGE_GAP", "from": "2026-08-14 16:52:00+00:00", "note": "downtime hole - decisions never backfilled"}
+{"event": "STOP", "ts": "2026-08-14 20:00:35.315764+00:00", "last_processed": "2026-08-14 19:58:00+00:00"}
+{"event": "START", "ts": "2026-08-16 20:02:59.762956+00:00", "warm_through": "2026-08-14 19:59:00+00:00", "coverage_gap": "2 days 00:03:59.762938", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "COVERAGE_GAP", "from": "2026-08-14 19:59:00+00:00", "note": "downtime hole - decisions never backfilled"}
+{"event": "START", "ts": "2026-08-17 06:56:18.000359+00:00", "warm_through": "2026-08-17 06:55:00+00:00", "coverage_gap": "0 days 00:01:18.000347", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
