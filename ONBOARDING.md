@@ -229,11 +229,19 @@ realistic opening ~autumn 2026 (INFERENCE: prior-session estimate, working
 set still growing toward fold support).
 
 **Upcoming deadlines / watch items:**
-- Pause-window restart, 2026-08-17 21:00–22:10 London: both live loops to
-  be restarted on commit `0e7ae9c` via the README nohup+pidfile procedure,
-  narrate ladder to a dated file. Check predicate: ledger contains a START
-  after 2026-08-17 20:00Z whose semantics show canonical anchoring, and
-  both PIDs survive an editor restart.
+- Pause-window restart, 2026-08-17 21:00–22:10 London, WITH capture
+  sequence (operator-owned, order matters): (1) Ctrl-C narrate, wait for
+  the session FEED LATENCY summary; (2) capture narrate terminal
+  scrollback → `logs/history_surgery/scrollback_narrate_2026-08-17.txt`
+  (verify it spans 06:56 banner → latency line; note truncation
+  honestly); (3) Ctrl-C paper (clean STOP), capture its scrollback →
+  `scrollback_paper_2026-08-17.txt` (sole home of any PERSIST
+  FAILED/poll-failed warnings); (4) only then terminal teardown; (5) both
+  loops up on `cf90a75`+ via README nohup+pidfile, dated ladder file;
+  (6) commit captures + ledger delta. Check predicate: ledger START after
+  20:00Z with canonical anchoring and predecessor-anchored gap off
+  tonight's STOP; checkpoint.json updating per poll; capture files
+  committed.
 - 1M retention floor: sync ran 2026-08-17 06:51:36→06:56:01Z, all green
   (FACT: `logs/sync/2026-08-17.log`; minute store built to 06:55Z; paper
   START 17 s later — runbook sequence followed). The log's **+176 new**
@@ -298,14 +306,17 @@ set still growing toward fold support).
    scope-fenced to the 1min layer and the excerpt window (07:09–08:25Z);
    both near-threshold prints matched. Superseded by the
    divergence-profile item above for the rest of the session.
-4. Divergence-profile measurement (sent 2026-08-17, non-blocking,
-   post-restart): derive all stamps from the captured heartbeat stream
-   (≥14 afternoon, lower bound), presence-check the full set time-ordered
+4. Divergence-profile measurement (specified + queued in `12da08b`,
+   non-blocking for the restart): BLOCKED on the operator scrollback
+   capture — the heartbeat stream is VOLATILE until saved (terminal
+   buffer only; capture steps in the restart watch item above). Once
+   `scrollback_narrate_2026-08-17.txt` is committed: derive all stamps
+   from every "N bars since" line (≥14 afternoon, lower bound — the
+   full-session capture will add 12:11Z→stop), presence-check time-ordered
    under the matched comparator, test the accumulating-key-pollution
-   hypothesis (predicts a ramp: clean morning → progressive afternoon
-   divergence). Check predicate: profile artifact archived beside the
+   ramp hypothesis. Check predicate: profile artifact archived beside the
    probe capture, referenced from the 0e7ae9c register entry. Orphan-size
-   cross-check: 20,275 B ≈ ~48 labels at ~338 B/label, consistent with
+   cross-check already registered: 20,275 B ≈ ~48 labels, consistent with
    heartbeat density.
 5. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
