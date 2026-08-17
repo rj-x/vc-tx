@@ -224,8 +224,7 @@ delete them.
 carries its epistemic label — FACT / INFERENCE / SPECULATION — with
 durable citations per §7.)*
 
-**As of:** 2026-08-17 ~12:30Z (Monday), written mid-session while context
-is cheap.
+**As of:** 2026-08-17 ~16:15Z (Monday), written at session close.
 
 **Project phase:** accumulation mode — observe and measure, trade nothing,
 touch no thresholds (FACT: README). Walk-forward not yet feasible;
@@ -233,27 +232,18 @@ realistic opening ~autumn 2026 (INFERENCE: prior-session estimate, working
 set still growing toward fold support).
 
 **Upcoming deadlines / watch items:**
-- Pause-window restart, 2026-08-17 21:00–22:10 London, WITH capture
-  sequence (operator-owned, order matters): (1) Ctrl-C narrate, wait for
-  the session FEED LATENCY summary; (2) capture narrate terminal
-  scrollback → `logs/history_surgery/scrollback_narrate_2026-08-17.txt`
-  (verify it spans 06:56 banner → latency line; note truncation
-  honestly); (3) Ctrl-C paper (clean STOP), capture its scrollback →
-  `scrollback_paper_2026-08-17.txt` (sole home of any PERSIST
-  FAILED/poll-failed warnings); (4) only then terminal teardown; (5) both
-  loops up on `cf90a75`+ via README nohup+pidfile, dated ladder file;
-  (6) commit captures + ledger delta. Check predicate: ledger START after
-  20:00Z with canonical anchoring and predecessor-anchored gap off
-  tonight's STOP; checkpoint.json updating per poll; capture files
-  committed.
-- 1M retention floor: sync ran 2026-08-17 06:51:36→06:56:01Z, all green
-  (FACT: `logs/sync/2026-08-17.log`; minute store built to 06:55Z; paper
-  START 17 s later — runbook sequence followed). The log's **+176 new**
-  uk100fut minute bars is a fossil: at ~full-fill feed density it bounds
-  the Sunday process death at ≈04:00–05:00Z Monday (INFERENCE; band width
-  = possible Friday-close leftover bars, since Sunday's pre-start sync
-  appears to have been skipped — Sunday warm_through was Fri 19:59Z).
-  Point of no return ≈ 3 weeks after the last successful sync.
+- Evening close-out 2026-08-17 (operator): run `scripts/sync_daily.sh`
+  (also heals the 15:06–15:32Z store hole — death bound already
+  extracted, register 21); commit sweep — scrollback capture
+  (`logs/history_surgery/scrollback_narrate_2026-08-17.txt`), ledger
+  delta, this doc as `docs/onboarding_prompt.md`. The 21:00–22:10 London
+  pause window has NOTHING left to do — both processes already relaunched
+  detached on post-fix code (13:50Z / 15:42:35Z). Check predicate: first
+  overnight session shows heartbeats + checkpoint.json advancing, no
+  UNCLEAN_PREDECESSOR at next planned restart.
+- 1M retention floor: last sync 2026-08-17 06:51:36→06:56:01Z, all green
+  (FACT: `logs/sync/2026-08-17.log`); evening sync pending per close-out
+  item. Point of no return ≈ 3 weeks after the last successful sync.
 - `uk100sep26` expiry ~2026-09-18: scenario A/B check in the week after;
   grab the next contract's ID before the roll (DATA.md).
 
@@ -286,39 +276,45 @@ set still growing toward fold support).
   pinned on archived probe page, 50 green. Deployed: n/a (tests + docs).
 - `0e7ae9c` — canonical_tod anchoring for both live loops + session-id
   rollover at the anchor, pin test asserts Friday's bin 1127, 51 green.
-  Deployed: NO — post-dates the running processes; goes live at the
-  2026-08-17 pause restart.
+  Deployed: YES — narrate since ~13:50Z, paper since 15:42:35Z.
 - `74c8d7b` — crash-coverage honesty set (UNCLEAN_PREDECESSOR, checkpoint
   sidecar, predecessor-anchored gaps, retro-log, banner, caveat, README),
-  51 green. Deployed: NO — goes live at the same 2026-08-17 pause restart
-  alongside `0e7ae9c`.
+  51 green, register 19. Deployed: YES — in the 15:42:35Z paper (first
+  live UNCLEAN_PREDECESSOR fired same day).
+- Later 2026-08-17 lineage (all deployed at the relaunches or
+  docs/register-only): `8a6bba6` (death-bound amendments), `70a55a9`
+  (item-4 overturn), `cf90a75` (register 20, fd-1 adjudication,
+  commit-map archive), `12da08b` (study spec + orphan cross-check),
+  `f0eab60` (divergence study), `664a47b` (register 21, second death),
+  `ee017b9` (cluster-criterion correction), `996c27a` (register 21
+  closed; item 22 session-JSONL promoted). NOTE: all pre-12:43Z hashes
+  above are POST-REWRITE identities where applicable — verify against
+  `logs/history_surgery/commit-map_2026-08-17` if a citation fails to
+  resolve.
 
 **Open items** (each phrased as a checkable predicate where possible):
-1. 2026-08-17 pause restart lands clean — see watch item above.
+1. Pause restart OVERTAKEN BY EVENTS — both processes relaunched detached
+   pre-pause (narrate ~13:50Z after planned early stop; paper 15:42:35Z
+   after crash #2). Pause window is empty; see evening close-out watch
+   item.
 2. Fix-cycle thread CLOSED 2026-08-17 (`74c8d7b` reg 19 → `8a6bba6` →
-   `70a55a9` overturn → `cf90a75` reg 20): crash-coverage set live at
-   restart; death bounded ≈03:10–05:00Z; ledger verified intact through
-   the 13:11Z amendment; fd-1 adjudicated (orphan inode 187405622,
-   20,275 B, full stream, accepted-lost); commit-map archived
-   (`logs/history_surgery/commit-map_2026-08-17`); history-surgery rule
-   registered; "hazard didn't bite today" WITHDRAWN — 10:26Z and 10:39Z
-   are heartbeat-attested, replay-irreproducible (rv 0.51/0.55), open.
+   `70a55a9` overturn → `cf90a75` reg 20): crash-coverage set live since
+   the 15:42:35Z relaunch; Sunday death bounded ≈03:10–05:00Z
+   (density-verified); ledger verified intact; fd-1 adjudicated (orphan
+   inode 187405622, 20,275 B, accepted-lost); commit-map archived;
+   history-surgery rule registered; "hazard didn't bite today" WITHDRAWN.
+   The "two open divergence candidates" noted at closure were later
+   dissolved — see item 5.
 3. Canonical-bin regrade of the 2026-08-17 morning ladder: CLOSED within
    the fix-cycle thread — 12/12 exact under the cash-scoped comparator,
    scope-fenced to the 1min layer and the excerpt window (07:09–08:25Z);
    both near-threshold prints matched. Superseded by the
    divergence-profile item above for the rest of the session.
-4. Divergence-profile study CLOSED (`f0eab60`, archived beside probe
-   capture): 21/24 presence-match; ramp hypothesis REFUTED (clean
-   07:09→10:09, miss cluster 10:26/10:39/11:02, clean 11:26→13:33 incl.
-   the decline and 12:56Z flip). Measured live signature of the tod
-   defect: transient, non-compounding, misses at near-threshold bars
-   (replay rv 0.51/0.55). Mechanism unresolved — payloads freed with the
-   orphan; optional `--debug-structure` characterization offered
-   (transient swing-state divergence hypothesis, labeled as such).
-   Scope: presence-level only — payload agreement for the 21 matches is
-   unmeasurable. Latency floor registered: n=407, min 1s / median 38s /
-   max 63s. This supersedes item 2's "two open divergence candidates."
+4. Divergence-profile study CLOSED (`f0eab60`): 21/24 presence-match;
+   ramp hypothesis REFUTED (clean 07:09→10:09, apparent miss cluster
+   10:26/10:39/11:02, clean 11:26→13:33). SUPERSEDED BY ITEM 5 — the
+   cluster was the comparator's blindness, not divergence. Latency floor
+   registered: n=407, min 1s / median 38s / max 63s (single-poll).
 5. Cluster-criterion correction CLOSED (`ee017b9`): comparator's
    structural_cores() was blind to TEST (registry-based qualified label,
    not a core) — the three "misses" were instrument blindness at
@@ -329,6 +325,13 @@ set still growing toward fold support).
    in place.
 6. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
+7. Session-JSONL persistence = register item 22 (`996c27a`), NEXT BUILD
+   SLOT, spec frozen: both live loops persist full event streams to dated
+   append-per-event JSONL under logs/, all segments (engine's continuous
+   view, observational tagging intact), narrative-only fence stated,
+   checkpoint-coherence test (killed process's JSONL ends within one
+   event of its checkpoint). Check predicate: dated JSONL files exist and
+   advance; coherence test green.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
@@ -352,11 +355,10 @@ set still growing toward fold support).
   unverified. RULES.md is NOT the register.
 - Backtest v1 results and verdict; which hypotheses the working set
   favors.
-- Sunday process death time: exact minute unrecoverable, but now BOUNDED
-  ≈04:00–05:00Z 2026-08-17 (INFERENCE: sync log +176 new minute bars ≈
-  176 tradable minutes of unpersisted tape at ~full-fill density;
-  cause-class fix queued). Supersedes the earlier "bounded 20:03Z→06:56Z"
-  statement.
+- Sunday process death time: exact minute unrecoverable, but BOUNDED
+  ≈03:10–05:00Z 2026-08-17 (INFERENCE, density-VERIFIED in `8a6bba6`:
+  sync-log +176 new minute bars against measured 0.91 overnight fill;
+  cause-class retired by checkpoint.json from 2026-08-18).
 
 **Chat-only decisions not yet in any doc:**
 - The prior handover doc's timeline-wrinkle paragraph needs correcting to
@@ -367,12 +369,12 @@ set still growing toward fold support).
 
 **Artifact excerpts the open items reference:**
 ```
-ledger (last lifecycle events):
-{"event": "START", "ts": "2026-08-16 20:02:59.762956+00:00", "warm_through": "2026-08-14 19:59:00+00:00", "coverage_gap": "2 days 00:03:59.762938", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
-{"event": "COVERAGE_GAP", "from": "2026-08-14 19:59:00+00:00", "note": "downtime hole - decisions never backfilled"}
-{"event": "START", "ts": "2026-08-17 06:56:18.000359+00:00", "warm_through": "2026-08-17 06:55:00+00:00", "coverage_gap": "0 days 00:01:18.000347", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
-   ^ no STOP between the two STARTs (unclean Sunday death); no COVERAGE_GAP
-     after the Monday START despite the overnight decisions hole — the two
-     ledger findings, visible in three lines.
-latest heartbeat: # ♥ 12:11Z last_bar=12:11Z close=10789.6 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 6 bars since last label
+ledger day-end lifecycle tail (operator: paste the verbatim final lines —
+UNCLEAN_PREDECESSOR + 15:42:35Z START — at commit time; the shape below
+is from the session record, register 21):
+  UNCLEAN_PREDECESSOR: predecessor START 06:56:18Z, last recoverable
+    activity 06:55:00Z (warm_through fallback, pre-checkpoint predecessor)
+  START ts 15:42:35Z, coverage_gap 8:47:35 (knowingly overstated; true
+    hole ≈15:06→15:42; death bounded 15:06–15:08Z via store gap
+    15:05→15:33, extracted pre-sync)
 ```
