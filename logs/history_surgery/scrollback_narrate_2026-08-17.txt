@@ -1,0 +1,33 @@
+(venv) r.john@rj-mac-reply vc-tx2 % caffeinate -is python -m engine.narrate --instr uk100fut --live --ladder > live_ladder_v4.csv
+# narrate LIVE uk100fut (id 70152) - narrative-only by construction; polling 1/min via the collector; Ctrl-C to stop
+!! LOCKBOX-SCOPE ACCESS (narrative-only): uk100fut/1min served past 2026-08-04 00:00:00+00:00 for a narrate replay - labels/phases/hypotheses/dump only; no metrics or aggregates permitted.
+# warmed from store: 25 sessions, last bar 2026-08-14 15:30:00+00:00
+# ♥ 07:11Z last_bar=07:11Z close=10784.6 | 1h RANGING/-1 | 15min RANGING/+1 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 07:26Z last_bar=07:26Z close=10806.3 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 17 bars since last label — alive and unimpressed
+# ♥ 07:41Z last_bar=07:41Z close=10814.6 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 10 bars since last label — alive and unimpressed
+# ♥ 07:56Z last_bar=07:56Z close=10810.6 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 08:11Z last_bar=08:11Z close=10812.1 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 7 bars since last label — alive and unimpressed
+# ♥ 08:26Z last_bar=08:26Z close=10802.3 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 1 bars since last label — alive and unimpressed
+# ♥ 08:41Z last_bar=08:41Z close=10791.1 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 08:56Z last_bar=08:56Z close=10794.6 | 1h RANGING/-1 | 15min RANGING/+0 | <cash> | 9 bars since last label — alive and unimpressed
+# ♥ 09:11Z last_bar=09:11Z close=10789.3 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 0 bars since last label — alive and unimpressed
+# ♥ 09:26Z last_bar=09:26Z close=10789.1 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 09:41Z last_bar=09:41Z close=10789.1 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 6 bars since last label — alive and unimpressed
+# ♥ 09:56Z last_bar=09:56Z close=10786.3 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 10:11Z last_bar=10:11Z close=10781.6 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 10:26Z last_bar=10:26Z close=10779.6 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 0 bars since last label — alive and unimpressed
+# ♥ 10:41Z last_bar=10:41Z close=10799.1 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 2 bars since last label — alive and unimpressed
+# ♥ 10:56Z last_bar=10:56Z close=10793.6 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 17 bars since last label — alive and unimpressed
+# ♥ 11:11Z last_bar=11:11Z close=10791.6 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 9 bars since last label — alive and unimpressed
+# ♥ 11:26Z last_bar=11:26Z close=10794.1 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 0 bars since last label — alive and unimpressed
+# ♥ 11:41Z last_bar=11:41Z close=10800.1 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 7 bars since last label — alive and unimpressed
+# ♥ 11:56Z last_bar=11:56Z close=10800.1 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 5 bars since last label — alive and unimpressed
+# ♥ 12:11Z last_bar=12:11Z close=10789.6 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 6 bars since last label — alive and unimpressed
+# ♥ 12:26Z last_bar=12:26Z close=10780.1 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 5 bars since last label — alive and unimpressed
+# ♥ 12:41Z last_bar=12:41Z close=10766.8 | 1h RANGING/+1 | 15min RANGING/+0 | <cash> | 6 bars since last label — alive and unimpressed
+# ♥ 12:56Z last_bar=12:56Z close=10767.1 | 1h RANGING/+1 | 15min RANGING/-1 | <cash> | 4 bars since last label — alive and unimpressed
+# ♥ 13:12Z last_bar=13:11Z close=10766.6 | 1h RANGING/+1 | 15min RANGING/-1 | <cash> | 19 bars since last label — alive and unimpressed
+# ♥ 13:27Z last_bar=13:27Z close=10757.3 | 1h RANGING/+1 | 15min RANGING/-1 | <cash> | 0 bars since last label — alive and unimpressed
+# ♥ 13:42Z last_bar=13:42Z close=10757.6 | 1h RANGING/+1 | 15min RANGING/-1 | <cash> | 9 bars since last label — alive and unimpressed
+^C
+# FEED LATENCY (bar close -> availability, n=407): min 1s / median 38s / max 63s - this sets the floor for any future live use
