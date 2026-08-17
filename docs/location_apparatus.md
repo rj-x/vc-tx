@@ -49,6 +49,32 @@
 >
 > **Census consequence:** a "within ATR-band of a registered signature-registry level" cell has **no existing column**. It requires census-side plumbing joining each LABEL event to registry state as of that bar — replayable from logs/store with zero look-ahead, but it is *new derivation*, not a read-off.
 
+### 3a. Reviewer's account — corrections on record (2026-08-18)
+
+The operator adjudicated the reviewer's three-component account against this
+doc; two corrections stand:
+
+1. **Prior-session extremes were omitted** — the account undercounted the
+   standing-level families (§1 has session extremes, prior-session
+   extremes, AND swing levels).
+2. **Registry lifetime mischaracterized** — signature-registry entries
+   expire at 30 bars (§3): they are **ephemeral event-memories, not
+   standing areas**. A "zone" derived from the registry is a recent-event
+   phenomenon by construction.
+
+**Census-design consequences (binding on the scalp location census):**
+- **Recent-event zones** (signature-registry join — plumbing required, §3)
+  and **standing levels** (session/prior-session extremes + swing levels —
+  existing `location_ref` columns) are DIFFERENT OBJECTS with different
+  lifetimes and must be **separate cells**, never pooled into one
+  "at a level" class.
+- **Climax asymmetry caveat:** climaxes are wick-**registered** (registry
+  stores `bar.low`/`bar.high`, §3) but close-**measured** (`location_ref`
+  distances for a climax print anchor at `bar.close`, §1). A census cell
+  matching prints against registry levels must pick one convention per
+  measurement and state it — mixing them shifts distances by the bar's
+  wick length.
+
 ## 4. TEST label — evaluation conditions in full
 
 `engine/testcrit.py:7-26` (authoritative wherever used; RULES.md Sec 0). Written long-side (dir +1, testing a registered LOW), mirrored for short:
