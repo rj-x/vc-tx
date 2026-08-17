@@ -145,14 +145,15 @@ candidates through walk-forward); never look at lockbox data outside
   by design (emitter skips label=None), so gaps between narrative lines
   are unlabeled tape, not missing data. Verify continuity against the
   store, never against the narrative stream.
-- **The "six-rung ladder": definition UNVERIFIED** — the ladder post-dates the
-  spec (not in prompt.md); the authoritative definition lives in classifier
-  code or the register, neither read this era. Best hypothesis
-  (INFERENCE): rungs = the six ladder timeframes in `build_all_bars`
-  (1/3/5/15/30/60min, narrate.py) — but all ladder output observed to date
-  is 1min rows only, which does not confirm this. Verify before any use
-  that depends on what a rung is. Label definitions live in prompt.md
-  Part 2 (structural core vs context qualifier).
+- **Ladder rungs carry FULL context pipes** (VERIFIED 2026-08-17: the
+  debug replay emits PHASE_EVAL + SWING_CONFIRMED on 3M/5M) — perception
+  is all-timeframe; only the DECISION layer (hypothesis machinery) reads
+  the single 15M signal pipe. "Six rungs" = the six ladder TFs
+  (1/3/5/15/30/60min) now strongly supported, though the term's
+  authoritative definition (classifier/register) remains unread. k-lag
+  swing confirmation is constant in bars, so structure-knowledge scales
+  linearly in wall-clock across rungs (measured 2026-08-17: top known at
+  1M 58 min before 15M).
 
 ## 5. Transfer mechanics (stable — learned the hard way)
 
@@ -287,7 +288,10 @@ set still growing toward fold support).
   commit-map archive), `12da08b` (study spec + orphan cross-check),
   `f0eab60` (divergence study), `664a47b` (register 21, second death),
   `ee017b9` (cluster-criterion correction), `996c27a` (register 21
-  closed; item 22 session-JSONL promoted). NOTE: all pre-12:43Z hashes
+  closed; item 22 session-JSONL promoted), `3a0988b` (cascade analysis
+  archived: logs/narrate/cascade_analysis_1146_2026-08-17.md; rung
+  doctrine registered; composition sketches → lab candidates for round
+  1). NOTE: all pre-12:43Z hashes
   above are POST-REWRITE identities where applicable — verify against
   `logs/history_surgery/commit-map_2026-08-17` if a citation fails to
   resolve.
