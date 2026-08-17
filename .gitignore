@@ -1,11 +1,11 @@
 # data stores: large, reproducible via sync WITHIN RETENTION (minute feed
 # ~30 days — see README data section; history deepens only by syncing)
-data/*
-clean_finsa/
-logs/
+#data/*
+#clean_finsa/
+#logs/
 # hand-maintained/evidence files inside data/ ARE tracked:
-!data/macro_releases.csv
-!data/_known_issues.json
+#!data/macro_releases.csv
+#!data/_known_issues.json
 venv/
 __pycache__/
 *.pyc
