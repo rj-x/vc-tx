@@ -306,17 +306,17 @@ set still growing toward fold support).
    scope-fenced to the 1min layer and the excerpt window (07:09–08:25Z);
    both near-threshold prints matched. Superseded by the
    divergence-profile item above for the rest of the session.
-4. Divergence-profile measurement (specified `12da08b`): capture
-   RECOVERED complete (old narrate terminated ~13:43Z; n=407 latency
-   count corroborates; orphan freed at exit — afternoon payloads
-   permanently lost, accepted). Operator to commit capture as
-   `logs/history_surgery/scrollback_narrate_2026-08-17.txt` → study
-   unblocked. Final input: 24 derivable stamps (19 afternoon), 10:39Z and
-   12:52Z double-witnessed; profile spans the 12:56Z 15min regime flip.
-   Bonus register deliverable: full-session latency distribution n=407,
-   min 1s / median 38s / max 63s (single-poll floor). Check predicate:
-   profile artifact archived beside the probe capture, referenced from
-   the 0e7ae9c register entry.
+4. Divergence-profile study CLOSED (`f0eab60`, archived beside probe
+   capture): 21/24 presence-match; ramp hypothesis REFUTED (clean
+   07:09→10:09, miss cluster 10:26/10:39/11:02, clean 11:26→13:33 incl.
+   the decline and 12:56Z flip). Measured live signature of the tod
+   defect: transient, non-compounding, misses at near-threshold bars
+   (replay rv 0.51/0.55). Mechanism unresolved — payloads freed with the
+   orphan; optional `--debug-structure` characterization offered
+   (transient swing-state divergence hypothesis, labeled as such).
+   Scope: presence-level only — payload agreement for the 21 matches is
+   unmeasurable. Latency floor registered: n=407, min 1s / median 38s /
+   max 63s. This supersedes item 2's "two open divergence candidates."
 5. Thin-tape probe window (post-close regime) — prerequisite to any
    latency reclaim (register). Not yet scheduled.
 
