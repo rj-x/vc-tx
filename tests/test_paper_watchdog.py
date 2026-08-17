@@ -17,5 +17,9 @@ def test_guarded_logs_and_returns(tmp_path):
 
 def test_watchdog_calendar():
     assert expect_prints(pd.Timestamp("2026-08-14 16:10Z"))        # Friday cash
-    assert not expect_prints(pd.Timestamp("2026-08-14 20:30Z"))    # 21:30 London pause
+    # 20:30Z is LIVE TAPE (store-measured: bars print to 20:59Z open) —
+    # the original assertion here pinned the London-hours defect that fired
+    # 11 false stalls 2026-08-17 (finding 24; see test_watchdog_calendar.py)
+    assert expect_prints(pd.Timestamp("2026-08-14 20:30Z"))
+    assert not expect_prints(pd.Timestamp("2026-08-14 21:30Z"))    # UTC pause
     assert not expect_prints(pd.Timestamp("2026-08-15 10:00Z"))    # Saturday
