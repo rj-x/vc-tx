@@ -1,0 +1,794 @@
+# narrate replay uk100fut 2026-08-17 10:00:00+00:00 -> 2026-08-17 13:45:00+00:00 stack 1h/15min/1min (narrative-only=True)
+# convention: bars stamped by CLOSE time; store/TradingView open-time stamp = close - TF
+# state @ window start: 1h: phase=RANGING trend=+0 age=0 atr=12.2 close=10789.1 | 15min: phase=RANGING trend=+1 age=30 atr=11.9 close=10786.3; active hypotheses: none
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 22, "swings_wo_extreme": 515, "bars_since_extreme": 2977, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 32, "swings_wo_extreme": 821, "bars_since_extreme": 4968, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 31, "swings_wo_extreme": 186, "bars_since_extreme": 996, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:00:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 15, "swings_wo_extreme": 2298, "bars_since_extreme": 14788, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:01:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:01:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 16, "swings_wo_extreme": 2298, "bars_since_extreme": 14789, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:02:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:02:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 17, "swings_wo_extreme": 2298, "bars_since_extreme": 14790, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:03:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:03:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10775.6, "occurred_idx": 11497, "confirmed_idx": 11500, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:03:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 33, "swings_wo_extreme": 822, "bars_since_extreme": 4969, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:03:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:03:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 18, "swings_wo_extreme": 2298, "bars_since_extreme": 14791, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:04:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:04:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 19, "swings_wo_extreme": 2298, "bars_since_extreme": 14792, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:05:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:05:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 23, "swings_wo_extreme": 515, "bars_since_extreme": 2978, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:05:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10775.6, "high": 10779.1, "low": 10775.6, "close": 10779.1, "volume": 40.0, "rel_volume": 1.06, "location_ref": "signal_swing_level", "location_level": 10780.8, "dist_pts": -1.7, "dist_signal_atr": -0.14}
+{"ts": "2026-08-17 10:05:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 20, "swings_wo_extreme": 2298, "bars_since_extreme": 14793, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:06:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:06:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 34, "swings_wo_extreme": 822, "bars_since_extreme": 4970, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:06:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:06:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 21, "swings_wo_extreme": 2298, "bars_since_extreme": 14794, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:07:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:07:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10774.6, "occurred_idx": 34354, "confirmed_idx": 34357, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:07:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 22, "swings_wo_extreme": 2299, "bars_since_extreme": 14795, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:08:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10778.6, "high": 10781.1, "low": 10777.6, "close": 10780.6, "volume": 34.0, "rel_volume": 1.23, "location_ref": "signal_swing_level", "location_level": 10780.8, "dist_pts": -0.2, "dist_signal_atr": -0.02}
+{"ts": "2026-08-17 10:08:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 23, "swings_wo_extreme": 2299, "bars_since_extreme": 14796, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:09:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10779.8, "high": 10782.1, "low": 10777.3, "close": 10781.8, "volume": 82.0, "rel_volume": 0.8}
+{"ts": "2026-08-17 10:09:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 35, "swings_wo_extreme": 822, "bars_since_extreme": 4971, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:09:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10780.1, "high": 10782.1, "low": 10779.6, "close": 10781.8, "volume": 21.0, "rel_volume": 0.49, "location_ref": "signal_swing_level", "location_level": 10780.8, "dist_pts": 1.0, "dist_signal_atr": 0.08}
+{"ts": "2026-08-17 10:09:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 24, "swings_wo_extreme": 2299, "bars_since_extreme": 14797, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:10:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:10:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 24, "swings_wo_extreme": 515, "bars_since_extreme": 2979, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:10:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:10:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 25, "swings_wo_extreme": 2299, "bars_since_extreme": 14798, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:11:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:11:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 26, "swings_wo_extreme": 2299, "bars_since_extreme": 14799, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:12:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:12:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 36, "swings_wo_extreme": 822, "bars_since_extreme": 4972, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:12:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:12:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 27, "swings_wo_extreme": 2299, "bars_since_extreme": 14800, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:13:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:13:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 28, "swings_wo_extreme": 2299, "bars_since_extreme": 14801, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:14:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:14:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 29, "swings_wo_extreme": 2299, "bars_since_extreme": 14802, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 25, "swings_wo_extreme": 515, "bars_since_extreme": 2980, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10774.6, "occurred_idx": 11501, "confirmed_idx": 11504, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 37, "swings_wo_extreme": 823, "bars_since_extreme": 4973, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 32, "swings_wo_extreme": 186, "bars_since_extreme": 997, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:15:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 30, "swings_wo_extreme": 2299, "bars_since_extreme": 14803, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:16:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:16:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 31, "swings_wo_extreme": 2299, "bars_since_extreme": 14804, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:17:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10780.6, "high": 10782.3, "low": 10780.1, "close": 10782.1, "volume": 26.0, "rel_volume": 0.99, "location_ref": "signal_swing_level", "location_level": 10780.8, "dist_pts": 1.3, "dist_signal_atr": 0.11}
+{"ts": "2026-08-17 10:17:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10783.1, "occurred_idx": 34364, "confirmed_idx": 34367, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:17:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 32, "swings_wo_extreme": 2300, "bars_since_extreme": 14805, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:18:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10780.1, "high": 10783.6, "low": 10778.8, "close": 10783.3, "volume": 74.0, "rel_volume": 0.87}
+{"ts": "2026-08-17 10:18:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 38, "swings_wo_extreme": 823, "bars_since_extreme": 4974, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:18:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:18:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 33, "swings_wo_extreme": 2300, "bars_since_extreme": 14806, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:19:00+00:00", "tf": "1min", "type": "LABEL", "label": "POTENTIAL_SELLING_CLIMAX", "structural": "SELLING_CLIMAX", "segment": "cash", "open": 10783.1, "high": 10791.3, "low": 10781.1, "close": 10781.6, "volume": 120.0, "rel_volume": 4.32, "location_ref": "signal_swing_level", "location_level": 10780.8, "dist_pts": 0.8, "dist_signal_atr": 0.07}
+{"ts": "2026-08-17 10:19:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 34, "swings_wo_extreme": 2300, "bars_since_extreme": 14807, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:19:00+00:00", "tf": "1min", "type": "PHASE", "phase": "POST_CLIMAX", "trigger": "POTENTIAL_SELLING_CLIMAX", "direction": 1, "segment": "cash"}
+{"ts": "2026-08-17 10:19:00+00:00", "tf": "1min", "type": "PULLBACK_EXPANDED", "max_rel_vol": 4.32}
+{"ts": "2026-08-17 10:20:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:20:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10774.6, "occurred_idx": 6891, "confirmed_idx": 6894, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:20:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 26, "swings_wo_extreme": 516, "bars_since_extreme": 2981, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:20:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:20:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 35, "swings_wo_extreme": 2300, "bars_since_extreme": 14808, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:21:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:21:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 39, "swings_wo_extreme": 823, "bars_since_extreme": 4975, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:21:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10783.3, "high": 10787.3, "low": 10783.3, "close": 10786.1, "volume": 26.0, "rel_volume": 0.83, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 2.5, "dist_signal_atr": 0.2}
+{"ts": "2026-08-17 10:21:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 36, "swings_wo_extreme": 2300, "bars_since_extreme": 14809, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:22:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:22:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10791.3, "occurred_idx": 34369, "confirmed_idx": 34372, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:22:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14810, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:23:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 10:23:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14811, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:24:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:24:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 40, "swings_wo_extreme": 823, "bars_since_extreme": 4976, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:24:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:24:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14812, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:25:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:25:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 27, "swings_wo_extreme": 516, "bars_since_extreme": 2982, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:25:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": "NO_DEMAND", "segment": "cash", "open": 10783.8, "high": 10785.1, "low": 10783.3, "close": 10784.6, "volume": 19.0, "rel_volume": 0.64, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 1.0, "dist_signal_atr": 0.08}
+{"ts": "2026-08-17 10:25:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14813, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:26:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10784.3, "high": 10785.6, "low": 10783.3, "close": 10785.1, "volume": 17.0, "rel_volume": 0.51, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 1.5, "dist_signal_atr": 0.12}
+{"ts": "2026-08-17 10:26:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14814, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:27:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:27:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 41, "swings_wo_extreme": 823, "bars_since_extreme": 4977, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:27:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:27:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14815, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:28:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:28:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14816, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 10:29:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10784.1, "high": 10785.6, "low": 10783.6, "close": 10785.1, "volume": 27.0, "rel_volume": 0.93, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 1.5, "dist_signal_atr": 0.12}
+{"ts": "2026-08-17 10:29:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14817, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:29:00+00:00", "tf": "1min", "type": "PHASE", "phase": "RANGING", "trigger": "no_new_extreme", "segment": "cash"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "5min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "open": 10784.3, "high": 10799.8, "low": 10783.3, "close": 10799.1, "volume": 380.0, "rel_volume": 2.41}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 28, "swings_wo_extreme": 516, "bars_since_extreme": 2983, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "BUYING_CLIMAX", "segment": "cash"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 42, "swings_wo_extreme": 823, "bars_since_extreme": 4978, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "15min", "type": "LABEL", "label": "VALIDATED_ADVANCE", "structural": "VALIDATED_ADVANCE", "segment": "cash", "open": 10780.1, "high": 10799.8, "low": 10778.8, "close": 10799.1, "volume": 708.0, "rel_volume": 1.59}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 33, "swings_wo_extreme": 186, "bars_since_extreme": 998, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "BUYING_CLIMAX", "segment": "cash"}
+{"ts": "2026-08-17 10:30:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14818, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:31:00+00:00", "tf": "1min", "type": "LABEL", "label": "VALIDATED_DECLINE", "structural": "VALIDATED_DECLINE", "segment": "cash", "open": 10798.6, "high": 10799.6, "low": 10790.1, "close": 10791.1, "volume": 196.0, "rel_volume": 4.88, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -3.9, "dist_signal_atr": -0.3}
+{"ts": "2026-08-17 10:31:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14819, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:32:00+00:00", "tf": "1min", "type": "LABEL", "label": "SPRING", "structural": "SPRING", "segment": "cash", "open": 10790.6, "high": 10792.1, "low": 10786.8, "close": 10791.1, "volume": 81.0, "rel_volume": 2.29, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 3.2, "dist_signal_atr": 0.25}
+{"ts": "2026-08-17 10:32:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2301, "bars_since_extreme": 14820, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:33:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:33:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 43, "swings_wo_extreme": 823, "bars_since_extreme": 4979, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:33:00+00:00", "tf": "1min", "type": "LABEL", "label": "UPTHRUST", "structural": "UPTHRUST", "segment": "cash", "open": 10790.8, "high": 10793.6, "low": 10789.6, "close": 10789.6, "volume": 48.0, "rel_volume": 1.57, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -1.4, "dist_signal_atr": -0.11}
+{"ts": "2026-08-17 10:33:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10799.8, "occurred_idx": 34380, "confirmed_idx": 34383, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:33:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14821, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:34:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:34:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14822, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:35:00+00:00", "tf": "5min", "type": "LABEL", "label": "VALIDATED_DECLINE", "structural": "VALIDATED_DECLINE", "segment": "cash", "open": 10798.6, "high": 10799.6, "low": 10786.8, "close": 10788.3, "volume": 394.0, "rel_volume": 2.49}
+{"ts": "2026-08-17 10:35:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 29, "swings_wo_extreme": 516, "bars_since_extreme": 2984, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:35:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10791.8, "high": 10792.1, "low": 10788.1, "close": 10788.3, "volume": 28.0, "rel_volume": 0.99, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 4.7, "dist_signal_atr": 0.36}
+{"ts": "2026-08-17 10:35:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14823, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:36:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:36:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 44, "swings_wo_extreme": 823, "bars_since_extreme": 4980, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:36:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:36:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14824, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:37:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10788.1, "high": 10792.6, "low": 10788.1, "close": 10790.6, "volume": 25.0, "rel_volume": 0.71, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -4.4, "dist_signal_atr": -0.34}
+{"ts": "2026-08-17 10:37:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14825, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:38:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10790.8, "high": 10792.1, "low": 10790.3, "close": 10791.3, "volume": 24.0, "rel_volume": 0.92, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -3.7, "dist_signal_atr": -0.29}
+{"ts": "2026-08-17 10:38:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2302, "bars_since_extreme": 14826, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10799.8, "occurred_idx": 11509, "confirmed_idx": 11512, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4981, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10791.1, "high": 10791.6, "low": 10790.1, "close": 10791.6, "volume": 15.0, "rel_volume": 0.55, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -3.4, "dist_signal_atr": -0.26}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10787.1, "occurred_idx": 34386, "confirmed_idx": 34389, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:39:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 2303, "bars_since_extreme": 14827, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:40:00+00:00", "tf": "5min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10788.1, "high": 10795.3, "low": 10787.1, "close": 10794.3, "volume": 125.0, "rel_volume": 0.85}
+{"ts": "2026-08-17 10:40:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 30, "swings_wo_extreme": 516, "bars_since_extreme": 2985, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:40:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:40:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 2303, "bars_since_extreme": 14828, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:41:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 10:41:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 2303, "bars_since_extreme": 14829, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:42:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:42:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4982, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:42:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:42:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 2303, "bars_since_extreme": 14830, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:43:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:43:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 2303, "bars_since_extreme": 14831, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:44:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:44:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 5, "swings_wo_extreme": 2303, "bars_since_extreme": 14832, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10799.8, "occurred_idx": 6896, "confirmed_idx": 6899, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 517, "bars_since_extreme": 2986, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4983, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 34, "swings_wo_extreme": 186, "bars_since_extreme": 999, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:45:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 6, "swings_wo_extreme": 2303, "bars_since_extreme": 14833, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:46:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:46:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10796.6, "occurred_idx": 34393, "confirmed_idx": 34396, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:46:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2304, "bars_since_extreme": 14834, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:47:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:47:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2304, "bars_since_extreme": 14835, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:48:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:48:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4984, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:48:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:48:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10792.6, "occurred_idx": 34395, "confirmed_idx": 34398, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:48:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14836, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:49:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:49:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14837, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:50:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:50:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 517, "bars_since_extreme": 2987, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:50:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 10:50:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14838, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:51:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:51:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4985, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:51:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:51:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14839, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:52:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:52:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14840, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:53:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:53:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14841, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:54:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:54:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4986, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:54:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:54:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2305, "bars_since_extreme": 14842, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:55:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:55:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 517, "bars_since_extreme": 2988, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:55:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:55:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10800.8, "occurred_idx": 34402, "confirmed_idx": 34405, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 10:55:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 2306, "bars_since_extreme": 14843, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:56:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:56:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 2306, "bars_since_extreme": 14844, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:57:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:57:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4987, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:57:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 10:57:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 2306, "bars_since_extreme": 14845, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:58:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 10:58:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 2306, "bars_since_extreme": 14846, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 10:59:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 10:59:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 2306, "bars_since_extreme": 14847, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 517, "bars_since_extreme": 2989, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 824, "bars_since_extreme": 4988, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "15min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10774.6, "occurred_idx": 2306, "confirmed_idx": 2309, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1000, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:00:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 5, "swings_wo_extreme": 2306, "bars_since_extreme": 14848, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:01:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10791.1, "high": 10793.1, "low": 10789.3, "close": 10790.3, "volume": 42.0, "rel_volume": 0.59, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -4.7, "dist_signal_atr": -0.39}
+{"ts": "2026-08-17 11:01:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 6, "swings_wo_extreme": 2306, "bars_since_extreme": 14849, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:02:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10790.1, "high": 10792.6, "low": 10790.1, "close": 10791.1, "volume": 35.0, "rel_volume": 0.38, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -3.9, "dist_signal_atr": -0.32}
+{"ts": "2026-08-17 11:02:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 7, "swings_wo_extreme": 2306, "bars_since_extreme": 14850, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:03:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:03:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10800.8, "occurred_idx": 11517, "confirmed_idx": 11520, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:03:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 825, "bars_since_extreme": 4989, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:03:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:03:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 8, "swings_wo_extreme": 2306, "bars_since_extreme": 14851, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:04:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:04:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10789.3, "occurred_idx": 34411, "confirmed_idx": 34414, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:04:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14852, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:05:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:05:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 517, "bars_since_extreme": 2990, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:05:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:05:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14853, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:06:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:06:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 825, "bars_since_extreme": 4990, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:06:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:06:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14854, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:07:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:07:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14855, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:08:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:08:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14856, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:09:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:09:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 825, "bars_since_extreme": 4991, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:09:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:09:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14857, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:10:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:10:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10800.8, "occurred_idx": 6901, "confirmed_idx": 6904, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:10:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 518, "bars_since_extreme": 2991, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:10:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:10:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14858, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:11:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:11:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14859, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:12:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:12:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10789.3, "occurred_idx": 11520, "confirmed_idx": 11523, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:12:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 826, "bars_since_extreme": 4992, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:12:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:12:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14860, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:13:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:13:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14861, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:14:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:14:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14862, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 518, "bars_since_extreme": 2992, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 826, "bars_since_extreme": 4993, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1001, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:15:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14863, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:16:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:16:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14864, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:17:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:17:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2307, "bars_since_extreme": 14865, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:18:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:18:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 826, "bars_since_extreme": 4994, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:18:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:18:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10792.3, "occurred_idx": 34425, "confirmed_idx": 34428, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:18:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 2308, "bars_since_extreme": 14866, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:19:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:19:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 2308, "bars_since_extreme": 14867, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:20:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:20:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10789.3, "occurred_idx": 6903, "confirmed_idx": 6906, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:20:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 519, "bars_since_extreme": 2993, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:20:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:20:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 2308, "bars_since_extreme": 14868, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:21:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:21:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 826, "bars_since_extreme": 4995, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:21:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:21:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 2308, "bars_since_extreme": 14869, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:22:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:22:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 2308, "bars_since_extreme": 14870, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:23:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:23:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10791.8, "occurred_idx": 34430, "confirmed_idx": 34433, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:23:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14871, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:24:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:24:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 826, "bars_since_extreme": 4996, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:24:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:24:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14872, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:25:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:25:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 519, "bars_since_extreme": 2994, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:25:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:25:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14873, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:26:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10797.8, "high": 10800.6, "low": 10797.8, "close": 10800.1, "volume": 10.0, "rel_volume": 0.31, "location_ref": "signal_swing_level", "location_level": 10799.5, "dist_pts": 0.6, "dist_signal_atr": 0.05}
+{"ts": "2026-08-17 11:26:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14874, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:27:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10795.8, "high": 10801.1, "low": 10795.8, "close": 10800.8, "volume": 52.0, "rel_volume": 0.53}
+{"ts": "2026-08-17 11:27:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 5, "swings_wo_extreme": 826, "bars_since_extreme": 4997, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:27:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:27:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14875, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:28:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:28:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14876, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:29:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:29:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2309, "bars_since_extreme": 14877, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 519, "bars_since_extreme": 2995, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 6, "swings_wo_extreme": 826, "bars_since_extreme": 4998, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1002, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10801.1, "occurred_idx": 34437, "confirmed_idx": 34440, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:30:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2310, "bars_since_extreme": 14878, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:31:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:31:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2310, "bars_since_extreme": 14879, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:32:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:32:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2310, "bars_since_extreme": 14880, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:33:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:33:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 7, "swings_wo_extreme": 826, "bars_since_extreme": 4999, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:33:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:33:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2310, "bars_since_extreme": 14881, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:34:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10800.6, "high": 10801.6, "low": 10798.6, "close": 10799.1, "volume": 34.0, "rel_volume": 1.14, "location_ref": "signal_swing_level", "location_level": 10799.5, "dist_pts": -0.4, "dist_signal_atr": -0.03}
+{"ts": "2026-08-17 11:34:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2310, "bars_since_extreme": 14882, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:35:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:35:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 519, "bars_since_extreme": 2996, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:35:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:35:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10802.3, "occurred_idx": 34442, "confirmed_idx": 34445, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:35:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2311, "bars_since_extreme": 14883, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:36:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:36:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 8, "swings_wo_extreme": 826, "bars_since_extreme": 5000, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:36:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:36:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2311, "bars_since_extreme": 14884, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:37:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 11:37:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10798.6, "occurred_idx": 34444, "confirmed_idx": 34447, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:37:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 2312, "bars_since_extreme": 14885, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:38:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:38:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 2312, "bars_since_extreme": 14886, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:39:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:39:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 9, "swings_wo_extreme": 826, "bars_since_extreme": 5001, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:39:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:39:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 2312, "bars_since_extreme": 14887, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:40:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:40:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 519, "bars_since_extreme": 2997, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:40:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:40:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 2312, "bars_since_extreme": 14888, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:41:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:41:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 2312, "bars_since_extreme": 14889, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:42:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:42:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 10, "swings_wo_extreme": 826, "bars_since_extreme": 5002, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:42:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:42:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10802.3, "occurred_idx": 34449, "confirmed_idx": 34452, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:42:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2313, "bars_since_extreme": 14890, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:43:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:43:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2313, "bars_since_extreme": 14891, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:44:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:44:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2313, "bars_since_extreme": 14892, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 5, "swings_wo_extreme": 519, "bars_since_extreme": 2998, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 11, "swings_wo_extreme": 826, "bars_since_extreme": 5003, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1003, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:45:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2313, "bars_since_extreme": 14893, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:46:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10800.3, "high": 10803.1, "low": 10800.1, "close": 10802.8, "volume": 27.0, "rel_volume": 0.91, "location_ref": "signal_swing_level", "location_level": 10801.1, "dist_pts": 1.7, "dist_signal_atr": 0.17}
+{"ts": "2026-08-17 11:46:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10797.8, "occurred_idx": 34453, "confirmed_idx": 34456, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:46:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2314, "bars_since_extreme": 14894, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:47:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:47:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2314, "bars_since_extreme": 14895, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:48:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10800.3, "high": 10803.3, "low": 10796.6, "close": 10796.6, "volume": 62.0, "rel_volume": 0.69}
+{"ts": "2026-08-17 11:48:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 12, "swings_wo_extreme": 826, "bars_since_extreme": 5004, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:48:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10799.8, "high": 10800.1, "low": 10796.6, "close": 10796.6, "volume": 17.0, "rel_volume": 0.56, "location_ref": "signal_swing_level", "location_level": 10796.1, "dist_pts": 0.5, "dist_signal_atr": 0.05}
+{"ts": "2026-08-17 11:48:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2314, "bars_since_extreme": 14896, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:49:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10796.8, "high": 10796.8, "low": 10793.6, "close": 10793.6, "volume": 26.0, "rel_volume": 0.81, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -1.4, "dist_signal_atr": -0.14}
+{"ts": "2026-08-17 11:49:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2314, "bars_since_extreme": 14897, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:50:00+00:00", "tf": "5min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10800.3, "high": 10803.3, "low": 10790.3, "close": 10790.3, "volume": 117.0, "rel_volume": 0.76}
+{"ts": "2026-08-17 11:50:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 6, "swings_wo_extreme": 519, "bars_since_extreme": 2999, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:50:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10793.3, "high": 10793.3, "low": 10790.3, "close": 10790.3, "volume": 29.0, "rel_volume": 0.94, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -4.7, "dist_signal_atr": -0.46}
+{"ts": "2026-08-17 11:50:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10803.3, "occurred_idx": 34457, "confirmed_idx": 34460, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:50:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14898, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:51:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:51:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 13, "swings_wo_extreme": 826, "bars_since_extreme": 5005, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:51:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10790.6, "high": 10793.3, "low": 10790.6, "close": 10793.1, "volume": 22.0, "rel_volume": 0.75, "location_ref": "signal_swing_level", "location_level": 10795.0, "dist_pts": -1.9, "dist_signal_atr": -0.18}
+{"ts": "2026-08-17 11:51:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14899, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:52:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:52:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14900, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:53:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:53:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14901, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:54:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:54:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 14, "swings_wo_extreme": 826, "bars_since_extreme": 5006, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:54:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:54:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14902, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:55:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:55:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 7, "swings_wo_extreme": 519, "bars_since_extreme": 3000, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:55:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:55:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14903, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:56:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:56:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14904, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:57:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:57:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10803.3, "occurred_idx": 11535, "confirmed_idx": 11538, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:57:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 15, "swings_wo_extreme": 827, "bars_since_extreme": 5007, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:57:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 11:57:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14905, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:58:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:58:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2315, "bars_since_extreme": 14906, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 11:59:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 11:59:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10786.3, "occurred_idx": 34466, "confirmed_idx": 34469, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 11:59:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2316, "bars_since_extreme": 14907, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 8, "swings_wo_extreme": 519, "bars_since_extreme": 3001, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 16, "swings_wo_extreme": 827, "bars_since_extreme": 5008, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "15min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10800.3, "high": 10803.3, "low": 10786.3, "close": 10789.6, "volume": 358.0, "rel_volume": 0.79}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1004, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:00:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2316, "bars_since_extreme": 14908, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:01:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:01:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2316, "bars_since_extreme": 14909, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:02:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:02:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10791.1, "occurred_idx": 34469, "confirmed_idx": 34472, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:02:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 2317, "bars_since_extreme": 14910, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:03:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:03:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 17, "swings_wo_extreme": 827, "bars_since_extreme": 5009, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:03:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:03:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 2317, "bars_since_extreme": 14911, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:04:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:04:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 2317, "bars_since_extreme": 14912, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:05:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:05:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10803.3, "occurred_idx": 6912, "confirmed_idx": 6915, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:05:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 9, "swings_wo_extreme": 520, "bars_since_extreme": 3002, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:05:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10787.6, "high": 10787.6, "low": 10783.8, "close": 10784.3, "volume": 32.0, "rel_volume": 0.51, "location_ref": "signal_swing_level", "location_level": 10783.6, "dist_pts": 0.7, "dist_signal_atr": 0.07}
+{"ts": "2026-08-17 12:05:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 2317, "bars_since_extreme": 14913, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:06:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:06:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 18, "swings_wo_extreme": 827, "bars_since_extreme": 5010, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:06:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:06:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 2317, "bars_since_extreme": 14914, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:07:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:07:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 5, "swings_wo_extreme": 2317, "bars_since_extreme": 14915, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:08:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:08:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 6, "swings_wo_extreme": 2317, "bars_since_extreme": 14916, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:09:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:09:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 19, "swings_wo_extreme": 827, "bars_since_extreme": 5011, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:09:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:09:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 7, "swings_wo_extreme": 2317, "bars_since_extreme": 14917, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:10:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:10:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 10, "swings_wo_extreme": 520, "bars_since_extreme": 3003, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:10:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:10:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 8, "swings_wo_extreme": 2317, "bars_since_extreme": 14918, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:11:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:11:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 9, "swings_wo_extreme": 2317, "bars_since_extreme": 14919, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:12:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:12:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 20, "swings_wo_extreme": 827, "bars_since_extreme": 5012, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:12:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:12:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 10, "swings_wo_extreme": 2317, "bars_since_extreme": 14920, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:13:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:13:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 11, "swings_wo_extreme": 2317, "bars_since_extreme": 14921, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:14:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:14:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 12, "swings_wo_extreme": 2317, "bars_since_extreme": 14922, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 11, "swings_wo_extreme": 520, "bars_since_extreme": 3004, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 21, "swings_wo_extreme": 827, "bars_since_extreme": 5013, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1005, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:15:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 13, "swings_wo_extreme": 2317, "bars_since_extreme": 14923, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:16:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:16:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 14, "swings_wo_extreme": 2317, "bars_since_extreme": 14924, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:17:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:17:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 15, "swings_wo_extreme": 2317, "bars_since_extreme": 14925, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:18:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10780.8, "high": 10781.1, "low": 10774.3, "close": 10775.3, "volume": 94.0, "rel_volume": 0.79}
+{"ts": "2026-08-17 12:18:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 22, "swings_wo_extreme": 827, "bars_since_extreme": 5014, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:18:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:18:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 16, "swings_wo_extreme": 2317, "bars_since_extreme": 14926, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:19:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:19:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10781.1, "occurred_idx": 34486, "confirmed_idx": 34489, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:19:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 17, "swings_wo_extreme": 2318, "bars_since_extreme": 14927, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:20:00+00:00", "tf": "5min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10780.8, "high": 10781.1, "low": 10771.1, "close": 10771.3, "volume": 154.0, "rel_volume": 0.83}
+{"ts": "2026-08-17 12:20:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 12, "swings_wo_extreme": 520, "bars_since_extreme": 3005, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:20:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:20:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 18, "swings_wo_extreme": 2318, "bars_since_extreme": 14928, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:21:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10775.1, "high": 10775.1, "low": 10768.6, "close": 10768.8, "volume": 88.0, "rel_volume": 0.85}
+{"ts": "2026-08-17 12:21:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 23, "swings_wo_extreme": 827, "bars_since_extreme": 5015, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:21:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10771.6, "high": 10772.1, "low": 10768.6, "close": 10768.8, "volume": 28.0, "rel_volume": 0.75, "location_ref": "session_low", "location_level": 10768.6, "dist_pts": 0.2, "dist_signal_atr": 0.02}
+{"ts": "2026-08-17 12:21:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 19, "swings_wo_extreme": 2318, "bars_since_extreme": 14929, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:22:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:22:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 20, "swings_wo_extreme": 2318, "bars_since_extreme": 14930, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:23:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:23:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 21, "swings_wo_extreme": 2318, "bars_since_extreme": 14931, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:24:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:24:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 24, "swings_wo_extreme": 827, "bars_since_extreme": 5016, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:24:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:24:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 22, "swings_wo_extreme": 2318, "bars_since_extreme": 14932, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:25:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:25:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 13, "swings_wo_extreme": 520, "bars_since_extreme": 3006, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:25:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:25:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 23, "swings_wo_extreme": 2318, "bars_since_extreme": 14933, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:26:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:26:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 24, "swings_wo_extreme": 2318, "bars_since_extreme": 14934, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:27:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:27:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 25, "swings_wo_extreme": 827, "bars_since_extreme": 5017, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:27:00+00:00", "tf": "1min", "type": "LABEL", "label": "POTENTIAL_SELLING_CLIMAX", "structural": "SELLING_CLIMAX", "segment": "cash", "open": 10772.1, "high": 10772.1, "low": 10763.1, "close": 10767.6, "volume": 182.0, "rel_volume": 5.99, "location_ref": "session_low", "location_level": 10763.1, "dist_pts": 4.5, "dist_signal_atr": 0.43}
+{"ts": "2026-08-17 12:27:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 25, "swings_wo_extreme": 2318, "bars_since_extreme": 14935, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:27:00+00:00", "tf": "1min", "type": "PHASE", "phase": "POST_CLIMAX", "trigger": "POTENTIAL_SELLING_CLIMAX", "direction": 1, "segment": "cash"}
+{"ts": "2026-08-17 12:28:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:28:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 26, "swings_wo_extreme": 2318, "bars_since_extreme": 14936, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:28:00+00:00", "tf": "1min", "type": "PULLBACK_EXPANDED", "max_rel_vol": 1.97}
+{"ts": "2026-08-17 12:29:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:29:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 27, "swings_wo_extreme": 2318, "bars_since_extreme": 14937, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 14, "swings_wo_extreme": 520, "bars_since_extreme": 3007, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 26, "swings_wo_extreme": 827, "bars_since_extreme": 5018, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 187, "bars_since_extreme": 1006, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10763.1, "occurred_idx": 34497, "confirmed_idx": 34500, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:30:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 28, "swings_wo_extreme": 2319, "bars_since_extreme": 14938, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:31:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:31:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 29, "swings_wo_extreme": 2319, "bars_since_extreme": 14939, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:32:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:32:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 30, "swings_wo_extreme": 2319, "bars_since_extreme": 14940, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:33:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:33:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 27, "swings_wo_extreme": 827, "bars_since_extreme": 5019, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:33:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:33:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 31, "swings_wo_extreme": 2319, "bars_since_extreme": 14941, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:34:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:34:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 32, "swings_wo_extreme": 2319, "bars_since_extreme": 14942, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:35:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:35:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 15, "swings_wo_extreme": 520, "bars_since_extreme": 3008, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:35:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": "NO_DEMAND", "segment": "cash", "open": 10765.3, "high": 10766.8, "low": 10765.3, "close": 10766.6, "volume": 32.0, "rel_volume": 0.42, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 5.3, "dist_signal_atr": 0.48}
+{"ts": "2026-08-17 12:35:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 33, "swings_wo_extreme": 2319, "bars_since_extreme": 14943, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:36:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:36:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 28, "swings_wo_extreme": 827, "bars_since_extreme": 5020, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:36:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:36:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 34, "swings_wo_extreme": 2319, "bars_since_extreme": 14944, "ranging_if": ">=4sw|>=30b", "post_climax": true, "verdict": "POST_CLIMAX"}
+{"ts": "2026-08-17 12:37:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:37:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10760.6, "occurred_idx": 34504, "confirmed_idx": 34507, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:37:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 35, "swings_wo_extreme": 2320, "bars_since_extreme": 14945, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:37:00+00:00", "tf": "1min", "type": "PHASE", "phase": "RANGING", "trigger": "no_new_extreme", "segment": "cash"}
+{"ts": "2026-08-17 12:38:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:38:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 36, "swings_wo_extreme": 2320, "bars_since_extreme": 14946, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:39:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:39:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 29, "swings_wo_extreme": 827, "bars_since_extreme": 5021, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:39:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:39:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 37, "swings_wo_extreme": 2320, "bars_since_extreme": 14947, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:40:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:40:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 16, "swings_wo_extreme": 520, "bars_since_extreme": 3009, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:40:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:40:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 38, "swings_wo_extreme": 2320, "bars_since_extreme": 14948, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:41:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:41:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 39, "swings_wo_extreme": 2320, "bars_since_extreme": 14949, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:42:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:42:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 30, "swings_wo_extreme": 827, "bars_since_extreme": 5022, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:42:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:42:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 40, "swings_wo_extreme": 2320, "bars_since_extreme": 14950, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:43:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10766.1, "high": 10766.8, "low": 10765.1, "close": 10766.3, "volume": 39.0, "rel_volume": 0.77, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 5.0, "dist_signal_atr": 0.45}
+{"ts": "2026-08-17 12:43:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 41, "swings_wo_extreme": 2320, "bars_since_extreme": 14951, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:44:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10766.6, "high": 10767.3, "low": 10764.8, "close": 10766.6, "volume": 30.0, "rel_volume": 0.57, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 5.3, "dist_signal_atr": 0.48}
+{"ts": "2026-08-17 12:44:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 42, "swings_wo_extreme": 2320, "bars_since_extreme": 14952, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 17, "swings_wo_extreme": 520, "bars_since_extreme": 3010, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10760.6, "occurred_idx": 11551, "confirmed_idx": 11554, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 828, "bars_since_extreme": 5023, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "15min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10803.3, "occurred_idx": 2313, "confirmed_idx": 2316, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 188, "bars_since_extreme": 1007, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": "NO_DEMAND", "segment": "cash", "open": 10766.3, "high": 10767.8, "low": 10766.1, "close": 10767.1, "volume": 25.0, "rel_volume": 0.52, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 5.8, "dist_signal_atr": 0.51}
+{"ts": "2026-08-17 12:45:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 43, "swings_wo_extreme": 2320, "bars_since_extreme": 14953, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:46:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:46:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 44, "swings_wo_extreme": 2320, "bars_since_extreme": 14954, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:47:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:47:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10764.8, "occurred_idx": 34514, "confirmed_idx": 34517, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:47:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2321, "bars_since_extreme": 14955, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:48:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:48:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10773.3, "occurred_idx": 11552, "confirmed_idx": 11555, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:48:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 829, "bars_since_extreme": 5024, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:48:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:48:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2321, "bars_since_extreme": 14956, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:49:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:49:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2321, "bars_since_extreme": 14957, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:50:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:50:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10760.6, "occurred_idx": 6921, "confirmed_idx": 6924, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:50:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 521, "bars_since_extreme": 3011, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:50:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:50:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2321, "bars_since_extreme": 14958, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:51:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:51:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 829, "bars_since_extreme": 5025, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:51:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": null, "segment": "cash", "open": 10764.3, "high": 10766.1, "low": 10764.3, "close": 10765.3, "volume": 28.0, "rel_volume": 0.72, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 4.0, "dist_signal_atr": 0.35}
+{"ts": "2026-08-17 12:51:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10769.3, "occurred_idx": 34518, "confirmed_idx": 34521, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:51:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2322, "bars_since_extreme": 14959, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:52:00+00:00", "tf": "1min", "type": "LABEL", "label": "TEST", "structural": "NO_DEMAND", "segment": "cash", "open": 10765.1, "high": 10766.1, "low": 10764.8, "close": 10765.6, "volume": 15.0, "rel_volume": 0.36, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 4.3, "dist_signal_atr": 0.38}
+{"ts": "2026-08-17 12:52:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2322, "bars_since_extreme": 14960, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:53:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:53:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10763.3, "occurred_idx": 34520, "confirmed_idx": 34523, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:53:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 2323, "bars_since_extreme": 14961, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:54:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:54:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 829, "bars_since_extreme": 5026, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:54:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:54:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 2323, "bars_since_extreme": 14962, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:55:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:55:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10773.3, "occurred_idx": 6922, "confirmed_idx": 6925, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 12:55:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 522, "bars_since_extreme": 3012, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:55:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:55:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 2323, "bars_since_extreme": 14963, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:56:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:56:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 2323, "bars_since_extreme": 14964, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:57:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:57:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 829, "bars_since_extreme": 5027, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:57:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 12:57:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 2323, "bars_since_extreme": 14965, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:58:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 12:58:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 5, "swings_wo_extreme": 2323, "bars_since_extreme": 14966, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 12:59:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 12:59:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 6, "swings_wo_extreme": 2323, "bars_since_extreme": 14967, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 522, "bars_since_extreme": 3013, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10763.3, "occurred_idx": 11556, "confirmed_idx": 11559, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5028, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 188, "bars_since_extreme": 1008, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10765.6, "occurred_idx": 34527, "confirmed_idx": 34530, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:00:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14968, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:01:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:01:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14969, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:02:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:02:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14970, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:03:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:03:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5029, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:03:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:03:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14971, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:04:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:04:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14972, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:05:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:05:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 522, "bars_since_extreme": 3014, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:05:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:05:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14973, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:06:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:06:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5030, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:06:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:06:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14974, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:07:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:07:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14975, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:08:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:08:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14976, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:09:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:09:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5031, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:09:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:09:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14977, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:10:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:10:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 522, "bars_since_extreme": 3015, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:10:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:10:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14978, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:11:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:11:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2324, "bars_since_extreme": 14979, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:12:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:12:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5032, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:12:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:12:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10757.8, "occurred_idx": 34539, "confirmed_idx": 34542, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:12:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 2325, "bars_since_extreme": 14980, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:13:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10759.3, "high": 10760.3, "low": 10756.6, "close": 10756.8, "volume": 30.0, "rel_volume": 0.63, "location_ref": "session_low", "location_level": 10756.6, "dist_pts": 0.2, "dist_signal_atr": 0.02}
+{"ts": "2026-08-17 13:13:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 2325, "bars_since_extreme": 14981, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:14:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:14:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 2325, "bars_since_extreme": 14982, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 522, "bars_since_extreme": 3016, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5033, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 188, "bars_since_extreme": 1009, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:15:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 2325, "bars_since_extreme": 14983, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:16:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:16:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 2325, "bars_since_extreme": 14984, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:17:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:17:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10756.3, "occurred_idx": 34544, "confirmed_idx": 34547, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:17:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 5, "swings_wo_extreme": 2326, "bars_since_extreme": 14985, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:18:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:18:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5034, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:18:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:18:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 6, "swings_wo_extreme": 2326, "bars_since_extreme": 14986, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:19:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:19:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 7, "swings_wo_extreme": 2326, "bars_since_extreme": 14987, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:20:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:20:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 5, "swings_wo_extreme": 522, "bars_since_extreme": 3017, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:20:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:20:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10762.8, "occurred_idx": 34547, "confirmed_idx": 34550, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:20:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 8, "swings_wo_extreme": 2327, "bars_since_extreme": 14988, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:21:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:21:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 830, "bars_since_extreme": 5035, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:21:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:21:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 9, "swings_wo_extreme": 2327, "bars_since_extreme": 14989, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:22:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:22:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 10, "swings_wo_extreme": 2327, "bars_since_extreme": 14990, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:23:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:23:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 11, "swings_wo_extreme": 2327, "bars_since_extreme": 14991, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:24:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:24:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10756.3, "occurred_idx": 11564, "confirmed_idx": 11567, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:24:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 0, "swings_wo_extreme": 831, "bars_since_extreme": 5036, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:24:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:24:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 12, "swings_wo_extreme": 2327, "bars_since_extreme": 14992, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:25:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:25:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 6, "swings_wo_extreme": 522, "bars_since_extreme": 3018, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:25:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:25:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10764.1, "occurred_idx": 34552, "confirmed_idx": 34555, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:25:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14993, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:26:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:26:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14994, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:27:00+00:00", "tf": "3min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10760.3, "high": 10760.6, "low": 10753.3, "close": 10753.8, "volume": 106.0, "rel_volume": 0.71}
+{"ts": "2026-08-17 13:27:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 1, "swings_wo_extreme": 831, "bars_since_extreme": 5037, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:27:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_DECLINE", "structural": "EFFORTLESS_DECLINE", "segment": "cash", "open": 10757.3, "high": 10757.3, "low": 10753.3, "close": 10753.8, "volume": 33.0, "rel_volume": 0.71, "location_ref": "session_low", "location_level": 10753.3, "dist_pts": 0.5, "dist_signal_atr": 0.04}
+{"ts": "2026-08-17 13:27:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14995, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:28:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:28:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14996, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:29:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:29:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14997, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 7, "swings_wo_extreme": 522, "bars_since_extreme": 3019, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 2, "swings_wo_extreme": 831, "bars_since_extreme": 5038, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 188, "bars_since_extreme": 1010, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:30:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14998, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:31:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:31:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2328, "bars_since_extreme": 14999, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:32:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:32:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10752.6, "occurred_idx": 34559, "confirmed_idx": 34562, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:32:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15000, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:33:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:33:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 3, "swings_wo_extreme": 831, "bars_since_extreme": 5039, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:33:00+00:00", "tf": "1min", "type": "LABEL", "label": "EFFORTLESS_ADVANCE", "structural": "EFFORTLESS_ADVANCE", "segment": "cash", "open": 10759.6, "high": 10767.3, "low": 10757.8, "close": 10765.8, "volume": 157.0, "rel_volume": 1.09, "location_ref": "signal_swing_level", "location_level": 10761.3, "dist_pts": 4.5, "dist_signal_atr": 0.39}
+{"ts": "2026-08-17 13:33:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15001, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:34:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:34:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15002, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:35:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:35:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 8, "swings_wo_extreme": 522, "bars_since_extreme": 3020, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:35:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:35:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15003, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:36:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:36:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 831, "bars_since_extreme": 5040, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:36:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:36:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15004, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:37:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:37:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2329, "bars_since_extreme": 15005, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:38:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:38:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10771.3, "occurred_idx": 34565, "confirmed_idx": 34568, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:38:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2330, "bars_since_extreme": 15006, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:39:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:39:00+00:00", "tf": "3min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10752.6, "occurred_idx": 11569, "confirmed_idx": 11572, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:39:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 5, "swings_wo_extreme": 832, "bars_since_extreme": 5041, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:39:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:39:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2330, "bars_since_extreme": 15007, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:40:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:40:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 9, "swings_wo_extreme": 522, "bars_since_extreme": 3021, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:40:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_DEMAND", "segment": "cash"}
+{"ts": "2026-08-17 13:40:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 0, "trend_age": 0, "swings_wo_extreme": 2330, "bars_since_extreme": 15008, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:41:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:41:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10761.1, "occurred_idx": 34568, "confirmed_idx": 34571, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:41:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 0, "swings_wo_extreme": 2331, "bars_since_extreme": 15009, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:42:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:42:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 6, "swings_wo_extreme": 832, "bars_since_extreme": 5042, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:42:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:42:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 1, "swings_wo_extreme": 2331, "bars_since_extreme": 15010, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:43:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:43:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 2, "swings_wo_extreme": 2331, "bars_since_extreme": 15011, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:44:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": "NO_SUPPLY", "segment": "cash"}
+{"ts": "2026-08-17 13:44:00+00:00", "tf": "1min", "type": "SWING_CONFIRMED", "swing": "H", "price": 10772.1, "occurred_idx": 34571, "confirmed_idx": 34574, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:44:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 3, "swings_wo_extreme": 2332, "bars_since_extreme": 15012, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "5min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "5min", "type": "SWING_CONFIRMED", "swing": "L", "price": 10752.6, "occurred_idx": 6932, "confirmed_idx": 6935, "lag_bars": 3, "across_gap": false}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "5min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 10, "swings_wo_extreme": 523, "bars_since_extreme": 3022, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "3min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "3min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 7, "swings_wo_extreme": 832, "bars_since_extreme": 5043, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "15min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "15min", "type": "PHASE_EVAL", "trend": -1, "trend_age": 4, "swings_wo_extreme": 188, "bars_since_extreme": 1011, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "1min", "type": "LABEL", "label": null, "structural": null, "segment": "cash"}
+{"ts": "2026-08-17 13:45:00+00:00", "tf": "1min", "type": "PHASE_EVAL", "trend": 1, "trend_age": 4, "swings_wo_extreme": 2332, "bars_since_extreme": 15013, "ranging_if": ">=4sw|>=30b", "post_climax": false, "verdict": "RANGING"}
+# state @ window end: 1h: phase=RANGING trend=+1 age=3 atr=17.0 close=10757.6 | 15min: phase=RANGING trend=-1 age=4 atr=12.2 close=10762.1; active hypotheses: none
+# end of window - uk100fut narrated through 2026-08-17 13:45Z
