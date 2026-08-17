@@ -356,14 +356,20 @@ set still growing toward fold support).
    reframe (deferred), the scalp candidate (log-only; location-split
    event-class census as its judge). Standing lesson promoted: anatomy
    thresholds don't transplant across TFs (H9, T3).
-9. Store-write race (discovered at commit 2026-08-18): paper's per-poll
-   `build_one` truncate-rewrites clean stores → git-snapshot race AND a
-   live-reader race (warm-from-store during a rebuild can read truncated
-   data). Fix order sent: atomic writes (temp + os.rename) in the store
-   builder; gitignore-vs-README stores-excluded reconciliation;
-   history-surgery rule addendum ("stopped system" includes no builder
-   running). Check predicate: atomic-write reader test green; policy
-   stated in README.
+9. Store-write race CLOSED as register finding 23 (`558e7f5`, 54/54):
+   atomic writes landed (temp + os.replace, reader/crash tests pinned);
+   policy verdict — README was wrong, tracking stores is deliberate and
+   correct (retention floor makes committed stores the only durable
+   history); history-surgery rule extended (no builder running; paper's
+   persist path is a store writer). OPEN COROLLARY sent: reconcile the
+   doctrine with the 2026-08-17 12:43Z filter-repo run — its purpose was
+   never stated; if it stripped store blobs, the doctrine was violated
+   pre-enactment (enumerate the unrecoverable span); either branch adds
+   "store history is never filtered" to the surgery rule, plus a priced
+   repo-growth statement. Check predicate: finding 23 annotation lands
+   with the surgery's stated purpose.
+10. OPERATOR: commit ONBOARDING.md — working edits (lab cycle, finding
+   23) currently uncommitted per Claude Code; one crash from loss.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
