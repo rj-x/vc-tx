@@ -85,7 +85,12 @@ gates the immediate task) still governs what you ask for and when.
    process invocation.
 5. **prompt.md** — full strategy spec (label definitions live here, incl.
    the structural-core vs context-qualifier rule).
-6. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
+6. **docs/location_apparatus.md** — code-cited reference for location/
+   signature-registry mechanics (location_ref families: session extremes,
+   prior-session extremes, signal swing levels — registry is TEST-only,
+   30-bar expiry, wick-registered/close-measured asymmetry). Read before
+   designing anything location-conditioned.
+7. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
    `live_ladder_*.csv`, `logs/sync/`, `definitions/frozen_v1.yaml`.
 
 Do not claim a repo doc says something you haven't read this session.
@@ -291,7 +296,11 @@ set still growing toward fold support).
   closed; item 22 session-JSONL promoted), `3a0988b` (cascade analysis
   archived: logs/narrate/cascade_analysis_1146_2026-08-17.md; rung
   doctrine registered; composition sketches → lab candidates for round
-  1). NOTE: all pre-12:43Z hashes
+  1), lab cycle 2026-08-17/18 (`12e1d75` T1 census, `74a0536` R1+T1b,
+  `0376744` T1c + night close, `1c02853` T1d, `d98d6f9` matched cell +
+  T3 conditional GO, `9bcf9ec`..`84dd39a` annotations +
+  docs/location_apparatus.md + T3 built/run → transplant-null, 0 trades,
+  cycle CLOSED; store-write race discovered at commit time). NOTE: all pre-12:43Z hashes
   above are POST-REWRITE identities where applicable — verify against
   `logs/history_surgery/commit-map_2026-08-17` if a citation fails to
   resolve.
@@ -335,7 +344,26 @@ set still growing toward fold support).
    view, observational tagging intact), narrative-only fence stated,
    checkpoint-coherence test (killed process's JSONL ends within one
    event of its checkpoint). Check predicate: dated JSONL files exist and
-   advance; coherence test green.
+   advance; coherence test green. Spec addendum: true daily rotation, not
+   launch-date naming.
+8. Lab cycle 1 CLOSED 2026-08-18 (full trail in trial log; hashes in
+   lineage). Net: 1M standalone-trigger framing dead (19:1 false-lead
+   rate, no adequate conditioner found); T2 killed (nested-TF price-sign
+   redundancy); T3 transplant-null, 0 trades (phase gate structurally
+   unsatisfiable at 1M — RANGING at trend age 44, per the debug replay).
+   Survivors registered for next cycle: T3b (gate = exactly T1d's
+   measured conditions, no phase gate, pre-sketched), the modifier
+   reframe (deferred), the scalp candidate (log-only; location-split
+   event-class census as its judge). Standing lesson promoted: anatomy
+   thresholds don't transplant across TFs (H9, T3).
+9. Store-write race (discovered at commit 2026-08-18): paper's per-poll
+   `build_one` truncate-rewrites clean stores → git-snapshot race AND a
+   live-reader race (warm-from-store during a rebuild can read truncated
+   data). Fix order sent: atomic writes (temp + os.rename) in the store
+   builder; gitignore-vs-README stores-excluded reconciliation;
+   history-surgery rule addendum ("stopped system" includes no builder
+   running). Check predicate: atomic-write reader test green; policy
+   stated in README.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
