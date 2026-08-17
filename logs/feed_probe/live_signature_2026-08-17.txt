@@ -23,3 +23,7 @@
 12:52 MATCH NO_DEMAND
 13:27 MATCH EFFORTLESS_DECLINE
 13:33 MATCH EFFORTLESS_ADVANCE
+# AMENDMENT (2026-08-17): miss criterion was ASYMMETRIC — replay side
+# filtered at structural-core level; TEST (registry-based, truthy) prints
+# at all three "miss" stamps. Corrected: 24/24 at label-presence level;
+# core-level comparison UNMEASURABLE (live kinds died with the orphan).
