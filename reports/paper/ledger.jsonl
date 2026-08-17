@@ -16,3 +16,5 @@
 {"event": "UNCLEAN_PREDECESSOR", "predecessor_start": "2026-08-17 06:56:18.000359+00:00", "last_recoverable_activity": "2026-08-17 06:55:00+00:00", "ts": "2026-08-17 15:42:33.467649+00:00"}
 {"event": "START", "ts": "2026-08-17 15:42:35.149887+00:00", "warm_through": "2026-08-17 15:06:00+00:00", "coverage_gap": "0 days 08:47:35.149875", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
 {"event": "COVERAGE_GAP", "from": "2026-08-17 15:06:00+00:00", "note": "downtime hole - decisions never backfilled"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 11, "ts": "2026-08-17 21:11:33.725086+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-17 21:16:42.247926+00:00"}

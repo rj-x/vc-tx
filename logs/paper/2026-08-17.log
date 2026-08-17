@@ -2,3 +2,5 @@
 !! LOCKBOX-SCOPE ACCESS (narrative-only): uk100fut/1min served past 2026-08-04 00:00:00+00:00 for a narrate replay - labels/phases/hypotheses/dump only; no metrics or aggregates permitted.
 # paper loop: 1 poll/min (fut mid + cash bid/ask)
 # PERSIST FAILED (feeding engine anyway; sync will recover): No columns to parse from file
+# WATCHDOG_STALL: 11 polls, no new bars during expected-printing hours
+# WATCHDOG_STALL: 5 polls, no new bars during expected-printing hours
