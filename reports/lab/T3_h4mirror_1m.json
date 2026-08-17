@@ -1,0 +1,53 @@
+{
+  "STAMP": "EXPLORATORY - not validation",
+  "prereg": "prereg_T3_build c1d826a919050364",
+  "boundary_check": {
+    "engine_tree": "clean vs HEAD",
+    "head": "10aabb605dea2be0b4861241fba40ebd9604f8f1",
+    "runtime_attachments": [
+      "wrap MTFEngine.process (read-only tap + T3 post-step)",
+      "wrap engine.exec_pipe.on_close (stash classification return value; behavior unchanged)",
+      "subclass HypothesisManager overriding _spawn only"
+    ],
+    "definition": {
+      "name": "frozen_v1",
+      "hash": "a5d7198c59a30a1b"
+    }
+  },
+  "mechanism": "H4-mirror on 1M: trend-consistent ND/NS spawn, 1M trend_age>=10 (T1d cell) + inherited H4 anatomy (phase_age>=10, quiet pullback); confirm/refute/gate/refine/exits frozen",
+  "data": {
+    "sessions": 16,
+    "span": [
+      "2026-07-13 07:00:00+00:00",
+      "2026-08-03 15:29:00+00:00"
+    ]
+  },
+  "spawn_diag": {
+    "calls": 8160,
+    "valid": 5610,
+    "structural_any": 1483,
+    "structural_nd_ns": 451,
+    "trend_matched": 145,
+    "established": 72,
+    "phase_trending": 2,
+    "in_reaction": 2,
+    "pullback_quiet": 1,
+    "qualified_nd_ns": 1,
+    "spawned": 1
+  },
+  "funnel": {
+    "SPAWNED": 1,
+    "CONFIRM": 1,
+    "CONFIRM_UNDERSTRENGTH": 1,
+    "EXPIRED": 1
+  },
+  "n_trades": 0,
+  "per_trade_R": [],
+  "metrics": {
+    "overall": {
+      "n": 0
+    }
+  },
+  "trades": [],
+  "note": ""
+}

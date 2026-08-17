@@ -39,6 +39,12 @@
 - **Expiry:** age-based — entries dropped once `idx − entry.idx > signature_registry_max_age = 30` bars (config.yaml:37; `context.py:211-213`). No price-displacement expiry; no cap on count within the age window.
 - **Consumers:** TEST-label classification and each hypothesis's test-of-signature check — one predicate, two anchors (`engine/testcrit.py:1-4`; `hypotheses.py:124`). **Nothing else.**
 
+> **Naming trap:** the lab's own snapshot code (`backtest/lab.py:47`) maps
+> `signal_swing_level` to a ref-class it calls **"swing_registry"** — a
+> plausible source for any "registry" component in a secondhand account.
+> The swing-level list (§2) and the signature registry (this section) are
+> different structures with different contents, lifetimes, and consumers.
+>
 > **⚑ KEY DIVERGENCE — `location_ref` never consults the signature registry.** `_location()` draws only from the three families in §1. If the reviewer's three-component account (given to the operator 2026-08-18) presented signature-registry levels as a `location_ref` component, that diverges from code. The account was not available in-session for verbatim comparison — if it instead named {session extremes, prior-session extremes, swing levels}, it matches the code exactly. Corrections welcome; this doc states what the code does.
 >
 > **Census consequence:** a "within ATR-band of a registered signature-registry level" cell has **no existing column**. It requires census-side plumbing joining each LABEL event to registry state as of that bar — replayable from logs/store with zero look-ahead, but it is *new derivation*, not a read-off.
