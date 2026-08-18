@@ -30,7 +30,7 @@ import pandas as pd
 
 from engine.pipeline import MTFEngine
 from engine.resample import exec_bars, resample_bars, trading_sessions
-from engine.store_loader import load_frame, zones
+from engine.store_loader import is_sealed, load_frame, refuse_if_sealed, zones
 from backtest.campaign import make_cfg
 from backtest.migration import migration_events, migration_study
 
@@ -58,6 +58,7 @@ def zone_fence(start):
         raise SystemExit(f"ZONE FENCE: readout start {start} precedes "
                          f"go_live {gl} - forward readouts may not touch "
                          f"the lockbox or working set")
+    refuse_if_sealed(start, what="forward readout start")
     return start
 
 
@@ -138,8 +139,13 @@ def run(instr="uk100fut", start=None):
                     "session_model.ladder": True})
     engine, bars, n_sessions = _replay(cfg, instr)
     mev = migration_events(engine.narrative.events, cfg)
-    fwd = [e for e in mev if e["ts"] >= start]
-    sig_fwd = [b for b in bars[cfg.mtf.signal_tf] if b.ts >= start]
+    # sealed windows skipped automatically (register 30): forward reads
+    # never touch a sealed span; skipped rows counted, never reported
+    fwd_all = [e for e in mev if e["ts"] >= start]
+    fwd = [e for e in fwd_all if not is_sealed(e["ts"])]
+    n_sealed_skipped = len(fwd_all) - len(fwd)
+    sig_fwd = [b for b in bars[cfg.mtf.signal_tf]
+               if b.ts >= start and not is_sealed(b.ts)]
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
     end = max((b.ts for b in bars[cfg.mtf.execution_tf]), default=None)
@@ -153,6 +159,7 @@ def run(instr="uk100fut", start=None):
                            "row/aggregate strictly >= go_live"),
         "readout_span": [str(start), str(end)],
         "forward_sessions_total": n_sessions,
+        "sealed_windows_skipped_events": n_sealed_skipped,
         "n_chain_events_forward": len(fwd),
         "graded_1146Z_expectation": grade_1146(fwd),
         "log": [{k: str(v) if isinstance(v, pd.Timestamp) else v

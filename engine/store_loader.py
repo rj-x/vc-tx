@@ -64,6 +64,36 @@ def stamp_go_live(ts, root=None):
     return j["go_live_utc"]
 
 
+# ---- standing sealed-window schedule (register 30, docs/lockbox_policy.md)
+# Declared 2026-08-18, FORWARD ONLY, chosen by calendar never by content:
+# the first two weeks of each quarter (anchored 2026-09-01; months
+# Sep/Dec/Mar/Jun, days 1-14 inclusive, UTC) are born sealed. Forward
+# readers (Part C, scoreboards, censuses) skip sealed spans automatically;
+# explicitly targeting one is refused. The Aug 4-14 legacy lockbox is
+# separate and unchanged — first to be spent.
+SEALED_SCHEDULE_START = pd.Timestamp("2026-09-01", tz="UTC")
+SEALED_MONTHS = (3, 6, 9, 12)
+SEALED_DAYS = 14
+
+
+def is_sealed(ts):
+    """True iff ts falls inside a standing sealed window."""
+    t = pd.Timestamp(ts)
+    t = t.tz_localize("UTC") if t.tzinfo is None else t.tz_convert("UTC")
+    return bool(t >= SEALED_SCHEDULE_START and t.month in SEALED_MONTHS
+                and t.day <= SEALED_DAYS)
+
+
+def refuse_if_sealed(ts, what="read"):
+    """Fence: explicitly targeting a sealed span is refused outright."""
+    if is_sealed(ts):
+        raise SystemExit(f"SEALED WINDOW: {what} targets {pd.Timestamp(ts)} "
+                         f"inside a standing sealed window (first two weeks "
+                         f"of each quarter from {SEALED_SCHEDULE_START.date()}"
+                         f") - declared by calendar, spent only by "
+                         f"walk-forward evaluation")
+
+
 def load_frame(slug, tf, root=None, lockbox_evaluation=False,
                narrative_scope=False, log_fn=print):
     """Clean-store frame for slug/tf, lockbox-filtered by default.

@@ -96,7 +96,16 @@ gates the immediate task) still governs what you ask for and when.
    prior-session extremes, signal swing levels — registry is TEST-only,
    30-bar expiry, wick-registered/close-measured asymmetry). Read before
    designing anything location-conditioned.
-7. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
+7. **docs/lockbox_policy.md** — sealed-data currency: minting (calendar-
+   declared, content-blind; quarterly windows from 2026-09-01), spending
+   (one evaluation each), fences (loader-enforced; forward reads
+   auto-skip sealed spans).
+8. **docs/hypothesis_lifecycle.md** — idea → register → lab → shadow-live
+   → weekly reads → walk-forward → lockbox → paper, with each stage's
+   verdict-power stated (labs kill, walk-forward crowns, lockbox
+   confirms; weekly reads decide what gets worked on, never what gets
+   believed).
+9. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
    `live_ladder_*.csv`, `logs/sync/`, `definitions/frozen_v1.yaml`.
 
 Do not claim a repo doc says something you haven't read this session.
