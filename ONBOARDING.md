@@ -395,6 +395,19 @@ set still growing toward fold support).
    replay); readout to be recorded against it; H9 bearing stated both
    ways. Origination date corrected to 2026-08-18 (reviewer date error,
    log authoritative).
+13. Suspension incident 2026-08-18 CLOSED (`25d9845`..`7f4744b`, 61/61):
+   07:17Z error = network teardown at machine sleep; hole bounded by
+   store fossil (07:02→07:40Z tape; ≈28 bars net decisions hole —
+   reviewer's ~18 heartbeat estimate superseded: counters are liveness
+   instruments, not rulers). SUSPENSION_GAP detection built + pinned;
+   deploys with item 22's restart alongside the calendar fix. Finding
+   26 = travel model: INTERMITTENT (corrected from daily); gap on a
+   travel day = texture, on a non-travel day = SIGNAL; unattributed gap
+   = finding until attributed; dedicated-machine migration =
+   planned-future (git clone IS the data migration, per finding-23
+   doctrine). Register 25 taxonomy extended: belief-derived prose in
+   code (comments/docstrings) counts as evidence artifacts —
+   precedents: the 20:30Z pin, the "daily" docstring.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
