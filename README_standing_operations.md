@@ -138,6 +138,18 @@ The system is designed to fail loudly and specifically. Match the signal, don't 
 The last row is not a joke. Suspicion scales with beauty; that ruling has already caught
 real bugs.
 
+## Canonical parameter registry (standing rule, adopted 2026-08-18)
+
+**`docs/parameter_registry.md` is canonical** for every yardstick,
+threshold, default, and assumption in force — value, source, date set,
+authority. It is GENERATED (`scripts/param_registry.py`; regeneration rides
+the weekly campaign; a test pins it clean against HEAD). **No test,
+analysis, census, or simulation may use an unregistered yardstick.**
+Pre-registrations cite their yardsticks by registry reference (mandatory
+field; the trial log refuses entries without it). This README deliberately
+duplicates **no values** — the registry is the single source (drift
+precedents: the stores-excluded policy, the US/gold session note).
+
 ## Version control (standing discipline, adopted 2026-08-14)
 
 - Tracked: code, config, RULES/prompt/docs, register & candidate files, and

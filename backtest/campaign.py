@@ -514,6 +514,12 @@ def main(slugs=(SLUG, "uk100")):
         json.dump(summary, f, indent=2, default=str)
     from backtest.report import generate_report
     generate_report()
+    # canonical parameter registry regenerates with the weekly run
+    # (register 32); tests/test_param_registry.py pins it clean vs HEAD
+    import subprocess as _sp
+    import sys as _sys
+    _sp.run([_sys.executable, os.path.join(ROOT, "scripts",
+                                           "param_registry.py")], check=True)
     print(f"\nWrote {OUT}/ and reports/backtest_v1.md (generated)")
     return summary
 

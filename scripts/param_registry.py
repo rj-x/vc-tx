@@ -1,0 +1,247 @@
+"""Canonical parameter registry generator (register 32, Part A order
+2026-08-18). Emits docs/parameter_registry.md — every yardstick/threshold/
+default/assumption in force: value, source, date set (git blame), authority.
+
+Rules of the sweep:
+  - config.yaml leaves, frozen_v1 config_overrides, and module-level
+    UPPERCASE literal constants in engine/ + backtest/ are swept
+    mechanically.
+  - Authority comes ONLY from the curated AUTHORITY map below. A swept
+    value with no authority trail is FLAGGED (pending-ruling batch), never
+    given an invented one.
+  - RATIFIED_YARDSTICKS holds operator-ratified yardsticks that have no
+    code site yet (registry-first entries).
+  - Output is DETERMINISTIC (no generation timestamp); a test pins that
+    regeneration is clean against HEAD; regeneration rides the weekly
+    campaign.
+"""
+
+import ast
+import os
+import re
+import subprocess
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOC = os.path.join(ROOT, "docs", "parameter_registry.md")
+
+FOUNDING = ("founding config — RULES v3.1 contract era (owner rulings "
+            "A1–A17 / R1–R6)")
+
+# Curated authority trails. Keys: dotted config path, or "file.py:CONST".
+AUTHORITY = {
+    # -- config.yaml with specific post-founding history
+    "features.baseline_sessions": "frozen compromise vs spec 20 (data poverty; backtest_v1 standing flag 1) — value here is the SPEC default; the operative 8 lives in frozen_v1 overrides",
+    "features.min_baseline_obs": "frozen compromise vs spec 20 (data poverty; backtest_v1 standing flag 1) — operative 5 in frozen_v1 overrides",
+    "hypotheses.test_proximity_atr": "RULES Sec 0 TEST criteria (i) — founding",
+    "hypotheses.test_vol_vs_signature": "RULES Sec 0 TEST criteria (v) — founding",
+    "migration.min_child_labels": "H9 candidate registration (persistence clause) + migration build 2026-08-15",
+    "migration.recruitment_floor": "H9 candidate registration (falsifiable recruitment clause) + migration build 2026-08-15",
+    # -- code constants
+    "paper.py:SUSPENSION_THRESHOLD": "register finding 26 (machine-suspension detection; 5 min aligned with COVERAGE_GAP convention)",
+    "store_loader.py:SEALED_SCHEDULE_START": "register 30 — standing sealed-window schedule, calendar-declared 2026-08-18",
+    "store_loader.py:SEALED_MONTHS": "register 30 — quarterly anchor months (Sep/Dec/Mar/Jun)",
+    "store_loader.py:SEALED_DAYS": "register 30 — first two weeks (days 1–14 inclusive, UTC)",
+    "forward_migration.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) via prereg_T3_build; reused by forward readout",
+    "forward_migration.py:EXPECT_WINDOW": "pre-registered 11:46Z expectation window (trial log 2026-08-18)",
+    "forward_migration.py:EXPECT_DIR": "pre-registered 11:46Z expectation (decline)",
+    "forward_migration.py:EXPECT_MIN_DEPTH": "pre-registered grading criterion ('deep' >= 3 rungs); graded MISS with semantics finding (register 28/29)",
+    "forward_migration.py:EXPECT_UNRECRUITED_FRAC": "pre-registered grading criterion ('predominantly unrecruited')",
+    "migration.py:LADDER": "six-rung doctrine (cascade analysis, register; ladder build 2026-08-14)",
+    "migration.py:HORIZONS": "backtest v1 report spec (owner amendments) — event-study horizons, mirrored",
+    "eventstudy.py:HORIZONS": "backtest v1 report spec (owner deliverable amendments) — drift-adjusted event-study windows ±5/10/20",
+    "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
+    "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
+}
+
+# Structural/definitional constants — not yardsticks; listed, not flagged.
+DEFINITIONAL = {
+    "pipeline.py:_TF_MINUTES", "loop.py:_TFMIN", "migration.py:_MIN",
+    "forward_migration.py:_TFMIN", "resample.py:_TFMIN",
+    "classifier.py:CLIMAX_LABELS", "context.py:CLIMAX_LABELS",
+    "context.py:_REGISTRY_SPECS", "hypotheses.py:SPECS",
+    "hypotheses.py:OPEN", "hypotheses.py:CPG", "hypotheses.py:LONG",
+    "hypotheses.py:SHORT", "eventstudy.py:LABEL_DIR",
+    "t3.py:FUNNEL_EVENTS", "campaign.py:VARIANTS",
+    "campaign.py:BASE_OVERRIDES", "ledger.py:_TFMIN",
+    "narrate.py:TF_MINUTES", "store_loader.py:TF_MINUTES",
+}
+
+# Operator-ratified yardsticks with no code site yet (registry-first).
+RATIFIED_YARDSTICKS = [
+    ("qualifying_move", ">= 1.5 x 15M ATR, one-directional, within 60 min, drift-adjusted",
+     "registry seed (no code site yet)", "2026-08-18",
+     "operator ratification 2026-08-18 (register 31 revision) — changed only by re-registration"),
+    ("major_move", ">= 3 x 15M ATR, same clause",
+     "registry seed (no code site yet)", "2026-08-18",
+     "operator ratification 2026-08-18 (register 31 revision) — changed only by re-registration"),
+    ("watchdog_feed_pause_utc", "[21:00, 22:10) UTC + weekend Fri 21:00Z -> Sun 22:10Z",
+     "engine/paper.py:expect_prints (inline)", "2026-08-18",
+     "measured constant — register finding 24 (store-measured pause 21:00Z/22:05Z + 5 min margin)"),
+]
+
+
+def _blame_dates(relpath):
+    """line -> YYYY-MM-DD from git blame (uncommitted lines -> 'uncommitted')."""
+    out = subprocess.run(["git", "blame", "--line-porcelain", relpath],
+                         cwd=ROOT, capture_output=True, text=True).stdout
+    dates, line_no, cur = {}, 0, None
+    for ln in out.splitlines():
+        if re.match(r"^[0-9a-f]{40} ", ln):
+            line_no = int(ln.split()[2])
+            cur = None
+        elif ln.startswith("author-time "):
+            import datetime as dt
+            cur = dt.datetime.fromtimestamp(int(ln.split()[1]),
+                                            dt.timezone.utc).strftime("%Y-%m-%d")
+        elif ln.startswith("\t"):
+            dates[line_no] = cur or "uncommitted"
+    return dates
+
+
+def sweep_config():
+    rows = []
+    path = os.path.join(ROOT, "config.yaml")
+    dates = _blame_dates("config.yaml")
+    stack = []
+    for i, raw in enumerate(open(path), 1):
+        line = raw.rstrip("\n")
+        m = re.match(r"^( *)([A-Za-z_][A-Za-z0-9_]*):\s*(.*)$", line)
+        if not m:
+            continue
+        indent, key, rest = len(m.group(1)) // 2, m.group(2), m.group(3)
+        stack = stack[:indent] + [key]
+        val = rest.split("#")[0].strip()
+        comment = rest.split("#", 1)[1].strip() if "#" in rest else ""
+        if not val:
+            continue                      # section header
+        dotted = ".".join(stack)
+        auth = AUTHORITY.get(dotted, FOUNDING)
+        rows.append((dotted, val, f"config.yaml:{i}",
+                     dates.get(i, "?"), auth, comment))
+    return rows
+
+
+def sweep_frozen():
+    rows = []
+    path = os.path.join(ROOT, "definitions", "frozen_v1.yaml")
+    dates = _blame_dates("definitions/frozen_v1.yaml")
+    for i, raw in enumerate(open(path), 1):
+        m = re.match(r"^  ([A-Za-z0-9_.]+):\s*([^#]+?)\s*(?:#\s*(.*))?$", raw.rstrip())
+        if m and "." in m.group(1):
+            rows.append((m.group(1), m.group(2),
+                         f"definitions/frozen_v1.yaml:{i}",
+                         dates.get(i, "?"),
+                         "frozen_v1 pinned override (hash-pinned definition; "
+                         "campaign bit-identical pin)", m.group(3) or ""))
+    return rows
+
+
+def _has_number(node):
+    """True iff the AST value contains a numeric literal anywhere — the
+    mechanical test for 'is this a yardstick candidate'. Path/plumbing and
+    pure-name structures carry no numbers and are skipped."""
+    for n in ast.walk(node):
+        if isinstance(n, ast.Constant) and isinstance(n.value, (int, float)) \
+                and not isinstance(n.value, bool):
+            return True
+    return False
+
+
+def _is_plumbing(src_text):
+    return any(tok in src_text for tok in
+               ("__file__", "os.path", "open(", "ROOT"))
+
+
+def sweep_constants():
+    rows, flagged = [], []
+    for d in ("engine", "backtest"):
+        base = os.path.join(ROOT, d)
+        for f in sorted(os.listdir(base)):
+            if not f.endswith(".py"):
+                continue
+            rel = f"{d}/{f}"
+            src = open(os.path.join(base, f)).read()
+            tree = ast.parse(src)
+            dates = None
+            for node in tree.body:
+                if not isinstance(node, ast.Assign) or len(node.targets) != 1:
+                    continue
+                t = node.targets[0]
+                if not (isinstance(t, ast.Name) and t.id.isupper()):
+                    continue
+                key = f"{f}:{t.id}"
+                val = ast.get_source_segment(src, node.value)
+                if key in DEFINITIONAL or _is_plumbing(val):
+                    continue
+                if key not in AUTHORITY and not _has_number(node.value):
+                    continue              # name enumerations: not yardsticks
+                if val and len(val) > 60:
+                    val = val[:57] + "..."
+                if dates is None:
+                    dates = _blame_dates(rel)
+                row = (key, val, f"{rel}:{node.lineno}",
+                       dates.get(node.lineno, "?"),
+                       AUTHORITY.get(key), "")
+                if row[4] is None:
+                    flagged.append(row)
+                else:
+                    rows.append(row)
+    return rows, flagged
+
+
+def generate():
+    cfg = sweep_config()
+    frz = sweep_frozen()
+    consts, flagged = sweep_constants()
+    L = ["# Canonical Parameter Registry (GENERATED — do not hand-edit)",
+         "",
+         "Generated by `scripts/param_registry.py`; regeneration rides the "
+         "weekly campaign; `tests/test_param_registry.py` pins it clean "
+         "against HEAD. **Rule (README): no test, analysis, census, or "
+         "simulation may use an unregistered yardstick.** Values with no "
+         "authority trail are flagged below — a flag is a finding, not a "
+         "permission.",
+         "",
+         "## Operator-ratified yardsticks (registry-first)",
+         "", "| yardstick | value | source | date set | authority |",
+         "|---|---|---|---|---|"]
+    for n, v, s, dt_, a in RATIFIED_YARDSTICKS:
+        L.append(f"| {n} | {v} | {s} | {dt_} | {a} |")
+    L += ["", "## config.yaml defaults", "",
+          "| parameter | value | source | date set | authority | note |",
+          "|---|---|---|---|---|---|"]
+    for r in cfg:
+        L.append("| " + " | ".join(str(x) for x in r) + " |")
+    L += ["", "## frozen_v1 pinned overrides (operative values)", "",
+          "| parameter | value | source | date set | authority | note |",
+          "|---|---|---|---|---|---|"]
+    for r in frz:
+        L.append("| " + " | ".join(str(x) for x in r) + " |")
+    L += ["", "## Code constants (engine/ + backtest/)", "",
+          "| constant | value | source | date set | authority |",
+          "|---|---|---|---|---|"]
+    for r in sorted(consts):
+        L.append("| " + " | ".join(str(x) for x in r[:5]) + " |")
+    L += ["", "## FLAGGED — no authority trail (pending-ruling batch R1)",
+          "",
+          "Each needs one operator line: **ratify** (becomes authority) / "
+          "**source** (cite the existing trail) / **fix** (wrong value). "
+          "Batched for review, not dribbled.",
+          "", "| constant | value | source | date set | disposition |",
+          "|---|---|---|---|---|"]
+    for r in sorted(flagged):
+        L.append(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} | PENDING RULING |")
+    L.append("")
+    return "\n".join(L)
+
+
+def main():
+    doc = generate()
+    with open(DOC, "w") as f:
+        f.write(doc)
+    n_flag = doc.count("PENDING RULING")
+    print(f"wrote docs/parameter_registry.md ({n_flag} flagged for batch R1)")
+
+
+if __name__ == "__main__":
+    main()
