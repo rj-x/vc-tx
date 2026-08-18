@@ -42,7 +42,7 @@ import subprocess
 import numpy as np
 import pandas as pd
 
-from engine.signal_watch import SignalWatch  # noqa: F401  (candidate attach point)
+from engine.signal_watch import FIRING_CONDITIONS, SignalWatch
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.forward_migration import _replay
 from backtest.campaign import make_cfg
@@ -163,7 +163,8 @@ def trend_flips(events):
     return flips
 
 
-def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label):
+def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
+          names=frozenset()):
     """One source window [lo_ts, hi_ts); sealed spans already excluded
     from `fires`/`episodes` by the caller."""
     ts, cl, _ = series
@@ -171,10 +172,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label):
     F = [f for f in fires if lo_ts <= f["ts"] < hi_ts]
     E = [e for e in episodes if lo_ts <= e["start"] < hi_ts]
     rows = {}
-    from engine.signal_watch import FIRING_CONDITIONS
-    all_names = ({f["name"] for f in F} | {"H1", "H2", "H3", "H4", "H5"}
-                 | set(FIRING_CONDITIONS))
-    for name in sorted(all_names):
+    for name in sorted(names | {f["name"] for f in F}):
         nf = [f for f in F if f["name"] == name]
         if not nf:
             rows[name] = {"source": label, "n_fires": 0,
@@ -234,8 +232,15 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label):
                                    "adverse_pts": round(worst["adverse_pts"], 1)}
                                   if worst else None),
         }
+    w = (ts >= lo_ts.value) & (ts < hi_ts.value)
+    base = (round(100 * float(np.mean(qual[1][w] | qual[-1][w])), 1)
+            if w.any() else None)
     rows["_moves"] = {"source": label, "n_qualifying_episodes": len(E),
-                      "n_major": sum(1 for e in E if e["major"])}
+                      "n_major": sum(1 for e in E if e["major"]),
+                      "bar_qualify_base_rate_pct": base,
+                      "base_rate_note": ("precision reads against this: the "
+                                         "share of bars that qualify in "
+                                         "EITHER direction by clock alone")}
     return rows
 
 
@@ -243,15 +248,18 @@ def run(instr="uk100fut"):
     cfg = make_cfg({"session_model.extended_hours": True,
                     "session_model.ladder": True,
                     "debug.structure": True})       # PHASE_EVAL for flips
-    engine, bars, _ = _replay(cfg, instr)
+    watch = SignalWatch()
+    engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     events = engine.narrative.events
     b1m = bars[cfg.mtf.execution_tf]
     qual, episodes, series, drift = build_moves(
         b1m, bars[cfg.mtf.signal_tf], cfg.context.atr_period)
-    fires = fires_from_events(events)
+    recipe_fires = fires_from_events(events)          # CONFIRM = recipe stage
+    signal_fires = watch.fires                         # bare firing conditions
     flips = trend_flips(events)
     # sealed spans excluded before scoring (register 30 pattern)
-    fires = [f for f in fires if not is_sealed(f["ts"])]
+    recipe_fires = [f for f in recipe_fires if not is_sealed(f["ts"])]
+    signal_fires = [f for f in signal_fires if not is_sealed(f["ts"])]
     episodes = [e for e in episodes if not is_sealed(e["start"])]
     boundary = lockbox_boundary()
     gl = zones()["go_live"]
@@ -272,11 +280,31 @@ def run(instr="uk100fut"):
                            "window < lockbox boundary; forward window >= "
                            "go_live; lockbox span excluded from both; "
                            "sealed windows auto-skipped"),
-        "backtest": score(fires, qual, episodes, series, flips,
-                          pd.Timestamp("1970-01-01", tz="UTC"), boundary,
-                          "backtest_replay"),
-        "forward": score(fires, qual, episodes, series, flips, gl, far,
-                         "forward_feed_replay"),
+        "doctrine": ("PURE SIGNALS (operator-ratified 2026-08-18): a "
+                     "hypothesis = a firing condition, nothing else; graded "
+                     "only on whether a qualifying move follows, how "
+                     "reliably, how early. Trade logic is a separate later "
+                     "layer for signals that earn one."),
+        "signals": {
+            "backtest": score(signal_fires, qual, episodes, series, flips,
+                              pd.Timestamp("1970-01-01", tz="UTC"), boundary,
+                              "backtest_replay",
+                              names=frozenset(FIRING_CONDITIONS)),
+            "forward": score(signal_fires, qual, episodes, series, flips,
+                             gl, far, "forward_feed_replay",
+                             names=frozenset(FIRING_CONDITIONS))},
+        "founding_recipes_at_confirmation": {
+            "note": ("graded pattern+wrapper stacks (confirmation = recipe "
+                     "stage under the pure-signals doctrine) - historically "
+                     "interesting, kept distinct, NOT signal rows; frozen_v1 "
+                     "in paper is the untouched baseline record"),
+            "backtest": score(recipe_fires, qual, episodes, series, flips,
+                              pd.Timestamp("1970-01-01", tz="UTC"), boundary,
+                              "backtest_replay",
+                              names=frozenset({"H1", "H2", "H3", "H4", "H5"})),
+            "forward": score(recipe_fires, qual, episodes, series, flips,
+                             gl, far, "forward_feed_replay",
+                             names=frozenset({"H1", "H2", "H3", "H4", "H5"}))},
     }
 
 
@@ -289,9 +317,10 @@ def main():
     path = os.path.join(OUT, "signal_scoreboard.json")
     with open(path, "w") as f:
         json.dump(res, f, indent=2, default=str)
-    for src in ("backtest", "forward"):
-        print(f"\n== {src} ==")
-        for name, r in res[src].items():
+    for block in ("signals", "founding_recipes_at_confirmation"):
+      for src in ("backtest", "forward"):
+        print(f"\n== {block} / {src} ==")
+        for name, r in res[block][src].items():
             if r.get("n_fires") == 0:
                 print(f"  {name}: fires 0")
                 continue

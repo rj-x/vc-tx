@@ -53,6 +53,8 @@ AUTHORITY = {
     "scoreboard.py:QUALIFYING_ATR_MULT": "cites registry qualifying_move (operator ratification 2026-08-18) — code mirror of the ratified 1.5x",
     "scoreboard.py:MAJOR_ATR_MULT": "cites registry major_move (operator ratification 2026-08-18) — code mirror of the ratified 3x",
     "scoreboard.py:MOVE_WINDOW_MIN": "cites registry qualifying_move 60-minute clause; reused as coverage lookback per prereg_scoreboard_operationalization",
+    "signal_watch.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) — S-T3B row fires on T1d's measured conditions exactly (prereg_signal_rows_v1)",
+    "signal_watch.py:SEQUENCE_N": "S-EFFORTLESS-SEQ sequence clause: 2 consecutive same-direction effortless prints (prereg_signal_rows_v1; operator-reviewable)",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
     "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
 }
@@ -78,6 +80,9 @@ RATIFIED_YARDSTICKS = [
     ("major_move", ">= 3 x 15M ATR, same clause",
      "registry seed (no code site yet)", "2026-08-18",
      "operator ratification 2026-08-18 (register 31 revision) — changed only by re-registration"),
+    ("move_episode_dedup", "overlapping qualifying windows of one direction merge into MAXIMAL episodes (never counted separately)",
+     "backtest/scoreboard.py:build_moves", "2026-08-18",
+     "operator ratification 2026-08-18 (episode-counting ruling) — the shipped artifact already counted merged; no re-emit needed"),
     ("watchdog_feed_pause_utc", "[21:00, 22:10) UTC + weekend Fri 21:00Z -> Sun 22:10Z",
      "engine/paper.py:expect_prints (inline)", "2026-08-18",
      "measured constant — register finding 24 (store-measured pause 21:00Z/22:05Z + 5 min margin)"),

@@ -17,7 +17,8 @@ def _run(attach, fire_everything=False):
         watch = SignalWatch().attach(eng)
         if fire_everything:
             FIRING_CONDITIONS["TEST_ALWAYS"] = (
-                lambda bar, ectx, sctx, feats, cores, structural, qualified: 1)
+                lambda bar, ectx, sctx, feats, cores, structural, qualified,
+                prev: 1)
     try:
         t = 0
         for i in range(120):
@@ -45,7 +46,8 @@ def test_narration_and_decisions_identical_on_off():
     ev_on, tr_on, watch = _run(attach=True)
     assert ev_on == ev_off          # narration bit-identical
     assert tr_on == tr_off          # decisions bit-identical
-    assert watch.fires == []        # no conditions defined -> no fires
+    # six pre-registered conditions are defined; fires are OBSERVATIONS —
+    # the assertion above already proved they perturb nothing
 
     # even an ACTIVELY FIRING condition must not perturb engine output
     ev_fire, tr_fire, watch2 = _run(attach=True, fire_everything=True)

@@ -62,9 +62,12 @@ def zone_fence(start):
     return start
 
 
-def _replay(cfg, instr):
+def _replay(cfg, instr, engine_hook=None):
     """Narrative-only replay over the FULL store (live-equivalent warm);
-    mirrors backtest.loop's clock-ordered feed without broker/router."""
+    mirrors backtest.loop's clock-ordered feed without broker/router.
+    engine_hook(engine) runs after construction, before any bar — a
+    generic attach point (the scoreboard attaches its observer here;
+    this module deliberately knows nothing about it)."""
     df1 = load_frame(instr, "1min", narrative_scope=True)
     cash = trading_sessions(df1, cfg.session_model.trading_day_anchor_london)
     sig_tf, ctx_tf, ex_tf = (cfg.mtf.signal_tf, cfg.mtf.context_tf,
@@ -79,6 +82,8 @@ def _replay(cfg, instr):
                 bars["ladder:" + tf] = (exec_bars(cash, tf=tf) if m == 1
                                         else resample_bars(cash, m, tf))
     engine = MTFEngine(cfg, narrative_only=True)
+    if engine_hook is not None:
+        engine_hook(engine)
     by_ts = {}
     for key, blist in bars.items():
         for b in blist:
