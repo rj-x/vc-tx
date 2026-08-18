@@ -1,0 +1,279 @@
+{
+  "STAMP": "Evidence Regression artifact (register 28) - rerun-and-diff of the July migration artifact under the fixed instrument (rv on structural-only labels)",
+  "engine_commit": "8b69406c39dacc2c4bcb5676ca093a930b20a823",
+  "taint_class": "TAINTED-RERUNNABLE, rerun complete",
+  "before": {
+    "n": 510,
+    "recruited": 168,
+    "rv_measured": 257
+  },
+  "after": {
+    "n": 510,
+    "recruited": 172,
+    "rv_measured": 510
+  },
+  "flipped_to_recruited": [
+    [
+      "2026-07-22 09:45:00+00:00",
+      "1min->3min"
+    ],
+    [
+      "2026-07-28 22:39:00+00:00",
+      "1min->3min"
+    ],
+    [
+      "2026-07-28 23:00:00+00:00",
+      "1min->3min"
+    ],
+    [
+      "2026-07-29 19:39:00+00:00",
+      "1min->3min"
+    ]
+  ],
+  "depth_distribution_unchanged": true,
+  "groups_before": {
+    "rungs1_unrecruited_cash": {
+      "n": 16,
+      "exc_5_bps_mean": -3.1,
+      "exc_10_bps_mean": -2.7,
+      "exc_20_bps_mean": 5.7
+    },
+    "rungs1_unrecruited_overnight_asia": {
+      "n": 54,
+      "exc_5_bps_mean": -4.6,
+      "exc_10_bps_mean": -0.8,
+      "exc_20_bps_mean": 0.4
+    },
+    "rungs1_unrecruited_post_close": {
+      "n": 26,
+      "exc_5_bps_mean": 1.4,
+      "exc_10_bps_mean": 1.7,
+      "exc_20_bps_mean": -0.7
+    },
+    "rungs1_unrecruited_pre_open": {
+      "n": 6,
+      "exc_5_bps_mean": -19.0,
+      "exc_10_bps_mean": -23.0,
+      "exc_20_bps_mean": -19.0
+    },
+    "rungs1_recruited_cash": {
+      "n": 10,
+      "exc_5_bps_mean": 3.5,
+      "exc_10_bps_mean": 1.4,
+      "exc_20_bps_mean": 12.3
+    },
+    "rungs1_recruited_overnight_asia": {
+      "n": 28,
+      "exc_5_bps_mean": 5.5,
+      "exc_10_bps_mean": 7.8,
+      "exc_20_bps_mean": 0.3
+    },
+    "rungs1_recruited_post_close": {
+      "n": 11,
+      "exc_5_bps_mean": -12.8,
+      "exc_10_bps_mean": -9.7,
+      "exc_20_bps_mean": -16.1
+    },
+    "rungs1_recruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": -4.6,
+      "exc_10_bps_mean": -3.0,
+      "exc_20_bps_mean": 3.4
+    },
+    "rungs2_unrecruited_overnight_asia": {
+      "n": 13,
+      "exc_5_bps_mean": -0.6,
+      "exc_10_bps_mean": 7.0,
+      "exc_20_bps_mean": 9.7
+    },
+    "rungs2_unrecruited_post_close": {
+      "n": 7,
+      "exc_5_bps_mean": 0.3,
+      "exc_10_bps_mean": -1.7,
+      "exc_20_bps_mean": -3.6
+    },
+    "rungs2_unrecruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": 17.9,
+      "exc_10_bps_mean": 31.0,
+      "exc_20_bps_mean": -16.1
+    },
+    "rungs2_recruited_cash": {
+      "n": 5,
+      "exc_5_bps_mean": -2.7,
+      "exc_10_bps_mean": -6.6,
+      "exc_20_bps_mean": 5.1
+    },
+    "rungs2_recruited_overnight_asia": {
+      "n": 4,
+      "exc_5_bps_mean": 7.1,
+      "exc_10_bps_mean": -2.4,
+      "exc_20_bps_mean": -11.2
+    },
+    "rungs2_recruited_post_close": {
+      "n": 3,
+      "exc_5_bps_mean": -22.6,
+      "exc_10_bps_mean": -11.7,
+      "exc_20_bps_mean": -14.7
+    },
+    "rungs2_recruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": 29.2,
+      "exc_10_bps_mean": 14.3,
+      "exc_20_bps_mean": 16.6
+    },
+    "rungs3_unrecruited_overnight_asia": {
+      "n": 4,
+      "exc_5_bps_mean": 4.9,
+      "exc_10_bps_mean": 16.6,
+      "exc_20_bps_mean": 56.5
+    },
+    "rungs3_unrecruited_post_close": {
+      "n": 3,
+      "exc_5_bps_mean": 3.9,
+      "exc_10_bps_mean": 5.5,
+      "exc_20_bps_mean": -2.0
+    },
+    "rungs3_recruited_cash": {
+      "n": 1,
+      "exc_5_bps_mean": 5.2,
+      "exc_10_bps_mean": -21.0,
+      "exc_20_bps_mean": 5.9
+    },
+    "rungs3_recruited_post_close": {
+      "n": 1,
+      "exc_5_bps_mean": 50.5,
+      "exc_10_bps_mean": 28.4,
+      "exc_20_bps_mean": 17.2
+    },
+    "rungs4_unrecruited_overnight_asia": {
+      "n": 1,
+      "exc_5_bps_mean": 3.8,
+      "exc_10_bps_mean": -2.8,
+      "exc_20_bps_mean": 54.9
+    }
+  },
+  "groups_after": {
+    "rungs1_unrecruited_cash": {
+      "n": 15,
+      "exc_5_bps_mean": -1.9,
+      "exc_10_bps_mean": 0.0,
+      "exc_20_bps_mean": 9.1
+    },
+    "rungs1_unrecruited_overnight_asia": {
+      "n": 53,
+      "exc_5_bps_mean": -4.4,
+      "exc_10_bps_mean": -0.6,
+      "exc_20_bps_mean": -0.4
+    },
+    "rungs1_unrecruited_post_close": {
+      "n": 26,
+      "exc_5_bps_mean": 1.4,
+      "exc_10_bps_mean": 1.7,
+      "exc_20_bps_mean": -0.7
+    },
+    "rungs1_unrecruited_pre_open": {
+      "n": 6,
+      "exc_5_bps_mean": -19.0,
+      "exc_10_bps_mean": -23.0,
+      "exc_20_bps_mean": -19.0
+    },
+    "rungs1_recruited_cash": {
+      "n": 11,
+      "exc_5_bps_mean": 1.2,
+      "exc_10_bps_mean": -2.7,
+      "exc_20_bps_mean": 7.1
+    },
+    "rungs1_recruited_overnight_asia": {
+      "n": 29,
+      "exc_5_bps_mean": 4.7,
+      "exc_10_bps_mean": 7.2,
+      "exc_20_bps_mean": 1.7
+    },
+    "rungs1_recruited_post_close": {
+      "n": 11,
+      "exc_5_bps_mean": -12.8,
+      "exc_10_bps_mean": -9.7,
+      "exc_20_bps_mean": -16.1
+    },
+    "rungs1_recruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": -4.6,
+      "exc_10_bps_mean": -3.0,
+      "exc_20_bps_mean": 3.4
+    },
+    "rungs2_unrecruited_overnight_asia": {
+      "n": 13,
+      "exc_5_bps_mean": -0.6,
+      "exc_10_bps_mean": 7.0,
+      "exc_20_bps_mean": 9.7
+    },
+    "rungs2_unrecruited_post_close": {
+      "n": 7,
+      "exc_5_bps_mean": 0.3,
+      "exc_10_bps_mean": -1.7,
+      "exc_20_bps_mean": -3.6
+    },
+    "rungs2_unrecruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": 17.9,
+      "exc_10_bps_mean": 31.0,
+      "exc_20_bps_mean": -16.1
+    },
+    "rungs2_recruited_cash": {
+      "n": 5,
+      "exc_5_bps_mean": -2.7,
+      "exc_10_bps_mean": -6.6,
+      "exc_20_bps_mean": 5.1
+    },
+    "rungs2_recruited_overnight_asia": {
+      "n": 4,
+      "exc_5_bps_mean": 7.1,
+      "exc_10_bps_mean": -2.4,
+      "exc_20_bps_mean": -11.2
+    },
+    "rungs2_recruited_post_close": {
+      "n": 3,
+      "exc_5_bps_mean": -22.6,
+      "exc_10_bps_mean": -11.7,
+      "exc_20_bps_mean": -14.7
+    },
+    "rungs2_recruited_pre_open": {
+      "n": 2,
+      "exc_5_bps_mean": 29.2,
+      "exc_10_bps_mean": 14.3,
+      "exc_20_bps_mean": 16.6
+    },
+    "rungs3_unrecruited_overnight_asia": {
+      "n": 4,
+      "exc_5_bps_mean": 4.9,
+      "exc_10_bps_mean": 16.6,
+      "exc_20_bps_mean": 56.5
+    },
+    "rungs3_unrecruited_post_close": {
+      "n": 3,
+      "exc_5_bps_mean": 3.9,
+      "exc_10_bps_mean": 5.5,
+      "exc_20_bps_mean": -2.0
+    },
+    "rungs3_recruited_cash": {
+      "n": 1,
+      "exc_5_bps_mean": 5.2,
+      "exc_10_bps_mean": -21.0,
+      "exc_20_bps_mean": 5.9
+    },
+    "rungs3_recruited_post_close": {
+      "n": 1,
+      "exc_5_bps_mean": 50.5,
+      "exc_10_bps_mean": 28.4,
+      "exc_20_bps_mean": 17.2
+    },
+    "rungs4_unrecruited_overnight_asia": {
+      "n": 1,
+      "exc_5_bps_mean": 3.8,
+      "exc_10_bps_mean": -2.8,
+      "exc_20_bps_mean": 54.9
+    }
+  },
+  "h9_reread": "recruited-vs-unrecruited splits move at noise level (4/510 events flipped; largest group-mean shift rungs1 cash/overnight at n<=29 single-digit bps) \u2014 no H9 dossier reading depended on the biased split; H9's recruited-chains clause remains untested-at-power, now on unbiased data"
+}

@@ -2,6 +2,18 @@
   "note": "OBSERVATIONAL - working set only; direction-agnostic; location splits from ledger columns incl. reference-class (session vs prior-session extremes vs swing registry); matched baseline = same-segment trailing-5-bar realized-range quintile, signature bars excluded; chop = both bracket legs (sig extreme +/- 0.5 pt nominal buffer) hit within horizon (double-trigger, the -2R failure mode)",
   "median_spread_pts": 0.8,
   "baseline_same_segment": {
+    "cash_5": {
+      "mean_range": 10.63,
+      "n": 3000
+    },
+    "cash_15": {
+      "mean_range": 18.89,
+      "n": 3000
+    },
+    "cash_30": {
+      "mean_range": 26.74,
+      "n": 3000
+    },
     "pre_open_5": {
       "mean_range": 10.04,
       "n": 960
@@ -14,40 +26,28 @@
       "mean_range": 36.55,
       "n": 960
     },
-    "overnight_asia_5": {
-      "mean_range": 5.02,
-      "n": 3000
-    },
-    "overnight_asia_15": {
-      "mean_range": 9.23,
-      "n": 3000
-    },
-    "overnight_asia_30": {
-      "mean_range": 13.62,
-      "n": 3000
-    },
-    "cash_5": {
-      "mean_range": 10.79,
-      "n": 3000
-    },
-    "cash_15": {
-      "mean_range": 19.12,
-      "n": 3000
-    },
-    "cash_30": {
-      "mean_range": 26.91,
-      "n": 3000
-    },
     "post_close_5": {
-      "mean_range": 6.59,
+      "mean_range": 6.62,
       "n": 3000
     },
     "post_close_15": {
-      "mean_range": 11.57,
+      "mean_range": 11.68,
       "n": 3000
     },
     "post_close_30": {
-      "mean_range": 16.32,
+      "mean_range": 16.4,
+      "n": 3000
+    },
+    "overnight_asia_5": {
+      "mean_range": 4.96,
+      "n": 3000
+    },
+    "overnight_asia_15": {
+      "mean_range": 9.15,
+      "n": 3000
+    },
+    "overnight_asia_30": {
+      "mean_range": 13.53,
       "n": 3000
     }
   },

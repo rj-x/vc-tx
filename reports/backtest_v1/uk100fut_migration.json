@@ -162,7 +162,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.59,
       "chain_rungs": 1
     },
     {
@@ -173,7 +173,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -184,7 +184,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.56,
       "chain_rungs": 1
     },
     {
@@ -195,7 +195,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -305,7 +305,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -327,7 +327,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.7,
       "chain_rungs": 1
     },
     {
@@ -338,7 +338,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.55,
       "chain_rungs": 1
     },
     {
@@ -349,7 +349,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 1
     },
     {
@@ -371,7 +371,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.76,
       "chain_rungs": 1
     },
     {
@@ -382,7 +382,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.92,
       "chain_rungs": 1
     },
     {
@@ -393,7 +393,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 1
     },
     {
@@ -404,7 +404,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -415,7 +415,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.89,
       "chain_rungs": 1
     },
     {
@@ -426,7 +426,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.61,
       "chain_rungs": 1
     },
     {
@@ -437,7 +437,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.03,
       "chain_rungs": 1
     },
     {
@@ -448,7 +448,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.92,
       "chain_rungs": 1
     },
     {
@@ -459,7 +459,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 1
     },
     {
@@ -470,7 +470,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -481,7 +481,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -503,7 +503,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.55,
       "chain_rungs": 1
     },
     {
@@ -514,7 +514,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.56,
       "chain_rungs": 1
     },
     {
@@ -580,7 +580,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -591,7 +591,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.6,
       "chain_rungs": 1
     },
     {
@@ -602,7 +602,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -646,7 +646,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -657,7 +657,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.53,
       "chain_rungs": 1
     },
     {
@@ -668,7 +668,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 1
     },
     {
@@ -679,7 +679,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.0,
       "chain_rungs": 1
     },
     {
@@ -690,7 +690,7 @@
       "seg": "post_close",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.76,
       "chain_rungs": 1
     },
     {
@@ -701,7 +701,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.98,
       "chain_rungs": 1
     },
     {
@@ -712,7 +712,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 1
     },
     {
@@ -723,7 +723,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 1
     },
     {
@@ -734,7 +734,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -745,7 +745,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.78,
       "chain_rungs": 1
     },
     {
@@ -756,7 +756,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -767,7 +767,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -778,7 +778,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -789,7 +789,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -800,7 +800,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -811,7 +811,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.9,
       "chain_rungs": 1
     },
     {
@@ -822,7 +822,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.59,
       "chain_rungs": 1
     },
     {
@@ -844,7 +844,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 1
     },
     {
@@ -855,7 +855,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -866,7 +866,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.96,
       "chain_rungs": 1
     },
     {
@@ -877,7 +877,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.88,
       "chain_rungs": 1
     },
     {
@@ -888,7 +888,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -899,7 +899,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -910,7 +910,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -921,7 +921,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -932,7 +932,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.61,
       "chain_rungs": 1
     },
     {
@@ -943,7 +943,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.53,
       "chain_rungs": 1
     },
     {
@@ -965,7 +965,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 1
     },
     {
@@ -976,7 +976,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -1085,8 +1085,8 @@
       "dir": -1,
       "seg": "cash",
       "n_child": 2,
-      "recruited": false,
-      "recruitment_margin": null,
+      "recruited": true,
+      "recruitment_margin": 0.4,
       "chain_rungs": 1
     },
     {
@@ -1174,7 +1174,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 1
     },
     {
@@ -1196,7 +1196,7 @@
       "seg": "post_close",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -1273,7 +1273,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -1295,7 +1295,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -1526,7 +1526,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.61,
       "chain_rungs": 1
     },
     {
@@ -1537,7 +1537,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -1570,7 +1570,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.63,
       "chain_rungs": 1
     },
     {
@@ -1581,7 +1581,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.88,
       "chain_rungs": 1
     },
     {
@@ -1592,7 +1592,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -1603,7 +1603,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -1625,7 +1625,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -1702,7 +1702,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.88,
       "chain_rungs": 1
     },
     {
@@ -1713,7 +1713,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.56,
       "chain_rungs": 1
     },
     {
@@ -1724,7 +1724,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.89,
       "chain_rungs": 1
     },
     {
@@ -1757,7 +1757,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.66,
       "chain_rungs": 1
     },
     {
@@ -1790,7 +1790,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.59,
       "chain_rungs": 1
     },
     {
@@ -1845,7 +1845,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 1
     },
     {
@@ -1856,7 +1856,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.52,
       "chain_rungs": 1
     },
     {
@@ -1867,7 +1867,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.6,
       "chain_rungs": 1
     },
     {
@@ -1878,7 +1878,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -1889,7 +1889,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -1944,7 +1944,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -2021,7 +2021,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.53,
       "chain_rungs": 1
     },
     {
@@ -2054,7 +2054,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.7,
       "chain_rungs": 1
     },
     {
@@ -2076,7 +2076,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.58,
       "chain_rungs": 1
     },
     {
@@ -2087,7 +2087,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 1
     },
     {
@@ -2098,7 +2098,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -2108,8 +2108,8 @@
       "dir": -1,
       "seg": "overnight_asia",
       "n_child": 2,
-      "recruited": false,
-      "recruitment_margin": null,
+      "recruited": true,
+      "recruitment_margin": 1.25,
       "chain_rungs": 1
     },
     {
@@ -2130,8 +2130,8 @@
       "dir": -1,
       "seg": "overnight_asia",
       "n_child": 2,
-      "recruited": false,
-      "recruitment_margin": null,
+      "recruited": true,
+      "recruitment_margin": 2.23,
       "chain_rungs": 1
     },
     {
@@ -2405,8 +2405,8 @@
       "dir": -1,
       "seg": "post_close",
       "n_child": 2,
-      "recruited": false,
-      "recruitment_margin": null,
+      "recruited": true,
+      "recruitment_margin": 3.8,
       "chain_rungs": 1
     },
     {
@@ -2516,7 +2516,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 1
     },
     {
@@ -2791,7 +2791,7 @@
       "seg": "post_close",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -2802,7 +2802,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -2813,7 +2813,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -2824,7 +2824,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.58,
       "chain_rungs": 1
     },
     {
@@ -2868,7 +2868,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.54,
       "chain_rungs": 1
     },
     {
@@ -2879,7 +2879,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.51,
       "chain_rungs": 1
     },
     {
@@ -2890,7 +2890,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -2901,7 +2901,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 1
     },
     {
@@ -2912,7 +2912,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -2923,7 +2923,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -2934,7 +2934,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -2945,7 +2945,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -2956,7 +2956,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.82,
       "chain_rungs": 1
     },
     {
@@ -2967,7 +2967,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -2978,7 +2978,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -2989,7 +2989,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.78,
       "chain_rungs": 1
     },
     {
@@ -3000,7 +3000,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -3011,7 +3011,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.58,
       "chain_rungs": 1
     },
     {
@@ -3022,7 +3022,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -3033,7 +3033,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 1
     },
     {
@@ -3044,7 +3044,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -3055,7 +3055,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.76,
       "chain_rungs": 1
     },
     {
@@ -3066,7 +3066,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -3088,7 +3088,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -3099,7 +3099,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -3110,7 +3110,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -3132,7 +3132,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.63,
       "chain_rungs": 1
     },
     {
@@ -3165,7 +3165,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.83,
       "chain_rungs": 1
     },
     {
@@ -3176,7 +3176,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.92,
       "chain_rungs": 1
     },
     {
@@ -3209,7 +3209,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.65,
       "chain_rungs": 1
     },
     {
@@ -3220,7 +3220,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.66,
       "chain_rungs": 1
     },
     {
@@ -3242,7 +3242,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.83,
       "chain_rungs": 1
     },
     {
@@ -3253,7 +3253,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -3264,7 +3264,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -3275,7 +3275,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 1
     },
     {
@@ -3286,7 +3286,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.97,
       "chain_rungs": 1
     },
     {
@@ -3297,7 +3297,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -3308,7 +3308,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.9,
       "chain_rungs": 1
     },
     {
@@ -3319,7 +3319,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -3330,7 +3330,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -3341,7 +3341,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.87,
       "chain_rungs": 1
     },
     {
@@ -3352,7 +3352,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -3363,7 +3363,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.99,
       "chain_rungs": 1
     },
     {
@@ -3374,7 +3374,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.87,
       "chain_rungs": 1
     },
     {
@@ -3385,7 +3385,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.96,
       "chain_rungs": 1
     },
     {
@@ -3396,7 +3396,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.61,
       "chain_rungs": 1
     },
     {
@@ -3407,7 +3407,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.02,
       "chain_rungs": 1
     },
     {
@@ -3418,7 +3418,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.97,
       "chain_rungs": 1
     },
     {
@@ -3429,7 +3429,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.02,
       "chain_rungs": 1
     },
     {
@@ -3440,7 +3440,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.05,
       "chain_rungs": 1
     },
     {
@@ -3451,7 +3451,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.12,
       "chain_rungs": 1
     },
     {
@@ -3462,7 +3462,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.03,
       "chain_rungs": 1
     },
     {
@@ -3473,7 +3473,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.07,
       "chain_rungs": 1
     },
     {
@@ -3484,7 +3484,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.04,
       "chain_rungs": 1
     },
     {
@@ -3495,7 +3495,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.02,
       "chain_rungs": 1
     },
     {
@@ -3506,7 +3506,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -3517,7 +3517,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.96,
       "chain_rungs": 1
     },
     {
@@ -3528,7 +3528,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 1
     },
     {
@@ -3539,7 +3539,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.93,
       "chain_rungs": 1
     },
     {
@@ -3550,7 +3550,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -3561,7 +3561,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -3572,7 +3572,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 1
     },
     {
@@ -3638,7 +3638,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.55,
       "chain_rungs": 1
     },
     {
@@ -3649,7 +3649,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -3671,7 +3671,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -3682,7 +3682,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 1
     },
     {
@@ -3693,7 +3693,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -3704,7 +3704,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.92,
       "chain_rungs": 1
     },
     {
@@ -3715,7 +3715,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -3726,7 +3726,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 1
     },
     {
@@ -3737,7 +3737,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 1
     },
     {
@@ -3748,7 +3748,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 1
     },
     {
@@ -3759,7 +3759,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -3770,7 +3770,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.88,
       "chain_rungs": 1
     },
     {
@@ -3781,7 +3781,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 1
     },
     {
@@ -3792,7 +3792,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -3803,7 +3803,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.82,
       "chain_rungs": 1
     },
     {
@@ -3814,7 +3814,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.82,
       "chain_rungs": 1
     },
     {
@@ -3825,7 +3825,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.98,
       "chain_rungs": 1
     },
     {
@@ -3836,7 +3836,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -3847,7 +3847,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -3858,7 +3858,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -3913,7 +3913,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.66,
       "chain_rungs": 1
     },
     {
@@ -3935,7 +3935,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.55,
       "chain_rungs": 1
     },
     {
@@ -3946,7 +3946,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 2
     },
     {
@@ -3957,7 +3957,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 2
     },
     {
@@ -3968,7 +3968,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.89,
       "chain_rungs": 1
     },
     {
@@ -3979,7 +3979,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.7,
       "chain_rungs": 1
     },
     {
@@ -3990,7 +3990,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -4012,7 +4012,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 2
     },
     {
@@ -4034,7 +4034,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.56,
       "chain_rungs": 1
     },
     {
@@ -4045,7 +4045,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.58,
       "chain_rungs": 1
     },
     {
@@ -4067,7 +4067,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.5,
       "chain_rungs": 1
     },
     {
@@ -4133,7 +4133,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.56,
       "chain_rungs": 1
     },
     {
@@ -4144,7 +4144,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -4177,7 +4177,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.59,
       "chain_rungs": 1
     },
     {
@@ -4298,7 +4298,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -4320,7 +4320,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 2
     },
     {
@@ -4331,7 +4331,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.66,
       "chain_rungs": 2
     },
     {
@@ -4342,7 +4342,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 2
     },
     {
@@ -4353,7 +4353,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -4375,7 +4375,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.76,
       "chain_rungs": 2
     },
     {
@@ -4386,7 +4386,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 2
     },
     {
@@ -4397,7 +4397,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.92,
       "chain_rungs": 2
     },
     {
@@ -4408,7 +4408,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.0,
       "chain_rungs": 1
     },
     {
@@ -4419,7 +4419,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.83,
       "chain_rungs": 1
     },
     {
@@ -4430,7 +4430,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.01,
       "chain_rungs": 2
     },
     {
@@ -4441,7 +4441,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.09,
       "chain_rungs": 2
     },
     {
@@ -4463,7 +4463,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.74,
       "chain_rungs": 1
     },
     {
@@ -4474,7 +4474,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.95,
       "chain_rungs": 2
     },
     {
@@ -4485,7 +4485,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.95,
       "chain_rungs": 2
     },
     {
@@ -4496,7 +4496,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 2
     },
     {
@@ -4507,7 +4507,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.88,
       "chain_rungs": 1
     },
     {
@@ -4518,7 +4518,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.93,
       "chain_rungs": 2
     },
     {
@@ -4529,7 +4529,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.86,
       "chain_rungs": 1
     },
     {
@@ -4595,7 +4595,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -4606,7 +4606,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 1
     },
     {
@@ -4617,7 +4617,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.63,
       "chain_rungs": 1
     },
     {
@@ -4628,7 +4628,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 1
     },
     {
@@ -4639,7 +4639,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -4650,7 +4650,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.55,
       "chain_rungs": 1
     },
     {
@@ -4661,7 +4661,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.6,
       "chain_rungs": 1
     },
     {
@@ -4672,7 +4672,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -4683,7 +4683,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 2
     },
     {
@@ -4694,7 +4694,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.75,
       "chain_rungs": 1
     },
     {
@@ -4705,7 +4705,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.68,
       "chain_rungs": 1
     },
     {
@@ -4716,7 +4716,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -4771,7 +4771,7 @@
       "seg": "cash",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.5,
       "chain_rungs": 1
     },
     {
@@ -4782,7 +4782,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.61,
       "chain_rungs": 1
     },
     {
@@ -4826,7 +4826,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.57,
       "chain_rungs": 1
     },
     {
@@ -4859,7 +4859,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.54,
       "chain_rungs": 1
     },
     {
@@ -5024,7 +5024,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -5035,7 +5035,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -5046,7 +5046,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.82,
       "chain_rungs": 1
     },
     {
@@ -5057,7 +5057,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.83,
       "chain_rungs": 1
     },
     {
@@ -5068,7 +5068,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.85,
       "chain_rungs": 1
     },
     {
@@ -5079,7 +5079,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 2
     },
     {
@@ -5101,7 +5101,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 3
     },
     {
@@ -5112,7 +5112,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.82,
       "chain_rungs": 3
     },
     {
@@ -5123,7 +5123,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 1
     },
     {
@@ -5134,7 +5134,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.77,
       "chain_rungs": 1
     },
     {
@@ -5145,7 +5145,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.8,
       "chain_rungs": 1
     },
     {
@@ -5156,7 +5156,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.9,
       "chain_rungs": 3
     },
     {
@@ -5167,7 +5167,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.95,
       "chain_rungs": 1
     },
     {
@@ -5178,7 +5178,7 @@
       "seg": "overnight_asia",
       "n_child": 3,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.04,
       "chain_rungs": 3
     },
     {
@@ -5189,7 +5189,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -1.01,
       "chain_rungs": 1
     },
     {
@@ -5200,7 +5200,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.69,
       "chain_rungs": 1
     },
     {
@@ -5211,7 +5211,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 2
     },
     {
@@ -5222,7 +5222,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 1
     },
     {
@@ -5233,7 +5233,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.94,
       "chain_rungs": 3
     },
     {
@@ -5244,7 +5244,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.64,
       "chain_rungs": 1
     },
     {
@@ -5255,7 +5255,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.67,
       "chain_rungs": 1
     },
     {
@@ -5266,7 +5266,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.91,
       "chain_rungs": 2
     },
     {
@@ -5277,7 +5277,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.63,
       "chain_rungs": 1
     },
     {
@@ -5310,7 +5310,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.59,
       "chain_rungs": 1
     },
     {
@@ -5321,7 +5321,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 2
     },
     {
@@ -5332,7 +5332,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 2
     },
     {
@@ -5453,7 +5453,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.72,
       "chain_rungs": 2
     },
     {
@@ -5464,7 +5464,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.84,
       "chain_rungs": 2
     },
     {
@@ -5475,7 +5475,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.79,
       "chain_rungs": 4
     },
     {
@@ -5486,7 +5486,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.9,
       "chain_rungs": 1
     },
     {
@@ -5497,7 +5497,7 @@
       "seg": "pre_open",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.73,
       "chain_rungs": 1
     },
     {
@@ -5519,7 +5519,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.63,
       "chain_rungs": 2
     },
     {
@@ -5530,7 +5530,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.78,
       "chain_rungs": 1
     },
     {
@@ -5541,7 +5541,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 3
     },
     {
@@ -5552,7 +5552,7 @@
       "seg": "post_close",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.71,
       "chain_rungs": 3
     },
     {
@@ -5563,7 +5563,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.53,
       "chain_rungs": 1
     },
     {
@@ -5607,7 +5607,7 @@
       "seg": "overnight_asia",
       "n_child": 2,
       "recruited": false,
-      "recruitment_margin": null,
+      "recruitment_margin": -0.81,
       "chain_rungs": 2
     }
   ],
@@ -5617,16 +5617,16 @@
     "n_on_signal_grid": 199,
     "groups": {
       "rungs1_unrecruited_cash": {
-        "n": 16,
-        "exc_5_bps_mean": -3.1,
-        "exc_10_bps_mean": -2.7,
-        "exc_20_bps_mean": 5.7
+        "n": 15,
+        "exc_5_bps_mean": -1.9,
+        "exc_10_bps_mean": 0.0,
+        "exc_20_bps_mean": 9.1
       },
       "rungs1_unrecruited_overnight_asia": {
-        "n": 54,
-        "exc_5_bps_mean": -4.6,
-        "exc_10_bps_mean": -0.8,
-        "exc_20_bps_mean": 0.4
+        "n": 53,
+        "exc_5_bps_mean": -4.4,
+        "exc_10_bps_mean": -0.6,
+        "exc_20_bps_mean": -0.4
       },
       "rungs1_unrecruited_post_close": {
         "n": 26,
@@ -5641,16 +5641,16 @@
         "exc_20_bps_mean": -19.0
       },
       "rungs1_recruited_cash": {
-        "n": 10,
-        "exc_5_bps_mean": 3.5,
-        "exc_10_bps_mean": 1.4,
-        "exc_20_bps_mean": 12.3
+        "n": 11,
+        "exc_5_bps_mean": 1.2,
+        "exc_10_bps_mean": -2.7,
+        "exc_20_bps_mean": 7.1
       },
       "rungs1_recruited_overnight_asia": {
-        "n": 28,
-        "exc_5_bps_mean": 5.5,
-        "exc_10_bps_mean": 7.8,
-        "exc_20_bps_mean": 0.3
+        "n": 29,
+        "exc_5_bps_mean": 4.7,
+        "exc_10_bps_mean": 7.2,
+        "exc_20_bps_mean": 1.7
       },
       "rungs1_recruited_post_close": {
         "n": 11,
