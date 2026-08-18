@@ -356,20 +356,38 @@ set still growing toward fold support).
    reframe (deferred), the scalp candidate (log-only; location-split
    event-class census as its judge). Standing lesson promoted: anatomy
    thresholds don't transplant across TFs (H9, T3).
-9. Store-write race CLOSED as register finding 23 (`558e7f5`, 54/54):
-   atomic writes landed (temp + os.replace, reader/crash tests pinned);
-   policy verdict — README was wrong, tracking stores is deliberate and
-   correct (retention floor makes committed stores the only durable
-   history); history-surgery rule extended (no builder running; paper's
-   persist path is a store writer). OPEN COROLLARY sent: reconcile the
-   doctrine with the 2026-08-17 12:43Z filter-repo run — its purpose was
-   never stated; if it stripped store blobs, the doctrine was violated
-   pre-enactment (enumerate the unrecoverable span); either branch adds
-   "store history is never filtered" to the surgery rule, plus a priced
-   repo-growth statement. Check predicate: finding 23 annotation lands
-   with the surgery's stated purpose.
-10. OPERATOR: commit ONBOARDING.md — working edits (lab cycle, finding
-   23) currently uncommitted per Claude Code; one crash from loss.
+9. Store-write race + surgery adjudication FULLY CLOSED (`558e7f5`,
+   `030180e`): atomic writes landed and pinned; doctrine intact — the
+   2026-08-17 rewrite did NOT touch store history (direct observation:
+   pre-rewrite-dated commits retain store diffs; remote never held old
+   objects). Rewrite purpose: identity scrub pre-first-push, INDICATED
+   (root commit + all 35 rewritten to single noreply identity, 6 min
+   before first push) — operator confirmation invited to upgrade to
+   CONFIRMED. Corollary permanent: store history is never filtered,
+   ever. Cost priced: 241 MB disk / 52 MB packed (4.7:1) / ~3.3 MB/day;
+   escape valves named, filter excluded.
+10. OPERATOR (pre-travel): (a) rewrite-purpose confirmation SENT →
+   register upgrade to CONFIRMED; (b) commit ONBOARDING.md + ledger
+   delta before travelling (uncommitted evidence + travel = the ladder
+   lesson).
+11. Evidence Regression = register 25 (`e9cd03a`, `498e7f0`): standing
+   rule — blast-radius field mandatory on defect closure (UNTOUCHED /
+   TAINTED-RERUNNABLE / TAINTED-UNRECOVERABLE); tests are evidence
+   artifacts (20:30Z pin precedent); rerun-and-diff / canonicality
+   caveats / trial-log chain walk; lockbox never suspended. Corollaries
+   enacted: engine_commit + dirty-flag embedded in lab artifacts (legacy
+   censuses covered by verified commit parentage); pin provenance;
+   pipefail invocations. Finding 24 = first formal application: blast
+   radius expect_prints only, ALL evidence UNTOUCHED; calendar fix
+   deploys at item 22's restart; nightly ~21:10–22:03Z false stalls
+   expected + do-not-reinvestigate until then. Watchdog calendar =
+   register finding 24 (UTC pause 21:00–22:10Z measured; seasonal:
+   invisible in GMT months).
+12. OUTSTANDING SEND: cascade-propagation / aggregation-decay register
+   block (2026-08-19 draft) — gates on describing the existing migration
+   instrument first; priors on record (sign-propagation expected null
+   per T1d persistence; effort-decay profiles expected live per the
+   aggregation-fragility doctrine, 3a0988b).
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
