@@ -96,16 +96,7 @@ gates the immediate task) still governs what you ask for and when.
    prior-session extremes, signal swing levels — registry is TEST-only,
    30-bar expiry, wick-registered/close-measured asymmetry). Read before
    designing anything location-conditioned.
-7. **docs/lockbox_policy.md** — sealed-data currency: minting (calendar-
-   declared, content-blind; quarterly windows from 2026-09-01), spending
-   (one evaluation each), fences (loader-enforced; forward reads
-   auto-skip sealed spans).
-8. **docs/hypothesis_lifecycle.md** — idea → register → lab → shadow-live
-   → weekly reads → walk-forward → lockbox → paper, with each stage's
-   verdict-power stated (labs kill, walk-forward crowns, lockbox
-   confirms; weekly reads decide what gets worked on, never what gets
-   believed).
-9. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
+7. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
    `live_ladder_*.csv`, `logs/sync/`, `definitions/frozen_v1.yaml`.
 
 Do not claim a repo doc says something you haven't read this session.
@@ -452,6 +443,21 @@ set still growing toward fold support).
    recruitment re-grade. Part C adoption recommended at weekend review.
    Aggregation-decay census noted as the instrument the prediction
    actually described.
+16. Registry + scoreboard LIVE (`8a7770b`..`5c21772`, 72/72): parameter
+   registry generated + test-pinned (regen rides campaign; R1 closed —
+   standard horizons (5,10,20,30) unified project-wide, buffer ratified,
+   NFP verified vs BLS). Horizon migration caught expansion-study
+   NONDETERMINISM (register 33; fixed, twin-runs bit-identical; no
+   conclusion consumed wobbly columns — third consecutive rerun-diff to
+   catch a latent defect: diffs are detectors). Scoreboard first
+   readout: frozen five fired 6× total, 0/6 preceded qualifying moves;
+   203 qualifying episodes with ~zero coverage — sample starvation made
+   visible. PENDING: episode-dedup rule to registry; S-H7 and S-T3b
+   signal definitions (specced, pre-registered) — S-T3b = T1d's
+   conditions as a signal, the cheap version of next cycle's headline
+   question. signal_watch live attachment rides the item-22 restart
+   (bundle now: session-JSONL + calendar fix + suspension detection +
+   signal scoreboard).
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
