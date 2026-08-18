@@ -96,7 +96,11 @@ gates the immediate task) still governs what you ask for and when.
    prior-session extremes, signal swing levels — registry is TEST-only,
    30-bar expiry, wick-registered/close-measured asymmetry). Read before
    designing anything location-conditioned.
-7. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
+7. **docs/hypothesis_register.md** — THE canonical hypothesis list
+   (H1–H10, five fields, audit flags visible). Nothing runs that isn't
+   in it; signal rows are S-H\<n\> only, scoreboard-enforced. Lab
+   serials (T1d, T3B…) survive only as cross-references inside entries.
+8. **Live artifacts as needed** — `reports/paper/ledger.jsonl`,
    `live_ladder_*.csv`, `logs/sync/`, `definitions/frozen_v1.yaml`.
 
 Do not claim a repo doc says something you haven't read this session.

@@ -14,11 +14,12 @@ def _run(attach, fire_everything=False):
     eng = MTFEngine(cfg)
     watch = None
     if attach:
-        watch = SignalWatch().attach(eng)
         if fire_everything:
+            # register BEFORE attach — attach snapshots the condition table
             FIRING_CONDITIONS["TEST_ALWAYS"] = (
                 lambda bar, ectx, sctx, feats, cores, structural, qualified,
                 prev: 1)
+        watch = SignalWatch().attach(eng)
     try:
         t = 0
         for i in range(120):
