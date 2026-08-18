@@ -408,6 +408,20 @@ set still growing toward fold support).
    doctrine). Register 25 taxonomy extended: belief-derived prose in
    code (comments/docstrings) counts as evidence artifacts —
    precedents: the 20:30Z pin, the "daily" docstring.
+14. Campaign clarified (`03e102a`; reviewer fabricated "campaign.sh" —
+   register-25 strike; the pre-registration's grading vehicle was also
+   belief-derived and wrong): orchestrator is
+   `python -m backtest.campaign` (README:36-49), one command, weekly;
+   last ran 2026-08-14 13:47 (pre-go-live), due this weekend. CRITICAL
+   SCOPE FACT: campaign engine studies are lockbox-fenced to the FROZEN
+   working set (Jul 12→Aug 3) — their numbers are pins, bit-identical
+   weekly; genuine accrual happens in the FORWARD zone (FORWARD_PAPER
+   section + forward observational readouts). The 11:46Z prediction is
+   graded by the authorized forward-migration readout
+   (prereg_forward_migration_readout: zone-fenced runner, OBSERVATIONAL
+   stamp, full forward window, reports/forward/) — prototype of the
+   missing forward-accrual channel; standing "Part C" promotion under
+   consideration. Weekend: sync → campaign → forward readout → review.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
