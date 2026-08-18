@@ -1,0 +1,138 @@
+{
+  "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
+  "engine_commit": "8a7770b8fed3b0999c069fb038a54c36fa8cc8b8",
+  "yardsticks": [
+    "qualifying_move (registry: operator ratification 2026-08-18)",
+    "major_move (same)",
+    "context.atr_period (founding config)",
+    "60-min clause reused as coverage lookback (prereg_scoreboard_operationalization)"
+  ],
+  "zone_statement": "one full-store live-equivalent replay; backtest window < lockbox boundary; forward window >= go_live; lockbox span excluded from both; sealed windows auto-skipped",
+  "backtest": {
+    "H1": {
+      "source": "backtest_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "H2": {
+      "source": "backtest_replay",
+      "n_fires": 3,
+      "precision": {
+        "hits": 0,
+        "of": 3,
+        "pct": 0.0
+      },
+      "coverage": {
+        "covered": 0,
+        "of": 180,
+        "pct": 0.0
+      },
+      "earliness": {
+        "median_pts_remaining_at_fire": null,
+        "n": 0,
+        "median_min_before_15m_flip": null,
+        "n_flips": 0
+      },
+      "best_call": null,
+      "worst_false_alarm": {
+        "ts": "2026-07-29 18:45:00+00:00",
+        "dir": 1,
+        "adverse_pts": 87.2
+      }
+    },
+    "H3": {
+      "source": "backtest_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "H4": {
+      "source": "backtest_replay",
+      "n_fires": 1,
+      "precision": {
+        "hits": 0,
+        "of": 1,
+        "pct": 0.0
+      },
+      "coverage": {
+        "covered": 0,
+        "of": 180,
+        "pct": 0.0
+      },
+      "earliness": {
+        "median_pts_remaining_at_fire": null,
+        "n": 0,
+        "median_min_before_15m_flip": null,
+        "n_flips": 0
+      },
+      "best_call": null,
+      "worst_false_alarm": {
+        "ts": "2026-07-22 17:15:00+00:00",
+        "dir": 1,
+        "adverse_pts": 10.0
+      }
+    },
+    "H5": {
+      "source": "backtest_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "_moves": {
+      "source": "backtest_replay",
+      "n_qualifying_episodes": 180,
+      "n_major": 62
+    }
+  },
+  "forward": {
+    "H1": {
+      "source": "forward_feed_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "H2": {
+      "source": "forward_feed_replay",
+      "n_fires": 2,
+      "precision": {
+        "hits": 0,
+        "of": 2,
+        "pct": 0.0
+      },
+      "coverage": {
+        "covered": 0,
+        "of": 23,
+        "pct": 0.0
+      },
+      "earliness": {
+        "median_pts_remaining_at_fire": null,
+        "n": 0,
+        "median_min_before_15m_flip": null,
+        "n_flips": 0
+      },
+      "best_call": null,
+      "worst_false_alarm": {
+        "ts": "2026-08-18 07:00:00+00:00",
+        "dir": 1,
+        "adverse_pts": 30.0
+      }
+    },
+    "H3": {
+      "source": "forward_feed_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "H4": {
+      "source": "forward_feed_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "H5": {
+      "source": "forward_feed_replay",
+      "n_fires": 0,
+      "note": "no confirmations in window"
+    },
+    "_moves": {
+      "source": "forward_feed_replay",
+      "n_qualifying_episodes": 23,
+      "n_major": 10
+    }
+  }
+}

@@ -50,6 +50,9 @@ AUTHORITY = {
     "horizons.py:STANDARD_HORIZONS": "operator ratification 2026-08-18 (batch R1) — ONE project-wide set of outcome marks; supersedes eventstudy (5,10,20) and expansion (5,15,30); different marks require re-registration with stated reason",
     "expansion.py:NOMINAL_BUFFER_PTS": "operator ratification 2026-08-18 (batch R1) — revisit if level-touch analysis becomes load-bearing",
     "macro.py:NFP_ANCHORS": "external fact, verified 2026-08-18 (BLS Employment Situation: 8:30 a.m. ET first Friday; 12:30Z in EDT / 13:30Z in EST — the DST-spanning UTC pair)",
+    "scoreboard.py:QUALIFYING_ATR_MULT": "cites registry qualifying_move (operator ratification 2026-08-18) — code mirror of the ratified 1.5x",
+    "scoreboard.py:MAJOR_ATR_MULT": "cites registry major_move (operator ratification 2026-08-18) — code mirror of the ratified 3x",
+    "scoreboard.py:MOVE_WINDOW_MIN": "cites registry qualifying_move 60-minute clause; reused as coverage lookback per prereg_scoreboard_operationalization",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
     "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
 }
