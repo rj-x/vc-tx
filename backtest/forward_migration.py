@@ -110,13 +110,26 @@ def grade_1146(fwd_events):
                 "note": "no dir=-1 chain events in the 11:46Z window"}
     max_depth = max(e["chain_rungs"] for e in win)
     unrec = sum(1 for e in win if not e["recruited"]) / len(win)
+    # honesty split (instrument finding 2026-08-18): structural-only parent
+    # labels carry no rel_volume, and recruited defaults False when rv is
+    # unmeasured — "unrecruited" conflates measured-quiet with unmeasured
+    measured = [e for e in win if e["recruitment_margin"] is not None]
     return {"window_events": len(win), "max_chain_rungs": max_depth,
             "unrecruited_fraction": round(unrec, 2),
+            "rv_measured_events": len(measured),
+            "rv_unmeasured_events": len(win) - len(measured),
             "recruitment_margins": [e["recruitment_margin"] for e in win],
             "expected": {"min_depth": EXPECT_MIN_DEPTH,
                          "unrecruited_frac >=": EXPECT_UNRECRUITED_FRAC},
             "matched": bool(max_depth >= EXPECT_MIN_DEPTH
-                            and unrec >= EXPECT_UNRECRUITED_FRAC)}
+                            and unrec >= EXPECT_UNRECRUITED_FRAC),
+            "grading_caveats": [
+                ("recruitment clause is VACUOUS when rv_measured_events=0: "
+                 "unrecruited-by-default is not evidence about recruitment"),
+                ("the instrument's depth = persistence chains (>=2 child "
+                 "labels per parent window), NOT label-arrival cascades — "
+                 "a single-label-per-rung cascade scores depth 1 by design"),
+            ]}
 
 
 def run(instr="uk100fut", start=None):
