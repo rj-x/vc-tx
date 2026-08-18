@@ -318,8 +318,16 @@ def live(args):
     bars_since_label = 0
     n_ev = len(engine.narrative.events)
     first_poll = True       # startup catch-up bars would poison the latency
+    last_poll = None        # suspension detection (finding 26)
+    from .paper import SUSPENSION_THRESHOLD  # deferred: paper imports narrate
     try:                    # stat (their delay is store staleness, not feed)
         while True:
+            _now = pd.Timestamp.now(tz="UTC")
+            if last_poll is not None and _now - last_poll > SUSPENSION_THRESHOLD:
+                print(f"# SUSPENSION_GAP: {last_poll} -> {_now} "
+                      f"({_now - last_poll}) — machine suspend; frozen span, "
+                      f"no decisions", file=sys.stderr)
+            last_poll = _now
             try:
                 page = collector.fetch_page("minute", "mid", n=30, instr=iid)
             except Exception as e:

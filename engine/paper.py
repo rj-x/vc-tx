@@ -65,6 +65,26 @@ def guarded(fn, ledger_path=None):
         return False, None
 
 
+SUSPENSION_THRESHOLD = pd.Timedelta(minutes=5)
+
+
+def suspension_check(last_poll, now, ledger_path=None):
+    """Register finding 26: the laptop travels daily — machine sleep freezes
+    both live loops silently (observed 2026-08-18 07:03-07:40Z: 38 min store
+    hole, one EXECUTOR_ERROR from network teardown, no crash). A wall-clock
+    jump between polls > threshold = suspension; log ONE gap event with the
+    span before processing resumes. Decisions hole — never backfilled."""
+    if last_poll is None or now - last_poll <= SUSPENSION_THRESHOLD:
+        return None
+    ev = {"event": "SUSPENSION_GAP", "from": str(last_poll), "to": str(now),
+          "span": str(now - last_poll),
+          "note": "machine suspend (wall-clock jump between polls); "
+                  "decisions hole - never backfilled",
+          "ts": str(now)}
+    _led(ev, ledger_path)
+    return ev
+
+
 def expect_prints(ts):
     """Watchdog calendar in PROVIDER TIME — UTC, not London (register
     finding 24). The feed's day is UTC-anchored (DATA.md ~22:00->~21:00
@@ -186,8 +206,14 @@ def main():
     print("# paper loop: 1 poll/min (fut mid + cash bid/ask)", file=sys.stderr)
     quiet_polls = 0
     pending_confirm = {}      # time -> (o,h,l,c,v) from previous poll
+    last_poll = None
     try:
         while True:
+            _now = pd.Timestamp.now(tz="UTC")
+            if suspension_check(last_poll, _now):
+                print(f"# SUSPENSION_GAP: {last_poll} -> {_now}",
+                      file=sys.stderr)
+            last_poll = _now
             ok, pages = guarded(lambda: (
                 collector.fetch_page("minute", "mid", n=10, instr=iid),
                 collector.fetch_page("minute", "bid", n=10, instr=qid),
