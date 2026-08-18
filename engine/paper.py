@@ -69,11 +69,13 @@ SUSPENSION_THRESHOLD = pd.Timedelta(minutes=5)
 
 
 def suspension_check(last_poll, now, ledger_path=None):
-    """Register finding 26: the laptop travels daily — machine sleep freezes
-    both live loops silently (observed 2026-08-18 07:03-07:40Z: 38 min store
-    hole, one EXECUTOR_ERROR from network teardown, no crash). A wall-clock
-    jump between polls > threshold = suspension; log ONE gap event with the
-    span before processing resumes. Decisions hole — never backfilled."""
+    """Register finding 26 (as amended): the laptop travels INTERMITTENTLY —
+    machine sleep freezes both live loops silently (observed 2026-08-18
+    07:03-07:40Z: 38 min store hole, one EXECUTOR_ERROR from network
+    teardown, no crash). A wall-clock jump between polls > threshold =
+    suspension; log ONE gap event with the span before processing resumes.
+    Decisions hole — never backfilled. A gap on a NON-travel day is signal
+    (power-settings drift), not texture — see the finding 26 amendment."""
     if last_poll is None or now - last_poll <= SUSPENSION_THRESHOLD:
         return None
     ev = {"event": "SUSPENSION_GAP", "from": str(last_poll), "to": str(now),
