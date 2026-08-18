@@ -383,11 +383,18 @@ set still growing toward fold support).
    expected + do-not-reinvestigate until then. Watchdog calendar =
    register finding 24 (UTC pause 21:00–22:10Z measured; seasonal:
    invisible in GMT months).
-12. OUTSTANDING SEND: cascade-propagation / aggregation-decay register
-   block (2026-08-19 draft) — gates on describing the existing migration
-   instrument first; priors on record (sign-propagation expected null
-   per T1d persistence; effort-decay profiles expected live per the
-   aggregation-fragility doctrine, 3a0988b).
+12. Cascade-propagation / aggregation-decay CLOSED as register entries
+   (`0f8c1eb`, `82c21b0`): migration instrument described (adjacent-pair
+   chains, 2-label persistence, parent-label, rv≥1.2 recruitment gate;
+   forward excess on 15M grid only — flagged as outcome-artifact, decay
+   census defined on full rung grid); split prior logged with T1d/T1b
+   citations; census pre-sketched, gated behind T3b + queue.
+   PRE-REGISTERED PREDICTION for next campaign run: the 2026-08-17
+   11:46Z decline registers as a deep, predominantly UNRECRUITED chain
+   (parent rv 0.69–0.85 < 1.2 gate; 12:00Z 15M rv 0.79 corroborated from
+   replay); readout to be recorded against it; H9 bearing stated both
+   ways. Origination date corrected to 2026-08-18 (reviewer date error,
+   log authoritative).
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
