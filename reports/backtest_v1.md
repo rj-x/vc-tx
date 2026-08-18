@@ -55,7 +55,7 @@ Trade detail (uk100_abl_no_gating_2r, cash_cfd): -1 fill 10682.4 stop 10693.4 (1
 
 ## Event study — drift-adjusted label level (primary powered readout)
 
-Window drift (bps): post_US_10 +13.2 · post_US_20 +16.3 · post_US_5 +3.8 · pre_US_10 +3.3 · pre_US_20 +11.1 · pre_US_5 +2.5
+Window drift (bps): post_US_10 +13.2 · post_US_20 +16.3 · post_US_30 +17.0 · post_US_5 +3.8 · pre_US_10 +3.3 · pre_US_20 +11.1 · pre_US_30 +19.9 · pre_US_5 +2.5
 
 | Label | n | signed | raw+20 (bps) | excess+20 (bps) | excess hit+20 |
 |---|---|---|---|---|---|
@@ -127,7 +127,7 @@ In-cash releases inside the working set: **8** · median volume ratio in [releas
 
 ## FORWARD_PAPER (live paper ledger; forward zone)
 
-go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 3 · NOTE 5 · START 6 · STOP 3 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 11
+go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 3 · NOTE 5 · START 6 · STOP 3 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 16
 Paper trades to date: **0** (first-session silence is the likely and correct outcome)
 Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARMED ahead of first trade
 

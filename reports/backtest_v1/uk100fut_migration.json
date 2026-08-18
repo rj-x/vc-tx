@@ -5620,121 +5620,141 @@
         "n": 15,
         "exc_5_bps_mean": -1.9,
         "exc_10_bps_mean": 0.0,
-        "exc_20_bps_mean": 9.1
+        "exc_20_bps_mean": 9.1,
+        "exc_30_bps_mean": 5.7
       },
       "rungs1_unrecruited_overnight_asia": {
         "n": 53,
         "exc_5_bps_mean": -4.4,
         "exc_10_bps_mean": -0.6,
-        "exc_20_bps_mean": -0.4
+        "exc_20_bps_mean": -0.4,
+        "exc_30_bps_mean": 0.2
       },
       "rungs1_unrecruited_post_close": {
         "n": 26,
         "exc_5_bps_mean": 1.4,
         "exc_10_bps_mean": 1.7,
-        "exc_20_bps_mean": -0.7
+        "exc_20_bps_mean": -0.7,
+        "exc_30_bps_mean": -2.7
       },
       "rungs1_unrecruited_pre_open": {
         "n": 6,
         "exc_5_bps_mean": -19.0,
         "exc_10_bps_mean": -23.0,
-        "exc_20_bps_mean": -19.0
+        "exc_20_bps_mean": -19.0,
+        "exc_30_bps_mean": -13.3
       },
       "rungs1_recruited_cash": {
         "n": 11,
         "exc_5_bps_mean": 1.2,
         "exc_10_bps_mean": -2.7,
-        "exc_20_bps_mean": 7.1
+        "exc_20_bps_mean": 7.1,
+        "exc_30_bps_mean": 0.0
       },
       "rungs1_recruited_overnight_asia": {
         "n": 29,
         "exc_5_bps_mean": 4.7,
         "exc_10_bps_mean": 7.2,
-        "exc_20_bps_mean": 1.7
+        "exc_20_bps_mean": 1.7,
+        "exc_30_bps_mean": 5.9
       },
       "rungs1_recruited_post_close": {
         "n": 11,
         "exc_5_bps_mean": -12.8,
         "exc_10_bps_mean": -9.7,
-        "exc_20_bps_mean": -16.1
+        "exc_20_bps_mean": -16.1,
+        "exc_30_bps_mean": -15.8
       },
       "rungs1_recruited_pre_open": {
         "n": 2,
         "exc_5_bps_mean": -4.6,
         "exc_10_bps_mean": -3.0,
-        "exc_20_bps_mean": 3.4
+        "exc_20_bps_mean": 3.4,
+        "exc_30_bps_mean": -18.0
       },
       "rungs2_unrecruited_overnight_asia": {
         "n": 13,
         "exc_5_bps_mean": -0.6,
         "exc_10_bps_mean": 7.0,
-        "exc_20_bps_mean": 9.7
+        "exc_20_bps_mean": 9.7,
+        "exc_30_bps_mean": 3.9
       },
       "rungs2_unrecruited_post_close": {
         "n": 7,
         "exc_5_bps_mean": 0.3,
         "exc_10_bps_mean": -1.7,
-        "exc_20_bps_mean": -3.6
+        "exc_20_bps_mean": -3.6,
+        "exc_30_bps_mean": -8.2
       },
       "rungs2_unrecruited_pre_open": {
         "n": 2,
         "exc_5_bps_mean": 17.9,
         "exc_10_bps_mean": 31.0,
-        "exc_20_bps_mean": -16.1
+        "exc_20_bps_mean": -16.1,
+        "exc_30_bps_mean": -24.2
       },
       "rungs2_recruited_cash": {
         "n": 5,
         "exc_5_bps_mean": -2.7,
         "exc_10_bps_mean": -6.6,
-        "exc_20_bps_mean": 5.1
+        "exc_20_bps_mean": 5.1,
+        "exc_30_bps_mean": -8.8
       },
       "rungs2_recruited_overnight_asia": {
         "n": 4,
         "exc_5_bps_mean": 7.1,
         "exc_10_bps_mean": -2.4,
-        "exc_20_bps_mean": -11.2
+        "exc_20_bps_mean": -11.2,
+        "exc_30_bps_mean": -11.5
       },
       "rungs2_recruited_post_close": {
         "n": 3,
         "exc_5_bps_mean": -22.6,
         "exc_10_bps_mean": -11.7,
-        "exc_20_bps_mean": -14.7
+        "exc_20_bps_mean": -14.7,
+        "exc_30_bps_mean": -14.3
       },
       "rungs2_recruited_pre_open": {
         "n": 2,
         "exc_5_bps_mean": 29.2,
         "exc_10_bps_mean": 14.3,
-        "exc_20_bps_mean": 16.6
+        "exc_20_bps_mean": 16.6,
+        "exc_30_bps_mean": -5.9
       },
       "rungs3_unrecruited_overnight_asia": {
         "n": 4,
         "exc_5_bps_mean": 4.9,
         "exc_10_bps_mean": 16.6,
-        "exc_20_bps_mean": 56.5
+        "exc_20_bps_mean": 56.5,
+        "exc_30_bps_mean": 55.2
       },
       "rungs3_unrecruited_post_close": {
         "n": 3,
         "exc_5_bps_mean": 3.9,
         "exc_10_bps_mean": 5.5,
-        "exc_20_bps_mean": -2.0
+        "exc_20_bps_mean": -2.0,
+        "exc_30_bps_mean": 7.4
       },
       "rungs3_recruited_cash": {
         "n": 1,
         "exc_5_bps_mean": 5.2,
         "exc_10_bps_mean": -21.0,
-        "exc_20_bps_mean": 5.9
+        "exc_20_bps_mean": 5.9,
+        "exc_30_bps_mean": 11.2
       },
       "rungs3_recruited_post_close": {
         "n": 1,
         "exc_5_bps_mean": 50.5,
         "exc_10_bps_mean": 28.4,
-        "exc_20_bps_mean": 17.2
+        "exc_20_bps_mean": 17.2,
+        "exc_30_bps_mean": 54.7
       },
       "rungs4_unrecruited_overnight_asia": {
         "n": 1,
         "exc_5_bps_mean": 3.8,
         "exc_10_bps_mean": -2.8,
-        "exc_20_bps_mean": 54.9
+        "exc_20_bps_mean": 54.9,
+        "exc_30_bps_mean": 69.5
       }
     }
   }

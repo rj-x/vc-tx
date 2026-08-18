@@ -6,7 +6,7 @@ the run, never fed back into decisions."""
 import numpy as np
 import pandas as pd
 
-HORIZONS = (5, 10, 20)
+from backtest.horizons import STANDARD_HORIZONS as HORIZONS  # registry: standard outcome horizons (R1 ruling 2026-08-18)
 
 
 def event_study(events, signal_bars):

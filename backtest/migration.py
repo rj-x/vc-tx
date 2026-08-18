@@ -23,7 +23,7 @@ from backtest.eventstudy import LABEL_DIR
 
 LADDER = ["1min", "3min", "5min", "15min", "30min", "1h"]
 _MIN = {"1min": 1, "3min": 3, "5min": 5, "15min": 15, "30min": 30, "1h": 60}
-HORIZONS = (5, 10, 20)
+from backtest.horizons import STANDARD_HORIZONS as HORIZONS  # registry: standard outcome horizons (R1 ruling 2026-08-18)
 
 
 def _labels_by_tf(events):

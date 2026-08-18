@@ -11,7 +11,7 @@ register, signature-moment expansion bracket entry (walk-forward evidence).
 
 import numpy as np
 
-HORIZONS = (5, 15, 30)
+from backtest.horizons import STANDARD_HORIZONS as HORIZONS  # registry: standard outcome horizons (R1 ruling 2026-08-18)
 NOMINAL_BUFFER_PTS = 0.5    # chop-rate nominal bracket buffer (1 tick), stated
 
 
@@ -104,8 +104,14 @@ def expansion_study(events, exec_bars, exec_tf, median_spread_pts):
 
     # same-segment baselines over ALL bars (direction-agnostic magnitudes)
     base = {}
-    rng = np.random.default_rng(0)
-    for seg in set(segs):
+    # determinism fix (Evidence Regression find, 2026-08-18): set-iteration
+    # order fed a shared RNG stream, so the 3000-bar sample differed run to
+    # run (verified: two identical runs, cash_5 mean_range 10.79 vs 10.63).
+    # Sorted order + a per-segment stable seed makes the sample a pure
+    # function of the data.
+    import zlib
+    for seg in sorted(set(segs)):
+        rng = np.random.default_rng(zlib.crc32(str(seg).encode()))
         idxs = np.nonzero(segs == seg)[0]
         if len(idxs) > 3000:
             idxs = rng.choice(idxs, 3000, replace=False)

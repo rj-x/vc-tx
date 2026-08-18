@@ -33,3 +33,8 @@
 {"event": "NOTE", "ts": "2026-08-18 14:43:05.149347+00:00", "note": "CORRECTION to the previous NOTE's decisions-hole arithmetic (append-only): the ~18-bar net-hole figure was the reviewer's heartbeat-counter estimate and is SUPERSEDED by the store fossil \u2014 net decisions hole ~= 28 bars (07:02-07:30Z unprocessed; 07:30-07:40Z recovered by the wake catch-up's 10-bar reach). Methodological line for the record: heartbeat counters are LIVENESS instruments, not rulers \u2014 the counter spans sessions and warm replay; store fossils are authoritative for hole measurement. Reviewer error acknowledged (third this week: two dates, one arithmetic), logged per house style. Register finding 26 also amended this entry's sibling: travel is INTERMITTENT, not daily \u2014 SUSPENSION_GAP on a non-travel day is signal, not texture."}
 {"event": "EXECUTOR_ERROR", "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>", "ts": "2026-08-18 15:25:16.820534+00:00"}
 {"event": "EXECUTOR_ERROR", "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>", "ts": "2026-08-18 15:46:17.375046+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 11, "ts": "2026-08-18 21:11:50.011740+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:16:58.793683+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:22:07.470936+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:27:16.540641+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:32:25.503644+00:00"}

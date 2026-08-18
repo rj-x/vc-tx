@@ -1,0 +1,10 @@
+{
+  "STAMP": "Evidence Regression artifact \u2014 horizon standardization (R1 ruling 2026-08-18): eventstudy/migration EXTENDED (+30-bar mark), expansion MIGRATED (5,15,30 -> 5,10,20,30)",
+  "engine_commit": "b61dc1efc3f7715680c5ba2d2d57c8bbac2f8ecc",
+  "event_study_shared_columns_identical": true,
+  "migration_shared_columns_identical": true,
+  "expansion_study_columns_shared_5_30_identical": true,
+  "expansion_taint_class": "TAINTED-RERUNNABLE, rerun complete (old ruler 5/15/30 superseded)",
+  "determinism_defect_found_and_fixed": "the shared-column identity check EXPOSED a pre-existing nondeterminism in expansion's same-segment baseline sampling: set-iteration order fed a shared seeded RNG, so the 3000-bar sample differed per process (verified by twin runs: cash_5 mean_range 10.79 vs 10.63). Fixed (sorted segments, per-segment crc32-seeded RNG); twin runs now bit-identical. Only baseline_same_segment values were affected \u2014 never the per-event study columns, which ARE bit-identical on shared marks.",
+  "conclusion_walk": "Trial-log/register chain walked for expansion-fed conclusions: the only load-bearing consumer is H8 (expansion bracket, evidence ADVERSE). H8's reading rests on per-event columns at the 5- and 30-bar marks \u2014 bit-identical under the new ruler; the dropped 15-bar column fed no recorded conclusion; baselines wobbled only in the second decimal under the old nondeterminism, below any stated reading. CONFIRMED, not assumed: no conclusion shifts. Event-study consumers (report tables, EFFORTLESS_DECLINE tracked-not-acted) read the 20-bar column \u2014 bit-identical. Migration consumers (H9 notes, forward readout) read 5/10/20 \u2014 bit-identical; the 30-bar column is new data with no prior reading to shift. Forward readout migrates at its next scheduled run."
+}

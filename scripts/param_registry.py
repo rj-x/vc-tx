@@ -47,8 +47,9 @@ AUTHORITY = {
     "forward_migration.py:EXPECT_MIN_DEPTH": "pre-registered grading criterion ('deep' >= 3 rungs); graded MISS with semantics finding (register 28/29)",
     "forward_migration.py:EXPECT_UNRECRUITED_FRAC": "pre-registered grading criterion ('predominantly unrecruited')",
     "migration.py:LADDER": "six-rung doctrine (cascade analysis, register; ladder build 2026-08-14)",
-    "migration.py:HORIZONS": "backtest v1 report spec (owner amendments) — event-study horizons, mirrored",
-    "eventstudy.py:HORIZONS": "backtest v1 report spec (owner deliverable amendments) — drift-adjusted event-study windows ±5/10/20",
+    "horizons.py:STANDARD_HORIZONS": "operator ratification 2026-08-18 (batch R1) — ONE project-wide set of outcome marks; supersedes eventstudy (5,10,20) and expansion (5,15,30); different marks require re-registration with stated reason",
+    "expansion.py:NOMINAL_BUFFER_PTS": "operator ratification 2026-08-18 (batch R1) — revisit if level-touch analysis becomes load-bearing",
+    "macro.py:NFP_ANCHORS": "external fact, verified 2026-08-18 (BLS Employment Situation: 8:30 a.m. ET first Friday; 12:30Z in EDT / 13:30Z in EST — the DST-spanning UTC pair)",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
     "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
 }
