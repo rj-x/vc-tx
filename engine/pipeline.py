@@ -67,12 +67,16 @@ class TFPipeline:
         if feats.valid and not bar.is_stub:
             # EVERY classified bar emits a LABEL event (audit completeness);
             # label/structural are null for bars matching no core
+            # rv on structural-only labels too (ruling 2026-08-18, register
+            # 28): additive/observational — no decision path consumes a
+            # label's rv post-emission (verified); cures the migration
+            # instrument's measured-quiet/unmeasured conflation
             extra = ({"open": float(bar.open), "high": float(bar.high),
                       "low": float(bar.low), "close": float(bar.close),
                       "volume": float(bar.volume),
                       "rel_volume": (float(round(feats.rel_volume, 2))
                                      if feats.rel_volume else None)}
-                     if qualified else {})
+                     if (qualified or structural) else {})
             if qualified and signal_ctx is not None:
                 px = bar.high if qualified == "UPTHRUST" else (
                     bar.low if qualified == "SPRING" else bar.close)
