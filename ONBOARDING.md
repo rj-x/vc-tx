@@ -66,6 +66,12 @@ immediately after.**
 - **Apply the method; don't narrate it.** Reciting these principles back is
   not doing the work. The culture shows in what you check, not what you
   quote.
+- **Plain language (operator instruction, 2026-08-18).** Be clear and to
+  the point. No words for the sake of words. Process jargon
+  (TAINTED-RERUNNABLE, blast radius, etc.) is shorthand for Claude Code
+  blocks — when talking to the operator, lead with the plain version:
+  what happened, why it matters, what we do. If a sentence needs the
+  register to decode it, rewrite the sentence.
 
 ## 3. Reading order when files arrive (stable)
 
@@ -422,6 +428,21 @@ set still growing toward fold support).
    stamp, full forward window, reports/forward/) — prototype of the
    missing forward-accrual channel; standing "Part C" promotion under
    consideration. Weekend: sync → campaign → forward readout → review.
+15. Forward-migration readout BUILT+RUN (`b88da38`, `5495036`, 64/64):
+   89 forward chains, depth {1:78, 2:9, 3:1, 4:1}. 11:46Z prediction
+   graded: depth MISS (semantics — cascade ≠ migration chain; the ≥2
+   child-labels persistence clause caps single-label-per-rung cascades
+   at depth 1; reviewer wrote "trivially satisfied" with clause+data in
+   hand, uncomputed — 5th strike; lesson registered: predictions are
+   computed objects, assertion words are review flags); recruitment
+   VACUOUS → exposed REAL DEFECT: structural-only labels carry no rv,
+   recruited defaults False on unmeasured → H9's clause reads on a
+   biased subset, July artifact same property. PENDING: ruling on
+   emitting rv on structural labels (reviewer rec APPROVE) → Evidence
+   Regression rerun of July migration + H9 re-read + forward rerun +
+   recruitment re-grade. Part C adoption recommended at weekend review.
+   Aggregation-decay census noted as the instrument the prediction
+   actually described.
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
