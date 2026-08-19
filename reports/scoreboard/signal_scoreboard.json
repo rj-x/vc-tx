@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-  "engine_commit": "922de0d861ee3dd99d00f8c292f4824b48925294",
+  "engine_commit": "e458da339281b12dd6bbe63ac27d56b3e7c601e5",
   "yardsticks": [
     "qualifying_move (registry: operator ratification 2026-08-18)",
     "major_move (same)",
@@ -14,6 +14,19 @@
       "S-H1": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 68,
+          "total_pts_right": 639.2,
+          "total_pts_wrong": -444.9,
+          "net_pts": 194.3,
+          "median_per_fire": 2.75,
+          "horizon_marks_net": {
+            "5": 43.1,
+            "10": 95.3,
+            "20": 249.0,
+            "30": 230.5
+          }
+        },
         "n_fires": 69,
         "precision": {
           "hits": 16,
@@ -46,6 +59,19 @@
       "S-H10": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 293,
+          "total_pts_right": 1532.9,
+          "total_pts_wrong": -1772.9,
+          "net_pts": -240.0,
+          "median_per_fire": -1.4,
+          "horizon_marks_net": {
+            "5": -124.8,
+            "10": -235.5,
+            "20": -418.6,
+            "30": -314.6
+          }
+        },
         "n_fires": 293,
         "precision": {
           "hits": 55,
@@ -78,11 +104,24 @@
       "S-H2": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 347,
+          "total_pts_right": 3270.2,
+          "total_pts_wrong": -2489.5,
+          "net_pts": 780.7,
+          "median_per_fire": 1.5,
+          "horizon_marks_net": {
+            "5": -182.1,
+            "10": -111.9,
+            "20": -83.7,
+            "30": 359.2
+          }
+        },
         "n_fires": 347,
         "precision": {
-          "hits": 87,
+          "hits": 86,
           "of": 347,
-          "pct": 25.1
+          "pct": 24.8
         },
         "coverage": {
           "covered": 39,
@@ -115,6 +154,19 @@
       "S-H4": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 7,
+          "total_pts_right": 26.6,
+          "total_pts_wrong": -12.8,
+          "net_pts": 13.8,
+          "median_per_fire": 0.5,
+          "horizon_marks_net": {
+            "5": 14.3,
+            "10": 22.1,
+            "20": 12.6,
+            "30": 42.2
+          }
+        },
         "n_fires": 7,
         "precision": {
           "hits": 0,
@@ -147,6 +199,19 @@
       "S-H7": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 112,
+          "total_pts_right": 1097.3,
+          "total_pts_wrong": -1090.3,
+          "net_pts": 7.0,
+          "median_per_fire": 2.8,
+          "horizon_marks_net": {
+            "5": -34.9,
+            "10": -13.7,
+            "20": 14.2,
+            "30": 39.3
+          }
+        },
         "n_fires": 112,
         "precision": {
           "hits": 35,
@@ -179,6 +244,7 @@
       "S-H7 (either-dir)": {
         "source": "backtest_replay",
         "grading": "either-direction",
+        "payoff": null,
         "n_fires": 112,
         "precision": {
           "hits": 60,
@@ -211,11 +277,12 @@
       "S-H8": {
         "source": "backtest_replay",
         "grading": "either-direction",
+        "payoff": null,
         "n_fires": 347,
         "precision": {
-          "hits": 162,
+          "hits": 161,
           "of": 347,
-          "pct": 46.7
+          "pct": 46.4
         },
         "coverage": {
           "covered": 58,
@@ -243,6 +310,19 @@
       "S-H9": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 53,
+          "total_pts_right": 558.1,
+          "total_pts_wrong": -239.4,
+          "net_pts": 318.7,
+          "median_per_fire": 3.5,
+          "horizon_marks_net": {
+            "5": 33.0,
+            "10": 88.9,
+            "20": 224.4,
+            "30": 274.2
+          }
+        },
         "n_fires": 55,
         "precision": {
           "hits": 15,
@@ -283,13 +363,27 @@
         "n_qualifying_episodes": 180,
         "n_major": 62,
         "bar_qualify_base_rate_pct": 44.3,
-        "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        "per_direction_base_rate_pct": 23.6,
+        "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     },
     "forward": {
       "S-H1": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 17,
+          "total_pts_right": 28.3,
+          "total_pts_wrong": -46.1,
+          "net_pts": -17.8,
+          "median_per_fire": -1.0,
+          "horizon_marks_net": {
+            "5": 16.1,
+            "10": 12.6,
+            "20": -0.1,
+            "30": -0.3
+          }
+        },
         "n_fires": 17,
         "precision": {
           "hits": 5,
@@ -297,13 +391,13 @@
           "pct": 29.4
         },
         "coverage": {
-          "covered": 5,
-          "of": 27,
-          "pct": 18.5
+          "covered": 6,
+          "of": 28,
+          "pct": 21.4
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 19.0,
-          "n": 5
+          "median_pts_remaining_at_fire": 20.9,
+          "n": 6
         },
         "best_call": {
           "ts": "2026-08-17 10:30:00+00:00",
@@ -322,6 +416,19 @@
       "S-H10": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 76,
+          "total_pts_right": 115.2,
+          "total_pts_wrong": -334.8,
+          "net_pts": -219.6,
+          "median_per_fire": -3.45,
+          "horizon_marks_net": {
+            "5": 8.3,
+            "10": 29.4,
+            "20": -32.9,
+            "30": -64.1
+          }
+        },
         "n_fires": 76,
         "precision": {
           "hits": 6,
@@ -330,8 +437,8 @@
         },
         "coverage": {
           "covered": 6,
-          "of": 27,
-          "pct": 22.2
+          "of": 28,
+          "pct": 21.4
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.9,
@@ -354,6 +461,19 @@
       "S-H2": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 71,
+          "total_pts_right": 203.1,
+          "total_pts_wrong": -263.1,
+          "net_pts": -60.0,
+          "median_per_fire": -0.8,
+          "horizon_marks_net": {
+            "5": 5.9,
+            "10": 23.9,
+            "20": 74.1,
+            "30": 28.8
+          }
+        },
         "n_fires": 71,
         "precision": {
           "hits": 26,
@@ -361,13 +481,13 @@
           "pct": 36.6
         },
         "coverage": {
-          "covered": 5,
-          "of": 27,
-          "pct": 18.5
+          "covered": 6,
+          "of": 28,
+          "pct": 21.4
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 20.7,
-          "n": 5
+          "median_pts_remaining_at_fire": 19.4,
+          "n": 6
         },
         "best_call": {
           "ts": "2026-08-17 10:33:00+00:00",
@@ -386,6 +506,19 @@
       "S-H3": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 4,
+          "total_pts_right": 13.3,
+          "total_pts_wrong": -5.2,
+          "net_pts": 8.1,
+          "median_per_fire": 0.3,
+          "horizon_marks_net": {
+            "5": 3.0,
+            "10": 6.9,
+            "20": 9.7,
+            "30": 0.9
+          }
+        },
         "n_fires": 4,
         "precision": {
           "hits": 2,
@@ -394,8 +527,8 @@
         },
         "coverage": {
           "covered": 1,
-          "of": 27,
-          "pct": 3.7
+          "of": 28,
+          "pct": 3.6
         },
         "earliness": {
           "median_pts_remaining_at_fire": 13.0,
@@ -423,28 +556,41 @@
       "S-H7": {
         "source": "forward_feed_replay",
         "grading": "directional",
-        "n_fires": 20,
+        "payoff": {
+          "n": 21,
+          "total_pts_right": 73.8,
+          "total_pts_wrong": -105.5,
+          "net_pts": -31.7,
+          "median_per_fire": 0.0,
+          "horizon_marks_net": {
+            "5": 13.9,
+            "10": 31.0,
+            "20": -4.0,
+            "30": 1.0
+          }
+        },
+        "n_fires": 21,
         "precision": {
           "hits": 3,
-          "of": 20,
-          "pct": 15.0
+          "of": 21,
+          "pct": 14.3
         },
         "coverage": {
-          "covered": 3,
-          "of": 27,
-          "pct": 11.1
+          "covered": 2,
+          "of": 28,
+          "pct": 7.1
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 7.5,
-          "n": 3
+          "median_pts_remaining_at_fire": 4.8,
+          "n": 2
         },
         "best_call": {
-          "ts": "2026-08-18 13:32:00+00:00",
+          "ts": "2026-08-18 19:09:00+00:00",
           "dir": -1,
-          "episode_start": "2026-08-18 13:33:00+00:00",
-          "pts_remaining_at_fire": 53.8,
-          "episode_total_pts": 59.0,
-          "major": true
+          "episode_start": "2026-08-18 19:17:00+00:00",
+          "pts_remaining_at_fire": 7.5,
+          "episode_total_pts": 10.0,
+          "major": false
         },
         "worst_false_alarm": {
           "ts": "2026-08-17 11:49:00+00:00",
@@ -455,27 +601,28 @@
       "S-H7 (either-dir)": {
         "source": "forward_feed_replay",
         "grading": "either-direction",
-        "n_fires": 20,
+        "payoff": null,
+        "n_fires": 21,
         "precision": {
           "hits": 8,
-          "of": 20,
-          "pct": 40.0
+          "of": 21,
+          "pct": 38.1
         },
         "coverage": {
-          "covered": 6,
-          "of": 27,
-          "pct": 22.2
+          "covered": 7,
+          "of": 28,
+          "pct": 25.0
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 7.9,
-          "n": 6
+          "median_pts_remaining_at_fire": 8.3,
+          "n": 7
         },
         "best_call": {
-          "ts": "2026-08-18 13:02:00+00:00",
+          "ts": "2026-08-18 12:26:00+00:00",
           "dir": 1,
-          "episode_start": "2026-08-18 13:33:00+00:00",
-          "pts_remaining_at_fire": 33.8,
-          "episode_total_pts": 59.0,
+          "episode_start": "2026-08-18 13:00:00+00:00",
+          "pts_remaining_at_fire": 29.5,
+          "episode_total_pts": 43.5,
           "major": true
         },
         "worst_false_alarm": {
@@ -487,6 +634,7 @@
       "S-H8": {
         "source": "forward_feed_replay",
         "grading": "either-direction",
+        "payoff": null,
         "n_fires": 71,
         "precision": {
           "hits": 35,
@@ -494,13 +642,13 @@
           "pct": 49.3
         },
         "coverage": {
-          "covered": 11,
-          "of": 27,
-          "pct": 40.7
+          "covered": 12,
+          "of": 28,
+          "pct": 42.9
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 20.7,
-          "n": 11
+          "median_pts_remaining_at_fire": 19.4,
+          "n": 12
         },
         "best_call": {
           "ts": "2026-08-18 10:57:00+00:00",
@@ -519,6 +667,19 @@
       "S-H9": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 12,
+          "total_pts_right": 23.8,
+          "total_pts_wrong": -42.3,
+          "net_pts": -18.5,
+          "median_per_fire": -3.1,
+          "horizon_marks_net": {
+            "5": -16.2,
+            "10": -19.2,
+            "20": -10.9,
+            "30": -20.1
+          }
+        },
         "n_fires": 12,
         "precision": {
           "hits": 1,
@@ -527,8 +688,8 @@
         },
         "coverage": {
           "covered": 3,
-          "of": 27,
-          "pct": 11.1
+          "of": 28,
+          "pct": 10.7
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.5,
@@ -551,15 +712,16 @@
       "_union": {
         "source": "forward_feed_replay",
         "episodes_covered_by_any_row": 22,
-        "of": 27,
-        "pct": 81.5
+        "of": 28,
+        "pct": 78.6
       },
       "_moves": {
         "source": "forward_feed_replay",
-        "n_qualifying_episodes": 27,
+        "n_qualifying_episodes": 28,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 47.8,
-        "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        "bar_qualify_base_rate_pct": 47.2,
+        "per_direction_base_rate_pct": 26.6,
+        "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     }
   },
@@ -569,6 +731,19 @@
         "S-H1": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 22,
+            "total_pts_right": 292.5,
+            "total_pts_wrong": -159.5,
+            "net_pts": 133.0,
+            "median_per_fire": 3.0,
+            "horizon_marks_net": {
+              "5": -36.4,
+              "10": 0.6,
+              "20": -19.2,
+              "30": 54.7
+            }
+          },
           "n_fires": 22,
           "precision": {
             "hits": 7,
@@ -601,6 +776,19 @@
         "S-H10": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 66,
+            "total_pts_right": 603.6,
+            "total_pts_wrong": -666.0,
+            "net_pts": -62.4,
+            "median_per_fire": 1.85,
+            "horizon_marks_net": {
+              "5": -92.6,
+              "10": -115.8,
+              "20": -274.2,
+              "30": -166.4
+            }
+          },
           "n_fires": 66,
           "precision": {
             "hits": 18,
@@ -633,11 +821,24 @@
         "S-H2": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 80,
+            "total_pts_right": 1137.7,
+            "total_pts_wrong": -616.9,
+            "net_pts": 520.8,
+            "median_per_fire": 9.15,
+            "horizon_marks_net": {
+              "5": -38.5,
+              "10": 109.1,
+              "20": 79.9,
+              "30": 381.4
+            }
+          },
           "n_fires": 80,
           "precision": {
-            "hits": 26,
+            "hits": 25,
             "of": 80,
-            "pct": 32.5
+            "pct": 31.2
           },
           "coverage": {
             "covered": 10,
@@ -670,6 +871,19 @@
         "S-H4": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 5.5,
+            "total_pts_wrong": 0.0,
+            "net_pts": 5.5,
+            "median_per_fire": 5.5,
+            "horizon_marks_net": {
+              "5": 5.3,
+              "10": 3.8,
+              "20": -8.7,
+              "30": 4.5
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -695,6 +909,19 @@
         "S-H7": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 41,
+            "total_pts_right": 335.1,
+            "total_pts_wrong": -552.3,
+            "net_pts": -217.2,
+            "median_per_fire": 2.7,
+            "horizon_marks_net": {
+              "5": -19.0,
+              "10": 39.6,
+              "20": -40.9,
+              "30": -47.5
+            }
+          },
           "n_fires": 41,
           "precision": {
             "hits": 12,
@@ -727,6 +954,7 @@
         "S-H7 (either-dir)": {
           "source": "backtest_replay/london",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 41,
           "precision": {
             "hits": 21,
@@ -759,11 +987,12 @@
         "S-H8": {
           "source": "backtest_replay/london",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 80,
           "precision": {
-            "hits": 44,
+            "hits": 43,
             "of": 80,
-            "pct": 55.0
+            "pct": 53.8
           },
           "coverage": {
             "covered": 15,
@@ -791,6 +1020,19 @@
         "S-H9": {
           "source": "backtest_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 11,
+            "total_pts_right": 205.5,
+            "total_pts_wrong": -98.0,
+            "net_pts": 107.5,
+            "median_per_fire": 12.5,
+            "horizon_marks_net": {
+              "5": 32.6,
+              "10": 29.5,
+              "20": 89.5,
+              "30": 114.9
+            }
+          },
           "n_fires": 11,
           "precision": {
             "hits": 5,
@@ -830,14 +1072,28 @@
           "source": "backtest_replay/london",
           "n_qualifying_episodes": 53,
           "n_major": 17,
-          "bar_qualify_base_rate_pct": 44.3,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 47.1,
+          "per_direction_base_rate_pct": 24.9,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "overlap": {
         "S-H1": {
           "source": "backtest_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 2,
+            "total_pts_right": 35.4,
+            "total_pts_wrong": 0.0,
+            "net_pts": 35.4,
+            "median_per_fire": 17.7,
+            "horizon_marks_net": {
+              "5": 17.0,
+              "10": 19.0,
+              "20": 30.7,
+              "30": 29.2
+            }
+          },
           "n_fires": 2,
           "precision": {
             "hits": 1,
@@ -863,6 +1119,19 @@
         "S-H10": {
           "source": "backtest_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 7,
+            "total_pts_right": 48.8,
+            "total_pts_wrong": -21.5,
+            "net_pts": 27.3,
+            "median_per_fire": 6.8,
+            "horizon_marks_net": {
+              "5": -1.7,
+              "10": -3.3,
+              "20": -22.7,
+              "30": -14.7
+            }
+          },
           "n_fires": 7,
           "precision": {
             "hits": 0,
@@ -888,6 +1157,19 @@
         "S-H2": {
           "source": "backtest_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 11,
+            "total_pts_right": 109.8,
+            "total_pts_wrong": -88.8,
+            "net_pts": 21.0,
+            "median_per_fire": 3.5,
+            "horizon_marks_net": {
+              "5": -26.4,
+              "10": -48.6,
+              "20": -36.2,
+              "30": -20.6
+            }
+          },
           "n_fires": 11,
           "precision": {
             "hits": 3,
@@ -930,6 +1212,19 @@
         "S-H7": {
           "source": "backtest_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 23,
+            "total_pts_right": 361.6,
+            "total_pts_wrong": -134.9,
+            "net_pts": 226.7,
+            "median_per_fire": 8.7,
+            "horizon_marks_net": {
+              "5": -15.7,
+              "10": -25.2,
+              "20": 92.5,
+              "30": 108.0
+            }
+          },
           "n_fires": 23,
           "precision": {
             "hits": 9,
@@ -962,6 +1257,7 @@
         "S-H7 (either-dir)": {
           "source": "backtest_replay/overlap",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 23,
           "precision": {
             "hits": 14,
@@ -994,6 +1290,7 @@
         "S-H8": {
           "source": "backtest_replay/overlap",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 11,
           "precision": {
             "hits": 7,
@@ -1038,14 +1335,28 @@
           "source": "backtest_replay/overlap",
           "n_qualifying_episodes": 12,
           "n_major": 1,
-          "bar_qualify_base_rate_pct": 44.3,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 51.2,
+          "per_direction_base_rate_pct": 26.1,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "ny_only": {
         "S-H1": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 22,
+            "total_pts_right": 183.7,
+            "total_pts_wrong": -166.6,
+            "net_pts": 17.1,
+            "median_per_fire": 1.6,
+            "horizon_marks_net": {
+              "5": 38.3,
+              "10": 86.9,
+              "20": 183.0,
+              "30": 149.5
+            }
+          },
           "n_fires": 22,
           "precision": {
             "hits": 4,
@@ -1078,6 +1389,19 @@
         "S-H10": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 83,
+            "total_pts_right": 395.5,
+            "total_pts_wrong": -344.2,
+            "net_pts": 51.3,
+            "median_per_fire": -1.5,
+            "horizon_marks_net": {
+              "5": 24.8,
+              "10": 26.3,
+              "20": -26.9,
+              "30": 31.4
+            }
+          },
           "n_fires": 83,
           "precision": {
             "hits": 8,
@@ -1110,6 +1434,19 @@
         "S-H2": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 55,
+            "total_pts_right": 386.7,
+            "total_pts_wrong": -873.4,
+            "net_pts": -486.7,
+            "median_per_fire": -2.5,
+            "horizon_marks_net": {
+              "5": -68.7,
+              "10": -143.7,
+              "20": -151.6,
+              "30": -198.9
+            }
+          },
           "n_fires": 55,
           "precision": {
             "hits": 8,
@@ -1147,6 +1484,19 @@
         "S-H4": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 6,
+            "total_pts_right": 21.1,
+            "total_pts_wrong": -12.8,
+            "net_pts": 8.3,
+            "median_per_fire": -0.15,
+            "horizon_marks_net": {
+              "5": 9.0,
+              "10": 18.3,
+              "20": 21.3,
+              "30": 37.7
+            }
+          },
           "n_fires": 6,
           "precision": {
             "hits": 0,
@@ -1179,6 +1529,19 @@
         "S-H7": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 14,
+            "total_pts_right": 83.0,
+            "total_pts_wrong": -107.0,
+            "net_pts": -24.0,
+            "median_per_fire": 0.0,
+            "horizon_marks_net": {
+              "5": 30.7,
+              "10": 28.7,
+              "20": 12.1,
+              "30": -10.7
+            }
+          },
           "n_fires": 14,
           "precision": {
             "hits": 2,
@@ -1211,6 +1574,7 @@
         "S-H7 (either-dir)": {
           "source": "backtest_replay/ny_only",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 14,
           "precision": {
             "hits": 4,
@@ -1243,6 +1607,7 @@
         "S-H8": {
           "source": "backtest_replay/ny_only",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 55,
           "precision": {
             "hits": 24,
@@ -1275,6 +1640,19 @@
         "S-H9": {
           "source": "backtest_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 12,
+            "total_pts_right": 156.1,
+            "total_pts_wrong": -41.1,
+            "net_pts": 115.0,
+            "median_per_fire": 2.75,
+            "horizon_marks_net": {
+              "5": 16.5,
+              "10": 52.3,
+              "20": 91.9,
+              "30": 134.5
+            }
+          },
           "n_fires": 12,
           "precision": {
             "hits": 3,
@@ -1314,14 +1692,28 @@
           "source": "backtest_replay/ny_only",
           "n_qualifying_episodes": 33,
           "n_major": 3,
-          "bar_qualify_base_rate_pct": 44.3,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 20.0,
+          "per_direction_base_rate_pct": 10.2,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "dead": {
         "S-H1": {
           "source": "backtest_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 11,
+            "total_pts_right": 47.9,
+            "total_pts_wrong": -17.6,
+            "net_pts": 30.3,
+            "median_per_fire": 1.1,
+            "horizon_marks_net": {
+              "5": 10.0,
+              "10": 8.9,
+              "20": 17.5,
+              "30": 0.3
+            }
+          },
           "n_fires": 12,
           "precision": {
             "hits": 3,
@@ -1354,6 +1746,19 @@
         "S-H10": {
           "source": "backtest_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 36,
+            "total_pts_right": 14.9,
+            "total_pts_wrong": -124.5,
+            "net_pts": -109.6,
+            "median_per_fire": -2.45,
+            "horizon_marks_net": {
+              "5": -21.6,
+              "10": -23.9,
+              "20": -32.1,
+              "30": -57.2
+            }
+          },
           "n_fires": 36,
           "precision": {
             "hits": 5,
@@ -1386,6 +1791,19 @@
         "S-H2": {
           "source": "backtest_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 90,
+            "total_pts_right": 433.0,
+            "total_pts_wrong": -253.0,
+            "net_pts": 180.0,
+            "median_per_fire": 0.85,
+            "horizon_marks_net": {
+              "5": -28.6,
+              "10": -13.4,
+              "20": 74.3,
+              "30": 141.5
+            }
+          },
           "n_fires": 90,
           "precision": {
             "hits": 17,
@@ -1428,6 +1846,19 @@
         "S-H7": {
           "source": "backtest_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 5,
+            "total_pts_right": 61.0,
+            "total_pts_wrong": -1.5,
+            "net_pts": 59.5,
+            "median_per_fire": 3.5,
+            "horizon_marks_net": {
+              "5": 5.1,
+              "10": 12.3,
+              "20": 42.9,
+              "30": 49.9
+            }
+          },
           "n_fires": 5,
           "precision": {
             "hits": 1,
@@ -1460,6 +1891,7 @@
         "S-H7 (either-dir)": {
           "source": "backtest_replay/dead",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 5,
           "precision": {
             "hits": 1,
@@ -1492,6 +1924,7 @@
         "S-H8": {
           "source": "backtest_replay/dead",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 90,
           "precision": {
             "hits": 31,
@@ -1524,6 +1957,19 @@
         "S-H9": {
           "source": "backtest_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 9,
+            "total_pts_right": 26.0,
+            "total_pts_wrong": -15.3,
+            "net_pts": 10.7,
+            "median_per_fire": 1.0,
+            "horizon_marks_net": {
+              "5": -1.5,
+              "10": -5.2,
+              "20": 22.4,
+              "30": 24.2
+            }
+          },
           "n_fires": 11,
           "precision": {
             "hits": 1,
@@ -1563,14 +2009,28 @@
           "source": "backtest_replay/dead",
           "n_qualifying_episodes": 25,
           "n_major": 13,
-          "bar_qualify_base_rate_pct": 44.3,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 32.8,
+          "per_direction_base_rate_pct": 17.6,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "asia": {
         "S-H1": {
           "source": "backtest_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 11,
+            "total_pts_right": 79.7,
+            "total_pts_wrong": -101.2,
+            "net_pts": -21.5,
+            "median_per_fire": -2.6,
+            "horizon_marks_net": {
+              "5": 14.2,
+              "10": -20.1,
+              "20": 37.0,
+              "30": -3.2
+            }
+          },
           "n_fires": 11,
           "precision": {
             "hits": 1,
@@ -1603,6 +2063,19 @@
         "S-H10": {
           "source": "backtest_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 101,
+            "total_pts_right": 470.1,
+            "total_pts_wrong": -616.7,
+            "net_pts": -146.6,
+            "median_per_fire": -1.5,
+            "horizon_marks_net": {
+              "5": -33.7,
+              "10": -118.8,
+              "20": -62.7,
+              "30": -107.7
+            }
+          },
           "n_fires": 101,
           "precision": {
             "hits": 24,
@@ -1635,6 +2108,19 @@
         "S-H2": {
           "source": "backtest_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 111,
+            "total_pts_right": 1203.0,
+            "total_pts_wrong": -657.4,
+            "net_pts": 545.6,
+            "median_per_fire": 2.7,
+            "horizon_marks_net": {
+              "5": -19.9,
+              "10": -15.3,
+              "20": -50.1,
+              "30": 55.8
+            }
+          },
           "n_fires": 111,
           "precision": {
             "hits": 33,
@@ -1677,6 +2163,19 @@
         "S-H7": {
           "source": "backtest_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 29,
+            "total_pts_right": 256.6,
+            "total_pts_wrong": -294.6,
+            "net_pts": -38.0,
+            "median_per_fire": 0.7,
+            "horizon_marks_net": {
+              "5": -36.0,
+              "10": -69.1,
+              "20": -92.4,
+              "30": -60.4
+            }
+          },
           "n_fires": 29,
           "precision": {
             "hits": 11,
@@ -1709,6 +2208,7 @@
         "S-H7 (either-dir)": {
           "source": "backtest_replay/asia",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 29,
           "precision": {
             "hits": 20,
@@ -1741,6 +2241,7 @@
         "S-H8": {
           "source": "backtest_replay/asia",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 111,
           "precision": {
             "hits": 56,
@@ -1773,6 +2274,19 @@
         "S-H9": {
           "source": "backtest_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 21,
+            "total_pts_right": 170.5,
+            "total_pts_wrong": -85.0,
+            "net_pts": 85.5,
+            "median_per_fire": 6.8,
+            "horizon_marks_net": {
+              "5": -14.6,
+              "10": 12.3,
+              "20": 20.6,
+              "30": 0.6
+            }
+          },
           "n_fires": 21,
           "precision": {
             "hits": 6,
@@ -1812,8 +2326,9 @@
           "source": "backtest_replay/asia",
           "n_qualifying_episodes": 57,
           "n_major": 28,
-          "bar_qualify_base_rate_pct": 44.3,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 59.6,
+          "per_direction_base_rate_pct": 32.5,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       }
     },
@@ -1822,6 +2337,19 @@
         "S-H1": {
           "source": "forward_feed_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 4,
+            "total_pts_right": 10.5,
+            "total_pts_wrong": -27.8,
+            "net_pts": -17.3,
+            "median_per_fire": -7.0,
+            "horizon_marks_net": {
+              "5": 11.3,
+              "10": 10.3,
+              "20": 0.8,
+              "30": 14.7
+            }
+          },
           "n_fires": 4,
           "precision": {
             "hits": 1,
@@ -1829,13 +2357,13 @@
             "pct": 25.0
           },
           "coverage": {
-            "covered": 2,
-            "of": 4,
+            "covered": 3,
+            "of": 6,
             "pct": 50.0
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 26.1,
-            "n": 2
+            "median_pts_remaining_at_fire": 22.8,
+            "n": 3
           },
           "best_call": {
             "ts": "2026-08-17 10:30:00+00:00",
@@ -1854,6 +2382,19 @@
         "S-H10": {
           "source": "forward_feed_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 10,
+            "total_pts_right": 58.9,
+            "total_pts_wrong": -31.7,
+            "net_pts": 27.2,
+            "median_per_fire": 4.85,
+            "horizon_marks_net": {
+              "5": 7.1,
+              "10": 13.4,
+              "20": -1.3,
+              "30": 5.3
+            }
+          },
           "n_fires": 10,
           "precision": {
             "hits": 1,
@@ -1862,8 +2403,8 @@
           },
           "coverage": {
             "covered": 1,
-            "of": 4,
-            "pct": 25.0
+            "of": 6,
+            "pct": 16.7
           },
           "earliness": {
             "median_pts_remaining_at_fire": 14.2,
@@ -1886,6 +2427,19 @@
         "S-H2": {
           "source": "forward_feed_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 14,
+            "total_pts_right": 57.2,
+            "total_pts_wrong": -71.0,
+            "net_pts": -13.8,
+            "median_per_fire": -1.75,
+            "horizon_marks_net": {
+              "5": 12.8,
+              "10": 14.5,
+              "20": 29.5,
+              "30": 39.5
+            }
+          },
           "n_fires": 14,
           "precision": {
             "hits": 2,
@@ -1893,13 +2447,13 @@
             "pct": 14.3
           },
           "coverage": {
-            "covered": 1,
-            "of": 4,
-            "pct": 25.0
+            "covered": 2,
+            "of": 6,
+            "pct": 33.3
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 37.0,
-            "n": 1
+            "median_pts_remaining_at_fire": 27.5,
+            "n": 2
           },
           "best_call": {
             "ts": "2026-08-17 10:33:00+00:00",
@@ -1918,6 +2472,19 @@
         "S-H3": {
           "source": "forward_feed_replay/london",
           "grading": "directional",
+          "payoff": {
+            "n": 2,
+            "total_pts_right": 12.5,
+            "total_pts_wrong": -5.0,
+            "net_pts": 7.5,
+            "median_per_fire": 3.75,
+            "horizon_marks_net": {
+              "5": 2.2,
+              "10": -0.2,
+              "20": 2.5,
+              "30": -5.2
+            }
+          },
           "n_fires": 2,
           "precision": {
             "hits": 1,
@@ -1926,7 +2493,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 4,
+            "of": 6,
             "pct": 0.0
           },
           "earliness": {
@@ -1948,15 +2515,28 @@
         "S-H7": {
           "source": "forward_feed_replay/london",
           "grading": "directional",
-          "n_fires": 10,
+          "payoff": {
+            "n": 11,
+            "total_pts_right": 41.6,
+            "total_pts_wrong": -101.7,
+            "net_pts": -60.1,
+            "median_per_fire": -8.5,
+            "horizon_marks_net": {
+              "5": 17.4,
+              "10": 34.6,
+              "20": -4.6,
+              "30": -18.5
+            }
+          },
+          "n_fires": 11,
           "precision": {
             "hits": 2,
-            "of": 10,
-            "pct": 20.0
+            "of": 11,
+            "pct": 18.2
           },
           "coverage": {
             "covered": 0,
-            "of": 4,
+            "of": 6,
             "pct": 0.0
           },
           "earliness": {
@@ -1973,22 +2553,30 @@
         "S-H7 (either-dir)": {
           "source": "forward_feed_replay/london",
           "grading": "either-direction",
-          "n_fires": 10,
+          "payoff": null,
+          "n_fires": 11,
           "precision": {
             "hits": 6,
-            "of": 10,
-            "pct": 60.0
+            "of": 11,
+            "pct": 54.5
           },
           "coverage": {
-            "covered": 0,
-            "of": 4,
-            "pct": 0.0
+            "covered": 2,
+            "of": 6,
+            "pct": 33.3
           },
           "earliness": {
-            "median_pts_remaining_at_fire": null,
-            "n": 0
+            "median_pts_remaining_at_fire": 19.6,
+            "n": 2
           },
-          "best_call": null,
+          "best_call": {
+            "ts": "2026-08-18 12:26:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-18 13:00:00+00:00",
+            "pts_remaining_at_fire": 29.5,
+            "episode_total_pts": 43.5,
+            "major": true
+          },
           "worst_false_alarm": {
             "ts": "2026-08-19 08:28:00+00:00",
             "dir": 1,
@@ -1998,6 +2586,7 @@
         "S-H8": {
           "source": "forward_feed_replay/london",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 14,
           "precision": {
             "hits": 3,
@@ -2005,13 +2594,13 @@
             "pct": 21.4
           },
           "coverage": {
-            "covered": 2,
-            "of": 4,
+            "covered": 3,
+            "of": 6,
             "pct": 50.0
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 47.2,
-            "n": 2
+            "median_pts_remaining_at_fire": 38.5,
+            "n": 3
           },
           "best_call": {
             "ts": "2026-08-18 10:57:00+00:00",
@@ -2034,22 +2623,36 @@
         },
         "_union": {
           "source": "forward_feed_replay/london",
-          "episodes_covered_by_any_row": 4,
-          "of": 4,
-          "pct": 100.0
+          "episodes_covered_by_any_row": 5,
+          "of": 6,
+          "pct": 83.3
         },
         "_moves": {
           "source": "forward_feed_replay/london",
-          "n_qualifying_episodes": 4,
-          "n_major": 2,
-          "bar_qualify_base_rate_pct": 47.8,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "n_qualifying_episodes": 6,
+          "n_major": 3,
+          "bar_qualify_base_rate_pct": 42.4,
+          "per_direction_base_rate_pct": 23.3,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "overlap": {
         "S-H1": {
           "source": "forward_feed_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": -0.3,
+            "net_pts": -0.3,
+            "median_per_fire": -0.3,
+            "horizon_marks_net": {
+              "5": -7.0,
+              "10": 1.5,
+              "20": -0.3,
+              "30": -6.5
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2058,7 +2661,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 2,
+            "of": 1,
             "pct": 0.0
           },
           "earliness": {
@@ -2075,6 +2678,19 @@
         "S-H10": {
           "source": "forward_feed_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 5,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": -74.6,
+            "net_pts": -74.6,
+            "median_per_fire": -15.8,
+            "horizon_marks_net": {
+              "5": -5.0,
+              "10": -5.8,
+              "20": -11.3,
+              "30": -13.5
+            }
+          },
           "n_fires": 5,
           "precision": {
             "hits": 0,
@@ -2083,7 +2699,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 2,
+            "of": 1,
             "pct": 0.0
           },
           "earliness": {
@@ -2100,6 +2716,19 @@
         "S-H2": {
           "source": "forward_feed_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 1.0,
+            "total_pts_wrong": 0.0,
+            "net_pts": 1.0,
+            "median_per_fire": 1.0,
+            "horizon_marks_net": {
+              "5": 7.3,
+              "10": 6.8,
+              "20": 0.3,
+              "30": 3.0
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2108,7 +2737,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 2,
+            "of": 1,
             "pct": 0.0
           },
           "earliness": {
@@ -2135,6 +2764,19 @@
         "S-H7": {
           "source": "forward_feed_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 5.3,
+            "total_pts_wrong": 0.0,
+            "net_pts": 5.3,
+            "median_per_fire": 5.3,
+            "horizon_marks_net": {
+              "5": -6.0,
+              "10": -5.2,
+              "20": 1.3,
+              "30": 3.5
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2142,22 +2784,15 @@
             "pct": 0.0
           },
           "coverage": {
-            "covered": 1,
-            "of": 2,
-            "pct": 50.0
+            "covered": 0,
+            "of": 1,
+            "pct": 0.0
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 53.8,
-            "n": 1
+            "median_pts_remaining_at_fire": null,
+            "n": 0
           },
-          "best_call": {
-            "ts": "2026-08-18 13:32:00+00:00",
-            "dir": -1,
-            "episode_start": "2026-08-18 13:33:00+00:00",
-            "pts_remaining_at_fire": 53.8,
-            "episode_total_pts": 59.0,
-            "major": true
-          },
+          "best_call": null,
           "worst_false_alarm": {
             "ts": "2026-08-18 13:32:00+00:00",
             "dir": -1,
@@ -2167,6 +2802,7 @@
         "S-H7 (either-dir)": {
           "source": "forward_feed_replay/overlap",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2174,22 +2810,15 @@
             "pct": 0.0
           },
           "coverage": {
-            "covered": 1,
-            "of": 2,
-            "pct": 50.0
+            "covered": 0,
+            "of": 1,
+            "pct": 0.0
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 53.8,
-            "n": 1
+            "median_pts_remaining_at_fire": null,
+            "n": 0
           },
-          "best_call": {
-            "ts": "2026-08-18 13:32:00+00:00",
-            "dir": -1,
-            "episode_start": "2026-08-18 13:33:00+00:00",
-            "pts_remaining_at_fire": 53.8,
-            "episode_total_pts": 59.0,
-            "major": true
-          },
+          "best_call": null,
           "worst_false_alarm": {
             "ts": "2026-08-18 13:32:00+00:00",
             "dir": -1,
@@ -2199,6 +2828,7 @@
         "S-H8": {
           "source": "forward_feed_replay/overlap",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2207,7 +2837,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 2,
+            "of": 1,
             "pct": 0.0
           },
           "earliness": {
@@ -2224,6 +2854,19 @@
         "S-H9": {
           "source": "forward_feed_replay/overlap",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": -1.0,
+            "net_pts": -1.0,
+            "median_per_fire": -1.0,
+            "horizon_marks_net": {
+              "5": -7.3,
+              "10": -6.8,
+              "20": -0.3,
+              "30": -3.0
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2232,7 +2875,7 @@
           },
           "coverage": {
             "covered": 0,
-            "of": 2,
+            "of": 1,
             "pct": 0.0
           },
           "earliness": {
@@ -2248,22 +2891,36 @@
         },
         "_union": {
           "source": "forward_feed_replay/overlap",
-          "episodes_covered_by_any_row": 1,
-          "of": 2,
-          "pct": 50.0
+          "episodes_covered_by_any_row": 0,
+          "of": 1,
+          "pct": 0.0
         },
         "_moves": {
           "source": "forward_feed_replay/overlap",
-          "n_qualifying_episodes": 2,
-          "n_major": 1,
-          "bar_qualify_base_rate_pct": 47.8,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "n_qualifying_episodes": 1,
+          "n_major": 0,
+          "bar_qualify_base_rate_pct": 67.5,
+          "per_direction_base_rate_pct": 33.8,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "ny_only": {
         "S-H1": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": -0.8,
+            "net_pts": -0.8,
+            "median_per_fire": -0.8,
+            "horizon_marks_net": {
+              "5": -1.0,
+              "10": 2.2,
+              "20": 2.7,
+              "30": 4.2
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2289,6 +2946,19 @@
         "S-H10": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 19,
+            "total_pts_right": 37.6,
+            "total_pts_wrong": -51.6,
+            "net_pts": -14.0,
+            "median_per_fire": -1.0,
+            "horizon_marks_net": {
+              "5": 28.9,
+              "10": 42.2,
+              "20": 27.8,
+              "30": 20.8
+            }
+          },
           "n_fires": 19,
           "precision": {
             "hits": 1,
@@ -2321,6 +2991,19 @@
         "S-H2": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 8,
+            "total_pts_right": 13.7,
+            "total_pts_wrong": -18.3,
+            "net_pts": -4.6,
+            "median_per_fire": -1.0,
+            "horizon_marks_net": {
+              "5": -3.8,
+              "10": -4.2,
+              "20": -4.0,
+              "30": -13.7
+            }
+          },
           "n_fires": 8,
           "precision": {
             "hits": 0,
@@ -2353,6 +3036,19 @@
         "S-H3": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.8,
+            "total_pts_wrong": 0.0,
+            "net_pts": 0.8,
+            "median_per_fire": 0.8,
+            "horizon_marks_net": {
+              "5": 0.5,
+              "10": 0.0,
+              "20": 0.3,
+              "30": 5.5
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2390,6 +3086,19 @@
         "S-H7": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 6,
+            "total_pts_right": 20.9,
+            "total_pts_wrong": -3.8,
+            "net_pts": 17.1,
+            "median_per_fire": 3.85,
+            "horizon_marks_net": {
+              "5": 0.8,
+              "10": -2.4,
+              "20": 3.9,
+              "30": 2.5
+            }
+          },
           "n_fires": 6,
           "precision": {
             "hits": 0,
@@ -2422,6 +3131,7 @@
         "S-H7 (either-dir)": {
           "source": "forward_feed_replay/ny_only",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 6,
           "precision": {
             "hits": 0,
@@ -2454,6 +3164,7 @@
         "S-H8": {
           "source": "forward_feed_replay/ny_only",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 8,
           "precision": {
             "hits": 1,
@@ -2486,6 +3197,19 @@
         "S-H9": {
           "source": "forward_feed_replay/ny_only",
           "grading": "directional",
+          "payoff": {
+            "n": 3,
+            "total_pts_right": 21.6,
+            "total_pts_wrong": -10.7,
+            "net_pts": 10.9,
+            "median_per_fire": 6.8,
+            "horizon_marks_net": {
+              "5": 4.3,
+              "10": 3.3,
+              "20": 6.6,
+              "30": 9.5
+            }
+          },
           "n_fires": 3,
           "precision": {
             "hits": 1,
@@ -2525,14 +3249,28 @@
           "source": "forward_feed_replay/ny_only",
           "n_qualifying_episodes": 7,
           "n_major": 0,
-          "bar_qualify_base_rate_pct": 47.8,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 22.0,
+          "per_direction_base_rate_pct": 11.0,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "dead": {
         "S-H1": {
           "source": "forward_feed_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 2,
+            "total_pts_right": 4.4,
+            "total_pts_wrong": -1.0,
+            "net_pts": 3.4,
+            "median_per_fire": 1.7,
+            "horizon_marks_net": {
+              "5": -1.0,
+              "10": -0.4,
+              "20": -4.8,
+              "30": -6.5
+            }
+          },
           "n_fires": 2,
           "precision": {
             "hits": 1,
@@ -2565,6 +3303,19 @@
         "S-H10": {
           "source": "forward_feed_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 15,
+            "total_pts_right": 5.2,
+            "total_pts_wrong": -28.8,
+            "net_pts": -23.6,
+            "median_per_fire": -2.0,
+            "horizon_marks_net": {
+              "5": -4.3,
+              "10": 5.0,
+              "20": 7.5,
+              "30": 14.5
+            }
+          },
           "n_fires": 15,
           "precision": {
             "hits": 0,
@@ -2590,6 +3341,19 @@
         "S-H2": {
           "source": "forward_feed_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 8,
+            "total_pts_right": 24.4,
+            "total_pts_wrong": -8.1,
+            "net_pts": 16.3,
+            "median_per_fire": 3.1,
+            "horizon_marks_net": {
+              "5": -3.5,
+              "10": 5.4,
+              "20": 10.6,
+              "30": -1.8
+            }
+          },
           "n_fires": 8,
           "precision": {
             "hits": 4,
@@ -2622,6 +3386,19 @@
         "S-H3": {
           "source": "forward_feed_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": -0.2,
+            "net_pts": -0.2,
+            "median_per_fire": -0.2,
+            "horizon_marks_net": {
+              "5": 0.3,
+              "10": 7.1,
+              "20": 6.9,
+              "30": 0.6
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 1,
@@ -2648,6 +3425,19 @@
         "S-H7": {
           "source": "forward_feed_replay/dead",
           "grading": "directional",
+          "payoff": {
+            "n": 1,
+            "total_pts_right": 0.0,
+            "total_pts_wrong": 0.0,
+            "net_pts": 0.0,
+            "median_per_fire": 0.0,
+            "horizon_marks_net": {
+              "5": -0.2,
+              "10": -0.2,
+              "20": 0.4,
+              "30": -0.2
+            }
+          },
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2673,6 +3463,7 @@
         "S-H7 (either-dir)": {
           "source": "forward_feed_replay/dead",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 1,
           "precision": {
             "hits": 0,
@@ -2705,6 +3496,7 @@
         "S-H8": {
           "source": "forward_feed_replay/dead",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 8,
           "precision": {
             "hits": 5,
@@ -2749,14 +3541,28 @@
           "source": "forward_feed_replay/dead",
           "n_qualifying_episodes": 4,
           "n_major": 2,
-          "bar_qualify_base_rate_pct": 47.8,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 33.1,
+          "per_direction_base_rate_pct": 16.5,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
       "asia": {
         "S-H1": {
           "source": "forward_feed_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 9,
+            "total_pts_right": 13.4,
+            "total_pts_wrong": -16.2,
+            "net_pts": -2.8,
+            "median_per_fire": -1.0,
+            "horizon_marks_net": {
+              "5": 13.8,
+              "10": -1.0,
+              "20": 1.5,
+              "30": -6.2
+            }
+          },
           "n_fires": 9,
           "precision": {
             "hits": 3,
@@ -2789,6 +3595,19 @@
         "S-H10": {
           "source": "forward_feed_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 27,
+            "total_pts_right": 13.5,
+            "total_pts_wrong": -148.1,
+            "net_pts": -134.6,
+            "median_per_fire": -4.8,
+            "horizon_marks_net": {
+              "5": -18.4,
+              "10": -25.4,
+              "20": -55.6,
+              "30": -91.2
+            }
+          },
           "n_fires": 27,
           "precision": {
             "hits": 4,
@@ -2821,6 +3640,19 @@
         "S-H2": {
           "source": "forward_feed_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 40,
+            "total_pts_right": 106.8,
+            "total_pts_wrong": -165.7,
+            "net_pts": -58.9,
+            "median_per_fire": -1.45,
+            "horizon_marks_net": {
+              "5": -6.9,
+              "10": 1.4,
+              "20": 37.7,
+              "30": 1.8
+            }
+          },
           "n_fires": 40,
           "precision": {
             "hits": 20,
@@ -2863,6 +3695,19 @@
         "S-H7": {
           "source": "forward_feed_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 2,
+            "total_pts_right": 6.0,
+            "total_pts_wrong": 0.0,
+            "net_pts": 6.0,
+            "median_per_fire": 3.0,
+            "horizon_marks_net": {
+              "5": 1.9,
+              "10": 4.2,
+              "20": -5.0,
+              "30": 13.7
+            }
+          },
           "n_fires": 2,
           "precision": {
             "hits": 1,
@@ -2888,6 +3733,7 @@
         "S-H7 (either-dir)": {
           "source": "forward_feed_replay/asia",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 2,
           "precision": {
             "hits": 2,
@@ -2909,6 +3755,7 @@
         "S-H8": {
           "source": "forward_feed_replay/asia",
           "grading": "either-direction",
+          "payoff": null,
           "n_fires": 40,
           "precision": {
             "hits": 26,
@@ -2941,6 +3788,19 @@
         "S-H9": {
           "source": "forward_feed_replay/asia",
           "grading": "directional",
+          "payoff": {
+            "n": 8,
+            "total_pts_right": 2.2,
+            "total_pts_wrong": -30.6,
+            "net_pts": -28.4,
+            "median_per_fire": -3.1,
+            "horizon_marks_net": {
+              "5": -13.2,
+              "10": -15.7,
+              "20": -17.2,
+              "30": -26.6
+            }
+          },
           "n_fires": 8,
           "precision": {
             "hits": 0,
@@ -2980,8 +3840,9 @@
           "source": "forward_feed_replay/asia",
           "n_qualifying_episodes": 10,
           "n_major": 8,
-          "bar_qualify_base_rate_pct": 47.8,
-          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+          "bar_qualify_base_rate_pct": 68.2,
+          "per_direction_base_rate_pct": 41.5,
+          "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       }
     }
@@ -2997,6 +3858,19 @@
       "H2": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 3,
+          "total_pts_right": 0.0,
+          "total_pts_wrong": -116.0,
+          "net_pts": -116.0,
+          "median_per_fire": -15.5,
+          "horizon_marks_net": {
+            "5": 21.0,
+            "10": 26.0,
+            "20": -1.9,
+            "30": -18.9
+          }
+        },
         "n_fires": 3,
         "precision": {
           "hits": 0,
@@ -3027,6 +3901,19 @@
       "H4": {
         "source": "backtest_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 1,
+          "total_pts_right": 0.0,
+          "total_pts_wrong": -6.0,
+          "net_pts": -6.0,
+          "median_per_fire": -6.0,
+          "horizon_marks_net": {
+            "5": 0.0,
+            "10": 0.0,
+            "20": 5.2,
+            "30": 0.7
+          }
+        },
         "n_fires": 1,
         "precision": {
           "hits": 0,
@@ -3065,7 +3952,8 @@
         "n_qualifying_episodes": 180,
         "n_major": 62,
         "bar_qualify_base_rate_pct": 44.3,
-        "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        "per_direction_base_rate_pct": 23.6,
+        "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     },
     "forward": {
@@ -3077,6 +3965,19 @@
       "H2": {
         "source": "forward_feed_replay",
         "grading": "directional",
+        "payoff": {
+          "n": 2,
+          "total_pts_right": 3.6,
+          "total_pts_wrong": -28.0,
+          "net_pts": -24.4,
+          "median_per_fire": -12.2,
+          "horizon_marks_net": {
+            "5": -17.3,
+            "10": -19.4,
+            "20": -22.2,
+            "30": -14.2
+          }
+        },
         "n_fires": 2,
         "precision": {
           "hits": 0,
@@ -3085,7 +3986,7 @@
         },
         "coverage": {
           "covered": 0,
-          "of": 27,
+          "of": 28,
           "pct": 0.0
         },
         "earliness": {
@@ -3117,15 +4018,16 @@
       "_union": {
         "source": "forward_feed_replay",
         "episodes_covered_by_any_row": 0,
-        "of": 27,
+        "of": 28,
         "pct": 0.0
       },
       "_moves": {
         "source": "forward_feed_replay",
-        "n_qualifying_episodes": 27,
+        "n_qualifying_episodes": 28,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 47.8,
-        "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        "bar_qualify_base_rate_pct": 47.2,
+        "per_direction_base_rate_pct": 26.6,
+        "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     }
   }

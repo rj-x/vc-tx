@@ -1,56 +1,58 @@
-# Reading Guide — Hypothesis Performance Table
+# Reading Guide — Hypothesis Performance
 
-**One page. Read before the table. Labels are recommendations only —
-none actioned; status changes need a dated operator decision.**
+**Read this before the table. Labels are recommendations only — none
+actioned; status changes need a dated operator decision.**
 
-## What each column means
-- **fires** — times the bare firing condition triggered. A hypothesis is
-  only its firing condition (pure-signals doctrine); no trade logic exists
-  here.
-- **precision** — of those fires, how many were followed within 60 minutes
-  by a qualifying move (>= 1.5x the 15-minute ATR, drift-adjusted) in the
-  predicted direction. *Either-direction* rows count a move either way.
-- **coverage** — of all qualifying moves in the window, how many had this
-  signal fire in the 60 minutes before the move began. Precision asks "when
-  it speaks, is it right?"; coverage asks "how much does it see?".
-- **median pts remaining** — at the earliest covering fire, how many points
-  of the move were still ahead. The earliness metric. (A
-  minutes-before-trend-flip column existed briefly and was retired — it
-  measured time to the next unrelated flip, not earliness.)
-- **best call / worst false alarm** — dated single exhibits: the covered
-  move with most points remaining, and the miss with the worst adverse
-  drift. Anecdotes by construction; never generalize from them.
-- **union coverage** — episodes preceded by ANY live signal vs none: how
-  much of the tape the whole board sees at all.
+## The two views
+Page 1 (matrix): every live hypothesis x four contexts (backtest/forward,
+whole-window and London). One cell = how far precision sits above or below
+THAT CONTEXT'S OWN chance rate. Page 2 (cards): one card per hypothesis —
+claim, full session x window grid, payoff, dated exhibits. Everything else
+(other sessions' exhibits, horizon-mark payoffs) is in
+signal_scoreboard.json.
+
+## How to read a cell
+`▲+9.4pp (26/80) net+123/med+1.2` means: precision 9.4 percentage points
+ABOVE this context's chance rate (▲ = beyond +2pp; ▼ = beyond -2pp; · =
+within the band), on 26 hits of 80 fires; summed signed excursion across
+all fires +123 points with a median fire worth +1.2. `(°...)` = small-n
+(fires<20 or episodes<10): dimmed, excluded from any future label
+arithmetic — read as anecdote.
 
 ## The base-rate logic
-Roughly 44-48% of bars are followed by a qualifying move in SOME direction
-within the hour — the tape moves a lot. So: directional precision only
-means something against ~half that (~22-24%); either-direction precision
-only against the full base rate. A row AT its base rate has measured
-nothing. The base rate is printed per window and the table's numbers mean
-nothing without it.
+The tape moves: in a typical context ~40-50% of bars are followed by a
+qualifying move (>=1.5x 15M ATR within 60 min, drift-adjusted) in SOME
+direction — so directional rows are chance-compared at roughly half that,
+either-direction rows at the full rate, and EVERY context (each session,
+each window) displays its own rates because they differ by session. A row
+at chance has measured nothing.
 
-## Session character (register 37 partition; boundaries in native
-exchange timezones, DST-proof)
+## Payoff (directional rows only)
+Per fire: the signed price change 60 minutes later (the registered
+move-definition window), signed by the predicted direction. Total right =
+sum of positive fires, wrong = sum of negative, net = the difference;
+median per fire is the robust companion because CLUSTERED FIRES
+DOUBLE-COUNT SHARED PRICE TRAVEL — a burst of 20 fires into one move books
+that move 20 times in the totals, once in the median. Mid-price, no
+spread, idealized — points here are not tradeable points.
+Either-direction rows: n/a by construction (no predicted direction to
+sign by).
+
+## Session character (register 37 partition; native-tz, DST-proof)
 - **asia** (Tokyo open -> London open): thin tape; the Asia best-call
-  cluster (03:40-04:04Z) is an OPEN QUESTION — regime edge vs thin-tape
-  artifact vs unverified feed regime (thin-tape probe pending).
+  cluster is an OPEN QUESTION (regime edge vs thin-tape artifact vs
+  unverified feed regime; thin-tape probe pending).
 - **london** (London open -> NY open): the instrument's home session.
 - **overlap** (NY open -> London close): highest participation; macro
-  releases (12:30/13:30Z class) land here.
+  releases land here.
 - **ny_only** (London close -> NY close): FTSE tape without its home
   market.
-- **dead** (NY close -> Tokyo open): includes the daily feed pause;
-  expect near-empty rows.
-London+overlap as the label-bearing (tradeable) window is a REGISTERED
-PROPOSAL, unratified — criteria compute on whole windows until the
-operator ratifies session scoping.
+- **dead** (NY close -> Tokyo open): includes the daily feed pause.
+London+overlap as the label-bearing window is a REGISTERED PROPOSAL,
+unratified — criteria compute on whole windows.
 
 ## Small-n caveats
-Forward is a few sessions old; single-digit fire counts dominate several
-cells. n sits beside every number deliberately: a 50% precision on 4 fires
-is two lucky bars, not a signal. Backtest n>=100 rows are the only ones
-where the chance comparison has teeth yet. Nothing in this table is
-validation — the walk-forward and the lockbox remain the only verdict
-machinery.
+Forward is days old; several cells are single-digit. The small-n dimming
+is registered convention (operator, 2026-08-19), not styling. Nothing in
+these pages is validation — walk-forward and the lockbox remain the only
+verdict machinery.
