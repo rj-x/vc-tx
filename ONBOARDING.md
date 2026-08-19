@@ -500,6 +500,19 @@ set still growing toward fold support).
    ger40-H7); t-MFE 13–45 min validates the 60-min ruler. Post-flip
    continuation cut in flight = the decisive number for the v1 values
    discussion.
+20. Flip-gate RULED + R-FLIPGUARD live (`6c38d63` pushed, 90/90): gate
+   NOT PASSED for universal flip-exit (net points = deciding currency;
+   median-manager/tail-amputator mechanism; incompatible with
+   only-tails-harvestable). Per-hypothesis cherry-pick BARRED (banner
+   baked into flip_cut emitter). R-FLIPGUARD registered+counted: R-OP1
+   stops both stages, flip-exit pre-arming only, arming at 1.0×ATR(15M)
+   or 45 min (derived-stated from early-flip + t-MFE findings);
+   transition pinned both directions; grades on FORWARD accrual only.
+   Ratification queue (no clock): FLIPGUARD arming values, R-OP1 ATR-TF,
+   v0 values (excursion tables = principled input), criteria + band,
+   session scoping. Tonight 21:00–22:10Z = calendar-fix verification
+   night (fix deployed at 12:38Z restart — false stalls should NOT
+   appear; silence = pass).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
