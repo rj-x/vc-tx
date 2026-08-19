@@ -465,6 +465,19 @@ set still growing toward fold support).
    question. signal_watch live attachment rides the item-22 restart
    (bundle now: session-JSONL + calendar fix + suspension detection +
    signal scoreboard).
+18. Recipe layer v0 LIVE (`d0a95b9` pushed, 85/85): full stop/target
+   grammar (fixed/ATR/Nth-bar-trail±offset), next-bar-open entry,
+   one-position-per-H-per-instrument (kills clustered double-count),
+   measured spread charged, honest fills operator-ruled + test-pinned
+   (both-reachable→stop; gap→worse price; ratchet-only; native EOD).
+   recipe_set_v0 illustrative, awaiting ratification (scaling note:
+   fixed points don't cross instruments — v1 likely ATR-only). First
+   read: uk100 net-negative across recipes — BOTH layers agree home
+   offers nothing harvestable; interesting cells live away/forward.
+   Pre-registered Q-H1-GEN (H1 lift on new instruments' forward) and
+   Q-H7-GEO (Europe/US split persists) — graded at ≥30 post-validation
+   forward episodes per instrument, never on generating backtests.
+   Cross-instrument table live (4 sections, PROVISIONAL stamps).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
