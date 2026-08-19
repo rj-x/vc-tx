@@ -465,6 +465,16 @@ set still growing toward fold support).
    question. signal_watch live attachment rides the item-22 restart
    (bundle now: session-JSONL + calendar fix + suspension detection +
    signal scoreboard).
+17. Table COMPLETE, decisions deliberately open (`922de0d`, `6ea92c5`,
+   78/78): H1–H10 graded/pending, session-split (Asia/London/Overlap/
+   NY/dead, SESSION_TZ-native; London-end=NY-open and Asia=09:00 JST
+   flagged operator-correctable), H2=H8 fires made structurally shared
+   (DERIVED_FIRES), flip column retired (points-remaining = earliness),
+   union coverage 52% backtest, READING_GUIDE.md added. ALL labels are
+   open recommendations — no promotions/deprioritizations actioned;
+   criteria numbers unratified; operator settling in with the table
+   before any dated decision block. London session strengthens most
+   rows; Asia best-call cluster = open question (thin-tape probe named).
 
 **Recently closed (2026-08-17, so you don't reopen them):**
 - Warm banner "last bar Fri 15:30Z" = cash-segment filter by design
