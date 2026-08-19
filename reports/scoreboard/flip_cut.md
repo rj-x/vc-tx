@@ -2,6 +2,8 @@
 
 Engine `073c75bad` — OBSERVATIONAL, pre-registered (prereg_post_flip_continuation_cut). THE QUESTION: is the opposing 1M trend flip early enough that acting on it beats the existing stops? GATE: the narrative-exit values discussion convenes only if the counterfactual shows exit-at-flip WINNING on real n. Spread charged on both legs; flips confirming on the exit bar excluded; sealed/lockbox excluded.
 
+**GATE RULED NOT PASSED for a universal flip-exit (operator, 2026-08-19; register 44): net points is the deciding currency; home net negative both windows; the flip is a median manager and a tail amputator — incompatible with the excursion finding that only tails are harvestable. THIS ARTIFACT IS THE STANDING REFERENCE for why narrative exits must be stage-scoped. Per-hypothesis cherry-picks from these tables are a FORBIDDEN MOVE (post-hoc fitting on tiny cells).**
+
 ## uk100fut (CANONICAL; spread 1.3 pts)
 
 ### uk100fut / backtest — (a) further adverse excursion AFTER flip confirmation (pts to window end)

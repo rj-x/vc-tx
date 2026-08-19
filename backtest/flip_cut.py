@@ -161,7 +161,15 @@ def _emit(results, head):
          "existing stops? GATE: the narrative-exit values discussion "
          "convenes only if the counterfactual shows exit-at-flip WINNING "
          "on real n. Spread charged on both legs; flips confirming on the "
-         "exit bar excluded; sealed/lockbox excluded.", ""]
+         "exit bar excluded; sealed/lockbox excluded.", "",
+         "**GATE RULED NOT PASSED for a universal flip-exit (operator, "
+         "2026-08-19; register 44): net points is the deciding currency; "
+         "home net negative both windows; the flip is a median manager "
+         "and a tail amputator — incompatible with the excursion finding "
+         "that only tails are harvestable. THIS ARTIFACT IS THE STANDING "
+         "REFERENCE for why narrative exits must be stage-scoped. "
+         "Per-hypothesis cherry-picks from these tables are a FORBIDDEN "
+         "MOVE (post-hoc fitting on tiny cells).**", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread "

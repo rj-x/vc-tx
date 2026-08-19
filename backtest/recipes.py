@@ -17,12 +17,14 @@ normalize into it unchanged):
       ("breakeven", off_pts)      # entry +/- offset; literature-adverse
                                   # caution registered (register 42d)
     target: ("fixed_pts", v) | ("atr", k, tf) | None
-    until: None | ("progress_atr", k, tf)   # arm next stage when favorable
-                                  # settled excursion >= k x ATR(tf)@entry
     exit_on / tighten_to: narrative-condition primitives (signal_watch
-      NARRATIVE_EXIT_PRIMITIVES — the one-home rule). CAPABILITY ONLY:
-      no narrative recipe may be registered until the register-42
-      excursion study's conditional cut reports.
+      NARRATIVE_EXIT_PRIMITIVES — the one-home rule). The excursion cut
+      and flip-cut gates reported 2026-08-19 (registers 42-43); the gate
+      was ruled NOT PASSED for universal flip-exits (net points is the
+      deciding currency) — R-FLIPGUARD is the ONE registered staged
+      candidate; per-hypothesis cherry-picks are a FORBIDDEN MOVE
+      (register 44).
+    until: ("progress_atr", k, tf) | ("progress_or_age", k, tf, minutes)
   Stop evaluation cadence is ALWAYS 1M, regardless of any component's TF.
 
 HONEST-FILL RULES (operator-ruled 2026-08-19; unchanged; each pinned):
@@ -62,9 +64,9 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.1"
+RECIPE_SET_VERSION = "recipe_set_v0.2"
 RECIPE_SETS = {
-    "recipe_set_v0.1": {
+    "recipe_set_v0.2": {
         # v0 four — ILLUSTRATIVE, unratified (provenance: operator design
         # examples; R-TRAIL-ATR offset a reviewer invention). ATR TFs
         # retro-annotated 15min (register 42b).
@@ -93,6 +95,27 @@ RECIPE_SETS = {
                   "stages": [{"stop": [("atr", 1.5, "15min"),
                                        ("trail_nth", 2, ("pts", 5.0),
                                         "1min")], "target": None}]},
+        # R-FLIPGUARD — the ONE staged narrative candidate (register 44,
+        # counted): flip-exit ACTIVE ONLY BEFORE the progress-arming
+        # transition. Derivation cited to the early-flip adversity (7/8
+        # contexts) and t-MFE 13-45 min findings — NOT the counterfactual
+        # cells (the per-hypothesis cherry-pick is a registered forbidden
+        # move). Arming values DERIVED-STATED (1.0xATR(15M) progress OR
+        # 45 min age), ratification pending; graded on forward accrual
+        # alongside R-OP1; ratification before any status.
+        "R-FLIPGUARD": {"provenance": "staged candidate (register 44; "
+                                      "arming values derived-stated, "
+                                      "ratification pending)",
+                        "stages": [
+                            {"stop": [("atr", 1.5, "15min"),
+                                      ("trail_nth", 2, ("pts", 5.0),
+                                       "1min")], "target": None,
+                             "exit_on": [("trend_flip",)],
+                             "until": ("progress_or_age", 1.0, "15min",
+                                       45)},
+                            {"stop": [("atr", 1.5, "15min"),
+                                      ("trail_nth", 2, ("pts", 5.0),
+                                       "1min")], "target": None}]},
     },
 }
 
@@ -200,9 +223,18 @@ def simulate(fires, env, recipe, spread):
             st = stages[stage_i]
             # stage transition (settled evaluation, before this bar)
             if st["until"] is not None and stage_i + 1 < len(stages):
-                _, k, tf = st["until"]
-                a0 = env.atr_at(tf, t0)
-                if a0 is not None and fav_ext >= k * a0:
+                u = st["until"]
+                armed = False
+                if u[0] == "progress_atr":
+                    a0 = env.atr_at(u[2], t0)
+                    armed = a0 is not None and fav_ext >= u[1] * a0
+                elif u[0] == "progress_or_age":
+                    a0 = env.atr_at(u[2], t0)
+                    armed = ((a0 is not None and fav_ext >= u[1] * a0)
+                             or (ts[j] - t0) >= u[3] * 60_000_000_000)
+                else:
+                    raise ValueError(u)
+                if armed:
                     stage_i += 1
                     st = stages[stage_i]
             # compose candidate stop = tightest of components (settled)
@@ -339,10 +371,18 @@ def build_env(instr, cfg, bars, narr=None):
 
 def run_instrument(instr):
     cfg = make_cfg({"session_model.extended_hours": True,
-                    "session_model.ladder": True})
+                    "session_model.ladder": True,
+                    "debug.structure": True})   # trend flips for R-FLIPGUARD
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
-    env = build_env(instr, cfg, bars)
+    flips, prev = [], 0
+    for e in engine.narrative.events:
+        if e["type"] == "PHASE_EVAL" and e.get("tf") == "1min":
+            t = e.get("trend", 0)
+            if t != prev and t != 0:
+                flips.append((pd.Timestamp(e["ts"]).value, t))
+            prev = t
+    env = build_env(instr, cfg, bars, narr={"trend_flip": sorted(flips)})
     fires = watch.fires + h9_fires(engine.narrative.events, cfg)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]

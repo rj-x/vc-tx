@@ -122,3 +122,24 @@ def test_twin_run_bit_identity():
     a = simulate(fires, env, r, 0.8)
     b = simulate(fires, env, r, 0.8)
     assert json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)
+
+
+def test_progress_or_age_transition_arms_by_time():
+    # no progress; stage 1 (wide stop + narrative exit) must expire by AGE
+    # after 3 min, after which the narrative event no longer exits
+    t0 = pd.Timestamp("2026-08-17 09:00", tz="UTC").value
+    bars = [(100, 100, 100, 100)] + [(100, 100.4, 99.6, 100)] * 9
+    narr = {"trend_flip": [(t0 + 6 * 60_000_000_000, -1)]}
+    eod = np.zeros(10, bool)
+    eod[-1] = True
+    r = {"stages": [
+        {"stop": [("fixed_pts", 50.0)], "target": None,
+         "exit_on": [("trend_flip",)],
+         "until": ("progress_or_age", 5.0, "15min", 3)},
+        {"stop": [("fixed_pts", 50.0)], "target": None}]}
+    tr = simulate(_fire(0, 1), _env(bars, eod=eod, narr=narr), r, 0.0)
+    assert tr[0]["reason"] == "eod"        # flip at min 6 ignored: stage 2
+    # and the mirror: flip BEFORE arming exits
+    narr2 = {"trend_flip": [(t0 + 2 * 60_000_000_000, -1)]}
+    tr2 = simulate(_fire(0, 1), _env(bars, eod=eod, narr=narr2), r, 0.0)
+    assert tr2[0]["reason"] == "narrative"
