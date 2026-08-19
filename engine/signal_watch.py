@@ -27,6 +27,12 @@ DUAL_GRADED = {"S-H7"}            # graded in BOTH modes (register 36)
 # ARE the key row's fires, copied — never independently computed, never
 # double-counted as two signals
 DERIVED_FIRES = {"S-H8": "S-H2"}
+# narrative-condition primitives a recipe stage may reference (register 42e;
+# the one-home rule: primitives are DECLARED here, grammar validates against
+# this set). CAPABILITY ONLY until the excursion study's conditional cut
+# reports — no narrative recipe may be registered before then.
+NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
+                             "phase_transition", "opposing_signal_fire")
 
 
 def _s_h1(bar, ectx, sctx, feats, cores, structural, qualified, prev):

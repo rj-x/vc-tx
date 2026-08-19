@@ -204,3 +204,15 @@ is emitted when the ledger's last lifecycle event is a START without STOP;
 the minute; decision-coverage gaps anchor on the predecessor's last activity
 (STOP.last_processed, else checkpoint, else predecessor warm_through) — never
 this run's warm_through, since a post-crash sync can erase downtime.
+
+## Component map (one line per module; artifacts in reports/scoreboard/ unless noted)
+
+- `engine/signal_watch.py` — THE one home for hypothesis firing conditions + narrative primitives; passive observer, invariance-pinned; no artifact (fires feed the readers).
+- `backtest/scoreboard.py` — signal scoreboard (precision/coverage/earliness/payoff vs per-context chance) → `hypothesis_performance.md` + `signal_scoreboard.json` + `READING_GUIDE.md`.
+- `backtest/recipes.py` — recipe layer, grammar v1 (composed/staged stops, honest fills) → `recipe_performance.md|.json`.
+- `backtest/excursions.py` — MFE/MAE/time-to-MFE profiles + narrative-conditional cut → `excursion_profiles.md|.json`.
+- `backtest/sessions.py` — register-37 session partition (native-tz, DST-proof); no artifact.
+- `backtest/forward_migration.py` — forward-zone migration readout → `reports/forward/`.
+- `backtest/campaign.py` — the weekly evidential pipeline → `reports/backtest_v1/` + `backtest_v1.md`.
+- `scripts/param_registry.py` — canonical parameter registry generator → `docs/parameter_registry.md` (regen rides the campaign; pinned vs HEAD).
+- `docs/hypothesis_register.md` — THE hypothesis list (H1–H12) · `docs/sense_organ_queue.md` — build queue · `docs/lockbox_policy.md` + `docs/hypothesis_lifecycle.md` — zone + stage doctrine · `docs/location_apparatus.md` — location mechanics.

@@ -1,30 +1,43 @@
-"""Recipe layer v0 — grammar + versioned sets (register 41, operator order
-2026-08-19). OBSERVATIONAL ONLY: nothing here touches paper, the ledger,
-frozen_v1, labels, or criteria. Harvests the signal scoreboard's directional
-fires under explicit exit recipes and reports POINTS, spread-charged.
+"""Recipe layer — grammar v1 (register 41/42). OBSERVATIONAL ONLY:
+nothing here touches paper, the ledger, frozen_v1, labels, or criteria.
 
-GRAMMAR (the engine capability — any stop x target composition):
-  stops   : ("fixed_pts", v) | ("atr", k)            [k x ATR(15M) at entry]
-          | ("trail_nth", N, ("pts"|"atr", off))     [beyond the Nth previous
-                                                      settled 1M bar's extreme
-                                                      +/- offset; RATCHET ONLY]
-  targets : ("fixed_pts", v) | ("atr", k) | None     [None = trail-out only]
-  entry   : next 1M bar open after a directional fire; ONE position per
-            hypothesis per instrument (per recipe); spread charged per trade
-            (median in-cash spread measured from the instrument's own store,
-            per the uk100 spread-by-bin template).
+GRAMMAR v1 (register 42; supersedes v0's single-stop form — v0 recipes
+normalize into it unchanged):
+  A recipe is ORDERED STAGES. Each stage:
+    stop components (>=0, COMPOSED: effective stop = tightest, RATCHET-ONLY,
+    evaluated on settled bars):
+      ("fixed_pts", v)
+      ("atr", k, tf)              # k x ATR(tf), tf DECLARED per component —
+                                  # any ladder rung 1M/3M/5M/15M/30M/1H,
+                                  # no implicit default
+      ("trail_nth", N, (off_kind, off[, off_tf]), bar_tf)
+                                  # beyond the Nth previous SETTLED bar of
+                                  # bar_tf (the management TF); offset in
+                                  # pts or k x ATR(off_tf)
+      ("breakeven", off_pts)      # entry +/- offset; literature-adverse
+                                  # caution registered (register 42d)
+    target: ("fixed_pts", v) | ("atr", k, tf) | None
+    until: None | ("progress_atr", k, tf)   # arm next stage when favorable
+                                  # settled excursion >= k x ATR(tf)@entry
+    exit_on / tighten_to: narrative-condition primitives (signal_watch
+      NARRATIVE_EXIT_PRIMITIVES — the one-home rule). CAPABILITY ONLY:
+      no narrative recipe may be registered until the register-42
+      excursion study's conditional cut reports.
+  Stop evaluation cadence is ALWAYS 1M, regardless of any component's TF.
 
-HONEST-FILL RULES (operator-ruled 2026-08-19; part of every recipe's
-definition; printed in the artifact header):
+HONEST-FILL RULES (operator-ruled 2026-08-19; unchanged; each pinned):
   1. Intrabar stop+target both reachable -> STOP fills, always.
   2. Gap through a level -> filled at the gapped (worse) price (the open).
-  3. Trailing stops RATCHET ONLY and are evaluated on settled bars.
+  3. Trailing/composed stops RATCHET ONLY, evaluated on settled bars.
   4. EOD flat at each instrument's NATIVE session close.
 
-Versioned sets: a run's artifact states its set version; additions or value
-changes only by re-registration, counted in the trial log. recipe_set_v0's
-VALUES ARE ILLUSTRATIVE — awaiting operator ratification (registry-flagged
-like the criteria numbers); discuss on the working system before any v1.
+Sets are versioned registry objects; a run's artifact states its set
+version; additions/changes only by re-registration, counted in the trial
+log. PROVENANCE per recipe (register 42 item 4): v0's R-FIX/R-ATR/R-TRAIL
+values originated as operator examples in the design discussion, never
+ratified; R-TRAIL-ATR's 0.5x offset was a reviewer invention with no
+basis. R-OP1 is the FIRST RATIFIED-PROVENANCE recipe (operator-specified
+2026-08-19; its ATR TF was unstated and 15M is an ASSUMPTION, flagged).
 """
 
 import argparse
@@ -39,108 +52,227 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
-from engine.signal_watch import AGNOSTIC_ROWS
+from engine.signal_watch import AGNOSTIC_ROWS, NARRATIVE_EXIT_PRIMITIVES
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.sessions import session_of
 from backtest.scoreboard import (PAIR_OF, PROVISIONAL_INSTRS,
                                  PROVISIONAL_STAMP, _replay, _series,
                                  _atr15, h9_fires, make_cfg)
-from engine.signal_watch import (DERIVED_FIRES, DUAL_GRADED,
-                                 FIRING_CONDITIONS, SignalWatch)
+from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0"
+RECIPE_SET_VERSION = "recipe_set_v0.1"
 RECIPE_SETS = {
-    "recipe_set_v0": {
-        # ILLUSTRATIVE defaults — awaiting operator ratification
-        "R-FIX": {"stop": ("fixed_pts", 10.0),
-                  "target": ("fixed_pts", 20.0)},
-        "R-ATR": {"stop": ("atr", 1.5), "target": ("atr", 3.0)},
-        "R-TRAIL": {"stop": ("trail_nth", 6, ("pts", 0.0)), "target": None},
-        "R-TRAIL-ATR": {"stop": ("trail_nth", 6, ("atr", 0.5)),
-                        "target": None},
+    "recipe_set_v0.1": {
+        # v0 four — ILLUSTRATIVE, unratified (provenance: operator design
+        # examples; R-TRAIL-ATR offset a reviewer invention). ATR TFs
+        # retro-annotated 15min (register 42b).
+        "R-FIX": {"provenance": "illustrative-unratified",
+                  "stages": [{"stop": [("fixed_pts", 10.0)],
+                              "target": ("fixed_pts", 20.0)}]},
+        "R-ATR": {"provenance": "illustrative-unratified",
+                  "stages": [{"stop": [("atr", 1.5, "15min")],
+                              "target": ("atr", 3.0, "15min")}]},
+        "R-TRAIL": {"provenance": "illustrative-unratified",
+                    "stages": [{"stop": [("trail_nth", 6, ("pts", 0.0),
+                                          "1min")], "target": None}]},
+        "R-TRAIL-ATR": {"provenance": "illustrative-unratified "
+                                      "(offset: reviewer invention)",
+                        "stages": [{"stop": [("trail_nth", 6,
+                                              ("atr", 0.5, "15min"),
+                                              "1min")], "target": None}]},
+        # R-OP1 — operator-specified 2026-08-19 (register 42 item 6):
+        # initial 1.5xATR (TF ASSUMED 15min — unstated, flagged) composed
+        # with a 5.0pt trail beyond the 2nd-previous settled 1M bar;
+        # tighter-of, ratchet-only, no target, trail live from entry.
+        # FLAG: the 5.0pt offset is instrument-absolute; cross-instrument
+        # v1 may want it ATR-relative — operator's later call.
+        "R-OP1": {"provenance": "operator-ratified 2026-08-19 "
+                                "(ATR TF assumed 15min, flagged)",
+                  "stages": [{"stop": [("atr", 1.5, "15min"),
+                                       ("trail_nth", 2, ("pts", 5.0),
+                                        "1min")], "target": None}]},
     },
 }
 
 
-def _stop_level(spec, entry, d, atr0):
-    kind = spec[0]
+def _norm_component(c):
+    kind = c[0]
     if kind == "fixed_pts":
-        return entry - d * spec[1]
+        return {"kind": "fixed_pts", "v": float(c[1])}
     if kind == "atr":
-        return entry - d * spec[1] * atr0
-    return None                            # trail_nth: set per bar
+        if len(c) < 3:
+            raise ValueError("ATR component requires a declared TF "
+                             "(register 42b: no implicit default)")
+        return {"kind": "atr", "k": float(c[1]), "tf": c[2]}
+    if kind == "trail_nth":
+        off = c[2]
+        if off[0] == "atr" and len(off) < 3:
+            raise ValueError("ATR offset requires a declared TF")
+        return {"kind": "trail_nth", "n": int(c[1]),
+                "off_kind": off[0], "off": float(off[1]),
+                "off_tf": off[2] if off[0] == "atr" else None,
+                "bar_tf": c[3]}
+    if kind == "breakeven":
+        return {"kind": "breakeven", "off": float(c[1])}
+    raise ValueError(c)
 
 
-def _target_level(spec, entry, d, atr0):
+def normalize(recipe):
+    stages = []
+    for st in recipe["stages"]:
+        for cond in st.get("exit_on", []) + st.get("tighten_to", []):
+            if cond[0] not in NARRATIVE_EXIT_PRIMITIVES:
+                raise ValueError(f"unregistered narrative primitive {cond}")
+        stages.append({
+            "stop": [_norm_component(c) for c in st.get("stop", [])],
+            "target": st.get("target"),
+            "until": st.get("until"),
+            "exit_on": st.get("exit_on", []),
+        })
+    return stages
+
+
+class Env:
+    """Per-instrument simulation environment: 1M arrays, per-rung settled
+    bars, per-rung ATR (trailing mean TR over context.atr_period of that
+    rung's bars), EOD flags, narrative event streams (optional)."""
+
+    def __init__(self, arrs1m, atr_by_tf, rung_bars, eod_flag, narr=None):
+        self.ts, self.o, self.h, self.l, self.c = arrs1m
+        self.atr_by_tf = atr_by_tf          # tf -> sorted {close_ts: atr}
+        self.rung = rung_bars               # tf -> (ts_close_ns, high, low)
+        self.eod = eod_flag
+        self.narr = narr or {}              # key -> sorted [(ts_ns, dir)]
+
+    def atr_at(self, tf, t_ns):
+        d = self.atr_by_tf[tf]
+        keys = d["keys"]
+        i = np.searchsorted(keys, t_ns, side="right") - 1
+        return d["vals"][i] if i >= 0 else None
+
+    def trail_ref(self, tf, n, j):
+        """Extreme of the Nth previous SETTLED bar of `tf` at 1M bar j.
+        Settled = rung close <= this 1M bar's open."""
+        rts, rh, rl = self.rung[tf]
+        open_ns = self.ts[j] - 60_000_000_000
+        s = np.searchsorted(rts, open_ns, side="right") - 1
+        ref = s - (n - 1)
+        if ref < 0:
+            return None, None
+        return rh[ref], rl[ref]
+
+
+def _target_level(spec, entry, d, env, t0):
     if spec is None:
         return None
-    kind = spec[0]
-    if kind == "fixed_pts":
+    if spec[0] == "fixed_pts":
         return entry + d * spec[1]
-    if kind == "atr":
-        return entry + d * spec[1] * atr0
+    if spec[0] == "atr":
+        a = env.atr_at(spec[2], t0)
+        return None if a is None else entry + d * spec[1] * a
     raise ValueError(spec)
 
 
-def simulate(fires, arrs, atr_at, recipe, spread, eod_flag):
-    """One recipe over one hypothesis's fires. arrs = (ts, o, h, l, c);
-    eod_flag[j] True iff bar j is the last bar of its native cash session.
-    Returns trade dicts. Deterministic (twin-run bit-identity pinned)."""
-    ts, o, h, l, c = arrs
+def simulate(fires, env, recipe, spread):
+    """v1 engine. Deterministic (twin-run bit-identity pinned)."""
+    stages = normalize(recipe)
+    ts, o, h, l, c = env.ts, env.o, env.h, env.l, env.c
     n = len(ts)
     trades = []
-    open_until = -1                        # one position per hypothesis
+    open_until = -1
     for f in sorted(fires, key=lambda x: x["ts"].value):
         fi = np.searchsorted(ts, f["ts"].value, side="right") - 1
-        ei = fi + 1                        # entry = next bar open
+        ei = fi + 1
         if fi < 0 or ei >= n or ei <= open_until:
             continue
         d = f["dir"]
         entry = o[ei]
-        atr0 = atr_at(pd.Timestamp(ts[ei], tz="UTC"))
-        if atr0 is None:
-            continue
-        sspec, tspec = recipe["stop"], recipe["target"]
-        trail = sspec[0] == "trail_nth"
-        stop = _stop_level(sspec, entry, d, atr0)
-        target = _target_level(tspec, entry, d, atr0)
+        t0 = ts[ei]
+        # static component levels resolved at entry
+        stage_i = 0
+        eff_stop = None
         exit_px = exit_ts = reason = None
+        fav_ext = -np.inf                   # settled favorable excursion
         j = ei
         while j < n:
-            if trail:
-                N, (okind, off) = sspec[1], sspec[2]
-                ref = j - N
-                if ref >= 0:
-                    off_pts = off * atr0 if okind == "atr" else off
-                    cand = (l[ref] - off_pts) if d == 1 else (h[ref] + off_pts)
-                    # rule 3: ratchet only, settled bars only
-                    stop = cand if stop is None else (
-                        max(stop, cand) if d == 1 else min(stop, cand))
-            if stop is not None:
-                if (d == 1 and o[j] <= stop) or (d == -1 and o[j] >= stop):
-                    exit_px, reason = o[j], "stop_gap"     # rule 2
+            st = stages[stage_i]
+            # stage transition (settled evaluation, before this bar)
+            if st["until"] is not None and stage_i + 1 < len(stages):
+                _, k, tf = st["until"]
+                a0 = env.atr_at(tf, t0)
+                if a0 is not None and fav_ext >= k * a0:
+                    stage_i += 1
+                    st = stages[stage_i]
+            # compose candidate stop = tightest of components (settled)
+            cands = []
+            for comp in st["stop"]:
+                if comp["kind"] == "fixed_pts":
+                    cands.append(entry - d * comp["v"])
+                elif comp["kind"] == "atr":
+                    a = env.atr_at(comp["tf"], t0)
+                    if a is not None:
+                        cands.append(entry - d * comp["k"] * a)
+                elif comp["kind"] == "breakeven":
+                    cands.append(entry + d * comp["off"])
+                elif comp["kind"] == "trail_nth":
+                    rh, rl = env.trail_ref(comp["bar_tf"], comp["n"], j)
+                    if rh is not None:
+                        off = comp["off"]
+                        if comp["off_kind"] == "atr":
+                            a = env.atr_at(comp["off_tf"], t0)
+                            off = 0.0 if a is None else off * a
+                        cands.append((rl - off) if d == 1 else (rh + off))
+            if cands:
+                tight = max(cands) if d == 1 else min(cands)
+                # rule 3: the EFFECTIVE stop ratchets only
+                eff_stop = tight if eff_stop is None else (
+                    max(eff_stop, tight) if d == 1 else min(eff_stop, tight))
+            target = _target_level(st["target"], entry, d, env, t0)
+            # narrative exits: settled events inside the PREVIOUS bar
+            narr_hit = False
+            for cond in st["exit_on"]:
+                key = cond[0] if isinstance(cond, (list, tuple)) else cond
+                evs = env.narr.get(key, [])
+                lo_ns, hi_ns = ts[j] - 60_000_000_000, ts[j]
+                a = np.searchsorted([e[0] for e in evs], lo_ns, side="right")
+                for e in evs[a:]:
+                    if e[0] > hi_ns:
+                        break
+                    if e[1] == 0 or e[1] == -d:
+                        narr_hit = True
+                        break
+            if eff_stop is not None:
+                if (d == 1 and o[j] <= eff_stop) or (d == -1
+                                                     and o[j] >= eff_stop):
+                    exit_px, reason = o[j], "stop_gap"      # rule 2
                     break
             if target is not None:
-                if (d == 1 and o[j] >= target) or (d == -1 and o[j] <= target):
-                    exit_px, reason = o[j], "target_gap"   # rule 2
+                if (d == 1 and o[j] >= target) or (d == -1
+                                                   and o[j] <= target):
+                    exit_px, reason = o[j], "target_gap"    # rule 2
                     break
-            stop_hit = stop is not None and (
-                l[j] <= stop if d == 1 else h[j] >= stop)
+            stop_hit = eff_stop is not None and (
+                l[j] <= eff_stop if d == 1 else h[j] >= eff_stop)
             tgt_hit = target is not None and (
                 h[j] >= target if d == 1 else l[j] <= target)
-            if stop_hit:                                   # rule 1: stop wins
-                exit_px, reason = stop, "stop"
+            if stop_hit:                                    # rule 1
+                exit_px, reason = eff_stop, "stop"
                 break
             if tgt_hit:
                 exit_px, reason = target, "target"
                 break
-            if eod_flag[j]:                                # rule 4
+            if narr_hit:                    # settled-bar close exit
+                exit_px, reason = c[j], "narrative"
+                break
+            if env.eod[j]:                                  # rule 4
                 exit_px, reason = c[j], "eod"
                 break
+            fav_ext = max(fav_ext, (h[j] - entry) if d == 1
+                          else (entry - l[j]))
             j += 1
-        if exit_px is None:                # data ran out: mark at last close
+        if exit_px is None:
             j = n - 1
             exit_px, reason = c[j], "end_of_data"
         pts = (exit_px - entry) * d - spread
@@ -155,7 +287,6 @@ def simulate(fires, arrs, atr_at, recipe, spread, eod_flag):
 
 
 def _eod_flags(bars, slug):
-    """bar j is the last bar of its NATIVE cash session (rule 4)."""
     import store as store_mod
     a, b = store_mod.SESSIONS[slug]
     tz = store_mod.SESSION_TZ.get(slug, "Europe/London")
@@ -178,41 +309,56 @@ def _spread_median(slug):
     return round(float(s.median()), 2) if len(s) else 0.0
 
 
+def _rung_data(bars_dict, atr_period):
+    """Per-rung settled arrays + ATR maps for every available TF."""
+    atr_by_tf, rung = {}, {}
+    for key, blist in bars_dict.items():
+        tf = key.split(":")[-1]
+        live = [b for b in blist if not b.is_stub]
+        if not live:
+            continue
+        rung[tf] = (np.array([b.ts.value for b in live]),
+                    np.array([b.high for b in live]),
+                    np.array([b.low for b in live]))
+        amap = _atr15(live, atr_period)
+        keys = np.array([k.value for k in sorted(amap)])
+        vals = [amap[k] for k in sorted(amap)]
+        atr_by_tf[tf] = {"keys": keys, "vals": vals}
+    return atr_by_tf, rung
+
+
+def build_env(instr, cfg, bars, narr=None):
+    b1m_all = bars[cfg.mtf.execution_tf]
+    b1m = [x for x in b1m_all if not x.is_stub]
+    ts, cl, hi, lo, _segs, _b = _series(b1m_all)
+    op = np.array([x.open for x in b1m])
+    atr_by_tf, rung = _rung_data(bars, cfg.context.atr_period)
+    eod = _eod_flags(b1m, instr)
+    return Env((ts, op, hi, lo, cl), atr_by_tf, rung, eod, narr)
+
+
 def run_instrument(instr):
     cfg = make_cfg({"session_model.extended_hours": True,
                     "session_model.ladder": True})
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
-    b1m = [x for x in bars[cfg.mtf.execution_tf] if not x.is_stub]
-    ts, cl, hi, lo, segs, _b = _series(bars[cfg.mtf.execution_tf])
-    op = np.array([x.open for x in b1m])
-    atr = _atr15(bars[cfg.mtf.signal_tf], cfg.context.atr_period)
-    atr_ts = sorted(atr)
-
-    def atr_at(t):
-        i = np.searchsorted(atr_ts, t, side="right") - 1
-        return atr[atr_ts[i]] if i >= 0 else None
-
+    env = build_env(instr, cfg, bars)
     fires = watch.fires + h9_fires(engine.narrative.events, cfg)
-    # directional rows only: no either-dir supplements, no agnostic rows
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
-    eod = _eod_flags(b1m, instr)
     spread = _spread_median(instr)
     boundary, gl = lockbox_boundary(), zones()["go_live"]
-    arrs = (ts, op, hi, lo, cl)
     rset = RECIPE_SETS[RECIPE_SET_VERSION]
     out = {"instrument": instr, "pair": PAIR_OF.get(instr, instr),
            "status": ("provisional" if instr in PROVISIONAL_INSTRS
                       else "canonical"),
-           "spread_charged_pts": spread,
-           "recipes": {}}
+           "spread_charged_pts": spread, "recipes": {}}
     names = sorted({f["name"] for f in fires})
     for rname, recipe in rset.items():
-        rows = {}
+        rows = {"_provenance": recipe["provenance"]}
         for hname in names:
             hf = [f for f in fires if f["name"] == hname]
-            trades = simulate(hf, arrs, atr_at, recipe, spread, eod)
+            trades = simulate(hf, env, recipe, spread)
             for wname, sel in (
                     ("backtest", lambda t: pd.Timestamp(t["entry_ts"])
                      < boundary),
@@ -240,26 +386,23 @@ def run_instrument(instr):
 
 
 def _emit(results, head):
-    hdr = ["# Recipe Performance — points rollup (GENERATED by "
-           "backtest.recipes)", "",
-           f"Engine `{head[:9]}` · recipe set **{RECIPE_SET_VERSION}** "
-           "(values ILLUSTRATIVE — awaiting operator ratification; changes "
-           "only by re-registration, counted in the trial log).",
-           "",
-           "**OBSERVATIONAL ONLY** — touches nothing: not paper, not the "
-           "ledger, not frozen_v1, not labels, not criteria. Directional "
-           "fires only; same fires as the signal scoreboard, four harvests. "
-           "Sealed windows and the lockbox span excluded. Points are "
-           "mid-price MINUS each instrument's measured median cash spread "
-           "per trade — idealized, not tradeable.",
-           "",
-           "**Honest-fill rules (operator-ruled 2026-08-19, part of every "
-           "recipe's definition):** (1) intrabar stop+target both reachable "
-           "-> stop fills, always; (2) gap through a level -> filled at the "
-           "gapped (worse) price; (3) trailing stops ratchet only, "
-           "evaluated on settled bars; (4) EOD flat at each instrument's "
-           "native session close.", ""]
-    L = list(hdr)
+    L = ["# Recipe Performance — points rollup (GENERATED by "
+         "backtest.recipes)", "",
+         f"Engine `{head[:9]}` · recipe set **{RECIPE_SET_VERSION}** "
+         "(grammar v1, register 42). Per-recipe PROVENANCE printed in every "
+         "table; illustrative values remain unratified; R-OP1 is "
+         "operator-ratified (ATR TF assumed 15M, flagged).",
+         "",
+         "**OBSERVATIONAL ONLY** — touches nothing: not paper, not the "
+         "ledger, not frozen_v1, not labels, not criteria. Directional "
+         "fires only; same fires as the signal scoreboard. Sealed windows "
+         "and the lockbox span excluded. Points are mid-price minus each "
+         "instrument's measured median cash spread per trade — idealized.",
+         "",
+         "**Honest-fill rules (operator-ruled, part of every recipe's "
+         "definition):** (1) both reachable -> stop always; (2) gap -> "
+         "gapped (worse) price; (3) composed/trailing stops ratchet only, "
+         "settled bars; (4) EOD flat at native session close.", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread charged "
@@ -268,14 +411,15 @@ def _emit(results, head):
             L += [f"> {PROVISIONAL_STAMP}"]
         L.append("")
         for wname in ("backtest", "forward"):
-            # page-0 rollup: per recipe, hypotheses x sessions (+total)
             for rname, rows in res["recipes"].items():
-                have = {h: w[wname] for h, w in rows.items() if wname in w}
+                have = {h: w[wname] for h, w in rows.items()
+                        if h != "_provenance" and wname in w}
                 if not have:
                     continue
                 sessions = sorted({s for v in have.values()
                                    for s in v["net_by_session"]})
-                L += [f"### {inst} / {wname} / {rname} — net points",
+                L += [f"### {inst} / {wname} / {rname} "
+                      f"[{rows['_provenance']}] — net points",
                       "", "| H | " + " | ".join(sessions)
                       + " | TOTAL | n | win% | median |",
                       "|---|" + "---|" * (len(sessions) + 4)]
@@ -283,32 +427,29 @@ def _emit(results, head):
                     v = have[hname]
                     cells = [str(v["net_by_session"].get(s, "—"))
                              for s in sessions]
-                    disp = hname.replace("S-", "")
-                    L.append(f"| {disp} | " + " | ".join(cells)
+                    L.append(f"| {hname.replace('S-', '')} | "
+                             + " | ".join(cells)
                              + f" | **{v['net_pts']}** | {v['n']} "
                              f"| {v['win_rate_pct']}% | {v['median_pts']} |")
                 L.append("")
-            # recipe-comparison line per hypothesis: same fires, harvests
             names = sorted({h for r in res["recipes"].values() for h in r
-                            if wname in r.get(h, {})})
+                            if h != "_provenance" and wname in r.get(h, {})})
             if names:
-                L += [f"### {inst} / {wname} — recipe comparison "
-                      f"(net pts | n; same fires, four harvests)", ""]
                 rnames = list(res["recipes"])
-                L += ["| H | " + " | ".join(rnames) + " |",
+                L += [f"### {inst} / {wname} — recipe comparison "
+                      f"(net pts (n); same fires)", "",
+                      "| H | " + " | ".join(rnames) + " |",
                       "|---|" + "---|" * len(rnames)]
                 for hname in names:
                     cells = []
                     for rname in rnames:
                         v = res["recipes"][rname].get(hname, {}).get(wname)
-                        cells.append(f"{v['net_pts']:+.0f} | " if False else
-                                     (f"{v['net_pts']:+.0f} ({v['n']})"
-                                      if v else "—"))
+                        cells.append(f"{v['net_pts']:+.0f} ({v['n']})"
+                                     if v else "—")
                     L.append(f"| {hname.replace('S-', '')} | "
                              + " | ".join(cells) + " |")
                 L.append("")
-    L += ["---", "", "Cards detail (biggest win/loss, durations, full "
-          "per-session splits) in recipe_performance.json (same run)."]
+    L += ["---", "", "Cards detail in recipe_performance.json (same run)."]
     with open(os.path.join(OUT, "recipe_performance.md"), "w") as f:
         f.write("\n".join(L))
 
@@ -325,8 +466,9 @@ def main():
     for instr in a.instr:
         print(f"# recipes: {instr} ...", file=sys.stderr)
         results.append(run_instrument(instr))
-    art = {"STAMP": ("OBSERVATIONAL recipe layer v0 — never validation; "
-                     "idealized fills per the honest-fill rules"),
+    art = {"STAMP": ("OBSERVATIONAL recipe layer (grammar v1) — never "
+                     "validation; idealized fills per the honest-fill "
+                     "rules"),
            "engine_commit": head, "recipe_set": RECIPE_SET_VERSION,
            "set_definition": {k: str(v) for k, v in
                               RECIPE_SETS[RECIPE_SET_VERSION].items()},
