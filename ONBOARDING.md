@@ -540,6 +540,19 @@ set still growing toward fold support).
    signal). H11 +2.3pp marginal as self-predicted; H5/H12 zero July
    fires (demanding conjunctions, accruing); H6's 480-bar baseline
    window = implementer constant, registry-flagged.
+23. Full-board first run read (2026-08-19 evening, `0cadcba`):
+   Q-H1-GEN tracking YES (ger +16.5pp/n31, us30 +12.2/n40, nas +21/n14
+   forward; home at-chance) — GRADE GATED on validation evenings
+   (episodes at ≥30 threshold; "post-validation" clause outstanding).
+   Q-H7-GEO tracking AGAINST (Europe flat fwd, us30 positive). H2
+   forward anomaly recorded as dated observation, no question minted
+   (precision + on all 4 fwd windows AND R-ATR nets + on all 4;
+   backtest flat; memory-not-evidence until the ≥30 review). Recipes
+   fwd: sea of red; fire-rate×spread dominates (H11-us30 −406 of −721 =
+   spread — conditioner, never trigger); FLIPGUARD-vs-OP1 = wash so
+   far, accruing. Convergence noted: all three anomalies = "can the
+   board see August≠July?" — the Sep 1 sealed window is the separating
+   instrument. Union coverage fwd 72–84% with 12 live.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
