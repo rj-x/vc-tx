@@ -37,7 +37,8 @@ from backtest.excursions import WINDOW_NS, _dist, _narr_streams
 from backtest.recipes import (RECIPE_SETS, RECIPE_SET_VERSION, build_env,
                               simulate, _spread_median)
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
-                                 _replay, _series, h9_fires, make_cfg)
+                                 _replay, _series, event_derived_fires,
+                                 make_cfg)
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
@@ -60,7 +61,7 @@ def run_instrument(instr):
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     env = build_env(instr, cfg, bars)
     ts, o, h, l, c = env.ts, env.o, env.h, env.l, env.c
-    fires = watch.fires + h9_fires(engine.narrative.events, cfg)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     narr = _narr_streams(engine.narrative.events, fires)

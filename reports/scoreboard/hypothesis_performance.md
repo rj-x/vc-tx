@@ -1,34 +1,38 @@
 # Hypothesis Performance — Per-Instrument
 
-Engine `46c3bde55` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
+Engine `af2499e34` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
 
 ---
 
 # uk100 (uk100fut) — CANONICAL
 
-Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-19 12:55:00+00:00. Volume type: real futures volume (step-zero audit).
+Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-19 22:09:00+00:00. Volume type: real futures volume (step-zero audit).
 
 ## Summary Matrix (page 1)
 
-Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `af2499e34` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
 | H | label | backtest whole | backtest london | forward whole | forward london |
 |---|---|---|---|---|---|
-| *context* | | 180 ep; chance 23.6%dir/44.3%either | 53 ep; chance 24.9%dir/47.1%either | 29 ep; chance 27.1%dir/48.2%either | 7 ep; chance 25.2%dir/46.4%either |
-| H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+6.9pp (7/22) net+133/med+3.0 | (°·+0.7pp (5/18) net-27/med-1.0) | (°▼-5.2pp (1/5) net-26/med-9.0) |
-| H2 | promote-candidate | ·+1.2pp (86/347) net+781/med+1.5 | ▲+6.3pp (25/80) net+521/med+9.2 | ▲+8.4pp (27/76) net-65/med-0.8 | (°▼-9.4pp (3/19) net-19/med-2.5) |
-| H3 | keep-watching | — | — | (°▲+22.9pp (2/4) net+8/med+0.3) | (°▲+24.8pp (1/2) net+8/med+3.8) |
+| *context* | | 180 ep; chance 23.6%dir/44.3%either | 53 ep; chance 24.9%dir/47.1%either | 31 ep; chance 25.1%dir/44.8%either | 7 ep; chance 26.8%dir/49.2%either |
+| H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+6.9pp (7/22) net+133/med+3.0 | ·+1.0pp (6/23) net-5/med-0.8 | (°▲+13.2pp (2/5) net-4/med-1.0) |
+| H2 | promote-candidate | ·+1.2pp (86/347) net+781/med+1.5 | ▲+6.3pp (25/80) net+521/med+9.2 | ▲+3.9pp (27/93) net-68/med-0.8 | (°▼-11.0pp (3/19) net-27/med-2.5) |
+| H3 | keep-watching | — | — | (°▲+14.9pp (2/5) net+8/med-0.2) | (°▲+23.2pp (1/2) net+8/med+3.8) |
 | H4 | keep-watching | (°▼-23.6pp (0/7) net+14/med+0.5) | (°▼-24.9pp (0/1) net+6/med+5.5) | — | — |
-| H7 | keep-watching | ▲+5.9pp (33/112) net+7/med+2.8 | ·+1.9pp (11/41) net-217/med+2.7 | ▼-8.9pp (4/22) net+4/med+1.1 | (°·-0.2pp (3/12) net-24/med-5.2) |
-| H7 (either-dir) | keep-watching | ▲+7.5pp (58/112) | ·+1.7pp (20/41) | ▼-11.8pp (8/22) | (°▲+3.6pp (6/12)) |
-| H8 | keep-watching | ·+1.8pp (160/347) | ▲+5.4pp (42/80) | ·-0.8pp (36/76) | (°▼-25.3pp (4/19)) |
-| H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.6pp (5/11) net+108/med+12.5) | (°▼-18.8pp (1/12) net-18/med-3.1) | — |
-| H10 | deprioritize | ▼-4.8pp (55/293) net-240/med-1.4 | ▲+2.4pp (18/66) net-62/med+1.9 | ▼-19.2pp (6/76) net-220/med-3.5 | (°▼-15.2pp (1/10) net+27/med+4.8) |
-| **union coverage** | | 52.2% (94/180) | 47.2% (25/53) | 79.3% (23/29) | 85.7% (6/7) |
+| H5 | keep-watching | — | — | — | — |
+| H6 | keep-watching | ▲+22.2pp (27/59) net+391/med+5.7 | ▲+33.2pp (18/31) net+282/med+16.0 | (°▲+29.4pp (6/11) net+75/med+7.0) | (°▲+23.2pp (3/6) net+56/med+10.1) |
+| H7 | keep-watching | ▲+5.9pp (33/112) net+7/med+2.8 | ·+1.9pp (11/41) net-217/med+2.7 | ▼-8.4pp (4/24) net+7/med+1.1 | (°·-1.8pp (3/12) net-24/med-5.2) |
+| H7 (either-dir) | keep-watching | ▲+7.5pp (58/112) | ·+1.7pp (20/41) | ▼-11.5pp (8/24) | (°·+0.8pp (6/12)) |
+| H8 | keep-watching | ·+1.8pp (160/347) | ▲+5.4pp (42/80) | ▼-2.9pp (39/93) | (°▼-12.4pp (7/19)) |
+| H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.6pp (5/11) net+108/med+12.5) | (°▼-16.8pp (1/12) net-18/med-3.1) | — |
+| H10 | deprioritize | ▼-4.8pp (55/293) net-240/med-1.4 | ▲+2.4pp (18/66) net-62/med+1.9 | ▼-17.3pp (6/77) net-227/med-3.5 | (°▼-16.8pp (1/10) net+27/med+4.8) |
+| H11 | keep-watching | ▲+2.3pp (82/316) net-647/med-2.4 | ·-1.3pp (35/148) net+250/med-0.6 | ·-1.4pp (14/59) net+199/med+4.3 | (°▼-17.1pp (3/31) net+128/med+4.8) |
+| H12 | keep-watching | — | — | — | — |
+| **union coverage** | | 56.7% (102/180) | 52.8% (28/53) | 83.9% (26/31) | 85.7% (6/7) |
 
-Not graded: H5 disabled; H6 definition-pending; H11 definition-pending; H12 definition-pending — see register entries.
+Not graded:  — see register entries.
 
 ## Hypothesis Cards (page 2)
 
@@ -40,17 +44,17 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ·-0.4pp (16/69) net+194/med+2.8 | (°·+0.7pp (5/18) net-27/med-1.0) |
-| london | ▲+6.9pp (7/22) net+133/med+3.0 | (°▼-5.2pp (1/5) net-26/med-9.0) |
-| overlap | (°▲+23.9pp (1/2) net+35/med+17.7) | (°▼-33.8pp (0/1) net-0/med-0.3) |
-| ny_only | ▲+8.0pp (4/22) net+17/med+1.6 | (°▼-11.0pp (0/1) net-1/med-0.8) |
-| dead | (°▲+7.4pp (3/12) net+30/med+1.1) | (°▲+33.5pp (1/2) net+3/med+1.7) |
-| asia | (°▼-23.4pp (1/11) net-22/med-2.6) | (°▼-8.2pp (3/9) net-3/med-1.0) |
+| whole | ·-0.4pp (16/69) net+194/med+2.8 | ·+1.0pp (6/23) net-5/med-0.8 |
+| london | ▲+6.9pp (7/22) net+133/med+3.0 | (°▲+13.2pp (2/5) net-4/med-1.0) |
+| overlap | (°▲+23.9pp (1/2) net+35/med+17.7) | (°▼-26.5pp (0/1) net-0/med-0.3) |
+| ny_only | ▲+8.0pp (4/22) net+17/med+1.6 | (°▼-8.5pp (0/6) net-1/med+0.0) |
+| dead | (°▲+7.4pp (3/12) net+30/med+1.1) | (°▲+35.2pp (1/2) net+3/med+1.7) |
+| asia | (°▼-23.4pp (1/11) net-22/med-2.6) | (°▼-8.1pp (3/9) net-3/med-1.0) |
 
 - backtest payoff: right +639 / wrong -445 / net +194 pts; median per fire +2.75 (n=68)
 - backtest best call: 2026-07-29 04:04 +105.2pts remaining (episode 102.8pts, major)
 - backtest worst false alarm: 2026-07-23 12:17 -70.7pts adverse
-- forward payoff: right +28 / wrong -55 / net -27 pts; median per fire -1.00 (n=18)
+- forward payoff: right +52 / wrong -57 / net -5 pts; median per fire -0.80 (n=23)
 - forward best call: 2026-08-17 10:30 +46.5pts remaining (episode 42.7pts, major)
 - forward worst false alarm: 2026-08-18 12:05 -20.7pts adverse
 - earliness (backtest): median 29.0 pts of move remaining at fire (n=23)
@@ -63,19 +67,19 @@ Grading: directional. Latest review: promote-candidate (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ·+1.2pp (86/347) net+781/med+1.5 | ▲+8.4pp (27/76) net-65/med-0.8 |
-| london | ▲+6.3pp (25/80) net+521/med+9.2 | (°▼-9.4pp (3/19) net-19/med-2.5) |
-| overlap | (°·+1.2pp (3/11) net+21/med+3.5) | (°▼-33.8pp (0/1) net+1/med+1.0) |
-| ny_only | ▲+4.3pp (8/55) net-487/med-2.5 | (°▼-11.0pp (0/8) net-5/med-1.0) |
-| dead | ·+1.3pp (17/90) net+180/med+0.8 | (°▲+33.5pp (4/8) net+16/med+3.1) |
-| asia | ▼-2.8pp (33/111) net+546/med+2.7 | ▲+8.5pp (20/40) net-59/med-1.4 |
+| whole | ·+1.2pp (86/347) net+781/med+1.5 | ▲+3.9pp (27/93) net-68/med-0.8 |
+| london | ▲+6.3pp (25/80) net+521/med+9.2 | (°▼-11.0pp (3/19) net-27/med-2.5) |
+| overlap | (°·+1.2pp (3/11) net+21/med+3.5) | (°▼-26.5pp (0/4) net+5/med+1.6) |
+| ny_only | ▲+4.3pp (8/55) net-487/med-2.5 | (°▼-8.5pp (0/20) net-3/med-0.9) |
+| dead | ·+1.3pp (17/90) net+180/med+0.8 | (°▲+25.2pp (4/10) net+15/med+2.7) |
+| asia | ▼-2.8pp (33/111) net+546/med+2.7 | ▲+8.6pp (20/40) net-59/med-1.4 |
 
 - backtest payoff: right +3270 / wrong -2490 / net +781 pts; median per fire +1.50 (n=347)
 - backtest best call: 2026-07-30 04:03 +155.1pts remaining (episode 178.3pts, major)
 - backtest worst false alarm: 2026-07-24 06:52 -98.0pts adverse
-- forward payoff: right +215 / wrong -280 / net -65 pts; median per fire -0.80 (n=76)
+- forward payoff: right +259 / wrong -328 / net -68 pts; median per fire -0.80 (n=92)
 - forward best call: 2026-08-17 10:33 +37.0pts remaining (episode 42.7pts, major)
-- forward worst false alarm: 2026-08-18 12:00 -25.5pts adverse
+- forward worst false alarm: 2026-08-19 12:44 -36.0pts adverse
 - earliness (backtest): median 27.5 pts of move remaining at fire (n=39)
 
 ### H3
@@ -86,14 +90,14 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | — | (°▲+22.9pp (2/4) net+8/med+0.3) |
-| london | — | (°▲+24.8pp (1/2) net+8/med+3.8) |
+| whole | — | (°▲+14.9pp (2/5) net+8/med-0.2) |
+| london | — | (°▲+23.2pp (1/2) net+8/med+3.8) |
 | overlap | — | — |
-| ny_only | — | (°▼-11.0pp (0/1) net+1/med+0.8) |
-| dead | — | (°▲+83.5pp (1/1) net-0/med-0.2) |
+| ny_only | — | (°▼-8.5pp (0/2) net+0/med+0.1) |
+| dead | — | (°▲+85.2pp (1/1) net-0/med-0.2) |
 | asia | — | — |
 
-- forward payoff: right +13 / wrong -5 / net +8 pts; median per fire +0.30 (n=4)
+- forward payoff: right +13 / wrong -6 / net +8 pts; median per fire -0.20 (n=5)
 - forward best call: 2026-08-18 18:23 +13.0pts remaining (episode 10.0pts)
 - forward worst false alarm: 2026-08-18 08:40 -12.5pts adverse
 
@@ -117,13 +121,44 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - backtest worst false alarm: 2026-07-28 16:11 -17.5pts adverse
 - earliness (backtest): median 11.3 pts of move remaining at fire (n=1)
 
-### H5 — disabled
+### H5
 *A buying climax that extends far above its trend mean mean-reverts (climax-extension fade; registered short-side only).*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H6 — definition-pending
+**H5** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H6
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H6** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+22.2pp (27/59) net+391/med+5.7 | (°▲+29.4pp (6/11) net+75/med+7.0) |
+| london | ▲+33.2pp (18/31) net+282/med+16.0 | (°▲+23.2pp (3/6) net+56/med+10.1) |
+| overlap | (°▼-26.1pp (0/6) net-87/med-15.4) | — |
+| ny_only | (°▼-10.2pp (0/4) net+0/med+6.5) | (°▼-8.5pp (0/1) net-6/med-5.7) |
+| dead | (°▼-17.6pp (0/5) net-25/med-6.4) | — |
+| asia | (°▲+36.7pp (9/13) net+220/med+5.7) | (°▲+33.6pp (3/4) net+25/med+7.2) |
+
+- backtest payoff: right +818 / wrong -428 / net +391 pts; median per fire +5.70 (n=59)
+- backtest best call: 2026-07-31 08:00 +72.8pts remaining (episode 68.5pts, major)
+- backtest worst false alarm: 2026-07-22 08:07 -80.3pts adverse
+- forward payoff: right +90 / wrong -15 / net +75 pts; median per fire +7.00 (n=11)
+- forward best call: 2026-08-17 12:32 +6.7pts remaining (episode 19.5pts)
+- forward worst false alarm: 2026-08-14 15:35 -14.5pts adverse
+- earliness (backtest): median 21.6 pts of move remaining at fire (n=8)
 
 ### H7
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
@@ -133,17 +168,17 @@ Grading: directional + either-direction (dual). Latest review: keep-watching (re
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+5.9pp (33/112) net+7/med+2.8 | ▼-8.9pp (4/22) net+4/med+1.1 |
-| london | ·+1.9pp (11/41) net-217/med+2.7 | (°·-0.2pp (3/12) net-24/med-5.2) |
-| overlap | ▲+8.7pp (8/23) net+227/med+8.7 | (°▼-33.8pp (0/1) net+5/med+5.3) |
-| ny_only | (°▲+4.1pp (2/14) net-24/med+0.0) | (°▼-11.0pp (0/6) net+17/med+3.9) |
-| dead | (°▲+2.4pp (1/5) net+60/med+3.5) | (°▼-16.5pp (0/1) net+0/med+0.0) |
-| asia | ▲+5.4pp (11/29) net-38/med+0.7 | (°▲+8.5pp (1/2) net+6/med+3.0) |
+| whole | ▲+5.9pp (33/112) net+7/med+2.8 | ▼-8.4pp (4/24) net+7/med+1.1 |
+| london | ·+1.9pp (11/41) net-217/med+2.7 | (°·-1.8pp (3/12) net-24/med-5.2) |
+| overlap | ▲+8.7pp (8/23) net+227/med+8.7 | (°▼-26.5pp (0/2) net+2/med+1.0) |
+| ny_only | (°▲+4.1pp (2/14) net-24/med+0.0) | (°▼-8.5pp (0/7) net+23/med+5.5) |
+| dead | (°▲+2.4pp (1/5) net+60/med+3.5) | (°▼-14.8pp (0/1) net+0/med+0.0) |
+| asia | ▲+5.4pp (11/29) net-38/med+0.7 | (°▲+8.6pp (1/2) net+6/med+3.0) |
 
 - backtest payoff: right +1097 / wrong -1090 / net +7 pts; median per fire +2.80 (n=112)
 - backtest best call: 2026-07-24 11:09 +98.2pts remaining (episode 98.2pts, major)
 - backtest worst false alarm: 2026-07-30 06:55 -94.0pts adverse
-- forward payoff: right +105 / wrong -101 / net +4 pts; median per fire +1.10 (n=22)
+- forward payoff: right +112 / wrong -104 / net +7 pts; median per fire +1.10 (n=24)
 - forward best call: 2026-08-18 19:09 +7.5pts remaining (episode 10.0pts)
 - forward worst false alarm: 2026-08-17 11:49 -29.5pts adverse
 - earliness (backtest): median 22.6 pts of move remaining at fire (n=30)
@@ -152,18 +187,18 @@ Grading: directional + either-direction (dual). Latest review: keep-watching (re
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+7.5pp (58/112) | ▼-11.8pp (8/22) |
-| london | ·+1.7pp (20/41) | (°▲+3.6pp (6/12)) |
-| overlap | ▲+5.3pp (13/23) | (°▼-67.5pp (0/1)) |
-| ny_only | (°▲+8.6pp (4/14)) | (°▼-22.0pp (0/6)) |
-| dead | (°▼-12.8pp (1/5)) | (°▼-33.1pp (0/1)) |
-| asia | ▲+9.4pp (20/29) | (°▲+31.8pp (2/2)) |
+| whole | ▲+7.5pp (58/112) | ▼-11.5pp (8/24) |
+| london | ·+1.7pp (20/41) | (°·+0.8pp (6/12)) |
+| overlap | ▲+5.3pp (13/23) | (°▼-53.0pp (0/2)) |
+| ny_only | (°▲+8.5pp (4/14)) | (°▼-16.9pp (0/7)) |
+| dead | (°▼-12.8pp (1/5)) | (°▼-29.5pp (0/1)) |
+| asia | ▲+9.4pp (20/29) | (°▲+31.9pp (2/2)) |
 
 - backtest payoff: n/a by construction (either-direction)
 - backtest best call: 2026-07-24 11:09 +98.2pts remaining (episode 98.2pts, major)
 - backtest worst false alarm: 2026-07-23 16:44 -25.7pts adverse
 - forward payoff: n/a by construction (either-direction)
-- forward best call: 2026-08-19 10:10 +47.5pts remaining (episode 55.8pts, major)
+- forward best call: 2026-08-19 10:10 +54.5pts remaining (episode 62.8pts, major)
 - forward worst false alarm: 2026-08-17 10:09 -18.3pts adverse
 - earliness (backtest): median 15.3 pts of move remaining at fire (n=41)
 
@@ -175,19 +210,19 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ·+1.8pp (160/347) | ·-0.8pp (36/76) |
-| london | ▲+5.4pp (42/80) | (°▼-25.3pp (4/19)) |
-| overlap | (°▲+12.4pp (7/11)) | (°▼-67.5pp (0/1)) |
-| ny_only | ▲+23.6pp (24/55) | (°▼-9.5pp (1/8)) |
-| dead | ·+1.6pp (31/90) | (°▲+29.4pp (5/8)) |
-| asia | ▼-9.1pp (56/111) | ▼-3.2pp (26/40) |
+| whole | ·+1.8pp (160/347) | ▼-2.9pp (39/93) |
+| london | ▲+5.4pp (42/80) | (°▼-12.4pp (7/19)) |
+| overlap | (°▲+12.4pp (7/11)) | (°▼-53.0pp (0/4)) |
+| ny_only | ▲+23.5pp (24/55) | (°▼-11.9pp (1/20)) |
+| dead | ·+1.6pp (31/90) | (°▲+20.5pp (5/10)) |
+| asia | ▼-9.1pp (56/111) | ▼-3.1pp (26/40) |
 
 - backtest payoff: n/a by construction (either-direction)
 - backtest best call: 2026-07-30 04:03 +155.1pts remaining (episode 178.3pts, major)
 - backtest worst false alarm: 2026-07-22 10:02 -37.0pts adverse
 - forward payoff: n/a by construction (either-direction)
 - forward best call: 2026-08-18 10:57 +56.0pts remaining (episode 50.0pts, major)
-- forward worst false alarm: 2026-08-19 07:26 -14.0pts adverse
+- forward worst false alarm: 2026-08-19 14:46 -18.0pts adverse
 - earliness (backtest): median 26.9 pts of move remaining at fire (n=58)
 
 ### H9
@@ -198,12 +233,12 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+3.7pp (15/55) net+319/med+3.5 | (°▼-18.8pp (1/12) net-18/med-3.1) |
+| whole | ▲+3.7pp (15/55) net+319/med+3.5 | (°▼-16.8pp (1/12) net-18/med-3.1) |
 | london | (°▲+20.6pp (5/11) net+108/med+12.5) | — |
-| overlap | — | (°▼-33.8pp (0/1) net-1/med-1.0) |
-| ny_only | (°▲+14.8pp (3/12) net+115/med+2.8) | (°▲+22.3pp (1/3) net+11/med+6.8) |
+| overlap | — | (°▼-26.5pp (0/1) net-1/med-1.0) |
+| ny_only | (°▲+14.8pp (3/12) net+115/med+2.8) | (°▲+24.8pp (1/3) net+11/med+6.8) |
 | dead | (°▼-8.5pp (1/11) net+11/med+1.0) | — |
-| asia | ▼-3.9pp (6/21) net+86/med+6.8 | (°▼-41.5pp (0/8) net-28/med-3.1) |
+| asia | ▼-3.9pp (6/21) net+86/med+6.8 | (°▼-41.4pp (0/8) net-28/med-3.1) |
 
 - backtest payoff: right +558 / wrong -239 / net +319 pts; median per fire +3.50 (n=53)
 - backtest best call: 2026-08-03 03:40 +73.2pts remaining (episode 81.3pts, major)
@@ -221,28 +256,59 @@ Grading: directional. Latest review: deprioritize (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▼-4.8pp (55/293) net-240/med-1.4 | ▼-19.2pp (6/76) net-220/med-3.5 |
-| london | ▲+2.4pp (18/66) net-62/med+1.9 | (°▼-15.2pp (1/10) net+27/med+4.8) |
-| overlap | (°▼-26.1pp (0/7) net+27/med+6.8) | (°▼-33.8pp (0/5) net-75/med-15.8) |
-| ny_only | ·-0.6pp (8/83) net+51/med-1.5 | (°▼-5.7pp (1/19) net-14/med-1.0) |
-| dead | ▼-3.7pp (5/36) net-110/med-2.5 | (°▼-16.5pp (0/15) net-24/med-2.0) |
-| asia | ▼-8.7pp (24/101) net-147/med-1.5 | ▼-26.7pp (4/27) net-135/med-4.8 |
+| whole | ▼-4.8pp (55/293) net-240/med-1.4 | ▼-17.3pp (6/77) net-227/med-3.5 |
+| london | ▲+2.4pp (18/66) net-62/med+1.9 | (°▼-16.8pp (1/10) net+27/med+4.8) |
+| overlap | (°▼-26.1pp (0/7) net+27/med+6.8) | (°▼-26.5pp (0/5) net-75/med-15.8) |
+| ny_only | ·-0.6pp (8/83) net+51/med-1.5 | (°▼-3.5pp (1/20) net-21/med-1.0) |
+| dead | ▼-3.7pp (5/36) net-110/med-2.5 | (°▼-14.8pp (0/15) net-24/med-2.0) |
+| asia | ▼-8.7pp (24/101) net-147/med-1.5 | ▼-26.6pp (4/27) net-135/med-4.8 |
 
 - backtest payoff: right +1533 / wrong -1773 / net -240 pts; median per fire -1.40 (n=293)
 - backtest best call: 2026-07-23 10:20 +90.0pts remaining (episode 104.8pts, major)
 - backtest worst false alarm: 2026-07-28 13:10 -62.5pts adverse
-- forward payoff: right +115 / wrong -335 / net -220 pts; median per fire -3.45 (n=76)
+- forward payoff: right +115 / wrong -342 / net -227 pts; median per fire -3.50 (n=77)
 - forward best call: 2026-08-14 16:54 +22.5pts remaining (episode 16.8pts)
 - forward worst false alarm: 2026-08-17 14:08 -24.2pts adverse
 - earliness (backtest): median 19.4 pts of move remaining at fire (n=26)
 
-### H11 — definition-pending
+### H11
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H12 — definition-pending
+**H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+2.3pp (82/316) net-647/med-2.4 | ·-1.4pp (14/59) net+199/med+4.3 |
+| london | ·-1.3pp (35/148) net+250/med-0.6 | (°▼-17.1pp (3/31) net+128/med+4.8) |
+| overlap | ▼-18.6pp (3/40) net-403/med-11.8 | (°▲+44.9pp (5/7) net+59/med+9.3) |
+| ny_only | ▲+18.7pp (11/38) net-267/med-1.6 | (°▲+16.5pp (5/20) net+46/med+3.6) |
+| dead | ▲+37.4pp (11/20) net+59/med+0.7 | — |
+| asia | ·-1.1pp (22/70) net-286/med-4.5 | (°▲+58.6pp (1/1) net-34/med-33.5) |
+
+- backtest payoff: right +2555 / wrong -3203 / net -647 pts; median per fire -2.35 (n=316)
+- backtest best call: 2026-07-22 06:08 +129.2pts remaining (episode 163.2pts, major)
+- backtest worst false alarm: 2026-07-22 07:36 -96.5pts adverse
+- forward payoff: right +345 / wrong -146 / net +199 pts; median per fire +4.30 (n=59)
+- forward best call: 2026-08-17 13:04 +22.8pts remaining (episode 32.3pts)
+- forward worst false alarm: 2026-08-14 15:30 -21.3pts adverse
+- earliness (backtest): median 20.5 pts of move remaining at fire (n=27)
+
+### H12
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H12** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
 
 
 ---
@@ -259,7 +325,7 @@ Store span (1M, close ts): 2026-07-19 22:42:00+00:00 → 2026-08-19 12:20:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `af2499e34` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -270,14 +336,18 @@ Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | H2 | promote-candidate | ·+0.0pp (56/234) net-661/med-5.2 | (°▼-13.0pp (2/15) net+93/med+9.8) | ▲+17.5pp (26/63) net+19/med+2.3 | (°·+1.4pp (2/9) net-17/med-11.4) |
 | H3 | keep-watching | (°▼-11.4pp (1/8) net-28/med+2.0) | — | (°▼-23.8pp (0/2) net-16/med-8.2) | — |
 | H4 | keep-watching | ▲+5.5pp (10/34) net+72/med+10.0 | (°▼-16.3pp (1/10) net-30/med-3.7) | — | — |
+| H5 | keep-watching | — | — | — | — |
+| H6 | keep-watching | ▲+15.0pp (14/36) net-192/med-10.4 | (°·+1.5pp (5/18) net-56/med-10.3) | ▲+10.9pp (17/49) net-519/med-8.0 | (°▲+2.3pp (6/26) net-501/med-21.4) |
 | H7 | keep-watching | ▲+11.7pp (21/59) net+761/med+4.2 | ▲+23.7pp (10/20) net+719/med+33.0 | (°▼-12.7pp (1/9) net+3/med+2.6) | (°▼-8.3pp (1/8) net+32/med+4.8) |
 | H7 (either-dir) | keep-watching | ▲+19.3pp (38/59) | ▲+23.9pp (15/20) | (°▼-9.5pp (3/9)) | (°·-0.9pp (3/8)) |
 | H8 | keep-watching | ▲+7.9pp (124/234) | (°▼-31.1pp (3/15)) | ▲+11.2pp (34/63) | (°▼-16.2pp (2/9)) |
 | H9 | keep-watching | ▼-8.5pp (8/52) net-426/med-4.1 | (°▼-26.3pp (0/3) net+17/med+22.6) | (°▼-23.8pp (0/6) net-136/med-4.0) | (°▼-20.8pp (0/1) net-114/med-114.2) |
 | H10 | deprioritize | ▼-4.2pp (29/147) net-391/med+3.2 | ▼-16.0pp (4/39) net-463/med-12.5 | ·+0.3pp (14/58) net+46/med+3.0 | (°▲+9.2pp (3/10) net-36/med-11.8) |
-| **union coverage** | | 43.1% (47/109) | 25.9% (7/27) | 64.3% (18/28) | 66.7% (4/6) |
+| H11 | keep-watching | ▼-3.6pp (15/74) net-452/med-6.0 | (°▼-4.9pp (3/14) net-472/med-58.8) | ·+0.1pp (22/92) net-344/med-6.6 | (°▼-9.4pp (5/44) net-190/med-11.2) |
+| H12 | keep-watching | — | — | — | — |
+| **union coverage** | | 44.0% (48/109) | 25.9% (7/27) | 67.9% (19/28) | 83.3% (5/6) |
 
-Not graded: H5 disabled; H6 definition-pending; H11 definition-pending; H12 definition-pending — see register entries.
+Not graded:  — see register entries.
 
 ## Hypothesis Cards (page 2)
 
@@ -369,13 +439,44 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - backtest worst false alarm: 2026-07-26 23:29 -102.8pts adverse
 - earliness (backtest): median 71.2 pts of move remaining at fire (n=3)
 
-### H5 — disabled
+### H5
 *A buying climax that extends far above its trend mean mean-reverts (climax-extension fade; registered short-side only).*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H6 — definition-pending
+**H5** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H6
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H6** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+15.0pp (14/36) net-192/med-10.4 | ▲+10.9pp (17/49) net-519/med-8.0 |
+| london | (°·+1.5pp (5/18) net-56/med-10.3) | (°▲+2.3pp (6/26) net-501/med-21.4) |
+| overlap | (°▲+76.3pp (1/1) net+108/med+108.3) | (°·-0.7pp (1/4) net-4/med-10.5) |
+| ny_only | — | — |
+| dead | (°▼-16.4pp (0/3) net+29/med+13.4) | — |
+| asia | (°▲+24.1pp (8/14) net-274/med-21.8) | (°▲+12.3pp (10/19) net-14/med+2.0) |
+
+- backtest payoff: right +682 / wrong -874 / net -192 pts; median per fire -10.40 (n=36)
+- backtest best call: 2026-07-30 06:22 +154.2pts remaining (episode 174.4pts, major)
+- backtest worst false alarm: 2026-08-03 07:10 -108.0pts adverse
+- forward payoff: right +371 / wrong -890 / net -519 pts; median per fire -8.00 (n=49)
+- forward best call: 2026-08-19 03:31 +81.3pts remaining (episode 94.3pts, major)
+- forward worst false alarm: 2026-08-18 07:07 -124.1pts adverse
+- earliness (backtest): median 150.2 pts of move remaining at fire (n=2)
 
 ### H7
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
@@ -488,13 +589,44 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-17 09:56 -79.5pts adverse
 - earliness (backtest): median 83.8 pts of move remaining at fire (n=10)
 
-### H11 — definition-pending
+### H11
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H12 — definition-pending
+**H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▼-3.6pp (15/74) net-452/med-6.0 | ·+0.1pp (22/92) net-344/med-6.6 |
+| london | (°▼-4.9pp (3/14) net-472/med-58.8) | (°▼-9.4pp (5/44) net-190/med-11.2) |
+| overlap | (°▼-17.5pp (1/16) net-166/med-13.2) | — |
+| ny_only | (°▼-11.3pp (0/4) net-18/med-18.5) | — |
+| dead | (°▼-2.1pp (1/7) net+1/med+4.1) | (°·+1.9pp (2/12) net-33/med-0.5) |
+| asia | ▼-2.7pp (10/33) net+203/med-1.1 | ·+1.4pp (15/36) net-120/med-7.2 |
+
+- backtest payoff: right +1359 / wrong -1811 / net -452 pts; median per fire -5.95 (n=74)
+- backtest best call: 2026-07-29 04:03 +262.2pts remaining (episode 262.8pts, major)
+- backtest worst false alarm: 2026-07-31 07:03 -171.6pts adverse
+- forward payoff: right +756 / wrong -1099 / net -344 pts; median per fire -6.60 (n=92)
+- forward best call: 2026-08-19 03:17 +82.8pts remaining (episode 94.3pts, major)
+- forward worst false alarm: 2026-08-18 07:05 -87.8pts adverse
+- earliness (backtest): median 104.9 pts of move remaining at fire (n=8)
+
+### H12
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H12** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
 
 
 ---
@@ -511,7 +643,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-19 12:20:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `af2499e34` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -522,14 +654,18 @@ Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | H2 | promote-candidate | ▼-2.6pp (62/320) net-3528/med-1.4 | ▼-7.2pp (14/59) net-313/med-30.0 | ▲+4.3pp (28/105) net-256/med-2.1 | ▼-7.7pp (8/38) net+46/med+5.0 |
 | H3 | keep-watching | (°▲+78.0pp (1/1) net+106/med+105.8) | (°▲+69.1pp (1/1) net+106/med+105.8) | — | — |
 | H4 | keep-watching | — | — | (°▲+37.6pp (6/10) net-18/med-7.4) | (°▲+11.2pp (2/5) net+26/med+9.5) |
+| H5 | keep-watching | — | — | — | — |
+| H6 | keep-watching | ▲+9.0pp (9/29) net-232/med-11.8 | (°▼-30.9pp (0/5) net-719/med-105.3) | ▲+9.6pp (8/25) net-415/med-29.6 | (°▼-3.8pp (2/8) net-19/med-1.7) |
 | H7 | keep-watching | ·+0.0pp (11/50) net+77/med-7.8 | (°▼-5.9pp (4/16) net-167/med-6.6) | (°▼-14.7pp (1/13) net-98/med-16.5) | (°▼-28.8pp (0/5) net-149/med-34.9) |
 | H7 (either-dir) | keep-watching | ▲+4.4pp (23/50) | (°·+0.2pp (9/16)) | (°▼-3.2pp (5/13)) | (°▼-12.5pp (2/5)) |
 | H8 | keep-watching | ·+1.8pp (139/320) | ▲+3.3pp (35/59) | ▲+9.7pp (54/105) | ▼-15.7pp (14/38) |
 | H9 | keep-watching | ·+0.7pp (20/88) net+593/med-4.3 | (°▲+2.4pp (3/9) net+410/med+11.6) | ▼-7.9pp (9/62) net-34/med-6.7 | (°▲+71.2pp (1/1) net+49/med+49.1) |
 | H10 | deprioritize | ▼-6.0pp (28/175) net+2743/med+15.3 | (°▼-17.6pp (2/15) net-356/med-1.7) | ▼-3.5pp (25/132) net-1380/med-8.1 | (°▲+30.0pp (10/17) net+208/med+2.7) |
-| **union coverage** | | 36.5% (42/115) | 26.8% (11/41) | 76.0% (19/25) | 70.0% (7/10) |
+| H11 | keep-watching | ▲+2.3pp (64/263) net+863/med+0.9 | ▼-2.3pp (26/91) net+264/med-3.9 | ·-0.3pp (32/145) net+536/med+1.7 | ▼-17.3pp (3/26) net-260/med-10.2 |
+| H12 | keep-watching | — | — | — | — |
+| **union coverage** | | 40.0% (46/115) | 31.7% (13/41) | 84.0% (21/25) | 90.0% (9/10) |
 
-Not graded: H5 disabled; H6 definition-pending; H11 definition-pending; H12 definition-pending — see register entries.
+Not graded:  — see register entries.
 
 ## Hypothesis Cards (page 2)
 
@@ -614,13 +750,44 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward payoff: right +65 / wrong -83 / net -18 pts; median per fire -7.40 (n=10)
 - forward worst false alarm: 2026-08-17 06:55 -54.5pts adverse
 
-### H5 — disabled
+### H5
 *A buying climax that extends far above its trend mean mean-reverts (climax-extension fade; registered short-side only).*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H6 — definition-pending
+**H5** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H6
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H6** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+9.0pp (9/29) net-232/med-11.8 | ▲+9.6pp (8/25) net-415/med-29.6 |
+| london | (°▼-30.9pp (0/5) net-719/med-105.3) | (°▼-3.8pp (2/8) net-19/med-1.7) |
+| overlap | (°▲+2.5pp (8/20) net+333/med+9.0) | (°▲+11.3pp (4/8) net-215/med-54.5) |
+| ny_only | — | (°▼-6.8pp (0/1) net-31/med-30.7) |
+| dead | (°▼-11.6pp (0/3) net+42/med+18.9) | (°▼-10.4pp (0/1) net+16/med+15.9) |
+| asia | (°▲+80.2pp (1/1) net+112/med+111.8) | (°·+0.5pp (2/7) net-167/med-69.2) |
+
+- backtest payoff: right +1875 / wrong -2108 / net -232 pts; median per fire -11.80 (n=29)
+- backtest best call: 2026-08-03 11:04 +303.5pts remaining (episode 396.3pts, major)
+- backtest worst false alarm: 2026-07-27 13:46 -514.5pts adverse
+- forward payoff: right +462 / wrong -877 / net -415 pts; median per fire -29.60 (n=25)
+- forward best call: 2026-08-17 09:59 +201.6pts remaining (episode 257.5pts, major)
+- forward worst false alarm: 2026-08-18 13:40 -161.0pts adverse
+- earliness (backtest): median 78.8 pts of move remaining at fire (n=2)
 
 ### H7
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
@@ -733,13 +900,44 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-18 01:03 -109.1pts adverse
 - earliness (backtest): median 132.5 pts of move remaining at fire (n=6)
 
-### H11 — definition-pending
+### H11
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H12 — definition-pending
+**H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+2.3pp (64/263) net+863/med+0.9 | ·-0.3pp (32/145) net+536/med+1.7 |
+| london | ▼-2.3pp (26/91) net+264/med-3.9 | ▼-17.3pp (3/26) net-260/med-10.2 |
+| overlap | (°▲+2.5pp (8/20) net-137/med-23.4) | (°·-1.2pp (6/16) net+506/med+50.1) |
+| ny_only | ▲+14.6pp (8/29) net+826/med+77.1 | (°▼-2.9pp (2/51) net-148/med-1.6) |
+| dead | ▲+10.8pp (13/58) net+874/med-3.1 | (°▲+22.9pp (4/12) net-119/med-10.8) |
+| asia | ▼-6.0pp (9/65) net-964/med+3.6 | ▲+14.4pp (17/40) net+558/med+13.2 |
+
+- backtest payoff: right +10765 / wrong -9902 / net +863 pts; median per fire +0.90 (n=262)
+- backtest best call: 2026-07-30 07:02 +741.2pts remaining (episode 832.8pts, major)
+- backtest worst false alarm: 2026-07-29 13:50 -332.3pts adverse
+- forward payoff: right +2711 / wrong -2174 / net +536 pts; median per fire +1.70 (n=145)
+- forward best call: 2026-08-17 09:59 +201.6pts remaining (episode 257.5pts, major)
+- forward worst false alarm: 2026-08-18 14:13 -105.3pts adverse
+- earliness (backtest): median 176.0 pts of move remaining at fire (n=14)
+
+### H12
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H12** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
 
 
 ---
@@ -756,7 +954,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-19 12:21:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `af2499e34` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -767,14 +965,18 @@ Engine `46c3bde55` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | H2 | promote-candidate | ·+1.6pp (72/281) net-2432/med-4.0 | ▼-2.4pp (21/62) net-337/med-20.0 | ▲+7.4pp (33/108) net-97/med+0.8 | (°·-0.4pp (12/36) net-153/med-5.8) |
 | H3 | keep-watching | (°·+1.0pp (1/4) net+59/med+13.2) | (°▼-36.3pp (0/2) net-22/med-11.0) | — | — |
 | H4 | keep-watching | (°▲+14.5pp (5/13) net+194/med+15.0) | (°▲+35.1pp (5/7) net+392/med+71.0) | — | — |
+| H5 | keep-watching | (°▼-24.0pp (0/1) net-135/med-135.0) | (°▼-36.3pp (0/1) net-135/med-135.0) | — | — |
+| H6 | keep-watching | ▼-4.8pp (10/52) net-1151/med-25.2 | ▼-23.8pp (3/24) net-664/med-30.0 | ▲+31.8pp (11/20) net+105/med+9.5 | (°▲+56.3pp (9/10) net+372/med+32.0) |
 | H7 | keep-watching | ▼-2.0pp (9/41) net+205/med-9.0 | (°▼-5.1pp (5/16) net-161/med-7.0) | (°▲+12.5pp (5/14) net+122/med+6.5) | (°▲+6.3pp (2/5) net+33/med+9.0) |
 | H7 (either-dir) | keep-watching | ▼-3.0pp (17/41) | (°▲+2.9pp (11/16)) | (°▲+12.6pp (8/14)) | (°▲+16.2pp (4/5)) |
 | H8 | keep-watching | ▲+7.5pp (146/281) | ▲+6.7pp (45/62) | ▲+8.3pp (57/108) | (°▼-8.2pp (20/36)) |
 | H9 | keep-watching | ·-1.5pp (9/40) net-353/med-14.7 | (°▼-3.0pp (1/3) net-198/med-61.5) | (°▼-23.2pp (0/15) net-618/med-37.0) | (°▼-33.7pp (0/6) net-464/med-86.8) |
 | H10 | deprioritize | ·+0.0pp (37/154) net+1774/med+11.0 | ▲+3.7pp (16/40) net+1480/med+27.5 | ▼-7.7pp (20/129) net-284/med-1.0 | (°▼-13.7pp (5/25) net-242/med-18.5) |
-| **union coverage** | | 34.5% (38/110) | 27.8% (10/36) | 80.8% (21/26) | 87.5% (7/8) |
+| H11 | keep-watching | ▲+3.4pp (113/413) net+1254/med+3.0 | ·+1.1pp (61/163) net-404/med+5.0 | ▲+3.8pp (54/200) net-90/med-5.0 | (°·+0.0pp (31/92) net+99/med-4.5) |
+| H12 | keep-watching | — | — | — | — |
+| **union coverage** | | 40.0% (44/110) | 33.3% (12/36) | 88.5% (23/26) | 87.5% (7/8) |
 
-Not graded: H5 disabled; H6 definition-pending; H11 definition-pending; H12 definition-pending — see register entries.
+Not graded:  — see register entries.
 
 ## Hypothesis Cards (page 2)
 
@@ -862,13 +1064,46 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - backtest worst false alarm: 2026-08-03 14:10 -174.0pts adverse
 - earliness (backtest): median 63.0 pts of move remaining at fire (n=1)
 
-### H5 — disabled
+### H5
 *A buying climax that extends far above its trend mean mean-reverts (climax-extension fade; registered short-side only).*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H6 — definition-pending
+**H5** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | (°▼-24.0pp (0/1) net-135/med-135.0) | — |
+| london | (°▼-36.3pp (0/1) net-135/med-135.0) | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+- backtest payoff: right +0 / wrong -135 / net -135 pts; median per fire -135.00 (n=1)
+- backtest worst false alarm: 2026-07-28 11:30 -135.0pts adverse
+
+### H6
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H6** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▼-4.8pp (10/52) net-1151/med-25.2 | ▲+31.8pp (11/20) net+105/med+9.5 |
+| london | ▼-23.8pp (3/24) net-664/med-30.0 | (°▲+56.3pp (9/10) net+372/med+32.0) |
+| overlap | (°▼-10.5pp (4/18) net+234/med+6.8) | (°▼-5.3pp (2/9) net-262/med-14.5) |
+| ny_only | (°▲+36.5pp (3/6) net-856/med-92.0) | — |
+| dead | (°▼-7.1pp (0/3) net+58/med+5.5) | — |
+| asia | (°▼-24.1pp (0/1) net+77/med+77.0) | (°▼-27.3pp (0/1) net-4/med-4.5) |
+
+- backtest payoff: right +1398 / wrong -2549 / net -1151 pts; median per fire -25.25 (n=52)
+- backtest best call: 2026-07-28 12:23 +197.5pts remaining (episode 226.5pts, major)
+- backtest worst false alarm: 2026-07-28 15:11 -288.5pts adverse
+- forward payoff: right +470 / wrong -365 / net +105 pts; median per fire +9.50 (n=20)
+- forward best call: 2026-08-18 07:39 +108.4pts remaining (episode 148.4pts, major)
+- forward worst false alarm: 2026-08-17 14:06 -119.5pts adverse
+- earliness (backtest): median 43.0 pts of move remaining at fire (n=3)
 
 ### H7
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
@@ -981,13 +1216,44 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-18 12:33 -113.5pts adverse
 - earliness (backtest): median 87.5 pts of move remaining at fire (n=11)
 
-### H11 — definition-pending
+### H11
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
 
-### H12 — definition-pending
+**H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲+3.4pp (113/413) net+1254/med+3.0 | ▲+3.8pp (54/200) net-90/med-5.0 |
+| london | ·+1.1pp (61/163) net-404/med+5.0 | (°·+0.0pp (31/92) net+99/med-4.5) |
+| overlap | (°▲+21.1pp (14/26) net+491/med+4.0) | (°▲+12.5pp (6/15) net+262/med+25.5) |
+| ny_only | ·-1.6pp (5/42) net+1037/med+15.2 | (°▲+2.3pp (2/14) net-116/med-7.8) |
+| dead | ▲+14.9pp (11/50) net+478/med+1.2 | (°▼-5.6pp (0/13) net-94/med-6.5) |
+| asia | ▼-7.4pp (22/132) net-348/med+2.0 | ▼-4.6pp (15/66) net-240/med-4.2 |
+
+- backtest payoff: right +12694 / wrong -11440 / net +1254 pts; median per fire +3.00 (n=413)
+- backtest best call: 2026-07-29 06:20 +858.0pts remaining (episode 948.5pts, major)
+- backtest worst false alarm: 2026-07-31 13:24 -492.5pts adverse
+- forward payoff: right +3009 / wrong -3098 / net -90 pts; median per fire -5.00 (n=200)
+- forward best call: 2026-08-18 09:56 +194.0pts remaining (episode 240.0pts, major)
+- forward worst false alarm: 2026-08-18 12:53 -167.0pts adverse
+- earliness (backtest): median 90.5 pts of move remaining at fire (n=23)
+
+### H12
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
-Latest review: pending-on-operator. See the register entry for what is missing.
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H12** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
 
 
 ---

@@ -59,7 +59,7 @@ from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.sessions import session_of
 from backtest.scoreboard import (PAIR_OF, PROVISIONAL_INSTRS,
                                  PROVISIONAL_STAMP, _replay, _series,
-                                 _atr15, h9_fires, make_cfg)
+                                 _atr15, event_derived_fires, make_cfg)
 from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
@@ -90,8 +90,8 @@ RECIPE_SETS = {
         # tighter-of, ratchet-only, no target, trail live from entry.
         # FLAG: the 5.0pt offset is instrument-absolute; cross-instrument
         # v1 may want it ATR-relative — operator's later call.
-        "R-OP1": {"provenance": "operator-ratified 2026-08-19 "
-                                "(ATR TF assumed 15min, flagged)",
+        "R-OP1": {"provenance": "operator-ratified 2026-08-19; ATR TF "
+                                "15M CONFIRMED 2026-08-20 (register 46)",
                   "stages": [{"stop": [("atr", 1.5, "15min"),
                                        ("trail_nth", 2, ("pts", 5.0),
                                         "1min")], "target": None}]},
@@ -103,9 +103,9 @@ RECIPE_SETS = {
         # move). Arming values DERIVED-STATED (1.0xATR(15M) progress OR
         # 45 min age), ratification pending; graded on forward accrual
         # alongside R-OP1; ratification before any status.
-        "R-FLIPGUARD": {"provenance": "staged candidate (register 44; "
-                                      "arming values derived-stated, "
-                                      "ratification pending)",
+        "R-FLIPGUARD": {"provenance": "arming values RATIFIED "
+                                      "2026-08-20 (register 46); staged "
+                                      "per register 44",
                         "stages": [
                             {"stop": [("atr", 1.5, "15min"),
                                       ("trail_nth", 2, ("pts", 5.0),
@@ -383,7 +383,7 @@ def run_instrument(instr):
                 flips.append((pd.Timestamp(e["ts"]).value, t))
             prev = t
     env = build_env(instr, cfg, bars, narr={"trend_flip": sorted(flips)})
-    fires = watch.fires + h9_fires(engine.narrative.events, cfg)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     spread = _spread_median(instr)

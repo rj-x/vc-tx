@@ -33,7 +33,8 @@ from engine.signal_watch import COFIRE_FAMILIES as FAMILIES
 from engine.signal_watch import SignalWatch
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
-                                 _replay, build_moves, h9_fires, make_cfg)
+                                 _replay, build_moves, event_derived_fires,
+                                 make_cfg)
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
@@ -61,7 +62,7 @@ def run_instrument(instr):
         bars[cfg.mtf.execution_tf], bars[cfg.mtf.signal_tf],
         cfg.context.atr_period)
     ts, _cl, _segs = series
-    fires = watch.fires + h9_fires(engine.narrative.events, cfg)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
     fires = [f for f in fires if not is_sealed(f["ts"])]
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     by_name = {}

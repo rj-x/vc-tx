@@ -224,13 +224,48 @@ def build_moves(bars1m, bars15, atr_period):
     return qual, episodes, (ts, cl, segs), drift
 
 
+def h5_fires(events, bars15, cfg):
+    """Event-derived row (ratified 2026-08-20, register 46): the drafted
+    condition READ ON THE SIGNAL TF per its founding origin — 15M
+    structural BUYING_CLIMAX with close - SMA(H5_MA_PERIOD)(15M closes)
+    >= H5_EXTENSION_ATR x ATR(15M), fire short at that 15M close. A 1M
+    variant, if ever, is a separate hypothesis."""
+    from engine.signal_watch import H5_EXTENSION_ATR, H5_MA_PERIOD
+    live = [b for b in bars15 if not b.is_stub]
+    atr = _atr15(live, cfg.context.atr_period)
+    closes, sma = {}, {}
+    hist = []
+    for b in live:
+        hist.append(b.close)
+        closes[b.ts] = b.close
+        if len(hist) >= H5_MA_PERIOD:
+            sma[b.ts] = sum(hist[-H5_MA_PERIOD:]) / H5_MA_PERIOD
+    from engine.signal_watch import ROW_CLIMAX_EXTENSION as name
+    out = []
+    for e in events:
+        if (e["type"] == "LABEL" and e.get("tf") == cfg.mtf.signal_tf
+                and e.get("structural") == "BUYING_CLIMAX"):
+            t = pd.Timestamp(e["ts"])
+            c, m, a = closes.get(t), sma.get(t), atr.get(t)
+            if None not in (c, m, a) and c - m >= H5_EXTENSION_ATR * a:
+                out.append({"ts": t, "name": name, "dir": -1})
+    return out
+
+
+def event_derived_fires(events, cfg, bars):
+    """All event-derived rows in one place (migration chains + the
+    15M-read extension row); every reader consumes this."""
+    return (h9_fires(events, cfg)
+            + h5_fires(events, bars[cfg.mtf.signal_tf], cfg))
+
+
 def h9_fires(events, cfg):
     """Event-derived row (pre-registered 2026-08-19, changeable only by
     re-registration): fire = a migration chain reaching depth >=
     H9_CHAIN_DEPTH_MIN, stamped at the completing event's close, in the
     chain's direction."""
     from backtest.migration import migration_events
-    name = next(iter(EVENT_DERIVED_ROWS))
+    from engine.signal_watch import ROW_MIGRATION_CHAIN as name
     return [{"ts": e["ts"], "name": name, "dir": e["dir"]}
             for e in migration_events(events, cfg)
             if e["chain_rungs"] >= H9_CHAIN_DEPTH_MIN]
@@ -400,7 +435,7 @@ def run(instr="uk100fut", provisional=False):
     qual, episodes, series, drift = build_moves(
         b1m, bars[cfg.mtf.signal_tf], cfg.context.atr_period)
     recipe_fires = fires_from_events(events)          # CONFIRM = recipe stage
-    signal_fires = watch.fires + h9_fires(events, cfg)  # bare conditions
+    signal_fires = watch.fires + event_derived_fires(events, cfg, bars)
     # derived rows (register 37): ONE condition, two gradings — copied fires
     for derived, src_row in DERIVED_FIRES.items():
         signal_fires += [{**f, "name": derived}

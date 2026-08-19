@@ -35,7 +35,8 @@ from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.sessions import session_of
 from backtest.eventstudy import LABEL_DIR
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
-                                 _replay, _series, h9_fires, make_cfg)
+                                 _replay, _series, event_derived_fires,
+                                 make_cfg)
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 WINDOW_NS = 60 * 60_000_000_000            # registry: qualifying_move window
@@ -90,7 +91,7 @@ def run_instrument(instr):
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     ts, cl, hi, lo, _s, _b = _series(bars[cfg.mtf.execution_tf])
-    fires = watch.fires + h9_fires(engine.narrative.events, cfg)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     narr = _narr_streams(engine.narrative.events, fires)

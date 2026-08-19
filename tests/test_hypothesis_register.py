@@ -11,10 +11,8 @@ def test_register_has_ten_entries_with_statuses():
     assert sorted(reg) == list(range(1, 13))
     assert all(v in ("signal-live", "definition-pending", "disabled")
                for v in reg.values())
-    assert reg[5] == "definition-pending"   # revive-as-new, drafted 08-20
-    assert reg[6] == "definition-pending"          # H8/H9 went signal-live
-    assert reg[11] == reg[12] == "definition-pending"
-    assert reg[8] == reg[9] == "signal-live"       # by operator order 08-19
+    # ratification sitting part 1 (2026-08-20): all twelve signal-live
+    assert all(v == "signal-live" for v in reg.values())
 
 
 def test_current_rows_validate():
@@ -34,12 +32,18 @@ def test_unknown_id_refused():
             validate_rows()
     finally:
         del FIRING_CONDITIONS["S-H99"]
-    FIRING_CONDITIONS["S-H6"] = lambda *a: None       # definition-pending
+    # the not-signal-live branch: no live fixture remains (all twelve are
+    # live) — exercise it against a patched register
+    import backtest.scoreboard as sb
+    orig = sb.register_status
+    sb.register_status = lambda: {n: ("definition-pending" if n == 1
+                                      else "signal-live")
+                                  for n in range(1, 13)}
     try:
         with pytest.raises(ValueError, match="not signal-live"):
             validate_rows()
     finally:
-        del FIRING_CONDITIONS["S-H6"]
+        sb.register_status = orig
     FIRING_CONDITIONS["LEGACY-NAME"] = lambda *a: None
     try:
         with pytest.raises(ValueError, match="S-H<n>"):

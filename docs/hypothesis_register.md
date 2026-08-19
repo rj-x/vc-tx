@@ -113,9 +113,10 @@ entry is a separate decision.
   2026-08-20: REVIVE-AS-NEW — data-innocent birth, revived without its
   lost rationale; the pre-crash disable rationale stays lost, register
   finding H5-audit).
-- **Status:** **definition-pending** (drafted; **signal-live on
-  ratification of the drafted condition**).
-- **Latest review:** awaiting-ratification (the drafted condition).
+- **Status:** **signal-live** (S-H5, event-derived, ratified 2026-08-20 —
+  read on the SIGNAL TF (15M) per its founding origin; a 1M variant, if
+  ever, is a separate hypothesis).
+- **Latest review:** keep-watching (rows begin at the next run).
 
 ## H6
 - **Claim:** A wide-spread rejection bar at a session extreme (measured
@@ -129,12 +130,15 @@ entry is a separate decision.
   formulation.
 - **Origin:** data-born 2026-08-13 (06:56Z Asia-high rejection; register
   items 8–9). Cross-ref: audit/candidate_hypotheses.md H6.
-- **Status:** **definition-pending**.
-- **Latest review:** pending-on-operator (a bare variant needs an
-  operator ruling on provisional thresholds or a parameter-free
-  formulation).
-- AUDIT: claim PASSES the one-sentence test; condition fails
-  (unparameterized) — flagged as above.
+- **Status:** **signal-live** (S-H6, ratified 2026-08-20): proximity
+  0.25×ATR(15M); day-relative spread ≥ p90 over a trailing 480-bar
+  window (the window length is an implementer constant, registry-flagged
+  operator-adjustable); close_pos ≤ 0.25 / ≥ 0.75; wick ≥ 0.33;
+  volume-agnostic. Walk-forward may still re-tune (two-layer form
+  preserved).
+- **Latest review:** keep-watching (rows begin at the next run).
+- AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
+  stay recipe layer in the candidate register).
 
 ## H7
 - **Claim:** Quiet decline at a session extreme is disguised accumulation:
@@ -245,10 +249,19 @@ entry is a separate decision.
   before — high-volume nodes mark standing interest that absorbs or repels
   price; low-volume gaps mark prices where no business was done and none
   defends them, so price traverses fast because nobody trades there.
-- **Status:** **definition-pending** (until parameters ratified).
-- **Latest review:** pending-on-operator (parameter ratification).
-- AUDIT: claim PASSES (two-clause, both falsifiable); condition fails
-  (unparameterized by design — pre-registration required first).
+- **Status:** **signal-live** (S-H11, ratified 2026-08-20): bucket 4.0
+  pts, lookback 5 sessions, node = p90 / gap = p10 of the trailing
+  profile. THE ROW GRADES THE TRAVERSAL CLAUSE (directional fire into a
+  gap bucket, direction of travel); the NODE-STALL clause needs its own
+  grading mode — registered pending sub-question. TWO STANDING FLAGS:
+  (a) the weak-persistence measurement (next-session profile corr ~0.13,
+  K=5 best-of-weak-field) stands as the premise's own first stress — the
+  row tests exactly this; (b) the bucket is HOME-DERIVED — other
+  instruments' cells carry a mis-scale caveat until per-instrument
+  values are ratified.
+- **Latest review:** keep-watching (rows begin at the next run).
+- AUDIT: PASS for the traversal clause; stall clause pending its grading
+  mode.
 
 ## H12
 - **Claim:** A zone showing repeated visits with elevated volume,
@@ -267,10 +280,15 @@ entry is a separate decision.
   the multi-visit COMPOSITE of H3's single-cluster claim — H3 fires on one
   absorption cluster; H12 requires the repeated-visit sequence with the
   exhaustion signature.
-- **Status:** **definition-pending** (until parameters ratified).
-- **Latest review:** pending-on-operator (parameter ratification).
-- AUDIT: claim PASSES (compound but one sentence, falsifiable as a
-  conjunction); condition fails (unparameterized by design).
+- **Status:** **signal-live** (S-H12, ratified 2026-08-20): zone = 1M
+  swing level ± 0.25×ATR(15M); visit = band entry after leaving by > band
+  width; ≥3 visits within 90 min; strictly diminishing per-visit median
+  range-per-unit-volume; pullbacks drying (mean rel_volume < 0.7 and
+  each quieter); fire at the completing visit's close, direction = the
+  higher-volume approach side.
+- **Latest review:** keep-watching (rows begin at the next run).
+- AUDIT: PASS (mechanical conjunction; every threshold ratified or
+  founding-cited).
 
 ---
 
