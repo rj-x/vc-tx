@@ -1,24 +1,24 @@
 # Hypothesis Performance — Summary Matrix (page 1)
 
-Engine `e458da339` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `2c046e97f` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
 | H | label | backtest whole | backtest london | forward whole | forward london |
 |---|---|---|---|---|---|
-| *context* | | 180 ep; chance 23.6%dir/44.3%either | 53 ep; chance 24.9%dir/47.1%either | 28 ep; chance 26.6%dir/47.2%either | 6 ep; chance 23.3%dir/42.4%either |
-| H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+6.9pp (7/22) net+133/med+3.0 | (°▲+2.8pp (5/17) net-18/med-1.0) | (°·+1.7pp (1/4) net-17/med-7.0) |
-| H2 | promote-candidate | ·+1.2pp (86/347) net+781/med+1.5 | ▲+6.3pp (25/80) net+521/med+9.2 | ▲+10.0pp (26/71) net-60/med-0.8 | (°▼-9.0pp (2/14) net-14/med-1.8) |
-| H3 | keep-watching | — | — | (°▲+23.4pp (2/4) net+8/med+0.3) | (°▲+26.7pp (1/2) net+8/med+3.8) |
+| *context* | | 180 ep; chance 23.6%dir/44.3%either | 53 ep; chance 24.9%dir/47.1%either | 28 ep; chance 26.7%dir/47.5%either | 6 ep; chance 23.7%dir/43.4%either |
+| H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+6.9pp (7/22) net+133/med+3.0 | (°▲+2.7pp (5/17) net-18/med-1.0) | (°·+1.3pp (1/4) net-17/med-7.0) |
+| H2 | promote-candidate | ·+1.2pp (86/347) net+781/med+1.5 | ▲+6.3pp (25/80) net+521/med+9.2 | ▲+9.4pp (26/72) net-65/med-0.8 | (°▼-10.4pp (2/15) net-19/med-2.5) |
+| H3 | keep-watching | — | — | (°▲+23.3pp (2/4) net+8/med+0.3) | (°▲+26.3pp (1/2) net+8/med+3.8) |
 | H4 | keep-watching | (°▼-23.6pp (0/7) net+14/med+0.5) | (°▼-24.9pp (0/1) net+6/med+5.5) | — | — |
-| H7 | keep-watching | ▲+7.6pp (35/112) net+7/med+2.8 | ▲+4.4pp (12/41) net-217/med+2.7 | ▼-12.3pp (3/21) net-32/med+0.0 | (°▼-5.1pp (2/11) net-60/med-8.5) |
-| H7 (either-dir) | keep-watching | ▲+9.3pp (60/112) | ▲+4.1pp (21/41) | ▼-9.1pp (8/21) | (°▲+12.1pp (6/11)) |
-| H8 | keep-watching | ▲+2.1pp (161/347) | ▲+6.7pp (43/80) | ▲+2.1pp (35/71) | (°▼-21.0pp (3/14)) |
-| H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.6pp (5/11) net+108/med+12.5) | (°▼-18.3pp (1/12) net-18/med-3.1) | — |
-| H10 | deprioritize | ▼-4.8pp (55/293) net-240/med-1.4 | ▲+2.4pp (18/66) net-62/med+1.9 | ▼-18.7pp (6/76) net-220/med-3.5 | (°▼-13.3pp (1/10) net+27/med+4.8) |
+| H7 | keep-watching | ▲+6.8pp (34/112) net+7/med+2.8 | ▲+4.4pp (12/41) net-217/med+2.7 | ▼-12.4pp (3/21) net-27/med+0.0 | (°▼-5.5pp (2/11) net-56/med-6.5) |
+| H7 (either-dir) | keep-watching | ▲+8.4pp (59/112) | ▲+4.1pp (21/41) | ▼-9.4pp (8/21) | (°▲+11.1pp (6/11)) |
+| H8 | keep-watching | ▲+2.1pp (161/347) | ▲+6.7pp (43/80) | ·+1.1pp (35/72) | (°▼-23.4pp (3/15)) |
+| H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.6pp (5/11) net+108/med+12.5) | (°▼-18.4pp (1/12) net-18/med-3.1) | — |
+| H10 | deprioritize | ▼-4.8pp (55/293) net-240/med-1.4 | ▲+2.4pp (18/66) net-62/med+1.9 | ▼-18.8pp (6/76) net-220/med-3.5 | (°▼-13.7pp (1/10) net+27/med+4.8) |
 | **union coverage** | | 52.2% (94/180) | 47.2% (25/53) | 78.6% (22/28) | 83.3% (5/6) |
 
-Not graded: H5 disabled; H6 definition-pending — see register entries.
+Not graded: H5 disabled; H6 definition-pending; H11 definition-pending; H12 definition-pending — see register entries.
 
 ---
 
@@ -32,8 +32,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ·-0.4pp (16/69) net+194/med+2.8 | (°▲+2.8pp (5/17) net-18/med-1.0) |
-| london | ▲+6.9pp (7/22) net+133/med+3.0 | (°·+1.7pp (1/4) net-17/med-7.0) |
+| whole | ·-0.4pp (16/69) net+194/med+2.8 | (°▲+2.7pp (5/17) net-18/med-1.0) |
+| london | ▲+6.9pp (7/22) net+133/med+3.0 | (°·+1.3pp (1/4) net-17/med-7.0) |
 | overlap | (°▲+23.9pp (1/2) net+35/med+17.7) | (°▼-33.8pp (0/1) net-0/med-0.3) |
 | ny_only | ▲+8.0pp (4/22) net+17/med+1.6 | (°▼-11.0pp (0/1) net-1/med-0.8) |
 | dead | (°▲+7.4pp (3/12) net+30/med+1.1) | (°▲+33.5pp (1/2) net+3/med+1.7) |
@@ -55,8 +55,8 @@ Grading: directional. Latest review: promote-candidate (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ·+1.2pp (86/347) net+781/med+1.5 | ▲+10.0pp (26/71) net-60/med-0.8 |
-| london | ▲+6.3pp (25/80) net+521/med+9.2 | (°▼-9.0pp (2/14) net-14/med-1.8) |
+| whole | ·+1.2pp (86/347) net+781/med+1.5 | ▲+9.4pp (26/72) net-65/med-0.8 |
+| london | ▲+6.3pp (25/80) net+521/med+9.2 | (°▼-10.4pp (2/15) net-19/med-2.5) |
 | overlap | (°·+1.2pp (3/11) net+21/med+3.5) | (°▼-33.8pp (0/1) net+1/med+1.0) |
 | ny_only | ▲+4.3pp (8/55) net-487/med-2.5 | (°▼-11.0pp (0/8) net-5/med-1.0) |
 | dead | ·+1.3pp (17/90) net+180/med+0.8 | (°▲+33.5pp (4/8) net+16/med+3.1) |
@@ -65,7 +65,7 @@ Grading: directional. Latest review: promote-candidate (recommendation).
 - backtest payoff: right +3270 / wrong -2490 / net +781 pts; median per fire +1.50 (n=347)
 - backtest best call: 2026-07-30 04:03 +155.1pts remaining (episode 178.3pts, major)
 - backtest worst false alarm: 2026-07-24 06:52 -98.0pts adverse
-- forward payoff: right +203 / wrong -263 / net -60 pts; median per fire -0.80 (n=71)
+- forward payoff: right +203 / wrong -268 / net -65 pts; median per fire -0.80 (n=72)
 - forward best call: 2026-08-17 10:33 +37.0pts remaining (episode 42.7pts, major)
 - forward worst false alarm: 2026-08-18 12:00 -25.5pts adverse
 - earliness (backtest): median 27.5 pts of move remaining at fire (n=39)
@@ -78,8 +78,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | — | (°▲+23.4pp (2/4) net+8/med+0.3) |
-| london | — | (°▲+26.7pp (1/2) net+8/med+3.8) |
+| whole | — | (°▲+23.3pp (2/4) net+8/med+0.3) |
+| london | — | (°▲+26.3pp (1/2) net+8/med+3.8) |
 | overlap | — | — |
 | ny_only | — | (°▼-11.0pp (0/1) net+1/med+0.8) |
 | dead | — | (°▲+83.5pp (1/1) net-0/med-0.2) |
@@ -125,9 +125,9 @@ Grading: directional + either-direction (dual). Latest review: keep-watching (re
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+7.6pp (35/112) net+7/med+2.8 | ▼-12.3pp (3/21) net-32/med+0.0 |
-| london | ▲+4.4pp (12/41) net-217/med+2.7 | (°▼-5.1pp (2/11) net-60/med-8.5) |
-| overlap | ▲+13.0pp (9/23) net+227/med+8.7 | (°▼-33.8pp (0/1) net+5/med+5.3) |
+| whole | ▲+6.8pp (34/112) net+7/med+2.8 | ▼-12.4pp (3/21) net-27/med+0.0 |
+| london | ▲+4.4pp (12/41) net-217/med+2.7 | (°▼-5.5pp (2/11) net-56/med-6.5) |
+| overlap | ▲+8.7pp (8/23) net+227/med+8.7 | (°▼-33.8pp (0/1) net+5/med+5.3) |
 | ny_only | (°▲+4.1pp (2/14) net-24/med+0.0) | (°▼-11.0pp (0/6) net+17/med+3.9) |
 | dead | (°▲+2.4pp (1/5) net+60/med+3.5) | (°▼-16.5pp (0/1) net+0/med+0.0) |
 | asia | ▲+5.4pp (11/29) net-38/med+0.7 | (°▲+8.5pp (1/2) net+6/med+3.0) |
@@ -135,7 +135,7 @@ Grading: directional + either-direction (dual). Latest review: keep-watching (re
 - backtest payoff: right +1097 / wrong -1090 / net +7 pts; median per fire +2.80 (n=112)
 - backtest best call: 2026-07-24 11:09 +98.2pts remaining (episode 98.2pts, major)
 - backtest worst false alarm: 2026-07-30 06:55 -94.0pts adverse
-- forward payoff: right +74 / wrong -106 / net -32 pts; median per fire +0.00 (n=21)
+- forward payoff: right +74 / wrong -101 / net -27 pts; median per fire +0.00 (n=21)
 - forward best call: 2026-08-18 19:09 +7.5pts remaining (episode 10.0pts)
 - forward worst false alarm: 2026-08-17 11:49 -29.5pts adverse
 - earliness (backtest): median 22.6 pts of move remaining at fire (n=30)
@@ -144,9 +144,9 @@ Grading: directional + either-direction (dual). Latest review: keep-watching (re
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+9.3pp (60/112) | ▼-9.1pp (8/21) |
-| london | ▲+4.1pp (21/41) | (°▲+12.1pp (6/11)) |
-| overlap | ▲+9.7pp (14/23) | (°▼-67.5pp (0/1)) |
+| whole | ▲+8.4pp (59/112) | ▼-9.4pp (8/21) |
+| london | ▲+4.1pp (21/41) | (°▲+11.1pp (6/11)) |
+| overlap | ▲+5.4pp (13/23) | (°▼-67.5pp (0/1)) |
 | ny_only | (°▲+8.6pp (4/14)) | (°▼-22.0pp (0/6)) |
 | dead | (°▼-12.8pp (1/5)) | (°▼-33.1pp (0/1)) |
 | asia | ▲+9.4pp (20/29) | (°▲+31.8pp (2/2)) |
@@ -167,9 +167,9 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+2.1pp (161/347) | ▲+2.1pp (35/71) |
-| london | ▲+6.7pp (43/80) | (°▼-21.0pp (3/14)) |
-| overlap | (°▲+12.4pp (7/11)) | (°▼-67.5pp (0/1)) |
+| whole | ▲+2.1pp (161/347) | ·+1.1pp (35/72) |
+| london | ▲+6.7pp (43/80) | (°▼-23.4pp (3/15)) |
+| overlap | (°▲+12.5pp (7/11)) | (°▼-67.5pp (0/1)) |
 | ny_only | ▲+23.6pp (24/55) | (°▼-9.5pp (1/8)) |
 | dead | ·+1.6pp (31/90) | (°▲+29.4pp (5/8)) |
 | asia | ▼-9.1pp (56/111) | ▼-3.2pp (26/40) |
@@ -190,7 +190,7 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▲+3.7pp (15/55) net+319/med+3.5 | (°▼-18.3pp (1/12) net-18/med-3.1) |
+| whole | ▲+3.7pp (15/55) net+319/med+3.5 | (°▼-18.4pp (1/12) net-18/med-3.1) |
 | london | (°▲+20.6pp (5/11) net+108/med+12.5) | — |
 | overlap | — | (°▼-33.8pp (0/1) net-1/med-1.0) |
 | ny_only | (°▲+14.8pp (3/12) net+115/med+2.8) | (°▲+22.3pp (1/3) net+11/med+6.8) |
@@ -213,8 +213,8 @@ Grading: directional. Latest review: deprioritize (recommendation).
 
 | session | backtest | forward |
 |---|---|---|
-| whole | ▼-4.8pp (55/293) net-240/med-1.4 | ▼-18.7pp (6/76) net-220/med-3.5 |
-| london | ▲+2.4pp (18/66) net-62/med+1.9 | (°▼-13.3pp (1/10) net+27/med+4.8) |
+| whole | ▼-4.8pp (55/293) net-240/med-1.4 | ▼-18.8pp (6/76) net-220/med-3.5 |
+| london | ▲+2.4pp (18/66) net-62/med+1.9 | (°▼-13.7pp (1/10) net+27/med+4.8) |
 | overlap | (°▼-26.1pp (0/7) net+27/med+6.8) | (°▼-33.8pp (0/5) net-75/med-15.8) |
 | ny_only | ·-0.6pp (8/83) net+51/med-1.5 | (°▼-5.7pp (1/19) net-14/med-1.0) |
 | dead | ▼-3.7pp (5/36) net-110/med-2.5 | (°▼-16.5pp (0/15) net-24/med-2.0) |
@@ -227,6 +227,14 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward best call: 2026-08-14 16:54 +22.5pts remaining (episode 16.8pts)
 - forward worst false alarm: 2026-08-17 14:08 -24.2pts adverse
 - earliness (backtest): median 19.4 pts of move remaining at fire (n=26)
+
+## H11 — definition-pending
+*Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
+Latest review: pending-on-operator. See the register entry for what is missing.
+
+## H12 — definition-pending
+*A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
+Latest review: pending-on-operator. See the register entry for what is missing.
 
 ---
 

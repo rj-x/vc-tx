@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-  "engine_commit": "e458da339281b12dd6bbe63ac27d56b3e7c601e5",
+  "engine_commit": "2c046e97faaf113a9ce89ae3355e0b6cf62ba69e",
   "yardsticks": [
     "qualifying_move (registry: operator ratification 2026-08-18)",
     "major_move (same)",
@@ -214,9 +214,9 @@
         },
         "n_fires": 112,
         "precision": {
-          "hits": 35,
+          "hits": 34,
           "of": 112,
-          "pct": 31.2
+          "pct": 30.4
         },
         "coverage": {
           "covered": 30,
@@ -247,9 +247,9 @@
         "payoff": null,
         "n_fires": 112,
         "precision": {
-          "hits": 60,
+          "hits": 59,
           "of": 112,
-          "pct": 53.6
+          "pct": 52.7
         },
         "coverage": {
           "covered": 41,
@@ -462,23 +462,23 @@
         "source": "forward_feed_replay",
         "grading": "directional",
         "payoff": {
-          "n": 71,
+          "n": 72,
           "total_pts_right": 203.1,
-          "total_pts_wrong": -263.1,
-          "net_pts": -60.0,
+          "total_pts_wrong": -268.1,
+          "net_pts": -65.0,
           "median_per_fire": -0.8,
           "horizon_marks_net": {
-            "5": 5.9,
-            "10": 23.9,
+            "5": 1.9,
+            "10": 21.7,
             "20": 74.1,
             "30": 28.8
           }
         },
-        "n_fires": 71,
+        "n_fires": 72,
         "precision": {
           "hits": 26,
-          "of": 71,
-          "pct": 36.6
+          "of": 72,
+          "pct": 36.1
         },
         "coverage": {
           "covered": 6,
@@ -559,8 +559,8 @@
         "payoff": {
           "n": 21,
           "total_pts_right": 73.8,
-          "total_pts_wrong": -105.5,
-          "net_pts": -31.7,
+          "total_pts_wrong": -101.0,
+          "net_pts": -27.2,
           "median_per_fire": 0.0,
           "horizon_marks_net": {
             "5": 13.9,
@@ -635,11 +635,11 @@
         "source": "forward_feed_replay",
         "grading": "either-direction",
         "payoff": null,
-        "n_fires": 71,
+        "n_fires": 72,
         "precision": {
           "hits": 35,
-          "of": 71,
-          "pct": 49.3
+          "of": 72,
+          "pct": 48.6
         },
         "coverage": {
           "covered": 12,
@@ -719,8 +719,8 @@
         "source": "forward_feed_replay",
         "n_qualifying_episodes": 28,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 47.2,
-        "per_direction_base_rate_pct": 26.6,
+        "bar_qualify_base_rate_pct": 47.5,
+        "per_direction_base_rate_pct": 26.7,
         "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     }
@@ -1227,9 +1227,9 @@
           },
           "n_fires": 23,
           "precision": {
-            "hits": 9,
+            "hits": 8,
             "of": 23,
-            "pct": 39.1
+            "pct": 34.8
           },
           "coverage": {
             "covered": 3,
@@ -1260,9 +1260,9 @@
           "payoff": null,
           "n_fires": 23,
           "precision": {
-            "hits": 14,
+            "hits": 13,
             "of": 23,
-            "pct": 60.9
+            "pct": 56.5
           },
           "coverage": {
             "covered": 4,
@@ -1335,7 +1335,7 @@
           "source": "backtest_replay/overlap",
           "n_qualifying_episodes": 12,
           "n_major": 1,
-          "bar_qualify_base_rate_pct": 51.2,
+          "bar_qualify_base_rate_pct": 51.1,
           "per_direction_base_rate_pct": 26.1,
           "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
@@ -2428,23 +2428,23 @@
           "source": "forward_feed_replay/london",
           "grading": "directional",
           "payoff": {
-            "n": 14,
+            "n": 15,
             "total_pts_right": 57.2,
-            "total_pts_wrong": -71.0,
-            "net_pts": -13.8,
-            "median_per_fire": -1.75,
+            "total_pts_wrong": -76.0,
+            "net_pts": -18.8,
+            "median_per_fire": -2.5,
             "horizon_marks_net": {
-              "5": 12.8,
-              "10": 14.5,
+              "5": 8.8,
+              "10": 12.3,
               "20": 29.5,
               "30": 39.5
             }
           },
-          "n_fires": 14,
+          "n_fires": 15,
           "precision": {
             "hits": 2,
-            "of": 14,
-            "pct": 14.3
+            "of": 15,
+            "pct": 13.3
           },
           "coverage": {
             "covered": 2,
@@ -2518,9 +2518,9 @@
           "payoff": {
             "n": 11,
             "total_pts_right": 41.6,
-            "total_pts_wrong": -101.7,
-            "net_pts": -60.1,
-            "median_per_fire": -8.5,
+            "total_pts_wrong": -97.2,
+            "net_pts": -55.6,
+            "median_per_fire": -6.5,
             "horizon_marks_net": {
               "5": 17.4,
               "10": 34.6,
@@ -2566,7 +2566,7 @@
             "pct": 33.3
           },
           "earliness": {
-            "median_pts_remaining_at_fire": 19.6,
+            "median_pts_remaining_at_fire": 22.8,
             "n": 2
           },
           "best_call": {
@@ -2587,11 +2587,11 @@
           "source": "forward_feed_replay/london",
           "grading": "either-direction",
           "payoff": null,
-          "n_fires": 14,
+          "n_fires": 15,
           "precision": {
             "hits": 3,
-            "of": 14,
-            "pct": 21.4
+            "of": 15,
+            "pct": 20.0
           },
           "coverage": {
             "covered": 3,
@@ -2631,8 +2631,8 @@
           "source": "forward_feed_replay/london",
           "n_qualifying_episodes": 6,
           "n_major": 3,
-          "bar_qualify_base_rate_pct": 42.4,
-          "per_direction_base_rate_pct": 23.3,
+          "bar_qualify_base_rate_pct": 43.4,
+          "per_direction_base_rate_pct": 23.7,
           "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
         }
       },
@@ -4025,8 +4025,8 @@
         "source": "forward_feed_replay",
         "n_qualifying_episodes": 28,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 47.2,
-        "per_direction_base_rate_pct": 26.6,
+        "bar_qualify_base_rate_pct": 47.5,
+        "per_direction_base_rate_pct": 26.7,
         "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
       }
     }
