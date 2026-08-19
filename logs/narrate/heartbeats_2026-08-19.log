@@ -1,0 +1,44 @@
+# narrate LIVE uk100fut (id 70152) - narrative-only by construction; polling 1/min via the collector; Ctrl-C to stop
+!! LOCKBOX-SCOPE ACCESS (narrative-only): uk100fut/1min served past 2026-08-04 00:00:00+00:00 for a narrate replay - labels/phases/hypotheses/dump only; no metrics or aggregates permitted.
+# warmed from store: 28 sessions, last CASH bar 2026-08-19 12:38:00+00:00
+# ♥ 12:53Z last_bar=12:53Z close=10778.6 | 1h RANGING/+0 | 15min RANGING/-1 | <cash> | 15 bars since last label — alive and unimpressed
+# ♥ 13:08Z last_bar=13:08Z close=10761.3 | 1h RANGING/+0 | 15min RANGING/-1 | <cash> | 30 bars since last label — alive and unimpressed
+# ♥ 13:23Z last_bar=13:23Z close=10756.1 | 1h RANGING/+0 | 15min RANGING/+0 | <cash> | 45 bars since last label — alive and unimpressed
+# ♥ 13:38Z last_bar=13:38Z close=10752.6 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 60 bars since last label — alive and unimpressed
+# ♥ 13:53Z last_bar=13:53Z close=10770.6 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 75 bars since last label — alive and unimpressed
+# ♥ 14:08Z last_bar=14:08Z close=10771.1 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 90 bars since last label — alive and unimpressed
+# ♥ 14:23Z last_bar=14:23Z close=10775.1 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 105 bars since last label — alive and unimpressed
+# ♥ 14:38Z last_bar=14:38Z close=10777.1 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 120 bars since last label — alive and unimpressed
+# ♥ 14:53Z last_bar=14:53Z close=10783.1 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 135 bars since last label — alive and unimpressed
+# ♥ 15:08Z last_bar=15:08Z close=10779.1 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 150 bars since last label — alive and unimpressed
+# ♥ 15:23Z last_bar=15:23Z close=10775.6 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 165 bars since last label — alive and unimpressed
+# ♥ 15:38Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 15:53Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 16:08Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 16:23Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 16:38Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 16:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 17:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 17:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 17:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 17:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 18:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 18:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 18:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 18:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 19:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 19:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 19:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 19:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# poll failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+# ♥ 20:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 20:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 20:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 20:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 21:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 21:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 21:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 21:54Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 22:09Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 22:24Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed
+# ♥ 22:39Z last_bar=15:30Z close=10774.8 | 1h RANGING/+0 | 15min RANGING/+1 | <cash> | 172 bars since last label — alive and unimpressed

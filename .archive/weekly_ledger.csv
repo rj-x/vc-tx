@@ -1,0 +1,11 @@
+# narrate replay uk100fut 2026-08-10 00:00:00+00:00 -> 2026-08-14 10:00:00+00:00 stack 1h/15min/1min (narrative-only=True)
+# convention: bars stamped by CLOSE time; store/TradingView open-time stamp = close - TF
+# state @ window start: 1h: phase=RANGING trend=+1 age=0 atr=21.2 close=10896.4 | 15min: phase=RANGING trend=-1 age=17 atr=6.1 close=10896.1; active hypotheses: none
+timestamp_close_iso,timestamp_open_iso,marker_type,price_level,direction,segment,outcome,gate_branch,strength_trajectory,variant,entry,stop,exit,location_ref,location_level,dist_pts,dist_signal_atr
+2026-08-11T10:27:00+00:00,2026-08-11T10:26:00+00:00,UPTHRUST_1min_OBSERVATIONAL,10865.1,SHORT,cash,SIGNATURE_MOMENT,,,narrate,,,,signal_swing_level,10865.5,-0.4,-0.03
+2026-08-11T10:29:00+00:00,2026-08-11T10:28:00+00:00,UPTHRUST_1min_OBSERVATIONAL,10864.6,SHORT,cash,SIGNATURE_MOMENT,,,narrate,,,,signal_swing_level,10865.5,-0.9,-0.06
+2026-08-11T15:47:00+00:00,2026-08-11T15:46:00+00:00,UPTHRUST_1min_OBSERVATIONAL,10857.8,SHORT,post_close,SIGNATURE_MOMENT,,,narrate,,,,signal_swing_level,10857.3,0.5,0.04
+2026-08-12T09:51:00+00:00,2026-08-12T09:50:00+00:00,UPTHRUST_1min_OBSERVATIONAL,10864.1,SHORT,cash,SIGNATURE_MOMENT,,,narrate,,,,session_high,10864.1,0.0,0.0
+2026-08-12T12:32:00+00:00,2026-08-12T12:31:00+00:00,SPRING_1min_OBSERVATIONAL,10848.1,LONG,cash,SIGNATURE_MOMENT,,,narrate,,,,signal_swing_level,10844.6,3.5,0.29
+# state @ window end: 1h: phase=RANGING trend=+0 age=0 atr=11.6 close=10773.1 | 15min: phase=RANGING trend=-1 age=11 atr=12.8 close=10773.1; active hypotheses: none
+# end of window - uk100fut narrated through 2026-08-14 08:39Z

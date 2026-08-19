@@ -43,3 +43,9 @@
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:47:52.986183+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:53:01.940016+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 21:58:11.002518+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-18 22:03:20.337380+00:00"}
+{"event": "STOP", "ts": "2026-08-19 12:37:14.888020+00:00", "last_processed": "2026-08-19 12:35:00+00:00"}
+{"event": "START", "ts": "2026-08-19 12:38:18.933334+00:00", "warm_through": "2026-08-19 12:36:00+00:00", "coverage_gap": "0 days 00:03:18.933309", "definition": "frozen_v1", "hash": "a5d7198c59a30a1b"}
+{"event": "EXECUTOR_ERROR", "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>", "ts": "2026-08-19 20:06:58.353042+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-19 20:21:23.374254+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-19 20:26:32.314111+00:00"}
