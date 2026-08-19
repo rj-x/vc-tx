@@ -32,6 +32,14 @@ readout windows — backtest (working set, < lockbox boundary) and forward
 (>= go_live, sealed windows auto-skipped per register 30). The lockbox
 span is excluded from both. Counts adjacent to every number; fills do not
 exist here by construction. OBSERVATIONAL — never validation.
+
+Per-instrument mode (register 40 fence as AMENDED 2026-08-19, operator):
+the scoreboard runs per instrument — episodes, ATR, base rates, and
+session slices computed from each instrument's OWN store; output as
+per-instrument sections (uk100 canonical; ger40/nas100/us30 stamped
+PROVISIONAL pending their validation evenings), same matrix+cards format.
+NO POOLING across instruments — cross-instrument aggregation is a future
+registration.
 """
 
 import argparse
@@ -94,6 +102,37 @@ def validate_rows():
 QUALIFYING_ATR_MULT = 1.5      # registry: qualifying_move
 MAJOR_ATR_MULT = 3.0           # registry: major_move
 MOVE_WINDOW_MIN = 60           # registry: qualifying_move window clause
+
+# ---- per-instrument roster (register 40 fence as amended 2026-08-19).
+# The future leg carries each pair's scoreboard (the uk100->uk100fut
+# convention: the leg with real futures volume).
+CANONICAL_INSTR = "uk100fut"
+PROVISIONAL_INSTRS = ("ger40fut", "nas100fut", "us30fut")
+PAIR_OF = {"uk100fut": "uk100", "ger40fut": "ger40",
+           "nas100fut": "nas100", "us30fut": "us30"}
+_R40_VOL = ("real futures volume (register 40 first-sync sanity; canonical "
+            "verdict at this instrument's validation evening)")
+VOLUME_TYPE = {"uk100fut": "real futures volume (step-zero audit)",
+               "ger40fut": _R40_VOL, "nas100fut": _R40_VOL,
+               "us30fut": _R40_VOL}  # DATA.md rule 5: stated per report
+PROVISIONAL_STAMP = (
+    "PROVISIONAL — validation pending (register 40 fence as amended "
+    "2026-08-19): replay-only study over the synced store; canonical "
+    "status, live attachment, and Asia/pause-sensitive cell "
+    "interpretation await this instrument's validation evening. "
+    "EXPLORATORY first cross-instrument look — expectations deliberately "
+    "unregistered; anything interesting becomes a pre-registered question "
+    "before it becomes a claim. NO POOLING across instruments.")
+PROVISIONAL_CAVEATS = [
+    ("drift-adjustment segments and engine tod baselines run on the "
+     "provider/London trading-day structure; native cash-hour "
+     "segmentation is part of this instrument's validation evening"),
+    ("sessions = the registered register-37 world-clock partition "
+     "(native-tz, DST-proof) applied to this instrument's own bars; "
+     "'london' is not the home session of the US pairs"),
+    ("the forward window (>= go_live) is also a replay over the synced "
+     "store — this instrument has NO live attachment yet"),
+]
 # row declarations + event-row depth live in the signal module (the
 # guard's one permitted home for hypothesis identifiers); imported read-only
 
@@ -350,7 +389,7 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
     return rows
 
 
-def run(instr="uk100fut"):
+def run(instr="uk100fut", provisional=False):
     validate_rows()
     cfg = make_cfg({"session_model.extended_hours": True,
                     "session_model.ladder": True})
@@ -379,11 +418,18 @@ def run(instr="uk100fut"):
     far = pd.Timestamp("2100-01-01", tz="UTC")
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
+    live_1m = [x for x in b1m if not x.is_stub]
     _RES = {
         "STAMP": ("OBSERVATIONAL signal scoreboard - move-detection, not "
                   "trading; no fills exist here by construction; never "
                   "validation (docs/hypothesis_lifecycle.md stage 4)"),
         "engine_commit": head,
+        "instrument": instr,
+        "pair": PAIR_OF.get(instr, instr),
+        "status": "provisional" if provisional else "canonical",
+        "volume_type": VOLUME_TYPE.get(instr, "unknown"),
+        "store_span_1min": [str(live_1m[0].ts), str(live_1m[-1].ts)]
+                           if live_1m else None,
         "yardsticks": ["qualifying_move (registry: operator ratification "
                        "2026-08-18)", "major_move (same)",
                        "context.atr_period (founding config)",
@@ -406,14 +452,18 @@ def run(instr="uk100fut"):
                      "interesting, kept distinct, NOT signal rows; frozen_v1 "
                      "in paper is the untouched baseline record")},
     } | {}
+    if provisional:
+        _RES = {"STAMP_PROVISIONAL": PROVISIONAL_STAMP,
+                "provisional_caveats": PROVISIONAL_CAVEATS} | _RES
     all_names = frozenset(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS \
         | frozenset(DERIVED_FIRES)
     bar_sessions = sessions_of_index(
         pd.DatetimeIndex(series[0], tz="UTC"))
     out = _RES
+    fwd_lbl = "post_go_live_replay" if provisional else "forward_feed_replay"
     windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
                             "backtest_replay"),
-               "forward": (gl, far, "forward_feed_replay")}
+               "forward": (gl, far, fwd_lbl)}
     for wname, (lo, hi, lbl) in windows.items():
         out["signals"][wname] = score(signal_fires, qual, episodes, series,
                                       lo, hi, lbl, names=all_names)
@@ -504,12 +554,10 @@ def _row_keys(blk, reg):
     return keys
 
 
-def _emit_performance_md(res):
-    """Two human views (register 38): page 1 summary matrix, page 2
-    per-hypothesis cards. Full detail lives in signal_scoreboard.json."""
-    reg = register_status()
-    labels = register_labels()
-    claims = parse_claims()
+def _section_lines(res, reg, labels, claims):
+    """Matrix + cards for ONE instrument (register 38 format, heading
+    levels shifted down one so per-instrument sections are the top level;
+    register 40 amendment 2026-08-19)."""
     CTX = [("backtest", "whole"), ("backtest", "london"),
            ("forward", "whole"), ("forward", "london")]
 
@@ -517,19 +565,31 @@ def _emit_performance_md(res):
         return (res["signals"][w] if c == "whole"
                 else res["signals_by_session"][w][c])
 
-    L = ["# Hypothesis Performance — Summary Matrix (page 1)",
-         "",
-         f"Engine `{res['engine_commit'][:9]}` — {res['STAMP']}",
-         "",
-         "**Review labels are RECOMMENDATIONS — none actioned, review "
-         "pending operator familiarity.** Cells: marker + precision LIFT "
-         "vs that context's OWN chance rate, (hits/fires), payoff "
-         "net/median points (directional rows; either-direction rows have "
-         "no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = "
-         "within. (°…) = small-n (fires<20 or episodes<10): dimmed, "
-         "excluded from any future label arithmetic. Read "
-         "READING_GUIDE.md first; full detail in signal_scoreboard.json.",
+    provisional = res.get("status") == "provisional"
+    span = res.get("store_span_1min") or ["?", "?"]
+    L = [f"# {res.get('pair', '?')} ({res.get('instrument', '?')}) — "
+         + ("PROVISIONAL" if provisional else "CANONICAL"),
          ""]
+    if provisional:
+        L += [f"> **{PROVISIONAL_STAMP}**", ">"]
+        L += [f"> - {c}" for c in PROVISIONAL_CAVEATS]
+        L.append("")
+    L += [f"Store span (1M, close ts): {span[0]} → {span[1]}. "
+          f"Volume type: {res.get('volume_type', 'unknown')}.",
+          "",
+          "## Summary Matrix (page 1)",
+          "",
+          f"Engine `{res['engine_commit'][:9]}` — {res['STAMP']}",
+          "",
+          "**Review labels are RECOMMENDATIONS — none actioned, review "
+          "pending operator familiarity.** Cells: marker + precision LIFT "
+          "vs that context's OWN chance rate, (hits/fires), payoff "
+          "net/median points (directional rows; either-direction rows have "
+          "no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = "
+          "within. (°…) = small-n (fires<20 or episodes<10): dimmed, "
+          "excluded from any future label arithmetic. Read "
+          "READING_GUIDE.md first; full detail in signal_scoreboard.json.",
+          ""]
     hdr = ("| H | label | " + " | ".join(f"{w} {c}" for w, c in CTX) + " |")
     L += [hdr, "|---|---|" + "---|" * len(CTX)]
     # context header row: episodes + both base rates per context
@@ -555,11 +615,11 @@ def _emit_performance_md(res):
     pend = [f"H{n} {reg[n]}" for n in sorted(reg) if reg[n] != "signal-live"]
     L += ["", "Not graded: " + "; ".join(pend)
           + " — see register entries.", "",
-          "---", "", "# Hypothesis Cards (page 2)", ""]
+          "## Hypothesis Cards (page 2)", ""]
 
     for n in sorted(reg):
         if reg[n] != "signal-live":
-            L += [f"## H{n} — {reg[n]}",
+            L += [f"### H{n} — {reg[n]}",
                   f"*{claims.get(n, '')}*",
                   f"Latest review: {labels.get(n, '-')}. See the register "
                   f"entry for what is missing.", ""]
@@ -567,7 +627,7 @@ def _emit_performance_md(res):
         base = blk_of("backtest", "whole").get(f"S-H{n}") or {}
         grading = base.get("grading", "directional")
         both = f"S-H{n} (either-dir)" in whole_bt
-        L += [f"## H{n}",
+        L += [f"### H{n}",
               f"*{claims.get(n, '')}*",
               f"Grading: {grading}"
               + (" + either-direction (dual)" if both else "")
@@ -614,6 +674,32 @@ def _emit_performance_md(res):
                          f"{e['median_pts_remaining_at_fire']} pts of move "
                          f"remaining at fire (n={e['n']})")
             L.append("")
+    return L
+
+
+def _emit_performance_md(results):
+    """Per-instrument sections (register 40 amendment, 2026-08-19), each
+    the register-38 matrix+cards format computed ONLY from that
+    instrument's own store. uk100 canonical, the rest PROVISIONAL. NO
+    POOLING across instruments."""
+    reg = register_status()
+    labels = register_labels()
+    claims = parse_claims()
+    first = next(iter(results.values()))
+    L = ["# Hypothesis Performance — Per-Instrument",
+         "",
+         f"Engine `{first['engine_commit'][:9]}` — register 40 fence as "
+         "amended 2026-08-19 (operator): one section per instrument, each "
+         "computed only from that instrument's own store and native "
+         "calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL "
+         "(validation pending). Numbers are NEVER pooled across "
+         "instruments — cross-instrument aggregation is a future "
+         "registration. This first cross-instrument read is EXPLORATORY: "
+         "expectations deliberately unregistered; anything interesting "
+         "becomes a pre-registered question before it becomes a claim.",
+         ""]
+    for res in results.values():
+        L += ["---", ""] + _section_lines(res, reg, labels, claims) + [""]
     L += ["---", "", "Appendix: the per-session detail beyond London and "
           "every horizon-mark payoff live in signal_scoreboard.json "
           "(generated, same run)."]
@@ -680,6 +766,21 @@ Forward is days old; several cells are single-digit. The small-n dimming
 is registered convention (operator, 2026-08-19), not styling. Nothing in
 these pages is validation — walk-forward and the lockbox remain the only
 verdict machinery.
+
+## Per-instrument sections (register 40 fence as amended 2026-08-19)
+One section per instrument, each computed ONLY from that instrument's own
+store: its own episodes, ATR, base rates, and session slices. uk100 is
+CANONICAL; ger40/nas100/us30 are PROVISIONAL (replay-only permission —
+canonical status, live attachment, and Asia/pause-sensitive cell
+interpretation await each instrument's validation evening) and this first
+read is EXPLORATORY (expectations deliberately unregistered; anything
+interesting becomes a pre-registered question before it becomes a claim).
+Numbers are NEVER pooled across instruments — cross-instrument
+aggregation is a future registration. Session labels are the registered
+world-clock partition applied to each instrument's own bars: 'london' is
+not the home session of the US pairs, and each section's chance rates are
+its own. The session-character notes above are FTSE-specific; read other
+instruments' session structure only after their validation evenings.
 """
 
 
@@ -690,35 +791,52 @@ def _emit_reading_guide():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--instr", default="uk100fut")
+    ap.add_argument("--instr", nargs="+",
+                    default=[CANONICAL_INSTR, *PROVISIONAL_INSTRS],
+                    help="instruments to run, canonical first (register 40 "
+                         "amendment: per-instrument sections, no pooling)")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
-    res = run(a.instr)
+    results = {}
+    for instr in a.instr:
+        provisional = instr != CANONICAL_INSTR
+        print(f"\n#### {PAIR_OF.get(instr, instr)} ({instr}) — "
+              + ("PROVISIONAL replay" if provisional else "canonical"))
+        results[instr] = run(instr, provisional=provisional)
     path = os.path.join(OUT, "signal_scoreboard.json")
+    doc = {"REGISTER_40_AMENDMENT": (
+               "per-instrument sections (operator, 2026-08-19): replay-only "
+               "cross-instrument runs permitted; uk100 canonical; "
+               "ger40/nas100/us30 PROVISIONAL pending validation evenings; "
+               "NO POOLING across instruments"),
+           "instruments": results}
     with open(path, "w") as f:
-        json.dump(res, f, indent=2, default=str)
-    _emit_performance_md(res)
-    for block in ("signals", "founding_recipes_at_confirmation"):
-      for src in ("backtest", "forward"):
-        print(f"\n== {block} / {src} ==")
-        for name, r in res[block][src].items():
-            if name == "_moves":
-                print(f"  qualifying episodes: {r['n_qualifying_episodes']} "
-                      f"(major {r['n_major']})")
-                continue
-            if name == "_union":
-                print(f"  union coverage: {r['pct']}% "
-                      f"({r['episodes_covered_by_any_row']}/{r['of']})")
-                continue
-            if r.get("n_fires") == 0:
-                print(f"  {name}: fires 0")
-                continue
-            p, c, e = r["precision"], r["coverage"], r["earliness"]
-            print(f"  {name}: fires {r['n_fires']} | precision "
-                  f"{p['pct']}% ({p['hits']}/{p['of']}) | coverage "
-                  f"{c['pct']}% ({c['covered']}/{c['of']}) | median pts "
-                  f"remaining {e['median_pts_remaining_at_fire']} "
-                  f"(n={e['n']})")
+        json.dump(doc, f, indent=2, default=str)
+    _emit_performance_md(results)
+    for instr, res in results.items():
+      print(f"\n==== {res['pair']} ({instr}) — {res['status'].upper()} ====")
+      for block in ("signals", "founding_recipes_at_confirmation"):
+        for src in ("backtest", "forward"):
+            print(f"\n== {block} / {src} ==")
+            for name, r in res[block][src].items():
+                if name == "_moves":
+                    print(f"  qualifying episodes: "
+                          f"{r['n_qualifying_episodes']} "
+                          f"(major {r['n_major']})")
+                    continue
+                if name == "_union":
+                    print(f"  union coverage: {r['pct']}% "
+                          f"({r['episodes_covered_by_any_row']}/{r['of']})")
+                    continue
+                if r.get("n_fires") == 0:
+                    print(f"  {name}: fires 0")
+                    continue
+                p, c, e = r["precision"], r["coverage"], r["earliness"]
+                print(f"  {name}: fires {r['n_fires']} | precision "
+                      f"{p['pct']}% ({p['hits']}/{p['of']}) | coverage "
+                      f"{c['pct']}% ({c['covered']}/{c['of']}) | median pts "
+                      f"remaining {e['median_pts_remaining_at_fire']} "
+                      f"(n={e['n']})")
     print(f"\nOBSERVATIONAL scoreboard -> {path}")
 
 

@@ -53,13 +53,21 @@ working directory.
 | `gold` / `goldvar` | 68924 / 72302 | Gold (fixed / variable spread) | **Examined and PARKED (register 40, 2026-08-19): no rolling-future / real-volume feed visible at the provider** — revisitable by re-registration |
 | `eurusd` | 16635 | EURUSD | **Examined and PARKED (register 40): spot FX volume is synthetic; futures volume is a minority shadow of an OTC market** — revisitable by re-registration |
 
-**Register 40 fence:** no new pair's data feeds any study, scoreboard row,
-or census until its staged validation evening passes (feed probe per the
-measured-contract template — the FTSE index-0 finding is NOT inherited;
-volume provenance verdict per pair; native-calendar session boundary
-measurement incl. each market's own pause windows; store verification in
-the daily run). Priority: nas100 → ger40 → us30. Sealed-window schedule
-applies from each instrument's first bar.
+**Register 40 fence (AMENDED 2026-08-19, operator):** replay-only studies
+over synced stores are permitted immediately for ger40/nas100/us30, every
+output stamped **PROVISIONAL — validation pending** per instrument.
+Canonical status, live attachment, and Asia/pause-sensitive cell
+interpretation still require each instrument's staged validation evening
+(feed probe per the measured-contract template — the FTSE index-0 finding
+is NOT inherited; volume provenance verdict per pair; native-calendar
+session boundary measurement incl. each market's own pause windows; store
+verification in the daily run). Rationale recorded with the amendment: the
+replay-relevant checks (store verification, volume provenance, basis
+sanity) were already green at the first sync; the outstanding items gate
+live semantics and session edges, not replays. No pooling across
+instruments — cross-instrument aggregation is a future registration.
+Priority: nas100 → ger40 → us30. Sealed-window schedule applies from each
+instrument's first bar.
 
 History depth for `uk100fut` (as of 2026-08-11): 1d from 2021-07-05 · 1h from
 2024-08-11 · 15m from 2025-08-10 · 1M from 2026-07-12 (~26 sessions). The
