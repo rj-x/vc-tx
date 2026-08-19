@@ -52,12 +52,15 @@ INSTRUMENTS = {
     "uk100":     "16645",   # FTSE 100
     "ger40":     "17068",   # DAX
     "us30":      "17322",   # Wall Street 30 (Dow)
-    "ustech100": "20190",   # NASDAQ 100
+    "nas100":    "20190",   # NASDAQ 100 (slug renamed from ustech100, register 40)
     "us500":     "67995",   # S&P 500, per 0.1
     "gold":      "68924",   # Gold per 0.1, fixed spread
     "goldvar":   "72302",   # Gold per 0.1, VARIABLE spread
     "eurusd":    "16635",
     "uk100fut":  "70152",   # UK 100 Rolling Future — futures volume, roll handled by provider
+    "ger40fut":  "70088",   # DAX Rolling Future (register 40 pair; validation pending)
+    "nas100fut": "70433",   # NASDAQ 100 Rolling Future (register 40 pair; validation pending)
+    "us30fut":   "70153",   # Dow Rolling Future (register 40 pair; validation pending)
     "uk100sep26": "72516",  # UK 100 Future (Sep 2026) — outright contract, for roll verification.
                             # Contract-specific ID (history starts at its 2026-06-11 listing);
                             # expected to go quiet after expiry ~2026-09-18. See DATA.md.

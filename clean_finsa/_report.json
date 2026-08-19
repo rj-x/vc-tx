@@ -5,53 +5,53 @@
       16.5
     ],
     "1min": {
-      "bars": 36323,
-      "cash_bars": 13770,
-      "sessions": 33,
+      "bars": 37210,
+      "cash_bars": 14091,
+      "sessions": 34,
       "first": "2026-07-12",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.3
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 23311,
-      "cash_bars": 8777,
-      "sessions": 310,
+      "bars": 23371,
+      "cash_bars": 8798,
+      "sessions": 311,
       "first": "2025-08-10",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.3
     },
     "1h": {
-      "bars": 11579,
-      "cash_bars": 4583,
-      "sessions": 609,
+      "bars": 11594,
+      "cash_bars": 4588,
+      "sessions": 610,
       "first": "2024-08-11",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.3
     },
     "4h": {
-      "bars": 3155,
-      "cash_bars": 1529,
-      "sessions": 609,
+      "bars": 3159,
+      "cash_bars": 1531,
+      "sessions": 610,
       "first": "2024-08-11",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.3
     },
     "1d": {
-      "bars": 1292,
-      "cash_bars": 1292,
-      "sessions": 1292,
+      "bars": 1293,
+      "cash_bars": 1293,
+      "sessions": 1293,
       "first": "2021-07-05",
-      "last": "2026-08-17",
-      "zero_vol_pct": 49.38,
+      "last": "2026-08-18",
+      "zero_vol_pct": 49.34,
       "clamped": 0,
       "median_spread_cash": 5.0
     }
@@ -62,110 +62,110 @@
       16.5
     ],
     "1min": {
-      "bars": 43320,
-      "cash_bars": 16320,
-      "sessions": 40,
+      "bars": 44206,
+      "cash_bars": 16636,
+      "sessions": 41,
       "first": "2026-07-03",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.8
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 23764,
-      "cash_bars": 8947,
-      "sessions": 315,
+      "bars": 23824,
+      "cash_bars": 8968,
+      "sessions": 316,
       "first": "2025-08-03",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.8
     },
     "1h": {
-      "bars": 11704,
-      "cash_bars": 4628,
-      "sessions": 617,
+      "bars": 11719,
+      "cash_bars": 4633,
+      "sessions": 618,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.8
     },
     "4h": {
-      "bars": 3189,
-      "cash_bars": 1544,
-      "sessions": 617,
+      "bars": 3193,
+      "cash_bars": 1546,
+      "sessions": 618,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.8
     },
     "1d": {
-      "bars": 3755,
-      "cash_bars": 3755,
-      "sessions": 3755,
+      "bars": 3756,
+      "cash_bars": 3756,
+      "sessions": 3756,
       "first": "2012-03-26",
-      "last": "2026-08-17",
-      "zero_vol_pct": 59.81,
+      "last": "2026-08-18",
+      "zero_vol_pct": 59.8,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
   },
   "ger40": {
     "cash_session_london": [
-      8.0,
-      16.5
+      9.0,
+      17.5
     ],
     "1min": {
-      "bars": 43158,
-      "cash_bars": 16320,
-      "sessions": 39,
+      "bars": 44047,
+      "cash_bars": 16636,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.0
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 23797,
-      "cash_bars": 8941,
-      "sessions": 317,
+      "bars": 23857,
+      "cash_bars": 8962,
+      "sessions": 318,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.0
     },
     "1h": {
-      "bars": 11755,
-      "cash_bars": 4644,
-      "sessions": 624,
+      "bars": 11770,
+      "cash_bars": 4649,
+      "sessions": 625,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.0
     },
     "4h": {
-      "bars": 3204,
-      "cash_bars": 1548,
-      "sessions": 624,
+      "bars": 3105,
+      "cash_bars": 1033,
+      "sessions": 625,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
-      "median_spread_cash": 1.0
+      "median_spread_cash": 1.175
     },
     "1d": {
-      "bars": 3774,
-      "cash_bars": 3774,
-      "sessions": 3774,
+      "bars": 3775,
+      "cash_bars": 3775,
+      "sessions": 3775,
       "first": "2012-01-30",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.12,
+      "last": "2026-08-18",
+      "zero_vol_pct": 60.11,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -176,53 +176,53 @@
       16.0
     ],
     "1min": {
-      "bars": 43856,
+      "bars": 44763,
       "cash_bars": 12475,
-      "sessions": 39,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 24435,
+      "bars": 24496,
       "cash_bars": 6865,
-      "sessions": 326,
+      "sessions": 327,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "1h": {
-      "bars": 12025,
+      "bars": 12040,
       "cash_bars": 3098,
-      "sessions": 638,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "4h": {
-      "bars": 3145,
+      "bars": 3149,
       "cash_bars": 551,
-      "sessions": 638,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.425
     },
     "1d": {
-      "bars": 3840,
-      "cash_bars": 3840,
-      "sessions": 3840,
+      "bars": 3841,
+      "cash_bars": 3841,
+      "sessions": 3841,
       "first": "2012-03-13",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.78,
+      "last": "2026-08-18",
+      "zero_vol_pct": 60.77,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -233,110 +233,53 @@
       16.0
     ],
     "1min": {
-      "bars": 43921,
+      "bars": 44829,
       "cash_bars": 12480,
-      "sessions": 39,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.9
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 24442,
+      "bars": 24503,
       "cash_bars": 6871,
-      "sessions": 326,
+      "sessions": 327,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.9
     },
     "1h": {
-      "bars": 12025,
+      "bars": 12040,
       "cash_bars": 3098,
-      "sessions": 638,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 1.9
     },
     "4h": {
-      "bars": 3145,
+      "bars": 3149,
       "cash_bars": 551,
-      "sessions": 638,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 2.2667
     },
     "1d": {
-      "bars": 3847,
-      "cash_bars": 3847,
-      "sessions": 3847,
+      "bars": 3848,
+      "cash_bars": 3848,
+      "sessions": 3848,
       "first": "2012-03-05",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.83,
-      "clamped": 0,
-      "median_spread_cash": 0.0
-    }
-  },
-  "ustech100": {
-    "cash_session_london": [
-      9.5,
-      16.0
-    ],
-    "1min": {
-      "bars": 43923,
-      "cash_bars": 12480,
-      "sessions": 39,
-      "first": "2026-07-05",
       "last": "2026-08-18",
-      "zero_vol_pct": 0.0,
-      "clamped": 0,
-      "median_spread_cash": 0.9
-    },
-    "stale_1min_days": 0.0,
-    "15min": {
-      "bars": 24442,
-      "cash_bars": 6871,
-      "sessions": 326,
-      "first": "2025-08-04",
-      "last": "2026-08-18",
-      "zero_vol_pct": 0.0,
-      "clamped": 0,
-      "median_spread_cash": 0.9
-    },
-    "1h": {
-      "bars": 12026,
-      "cash_bars": 3098,
-      "sessions": 638,
-      "first": "2024-08-04",
-      "last": "2026-08-18",
-      "zero_vol_pct": 0.0,
-      "clamped": 0,
-      "median_spread_cash": 0.9
-    },
-    "4h": {
-      "bars": 3145,
-      "cash_bars": 551,
-      "sessions": 638,
-      "first": "2024-08-04",
-      "last": "2026-08-18",
-      "zero_vol_pct": 0.0,
-      "clamped": 0,
-      "median_spread_cash": 1.125
-    },
-    "1d": {
-      "bars": 3847,
-      "cash_bars": 3847,
-      "sessions": 3847,
-      "first": "2012-03-05",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.85,
+      "zero_vol_pct": 60.81,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -347,53 +290,53 @@
       16.0
     ],
     "1min": {
-      "bars": 44063,
-      "cash_bars": 15360,
-      "sessions": 39,
+      "bars": 44969,
+      "cash_bars": 15378,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 24559,
-      "cash_bars": 8517,
-      "sessions": 325,
+      "bars": 24620,
+      "cash_bars": 8518,
+      "sessions": 326,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "1h": {
-      "bars": 12051,
+      "bars": 12066,
       "cash_bars": 4180,
-      "sessions": 637,
+      "sessions": 638,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.3
     },
     "4h": {
-      "bars": 3260,
+      "bars": 3264,
       "cash_bars": 1034,
-      "sessions": 637,
+      "sessions": 638,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.45
     },
     "1d": {
-      "bars": 3845,
-      "cash_bars": 3845,
-      "sessions": 3845,
+      "bars": 3846,
+      "cash_bars": 3846,
+      "sessions": 3846,
       "first": "2011-12-30",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.86,
+      "last": "2026-08-18",
+      "zero_vol_pct": 60.84,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -404,53 +347,53 @@
       16.0
     ],
     "1min": {
-      "bars": 44063,
-      "cash_bars": 15360,
-      "sessions": 39,
+      "bars": 44970,
+      "cash_bars": 15379,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 24559,
-      "cash_bars": 8517,
-      "sessions": 325,
+      "bars": 24620,
+      "cash_bars": 8518,
+      "sessions": 326,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "1h": {
-      "bars": 12051,
+      "bars": 12066,
       "cash_bars": 4180,
-      "sessions": 637,
+      "sessions": 638,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.3
     },
     "4h": {
-      "bars": 3260,
+      "bars": 3264,
       "cash_bars": 1034,
-      "sessions": 637,
+      "sessions": 638,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.4
     },
     "1d": {
-      "bars": 3845,
-      "cash_bars": 3845,
-      "sessions": 3845,
+      "bars": 3846,
+      "cash_bars": 3846,
+      "sessions": 3846,
       "first": "2011-12-30",
-      "last": "2026-08-17",
-      "zero_vol_pct": 60.86,
+      "last": "2026-08-18",
+      "zero_vol_pct": 60.84,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -461,53 +404,53 @@
       21.0
     ],
     "1min": {
-      "bars": 45654,
-      "cash_bars": 24960,
-      "sessions": 39,
+      "bars": 46608,
+      "cash_bars": 25279,
+      "sessions": 40,
       "first": "2026-07-05",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.0001
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 25786,
-      "cash_bars": 13962,
-      "sessions": 326,
+      "bars": 25851,
+      "cash_bars": 13983,
+      "sessions": 327,
       "first": "2025-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.0001
     },
     "1h": {
-      "bars": 12633,
-      "cash_bars": 6841,
-      "sessions": 638,
+      "bars": 12649,
+      "cash_bars": 6846,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.0
     },
     "4h": {
-      "bars": 3269,
-      "cash_bars": 2104,
-      "sessions": 638,
+      "bars": 3273,
+      "cash_bars": 2106,
+      "sessions": 639,
       "first": "2024-08-04",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 0.0
     },
     "1d": {
-      "bars": 7449,
-      "cash_bars": 7449,
-      "sessions": 7449,
+      "bars": 7450,
+      "cash_bars": 7450,
+      "sessions": 7450,
       "first": "1999-01-04",
-      "last": "2026-08-17",
-      "zero_vol_pct": 79.31,
+      "last": "2026-08-18",
+      "zero_vol_pct": 79.3,
       "clamped": 0,
       "median_spread_cash": 0.0
     }
@@ -518,55 +461,283 @@
       16.5
     ],
     "1min": {
-      "bars": 36323,
-      "cash_bars": 13770,
-      "sessions": 33,
+      "bars": 37210,
+      "cash_bars": 14091,
+      "sessions": 34,
       "first": "2026-07-12",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 4.0
     },
     "stale_1min_days": 0.0,
     "15min": {
-      "bars": 4346,
-      "cash_bars": 1632,
-      "sessions": 59,
+      "bars": 4406,
+      "cash_bars": 1653,
+      "sessions": 60,
       "first": "2026-06-11",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 4.0
     },
     "1h": {
-      "bars": 1097,
-      "cash_bars": 432,
-      "sessions": 59,
+      "bars": 1112,
+      "cash_bars": 437,
+      "sessions": 60,
       "first": "2026-06-11",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 4.0
     },
     "4h": {
-      "bars": 300,
-      "cash_bars": 144,
-      "sessions": 59,
+      "bars": 304,
+      "cash_bars": 146,
+      "sessions": 60,
       "first": "2026-06-11",
-      "last": "2026-08-18",
+      "last": "2026-08-19",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 4.0
     },
     "1d": {
-      "bars": 48,
-      "cash_bars": 48,
-      "sessions": 48,
+      "bars": 49,
+      "cash_bars": 49,
+      "sessions": 49,
       "first": "2026-06-11",
-      "last": "2026-08-17",
+      "last": "2026-08-18",
       "zero_vol_pct": 0.0,
       "clamped": 0,
       "median_spread_cash": 6.0
+    }
+  },
+  "ger40fut": {
+    "cash_session_london": [
+      9.0,
+      17.5
+    ],
+    "1min": {
+      "bars": 30067,
+      "cash_bars": 11540,
+      "sessions": 28,
+      "first": "2026-07-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.5
+    },
+    "stale_1min_days": 0.0,
+    "15min": {
+      "bars": 22754,
+      "cash_bars": 8599,
+      "sessions": 303,
+      "first": "2025-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.5
+    },
+    "1h": {
+      "bars": 11517,
+      "cash_bars": 4553,
+      "sessions": 610,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.5
+    },
+    "4h": {
+      "bars": 3037,
+      "cash_bars": 1012,
+      "sessions": 610,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.5
+    },
+    "1d": {
+      "bars": 2762,
+      "cash_bars": 2762,
+      "sessions": 2762,
+      "first": "2015-11-21",
+      "last": "2026-08-18",
+      "zero_vol_pct": 76.25,
+      "clamped": 0,
+      "median_spread_cash": 0.0
+    }
+  },
+  "nas100": {
+    "cash_session_london": [
+      9.5,
+      16.0
+    ],
+    "1min": {
+      "bars": 44830,
+      "cash_bars": 12480,
+      "sessions": 40,
+      "first": "2026-07-05",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 0.9
+    },
+    "stale_1min_days": 0.0,
+    "15min": {
+      "bars": 24503,
+      "cash_bars": 6871,
+      "sessions": 327,
+      "first": "2025-08-04",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 0.9
+    },
+    "1h": {
+      "bars": 12041,
+      "cash_bars": 3098,
+      "sessions": 639,
+      "first": "2024-08-04",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 0.9
+    },
+    "4h": {
+      "bars": 3149,
+      "cash_bars": 551,
+      "sessions": 639,
+      "first": "2024-08-04",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.125
+    },
+    "1d": {
+      "bars": 3848,
+      "cash_bars": 3848,
+      "sessions": 3848,
+      "first": "2012-03-05",
+      "last": "2026-08-18",
+      "zero_vol_pct": 60.84,
+      "clamped": 0,
+      "median_spread_cash": 0.0
+    }
+  },
+  "nas100fut": {
+    "cash_session_london": [
+      9.5,
+      16.0
+    ],
+    "1min": {
+      "bars": 31095,
+      "cash_bars": 8580,
+      "sessions": 28,
+      "first": "2026-07-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.8
+    },
+    "stale_1min_days": 0.0,
+    "15min": {
+      "bars": 23514,
+      "cash_bars": 6601,
+      "sessions": 314,
+      "first": "2025-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.8
+    },
+    "1h": {
+      "bars": 11796,
+      "cash_bars": 3038,
+      "sessions": 626,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 1.8
+    },
+    "4h": {
+      "bars": 3085,
+      "cash_bars": 541,
+      "sessions": 626,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 2.05
+    },
+    "1d": {
+      "bars": 1173,
+      "cash_bars": 1173,
+      "sessions": 1173,
+      "first": "2022-02-03",
+      "last": "2026-08-18",
+      "zero_vol_pct": 42.97,
+      "clamped": 0,
+      "median_spread_cash": 1.5
+    }
+  },
+  "us30fut": {
+    "cash_session_london": [
+      9.5,
+      16.0
+    ],
+    "1min": {
+      "bars": 31073,
+      "cash_bars": 8580,
+      "sessions": 28,
+      "first": "2026-07-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 2.6
+    },
+    "stale_1min_days": 0.0,
+    "15min": {
+      "bars": 23516,
+      "cash_bars": 6602,
+      "sessions": 314,
+      "first": "2025-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 2.6
+    },
+    "1h": {
+      "bars": 11797,
+      "cash_bars": 3038,
+      "sessions": 626,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 2.6
+    },
+    "4h": {
+      "bars": 3085,
+      "cash_bars": 541,
+      "sessions": 626,
+      "first": "2024-08-19",
+      "last": "2026-08-19",
+      "zero_vol_pct": 0.0,
+      "clamped": 0,
+      "median_spread_cash": 3.45
+    },
+    "1d": {
+      "bars": 1324,
+      "cash_bars": 1324,
+      "sessions": 1324,
+      "first": "2021-07-05",
+      "last": "2026-08-18",
+      "zero_vol_pct": 49.47,
+      "clamped": 0,
+      "median_spread_cash": 4.0
     }
   }
 }

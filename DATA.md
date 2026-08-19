@@ -43,11 +43,23 @@ working directory.
 | `uk100fut` | 70152 | UK 100 Rolling Future | **Primary development instrument** |
 | `uk100` | 16645 | UK 100 cash CFD | Cross-check; deeper D1 volume (2020+) |
 | `uk100sep26` | 72516 | UK 100 Future, Sep-2026 outright | Roll verification (see below) |
-| `ger40` | 17068 | DAX cash CFD | Portability stage 1 |
-| `ustech100` | 20190 | NASDAQ 100 cash CFD | Portability stage 2 |
-| `us30` / `us500` | 17322 / 67995 | Dow / S&P cash CFDs | Collected, unused by strategy |
-| `gold` / `goldvar` | 68924 / 72302 | Gold (fixed / variable spread) | Collected, unused by strategy |
-| `eurusd` | 16635 | EURUSD | Collected, unused by strategy |
+| `ger40` | 17068 | DAX cash CFD | Pair cash leg (register 40); **validation pending** |
+| `ger40fut` | 70088 | DAX Rolling Future | Pair future leg (register 40); **validation pending** |
+| `nas100` | 20190 | NASDAQ 100 cash CFD (slug renamed from `ustech100`, register 40 — stores git-mv'd, history intact) | Pair cash leg; **validation pending** |
+| `nas100fut` | 70433 | NASDAQ 100 Rolling Future | Pair future leg (register 40); **validation pending** |
+| `us30` | 17322 | Dow cash CFD | Pair cash leg (register 40); **validation pending** |
+| `us30fut` | 70153 | Dow Rolling Future | Pair future leg (register 40); **validation pending** |
+| `us500` | 67995 | S&P cash CFD | Collected, unused by strategy |
+| `gold` / `goldvar` | 68924 / 72302 | Gold (fixed / variable spread) | **Examined and PARKED (register 40, 2026-08-19): no rolling-future / real-volume feed visible at the provider** — revisitable by re-registration |
+| `eurusd` | 16635 | EURUSD | **Examined and PARKED (register 40): spot FX volume is synthetic; futures volume is a minority shadow of an OTC market** — revisitable by re-registration |
+
+**Register 40 fence:** no new pair's data feeds any study, scoreboard row,
+or census until its staged validation evening passes (feed probe per the
+measured-contract template — the FTSE index-0 finding is NOT inherited;
+volume provenance verdict per pair; native-calendar session boundary
+measurement incl. each market's own pause windows; store verification in
+the daily run). Priority: nas100 → ger40 → us30. Sealed-window schedule
+applies from each instrument's first bar.
 
 History depth for `uk100fut` (as of 2026-08-11): 1d from 2021-07-05 · 1h from
 2024-08-11 · 15m from 2025-08-10 · 1M from 2026-07-12 (~26 sessions). The

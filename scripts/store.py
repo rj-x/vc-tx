@@ -54,10 +54,13 @@ LONDON = "Europe/London"
 # diverge (the old hardcoded London hours were off by one hour there).
 SESSIONS = {
     "uk100":     (8.0, 16.5),    # FTSE cash 08:00-16:30 London
-    "ger40":     (8.0, 16.5),    # Frankfurt 09:00-17:30 CET == 08:00-16:30 London (EU DST aligned)
+    "ger40":     (9.0, 17.5),    # Xetra/Frankfurt 09:00-17:30, NATIVE Berlin tz (register 40)
+    "ger40fut":  (9.0, 17.5),    # DAX rolling future — trade only in Frankfurt cash hours
     "us500":     (9.5, 16.0),    # NYSE 09:30-16:00 ET
     "us30":      (9.5, 16.0),
-    "ustech100": (9.5, 16.0),
+    "nas100":    (9.5, 16.0),    # renamed from ustech100 (register 40)
+    "nas100fut": (9.5, 16.0),    # NASDAQ rolling future — NYSE cash hours
+    "us30fut":   (9.5, 16.0),    # Dow rolling future — NYSE cash hours
     "gold":      (8.0, 16.0),    # COMEX active hours, ET
     "goldvar":   (8.0, 16.0),
     "eurusd":    (8.0, 21.0),    # London + NY overlap, the liquid window
@@ -66,8 +69,10 @@ SESSIONS = {
 }
 SESSION_TZ = {
     "us500": "America/New_York", "us30": "America/New_York",
-    "ustech100": "America/New_York",
+    "us30fut": "America/New_York",
+    "nas100": "America/New_York", "nas100fut": "America/New_York",
     "gold": "America/New_York", "goldvar": "America/New_York",
+    "ger40": "Europe/Berlin", "ger40fut": "Europe/Berlin",
 }
 # NOTE: 4h resampling stays anchored to London wall time (lwall); for US
 # instruments its cash-open anchor can drift 1h in DST-divergence weeks —
