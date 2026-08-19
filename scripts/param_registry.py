@@ -57,6 +57,8 @@ AUTHORITY = {
     "scoreboard.py:SMALL_N_FIRES": "operator order 2026-08-19 (register 38): fires<20 dimmed + excluded from label arithmetic",
     "scoreboard.py:SMALL_N_EPISODES": "operator order 2026-08-19 (register 38): episodes<10 dimmed + excluded from label arithmetic",
     "scoreboard.py:MARKER_BAND_PP": "register 38 presentation convention (±2pp at-chance band for the ▲/▼/· markers) — implementer-proposed, operator ratification pending",
+    "recipes.py:RECIPE_SETS": "register 41 — recipe_set_v0 ILLUSTRATIVE defaults (R-FIX 10/20 pts, R-ATR 1.5x/3.0x, R-TRAIL 6th-bar, R-TRAIL-ATR 6th-bar +/- 0.5xATR), operator ratification pending; additions/changes only by re-registration, counted in the trial log",
+    "recipes.py:RECIPE_SET_VERSION": "register 41 — the set version every recipe artifact must state",
     "signal_watch.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) — S-T3B row fires on T1d's measured conditions exactly (prereg_signal_rows_v1)",
     "signal_watch.py:SEQUENCE_N": "S-EFFORTLESS-SEQ sequence clause: 2 consecutive same-direction effortless prints (prereg_signal_rows_v1; operator-reviewable)",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
