@@ -493,7 +493,13 @@ set still growing toward fold support).
    (exit-at-flip vs hold-to-rule counterfactual). Co-fire census block
    drafted, unsent, parked behind this. excursion_profiles.md live;
    regularity noted: management styles differ by hypothesis more than
-   instrument.
+   instrument. Artifact read 2026-08-19 evening: trend-flip split
+   replicates 8/8 contexts (gaps 19–47pp, real n; early flips worse in
+   7/8); median MFE ≈ median MAE at home (fires directionless at
+   median — only tail asymmetry is harvestable: H9 home, nas100-H1 fwd,
+   ger40-H7); t-MFE 13–45 min validates the 60-min ruler. Post-flip
+   continuation cut in flight = the decisive number for the v1 values
+   discussion.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
