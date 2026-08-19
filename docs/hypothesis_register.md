@@ -218,6 +218,51 @@ entry is a separate decision.
 - AUDIT: PASS. First readouts at/below chance (18.8% backtest, 7.1%
   forward vs ~23%) — evidence, not verdict.
 
+## H11
+- **Claim:** Price entering a low-volume price zone traverses it faster
+  than baseline; entering a high-volume node it stalls or reverses at
+  above-baseline rates.
+- **Firing condition:** **not written** — definition-pending. Parameters
+  to pre-register BEFORE any computation: price bucket size, rolling
+  lookback, node/gap thresholds. Grading is behavioral/either-direction
+  (traversal speed and stall/reversal rates need their own grading model —
+  to be defined with the parameters). Also noted as a candidate
+  CONDITIONER for existing signals (location machinery, the H6 thread) —
+  the session volume profile sense-organ (register 16, backlog #2) is the
+  natural instrument.
+- **Origin:** data-born 2026-08-19 — operator volume-profile question +
+  institutional-execution thought experiment. **Causal story (recorded per
+  the origin note):** institutions execute size where they found liquidity
+  before — high-volume nodes mark standing interest that absorbs or repels
+  price; low-volume gaps mark prices where no business was done and none
+  defends them, so price traverses fast because nobody trades there.
+- **Status:** **definition-pending** (until parameters ratified).
+- **Latest review:** pending-on-operator (parameter ratification).
+- AUDIT: claim PASSES (two-clause, both falsifiable); condition fails
+  (unparameterized by design — pre-registration required first).
+
+## H12
+- **Claim:** A zone showing repeated visits with elevated volume,
+  diminishing range-per-unit-volume, and drying pullback volume precedes a
+  directional move away from the zone in the absorber's direction.
+- **Firing condition:** **not written** — definition-pending. Sequence
+  parameters to pre-register: minimum visits, visit window, and the
+  mechanical definitions of "diminishing range-per-unit-volume" and
+  "drying pullback volume". Directional grading (the absorber's direction
+  signs the fire).
+- **Origin:** data-born 2026-08-19 — same operator thought experiment as
+  H11. **Causal story:** a large buyer (seller) absorbing supply (demand)
+  at a level caps the range produced per unit of volume while refilling;
+  when opposing pullback volume dries up, the absorber's inventory is
+  complete and price moves away in their direction. **Cross-reference:**
+  the multi-visit COMPOSITE of H3's single-cluster claim — H3 fires on one
+  absorption cluster; H12 requires the repeated-visit sequence with the
+  exhaustion signature.
+- **Status:** **definition-pending** (until parameters ratified).
+- **Latest review:** pending-on-operator (parameter ratification).
+- AUDIT: claim PASSES (compound but one sentence, falsifiable as a
+  conjunction); condition fails (unparameterized by design).
+
 ---
 
 ## Retired signal rows (register 35 sweep — no third category)
