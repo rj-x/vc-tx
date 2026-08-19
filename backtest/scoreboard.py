@@ -42,9 +42,10 @@ import subprocess
 import numpy as np
 import pandas as pd
 
-from engine.signal_watch import (AGNOSTIC_ROWS, DUAL_GRADED,
+from engine.signal_watch import (AGNOSTIC_ROWS, DERIVED_FIRES, DUAL_GRADED,
                                  EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
                                  H9_CHAIN_DEPTH_MIN, SignalWatch)
+from backtest.sessions import SESSIONS, session_of
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.forward_migration import _replay
 from backtest.campaign import make_cfg
@@ -75,7 +76,7 @@ def validate_rows():
     the canonical register (S-H<n>, status signal-live)."""
     import re as _re
     reg = register_status()
-    for key in set(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS:
+    for key in set(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS | set(DERIVED_FIRES):
         m = _re.fullmatch(r"S-H(\d+)", key)
         if not m:
             raise ValueError(f"signal row {key!r}: IDs are S-H<n>, nothing "
@@ -220,19 +221,7 @@ def fires_from_events(events):
     return out
 
 
-def trend_flips(events):
-    """15M trend series from debug PHASE_EVAL events -> flip timestamps."""
-    flips, prev = [], 0
-    for e in events:
-        if e["type"] == "PHASE_EVAL" and e.get("tf") == "15min":
-            t = e.get("trend", 0)
-            if t != prev and t != 0:
-                flips.append((pd.Timestamp(e["ts"]), t))
-            prev = t
-    return flips
-
-
-def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
+def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
           names=frozenset()):
     """One source window [lo_ts, hi_ts); sealed spans already excluded
     from `fires`/`episodes` by the caller."""
@@ -263,7 +252,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
                                 else (seg.max() - cl[i]))
             (hits if ok else misses).append(
                 {**f, "close_at_fire": float(cl[i]), "adverse_pts": adverse})
-        covered, remaining, flip_mins = [], [], []
+        covered, remaining = [], []
         for e in E:
             pre = [f for f in nf if (agnostic or f["dir"] == e["dir"])
                    and e["start"] - win <= f["ts"] <= e["start"]]
@@ -274,9 +263,6 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
             rem = (e["peak"] - cl[i]) * e["dir"]
             covered.append((e, first, float(rem)))
             remaining.append(float(rem))
-            fl = [t for t, d in flips if d == e["dir"] and t >= first["ts"]]
-            if fl:
-                flip_mins.append((min(fl) - first["ts"]).total_seconds() / 60)
         best = max(covered, key=lambda c: c[2], default=None)
         worst = max(misses, key=lambda m: m["adverse_pts"], default=None)
         rows[name] = {
@@ -291,10 +277,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
             "earliness": {
                 "median_pts_remaining_at_fire": (round(float(np.median(remaining)), 1)
                                                  if remaining else None),
-                "n": len(remaining),
-                "median_min_before_15m_flip": (round(float(np.median(flip_mins)), 1)
-                                               if flip_mins else None),
-                "n_flips": len(flip_mins)},
+                "n": len(remaining)},
             "best_call": ({"ts": str(best[1]["ts"]), "dir": best[1]["dir"],
                            "episode_start": str(best[0]["start"]),
                            "pts_remaining_at_fire": round(best[2], 1),
@@ -304,6 +287,17 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
                                    "adverse_pts": round(worst["adverse_pts"], 1)}
                                   if worst else None),
         }
+    union_cov = 0
+    for e in E:
+        pre = [f for f in F if (f["name"].split(" ")[0] in AGNOSTIC_ROWS
+                                or f["dir"] == e["dir"])
+               and e["start"] - win <= f["ts"] <= e["start"]]
+        if pre:
+            union_cov += 1
+    rows["_union"] = {"source": label,
+                      "episodes_covered_by_any_row": union_cov,
+                      "of": len(E),
+                      "pct": round(100 * union_cov / len(E), 1) if E else None}
     w = (ts >= lo_ts.value) & (ts < hi_ts.value)
     base = (round(100 * float(np.mean(qual[1][w] | qual[-1][w])), 1)
             if w.any() else None)
@@ -319,8 +313,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
 def run(instr="uk100fut"):
     validate_rows()
     cfg = make_cfg({"session_model.extended_hours": True,
-                    "session_model.ladder": True,
-                    "debug.structure": True})       # PHASE_EVAL for flips
+                    "session_model.ladder": True})
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     events = engine.narrative.events
@@ -329,11 +322,14 @@ def run(instr="uk100fut"):
         b1m, bars[cfg.mtf.signal_tf], cfg.context.atr_period)
     recipe_fires = fires_from_events(events)          # CONFIRM = recipe stage
     signal_fires = watch.fires + h9_fires(events, cfg)  # bare conditions
+    # derived rows (register 37): ONE condition, two gradings — copied fires
+    for derived, src_row in DERIVED_FIRES.items():
+        signal_fires += [{**f, "name": derived}
+                         for f in watch.fires if f["name"] == src_row]
     # dual grading (register 36): same fire timestamps, either-direction
     # mode — the movement-not-direction question graded explicitly
     signal_fires += [{**f, "name": f["name"] + " (either-dir)"}
-                     for f in watch.fires if f["name"] in DUAL_GRADED]
-    flips = trend_flips(events)
+                     for f in signal_fires if f["name"] in DUAL_GRADED]
     # sealed spans excluded before scoring (register 30 pattern)
     recipe_fires = [f for f in recipe_fires if not is_sealed(f["ts"])]
     signal_fires = [f for f in signal_fires if not is_sealed(f["ts"])]
@@ -343,7 +339,7 @@ def run(instr="uk100fut"):
     far = pd.Timestamp("2100-01-01", tz="UTC")
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
-    return {
+    _RES = {
         "STAMP": ("OBSERVATIONAL signal scoreboard - move-detection, not "
                   "trading; no fills exist here by construction; never "
                   "validation (docs/hypothesis_lifecycle.md stage 4)"),
@@ -362,98 +358,192 @@ def run(instr="uk100fut"):
                      "only on whether a qualifying move follows, how "
                      "reliably, how early. Trade logic is a separate later "
                      "layer for signals that earn one."),
-        "signals": {
-            "backtest": score(signal_fires, qual, episodes, series, flips,
-                              pd.Timestamp("1970-01-01", tz="UTC"), boundary,
-                              "backtest_replay",
-                              names=frozenset(FIRING_CONDITIONS)
-                              | EVENT_DERIVED_ROWS),
-            "forward": score(signal_fires, qual, episodes, series, flips,
-                             gl, far, "forward_feed_replay",
-                             names=frozenset(FIRING_CONDITIONS)
-                             | EVENT_DERIVED_ROWS)},
+        "signals": {},
+        "signals_by_session": {},
         "founding_recipes_at_confirmation": {
             "note": ("graded pattern+wrapper stacks (confirmation = recipe "
                      "stage under the pure-signals doctrine) - historically "
                      "interesting, kept distinct, NOT signal rows; frozen_v1 "
-                     "in paper is the untouched baseline record"),
-            "backtest": score(recipe_fires, qual, episodes, series, flips,
-                              pd.Timestamp("1970-01-01", tz="UTC"), boundary,
-                              "backtest_replay",
-                              names=frozenset({"H1", "H2", "H3", "H4", "H5"})),
-            "forward": score(recipe_fires, qual, episodes, series, flips,
-                             gl, far, "forward_feed_replay",
-                             names=frozenset({"H1", "H2", "H3", "H4", "H5"}))},
-    }
+                     "in paper is the untouched baseline record")},
+    } | {}
+    all_names = frozenset(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS \
+        | frozenset(DERIVED_FIRES)
+    out = _RES
+    windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
+                            "backtest_replay"),
+               "forward": (gl, far, "forward_feed_replay")}
+    for wname, (lo, hi, lbl) in windows.items():
+        out["signals"][wname] = score(signal_fires, qual, episodes, series,
+                                      lo, hi, lbl, names=all_names)
+        out["founding_recipes_at_confirmation"][wname] = score(
+            recipe_fires, qual, episodes, series, lo, hi, lbl,
+            names=frozenset({"H1", "H2", "H3", "H4", "H5"}))
+        # session splits (register 37): reporting slices only — the
+        # machinery stays 24/5; fires and episodes assigned by session_of
+        out["signals_by_session"][wname] = {}
+        for sess in SESSIONS:
+            sf = [f for f in signal_fires if session_of(f["ts"]) == sess]
+            se = [e for e in episodes if session_of(e["start"]) == sess]
+            out["signals_by_session"][wname][sess] = score(
+                sf, qual, se, series, lo, hi, f"{lbl}/{sess}",
+                names=all_names)
+    return out
+
+
+def _fmt_row(disp, st, lab, r):
+    if st != "signal-live" or r is None:
+        return f"| {disp} | {st} | {lab} | - | - | - | - | - | - | - |"
+    if r.get("n_fires") == 0:
+        return (f"| {disp} | signal-live | {lab} | "
+                f"{r.get('grading', 'directional')} | 0 | - | - | - | - "
+                f"| - |")
+    p, c, e = r["precision"], r["coverage"], r["earliness"]
+    bc, wf = r["best_call"], r["worst_false_alarm"]
+    return (f"| {disp} | signal-live | {lab} | {r['grading']} "
+            f"| {r['n_fires']} "
+            f"| {p['pct']}% ({p['hits']}/{p['of']}) "
+            f"| {c['pct']}% ({c['covered']}/{c['of']}) "
+            f"| {e['median_pts_remaining_at_fire']} (n={e['n']}) "
+            f"| {bc['ts'][:16] + ' +' + str(bc['pts_remaining_at_fire']) + 'pts' if bc else '-'} "
+            f"| {wf['ts'][:16] + ' -' + str(wf['adverse_pts']) + 'pts' if wf else '-'} |")
+
+
+_HDR = ("| H | status | review label | grading | fires | precision | "
+        "coverage | median pts remaining | best call | worst false alarm |\n"
+        "|---|---|---|---|---|---|---|---|---|---|")
+
+
+def _block_rows(blk, reg, labels):
+    rows = []
+    for n in sorted(reg):
+        st, lab = reg[n], labels.get(n, "-")
+        rows.append(_fmt_row(f"H{n}", st, lab, blk.get(f"S-H{n}")))
+        supp = blk.get(f"S-H{n} (either-dir)")
+        if supp:
+            rows.append(_fmt_row(f"H{n} (either-dir)", st, lab, supp))
+    return rows
 
 
 def _emit_performance_md(res):
-    """The full performance table: every H-number x all usable data x the
-    standard metrics; definition-pending/disabled rows shown as visible
-    gaps (register 35 deliverable)."""
+    """Register 35/37 deliverable: every H-number x window x session x the
+    standard metrics; gaps visible; labels shown as recommendations."""
     reg = register_status()
     labels = register_labels()
     L = ["# Hypothesis Performance Table (GENERATED by backtest.scoreboard)",
          "",
          f"Engine `{res['engine_commit'][:9]}` - {res['STAMP']}",
          "",
-         "Data: July working set (backtest_replay) + forward zone "
-         "(forward_feed_replay); lockbox span and sealed windows excluded. "
-         "Directional precision reads against ~half the either-direction "
-         "base rate shown per window; either-direction rows read against "
-         "the full base rate. Review labels are RECOMMENDATIONS (register "
-         "36) — status changes only by dated operator decision.", ""]
-    for src in ("backtest", "forward"):
-        mv = res["signals"][src]["_moves"]
-        L += [f"## {src} - {mv['n_qualifying_episodes']} qualifying episodes "
+         "**Review labels are RECOMMENDATIONS — none actioned, review "
+         "pending operator familiarity (register 37: no status decisions "
+         "this cycle).** Read reports/scoreboard/READING_GUIDE.md first. "
+         "The derived-fires pair (signal module DERIVED_FIRES) is ONE "
+         "firing condition graded two ways — never double-count. Criteria "
+         "on whole windows only (session scoping is a registered "
+         "proposal, unratified).", ""]
+    for wname in ("backtest", "forward"):
+        mv = res["signals"][wname]["_moves"]
+        un = res["signals"][wname]["_union"]
+        L += [f"## {wname} — whole window: "
+              f"{mv['n_qualifying_episodes']} episodes "
               f"({mv['n_major']} major), either-direction base rate "
-              f"{mv['bar_qualify_base_rate_pct']}%", "",
-              "| H | status | review label | grading | fires | precision "
-              "| coverage | median pts remaining | median min before 15M "
-              "flip | best call | worst false alarm |",
-              "|---|---|---|---|---|---|---|---|---|---|---|"]
-        for n in sorted(reg):
-            st = reg[n]
-            lab = labels.get(n, "-")
-            variants = [(f"H{n}", res["signals"][src].get(f"S-H{n}"))]
-            supp = res["signals"][src].get(f"S-H{n} (either-dir)")
-            if supp:
-                variants.append((f"H{n} (either-dir)", supp))
-            for disp, r in variants:
-                if st != "signal-live" or r is None:
-                    L.append(f"| {disp} | {st} | {lab} | - | - | - | - | - "
-                             f"| - | - | - |")
-                    continue
-                if r.get("n_fires") == 0:
-                    L.append(f"| {disp} | signal-live | {lab} | "
-                             f"{r.get('grading', 'directional')} | 0 | - | "
-                             f"- | - | - | - | - |")
-                    continue
-                p, c, e = r["precision"], r["coverage"], r["earliness"]
-                bc = r["best_call"]
-                wf = r["worst_false_alarm"]
-                L.append(
-                    f"| {disp} | signal-live | {lab} | {r['grading']} "
-                    f"| {r['n_fires']} "
-                    f"| {p['pct']}% ({p['hits']}/{p['of']}) "
-                    f"| {c['pct']}% ({c['covered']}/{c['of']}) "
-                    f"| {e['median_pts_remaining_at_fire']} (n={e['n']}) "
-                    f"| {e['median_min_before_15m_flip']} (n={e['n_flips']}) "
-                    f"| {bc['ts'][:16] + ' +' + str(bc['pts_remaining_at_fire']) + 'pts' if bc else '-'} "
-                    f"| {wf['ts'][:16] + ' -' + str(wf['adverse_pts']) + 'pts' if wf else '-'} |")
-        L.append("")
-    L += ["## founding recipes at confirmation (kept distinct - not "
+              f"{mv['bar_qualify_base_rate_pct']}%",
+              "", _HDR]
+        L += _block_rows(res["signals"][wname], reg, labels)
+        L += ["",
+              f"**Union coverage:** {un['pct']}% "
+              f"({un['episodes_covered_by_any_row']}/{un['of']}) of "
+              f"episodes preceded by ANY signal-live fire.", ""]
+        for sess, blk in res["signals_by_session"][wname].items():
+            mv = blk["_moves"]
+            un = blk["_union"]
+            if mv["n_qualifying_episodes"] == 0 and not any(
+                    (blk.get(f"S-H{n}") or {}).get("n_fires") for n in reg):
+                L.append(f"### {wname} / {sess} — no episodes, no fires")
+                L.append("")
+                continue
+            L += [f"### {wname} / {sess} — {mv['n_qualifying_episodes']} "
+                  f"episodes ({mv['n_major']} major); union coverage "
+                  f"{un['pct']}% ({un['episodes_covered_by_any_row']}"
+                  f"/{un['of']})", "", _HDR]
+            L += _block_rows(blk, reg, labels)
+            L.append("")
+    L += ["## founding recipes at confirmation (kept distinct — not "
           "signal rows)", ""]
-    for src in ("backtest", "forward"):
-        blk = res["founding_recipes_at_confirmation"][src]
+    for wname in ("backtest", "forward"):
+        blk = res["founding_recipes_at_confirmation"][wname]
         rows = [f"{k}: {v['n_fires']} fires"
                 + (f", precision {v['precision']['pct']}%"
                    if v.get("precision") else "")
                 for k, v in sorted(blk.items()) if not k.startswith("_")]
-        L.append(f"- {src}: " + "; ".join(rows))
+        L.append(f"- {wname}: " + "; ".join(rows))
     L.append("")
     with open(os.path.join(OUT, "hypothesis_performance.md"), "w") as f:
         f.write("\n".join(L))
+    _emit_reading_guide()
+
+
+_GUIDE = """# Reading Guide — Hypothesis Performance Table
+
+**One page. Read before the table. Labels are recommendations only —
+none actioned; status changes need a dated operator decision.**
+
+## What each column means
+- **fires** — times the bare firing condition triggered. A hypothesis is
+  only its firing condition (pure-signals doctrine); no trade logic exists
+  here.
+- **precision** — of those fires, how many were followed within 60 minutes
+  by a qualifying move (>= 1.5x the 15-minute ATR, drift-adjusted) in the
+  predicted direction. *Either-direction* rows count a move either way.
+- **coverage** — of all qualifying moves in the window, how many had this
+  signal fire in the 60 minutes before the move began. Precision asks "when
+  it speaks, is it right?"; coverage asks "how much does it see?".
+- **median pts remaining** — at the earliest covering fire, how many points
+  of the move were still ahead. The earliness metric. (A
+  minutes-before-trend-flip column existed briefly and was retired — it
+  measured time to the next unrelated flip, not earliness.)
+- **best call / worst false alarm** — dated single exhibits: the covered
+  move with most points remaining, and the miss with the worst adverse
+  drift. Anecdotes by construction; never generalize from them.
+- **union coverage** — episodes preceded by ANY live signal vs none: how
+  much of the tape the whole board sees at all.
+
+## The base-rate logic
+Roughly 44-48% of bars are followed by a qualifying move in SOME direction
+within the hour — the tape moves a lot. So: directional precision only
+means something against ~half that (~22-24%); either-direction precision
+only against the full base rate. A row AT its base rate has measured
+nothing. The base rate is printed per window and the table's numbers mean
+nothing without it.
+
+## Session character (register 37 partition; boundaries in native
+exchange timezones, DST-proof)
+- **asia** (Tokyo open -> London open): thin tape; the Asia best-call
+  cluster (03:40-04:04Z) is an OPEN QUESTION — regime edge vs thin-tape
+  artifact vs unverified feed regime (thin-tape probe pending).
+- **london** (London open -> NY open): the instrument's home session.
+- **overlap** (NY open -> London close): highest participation; macro
+  releases (12:30/13:30Z class) land here.
+- **ny_only** (London close -> NY close): FTSE tape without its home
+  market.
+- **dead** (NY close -> Tokyo open): includes the daily feed pause;
+  expect near-empty rows.
+London+overlap as the label-bearing (tradeable) window is a REGISTERED
+PROPOSAL, unratified — criteria compute on whole windows until the
+operator ratifies session scoping.
+
+## Small-n caveats
+Forward is a few sessions old; single-digit fire counts dominate several
+cells. n sits beside every number deliberately: a 50% precision on 4 fires
+is two lucky bars, not a signal. Backtest n>=100 rows are the only ones
+where the chance comparison has teeth yet. Nothing in this table is
+validation — the walk-forward and the lockbox remain the only verdict
+machinery.
+"""
+
+
+def _emit_reading_guide():
+    with open(os.path.join(OUT, "READING_GUIDE.md"), "w") as f:
+        f.write(_GUIDE)
 
 
 def main():
@@ -470,12 +560,16 @@ def main():
       for src in ("backtest", "forward"):
         print(f"\n== {block} / {src} ==")
         for name, r in res[block][src].items():
-            if r.get("n_fires") == 0:
-                print(f"  {name}: fires 0")
-                continue
             if name == "_moves":
                 print(f"  qualifying episodes: {r['n_qualifying_episodes']} "
                       f"(major {r['n_major']})")
+                continue
+            if name == "_union":
+                print(f"  union coverage: {r['pct']}% "
+                      f"({r['episodes_covered_by_any_row']}/{r['of']})")
+                continue
+            if r.get("n_fires") == 0:
+                print(f"  {name}: fires 0")
                 continue
             p, c, e = r["precision"], r["coverage"], r["earliness"]
             print(f"  {name}: fires {r['n_fires']} | precision "

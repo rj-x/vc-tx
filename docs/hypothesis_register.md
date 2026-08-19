@@ -45,6 +45,10 @@ entry is a separate decision.
 - **Firing condition:** structural `UPTHRUST` → −1, `SPRING` → +1, per 1M
   bar (`_s_h2`).
 - **Origin:** founding spec (as H1).
+- **SHARED CONDITION (register 37):** H2 and H8 are ONE firing condition
+  (these prints) graded two ways — H8's fires are copied from H2's
+  (`DERIVED_FIRES`, signal module), never independently computed. A reader
+  must never count them as two signals.
 - **Status:** **signal-live** (S-H2).
 - **Latest review:** promote-candidate (2026-08-19, review R1 — above
   per-direction chance in both windows at n≥30 per window, the register-36
@@ -156,7 +160,9 @@ entry is a separate decision.
   qualifying move follows in EITHER direction; chance baseline = the
   either-direction base rate (own registered baseline, shown per window).
   Free parameters (bracket buffer, fill window) remain walk-forward
-  recipe layer.
+  recipe layer. **SHARED CONDITION (register 37):** these are H2's fires,
+  copied (`DERIVED_FIRES`) — one condition, two gradings; never
+  double-count.
 - **Origin:** data-born 2026-08-13 (2026-08-11 10:27Z/15:47Z annotations).
   Cross-ref: candidate register H8; expansion study = its evidence
   instrument. **Standing adverse evidence:** expansion-vs-spread readouts
