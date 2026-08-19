@@ -513,6 +513,25 @@ set still growing toward fold support).
    session scoping. Tonight 21:00–22:10Z = calendar-fix verification
    night (fix deployed at 12:38Z restart — false stalls should NOT
    appear; silence = pass).
+21. Runbooks committed (`9e60be1`): docs/runbook_thin_tape_probe.md
+   (~50 min standalone — supervised moments 20:35Z + 22:02Z capture
+   starts; NO restart attached, deployment restart already happened
+   12:38Z 08-19) and docs/runbook_instrument_validation.md (~35 min per
+   instrument, nas100 first; dry-run already caught nas100 pause =
+   21:00→22:00Z, differs from FTSE's 22:05 reopen). Item 22
+   (session-JSONL) remains UNBUILT active slot — its own future restart.
+22. Backlog activation (`5380fa5` pushed, 90/90): volume-profile organ
+   BUILT (bucket 4.0pt, K=5 lookback, decile nodes — persistence
+   honestly weak, corr ~0.13, recorded in H11's proposal); H6/H11/H12
+   parameter proposals + H5 revive-draft (15M climax, short-only) on
+   operator's table; co-fire census ran pre-registered → honestly
+   negative (coverage arithmetic bit as predicted; no composite minted;
+   reruns weekly); docs/backlog_status.md = one status per idea.
+   Ratification split: PART 1 sent/pending (H5/H6/H11/H12 + R-OP1 15M +
+   FLIPGUARD arming — turns rows on); governance sitting (criteria,
+   band, session scoping, v0 values + v1 discussion w/ excursion input)
+   deliberately deferred to operator's pace. After part 1: 13 signal-
+   live, item 22 = only awaiting-build.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
