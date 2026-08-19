@@ -531,7 +531,15 @@ set still growing toward fold support).
    FLIPGUARD arming — turns rows on); governance sitting (criteria,
    band, session scoping, v0 values + v1 discussion w/ excursion input)
    deliberately deferred to operator's pace. After part 1: 13 signal-
-   live, item 22 = only awaiting-build.
+   live, item 22 = only awaiting-build. UPDATE (`90d62ef`): part 1
+   ratified+implemented — 12/12 SIGNAL-LIVE, first full board. S-H6
+   opens +22pp (45.8% vs 23.6%, 27/59) — DO NOT QUOTE until the
+   class-conditioned chance baseline lands (fires only on p90-wide bars;
+   volatility-conditioning confound; fairness amendment sent: conditioned
+   chance rate becomes a standing column for any vol-class-conditioned
+   signal). H11 +2.3pp marginal as self-predicted; H5/H12 zero July
+   fires (demanding conjunctions, accruing); H6's 480-bar baseline
+   window = implementer constant, registry-flagged.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
