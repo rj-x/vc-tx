@@ -478,6 +478,22 @@ set still growing toward fold support).
    Q-H7-GEO (Europe/US split persists) — graded at ≥30 post-validation
    forward episodes per instrument, never on generating backtests.
    Cross-instrument table live (4 sections, PROVISIONAL stamps).
+19. Grammar v1 + excursion study (`33927e9` pushed, 88/88): five
+   extensions pinned (tighter-of composition, declared ATR-TF +
+   trail-TF per component, stage/arming grammar, narrative primitives
+   in signal_watch — capability only). R-OP1 registered (operator
+   recipe: 1.5×ATR initial + 5pt-under-2nd-1M-bar trail; ATR-TF
+   awaiting operator word, 15M assumed); composition rescues the
+   degenerate trail (H2 −185 vs −547 same fires). Excursion gate
+   verdict: of three narrative-exit primitives, ONLY opposing-1M-trend-
+   flip carries information (53.6% vs 26.9% adverse, n=679/201);
+   structural cores saturated, opposing fires flat. CAUTION sent: split
+   is partly definitional (flip ≈ made of adverse move) — post-flip
+   continuation cut pre-registered as the ratification gate
+   (exit-at-flip vs hold-to-rule counterfactual). Co-fire census block
+   drafted, unsent, parked behind this. excursion_profiles.md live;
+   regularity noted: management styles differ by hypothesis more than
+   instrument.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
