@@ -40,6 +40,9 @@ observational only; none built yet; item 22 stays ahead of both)
   stream to dated files; **THE ACTIVE BUILD SLOT** and the deployment
   restart vehicle for the watchdog calendar fix, suspension detection,
   and the scoreboard's live attachment. Authorized 2026-08-17.
+- **Instrument validation evenings (register 40)** — nas100 → ger40 →
+  us30. **Runbook ready: docs/runbook_instrument_validation.md (~35 min
+  supervised each).**
 - **Post-close thin-tape probe (finding 24 caveat / register 37 open
   question)** — measures the feed's settle behavior in thin regimes;
   required before any latency reclaim; now ALSO the named instrument for
@@ -47,6 +50,7 @@ observational only; none built yet; item 22 stays ahead of both)
   cells** — their interpretability hangs on it). Registered 2026-08-17.
   **Scheduling ruling (operator 2026-08-19): shares one supervised
   evening with the item-22 deployment restart; evening TBD.**
+  **Runbook ready: docs/runbook_thin_tape_probe.md (~50 min supervised).**
 - **Campaign Part C (register 27)** — weekly forward-zone observational
   studies (forward migration readout + scoreboard as standing pages);
   reviewer recommends ADOPT; decision pending operator review.
