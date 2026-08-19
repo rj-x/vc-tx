@@ -9,6 +9,10 @@ cross-references inside entries. Doctrine: a hypothesis is a firing
 condition (register 34, pure signals); recipes live at the bottom as
 historical spec.
 
+Companion queue page: **docs/sense_organ_queue.md** — every
+authorized-but-unbuilt instrument, with its hypothesis mappings, for
+operator prioritization.
+
 Audit test applied to every entry (register 35 item 3): *is the claim one
 falsifiable sentence, and is the firing condition mechanical enough that
 two people would agree on every fire?*
