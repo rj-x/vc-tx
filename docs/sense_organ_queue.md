@@ -48,9 +48,10 @@ observational only; none built yet; item 22 stays ahead of both)
   required before any latency reclaim; now ALSO the named instrument for
   the Asia best-call cluster question (**→ every hypothesis's asia-session
   cells** — their interpretability hangs on it). Registered 2026-08-17.
-  **Scheduling ruling (operator 2026-08-19): shares one supervised
-  evening with the item-22 deployment restart; evening TBD.**
-  **Runbook ready: docs/runbook_thin_tape_probe.md (~50 min supervised).**
+  **STANDALONE evening (~50 min; correction 2026-08-19): the deployment
+  restart already occurred 2026-08-19 12:38Z — the calendar fix and
+  suspension detection are live; item 22's future restart is its own
+  separate event. Runbook ready: docs/runbook_thin_tape_probe.md.**
 - **Campaign Part C (register 27)** — weekly forward-zone observational
   studies (forward migration readout + scoreboard as standing pages);
   reviewer recommends ADOPT; decision pending operator review.
