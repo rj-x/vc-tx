@@ -13,6 +13,16 @@ Audit test applied to every entry (register 35 item 3): *is the claim one
 falsifiable sentence, and is the firing condition mechanical enough that
 two people would agree on every fire?*
 
+**Review governance (register 36, 2026-08-19):** reviews emit
+RECOMMENDATIONS, never actions — a **Latest review** label per entry
+(keep-watching / deprioritize / retire / promote-candidate), per the fixed
+criteria in register 36. **Status changes only via explicit dated operator
+decision entries.** Unactioned recommendations persist visibly (the
+performance table shows label and status side by side). *Retire* requires
+a stated reason to stop free evidence accrual. *Promote-candidate* is the
+only gate-opening label and grants walk-forward ELIGIBILITY only — round
+entry is a separate decision.
+
 ---
 
 ## H1
@@ -25,6 +35,7 @@ two people would agree on every fire?*
   the founding structural core (config `labels.climax_*`).
 - **Origin:** founding spec (prompt.md Part 2/4; RULES v3.1, 2026-08-11).
 - **Status:** **signal-live** (S-H1).
+- **Latest review:** keep-watching (2026-08-19, review R1).
 - AUDIT: PASS. Trade logic (confirmation window, spawn levels, boosters,
   2R stops) stripped to the recipes section.
 
@@ -35,6 +46,11 @@ two people would agree on every fire?*
   bar (`_s_h2`).
 - **Origin:** founding spec (as H1).
 - **Status:** **signal-live** (S-H2).
+- **Latest review:** promote-candidate (2026-08-19, review R1 — above
+  per-direction chance in both windows at n≥30 per window, the register-36
+  criterion met mechanically; backtest margin is thin (24.8% vs ~22%).
+  RECOMMENDATION ONLY — walk-forward eligibility awaits the operator
+  decision entry).
 - AUDIT: PASS. Recipe stripped as H1.
 
 ## H3
@@ -47,6 +63,8 @@ two people would agree on every fire?*
   (`_SH3`). All parameters founding config, registry-cited.
 - **Origin:** founding spec (as H1).
 - **Status:** **signal-live** (S-H3).
+- **Latest review:** keep-watching (2026-08-19, review R1 — 0 backtest
+  fires, 3 forward; the level list needs confirmed 1M swings to exist).
 - AUDIT: PASS with note — the founding spawn also directioned by
   phase/range context; the bare row directions purely *through the level*
   (the claim as written). Zone growth, breakout confirmation, and the OCO
@@ -63,6 +81,8 @@ two people would agree on every fire?*
 - **Status:** **signal-live** (S-H4). Known property: extremely sparse on
   1M under frozen thresholds (T3 finding — the phase gate rarely opens;
   n≈1/month; see H10 for the re-anchored variant).
+- **Latest review:** keep-watching (2026-08-19, review R1 — 7 fires, 0
+  hits; too sparse for any criterion to bite).
 - AUDIT: PASS. Pullback-mean confirm, structural-break refute, pullback
   stop = recipe layer.
 
@@ -73,12 +93,11 @@ two people would agree on every fire?*
   (spawn on `POTENTIAL_BUYING_CLIMAX` with `h5.extension_atr`/`ma_period`)
   but is recipe-shaped.
 - **Origin:** founding spec (as H1).
-- **Status:** **disabled** — `h5.enabled: false` in the founding config,
-  set before any data. AUDIT FLAG: **no recorded rationale for the
-  disable** beyond the config flag (not in RULES, not in the register) —
-  itself a finding. Revival = operator ruling stating the rationale
-  question is resolved + a signal row distilled from the claim (extension
-  measure is mechanical: distance above `trend_mean(ma_period)` in ATR).
+- **Status:** **disabled** — operator ruling 2026-08-19: *"disable
+  rationale lost to pre-crash era; preserved conservatively; revival =
+  fresh review as new."*
+- **Latest review:** pending-on-operator (revival is a fresh review, not
+  a label).
 
 ## H6
 - **Claim:** A wide-spread rejection bar at a session extreme (measured
@@ -93,6 +112,9 @@ two people would agree on every fire?*
 - **Origin:** data-born 2026-08-13 (06:56Z Asia-high rejection; register
   items 8–9). Cross-ref: audit/candidate_hypotheses.md H6.
 - **Status:** **definition-pending**.
+- **Latest review:** pending-on-operator (a bare variant needs an
+  operator ruling on provisional thresholds or a parameter-free
+  formulation).
 - AUDIT: claim PASSES the one-sentence test; condition fails
   (unparameterized) — flagged as above.
 
@@ -109,7 +131,16 @@ two people would agree on every fire?*
 - **Origin:** data-born 2026-08-13 (tracked EFFORTLESS_DECLINE signal,
   standing ruling 1; candidate register H7 — the falsifiable core "quiet
   ages, participation kills" is recipe/refutation layer, preserved there).
-- **Status:** **signal-live** (S-H7, bare variant).
+- **Status:** **signal-live** (S-H7, bare variant). **Grading: BOTH
+  modes** (register 36) — directional (the claim) and either-direction
+  (movement), reported side by side.
+- **Movement-not-direction finding (2026-08-18/19, recorded per operator
+  order):** both directions of the effortless sequence read above chance
+  in the July window (claim direction 29.5%, retired continuation
+  direction 30.4%, vs ~22% per-direction chance) — the print localizes
+  VOLATILITY, not direction; the either-direction grading now measures
+  that property explicitly, and the directional edge question stays open.
+- **Latest review:** keep-watching (2026-08-19, review R1).
 - **Standing adverse evidence, on the record:** the event study reads
   effortless declines as continuing (−19bps excess at +20, n=16), and the
   retired continuation-direction row measured 30.4% (34/112) continuation
@@ -119,35 +150,42 @@ two people would agree on every fire?*
 ## H8
 - **Claim:** Reversal-signature bar anatomy (upthrust/spring) predicts
   imminent range expansion irrespective of direction.
-- **Firing condition:** **not written as a signal** — and under the
-  pure-signals doctrine a direction-agnostic expansion claim does not fit
-  the fire→directional-move grading; it needs either (a) a directional
-  reformulation or (b) a scoreboard extension grading range expansion.
-  Missing piece named: that decision. Free parameters (bracket buffer,
-  fill window) reserved for walk-forward.
+- **Firing condition:** structural `UPTHRUST` or `SPRING` per 1M bar
+  (`_s_h8` — same prints as S-H2, DIFFERENT claim and grading).
+  **Grading: either-direction** (register 36 mode): precision = a
+  qualifying move follows in EITHER direction; chance baseline = the
+  either-direction base rate (own registered baseline, shown per window).
+  Free parameters (bracket buffer, fill window) remain walk-forward
+  recipe layer.
 - **Origin:** data-born 2026-08-13 (2026-08-11 10:27Z/15:47Z annotations).
   Cross-ref: candidate register H8; expansion study = its evidence
   instrument. **Standing adverse evidence:** expansion-vs-spread readouts
   (register: "evidence adverse").
-- **Status:** **definition-pending**.
-- AUDIT: claim PASSES; condition fails (grading model mismatch) — flagged.
+- **Status:** **signal-live** (S-H8, either-direction mode; operator
+  order 2026-08-19 resolved the grading-model mismatch by defining the
+  mode).
+- **Latest review:** keep-watching (2026-08-19, review R1 — first
+  readout).
+- AUDIT: PASS under the either-direction mode.
 
 ## H9
 - **Claim:** Persistent lower-TF directional pressure that recruits
   expanding participation at the parent timeframe precedes continuation
   beyond what the parent label alone predicts; pressure without
   participation expansion does not.
-- **Firing condition:** **not written as a per-bar signal** —
-  definition-pending. The migration-event detector exists mechanically
-  (backtest/migration.py; chain + recruitment), so the missing pieces are
-  narrow and named: required chain depth (rungs) and the fire timestamp
-  convention (parent close of the chain top). Recruitment measurement is
-  now unbiased (register 28).
+- **Firing condition (pre-registered 2026-08-19, changeable only by
+  re-registration):** a migration chain reaching **depth ≥ 2**, fire
+  stamped at the completing event's close, in the chain's direction
+  (event-derived row: `scoreboard.h9_fires`, `H9_CHAIN_DEPTH_MIN`
+  registry-cited). Recruitment measurement unbiased since register 28;
+  the recruited/unrecruited split stays the falsifiable second clause at
+  walk-forward.
 - **Origin:** data-born 2026-08-14 (week-review; candidate register H9).
   Cross-refs: migration study; forward readout; cascade analysis 3a0988b.
-- **Status:** **definition-pending**.
-- AUDIT: claim PASSES (two-clause, second clause falsifiable as written);
-  condition fails (depth threshold unset) — flagged.
+- **Status:** **signal-live** (S-H9, event-derived).
+- **Latest review:** keep-watching (2026-08-19, review R1 — first
+  readout).
+- AUDIT: PASS (depth and timestamp convention now pre-registered).
 
 ## H10
 - **Claim:** In an established 1-minute trend, no-demand/no-supply prints
@@ -162,6 +200,10 @@ two people would agree on every fire?*
   entry as the signal-layer read; the recipe-layer T3b build remains
   next lab cycle's first candidate).
 - **Status:** **signal-live** (S-H10).
+- **Latest review:** deprioritize (2026-08-19, review R1 — at/below
+  chance in both windows, n=293 backtest, per the register-36 criterion;
+  evidence keeps accruing free; the T3b recipe-layer question and any
+  status change are the operator's queue decision).
 - AUDIT: PASS. First readouts at/below chance (18.8% backtest, 7.1%
   forward vs ~23%) — evidence, not verdict.
 

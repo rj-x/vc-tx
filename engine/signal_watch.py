@@ -16,6 +16,13 @@ attach (per-run state; nothing leaks between runs).
 
 ESTABLISHED_TREND_AGE = 10   # registry: T1d establishment cell (prereg_T3_build)
 SEQUENCE_N = 2               # registry: sequence clause (prereg_signal_rows_v1)
+H9_CHAIN_DEPTH_MIN = 2       # registry: operator pre-registration 2026-08-19
+
+# row-declaration tables (this module is the one permitted home for
+# hypothesis identifiers; the scoreboard imports these):
+EVENT_DERIVED_ROWS = {"S-H9"}     # produced from replay events, not per-bar
+AGNOSTIC_ROWS = {"S-H8"}          # graded either-direction (register 36)
+DUAL_GRADED = {"S-H7"}            # graded in BOTH modes (register 36)
 
 
 def _s_h1(bar, ectx, sctx, feats, cores, structural, qualified, prev):
@@ -86,12 +93,21 @@ def _s_h10(bar, ectx, sctx, feats, cores, structural, qualified, prev):
     return None
 
 
+def _s_h8(bar, ectx, sctx, feats, cores, structural, qualified, prev):
+    """H8 (direction-agnostic grading mode, register 36): reversal-signature
+    anatomy predicts imminent expansion IRRESPECTIVE of direction. Fires on
+    the same prints as S-H2; the returned dir is the probe-failure side but
+    grading ignores it (precision-either-direction, own chance baseline)."""
+    return {"UPTHRUST": -1, "SPRING": 1}.get(structural)
+
+
 FIRING_CONDITIONS = {
     "S-H1": _s_h1,
     "S-H2": _s_h2,
     "S-H3": _SH3,                # class: fresh instance per attach
     "S-H4": _s_h4,
     "S-H7": _s_h7,
+    "S-H8": _s_h8,               # graded either-direction (register doc)
     "S-H10": _s_h10,
 }
 

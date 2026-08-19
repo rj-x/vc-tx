@@ -42,7 +42,9 @@ import subprocess
 import numpy as np
 import pandas as pd
 
-from engine.signal_watch import FIRING_CONDITIONS, SignalWatch
+from engine.signal_watch import (AGNOSTIC_ROWS, DUAL_GRADED,
+                                 EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
+                                 H9_CHAIN_DEPTH_MIN, SignalWatch)
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.forward_migration import _replay
 from backtest.campaign import make_cfg
@@ -73,7 +75,7 @@ def validate_rows():
     the canonical register (S-H<n>, status signal-live)."""
     import re as _re
     reg = register_status()
-    for key in FIRING_CONDITIONS:
+    for key in set(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS:
         m = _re.fullmatch(r"S-H(\d+)", key)
         if not m:
             raise ValueError(f"signal row {key!r}: IDs are S-H<n>, nothing "
@@ -89,6 +91,8 @@ def validate_rows():
 QUALIFYING_ATR_MULT = 1.5      # registry: qualifying_move
 MAJOR_ATR_MULT = 3.0           # registry: major_move
 MOVE_WINDOW_MIN = 60           # registry: qualifying_move window clause
+# row declarations + event-row depth live in the signal module (the
+# guard's one permitted home for hypothesis identifiers); imported read-only
 
 
 def _atr15(bars15, period):
@@ -178,6 +182,35 @@ def build_moves(bars1m, bars15, atr_period):
     return qual, episodes, (ts, cl, segs), drift
 
 
+def h9_fires(events, cfg):
+    """Event-derived row (pre-registered 2026-08-19, changeable only by
+    re-registration): fire = a migration chain reaching depth >=
+    H9_CHAIN_DEPTH_MIN, stamped at the completing event's close, in the
+    chain's direction."""
+    from backtest.migration import migration_events
+    name = next(iter(EVENT_DERIVED_ROWS))
+    return [{"ts": e["ts"], "name": name, "dir": e["dir"]}
+            for e in migration_events(events, cfg)
+            if e["chain_rungs"] >= H9_CHAIN_DEPTH_MIN]
+
+
+def register_labels():
+    """H-number -> latest review label from the canonical register (the
+    governance rule: reviews emit recommendations, never actions — label
+    and status shown side by side, unactioned recommendations persist)."""
+    import re as _re
+    out, cur = {}, None
+    for line in open(REGISTER):
+        m = _re.match(r"^## H(\d+)\s*$", line)
+        if m:
+            cur = int(m.group(1))
+            continue
+        m = _re.match(r"^- \*\*Latest review:\*\* ([a-z-]+)", line)
+        if m and cur is not None:
+            out[cur] = m.group(1)
+    return out
+
+
 def fires_from_events(events):
     out = []
     for e in events:
@@ -214,12 +247,14 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
             rows[name] = {"source": label, "n_fires": 0,
                           "note": "no confirmations in window"}
             continue
+        agnostic = name in AGNOSTIC_ROWS or name.endswith("(either-dir)")
         hits, misses = [], []
         for f in nf:
             i = np.searchsorted(ts, f["ts"].value, side="right") - 1
             if i < 0:
                 continue
-            ok = bool(qual[f["dir"]][i])
+            ok = bool(qual[1][i] or qual[-1][i]) if agnostic \
+                else bool(qual[f["dir"]][i])
             adverse = 0.0
             j = np.searchsorted(ts, (f["ts"] + win).value, side="right")
             if j > i + 1:
@@ -230,7 +265,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
                 {**f, "close_at_fire": float(cl[i]), "adverse_pts": adverse})
         covered, remaining, flip_mins = [], [], []
         for e in E:
-            pre = [f for f in nf if f["dir"] == e["dir"]
+            pre = [f for f in nf if (agnostic or f["dir"] == e["dir"])
                    and e["start"] - win <= f["ts"] <= e["start"]]
             if not pre:
                 continue
@@ -246,6 +281,7 @@ def score(fires, qual, episodes, series, flips, lo_ts, hi_ts, label,
         worst = max(misses, key=lambda m: m["adverse_pts"], default=None)
         rows[name] = {
             "source": label,
+            "grading": "either-direction" if agnostic else "directional",
             "n_fires": len(nf),
             "precision": {"hits": len(hits), "of": len(hits) + len(misses),
                           "pct": round(100 * len(hits) / (len(hits) + len(misses)), 1)
@@ -292,7 +328,11 @@ def run(instr="uk100fut"):
     qual, episodes, series, drift = build_moves(
         b1m, bars[cfg.mtf.signal_tf], cfg.context.atr_period)
     recipe_fires = fires_from_events(events)          # CONFIRM = recipe stage
-    signal_fires = watch.fires                         # bare firing conditions
+    signal_fires = watch.fires + h9_fires(events, cfg)  # bare conditions
+    # dual grading (register 36): same fire timestamps, either-direction
+    # mode — the movement-not-direction question graded explicitly
+    signal_fires += [{**f, "name": f["name"] + " (either-dir)"}
+                     for f in watch.fires if f["name"] in DUAL_GRADED]
     flips = trend_flips(events)
     # sealed spans excluded before scoring (register 30 pattern)
     recipe_fires = [f for f in recipe_fires if not is_sealed(f["ts"])]
@@ -326,10 +366,12 @@ def run(instr="uk100fut"):
             "backtest": score(signal_fires, qual, episodes, series, flips,
                               pd.Timestamp("1970-01-01", tz="UTC"), boundary,
                               "backtest_replay",
-                              names=frozenset(FIRING_CONDITIONS)),
+                              names=frozenset(FIRING_CONDITIONS)
+                              | EVENT_DERIVED_ROWS),
             "forward": score(signal_fires, qual, episodes, series, flips,
                              gl, far, "forward_feed_replay",
-                             names=frozenset(FIRING_CONDITIONS))},
+                             names=frozenset(FIRING_CONDITIONS)
+                             | EVENT_DERIVED_ROWS)},
         "founding_recipes_at_confirmation": {
             "note": ("graded pattern+wrapper stacks (confirmation = recipe "
                      "stage under the pure-signals doctrine) - historically "
@@ -350,44 +392,55 @@ def _emit_performance_md(res):
     standard metrics; definition-pending/disabled rows shown as visible
     gaps (register 35 deliverable)."""
     reg = register_status()
+    labels = register_labels()
     L = ["# Hypothesis Performance Table (GENERATED by backtest.scoreboard)",
          "",
          f"Engine `{res['engine_commit'][:9]}` - {res['STAMP']}",
          "",
          "Data: July working set (backtest_replay) + forward zone "
          "(forward_feed_replay); lockbox span and sealed windows excluded. "
-         "Precision reads against the per-direction chance rate "
-         "(~half the either-direction base rate shown per window).", ""]
+         "Directional precision reads against ~half the either-direction "
+         "base rate shown per window; either-direction rows read against "
+         "the full base rate. Review labels are RECOMMENDATIONS (register "
+         "36) — status changes only by dated operator decision.", ""]
     for src in ("backtest", "forward"):
         mv = res["signals"][src]["_moves"]
         L += [f"## {src} - {mv['n_qualifying_episodes']} qualifying episodes "
               f"({mv['n_major']} major), either-direction base rate "
               f"{mv['bar_qualify_base_rate_pct']}%", "",
-              "| H | status | fires | precision | coverage | median pts "
-              "remaining | median min before 15M flip | best call | "
-              "worst false alarm |",
-              "|---|---|---|---|---|---|---|---|---|"]
+              "| H | status | review label | grading | fires | precision "
+              "| coverage | median pts remaining | median min before 15M "
+              "flip | best call | worst false alarm |",
+              "|---|---|---|---|---|---|---|---|---|---|---|"]
         for n in sorted(reg):
             st = reg[n]
-            r = res["signals"][src].get(f"S-H{n}")
-            if st != "signal-live" or r is None:
-                L.append(f"| H{n} | {st} | - | - | - | - | - | - | - | ")
-                continue
-            if r.get("n_fires") == 0:
-                L.append(f"| H{n} | signal-live | 0 | - | - | - | - | - "
-                         f"| - |")
-                continue
-            p, c, e = r["precision"], r["coverage"], r["earliness"]
-            bc = r["best_call"]
-            wf = r["worst_false_alarm"]
-            L.append(
-                f"| H{n} | signal-live | {r['n_fires']} "
-                f"| {p['pct']}% ({p['hits']}/{p['of']}) "
-                f"| {c['pct']}% ({c['covered']}/{c['of']}) "
-                f"| {e['median_pts_remaining_at_fire']} (n={e['n']}) "
-                f"| {e['median_min_before_15m_flip']} (n={e['n_flips']}) "
-                f"| {bc['ts'][:16] + ' +' + str(bc['pts_remaining_at_fire']) + 'pts' if bc else '-'} "
-                f"| {wf['ts'][:16] + ' -' + str(wf['adverse_pts']) + 'pts' if wf else '-'} |")
+            lab = labels.get(n, "-")
+            variants = [(f"H{n}", res["signals"][src].get(f"S-H{n}"))]
+            supp = res["signals"][src].get(f"S-H{n} (either-dir)")
+            if supp:
+                variants.append((f"H{n} (either-dir)", supp))
+            for disp, r in variants:
+                if st != "signal-live" or r is None:
+                    L.append(f"| {disp} | {st} | {lab} | - | - | - | - | - "
+                             f"| - | - | - |")
+                    continue
+                if r.get("n_fires") == 0:
+                    L.append(f"| {disp} | signal-live | {lab} | "
+                             f"{r.get('grading', 'directional')} | 0 | - | "
+                             f"- | - | - | - | - |")
+                    continue
+                p, c, e = r["precision"], r["coverage"], r["earliness"]
+                bc = r["best_call"]
+                wf = r["worst_false_alarm"]
+                L.append(
+                    f"| {disp} | signal-live | {lab} | {r['grading']} "
+                    f"| {r['n_fires']} "
+                    f"| {p['pct']}% ({p['hits']}/{p['of']}) "
+                    f"| {c['pct']}% ({c['covered']}/{c['of']}) "
+                    f"| {e['median_pts_remaining_at_fire']} (n={e['n']}) "
+                    f"| {e['median_min_before_15m_flip']} (n={e['n_flips']}) "
+                    f"| {bc['ts'][:16] + ' +' + str(bc['pts_remaining_at_fire']) + 'pts' if bc else '-'} "
+                    f"| {wf['ts'][:16] + ' -' + str(wf['adverse_pts']) + 'pts' if wf else '-'} |")
         L.append("")
     L += ["## founding recipes at confirmation (kept distinct - not "
           "signal rows)", ""]

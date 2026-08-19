@@ -12,7 +12,8 @@ def test_register_has_ten_entries_with_statuses():
     assert all(v in ("signal-live", "definition-pending", "disabled")
                for v in reg.values())
     assert reg[5] == "disabled"
-    assert reg[6] == reg[8] == reg[9] == "definition-pending"
+    assert reg[6] == "definition-pending"          # H8/H9 went signal-live
+    assert reg[8] == reg[9] == "signal-live"       # by operator order 08-19
 
 
 def test_current_rows_validate():
