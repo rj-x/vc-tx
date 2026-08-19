@@ -40,3 +40,15 @@ def test_partition_is_total():
     for h in range(24):
         assert _s(f"2026-08-17 {h:02d}:07") in SESSIONS
         assert _s(f"2026-01-12 {h:02d}:07") in SESSIONS
+
+
+def test_vectorized_matches_scalar():
+    import pandas as pd
+    from backtest.sessions import sessions_of_index
+    idx = pd.date_range("2026-08-16 21:00", "2026-08-18 21:00", freq="17min",
+                        tz="UTC").append(
+        pd.date_range("2026-01-11 21:00", "2026-01-13 21:00", freq="17min",
+                      tz="UTC"))
+    vec = sessions_of_index(idx)
+    for t, v in zip(idx, vec):
+        assert v == session_of(t), (t, v, session_of(t))

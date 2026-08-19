@@ -42,3 +42,20 @@ def session_of(ts):
     if tyo_m >= 540 and lon_m < 480:
         return "asia"
     return "dead"
+
+
+def sessions_of_index(idx):
+    """Vectorized session_of for a tz-aware DatetimeIndex -> str array."""
+    import numpy as np
+    lon = idx.tz_convert("Europe/London")
+    ny = idx.tz_convert("America/New_York")
+    tyo = idx.tz_convert("Asia/Tokyo")
+    lon_m = lon.hour * 60 + lon.minute
+    ny_m = ny.hour * 60 + ny.minute
+    tyo_m = tyo.hour * 60 + tyo.minute
+    out = np.full(len(idx), "dead", dtype=object)
+    out[(tyo_m >= 540) & (lon_m < 480)] = "asia"
+    out[(ny_m >= 570) & (ny_m < 960) & (lon_m >= 990)] = "ny_only"
+    out[(ny_m >= 570) & (ny_m < 960) & (lon_m >= 480) & (lon_m < 990)] = "overlap"
+    out[(lon_m >= 480) & (ny_m < 570)] = "london"
+    return out

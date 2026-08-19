@@ -50,9 +50,14 @@ entry is a separate decision.
   (`DERIVED_FIRES`, signal module), never independently computed. A reader
   must never count them as two signals.
 - **Status:** **signal-live** (S-H2).
-- **Latest review:** promote-candidate (2026-08-19, review R1 — above
-  per-direction chance in both windows at n≥30 per window, the register-36
-  criterion met mechanically; backtest margin is thin (24.8% vs ~22%).
+- **Latest review:** promote-candidate (2026-08-19, review R1; note
+  amended same day under the corrected PER-CONTEXT chance rates of
+  register 38 — backtest lift is only +1.2pp (86/347 vs 23.6% directional
+  chance), inside the ±2pp at-chance band, while forward is +10.0pp
+  (26/71) and London backtest +6.3pp; the criterion ("above chance both
+  windows, n≥30") is still met LITERALLY but the backtest leg is
+  materially weaker than the original note stated. Payoff adds texture:
+  backtest net +781 pts / forward net −60 despite the precision lift.
   RECOMMENDATION ONLY — walk-forward eligibility awaits the operator
   decision entry).
 - AUDIT: PASS. Recipe stripped as H1.

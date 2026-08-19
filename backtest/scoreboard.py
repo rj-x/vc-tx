@@ -37,6 +37,7 @@ exist here by construction. OBSERVATIONAL — never validation.
 import argparse
 import json
 import os
+import re
 import subprocess
 
 import numpy as np
@@ -45,10 +46,11 @@ import pandas as pd
 from engine.signal_watch import (AGNOSTIC_ROWS, DERIVED_FIRES, DUAL_GRADED,
                                  EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
                                  H9_CHAIN_DEPTH_MIN, SignalWatch)
-from backtest.sessions import SESSIONS, session_of
+from backtest.sessions import SESSIONS, session_of, sessions_of_index
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.forward_migration import _replay
 from backtest.campaign import make_cfg
+from backtest.horizons import STANDARD_HORIZONS as _STD_HORIZONS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "reports", "scoreboard")
@@ -221,10 +223,39 @@ def fires_from_events(events):
     return out
 
 
+def _payoff(nf, ts, cl, win):
+    """Register 38 payoff (directional rows only): per fire, SIGNED price
+    excursion at +window end (mid-price, no spread, idealized), signed by
+    predicted direction. Clustered fires double-count shared travel —
+    median is the robust companion. JSON also carries the standard-horizon
+    marks."""
+    exc, marks = [], {k: [] for k in _STD_HORIZONS}
+    for f in nf:
+        i = np.searchsorted(ts, f["ts"].value, side="right") - 1
+        j = np.searchsorted(ts, (f["ts"] + win).value, side="right") - 1
+        if i < 0 or j <= i:
+            continue
+        exc.append(float((cl[j] - cl[i]) * f["dir"]))
+        for k in _STD_HORIZONS:
+            if i + k < len(cl):
+                marks[k].append(float((cl[i + k] - cl[i]) * f["dir"]))
+    if not exc:
+        return None
+    a = np.array(exc)
+    return {"n": len(exc),
+            "total_pts_right": round(float(a[a > 0].sum()), 1),
+            "total_pts_wrong": round(float(a[a < 0].sum()), 1),
+            "net_pts": round(float(a.sum()), 1),
+            "median_per_fire": round(float(np.median(a)), 2),
+            "horizon_marks_net": {k: round(float(np.sum(v)), 1)
+                                  for k, v in marks.items() if v}}
+
+
 def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
-          names=frozenset()):
+          names=frozenset(), bar_mask=None):
     """One source window [lo_ts, hi_ts); sealed spans already excluded
-    from `fires`/`episodes` by the caller."""
+    from `fires`/`episodes` by the caller. bar_mask restricts the base-rate
+    computation to a context (e.g. one session); default = whole window."""
     ts, cl, _ = series
     win = pd.Timedelta(minutes=MOVE_WINDOW_MIN)
     F = [f for f in fires if lo_ts <= f["ts"] < hi_ts]
@@ -252,6 +283,7 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
                                 else (seg.max() - cl[i]))
             (hits if ok else misses).append(
                 {**f, "close_at_fire": float(cl[i]), "adverse_pts": adverse})
+        pay = None if agnostic else _payoff(nf, ts, cl, win)
         covered, remaining = [], []
         for e in E:
             pre = [f for f in nf if (agnostic or f["dir"] == e["dir"])
@@ -268,6 +300,7 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
         rows[name] = {
             "source": label,
             "grading": "either-direction" if agnostic else "directional",
+            "payoff": pay,        # None for either-direction (by construction)
             "n_fires": len(nf),
             "precision": {"hits": len(hits), "of": len(hits) + len(misses),
                           "pct": round(100 * len(hits) / (len(hits) + len(misses)), 1)
@@ -299,14 +332,21 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
                       "of": len(E),
                       "pct": round(100 * union_cov / len(E), 1) if E else None}
     w = (ts >= lo_ts.value) & (ts < hi_ts.value)
-    base = (round(100 * float(np.mean(qual[1][w] | qual[-1][w])), 1)
-            if w.any() else None)
+    if bar_mask is not None:
+        w = w & bar_mask
+    either = (round(100 * float(np.mean(qual[1][w] | qual[-1][w])), 1)
+              if w.any() else None)
+    per_dir = (round(50 * float(np.mean(qual[1][w]) + np.mean(qual[-1][w])), 1)
+               if w.any() else None)
     rows["_moves"] = {"source": label, "n_qualifying_episodes": len(E),
                       "n_major": sum(1 for e in E if e["major"]),
-                      "bar_qualify_base_rate_pct": base,
-                      "base_rate_note": ("precision reads against this: the "
-                                         "share of bars that qualify in "
-                                         "EITHER direction by clock alone")}
+                      "bar_qualify_base_rate_pct": either,
+                      "per_direction_base_rate_pct": per_dir,
+                      "base_rate_note": ("directional precision reads "
+                                         "against per_direction; "
+                                         "either-direction rows against "
+                                         "bar_qualify (this context's own "
+                                         "rates)")}
     return rows
 
 
@@ -368,6 +408,8 @@ def run(instr="uk100fut"):
     } | {}
     all_names = frozenset(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS \
         | frozenset(DERIVED_FIRES)
+    bar_sessions = sessions_of_index(
+        pd.DatetimeIndex(series[0], tz="UTC"))
     out = _RES
     windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
                             "backtest_replay"),
@@ -386,158 +428,258 @@ def run(instr="uk100fut"):
             se = [e for e in episodes if session_of(e["start"]) == sess]
             out["signals_by_session"][wname][sess] = score(
                 sf, qual, se, series, lo, hi, f"{lbl}/{sess}",
-                names=all_names)
+                names=all_names, bar_mask=(bar_sessions == sess))
     return out
 
 
-def _fmt_row(disp, st, lab, r):
-    if st != "signal-live" or r is None:
-        return f"| {disp} | {st} | {lab} | - | - | - | - | - | - | - |"
-    if r.get("n_fires") == 0:
-        return (f"| {disp} | signal-live | {lab} | "
-                f"{r.get('grading', 'directional')} | 0 | - | - | - | - "
-                f"| - |")
-    p, c, e = r["precision"], r["coverage"], r["earliness"]
-    bc, wf = r["best_call"], r["worst_false_alarm"]
-    return (f"| {disp} | signal-live | {lab} | {r['grading']} "
-            f"| {r['n_fires']} "
-            f"| {p['pct']}% ({p['hits']}/{p['of']}) "
-            f"| {c['pct']}% ({c['covered']}/{c['of']}) "
-            f"| {e['median_pts_remaining_at_fire']} (n={e['n']}) "
-            f"| {bc['ts'][:16] + ' +' + str(bc['pts_remaining_at_fire']) + 'pts' if bc else '-'} "
-            f"| {wf['ts'][:16] + ' -' + str(wf['adverse_pts']) + 'pts' if wf else '-'} |")
+SMALL_N_FIRES = 20      # registry: operator order 2026-08-19 (dimmed +
+SMALL_N_EPISODES = 10   # excluded from any future label arithmetic)
+MARKER_BAND_PP = 2.0    # registry: implementer-proposed, ratification pending
 
 
-_HDR = ("| H | status | review label | grading | fires | precision | "
-        "coverage | median pts remaining | best call | worst false alarm |\n"
-        "|---|---|---|---|---|---|---|---|---|---|")
+def parse_claims():
+    """H-number -> the register entry's one-sentence claim."""
+    import re as _re
+    out, cur, buf = {}, None, None
+    for line in open(REGISTER):
+        m = _re.match(r"^## H(\d+)\s*$", line)
+        if m:
+            if cur and buf:
+                out[cur] = " ".join(buf)
+            cur, buf = int(m.group(1)), None
+            continue
+        if cur is None:
+            continue
+        if line.startswith("- **Claim:**"):
+            buf = [line.replace("- **Claim:**", "").strip()]
+            continue
+        if buf is not None:
+            if line.startswith("- **"):
+                out[cur] = " ".join(buf)
+                buf = None
+            else:
+                buf.append(line.strip())
+    if cur and buf:
+        out[cur] = " ".join(buf)
+    return out
 
 
-def _block_rows(blk, reg, labels):
-    rows = []
+def _chance(mv, agnostic):
+    return (mv["bar_qualify_base_rate_pct"] if agnostic
+            else mv["per_direction_base_rate_pct"])
+
+
+def _cell(blk, key):
+    """One matrix/grid cell: lift vs the CONTEXT'S OWN chance, marker,
+    hits/fires, payoff net/median; dimmed (parenthesised, °) when small-n."""
+    r = blk.get(key)
+    mv = blk["_moves"]
+    if r is None or r.get("n_fires", 0) == 0:
+        return "—"
+    agnostic = r["grading"] == "either-direction"
+    ch = _chance(mv, agnostic)
+    p = r["precision"]
+    if ch is None or p["pct"] is None:
+        return "—"
+    lift = round(p["pct"] - ch, 1)
+    mark = ("▲" if lift >= MARKER_BAND_PP
+            else "▼" if lift <= -MARKER_BAND_PP else "·")
+    core = f"{mark}{lift:+.1f}pp ({p['hits']}/{p['of']})"
+    pay = r.get("payoff")
+    if pay:
+        core += f" net{pay['net_pts']:+.0f}/med{pay['median_per_fire']:+.1f}"
+    small = (r["n_fires"] < SMALL_N_FIRES
+             or mv["n_qualifying_episodes"] < SMALL_N_EPISODES)
+    return f"(°{core})" if small else core
+
+
+def _row_keys(blk, reg):
+    keys = []
     for n in sorted(reg):
-        st, lab = reg[n], labels.get(n, "-")
-        rows.append(_fmt_row(f"H{n}", st, lab, blk.get(f"S-H{n}")))
-        supp = blk.get(f"S-H{n} (either-dir)")
-        if supp:
-            rows.append(_fmt_row(f"H{n} (either-dir)", st, lab, supp))
-    return rows
+        if reg[n] != "signal-live":
+            continue
+        keys.append((f"H{n}", f"S-H{n}"))
+        if f"S-H{n} (either-dir)" in blk:
+            keys.append((f"H{n} (either-dir)", f"S-H{n} (either-dir)"))
+    return keys
 
 
 def _emit_performance_md(res):
-    """Register 35/37 deliverable: every H-number x window x session x the
-    standard metrics; gaps visible; labels shown as recommendations."""
+    """Two human views (register 38): page 1 summary matrix, page 2
+    per-hypothesis cards. Full detail lives in signal_scoreboard.json."""
     reg = register_status()
     labels = register_labels()
-    L = ["# Hypothesis Performance Table (GENERATED by backtest.scoreboard)",
+    claims = parse_claims()
+    CTX = [("backtest", "whole"), ("backtest", "london"),
+           ("forward", "whole"), ("forward", "london")]
+
+    def blk_of(w, c):
+        return (res["signals"][w] if c == "whole"
+                else res["signals_by_session"][w][c])
+
+    L = ["# Hypothesis Performance — Summary Matrix (page 1)",
          "",
-         f"Engine `{res['engine_commit'][:9]}` - {res['STAMP']}",
+         f"Engine `{res['engine_commit'][:9]}` — {res['STAMP']}",
          "",
          "**Review labels are RECOMMENDATIONS — none actioned, review "
-         "pending operator familiarity (register 37: no status decisions "
-         "this cycle).** Read reports/scoreboard/READING_GUIDE.md first. "
-         "The derived-fires pair (signal module DERIVED_FIRES) is ONE "
-         "firing condition graded two ways — never double-count. Criteria "
-         "on whole windows only (session scoping is a registered "
-         "proposal, unratified).", ""]
-    for wname in ("backtest", "forward"):
-        mv = res["signals"][wname]["_moves"]
-        un = res["signals"][wname]["_union"]
-        L += [f"## {wname} — whole window: "
-              f"{mv['n_qualifying_episodes']} episodes "
-              f"({mv['n_major']} major), either-direction base rate "
-              f"{mv['bar_qualify_base_rate_pct']}%",
-              "", _HDR]
-        L += _block_rows(res["signals"][wname], reg, labels)
-        L += ["",
-              f"**Union coverage:** {un['pct']}% "
-              f"({un['episodes_covered_by_any_row']}/{un['of']}) of "
-              f"episodes preceded by ANY signal-live fire.", ""]
-        for sess, blk in res["signals_by_session"][wname].items():
-            mv = blk["_moves"]
-            un = blk["_union"]
-            if mv["n_qualifying_episodes"] == 0 and not any(
-                    (blk.get(f"S-H{n}") or {}).get("n_fires") for n in reg):
-                L.append(f"### {wname} / {sess} — no episodes, no fires")
-                L.append("")
-                continue
-            L += [f"### {wname} / {sess} — {mv['n_qualifying_episodes']} "
-                  f"episodes ({mv['n_major']} major); union coverage "
-                  f"{un['pct']}% ({un['episodes_covered_by_any_row']}"
-                  f"/{un['of']})", "", _HDR]
-            L += _block_rows(blk, reg, labels)
+         "pending operator familiarity.** Cells: marker + precision LIFT "
+         "vs that context's OWN chance rate, (hits/fires), payoff "
+         "net/median points (directional rows; either-direction rows have "
+         "no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = "
+         "within. (°…) = small-n (fires<20 or episodes<10): dimmed, "
+         "excluded from any future label arithmetic. Read "
+         "READING_GUIDE.md first; full detail in signal_scoreboard.json.",
+         ""]
+    hdr = ("| H | label | " + " | ".join(f"{w} {c}" for w, c in CTX) + " |")
+    L += [hdr, "|---|---|" + "---|" * len(CTX)]
+    # context header row: episodes + both base rates per context
+    ctx_info = []
+    for w, c in CTX:
+        mv = blk_of(w, c)["_moves"]
+        ctx_info.append(f"{mv['n_qualifying_episodes']} ep; chance "
+                        f"{mv['per_direction_base_rate_pct']}%dir/"
+                        f"{mv['bar_qualify_base_rate_pct']}%either")
+    L.append("| *context* | | " + " | ".join(ctx_info) + " |")
+    whole_bt = blk_of("backtest", "whole")
+    for disp, key in _row_keys(whole_bt, reg):
+        n = int(re.match(r"H(\d+)", disp).group(1))
+        cells = [_cell(blk_of(w, c), key) for w, c in CTX]
+        L.append(f"| {disp} | {labels.get(n, '-')} | " + " | ".join(cells)
+                 + " |")
+    unions = []
+    for w, c in CTX:
+        u = blk_of(w, c)["_union"]
+        unions.append(f"{u['pct']}% ({u['episodes_covered_by_any_row']}"
+                      f"/{u['of']})")
+    L.append("| **union coverage** | | " + " | ".join(unions) + " |")
+    pend = [f"H{n} {reg[n]}" for n in sorted(reg) if reg[n] != "signal-live"]
+    L += ["", "Not graded: " + "; ".join(pend)
+          + " — see register entries.", "",
+          "---", "", "# Hypothesis Cards (page 2)", ""]
+
+    for n in sorted(reg):
+        if reg[n] != "signal-live":
+            L += [f"## H{n} — {reg[n]}",
+                  f"*{claims.get(n, '')}*",
+                  f"Latest review: {labels.get(n, '-')}. See the register "
+                  f"entry for what is missing.", ""]
+            continue
+        base = blk_of("backtest", "whole").get(f"S-H{n}") or {}
+        grading = base.get("grading", "directional")
+        both = f"S-H{n} (either-dir)" in whole_bt
+        L += [f"## H{n}",
+              f"*{claims.get(n, '')}*",
+              f"Grading: {grading}"
+              + (" + either-direction (dual)" if both else "")
+              + f". Latest review: {labels.get(n, '-')} (recommendation).",
+              ""]
+        variants = [(f"H{n}", f"S-H{n}")]
+        if both:
+            variants.append((f"H{n} (either-dir)", f"S-H{n} (either-dir)"))
+        for disp, key in variants:
+            L += [f"**{disp}** — session × window grid "
+                  f"(cells as in the matrix):", "",
+                  "| session | backtest | forward |", "|---|---|---|"]
+            for sess in ("whole",) + tuple(SESSIONS):
+                row = [_cell(blk_of(w, sess), key)
+                       for w in ("backtest", "forward")]
+                L.append(f"| {sess} | {row[0]} | {row[1]} |")
             L.append("")
-    L += ["## founding recipes at confirmation (kept distinct — not "
-          "signal rows)", ""]
-    for wname in ("backtest", "forward"):
-        blk = res["founding_recipes_at_confirmation"][wname]
-        rows = [f"{k}: {v['n_fires']} fires"
-                + (f", precision {v['precision']['pct']}%"
-                   if v.get("precision") else "")
-                for k, v in sorted(blk.items()) if not k.startswith("_")]
-        L.append(f"- {wname}: " + "; ".join(rows))
-    L.append("")
+            for w in ("backtest", "forward"):
+                r = blk_of(w, "whole").get(key)
+                if not r or r.get("n_fires", 0) == 0:
+                    continue
+                pay = r.get("payoff")
+                if pay:
+                    L.append(f"- {w} payoff: right "
+                             f"{pay['total_pts_right']:+.0f} / wrong "
+                             f"{pay['total_pts_wrong']:+.0f} / net "
+                             f"{pay['net_pts']:+.0f} pts; median per fire "
+                             f"{pay['median_per_fire']:+.2f} (n={pay['n']})")
+                elif r["grading"] == "either-direction":
+                    L.append(f"- {w} payoff: n/a by construction "
+                             f"(either-direction)")
+                bc, wf = r.get("best_call"), r.get("worst_false_alarm")
+                if bc:
+                    L.append(f"- {w} best call: {bc['ts'][:16]} "
+                             f"+{bc['pts_remaining_at_fire']}pts remaining"
+                             f" (episode {bc['episode_total_pts']}pts"
+                             f"{', major' if bc['major'] else ''})")
+                if wf:
+                    L.append(f"- {w} worst false alarm: {wf['ts'][:16]} "
+                             f"{-wf['adverse_pts']:+.1f}pts adverse")
+            e = (blk_of("backtest", "whole").get(key) or {}).get("earliness")
+            if e and e.get("median_pts_remaining_at_fire") is not None:
+                L.append(f"- earliness (backtest): median "
+                         f"{e['median_pts_remaining_at_fire']} pts of move "
+                         f"remaining at fire (n={e['n']})")
+            L.append("")
+    L += ["---", "", "Appendix: the per-session detail beyond London and "
+          "every horizon-mark payoff live in signal_scoreboard.json "
+          "(generated, same run)."]
     with open(os.path.join(OUT, "hypothesis_performance.md"), "w") as f:
         f.write("\n".join(L))
     _emit_reading_guide()
 
 
-_GUIDE = """# Reading Guide — Hypothesis Performance Table
+_GUIDE = """# Reading Guide — Hypothesis Performance
 
-**One page. Read before the table. Labels are recommendations only —
-none actioned; status changes need a dated operator decision.**
+**Read this before the table. Labels are recommendations only — none
+actioned; status changes need a dated operator decision.**
 
-## What each column means
-- **fires** — times the bare firing condition triggered. A hypothesis is
-  only its firing condition (pure-signals doctrine); no trade logic exists
-  here.
-- **precision** — of those fires, how many were followed within 60 minutes
-  by a qualifying move (>= 1.5x the 15-minute ATR, drift-adjusted) in the
-  predicted direction. *Either-direction* rows count a move either way.
-- **coverage** — of all qualifying moves in the window, how many had this
-  signal fire in the 60 minutes before the move began. Precision asks "when
-  it speaks, is it right?"; coverage asks "how much does it see?".
-- **median pts remaining** — at the earliest covering fire, how many points
-  of the move were still ahead. The earliness metric. (A
-  minutes-before-trend-flip column existed briefly and was retired — it
-  measured time to the next unrelated flip, not earliness.)
-- **best call / worst false alarm** — dated single exhibits: the covered
-  move with most points remaining, and the miss with the worst adverse
-  drift. Anecdotes by construction; never generalize from them.
-- **union coverage** — episodes preceded by ANY live signal vs none: how
-  much of the tape the whole board sees at all.
+## The two views
+Page 1 (matrix): every live hypothesis x four contexts (backtest/forward,
+whole-window and London). One cell = how far precision sits above or below
+THAT CONTEXT'S OWN chance rate. Page 2 (cards): one card per hypothesis —
+claim, full session x window grid, payoff, dated exhibits. Everything else
+(other sessions' exhibits, horizon-mark payoffs) is in
+signal_scoreboard.json.
+
+## How to read a cell
+`▲+9.4pp (26/80) net+123/med+1.2` means: precision 9.4 percentage points
+ABOVE this context's chance rate (▲ = beyond +2pp; ▼ = beyond -2pp; · =
+within the band), on 26 hits of 80 fires; summed signed excursion across
+all fires +123 points with a median fire worth +1.2. `(°...)` = small-n
+(fires<20 or episodes<10): dimmed, excluded from any future label
+arithmetic — read as anecdote.
 
 ## The base-rate logic
-Roughly 44-48% of bars are followed by a qualifying move in SOME direction
-within the hour — the tape moves a lot. So: directional precision only
-means something against ~half that (~22-24%); either-direction precision
-only against the full base rate. A row AT its base rate has measured
-nothing. The base rate is printed per window and the table's numbers mean
-nothing without it.
+The tape moves: in a typical context ~40-50% of bars are followed by a
+qualifying move (>=1.5x 15M ATR within 60 min, drift-adjusted) in SOME
+direction — so directional rows are chance-compared at roughly half that,
+either-direction rows at the full rate, and EVERY context (each session,
+each window) displays its own rates because they differ by session. A row
+at chance has measured nothing.
 
-## Session character (register 37 partition; boundaries in native
-exchange timezones, DST-proof)
+## Payoff (directional rows only)
+Per fire: the signed price change 60 minutes later (the registered
+move-definition window), signed by the predicted direction. Total right =
+sum of positive fires, wrong = sum of negative, net = the difference;
+median per fire is the robust companion because CLUSTERED FIRES
+DOUBLE-COUNT SHARED PRICE TRAVEL — a burst of 20 fires into one move books
+that move 20 times in the totals, once in the median. Mid-price, no
+spread, idealized — points here are not tradeable points.
+Either-direction rows: n/a by construction (no predicted direction to
+sign by).
+
+## Session character (register 37 partition; native-tz, DST-proof)
 - **asia** (Tokyo open -> London open): thin tape; the Asia best-call
-  cluster (03:40-04:04Z) is an OPEN QUESTION — regime edge vs thin-tape
-  artifact vs unverified feed regime (thin-tape probe pending).
+  cluster is an OPEN QUESTION (regime edge vs thin-tape artifact vs
+  unverified feed regime; thin-tape probe pending).
 - **london** (London open -> NY open): the instrument's home session.
 - **overlap** (NY open -> London close): highest participation; macro
-  releases (12:30/13:30Z class) land here.
+  releases land here.
 - **ny_only** (London close -> NY close): FTSE tape without its home
   market.
-- **dead** (NY close -> Tokyo open): includes the daily feed pause;
-  expect near-empty rows.
-London+overlap as the label-bearing (tradeable) window is a REGISTERED
-PROPOSAL, unratified — criteria compute on whole windows until the
-operator ratifies session scoping.
+- **dead** (NY close -> Tokyo open): includes the daily feed pause.
+London+overlap as the label-bearing window is a REGISTERED PROPOSAL,
+unratified — criteria compute on whole windows.
 
 ## Small-n caveats
-Forward is a few sessions old; single-digit fire counts dominate several
-cells. n sits beside every number deliberately: a 50% precision on 4 fires
-is two lucky bars, not a signal. Backtest n>=100 rows are the only ones
-where the chance comparison has teeth yet. Nothing in this table is
-validation — the walk-forward and the lockbox remain the only verdict
-machinery.
+Forward is days old; several cells are single-digit. The small-n dimming
+is registered convention (operator, 2026-08-19), not styling. Nothing in
+these pages is validation — walk-forward and the lockbox remain the only
+verdict machinery.
 """
 
 
