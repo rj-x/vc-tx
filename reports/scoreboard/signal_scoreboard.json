@@ -3,14 +3,14 @@
   "instruments": {
     "uk100fut": {
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "af2499e341bd830c5c9116457216bc3ee6efad6f",
+      "engine_commit": "f3eda9699f06be70e1ae57790fb87c8869967d95",
       "instrument": "uk100fut",
       "pair": "uk100",
       "status": "canonical",
       "volume_type": "real futures volume (step-zero audit)",
       "store_span_1min": [
         "2026-07-12 22:06:00+00:00",
-        "2026-08-19 22:09:00+00:00"
+        "2026-08-19 22:15:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -25,6 +25,8 @@
           "S-H1": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 68,
               "total_pts_right": 639.2,
@@ -70,6 +72,8 @@
           "S-H10": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 293,
               "total_pts_right": 1532.9,
@@ -115,6 +119,8 @@
           "S-H11": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 316,
               "total_pts_right": 2555.3,
@@ -165,6 +171,8 @@
           "S-H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 347,
               "total_pts_right": 3270.2,
@@ -215,6 +223,8 @@
           "S-H4": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 7,
               "total_pts_right": 26.6,
@@ -265,6 +275,8 @@
           "S-H6": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 37.8,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 59,
               "total_pts_right": 818.2,
@@ -310,6 +322,8 @@
           "S-H7": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 112,
               "total_pts_right": 1097.3,
@@ -355,6 +369,8 @@
           "S-H7 (either-dir)": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 112,
             "precision": {
@@ -388,6 +404,8 @@
           "S-H8": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 347,
             "precision": {
@@ -421,6 +439,8 @@
           "S-H9": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 53,
               "total_pts_right": 558.1,
@@ -482,6 +502,8 @@
           "S-H1": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 23,
               "total_pts_right": 51.9,
@@ -495,16 +517,16 @@
                 "30": 0.8
               }
             },
-            "n_fires": 23,
+            "n_fires": 24,
             "precision": {
               "hits": 6,
-              "of": 23,
-              "pct": 26.1
+              "of": 24,
+              "pct": 25.0
             },
             "coverage": {
               "covered": 6,
-              "of": 31,
-              "pct": 19.4
+              "of": 32,
+              "pct": 18.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": 20.9,
@@ -527,6 +549,8 @@
           "S-H10": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 77,
               "total_pts_right": 115.2,
@@ -548,8 +572,8 @@
             },
             "coverage": {
               "covered": 6,
-              "of": 31,
-              "pct": 19.4
+              "of": 32,
+              "pct": 18.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": 15.9,
@@ -572,6 +596,8 @@
           "S-H11": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 59,
               "total_pts_right": 344.7,
@@ -593,8 +619,8 @@
             },
             "coverage": {
               "covered": 6,
-              "of": 31,
-              "pct": 19.4
+              "of": 32,
+              "pct": 18.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": 11.1,
@@ -622,14 +648,16 @@
           "S-H2": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
-              "n": 92,
+              "n": 93,
               "total_pts_right": 259.4,
-              "total_pts_wrong": -327.7,
-              "net_pts": -68.3,
+              "total_pts_wrong": -332.8,
+              "net_pts": -73.4,
               "median_per_fire": -0.8,
               "horizon_marks_net": {
-                "5": -33.5,
+                "5": -34.6,
                 "10": -9.6,
                 "20": 18.7,
                 "30": -29.4
@@ -643,8 +671,8 @@
             },
             "coverage": {
               "covered": 8,
-              "of": 31,
-              "pct": 25.8
+              "of": 32,
+              "pct": 25.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 17.5,
@@ -667,6 +695,8 @@
           "S-H3": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 5,
               "total_pts_right": 13.3,
@@ -688,8 +718,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 31,
-              "pct": 3.2
+              "of": 32,
+              "pct": 3.1
             },
             "earliness": {
               "median_pts_remaining_at_fire": 13.0,
@@ -722,6 +752,8 @@
           "S-H6": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 43.0,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 11,
               "total_pts_right": 90.3,
@@ -743,8 +775,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 31,
-              "pct": 3.2
+              "of": 32,
+              "pct": 3.1
             },
             "earliness": {
               "median_pts_remaining_at_fire": 6.7,
@@ -767,6 +799,8 @@
           "S-H7": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 24,
               "total_pts_right": 111.6,
@@ -788,8 +822,8 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 31,
-              "pct": 6.5
+              "of": 32,
+              "pct": 6.2
             },
             "earliness": {
               "median_pts_remaining_at_fire": 4.8,
@@ -812,6 +846,8 @@
           "S-H7 (either-dir)": {
             "source": "forward_feed_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 24,
             "precision": {
@@ -821,8 +857,8 @@
             },
             "coverage": {
               "covered": 8,
-              "of": 31,
-              "pct": 25.8
+              "of": 32,
+              "pct": 25.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 7.9,
@@ -845,17 +881,19 @@
           "S-H8": {
             "source": "forward_feed_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 93,
             "precision": {
-              "hits": 39,
+              "hits": 40,
               "of": 93,
-              "pct": 41.9
+              "pct": 43.0
             },
             "coverage": {
               "covered": 14,
-              "of": 31,
-              "pct": 45.2
+              "of": 32,
+              "pct": 43.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": 17.5,
@@ -878,6 +916,8 @@
           "S-H9": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 12,
               "total_pts_right": 23.8,
@@ -899,8 +939,8 @@
             },
             "coverage": {
               "covered": 3,
-              "of": 31,
-              "pct": 9.7
+              "of": 32,
+              "pct": 9.4
             },
             "earliness": {
               "median_pts_remaining_at_fire": 15.5,
@@ -923,12 +963,12 @@
           "_union": {
             "source": "forward_feed_replay",
             "episodes_covered_by_any_row": 26,
-            "of": 31,
-            "pct": 83.9
+            "of": 32,
+            "pct": 81.2
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 31,
+            "n_qualifying_episodes": 32,
             "n_major": 14,
             "bar_qualify_base_rate_pct": 44.8,
             "per_direction_base_rate_pct": 25.1,
@@ -942,6 +982,8 @@
             "S-H1": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 22,
                 "total_pts_right": 292.5,
@@ -987,6 +1029,8 @@
             "S-H10": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 66,
                 "total_pts_right": 603.6,
@@ -1032,6 +1076,8 @@
             "S-H11": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 148,
                 "total_pts_right": 1518.7,
@@ -1082,6 +1128,8 @@
             "S-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 80,
                 "total_pts_right": 1137.7,
@@ -1132,6 +1180,8 @@
             "S-H4": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 5.5,
@@ -1175,6 +1225,8 @@
             "S-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 37.5,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 31,
                 "total_pts_right": 493.8,
@@ -1220,6 +1272,8 @@
             "S-H7": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 41,
                 "total_pts_right": 335.1,
@@ -1265,6 +1319,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 41,
               "precision": {
@@ -1298,6 +1354,8 @@
             "S-H8": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 80,
               "precision": {
@@ -1331,6 +1389,8 @@
             "S-H9": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 205.5,
@@ -1392,6 +1452,8 @@
             "S-H1": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 35.4,
@@ -1430,6 +1492,8 @@
             "S-H10": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 48.8,
@@ -1468,6 +1532,8 @@
             "S-H11": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 40,
                 "total_pts_right": 158.5,
@@ -1518,6 +1584,8 @@
             "S-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 109.8,
@@ -1578,6 +1646,8 @@
             "S-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 30.7,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 6,
                 "total_pts_right": 17.2,
@@ -1623,6 +1693,8 @@
             "S-H7": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 23,
                 "total_pts_right": 361.6,
@@ -1668,6 +1740,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 23,
               "precision": {
@@ -1701,6 +1775,8 @@
             "S-H8": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 11,
               "precision": {
@@ -1755,6 +1831,8 @@
             "S-H1": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 22,
                 "total_pts_right": 183.7,
@@ -1800,6 +1878,8 @@
             "S-H10": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 83,
                 "total_pts_right": 395.5,
@@ -1845,6 +1925,8 @@
             "S-H11": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 38,
                 "total_pts_right": 316.6,
@@ -1895,6 +1977,8 @@
             "S-H2": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 55,
                 "total_pts_right": 386.7,
@@ -1945,6 +2029,8 @@
             "S-H4": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 21.1,
@@ -1995,6 +2081,8 @@
             "S-H6": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": 20.5,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 4,
                 "total_pts_right": 22.4,
@@ -2040,6 +2128,8 @@
             "S-H7": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 83.0,
@@ -2085,6 +2175,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 14,
               "precision": {
@@ -2118,6 +2210,8 @@
             "S-H8": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 55,
               "precision": {
@@ -2151,6 +2245,8 @@
             "S-H9": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 156.1,
@@ -2212,6 +2308,8 @@
             "S-H1": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 47.9,
@@ -2257,6 +2355,8 @@
             "S-H10": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 36,
                 "total_pts_right": 14.9,
@@ -2302,6 +2402,8 @@
             "S-H11": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 154.2,
@@ -2352,6 +2454,8 @@
             "S-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 90,
                 "total_pts_right": 433.0,
@@ -2412,6 +2516,8 @@
             "S-H6": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": 19.1,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 5,
                 "total_pts_right": 0.0,
@@ -2450,6 +2556,8 @@
             "S-H7": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 61.0,
@@ -2495,6 +2603,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -2528,6 +2638,8 @@
             "S-H8": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 90,
               "precision": {
@@ -2561,6 +2673,8 @@
             "S-H9": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 9,
                 "total_pts_right": 26.0,
@@ -2622,6 +2736,8 @@
             "S-H1": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 79.7,
@@ -2667,6 +2783,8 @@
             "S-H10": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 101,
                 "total_pts_right": 470.1,
@@ -2712,6 +2830,8 @@
             "S-H11": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 70,
                 "total_pts_right": 407.3,
@@ -2762,6 +2882,8 @@
             "S-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 111,
                 "total_pts_right": 1203.0,
@@ -2822,6 +2944,8 @@
             "S-H6": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 45.0,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 13,
                 "total_pts_right": 284.8,
@@ -2860,6 +2984,8 @@
             "S-H7": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 29,
                 "total_pts_right": 256.6,
@@ -2905,6 +3031,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 29,
               "precision": {
@@ -2938,6 +3066,8 @@
             "S-H8": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 111,
               "precision": {
@@ -2971,6 +3101,8 @@
             "S-H9": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 21,
                 "total_pts_right": 170.5,
@@ -3034,6 +3166,8 @@
             "S-H1": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 23.5,
@@ -3079,6 +3213,8 @@
             "S-H10": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 58.9,
@@ -3124,6 +3260,8 @@
             "S-H11": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 31,
                 "total_pts_right": 186.6,
@@ -3167,6 +3305,8 @@
             "S-H2": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 19,
                 "total_pts_right": 77.7,
@@ -3212,6 +3352,8 @@
             "S-H3": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 12.5,
@@ -3260,6 +3402,8 @@
             "S-H6": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 42.2,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 6,
                 "total_pts_right": 65.2,
@@ -3305,6 +3449,8 @@
             "S-H7": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 73.1,
@@ -3343,6 +3489,8 @@
             "S-H7 (either-dir)": {
               "source": "forward_feed_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 12,
               "precision": {
@@ -3376,6 +3524,8 @@
             "S-H8": {
               "source": "forward_feed_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 19,
               "precision": {
@@ -3430,6 +3580,8 @@
             "S-H1": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -3468,6 +3620,8 @@
             "S-H10": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 0.0,
@@ -3506,6 +3660,8 @@
             "S-H11": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 69.1,
@@ -3556,6 +3712,8 @@
             "S-H2": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 13.5,
@@ -3621,6 +3779,8 @@
             "S-H7": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 5.3,
@@ -3659,6 +3819,8 @@
             "S-H7 (either-dir)": {
               "source": "forward_feed_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 2,
               "precision": {
@@ -3685,6 +3847,8 @@
             "S-H8": {
               "source": "forward_feed_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 4,
               "precision": {
@@ -3718,6 +3882,8 @@
             "S-H9": {
               "source": "forward_feed_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -3772,6 +3938,8 @@
             "S-H1": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 10.6,
@@ -3810,6 +3978,8 @@
             "S-H10": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 37.6,
@@ -3855,6 +4025,8 @@
             "S-H11": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 89.0,
@@ -3905,6 +4077,8 @@
             "S-H2": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 37.0,
@@ -3950,6 +4124,8 @@
             "S-H3": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 0.8,
@@ -4005,6 +4181,8 @@
             "S-H6": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": 5.4,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -4043,6 +4221,8 @@
             "S-H7": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 27.2,
@@ -4088,6 +4268,8 @@
             "S-H7 (either-dir)": {
               "source": "forward_feed_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 7,
               "precision": {
@@ -4121,6 +4303,8 @@
             "S-H8": {
               "source": "forward_feed_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 20,
               "precision": {
@@ -4154,6 +4338,8 @@
             "S-H9": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 21.6,
@@ -4215,6 +4401,8 @@
             "S-H1": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 4.4,
@@ -4228,16 +4416,16 @@
                   "30": -6.5
                 }
               },
-              "n_fires": 2,
+              "n_fires": 3,
               "precision": {
                 "hits": 1,
-                "of": 2,
-                "pct": 50.0
+                "of": 3,
+                "pct": 33.3
               },
               "coverage": {
                 "covered": 1,
-                "of": 4,
-                "pct": 25.0
+                "of": 5,
+                "pct": 20.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 4.3,
@@ -4260,6 +4448,8 @@
             "S-H10": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 15,
                 "total_pts_right": 5.2,
@@ -4281,7 +4471,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 4,
+                "of": 5,
                 "pct": 0.0
               },
               "earliness": {
@@ -4308,14 +4498,16 @@
             "S-H2": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
-                "n": 9,
+                "n": 10,
                 "total_pts_right": 24.4,
-                "total_pts_wrong": -9.1,
-                "net_pts": 15.3,
-                "median_per_fire": 2.7,
+                "total_pts_wrong": -14.2,
+                "net_pts": 10.2,
+                "median_per_fire": 2.05,
                 "horizon_marks_net": {
-                  "5": -4.5,
+                  "5": -5.6,
                   "10": 3.9,
                   "20": 4.1,
                   "30": -1.8
@@ -4329,8 +4521,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 4,
-                "pct": 25.0
+                "of": 5,
+                "pct": 20.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 3.8,
@@ -4353,6 +4545,8 @@
             "S-H3": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -4374,7 +4568,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 4,
+                "of": 5,
                 "pct": 0.0
               },
               "earliness": {
@@ -4402,6 +4596,8 @@
             "S-H7": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -4423,7 +4619,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 4,
+                "of": 5,
                 "pct": 0.0
               },
               "earliness": {
@@ -4440,6 +4636,8 @@
             "S-H7 (either-dir)": {
               "source": "forward_feed_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -4449,8 +4647,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 4,
-                "pct": 25.0
+                "of": 5,
+                "pct": 20.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 14.0,
@@ -4473,17 +4671,19 @@
             "S-H8": {
               "source": "forward_feed_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 10,
               "precision": {
-                "hits": 5,
+                "hits": 6,
                 "of": 10,
-                "pct": 50.0
+                "pct": 60.0
               },
               "coverage": {
                 "covered": 2,
-                "of": 4,
-                "pct": 50.0
+                "of": 5,
+                "pct": 40.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 9.1,
@@ -4511,15 +4711,15 @@
             "_union": {
               "source": "forward_feed_replay/dead",
               "episodes_covered_by_any_row": 2,
-              "of": 4,
-              "pct": 50.0
+              "of": 5,
+              "pct": 40.0
             },
             "_moves": {
               "source": "forward_feed_replay/dead",
-              "n_qualifying_episodes": 4,
+              "n_qualifying_episodes": 5,
               "n_major": 2,
-              "bar_qualify_base_rate_pct": 29.5,
-              "per_direction_base_rate_pct": 14.8,
+              "bar_qualify_base_rate_pct": 29.8,
+              "per_direction_base_rate_pct": 14.9,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -4527,6 +4727,8 @@
             "S-H1": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 9,
                 "total_pts_right": 13.4,
@@ -4572,6 +4774,8 @@
             "S-H10": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 27,
                 "total_pts_right": 13.5,
@@ -4617,6 +4821,8 @@
             "S-H11": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -4656,6 +4862,8 @@
             "S-H2": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 40,
                 "total_pts_right": 106.8,
@@ -4716,6 +4924,8 @@
             "S-H6": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 55.1,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 4,
                 "total_pts_right": 25.1,
@@ -4754,6 +4964,8 @@
             "S-H7": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 6.0,
@@ -4792,6 +5004,8 @@
             "S-H7 (either-dir)": {
               "source": "forward_feed_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 2,
               "precision": {
@@ -4814,6 +5028,8 @@
             "S-H8": {
               "source": "forward_feed_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 40,
               "precision": {
@@ -4847,6 +5063,8 @@
             "S-H9": {
               "source": "forward_feed_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 2.2,
@@ -4917,6 +5135,8 @@
           "H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 3,
               "total_pts_right": 0.0,
@@ -4960,6 +5180,8 @@
           "H4": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 1,
               "total_pts_right": 0.0,
@@ -5024,6 +5246,8 @@
           "H2": {
             "source": "forward_feed_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 2,
               "total_pts_right": 3.6,
@@ -5045,7 +5269,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 31,
+              "of": 32,
               "pct": 0.0
             },
             "earliness": {
@@ -5077,12 +5301,12 @@
           "_union": {
             "source": "forward_feed_replay",
             "episodes_covered_by_any_row": 0,
-            "of": 31,
+            "of": 32,
             "pct": 0.0
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 31,
+            "n_qualifying_episodes": 32,
             "n_major": 14,
             "bar_qualify_base_rate_pct": 44.8,
             "per_direction_base_rate_pct": 25.1,
@@ -5099,7 +5323,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "af2499e341bd830c5c9116457216bc3ee6efad6f",
+      "engine_commit": "f3eda9699f06be70e1ae57790fb87c8869967d95",
       "instrument": "ger40fut",
       "pair": "ger40",
       "status": "provisional",
@@ -5121,6 +5345,8 @@
           "S-H1": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 49,
               "total_pts_right": 1327.3,
@@ -5166,6 +5392,8 @@
           "S-H10": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 147,
               "total_pts_right": 1729.9,
@@ -5211,6 +5439,8 @@
           "S-H11": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 74,
               "total_pts_right": 1358.6,
@@ -5261,6 +5491,8 @@
           "S-H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 234,
               "total_pts_right": 4896.0,
@@ -5306,6 +5538,8 @@
           "S-H3": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 8,
               "total_pts_right": 132.0,
@@ -5351,6 +5585,8 @@
           "S-H4": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 33,
               "total_pts_right": 556.0,
@@ -5401,6 +5637,8 @@
           "S-H6": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 35.0,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 36,
               "total_pts_right": 681.9,
@@ -5446,6 +5684,8 @@
           "S-H7": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 59,
               "total_pts_right": 1756.3,
@@ -5491,6 +5731,8 @@
           "S-H7 (either-dir)": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 59,
             "precision": {
@@ -5524,6 +5766,8 @@
           "S-H8": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 234,
             "precision": {
@@ -5557,6 +5801,8 @@
           "S-H9": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 51,
               "total_pts_right": 724.7,
@@ -5618,6 +5864,8 @@
           "S-H1": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 20,
               "total_pts_right": 223.1,
@@ -5663,6 +5911,8 @@
           "S-H10": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 57,
               "total_pts_right": 432.6,
@@ -5708,6 +5958,8 @@
           "S-H11": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 92,
               "total_pts_right": 755.5,
@@ -5758,6 +6010,8 @@
           "S-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 63,
               "total_pts_right": 529.6,
@@ -5803,6 +6057,8 @@
           "S-H3": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 2,
               "total_pts_right": 0.5,
@@ -5851,6 +6107,8 @@
           "S-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 40.5,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 49,
               "total_pts_right": 371.3,
@@ -5896,6 +6154,8 @@
           "S-H7": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 9,
               "total_pts_right": 83.8,
@@ -5941,6 +6201,8 @@
           "S-H7 (either-dir)": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 9,
             "precision": {
@@ -5974,6 +6236,8 @@
           "S-H8": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 63,
             "precision": {
@@ -6007,6 +6271,8 @@
           "S-H9": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 6,
               "total_pts_right": 21.1,
@@ -6071,6 +6337,8 @@
             "S-H1": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 251.3,
@@ -6116,6 +6384,8 @@
             "S-H10": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 39,
                 "total_pts_right": 386.4,
@@ -6161,6 +6431,8 @@
             "S-H11": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 242.6,
@@ -6204,6 +6476,8 @@
             "S-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 15,
                 "total_pts_right": 303.8,
@@ -6247,6 +6521,8 @@
             "S-H4": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 116.2,
@@ -6297,6 +6573,8 @@
             "S-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 35.2,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 18,
                 "total_pts_right": 358.8,
@@ -6342,6 +6620,8 @@
             "S-H7": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 851.1,
@@ -6387,6 +6667,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 20,
               "precision": {
@@ -6420,6 +6702,8 @@
             "S-H8": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 15,
               "precision": {
@@ -6446,6 +6730,8 @@
             "S-H9": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 46.6,
@@ -6505,6 +6791,8 @@
             "S-H10": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 9,
                 "total_pts_right": 68.5,
@@ -6543,6 +6831,8 @@
             "S-H11": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 16,
                 "total_pts_right": 237.5,
@@ -6593,6 +6883,8 @@
             "S-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 161.8,
@@ -6636,6 +6928,8 @@
             "S-H4": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 100.0,
@@ -6679,6 +6973,8 @@
             "S-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 27.9,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 108.3,
@@ -6713,6 +7009,8 @@
             "S-H7": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 15,
                 "total_pts_right": 440.4,
@@ -6758,6 +7056,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 15,
               "precision": {
@@ -6791,6 +7091,8 @@
             "S-H8": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 11,
               "precision": {
@@ -6824,6 +7126,8 @@
             "S-H9": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 111.6,
@@ -6878,6 +7182,8 @@
             "S-H1": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 109.1,
@@ -6923,6 +7229,8 @@
             "S-H10": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 34,
                 "total_pts_right": 434.8,
@@ -6968,6 +7276,8 @@
             "S-H11": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 59.9,
@@ -7011,6 +7321,8 @@
             "S-H2": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 61,
                 "total_pts_right": 1176.4,
@@ -7056,6 +7368,8 @@
             "S-H3": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 132.0,
@@ -7101,6 +7415,8 @@
             "S-H4": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 69.3,
@@ -7156,6 +7472,8 @@
             "S-H7": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 154.7,
@@ -7201,6 +7519,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 6,
               "precision": {
@@ -7234,6 +7554,8 @@
             "S-H8": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 61,
               "precision": {
@@ -7267,6 +7589,8 @@
             "S-H9": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 22,
                 "total_pts_right": 159.3,
@@ -7328,6 +7652,8 @@
             "S-H1": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 358.6,
@@ -7373,6 +7699,8 @@
             "S-H10": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 31.9,
@@ -7418,6 +7746,8 @@
             "S-H11": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 48.2,
@@ -7468,6 +7798,8 @@
             "S-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 52,
                 "total_pts_right": 1043.6,
@@ -7518,6 +7850,8 @@
             "S-H4": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 78.3,
@@ -7568,6 +7902,8 @@
             "S-H6": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": 25.0,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 3,
                 "total_pts_right": 29.6,
@@ -7606,6 +7942,8 @@
             "S-H7": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 111.5,
@@ -7651,6 +7989,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 4,
               "precision": {
@@ -7684,6 +8024,8 @@
             "S-H8": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 52,
               "precision": {
@@ -7717,6 +8059,8 @@
             "S-H9": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 252.3,
@@ -7778,6 +8122,8 @@
             "S-H1": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 27,
                 "total_pts_right": 608.3,
@@ -7823,6 +8169,8 @@
             "S-H10": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 51,
                 "total_pts_right": 808.3,
@@ -7868,6 +8216,8 @@
             "S-H11": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 33,
                 "total_pts_right": 770.4,
@@ -7918,6 +8268,8 @@
             "S-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 95,
                 "total_pts_right": 2210.4,
@@ -7963,6 +8315,8 @@
             "S-H3": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 0.0,
@@ -8001,6 +8355,8 @@
             "S-H4": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 192.2,
@@ -8044,6 +8400,8 @@
             "S-H6": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 38.3,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 14,
                 "total_pts_right": 185.2,
@@ -8089,6 +8447,8 @@
             "S-H7": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 198.6,
@@ -8134,6 +8494,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 14,
               "precision": {
@@ -8167,6 +8529,8 @@
             "S-H8": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 95,
               "precision": {
@@ -8200,6 +8564,8 @@
             "S-H9": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 154.9,
@@ -8263,6 +8629,8 @@
             "S-H1": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 38.7,
@@ -8308,6 +8676,8 @@
             "S-H10": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 124.3,
@@ -8353,6 +8723,8 @@
             "S-H11": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 44,
                 "total_pts_right": 475.2,
@@ -8403,6 +8775,8 @@
             "S-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 9,
                 "total_pts_right": 95.6,
@@ -8456,6 +8830,8 @@
             "S-H6": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 37.3,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 26,
                 "total_pts_right": 204.4,
@@ -8501,6 +8877,8 @@
             "S-H7": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 83.8,
@@ -8546,6 +8924,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 8,
               "precision": {
@@ -8579,6 +8959,8 @@
             "S-H8": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 9,
               "precision": {
@@ -8612,6 +8994,8 @@
             "S-H9": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -8666,6 +9050,8 @@
             "S-H1": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 28.7,
@@ -8711,6 +9097,8 @@
             "S-H10": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 30.9,
@@ -8759,6 +9147,8 @@
             "S-H2": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 50.8,
@@ -8819,6 +9209,8 @@
             "S-H6": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 20.8,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 4,
                 "total_pts_right": 40.5,
@@ -8864,6 +9256,8 @@
             "S-H7": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -8902,6 +9296,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -8928,6 +9324,8 @@
             "S-H8": {
               "source": "post_go_live_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -8982,6 +9380,8 @@
             "S-H1": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -9020,6 +9420,8 @@
             "S-H10": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 17,
                 "total_pts_right": 104.4,
@@ -9075,6 +9477,8 @@
             "S-H2": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 7.1,
@@ -9120,6 +9524,8 @@
             "S-H3": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -9178,6 +9584,8 @@
             "S-H8": {
               "source": "post_go_live_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 3,
               "precision": {
@@ -9211,6 +9619,8 @@
             "S-H9": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 21.1,
@@ -9272,6 +9682,8 @@
             "S-H1": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 0.0,
@@ -9310,6 +9722,8 @@
             "S-H10": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 18.2,
@@ -9355,6 +9769,8 @@
             "S-H11": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 28.5,
@@ -9398,6 +9814,8 @@
             "S-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 59.2,
@@ -9461,6 +9879,8 @@
             "S-H8": {
               "source": "post_go_live_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 8,
               "precision": {
@@ -9515,6 +9935,8 @@
             "S-H1": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 155.7,
@@ -9560,6 +9982,8 @@
             "S-H10": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 154.8,
@@ -9605,6 +10029,8 @@
             "S-H11": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 36,
                 "total_pts_right": 251.8,
@@ -9655,6 +10081,8 @@
             "S-H2": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 38,
                 "total_pts_right": 316.9,
@@ -9700,6 +10128,8 @@
             "S-H3": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.5,
@@ -9748,6 +10178,8 @@
             "S-H6": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 48.8,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 19,
                 "total_pts_right": 126.4,
@@ -9798,6 +10230,8 @@
             "S-H8": {
               "source": "post_go_live_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 38,
               "precision": {
@@ -9831,6 +10265,8 @@
             "S-H9": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -9894,6 +10330,8 @@
           "H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 3,
               "total_pts_right": 304.3,
@@ -9964,6 +10402,8 @@
           "H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 2,
               "total_pts_right": 0.0,
@@ -10039,7 +10479,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "af2499e341bd830c5c9116457216bc3ee6efad6f",
+      "engine_commit": "f3eda9699f06be70e1ae57790fb87c8869967d95",
       "instrument": "nas100fut",
       "pair": "nas100",
       "status": "provisional",
@@ -10061,6 +10501,8 @@
           "S-H1": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 34,
               "total_pts_right": 2899.1,
@@ -10106,6 +10548,8 @@
           "S-H10": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 175,
               "total_pts_right": 4791.5,
@@ -10151,6 +10595,8 @@
           "S-H11": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 262,
               "total_pts_right": 10764.7,
@@ -10201,6 +10647,8 @@
           "S-H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 320,
               "total_pts_right": 13405.3,
@@ -10246,6 +10694,8 @@
           "S-H3": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 1,
               "total_pts_right": 105.8,
@@ -10290,6 +10740,8 @@
           "S-H6": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 39.1,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 29,
               "total_pts_right": 1875.3,
@@ -10335,6 +10787,8 @@
           "S-H7": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 50,
               "total_pts_right": 2351.3,
@@ -10380,6 +10834,8 @@
           "S-H7 (either-dir)": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 50,
             "precision": {
@@ -10413,6 +10869,8 @@
           "S-H8": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 320,
             "precision": {
@@ -10446,6 +10904,8 @@
           "S-H9": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 88,
               "total_pts_right": 3019.3,
@@ -10507,6 +10967,8 @@
           "S-H1": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 11,
               "total_pts_right": 274.2,
@@ -10552,6 +11014,8 @@
           "S-H10": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 132,
               "total_pts_right": 1008.5,
@@ -10597,6 +11061,8 @@
           "S-H11": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 145,
               "total_pts_right": 2710.8,
@@ -10647,6 +11113,8 @@
           "S-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 105,
               "total_pts_right": 1962.5,
@@ -10697,6 +11165,8 @@
           "S-H4": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 10,
               "total_pts_right": 65.0,
@@ -10740,6 +11210,8 @@
           "S-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 34.7,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 25,
               "total_pts_right": 462.4,
@@ -10785,6 +11257,8 @@
           "S-H7": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 13,
               "total_pts_right": 198.3,
@@ -10830,6 +11304,8 @@
           "S-H7 (either-dir)": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 13,
             "precision": {
@@ -10863,6 +11339,8 @@
           "S-H8": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 105,
             "precision": {
@@ -10896,6 +11374,8 @@
           "S-H9": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 61,
               "total_pts_right": 813.1,
@@ -10960,6 +11440,8 @@
             "S-H1": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 140.8,
@@ -11005,6 +11487,8 @@
             "S-H10": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 15,
                 "total_pts_right": 204.4,
@@ -11050,6 +11534,8 @@
             "S-H11": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 91,
                 "total_pts_right": 3265.1,
@@ -11100,6 +11586,8 @@
             "S-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 59,
                 "total_pts_right": 2279.0,
@@ -11145,6 +11633,8 @@
             "S-H3": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 105.8,
@@ -11189,6 +11679,8 @@
             "S-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 38.2,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 5,
                 "total_pts_right": 25.1,
@@ -11234,6 +11726,8 @@
             "S-H7": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 16,
                 "total_pts_right": 731.8,
@@ -11279,6 +11773,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 16,
               "precision": {
@@ -11312,6 +11808,8 @@
             "S-H8": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 59,
               "precision": {
@@ -11345,6 +11843,8 @@
             "S-H9": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 9,
                 "total_pts_right": 554.2,
@@ -11404,6 +11904,8 @@
             "S-H10": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 18,
                 "total_pts_right": 764.5,
@@ -11442,6 +11944,8 @@
             "S-H11": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 1032.2,
@@ -11485,6 +11989,8 @@
             "S-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 32,
                 "total_pts_right": 1318.0,
@@ -11538,6 +12044,8 @@
             "S-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 47.4,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 20,
                 "total_pts_right": 1683.5,
@@ -11583,6 +12091,8 @@
             "S-H7": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 1045.7,
@@ -11628,6 +12138,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 8,
               "precision": {
@@ -11657,6 +12169,8 @@
             "S-H8": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 32,
               "precision": {
@@ -11690,6 +12204,8 @@
             "S-H9": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 664.4,
@@ -11744,6 +12260,8 @@
             "S-H1": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 1555.9,
@@ -11789,6 +12307,8 @@
             "S-H10": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 48,
                 "total_pts_right": 901.1,
@@ -11834,6 +12354,8 @@
             "S-H11": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 29,
                 "total_pts_right": 2139.0,
@@ -11884,6 +12406,8 @@
             "S-H2": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 71,
                 "total_pts_right": 3852.1,
@@ -11949,6 +12473,8 @@
             "S-H7": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 142.5,
@@ -11994,6 +12520,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 8,
               "precision": {
@@ -12027,6 +12555,8 @@
             "S-H8": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 71,
               "precision": {
@@ -12060,6 +12590,8 @@
             "S-H9": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 25,
                 "total_pts_right": 707.5,
@@ -12121,6 +12653,8 @@
             "S-H1": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 8,
                 "total_pts_right": 405.9,
@@ -12166,6 +12700,8 @@
             "S-H10": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 16,
                 "total_pts_right": 604.5,
@@ -12211,6 +12747,8 @@
             "S-H11": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 57,
                 "total_pts_right": 2541.4,
@@ -12261,6 +12799,8 @@
             "S-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 48,
                 "total_pts_right": 2404.0,
@@ -12321,6 +12861,8 @@
             "S-H6": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": 23.8,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 3,
                 "total_pts_right": 54.9,
@@ -12359,6 +12901,8 @@
             "S-H7": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 107.9,
@@ -12404,6 +12948,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -12437,6 +12983,8 @@
             "S-H8": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 48,
               "precision": {
@@ -12470,6 +13018,8 @@
             "S-H9": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 17,
                 "total_pts_right": 735.6,
@@ -12531,6 +13081,8 @@
             "S-H1": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 796.5,
@@ -12569,6 +13121,8 @@
             "S-H10": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 78,
                 "total_pts_right": 2317.0,
@@ -12614,6 +13168,8 @@
             "S-H11": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 65,
                 "total_pts_right": 1787.0,
@@ -12664,6 +13220,8 @@
             "S-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 110,
                 "total_pts_right": 3552.2,
@@ -12724,6 +13282,8 @@
             "S-H6": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 25.2,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 111.8,
@@ -12758,6 +13318,8 @@
             "S-H7": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 323.4,
@@ -12796,6 +13358,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 13,
               "precision": {
@@ -12829,6 +13393,8 @@
             "S-H8": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 110,
               "precision": {
@@ -12862,6 +13428,8 @@
             "S-H9": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 27,
                 "total_pts_right": 357.6,
@@ -12925,6 +13493,8 @@
             "S-H1": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 42.3,
@@ -12970,6 +13540,8 @@
             "S-H10": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 17,
                 "total_pts_right": 329.9,
@@ -13008,6 +13580,8 @@
             "S-H11": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 26,
                 "total_pts_right": 283.8,
@@ -13058,6 +13632,8 @@
             "S-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 38,
                 "total_pts_right": 655.5,
@@ -13108,6 +13684,8 @@
             "S-H4": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 65.0,
@@ -13151,6 +13729,8 @@
             "S-H6": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 30.7,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 8,
                 "total_pts_right": 97.2,
@@ -13196,6 +13776,8 @@
             "S-H7": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 5.5,
@@ -13241,6 +13823,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -13274,6 +13858,8 @@
             "S-H8": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 38,
               "precision": {
@@ -13307,6 +13893,8 @@
             "S-H9": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 49.1,
@@ -13362,6 +13950,8 @@
             "S-H10": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 17,
                 "total_pts_right": 22.2,
@@ -13400,6 +13990,8 @@
             "S-H11": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 16,
                 "total_pts_right": 764.0,
@@ -13463,6 +14055,8 @@
             "S-H6": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 50.0,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 8,
                 "total_pts_right": 177.1,
@@ -13501,6 +14095,8 @@
             "S-H7": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 105.1,
@@ -13535,6 +14131,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -13562,6 +14160,8 @@
             "S-H9": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 37.6,
@@ -13621,6 +14221,8 @@
             "S-H10": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 22,
                 "total_pts_right": 185.2,
@@ -13666,6 +14268,8 @@
             "S-H11": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 51,
                 "total_pts_right": 434.5,
@@ -13736,6 +14340,8 @@
             "S-H6": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": 0.0,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -13774,6 +14380,8 @@
             "S-H7": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 36.4,
@@ -13812,6 +14420,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -13843,6 +14453,8 @@
             "S-H9": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 21,
                 "total_pts_right": 276.1,
@@ -13904,6 +14516,8 @@
             "S-H1": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 157.3,
@@ -13949,6 +14563,8 @@
             "S-H10": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 13.1,
@@ -13994,6 +14610,8 @@
             "S-H11": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 84.3,
@@ -14044,6 +14662,8 @@
             "S-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 116.0,
@@ -14104,6 +14724,8 @@
             "S-H6": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": 7.1,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 15.9,
@@ -14142,6 +14764,8 @@
             "S-H7": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 5.3,
@@ -14180,6 +14804,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -14206,6 +14832,8 @@
             "S-H8": {
               "source": "post_go_live_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 7,
               "precision": {
@@ -14239,6 +14867,8 @@
             "S-H9": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 27.8,
@@ -14293,6 +14923,8 @@
             "S-H1": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 74.6,
@@ -14331,6 +14963,8 @@
             "S-H10": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 66,
                 "total_pts_right": 458.1,
@@ -14376,6 +15010,8 @@
             "S-H11": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 40,
                 "total_pts_right": 1144.2,
@@ -14426,6 +15062,8 @@
             "S-H2": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 60,
                 "total_pts_right": 1191.0,
@@ -14476,6 +15114,8 @@
             "S-H4": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 0.0,
@@ -14519,6 +15159,8 @@
             "S-H6": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 31.7,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 7,
                 "total_pts_right": 172.2,
@@ -14564,6 +15206,8 @@
             "S-H7": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 46.0,
@@ -14609,6 +15253,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -14642,6 +15288,8 @@
             "S-H8": {
               "source": "post_go_live_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 60,
               "precision": {
@@ -14675,6 +15323,8 @@
             "S-H9": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 29,
                 "total_pts_right": 422.5,
@@ -14745,6 +15395,8 @@
           "H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 8,
               "total_pts_right": 335.1,
@@ -14826,6 +15478,8 @@
           "H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 2,
               "total_pts_right": 20.0,
@@ -14901,7 +15555,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "af2499e341bd830c5c9116457216bc3ee6efad6f",
+      "engine_commit": "f3eda9699f06be70e1ae57790fb87c8869967d95",
       "instrument": "us30fut",
       "pair": "us30",
       "status": "provisional",
@@ -14923,6 +15577,8 @@
           "S-H1": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 49,
               "total_pts_right": 1957.5,
@@ -14968,6 +15624,8 @@
           "S-H10": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 154,
               "total_pts_right": 4227.9,
@@ -15013,6 +15671,8 @@
           "S-H11": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 413,
               "total_pts_right": 12694.3,
@@ -15063,6 +15723,8 @@
           "S-H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 281,
               "total_pts_right": 10496.2,
@@ -15108,6 +15770,8 @@
           "S-H3": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 4,
               "total_pts_right": 99.0,
@@ -15146,6 +15810,8 @@
           "S-H4": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 13,
               "total_pts_right": 409.5,
@@ -15191,6 +15857,8 @@
           "S-H5": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 1,
               "total_pts_right": 0.0,
@@ -15229,6 +15897,8 @@
           "S-H6": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 40.5,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 52,
               "total_pts_right": 1398.0,
@@ -15274,6 +15944,8 @@
           "S-H7": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 41,
               "total_pts_right": 1608.9,
@@ -15319,6 +15991,8 @@
           "S-H7 (either-dir)": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 41,
             "precision": {
@@ -15352,6 +16026,8 @@
           "S-H8": {
             "source": "backtest_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 281,
             "precision": {
@@ -15385,6 +16061,8 @@
           "S-H9": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 38,
               "total_pts_right": 875.7,
@@ -15446,6 +16124,8 @@
           "S-H1": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 36,
               "total_pts_right": 444.5,
@@ -15491,6 +16171,8 @@
           "S-H10": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 129,
               "total_pts_right": 1546.4,
@@ -15536,6 +16218,8 @@
           "S-H11": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 200,
               "total_pts_right": 3008.7,
@@ -15586,6 +16270,8 @@
           "S-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 108,
               "total_pts_right": 1528.5,
@@ -15646,6 +16332,8 @@
           "S-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": 38.7,
+            "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 20,
               "total_pts_right": 470.0,
@@ -15691,6 +16379,8 @@
           "S-H7": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 14,
               "total_pts_right": 290.0,
@@ -15736,6 +16426,8 @@
           "S-H7 (either-dir)": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 14,
             "precision": {
@@ -15769,6 +16461,8 @@
           "S-H8": {
             "source": "post_go_live_replay",
             "grading": "either-direction",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": null,
             "n_fires": 108,
             "precision": {
@@ -15802,6 +16496,8 @@
           "S-H9": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 14,
               "total_pts_right": 31.5,
@@ -15866,6 +16562,8 @@
             "S-H1": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 17,
                 "total_pts_right": 614.4,
@@ -15911,6 +16609,8 @@
             "S-H10": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 40,
                 "total_pts_right": 1971.9,
@@ -15956,6 +16656,8 @@
             "S-H11": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 163,
                 "total_pts_right": 5671.8,
@@ -16006,6 +16708,8 @@
             "S-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 62,
                 "total_pts_right": 1983.0,
@@ -16051,6 +16755,8 @@
             "S-H3": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 18.0,
@@ -16089,6 +16795,8 @@
             "S-H4": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 392.5,
@@ -16127,6 +16835,8 @@
             "S-H5": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -16165,6 +16875,8 @@
             "S-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 40.8,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 24,
                 "total_pts_right": 295.0,
@@ -16210,6 +16922,8 @@
             "S-H7": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 16,
                 "total_pts_right": 619.9,
@@ -16255,6 +16969,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 16,
               "precision": {
@@ -16288,6 +17004,8 @@
             "S-H8": {
               "source": "backtest_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 62,
               "precision": {
@@ -16321,6 +17039,8 @@
             "S-H9": {
               "source": "backtest_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 0.0,
@@ -16380,6 +17100,8 @@
             "S-H10": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 201.5,
@@ -16418,6 +17140,8 @@
             "S-H11": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 26,
                 "total_pts_right": 2130.0,
@@ -16468,6 +17192,8 @@
             "S-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 22,
                 "total_pts_right": 1246.0,
@@ -16511,6 +17237,8 @@
             "S-H4": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -16554,6 +17282,8 @@
             "S-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 41.1,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 18,
                 "total_pts_right": 903.5,
@@ -16592,6 +17322,8 @@
             "S-H7": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 563.0,
@@ -16630,6 +17362,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 3,
               "precision": {
@@ -16656,6 +17390,8 @@
             "S-H8": {
               "source": "backtest_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 22,
               "precision": {
@@ -16682,6 +17418,8 @@
             "S-H9": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 10.0,
@@ -16736,6 +17474,8 @@
             "S-H1": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 932.0,
@@ -16781,6 +17521,8 @@
             "S-H10": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 26,
                 "total_pts_right": 911.0,
@@ -16826,6 +17568,8 @@
             "S-H11": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 42,
                 "total_pts_right": 1878.5,
@@ -16876,6 +17620,8 @@
             "S-H2": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 60,
                 "total_pts_right": 4556.0,
@@ -16936,6 +17682,8 @@
             "S-H6": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": 42.3,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 6,
                 "total_pts_right": 58.0,
@@ -16974,6 +17722,8 @@
             "S-H7": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 136.5,
@@ -17012,6 +17762,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 4,
               "precision": {
@@ -17045,6 +17797,8 @@
             "S-H8": {
               "source": "backtest_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 60,
               "precision": {
@@ -17078,6 +17832,8 @@
             "S-H9": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 10,
                 "total_pts_right": 507.5,
@@ -17139,6 +17895,8 @@
             "S-H1": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 7,
                 "total_pts_right": 43.1,
@@ -17184,6 +17942,8 @@
             "S-H10": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 128.0,
@@ -17229,6 +17989,8 @@
             "S-H11": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 50,
                 "total_pts_right": 1279.0,
@@ -17279,6 +18041,8 @@
             "S-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 41,
                 "total_pts_right": 888.2,
@@ -17329,6 +18093,8 @@
             "S-H4": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 17.0,
@@ -17379,6 +18145,8 @@
             "S-H6": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": 11.8,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 3,
                 "total_pts_right": 64.5,
@@ -17417,6 +18185,8 @@
             "S-H7": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 87.0,
@@ -17455,6 +18225,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 4,
               "precision": {
@@ -17481,6 +18253,8 @@
             "S-H8": {
               "source": "backtest_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 41,
               "precision": {
@@ -17514,6 +18288,8 @@
             "S-H9": {
               "source": "backtest_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 60.2,
@@ -17568,6 +18344,8 @@
             "S-H1": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 368.0,
@@ -17606,6 +18384,8 @@
             "S-H10": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 63,
                 "total_pts_right": 1015.5,
@@ -17651,6 +18431,8 @@
             "S-H11": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 132,
                 "total_pts_right": 1735.0,
@@ -17701,6 +18483,8 @@
             "S-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 96,
                 "total_pts_right": 1823.0,
@@ -17746,6 +18530,8 @@
             "S-H3": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 81.0,
@@ -17794,6 +18580,8 @@
             "S-H6": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 41.0,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 77.0,
@@ -17832,6 +18620,8 @@
             "S-H7": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 202.5,
@@ -17877,6 +18667,8 @@
             "S-H7 (either-dir)": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 14,
               "precision": {
@@ -17910,6 +18702,8 @@
             "S-H8": {
               "source": "backtest_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 96,
               "precision": {
@@ -17943,6 +18737,8 @@
             "S-H9": {
               "source": "backtest_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 18,
                 "total_pts_right": 298.0,
@@ -18006,6 +18802,8 @@
             "S-H1": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 221.0,
@@ -18051,6 +18849,8 @@
             "S-H10": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 25,
                 "total_pts_right": 300.0,
@@ -18096,6 +18896,8 @@
             "S-H11": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 92,
                 "total_pts_right": 1719.2,
@@ -18146,6 +18948,8 @@
             "S-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 36,
                 "total_pts_right": 667.5,
@@ -18206,6 +19010,8 @@
             "S-H6": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": 37.5,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 10,
                 "total_pts_right": 422.5,
@@ -18251,6 +19057,8 @@
             "S-H7": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 121.5,
@@ -18289,6 +19097,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -18315,6 +19125,8 @@
             "S-H8": {
               "source": "post_go_live_replay/london",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 36,
               "precision": {
@@ -18348,6 +19160,8 @@
             "S-H9": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 6,
                 "total_pts_right": 22.5,
@@ -18409,6 +19223,8 @@
             "S-H1": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -18447,6 +19263,8 @@
             "S-H10": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 71.5,
@@ -18485,6 +19303,8 @@
             "S-H11": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 15,
                 "total_pts_right": 581.0,
@@ -18528,6 +19348,8 @@
             "S-H2": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 2,
                 "total_pts_right": 0.0,
@@ -18581,6 +19403,8 @@
             "S-H6": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
+              "conditioned_chance_pct": 41.7,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 9,
                 "total_pts_right": 47.5,
@@ -18624,6 +19448,8 @@
             "S-H8": {
               "source": "post_go_live_replay/overlap",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 2,
               "precision": {
@@ -18672,6 +19498,8 @@
             "S-H10": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 48,
                 "total_pts_right": 473.5,
@@ -18717,6 +19545,8 @@
             "S-H11": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 14,
                 "total_pts_right": 218.5,
@@ -18767,6 +19597,8 @@
             "S-H2": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 7.5,
@@ -18825,6 +19657,8 @@
             "S-H7": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 5,
                 "total_pts_right": 44.5,
@@ -18870,6 +19704,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 5,
               "precision": {
@@ -18903,6 +19739,8 @@
             "S-H8": {
               "source": "post_go_live_replay/ny_only",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 1,
               "precision": {
@@ -18929,6 +19767,8 @@
             "S-H9": {
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 3,
                 "total_pts_right": 9.0,
@@ -18983,6 +19823,8 @@
             "S-H1": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 50.5,
@@ -19028,6 +19870,8 @@
             "S-H10": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 18,
                 "total_pts_right": 81.4,
@@ -19066,6 +19910,8 @@
             "S-H11": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 20.0,
@@ -19109,6 +19955,8 @@
             "S-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 12,
                 "total_pts_right": 120.0,
@@ -19179,6 +20027,8 @@
             "S-H8": {
               "source": "post_go_live_replay/dead",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 12,
               "precision": {
@@ -19212,6 +20062,8 @@
             "S-H9": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -19266,6 +20118,8 @@
             "S-H1": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 20,
                 "total_pts_right": 173.0,
@@ -19311,6 +20165,8 @@
             "S-H10": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 37,
                 "total_pts_right": 620.0,
@@ -19356,6 +20212,8 @@
             "S-H11": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 66,
                 "total_pts_right": 470.0,
@@ -19406,6 +20264,8 @@
             "S-H2": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 57,
                 "total_pts_right": 733.5,
@@ -19466,6 +20326,8 @@
             "S-H6": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": 43.6,
+              "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 1,
                 "total_pts_right": 0.0,
@@ -19504,6 +20366,8 @@
             "S-H7": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 124.0,
@@ -19542,6 +20406,8 @@
             "S-H7 (either-dir)": {
               "source": "post_go_live_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 4,
               "precision": {
@@ -19564,6 +20430,8 @@
             "S-H8": {
               "source": "post_go_live_replay/asia",
               "grading": "either-direction",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": null,
               "n_fires": 57,
               "precision": {
@@ -19597,6 +20465,8 @@
             "S-H9": {
               "source": "post_go_live_replay/asia",
               "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
               "payoff": {
                 "n": 4,
                 "total_pts_right": 0.0,
@@ -19660,6 +20530,8 @@
           "H2": {
             "source": "backtest_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 6,
               "total_pts_right": 101.5,
@@ -19741,6 +20613,8 @@
           "H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
             "payoff": {
               "n": 2,
               "total_pts_right": 43.0,

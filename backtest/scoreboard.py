@@ -51,7 +51,8 @@ import subprocess
 import numpy as np
 import pandas as pd
 
-from engine.signal_watch import (AGNOSTIC_ROWS, DERIVED_FIRES, DUAL_GRADED,
+from engine.signal_watch import (AGNOSTIC_ROWS, CONDITIONED_ROWS,
+                                 DERIVED_FIRES, DUAL_GRADED,
                                  EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
                                  H9_CHAIN_DEPTH_MIN, SignalWatch)
 from backtest.sessions import SESSIONS, session_of, sessions_of_index
@@ -325,8 +326,27 @@ def _payoff(nf, ts, cl, win):
                                   for k, v in marks.items() if v}}
 
 
+def class_masks(series, cfg):
+    """Bar-class masks for CONDITIONED_ROWS (register 47). Implementations
+    keyed by the class names declared in the signal module."""
+    from engine.signal_watch import H6_DAY_WINDOW, H6_SPREAD_PCTILE
+    ts, _cl, _segs = series
+    return {}          # populated by run(), which holds hi/lo
+
+
+def _wide_bar_mask(hi, lo):
+    from engine.signal_watch import H6_DAY_WINDOW, H6_SPREAD_PCTILE
+    rng = pd.Series(hi - lo)
+    thr = rng.rolling(H6_DAY_WINDOW, min_periods=100).quantile(
+        H6_SPREAD_PCTILE).shift(1)
+    return (rng >= thr).fillna(False).to_numpy()
+
+
+CLASS_MASK_FNS = {"wide_bar_p90_trailing_day": _wide_bar_mask}
+
+
 def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
-          names=frozenset(), bar_mask=None):
+          names=frozenset(), bar_mask=None, cls_masks=None):
     """One source window [lo_ts, hi_ts); sealed spans already excluded
     from `fires`/`episodes` by the caller. bar_mask restricts the base-rate
     computation to a context (e.g. one session); default = whole window."""
@@ -342,6 +362,7 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
                           "note": "no confirmations in window"}
             continue
         agnostic = name in AGNOSTIC_ROWS or name.endswith("(either-dir)")
+        cls_mask = (cls_masks or {}).get(name)
         hits, misses = [], []
         for f in nf:
             i = np.searchsorted(ts, f["ts"].value, side="right") - 1
@@ -371,9 +392,21 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
             remaining.append(float(rem))
         best = max(covered, key=lambda c: c[2], default=None)
         worst = max(misses, key=lambda m: m["adverse_pts"], default=None)
+        cond_chance = None
+        if cls_mask is not None:
+            wsel = (ts >= lo_ts.value) & (ts < hi_ts.value)
+            if bar_mask is not None:
+                wsel = wsel & bar_mask
+            wsel = wsel & cls_mask
+            if wsel.any():
+                cond_chance = round(50 * float(np.mean(qual[1][wsel])
+                                               + np.mean(qual[-1][wsel])), 1)
         rows[name] = {
             "source": label,
             "grading": "either-direction" if agnostic else "directional",
+            "conditioned_chance_pct": cond_chance,
+            "conditioned_class": (CONDITIONED_ROWS.get(name)
+                                  if cls_mask is not None else None),
             "payoff": pay,        # None for either-direction (by construction)
             "n_fires": len(nf),
             "precision": {"hits": len(hits), "of": len(hits) + len(misses),
@@ -494,6 +527,11 @@ def run(instr="uk100fut", provisional=False):
         | frozenset(DERIVED_FIRES)
     bar_sessions = sessions_of_index(
         pd.DatetimeIndex(series[0], tz="UTC"))
+    live_hi = np.array([x.high for x in b1m if not x.is_stub])
+    live_lo = np.array([x.low for x in b1m if not x.is_stub])
+    cmasks = {row: CLASS_MASK_FNS[cls](live_hi, live_lo)
+              for row, cls in CONDITIONED_ROWS.items()
+              if cls in CLASS_MASK_FNS}
     out = _RES
     fwd_lbl = "post_go_live_replay" if provisional else "forward_feed_replay"
     windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
@@ -501,7 +539,8 @@ def run(instr="uk100fut", provisional=False):
                "forward": (gl, far, fwd_lbl)}
     for wname, (lo, hi, lbl) in windows.items():
         out["signals"][wname] = score(signal_fires, qual, episodes, series,
-                                      lo, hi, lbl, names=all_names)
+                                      lo, hi, lbl, names=all_names,
+                                      cls_masks=cmasks)
         out["founding_recipes_at_confirmation"][wname] = score(
             recipe_fires, qual, episodes, series, lo, hi, lbl,
             names=frozenset({"H1", "H2", "H3", "H4", "H5"}))
@@ -513,7 +552,8 @@ def run(instr="uk100fut", provisional=False):
             se = [e for e in episodes if session_of(e["start"]) == sess]
             out["signals_by_session"][wname][sess] = score(
                 sf, qual, se, series, lo, hi, f"{lbl}/{sess}",
-                names=all_names, bar_mask=(bar_sessions == sess))
+                names=all_names, bar_mask=(bar_sessions == sess),
+                cls_masks=cmasks)
     return out
 
 
@@ -555,14 +595,21 @@ def _chance(mv, agnostic):
 
 
 def _cell(blk, key):
-    """One matrix/grid cell: lift vs the CONTEXT'S OWN chance, marker,
-    hits/fires, payoff net/median; dimmed (parenthesised, °) when small-n."""
+    """One matrix/grid cell: lift vs the CONTEXT'S OWN chance — or, for
+    class-conditioned rows (register 47), vs the CLASS'S OWN chance (the
+    scoreboard refuses unconditioned lift as headline lift); marker,
+    hits/fires, payoff; dimmed (°) when small-n."""
     r = blk.get(key)
     mv = blk["_moves"]
     if r is None or r.get("n_fires", 0) == 0:
         return "—"
     agnostic = r["grading"] == "either-direction"
     ch = _chance(mv, agnostic)
+    cond = r.get("conditioned_chance_pct")
+    cls_note = ""
+    if cond is not None:
+        cls_note = f" [cls-chance {cond}% vs uncond {ch}%]"
+        ch = cond
     p = r["precision"]
     if ch is None or p["pct"] is None:
         return "—"
@@ -570,6 +617,7 @@ def _cell(blk, key):
     mark = ("▲" if lift >= MARKER_BAND_PP
             else "▼" if lift <= -MARKER_BAND_PP else "·")
     core = f"{mark}{lift:+.1f}pp ({p['hits']}/{p['of']})"
+    core += cls_note
     pay = r.get("payoff")
     if pay:
         core += f" net{pay['net_pts']:+.0f}/med{pay['median_per_fire']:+.1f}"

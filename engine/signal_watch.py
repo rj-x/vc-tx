@@ -53,6 +53,13 @@ DERIVED_FIRES = {"S-H8": "S-H2"}
 # reports — no narrative recipe may be registered before then.
 NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
                              "phase_transition", "opposing_signal_fire")
+# rows whose firing condition CONDITIONS on a bar-size/volatility class
+# (register 47 fairness amendment): the scoreboard computes the named
+# class's own chance rate and grades lift against it — unconditioned lift
+# on a conditioned signal is a known confound class and is refused as
+# headline lift. Class-mask implementations live in the scoreboard,
+# keyed by these names.
+CONDITIONED_ROWS = {"S-H6": "wide_bar_p90_trailing_day"}
 # co-fire census family partition (register 45, operator-set; the one-home
 # rule keeps hypothesis identifiers out of the census reader)
 COFIRE_FAMILIES = {"event": ("S-H1", "S-H2"), "texture": ("S-H4", "S-H7"),
