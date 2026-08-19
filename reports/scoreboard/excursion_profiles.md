@@ -4,10 +4,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 
 ## uk100fut (CANONICAL)
 
-### uk100fut / backtest — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### uk100fut / backtest — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 68 | 13.85 | 22.92 | 40.73 | 11.45 | 21.62 | 32.59 | 25.5 |
 | H10 | 293 | 7.6 | 15.5 | 26.28 | 8.8 | 15.2 | 28.54 | 28.0 |
 | H2 | 347 | 11.0 | 22.6 | 40.08 | 9.9 | 20.75 | 36.28 | 32.0 |
@@ -23,10 +23,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 | trend_flip | 679 / 53.6% / 9.5 / 20.0 | 201 / 26.9% / 14.2 | 464/55.2% | 215/50.2% |
 | opposing_signal_fire | 640 / 48.4% / 11.0 / 16.0 | 240 / 45.0% / 9.0 | 477/48.6% | 163/47.9% |
 
-### uk100fut / forward — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### uk100fut / forward — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 22 | 5.6 | 7.58 | 19.47 | 5.15 | 12.8 | 20.65 | 18.0 |
 | H10 | 76 | 3.1 | 6.27 | 11.85 | 5.6 | 8.03 | 13.85 | 13.0 |
 | H2 | 88 | 7.1 | 10.85 | 15.95 | 5.95 | 12.7 | 16.36 | 25.0 |
@@ -45,10 +45,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 ## ger40fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-### ger40fut / backtest — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### ger40fut / backtest — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 49 | 38.0 | 75.0 | 102.32 | 42.7 | 65.2 | 90.6 | 25.0 |
 | H10 | 147 | 20.8 | 37.85 | 54.24 | 21.1 | 39.6 | 77.12 | 35.0 |
 | H2 | 234 | 29.5 | 61.65 | 96.55 | 31.7 | 60.13 | 86.24 | 22.0 |
@@ -65,10 +65,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 | trend_flip | 473 / 53.7% / 23.8 / 19.0 | 108 / 34.3% / 45.45 | 333/59.2% | 140/40.7% |
 | opposing_signal_fire | 476 / 55.3% / 24.95 / 16.0 | 105 / 26.7% / 29.8 | 365/56.2% | 111/52.3% |
 
-### ger40fut / forward — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### ger40fut / forward — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 20 | 21.5 | 30.77 | 58.13 | 16.45 | 25.65 | 36.04 | 16.0 |
 | H10 | 57 | 9.4 | 25.9 | 38.0 | 9.1 | 18.2 | 46.36 | 23.0 |
 | H2 | 63 | 22.4 | 37.7 | 53.62 | 15.5 | 37.25 | 53.74 | 40.0 |
@@ -87,10 +87,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 ## nas100fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-### nas100fut / backtest — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### nas100fut / backtest — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 34 | 69.25 | 180.88 | 319.1 | 65.65 | 156.25 | 248.22 | 28.5 |
 | H10 | 175 | 39.1 | 60.4 | 95.1 | 20.8 | 44.0 | 71.44 | 38.0 |
 | H2 | 320 | 66.75 | 110.35 | 177.06 | 66.7 | 115.25 | 195.14 | 25.5 |
@@ -106,10 +106,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 | trend_flip | 548 / 53.1% / 47.2 / 20.0 | 120 / 20.0% / 95.15 | 376/58.5% | 172/41.3% |
 | opposing_signal_fire | 544 / 50.2% / 52.85 / 11.0 | 124 / 33.9% / 51.05 | 444/52.0% | 100/42.0% |
 
-### nas100fut / forward — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### nas100fut / forward — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 11 | 49.6 | 84.75 | 96.2 | 12.2 | 38.7 | 45.5 | 45.0 |
 | H10 | 132 | 16.9 | 34.4 | 51.14 | 35.9 | 53.4 | 70.02 | 16.5 |
 | H2 | 105 | 36.0 | 56.0 | 80.68 | 33.3 | 59.1 | 86.36 | 30.0 |
@@ -128,10 +128,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 ## us30fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-### us30fut / backtest — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### us30fut / backtest — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 49 | 58.5 | 114.0 | 226.8 | 64.0 | 95.5 | 151.1 | 23.0 |
 | H10 | 154 | 34.25 | 67.88 | 89.05 | 22.25 | 38.88 | 133.15 | 33.5 |
 | H2 | 281 | 49.5 | 104.5 | 172.5 | 49.0 | 107.6 | 170.9 | 26.0 |
@@ -148,10 +148,10 @@ Engine `6afb2850d` — OBSERVATIONAL, pre-registered (register 42 item 7). PURPO
 | trend_flip | 475 / 55.8% / 38.0 / 19.0 | 105 / 16.2% / 73.0 | 336/54.8% | 139/58.3% |
 | opposing_signal_fire | 438 / 52.1% / 40.75 / 13.0 | 142 / 38.0% / 45.75 | 343/51.3% | 95/54.7% |
 
-### us30fut / forward — MFE / MAE / time-to-MFE (median | p75 | p90; whole-window)
+### us30fut / forward — MFE / MAE / time-to-MFE (whole-window)
 
-| H | n | MFE med|p75|p90 | MAE med|p75|p90 | t-MFE med |
-|---|---|---|---|---|
+| H | n | MFE med | MFE p75 | MFE p90 | MAE med | MAE p75 | MAE p90 | t-MFE med (min) |
+|---|---|---|---|---|---|---|---|---|
 | H1 | 36 | 23.55 | 40.75 | 70.25 | 33.2 | 46.75 | 75.25 | 26.0 |
 | H10 | 129 | 20.5 | 43.5 | 56.2 | 18.0 | 47.0 | 81.8 | 26.0 |
 | H2 | 108 | 22.75 | 43.12 | 65.95 | 22.5 | 40.12 | 62.3 | 30.0 |

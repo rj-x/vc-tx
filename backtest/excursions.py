@@ -194,23 +194,22 @@ def _emit(results, head):
             profs = res["profiles"].get(w, {})
             if profs:
                 L += [f"### {inst} / {w} — MFE / MAE / time-to-MFE "
-                      f"(median | p75 | p90; whole-window)",
-                      "", "| H | n | MFE | MAE | t-MFE min |",
-                      "|---|---|---|---|---|"]
+                      f"(whole-window)",
+                      "",
+                      "| H | n | MFE med | MFE p75 | MFE p90 "
+                      "| MAE med | MAE p75 | MAE p90 | t-MFE med (min) |",
+                      "|---|---|---|---|---|---|---|---|---|"]
                 for name, prof in sorted(profs.items()):
                     p = prof["whole"]
                     if not p["mfe"]:
                         continue
                     L.append(
                         f"| {name.replace('S-', '')} | {p['mfe']['n']} "
-                        f"| {p['mfe']['median']} | {p['mfe']['p75']} | "
-                        f"{p['mfe']['p90']} "
-                        f"| {p['mae']['median']} | {p['mae']['p75']} | "
-                        f"{p['mae']['p90']} "
-                        f"| {p['t_mfe_min']['median']} |".replace(
-                            "| |", "| — |"))
-                L[-len(profs) - 2] = ("| H | n | MFE med|p75|p90 | "
-                                      "MAE med|p75|p90 | t-MFE med |")
+                        f"| {p['mfe']['median']} | {p['mfe']['p75']} "
+                        f"| {p['mfe']['p90']} "
+                        f"| {p['mae']['median']} | {p['mae']['p75']} "
+                        f"| {p['mae']['p90']} "
+                        f"| {p['t_mfe_min']['median']} |")
                 L.append("")
             cut = res["narrative_cut"].get(w)
             if cut:
