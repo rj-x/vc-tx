@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-  "engine_commit": "86b6aab06aaf68a2577e165733675996f794c62c",
+  "engine_commit": "922de0d861ee3dd99d00f8c292f4824b48925294",
   "yardsticks": [
     "qualifying_move (registry: operator ratification 2026-08-18)",
     "major_move (same)",
@@ -27,9 +27,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 29.0,
-          "n": 23,
-          "median_min_before_15m_flip": 520.0,
-          "n_flips": 23
+          "n": 23
         },
         "best_call": {
           "ts": "2026-07-29 04:04:00+00:00",
@@ -61,9 +59,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 19.4,
-          "n": 26,
-          "median_min_before_15m_flip": 348.0,
-          "n_flips": 26
+          "n": 26
         },
         "best_call": {
           "ts": "2026-07-23 10:20:00+00:00",
@@ -95,9 +91,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 27.5,
-          "n": 39,
-          "median_min_before_15m_flip": 319.0,
-          "n_flips": 39
+          "n": 39
         },
         "best_call": {
           "ts": "2026-07-30 04:03:00+00:00",
@@ -134,9 +128,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 11.3,
-          "n": 1,
-          "median_min_before_15m_flip": 469.0,
-          "n_flips": 1
+          "n": 1
         },
         "best_call": {
           "ts": "2026-07-28 16:11:00+00:00",
@@ -168,9 +160,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 22.6,
-          "n": 30,
-          "median_min_before_15m_flip": 368.0,
-          "n_flips": 30
+          "n": 30
         },
         "best_call": {
           "ts": "2026-07-24 11:09:00+00:00",
@@ -202,9 +192,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.3,
-          "n": 41,
-          "median_min_before_15m_flip": 295.0,
-          "n_flips": 41
+          "n": 41
         },
         "best_call": {
           "ts": "2026-07-24 11:09:00+00:00",
@@ -236,9 +224,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 26.9,
-          "n": 58,
-          "median_min_before_15m_flip": 331.5,
-          "n_flips": 58
+          "n": 58
         },
         "best_call": {
           "ts": "2026-07-30 04:03:00+00:00",
@@ -270,9 +256,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.0,
-          "n": 11,
-          "median_min_before_15m_flip": 375.0,
-          "n_flips": 11
+          "n": 11
         },
         "best_call": {
           "ts": "2026-08-03 03:40:00+00:00",
@@ -287,6 +271,12 @@
           "dir": 1,
           "adverse_pts": 59.3
         }
+      },
+      "_union": {
+        "source": "backtest_replay",
+        "episodes_covered_by_any_row": 94,
+        "of": 180,
+        "pct": 52.2
       },
       "_moves": {
         "source": "backtest_replay",
@@ -307,15 +297,13 @@
           "pct": 29.4
         },
         "coverage": {
-          "covered": 6,
+          "covered": 5,
           "of": 27,
-          "pct": 22.2
+          "pct": 18.5
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 20.9,
-          "n": 6,
-          "median_min_before_15m_flip": 644.0,
-          "n_flips": 4
+          "median_pts_remaining_at_fire": 19.0,
+          "n": 5
         },
         "best_call": {
           "ts": "2026-08-17 10:30:00+00:00",
@@ -347,9 +335,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.9,
-          "n": 6,
-          "median_min_before_15m_flip": 847.0,
-          "n_flips": 6
+          "n": 6
         },
         "best_call": {
           "ts": "2026-08-14 16:54:00+00:00",
@@ -368,22 +354,20 @@
       "S-H2": {
         "source": "forward_feed_replay",
         "grading": "directional",
-        "n_fires": 70,
+        "n_fires": 71,
         "precision": {
           "hits": 26,
-          "of": 70,
-          "pct": 37.1
+          "of": 71,
+          "pct": 36.6
         },
         "coverage": {
-          "covered": 6,
+          "covered": 5,
           "of": 27,
-          "pct": 22.2
+          "pct": 18.5
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 19.4,
-          "n": 6,
-          "median_min_before_15m_flip": 780.0,
-          "n_flips": 5
+          "median_pts_remaining_at_fire": 20.7,
+          "n": 5
         },
         "best_call": {
           "ts": "2026-08-17 10:33:00+00:00",
@@ -415,9 +399,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 13.0,
-          "n": 1,
-          "median_min_before_15m_flip": 397.0,
-          "n_flips": 1
+          "n": 1
         },
         "best_call": {
           "ts": "2026-08-18 18:23:00+00:00",
@@ -448,23 +430,21 @@
           "pct": 15.0
         },
         "coverage": {
-          "covered": 2,
+          "covered": 3,
           "of": 27,
-          "pct": 7.4
+          "pct": 11.1
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 4.8,
-          "n": 2,
-          "median_min_before_15m_flip": 1810.0,
-          "n_flips": 2
+          "median_pts_remaining_at_fire": 7.5,
+          "n": 3
         },
         "best_call": {
-          "ts": "2026-08-18 19:09:00+00:00",
+          "ts": "2026-08-18 13:32:00+00:00",
           "dir": -1,
-          "episode_start": "2026-08-18 19:17:00+00:00",
-          "pts_remaining_at_fire": 7.5,
-          "episode_total_pts": 10.0,
-          "major": false
+          "episode_start": "2026-08-18 13:33:00+00:00",
+          "pts_remaining_at_fire": 53.8,
+          "episode_total_pts": 59.0,
+          "major": true
         },
         "worst_false_alarm": {
           "ts": "2026-08-17 11:49:00+00:00",
@@ -488,43 +468,39 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 7.9,
-          "n": 6,
-          "median_min_before_15m_flip": 552.5,
-          "n_flips": 6
+          "n": 6
         },
         "best_call": {
-          "ts": "2026-08-18 12:26:00+00:00",
+          "ts": "2026-08-18 13:02:00+00:00",
           "dir": 1,
-          "episode_start": "2026-08-18 13:00:00+00:00",
-          "pts_remaining_at_fire": 29.5,
-          "episode_total_pts": 43.5,
+          "episode_start": "2026-08-18 13:33:00+00:00",
+          "pts_remaining_at_fire": 33.8,
+          "episode_total_pts": 59.0,
           "major": true
         },
         "worst_false_alarm": {
-          "ts": "2026-08-18 13:32:00+00:00",
-          "dir": -1,
-          "adverse_pts": 10.5
+          "ts": "2026-08-19 08:28:00+00:00",
+          "dir": 1,
+          "adverse_pts": 12.7
         }
       },
       "S-H8": {
         "source": "forward_feed_replay",
         "grading": "either-direction",
-        "n_fires": 70,
+        "n_fires": 71,
         "precision": {
           "hits": 35,
-          "of": 70,
-          "pct": 50.0
+          "of": 71,
+          "pct": 49.3
         },
         "coverage": {
-          "covered": 12,
+          "covered": 11,
           "of": 27,
-          "pct": 44.4
+          "pct": 40.7
         },
         "earliness": {
-          "median_pts_remaining_at_fire": 19.4,
-          "n": 12,
-          "median_min_before_15m_flip": 436.0,
-          "n_flips": 9
+          "median_pts_remaining_at_fire": 20.7,
+          "n": 11
         },
         "best_call": {
           "ts": "2026-08-18 10:57:00+00:00",
@@ -556,9 +532,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": 15.5,
-          "n": 3,
-          "median_min_before_15m_flip": 545.0,
-          "n_flips": 3
+          "n": 3
         },
         "best_call": {
           "ts": "2026-08-17 15:40:00+00:00",
@@ -574,12 +548,2441 @@
           "adverse_pts": 13.2
         }
       },
+      "_union": {
+        "source": "forward_feed_replay",
+        "episodes_covered_by_any_row": 22,
+        "of": 27,
+        "pct": 81.5
+      },
       "_moves": {
         "source": "forward_feed_replay",
         "n_qualifying_episodes": 27,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 48.4,
+        "bar_qualify_base_rate_pct": 47.8,
         "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+      }
+    }
+  },
+  "signals_by_session": {
+    "backtest": {
+      "london": {
+        "S-H1": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 22,
+          "precision": {
+            "hits": 7,
+            "of": 22,
+            "pct": 31.8
+          },
+          "coverage": {
+            "covered": 9,
+            "of": 53,
+            "pct": 17.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 35.3,
+            "n": 9
+          },
+          "best_call": {
+            "ts": "2026-07-30 12:43:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-30 13:01:00+00:00",
+            "pts_remaining_at_fire": 65.8,
+            "episode_total_pts": 77.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 12:17:00+00:00",
+            "dir": 1,
+            "adverse_pts": 70.7
+          }
+        },
+        "S-H10": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 66,
+          "precision": {
+            "hits": 18,
+            "of": 66,
+            "pct": 27.3
+          },
+          "coverage": {
+            "covered": 7,
+            "of": 53,
+            "pct": 13.2
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 31.8,
+            "n": 7
+          },
+          "best_call": {
+            "ts": "2026-07-23 10:20:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-23 10:41:00+00:00",
+            "pts_remaining_at_fire": 90.0,
+            "episode_total_pts": 104.8,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-28 13:10:00+00:00",
+            "dir": -1,
+            "adverse_pts": 62.5
+          }
+        },
+        "S-H2": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 80,
+          "precision": {
+            "hits": 26,
+            "of": 80,
+            "pct": 32.5
+          },
+          "coverage": {
+            "covered": 10,
+            "of": 53,
+            "pct": 18.9
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 21.5,
+            "n": 10
+          },
+          "best_call": {
+            "ts": "2026-07-21 12:17:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-21 12:43:00+00:00",
+            "pts_remaining_at_fire": 69.5,
+            "episode_total_pts": 75.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-30 07:36:00+00:00",
+            "dir": -1,
+            "adverse_pts": 71.0
+          }
+        },
+        "S-H3": {
+          "source": "backtest_replay/london",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 53,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-07-31 07:55:00+00:00",
+            "dir": 1,
+            "adverse_pts": 16.0
+          }
+        },
+        "S-H7": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 41,
+          "precision": {
+            "hits": 12,
+            "of": 41,
+            "pct": 29.3
+          },
+          "coverage": {
+            "covered": 12,
+            "of": 53,
+            "pct": 22.6
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 37.4,
+            "n": 12
+          },
+          "best_call": {
+            "ts": "2026-07-24 11:09:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-24 11:09:00+00:00",
+            "pts_remaining_at_fire": 98.2,
+            "episode_total_pts": 98.2,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-22 08:02:00+00:00",
+            "dir": -1,
+            "adverse_pts": 87.8
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "backtest_replay/london",
+          "grading": "either-direction",
+          "n_fires": 41,
+          "precision": {
+            "hits": 21,
+            "of": 41,
+            "pct": 51.2
+          },
+          "coverage": {
+            "covered": 16,
+            "of": 53,
+            "pct": 30.2
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 30.8,
+            "n": 16
+          },
+          "best_call": {
+            "ts": "2026-07-24 11:09:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-24 11:09:00+00:00",
+            "pts_remaining_at_fire": 98.2,
+            "episode_total_pts": 98.2,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 12:59:00+00:00",
+            "dir": 1,
+            "adverse_pts": 25.0
+          }
+        },
+        "S-H8": {
+          "source": "backtest_replay/london",
+          "grading": "either-direction",
+          "n_fires": 80,
+          "precision": {
+            "hits": 44,
+            "of": 80,
+            "pct": 55.0
+          },
+          "coverage": {
+            "covered": 15,
+            "of": 53,
+            "pct": 28.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 23.5,
+            "n": 15
+          },
+          "best_call": {
+            "ts": "2026-07-21 12:17:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-21 12:43:00+00:00",
+            "pts_remaining_at_fire": 69.5,
+            "episode_total_pts": 75.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-30 11:13:00+00:00",
+            "dir": -1,
+            "adverse_pts": 30.5
+          }
+        },
+        "S-H9": {
+          "source": "backtest_replay/london",
+          "grading": "directional",
+          "n_fires": 11,
+          "precision": {
+            "hits": 5,
+            "of": 11,
+            "pct": 45.5
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 53,
+            "pct": 1.9
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 68.7,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-07-21 11:55:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-21 12:43:00+00:00",
+            "pts_remaining_at_fire": 68.7,
+            "episode_total_pts": 75.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-30 09:15:00+00:00",
+            "dir": 1,
+            "adverse_pts": 59.3
+          }
+        },
+        "_union": {
+          "source": "backtest_replay/london",
+          "episodes_covered_by_any_row": 25,
+          "of": 53,
+          "pct": 47.2
+        },
+        "_moves": {
+          "source": "backtest_replay/london",
+          "n_qualifying_episodes": 53,
+          "n_major": 17,
+          "bar_qualify_base_rate_pct": 44.3,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "overlap": {
+        "S-H1": {
+          "source": "backtest_replay/overlap",
+          "grading": "directional",
+          "n_fires": 2,
+          "precision": {
+            "hits": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 12,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-07-23 15:23:00+00:00",
+            "dir": 1,
+            "adverse_pts": 5.3
+          }
+        },
+        "S-H10": {
+          "source": "backtest_replay/overlap",
+          "grading": "directional",
+          "n_fires": 7,
+          "precision": {
+            "hits": 0,
+            "of": 7,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 12,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-07-24 15:03:00+00:00",
+            "dir": -1,
+            "adverse_pts": 36.3
+          }
+        },
+        "S-H2": {
+          "source": "backtest_replay/overlap",
+          "grading": "directional",
+          "n_fires": 11,
+          "precision": {
+            "hits": 3,
+            "of": 11,
+            "pct": 27.3
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 12,
+            "pct": 8.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 5.7,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-07-30 14:51:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-30 15:26:00+00:00",
+            "pts_remaining_at_fire": 5.7,
+            "episode_total_pts": 40.2,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-31 14:20:00+00:00",
+            "dir": -1,
+            "adverse_pts": 60.5
+          }
+        },
+        "S-H3": {
+          "source": "backtest_replay/overlap",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "backtest_replay/overlap",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "backtest_replay/overlap",
+          "grading": "directional",
+          "n_fires": 23,
+          "precision": {
+            "hits": 9,
+            "of": 23,
+            "pct": 39.1
+          },
+          "coverage": {
+            "covered": 3,
+            "of": 12,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 14.3,
+            "n": 3
+          },
+          "best_call": {
+            "ts": "2026-07-30 15:15:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-30 15:26:00+00:00",
+            "pts_remaining_at_fire": 27.7,
+            "episode_total_pts": 40.2,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-31 14:23:00+00:00",
+            "dir": -1,
+            "adverse_pts": 43.5
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "backtest_replay/overlap",
+          "grading": "either-direction",
+          "n_fires": 23,
+          "precision": {
+            "hits": 14,
+            "of": 23,
+            "pct": 60.9
+          },
+          "coverage": {
+            "covered": 4,
+            "of": 12,
+            "pct": 33.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 0.8,
+            "n": 4
+          },
+          "best_call": {
+            "ts": "2026-07-23 13:34:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-23 14:13:00+00:00",
+            "pts_remaining_at_fire": 14.3,
+            "episode_total_pts": 36.3,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 13:34:00+00:00",
+            "dir": -1,
+            "adverse_pts": 22.0
+          }
+        },
+        "S-H8": {
+          "source": "backtest_replay/overlap",
+          "grading": "either-direction",
+          "n_fires": 11,
+          "precision": {
+            "hits": 7,
+            "of": 11,
+            "pct": 63.6
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 12,
+            "pct": 8.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": -2.3,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-07-30 14:35:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-30 15:26:00+00:00",
+            "pts_remaining_at_fire": -2.3,
+            "episode_total_pts": 40.2,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 14:32:00+00:00",
+            "dir": -1,
+            "adverse_pts": 25.5
+          }
+        },
+        "S-H9": {
+          "source": "backtest_replay/overlap",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "_union": {
+          "source": "backtest_replay/overlap",
+          "episodes_covered_by_any_row": 3,
+          "of": 12,
+          "pct": 25.0
+        },
+        "_moves": {
+          "source": "backtest_replay/overlap",
+          "n_qualifying_episodes": 12,
+          "n_major": 1,
+          "bar_qualify_base_rate_pct": 44.3,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "ny_only": {
+        "S-H1": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 22,
+          "precision": {
+            "hits": 4,
+            "of": 22,
+            "pct": 18.2
+          },
+          "coverage": {
+            "covered": 6,
+            "of": 33,
+            "pct": 18.2
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 36.5,
+            "n": 6
+          },
+          "best_call": {
+            "ts": "2026-07-29 18:01:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-29 18:24:00+00:00",
+            "pts_remaining_at_fire": 81.3,
+            "episode_total_pts": 69.6,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-29 18:01:00+00:00",
+            "dir": -1,
+            "adverse_pts": 34.0
+          }
+        },
+        "S-H10": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 83,
+          "precision": {
+            "hits": 8,
+            "of": 83,
+            "pct": 9.6
+          },
+          "coverage": {
+            "covered": 6,
+            "of": 33,
+            "pct": 18.2
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 23.7,
+            "n": 6
+          },
+          "best_call": {
+            "ts": "2026-07-20 16:36:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-20 17:35:00+00:00",
+            "pts_remaining_at_fire": 55.5,
+            "episode_total_pts": 41.7,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-03 15:53:00+00:00",
+            "dir": 1,
+            "adverse_pts": 31.5
+          }
+        },
+        "S-H2": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 55,
+          "precision": {
+            "hits": 8,
+            "of": 55,
+            "pct": 14.5
+          },
+          "coverage": {
+            "covered": 6,
+            "of": 33,
+            "pct": 18.2
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 32.2,
+            "n": 6
+          },
+          "best_call": {
+            "ts": "2026-07-29 18:03:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-29 18:24:00+00:00",
+            "pts_remaining_at_fire": 79.5,
+            "episode_total_pts": 69.6,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-29 18:52:00+00:00",
+            "dir": 1,
+            "adverse_pts": 97.0
+          }
+        },
+        "S-H3": {
+          "source": "backtest_replay/ny_only",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 6,
+          "precision": {
+            "hits": 0,
+            "of": 6,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 33,
+            "pct": 3.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 11.3,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-07-28 16:11:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-28 17:01:00+00:00",
+            "pts_remaining_at_fire": 11.3,
+            "episode_total_pts": 28.8,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-28 16:11:00+00:00",
+            "dir": -1,
+            "adverse_pts": 17.5
+          }
+        },
+        "S-H7": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 14,
+          "precision": {
+            "hits": 2,
+            "of": 14,
+            "pct": 14.3
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 33,
+            "pct": 6.1
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 31.5,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-07-20 16:53:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-20 17:35:00+00:00",
+            "pts_remaining_at_fire": 58.5,
+            "episode_total_pts": 41.7,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 16:33:00+00:00",
+            "dir": 1,
+            "adverse_pts": 36.0
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "backtest_replay/ny_only",
+          "grading": "either-direction",
+          "n_fires": 14,
+          "precision": {
+            "hits": 4,
+            "of": 14,
+            "pct": 28.6
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 33,
+            "pct": 6.1
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 31.5,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-07-20 16:53:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-20 17:35:00+00:00",
+            "pts_remaining_at_fire": 58.5,
+            "episode_total_pts": 41.7,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-23 16:44:00+00:00",
+            "dir": 1,
+            "adverse_pts": 25.7
+          }
+        },
+        "S-H8": {
+          "source": "backtest_replay/ny_only",
+          "grading": "either-direction",
+          "n_fires": 55,
+          "precision": {
+            "hits": 24,
+            "of": 55,
+            "pct": 43.6
+          },
+          "coverage": {
+            "covered": 10,
+            "of": 33,
+            "pct": 30.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 29.7,
+            "n": 10
+          },
+          "best_call": {
+            "ts": "2026-07-29 17:33:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-29 18:24:00+00:00",
+            "pts_remaining_at_fire": 76.6,
+            "episode_total_pts": 69.6,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-27 16:45:00+00:00",
+            "dir": 1,
+            "adverse_pts": 22.3
+          }
+        },
+        "S-H9": {
+          "source": "backtest_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 12,
+          "precision": {
+            "hits": 3,
+            "of": 12,
+            "pct": 25.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 33,
+            "pct": 6.1
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 10.8,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-07-21 17:30:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-21 18:19:00+00:00",
+            "pts_remaining_at_fire": 15.0,
+            "episode_total_pts": 14.8,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-03 18:00:00+00:00",
+            "dir": -1,
+            "adverse_pts": 17.3
+          }
+        },
+        "_union": {
+          "source": "backtest_replay/ny_only",
+          "episodes_covered_by_any_row": 17,
+          "of": 33,
+          "pct": 51.5
+        },
+        "_moves": {
+          "source": "backtest_replay/ny_only",
+          "n_qualifying_episodes": 33,
+          "n_major": 3,
+          "bar_qualify_base_rate_pct": 44.3,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "dead": {
+        "S-H1": {
+          "source": "backtest_replay/dead",
+          "grading": "directional",
+          "n_fires": 12,
+          "precision": {
+            "hits": 3,
+            "of": 12,
+            "pct": 25.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 25,
+            "pct": 8.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 47.2,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-07-28 23:08:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-28 23:45:00+00:00",
+            "pts_remaining_at_fire": 58.9,
+            "episode_total_pts": 83.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-28 23:08:00+00:00",
+            "dir": -1,
+            "adverse_pts": 36.7
+          }
+        },
+        "S-H10": {
+          "source": "backtest_replay/dead",
+          "grading": "directional",
+          "n_fires": 36,
+          "precision": {
+            "hits": 5,
+            "of": 36,
+            "pct": 13.9
+          },
+          "coverage": {
+            "covered": 3,
+            "of": 25,
+            "pct": 12.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 11.8,
+            "n": 3
+          },
+          "best_call": {
+            "ts": "2026-08-02 22:46:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-02 23:01:00+00:00",
+            "pts_remaining_at_fire": 23.3,
+            "episode_total_pts": 20.7,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-20 23:38:00+00:00",
+            "dir": 1,
+            "adverse_pts": 24.6
+          }
+        },
+        "S-H2": {
+          "source": "backtest_replay/dead",
+          "grading": "directional",
+          "n_fires": 90,
+          "precision": {
+            "hits": 17,
+            "of": 90,
+            "pct": 18.9
+          },
+          "coverage": {
+            "covered": 7,
+            "of": 25,
+            "pct": 28.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 31.3,
+            "n": 7
+          },
+          "best_call": {
+            "ts": "2026-07-28 22:48:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-28 23:45:00+00:00",
+            "pts_remaining_at_fire": 50.0,
+            "episode_total_pts": 83.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-28 23:02:00+00:00",
+            "dir": -1,
+            "adverse_pts": 44.8
+          }
+        },
+        "S-H3": {
+          "source": "backtest_replay/dead",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "backtest_replay/dead",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "backtest_replay/dead",
+          "grading": "directional",
+          "n_fires": 5,
+          "precision": {
+            "hits": 1,
+            "of": 5,
+            "pct": 20.0
+          },
+          "coverage": {
+            "covered": 4,
+            "of": 25,
+            "pct": 16.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 32.8,
+            "n": 4
+          },
+          "best_call": {
+            "ts": "2026-07-26 22:06:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-26 23:04:00+00:00",
+            "pts_remaining_at_fire": 44.3,
+            "episode_total_pts": 42.6,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-26 22:09:00+00:00",
+            "dir": 1,
+            "adverse_pts": 4.0
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "backtest_replay/dead",
+          "grading": "either-direction",
+          "n_fires": 5,
+          "precision": {
+            "hits": 1,
+            "of": 5,
+            "pct": 20.0
+          },
+          "coverage": {
+            "covered": 4,
+            "of": 25,
+            "pct": 16.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 32.8,
+            "n": 4
+          },
+          "best_call": {
+            "ts": "2026-07-26 22:06:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-26 23:04:00+00:00",
+            "pts_remaining_at_fire": 44.3,
+            "episode_total_pts": 42.6,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-26 22:09:00+00:00",
+            "dir": 1,
+            "adverse_pts": 4.0
+          }
+        },
+        "S-H8": {
+          "source": "backtest_replay/dead",
+          "grading": "either-direction",
+          "n_fires": 90,
+          "precision": {
+            "hits": 31,
+            "of": 90,
+            "pct": 34.4
+          },
+          "coverage": {
+            "covered": 9,
+            "of": 25,
+            "pct": 36.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 29.3,
+            "n": 9
+          },
+          "best_call": {
+            "ts": "2026-07-28 22:47:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-28 23:45:00+00:00",
+            "pts_remaining_at_fire": 51.4,
+            "episode_total_pts": 83.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-29 23:44:00+00:00",
+            "dir": 1,
+            "adverse_pts": 21.8
+          }
+        },
+        "S-H9": {
+          "source": "backtest_replay/dead",
+          "grading": "directional",
+          "n_fires": 11,
+          "precision": {
+            "hits": 1,
+            "of": 11,
+            "pct": 9.1
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 25,
+            "pct": 8.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 12.4,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-03 23:15:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-03 23:39:00+00:00",
+            "pts_remaining_at_fire": 14.0,
+            "episode_total_pts": 15.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-19 23:10:00+00:00",
+            "dir": 1,
+            "adverse_pts": 21.5
+          }
+        },
+        "_union": {
+          "source": "backtest_replay/dead",
+          "episodes_covered_by_any_row": 15,
+          "of": 25,
+          "pct": 60.0
+        },
+        "_moves": {
+          "source": "backtest_replay/dead",
+          "n_qualifying_episodes": 25,
+          "n_major": 13,
+          "bar_qualify_base_rate_pct": 44.3,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "asia": {
+        "S-H1": {
+          "source": "backtest_replay/asia",
+          "grading": "directional",
+          "n_fires": 11,
+          "precision": {
+            "hits": 1,
+            "of": 11,
+            "pct": 9.1
+          },
+          "coverage": {
+            "covered": 4,
+            "of": 57,
+            "pct": 7.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 14.2,
+            "n": 4
+          },
+          "best_call": {
+            "ts": "2026-07-29 04:04:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-29 04:14:00+00:00",
+            "pts_remaining_at_fire": 105.2,
+            "episode_total_pts": 102.8,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-30 05:53:00+00:00",
+            "dir": -1,
+            "adverse_pts": 37.6
+          }
+        },
+        "S-H10": {
+          "source": "backtest_replay/asia",
+          "grading": "directional",
+          "n_fires": 101,
+          "precision": {
+            "hits": 24,
+            "of": 101,
+            "pct": 23.8
+          },
+          "coverage": {
+            "covered": 7,
+            "of": 57,
+            "pct": 12.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 19.9,
+            "n": 7
+          },
+          "best_call": {
+            "ts": "2026-07-28 04:59:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-28 05:02:00+00:00",
+            "pts_remaining_at_fire": 77.6,
+            "episode_total_pts": 71.0,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-28 05:51:00+00:00",
+            "dir": -1,
+            "adverse_pts": 58.8
+          }
+        },
+        "S-H2": {
+          "source": "backtest_replay/asia",
+          "grading": "directional",
+          "n_fires": 111,
+          "precision": {
+            "hits": 33,
+            "of": 111,
+            "pct": 29.7
+          },
+          "coverage": {
+            "covered": 13,
+            "of": 57,
+            "pct": 22.8
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 46.2,
+            "n": 13
+          },
+          "best_call": {
+            "ts": "2026-07-30 04:03:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-30 05:01:00+00:00",
+            "pts_remaining_at_fire": 155.1,
+            "episode_total_pts": 178.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-24 06:52:00+00:00",
+            "dir": -1,
+            "adverse_pts": 98.0
+          }
+        },
+        "S-H3": {
+          "source": "backtest_replay/asia",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "backtest_replay/asia",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "backtest_replay/asia",
+          "grading": "directional",
+          "n_fires": 29,
+          "precision": {
+            "hits": 11,
+            "of": 29,
+            "pct": 37.9
+          },
+          "coverage": {
+            "covered": 8,
+            "of": 57,
+            "pct": 14.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 12.2,
+            "n": 8
+          },
+          "best_call": {
+            "ts": "2026-07-20 04:21:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-07-20 04:47:00+00:00",
+            "pts_remaining_at_fire": 39.8,
+            "episode_total_pts": 53.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-30 06:55:00+00:00",
+            "dir": -1,
+            "adverse_pts": 94.0
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "backtest_replay/asia",
+          "grading": "either-direction",
+          "n_fires": 29,
+          "precision": {
+            "hits": 20,
+            "of": 29,
+            "pct": 69.0
+          },
+          "coverage": {
+            "covered": 11,
+            "of": 57,
+            "pct": 19.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 12.4,
+            "n": 11
+          },
+          "best_call": {
+            "ts": "2026-07-23 04:50:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-23 05:03:00+00:00",
+            "pts_remaining_at_fire": 61.1,
+            "episode_total_pts": 62.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-20 00:37:00+00:00",
+            "dir": -1,
+            "adverse_pts": 14.5
+          }
+        },
+        "S-H8": {
+          "source": "backtest_replay/asia",
+          "grading": "either-direction",
+          "n_fires": 111,
+          "precision": {
+            "hits": 56,
+            "of": 111,
+            "pct": 50.5
+          },
+          "coverage": {
+            "covered": 17,
+            "of": 57,
+            "pct": 29.8
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 39.5,
+            "n": 17
+          },
+          "best_call": {
+            "ts": "2026-07-30 04:03:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-07-30 05:01:00+00:00",
+            "pts_remaining_at_fire": 155.1,
+            "episode_total_pts": 178.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-07-29 02:24:00+00:00",
+            "dir": 1,
+            "adverse_pts": 22.2
+          }
+        },
+        "S-H9": {
+          "source": "backtest_replay/asia",
+          "grading": "directional",
+          "n_fires": 21,
+          "precision": {
+            "hits": 6,
+            "of": 21,
+            "pct": 28.6
+          },
+          "coverage": {
+            "covered": 5,
+            "of": 57,
+            "pct": 8.8
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 28.4,
+            "n": 5
+          },
+          "best_call": {
+            "ts": "2026-08-03 03:40:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-03 04:28:00+00:00",
+            "pts_remaining_at_fire": 73.2,
+            "episode_total_pts": 81.3,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-03 06:30:00+00:00",
+            "dir": 1,
+            "adverse_pts": 39.3
+          }
+        },
+        "_union": {
+          "source": "backtest_replay/asia",
+          "episodes_covered_by_any_row": 28,
+          "of": 57,
+          "pct": 49.1
+        },
+        "_moves": {
+          "source": "backtest_replay/asia",
+          "n_qualifying_episodes": 57,
+          "n_major": 28,
+          "bar_qualify_base_rate_pct": 44.3,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      }
+    },
+    "forward": {
+      "london": {
+        "S-H1": {
+          "source": "forward_feed_replay/london",
+          "grading": "directional",
+          "n_fires": 4,
+          "precision": {
+            "hits": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 4,
+            "pct": 50.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 26.1,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-17 10:30:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-17 11:16:00+00:00",
+            "pts_remaining_at_fire": 46.5,
+            "episode_total_pts": 42.7,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 12:05:00+00:00",
+            "dir": -1,
+            "adverse_pts": 20.7
+          }
+        },
+        "S-H10": {
+          "source": "forward_feed_replay/london",
+          "grading": "directional",
+          "n_fires": 10,
+          "precision": {
+            "hits": 1,
+            "of": 10,
+            "pct": 10.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 14.2,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 09:38:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 09:49:00+00:00",
+            "pts_remaining_at_fire": 14.2,
+            "episode_total_pts": 19.5,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-17 10:03:00+00:00",
+            "dir": -1,
+            "adverse_pts": 22.5
+          }
+        },
+        "S-H2": {
+          "source": "forward_feed_replay/london",
+          "grading": "directional",
+          "n_fires": 14,
+          "precision": {
+            "hits": 2,
+            "of": 14,
+            "pct": 14.3
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 37.0,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 10:33:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-17 11:16:00+00:00",
+            "pts_remaining_at_fire": 37.0,
+            "episode_total_pts": 42.7,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 12:00:00+00:00",
+            "dir": -1,
+            "adverse_pts": 25.5
+          }
+        },
+        "S-H3": {
+          "source": "forward_feed_replay/london",
+          "grading": "directional",
+          "n_fires": 2,
+          "precision": {
+            "hits": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-18 08:40:00+00:00",
+            "dir": 1,
+            "adverse_pts": 12.5
+          }
+        },
+        "S-H4": {
+          "source": "forward_feed_replay/london",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "forward_feed_replay/london",
+          "grading": "directional",
+          "n_fires": 10,
+          "precision": {
+            "hits": 2,
+            "of": 10,
+            "pct": 20.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-17 11:49:00+00:00",
+            "dir": 1,
+            "adverse_pts": 29.5
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "forward_feed_replay/london",
+          "grading": "either-direction",
+          "n_fires": 10,
+          "precision": {
+            "hits": 6,
+            "of": 10,
+            "pct": 60.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-19 08:28:00+00:00",
+            "dir": 1,
+            "adverse_pts": 12.7
+          }
+        },
+        "S-H8": {
+          "source": "forward_feed_replay/london",
+          "grading": "either-direction",
+          "n_fires": 14,
+          "precision": {
+            "hits": 3,
+            "of": 14,
+            "pct": 21.4
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 4,
+            "pct": 50.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 47.2,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-18 10:57:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 11:21:00+00:00",
+            "pts_remaining_at_fire": 56.0,
+            "episode_total_pts": 50.0,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-19 07:26:00+00:00",
+            "dir": -1,
+            "adverse_pts": 14.0
+          }
+        },
+        "S-H9": {
+          "source": "forward_feed_replay/london",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "_union": {
+          "source": "forward_feed_replay/london",
+          "episodes_covered_by_any_row": 4,
+          "of": 4,
+          "pct": 100.0
+        },
+        "_moves": {
+          "source": "forward_feed_replay/london",
+          "n_qualifying_episodes": 4,
+          "n_major": 2,
+          "bar_qualify_base_rate_pct": 47.8,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "overlap": {
+        "S-H1": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 2,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-18 14:54:00+00:00",
+            "dir": 1,
+            "adverse_pts": 14.5
+          }
+        },
+        "S-H10": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "directional",
+          "n_fires": 5,
+          "precision": {
+            "hits": 0,
+            "of": 5,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 2,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-17 14:08:00+00:00",
+            "dir": 1,
+            "adverse_pts": 24.2
+          }
+        },
+        "S-H2": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 2,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-18 15:00:00+00:00",
+            "dir": 1,
+            "adverse_pts": 8.7
+          }
+        },
+        "S-H3": {
+          "source": "forward_feed_replay/overlap",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "forward_feed_replay/overlap",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 53.8,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-18 13:32:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 13:33:00+00:00",
+            "pts_remaining_at_fire": 53.8,
+            "episode_total_pts": 59.0,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 13:32:00+00:00",
+            "dir": -1,
+            "adverse_pts": 10.5
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "either-direction",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 53.8,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-18 13:32:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 13:33:00+00:00",
+            "pts_remaining_at_fire": 53.8,
+            "episode_total_pts": 59.0,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 13:32:00+00:00",
+            "dir": -1,
+            "adverse_pts": 10.5
+          }
+        },
+        "S-H8": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "either-direction",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 2,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-18 15:00:00+00:00",
+            "dir": 1,
+            "adverse_pts": 8.7
+          }
+        },
+        "S-H9": {
+          "source": "forward_feed_replay/overlap",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 2,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-18 15:00:00+00:00",
+            "dir": -1,
+            "adverse_pts": 9.8
+          }
+        },
+        "_union": {
+          "source": "forward_feed_replay/overlap",
+          "episodes_covered_by_any_row": 1,
+          "of": 2,
+          "pct": 50.0
+        },
+        "_moves": {
+          "source": "forward_feed_replay/overlap",
+          "n_qualifying_episodes": 2,
+          "n_major": 1,
+          "bar_qualify_base_rate_pct": 47.8,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "ny_only": {
+        "S-H1": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 7,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-17 18:36:00+00:00",
+            "dir": -1,
+            "adverse_pts": 3.5
+          }
+        },
+        "S-H10": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 19,
+          "precision": {
+            "hits": 1,
+            "of": 19,
+            "pct": 5.3
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 7,
+            "pct": 14.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 22.5,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-14 16:54:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-14 17:36:00+00:00",
+            "pts_remaining_at_fire": 22.5,
+            "episode_total_pts": 16.8,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-17 19:00:00+00:00",
+            "dir": -1,
+            "adverse_pts": 11.3
+          }
+        },
+        "S-H2": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 8,
+          "precision": {
+            "hits": 0,
+            "of": 8,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 7,
+            "pct": 14.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 17.0,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 18:04:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 18:50:00+00:00",
+            "pts_remaining_at_fire": 17.0,
+            "episode_total_pts": 12.5,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 19:44:00+00:00",
+            "dir": 1,
+            "adverse_pts": 12.4
+          }
+        },
+        "S-H3": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 7,
+            "pct": 14.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 13.0,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-18 18:23:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 19:17:00+00:00",
+            "pts_remaining_at_fire": 13.0,
+            "episode_total_pts": 10.0,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 18:23:00+00:00",
+            "dir": -1,
+            "adverse_pts": 2.0
+          }
+        },
+        "S-H4": {
+          "source": "forward_feed_replay/ny_only",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 6,
+          "precision": {
+            "hits": 0,
+            "of": 6,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 7,
+            "pct": 28.6
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 4.8,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-18 19:09:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 19:17:00+00:00",
+            "pts_remaining_at_fire": 7.5,
+            "episode_total_pts": 10.0,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 19:09:00+00:00",
+            "dir": -1,
+            "adverse_pts": 7.2
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "either-direction",
+          "n_fires": 6,
+          "precision": {
+            "hits": 0,
+            "of": 6,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 4,
+            "of": 7,
+            "pct": 57.1
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 5.0,
+            "n": 4
+          },
+          "best_call": {
+            "ts": "2026-08-17 18:18:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-17 18:50:00+00:00",
+            "pts_remaining_at_fire": 8.3,
+            "episode_total_pts": 12.5,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 19:09:00+00:00",
+            "dir": -1,
+            "adverse_pts": 7.2
+          }
+        },
+        "S-H8": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "either-direction",
+          "n_fires": 8,
+          "precision": {
+            "hits": 1,
+            "of": 8,
+            "pct": 12.5
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 7,
+            "pct": 14.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 17.0,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 18:04:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 18:50:00+00:00",
+            "pts_remaining_at_fire": 17.0,
+            "episode_total_pts": 12.5,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 16:45:00+00:00",
+            "dir": -1,
+            "adverse_pts": 6.7
+          }
+        },
+        "S-H9": {
+          "source": "forward_feed_replay/ny_only",
+          "grading": "directional",
+          "n_fires": 3,
+          "precision": {
+            "hits": 1,
+            "of": 3,
+            "pct": 33.3
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 7,
+            "pct": 14.3
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 16.3,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 15:40:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 15:42:00+00:00",
+            "pts_remaining_at_fire": 16.3,
+            "episode_total_pts": 18.3,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-14 16:30:00+00:00",
+            "dir": -1,
+            "adverse_pts": 13.2
+          }
+        },
+        "_union": {
+          "source": "forward_feed_replay/ny_only",
+          "episodes_covered_by_any_row": 5,
+          "of": 7,
+          "pct": 71.4
+        },
+        "_moves": {
+          "source": "forward_feed_replay/ny_only",
+          "n_qualifying_episodes": 7,
+          "n_major": 0,
+          "bar_qualify_base_rate_pct": 47.8,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "dead": {
+        "S-H1": {
+          "source": "forward_feed_replay/dead",
+          "grading": "directional",
+          "n_fires": 2,
+          "precision": {
+            "hits": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 4.3,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-18 22:27:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-18 23:01:00+00:00",
+            "pts_remaining_at_fire": 4.3,
+            "episode_total_pts": 10.1,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 22:27:00+00:00",
+            "dir": 1,
+            "adverse_pts": 5.8
+          }
+        },
+        "S-H10": {
+          "source": "forward_feed_replay/dead",
+          "grading": "directional",
+          "n_fires": 15,
+          "precision": {
+            "hits": 0,
+            "of": 15,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-16 23:11:00+00:00",
+            "dir": 1,
+            "adverse_pts": 8.3
+          }
+        },
+        "S-H2": {
+          "source": "forward_feed_replay/dead",
+          "grading": "directional",
+          "n_fires": 8,
+          "precision": {
+            "hits": 4,
+            "of": 8,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 3.8,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-18 22:06:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-18 23:01:00+00:00",
+            "pts_remaining_at_fire": 3.8,
+            "episode_total_pts": 10.1,
+            "major": false
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 23:40:00+00:00",
+            "dir": 1,
+            "adverse_pts": 7.0
+          }
+        },
+        "S-H3": {
+          "source": "forward_feed_replay/dead",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 1,
+            "of": 1,
+            "pct": 100.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": null
+        },
+        "S-H4": {
+          "source": "forward_feed_replay/dead",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "forward_feed_replay/dead",
+          "grading": "directional",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 4,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-17 22:20:00+00:00",
+            "dir": -1,
+            "adverse_pts": 1.0
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "forward_feed_replay/dead",
+          "grading": "either-direction",
+          "n_fires": 1,
+          "precision": {
+            "hits": 0,
+            "of": 1,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 1,
+            "of": 4,
+            "pct": 25.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 14.0,
+            "n": 1
+          },
+          "best_call": {
+            "ts": "2026-08-17 22:20:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-17 23:07:00+00:00",
+            "pts_remaining_at_fire": 14.0,
+            "episode_total_pts": 13.8,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-17 22:20:00+00:00",
+            "dir": -1,
+            "adverse_pts": 1.0
+          }
+        },
+        "S-H8": {
+          "source": "forward_feed_replay/dead",
+          "grading": "either-direction",
+          "n_fires": 8,
+          "precision": {
+            "hits": 5,
+            "of": 8,
+            "pct": 62.5
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 4,
+            "pct": 50.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 9.1,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-18 22:06:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-18 22:19:00+00:00",
+            "pts_remaining_at_fire": 14.4,
+            "episode_total_pts": 15.9,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 22:06:00+00:00",
+            "dir": 1,
+            "adverse_pts": 6.3
+          }
+        },
+        "S-H9": {
+          "source": "forward_feed_replay/dead",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "_union": {
+          "source": "forward_feed_replay/dead",
+          "episodes_covered_by_any_row": 2,
+          "of": 4,
+          "pct": 50.0
+        },
+        "_moves": {
+          "source": "forward_feed_replay/dead",
+          "n_qualifying_episodes": 4,
+          "n_major": 2,
+          "bar_qualify_base_rate_pct": 47.8,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
+      },
+      "asia": {
+        "S-H1": {
+          "source": "forward_feed_replay/asia",
+          "grading": "directional",
+          "n_fires": 9,
+          "precision": {
+            "hits": 3,
+            "of": 9,
+            "pct": 33.3
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 10,
+            "pct": 20.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 22.0,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-19 03:46:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-19 04:32:00+00:00",
+            "pts_remaining_at_fire": 25.1,
+            "episode_total_pts": 28.5,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 04:06:00+00:00",
+            "dir": -1,
+            "adverse_pts": 7.5
+          }
+        },
+        "S-H10": {
+          "source": "forward_feed_replay/asia",
+          "grading": "directional",
+          "n_fires": 27,
+          "precision": {
+            "hits": 4,
+            "of": 27,
+            "pct": 14.8
+          },
+          "coverage": {
+            "covered": 3,
+            "of": 10,
+            "pct": 30.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 17.7,
+            "n": 3
+          },
+          "best_call": {
+            "ts": "2026-08-17 04:08:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 04:50:00+00:00",
+            "pts_remaining_at_fire": 22.4,
+            "episode_total_pts": 24.8,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-19 00:42:00+00:00",
+            "dir": 1,
+            "adverse_pts": 13.8
+          }
+        },
+        "S-H2": {
+          "source": "forward_feed_replay/asia",
+          "grading": "directional",
+          "n_fires": 40,
+          "precision": {
+            "hits": 20,
+            "of": 40,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 10,
+            "pct": 20.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 22.2,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-18 03:20:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-18 04:05:00+00:00",
+            "pts_remaining_at_fire": 23.6,
+            "episode_total_pts": 33.0,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 06:48:00+00:00",
+            "dir": 1,
+            "adverse_pts": 20.5
+          }
+        },
+        "S-H3": {
+          "source": "forward_feed_replay/asia",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H4": {
+          "source": "forward_feed_replay/asia",
+          "n_fires": 0,
+          "note": "no confirmations in window"
+        },
+        "S-H7": {
+          "source": "forward_feed_replay/asia",
+          "grading": "directional",
+          "n_fires": 2,
+          "precision": {
+            "hits": 1,
+            "of": 2,
+            "pct": 50.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 10,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": {
+            "ts": "2026-08-19 05:17:00+00:00",
+            "dir": 1,
+            "adverse_pts": 11.7
+          }
+        },
+        "S-H7 (either-dir)": {
+          "source": "forward_feed_replay/asia",
+          "grading": "either-direction",
+          "n_fires": 2,
+          "precision": {
+            "hits": 2,
+            "of": 2,
+            "pct": 100.0
+          },
+          "coverage": {
+            "covered": 0,
+            "of": 10,
+            "pct": 0.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": null,
+            "n": 0
+          },
+          "best_call": null,
+          "worst_false_alarm": null
+        },
+        "S-H8": {
+          "source": "forward_feed_replay/asia",
+          "grading": "either-direction",
+          "n_fires": 40,
+          "precision": {
+            "hits": 26,
+            "of": 40,
+            "pct": 65.0
+          },
+          "coverage": {
+            "covered": 6,
+            "of": 10,
+            "pct": 60.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 22.1,
+            "n": 6
+          },
+          "best_call": {
+            "ts": "2026-08-17 05:29:00+00:00",
+            "dir": 1,
+            "episode_start": "2026-08-17 05:56:00+00:00",
+            "pts_remaining_at_fire": 25.5,
+            "episode_total_pts": 34.2,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 03:40:00+00:00",
+            "dir": 1,
+            "adverse_pts": 7.1
+          }
+        },
+        "S-H9": {
+          "source": "forward_feed_replay/asia",
+          "grading": "directional",
+          "n_fires": 8,
+          "precision": {
+            "hits": 0,
+            "of": 8,
+            "pct": 0.0
+          },
+          "coverage": {
+            "covered": 2,
+            "of": 10,
+            "pct": 20.0
+          },
+          "earliness": {
+            "median_pts_remaining_at_fire": 7.8,
+            "n": 2
+          },
+          "best_call": {
+            "ts": "2026-08-18 00:30:00+00:00",
+            "dir": -1,
+            "episode_start": "2026-08-18 00:52:00+00:00",
+            "pts_remaining_at_fire": 15.5,
+            "episode_total_pts": 16.2,
+            "major": true
+          },
+          "worst_false_alarm": {
+            "ts": "2026-08-18 02:00:00+00:00",
+            "dir": 1,
+            "adverse_pts": 11.5
+          }
+        },
+        "_union": {
+          "source": "forward_feed_replay/asia",
+          "episodes_covered_by_any_row": 9,
+          "of": 10,
+          "pct": 90.0
+        },
+        "_moves": {
+          "source": "forward_feed_replay/asia",
+          "n_qualifying_episodes": 10,
+          "n_major": 8,
+          "bar_qualify_base_rate_pct": 47.8,
+          "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
+        }
       }
     }
   },
@@ -607,9 +3010,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": null,
-          "n": 0,
-          "median_min_before_15m_flip": null,
-          "n_flips": 0
+          "n": 0
         },
         "best_call": null,
         "worst_false_alarm": {
@@ -639,9 +3040,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": null,
-          "n": 0,
-          "median_min_before_15m_flip": null,
-          "n_flips": 0
+          "n": 0
         },
         "best_call": null,
         "worst_false_alarm": {
@@ -654,6 +3053,12 @@
         "source": "backtest_replay",
         "n_fires": 0,
         "note": "no confirmations in window"
+      },
+      "_union": {
+        "source": "backtest_replay",
+        "episodes_covered_by_any_row": 0,
+        "of": 180,
+        "pct": 0.0
       },
       "_moves": {
         "source": "backtest_replay",
@@ -685,9 +3090,7 @@
         },
         "earliness": {
           "median_pts_remaining_at_fire": null,
-          "n": 0,
-          "median_min_before_15m_flip": null,
-          "n_flips": 0
+          "n": 0
         },
         "best_call": null,
         "worst_false_alarm": {
@@ -711,11 +3114,17 @@
         "n_fires": 0,
         "note": "no confirmations in window"
       },
+      "_union": {
+        "source": "forward_feed_replay",
+        "episodes_covered_by_any_row": 0,
+        "of": 27,
+        "pct": 0.0
+      },
       "_moves": {
         "source": "forward_feed_replay",
         "n_qualifying_episodes": 27,
         "n_major": 13,
-        "bar_qualify_base_rate_pct": 48.4,
+        "bar_qualify_base_rate_pct": 47.8,
         "base_rate_note": "precision reads against this: the share of bars that qualify in EITHER direction by clock alone"
       }
     }
