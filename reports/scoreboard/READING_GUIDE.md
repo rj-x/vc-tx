@@ -56,3 +56,18 @@ Forward is days old; several cells are single-digit. The small-n dimming
 is registered convention (operator, 2026-08-19), not styling. Nothing in
 these pages is validation — walk-forward and the lockbox remain the only
 verdict machinery.
+
+## Per-instrument sections (register 40 fence as amended 2026-08-19)
+One section per instrument, each computed ONLY from that instrument's own
+store: its own episodes, ATR, base rates, and session slices. uk100 is
+CANONICAL; ger40/nas100/us30 are PROVISIONAL (replay-only permission —
+canonical status, live attachment, and Asia/pause-sensitive cell
+interpretation await each instrument's validation evening) and this first
+read is EXPLORATORY (expectations deliberately unregistered; anything
+interesting becomes a pre-registered question before it becomes a claim).
+Numbers are NEVER pooled across instruments — cross-instrument
+aggregation is a future registration. Session labels are the registered
+world-clock partition applied to each instrument's own bars: 'london' is
+not the home session of the US pairs, and each section's chance rates are
+its own. The session-character notes above are FTSE-specific; read other
+instruments' session structure only after their validation evenings.
