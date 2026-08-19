@@ -15,6 +15,7 @@ IMPORT_ALLOWED = {os.path.join("backtest", "scoreboard.py"),
                   os.path.join("backtest", "recipes.py"),   # register 41 reader
                   os.path.join("backtest", "excursions.py"),  # register 42 reader
                   os.path.join("backtest", "flip_cut.py"),    # register 43 reader
+                  os.path.join("backtest", "cofire.py"),      # register 45 reader
                   os.path.join("engine", "paper.py"),
                   os.path.join("engine", "narrate.py")}
 

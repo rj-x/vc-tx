@@ -102,15 +102,20 @@ entry is a separate decision.
 ## H5
 - **Claim:** A buying climax that extends far above its trend mean
   mean-reverts (climax-extension fade; registered short-side only).
-- **Firing condition:** none running. The engine spec exists
-  (spawn on `POTENTIAL_BUYING_CLIMAX` with `h5.extension_atr`/`ma_period`)
-  but is recipe-shaped.
-- **Origin:** founding spec (as H1).
-- **Status:** **disabled** — operator ruling 2026-08-19: *"disable
-  rationale lost to pre-crash era; preserved conservatively; revival =
-  fresh review as new."*
-- **Latest review:** pending-on-operator (revival is a fresh review, not
-  a label).
+- **Firing condition (DRAFTED 2026-08-20, ratification pending):**
+  structural `BUYING_CLIMAX` with extension — `close − SMA20(1M closes)
+  ≥ 2.0 × ATR(1M)` → fire −1 (short-side only, per the founding
+  registration; no mirror). Values cited to founding `h5.extension_atr`
+  (2.0) and `h5.ma_period` (20); INTERPRETATION FLAG: the founding spec
+  was signal-TF-flavored — the bare row reads both on the 1M pipe like
+  every other row; operator may re-anchor at ratification.
+- **Origin:** **founding-anatomy / fresh-start** (operator decision
+  2026-08-20: REVIVE-AS-NEW — data-innocent birth, revived without its
+  lost rationale; the pre-crash disable rationale stays lost, register
+  finding H5-audit).
+- **Status:** **definition-pending** (drafted; **signal-live on
+  ratification of the drafted condition**).
+- **Latest review:** awaiting-ratification (the drafted condition).
 
 ## H6
 - **Claim:** A wide-spread rejection bar at a session extreme (measured

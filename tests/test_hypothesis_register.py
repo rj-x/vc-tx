@@ -11,7 +11,7 @@ def test_register_has_ten_entries_with_statuses():
     assert sorted(reg) == list(range(1, 13))
     assert all(v in ("signal-live", "definition-pending", "disabled")
                for v in reg.values())
-    assert reg[5] == "disabled"
+    assert reg[5] == "definition-pending"   # revive-as-new, drafted 08-20
     assert reg[6] == "definition-pending"          # H8/H9 went signal-live
     assert reg[11] == reg[12] == "definition-pending"
     assert reg[8] == reg[9] == "signal-live"       # by operator order 08-19

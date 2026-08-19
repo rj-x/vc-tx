@@ -33,6 +33,10 @@ DERIVED_FIRES = {"S-H8": "S-H2"}
 # reports — no narrative recipe may be registered before then.
 NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
                              "phase_transition", "opposing_signal_fire")
+# co-fire census family partition (register 45, operator-set; the one-home
+# rule keeps hypothesis identifiers out of the census reader)
+COFIRE_FAMILIES = {"event": ("S-H1", "S-H2"), "texture": ("S-H4", "S-H7"),
+                   "structure": ("S-H3", "S-H9")}
 
 
 def _s_h1(bar, ectx, sctx, feats, cores, structural, qualified, prev):

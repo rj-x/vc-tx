@@ -1,5 +1,8 @@
 # Sense-Organ & Instrument Queue — for operator prioritization
 
+**See docs/backlog_status.md (register 45) for the one-status-per-idea
+glance table; this page keeps the fuller per-item context.**
+
 **Compiled 2026-08-19, re-ranked same day (register 40 queue rulings) from
 the register (items 16, 17, 22, 24, 27, and the
 lab/candidate threads). Hand-maintained queue page; the register entries
