@@ -1,7 +1,22 @@
 # Canonical Hypothesis Register
 
-**The single authoritative list (register 35, 2026-08-18).** Every entry
-has the same five fields. The trial log, scoreboard, and lab cite
+**The single authoritative list (register 35; SCHEMA v2, register 49,
+2026-08-21).** A hypothesis H\<n\> = falsifiable claim (one plain
+sentence) + origin + status. A SIGNAL S\<k\>-H\<n\> = one mechanical
+configuration testing that claim: exact condition, parameters, provenance,
+registration date, status. One hypothesis may have many signals; every
+signal belongs to exactly one hypothesis. Global yardsticks stay shared
+and outside both — signals define what fires, never how fires are marked.
+NAMESPACE: H\<n\> and S\<k\>-H\<n\> are the ONLY identifier forms;
+S-numbers are per-hypothesis, never reused; parameters are never edited in
+place — any change is a NEW S-number. STANDING GUARDS: every signal
+pre-registered with rationale before first computation; configuration
+counts printed on every card and in the matrix; review labels and
+promote-candidate eligibility attach to SIGNALS, never hypotheses; no
+best-of-configurations display anywhere — all of a hypothesis's signals
+print or none do; when claim and implementation diverge, the resolution is
+a NEW signal under the honest claim — never a silent rewrite of either.
+Every entry has the same five fields. The trial log, scoreboard, and lab cite
 H-numbers from here — **nothing runs that isn't in this register**
 (scoreboard refuses unknown IDs; test-enforced). Signal rows are named
 S-H\<n\>, nothing else; lab serials and descriptive names survive only as
@@ -38,10 +53,18 @@ entry is a separate decision.
   ([signal_watch.py `_s_h1`](../engine/signal_watch.py)); climax anatomy =
   the founding structural core (config `labels.climax_*`).
 - **Origin:** founding spec (prompt.md Part 2/4; RULES v3.1, 2026-08-11).
-- **Status:** **signal-live** (S-H1).
-- **Latest review:** keep-watching (2026-08-19, review R1).
-- AUDIT: PASS. Trade logic (confirmation window, spawn levels, boosters,
-  2R stops) stripped to the recipes section.
+- **Signals:**
+  - **S0-H1** (migrated from S-H1, all history attached): bare structural
+    climax anatomy — **labeled "anatomy-only — context clause untested by
+    this signal"** (audit F1). Signal-live since 2026-08-18.
+  - **S1-H1** (registered 2026-08-21, register 49; resolves F1): the
+    FOUNDING context-qualified climax (qualified POTENTIAL_* labels — the
+    "late in an extended move" clause lives in the qualification).
+    Signal-live now; record opens at the next run.
+- **Status:** **signal-live** (2 signals).
+- **Latest review:** keep-watching (labels attach to signals; both open).
+- AUDIT: F1 RESOLVED by the S0/S1 split (claim unchanged). Trade logic
+  stripped to the recipes section.
 
 ## H2
 - **Claim:** A failed probe beyond a prior extreme — an upthrust above or
@@ -53,10 +76,18 @@ entry is a separate decision.
   (these prints) graded two ways — H8's fires are copied from H2's
   (`DERIVED_FIRES`, signal module), never independently computed. A reader
   must never count them as two signals.
-- **Status:** **signal-live** (S-H2).
-- **Latest review:** promote-candidate (2026-08-19, review R1; note
-  amended same day under the corrected PER-CONTEXT chance rates of
-  register 38 — backtest lift is only +1.2pp (86/347 vs 23.6% directional
+- **Signals:**
+  - **S0-H2** (migrated from S-H2, ALL history attached — including the
+    2026-08-19 forward two-layer observation, whose register entry cites
+    S0-H2 specifically): bare upthrust/spring anatomy — "anatomy-only —
+    prior-extreme clause untested by this signal" (audit F2).
+  - **S1-H2** (registered 2026-08-21, register 49; resolves F2): the
+    FOUNDING qualified upthrust/spring (range-extreme context in the
+    qualification). Signal-live now; record opens at the next run.
+- **Status:** **signal-live** (2 signals).
+- **Latest review:** promote-candidate ATTACHES TO S0-H2 (2026-08-19,
+  review R1; note amended same day under the corrected PER-CONTEXT chance
+  rates of register 38 — backtest lift is only +1.2pp (86/347 vs 23.6% directional
   chance), inside the ±2pp at-chance band, while forward is +10.0pp
   (26/71) and London backtest +6.3pp; the criterion ("above chance both
   windows, n≥30") is still met LITERALLY but the backtest leg is
@@ -75,7 +106,7 @@ entry is a separate decision.
   `context.level_atr_mult`×ATR of a 1M swing level; fire toward the level
   (`_SH3`). All parameters founding config, registry-cited.
 - **Origin:** founding spec (as H1).
-- **Status:** **signal-live** (S-H3).
+- **Status:** **signal-live** (S0-H3).
 - **Latest review:** keep-watching (2026-08-19, review R1 — 0 backtest
   fires, 3 forward; the level list needs confirmed 1M swings to exist).
 - AUDIT: PASS with note — the founding spawn also directioned by
@@ -91,7 +122,7 @@ entry is a separate decision.
   active pullback, classifier.py:103-108) is exactly the founding context,
   computed mechanically.
 - **Origin:** founding spec (as H1).
-- **Status:** **signal-live** (S-H4). Known property: extremely sparse on
+- **Status:** **signal-live** (S0-H4). Known property: extremely sparse on
   1M under frozen thresholds (T3 finding — the phase gate rarely opens;
   n≈1/month; see H10 for the re-anchored variant).
 - **Latest review:** keep-watching (2026-08-19, review R1 — 7 fires, 0
@@ -113,7 +144,7 @@ entry is a separate decision.
   2026-08-20: REVIVE-AS-NEW — data-innocent birth, revived without its
   lost rationale; the pre-crash disable rationale stays lost, register
   finding H5-audit).
-- **Status:** **signal-live** (S-H5, event-derived, ratified 2026-08-20 —
+- **Status:** **signal-live** (S0-H5, event-derived, ratified 2026-08-20 —
   read on the SIGNAL TF (15M) per its founding origin; a 1M variant, if
   ever, is a separate hypothesis).
 - **Latest review:** keep-watching (rows begin at the next run).
@@ -130,7 +161,7 @@ entry is a separate decision.
   formulation.
 - **Origin:** data-born 2026-08-13 (06:56Z Asia-high rejection; register
   items 8–9). Cross-ref: audit/candidate_hypotheses.md H6.
-- **Status:** **signal-live** (S-H6, ratified 2026-08-20): proximity
+- **Status:** **signal-live** (S0-H6, ratified 2026-08-20): proximity
   0.25×ATR(15M); day-relative spread ≥ p90 over a trailing 480-bar
   window (the window length is an implementer constant, registry-flagged
   operator-adjustable); close_pos ≤ 0.25 / ≥ 0.75; wick ≥ 0.33;
@@ -153,7 +184,7 @@ entry is a separate decision.
 - **Origin:** data-born 2026-08-13 (tracked EFFORTLESS_DECLINE signal,
   standing ruling 1; candidate register H7 — the falsifiable core "quiet
   ages, participation kills" is recipe/refutation layer, preserved there).
-- **Status:** **signal-live** (S-H7, bare variant). **Grading: BOTH
+- **Status:** **signal-live** (S0-H7, bare variant). **Grading: BOTH
   modes** (register 36) — directional (the claim) and either-direction
   (movement), reported side by side.
 - **Movement-not-direction finding (2026-08-18/19, recorded per operator
@@ -173,7 +204,7 @@ entry is a separate decision.
 - **Claim:** Reversal-signature bar anatomy (upthrust/spring) predicts
   imminent range expansion irrespective of direction.
 - **Firing condition:** structural `UPTHRUST` or `SPRING` per 1M bar
-  (`_s_h8` — same prints as S-H2, DIFFERENT claim and grading).
+  (`_s_h8` — same prints as S0-H2, DIFFERENT claim and grading).
   **Grading: either-direction** (register 36 mode): precision = a
   qualifying move follows in EITHER direction; chance baseline = the
   either-direction base rate (own registered baseline, shown per window).
@@ -185,7 +216,7 @@ entry is a separate decision.
   Cross-ref: candidate register H8; expansion study = its evidence
   instrument. **Standing adverse evidence:** expansion-vs-spread readouts
   (register: "evidence adverse").
-- **Status:** **signal-live** (S-H8, either-direction mode; operator
+- **Status:** **signal-live** (S0-H8, either-direction mode; operator
   order 2026-08-19 resolved the grading-model mismatch by defining the
   mode).
 - **Latest review:** keep-watching (2026-08-19, review R1 — first
@@ -206,10 +237,19 @@ entry is a separate decision.
   walk-forward.
 - **Origin:** data-born 2026-08-14 (week-review; candidate register H9).
   Cross-refs: migration study; forward readout; cascade analysis 3a0988b.
-- **Status:** **signal-live** (S-H9, event-derived).
-- **Latest review:** keep-watching (2026-08-19, review R1 — first
-  readout).
-- AUDIT: PASS (depth and timestamp convention now pre-registered).
+- **Signals:**
+  - **S0-H9** (migrated, history attached): pooled depth-≥2 chains —
+    **labeled "recruitment-agnostic — does not test the claim's core"**
+    (audit F3). [Flagged for the next sitting: operator may retire S0-H9
+    if the pooled configuration isn't worth continued measurement;
+    default = keep running.]
+  - **S1-H9** (registered 2026-08-21, register 49; resolves F3):
+    RECRUITED-ONLY depth-≥2 chains — the claim's falsifiable core.
+    Signal-live now; EXPECTED STARVED at current n (July: 16/89 forward
+    chains recruited), stated at registration.
+- **Status:** **signal-live** (2 signals).
+- **Latest review:** keep-watching (per signal).
+- AUDIT: F3 RESOLVED by the S0/S1 split (claim kept).
 
 ## H10
 - **Claim:** In an established 1-minute trend, no-demand/no-supply prints
@@ -223,7 +263,7 @@ entry is a separate decision.
   serials T1d, T3 (transplant-null), T3b (pre-sketch — superseded by this
   entry as the signal-layer read; the recipe-layer T3b build remains
   next lab cycle's first candidate).
-- **Status:** **signal-live** (S-H10).
+- **Status:** **signal-live** (S0-H10).
 - **Latest review:** deprioritize (2026-08-19, review R1 — at/below
   chance in both windows, n=293 backtest, per the register-36 criterion;
   evidence keeps accruing free; the T3b recipe-layer question and any
@@ -249,7 +289,7 @@ entry is a separate decision.
   before — high-volume nodes mark standing interest that absorbs or repels
   price; low-volume gaps mark prices where no business was done and none
   defends them, so price traverses fast because nobody trades there.
-- **Status:** **signal-live** (S-H11, ratified 2026-08-20): bucket 4.0
+- **Status:** **signal-live** (S0-H11, ratified 2026-08-20): bucket 4.0
   pts, lookback 5 sessions, node = p90 / gap = p10 of the trailing
   profile. THE ROW GRADES THE TRAVERSAL CLAUSE (directional fire into a
   gap bucket, direction of travel); the NODE-STALL clause needs its own
@@ -280,7 +320,7 @@ entry is a separate decision.
   the multi-visit COMPOSITE of H3's single-cluster claim — H3 fires on one
   absorption cluster; H12 requires the repeated-visit sequence with the
   exhaustion signature.
-- **Status:** **signal-live** (S-H12, ratified 2026-08-20): zone = 1M
+- **Status:** **signal-live** (S0-H12, ratified 2026-08-20): zone = 1M
   swing level ± 0.25×ATR(15M); visit = band entry after leaving by > band
   width; ≥3 visits within 90 min; strictly diminishing per-visit median
   range-per-unit-volume; pullbacks drying (mean rel_volume < 0.7 and
@@ -306,7 +346,7 @@ entry is a separate decision.
   future recall question.
 - **S-EFFORTLESS-SEQ (continuation direction)**: RETIRED as mis-mapped —
   it graded the OPPOSITE of H7's registered claim. Its readout survives
-  as H7's standing adverse evidence (above). Replaced by S-H7 (claim
+  as H7's standing adverse evidence (above). Replaced by S0-H7 (claim
   direction).
 
 ## Recipes (historical spec — NOT hypotheses; frozen_v1 baseline record)

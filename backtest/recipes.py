@@ -467,7 +467,7 @@ def _emit(results, head):
                     v = have[hname]
                     cells = [str(v["net_by_session"].get(s, "—"))
                              for s in sessions]
-                    L.append(f"| {hname.replace('S-', '')} | "
+                    L.append(f"| {hname} | "
                              + " | ".join(cells)
                              + f" | **{v['net_pts']}** | {v['n']} "
                              f"| {v['win_rate_pct']}% | {v['median_pts']} |")
@@ -486,7 +486,7 @@ def _emit(results, head):
                         v = res["recipes"][rname].get(hname, {}).get(wname)
                         cells.append(f"{v['net_pts']:+.0f} ({v['n']})"
                                      if v else "—")
-                    L.append(f"| {hname.replace('S-', '')} | "
+                    L.append(f"| {hname} | "
                              + " | ".join(cells) + " |")
                 L.append("")
     L += ["---", "", "Cards detail in recipe_performance.json (same run)."]

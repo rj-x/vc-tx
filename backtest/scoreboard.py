@@ -88,11 +88,11 @@ def validate_rows():
     import re as _re
     reg = register_status()
     for key in set(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS | set(DERIVED_FIRES):
-        m = _re.fullmatch(r"S-H(\d+)", key)
+        m = _re.fullmatch(r"S(\d+)-H(\d+)", key)
         if not m:
-            raise ValueError(f"signal row {key!r}: IDs are S-H<n>, nothing "
-                             f"else (docs/hypothesis_register.md)")
-        n = int(m.group(1))
+            raise ValueError(f"signal row {key!r}: IDs are S<k>-H<n>, "
+                             f"nothing else (schema v2, register 49)")
+        n = int(m.group(2))
         if n not in reg:
             raise ValueError(f"signal row {key!r}: H{n} is not in the "
                              f"canonical hypothesis register")
@@ -266,10 +266,18 @@ def h9_fires(events, cfg):
     H9_CHAIN_DEPTH_MIN, stamped at the completing event's close, in the
     chain's direction."""
     from backtest.migration import migration_events
-    from engine.signal_watch import ROW_MIGRATION_CHAIN as name
-    return [{"ts": e["ts"], "name": name, "dir": e["dir"]}
-            for e in migration_events(events, cfg)
-            if e["chain_rungs"] >= H9_CHAIN_DEPTH_MIN]
+    from engine.signal_watch import (ROW_MIGRATION_CHAIN,
+                                     ROW_MIGRATION_RECRUITED)
+    out = []
+    for e in migration_events(events, cfg):
+        if e["chain_rungs"] < H9_CHAIN_DEPTH_MIN:
+            continue
+        out.append({"ts": e["ts"], "name": ROW_MIGRATION_CHAIN,
+                    "dir": e["dir"]})
+        if e["recruited"]:
+            out.append({"ts": e["ts"], "name": ROW_MIGRATION_RECRUITED,
+                        "dir": e["dir"]})
+    return out
 
 
 def register_labels():
@@ -626,14 +634,24 @@ def _cell(blk, key):
     return f"(°{core})" if small else core
 
 
+def _signals_of(blk, n):
+    """Signal keys for hypothesis n present in a block, sorted by S-number
+    (schema v2: grouped rendering, configuration count visible)."""
+    out = []
+    for key in blk:
+        m = re.fullmatch(rf"S(\d+)-H{n}( \(either-dir\))?", key)
+        if m:
+            out.append((int(m.group(1)), key))
+    return [k for _, k in sorted(out)]
+
+
 def _row_keys(blk, reg):
     keys = []
     for n in sorted(reg):
         if reg[n] != "signal-live":
             continue
-        keys.append((f"H{n}", f"S-H{n}"))
-        if f"S-H{n} (either-dir)" in blk:
-            keys.append((f"H{n} (either-dir)", f"S-H{n} (either-dir)"))
+        for key in _signals_of(blk, n):
+            keys.append((key, key))
     return keys
 
 
@@ -685,7 +703,7 @@ def _section_lines(res, reg, labels, claims):
     L.append("| *context* | | " + " | ".join(ctx_info) + " |")
     whole_bt = blk_of("backtest", "whole")
     for disp, key in _row_keys(whole_bt, reg):
-        n = int(re.match(r"H(\d+)", disp).group(1))
+        n = int(re.search(r"-H(\d+)", disp).group(1))
         cells = [_cell(blk_of(w, c), key) for w, c in CTX]
         L.append(f"| {disp} | {labels.get(n, '-')} | " + " | ".join(cells)
                  + " |")

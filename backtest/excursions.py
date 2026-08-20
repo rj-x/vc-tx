@@ -205,7 +205,7 @@ def _emit(results, head):
                     if not p["mfe"]:
                         continue
                     L.append(
-                        f"| {name.replace('S-', '')} | {p['mfe']['n']} "
+                        f"| {name} | {p['mfe']['n']} "
                         f"| {p['mfe']['median']} | {p['mfe']['p75']} "
                         f"| {p['mfe']['p90']} "
                         f"| {p['mae']['median']} | {p['mae']['p75']} "

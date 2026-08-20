@@ -118,8 +118,8 @@ Next formal checkpoint, whichever arrives first (~40–60 working sessions on FT
 2. **Walk-forward feasibility** — enough working-set history to support train/validation
    folds; opens threshold tuning under the pre-registered protocol.
 
-Parked decision (value decays weekly): the multi-instrument acceleration split
-(development pool + pristine NASDAQ) — see register.
+(The formerly parked multi-instrument-acceleration decision was RETIRED
+2026-08-21 — overtaken by the register-40 expansion; register 49(6).)
 
 ## When something looks wrong
 

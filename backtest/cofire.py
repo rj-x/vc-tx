@@ -149,7 +149,7 @@ def _emit(results, head):
                         cell = f"UNMEASURABLE {cell}"
                     elif wi["n"] < 20:
                         cell = f"(°{cell})"
-                    L.append(f"| {key.replace('S-', '')} | {wk} | {wname} "
+                    L.append(f"| {key} | {wk} | {wname} "
                              f"| {cell} "
                              f"| {wo['pct']}% ({wo['hits']}/{wo['n']}) "
                              f"| {d:+.1f} |")

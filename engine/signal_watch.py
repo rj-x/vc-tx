@@ -1,8 +1,10 @@
 """Dedicated signal module — THE ONE place hypothesis firing conditions
-may live (register 31/34: PURE-SIGNALS doctrine; register 35: canonical
-hypothesis register). Every row's ID is S-H<n> and must exist in
-docs/hypothesis_register.md with status signal-live — the scoreboard
-refuses anything else (test-enforced).
+may live (registers 31/34/35; SCHEMA v2, register 49): a hypothesis H<n>
+is a claim; a SIGNAL S<k>-H<n> is one mechanical configuration testing it.
+S-numbers are per-hypothesis, never reused; a signal's parameters are
+never edited in place — any change is a NEW S-number (append-only
+configuration history by construction). H<n> and S<k>-H<n> are the ONLY
+identifier forms; the scoreboard refuses anything else (test-enforced).
 
 Import direction is enforced by test: NO decision path imports this module.
 A firing condition PERCEIVES AND REPORTS.
@@ -38,15 +40,20 @@ H12_DRY_RV = 0.7             # ratified (founding low_volume_mult, cited)
 
 # row-declaration tables (this module is the one permitted home for
 # hypothesis identifiers; the scoreboard imports these):
-ROW_MIGRATION_CHAIN = "S-H9"     # event-derived (chains span TFs)
-ROW_CLIMAX_EXTENSION = "S-H5"    # event-derived (15M read, register 46)
-EVENT_DERIVED_ROWS = {ROW_MIGRATION_CHAIN, ROW_CLIMAX_EXTENSION}
-AGNOSTIC_ROWS = {"S-H8"}          # graded either-direction (register 36)
-DUAL_GRADED = {"S-H7"}            # graded in BOTH modes (register 36)
+ROW_MIGRATION_CHAIN = "S0-H9"     # event-derived, RECRUITMENT-AGNOSTIC —
+                                  # does not test the claim's core (F3 label)
+ROW_MIGRATION_RECRUITED = "S1-H9"  # event-derived, recruited-only chains
+                                  # (register 49; the claim's core; expected
+                                  # starved at current n — stated)
+ROW_CLIMAX_EXTENSION = "S0-H5"    # event-derived (15M read, register 46)
+EVENT_DERIVED_ROWS = {ROW_MIGRATION_CHAIN, ROW_MIGRATION_RECRUITED,
+                      ROW_CLIMAX_EXTENSION}
+AGNOSTIC_ROWS = {"S0-H8"}          # graded either-direction (register 36)
+DUAL_GRADED = {"S0-H7"}            # graded in BOTH modes (register 36)
 # ONE firing condition, TWO gradings (register 37): the value row's fires
 # ARE the key row's fires, copied — never independently computed, never
 # double-counted as two signals
-DERIVED_FIRES = {"S-H8": "S-H2"}
+DERIVED_FIRES = {"S0-H8": "S0-H2"}
 # narrative-condition primitives a recipe stage may reference (register 42e;
 # the one-home rule: primitives are DECLARED here, grammar validates against
 # this set). CAPABILITY ONLY until the excursion study's conditional cut
@@ -59,13 +66,13 @@ NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
 # on a conditioned signal is a known confound class and is refused as
 # headline lift. Class-mask implementations live in the scoreboard,
 # keyed by these names.
-CONDITIONED_ROWS = {"S-H6": "wide_bar_p90_trailing_day"}
+CONDITIONED_ROWS = {"S0-H6": "wide_bar_p90_trailing_day"}
 # exhaustion-family rows for the location-conditioned census (register 48)
-EXHAUSTION_FAMILY = ("S-H3", "S-H4", "S-H12")
+EXHAUSTION_FAMILY = ("S0-H3", "S0-H4", "S0-H12")
 # co-fire census family partition (register 45, operator-set; the one-home
 # rule keeps hypothesis identifiers out of the census reader)
-COFIRE_FAMILIES = {"event": ("S-H1", "S-H2"), "texture": ("S-H4", "S-H7"),
-                   "structure": ("S-H3", "S-H9")}
+COFIRE_FAMILIES = {"event": ("S0-H1", "S0-H2"), "texture": ("S0-H4", "S0-H7"),
+                   "structure": ("S0-H3", "S0-H9")}
 
 
 def _s_h1(bar, ectx, sctx, feats, cores, structural, qualified, prev):
@@ -124,6 +131,22 @@ def _s_h7(bar, ectx, sctx, feats, cores, structural, qualified, prev):
     if structural == "EFFORTLESS_ADVANCE" and prev == "EFFORTLESS_ADVANCE":
         return -1
     return None
+
+
+def _s1_h1(bar, ectx, sctx, feats, cores, structural, qualified, prev):
+    """S1-H1 (register 49): the FOUNDING CONTEXT-QUALIFIED climax — the
+    qualified layer carries the claim's "late in an extended move" clause
+    (after-decline/after-rally + new-extreme/level context, classifier
+    founding rules). Registered to resolve audit finding F1."""
+    return {"POTENTIAL_SELLING_CLIMAX": 1,
+            "POTENTIAL_BUYING_CLIMAX": -1}.get(qualified)
+
+
+def _s1_h2(bar, ectx, sctx, feats, cores, structural, qualified, prev):
+    """S1-H2 (register 49): the FOUNDING QUALIFIED upthrust/spring — the
+    qualification carries the claim's "beyond a prior extreme" clause
+    (range-extreme/resistance context). Resolves audit finding F2."""
+    return {"UPTHRUST": -1, "SPRING": 1}.get(qualified)
 
 
 def _s_h10(bar, ectx, sctx, feats, cores, structural, qualified, prev):
@@ -310,15 +333,17 @@ class _SH12:
 
 
 FIRING_CONDITIONS = {
-    "S-H1": _s_h1,
-    "S-H2": _s_h2,
-    "S-H3": _SH3,                # class: fresh instance per attach
-    "S-H4": _s_h4,
-    "S-H7": _s_h7,
-    "S-H10": _s_h10,
-    "S-H6": _SH6,                # ratified 2026-08-20 (register 46)
-    "S-H11": _SH11,              # ratified 2026-08-20; traversal clause
-    "S-H12": _SH12,              # ratified 2026-08-20
+    "S0-H1": _s_h1,
+    "S0-H2": _s_h2,
+    "S0-H3": _SH3,                # class: fresh instance per attach
+    "S0-H4": _s_h4,
+    "S0-H7": _s_h7,
+    "S0-H10": _s_h10,
+    "S0-H6": _SH6,                # ratified 2026-08-20 (register 46)
+    "S0-H11": _SH11,              # ratified 2026-08-20; traversal clause
+    "S0-H12": _SH12,              # ratified 2026-08-20
+    "S1-H1": _s1_h1,              # register 49 (audit F1 resolution)
+    "S1-H2": _s1_h2,              # register 49 (audit F2 resolution)
 }
 
 

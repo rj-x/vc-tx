@@ -144,7 +144,7 @@ def _emit(results, head):
                 for cls, v in per_c.items():
                     p = (f"UNMEASURABLE {v['pct']}%" if v["unmeasurable"]
                          else f"{v['pct']}%")
-                    L.append(f"| {name.replace('S-', '')} | {wname} "
+                    L.append(f"| {name} | {wname} "
                              f"| {cls} | {v['n']} | {p} ({v['hits']}"
                              f"/{v['n']}) | {v['payoff_net']} "
                              f"| {v['payoff_median']} |")

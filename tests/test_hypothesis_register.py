@@ -20,18 +20,21 @@ def test_current_rows_validate():
 
 
 def test_unknown_id_refused():
-    FIRING_CONDITIONS["S-T3B"] = lambda *a: None      # legacy lab serial
-    try:
-        with pytest.raises(ValueError, match="S-H<n>"):
-            validate_rows()
-    finally:
-        del FIRING_CONDITIONS["S-T3B"]
-    FIRING_CONDITIONS["S-H99"] = lambda *a: None
+    # schema v2 (register 49): S<k>-H<n> only; lab serials, the old S-H<n>
+    # form, -ctx suffixes, and free names are all refused
+    for bad in ("S-T3B", "S-H1", "LEGACY-NAME", "S1-H1-ctx"):
+        FIRING_CONDITIONS[bad] = lambda *a: None
+        try:
+            with pytest.raises(ValueError, match=r"S<k>-H<n>"):
+                validate_rows()
+        finally:
+            del FIRING_CONDITIONS[bad]
+    FIRING_CONDITIONS["S0-H99"] = lambda *a: None
     try:
         with pytest.raises(ValueError, match="not in the canonical"):
             validate_rows()
     finally:
-        del FIRING_CONDITIONS["S-H99"]
+        del FIRING_CONDITIONS["S0-H99"]
     # the not-signal-live branch: no live fixture remains (all twelve are
     # live) — exercise it against a patched register
     import backtest.scoreboard as sb
@@ -44,9 +47,3 @@ def test_unknown_id_refused():
             validate_rows()
     finally:
         sb.register_status = orig
-    FIRING_CONDITIONS["LEGACY-NAME"] = lambda *a: None
-    try:
-        with pytest.raises(ValueError, match="S-H<n>"):
-            validate_rows()
-    finally:
-        del FIRING_CONDITIONS["LEGACY-NAME"]
