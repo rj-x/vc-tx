@@ -1,39 +1,40 @@
 # Hypothesis Performance — Per-Instrument
 
-Engine `6e7db5af5` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
+Engine `b70fbdee6` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
 
 ---
 
 # uk100 (uk100fut) — CANONICAL
 
-Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-20 12:11:00+00:00. Volume type: real futures volume (step-zero audit).
+Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-20 13:14:00+00:00. Volume type: real futures volume (step-zero audit).
 
 ## Summary Matrix (page 1)
 
-Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `b70fbdee6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
 | H | label | backtest whole | backtest london | forward whole | forward london |
 |---|---|---|---|---|---|
-| *context* | | 180 ep; chance 23.6%dir/44.3%either | 52 ep; chance 24.9%dir/47.1%either | 41 ep; chance 25.1%dir/45.2%either | 9 ep; chance 25.4%dir/47.3%either |
-| S0-H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+6.9pp (7/22) net+133/med+3.0 | ▲+2.2pp (9/33) net+26/med+0.8 | (°·-0.4pp (2/8) net+4/med+2.6) |
-| S1-H1 | keep-watching | (°▼-3.6pp (1/5) net+9/med+3.0) | — | (°▲+8.2pp (1/3) net+0/med+3.5) | (°▲+7.9pp (1/3) net+0/med+3.5) |
-| S0-H2 | promote-candidate | ·+1.5pp (87/347) net+781/med+1.5 | ▲+7.6pp (26/80) net+521/med+9.2 | ▲+3.2pp (34/120) net-83/med-1.0 | (°▼-3.5pp (7/32) net-16/med-1.8) |
-| S1-H2 | promote-candidate | ·+1.0pp (62/252) net+540/med+0.9 | ▲+7.3pp (19/59) net+559/med+12.0 | ▲+4.1pp (31/106) net-106/med-1.1 | (°▼-4.0pp (6/28) net-28/med-1.8) |
-| S0-H3 | keep-watching | — | — | (°▲+3.5pp (2/7) net-29/med-0.5) | (°▲+7.9pp (1/3) net-27/med-5.0) |
-| S0-H4 | keep-watching | (°▼-23.6pp (0/7) net+14/med+0.5) | (°▼-24.9pp (0/1) net+6/med+5.5) | — | — |
+| *context* | | 180 ep; chance 23.6%dir/44.3%either | 52 ep; chance 24.8%dir/47.1%either | 42 ep; chance 25.2%dir/45.4%either | 11 ep; chance 25.7%dir/48.0%either |
+| S0-H1 | keep-watching | ·-0.4pp (16/69) net+194/med+2.8 | ▲+7.0pp (7/22) net+133/med+3.0 | ▲+5.1pp (10/33) net+25/med-0.3 | (°▲+11.8pp (3/8) net+3/med+1.1) |
+| S1-H1 | keep-watching | (°▼-3.6pp (1/5) net+9/med+3.0) | — | (°▲+41.5pp (2/3) net+28/med+10.5) | (°▲+41.0pp (2/3) net+28/med+10.5) |
+| S0-H2 | promote-candidate | ·+1.2pp (86/347) net+781/med+1.5 | ▲+6.4pp (25/80) net+521/med+9.2 | ▲+3.3pp (35/123) net-72/med-1.0 | ▼-2.8pp (8/35) net-4/med-1.0 |
+| S1-H2 | promote-candidate | ·+0.6pp (61/252) net+540/med+0.9 | ▲+5.7pp (18/59) net+559/med+12.0 | ▲+4.2pp (32/109) net-93/med-1.0 | ▼-3.1pp (7/31) net-15/med-1.0 |
+| S0-H3 | keep-watching | — | — | (°▲+3.4pp (2/7) net-26/med-0.5) | (°▲+7.6pp (1/3) net-24/med-5.0) |
+| S0-H4 | keep-watching | (°▼-23.6pp (0/7) net+14/med+0.5) | (°▼-24.8pp (0/1) net+6/med+5.5) | — | — |
 | S0-H5 | keep-watching | — | — | — | — |
-| S0-H6 | keep-watching | ▲+8.1pp (27/59) [cls-chance 37.7% vs uncond 23.6%] net+391/med+5.7 | ▲+20.6pp (18/31) [cls-chance 37.5% vs uncond 24.9%] net+282/med+16.0 | (°▲+11.4pp (8/15) [cls-chance 41.9% vs uncond 25.1%] net+71/med+6.0) | (°▲+11.8pp (5/10) [cls-chance 38.2% vs uncond 25.4%] net+52/med+4.3) |
-| S0-H7 | keep-watching | ▲+8.5pp (36/112) net+7/med+2.8 | ▲+6.8pp (13/41) net-217/med+2.7 | ▲+2.5pp (8/29) net+65/med+2.2 | (°▲+14.6pp (6/15) net+26/med-1.0) |
-| S0-H7 (either-dir) | keep-watching | ▲+10.2pp (61/112) | ▲+6.6pp (22/41) | ·-0.4pp (13/29) | (°▲+19.4pp (10/15)) |
-| S0-H8 | keep-watching | ▲+2.4pp (162/347) | ▲+7.9pp (44/80) | ·+1.5pp (56/120) | (°▼-6.7pp (13/32)) |
-| S0-H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.6pp (5/11) net+108/med+12.5) | (°▼-17.4pp (1/13) net-22/med-3.1) | — |
-| S1-H9 | keep-watching | (°▲+23.8pp (9/19) net+263/med+12.8) | (°▲+25.1pp (4/8) net+148/med+17.8) | (°▼-25.1pp (0/4) net-10/med-2.2) | — |
-| S0-H10 | deprioritize | ▼-4.5pp (56/293) net-240/med-1.4 | ▲+2.4pp (18/66) net-62/med+1.9 | ▼-17.4pp (6/78) net-225/med-3.5 | (°▼-15.4pp (1/10) net+27/med+4.8) |
-| S0-H11 | keep-watching | ▲+2.3pp (82/316) net-647/med-2.4 | ·-1.3pp (35/148) net+250/med-0.6 | ·-1.8pp (14/60) net+210/med+4.5 | (°▼-16.0pp (3/32) net+139/med+4.9) |
+| S0-H6 | keep-watching | ▲+8.1pp (27/59) [cls-chance 37.7% vs uncond 23.6%] net+391/med+5.7 | ▲+20.7pp (18/31) [cls-chance 37.4% vs uncond 24.8%] net+282/med+16.0 | (°▲+11.3pp (8/15) [cls-chance 42.0% vs uncond 25.2%] net+71/med+6.0) | (°▲+11.4pp (5/10) [cls-chance 38.6% vs uncond 25.7%] net+52/med+4.3) |
+| S0-H7 | keep-watching | ▲+7.6pp (35/112) net+7/med+2.8 | ▲+4.5pp (12/41) net-217/med+2.7 | ·-1.9pp (7/30) net+56/med+1.9 | (°▲+5.5pp (5/16) net+17/med-2.5) |
+| S0-H7 (either-dir) | keep-watching | ▲+9.3pp (60/112) | ▲+4.1pp (21/41) | ▼-2.1pp (13/30) | (°▲+14.5pp (10/16)) |
+| S0-H8 | keep-watching | ▲+2.1pp (161/347) | ▲+6.7pp (43/80) | ▲+3.4pp (60/123) | ·+0.6pp (17/35) |
+| S0-H9 | keep-watching | ▲+3.7pp (15/55) net+319/med+3.5 | (°▲+20.7pp (5/11) net+108/med+12.5) | (°▼-17.5pp (1/13) net-22/med-3.1) | — |
+| S1-H9 | keep-watching | (°▲+23.8pp (9/19) net+263/med+12.8) | (°▲+25.2pp (4/8) net+148/med+17.8) | (°▼-25.2pp (0/4) net-10/med-2.2) | — |
+| S0-H10 | deprioritize | ▼-4.5pp (56/293) net-240/med-1.4 | ▲+2.5pp (18/66) net-62/med+1.9 | ▼-17.5pp (6/78) net-225/med-3.5 | (°▼-15.7pp (1/10) net+27/med+4.8) |
+| S0-H11 | keep-watching | ▲+2.3pp (82/316) net-647/med-2.4 | ·-1.2pp (35/148) net+250/med-0.6 | ·-0.6pp (15/61) net+192/med+4.3 | ▼-13.6pp (4/33) net+121/med+4.8 |
 | S0-H12 | keep-watching | — | — | — | — |
-| **union coverage** | | 56.1% (101/180) | 53.8% (28/52) | 85.4% (35/41) | 88.9% (8/9) |
+| S0-H13 | keep-watching | (°▲+26.4pp (1/2) net+28/med+13.8) | (°▲+25.2pp (1/2) net+28/med+13.8) | (°▼-25.2pp (0/1) net-3/med-3.0) | — |
+| **union coverage** | | 56.1% (101/180) | 53.8% (28/52) | 85.7% (36/42) | 90.9% (10/11) |
 
 Not graded:  — see register entries.
 
@@ -231,6 +232,22 @@ Grading: directional. Latest review: keep-watching (recommendation).
 | asia | — | — |
 
 
+### H13
+*After price breaks out of the session value area on declining volume and reclaims it on expanding volume, it continues toward the far side of the value area.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H13** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
 
 ---
 
@@ -246,7 +263,7 @@ Store span (1M, close ts): 2026-07-19 22:42:00+00:00 → 2026-08-19 22:24:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `b70fbdee6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -269,6 +286,7 @@ Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S0-H10 | deprioritize | ▼-4.2pp (29/147) net-391/med+3.2 | ▼-16.1pp (4/39) net-463/med-12.5 | ·+1.5pp (14/59) net+25/med+2.1 | (°▲+6.9pp (3/10) net-36/med-11.8) |
 | S0-H11 | keep-watching | ▼-3.6pp (15/74) net-452/med-6.0 | (°▼-5.0pp (3/14) net-472/med-58.8) | ·+0.1pp (25/112) net-379/med-6.6 | (°▼-6.8pp (8/49) net-182/med-10.1) |
 | S0-H12 | keep-watching | — | — | — | — |
+| S0-H13 | keep-watching | (°▲+59.4pp (5/6) net+397/med+58.7) | (°▲+73.6pp (2/2) net+181/med+90.7) | (°▼-22.2pp (0/1) net-5/med-5.0) | — |
 | **union coverage** | | 43.6% (48/110) | 25.9% (7/27) | 72.7% (24/33) | 87.5% (7/8) |
 
 Not graded:  — see register entries.
@@ -467,6 +485,22 @@ Grading: directional. Latest review: keep-watching (recommendation).
 | asia | — | — |
 
 
+### H13
+*After price breaks out of the session value area on declining volume and reclaims it on expanding volume, it continues toward the far side of the value area.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H13** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
 
 ---
 
@@ -482,7 +516,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-19 22:25:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `b70fbdee6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -505,6 +539,7 @@ Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S0-H10 | deprioritize | ▼-6.0pp (28/175) net+2743/med+15.3 | (°▼-17.6pp (2/15) net-356/med-1.7) | ▼-3.1pp (25/133) net-1407/med-8.1 | (°▲+27.0pp (10/17) net+208/med+2.7) |
 | S0-H11 | keep-watching | ▲+2.3pp (64/263) net+863/med+0.9 | ▼-2.3pp (26/91) net+264/med-3.9 | ·+0.1pp (35/159) net+960/med+2.4 | ▼-8.7pp (6/26) net+117/med-10.2 |
 | S0-H12 | keep-watching | — | — | — | — |
+| S0-H13 | keep-watching | (°▲+78.0pp (1/1) net+93/med+93.0) | (°▲+69.1pp (1/1) net+93/med+93.0) | — | — |
 | **union coverage** | | 40.0% (46/115) | 31.7% (13/41) | 84.4% (27/32) | 90.9% (10/11) |
 
 Not graded:  — see register entries.
@@ -703,6 +738,22 @@ Grading: directional. Latest review: keep-watching (recommendation).
 | asia | — | — |
 
 
+### H13
+*After price breaks out of the session value area on declining volume and reclaims it on expanding volume, it continues toward the far side of the value area.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H13** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
 
 ---
 
@@ -718,7 +769,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-19 22:25:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `b70fbdee6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in signal_scoreboard.json.
 
@@ -741,6 +792,7 @@ Engine `6e7db5af5` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S0-H10 | deprioritize | ·+0.0pp (37/154) net+1774/med+11.0 | ▲+3.6pp (16/40) net+1480/med+27.5 | ▼-7.3pp (20/129) net-237/med-1.0 | (°▼-17.6pp (5/25) net-195/med-18.5) |
 | S0-H11 | keep-watching | ▲+3.4pp (113/413) net+1254/med+3.0 | ·+1.0pp (61/163) net-404/med+5.0 | ▲+3.4pp (61/233) net-738/med-6.0 | (°▼-3.9pp (35/104) net-264/med-5.0) |
 | S0-H12 | keep-watching | — | — | — | — |
+| S0-H13 | keep-watching | (°▼-24.0pp (0/1) net-206/med-206.0) | (°▼-36.4pp (0/1) net-206/med-206.0) | — | — |
 | **union coverage** | | 40.4% (44/109) | 34.3% (12/35) | 90.0% (27/30) | 88.9% (8/9) |
 
 Not graded:  — see register entries.
@@ -928,6 +980,22 @@ Grading: directional. Latest review: keep-watching (recommendation).
 Grading: directional. Latest review: keep-watching (recommendation).
 
 **H12** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H13
+*After price breaks out of the session value area on declining volume and reclaims it on expanding volume, it continues toward the far side of the value area.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**H13** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
 |---|---|---|

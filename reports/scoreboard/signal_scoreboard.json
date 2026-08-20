@@ -3,14 +3,14 @@
   "instruments": {
     "uk100fut": {
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "6e7db5af502bd6df63e28908c1c1ee504682269c",
+      "engine_commit": "b70fbdee6d23a1d9015ad8f37007c76b699957ba",
       "instrument": "uk100fut",
       "pair": "uk100",
       "status": "canonical",
       "volume_type": "real futures volume (step-zero audit)",
       "store_span_1min": [
         "2026-07-12 22:06:00+00:00",
-        "2026-08-20 12:11:00+00:00"
+        "2026-08-20 13:14:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -168,6 +168,53 @@
             "n_fires": 0,
             "note": "no confirmations in window"
           },
+          "S0-H13": {
+            "source": "backtest_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 2,
+              "total_pts_right": 27.5,
+              "total_pts_wrong": 0.0,
+              "net_pts": 27.5,
+              "median_per_fire": 13.75,
+              "horizon_marks_net": {
+                "5": -4.0,
+                "10": 3.0,
+                "20": 8.0,
+                "30": 21.7
+              }
+            },
+            "n_fires": 2,
+            "precision": {
+              "hits": 1,
+              "of": 2,
+              "pct": 50.0
+            },
+            "coverage": {
+              "covered": 1,
+              "of": 180,
+              "pct": 0.6
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": 43.2,
+              "n": 1
+            },
+            "best_call": {
+              "ts": "2026-07-24 09:09:00+00:00",
+              "dir": -1,
+              "episode_start": "2026-07-24 10:08:00+00:00",
+              "pts_remaining_at_fire": 43.2,
+              "episode_total_pts": 42.7,
+              "major": false
+            },
+            "worst_false_alarm": {
+              "ts": "2026-07-24 09:09:00+00:00",
+              "dir": -1,
+              "adverse_pts": 5.8
+            }
+          },
           "S0-H2": {
             "source": "backtest_replay",
             "grading": "directional",
@@ -188,9 +235,9 @@
             },
             "n_fires": 347,
             "precision": {
-              "hits": 87,
+              "hits": 86,
               "of": 347,
-              "pct": 25.1
+              "pct": 24.8
             },
             "coverage": {
               "covered": 38,
@@ -339,9 +386,9 @@
             },
             "n_fires": 112,
             "precision": {
-              "hits": 36,
+              "hits": 35,
               "of": 112,
-              "pct": 32.1
+              "pct": 31.2
             },
             "coverage": {
               "covered": 30,
@@ -374,9 +421,9 @@
             "payoff": null,
             "n_fires": 112,
             "precision": {
-              "hits": 61,
+              "hits": 60,
               "of": 112,
-              "pct": 54.5
+              "pct": 53.6
             },
             "coverage": {
               "covered": 41,
@@ -409,9 +456,9 @@
             "payoff": null,
             "n_fires": 347,
             "precision": {
-              "hits": 162,
+              "hits": 161,
               "of": 347,
-              "pct": 46.7
+              "pct": 46.4
             },
             "coverage": {
               "covered": 58,
@@ -550,9 +597,9 @@
             },
             "n_fires": 252,
             "precision": {
-              "hits": 62,
+              "hits": 61,
               "of": 252,
-              "pct": 24.6
+              "pct": 24.2
             },
             "coverage": {
               "covered": 35,
@@ -647,31 +694,31 @@
             "conditioned_class": null,
             "payoff": {
               "n": 33,
-              "total_pts_right": 89.1,
-              "total_pts_wrong": -62.6,
-              "net_pts": 26.5,
-              "median_per_fire": 0.8,
+              "total_pts_right": 114.8,
+              "total_pts_wrong": -89.8,
+              "net_pts": 25.0,
+              "median_per_fire": -0.3,
               "horizon_marks_net": {
-                "5": 20.4,
-                "10": 21.9,
-                "20": 26.0,
-                "30": 10.0
+                "5": 19.4,
+                "10": 29.2,
+                "20": 33.0,
+                "30": 10.2
               }
             },
             "n_fires": 33,
             "precision": {
-              "hits": 9,
+              "hits": 10,
               "of": 33,
-              "pct": 27.3
+              "pct": 30.3
             },
             "coverage": {
-              "covered": 8,
-              "of": 41,
-              "pct": 19.5
+              "covered": 9,
+              "of": 42,
+              "pct": 21.4
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 8.7,
-              "n": 8
+              "median_pts_remaining_at_fire": 8.8,
+              "n": 9
             },
             "best_call": {
               "ts": "2026-08-17 10:30:00+00:00",
@@ -682,9 +729,9 @@
               "major": true
             },
             "worst_false_alarm": {
-              "ts": "2026-08-18 12:05:00+00:00",
+              "ts": "2026-08-20 12:08:00+00:00",
               "dir": -1,
-              "adverse_pts": 20.7
+              "adverse_pts": 27.5
             }
           },
           "S0-H10": {
@@ -713,8 +760,8 @@
             },
             "coverage": {
               "covered": 7,
-              "of": 41,
-              "pct": 17.1
+              "of": 42,
+              "pct": 16.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.2,
@@ -740,28 +787,28 @@
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": {
-              "n": 60,
-              "total_pts_right": 356.2,
-              "total_pts_wrong": -145.7,
-              "net_pts": 210.5,
-              "median_per_fire": 4.5,
+              "n": 61,
+              "total_pts_right": 351.7,
+              "total_pts_wrong": -159.7,
+              "net_pts": 192.0,
+              "median_per_fire": 4.3,
               "horizon_marks_net": {
-                "5": 75.8,
-                "10": 35.6,
-                "20": 78.4,
-                "30": 103.2
+                "5": 84.1,
+                "10": 44.4,
+                "20": 113.5,
+                "30": 125.7
               }
             },
-            "n_fires": 60,
+            "n_fires": 61,
             "precision": {
-              "hits": 14,
-              "of": 60,
-              "pct": 23.3
+              "hits": 15,
+              "of": 61,
+              "pct": 24.6
             },
             "coverage": {
               "covered": 6,
-              "of": 41,
-              "pct": 14.6
+              "of": 42,
+              "pct": 14.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 11.1,
@@ -770,9 +817,9 @@
             "best_call": {
               "ts": "2026-08-17 13:04:00+00:00",
               "dir": -1,
-              "episode_start": "2026-08-17 14:00:00+00:00",
+              "episode_start": "2026-08-17 13:59:00+00:00",
               "pts_remaining_at_fire": 22.8,
-              "episode_total_pts": 32.8,
+              "episode_total_pts": 32.3,
               "major": false
             },
             "worst_false_alarm": {
@@ -786,38 +833,78 @@
             "n_fires": 0,
             "note": "no confirmations in window"
           },
+          "S0-H13": {
+            "source": "forward_feed_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 1,
+              "total_pts_right": 0.0,
+              "total_pts_wrong": -3.0,
+              "net_pts": -3.0,
+              "median_per_fire": -3.0,
+              "horizon_marks_net": {
+                "5": 2.7,
+                "10": 8.0,
+                "20": 1.7,
+                "30": 2.0
+              }
+            },
+            "n_fires": 1,
+            "precision": {
+              "hits": 0,
+              "of": 1,
+              "pct": 0.0
+            },
+            "coverage": {
+              "covered": 0,
+              "of": 42,
+              "pct": 0.0
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": null,
+              "n": 0
+            },
+            "best_call": null,
+            "worst_false_alarm": {
+              "ts": "2026-08-19 15:37:00+00:00",
+              "dir": 1,
+              "adverse_pts": 3.0
+            }
+          },
           "S0-H2": {
             "source": "forward_feed_replay",
             "grading": "directional",
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": {
-              "n": 120,
-              "total_pts_right": 394.7,
-              "total_pts_wrong": -477.4,
-              "net_pts": -82.7,
+              "n": 123,
+              "total_pts_right": 418.8,
+              "total_pts_wrong": -490.3,
+              "net_pts": -71.5,
               "median_per_fire": -1.0,
               "horizon_marks_net": {
-                "5": -51.8,
-                "10": -54.0,
-                "20": -9.2,
-                "30": -21.1
+                "5": -32.0,
+                "10": -55.4,
+                "20": -22.3,
+                "30": -61.0
               }
             },
-            "n_fires": 120,
+            "n_fires": 123,
             "precision": {
-              "hits": 34,
-              "of": 120,
-              "pct": 28.3
+              "hits": 35,
+              "of": 123,
+              "pct": 28.5
             },
             "coverage": {
-              "covered": 13,
-              "of": 41,
-              "pct": 31.7
+              "covered": 15,
+              "of": 42,
+              "pct": 35.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 12.8,
-              "n": 13
+              "n": 15
             },
             "best_call": {
               "ts": "2026-08-17 10:33:00+00:00",
@@ -830,7 +917,7 @@
             "worst_false_alarm": {
               "ts": "2026-08-20 11:41:00+00:00",
               "dir": 1,
-              "adverse_pts": 38.2
+              "adverse_pts": 39.0
             }
           },
           "S0-H3": {
@@ -841,8 +928,8 @@
             "payoff": {
               "n": 7,
               "total_pts_right": 13.3,
-              "total_pts_wrong": -42.4,
-              "net_pts": -29.1,
+              "total_pts_wrong": -39.4,
+              "net_pts": -26.1,
               "median_per_fire": -0.5,
               "horizon_marks_net": {
                 "5": 4.5,
@@ -858,13 +945,13 @@
               "pct": 28.6
             },
             "coverage": {
-              "covered": 1,
-              "of": 41,
-              "pct": 2.4
+              "covered": 2,
+              "of": 42,
+              "pct": 4.8
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 13.0,
-              "n": 1
+              "median_pts_remaining_at_fire": 4.8,
+              "n": 2
             },
             "best_call": {
               "ts": "2026-08-18 18:23:00+00:00",
@@ -893,7 +980,7 @@
           "S0-H6": {
             "source": "forward_feed_replay",
             "grading": "directional",
-            "conditioned_chance_pct": 41.9,
+            "conditioned_chance_pct": 42.0,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "payoff": {
               "n": 15,
@@ -916,8 +1003,8 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 41,
-              "pct": 4.9
+              "of": 42,
+              "pct": 4.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": -2.3,
@@ -943,40 +1030,40 @@
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": {
-              "n": 29,
-              "total_pts_right": 171.0,
-              "total_pts_wrong": -105.9,
-              "net_pts": 65.1,
-              "median_per_fire": 2.2,
+              "n": 30,
+              "total_pts_right": 169.0,
+              "total_pts_wrong": -112.9,
+              "net_pts": 56.1,
+              "median_per_fire": 1.95,
               "horizon_marks_net": {
-                "5": 21.1,
-                "10": 53.5,
-                "20": 53.1,
-                "30": 27.8
+                "5": 12.8,
+                "10": 44.7,
+                "20": 34.8,
+                "30": 20.8
               }
             },
-            "n_fires": 29,
+            "n_fires": 30,
             "precision": {
-              "hits": 8,
-              "of": 29,
-              "pct": 27.6
+              "hits": 7,
+              "of": 30,
+              "pct": 23.3
             },
             "coverage": {
-              "covered": 3,
-              "of": 41,
-              "pct": 7.3
+              "covered": 2,
+              "of": 42,
+              "pct": 4.8
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 7.5,
-              "n": 3
+              "median_pts_remaining_at_fire": 4.8,
+              "n": 2
             },
             "best_call": {
-              "ts": "2026-08-18 13:32:00+00:00",
+              "ts": "2026-08-18 19:09:00+00:00",
               "dir": -1,
-              "episode_start": "2026-08-18 13:33:00+00:00",
-              "pts_remaining_at_fire": 53.8,
-              "episode_total_pts": 59.0,
-              "major": true
+              "episode_start": "2026-08-18 19:17:00+00:00",
+              "pts_remaining_at_fire": 7.5,
+              "episode_total_pts": 10.0,
+              "major": false
             },
             "worst_false_alarm": {
               "ts": "2026-08-17 11:49:00+00:00",
@@ -990,20 +1077,20 @@
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": null,
-            "n_fires": 29,
+            "n_fires": 30,
             "precision": {
               "hits": 13,
-              "of": 29,
-              "pct": 44.8
+              "of": 30,
+              "pct": 43.3
             },
             "coverage": {
-              "covered": 8,
-              "of": 41,
-              "pct": 19.5
+              "covered": 9,
+              "of": 42,
+              "pct": 21.4
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 7.9,
-              "n": 8
+              "median_pts_remaining_at_fire": 7.5,
+              "n": 9
             },
             "best_call": {
               "ts": "2026-08-19 10:10:00+00:00",
@@ -1025,20 +1112,20 @@
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": null,
-            "n_fires": 120,
+            "n_fires": 123,
             "precision": {
-              "hits": 56,
-              "of": 120,
-              "pct": 46.7
+              "hits": 60,
+              "of": 123,
+              "pct": 48.8
             },
             "coverage": {
-              "covered": 21,
-              "of": 41,
-              "pct": 51.2
+              "covered": 23,
+              "of": 42,
+              "pct": 54.8
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.9,
-              "n": 21
+              "n": 23
             },
             "best_call": {
               "ts": "2026-08-18 10:57:00+00:00",
@@ -1080,8 +1167,8 @@
             },
             "coverage": {
               "covered": 4,
-              "of": 41,
-              "pct": 9.8
+              "of": 42,
+              "pct": 9.5
             },
             "earliness": {
               "median_pts_remaining_at_fire": 7.8,
@@ -1108,26 +1195,26 @@
             "conditioned_class": null,
             "payoff": {
               "n": 3,
-              "total_pts_right": 14.0,
+              "total_pts_right": 41.7,
               "total_pts_wrong": -13.8,
-              "net_pts": 0.2,
-              "median_per_fire": 3.5,
+              "net_pts": 27.9,
+              "median_per_fire": 10.5,
               "horizon_marks_net": {
                 "5": 5.0,
-                "10": 9.0,
-                "20": 10.5,
-                "30": 15.2
+                "10": 14.5,
+                "20": 19.0,
+                "30": 17.9
               }
             },
             "n_fires": 3,
             "precision": {
-              "hits": 1,
+              "hits": 2,
               "of": 3,
-              "pct": 33.3
+              "pct": 66.7
             },
             "coverage": {
               "covered": 1,
-              "of": 41,
+              "of": 42,
               "pct": 2.4
             },
             "earliness": {
@@ -1154,32 +1241,32 @@
             "conditioned_chance_pct": null,
             "conditioned_class": null,
             "payoff": {
-              "n": 106,
-              "total_pts_right": 338.3,
-              "total_pts_wrong": -443.9,
-              "net_pts": -105.6,
-              "median_per_fire": -1.1,
+              "n": 109,
+              "total_pts_right": 363.4,
+              "total_pts_wrong": -456.8,
+              "net_pts": -93.4,
+              "median_per_fire": -1.0,
               "horizon_marks_net": {
-                "5": -35.3,
-                "10": -47.3,
-                "20": 21.8,
-                "30": -1.8
+                "5": -15.5,
+                "10": -48.7,
+                "20": 8.7,
+                "30": -41.7
               }
             },
-            "n_fires": 106,
+            "n_fires": 109,
             "precision": {
-              "hits": 31,
-              "of": 106,
-              "pct": 29.2
+              "hits": 32,
+              "of": 109,
+              "pct": 29.4
             },
             "coverage": {
-              "covered": 12,
-              "of": 41,
-              "pct": 29.3
+              "covered": 14,
+              "of": 42,
+              "pct": 33.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.2,
-              "n": 12
+              "n": 14
             },
             "best_call": {
               "ts": "2026-08-17 10:33:00+00:00",
@@ -1192,7 +1279,7 @@
             "worst_false_alarm": {
               "ts": "2026-08-20 11:41:00+00:00",
               "dir": 1,
-              "adverse_pts": 38.2
+              "adverse_pts": 39.0
             }
           },
           "S1-H9": {
@@ -1221,7 +1308,7 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 41,
+              "of": 42,
               "pct": 2.4
             },
             "earliness": {
@@ -1244,16 +1331,16 @@
           },
           "_union": {
             "source": "forward_feed_replay",
-            "episodes_covered_by_any_row": 35,
-            "of": 41,
-            "pct": 85.4
+            "episodes_covered_by_any_row": 36,
+            "of": 42,
+            "pct": 85.7
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 41,
+            "n_qualifying_episodes": 42,
             "n_major": 16,
-            "bar_qualify_base_rate_pct": 45.2,
-            "per_direction_base_rate_pct": 25.1,
+            "bar_qualify_base_rate_pct": 45.4,
+            "per_direction_base_rate_pct": 25.2,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -1407,6 +1494,53 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/london",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 2,
+                "total_pts_right": 27.5,
+                "total_pts_wrong": 0.0,
+                "net_pts": 27.5,
+                "median_per_fire": 13.75,
+                "horizon_marks_net": {
+                  "5": -4.0,
+                  "10": 3.0,
+                  "20": 8.0,
+                  "30": 21.7
+                }
+              },
+              "n_fires": 2,
+              "precision": {
+                "hits": 1,
+                "of": 2,
+                "pct": 50.0
+              },
+              "coverage": {
+                "covered": 1,
+                "of": 52,
+                "pct": 1.9
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": 43.2,
+                "n": 1
+              },
+              "best_call": {
+                "ts": "2026-07-24 09:09:00+00:00",
+                "dir": -1,
+                "episode_start": "2026-07-24 10:08:00+00:00",
+                "pts_remaining_at_fire": 43.2,
+                "episode_total_pts": 42.7,
+                "major": false
+              },
+              "worst_false_alarm": {
+                "ts": "2026-07-24 09:09:00+00:00",
+                "dir": -1,
+                "adverse_pts": 5.8
+              }
+            },
             "S0-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
@@ -1427,9 +1561,9 @@
               },
               "n_fires": 80,
               "precision": {
-                "hits": 26,
+                "hits": 25,
                 "of": 80,
-                "pct": 32.5
+                "pct": 31.2
               },
               "coverage": {
                 "covered": 10,
@@ -1507,7 +1641,7 @@
             "S0-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 37.5,
+              "conditioned_chance_pct": 37.4,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 31,
@@ -1571,9 +1705,9 @@
               },
               "n_fires": 41,
               "precision": {
-                "hits": 13,
+                "hits": 12,
                 "of": 41,
-                "pct": 31.7
+                "pct": 29.3
               },
               "coverage": {
                 "covered": 12,
@@ -1606,9 +1740,9 @@
               "payoff": null,
               "n_fires": 41,
               "precision": {
-                "hits": 22,
+                "hits": 21,
                 "of": 41,
-                "pct": 53.7
+                "pct": 51.2
               },
               "coverage": {
                 "covered": 16,
@@ -1641,9 +1775,9 @@
               "payoff": null,
               "n_fires": 80,
               "precision": {
-                "hits": 44,
+                "hits": 43,
                 "of": 80,
-                "pct": 55.0
+                "pct": 53.8
               },
               "coverage": {
                 "covered": 15,
@@ -1740,9 +1874,9 @@
               },
               "n_fires": 59,
               "precision": {
-                "hits": 19,
+                "hits": 18,
                 "of": 59,
-                "pct": 32.2
+                "pct": 30.5
               },
               "coverage": {
                 "covered": 10,
@@ -1818,7 +1952,7 @@
               "n_qualifying_episodes": 52,
               "n_major": 16,
               "bar_qualify_base_rate_pct": 47.1,
-              "per_direction_base_rate_pct": 24.9,
+              "per_direction_base_rate_pct": 24.8,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -1955,6 +2089,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
@@ -2020,7 +2159,7 @@
             "S0-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
-              "conditioned_chance_pct": 30.7,
+              "conditioned_chance_pct": 30.8,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 6,
@@ -2253,8 +2392,8 @@
               "source": "backtest_replay/overlap",
               "n_qualifying_episodes": 12,
               "n_major": 1,
-              "bar_qualify_base_rate_pct": 51.0,
-              "per_direction_base_rate_pct": 26.0,
+              "bar_qualify_base_rate_pct": 51.2,
+              "per_direction_base_rate_pct": 26.1,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -2401,6 +2540,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -3009,6 +3153,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
@@ -3564,6 +3713,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
@@ -3996,31 +4150,31 @@
               "conditioned_class": null,
               "payoff": {
                 "n": 8,
-                "total_pts_right": 32.3,
-                "total_pts_wrong": -27.8,
-                "net_pts": 4.5,
-                "median_per_fire": 2.65,
+                "total_pts_right": 58.0,
+                "total_pts_wrong": -55.0,
+                "net_pts": 3.0,
+                "median_per_fire": 1.15,
                 "horizon_marks_net": {
-                  "5": 4.8,
-                  "10": 5.8,
-                  "20": 2.1,
-                  "30": 16.2
+                  "5": 3.8,
+                  "10": 13.1,
+                  "20": 9.1,
+                  "30": 16.4
                 }
               },
               "n_fires": 8,
               "precision": {
-                "hits": 2,
+                "hits": 3,
                 "of": 8,
-                "pct": 25.0
+                "pct": 37.5
               },
               "coverage": {
-                "covered": 2,
-                "of": 9,
-                "pct": 22.2
+                "covered": 3,
+                "of": 11,
+                "pct": 27.3
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 26.1,
-                "n": 2
+                "median_pts_remaining_at_fire": 22.8,
+                "n": 3
               },
               "best_call": {
                 "ts": "2026-08-17 10:30:00+00:00",
@@ -4031,9 +4185,9 @@
                 "major": true
               },
               "worst_false_alarm": {
-                "ts": "2026-08-18 12:05:00+00:00",
+                "ts": "2026-08-20 12:08:00+00:00",
                 "dir": -1,
-                "adverse_pts": 20.7
+                "adverse_pts": 27.5
               }
             },
             "S0-H10": {
@@ -4062,8 +4216,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 11,
+                "pct": 9.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 14.2,
@@ -4089,27 +4243,27 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": {
-                "n": 32,
-                "total_pts_right": 198.1,
-                "total_pts_wrong": -59.0,
-                "net_pts": 139.1,
-                "median_per_fire": 4.9,
+                "n": 33,
+                "total_pts_right": 193.6,
+                "total_pts_wrong": -73.0,
+                "net_pts": 120.6,
+                "median_per_fire": 4.8,
                 "horizon_marks_net": {
-                  "5": 74.0,
-                  "10": 42.6,
-                  "20": 118.2,
-                  "30": 126.6
+                  "5": 82.3,
+                  "10": 51.4,
+                  "20": 153.3,
+                  "30": 149.1
                 }
               },
-              "n_fires": 32,
+              "n_fires": 33,
               "precision": {
-                "hits": 3,
-                "of": 32,
-                "pct": 9.4
+                "hits": 4,
+                "of": 33,
+                "pct": 12.1
               },
               "coverage": {
                 "covered": 0,
-                "of": 9,
+                "of": 11,
                 "pct": 0.0
               },
               "earliness": {
@@ -4118,12 +4272,17 @@
               },
               "best_call": null,
               "worst_false_alarm": {
-                "ts": "2026-08-19 10:16:00+00:00",
+                "ts": "2026-08-20 12:01:00+00:00",
                 "dir": -1,
-                "adverse_pts": 13.0
+                "adverse_pts": 14.5
               }
             },
             "S0-H12": {
+              "source": "forward_feed_replay/london",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "forward_feed_replay/london",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -4134,32 +4293,32 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": {
-                "n": 32,
-                "total_pts_right": 188.1,
-                "total_pts_wrong": -203.7,
-                "net_pts": -15.6,
-                "median_per_fire": -1.75,
+                "n": 35,
+                "total_pts_right": 212.2,
+                "total_pts_wrong": -216.6,
+                "net_pts": -4.4,
+                "median_per_fire": -1.0,
                 "horizon_marks_net": {
-                  "5": 2.7,
-                  "10": -31.3,
-                  "20": -25.9,
-                  "30": 25.4
+                  "5": 22.5,
+                  "10": -32.7,
+                  "20": -39.0,
+                  "30": -14.5
                 }
               },
-              "n_fires": 32,
+              "n_fires": 35,
               "precision": {
-                "hits": 7,
-                "of": 32,
-                "pct": 21.9
+                "hits": 8,
+                "of": 35,
+                "pct": 22.9
               },
               "coverage": {
-                "covered": 3,
-                "of": 9,
-                "pct": 33.3
+                "covered": 5,
+                "of": 11,
+                "pct": 45.5
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 28.0,
-                "n": 3
+                "median_pts_remaining_at_fire": 18.0,
+                "n": 5
               },
               "best_call": {
                 "ts": "2026-08-17 10:33:00+00:00",
@@ -4172,7 +4331,7 @@
               "worst_false_alarm": {
                 "ts": "2026-08-20 11:41:00+00:00",
                 "dir": 1,
-                "adverse_pts": 38.2
+                "adverse_pts": 39.0
               }
             },
             "S0-H3": {
@@ -4183,8 +4342,8 @@
               "payoff": {
                 "n": 3,
                 "total_pts_right": 12.5,
-                "total_pts_wrong": -39.5,
-                "net_pts": -27.0,
+                "total_pts_wrong": -36.5,
+                "net_pts": -24.0,
                 "median_per_fire": -5.0,
                 "horizon_marks_net": {
                   "5": 3.4,
@@ -4200,15 +4359,22 @@
                 "pct": 33.3
               },
               "coverage": {
-                "covered": 0,
-                "of": 9,
-                "pct": 0.0
+                "covered": 1,
+                "of": 11,
+                "pct": 9.1
               },
               "earliness": {
-                "median_pts_remaining_at_fire": null,
-                "n": 0
+                "median_pts_remaining_at_fire": -3.3,
+                "n": 1
               },
-              "best_call": null,
+              "best_call": {
+                "ts": "2026-08-20 11:13:00+00:00",
+                "dir": 1,
+                "episode_start": "2026-08-20 12:02:00+00:00",
+                "pts_remaining_at_fire": -3.3,
+                "episode_total_pts": 21.7,
+                "major": false
+              },
               "worst_false_alarm": {
                 "ts": "2026-08-20 11:13:00+00:00",
                 "dir": 1,
@@ -4228,7 +4394,7 @@
             "S0-H6": {
               "source": "forward_feed_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 38.2,
+              "conditioned_chance_pct": 38.6,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "payoff": {
                 "n": 10,
@@ -4251,8 +4417,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 9,
-                "pct": 22.2
+                "of": 11,
+                "pct": 18.2
               },
               "earliness": {
                 "median_pts_remaining_at_fire": -2.3,
@@ -4278,27 +4444,27 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": {
-                "n": 15,
-                "total_pts_right": 123.5,
-                "total_pts_wrong": -97.2,
-                "net_pts": 26.3,
-                "median_per_fire": -1.0,
+                "n": 16,
+                "total_pts_right": 121.5,
+                "total_pts_wrong": -104.2,
+                "net_pts": 17.3,
+                "median_per_fire": -2.5,
                 "horizon_marks_net": {
-                  "5": 20.4,
-                  "10": 48.0,
-                  "20": 33.3,
-                  "30": -12.8
+                  "5": 12.1,
+                  "10": 39.2,
+                  "20": 15.0,
+                  "30": -19.8
                 }
               },
-              "n_fires": 15,
+              "n_fires": 16,
               "precision": {
-                "hits": 6,
-                "of": 15,
-                "pct": 40.0
+                "hits": 5,
+                "of": 16,
+                "pct": 31.2
               },
               "coverage": {
                 "covered": 0,
-                "of": 9,
+                "of": 11,
                 "pct": 0.0
               },
               "earliness": {
@@ -4318,20 +4484,20 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": null,
-              "n_fires": 15,
+              "n_fires": 16,
               "precision": {
                 "hits": 10,
-                "of": 15,
-                "pct": 66.7
+                "of": 16,
+                "pct": 62.5
               },
               "coverage": {
-                "covered": 2,
-                "of": 9,
-                "pct": 22.2
+                "covered": 4,
+                "of": 11,
+                "pct": 36.4
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 31.0,
-                "n": 2
+                "median_pts_remaining_at_fire": 18.5,
+                "n": 4
               },
               "best_call": {
                 "ts": "2026-08-19 10:10:00+00:00",
@@ -4353,20 +4519,20 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": null,
-              "n_fires": 32,
+              "n_fires": 35,
               "precision": {
-                "hits": 13,
-                "of": 32,
-                "pct": 40.6
+                "hits": 17,
+                "of": 35,
+                "pct": 48.6
               },
               "coverage": {
-                "covered": 5,
-                "of": 9,
-                "pct": 55.6
+                "covered": 7,
+                "of": 11,
+                "pct": 63.6
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 28.0,
-                "n": 5
+                "median_pts_remaining_at_fire": 18.0,
+                "n": 7
               },
               "best_call": {
                 "ts": "2026-08-18 10:57:00+00:00",
@@ -4394,27 +4560,27 @@
               "conditioned_class": null,
               "payoff": {
                 "n": 3,
-                "total_pts_right": 14.0,
+                "total_pts_right": 41.7,
                 "total_pts_wrong": -13.8,
-                "net_pts": 0.2,
-                "median_per_fire": 3.5,
+                "net_pts": 27.9,
+                "median_per_fire": 10.5,
                 "horizon_marks_net": {
                   "5": 5.0,
-                  "10": 9.0,
-                  "20": 10.5,
-                  "30": 15.2
+                  "10": 14.5,
+                  "20": 19.0,
+                  "30": 17.9
                 }
               },
               "n_fires": 3,
               "precision": {
-                "hits": 1,
+                "hits": 2,
                 "of": 3,
-                "pct": 33.3
+                "pct": 66.7
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 11,
+                "pct": 9.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 5.7,
@@ -4440,32 +4606,32 @@
               "conditioned_chance_pct": null,
               "conditioned_class": null,
               "payoff": {
-                "n": 28,
-                "total_pts_right": 151.7,
-                "total_pts_wrong": -179.2,
-                "net_pts": -27.5,
-                "median_per_fire": -1.75,
+                "n": 31,
+                "total_pts_right": 176.8,
+                "total_pts_wrong": -192.1,
+                "net_pts": -15.3,
+                "median_per_fire": -1.0,
                 "horizon_marks_net": {
-                  "5": 11.8,
-                  "10": -20.6,
-                  "20": 5.2,
-                  "30": 39.0
+                  "5": 31.6,
+                  "10": -22.0,
+                  "20": -7.9,
+                  "30": -0.9
                 }
               },
-              "n_fires": 28,
+              "n_fires": 31,
               "precision": {
-                "hits": 6,
-                "of": 28,
-                "pct": 21.4
+                "hits": 7,
+                "of": 31,
+                "pct": 22.6
               },
               "coverage": {
-                "covered": 3,
-                "of": 9,
-                "pct": 33.3
+                "covered": 5,
+                "of": 11,
+                "pct": 45.5
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 28.0,
-                "n": 3
+                "median_pts_remaining_at_fire": 18.0,
+                "n": 5
               },
               "best_call": {
                 "ts": "2026-08-17 10:33:00+00:00",
@@ -4478,7 +4644,7 @@
               "worst_false_alarm": {
                 "ts": "2026-08-20 11:41:00+00:00",
                 "dir": 1,
-                "adverse_pts": 38.2
+                "adverse_pts": 39.0
               }
             },
             "S1-H9": {
@@ -4488,16 +4654,16 @@
             },
             "_union": {
               "source": "forward_feed_replay/london",
-              "episodes_covered_by_any_row": 8,
-              "of": 9,
-              "pct": 88.9
+              "episodes_covered_by_any_row": 10,
+              "of": 11,
+              "pct": 90.9
             },
             "_moves": {
               "source": "forward_feed_replay/london",
-              "n_qualifying_episodes": 9,
-              "n_major": 3,
-              "bar_qualify_base_rate_pct": 47.3,
-              "per_direction_base_rate_pct": 25.4,
+              "n_qualifying_episodes": 11,
+              "n_major": 4,
+              "bar_qualify_base_rate_pct": 48.0,
+              "per_direction_base_rate_pct": 25.7,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -4528,7 +4694,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 3,
+                "of": 2,
                 "pct": 0.0
               },
               "earliness": {
@@ -4568,7 +4734,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 3,
+                "of": 2,
                 "pct": 0.0
               },
               "earliness": {
@@ -4608,8 +4774,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "of": 2,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 22.8,
@@ -4618,9 +4784,9 @@
               "best_call": {
                 "ts": "2026-08-17 13:37:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-08-17 14:00:00+00:00",
+                "episode_start": "2026-08-17 13:59:00+00:00",
                 "pts_remaining_at_fire": 22.8,
-                "episode_total_pts": 32.8,
+                "episode_total_pts": 32.3,
                 "major": false
               },
               "worst_false_alarm": {
@@ -4630,6 +4796,11 @@
               }
             },
             "S0-H12": {
+              "source": "forward_feed_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "forward_feed_replay/overlap",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -4660,8 +4831,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "of": 2,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 12.8,
@@ -4726,22 +4897,15 @@
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "covered": 0,
+                "of": 2,
+                "pct": 0.0
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 53.8,
-                "n": 1
+                "median_pts_remaining_at_fire": null,
+                "n": 0
               },
-              "best_call": {
-                "ts": "2026-08-18 13:32:00+00:00",
-                "dir": -1,
-                "episode_start": "2026-08-18 13:33:00+00:00",
-                "pts_remaining_at_fire": 53.8,
-                "episode_total_pts": 59.0,
-                "major": true
-              },
+              "best_call": null,
               "worst_false_alarm": {
                 "ts": "2026-08-18 13:32:00+00:00",
                 "dir": -1,
@@ -4761,22 +4925,15 @@
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "covered": 0,
+                "of": 2,
+                "pct": 0.0
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 53.8,
-                "n": 1
+                "median_pts_remaining_at_fire": null,
+                "n": 0
               },
-              "best_call": {
-                "ts": "2026-08-18 13:32:00+00:00",
-                "dir": -1,
-                "episode_start": "2026-08-18 13:33:00+00:00",
-                "pts_remaining_at_fire": 53.8,
-                "episode_total_pts": 59.0,
-                "major": true
-              },
+              "best_call": null,
               "worst_false_alarm": {
                 "ts": "2026-08-18 13:32:00+00:00",
                 "dir": -1,
@@ -4797,8 +4954,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "of": 2,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 12.8,
@@ -4844,7 +5001,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 3,
+                "of": 2,
                 "pct": 0.0
               },
               "earliness": {
@@ -4889,8 +5046,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 3,
-                "pct": 33.3
+                "of": 2,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 12.8,
@@ -4936,7 +5093,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 3,
+                "of": 2,
                 "pct": 0.0
               },
               "earliness": {
@@ -4952,16 +5109,16 @@
             },
             "_union": {
               "source": "forward_feed_replay/overlap",
-              "episodes_covered_by_any_row": 3,
-              "of": 3,
+              "episodes_covered_by_any_row": 2,
+              "of": 2,
               "pct": 100.0
             },
             "_moves": {
               "source": "forward_feed_replay/overlap",
-              "n_qualifying_episodes": 3,
-              "n_major": 1,
-              "bar_qualify_base_rate_pct": 52.7,
-              "per_direction_base_rate_pct": 26.4,
+              "n_qualifying_episodes": 2,
+              "n_major": 0,
+              "bar_qualify_base_rate_pct": 53.0,
+              "per_direction_base_rate_pct": 26.5,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -5104,6 +5261,46 @@
               "source": "forward_feed_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
+            },
+            "S0-H13": {
+              "source": "forward_feed_replay/ny_only",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 1,
+                "total_pts_right": 0.0,
+                "total_pts_wrong": -3.0,
+                "net_pts": -3.0,
+                "median_per_fire": -3.0,
+                "horizon_marks_net": {
+                  "5": 2.7,
+                  "10": 8.0,
+                  "20": 1.7,
+                  "30": 2.0
+                }
+              },
+              "n_fires": 1,
+              "precision": {
+                "hits": 0,
+                "of": 1,
+                "pct": 0.0
+              },
+              "coverage": {
+                "covered": 0,
+                "of": 8,
+                "pct": 0.0
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": null,
+                "n": 0
+              },
+              "best_call": null,
+              "worst_false_alarm": {
+                "ts": "2026-08-19 15:37:00+00:00",
+                "dir": 1,
+                "adverse_pts": 3.0
+              }
             },
             "S0-H2": {
               "source": "forward_feed_replay/ny_only",
@@ -5583,6 +5780,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "forward_feed_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "forward_feed_replay/dead",
               "grading": "directional",
@@ -6000,6 +6202,11 @@
               "worst_false_alarm": null
             },
             "S0-H12": {
+              "source": "forward_feed_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "forward_feed_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -6552,7 +6759,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 41,
+              "of": 42,
               "pct": 0.0
             },
             "earliness": {
@@ -6584,15 +6791,15 @@
           "_union": {
             "source": "forward_feed_replay",
             "episodes_covered_by_any_row": 0,
-            "of": 41,
+            "of": 42,
             "pct": 0.0
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 41,
+            "n_qualifying_episodes": 42,
             "n_major": 16,
-            "bar_qualify_base_rate_pct": 45.2,
-            "per_direction_base_rate_pct": 25.1,
+            "bar_qualify_base_rate_pct": 45.4,
+            "per_direction_base_rate_pct": 25.2,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -6606,7 +6813,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "6e7db5af502bd6df63e28908c1c1ee504682269c",
+      "engine_commit": "b70fbdee6d23a1d9015ad8f37007c76b699957ba",
       "instrument": "ger40fut",
       "pair": "ger40",
       "status": "provisional",
@@ -6770,6 +6977,53 @@
             "source": "backtest_replay",
             "n_fires": 0,
             "note": "no confirmations in window"
+          },
+          "S0-H13": {
+            "source": "backtest_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 6,
+              "total_pts_right": 396.7,
+              "total_pts_wrong": 0.0,
+              "net_pts": 396.7,
+              "median_per_fire": 58.7,
+              "horizon_marks_net": {
+                "5": 30.8,
+                "10": 102.4,
+                "20": 171.9,
+                "30": 238.3
+              }
+            },
+            "n_fires": 6,
+            "precision": {
+              "hits": 5,
+              "of": 6,
+              "pct": 83.3
+            },
+            "coverage": {
+              "covered": 1,
+              "of": 110,
+              "pct": 0.9
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": 115.9,
+              "n": 1
+            },
+            "best_call": {
+              "ts": "2026-07-28 02:15:00+00:00",
+              "dir": 1,
+              "episode_start": "2026-07-28 02:28:00+00:00",
+              "pts_remaining_at_fire": 115.9,
+              "episode_total_pts": 109.7,
+              "major": true
+            },
+            "worst_false_alarm": {
+              "ts": "2026-07-28 02:15:00+00:00",
+              "dir": 1,
+              "adverse_pts": 2.8
+            }
           },
           "S0-H2": {
             "source": "backtest_replay",
@@ -7417,6 +7671,46 @@
             "n_fires": 0,
             "note": "no confirmations in window"
           },
+          "S0-H13": {
+            "source": "post_go_live_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 1,
+              "total_pts_right": 0.0,
+              "total_pts_wrong": -5.0,
+              "net_pts": -5.0,
+              "median_per_fire": -5.0,
+              "horizon_marks_net": {
+                "5": 3.3,
+                "10": 0.5,
+                "20": -4.8,
+                "30": -6.5
+              }
+            },
+            "n_fires": 1,
+            "precision": {
+              "hits": 0,
+              "of": 1,
+              "pct": 0.0
+            },
+            "coverage": {
+              "covered": 0,
+              "of": 33,
+              "pct": 0.0
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": null,
+              "n": 0
+            },
+            "best_call": null,
+            "worst_false_alarm": {
+              "ts": "2026-08-14 16:56:00+00:00",
+              "dir": -1,
+              "adverse_pts": 12.9
+            }
+          },
           "S0-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
@@ -8010,6 +8304,42 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/london",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 2,
+                "total_pts_right": 181.3,
+                "total_pts_wrong": 0.0,
+                "net_pts": 181.3,
+                "median_per_fire": 90.65,
+                "horizon_marks_net": {
+                  "5": -13.8,
+                  "10": 28.1,
+                  "20": 88.5,
+                  "30": 123.2
+                }
+              },
+              "n_fires": 2,
+              "precision": {
+                "hits": 2,
+                "of": 2,
+                "pct": 100.0
+              },
+              "coverage": {
+                "covered": 0,
+                "of": 27,
+                "pct": 0.0
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": null,
+                "n": 0
+              },
+              "best_call": null,
+              "worst_false_alarm": null
+            },
             "S0-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
@@ -8498,6 +8828,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/overlap",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -9021,6 +9356,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -9594,6 +9934,42 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/dead",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 1,
+                "total_pts_right": 51.0,
+                "total_pts_wrong": 0.0,
+                "net_pts": 51.0,
+                "median_per_fire": 51.0,
+                "horizon_marks_net": {
+                  "5": 12.3,
+                  "10": 31.8,
+                  "20": 43.2,
+                  "30": 66.2
+                }
+              },
+              "n_fires": 1,
+              "precision": {
+                "hits": 1,
+                "of": 1,
+                "pct": 100.0
+              },
+              "coverage": {
+                "covered": 0,
+                "of": 16,
+                "pct": 0.0
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": null,
+                "n": 0
+              },
+              "best_call": null,
+              "worst_false_alarm": null
+            },
             "S0-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
@@ -10155,6 +10531,53 @@
               "source": "backtest_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
+            },
+            "S0-H13": {
+              "source": "backtest_replay/asia",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 3,
+                "total_pts_right": 164.4,
+                "total_pts_wrong": 0.0,
+                "net_pts": 164.4,
+                "median_per_fire": 56.1,
+                "horizon_marks_net": {
+                  "5": 32.3,
+                  "10": 42.5,
+                  "20": 40.2,
+                  "30": 48.9
+                }
+              },
+              "n_fires": 3,
+              "precision": {
+                "hits": 2,
+                "of": 3,
+                "pct": 66.7
+              },
+              "coverage": {
+                "covered": 1,
+                "of": 38,
+                "pct": 2.6
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": 115.9,
+                "n": 1
+              },
+              "best_call": {
+                "ts": "2026-07-28 02:15:00+00:00",
+                "dir": 1,
+                "episode_start": "2026-07-28 02:28:00+00:00",
+                "pts_remaining_at_fire": 115.9,
+                "episode_total_pts": 109.7,
+                "major": true
+              },
+              "worst_false_alarm": {
+                "ts": "2026-07-28 02:15:00+00:00",
+                "dir": 1,
+                "adverse_pts": 2.8
+              }
             },
             "S0-H2": {
               "source": "backtest_replay/asia",
@@ -10755,6 +11178,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/london",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
@@ -11282,6 +11710,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
@@ -11717,6 +12150,46 @@
               "source": "post_go_live_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
+            },
+            "S0-H13": {
+              "source": "post_go_live_replay/ny_only",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 1,
+                "total_pts_right": 0.0,
+                "total_pts_wrong": -5.0,
+                "net_pts": -5.0,
+                "median_per_fire": -5.0,
+                "horizon_marks_net": {
+                  "5": 3.3,
+                  "10": 0.5,
+                  "20": -4.8,
+                  "30": -6.5
+                }
+              },
+              "n_fires": 1,
+              "precision": {
+                "hits": 0,
+                "of": 1,
+                "pct": 0.0
+              },
+              "coverage": {
+                "covered": 0,
+                "of": 7,
+                "pct": 0.0
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": null,
+                "n": 0
+              },
+              "best_call": null,
+              "worst_false_alarm": {
+                "ts": "2026-08-14 16:56:00+00:00",
+                "dir": -1,
+                "adverse_pts": 12.9
+              }
             },
             "S0-H2": {
               "source": "post_go_live_replay/ny_only",
@@ -12245,6 +12718,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
@@ -12558,6 +13036,11 @@
               }
             },
             "S0-H12": {
+              "source": "post_go_live_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "post_go_live_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -13020,7 +13503,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "6e7db5af502bd6df63e28908c1c1ee504682269c",
+      "engine_commit": "b70fbdee6d23a1d9015ad8f37007c76b699957ba",
       "instrument": "nas100fut",
       "pair": "nas100",
       "status": "provisional",
@@ -13184,6 +13667,42 @@
             "source": "backtest_replay",
             "n_fires": 0,
             "note": "no confirmations in window"
+          },
+          "S0-H13": {
+            "source": "backtest_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 1,
+              "total_pts_right": 93.0,
+              "total_pts_wrong": 0.0,
+              "net_pts": 93.0,
+              "median_per_fire": 93.0,
+              "horizon_marks_net": {
+                "5": 16.4,
+                "10": 11.2,
+                "20": -4.3,
+                "30": -9.4
+              }
+            },
+            "n_fires": 1,
+            "precision": {
+              "hits": 1,
+              "of": 1,
+              "pct": 100.0
+            },
+            "coverage": {
+              "covered": 0,
+              "of": 115,
+              "pct": 0.0
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": null,
+              "n": 0
+            },
+            "best_call": null,
+            "worst_false_alarm": null
           },
           "S0-H2": {
             "source": "backtest_replay",
@@ -13792,6 +14311,11 @@
             "n_fires": 0,
             "note": "no confirmations in window"
           },
+          "S0-H13": {
+            "source": "post_go_live_replay",
+            "n_fires": 0,
+            "note": "no confirmations in window"
+          },
           "S0-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
@@ -14364,6 +14888,42 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/london",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 1,
+                "total_pts_right": 93.0,
+                "total_pts_wrong": 0.0,
+                "net_pts": 93.0,
+                "median_per_fire": 93.0,
+                "horizon_marks_net": {
+                  "5": 16.4,
+                  "10": 11.2,
+                  "20": -4.3,
+                  "30": -9.4
+                }
+              },
+              "n_fires": 1,
+              "precision": {
+                "hits": 1,
+                "of": 1,
+                "pct": 100.0
+              },
+              "coverage": {
+                "covered": 0,
+                "of": 41,
+                "pct": 0.0
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": null,
+                "n": 0
+              },
+              "best_call": null,
+              "worst_false_alarm": null
+            },
             "S0-H2": {
               "source": "backtest_replay/london",
               "grading": "directional",
@@ -14855,6 +15415,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/overlap",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -15357,6 +15922,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
@@ -15838,6 +16408,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/dead",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -16390,6 +16965,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/asia",
               "grading": "directional",
@@ -16932,6 +17512,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/london",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
@@ -17431,6 +18016,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/overlap",
               "n_fires": 0,
@@ -17787,6 +18377,11 @@
               }
             },
             "S0-H12": {
+              "source": "post_go_live_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "post_go_live_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -18304,6 +18899,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
@@ -18757,6 +19357,11 @@
               }
             },
             "S0-H12": {
+              "source": "post_go_live_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "post_go_live_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -19349,7 +19954,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "6e7db5af502bd6df63e28908c1c1ee504682269c",
+      "engine_commit": "b70fbdee6d23a1d9015ad8f37007c76b699957ba",
       "instrument": "us30fut",
       "pair": "us30",
       "status": "provisional",
@@ -19513,6 +20118,53 @@
             "source": "backtest_replay",
             "n_fires": 0,
             "note": "no confirmations in window"
+          },
+          "S0-H13": {
+            "source": "backtest_replay",
+            "grading": "directional",
+            "conditioned_chance_pct": null,
+            "conditioned_class": null,
+            "payoff": {
+              "n": 1,
+              "total_pts_right": 0.0,
+              "total_pts_wrong": -206.0,
+              "net_pts": -206.0,
+              "median_per_fire": -206.0,
+              "horizon_marks_net": {
+                "5": -27.5,
+                "10": -5.5,
+                "20": -6.0,
+                "30": -36.0
+              }
+            },
+            "n_fires": 1,
+            "precision": {
+              "hits": 0,
+              "of": 1,
+              "pct": 0.0
+            },
+            "coverage": {
+              "covered": 1,
+              "of": 109,
+              "pct": 0.9
+            },
+            "earliness": {
+              "median_pts_remaining_at_fire": -114.0,
+              "n": 1
+            },
+            "best_call": {
+              "ts": "2026-07-28 10:27:00+00:00",
+              "dir": -1,
+              "episode_start": "2026-07-28 11:19:00+00:00",
+              "pts_remaining_at_fire": -114.0,
+              "episode_total_pts": 138.0,
+              "major": false
+            },
+            "worst_false_alarm": {
+              "ts": "2026-07-28 10:27:00+00:00",
+              "dir": -1,
+              "adverse_pts": 252.0
+            }
           },
           "S0-H2": {
             "source": "backtest_replay",
@@ -20188,6 +20840,11 @@
             "n_fires": 0,
             "note": "no confirmations in window"
           },
+          "S0-H13": {
+            "source": "post_go_live_replay",
+            "n_fires": 0,
+            "note": "no confirmations in window"
+          },
           "S0-H2": {
             "source": "post_go_live_replay",
             "grading": "directional",
@@ -20790,6 +21447,53 @@
               "source": "backtest_replay/london",
               "n_fires": 0,
               "note": "no confirmations in window"
+            },
+            "S0-H13": {
+              "source": "backtest_replay/london",
+              "grading": "directional",
+              "conditioned_chance_pct": null,
+              "conditioned_class": null,
+              "payoff": {
+                "n": 1,
+                "total_pts_right": 0.0,
+                "total_pts_wrong": -206.0,
+                "net_pts": -206.0,
+                "median_per_fire": -206.0,
+                "horizon_marks_net": {
+                  "5": -27.5,
+                  "10": -5.5,
+                  "20": -6.0,
+                  "30": -36.0
+                }
+              },
+              "n_fires": 1,
+              "precision": {
+                "hits": 0,
+                "of": 1,
+                "pct": 0.0
+              },
+              "coverage": {
+                "covered": 1,
+                "of": 35,
+                "pct": 2.9
+              },
+              "earliness": {
+                "median_pts_remaining_at_fire": -114.0,
+                "n": 1
+              },
+              "best_call": {
+                "ts": "2026-07-28 10:27:00+00:00",
+                "dir": -1,
+                "episode_start": "2026-07-28 11:19:00+00:00",
+                "pts_remaining_at_fire": -114.0,
+                "episode_total_pts": 138.0,
+                "major": false
+              },
+              "worst_false_alarm": {
+                "ts": "2026-07-28 10:27:00+00:00",
+                "dir": -1,
+                "adverse_pts": 252.0
+              }
             },
             "S0-H2": {
               "source": "backtest_replay/london",
@@ -21402,6 +22106,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
@@ -21876,6 +22585,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -22393,6 +23107,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "backtest_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "backtest_replay/dead",
               "grading": "directional",
@@ -22888,6 +23607,11 @@
               }
             },
             "S0-H12": {
+              "source": "backtest_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "backtest_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -23484,6 +24208,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/london",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
@@ -24066,6 +24795,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/overlap",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
@@ -24508,6 +25242,11 @@
               }
             },
             "S0-H12": {
+              "source": "post_go_live_replay/ny_only",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "post_go_live_replay/ny_only",
               "n_fires": 0,
               "note": "no confirmations in window"
@@ -24976,6 +25715,11 @@
               "n_fires": 0,
               "note": "no confirmations in window"
             },
+            "S0-H13": {
+              "source": "post_go_live_replay/dead",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
             "S0-H2": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
@@ -25338,6 +26082,11 @@
               }
             },
             "S0-H12": {
+              "source": "post_go_live_replay/asia",
+              "n_fires": 0,
+              "note": "no confirmations in window"
+            },
+            "S0-H13": {
               "source": "post_go_live_replay/asia",
               "n_fires": 0,
               "note": "no confirmations in window"
