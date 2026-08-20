@@ -75,6 +75,7 @@ AUTHORITY = {
     "signal_watch.py:H12_MIN_VISITS": "ratified 2026-08-20 (proposal derivation: exceed the founding H3 cluster's 2)",
     "signal_watch.py:H12_WINDOW_MIN": "ratified 2026-08-20 (1.5x the registered move window)",
     "signal_watch.py:H12_DRY_RV": "ratified 2026-08-20 (founding low_volume_mult, cited)",
+    "signal_watch.py:H13_VALUE_AREA_PCT": "operator-specified at S0-H13 registration 2026-08-21 (register 50; standard value-area convention); H13's other parameters cite H11's ratified config + founding baseline machinery",
     "signal_watch.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) — S-T3B row fires on T1d's measured conditions exactly (prereg_signal_rows_v1)",
     "signal_watch.py:SEQUENCE_N": "S-EFFORTLESS-SEQ sequence clause: 2 consecutive same-direction effortless prints (prereg_signal_rows_v1; operator-reviewable)",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",

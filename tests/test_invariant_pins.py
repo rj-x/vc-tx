@@ -179,3 +179,34 @@ def test_p6_profile_classification_uses_completed_sessions_only():
         feed(p, 9, 160, vol_late, k)                  # later same-session
         return first
     assert run(1) == run(10**9) == "gap"    # later volume can't reach back
+
+
+# ---- S0-H13 unit fixture (registered with the signal, register 50)
+def test_s0h13_break_fade_reclaim_fires_toward_far_edge():
+    from engine.signal_watch import FIRING_CONDITIONS
+    cond = FIRING_CONDITIONS["S0-H13"]()
+    t0 = pd.Timestamp("2026-08-17 08:00", tz="UTC")
+    k = 0
+
+    def step(px, v, rv, sid):
+        nonlocal k
+        b = _bar(t0 + pd.Timedelta(minutes=k), px, px + .5, px - .5, px,
+                 v=v, sid=sid)
+        r = cond(b, None, None, _feats(rel_volume=rv), {}, None, None, None)
+        k += 1
+        return r
+    # six sessions build a value area centred near 116 (12 buckets,
+    # centre-weighted volume)
+    for sid in range(6):
+        for i in range(36):
+            px = 100 + 4 * (i % 12)
+            step(px, 1000 + 400 * (6 - abs((i % 12) - 6)), 1.0, sid)
+    # new session: break BELOW the band on fading volume, reclaim on
+    # expanding volume -> long
+    step(116, 1000, 1.0, 9)
+    assert step(84, 100, 0.8, 9) is None       # break below, quiet
+    assert step(84, 80, 0.6, 9) is None        # still out, declining
+    assert step(116, 2000, 1.5, 9) == 1        # reclaim on volume -> long
+    # negative control: heavy-volume excursion never fires on reclaim
+    step(84, 5000, 2.0, 9)
+    assert step(116, 2000, 1.5, 9) is None

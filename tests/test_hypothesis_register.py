@@ -8,7 +8,7 @@ from engine.signal_watch import FIRING_CONDITIONS
 
 def test_register_has_ten_entries_with_statuses():
     reg = register_status()
-    assert sorted(reg) == list(range(1, 13))
+    assert sorted(reg) == list(range(1, 14))
     assert all(v in ("signal-live", "definition-pending", "disabled")
                for v in reg.values())
     # ratification sitting part 1 (2026-08-20): all twelve signal-live
@@ -41,7 +41,7 @@ def test_unknown_id_refused():
     orig = sb.register_status
     sb.register_status = lambda: {n: ("definition-pending" if n == 1
                                       else "signal-live")
-                                  for n in range(1, 13)}
+                                  for n in range(1, 14)}
     try:
         with pytest.raises(ValueError, match="not signal-live"):
             validate_rows()

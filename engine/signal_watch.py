@@ -37,6 +37,8 @@ H11_LOOKBACK_SESS = 5        # ratified (best-of-weak-field, flag standing)
 H12_MIN_VISITS = 3           # ratified
 H12_WINDOW_MIN = 90          # ratified
 H12_DRY_RV = 0.7             # ratified (founding low_volume_mult, cited)
+H13_VALUE_AREA_PCT = 0.70    # operator-specified at S0-H13 registration
+                             # (standard value-area convention, register 50)
 
 # row-declaration tables (this module is the one permitted home for
 # hypothesis identifiers; the scoreboard imports these):
@@ -332,6 +334,79 @@ class _SH12:
         return 1 if below >= above else -1
 
 
+class _SH13:
+    """S0-H13 (register 50, pre-registered): value-area reclaim. Value
+    area = central H13_VALUE_AREA_PCT volume band of the trailing profile
+    (POC expansion; H11's ratified bucket/lookback). Break = 1M close
+    beyond the band edge; fade = excursion mean rel_volume < 1.0 vs the
+    session-time baseline AND last excursion rv <= first (the registered
+    implementation reading of "declining"); reclaim = close back inside
+    with rel_volume > 1.0; fire at the reclaim close toward the far edge.
+    The source's absorption clause and stop/target geometry are OUT OF
+    SCOPE by registration (organs #4/#5 / recipe layer)."""
+
+    def __init__(self):
+        self._profiles, self._order = {}, []
+        self._sid = None
+        self._va = None
+        self._out = None
+
+    def _rebuild(self):
+        agg = {}
+        for sid in self._order[-H11_LOOKBACK_SESS:]:
+            for b, v in self._profiles.get(sid, {}).items():
+                agg[b] = agg.get(b, 0) + v
+        if len(agg) < 10:
+            self._va = None
+            return
+        total = sum(agg.values())
+        poc = max(agg, key=agg.get)
+        lo = hi = poc
+        vol = agg[poc]
+        while vol < H13_VALUE_AREA_PCT * total:
+            up, dn = hi + H11_BUCKET_PTS, lo - H11_BUCKET_PTS
+            uv, dv = agg.get(up, 0.0), agg.get(dn, 0.0)
+            if uv <= 0 and dv <= 0:
+                break
+            if uv >= dv:
+                hi, vol = up, vol + uv
+            else:
+                lo, vol = dn, vol + dv
+        self._va = (lo - H11_BUCKET_PTS / 2, hi + H11_BUCKET_PTS / 2)
+
+    def __call__(self, bar, ectx, sctx, feats, cores, structural, qualified,
+                 prev):
+        b = round(bar.close / H11_BUCKET_PTS) * H11_BUCKET_PTS
+        if self._sid != bar.session_id:
+            if self._sid is not None:
+                self._order.append(self._sid)
+                self._rebuild()
+            self._sid = bar.session_id
+            self._profiles[bar.session_id] = {}
+            self._out = None
+        p = self._profiles[bar.session_id]
+        p[b] = p.get(b, 0) + bar.volume
+        if self._va is None:
+            return None
+        val, vah = self._va
+        inside = val <= bar.close <= vah
+        fire = None
+        if not inside:
+            side = 1 if bar.close > vah else -1
+            if self._out is None or self._out["side"] != side:
+                self._out = {"side": side, "rvs": []}
+            if feats.rel_volume is not None:
+                self._out["rvs"].append(feats.rel_volume)
+        elif self._out is not None:
+            rvs = self._out["rvs"]
+            fade = (bool(rvs) and sum(rvs) / len(rvs) < 1.0
+                    and (len(rvs) < 2 or rvs[-1] <= rvs[0]))
+            if fade and feats.rel_volume is not None                     and feats.rel_volume > 1.0:
+                fire = -self._out["side"]     # toward the far edge
+            self._out = None
+        return fire
+
+
 FIRING_CONDITIONS = {
     "S0-H1": _s_h1,
     "S0-H2": _s_h2,
@@ -344,6 +419,7 @@ FIRING_CONDITIONS = {
     "S0-H12": _SH12,              # ratified 2026-08-20
     "S1-H1": _s1_h1,              # register 49 (audit F1 resolution)
     "S1-H2": _s1_h2,              # register 49 (audit F2 resolution)
+    "S0-H13": _SH13,              # register 50 (value-area reclaim)
 }
 
 

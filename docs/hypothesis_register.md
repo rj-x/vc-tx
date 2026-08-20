@@ -330,6 +330,53 @@ entry is a separate decision.
 - AUDIT: PASS (mechanical conjunction; every threshold ratified or
   founding-cited).
 
+## H13
+- **Claim:** After price breaks out of the session value area on declining
+  volume and reclaims it on expanding volume, it continues toward the far
+  side of the value area.
+- **Origin:** external trader advice via the operator, 2026-08-21 —
+  **source description, verbatim:** *"I wait for the market to show it's
+  hand first, and it always does. Draw the volume profile over the
+  session. Shows you where the most money traded. That's the value area.
+  Now the trade. Price drops below the value area low. The second it
+  does, your eyes go on the volume bars. If they are declining, nobody is
+  really selling and the money isn't following price lower. Then the
+  buyers step in and form a wall the sellers can't push through. There's
+  the bubble, sellers getting absorbed. So price gets pulled back towards
+  the money. When it closes back inside the value area, and the volume
+  bars grow again, that's your long. Stop below the low. Target the value
+  area high, right back into the money."*
+- **Lineage:** the composition of the operator's H11/H12 origination
+  questions (2026-08-19) with the externally-sourced reclaim trigger —
+  the register's FIRST COMPOSITE born from its own prior entries.
+- **Cross-references:** H11 (geography — the value area is its map), H4
+  (the fade anatomy), H2 (the spring shape at a level), H12 (the
+  mechanism's causal story).
+- **Signals:**
+  - **S0-H13** (pre-registered then implemented 2026-08-21, register 50):
+    value area = central 70% volume band of the trailing profile (POC
+    expansion; H11's ratified bucket 4.0 / lookback 5); break = 1M close
+    beyond the band edge; fade = excursion mean rel_volume < 1.0 vs the
+    session-time baseline AND last excursion rv ≤ first (the registered
+    reading of "declining" — a stricter monotone variant would be a new
+    S-number); reclaim = close back inside with rel_volume > 1.0; fire at
+    the reclaim close toward the far edge. Expected fire rate LOW
+    (multi-clause conjunction) — stated at registration.
+- **SCOPE NOTE:** the absorption clause (the buyers'-wall mechanism —
+  "the bubble, sellers getting absorbed") is DELIBERATELY OMITTED from
+  S0 — unmeasurable at our resolution without the dwell-time and
+  cumulative-signed-volume organs (#4/#5); a richer S<k> may add it when
+  those exist. S0 tests the tradeable skeleton: break, fade, reclaim,
+  continuation. The source's stop/target geometry (stop below the low,
+  target the far edge) is NOT part of the signal — recipe-layer material,
+  noted for the future level-based grammar extension.
+- **Status:** **signal-live** (1 signal). Grading: directional, standard
+  yardsticks, standard sessions; conditioned-baseline check n/a.
+- **Latest review:** keep-watching (record opens at the next run).
+- AUDIT: PASS (every parameter cites the registry or H11's ratified
+  config; the one new value — the 70% band — was operator-specified at
+  registration).
+
 ---
 
 ## Retired signal rows (register 35 sweep — no third category)
