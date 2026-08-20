@@ -589,6 +589,14 @@ set still growing toward fold support).
    volume" flagged at pre-reg (stricter variant = new S-number). DATE
    CHECK pending: reviewer dated schema+H13 rulings 08-21; if still
    08-20, stamps need one-line correction (reviewer strike history).
+   RESOLVED: today = 08-20 (artifact mtimes); correction sent. Second
+   read (14:33 run): S1-H9 forward 3/22 below chance across 4
+   instruments — the 47.4% is home-July-only (dimming vindicated in a
+   day); H2-forward anomaly now holds for BOTH configurations (S1-H2
+   fwd +4.4/+11.5/+8.3pp at n 86–136, backtest at-chance) — still
+   memory-not-evidence; H13: ger40 5/6 (+397) carries all shine, us30
+   single fire −206 (falling knife — the omitted absorption clause was
+   the safety mechanism; S1-H13's case pre-written for organs #4/#5).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
