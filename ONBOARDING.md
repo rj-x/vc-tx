@@ -553,6 +553,32 @@ set still growing toward fold support).
    far, accruing. Convergence noted: all three anomalies = "can the
    board see August≠July?" — the Sep 1 sealed window is the separating
    instrument. Union coverage fwd 72–84% with 12 live.
+24. Review day 2026-08-20 (register 48, review_2026-08-20.md): 12
+   unregistered candidates await operator read (no auto-mint;
+   multi-instrument-split retirement accepted; R2 question → recipe
+   experiment). Coverage grid: 3 holes (session-boundary, coil-side
+   transitions, participation-shift). Location census (seller-exhaustion
+   @ nodes): STARVED — exhaustion family fires too rarely; accrues.
+   AUDIT: zero engine bugs, four label bugs — F1/F2 (H1/H2 rows more
+   permissive than claims; ALL prior numbers incl. H2 fwd anomaly refer
+   to BARE anatomy) → dual rows (claims amended + H1-ctx/H2-ctx
+   companions = standing bare-vs-qualified comparison); F3 (H9 pooled
+   vs recruitment claim) → recruited-only companion row; P1–P6 pins
+   approved. Claim-vs-code diff = repeatable audit class, 4 catches in
+   10 days, run quarterly.
+25. SCHEMA v2 IN FORCE (`6961be0`, 98/98): H<n> = claim; S<k>-H<n> =
+   configuration (append-only, pre-registered, counted; labels attach
+   to signals; no best-of display; divergence → new signal, never
+   silent rewrite). All live rows migrated to S0 with history attached.
+   First S1 readouts: **S1-H9 (recruited-only, the claim's core, first
+   ever measured) opens 47.4% vs S0's 27.3%** — claim's direction,
+   n=19 dimmed texture; S1-H2 ≈ S0-H2 at home (prior-extreme clause
+   carries ~nothing); S1-H1 five fires (founding qualification severe).
+   S0-H9 retirement flagged next sitting, default keep. P1–P6 built
+   (pin-writing taught 2 lessons). PENDING: 12-candidate discussion
+   with reviewer (operator to paste list); nas100 evening (gates
+   Q-H1-GEN grade); Saturday campaign (first schema-v2 full read +
+   Part C decision).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
