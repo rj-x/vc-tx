@@ -689,7 +689,7 @@ def _section_lines(res, reg, labels, claims):
           "no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = "
           "within. (°…) = small-n (fires<20 or episodes<10): dimmed, "
           "excluded from any future label arithmetic. Read "
-          "READING_GUIDE.md first; full detail in signal_scoreboard.json.",
+          "READING_GUIDE.md first; full detail in hypothesis_performance.json.",
           ""]
     hdr = ("| H | label | " + " | ".join(f"{w} {c}" for w, c in CTX) + " |")
     L += [hdr, "|---|---|" + "---|" * len(CTX)]
@@ -802,7 +802,7 @@ def _emit_performance_md(results):
     for res in results.values():
         L += ["---", ""] + _section_lines(res, reg, labels, claims) + [""]
     L += ["---", "", "Appendix: the per-session detail beyond London and "
-          "every horizon-mark payoff live in signal_scoreboard.json "
+          "every horizon-mark payoff live in hypothesis_performance.json "
           "(generated, same run)."]
     with open(os.path.join(OUT, "hypothesis_performance.md"), "w") as f:
         f.write("\n".join(L))
@@ -820,7 +820,7 @@ whole-window and London). One cell = how far precision sits above or below
 THAT CONTEXT'S OWN chance rate. Page 2 (cards): one card per hypothesis —
 claim, full session x window grid, payoff, dated exhibits. Everything else
 (other sessions' exhibits, horizon-mark payoffs) is in
-signal_scoreboard.json.
+hypothesis_performance.json.
 
 ## How to read a cell
 `▲+9.4pp (26/80) net+123/med+1.2` means: precision 9.4 percentage points
@@ -904,8 +904,9 @@ def main():
         print(f"\n#### {PAIR_OF.get(instr, instr)} ({instr}) — "
               + ("PROVISIONAL replay" if provisional else "canonical"))
         results[instr] = run(instr, provisional=provisional)
-    path = os.path.join(OUT, "signal_scoreboard.json")
-    doc = {"REGISTER_40_AMENDMENT": (
+    path = os.path.join(OUT, "hypothesis_performance.json")
+    doc = {"engine_commit": next(iter(results.values()))["engine_commit"],
+           "REGISTER_40_AMENDMENT": (
                "per-instrument sections (operator, 2026-08-19): replay-only "
                "cross-instrument runs permitted; uk100 canonical; "
                "ger40/nas100/us30 PROVISIONAL pending validation evenings; "

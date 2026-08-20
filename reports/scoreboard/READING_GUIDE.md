@@ -9,7 +9,7 @@ whole-window and London). One cell = how far precision sits above or below
 THAT CONTEXT'S OWN chance rate. Page 2 (cards): one card per hypothesis —
 claim, full session x window grid, payoff, dated exhibits. Everything else
 (other sessions' exhibits, horizon-mark payoffs) is in
-signal_scoreboard.json.
+hypothesis_performance.json.
 
 ## How to read a cell
 `▲+9.4pp (26/80) net+123/med+1.2` means: precision 9.4 percentage points

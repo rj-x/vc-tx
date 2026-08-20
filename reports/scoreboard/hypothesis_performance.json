@@ -1,4 +1,5 @@
 {
+  "engine_commit": "98e5c99b009c06f454434a803f1102210ba9aaa2",
   "REGISTER_40_AMENDMENT": "per-instrument sections (operator, 2026-08-19): replay-only cross-instrument runs permitted; uk100 canonical; ger40/nas100/us30 PROVISIONAL pending validation evenings; NO POOLING across instruments",
   "instruments": {
     "uk100fut": {
