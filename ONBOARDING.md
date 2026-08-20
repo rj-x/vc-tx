@@ -579,6 +579,16 @@ set still growing toward fold support).
    with reviewer (operator to paste list); nas100 evening (gates
    Q-H1-GEN grade); Saturday campaign (first schema-v2 full read +
    Part C decision).
+26. H13 (value-area reclaim, external-trader source, verbatim origin)
+   LIVE (`7f5b08e`, 99/99): first composite born from register's own
+   entries (H11 map + H4 fade + H2 shape + H12 story + new reclaim
+   trigger); absorption clause + stop/target geometry explicitly
+   scope-excluded (organs #4/#5 / recipe-layer futures). Opening: 11
+   fires total, 7/9 backtest (ger40 5/6), 0/2 forward — ALL cells
+   dimmed/unmeasurable, accruing. Implementation reading of "declining
+   volume" flagged at pre-reg (stricter variant = new S-number). DATE
+   CHECK pending: reviewer dated schema+H13 rulings 08-21; if still
+   08-20, stamps need one-line correction (reviewer strike history).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
