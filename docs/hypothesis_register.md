@@ -1,7 +1,7 @@
 # Canonical Hypothesis Register
 
 **The single authoritative list (register 35; SCHEMA v2, register 49,
-2026-08-21).** A hypothesis H\<n\> = falsifiable claim (one plain
+2026-08-20).** A hypothesis H\<n\> = falsifiable claim (one plain
 sentence) + origin + status. A SIGNAL S\<k\>-H\<n\> = one mechanical
 configuration testing that claim: exact condition, parameters, provenance,
 registration date, status. One hypothesis may have many signals; every
@@ -57,7 +57,7 @@ entry is a separate decision.
   - **S0-H1** (migrated from S-H1, all history attached): bare structural
     climax anatomy — **labeled "anatomy-only — context clause untested by
     this signal"** (audit F1). Signal-live since 2026-08-18.
-  - **S1-H1** (registered 2026-08-21, register 49; resolves F1): the
+  - **S1-H1** (registered 2026-08-20, register 49; resolves F1): the
     FOUNDING context-qualified climax (qualified POTENTIAL_* labels — the
     "late in an extended move" clause lives in the qualification).
     Signal-live now; record opens at the next run.
@@ -81,7 +81,7 @@ entry is a separate decision.
     2026-08-19 forward two-layer observation, whose register entry cites
     S0-H2 specifically): bare upthrust/spring anatomy — "anatomy-only —
     prior-extreme clause untested by this signal" (audit F2).
-  - **S1-H2** (registered 2026-08-21, register 49; resolves F2): the
+  - **S1-H2** (registered 2026-08-20, register 49; resolves F2): the
     FOUNDING qualified upthrust/spring (range-extreme context in the
     qualification). Signal-live now; record opens at the next run.
 - **Status:** **signal-live** (2 signals).
@@ -243,7 +243,7 @@ entry is a separate decision.
     (audit F3). [Flagged for the next sitting: operator may retire S0-H9
     if the pooled configuration isn't worth continued measurement;
     default = keep running.]
-  - **S1-H9** (registered 2026-08-21, register 49; resolves F3):
+  - **S1-H9** (registered 2026-08-20, register 49; resolves F3):
     RECRUITED-ONLY depth-≥2 chains — the claim's falsifiable core.
     Signal-live now; EXPECTED STARVED at current n (July: 16/89 forward
     chains recruited), stated at registration.
@@ -334,7 +334,7 @@ entry is a separate decision.
 - **Claim:** After price breaks out of the session value area on declining
   volume and reclaims it on expanding volume, it continues toward the far
   side of the value area.
-- **Origin:** external trader advice via the operator, 2026-08-21 —
+- **Origin:** external trader advice via the operator, 2026-08-20 —
   **source description, verbatim:** *"I wait for the market to show it's
   hand first, and it always does. Draw the volume profile over the
   session. Shows you where the most money traded. That's the value area.
@@ -353,7 +353,7 @@ entry is a separate decision.
   (the fade anatomy), H2 (the spring shape at a level), H12 (the
   mechanism's causal story).
 - **Signals:**
-  - **S0-H13** (pre-registered then implemented 2026-08-21, register 50):
+  - **S0-H13** (pre-registered then implemented 2026-08-20, register 50):
     value area = central 70% volume band of the trailing profile (POC
     expansion; H11's ratified bucket 4.0 / lookback 5); break = 1M close
     beyond the band edge; fade = excursion mean rel_volume < 1.0 vs the

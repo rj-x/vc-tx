@@ -119,7 +119,7 @@ Next formal checkpoint, whichever arrives first (~40–60 working sessions on FT
    folds; opens threshold tuning under the pre-registered protocol.
 
 (The formerly parked multi-instrument-acceleration decision was RETIRED
-2026-08-21 — overtaken by the register-40 expansion; register 49(6).)
+2026-08-20 — overtaken by the register-40 expansion; register 49(6).)
 
 ## When something looks wrong
 
