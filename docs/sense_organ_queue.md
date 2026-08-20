@@ -79,7 +79,7 @@ observational only; none built yet; item 22 stays ahead of both)
 
 - **s9 scenario** (up-spike-retrace at range high → UPTHRUST must win) —
   proposed 2026-08-17, awaiting the next ruling cycle.
-- **H11/H12 parameter ratification** (register 39) — unblocks their
-  scoreboard rows; H11's parameters naturally follow the volume-profile organ's build (now build-next).
+- ~~H11/H12 parameter ratification~~ — CLEARED 2026-08-20 (register 46;
+  both signal-live).
 - **Criteria numbers + marker band + session scoping** (registers 36–38)
   — flagged awaiting-ratification; no labels act regardless.

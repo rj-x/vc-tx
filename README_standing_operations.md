@@ -213,6 +213,11 @@ this run's warm_through, since a post-crash sync can erase downtime.
 - `backtest/excursions.py` — MFE/MAE/time-to-MFE profiles + narrative-conditional cut → `excursion_profiles.md|.json`.
 - `backtest/sessions.py` — register-37 session partition (native-tz, DST-proof); no artifact.
 - `backtest/forward_migration.py` — forward-zone migration readout → `reports/forward/`.
+- `backtest/volume_profile.py` — volume-at-price organ (register 16 #2) → `volume_profile.md|.json`.
+- `backtest/cofire.py` — cross-family co-fire census → `cofire.md|.json`.
+- `backtest/flip_cut.py` — post-flip counterfactual (ARCHIVED standing reference, register 44) → `flip_cut.md|.json`.
+- `backtest/location_census.py` — exhaustion-family × H11-map census → `location_census.md|.json`.
+- `docs/backlog_status.md` — one-status-per-idea glance table (register 45).
 - `backtest/campaign.py` — the weekly evidential pipeline → `reports/backtest_v1/` + `backtest_v1.md`.
 - `scripts/param_registry.py` — canonical parameter registry generator → `docs/parameter_registry.md` (regen rides the campaign; pinned vs HEAD).
 - `docs/hypothesis_register.md` — THE hypothesis list (H1–H12) · `docs/sense_organ_queue.md` — build queue · `docs/lockbox_policy.md` + `docs/hypothesis_lifecycle.md` — zone + stage doctrine · `docs/location_apparatus.md` — location mechanics.

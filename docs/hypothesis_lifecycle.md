@@ -29,15 +29,16 @@ candidate or gate the next census/build; it can never validate, tune, or
 touch the engine. Multiple-comparisons record: the trial log, consulted at
 round 1.
 
-## 4. Shadow-live
-(When built — register 31, spec approved-pending-restart.) The hypothesis
-runs in the live loop behind the candidate guard: perceives and reports,
-never touches the real ledger or frozen_v1 behavior. Confirmations become
-shadow trades under paper's simulated/idealized fills, tagged with the
-stopping gate. New registrations enter shadow-live automatically.
-**Verdict-power: none — counts and points are texture and prioritization
-input, never promotion evidence** (fills are idealized; n is small; the
-zone is forward).
+## 4. Signal-live
+(Pure-signals doctrine, register 34 — supersedes the original shadow-trade
+framing; register 31's trade layer is deferred-not-deleted.) The
+hypothesis is a bare firing condition in the signal module; the scoreboard
+grades precision/coverage/earliness/payoff against each context's own
+chance rate (class-conditioned where the condition selects a volatility
+class, register 47). The recipe layer harvests the same fires separately,
+observationally. New registrations go signal-live on ratification of a
+mechanical condition. **Verdict-power: none — texture and prioritization
+input, never promotion evidence.**
 
 ## 5. Weekly reads
 Campaign + forward dossiers (Part C when adopted): scoreboard tables,

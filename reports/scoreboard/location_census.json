@@ -1,0 +1,192 @@
+{
+  "STAMP": "OBSERVATIONAL location census \u2014 pre-registered; never validation",
+  "engine_commit": "567f2cf9134e41714713f0e30b655be887a5e1b6",
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "status": "canonical",
+      "cells": {
+        "S-H3": {
+          "forward": {
+            "gap": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -5.0,
+              "payoff_median": -5.0
+            },
+            "neither": {
+              "n": 5,
+              "hits": 2,
+              "pct": 40.0,
+              "unmeasurable": true,
+              "payoff_net": 10.4,
+              "payoff_median": -0.2
+            }
+          }
+        },
+        "S-H4": {
+          "backtest": {
+            "neither": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 13.8,
+              "payoff_median": 0.5
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "ger40fut",
+      "status": "provisional",
+      "cells": {
+        "S-H3": {
+          "backtest": {
+            "node": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -76.7,
+              "payoff_median": -56.5
+            },
+            "neither": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 49.0,
+              "payoff_median": 3.5
+            }
+          },
+          "forward": {
+            "gap": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 0.5,
+              "payoff_median": 0.5
+            },
+            "neither": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 2.0,
+              "payoff_median": 1.0
+            }
+          }
+        },
+        "S-H4": {
+          "backtest": {
+            "gap": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": null,
+              "payoff_median": null
+            },
+            "neither": {
+              "n": 33,
+              "hits": 10,
+              "pct": 30.3,
+              "unmeasurable": false,
+              "payoff_net": 71.9,
+              "payoff_median": 10.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "nas100fut",
+      "status": "provisional",
+      "cells": {
+        "S-H3": {
+          "backtest": {
+            "neither": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 105.8,
+              "payoff_median": 105.8
+            }
+          }
+        },
+        "S-H4": {
+          "forward": {
+            "neither": {
+              "n": 10,
+              "hits": 6,
+              "pct": 60.0,
+              "unmeasurable": false,
+              "payoff_net": -18.4,
+              "payoff_median": -7.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "us30fut",
+      "status": "provisional",
+      "cells": {
+        "S-H3": {
+          "backtest": {
+            "node": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -22.0,
+              "payoff_median": -11.0
+            },
+            "gap": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 8.5,
+              "payoff_median": 8.5
+            },
+            "neither": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 72.5,
+              "payoff_median": 72.5
+            }
+          }
+        },
+        "S-H4": {
+          "backtest": {
+            "gap": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 134.5,
+              "payoff_median": 67.25
+            },
+            "neither": {
+              "n": 11,
+              "hits": 3,
+              "pct": 27.3,
+              "unmeasurable": false,
+              "payoff_net": 59.1,
+              "payoff_median": 7.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

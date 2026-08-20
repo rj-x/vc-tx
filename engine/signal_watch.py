@@ -60,6 +60,8 @@ NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
 # headline lift. Class-mask implementations live in the scoreboard,
 # keyed by these names.
 CONDITIONED_ROWS = {"S-H6": "wide_bar_p90_trailing_day"}
+# exhaustion-family rows for the location-conditioned census (register 48)
+EXHAUSTION_FAMILY = ("S-H3", "S-H4", "S-H12")
 # co-fire census family partition (register 45, operator-set; the one-home
 # rule keeps hypothesis identifiers out of the census reader)
 COFIRE_FAMILIES = {"event": ("S-H1", "S-H2"), "texture": ("S-H4", "S-H7"),

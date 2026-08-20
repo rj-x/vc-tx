@@ -12,10 +12,8 @@ authoritative.
 | idea | status |
 |---|---|
 | H1, H2, H3, H4, H7 (+dual), H8, H9, H10 signal rows | testable-now (weekly scoreboard; labels = open recommendations) |
-| H5 (revive-as-new, drafted 08-20) | awaiting-ratification-of-drafted-condition |
-| H6 | awaiting-ratification-of-location-thresholds (proposal on the table, organ-derived) |
-| H11 | awaiting-ratification-of-parameters (proposal on the table; honesty flag: weak profile persistence) + grading operationalization prereg |
-| H12 | awaiting-ratification-of-parameters (proposal on the table, no build needed) |
+| H5, H6, H11, H12 | testable-now (ratified 2026-08-20, register 46; all twelve entries signal-live) |
+| H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
 | H13+ (composites) | awaiting the co-fire census read → front-door registration per pair with real lift |
 | Q-H1-GEN, Q-H7-GEO | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 
@@ -44,7 +42,7 @@ authoritative.
 
 | idea | status |
 |---|---|
-| #1 volume profile (re-ranked first) | BUILT 2026-08-20 (reader-side; proposals emitted); engine field emission awaiting-decision-if-needed |
+| #1 volume profile (re-ranked first) | BUILT 2026-08-20; proposals RATIFIED (register 46); engine field emission awaiting-decision-if-needed |
 | #2 velocity/efficiency | awaiting-build-slot (next organ after item 22 per one-at-a-time) |
 | #3 coil, #4 signed volume, #5 dwell-time | awaiting-build-slot (ranked; mapped to H8/H12/H3/H11/H6) |
 | #6 order-flow delta | unreachable (data ceiling, recorded) |
@@ -64,5 +62,6 @@ authoritative.
 ## Standing ratifications (one sitting clears them)
 
 promote/deprioritize criteria numbers · ±2pp marker band · session scoping
-(label-bearing sessions proposal) · R-OP1 ATR TF · R-FLIPGUARD arming ·
-v0 recipe values · H5 draft · H6/H11/H12 parameter proposals.
+(label-bearing sessions proposal) · v0 recipe values. (Part-1 sitting
+2026-08-20 cleared: H5 draft, H6/H11/H12 parameters, R-OP1 ATR TF,
+R-FLIPGUARD arming.)
