@@ -353,12 +353,33 @@ def _wide_bar_mask(hi, lo):
 CLASS_MASK_FNS = {"wide_bar_p90_trailing_day": _wide_bar_mask}
 
 
+def build_init(episodes, series):
+    """INITIATION arrays (register 53): init[d][i] = a qualifying episode
+    of direction d BEGINS in (ts_i, ts_i + 60min] — the strict exam."""
+    ts, _cl, _ = series
+    win = 3_600_000_000_000
+    out = {}
+    for d in (1, -1):
+        starts = np.array(sorted(e["start"].value for e in episodes
+                                 if e["dir"] == d))
+        arr = np.zeros(len(ts), bool)
+        j = np.searchsorted(starts, ts, side="right")
+        ok = j < len(starts)
+        arr[ok] = starts[np.minimum(j[ok], len(starts) - 1)] <= ts[ok] + win
+        out[d] = arr
+    return out
+
+
 def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
-          names=frozenset(), bar_mask=None, cls_masks=None):
-    """One source window [lo_ts, hi_ts); sealed spans already excluded
-    from `fires`/`episodes` by the caller. bar_mask restricts the base-rate
-    computation to a context (e.g. one session); default = whole window."""
-    ts, cl, _ = series
+          names=frozenset(), bar_mask=None, cls_masks=None, init=None):
+    """One source window [lo_ts, hi_ts); sealed spans already excluded.
+    DUAL-CONVENTION GRADING (register 53): every precision cell reports
+    PARTICIPATION (the historic qual[] convention — fire lands before or
+    inside a qualifying move; always printed with its capture companion,
+    median forward-MFE points of participation hits) and INITIATION (an
+    episode BEGINS after the fire — the strict exam). Baselines computed
+    per convention."""
+    ts, cl, hi_a, lo_a = series[0], series[1], None, None
     win = pd.Timedelta(minutes=MOVE_WINDOW_MIN)
     F = [f for f in fires if lo_ts <= f["ts"] < hi_ts]
     E = [e for e in episodes if lo_ts <= e["start"] < hi_ts]
@@ -372,10 +393,16 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
         agnostic = name in AGNOSTIC_ROWS or name.endswith("(either-dir)")
         cls_mask = (cls_masks or {}).get(name)
         hits, misses = [], []
+        init_hits = init_tot = 0
         for f in nf:
             i = np.searchsorted(ts, f["ts"].value, side="right") - 1
             if i < 0:
                 continue
+            if init is not None:
+                init_tot += 1
+                ih = (bool(init[1][i] or init[-1][i]) if agnostic
+                      else bool(init[f["dir"]][i]))
+                init_hits += int(ih)
             ok = bool(qual[1][i] or qual[-1][i]) if agnostic \
                 else bool(qual[f["dir"]][i])
             adverse = 0.0
@@ -400,7 +427,7 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
             remaining.append(float(rem))
         best = max(covered, key=lambda c: c[2], default=None)
         worst = max(misses, key=lambda m: m["adverse_pts"], default=None)
-        cond_chance = None
+        cond_chance = cond_chance_init = None
         if cls_mask is not None:
             wsel = (ts >= lo_ts.value) & (ts < hi_ts.value)
             if bar_mask is not None:
@@ -409,12 +436,37 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
             if wsel.any():
                 cond_chance = round(50 * float(np.mean(qual[1][wsel])
                                                + np.mean(qual[-1][wsel])), 1)
+                if init is not None:
+                    cond_chance_init = round(
+                        50 * float(np.mean(init[1][wsel])
+                                   + np.mean(init[-1][wsel])), 1)
+        # participation capture companion (MANDATORY, never separable):
+        # median forward-window MFE of participation-hit fires
+        cap = None
+        if hits:
+            win_ns = 3_600_000_000_000
+            vals = []
+            for f in hits:
+                i = np.searchsorted(ts, f["ts"].value, side="right") - 1
+                j = np.searchsorted(ts, ts[i] + win_ns, side="right")
+                if j > i + 1:
+                    seg = cl[i + 1:j]
+                    vals.append(float((seg.max() - cl[i]) if f["dir"] == 1
+                                      else (cl[i] - seg.min())))
+            if vals:
+                cap = round(float(np.median(vals)), 1)
         rows[name] = {
             "source": label,
             "grading": "either-direction" if agnostic else "directional",
             "conditioned_chance_pct": cond_chance,
+            "conditioned_chance_init_pct": cond_chance_init,
             "conditioned_class": (CONDITIONED_ROWS.get(name)
                                   if cls_mask is not None else None),
+            "initiation": ({"hits": init_hits, "of": init_tot,
+                            "pct": round(100 * init_hits / init_tot, 1)
+                            if init_tot else None}
+                           if init is not None else None),
+            "participation_capture_median_pts": cap,
             "payoff": pay,        # None for either-direction (by construction)
             "n_fires": len(nf),
             "precision": {"hits": len(hits), "of": len(hits) + len(misses),
@@ -453,10 +505,17 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
               if w.any() else None)
     per_dir = (round(50 * float(np.mean(qual[1][w]) + np.mean(qual[-1][w])), 1)
                if w.any() else None)
+    either_i = per_dir_i = None
+    if init is not None and w.any():
+        either_i = round(100 * float(np.mean(init[1][w] | init[-1][w])), 1)
+        per_dir_i = round(50 * float(np.mean(init[1][w])
+                                     + np.mean(init[-1][w])), 1)
     rows["_moves"] = {"source": label, "n_qualifying_episodes": len(E),
                       "n_major": sum(1 for e in E if e["major"]),
                       "bar_qualify_base_rate_pct": either,
                       "per_direction_base_rate_pct": per_dir,
+                      "initiation_base_either_pct": either_i,
+                      "initiation_base_per_direction_pct": per_dir_i,
                       "base_rate_note": ("directional precision reads "
                                          "against per_direction; "
                                          "either-direction rows against "
@@ -533,6 +592,7 @@ def run(instr="uk100fut", provisional=False):
                 "provisional_caveats": PROVISIONAL_CAVEATS} | _RES
     all_names = frozenset(FIRING_CONDITIONS) | EVENT_DERIVED_ROWS \
         | frozenset(DERIVED_FIRES)
+    init = build_init(episodes, series)
     bar_sessions = sessions_of_index(
         pd.DatetimeIndex(series[0], tz="UTC"))
     live_hi = np.array([x.high for x in b1m if not x.is_stub])
@@ -548,10 +608,10 @@ def run(instr="uk100fut", provisional=False):
     for wname, (lo, hi, lbl) in windows.items():
         out["signals"][wname] = score(signal_fires, qual, episodes, series,
                                       lo, hi, lbl, names=all_names,
-                                      cls_masks=cmasks)
+                                      cls_masks=cmasks, init=init)
         out["founding_recipes_at_confirmation"][wname] = score(
             recipe_fires, qual, episodes, series, lo, hi, lbl,
-            names=frozenset({"H1", "H2", "H3", "H4", "H5"}))
+            names=frozenset({"H1", "H2", "H3", "H4", "H5"}), init=init)
         # session splits (register 37): reporting slices only — the
         # machinery stays 24/5; fires and episodes assigned by session_of
         out["signals_by_session"][wname] = {}
@@ -561,7 +621,7 @@ def run(instr="uk100fut", provisional=False):
             out["signals_by_session"][wname][sess] = score(
                 sf, qual, se, series, lo, hi, f"{lbl}/{sess}",
                 names=all_names, bar_mask=(bar_sessions == sess),
-                cls_masks=cmasks)
+                cls_masks=cmasks, init=init)
     return out
 
 
@@ -613,18 +673,31 @@ def _cell(blk, key):
         return "—"
     agnostic = r["grading"] == "either-direction"
     ch = _chance(mv, agnostic)
+    ch_i = (mv.get("initiation_base_either_pct") if agnostic
+            else mv.get("initiation_base_per_direction_pct"))
     cond = r.get("conditioned_chance_pct")
     cls_note = ""
     if cond is not None:
-        cls_note = f" [cls-chance {cond}% vs uncond {ch}%]"
+        cls_note = f" [cls {cond}%/{r.get('conditioned_chance_init_pct')}%i]"
         ch = cond
+        if r.get("conditioned_chance_init_pct") is not None:
+            ch_i = r["conditioned_chance_init_pct"]
     p = r["precision"]
     if ch is None or p["pct"] is None:
         return "—"
-    lift = round(p["pct"] - ch, 1)
-    mark = ("▲" if lift >= MARKER_BAND_PP
-            else "▼" if lift <= -MARKER_BAND_PP else "·")
-    core = f"{mark}{lift:+.1f}pp ({p['hits']}/{p['of']})"
+    lift = round(p["pct"] - ch, 1)          # participation lift
+    ini = r.get("initiation")
+    if ini and ini["pct"] is not None and ch_i is not None:
+        lift_i = round(ini["pct"] - ch_i, 1)
+        mark = ("▲" if lift_i >= MARKER_BAND_PP
+                else "▼" if lift_i <= -MARKER_BAND_PP else "·")
+        cap = r.get("participation_capture_median_pts")
+        core = (f"{mark}i{lift_i:+.1f}pp ({ini['hits']}/{ini['of']}) · "
+                f"p{lift:+.1f}pp cap{cap if cap is not None else '—'}")
+    else:
+        mark = ("▲" if lift >= MARKER_BAND_PP
+                else "▼" if lift <= -MARKER_BAND_PP else "·")
+        core = f"{mark}p{lift:+.1f}pp ({p['hits']}/{p['of']})"
     core += cls_note
     pay = r.get("payoff")
     if pay:
@@ -713,6 +786,37 @@ def _section_lines(res, reg, labels, claims):
         unions.append(f"{u['pct']}% ({u['episodes_covered_by_any_row']}"
                       f"/{u['of']})")
     L.append("| **union coverage** | | " + " | ".join(unions) + " |")
+    # side-by-side for the load-bearing patterns (register 53 item 3);
+    # printed ONCE, in the first (canonical) instrument's section
+    _is_first = (not _ALL_RESULTS
+                 or res is next(iter(_ALL_RESULTS.values())))
+    if _is_first:
+      L += ["", "### Dual-convention side-by-side — load-bearing patterns",
+            "", "| pattern | context | initiation | participation (cap) |",
+            "|---|---|---|---|"]
+      def _sbs(res_all, key, w, label_):
+          for inst, r_ in res_all.items():
+              blk = r_["signals"][w]
+              r = blk.get(key)
+              if not r or not r.get("n_fires"):
+                  continue
+              ini, p = r.get("initiation"), r["precision"]
+              cap = r.get("participation_capture_median_pts")
+              L.append(f"| {label_} | {inst}/{w} "
+                       f"| {ini['pct'] if ini else '—'}% "
+                       f"({ini['hits']}/{ini['of']}) "
+                       f"| {p['pct']}% (cap {cap}) |")
+      from engine.signal_watch import (AGNOSTIC_ROWS as _AGN,
+                                       CONDITIONED_ROWS as _CND)
+      _agn_key = next(iter(_AGN))
+      _cnd_key = next(iter(_CND))
+      _sbs(_ALL_RESULTS, "S0-H1", "forward", "Q-H1-GEN away cells (S0-H1)")
+      for key in ("S0-H2", "S1-H2"):
+          _sbs(_ALL_RESULTS, key, "forward", f"H2 forward ({key})")
+      for w in ("backtest", "forward"):
+          _sbs(_ALL_RESULTS, _agn_key, w, f"{_agn_key} (either-dir)")
+          _sbs(_ALL_RESULTS, _cnd_key, w, f"{_cnd_key} (conditioned)")
+      L.append("")
     pend = [f"H{n} {reg[n]}" for n in sorted(reg) if reg[n] != "signal-live"]
     L += ["", "Not graded: " + "; ".join(pend)
           + " — see register entries.", "",
@@ -725,18 +829,21 @@ def _section_lines(res, reg, labels, claims):
                   f"Latest review: {labels.get(n, '-')}. See the register "
                   f"entry for what is missing.", ""]
             continue
-        base = blk_of("backtest", "whole").get(f"S-H{n}") or {}
+        sigs = _signals_of(whole_bt, n)
+        n_configs = len({k.split("-")[0] for k in sigs
+                         if "(either-dir)" not in k})
+        base = (blk_of("backtest", "whole").get(sigs[0]) if sigs else None) \
+            or {}
         grading = base.get("grading", "directional")
-        both = f"S-H{n} (either-dir)" in whole_bt
-        L += [f"### H{n}",
+        both = any("(either-dir)" in k for k in sigs)
+        L += [f"### H{n} — {n_configs} signal"
+              + ("s" if n_configs != 1 else ""),
               f"*{claims.get(n, '')}*",
               f"Grading: {grading}"
               + (" + either-direction (dual)" if both else "")
               + f". Latest review: {labels.get(n, '-')} (recommendation).",
               ""]
-        variants = [(f"H{n}", f"S-H{n}")]
-        if both:
-            variants.append((f"H{n} (either-dir)", f"S-H{n} (either-dir)"))
+        variants = [(k, k) for k in sigs]
         for disp, key in variants:
             L += [f"**{disp}** — session × window grid "
                   f"(cells as in the matrix):", "",
@@ -778,7 +885,12 @@ def _section_lines(res, reg, labels, claims):
     return L
 
 
+_ALL_RESULTS = {}
+
+
 def _emit_performance_md(results):
+    global _ALL_RESULTS
+    _ALL_RESULTS = results
     """Per-instrument sections (register 40 amendment, 2026-08-19), each
     the register-38 matrix+cards format computed ONLY from that
     instrument's own store. uk100 canonical, the rest PROVISIONAL. NO
