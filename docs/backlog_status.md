@@ -16,7 +16,7 @@ authoritative.
 | H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
-| candidate docket | 12 internal + #13 sweep-and-reclaim + #14 intraday momentum — awaiting-decision-operator-discussion; drift + VWAP censuses report into it |
+| candidate docket | **FROZEN for the sitting (register 52)**: 12 internal + #13 sweep-and-reclaim + #14 intraday momentum + #15 drift-inversion + #16 S1-H13-absorption + #17 scoreboard hit-convention question; drift/VWAP/matrix censuses + geometry curves report into it; new ideas queue for the NEXT sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q-H1-GEN, Q-H7-GEO | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 

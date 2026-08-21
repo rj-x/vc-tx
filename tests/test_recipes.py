@@ -143,3 +143,22 @@ def test_progress_or_age_transition_arms_by_time():
     narr2 = {"trend_flip": [(t0 + 2 * 60_000_000_000, -1)]}
     tr2 = simulate(_fire(0, 1), _env(bars, eod=eod, narr=narr2), r, 0.0)
     assert tr2[0]["reason"] == "narrative"
+
+
+def test_geometry_twin_run_and_stop_wins_race():
+    """Register 52 pins: geometry() is deterministic (twin-run) and the
+    -6xATR bound wins an intrabar tie per honest-fill rule 1."""
+    import json as _json
+    from backtest.excursion_geometry import geometry
+    t0 = pd.Timestamp("2026-08-17 09:00", tz="UTC").value
+    ts = np.array([t0 + i * 60_000_000_000 for i in range(50)])
+    o = np.full(50, 100.0); c = o.copy()
+    h = o + 0.5; l = o - 0.5
+    # bar 3 spans BOTH +0.5*ATR target (105) and -6*ATR stop (40): stop wins
+    h[3], l[3] = 200.0, 30.0
+    eod = np.zeros(50, bool); eod[-1] = True
+    fires = [{"ts": pd.Timestamp(t0, tz="UTC"), "dir": 1, "name": "X"}]
+    r1 = geometry(fires, ts, o, h, l, c, lambda t: 10.0, eod)
+    r2 = geometry(fires, ts, o, h, l, c, lambda t: 10.0, eod)
+    assert _json.dumps(r1, default=str) == _json.dumps(r2, default=str)
+    assert r1[0]["reached"]["atr_0.5"] is False   # stop won the tie
