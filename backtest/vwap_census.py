@@ -126,6 +126,31 @@ def run_instrument(instr):
                     "payoff_median": (pay["median_per_fire"]
                                       if pay else None)}
 
+    # ---- RE-CUT (register 51 amendment): the three conditioned reads.
+    # Hit convention: EPISODE-START-FORWARD — a bar scores a hit only if a
+    # qualifying EPISODE BEGINS in [t, t+60min] (the first cut used the
+    # scoreboard's forward-excursion qual[] which can credit late entry
+    # into an already-running move; that convention is stated and retired
+    # for this census).
+    ep_starts = np.array(sorted(e["start"].value for e in _eps))
+    def ep_hit(t_ns):
+        j = np.searchsorted(ep_starts, t_ns, side="left")
+        return bool(j < len(ep_starts)
+                    and ep_starts[j] <= t_ns + 3_600_000_000_000)
+    # trailing-day range decile per store bar (register-47 method,
+    # generalized to deciles; shift(1) = no lookahead)
+    rng_s = (vf["high"] - vf["low"])
+    qcuts = [rng_s.rolling(480, min_periods=100).quantile(q).shift(1)
+             for q in [i / 10 for i in range(1, 10)]]
+    def decile(i_loc):
+        r = rng_s.iloc[i_loc]
+        d = 0
+        for qc in qcuts:
+            t = qc.iloc[i_loc]
+            if t == t and r >= t:
+                d += 1
+        return d
+
     # (b) direct: 2-sigma touches + vwap touches by phase
     phase_trend = {}
     prev = 0
@@ -164,6 +189,58 @@ def run_instrument(instr):
             direct[w][k] = {"n": len(v),
                             "qualifying_pct": (round(100 * float(
                                 np.mean(v)), 1) if v else None)}
+        # ---- re-cut, episode-start-forward hits + conditioned baselines
+        touch2, all_bars, rang_bars, trend_bars = [], [], [], []
+        vwap_rang, vwap_trend = [], []
+        for i_loc, (t_open, r) in enumerate(vf.iterrows()):
+            t = (t_open + pd.Timedelta(minutes=1)).value
+            if not (w_lo.value <= t < w_hi.value) or r.sigma != r.sigma:
+                continue
+            if is_sealed(pd.Timestamp(t, tz="UTC")):
+                continue
+            h = ep_hit(t)
+            d = decile(i_loc)
+            all_bars.append((d, h))
+            tr = phase_trend.get(t, 0)
+            (trend_bars if tr != 0 else rang_bars).append(h)
+            if (r.high >= r.vwap + 2 * r.sigma
+                    or r.low <= r.vwap - 2 * r.sigma):
+                touch2.append((d, h))
+            if r.low <= r.vwap <= r.high:
+                (vwap_trend if tr != 0 else vwap_rang).append(h)
+        rec = {}
+        if touch2 and all_bars:
+            obs = round(100 * float(np.mean([h for _, h in touch2])), 1)
+            # decile-matched baseline: all-bar hit rate per decile,
+            # reweighted to the touch bars' decile distribution
+            per_d = {}
+            for d, h in all_bars:
+                per_d.setdefault(d, []).append(h)
+            wts = {}
+            for d, _h in touch2:
+                wts[d] = wts.get(d, 0) + 1
+            tot = sum(wts.values())
+            cond = sum((wts[d] / tot) * float(np.mean(per_d.get(d, [0])))
+                       for d in wts)
+            rec["touch_2s"] = {
+                "n": len(touch2), "observed_pct": obs,
+                "class_conditioned_base_pct": round(100 * cond, 1),
+                "conditioned_lift_pp": round(obs - 100 * cond, 1)}
+        if vwap_rang and rang_bars:
+            obs = round(100 * float(np.mean(vwap_rang)), 1)
+            base_r = round(100 * float(np.mean(rang_bars)), 1)
+            rec["touch_vwap_ranging"] = {
+                "n": len(vwap_rang), "observed_pct": obs,
+                "phase_conditioned_base_pct": base_r,
+                "conditioned_lift_pp": round(obs - base_r, 1)}
+        if vwap_trend and trend_bars:
+            obs = round(100 * float(np.mean(vwap_trend)), 1)
+            base_t = round(100 * float(np.mean(trend_bars)), 1)
+            rec["touch_vwap_trending"] = {
+                "n": len(vwap_trend), "observed_pct": obs,
+                "phase_conditioned_base_pct": base_t,
+                "conditioned_lift_pp": round(obs - base_t, 1)}
+        direct[w]["recut_episode_start_forward"] = rec
     return {"instrument": instr,
             "status": ("provisional" if instr in PROVISIONAL_INSTRS
                        else "canonical"),
@@ -178,7 +255,14 @@ def _emit(results, head):
          "Mechanism note: institutional execution benchmarking — VWAP "
          "algorithms are the H12 order-slicing behavior industrialized; "
          "practitioner win-rate claims NOT carried. Cells: band x signed "
-         "(away/toward VWAP vs fire direction); n<10 UNMEASURABLE.", ""]
+         "(away/toward VWAP vs fire direction); n<10 UNMEASURABLE.", "",
+         "**RE-CUT (register 51 amendment): the first cut's headline "
+         "numbers used the forward-excursion hit convention and the "
+         "UNCONDITIONED base — both retired for this census. The finding "
+         "is the recut_episode_start_forward block ONLY: episode-must-"
+         "begin-after-the-touch hits, range-decile-matched baseline for "
+         "2-sigma touches (register-47 method), phase-conditioned bases "
+         "for the VWAP-touch cells. The 63.3% is not quoted.**", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()})"]
@@ -188,11 +272,16 @@ def _emit(results, head):
               "| window | event | n | qualifying% | either-dir base |",
               "|---|---|---|---|---|"]
         for w, d in res["direct"].items():
-            for k in ("touch_2s", "touch_vwap_trending",
-                      "touch_vwap_ranging"):
-                v = d[k]
-                L.append(f"| {w} | {k} | {v['n']} | {v['qualifying_pct']}% "
-                         f"| {d['either_dir_base_pct']}% |")
+            rc = d.get("recut_episode_start_forward", {})
+            for k, v in rc.items():
+                base_key = ("class_conditioned_base_pct"
+                            if "class" in str(v) and
+                            "class_conditioned_base_pct" in v
+                            else "phase_conditioned_base_pct")
+                L.append(f"| {w} | {k} (RE-CUT) | {v['n']} "
+                         f"| {v['observed_pct']}% "
+                         f"| {v.get('class_conditioned_base_pct', v.get('phase_conditioned_base_pct'))}% "
+                         f"cond → {v['conditioned_lift_pp']:+.1f}pp |")
         L += ["", "### conditioner cut (measurable cells only; full grid "
               "in the JSON)", "",
               "| signal | window | cell | n | precision | payoff net/med |",
