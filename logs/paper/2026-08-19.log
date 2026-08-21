@@ -4,3 +4,5 @@
 # EXECUTOR_ERROR URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
 # WATCHDOG_STALL: 5 polls, no new bars during expected-printing hours
 # WATCHDOG_STALL: 5 polls, no new bars during expected-printing hours
+# WATCHDOG_STALL: 5 polls, no new bars during expected-printing hours
+# WATCHDOG_STALL: 5 polls, no new bars during expected-printing hours
