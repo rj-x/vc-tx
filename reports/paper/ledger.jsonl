@@ -49,3 +49,5 @@
 {"event": "EXECUTOR_ERROR", "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>", "ts": "2026-08-19 20:06:58.353042+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-19 20:21:23.374254+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-19 20:26:32.314111+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-20 20:20:38.592424+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-20 20:25:48.655889+00:00"}

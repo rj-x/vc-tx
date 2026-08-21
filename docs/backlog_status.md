@@ -14,7 +14,10 @@ authoritative.
 | H1, H2, H3, H4, H7 (+dual), H8, H9, H10 signal rows | testable-now (weekly scoreboard; labels = open recommendations) |
 | H5, H6, H11, H12 | testable-now (ratified 2026-08-20, register 46; all twelve entries signal-live) |
 | H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
-| H13+ (composites) | awaiting the co-fire census read → front-door registration per pair with real lift |
+| H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
+| composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
+| candidate docket | 12 internal + #13 sweep-and-reclaim + #14 intraday momentum — awaiting-decision-operator-discussion; drift + VWAP censuses report into it |
+| ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q-H1-GEN, Q-H7-GEO | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 
 ## Recipes

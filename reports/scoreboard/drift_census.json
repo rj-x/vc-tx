@@ -1,0 +1,350 @@
+{
+  "STAMP": "OBSERVATIONAL drift census \u2014 descriptive; grading-fairness first; never validation",
+  "engine_commit": "d6205987373450d89e47b6797cfae726b7bcf160",
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "status": "canonical",
+      "overnight_vs_intraday": {
+        "backtest": {
+          "overnight": {
+            "n": 15,
+            "mean_bps": -12.0,
+            "median_bps": -8.56
+          },
+          "intraday": {
+            "n": 16,
+            "mean_bps": 30.89,
+            "median_bps": 21.83
+          }
+        },
+        "forward": {
+          "overnight": {
+            "n": 5,
+            "mean_bps": 12.57,
+            "median_bps": 6.04
+          },
+          "intraday": {
+            "n": 5,
+            "mean_bps": -10.38,
+            "median_bps": 5.11
+          }
+        }
+      },
+      "per_session_1m_drift": {
+        "backtest": {
+          "london": {
+            "n": 6240,
+            "mean_bps": 0.06,
+            "median_bps": 0.0
+          },
+          "overlap": {
+            "n": 1920,
+            "mean_bps": 0.08,
+            "median_bps": 0.0
+          },
+          "ny_only": {
+            "n": 4320,
+            "mean_bps": -0.03,
+            "median_bps": 0.0
+          },
+          "dead": {
+            "n": 2499,
+            "mean_bps": 0.06,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 6717,
+            "mean_bps": -0.03,
+            "median_bps": 0.0
+          }
+        },
+        "forward": {
+          "london": {
+            "n": 1832,
+            "mean_bps": -0.05,
+            "median_bps": 0.0
+          },
+          "overlap": {
+            "n": 505,
+            "mean_bps": 0.07,
+            "median_bps": 0.0
+          },
+          "ny_only": {
+            "n": 1350,
+            "mean_bps": -0.01,
+            "median_bps": 0.0
+          },
+          "dead": {
+            "n": 731,
+            "mean_bps": 0.02,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 2067,
+            "mean_bps": 0.03,
+            "median_bps": 0.0
+          }
+        }
+      }
+    },
+    {
+      "instrument": "ger40fut",
+      "status": "provisional",
+      "overnight_vs_intraday": {
+        "backtest": {
+          "overnight": {
+            "n": 10,
+            "mean_bps": 20.27,
+            "median_bps": 6.54
+          },
+          "intraday": {
+            "n": 11,
+            "mean_bps": 27.66,
+            "median_bps": 44.82
+          }
+        },
+        "forward": {
+          "overnight": {
+            "n": 4,
+            "mean_bps": -2.05,
+            "median_bps": 2.93
+          },
+          "intraday": {
+            "n": 4,
+            "mean_bps": -44.4,
+            "median_bps": -47.66
+          }
+        }
+      },
+      "per_session_1m_drift": {
+        "backtest": {
+          "london": {
+            "n": 4290,
+            "mean_bps": 0.04,
+            "median_bps": 0.04
+          },
+          "overlap": {
+            "n": 1320,
+            "mean_bps": 0.09,
+            "median_bps": 0.08
+          },
+          "ny_only": {
+            "n": 2970,
+            "mean_bps": 0.02,
+            "median_bps": 0.02
+          },
+          "dead": {
+            "n": 1725,
+            "mean_bps": 0.14,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 4440,
+            "mean_bps": -0.02,
+            "median_bps": 0.0
+          }
+        },
+        "forward": {
+          "london": {
+            "n": 1556,
+            "mean_bps": -0.1,
+            "median_bps": -0.08
+          },
+          "overlap": {
+            "n": 385,
+            "mean_bps": -0.07,
+            "median_bps": -0.15
+          },
+          "ny_only": {
+            "n": 1080,
+            "mean_bps": -0.02,
+            "median_bps": 0.0
+          },
+          "dead": {
+            "n": 568,
+            "mean_bps": 0.03,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 1601,
+            "mean_bps": 0.0,
+            "median_bps": 0.0
+          }
+        }
+      }
+    },
+    {
+      "instrument": "nas100fut",
+      "status": "provisional",
+      "overnight_vs_intraday": {
+        "backtest": {
+          "overnight": {
+            "n": 10,
+            "mean_bps": 24.76,
+            "median_bps": 2.33
+          },
+          "intraday": {
+            "n": 11,
+            "mean_bps": -25.84,
+            "median_bps": -37.78
+          }
+        },
+        "forward": {
+          "overnight": {
+            "n": 3,
+            "mean_bps": -23.65,
+            "median_bps": 24.65
+          },
+          "intraday": {
+            "n": 3,
+            "mean_bps": -45.55,
+            "median_bps": -42.46
+          }
+        }
+      },
+      "per_session_1m_drift": {
+        "backtest": {
+          "london": {
+            "n": 4290,
+            "mean_bps": 0.02,
+            "median_bps": 0.0
+          },
+          "overlap": {
+            "n": 1320,
+            "mean_bps": -0.23,
+            "median_bps": -0.12
+          },
+          "ny_only": {
+            "n": 2970,
+            "mean_bps": 0.0,
+            "median_bps": 0.0
+          },
+          "dead": {
+            "n": 2036,
+            "mean_bps": 0.24,
+            "median_bps": 0.04
+          },
+          "asia": {
+            "n": 4620,
+            "mean_bps": -0.04,
+            "median_bps": -0.07
+          }
+        },
+        "forward": {
+          "london": {
+            "n": 1557,
+            "mean_bps": -0.1,
+            "median_bps": -0.07
+          },
+          "overlap": {
+            "n": 385,
+            "mean_bps": -0.16,
+            "median_bps": 0.07
+          },
+          "ny_only": {
+            "n": 1080,
+            "mean_bps": -0.06,
+            "median_bps": -0.1
+          },
+          "dead": {
+            "n": 689,
+            "mean_bps": 0.06,
+            "median_bps": 0.03
+          },
+          "asia": {
+            "n": 1680,
+            "mean_bps": -0.0,
+            "median_bps": 0.0
+          }
+        }
+      }
+    },
+    {
+      "instrument": "us30fut",
+      "status": "provisional",
+      "overnight_vs_intraday": {
+        "backtest": {
+          "overnight": {
+            "n": 10,
+            "mean_bps": 25.94,
+            "median_bps": 39.32
+          },
+          "intraday": {
+            "n": 11,
+            "mean_bps": -8.72,
+            "median_bps": 14.58
+          }
+        },
+        "forward": {
+          "overnight": {
+            "n": 3,
+            "mean_bps": -5.82,
+            "median_bps": -17.01
+          },
+          "intraday": {
+            "n": 3,
+            "mean_bps": -11.09,
+            "median_bps": -8.4
+          }
+        }
+      },
+      "per_session_1m_drift": {
+        "backtest": {
+          "london": {
+            "n": 4290,
+            "mean_bps": 0.03,
+            "median_bps": 0.0
+          },
+          "overlap": {
+            "n": 1320,
+            "mean_bps": -0.1,
+            "median_bps": -0.19
+          },
+          "ny_only": {
+            "n": 2970,
+            "mean_bps": 0.01,
+            "median_bps": 0.09
+          },
+          "dead": {
+            "n": 2035,
+            "mean_bps": 0.09,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 4620,
+            "mean_bps": 0.0,
+            "median_bps": 0.0
+          }
+        },
+        "forward": {
+          "london": {
+            "n": 1557,
+            "mean_bps": -0.07,
+            "median_bps": -0.09
+          },
+          "overlap": {
+            "n": 385,
+            "mean_bps": -0.03,
+            "median_bps": -0.09
+          },
+          "ny_only": {
+            "n": 1080,
+            "mean_bps": -0.02,
+            "median_bps": 0.0
+          },
+          "dead": {
+            "n": 689,
+            "mean_bps": 0.0,
+            "median_bps": 0.0
+          },
+          "asia": {
+            "n": 1680,
+            "mean_bps": -0.0,
+            "median_bps": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

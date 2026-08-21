@@ -1,0 +1,3422 @@
+{
+  "STAMP": "OBSERVATIONAL VWAP census \u2014 pre-registered; no hypothesis minted; never validation",
+  "engine_commit": "d6205987373450d89e47b6797cfae726b7bcf160",
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "status": "canonical",
+      "conditioner_cut": {
+        "S0-H10": {
+          "backtest": {
+            "1s/away": {
+              "n": 22,
+              "hits": 4,
+              "pct": 18.2,
+              "unmeasurable": false,
+              "payoff_net": -120.2,
+              "payoff_median": -1.65
+            },
+            "at/away": {
+              "n": 8,
+              "hits": 2,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": -48.0,
+              "payoff_median": 0.0
+            },
+            "2s/away": {
+              "n": 17,
+              "hits": 4,
+              "pct": 23.5,
+              "unmeasurable": false,
+              "payoff_net": 152.6,
+              "payoff_median": 6.8
+            },
+            "beyond/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -30.8,
+              "payoff_median": 1.0
+            },
+            "1s/toward": {
+              "n": 13,
+              "hits": 8,
+              "pct": 61.5,
+              "unmeasurable": false,
+              "payoff_net": 157.9,
+              "payoff_median": 19.0
+            },
+            "at/toward": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -88.4,
+              "payoff_median": -13.3
+            },
+            "2s/toward": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -58.2,
+              "payoff_median": -19.5
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -76.1,
+              "payoff_median": -14.0
+            },
+            "2s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 4.7,
+              "payoff_median": 4.7
+            },
+            "2s/away": {
+              "n": 7,
+              "hits": 1,
+              "pct": 14.3,
+              "unmeasurable": true,
+              "payoff_net": 16.3,
+              "payoff_median": 5.0
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 7.7,
+              "payoff_median": 7.7
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.0,
+              "payoff_median": -12.0
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 12.2,
+              "payoff_median": 12.2
+            }
+          }
+        },
+        "S0-H7": {
+          "backtest": {
+            "at/away": {
+              "n": 8,
+              "hits": 6,
+              "pct": 75.0,
+              "unmeasurable": true,
+              "payoff_net": 103.4,
+              "payoff_median": 8.9
+            },
+            "at/toward": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": -112.6,
+              "payoff_median": -19.2
+            },
+            "2s/toward": {
+              "n": 15,
+              "hits": 4,
+              "pct": 26.7,
+              "unmeasurable": false,
+              "payoff_net": 10.1,
+              "payoff_median": 4.0
+            },
+            "1s/toward": {
+              "n": 21,
+              "hits": 6,
+              "pct": 28.6,
+              "unmeasurable": false,
+              "payoff_net": 180.3,
+              "payoff_median": 8.2
+            },
+            "1s/away": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 5.0,
+              "payoff_median": 4.3
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -48.7,
+              "payoff_median": -24.35
+            },
+            "beyond/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -147.5,
+              "payoff_median": -65.7
+            }
+          },
+          "forward": {
+            "beyond/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -4.4,
+              "payoff_median": -1.0
+            },
+            "2s/away": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 8.8,
+              "payoff_median": 3.3
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 3.5,
+              "payoff_median": 1.75
+            },
+            "1s/toward": {
+              "n": 7,
+              "hits": 3,
+              "pct": 42.9,
+              "unmeasurable": true,
+              "payoff_net": 35.4,
+              "payoff_median": 1.7
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 15.3,
+              "payoff_median": 7.65
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -50.3,
+              "payoff_median": -4.0
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 52.0,
+              "payoff_median": 26.0
+            }
+          }
+        },
+        "S0-H1": {
+          "backtest": {
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 21.2,
+              "payoff_median": 10.6
+            },
+            "at/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 44.5,
+              "payoff_median": 5.5
+            },
+            "1s/away": {
+              "n": 6,
+              "hits": 2,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 15.9,
+              "payoff_median": 1.1
+            },
+            "1s/toward": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": 6.3,
+              "payoff_median": 7.9
+            },
+            "beyond/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 65.3,
+              "payoff_median": 25.5
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -3.5,
+              "payoff_median": -3.5
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 18.7,
+              "payoff_median": 18.7
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": -3.0,
+              "payoff_median": -6.0
+            },
+            "at/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 2.0,
+              "payoff_median": -0.3
+            },
+            "1s/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 2.5,
+              "payoff_median": 0.5
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 31.2,
+              "payoff_median": 31.2
+            },
+            "beyond/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -48.4,
+              "payoff_median": -24.2
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -2.5,
+              "payoff_median": -2.5
+            }
+          }
+        },
+        "S0-H2": {
+          "backtest": {
+            "beyond/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 56.8,
+              "payoff_median": 17.3
+            },
+            "2s/toward": {
+              "n": 6,
+              "hits": 4,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 62.2,
+              "payoff_median": 15.6
+            },
+            "2s/away": {
+              "n": 12,
+              "hits": 4,
+              "pct": 33.3,
+              "unmeasurable": false,
+              "payoff_net": -91.0,
+              "payoff_median": -13.0
+            },
+            "1s/away": {
+              "n": 29,
+              "hits": 6,
+              "pct": 20.7,
+              "unmeasurable": false,
+              "payoff_net": 165.8,
+              "payoff_median": 8.7
+            },
+            "1s/toward": {
+              "n": 28,
+              "hits": 9,
+              "pct": 32.1,
+              "unmeasurable": false,
+              "payoff_net": 221.8,
+              "payoff_median": 8.25
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 76.5,
+              "payoff_median": 76.5
+            },
+            "at/toward": {
+              "n": 7,
+              "hits": 1,
+              "pct": 14.3,
+              "unmeasurable": true,
+              "payoff_net": 49.2,
+              "payoff_median": 19.7
+            },
+            "at/away": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": 0.5,
+              "payoff_median": -7.0
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": -19.7,
+              "payoff_median": -1.4
+            },
+            "1s/away": {
+              "n": 9,
+              "hits": 2,
+              "pct": 22.2,
+              "unmeasurable": true,
+              "payoff_net": 7.2,
+              "payoff_median": 0.5
+            },
+            "2s/toward": {
+              "n": 6,
+              "hits": 3,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 65.7,
+              "payoff_median": 14.35
+            },
+            "2s/away": {
+              "n": 10,
+              "hits": 1,
+              "pct": 10.0,
+              "unmeasurable": false,
+              "payoff_net": -116.5,
+              "payoff_median": -13.85
+            },
+            "beyond/toward": {
+              "n": 5,
+              "hits": 3,
+              "pct": 60.0,
+              "unmeasurable": true,
+              "payoff_net": 69.5,
+              "payoff_median": 17.5
+            },
+            "at/toward": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 5.7,
+              "payoff_median": 3.0
+            },
+            "at/away": {
+              "n": 7,
+              "hits": 3,
+              "pct": 42.9,
+              "unmeasurable": true,
+              "payoff_net": 45.2,
+              "payoff_median": 3.0
+            }
+          }
+        },
+        "S0-H6": {
+          "backtest": {
+            "beyond/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -58.0,
+              "payoff_median": 1.0
+            },
+            "2s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 78.9,
+              "payoff_median": 15.45
+            },
+            "1s/toward": {
+              "n": 16,
+              "hits": 4,
+              "pct": 25.0,
+              "unmeasurable": false,
+              "payoff_net": -166.0,
+              "payoff_median": -12.45
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 12.5,
+              "payoff_median": 6.25
+            },
+            "1s/away": {
+              "n": 7,
+              "hits": 5,
+              "pct": 71.4,
+              "unmeasurable": true,
+              "payoff_net": 144.3,
+              "payoff_median": 20.0
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 64.3,
+              "payoff_median": 32.15
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 5,
+              "hits": 2,
+              "pct": 40.0,
+              "unmeasurable": true,
+              "payoff_net": 14.8,
+              "payoff_median": -2.5
+            },
+            "1s/toward": {
+              "n": 9,
+              "hits": 5,
+              "pct": 55.6,
+              "unmeasurable": true,
+              "payoff_net": 61.1,
+              "payoff_median": 6.0
+            },
+            "beyond/toward": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 38.7,
+              "payoff_median": 19.35
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -20.8,
+              "payoff_median": -20.8
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 31.8,
+              "payoff_median": 31.8
+            }
+          }
+        },
+        "S1-H2": {
+          "backtest": {
+            "beyond/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 56.8,
+              "payoff_median": 17.3
+            },
+            "2s/toward": {
+              "n": 6,
+              "hits": 4,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 62.2,
+              "payoff_median": 15.6
+            },
+            "1s/away": {
+              "n": 25,
+              "hits": 5,
+              "pct": 20.0,
+              "unmeasurable": false,
+              "payoff_net": 217.8,
+              "payoff_median": 9.0
+            },
+            "1s/toward": {
+              "n": 23,
+              "hits": 7,
+              "pct": 30.4,
+              "unmeasurable": false,
+              "payoff_net": 238.9,
+              "payoff_median": 11.5
+            },
+            "2s/away": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": -55.7,
+              "payoff_median": -8.0
+            },
+            "at/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 59.9,
+              "payoff_median": 22.2
+            },
+            "at/away": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": 0.5,
+              "payoff_median": -7.0
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": -19.7,
+              "payoff_median": -1.4
+            },
+            "1s/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -25.0,
+              "payoff_median": -5.1
+            },
+            "2s/toward": {
+              "n": 6,
+              "hits": 3,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 65.7,
+              "payoff_median": 14.35
+            },
+            "2s/away": {
+              "n": 7,
+              "hits": 1,
+              "pct": 14.3,
+              "unmeasurable": true,
+              "payoff_net": -68.2,
+              "payoff_median": -12.2
+            },
+            "beyond/toward": {
+              "n": 5,
+              "hits": 3,
+              "pct": 60.0,
+              "unmeasurable": true,
+              "payoff_net": 69.5,
+              "payoff_median": 17.5
+            },
+            "at/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 6.0,
+              "payoff_median": 3.0
+            },
+            "at/away": {
+              "n": 6,
+              "hits": 3,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 44.4,
+              "payoff_median": 9.6
+            }
+          }
+        },
+        "S0-H11": {
+          "backtest": {
+            "2s/away": {
+              "n": 18,
+              "hits": 3,
+              "pct": 16.7,
+              "unmeasurable": false,
+              "payoff_net": -134.2,
+              "payoff_median": -6.75
+            },
+            "beyond/away": {
+              "n": 7,
+              "hits": 6,
+              "pct": 85.7,
+              "unmeasurable": true,
+              "payoff_net": 310.9,
+              "payoff_median": 21.3
+            },
+            "2s/toward": {
+              "n": 14,
+              "hits": 5,
+              "pct": 35.7,
+              "unmeasurable": false,
+              "payoff_net": -143.1,
+              "payoff_median": -9.35
+            },
+            "1s/toward": {
+              "n": 61,
+              "hits": 8,
+              "pct": 13.1,
+              "unmeasurable": false,
+              "payoff_net": -107.8,
+              "payoff_median": 0.5
+            },
+            "1s/away": {
+              "n": 44,
+              "hits": 10,
+              "pct": 22.7,
+              "unmeasurable": false,
+              "payoff_net": 307.8,
+              "payoff_median": 1.0
+            },
+            "beyond/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -39.6,
+              "payoff_median": -10.0
+            },
+            "at/away": {
+              "n": 33,
+              "hits": 2,
+              "pct": 6.1,
+              "unmeasurable": false,
+              "payoff_net": -313.9,
+              "payoff_median": -10.3
+            },
+            "at/toward": {
+              "n": 7,
+              "hits": 3,
+              "pct": 42.9,
+              "unmeasurable": true,
+              "payoff_net": -31.8,
+              "payoff_median": 8.5
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 15.8,
+              "payoff_median": 15.8
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.0,
+              "payoff_median": -12.0
+            },
+            "2s/away": {
+              "n": 14,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -33.7,
+              "payoff_median": -2.25
+            },
+            "1s/away": {
+              "n": 10,
+              "hits": 4,
+              "pct": 40.0,
+              "unmeasurable": false,
+              "payoff_net": 60.8,
+              "payoff_median": 7.1
+            },
+            "2s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 33.1,
+              "payoff_median": 8.8
+            },
+            "1s/toward": {
+              "n": 10,
+              "hits": 2,
+              "pct": 20.0,
+              "unmeasurable": false,
+              "payoff_net": 135.0,
+              "payoff_median": 12.85
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 5.0,
+              "payoff_median": 5.0
+            }
+          }
+        },
+        "S0-H13": {
+          "backtest": {
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 1.7,
+              "payoff_median": 1.7
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 25.8,
+              "payoff_median": 25.8
+            }
+          }
+        },
+        "S0-H4": {
+          "backtest": {
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 5.5,
+              "payoff_median": 5.5
+            }
+          }
+        },
+        "S1-H1": {
+          "forward": {
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -3.3,
+              "payoff_median": -1.65
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 31.2,
+              "payoff_median": 31.2
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -21.2,
+              "payoff_median": -21.2
+            }
+          }
+        },
+        "S0-H3": {
+          "forward": {
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -5.0,
+              "payoff_median": -5.0
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 12.5,
+              "payoff_median": 12.5
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -31.5,
+              "payoff_median": -31.5
+            }
+          }
+        },
+        "S0-H9": {
+          "backtest": {
+            "1s/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -77.6,
+              "payoff_median": -12.5
+            },
+            "2s/away": {
+              "n": 3,
+              "hits": 3,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 102.0,
+              "payoff_median": 38.5
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 35.6,
+              "payoff_median": 17.8
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -1.0,
+              "payoff_median": -1.0
+            }
+          }
+        },
+        "S1-H9": {
+          "backtest": {
+            "2s/away": {
+              "n": 3,
+              "hits": 3,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 102.0,
+              "payoff_median": 38.5
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 35.6,
+              "payoff_median": 17.8
+            },
+            "1s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -52.6,
+              "payoff_median": -26.3
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -1.0,
+              "payoff_median": -1.0
+            }
+          }
+        }
+      },
+      "direct": {
+        "backtest": {
+          "either_dir_base_pct": 44.3,
+          "touch_2s": {
+            "n": 1050,
+            "qualifying_pct": 63.3
+          },
+          "touch_vwap_trending": {
+            "n": 369,
+            "qualifying_pct": 51.2
+          },
+          "touch_vwap_ranging": {
+            "n": 249,
+            "qualifying_pct": 65.1
+          }
+        },
+        "forward": {
+          "either_dir_base_pct": 45.8,
+          "touch_2s": {
+            "n": 536,
+            "qualifying_pct": 57.5
+          },
+          "touch_vwap_trending": {
+            "n": 78,
+            "qualifying_pct": 89.7
+          },
+          "touch_vwap_ranging": {
+            "n": 105,
+            "qualifying_pct": 73.3
+          }
+        }
+      }
+    },
+    {
+      "instrument": "ger40fut",
+      "status": "provisional",
+      "conditioner_cut": {
+        "S0-H6": {
+          "backtest": {
+            "1s/toward": {
+              "n": 9,
+              "hits": 2,
+              "pct": 22.2,
+              "unmeasurable": true,
+              "payoff_net": 122.7,
+              "payoff_median": 17.8
+            },
+            "2s/toward": {
+              "n": 6,
+              "hits": 3,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 89.5,
+              "payoff_median": 1.25
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -32.8,
+              "payoff_median": -16.4
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -126.6,
+              "payoff_median": -63.3
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 14,
+              "hits": 3,
+              "pct": 21.4,
+              "unmeasurable": false,
+              "payoff_net": -465.1,
+              "payoff_median": -25.05
+            },
+            "2s/toward": {
+              "n": 7,
+              "hits": 4,
+              "pct": 57.1,
+              "unmeasurable": true,
+              "payoff_net": 62.5,
+              "payoff_median": 16.3
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -116.3,
+              "payoff_median": -116.3
+            },
+            "at/toward": {
+              "n": 9,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -127.0,
+              "payoff_median": 2.8
+            },
+            "at/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -75.6,
+              "payoff_median": -24.7
+            }
+          }
+        },
+        "S0-H7": {
+          "backtest": {
+            "1s/toward": {
+              "n": 10,
+              "hits": 4,
+              "pct": 40.0,
+              "unmeasurable": false,
+              "payoff_net": 364.2,
+              "payoff_median": 27.45
+            },
+            "2s/toward": {
+              "n": 9,
+              "hits": 6,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 86.3,
+              "payoff_median": -31.7
+            },
+            "1s/away": {
+              "n": 5,
+              "hits": 4,
+              "pct": 80.0,
+              "unmeasurable": true,
+              "payoff_net": 271.8,
+              "payoff_median": 73.8
+            },
+            "at/away": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 14.0,
+              "payoff_median": 9.7
+            },
+            "at/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -45.6,
+              "payoff_median": -16.8
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 0.9,
+              "payoff_median": 0.9
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 82.7,
+              "payoff_median": 41.35
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -117.9,
+              "payoff_median": -34.55
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -46.9,
+              "payoff_median": -46.9
+            },
+            "at/away": {
+              "n": 5,
+              "hits": 2,
+              "pct": 40.0,
+              "unmeasurable": true,
+              "payoff_net": 94.5,
+              "payoff_median": 8.3
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 50.8,
+              "payoff_median": 25.4
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -55.9,
+              "payoff_median": -20.9
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -6.1,
+              "payoff_median": -3.05
+            }
+          }
+        },
+        "S0-H10": {
+          "backtest": {
+            "at/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -97.6,
+              "payoff_median": -31.2
+            },
+            "2s/away": {
+              "n": 21,
+              "hits": 4,
+              "pct": 19.0,
+              "unmeasurable": false,
+              "payoff_net": -5.6,
+              "payoff_median": 7.0
+            },
+            "2s/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -161.9,
+              "payoff_median": -69.1
+            },
+            "1s/away": {
+              "n": 14,
+              "hits": 1,
+              "pct": 7.1,
+              "unmeasurable": false,
+              "payoff_net": -312.8,
+              "payoff_median": -36.05
+            },
+            "1s/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -17.6,
+              "payoff_median": -11.75
+            },
+            "beyond/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 18.0,
+              "payoff_median": 7.3
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 8,
+              "hits": 2,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": -111.5,
+              "payoff_median": -24.15
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 16.5,
+              "payoff_median": 8.25
+            },
+            "2s/away": {
+              "n": 4,
+              "hits": 1,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": 67.6,
+              "payoff_median": 12.05
+            }
+          }
+        },
+        "S0-H4": {
+          "backtest": {
+            "2s/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -77.5,
+              "payoff_median": -20.95
+            },
+            "1s/away": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -97.6,
+              "payoff_median": -17.0
+            },
+            "2s/toward": {
+              "n": 3,
+              "hits": 3,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 140.2,
+              "payoff_median": 45.8
+            }
+          }
+        },
+        "S0-H2": {
+          "backtest": {
+            "1s/toward": {
+              "n": 10,
+              "hits": 2,
+              "pct": 20.0,
+              "unmeasurable": false,
+              "payoff_net": -185.6,
+              "payoff_median": -39.4
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -30.9,
+              "payoff_median": -15.45
+            },
+            "at/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -73.1,
+              "payoff_median": 10.6
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 84.5,
+              "payoff_median": 42.25
+            },
+            "1s/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 102.5,
+              "payoff_median": 16.9
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -101.7,
+              "payoff_median": -18.0
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -62.1,
+              "payoff_median": -31.05
+            },
+            "1s/toward": {
+              "n": 6,
+              "hits": 1,
+              "pct": 16.7,
+              "unmeasurable": true,
+              "payoff_net": 27.1,
+              "payoff_median": 2.45
+            },
+            "at/away": {
+              "n": 6,
+              "hits": 1,
+              "pct": 16.7,
+              "unmeasurable": true,
+              "payoff_net": -154.0,
+              "payoff_median": -20.45
+            },
+            "at/toward": {
+              "n": 4,
+              "hits": 1,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": 18.5,
+              "payoff_median": -0.6
+            },
+            "beyond/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -130.9,
+              "payoff_median": -35.9
+            },
+            "beyond/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 108.9,
+              "payoff_median": 54.45
+            },
+            "2s/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 140.3,
+              "payoff_median": 37.7
+            }
+          }
+        },
+        "S1-H2": {
+          "backtest": {
+            "1s/toward": {
+              "n": 7,
+              "hits": 2,
+              "pct": 28.6,
+              "unmeasurable": true,
+              "payoff_net": -56.9,
+              "payoff_median": -13.7
+            },
+            "at/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -73.1,
+              "payoff_median": 10.6
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 84.5,
+              "payoff_median": 42.25
+            },
+            "1s/away": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 92.7,
+              "payoff_median": 24.0
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -130.2,
+              "payoff_median": -31.5
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -15.0,
+              "payoff_median": -15.0
+            },
+            "at/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -160.2,
+              "payoff_median": -35.55
+            },
+            "at/toward": {
+              "n": 4,
+              "hits": 1,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": 18.5,
+              "payoff_median": -0.6
+            },
+            "1s/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -23.1,
+              "payoff_median": -11.2
+            },
+            "beyond/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 108.9,
+              "payoff_median": 54.45
+            },
+            "2s/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 140.3,
+              "payoff_median": 37.7
+            }
+          }
+        },
+        "S0-H13": {
+          "backtest": {
+            "at/away": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 181.3,
+              "payoff_median": 90.65
+            }
+          }
+        },
+        "S0-H1": {
+          "backtest": {
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 30.9,
+              "payoff_median": 15.45
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 39.9,
+              "payoff_median": 39.9
+            },
+            "1s/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 91.2,
+              "payoff_median": 91.2
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 35.8,
+              "payoff_median": 35.8
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -67.7,
+              "payoff_median": -10.5
+            },
+            "2s/toward": {
+              "n": 4,
+              "hits": 3,
+              "pct": 75.0,
+              "unmeasurable": true,
+              "payoff_net": 102.1,
+              "payoff_median": 42.4
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 28.7,
+              "payoff_median": 28.7
+            },
+            "1s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 46.1,
+              "payoff_median": 23.05
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.7,
+              "payoff_median": -12.7
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -44.7,
+              "payoff_median": -44.7
+            }
+          }
+        },
+        "S1-H1": {
+          "backtest": {
+            "2s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -53.5,
+              "payoff_median": -53.5
+            }
+          }
+        },
+        "S0-H11": {
+          "backtest": {
+            "2s/away": {
+              "n": 11,
+              "hits": 1,
+              "pct": 9.1,
+              "unmeasurable": false,
+              "payoff_net": -413.2,
+              "payoff_median": -47.3
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -65.5,
+              "payoff_median": -65.5
+            },
+            "2s/toward": {
+              "n": 8,
+              "hits": 2,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": -83.6,
+              "payoff_median": -19.0
+            },
+            "1s/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -58.6,
+              "payoff_median": -16.0
+            },
+            "1s/toward": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -150.5,
+              "payoff_median": -18.7
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 133.4,
+              "payoff_median": 133.4
+            }
+          },
+          "forward": {
+            "2s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 74.4,
+              "payoff_median": 74.4
+            },
+            "1s/toward": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -24.2,
+              "payoff_median": 15.1
+            },
+            "1s/away": {
+              "n": 27,
+              "hits": 2,
+              "pct": 7.4,
+              "unmeasurable": false,
+              "payoff_net": -351.2,
+              "payoff_median": -16.2
+            },
+            "at/toward": {
+              "n": 11,
+              "hits": 2,
+              "pct": 18.2,
+              "unmeasurable": false,
+              "payoff_net": -16.8,
+              "payoff_median": 1.0
+            },
+            "at/away": {
+              "n": 13,
+              "hits": 1,
+              "pct": 7.7,
+              "unmeasurable": false,
+              "payoff_net": -155.0,
+              "payoff_median": -12.3
+            },
+            "2s/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 69.3,
+              "payoff_median": 69.3
+            }
+          }
+        },
+        "S0-H3": {
+          "forward": {
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 18.8,
+              "payoff_median": 18.8
+            }
+          }
+        },
+        "S0-H9": {
+          "backtest": {
+            "2s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 134.2,
+              "payoff_median": 55.8
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -29.3,
+              "payoff_median": -29.3
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 24.0,
+              "payoff_median": 24.0
+            }
+          }
+        },
+        "S1-H9": {
+          "backtest": {
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 55.8,
+              "payoff_median": 55.8
+            }
+          }
+        }
+      },
+      "direct": {
+        "backtest": {
+          "either_dir_base_pct": 45.1,
+          "touch_2s": {
+            "n": 819,
+            "qualifying_pct": 59.7
+          },
+          "touch_vwap_trending": {
+            "n": 268,
+            "qualifying_pct": 65.3
+          },
+          "touch_vwap_ranging": {
+            "n": 185,
+            "qualifying_pct": 65.4
+          }
+        },
+        "forward": {
+          "either_dir_base_pct": 42.3,
+          "touch_2s": {
+            "n": 232,
+            "qualifying_pct": 45.7
+          },
+          "touch_vwap_trending": {
+            "n": 104,
+            "qualifying_pct": 28.8
+          },
+          "touch_vwap_ranging": {
+            "n": 104,
+            "qualifying_pct": 40.4
+          }
+        }
+      }
+    },
+    {
+      "instrument": "nas100fut",
+      "status": "provisional",
+      "conditioner_cut": {
+        "S0-H7": {
+          "backtest": {
+            "2s/toward": {
+              "n": 7,
+              "hits": 3,
+              "pct": 42.9,
+              "unmeasurable": true,
+              "payoff_net": 486.5,
+              "payoff_median": 46.5
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -133.0,
+              "payoff_median": -34.0
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 40.0,
+              "payoff_median": 20.0
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": -29.8,
+              "payoff_median": -29.8
+            },
+            "1s/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 23.8,
+              "payoff_median": 0.7
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 341.3,
+              "payoff_median": 105.1
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 61.9,
+              "payoff_median": 61.9
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -162.1,
+              "payoff_median": -162.1
+            },
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 65.5,
+              "payoff_median": 65.5
+            }
+          }
+        },
+        "S0-H6": {
+          "backtest": {
+            "1s/toward": {
+              "n": 6,
+              "hits": 1,
+              "pct": 16.7,
+              "unmeasurable": true,
+              "payoff_net": -130.6,
+              "payoff_median": -31.6
+            },
+            "2s/toward": {
+              "n": 8,
+              "hits": 2,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": -594.5,
+              "payoff_median": -86.1
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 29.8,
+              "payoff_median": 29.8
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 377.3,
+              "payoff_median": 188.65
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 64.1,
+              "payoff_median": 64.1
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 328.0,
+              "payoff_median": 328.0
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 6,
+              "hits": 4,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 97.2,
+              "payoff_median": 41.95
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 301.9,
+              "payoff_median": 150.95
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -30.7,
+              "payoff_median": -30.7
+            },
+            "1s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -74.2,
+              "payoff_median": -37.1
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 0.4,
+              "payoff_median": 0.2
+            }
+          }
+        },
+        "S0-H2": {
+          "backtest": {
+            "2s/away": {
+              "n": 11,
+              "hits": 3,
+              "pct": 27.3,
+              "unmeasurable": false,
+              "payoff_net": -1756.6,
+              "payoff_median": 22.8
+            },
+            "2s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -124.3,
+              "payoff_median": -49.7
+            },
+            "1s/away": {
+              "n": 28,
+              "hits": 6,
+              "pct": 21.4,
+              "unmeasurable": false,
+              "payoff_net": -2175.4,
+              "payoff_median": -98.7
+            },
+            "1s/toward": {
+              "n": 30,
+              "hits": 7,
+              "pct": 23.3,
+              "unmeasurable": false,
+              "payoff_net": -128.4,
+              "payoff_median": -20.85
+            },
+            "at/toward": {
+              "n": 14,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -456.3,
+              "payoff_median": -4.7
+            },
+            "at/away": {
+              "n": 16,
+              "hits": 1,
+              "pct": 6.2,
+              "unmeasurable": false,
+              "payoff_net": 699.4,
+              "payoff_median": 46.05
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 18.9,
+              "payoff_median": -9.0
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 62.9,
+              "payoff_median": 31.45
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -29.8,
+              "payoff_median": -29.8
+            }
+          }
+        },
+        "S1-H2": {
+          "backtest": {
+            "2s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -124.3,
+              "payoff_median": -49.7
+            },
+            "1s/away": {
+              "n": 17,
+              "hits": 4,
+              "pct": 23.5,
+              "unmeasurable": false,
+              "payoff_net": -1335.0,
+              "payoff_median": -32.0
+            },
+            "1s/toward": {
+              "n": 25,
+              "hits": 5,
+              "pct": 20.0,
+              "unmeasurable": false,
+              "payoff_net": -485.0,
+              "payoff_median": -7.4
+            },
+            "at/away": {
+              "n": 12,
+              "hits": 1,
+              "pct": 8.3,
+              "unmeasurable": false,
+              "payoff_net": 646.2,
+              "payoff_median": 49.05
+            },
+            "at/toward": {
+              "n": 9,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -438.8,
+              "payoff_median": -24.3
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 316.0,
+              "payoff_median": 316.0
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 5,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 15.2,
+              "payoff_median": -9.0
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 62.9,
+              "payoff_median": 31.45
+            }
+          }
+        },
+        "S0-H1": {
+          "backtest": {
+            "at/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -250.1,
+              "payoff_median": -125.05
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 2,
+              "pct": 66.7,
+              "unmeasurable": true,
+              "payoff_net": 23.6,
+              "payoff_median": -71.4
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -308.8,
+              "payoff_median": -154.4
+            },
+            "1s/toward": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 527.0,
+              "payoff_median": 263.5
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -712.5,
+              "payoff_median": -712.5
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 505.7,
+              "payoff_median": 505.7
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.2,
+              "payoff_median": -12.2
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 24.9,
+              "payoff_median": 24.9
+            }
+          }
+        },
+        "S0-H11": {
+          "backtest": {
+            "1s/away": {
+              "n": 16,
+              "hits": 10,
+              "pct": 62.5,
+              "unmeasurable": false,
+              "payoff_net": 477.1,
+              "payoff_median": 57.45
+            },
+            "1s/toward": {
+              "n": 12,
+              "hits": 3,
+              "pct": 25.0,
+              "unmeasurable": false,
+              "payoff_net": -168.3,
+              "payoff_median": -72.85
+            },
+            "2s/away": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 43.9,
+              "payoff_median": 35.65
+            },
+            "at/toward": {
+              "n": 10,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -302.7,
+              "payoff_median": -73.4
+            },
+            "at/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 325.5,
+              "payoff_median": 94.75
+            },
+            "2s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -57.0,
+              "payoff_median": -57.0
+            }
+          },
+          "forward": {
+            "2s/away": {
+              "n": 10,
+              "hits": 3,
+              "pct": 30.0,
+              "unmeasurable": false,
+              "payoff_net": 35.3,
+              "payoff_median": 7.55
+            },
+            "beyond/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -14.3,
+              "payoff_median": 11.5
+            },
+            "2s/toward": {
+              "n": 14,
+              "hits": 2,
+              "pct": 14.3,
+              "unmeasurable": false,
+              "payoff_net": 412.0,
+              "payoff_median": 23.1
+            },
+            "1s/toward": {
+              "n": 16,
+              "hits": 1,
+              "pct": 6.2,
+              "unmeasurable": false,
+              "payoff_net": -27.8,
+              "payoff_median": -6.2
+            },
+            "1s/away": {
+              "n": 18,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -106.5,
+              "payoff_median": 0.3
+            },
+            "at/toward": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": 70.5,
+              "payoff_median": 17.25
+            },
+            "at/away": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -19.5,
+              "payoff_median": -6.5
+            },
+            "beyond/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 52.0,
+              "payoff_median": -3.8
+            }
+          }
+        },
+        "S0-H10": {
+          "backtest": {
+            "2s/away": {
+              "n": 42,
+              "hits": 3,
+              "pct": 7.1,
+              "unmeasurable": false,
+              "payoff_net": 1247.9,
+              "payoff_median": 27.4
+            },
+            "1s/away": {
+              "n": 7,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 255.7,
+              "payoff_median": 36.6
+            },
+            "2s/toward": {
+              "n": 14,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -250.4,
+              "payoff_median": -13.4
+            },
+            "1s/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -90.9,
+              "payoff_median": -14.2
+            }
+          },
+          "forward": {
+            "2s/away": {
+              "n": 17,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -479.3,
+              "payoff_median": -22.7
+            },
+            "beyond/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -204.2,
+              "payoff_median": -58.35
+            },
+            "1s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -55.3,
+              "payoff_median": -27.65
+            },
+            "1s/away": {
+              "n": 7,
+              "hits": 1,
+              "pct": 14.3,
+              "unmeasurable": true,
+              "payoff_net": -23.2,
+              "payoff_median": -14.6
+            },
+            "at/toward": {
+              "n": 5,
+              "hits": 2,
+              "pct": 40.0,
+              "unmeasurable": true,
+              "payoff_net": -36.8,
+              "payoff_median": 12.2
+            },
+            "at/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -150.2,
+              "payoff_median": -49.0
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -42.5,
+              "payoff_median": -42.5
+            }
+          }
+        },
+        "S0-H9": {
+          "backtest": {
+            "2s/away": {
+              "n": 12,
+              "hits": 6,
+              "pct": 50.0,
+              "unmeasurable": false,
+              "payoff_net": 271.8,
+              "payoff_median": 51.3
+            },
+            "1s/away": {
+              "n": 8,
+              "hits": 1,
+              "pct": 12.5,
+              "unmeasurable": true,
+              "payoff_net": 576.2,
+              "payoff_median": 79.55
+            },
+            "2s/toward": {
+              "n": 13,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -395.5,
+              "payoff_median": -42.7
+            },
+            "1s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -61.0,
+              "payoff_median": -30.5
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 46.3,
+              "payoff_median": -3.0
+            },
+            "1s/away": {
+              "n": 14,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -231.4,
+              "payoff_median": -21.75
+            },
+            "1s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 19.1,
+              "payoff_median": 27.0
+            },
+            "at/away": {
+              "n": 4,
+              "hits": 1,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": 9.7,
+              "payoff_median": 0.0
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 29.8,
+              "payoff_median": 14.9
+            }
+          }
+        },
+        "S1-H9": {
+          "backtest": {
+            "1s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 127.8,
+              "payoff_median": 63.9
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": -350.5,
+              "payoff_median": -175.25
+            }
+          },
+          "forward": {
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 4.5,
+              "payoff_median": 4.5
+            }
+          }
+        }
+      },
+      "direct": {
+        "backtest": {
+          "either_dir_base_pct": 41.6,
+          "touch_2s": {
+            "n": 596,
+            "qualifying_pct": 39.6
+          },
+          "touch_vwap_trending": {
+            "n": 181,
+            "qualifying_pct": 60.8
+          },
+          "touch_vwap_ranging": {
+            "n": 113,
+            "qualifying_pct": 54.9
+          }
+        },
+        "forward": {
+          "either_dir_base_pct": 42.4,
+          "touch_2s": {
+            "n": 240,
+            "qualifying_pct": 29.2
+          },
+          "touch_vwap_trending": {
+            "n": 92,
+            "qualifying_pct": 30.4
+          },
+          "touch_vwap_ranging": {
+            "n": 51,
+            "qualifying_pct": 47.1
+          }
+        }
+      }
+    },
+    {
+      "instrument": "us30fut",
+      "status": "provisional",
+      "conditioner_cut": {
+        "S0-H2": {
+          "backtest": {
+            "2s/away": {
+              "n": 13,
+              "hits": 2,
+              "pct": 15.4,
+              "unmeasurable": false,
+              "payoff_net": -1310.0,
+              "payoff_median": 4.0
+            },
+            "2s/toward": {
+              "n": 12,
+              "hits": 4,
+              "pct": 33.3,
+              "unmeasurable": false,
+              "payoff_net": 72.9,
+              "payoff_median": -22.75
+            },
+            "1s/toward": {
+              "n": 19,
+              "hits": 7,
+              "pct": 36.8,
+              "unmeasurable": false,
+              "payoff_net": -595.0,
+              "payoff_median": -72.0
+            },
+            "1s/away": {
+              "n": 15,
+              "hits": 4,
+              "pct": 26.7,
+              "unmeasurable": false,
+              "payoff_net": -1613.0,
+              "payoff_median": -23.5
+            },
+            "at/away": {
+              "n": 12,
+              "hits": 8,
+              "pct": 66.7,
+              "unmeasurable": false,
+              "payoff_net": 1678.0,
+              "payoff_median": 130.5
+            },
+            "at/toward": {
+              "n": 9,
+              "hits": 5,
+              "pct": 55.6,
+              "unmeasurable": true,
+              "payoff_net": -444.0,
+              "payoff_median": -4.0
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -97.0,
+              "payoff_median": -97.0
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -29.0,
+              "payoff_median": -29.0
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 92.5,
+              "payoff_median": 7.5
+            },
+            "1s/away": {
+              "n": 12,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -281.0,
+              "payoff_median": -16.5
+            },
+            "1s/toward": {
+              "n": 8,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -54.0,
+              "payoff_median": 3.0
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -18.5,
+              "payoff_median": -18.5
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -6.0,
+              "payoff_median": -3.0
+            }
+          }
+        },
+        "S1-H2": {
+          "backtest": {
+            "2s/away": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": -1141.5,
+              "payoff_median": -295.5
+            },
+            "2s/toward": {
+              "n": 12,
+              "hits": 4,
+              "pct": 33.3,
+              "unmeasurable": false,
+              "payoff_net": 72.9,
+              "payoff_median": -22.75
+            },
+            "1s/toward": {
+              "n": 16,
+              "hits": 5,
+              "pct": 31.2,
+              "unmeasurable": false,
+              "payoff_net": -930.0,
+              "payoff_median": -82.5
+            },
+            "1s/away": {
+              "n": 8,
+              "hits": 2,
+              "pct": 25.0,
+              "unmeasurable": true,
+              "payoff_net": -121.5,
+              "payoff_median": -14.75
+            },
+            "at/away": {
+              "n": 9,
+              "hits": 8,
+              "pct": 88.9,
+              "unmeasurable": true,
+              "payoff_net": 1962.5,
+              "payoff_median": 161.0
+            },
+            "at/toward": {
+              "n": 7,
+              "hits": 4,
+              "pct": 57.1,
+              "unmeasurable": true,
+              "payoff_net": -559.5,
+              "payoff_median": -63.5
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -97.0,
+              "payoff_median": -97.0
+            }
+          },
+          "forward": {
+            "2s/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 92.5,
+              "payoff_median": 7.5
+            },
+            "1s/away": {
+              "n": 11,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -245.0,
+              "payoff_median": -13.0
+            },
+            "1s/toward": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -31.0,
+              "payoff_median": 9.75
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -18.5,
+              "payoff_median": -18.5
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 112.5,
+              "payoff_median": 112.5
+            }
+          }
+        },
+        "S0-H6": {
+          "backtest": {
+            "2s/toward": {
+              "n": 4,
+              "hits": 2,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 171.5,
+              "payoff_median": 35.75
+            },
+            "at/toward": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -131.5,
+              "payoff_median": -63.5
+            },
+            "1s/toward": {
+              "n": 13,
+              "hits": 4,
+              "pct": 30.8,
+              "unmeasurable": false,
+              "payoff_net": -81.5,
+              "payoff_median": 7.5
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": -478.0,
+              "payoff_median": -478.0
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 9.5,
+              "payoff_median": 9.5
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -50.6,
+              "payoff_median": -50.6
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -61.0,
+              "payoff_median": -61.0
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": -476.5,
+              "payoff_median": -115.5
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -242.5,
+              "payoff_median": -103.5
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -73.5,
+              "payoff_median": -36.75
+            },
+            "beyond/away": {
+              "n": 2,
+              "hits": 1,
+              "pct": 50.0,
+              "unmeasurable": true,
+              "payoff_net": 34.0,
+              "payoff_median": 17.0
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -2.0,
+              "payoff_median": -1.0
+            }
+          }
+        },
+        "S0-H1": {
+          "backtest": {
+            "1s/toward": {
+              "n": 5,
+              "hits": 3,
+              "pct": 60.0,
+              "unmeasurable": true,
+              "payoff_net": -674.0,
+              "payoff_median": -91.0
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 146.0,
+              "payoff_median": 146.0
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -219.5,
+              "payoff_median": -127.0
+            },
+            "2s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 130.5,
+              "payoff_median": 65.25
+            },
+            "at/toward": {
+              "n": 2,
+              "hits": 2,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 555.5,
+              "payoff_median": 277.75
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -8.5,
+              "payoff_median": -4.25
+            },
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 2.5,
+              "payoff_median": 2.5
+            }
+          }
+        },
+        "S0-H7": {
+          "backtest": {
+            "1s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 29.0,
+              "payoff_median": 14.5
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 15.5,
+              "payoff_median": 15.5
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 272.0,
+              "payoff_median": 272.0
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 291.0,
+              "payoff_median": 291.0
+            },
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -25.5,
+              "payoff_median": -25.5
+            },
+            "2s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -132.0,
+              "payoff_median": -132.0
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 54.5,
+              "payoff_median": 27.25
+            },
+            "2s/toward": {
+              "n": 3,
+              "hits": 1,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": 189.5,
+              "payoff_median": -15.5
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -23.5,
+              "payoff_median": -23.5
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 11.0,
+              "payoff_median": 11.0
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -47.0,
+              "payoff_median": -47.0
+            }
+          }
+        },
+        "S0-H10": {
+          "backtest": {
+            "at/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 228.0,
+              "payoff_median": 63.5
+            },
+            "2s/away": {
+              "n": 17,
+              "hits": 2,
+              "pct": 11.8,
+              "unmeasurable": false,
+              "payoff_net": -721.5,
+              "payoff_median": 7.0
+            },
+            "1s/away": {
+              "n": 6,
+              "hits": 2,
+              "pct": 33.3,
+              "unmeasurable": true,
+              "payoff_net": -78.0,
+              "payoff_median": 30.5
+            },
+            "at/away": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 259.5,
+              "payoff_median": 64.5
+            }
+          },
+          "forward": {
+            "1s/away": {
+              "n": 17,
+              "hits": 1,
+              "pct": 5.9,
+              "unmeasurable": false,
+              "payoff_net": -99.5,
+              "payoff_median": 6.5
+            },
+            "2s/away": {
+              "n": 10,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -65.5,
+              "payoff_median": 8.25
+            },
+            "1s/toward": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 82.0,
+              "payoff_median": 41.0
+            },
+            "2s/toward": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 81.0,
+              "payoff_median": 81.0
+            },
+            "at/toward": {
+              "n": 11,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -96.5,
+              "payoff_median": 0.0
+            },
+            "at/away": {
+              "n": 9,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -305.0,
+              "payoff_median": -25.0
+            }
+          }
+        },
+        "S0-H11": {
+          "backtest": {
+            "1s/away": {
+              "n": 8,
+              "hits": 5,
+              "pct": 62.5,
+              "unmeasurable": true,
+              "payoff_net": 518.0,
+              "payoff_median": 55.0
+            },
+            "1s/toward": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -103.0,
+              "payoff_median": -9.0
+            },
+            "at/away": {
+              "n": 5,
+              "hits": 4,
+              "pct": 80.0,
+              "unmeasurable": true,
+              "payoff_net": 1344.6,
+              "payoff_median": 273.5
+            },
+            "at/toward": {
+              "n": 11,
+              "hits": 5,
+              "pct": 45.5,
+              "unmeasurable": false,
+              "payoff_net": -667.1,
+              "payoff_median": -36.0
+            },
+            "2s/away": {
+              "n": 22,
+              "hits": 3,
+              "pct": 13.6,
+              "unmeasurable": false,
+              "payoff_net": 725.5,
+              "payoff_median": 24.0
+            },
+            "2s/toward": {
+              "n": 13,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": false,
+              "payoff_net": -555.4,
+              "payoff_median": -42.0
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -21.0,
+              "payoff_median": -21.0
+            },
+            "beyond/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 18.5,
+              "payoff_median": 18.5
+            }
+          },
+          "forward": {
+            "2s/away": {
+              "n": 6,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -317.5,
+              "payoff_median": -28.25
+            },
+            "2s/toward": {
+              "n": 5,
+              "hits": 1,
+              "pct": 20.0,
+              "unmeasurable": true,
+              "payoff_net": 168.5,
+              "payoff_median": -9.0
+            },
+            "1s/toward": {
+              "n": 14,
+              "hits": 9,
+              "pct": 64.3,
+              "unmeasurable": false,
+              "payoff_net": 831.0,
+              "payoff_median": 75.0
+            },
+            "1s/away": {
+              "n": 20,
+              "hits": 1,
+              "pct": 5.0,
+              "unmeasurable": false,
+              "payoff_net": -475.0,
+              "payoff_median": -37.5
+            },
+            "beyond/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -147.5,
+              "payoff_median": -73.75
+            },
+            "at/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -160.5,
+              "payoff_median": -80.25
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -38.5,
+              "payoff_median": -38.5
+            }
+          }
+        },
+        "S0-H4": {
+          "backtest": {
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -165.5,
+              "payoff_median": -165.5
+            }
+          }
+        },
+        "S0-H9": {
+          "backtest": {
+            "1s/toward": {
+              "n": 4,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -165.0,
+              "payoff_median": -44.0
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 43.0,
+              "payoff_median": 43.0
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 464.5,
+              "payoff_median": 464.5
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.4,
+              "payoff_median": -12.4
+            },
+            "2s/away": {
+              "n": 2,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -140.0,
+              "payoff_median": -70.0
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -405.0,
+              "payoff_median": -136.0
+            }
+          },
+          "forward": {
+            "2s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -2.0,
+              "payoff_median": -2.0
+            },
+            "1s/away": {
+              "n": 3,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -48.5,
+              "payoff_median": -13.0
+            },
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -28.0,
+              "payoff_median": -28.0
+            }
+          }
+        },
+        "S1-H9": {
+          "backtest": {
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -74.0,
+              "payoff_median": -74.0
+            },
+            "at/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": 43.0,
+              "payoff_median": 43.0
+            },
+            "at/away": {
+              "n": 1,
+              "hits": 1,
+              "pct": 100.0,
+              "unmeasurable": true,
+              "payoff_net": 464.5,
+              "payoff_median": 464.5
+            },
+            "beyond/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -12.4,
+              "payoff_median": -12.4
+            }
+          },
+          "forward": {
+            "1s/toward": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -28.0,
+              "payoff_median": -28.0
+            },
+            "1s/away": {
+              "n": 1,
+              "hits": 0,
+              "pct": 0.0,
+              "unmeasurable": true,
+              "payoff_net": -13.0,
+              "payoff_median": -13.0
+            }
+          }
+        }
+      },
+      "direct": {
+        "backtest": {
+          "either_dir_base_pct": 44.7,
+          "touch_2s": {
+            "n": 743,
+            "qualifying_pct": 42.0
+          },
+          "touch_vwap_trending": {
+            "n": 159,
+            "qualifying_pct": 62.9
+          },
+          "touch_vwap_ranging": {
+            "n": 136,
+            "qualifying_pct": 68.4
+          }
+        },
+        "forward": {
+          "either_dir_base_pct": 42.8,
+          "touch_2s": {
+            "n": 130,
+            "qualifying_pct": 24.6
+          },
+          "touch_vwap_trending": {
+            "n": 98,
+            "qualifying_pct": 37.8
+          },
+          "touch_vwap_ranging": {
+            "n": 48,
+            "qualifying_pct": 52.1
+          }
+        }
+      }
+    }
+  ]
+}

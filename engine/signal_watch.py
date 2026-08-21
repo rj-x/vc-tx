@@ -38,7 +38,7 @@ H12_MIN_VISITS = 3           # ratified
 H12_WINDOW_MIN = 90          # ratified
 H12_DRY_RV = 0.7             # ratified (founding low_volume_mult, cited)
 H13_VALUE_AREA_PCT = 0.70    # operator-specified at S0-H13 registration
-                             # (standard value-area convention, register 50)
+                             # 2026-08-20 (value-area convention, register 50)
 
 # row-declaration tables (this module is the one permitted home for
 # hypothesis identifiers; the scoreboard imports these):
