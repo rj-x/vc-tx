@@ -597,6 +597,20 @@ set still growing toward fold support).
    memory-not-evidence; H13: ger40 5/6 (+397) carries all shine, us30
    single fire −206 (falling knife — the omitted absorption clause was
    the safety mechanism; S1-H13's case pre-written for organs #4/#5).
+27. Consolidated block landed (register 51, `57c477b`, 100/100): date
+   correction in (4th reviewer strike; trial-log ts fields were always
+   correct — prose only); docket now 14 candidates (#13 sweep-and-
+   reclaim mapped w/ 4 gaps + s9 xref; #14 intraday momentum, JFE
+   2018, cheapest test on docket); drift census: home July INVERTS the
+   documented anomaly (+30.9bps intraday / −12.0 overnight; fwd flips
+   at n=5) — grading unaffected (magnitudes 2 orders below move
+   scale), texture to docket; VWAP census: 2σ touches 63.3% vs 44.3%
+   (n=1,050), ranging-VWAP 65.1% — DO NOT QUOTE pending re-cut sent:
+   (a) class-conditioned base, (b) episode-begins-AFTER-touch
+   convention verified, (c) phase-conditioned base for the ranging
+   cell; ORB + EMA parked with reasons. Operator board unchanged:
+   nas100 evening gates Q-H1-GEN → probe evening → Saturday campaign +
+   Part C → governance sitting → 14-candidate discussion w/ reviewer.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
