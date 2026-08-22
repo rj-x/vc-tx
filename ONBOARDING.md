@@ -691,6 +691,20 @@ set still growing toward fold support).
    nearly everywhere (tail-carried nets); n collapses at wide widths.
    Operator review loop: DASHBOARD → SIGNAL_POINTS → drill only on
    warrant.
+33. Baselines + glossary LIVE (register 60, `0d11265`, 108/108):
+   B-TREND / B-RANDOM / B-ALWAYS-LONG through identical harvest
+   machinery, fenced as controls, vs-matched-baseline column live.
+   **SOBERING FIRST READ: B-RANDOM harvests +263 net / +12.2 median
+   @3x home backtest — July's tape paid random wide-stop entries;
+   most signals sit BELOW their matched baseline (S0-H10 −26.7 vs
+   B-TREND; S0-H14 −25.4 fwd). The points page's green was mostly
+   floor, not skill. S0-H1 above random (+19.4) yet absolute-negative
+   fwd — sight-without-harvest confirmed.** Ensemble upgrade sent
+   (B-RANDOM ≥20 seeds as distribution; B-TREND phase-offsets). H1
+   harvest program pre-registered (6 counted variants, build queued).
+   GLOSSARY.md (~130 terms) + test enforcement: undefined acronyms
+   fail the suite. B-TREND empty-first-emission bug caught+fixed
+   (missing debug.structure).
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
