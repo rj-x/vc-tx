@@ -1,7 +1,8 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Statuses: `testable-now` (a weekly artifact measures it) ·
+table.** Register-current-through: 55 (freshness-checked by the weekly
+campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
 ratification). Hand-maintained; the register entries cited are
@@ -16,7 +17,7 @@ authoritative.
 | H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
-| candidate docket | **FROZEN for the sitting (register 52)**: 12 internal + #13 sweep-and-reclaim + #14 intraday momentum + #15 drift-inversion + #16 S1-H13-absorption + #17 scoreboard hit-convention question; drift/VWAP/matrix censuses + geometry curves report into it; new ideas queue for the NEXT sitting |
+| candidate docket | **FROZEN for the sitting (register 52)**: 12 internal + #13 sweep-and-reclaim + #14 intraday momentum + #15 drift-inversion + #16 S1-H13-absorption + #17 (RESOLVED by registers 53–54: dual-convention ruling + Q-family); drift/VWAP/matrix censuses + geometry curves report into it; new ideas queue for the NEXT sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 

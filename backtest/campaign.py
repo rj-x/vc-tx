@@ -512,6 +512,29 @@ def main(slugs=(SLUG, "uk100")):
                  os.path.join(ROOT, "reports", "opportunity_ledger.csv"))
     with open(os.path.join(OUT, "summary.json"), "w") as f:
         json.dump(summary, f, indent=2, default=str)
+    # ---- Part C (register 55, ADOPTED 2026-08-22): forward-zone and
+    # standing studies run weekly in the same command; each module carries
+    # its own stamps, conventions, and sealed-window skips.
+    import sys as _c_sys
+    import subprocess as _c_sp
+    for mod in ("backtest.scoreboard", "backtest.recipes",
+                "backtest.forward_migration", "backtest.cofire",
+                "backtest.conditioning_matrix", "backtest.vwap_census",
+                "backtest.drift_census", "backtest.excursion_geometry"):
+        print(f"\n==== Part C: {mod} ====")
+        _c_sp.run([_c_sys.executable, "-m", mod], check=True)
+    # backlog freshness check (register 55; staleness class has precedent)
+    import re as _c_re
+    reg_txt = open(os.path.join(ROOT, "audit",
+                                "strategy_findings_and_risks.md")).read()
+    latest = max(int(x) for x in _c_re.findall(r"^(\d+)\.\s\*\*",
+                                               reg_txt, _c_re.M))
+    bl = open(os.path.join(ROOT, "docs", "backlog_status.md")).read()
+    m = _c_re.search(r"Register-current-through:\s*(\d+)", bl)
+    if not m or int(m.group(1)) < latest:
+        print(f"!! BACKLOG STALENESS: docs/backlog_status.md "
+              f"current-through {m.group(1) if m else '?'} < register "
+              f"{latest} — update the hand-maintained page")
     from backtest.report import generate_report
     generate_report()
     # canonical parameter registry regenerates with the weekly run

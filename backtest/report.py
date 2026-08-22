@@ -290,6 +290,77 @@ def generate_report():
     else:
         a("No paper ledger yet.")
     a("")
+    a("## Part C — forward-zone & standing studies (register 55, weekly)")
+    a("")
+    a("Run in the same campaign command; every artifact carries its own "
+      "stamps, conventions (dual-convention grading, register 53; "
+      "conditioned baselines, register 47), and sealed-window skips. "
+      "Index + headlines (artifacts in reports/scoreboard/ unless noted):")
+    a("")
+    import json as _json
+
+    def _art(name):
+        p = os.path.join(ROOT, "reports", "scoreboard", name)
+        try:
+            return _json.load(open(p))
+        except Exception:
+            return None
+    sb = _art("hypothesis_performance.json")
+    if sb:
+        insts = sb.get("instruments", {})
+        home = insts.get("uk100fut", {})
+        un = (home.get("signals", {}).get("forward", {})
+              .get("_union", {}))
+        a(f"- **Signal scoreboard** (`hypothesis_performance.md|.json`, "
+          f"engine `{sb.get('engine_commit', '?')[:9]}`): "
+          f"{len(insts)} instruments; home forward union coverage "
+          f"{un.get('pct', '—')}% "
+          f"({un.get('episodes_covered_by_any_row', '—')}"
+          f"/{un.get('of', '—')}).")
+    rc = _art("recipe_performance.json")
+    if rc:
+        a(f"- **Recipe performance** (`recipe_performance.md|.json`): set "
+          f"**{rc.get('recipe_set', '?')}**, "
+          f"{len(rc.get('results', []))} instruments; provenance printed "
+          f"per recipe.")
+    try:
+        import glob as _glob
+        fm_paths = sorted(_glob.glob(os.path.join(
+            ROOT, "reports", "forward", "migration_forward_*.json")))
+        if fm_paths:
+            fm = _json.load(open(fm_paths[-1]))
+            g = fm.get("graded_1146Z_expectation", {})
+            a(f"- **Forward migration** (`reports/forward/"
+            f"{os.path.basename(fm_paths[-1])}`): "
+              f"{fm.get('n_chain_events_forward', '—')} forward chains; "
+              f"11:46Z grade matched={g.get('matched')}.")
+    except Exception:
+        pass
+    cf = _art("cofire.json")
+    if cf:
+        a("- **Co-fire census** (`cofire.md|.json`): cross-family pairs; "
+          "composites go through the front door only.")
+    cm = _art("conditioning_matrix.json")
+    if cm:
+        a("- **Conditioning matrix** (`conditioning_matrix.md|.json`): "
+          "state-conditioned cells, episode-start hits; survivors are "
+          "sitting material.")
+    vw = _art("vwap_census.json")
+    if vw:
+        a("- **VWAP census** (`vwap_census.md|.json`): re-cut conventions "
+          "(episode-start hits, decile-matched + phase-conditioned bases); "
+          "nothing survives at home as of the re-cut.")
+    dc = _art("drift_census.json")
+    if dc:
+        a("- **Drift census** (`drift_census.md|.json`): "
+          "overnight-vs-intraday + per-session drift; grading-fairness "
+          "verdict — no base-rate change indicated.")
+    eg = _art("excursion_geometry.json")
+    if eg:
+        a("- **Excursion geometry** (`excursion_geometry.md|.json`): MAE "
+          "distributions + TP ladder (tail-risk warnings in-header) — the "
+          "v1 recipe-values evidence base.")
+    a("")
     a("## Cadence")
     a("")
     a("Daily manual sync (`scripts/sync_daily.sh`); weekly campaign "
