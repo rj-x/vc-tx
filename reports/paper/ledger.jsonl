@@ -51,3 +51,14 @@
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-19 20:26:32.314111+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-20 20:20:38.592424+00:00"}
 {"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-20 20:25:48.655889+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:05:37.114595+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:10:50.805805+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:16:00.964988+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:21:15.346646+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:26:26.538135+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:31:36.922721+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:36:46.944608+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:41:56.925536+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:47:06.699752+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:52:17.772851+00:00"}
+{"event": "WATCHDOG_STALL", "quiet_polls": 5, "ts": "2026-08-21 20:57:28.295255+00:00"}

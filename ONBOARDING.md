@@ -611,6 +611,46 @@ set still growing toward fold support).
    cell; ORB + EMA parked with reasons. Operator board unchanged:
    nas100 evening gates Q-H1-GEN → probe evening → Saturday campaign +
    Part C → governance sitting → 14-candidate discussion w/ reviewer.
+28. Register 52 (`860f648`, 101/101): docket FROZEN at 17 (#15 drift-
+   inversion, #16 S1-H13-absorption, #17 hit-convention); conditioning
+   matrix ran (session dimension dominates both tails — S0-H11-overlap
+   +39.3pp n=40, S0-H6-london −34.2pp; best-of-many + single-month
+   discounts apply; sitting material only); geometry curves delivered
+   (MAE p50/p90/p95 in ATR @ 60/120/EOD + TP-ladder reach probabilities
+   83–94% @0.5×ATR decaying to 48–71% @2×, warnings printed in
+   artifact). **PRIORITY REORDER: #17 outranks the sitting** — the
+   scoreboard's precision grading uses the late-entry-crediting
+   convention the VWAP re-cut retired; ratification block SENT (adopt
+   episode-start-forward board-wide → Evidence Regression re-emit with
+   old/new side-by-side on Q-H1-GEN / H2-fwd / H8 / H6-conditioned →
+   only THEN do validation evenings unlock formal grades). Convention
+   before grades. RESOLVED (register 53, `59ba47c`, 101/101): operator
+   ruled DUAL-CONVENTION — initiation (strict, episode-begins-after,
+   own base curves, carries the marker) + participation (historic,
+   permanently chained to its median-capture companion). All history =
+   participation-labeled; initiation columns fresh. First divergence
+   read: **H2-fwd anomaly = participation, not prediction** (init 18.2
+   vs part 27.3 at home, same split on all 4 instruments, both
+   configs — promote case + dated observation re-read at revisits);
+   **Q-H1-GEN splits per instrument** (nas100 init=part 38.2%,
+   genuinely predictive-looking; us30 20.0-vs-33.8 = standing-inside-
+   moves). Pre-reg questions grade on INITIATION (stated pre-grade);
+   census conventions unchanged; em-dash card bug fixed (semantically-
+   empty-cell class precedent). Path to first grade asterisk-free:
+   nas100 evening → grade.
+29. NAMESPACE CLOSED (register 54, `2ea0c51`, 102/102): three families
+   final — H<n> claims, S<k>-H<n> configurations, Q<k>-H<n>
+   pre-registered questions (dated prediction + grading conditions +
+   convention, graded once YES/NO/PARTIAL, never edited). Q-H1-GEN →
+   Q1-H1, Q-H7-GEO → Q1-H7 (suffixes = descriptions); validator +
+   tests refuse legacy forms, wrong bindings, malformed shapes —
+   everything else out, permanently. Origin note recorded (Q- family
+   reviewer-coined unratified, S-T3B lapse class, operator-caught).
+   Cards: claim + signals + questions as one unit. CRITICAL PATH:
+   nas100 validation evening → Q1-H1 becomes the project's first
+   graded question (initiation convention, per-instrument). Then:
+   probe evening, Saturday campaign + Part C, governance sitting,
+   17-item docket discussion. Building phase over; decisions remain.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
