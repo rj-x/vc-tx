@@ -39,10 +39,10 @@ H12_WINDOW_MIN = 90          # ratified
 H12_DRY_RV = 0.7             # ratified (founding low_volume_mult, cited)
 H13_VALUE_AREA_PCT = 0.70    # operator-specified at S0-H13 registration
                              # 2026-08-20 (value-area convention, register 50)
-H15_SPEED_LIMIT_MIN = 30     # PROPOSED (register 56): opposite-boundary
-                             # break within 30 min of the sweep — derived
-                             # from measured t-MFE medians (~25-33 min,
-                             # excursion study); ratification pending
+H15_SPEED_LIMIT_MIN = 30     # RATIFIED 2026-08-22 (register 57): derived
+                             # from measured t-MFE medians (excursion
+                             # study); range = the phase tracker's own
+                             # ranging object (no new free parameter)
 H16_WINDOW_MIN = 30          # opening/closing window (GHLZ JFE 2018
                              # construction; operator order register 56)
 

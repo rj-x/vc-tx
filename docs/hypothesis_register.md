@@ -436,12 +436,11 @@ entry is a separate decision.
     skeleton — the H12/H13 starvation lesson applied): RANGING phase +
     sweep print beyond the phase tracker's own range boundary + close
     beyond the OPPOSITE boundary within 30 min → fire toward the trailing
-    profile's PoC. TWO PROPOSED PARAMETERS, derivation-stated,
-    ratification pending: range definition = `ectx.range_hi/range_lo`
-    (the founding ranging criteria's existing object — no new window);
-    speed limit = 30 min (measured t-MFE medians 25–33 min, excursion
-    study).
-- **Status:** **signal-live** (1 signal; parameters flagged).
+    profile's PoC. Parameters RATIFIED 2026-08-22
+    (register 57) as derivation-stated: range = the phase tracker's own
+    ranging object (no new free parameter — the best possible
+    derivation); speed limit = 30 min (measured t-MFE medians 25–33 min).
+- **Status:** **signal-live** (1 signal).
 - **Latest review:** keep-watching (record opens at the next run).
 - AUDIT: PASS with the two flags above.
 
