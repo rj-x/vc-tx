@@ -731,7 +731,13 @@ set still growing toward fold support).
    expectancy column (time-exit harvest) nominate different mechanics;
    design note sent: any Q2-H6-YES recipe must be TARGET-based,
    time-exit variant already ruled out. One-pen hygiene = register
-   64(3), practiced same turn.
+   64(3), practiced same turn. Register 65 (`b3971fc`): fill-model
+   asymmetry = standing fact — pessimistic family (recipes/ladder/R2)
+   vs optimistic (touch=fill reach columns), headers declare, mixed
+   pages carry non-comparability, glossary entry + haircut clause;
+   retro-catch: excursion TP ladder was already quietly optimistic,
+   now labeled. Scalp chain enforced: YES → target-based → haircut
+   ratified → recipe registers.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
