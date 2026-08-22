@@ -127,9 +127,22 @@ In-cash releases inside the working set: **8** · median volume ratio in [releas
 
 ## FORWARD_PAPER (live paper ledger; forward zone)
 
-go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 3 · NOTE 5 · START 6 · STOP 3 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 16
+go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 4 · NOTE 5 · START 7 · STOP 4 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 37
 Paper trades to date: **0** (first-session silence is the likely and correct outcome)
 Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARMED ahead of first trade
+
+## Part C — forward-zone & standing studies (register 55, weekly)
+
+Run in the same campaign command; every artifact carries its own stamps, conventions (dual-convention grading, register 53; conditioned baselines, register 47), and sealed-window skips. Index + headlines (artifacts in reports/scoreboard/ unless noted):
+
+- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `bcfdc80a6`): 4 instruments; home forward union coverage 85.2% (46/54).
+- **Recipe performance** (`recipe_performance.md|.json`): set **recipe_set_v0.2**, 4 instruments; provenance printed per recipe.
+- **Forward migration** (`reports/forward/migration_forward_20260814_20260821.json`): 173 forward chains; 11:46Z grade matched=False.
+- **Co-fire census** (`cofire.md|.json`): cross-family pairs; composites go through the front door only.
+- **Conditioning matrix** (`conditioning_matrix.md|.json`): state-conditioned cells, episode-start hits; survivors are sitting material.
+- **VWAP census** (`vwap_census.md|.json`): re-cut conventions (episode-start hits, decile-matched + phase-conditioned bases); nothing survives at home as of the re-cut.
+- **Drift census** (`drift_census.md|.json`): overnight-vs-intraday + per-session drift; grading-fairness verdict — no base-rate change indicated.
+- **Excursion geometry** (`excursion_geometry.md|.json`): MAE distributions + TP ladder (tail-risk warnings in-header) — the v1 recipe-values evidence base.
 
 ## Cadence
 

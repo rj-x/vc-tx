@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL recipe layer (grammar v1) \u2014 never validation; idealized fills per the honest-fill rules",
-  "engine_commit": "98e5c99b009c06f454434a803f1102210ba9aaa2",
+  "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
   "recipe_set": "recipe_set_v0.2",
   "set_definition": {
     "R-FIX": "{'provenance': 'illustrative-unratified', 'stages': [{'stop': [('fixed_pts', 10.0)], 'target': ('fixed_pts', 20.0)}]}",
@@ -37,18 +37,18 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 13.3,
-              "net_pts": -102.7,
+              "n": 21,
+              "win_rate_pct": 19.0,
+              "net_pts": -127.7,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 120.9,
+              "avg_duration_min": 126.9,
               "net_by_session": {
-                "london": -7.8,
-                "ny_only": -33.9,
+                "london": -11.7,
+                "ny_only": -43.7,
                 "asia": -45.2,
-                "overlap": -4.5,
+                "overlap": -15.8,
                 "dead": -11.3
               }
             }
@@ -71,19 +71,19 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 40.0,
-              "net_pts": 17.3,
+              "n": 21,
+              "win_rate_pct": 38.1,
+              "net_pts": 14.0,
               "median_pts": -11.3,
               "biggest_win": 18.7,
-              "biggest_loss": -11.5,
-              "avg_duration_min": 401.7,
+              "biggest_loss": -14.0,
+              "avg_duration_min": 321.1,
               "net_by_session": {
-                "overlap": -4.3,
-                "ny_only": 3.3,
-                "asia": -3.9,
-                "london": 33.5,
-                "dead": -11.3
+                "overlap": -15.6,
+                "ny_only": -0.8,
+                "asia": 14.8,
+                "london": 40.9,
+                "dead": -25.3
               }
             }
           },
@@ -105,17 +105,17 @@
               }
             },
             "forward": {
-              "n": 10,
-              "win_rate_pct": 30.0,
-              "net_pts": -34.8,
+              "n": 13,
+              "win_rate_pct": 23.1,
+              "net_pts": -68.7,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 447.8,
+              "avg_duration_min": 354.7,
               "net_by_session": {
-                "ny_only": 26.1,
+                "ny_only": 3.5,
                 "london": -45.2,
-                "overlap": -4.4,
+                "overlap": -15.7,
                 "asia": -11.3
               }
             }
@@ -134,15 +134,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 100.0,
-              "net_pts": 18.7,
-              "median_pts": 18.7,
+              "n": 3,
+              "win_rate_pct": 33.3,
+              "net_pts": -3.9,
+              "median_pts": -11.3,
               "biggest_win": 18.7,
-              "biggest_loss": 18.7,
-              "avg_duration_min": 397.0,
+              "biggest_loss": -11.3,
+              "avg_duration_min": 156.0,
               "net_by_session": {
-                "ny_only": 18.7
+                "ny_only": 18.7,
+                "asia": -22.6
               }
             }
           },
@@ -164,34 +165,34 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 42.3,
-              "net_pts": 19.2,
+              "n": 38,
+              "win_rate_pct": 44.7,
+              "net_pts": 50.1,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 132.9,
+              "avg_duration_min": 113.0,
               "net_by_session": {
-                "asia": -37.8,
-                "london": 3.1,
-                "ny_only": 56.1,
-                "overlap": -20.9,
+                "asia": -60.4,
+                "london": 17.9,
+                "ny_only": 63.5,
+                "overlap": 10.4,
                 "dead": 18.7
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 5,
-              "win_rate_pct": 40.0,
-              "net_pts": 3.5,
+              "n": 6,
+              "win_rate_pct": 33.3,
+              "net_pts": -7.8,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 254.2,
+              "avg_duration_min": 277.3,
               "net_by_session": {
                 "london": -3.9,
-                "ny_only": 7.4
+                "ny_only": -3.9
               }
             }
           },
@@ -228,17 +229,18 @@
               }
             },
             "forward": {
-              "n": 12,
-              "win_rate_pct": 41.7,
-              "net_pts": 14.2,
-              "median_pts": -11.3,
+              "n": 18,
+              "win_rate_pct": 44.4,
+              "net_pts": 30.1,
+              "median_pts": -7.7,
               "biggest_win": 18.7,
               "biggest_loss": -11.5,
-              "avg_duration_min": 72.9,
+              "avg_duration_min": 71.7,
               "net_by_session": {
-                "ny_only": -11.3,
-                "london": 70.7,
-                "asia": -45.2
+                "ny_only": -15.4,
+                "london": 66.8,
+                "asia": -45.2,
+                "overlap": 23.9
               }
             }
           },
@@ -260,18 +262,18 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 40.0,
-              "net_pts": 20.5,
-              "median_pts": -11.3,
+              "n": 27,
+              "win_rate_pct": 44.4,
+              "net_pts": 69.9,
+              "median_pts": -4.8,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 257.2,
+              "avg_duration_min": 219.6,
               "net_by_session": {
-                "ny_only": 44.8,
-                "london": 25.7,
-                "asia": -33.9,
-                "overlap": -16.1
+                "ny_only": 60.7,
+                "london": 51.8,
+                "asia": -45.2,
+                "overlap": 2.6
               }
             }
           },
@@ -292,15 +294,15 @@
               }
             },
             "forward": {
-              "n": 7,
-              "win_rate_pct": 14.3,
-              "net_pts": -49.1,
+              "n": 8,
+              "win_rate_pct": 25.0,
+              "net_pts": -46.6,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 618.4,
+              "avg_duration_min": 574.6,
               "net_by_session": {
-                "ny_only": -3.9,
+                "ny_only": -1.4,
                 "asia": -33.9,
                 "overlap": -11.3
               }
@@ -322,15 +324,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 66.7,
-              "net_pts": 26.1,
-              "median_pts": 18.7,
+              "n": 4,
+              "win_rate_pct": 50.0,
+              "net_pts": 14.8,
+              "median_pts": 3.7,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 50.3,
+              "avg_duration_min": 42.0,
               "net_by_session": {
-                "london": 26.1
+                "london": 26.1,
+                "overlap": -11.3
               }
             }
           },
@@ -352,18 +355,18 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 40.7,
-              "net_pts": 7.9,
+              "n": 38,
+              "win_rate_pct": 44.7,
+              "net_pts": 50.1,
               "median_pts": -11.3,
               "biggest_win": 18.7,
               "biggest_loss": -11.3,
-              "avg_duration_min": 119.1,
+              "avg_duration_min": 106.6,
               "net_by_session": {
-                "asia": -49.1,
-                "london": 33.1,
-                "ny_only": 56.1,
-                "overlap": -20.9,
+                "asia": -71.7,
+                "london": 59.2,
+                "ny_only": 63.5,
+                "overlap": 10.4,
                 "dead": -11.3
               }
             }
@@ -419,18 +422,18 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 20.0,
-              "net_pts": -108.7,
-              "median_pts": -10.11,
-              "biggest_win": 15.6,
-              "biggest_loss": -21.3,
-              "avg_duration_min": 144.7,
+              "n": 20,
+              "win_rate_pct": 25.0,
+              "net_pts": -128.8,
+              "median_pts": -10.0,
+              "biggest_win": 37.0,
+              "biggest_loss": -23.0,
+              "avg_duration_min": 165.6,
               "net_by_session": {
-                "london": -79.1,
-                "ny_only": -34.4,
+                "london": -71.8,
+                "ny_only": -52.2,
                 "asia": 3.7,
-                "overlap": -4.5,
+                "overlap": -14.1,
                 "dead": 5.7
               }
             }
@@ -452,17 +455,19 @@
               }
             },
             "forward": {
-              "n": 13,
-              "win_rate_pct": 30.8,
-              "net_pts": -30.9,
-              "median_pts": -9.05,
+              "n": 20,
+              "win_rate_pct": 35.0,
+              "net_pts": -19.9,
+              "median_pts": -8.92,
               "biggest_win": 43.9,
               "biggest_loss": -21.8,
-              "avg_duration_min": 482.2,
+              "avg_duration_min": 347.8,
               "net_by_session": {
-                "ny_only": -49.0,
-                "london": 39.8,
-                "asia": -21.6
+                "ny_only": -53.1,
+                "london": 53.8,
+                "asia": 5.6,
+                "dead": -14.0,
+                "overlap": -12.0
               }
             }
           },
@@ -483,17 +488,18 @@
               }
             },
             "forward": {
-              "n": 8,
-              "win_rate_pct": 37.5,
-              "net_pts": -11.7,
-              "median_pts": -13.69,
+              "n": 11,
+              "win_rate_pct": 27.3,
+              "net_pts": -57.6,
+              "median_pts": -18.66,
               "biggest_win": 36.2,
               "biggest_loss": -20.5,
-              "avg_duration_min": 660.6,
+              "avg_duration_min": 495.9,
               "net_by_session": {
-                "ny_only": -7.4,
+                "ny_only": -34.7,
                 "london": 4.3,
-                "asia": -8.6
+                "asia": -8.6,
+                "overlap": -18.7
               }
             }
           },
@@ -511,15 +517,16 @@
               }
             },
             "forward": {
-              "n": 1,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -26.9,
-              "median_pts": -26.86,
-              "biggest_win": -26.9,
+              "net_pts": -43.5,
+              "median_pts": -9.2,
+              "biggest_win": -7.5,
               "biggest_loss": -26.9,
-              "avg_duration_min": 942.0,
+              "avg_duration_min": 328.3,
               "net_by_session": {
-                "ny_only": -26.9
+                "ny_only": -26.9,
+                "asia": -16.7
               }
             }
           },
@@ -541,33 +548,33 @@
               }
             },
             "forward": {
-              "n": 12,
-              "win_rate_pct": 66.7,
-              "net_pts": 96.6,
-              "median_pts": 11.05,
+              "n": 19,
+              "win_rate_pct": 63.2,
+              "net_pts": 153.8,
+              "median_pts": 16.7,
               "biggest_win": 36.2,
-              "biggest_loss": -22.3,
-              "avg_duration_min": 332.2,
+              "biggest_loss": -27.3,
+              "avg_duration_min": 275.1,
               "net_by_session": {
-                "asia": 16.7,
-                "london": 89.7,
-                "ny_only": -16.9,
-                "overlap": 7.1
+                "asia": 8.2,
+                "london": 136.1,
+                "ny_only": -44.2,
+                "overlap": 53.7
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 4,
-              "win_rate_pct": 50.0,
-              "net_pts": 35.3,
-              "median_pts": 6.47,
+              "n": 5,
+              "win_rate_pct": 40.0,
+              "net_pts": 22.2,
+              "median_pts": -12.71,
               "biggest_win": 42.5,
               "biggest_loss": -20.2,
-              "avg_duration_min": 443.2,
+              "avg_duration_min": 433.4,
               "net_by_session": {
                 "london": 22.3,
-                "ny_only": 13.0
+                "ny_only": -0.0
               }
             }
           },
@@ -604,17 +611,18 @@
               }
             },
             "forward": {
-              "n": 12,
-              "win_rate_pct": 41.7,
-              "net_pts": 56.9,
-              "median_pts": -7.93,
+              "n": 18,
+              "win_rate_pct": 44.4,
+              "net_pts": 76.7,
+              "median_pts": -5.93,
               "biggest_win": 36.2,
               "biggest_loss": -17.9,
-              "avg_duration_min": 396.4,
+              "avg_duration_min": 287.4,
               "net_by_session": {
-                "ny_only": 33.7,
+                "ny_only": 29.6,
                 "london": 59.9,
-                "asia": -36.6
+                "asia": -36.6,
+                "overlap": 23.9
               }
             }
           },
@@ -636,17 +644,18 @@
               }
             },
             "forward": {
-              "n": 12,
-              "win_rate_pct": 50.0,
-              "net_pts": 76.2,
-              "median_pts": 5.42,
+              "n": 18,
+              "win_rate_pct": 55.6,
+              "net_pts": 183.4,
+              "median_pts": 17.96,
               "biggest_win": 50.9,
               "biggest_loss": -20.6,
-              "avg_duration_min": 545.6,
+              "avg_duration_min": 420.2,
               "net_by_session": {
-                "ny_only": 119.4,
-                "london": -38.4,
-                "overlap": -4.8
+                "ny_only": 136.9,
+                "london": 28.1,
+                "overlap": 26.1,
+                "asia": -7.6
               }
             }
           },
@@ -667,15 +676,15 @@
               }
             },
             "forward": {
-              "n": 6,
-              "win_rate_pct": 16.7,
-              "net_pts": -18.1,
-              "median_pts": -9.32,
+              "n": 7,
+              "win_rate_pct": 28.6,
+              "net_pts": -15.6,
+              "median_pts": -9.0,
               "biggest_win": 35.8,
               "biggest_loss": -19.5,
-              "avg_duration_min": 778.7,
+              "avg_duration_min": 705.7,
               "net_by_session": {
-                "ny_only": 4.8,
+                "ny_only": 7.3,
                 "overlap": -4.3,
                 "asia": -18.6
               }
@@ -697,15 +706,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 33.3,
-              "net_pts": -2.2,
-              "median_pts": -17.09,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -11.8,
+              "median_pts": -13.34,
               "biggest_win": 34.6,
               "biggest_loss": -19.7,
-              "avg_duration_min": 124.0,
+              "avg_duration_min": 99.2,
               "net_by_session": {
-                "london": -2.2
+                "london": -2.2,
+                "overlap": -9.6
               }
             }
           },
@@ -727,18 +737,18 @@
               }
             },
             "forward": {
-              "n": 12,
-              "win_rate_pct": 66.7,
-              "net_pts": 96.6,
-              "median_pts": 11.05,
+              "n": 19,
+              "win_rate_pct": 57.9,
+              "net_pts": 98.1,
+              "median_pts": 5.4,
               "biggest_win": 36.2,
-              "biggest_loss": -22.3,
-              "avg_duration_min": 332.2,
+              "biggest_loss": -27.3,
+              "avg_duration_min": 274.1,
               "net_by_session": {
-                "asia": 16.7,
-                "london": 89.7,
-                "ny_only": -16.9,
-                "overlap": 7.1
+                "asia": 8.2,
+                "london": 80.4,
+                "ny_only": -44.2,
+                "overlap": 53.7
               }
             }
           },
@@ -793,19 +803,19 @@
               }
             },
             "forward": {
-              "n": 32,
-              "win_rate_pct": 6.2,
-              "net_pts": -38.6,
+              "n": 49,
+              "win_rate_pct": 4.1,
+              "net_pts": -65.4,
               "median_pts": -1.3,
               "biggest_win": 6.7,
               "biggest_loss": -3.3,
               "avg_duration_min": 1.3,
               "net_by_session": {
-                "london": -1.4,
-                "ny_only": -10.9,
-                "asia": -15.9,
-                "overlap": -1.3,
-                "dead": -9.1
+                "london": -7.9,
+                "ny_only": -21.5,
+                "asia": -20.7,
+                "overlap": -3.6,
+                "dead": -11.7
               }
             }
           },
@@ -827,19 +837,19 @@
               }
             },
             "forward": {
-              "n": 61,
-              "win_rate_pct": 9.8,
-              "net_pts": -67.5,
+              "n": 78,
+              "win_rate_pct": 10.3,
+              "net_pts": -95.8,
               "median_pts": -1.3,
               "biggest_win": 7.4,
-              "biggest_loss": -3.3,
-              "avg_duration_min": 3.3,
+              "biggest_loss": -4.5,
+              "avg_duration_min": 3.9,
               "net_by_session": {
-                "overlap": -9.0,
-                "ny_only": -5.8,
-                "dead": -16.6,
-                "asia": -31.9,
-                "london": -4.2
+                "overlap": -10.3,
+                "ny_only": -14.8,
+                "dead": -23.0,
+                "asia": -35.7,
+                "london": -12.0
               }
             }
           },
@@ -861,16 +871,16 @@
               }
             },
             "forward": {
-              "n": 52,
-              "win_rate_pct": 25.0,
-              "net_pts": -51.1,
-              "median_pts": -1.55,
+              "n": 58,
+              "win_rate_pct": 22.4,
+              "net_pts": -69.5,
+              "median_pts": -1.6,
               "biggest_win": 13.2,
-              "biggest_loss": -5.8,
-              "avg_duration_min": 62.9,
+              "biggest_loss": -6.8,
+              "avg_duration_min": 56.6,
               "net_by_session": {
-                "overlap": -18.2,
-                "ny_only": -18.1,
+                "overlap": -19.5,
+                "ny_only": -35.2,
                 "dead": 7.2,
                 "london": -20.7,
                 "asia": -1.3
@@ -891,15 +901,16 @@
               }
             },
             "forward": {
-              "n": 1,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -1.3,
+              "net_pts": -6.1,
               "median_pts": -1.3,
-              "biggest_win": -1.3,
-              "biggest_loss": -1.3,
-              "avg_duration_min": 0.0,
+              "biggest_win": -0.0,
+              "biggest_loss": -4.8,
+              "avg_duration_min": 3.0,
               "net_by_session": {
-                "ny_only": -1.3
+                "ny_only": -1.3,
+                "asia": -4.8
               }
             }
           },
@@ -921,36 +932,36 @@
               }
             },
             "forward": {
-              "n": 103,
-              "win_rate_pct": 6.8,
-              "net_pts": -165.9,
+              "n": 131,
+              "win_rate_pct": 6.1,
+              "net_pts": -234.4,
               "median_pts": -1.5,
               "biggest_win": 8.5,
-              "biggest_loss": -5.3,
+              "biggest_loss": -10.0,
               "avg_duration_min": 2.2,
               "net_by_session": {
-                "asia": -71.0,
-                "london": -35.3,
-                "ny_only": -32.7,
-                "dead": -21.4,
-                "overlap": -5.5
+                "asia": -91.2,
+                "london": -61.2,
+                "ny_only": -46.0,
+                "dead": -26.3,
+                "overlap": -9.7
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 7,
-              "win_rate_pct": 14.3,
-              "net_pts": -5.5,
-              "median_pts": -1.5,
+              "n": 9,
+              "win_rate_pct": 11.1,
+              "net_pts": -8.7,
+              "median_pts": -1.6,
               "biggest_win": 4.2,
               "biggest_loss": -2.5,
-              "avg_duration_min": 4.7,
+              "avg_duration_min": 4.2,
               "net_by_session": {
                 "london": 0.6,
-                "ny_only": -2.9,
+                "ny_only": -4.5,
                 "dead": -1.5,
-                "asia": -1.7
+                "asia": -3.3
               }
             }
           },
@@ -987,17 +998,18 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 0.0,
-              "net_pts": -31.2,
+              "n": 23,
+              "win_rate_pct": 4.3,
+              "net_pts": -56.4,
               "median_pts": -1.3,
-              "biggest_win": -1.3,
-              "biggest_loss": -4.5,
-              "avg_duration_min": 0.3,
+              "biggest_win": 3.5,
+              "biggest_loss": -7.6,
+              "avg_duration_min": 1.0,
               "net_by_session": {
-                "ny_only": -1.3,
-                "london": -18.0,
-                "asia": -11.9
+                "ny_only": -5.1,
+                "london": -36.8,
+                "asia": -11.9,
+                "overlap": -2.6
               }
             }
           },
@@ -1019,19 +1031,19 @@
               }
             },
             "forward": {
-              "n": 30,
+              "n": 42,
               "win_rate_pct": 0.0,
-              "net_pts": -38.9,
+              "net_pts": -54.5,
               "median_pts": -1.3,
               "biggest_win": -0.8,
               "biggest_loss": -1.6,
-              "avg_duration_min": 0.2,
+              "avg_duration_min": 0.1,
               "net_by_session": {
-                "ny_only": -9.4,
-                "london": -20.5,
+                "ny_only": -12.0,
+                "london": -24.4,
                 "dead": -1.2,
-                "asia": -5.2,
-                "overlap": -2.6
+                "asia": -11.7,
+                "overlap": -5.2
               }
             }
           },
@@ -1052,15 +1064,15 @@
               }
             },
             "forward": {
-              "n": 11,
-              "win_rate_pct": 9.1,
-              "net_pts": -25.4,
-              "median_pts": -1.4,
+              "n": 12,
+              "win_rate_pct": 8.3,
+              "net_pts": -26.7,
+              "median_pts": -1.35,
               "biggest_win": 0.9,
               "biggest_loss": -6.8,
-              "avg_duration_min": 2.5,
+              "avg_duration_min": 2.3,
               "net_by_session": {
-                "ny_only": -1.7,
+                "ny_only": -3.0,
                 "asia": -16.9,
                 "overlap": -6.8
               }
@@ -1082,15 +1094,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 33.3,
-              "net_pts": -0.9,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -3.2,
               "median_pts": -1.3,
               "biggest_win": 1.7,
-              "biggest_loss": -1.3,
-              "avg_duration_min": 2.7,
+              "biggest_loss": -2.3,
+              "avg_duration_min": 3.2,
               "net_by_session": {
-                "london": -0.9
+                "london": -0.9,
+                "overlap": -2.3
               }
             }
           },
@@ -1112,19 +1125,19 @@
               }
             },
             "forward": {
-              "n": 95,
-              "win_rate_pct": 6.3,
-              "net_pts": -151.2,
+              "n": 116,
+              "win_rate_pct": 6.0,
+              "net_pts": -199.4,
               "median_pts": -1.4,
               "biggest_win": 8.5,
-              "biggest_loss": -5.3,
+              "biggest_loss": -10.0,
               "avg_duration_min": 1.8,
               "net_by_session": {
-                "asia": -61.0,
-                "london": -34.8,
-                "ny_only": -30.9,
-                "dead": -19.0,
-                "overlap": -5.5
+                "asia": -81.2,
+                "london": -47.3,
+                "ny_only": -41.4,
+                "dead": -22.6,
+                "overlap": -6.9
               }
             }
           },
@@ -1179,19 +1192,19 @@
               }
             },
             "forward": {
-              "n": 25,
-              "win_rate_pct": 8.0,
-              "net_pts": -44.1,
-              "median_pts": -1.3,
+              "n": 41,
+              "win_rate_pct": 4.9,
+              "net_pts": -99.6,
+              "median_pts": -2.3,
               "biggest_win": 9.6,
-              "biggest_loss": -5.8,
-              "avg_duration_min": 10.3,
+              "biggest_loss": -8.4,
+              "avg_duration_min": 10.1,
               "net_by_session": {
-                "london": -2.7,
-                "ny_only": -11.4,
-                "asia": -18.1,
-                "overlap": -1.3,
-                "dead": -10.6
+                "london": -19.7,
+                "ny_only": -32.9,
+                "asia": -24.7,
+                "overlap": -9.7,
+                "dead": -12.7
               }
             }
           },
@@ -1213,19 +1226,19 @@
               }
             },
             "forward": {
-              "n": 35,
-              "win_rate_pct": 17.1,
-              "net_pts": -55.3,
-              "median_pts": -2.1,
+              "n": 49,
+              "win_rate_pct": 16.3,
+              "net_pts": -91.5,
+              "median_pts": -2.43,
               "biggest_win": 7.6,
               "biggest_loss": -8.1,
-              "avg_duration_min": 24.5,
+              "avg_duration_min": 23.3,
               "net_by_session": {
-                "overlap": -11.2,
-                "ny_only": -8.3,
-                "dead": -10.6,
-                "asia": -18.4,
-                "london": -6.8
+                "overlap": -6.7,
+                "ny_only": -25.6,
+                "dead": -12.4,
+                "asia": -27.5,
+                "london": -19.3
               }
             }
           },
@@ -1247,16 +1260,16 @@
               }
             },
             "forward": {
-              "n": 30,
-              "win_rate_pct": 33.3,
-              "net_pts": -27.8,
-              "median_pts": -1.08,
+              "n": 34,
+              "win_rate_pct": 29.4,
+              "net_pts": -51.1,
+              "median_pts": -2.27,
               "biggest_win": 9.7,
-              "biggest_loss": -9.1,
-              "avg_duration_min": 127.1,
+              "biggest_loss": -9.9,
+              "avg_duration_min": 113.6,
               "net_by_session": {
-                "overlap": -4.9,
-                "ny_only": -31.4,
+                "overlap": -6.7,
+                "ny_only": -52.8,
                 "dead": 6.3,
                 "london": 3.1,
                 "asia": -0.7
@@ -1277,15 +1290,16 @@
               }
             },
             "forward": {
-              "n": 1,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -2.8,
+              "net_pts": -11.6,
               "median_pts": -2.82,
-              "biggest_win": -2.8,
-              "biggest_loss": -2.8,
-              "avg_duration_min": 21.0,
+              "biggest_win": -1.4,
+              "biggest_loss": -7.4,
+              "avg_duration_min": 12.7,
               "net_by_session": {
-                "ny_only": -2.8
+                "ny_only": -2.8,
+                "asia": -8.8
               }
             }
           },
@@ -1307,36 +1321,36 @@
               }
             },
             "forward": {
-              "n": 75,
-              "win_rate_pct": 17.3,
-              "net_pts": -179.5,
-              "median_pts": -2.66,
-              "biggest_win": 8.6,
-              "biggest_loss": -9.2,
-              "avg_duration_min": 14.5,
+              "n": 90,
+              "win_rate_pct": 18.9,
+              "net_pts": -182.9,
+              "median_pts": -2.67,
+              "biggest_win": 31.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 17.2,
               "net_by_session": {
-                "asia": -45.6,
-                "london": -60.8,
-                "ny_only": -27.6,
-                "dead": -28.3,
-                "overlap": -17.2
+                "asia": -57.7,
+                "london": -53.8,
+                "ny_only": -35.0,
+                "dead": -46.3,
+                "overlap": 9.9
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 7,
-              "win_rate_pct": 42.9,
-              "net_pts": -14.0,
+              "n": 9,
+              "win_rate_pct": 33.3,
+              "net_pts": -18.3,
               "median_pts": -2.88,
               "biggest_win": 2.4,
               "biggest_loss": -6.8,
-              "avg_duration_min": 27.9,
+              "avg_duration_min": 26.4,
               "net_by_session": {
                 "london": -10.8,
-                "ny_only": 3.3,
+                "ny_only": 2.1,
                 "dead": -3.7,
-                "asia": -2.9
+                "asia": -6.0
               }
             }
           },
@@ -1373,17 +1387,18 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 13.3,
-              "net_pts": -27.3,
+              "n": 22,
+              "win_rate_pct": 18.2,
+              "net_pts": -41.1,
               "median_pts": -1.3,
-              "biggest_win": 7.4,
-              "biggest_loss": -6.9,
-              "avg_duration_min": 4.1,
+              "biggest_win": 15.2,
+              "biggest_loss": -11.3,
+              "avg_duration_min": 8.0,
               "net_by_session": {
-                "ny_only": -5.4,
-                "london": -5.5,
-                "asia": -16.3
+                "ny_only": -11.1,
+                "london": -4.1,
+                "asia": -16.3,
+                "overlap": -9.5
               }
             }
           },
@@ -1405,19 +1420,19 @@
               }
             },
             "forward": {
-              "n": 29,
-              "win_rate_pct": 10.3,
-              "net_pts": -44.4,
+              "n": 40,
+              "win_rate_pct": 12.5,
+              "net_pts": -43.5,
               "median_pts": -1.3,
-              "biggest_win": 7.4,
+              "biggest_win": 18.9,
               "biggest_loss": -4.8,
-              "avg_duration_min": 7.6,
+              "avg_duration_min": 8.4,
               "net_by_session": {
-                "ny_only": -13.8,
-                "london": -15.0,
+                "ny_only": -18.7,
+                "london": -0.7,
                 "dead": -3.8,
-                "asia": -7.3,
-                "overlap": -4.6
+                "asia": -15.6,
+                "overlap": -4.9
               }
             }
           },
@@ -1438,15 +1453,15 @@
               }
             },
             "forward": {
-              "n": 11,
-              "win_rate_pct": 0.0,
-              "net_pts": -48.3,
-              "median_pts": -4.03,
-              "biggest_win": -0.7,
+              "n": 12,
+              "win_rate_pct": 8.3,
+              "net_pts": -40.7,
+              "median_pts": -3.96,
+              "biggest_win": 7.6,
               "biggest_loss": -9.5,
-              "avg_duration_min": 11.5,
+              "avg_duration_min": 12.5,
               "net_by_session": {
-                "ny_only": -10.6,
+                "ny_only": -3.0,
                 "asia": -28.2,
                 "overlap": -9.5
               }
@@ -1468,15 +1483,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 33.3,
-              "net_pts": 3.2,
-              "median_pts": -1.3,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -5.2,
+              "median_pts": -3.18,
               "biggest_win": 9.6,
-              "biggest_loss": -5.1,
-              "avg_duration_min": 14.0,
+              "biggest_loss": -8.4,
+              "avg_duration_min": 13.8,
               "net_by_session": {
-                "london": 3.2
+                "london": 3.2,
+                "overlap": -8.4
               }
             }
           },
@@ -1498,19 +1514,19 @@
               }
             },
             "forward": {
-              "n": 69,
-              "win_rate_pct": 17.4,
-              "net_pts": -165.8,
-              "median_pts": -2.69,
-              "biggest_win": 8.6,
-              "biggest_loss": -9.2,
-              "avg_duration_min": 14.0,
+              "n": 83,
+              "win_rate_pct": 19.3,
+              "net_pts": -160.1,
+              "median_pts": -2.67,
+              "biggest_win": 31.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 17.2,
               "net_by_session": {
-                "asia": -44.7,
-                "london": -52.1,
-                "ny_only": -27.6,
-                "dead": -24.2,
-                "overlap": -17.2
+                "asia": -56.8,
+                "london": -36.0,
+                "ny_only": -35.0,
+                "dead": -42.2,
+                "overlap": 9.9
               }
             }
           },
@@ -1565,18 +1581,18 @@
               }
             },
             "forward": {
-              "n": 22,
-              "win_rate_pct": 22.7,
-              "net_pts": -47.2,
-              "median_pts": -2.85,
+              "n": 36,
+              "win_rate_pct": 16.7,
+              "net_pts": -87.3,
+              "median_pts": -3.2,
               "biggest_win": 10.7,
               "biggest_loss": -9.3,
-              "avg_duration_min": 25.7,
+              "avg_duration_min": 25.3,
               "net_by_session": {
-                "london": 6.4,
-                "ny_only": -15.8,
-                "asia": -28.2,
-                "overlap": -3.8,
+                "london": -9.1,
+                "ny_only": -28.5,
+                "asia": -35.3,
+                "overlap": -8.6,
                 "dead": -5.8
               }
             }
@@ -1599,19 +1615,19 @@
               }
             },
             "forward": {
-              "n": 29,
-              "win_rate_pct": 24.1,
-              "net_pts": -59.1,
+              "n": 40,
+              "win_rate_pct": 25.0,
+              "net_pts": -89.9,
               "median_pts": -3.6,
               "biggest_win": 8.9,
               "biggest_loss": -6.8,
-              "avg_duration_min": 41.0,
+              "avg_duration_min": 40.5,
               "net_by_session": {
-                "overlap": -18.0,
-                "ny_only": -6.9,
-                "dead": -3.3,
-                "asia": -26.9,
-                "london": -4.0
+                "overlap": -15.8,
+                "ny_only": -23.4,
+                "dead": -7.5,
+                "asia": -27.9,
+                "london": -15.3
               }
             }
           },
@@ -1633,16 +1649,16 @@
               }
             },
             "forward": {
-              "n": 34,
-              "win_rate_pct": 41.2,
-              "net_pts": -41.9,
-              "median_pts": -2.1,
+              "n": 38,
+              "win_rate_pct": 36.8,
+              "net_pts": -73.7,
+              "median_pts": -2.95,
               "biggest_win": 14.2,
               "biggest_loss": -10.6,
-              "avg_duration_min": 20.1,
+              "avg_duration_min": 19.3,
               "net_by_session": {
-                "overlap": -21.3,
-                "ny_only": -32.2,
+                "overlap": -30.6,
+                "ny_only": -54.7,
                 "london": 14.9,
                 "asia": -3.3
               }
@@ -1662,15 +1678,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 100.0,
-              "net_pts": 0.7,
-              "median_pts": 0.7,
+              "n": 3,
+              "win_rate_pct": 33.3,
+              "net_pts": -8.6,
+              "median_pts": -0.8,
               "biggest_win": 0.7,
-              "biggest_loss": 0.7,
-              "avg_duration_min": 14.0,
+              "biggest_loss": -8.5,
+              "avg_duration_min": 18.3,
               "net_by_session": {
-                "ny_only": 0.7
+                "ny_only": 0.7,
+                "asia": -9.3
               }
             }
           },
@@ -1692,36 +1709,36 @@
               }
             },
             "forward": {
-              "n": 64,
-              "win_rate_pct": 23.4,
-              "net_pts": -225.8,
-              "median_pts": -5.05,
-              "biggest_win": 7.7,
-              "biggest_loss": -9.5,
-              "avg_duration_min": 25.3,
+              "n": 81,
+              "win_rate_pct": 23.5,
+              "net_pts": -243.7,
+              "median_pts": -4.8,
+              "biggest_win": 34.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 28.9,
               "net_by_session": {
-                "asia": -73.2,
-                "london": -65.1,
-                "ny_only": -29.0,
-                "dead": -39.0,
-                "overlap": -19.5
+                "asia": -73.5,
+                "london": -89.4,
+                "ny_only": -36.9,
+                "dead": -54.3,
+                "overlap": 10.4
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 7,
-              "win_rate_pct": 57.1,
-              "net_pts": -5.9,
+              "n": 9,
+              "win_rate_pct": 55.6,
+              "net_pts": 7.6,
               "median_pts": 0.4,
-              "biggest_win": 6.9,
+              "biggest_win": 15.3,
               "biggest_loss": -5.2,
-              "avg_duration_min": 31.0,
+              "avg_duration_min": 62.0,
               "net_by_session": {
                 "london": -2.7,
-                "ny_only": 1.6,
+                "ny_only": -0.2,
                 "dead": 0.4,
-                "asia": -5.2
+                "asia": 10.1
               }
             }
           },
@@ -1758,17 +1775,18 @@
               }
             },
             "forward": {
-              "n": 14,
-              "win_rate_pct": 50.0,
-              "net_pts": 4.2,
-              "median_pts": 0.3,
+              "n": 21,
+              "win_rate_pct": 42.9,
+              "net_pts": -10.9,
+              "median_pts": -2.3,
               "biggest_win": 22.2,
               "biggest_loss": -10.3,
-              "avg_duration_min": 14.6,
+              "avg_duration_min": 15.1,
               "net_by_session": {
-                "ny_only": -9.1,
-                "london": 28.3,
-                "asia": -15.0
+                "ny_only": -13.4,
+                "london": 17.1,
+                "asia": -15.0,
+                "overlap": 0.4
               }
             }
           },
@@ -1790,19 +1808,19 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 25.9,
-              "net_pts": -30.7,
+              "n": 37,
+              "win_rate_pct": 27.0,
+              "net_pts": -40.4,
               "median_pts": -2.3,
               "biggest_win": 12.5,
               "biggest_loss": -5.9,
-              "avg_duration_min": 19.0,
+              "avg_duration_min": 20.4,
               "net_by_session": {
-                "ny_only": -6.0,
-                "london": -13.6,
+                "ny_only": -11.6,
+                "london": -17.2,
                 "dead": -5.9,
-                "asia": -1.8,
-                "overlap": -3.4
+                "asia": -3.7,
+                "overlap": -2.0
               }
             }
           },
@@ -1823,15 +1841,15 @@
               }
             },
             "forward": {
-              "n": 11,
-              "win_rate_pct": 9.1,
-              "net_pts": -45.2,
-              "median_pts": -5.5,
+              "n": 12,
+              "win_rate_pct": 16.7,
+              "net_pts": -36.5,
+              "median_pts": -5.3,
               "biggest_win": 9.2,
               "biggest_loss": -7.7,
-              "avg_duration_min": 32.5,
+              "avg_duration_min": 31.7,
               "net_by_session": {
-                "ny_only": 2.1,
+                "ny_only": 10.8,
                 "asia": -40.0,
                 "overlap": -7.3
               }
@@ -1853,15 +1871,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 66.7,
-              "net_pts": 6.6,
-              "median_pts": 0.7,
+              "n": 4,
+              "win_rate_pct": 50.0,
+              "net_pts": 1.8,
+              "median_pts": -2.05,
               "biggest_win": 10.7,
               "biggest_loss": -4.8,
-              "avg_duration_min": 17.7,
+              "avg_duration_min": 14.8,
               "net_by_session": {
-                "london": 6.6
+                "london": 6.6,
+                "overlap": -4.8
               }
             }
           },
@@ -1883,19 +1902,19 @@
               }
             },
             "forward": {
-              "n": 58,
-              "win_rate_pct": 27.6,
-              "net_pts": -172.3,
-              "median_pts": -5.15,
-              "biggest_win": 22.2,
-              "biggest_loss": -9.3,
-              "avg_duration_min": 26.3,
+              "n": 72,
+              "win_rate_pct": 27.8,
+              "net_pts": -175.6,
+              "median_pts": -4.95,
+              "biggest_win": 34.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 30.7,
               "net_by_session": {
-                "asia": -66.1,
-                "london": -25.6,
-                "ny_only": -29.0,
-                "dead": -32.1,
-                "overlap": -19.5
+                "asia": -66.4,
+                "london": -36.8,
+                "ny_only": -35.4,
+                "dead": -47.4,
+                "overlap": 10.4
               }
             }
           },
@@ -1950,19 +1969,19 @@
               }
             },
             "forward": {
-              "n": 24,
-              "win_rate_pct": 25.0,
-              "net_pts": -34.4,
+              "n": 39,
+              "win_rate_pct": 23.1,
+              "net_pts": -60.7,
               "median_pts": -1.8,
               "biggest_win": 10.7,
               "biggest_loss": -6.1,
-              "avg_duration_min": 18.5,
+              "avg_duration_min": 14.6,
               "net_by_session": {
-                "london": 6.4,
-                "ny_only": -21.2,
-                "asia": -11.9,
-                "overlap": -3.8,
-                "dead": -3.9
+                "london": -3.6,
+                "ny_only": -25.5,
+                "asia": -19.0,
+                "overlap": -8.6,
+                "dead": -4.0
               }
             }
           },
@@ -1984,19 +2003,19 @@
               }
             },
             "forward": {
-              "n": 32,
-              "win_rate_pct": 18.8,
-              "net_pts": -64.4,
-              "median_pts": -2.7,
+              "n": 44,
+              "win_rate_pct": 18.2,
+              "net_pts": -98.6,
+              "median_pts": -3.4,
               "biggest_win": 8.9,
               "biggest_loss": -6.8,
-              "avg_duration_min": 31.6,
+              "avg_duration_min": 30.3,
               "net_by_session": {
-                "overlap": -16.8,
-                "ny_only": -2.6,
-                "dead": -13.6,
-                "asia": -27.4,
-                "london": -4.0
+                "overlap": -14.6,
+                "ny_only": -12.6,
+                "dead": -17.8,
+                "asia": -38.3,
+                "london": -15.3
               }
             }
           },
@@ -2018,16 +2037,16 @@
               }
             },
             "forward": {
-              "n": 38,
-              "win_rate_pct": 42.1,
-              "net_pts": -37.5,
-              "median_pts": -1.1,
+              "n": 42,
+              "win_rate_pct": 38.1,
+              "net_pts": -69.3,
+              "median_pts": -1.7,
               "biggest_win": 14.2,
               "biggest_loss": -10.6,
-              "avg_duration_min": 16.8,
+              "avg_duration_min": 16.4,
               "net_by_session": {
-                "overlap": -21.3,
-                "ny_only": -29.4,
+                "overlap": -30.6,
+                "ny_only": -51.9,
                 "london": 16.5,
                 "asia": -3.3
               }
@@ -2047,15 +2066,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 100.0,
-              "net_pts": 0.7,
-              "median_pts": 0.7,
+              "n": 3,
+              "win_rate_pct": 33.3,
+              "net_pts": -8.6,
+              "median_pts": -0.8,
               "biggest_win": 0.7,
-              "biggest_loss": 0.7,
-              "avg_duration_min": 14.0,
+              "biggest_loss": -8.5,
+              "avg_duration_min": 18.3,
               "net_by_session": {
-                "ny_only": 0.7
+                "ny_only": 0.7,
+                "asia": -9.3
               }
             }
           },
@@ -2077,36 +2097,36 @@
               }
             },
             "forward": {
-              "n": 70,
-              "win_rate_pct": 22.9,
-              "net_pts": -223.2,
-              "median_pts": -3.75,
-              "biggest_win": 7.7,
-              "biggest_loss": -9.5,
-              "avg_duration_min": 17.8,
+              "n": 88,
+              "win_rate_pct": 21.6,
+              "net_pts": -252.6,
+              "median_pts": -3.55,
+              "biggest_win": 34.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 19.1,
               "net_by_session": {
-                "asia": -69.7,
-                "london": -63.7,
-                "ny_only": -34.5,
-                "dead": -35.8,
-                "overlap": -19.5
+                "asia": -80.7,
+                "london": -88.0,
+                "ny_only": -43.2,
+                "dead": -51.1,
+                "overlap": 10.4
               }
             }
           },
           "S0-H3": {
             "forward": {
-              "n": 7,
-              "win_rate_pct": 57.1,
-              "net_pts": -5.9,
+              "n": 9,
+              "win_rate_pct": 55.6,
+              "net_pts": 7.6,
               "median_pts": 0.4,
-              "biggest_win": 6.9,
+              "biggest_win": 15.3,
               "biggest_loss": -5.2,
-              "avg_duration_min": 31.0,
+              "avg_duration_min": 62.0,
               "net_by_session": {
                 "london": -2.7,
-                "ny_only": 1.6,
+                "ny_only": -0.2,
                 "dead": 0.4,
-                "asia": -5.2
+                "asia": 10.1
               }
             }
           },
@@ -2143,17 +2163,18 @@
               }
             },
             "forward": {
-              "n": 14,
-              "win_rate_pct": 42.9,
-              "net_pts": 10.3,
-              "median_pts": -0.8,
+              "n": 21,
+              "win_rate_pct": 38.1,
+              "net_pts": -3.3,
+              "median_pts": -2.3,
               "biggest_win": 22.2,
               "biggest_loss": -9.1,
-              "avg_duration_min": 10.1,
+              "avg_duration_min": 12.0,
               "net_by_session": {
-                "ny_only": -9.1,
-                "london": 36.0,
-                "asia": -16.6
+                "ny_only": -13.4,
+                "london": 26.3,
+                "asia": -16.6,
+                "overlap": 0.4
               }
             }
           },
@@ -2175,19 +2196,19 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 33.3,
-              "net_pts": -10.3,
+              "n": 37,
+              "win_rate_pct": 32.4,
+              "net_pts": -15.2,
               "median_pts": -1.6,
               "biggest_win": 12.5,
               "biggest_loss": -5.0,
-              "avg_duration_min": 11.3,
+              "avg_duration_min": 10.2,
               "net_by_session": {
-                "ny_only": 0.8,
-                "london": -7.9,
+                "ny_only": -5.8,
+                "london": -15.5,
                 "dead": -2.3,
-                "asia": 2.5,
-                "overlap": -3.4
+                "asia": 6.9,
+                "overlap": 1.5
               }
             }
           },
@@ -2208,15 +2229,15 @@
               }
             },
             "forward": {
-              "n": 11,
-              "win_rate_pct": 18.2,
-              "net_pts": -44.8,
-              "median_pts": -4.8,
-              "biggest_win": 0.9,
+              "n": 12,
+              "win_rate_pct": 25.0,
+              "net_pts": -37.3,
+              "median_pts": -4.4,
+              "biggest_win": 7.5,
               "biggest_loss": -7.7,
-              "avg_duration_min": 16.6,
+              "avg_duration_min": 16.0,
               "net_by_session": {
-                "ny_only": -3.7,
+                "ny_only": 3.8,
                 "asia": -33.8,
                 "overlap": -7.3
               }
@@ -2238,15 +2259,16 @@
               }
             },
             "forward": {
-              "n": 3,
-              "win_rate_pct": 66.7,
-              "net_pts": 6.6,
-              "median_pts": 0.7,
+              "n": 4,
+              "win_rate_pct": 50.0,
+              "net_pts": 1.8,
+              "median_pts": -2.05,
               "biggest_win": 10.7,
               "biggest_loss": -4.8,
-              "avg_duration_min": 17.7,
+              "avg_duration_min": 14.8,
               "net_by_session": {
-                "london": 6.6
+                "london": 6.6,
+                "overlap": -4.8
               }
             }
           },
@@ -2268,19 +2290,19 @@
               }
             },
             "forward": {
-              "n": 63,
-              "win_rate_pct": 27.0,
-              "net_pts": -172.4,
-              "median_pts": -3.6,
-              "biggest_win": 22.2,
-              "biggest_loss": -9.2,
-              "avg_duration_min": 18.0,
+              "n": 78,
+              "win_rate_pct": 25.6,
+              "net_pts": -187.2,
+              "median_pts": -3.55,
+              "biggest_win": 34.5,
+              "biggest_loss": -13.4,
+              "avg_duration_min": 19.7,
               "net_by_session": {
-                "asia": -54.4,
-                "london": -28.9,
-                "ny_only": -37.7,
-                "dead": -31.9,
-                "overlap": -19.5
+                "asia": -65.4,
+                "london": -40.1,
+                "ny_only": -44.9,
+                "dead": -47.2,
+                "overlap": 10.4
               }
             }
           },
@@ -2342,19 +2364,19 @@
               }
             },
             "forward": {
-              "n": 35,
-              "win_rate_pct": 22.9,
-              "net_pts": -169.0,
+              "n": 39,
+              "win_rate_pct": 28.2,
+              "net_pts": -125.0,
               "median_pts": -11.5,
               "biggest_win": 27.4,
               "biggest_loss": -26.9,
-              "avg_duration_min": 16.5,
+              "avg_duration_min": 21.0,
               "net_by_session": {
-                "london": -66.5,
-                "ny_only": -69.0,
+                "london": -78.0,
+                "ny_only": -50.5,
                 "asia": 12.0,
-                "overlap": -11.5,
-                "dead": -34.0
+                "overlap": 7.0,
+                "dead": -15.5
               }
             }
           },
@@ -2376,19 +2398,19 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 30.8,
-              "net_pts": -20.4,
+              "n": 36,
+              "win_rate_pct": 38.9,
+              "net_pts": 28.6,
               "median_pts": -11.5,
               "biggest_win": 38.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 159.7,
+              "avg_duration_min": 128.5,
               "net_by_session": {
-                "ny_only": 13.0,
-                "dead": 45.9,
-                "asia": -43.5,
-                "london": -20.5,
-                "overlap": -15.3
+                "ny_only": 34.0,
+                "dead": 64.4,
+                "asia": -66.5,
+                "london": -25.0,
+                "overlap": 21.7
               }
             }
           },
@@ -2410,16 +2432,16 @@
               }
             },
             "forward": {
-              "n": 55,
-              "win_rate_pct": 30.9,
-              "net_pts": -103.1,
+              "n": 78,
+              "win_rate_pct": 32.1,
+              "net_pts": -127.6,
               "median_pts": -11.5,
               "biggest_win": 37.9,
               "biggest_loss": -11.5,
-              "avg_duration_min": 16.7,
+              "avg_duration_min": 14.8,
               "net_by_session": {
-                "asia": -50.0,
-                "london": -45.0,
+                "asia": -31.5,
+                "london": -88.0,
                 "dead": 37.9,
                 "overlap": -23.0,
                 "ny_only": -23.0
@@ -2442,15 +2464,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 0.0,
-              "net_pts": -11.5,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -16.0,
               "median_pts": -11.5,
-              "biggest_win": -11.5,
+              "biggest_win": 18.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 25.0,
+              "avg_duration_min": 13.5,
               "net_by_session": {
-                "ny_only": -11.5
+                "ny_only": -11.5,
+                "london": -4.5
               }
             }
           },
@@ -2472,18 +2495,18 @@
               }
             },
             "forward": {
-              "n": 69,
-              "win_rate_pct": 26.1,
-              "net_pts": -298.1,
+              "n": 83,
+              "win_rate_pct": 26.5,
+              "net_pts": -339.0,
               "median_pts": -11.5,
-              "biggest_win": 18.5,
+              "biggest_win": 18.6,
               "biggest_loss": -33.6,
-              "avg_duration_min": 18.4,
+              "avg_duration_min": 21.6,
               "net_by_session": {
-                "london": -61.5,
-                "ny_only": -90.9,
-                "dead": -89.2,
-                "asia": 1.0,
+                "london": -107.5,
+                "ny_only": -141.4,
+                "dead": -70.6,
+                "asia": 38.0,
                 "overlap": -57.5
               }
             }
@@ -2503,15 +2526,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 20.0,
-              "net_pts": -27.5,
+              "n": 7,
+              "win_rate_pct": 28.6,
+              "net_pts": -20.5,
               "median_pts": -11.5,
               "biggest_win": 18.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 35.8,
+              "avg_duration_min": 36.9,
               "net_by_session": {
-                "ny_only": -11.5,
+                "ny_only": -4.5,
                 "asia": -4.5,
                 "london": -11.5
               }
@@ -2552,17 +2575,17 @@
               }
             },
             "forward": {
-              "n": 45,
-              "win_rate_pct": 35.6,
-              "net_pts": -37.5,
+              "n": 49,
+              "win_rate_pct": 32.7,
+              "net_pts": -83.5,
               "median_pts": -11.5,
               "biggest_win": 18.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 7.0,
+              "avg_duration_min": 7.3,
               "net_by_session": {
-                "asia": -11.0,
-                "london": -10.5,
-                "overlap": -16.0
+                "asia": -22.5,
+                "london": -33.5,
+                "overlap": -27.5
               }
             }
           },
@@ -2584,17 +2607,17 @@
               }
             },
             "forward": {
-              "n": 16,
-              "win_rate_pct": 56.2,
-              "net_pts": 86.0,
-              "median_pts": 18.5,
+              "n": 22,
+              "win_rate_pct": 40.9,
+              "net_pts": 17.0,
+              "median_pts": -11.5,
               "biggest_win": 18.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 9.1,
+              "avg_duration_min": 8.7,
               "net_by_session": {
-                "overlap": 18.5,
-                "london": 90.5,
-                "ny_only": -11.5,
+                "overlap": 7.0,
+                "london": 67.5,
+                "ny_only": -46.0,
                 "asia": -11.5
               }
             }
@@ -2617,17 +2640,19 @@
               }
             },
             "forward": {
-              "n": 6,
+              "n": 9,
               "win_rate_pct": 0.0,
-              "net_pts": -69.0,
+              "net_pts": -103.5,
               "median_pts": -11.5,
               "biggest_win": -11.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 9.7,
+              "avg_duration_min": 14.4,
               "net_by_session": {
                 "asia": -11.5,
                 "ny_only": -46.0,
-                "london": -11.5
+                "london": -23.0,
+                "dead": -11.5,
+                "overlap": -11.5
               }
             }
           },
@@ -2677,18 +2702,18 @@
               }
             },
             "forward": {
-              "n": 56,
-              "win_rate_pct": 28.6,
-              "net_pts": -202.7,
+              "n": 67,
+              "win_rate_pct": 26.9,
+              "net_pts": -269.2,
               "median_pts": -11.5,
               "biggest_win": 18.5,
               "biggest_loss": -33.6,
-              "avg_duration_min": 20.1,
+              "avg_duration_min": 22.0,
               "net_by_session": {
-                "london": -82.5,
-                "ny_only": -9.0,
+                "london": -105.5,
+                "ny_only": -59.5,
                 "dead": -89.2,
-                "asia": 47.0,
+                "asia": 54.0,
                 "overlap": -69.0
               }
             }
@@ -2709,16 +2734,17 @@
               }
             },
             "forward": {
-              "n": 2,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -23.0,
+              "net_pts": -34.5,
               "median_pts": -11.5,
               "biggest_win": -11.5,
               "biggest_loss": -11.5,
-              "avg_duration_min": 5.5,
+              "avg_duration_min": 21.3,
               "net_by_session": {
                 "london": -11.5,
-                "ny_only": -11.5
+                "ny_only": -11.5,
+                "dead": -11.5
               }
             }
           }
@@ -2742,19 +2768,19 @@
               }
             },
             "forward": {
-              "n": 13,
-              "win_rate_pct": 23.1,
-              "net_pts": -192.5,
+              "n": 17,
+              "win_rate_pct": 23.5,
+              "net_pts": -242.4,
               "median_pts": -24.96,
               "biggest_win": 113.7,
-              "biggest_loss": -51.8,
-              "avg_duration_min": 204.8,
+              "biggest_loss": -59.3,
+              "avg_duration_min": 202.6,
               "net_by_session": {
-                "london": -129.0,
-                "ny_only": 79.4,
+                "london": -236.2,
+                "ny_only": 74.4,
                 "asia": -111.2,
-                "overlap": 5.9,
-                "dead": -37.8
+                "overlap": 32.8,
+                "dead": -2.4
               }
             }
           },
@@ -2776,17 +2802,19 @@
               }
             },
             "forward": {
-              "n": 9,
-              "win_rate_pct": 33.3,
-              "net_pts": -13.0,
-              "median_pts": -25.56,
+              "n": 14,
+              "win_rate_pct": 42.9,
+              "net_pts": -8.0,
+              "median_pts": -14.81,
               "biggest_win": 91.9,
               "biggest_loss": -53.6,
-              "avg_duration_min": 629.9,
+              "avg_duration_min": 477.1,
               "net_by_session": {
-                "ny_only": 2.9,
-                "london": -2.9,
-                "asia": -13.1
+                "ny_only": 26.4,
+                "london": -55.8,
+                "asia": -35.4,
+                "dead": 43.4,
+                "overlap": 13.4
               }
             }
           },
@@ -2808,16 +2836,16 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 46.7,
-              "net_pts": 108.5,
-              "median_pts": -8.0,
+              "n": 18,
+              "win_rate_pct": 38.9,
+              "net_pts": 2.4,
+              "median_pts": -17.89,
               "biggest_win": 64.9,
               "biggest_loss": -62.6,
-              "avg_duration_min": 113.1,
+              "avg_duration_min": 115.5,
               "net_by_session": {
-                "asia": 22.5,
-                "london": 103.0,
+                "asia": 1.4,
+                "london": 18.0,
                 "dead": 40.3,
                 "ny_only": -57.1
               }
@@ -2839,15 +2867,16 @@
               }
             },
             "forward": {
-              "n": 1,
+              "n": 2,
               "win_rate_pct": 0.0,
-              "net_pts": -44.7,
-              "median_pts": -44.69,
-              "biggest_win": -44.7,
+              "net_pts": -86.1,
+              "median_pts": -43.06,
+              "biggest_win": -41.4,
               "biggest_loss": -44.7,
-              "avg_duration_min": 3371.0,
+              "avg_duration_min": 1765.5,
               "net_by_session": {
-                "ny_only": -44.7
+                "ny_only": -44.7,
+                "london": -41.4
               }
             }
           },
@@ -2869,16 +2898,16 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 45.0,
-              "net_pts": -29.0,
-              "median_pts": -22.92,
+              "n": 21,
+              "win_rate_pct": 47.6,
+              "net_pts": 104.1,
+              "median_pts": -22.24,
               "biggest_win": 124.0,
               "biggest_loss": -56.8,
-              "avg_duration_min": 175.9,
+              "avg_duration_min": 233.0,
               "net_by_session": {
-                "london": -55.0,
-                "ny_only": -21.9,
+                "london": -21.1,
+                "ny_only": 77.3,
                 "asia": 40.2,
                 "overlap": 7.8
               }
@@ -2899,15 +2928,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 0.0,
-              "net_pts": -107.8,
-              "median_pts": -23.01,
-              "biggest_win": -12.2,
+              "n": 6,
+              "win_rate_pct": 16.7,
+              "net_pts": -8.5,
+              "median_pts": -22.4,
+              "biggest_win": 99.3,
               "biggest_loss": -27.3,
-              "avg_duration_min": 99.6,
+              "avg_duration_min": 291.2,
               "net_by_session": {
-                "ny_only": -21.8,
+                "ny_only": 77.5,
                 "asia": -73.8,
                 "london": -12.2
               }
@@ -2948,17 +2977,17 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 25.9,
-              "net_pts": -241.4,
-              "median_pts": -28.33,
+              "n": 30,
+              "win_rate_pct": 23.3,
+              "net_pts": -339.6,
+              "median_pts": -28.59,
               "biggest_win": 100.8,
               "biggest_loss": -58.7,
-              "avg_duration_min": 54.5,
+              "avg_duration_min": 53.0,
               "net_by_session": {
-                "asia": 55.5,
-                "london": -252.5,
-                "overlap": -44.2
+                "asia": 33.2,
+                "london": -289.4,
+                "overlap": -83.2
               }
             }
           },
@@ -2980,17 +3009,17 @@
               }
             },
             "forward": {
-              "n": 9,
-              "win_rate_pct": 33.3,
-              "net_pts": -166.1,
-              "median_pts": -34.69,
+              "n": 12,
+              "win_rate_pct": 16.7,
+              "net_pts": -308.2,
+              "median_pts": -40.24,
               "biggest_win": 73.8,
               "biggest_loss": -61.0,
-              "avg_duration_min": 108.2,
+              "avg_duration_min": 167.2,
               "net_by_session": {
                 "overlap": -24.9,
-                "london": -133.3,
-                "ny_only": -45.8,
+                "london": -219.6,
+                "ny_only": -101.7,
                 "asia": 37.9
               }
             }
@@ -3013,17 +3042,19 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 40.0,
-              "net_pts": 31.4,
-              "median_pts": -22.23,
+              "n": 8,
+              "win_rate_pct": 37.5,
+              "net_pts": 19.2,
+              "median_pts": -16.41,
               "biggest_win": 83.7,
               "biggest_loss": -41.0,
-              "avg_duration_min": 279.0,
+              "avg_duration_min": 243.2,
               "net_by_session": {
                 "asia": -22.2,
                 "ny_only": 88.4,
-                "london": -34.7
+                "london": -74.3,
+                "dead": 38.0,
+                "overlap": -10.6
               }
             }
           },
@@ -3072,16 +3103,16 @@
               }
             },
             "forward": {
-              "n": 18,
-              "win_rate_pct": 38.9,
-              "net_pts": -15.5,
-              "median_pts": -22.92,
+              "n": 19,
+              "win_rate_pct": 42.1,
+              "net_pts": 83.6,
+              "median_pts": -22.24,
               "biggest_win": 124.0,
               "biggest_loss": -56.8,
-              "avg_duration_min": 160.9,
+              "avg_duration_min": 218.2,
               "net_by_session": {
                 "london": 39.7,
-                "ny_only": -75.8,
+                "ny_only": 23.4,
                 "asia": 68.2,
                 "overlap": -14.4,
                 "dead": -33.3
@@ -3104,16 +3135,17 @@
               }
             },
             "forward": {
-              "n": 2,
-              "win_rate_pct": 50.0,
-              "net_pts": 11.0,
-              "median_pts": 5.51,
+              "n": 3,
+              "win_rate_pct": 66.7,
+              "net_pts": 49.0,
+              "median_pts": 37.99,
               "biggest_win": 45.7,
               "biggest_loss": -34.7,
-              "avg_duration_min": 108.5,
+              "avg_duration_min": 219.0,
               "net_by_session": {
                 "london": -34.7,
-                "ny_only": 45.7
+                "ny_only": 45.7,
+                "dead": 38.0
               }
             }
           }
@@ -3137,19 +3169,19 @@
               }
             },
             "forward": {
-              "n": 40,
-              "win_rate_pct": 5.0,
-              "net_pts": -67.6,
+              "n": 49,
+              "win_rate_pct": 4.1,
+              "net_pts": -87.6,
               "median_pts": -1.5,
               "biggest_win": 10.7,
               "biggest_loss": -11.2,
-              "avg_duration_min": 0.9,
+              "avg_duration_min": 0.8,
               "net_by_session": {
-                "london": -24.4,
-                "ny_only": -18.7,
-                "asia": -14.0,
-                "overlap": -1.5,
-                "dead": -9.0
+                "london": -27.4,
+                "ny_only": -22.8,
+                "asia": -17.0,
+                "overlap": -8.4,
+                "dead": -12.0
               }
             }
           },
@@ -3171,19 +3203,19 @@
               }
             },
             "forward": {
-              "n": 50,
-              "win_rate_pct": 10.0,
-              "net_pts": -82.1,
+              "n": 67,
+              "win_rate_pct": 9.0,
+              "net_pts": -109.7,
               "median_pts": -1.5,
               "biggest_win": 12.5,
               "biggest_loss": -17.1,
-              "avg_duration_min": 2.1,
+              "avg_duration_min": 2.9,
               "net_by_session": {
-                "ny_only": -7.4,
-                "dead": -10.2,
-                "asia": -50.4,
-                "london": -2.8,
-                "overlap": -11.3
+                "ny_only": -7.9,
+                "dead": -12.0,
+                "asia": -63.1,
+                "london": -7.3,
+                "overlap": -19.4
               }
             }
           },
@@ -3205,16 +3237,16 @@
               }
             },
             "forward": {
-              "n": 100,
-              "win_rate_pct": 19.0,
-              "net_pts": -213.0,
-              "median_pts": -3.0,
+              "n": 137,
+              "win_rate_pct": 20.4,
+              "net_pts": -331.0,
+              "median_pts": -2.7,
               "biggest_win": 48.0,
               "biggest_loss": -26.5,
-              "avg_duration_min": 4.2,
+              "avg_duration_min": 4.1,
               "net_by_session": {
-                "asia": -66.2,
-                "london": -51.1,
+                "asia": -70.2,
+                "london": -165.1,
                 "dead": -34.7,
                 "overlap": -47.1,
                 "ny_only": -13.9
@@ -3237,15 +3269,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 0.0,
-              "net_pts": -1.2,
-              "median_pts": -1.2,
-              "biggest_win": -1.2,
-              "biggest_loss": -1.2,
-              "avg_duration_min": 2.0,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": 0.5,
+              "median_pts": -1.35,
+              "biggest_win": 6.2,
+              "biggest_loss": -3.0,
+              "avg_duration_min": 3.5,
               "net_by_session": {
-                "ny_only": -1.2
+                "ny_only": -1.2,
+                "london": 1.7
               }
             }
           },
@@ -3267,18 +3300,18 @@
               }
             },
             "forward": {
-              "n": 100,
-              "win_rate_pct": 14.0,
-              "net_pts": -228.2,
-              "median_pts": -2.5,
+              "n": 120,
+              "win_rate_pct": 15.0,
+              "net_pts": -272.6,
+              "median_pts": -2.35,
               "biggest_win": 43.7,
               "biggest_loss": -16.0,
-              "avg_duration_min": 3.4,
+              "avg_duration_min": 3.5,
               "net_by_session": {
-                "london": -90.0,
-                "ny_only": -30.4,
+                "london": -114.2,
+                "ny_only": -60.6,
                 "dead": -35.6,
-                "asia": -35.8,
+                "asia": -25.8,
                 "overlap": -36.4
               }
             }
@@ -3298,15 +3331,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 40.0,
-              "net_pts": 7.5,
-              "median_pts": -1.7,
+              "n": 8,
+              "win_rate_pct": 25.0,
+              "net_pts": -4.7,
+              "median_pts": -2.35,
               "biggest_win": 9.9,
-              "biggest_loss": -5.1,
-              "avg_duration_min": 6.2,
+              "biggest_loss": -5.8,
+              "avg_duration_min": 5.1,
               "net_by_session": {
-                "ny_only": 9.9,
+                "ny_only": -2.3,
                 "asia": 2.7,
                 "london": -5.1
               }
@@ -3347,17 +3380,17 @@
               }
             },
             "forward": {
-              "n": 56,
-              "win_rate_pct": 12.5,
-              "net_pts": -178.6,
-              "median_pts": -1.85,
+              "n": 60,
+              "win_rate_pct": 11.7,
+              "net_pts": -191.1,
+              "median_pts": -1.6,
               "biggest_win": 43.7,
               "biggest_loss": -26.1,
-              "avg_duration_min": 2.1,
+              "avg_duration_min": 1.9,
               "net_by_session": {
-                "asia": -7.0,
-                "london": -173.9,
-                "overlap": 2.3
+                "asia": -8.5,
+                "london": -183.4,
+                "overlap": 0.8
               }
             }
           },
@@ -3379,17 +3412,17 @@
               }
             },
             "forward": {
-              "n": 19,
-              "win_rate_pct": 5.3,
-              "net_pts": -39.9,
+              "n": 25,
+              "win_rate_pct": 4.0,
+              "net_pts": -48.9,
               "median_pts": -1.5,
               "biggest_win": 0.1,
               "biggest_loss": -13.1,
-              "avg_duration_min": 0.3,
+              "avg_duration_min": 0.2,
               "net_by_session": {
-                "overlap": -1.5,
-                "london": -35.4,
-                "ny_only": -1.5,
+                "overlap": -3.0,
+                "london": -38.4,
+                "ny_only": -6.0,
                 "asia": -1.5
               }
             }
@@ -3412,17 +3445,19 @@
               }
             },
             "forward": {
-              "n": 7,
-              "win_rate_pct": 0.0,
-              "net_pts": -41.4,
-              "median_pts": -2.4,
-              "biggest_win": -1.5,
+              "n": 10,
+              "win_rate_pct": 10.0,
+              "net_pts": -42.2,
+              "median_pts": -1.5,
+              "biggest_win": 2.2,
               "biggest_loss": -24.9,
-              "avg_duration_min": 0.7,
+              "avg_duration_min": 1.8,
               "net_by_session": {
                 "asia": -1.5,
                 "ny_only": -15.0,
-                "london": -24.9
+                "london": -26.4,
+                "dead": -1.5,
+                "overlap": 2.2
               }
             }
           },
@@ -3472,18 +3507,18 @@
               }
             },
             "forward": {
-              "n": 79,
-              "win_rate_pct": 15.2,
-              "net_pts": -103.8,
-              "median_pts": -2.0,
+              "n": 92,
+              "win_rate_pct": 16.3,
+              "net_pts": -121.6,
+              "median_pts": -1.9,
               "biggest_win": 65.3,
               "biggest_loss": -16.0,
-              "avg_duration_min": 3.2,
+              "avg_duration_min": 3.3,
               "net_by_session": {
-                "london": -2.2,
-                "ny_only": -10.0,
+                "london": -1.6,
+                "ny_only": -38.4,
                 "dead": -29.4,
-                "asia": -26.4,
+                "asia": -16.4,
                 "overlap": -35.8
               }
             }
@@ -3504,16 +3539,17 @@
               }
             },
             "forward": {
-              "n": 2,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -28.5,
-              "median_pts": -14.25,
-              "biggest_win": -3.6,
+              "net_pts": -30.0,
+              "median_pts": -3.6,
+              "biggest_win": -1.5,
               "biggest_loss": -24.9,
-              "avg_duration_min": 2.0,
+              "avg_duration_min": 3.0,
               "net_by_session": {
                 "london": -24.9,
-                "ny_only": -3.6
+                "ny_only": -3.6,
+                "dead": -1.5
               }
             }
           }
@@ -3537,19 +3573,19 @@
               }
             },
             "forward": {
-              "n": 38,
-              "win_rate_pct": 5.3,
-              "net_pts": -190.3,
-              "median_pts": -2.47,
-              "biggest_win": 4.2,
+              "n": 46,
+              "win_rate_pct": 6.5,
+              "net_pts": -219.1,
+              "median_pts": -2.38,
+              "biggest_win": 4.3,
               "biggest_loss": -26.9,
-              "avg_duration_min": 7.0,
+              "avg_duration_min": 10.4,
               "net_by_session": {
-                "london": -47.2,
-                "ny_only": -51.9,
-                "asia": -49.2,
-                "overlap": -1.5,
-                "dead": -40.6
+                "london": -55.1,
+                "ny_only": -47.6,
+                "asia": -52.2,
+                "overlap": -20.0,
+                "dead": -44.1
               }
             }
           },
@@ -3571,19 +3607,19 @@
               }
             },
             "forward": {
-              "n": 32,
-              "win_rate_pct": 25.0,
-              "net_pts": -98.0,
-              "median_pts": -3.3,
+              "n": 46,
+              "win_rate_pct": 19.6,
+              "net_pts": -156.3,
+              "median_pts": -3.72,
               "biggest_win": 22.9,
               "biggest_loss": -19.3,
-              "avg_duration_min": 26.9,
+              "avg_duration_min": 23.5,
               "net_by_session": {
-                "ny_only": -20.8,
-                "dead": -11.3,
-                "asia": -31.9,
-                "london": -13.3,
-                "overlap": -21.1
+                "ny_only": 1.9,
+                "dead": -19.8,
+                "asia": -62.9,
+                "london": -45.9,
+                "overlap": -30.0
               }
             }
           },
@@ -3605,16 +3641,16 @@
               }
             },
             "forward": {
-              "n": 58,
-              "win_rate_pct": 24.1,
-              "net_pts": -298.5,
-              "median_pts": -7.92,
+              "n": 76,
+              "win_rate_pct": 21.1,
+              "net_pts": -440.8,
+              "median_pts": -7.87,
               "biggest_win": 42.5,
               "biggest_loss": -39.3,
-              "avg_duration_min": 17.7,
+              "avg_duration_min": 17.1,
               "net_by_session": {
-                "asia": -144.4,
-                "london": -51.2,
+                "asia": -167.3,
+                "london": -170.4,
                 "dead": -45.4,
                 "overlap": -12.8,
                 "ny_only": -44.4
@@ -3637,15 +3673,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 0.0,
-              "net_pts": -14.3,
-              "median_pts": -14.3,
-              "biggest_win": -14.3,
-              "biggest_loss": -14.3,
-              "avg_duration_min": 25.0,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -29.6,
+              "median_pts": -12.21,
+              "biggest_win": 9.6,
+              "biggest_loss": -14.8,
+              "avg_duration_min": 21.0,
               "net_by_session": {
-                "ny_only": -14.3
+                "ny_only": -14.3,
+                "london": -15.3
               }
             }
           },
@@ -3667,18 +3704,18 @@
               }
             },
             "forward": {
-              "n": 64,
-              "win_rate_pct": 14.1,
-              "net_pts": -388.3,
-              "median_pts": -7.62,
+              "n": 75,
+              "win_rate_pct": 16.0,
+              "net_pts": -465.3,
+              "median_pts": -7.51,
               "biggest_win": 61.2,
               "biggest_loss": -33.6,
-              "avg_duration_min": 17.2,
+              "avg_duration_min": 19.9,
               "net_by_session": {
-                "london": -130.6,
-                "ny_only": -65.5,
-                "dead": -80.3,
-                "asia": -33.1,
+                "london": -169.6,
+                "ny_only": -106.9,
+                "dead": -76.6,
+                "asia": -33.4,
                 "overlap": -78.7
               }
             }
@@ -3698,15 +3735,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 20.0,
-              "net_pts": -28.8,
-              "median_pts": -7.03,
-              "biggest_win": 3.3,
+              "n": 7,
+              "win_rate_pct": 28.6,
+              "net_pts": -23.5,
+              "median_pts": -3.14,
+              "biggest_win": 8.4,
               "biggest_loss": -16.8,
-              "avg_duration_min": 15.6,
+              "avg_duration_min": 26.7,
               "net_by_session": {
-                "ny_only": 3.3,
+                "ny_only": 8.6,
                 "asia": -15.3,
                 "london": -16.8
               }
@@ -3747,17 +3784,17 @@
               }
             },
             "forward": {
-              "n": 46,
-              "win_rate_pct": 17.4,
-              "net_pts": -241.4,
+              "n": 50,
+              "win_rate_pct": 16.0,
+              "net_pts": -276.8,
               "median_pts": -4.29,
               "biggest_win": 61.2,
               "biggest_loss": -37.2,
-              "avg_duration_min": 9.4,
+              "avg_duration_min": 9.1,
               "net_by_session": {
-                "asia": 52.0,
-                "london": -246.7,
-                "overlap": -46.7
+                "asia": 49.4,
+                "london": -268.0,
+                "overlap": -58.2
               }
             }
           },
@@ -3779,17 +3816,17 @@
               }
             },
             "forward": {
-              "n": 16,
-              "win_rate_pct": 25.0,
-              "net_pts": 30.6,
+              "n": 22,
+              "win_rate_pct": 18.2,
+              "net_pts": 11.0,
               "median_pts": -1.5,
               "biggest_win": 59.0,
               "biggest_loss": -15.3,
-              "avg_duration_min": 8.6,
+              "avg_duration_min": 7.0,
               "net_by_session": {
-                "overlap": -1.5,
-                "london": 39.3,
-                "ny_only": -5.3,
+                "overlap": -3.0,
+                "london": 33.9,
+                "ny_only": -17.9,
                 "asia": -2.0
               }
             }
@@ -3812,17 +3849,19 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 20.0,
-              "net_pts": -26.6,
-              "median_pts": -7.97,
+              "n": 8,
+              "win_rate_pct": 12.5,
+              "net_pts": -42.8,
+              "median_pts": -6.67,
               "biggest_win": 33.3,
               "biggest_loss": -35.0,
-              "avg_duration_min": 30.8,
+              "avg_duration_min": 25.8,
               "net_by_session": {
                 "asia": -5.3,
                 "ny_only": 13.6,
-                "london": -35.0
+                "london": -37.9,
+                "dead": -7.8,
+                "overlap": -5.5
               }
             }
           },
@@ -3872,18 +3911,18 @@
               }
             },
             "forward": {
-              "n": 53,
-              "win_rate_pct": 18.9,
-              "net_pts": -225.4,
-              "median_pts": -5.87,
+              "n": 63,
+              "win_rate_pct": 19.0,
+              "net_pts": -289.7,
+              "median_pts": -5.79,
               "biggest_win": 61.2,
               "biggest_loss": -33.6,
-              "avg_duration_min": 20.7,
+              "avg_duration_min": 20.5,
               "net_by_session": {
-                "london": -97.1,
-                "ny_only": 14.7,
+                "london": -118.2,
+                "ny_only": -26.6,
                 "dead": -50.5,
-                "asia": -4.5,
+                "asia": -6.3,
                 "overlap": -87.9
               }
             }
@@ -3904,16 +3943,17 @@
               }
             },
             "forward": {
-              "n": 2,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -42.9,
-              "median_pts": -21.46,
-              "biggest_win": -8.0,
+              "net_pts": -50.7,
+              "median_pts": -7.97,
+              "biggest_win": -7.8,
               "biggest_loss": -35.0,
-              "avg_duration_min": 6.0,
+              "avg_duration_min": 17.3,
               "net_by_session": {
                 "london": -35.0,
-                "ny_only": -8.0
+                "ny_only": -8.0,
+                "dead": -7.8
               }
             }
           }
@@ -3937,19 +3977,19 @@
               }
             },
             "forward": {
-              "n": 41,
-              "win_rate_pct": 7.3,
-              "net_pts": -100.7,
-              "median_pts": -1.9,
+              "n": 49,
+              "win_rate_pct": 6.1,
+              "net_pts": -129.7,
+              "median_pts": -2.0,
               "biggest_win": 5.7,
               "biggest_loss": -7.0,
-              "avg_duration_min": 2.9,
+              "avg_duration_min": 2.7,
               "net_by_session": {
-                "london": -30.3,
-                "ny_only": -11.5,
-                "asia": -37.2,
-                "overlap": -1.5,
-                "dead": -20.2
+                "london": -38.5,
+                "ny_only": -16.3,
+                "asia": -43.2,
+                "overlap": -8.5,
+                "dead": -23.2
               }
             }
           },
@@ -3971,19 +4011,19 @@
               }
             },
             "forward": {
-              "n": 39,
-              "win_rate_pct": 28.2,
-              "net_pts": -56.7,
-              "median_pts": -2.9,
+              "n": 55,
+              "win_rate_pct": 25.5,
+              "net_pts": -102.4,
+              "median_pts": -3.9,
               "biggest_win": 18.6,
               "biggest_loss": -9.2,
-              "avg_duration_min": 11.4,
+              "avg_duration_min": 10.6,
               "net_by_session": {
-                "ny_only": 1.7,
-                "dead": -10.7,
-                "asia": -17.1,
-                "london": -17.5,
-                "overlap": -13.1
+                "ny_only": -2.2,
+                "dead": -16.8,
+                "asia": -46.0,
+                "london": -11.9,
+                "overlap": -25.5
               }
             }
           },
@@ -4005,16 +4045,16 @@
               }
             },
             "forward": {
-              "n": 83,
-              "win_rate_pct": 25.3,
-              "net_pts": -273.7,
-              "median_pts": -6.0,
+              "n": 109,
+              "win_rate_pct": 31.2,
+              "net_pts": -287.3,
+              "median_pts": -5.5,
               "biggest_win": 45.9,
               "biggest_loss": -39.3,
-              "avg_duration_min": 8.0,
+              "avg_duration_min": 7.9,
               "net_by_session": {
-                "asia": -82.9,
-                "london": -70.1,
+                "asia": -88.8,
+                "london": -77.8,
                 "dead": -36.9,
                 "overlap": -53.4,
                 "ny_only": -30.4
@@ -4037,15 +4077,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 0.0,
-              "net_pts": -4.9,
-              "median_pts": -4.9,
-              "biggest_win": -4.9,
-              "biggest_loss": -4.9,
-              "avg_duration_min": 17.0,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -20.7,
+              "median_pts": -5.7,
+              "biggest_win": 1.2,
+              "biggest_loss": -10.5,
+              "avg_duration_min": 5.8,
               "net_by_session": {
-                "ny_only": -4.9
+                "ny_only": -4.9,
+                "london": -15.8
               }
             }
           },
@@ -4067,18 +4108,18 @@
               }
             },
             "forward": {
-              "n": 84,
-              "win_rate_pct": 28.6,
-              "net_pts": -175.3,
+              "n": 102,
+              "win_rate_pct": 29.4,
+              "net_pts": -215.3,
               "median_pts": -4.7,
               "biggest_win": 43.5,
               "biggest_loss": -33.6,
-              "avg_duration_min": 10.0,
+              "avg_duration_min": 11.3,
               "net_by_session": {
-                "london": -107.2,
-                "ny_only": -22.2,
-                "dead": -49.3,
-                "asia": 44.4,
+                "london": -135.6,
+                "ny_only": -43.9,
+                "dead": -46.7,
+                "asia": 51.9,
                 "overlap": -41.0
               }
             }
@@ -4098,15 +4139,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 40.0,
-              "net_pts": -8.3,
-              "median_pts": -3.7,
+              "n": 8,
+              "win_rate_pct": 25.0,
+              "net_pts": -22.2,
+              "median_pts": -3.95,
               "biggest_win": 5.1,
               "biggest_loss": -7.2,
-              "avg_duration_min": 10.4,
+              "avg_duration_min": 8.0,
               "net_by_session": {
-                "ny_only": 5.1,
+                "ny_only": -8.8,
                 "asia": -6.2,
                 "london": -7.2
               }
@@ -4147,17 +4188,17 @@
               }
             },
             "forward": {
-              "n": 47,
-              "win_rate_pct": 29.8,
-              "net_pts": -58.6,
-              "median_pts": -5.1,
+              "n": 51,
+              "win_rate_pct": 27.5,
+              "net_pts": -98.1,
+              "median_pts": -5.8,
               "biggest_win": 50.5,
               "biggest_loss": -27.3,
-              "avg_duration_min": 5.5,
+              "avg_duration_min": 5.2,
               "net_by_session": {
-                "asia": 46.1,
-                "london": -86.5,
-                "overlap": -18.2
+                "asia": 39.6,
+                "london": -106.9,
+                "overlap": -30.8
               }
             }
           },
@@ -4179,17 +4220,17 @@
               }
             },
             "forward": {
-              "n": 19,
-              "win_rate_pct": 0.0,
-              "net_pts": -32.5,
+              "n": 25,
+              "win_rate_pct": 4.0,
+              "net_pts": -37.5,
               "median_pts": -1.5,
-              "biggest_win": -1.5,
+              "biggest_win": 3.3,
               "biggest_loss": -4.3,
-              "avg_duration_min": 0.1,
+              "avg_duration_min": 0.6,
               "net_by_session": {
-                "overlap": -1.5,
-                "london": -28.0,
-                "ny_only": -1.5,
+                "overlap": -1.7,
+                "london": -31.0,
+                "ny_only": -3.3,
                 "asia": -1.5
               }
             }
@@ -4212,17 +4253,19 @@
               }
             },
             "forward": {
-              "n": 6,
-              "win_rate_pct": 0.0,
-              "net_pts": -54.1,
-              "median_pts": -6.5,
-              "biggest_win": -5.1,
+              "n": 9,
+              "win_rate_pct": 11.1,
+              "net_pts": -56.9,
+              "median_pts": -6.2,
+              "biggest_win": 4.1,
               "biggest_loss": -22.0,
-              "avg_duration_min": 4.7,
+              "avg_duration_min": 9.0,
               "net_by_session": {
                 "asia": -5.9,
                 "ny_only": -26.2,
-                "london": -22.0
+                "london": -22.7,
+                "dead": -6.2,
+                "overlap": 4.1
               }
             }
           },
@@ -4272,18 +4315,18 @@
               }
             },
             "forward": {
-              "n": 66,
+              "n": 78,
               "win_rate_pct": 33.3,
-              "net_pts": -19.8,
+              "net_pts": -40.9,
               "median_pts": -4.4,
               "biggest_win": 61.3,
               "biggest_loss": -33.6,
-              "avg_duration_min": 10.9,
+              "avg_duration_min": 10.6,
               "net_by_session": {
-                "london": 15.4,
-                "ny_only": -0.2,
+                "london": 11.1,
+                "ny_only": -23.0,
                 "dead": -36.3,
-                "asia": 52.1,
+                "asia": 58.1,
                 "overlap": -50.8
               }
             }
@@ -4304,16 +4347,17 @@
               }
             },
             "forward": {
-              "n": 2,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -27.1,
-              "median_pts": -13.55,
+              "net_pts": -33.3,
+              "median_pts": -6.2,
               "biggest_win": -5.1,
               "biggest_loss": -22.0,
-              "avg_duration_min": 3.0,
+              "avg_duration_min": 15.3,
               "net_by_session": {
                 "london": -22.0,
-                "ny_only": -5.1
+                "ny_only": -5.1,
+                "dead": -6.2
               }
             }
           }
@@ -4337,19 +4381,19 @@
               }
             },
             "forward": {
-              "n": 41,
-              "win_rate_pct": 7.3,
-              "net_pts": -97.8,
-              "median_pts": -1.9,
+              "n": 49,
+              "win_rate_pct": 6.1,
+              "net_pts": -126.8,
+              "median_pts": -2.0,
               "biggest_win": 5.7,
               "biggest_loss": -7.0,
-              "avg_duration_min": 2.7,
+              "avg_duration_min": 2.6,
               "net_by_session": {
-                "london": -30.3,
-                "ny_only": -11.5,
-                "asia": -37.2,
-                "overlap": -1.5,
-                "dead": -17.3
+                "london": -38.5,
+                "ny_only": -16.3,
+                "asia": -43.2,
+                "overlap": -8.5,
+                "dead": -20.3
               }
             }
           },
@@ -4371,19 +4415,19 @@
               }
             },
             "forward": {
-              "n": 39,
-              "win_rate_pct": 30.8,
-              "net_pts": -54.4,
-              "median_pts": -2.9,
+              "n": 55,
+              "win_rate_pct": 27.3,
+              "net_pts": -98.0,
+              "median_pts": -3.9,
               "biggest_win": 18.6,
               "biggest_loss": -9.2,
-              "avg_duration_min": 9.3,
+              "avg_duration_min": 8.8,
               "net_by_session": {
-                "ny_only": 2.5,
-                "dead": -9.2,
-                "asia": -17.1,
-                "london": -17.5,
-                "overlap": -13.1
+                "ny_only": -1.9,
+                "dead": -15.3,
+                "asia": -43.4,
+                "london": -11.9,
+                "overlap": -25.5
               }
             }
           },
@@ -4405,16 +4449,16 @@
               }
             },
             "forward": {
-              "n": 86,
-              "win_rate_pct": 25.6,
-              "net_pts": -280.9,
-              "median_pts": -5.6,
+              "n": 112,
+              "win_rate_pct": 31.2,
+              "net_pts": -294.2,
+              "median_pts": -4.85,
               "biggest_win": 45.9,
               "biggest_loss": -39.3,
-              "avg_duration_min": 6.9,
+              "avg_duration_min": 7.0,
               "net_by_session": {
-                "asia": -96.4,
-                "london": -80.6,
+                "asia": -102.0,
+                "london": -88.3,
                 "dead": -33.7,
                 "overlap": -45.0,
                 "ny_only": -25.2
@@ -4437,15 +4481,16 @@
               }
             },
             "forward": {
-              "n": 1,
-              "win_rate_pct": 0.0,
-              "net_pts": -4.9,
-              "median_pts": -4.9,
-              "biggest_win": -4.9,
-              "biggest_loss": -4.9,
-              "avg_duration_min": 17.0,
+              "n": 4,
+              "win_rate_pct": 25.0,
+              "net_pts": -20.7,
+              "median_pts": -5.7,
+              "biggest_win": 1.2,
+              "biggest_loss": -10.5,
+              "avg_duration_min": 5.8,
               "net_by_session": {
-                "ny_only": -4.9
+                "ny_only": -4.9,
+                "london": -15.8
               }
             }
           },
@@ -4467,18 +4512,18 @@
               }
             },
             "forward": {
-              "n": 85,
-              "win_rate_pct": 28.2,
-              "net_pts": -200.0,
+              "n": 103,
+              "win_rate_pct": 30.1,
+              "net_pts": -229.9,
               "median_pts": -4.0,
               "biggest_win": 43.5,
               "biggest_loss": -33.6,
-              "avg_duration_min": 9.0,
+              "avg_duration_min": 10.3,
               "net_by_session": {
-                "london": -107.2,
-                "ny_only": -22.2,
-                "dead": -42.5,
-                "asia": 4.6,
+                "london": -129.0,
+                "ny_only": -43.9,
+                "dead": -36.4,
+                "asia": 12.1,
                 "overlap": -32.7
               }
             }
@@ -4498,15 +4543,15 @@
               }
             },
             "forward": {
-              "n": 5,
-              "win_rate_pct": 60.0,
-              "net_pts": -3.5,
-              "median_pts": 1.1,
+              "n": 8,
+              "win_rate_pct": 37.5,
+              "net_pts": -17.4,
+              "median_pts": -3.9,
               "biggest_win": 5.1,
               "biggest_loss": -7.2,
-              "avg_duration_min": 9.0,
+              "avg_duration_min": 7.1,
               "net_by_session": {
-                "ny_only": 5.1,
+                "ny_only": -8.8,
                 "asia": -1.4,
                 "london": -7.2
               }
@@ -4547,17 +4592,17 @@
               }
             },
             "forward": {
-              "n": 48,
-              "win_rate_pct": 29.2,
-              "net_pts": -115.7,
-              "median_pts": -5.3,
+              "n": 52,
+              "win_rate_pct": 26.9,
+              "net_pts": -155.2,
+              "median_pts": -5.8,
               "biggest_win": 50.5,
               "biggest_loss": -27.3,
-              "avg_duration_min": 4.6,
+              "avg_duration_min": 4.4,
               "net_by_session": {
-                "asia": 11.3,
-                "london": -108.8,
-                "overlap": -18.2
+                "asia": 4.8,
+                "london": -129.2,
+                "overlap": -30.8
               }
             }
           },
@@ -4579,17 +4624,17 @@
               }
             },
             "forward": {
-              "n": 19,
-              "win_rate_pct": 0.0,
-              "net_pts": -32.5,
+              "n": 25,
+              "win_rate_pct": 4.0,
+              "net_pts": -37.5,
               "median_pts": -1.5,
-              "biggest_win": -1.5,
+              "biggest_win": 3.3,
               "biggest_loss": -4.3,
-              "avg_duration_min": 0.1,
+              "avg_duration_min": 0.6,
               "net_by_session": {
-                "overlap": -1.5,
-                "london": -28.0,
-                "ny_only": -1.5,
+                "overlap": -1.7,
+                "london": -31.0,
+                "ny_only": -3.3,
                 "asia": -1.5
               }
             }
@@ -4612,17 +4657,19 @@
               }
             },
             "forward": {
-              "n": 6,
-              "win_rate_pct": 0.0,
-              "net_pts": -54.1,
-              "median_pts": -6.5,
-              "biggest_win": -5.1,
+              "n": 9,
+              "win_rate_pct": 22.2,
+              "net_pts": -44.1,
+              "median_pts": -5.9,
+              "biggest_win": 8.1,
               "biggest_loss": -22.0,
-              "avg_duration_min": 4.7,
+              "avg_duration_min": 6.7,
               "net_by_session": {
                 "asia": -5.9,
                 "ny_only": -26.2,
-                "london": -22.0
+                "london": -17.4,
+                "dead": -2.7,
+                "overlap": 8.1
               }
             }
           },
@@ -4672,18 +4719,18 @@
               }
             },
             "forward": {
-              "n": 66,
+              "n": 78,
               "win_rate_pct": 33.3,
-              "net_pts": -34.6,
+              "net_pts": -55.7,
               "median_pts": -3.5,
               "biggest_win": 61.3,
               "biggest_loss": -33.6,
-              "avg_duration_min": 10.1,
+              "avg_duration_min": 10.0,
               "net_by_session": {
-                "london": 15.4,
-                "ny_only": -0.2,
+                "london": 11.1,
+                "ny_only": -23.0,
                 "dead": -29.5,
-                "asia": 22.2,
+                "asia": 28.2,
                 "overlap": -42.5
               }
             }
@@ -4704,16 +4751,17 @@
               }
             },
             "forward": {
-              "n": 2,
+              "n": 3,
               "win_rate_pct": 0.0,
-              "net_pts": -27.1,
-              "median_pts": -13.55,
-              "biggest_win": -5.1,
+              "net_pts": -29.8,
+              "median_pts": -5.1,
+              "biggest_win": -2.7,
               "biggest_loss": -22.0,
-              "avg_duration_min": 3.0,
+              "avg_duration_min": 9.7,
               "net_by_session": {
                 "london": -22.0,
-                "ny_only": -5.1
+                "ny_only": -5.1,
+                "dead": -2.7
               }
             }
           }
@@ -4745,18 +4793,18 @@
               }
             },
             "forward": {
-              "n": 33,
-              "win_rate_pct": 30.3,
-              "net_pts": -89.4,
+              "n": 35,
+              "win_rate_pct": 31.4,
+              "net_pts": -83.0,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
-              "avg_duration_min": 4.2,
+              "avg_duration_min": 4.6,
               "net_by_session": {
                 "london": -56.0,
                 "asia": 12.8,
-                "dead": -22.6,
-                "ny_only": -23.6
+                "dead": -4.4,
+                "ny_only": -35.4
               }
             }
           },
@@ -4778,19 +4826,19 @@
               }
             },
             "forward": {
-              "n": 54,
-              "win_rate_pct": 27.8,
-              "net_pts": -184.9,
+              "n": 63,
+              "win_rate_pct": 27.0,
+              "net_pts": -231.1,
               "median_pts": -11.8,
               "biggest_win": 36.6,
               "biggest_loss": -11.8,
-              "avg_duration_min": 65.9,
+              "avg_duration_min": 57.5,
               "net_by_session": {
-                "overlap": -39.8,
-                "ny_only": -61.3,
-                "dead": 7.6,
+                "overlap": -45.2,
+                "ny_only": -54.9,
+                "dead": -4.2,
                 "asia": -33.4,
-                "london": -58.0
+                "london": -93.4
               }
             }
           },
@@ -4812,15 +4860,15 @@
               }
             },
             "forward": {
-              "n": 108,
-              "win_rate_pct": 36.1,
-              "net_pts": -132.3,
+              "n": 113,
+              "win_rate_pct": 34.5,
+              "net_pts": -191.3,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -45.0,
-              "avg_duration_min": 33.1,
+              "avg_duration_min": 31.7,
               "net_by_session": {
-                "overlap": 21.2,
+                "overlap": -37.8,
                 "ny_only": -76.7,
                 "dead": -79.4,
                 "asia": 82.2,
@@ -4860,18 +4908,19 @@
               }
             },
             "forward": {
-              "n": 134,
-              "win_rate_pct": 36.6,
-              "net_pts": -111.2,
+              "n": 164,
+              "win_rate_pct": 36.0,
+              "net_pts": -165.2,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
-              "avg_duration_min": 4.3,
+              "avg_duration_min": 4.1,
               "net_by_session": {
-                "london": -83.4,
-                "dead": -16.2,
-                "asia": -79.0,
-                "ny_only": 67.4
+                "london": -82.4,
+                "dead": -39.8,
+                "asia": -89.8,
+                "ny_only": 56.6,
+                "overlap": -9.8
               }
             }
           },
@@ -4921,16 +4970,16 @@
               }
             },
             "forward": {
-              "n": 34,
-              "win_rate_pct": 26.5,
-              "net_pts": -131.2,
+              "n": 44,
+              "win_rate_pct": 25.0,
+              "net_pts": -189.2,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
-              "avg_duration_min": 3.6,
+              "avg_duration_min": 2.8,
               "net_by_session": {
-                "london": -111.6,
-                "overlap": -3.4,
+                "london": -123.4,
+                "overlap": -49.6,
                 "ny_only": -11.8,
                 "dead": 18.2,
                 "asia": -22.6
@@ -4955,19 +5004,19 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 26.9,
-              "net_pts": -106.9,
+              "n": 38,
+              "win_rate_pct": 26.3,
+              "net_pts": -148.4,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
-              "avg_duration_min": 3.9,
+              "avg_duration_min": 3.6,
               "net_by_session": {
-                "ny_only": 6.4,
-                "asia": -82.6,
-                "london": 10.1,
-                "overlap": -47.2,
-                "dead": 6.4
+                "ny_only": -10.8,
+                "asia": -106.2,
+                "london": 8.4,
+                "overlap": -34.4,
+                "dead": -5.4
               }
             }
           },
@@ -4989,19 +5038,19 @@
               }
             },
             "forward": {
-              "n": 38,
-              "win_rate_pct": 39.5,
-              "net_pts": 4.3,
+              "n": 41,
+              "win_rate_pct": 39.0,
+              "net_pts": -1.1,
               "median_pts": -11.8,
               "biggest_win": 37.6,
               "biggest_loss": -11.8,
-              "avg_duration_min": 88.5,
+              "avg_duration_min": 82.4,
               "net_by_session": {
                 "overlap": 19.2,
-                "ny_only": -55.5,
+                "ny_only": -67.3,
                 "dead": 55.8,
-                "asia": -21.6,
-                "london": 6.4
+                "asia": -33.4,
+                "london": 24.6
               }
             }
           },
@@ -5050,18 +5099,19 @@
               }
             },
             "forward": {
-              "n": 98,
-              "win_rate_pct": 36.7,
-              "net_pts": -76.4,
+              "n": 123,
+              "win_rate_pct": 36.6,
+              "net_pts": -101.4,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
-              "avg_duration_min": 4.7,
+              "avg_duration_min": 4.4,
               "net_by_session": {
-                "london": -33.8,
-                "dead": -10.8,
-                "asia": -81.0,
-                "ny_only": 49.2
+                "london": -21.0,
+                "dead": -34.4,
+                "asia": -80.0,
+                "ny_only": 32.0,
+                "overlap": 2.0
               }
             }
           },
@@ -5083,17 +5133,17 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 25.0,
-              "net_pts": -17.2,
+              "n": 6,
+              "win_rate_pct": 16.7,
+              "net_pts": -40.8,
               "median_pts": -11.8,
               "biggest_win": 18.2,
               "biggest_loss": -11.8,
               "avg_duration_min": 0.8,
               "net_by_session": {
-                "asia": 6.4,
+                "asia": -5.4,
                 "london": -11.8,
-                "ny_only": -11.8
+                "ny_only": -23.6
               }
             }
           }
@@ -5117,18 +5167,18 @@
               }
             },
             "forward": {
-              "n": 9,
-              "win_rate_pct": 22.2,
-              "net_pts": -95.2,
-              "median_pts": -45.54,
+              "n": 11,
+              "win_rate_pct": 36.4,
+              "net_pts": 3.4,
+              "median_pts": -38.94,
               "biggest_win": 152.7,
               "biggest_loss": -72.5,
-              "avg_duration_min": 177.1,
+              "avg_duration_min": 202.6,
               "net_by_session": {
                 "london": -15.3,
                 "asia": -118.0,
-                "dead": 74.2,
-                "ny_only": -36.0
+                "dead": 172.0,
+                "ny_only": -35.2
               }
             }
           },
@@ -5150,19 +5200,19 @@
               }
             },
             "forward": {
-              "n": 22,
-              "win_rate_pct": 27.3,
-              "net_pts": -388.0,
-              "median_pts": -39.92,
-              "biggest_win": 100.0,
+              "n": 27,
+              "win_rate_pct": 29.6,
+              "net_pts": -309.9,
+              "median_pts": -37.14,
+              "biggest_win": 107.9,
               "biggest_loss": -76.9,
-              "avg_duration_min": 237.3,
+              "avg_duration_min": 218.8,
               "net_by_session": {
-                "overlap": -165.6,
-                "dead": 68.9,
+                "overlap": -62.6,
+                "dead": 176.8,
                 "asia": -55.7,
-                "london": -118.7,
-                "ny_only": -116.9
+                "london": -220.3,
+                "ny_only": -148.2
               }
             }
           },
@@ -5184,15 +5234,15 @@
               }
             },
             "forward": {
-              "n": 21,
-              "win_rate_pct": 47.6,
-              "net_pts": 130.2,
-              "median_pts": -5.1,
-              "biggest_win": 156.4,
+              "n": 22,
+              "win_rate_pct": 50.0,
+              "net_pts": 304.0,
+              "median_pts": 2.8,
+              "biggest_win": 173.8,
               "biggest_loss": -136.4,
-              "avg_duration_min": 253.9,
+              "avg_duration_min": 254.3,
               "net_by_session": {
-                "overlap": -126.5,
+                "overlap": 47.3,
                 "ny_only": 20.3,
                 "dead": 0.6,
                 "asia": 192.5,
@@ -5232,18 +5282,19 @@
               }
             },
             "forward": {
-              "n": 23,
-              "win_rate_pct": 39.1,
-              "net_pts": 178.9,
-              "median_pts": -37.65,
+              "n": 29,
+              "win_rate_pct": 41.4,
+              "net_pts": 78.2,
+              "median_pts": -41.66,
               "biggest_win": 163.3,
-              "biggest_loss": -68.0,
-              "avg_duration_min": 117.8,
+              "biggest_loss": -110.9,
+              "avg_duration_min": 130.8,
               "net_by_session": {
-                "london": -46.6,
-                "dead": -47.6,
+                "london": -71.1,
+                "dead": 60.3,
                 "asia": 245.3,
-                "ny_only": 27.8
+                "ny_only": -45.6,
+                "overlap": -110.9
               }
             }
           },
@@ -5293,16 +5344,16 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 30.0,
-              "net_pts": -78.7,
-              "median_pts": -49.36,
+              "n": 25,
+              "win_rate_pct": 28.0,
+              "net_pts": -127.4,
+              "median_pts": -53.19,
               "biggest_win": 221.7,
-              "biggest_loss": -92.3,
-              "avg_duration_min": 64.7,
+              "biggest_loss": -98.3,
+              "avg_duration_min": 62.6,
               "net_by_session": {
-                "london": 271.0,
-                "overlap": -172.0,
+                "london": 317.1,
+                "overlap": -266.7,
                 "ny_only": -37.5,
                 "dead": -37.6,
                 "asia": -102.5
@@ -5327,19 +5378,19 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 30.0,
-              "net_pts": -436.2,
+              "n": 24,
+              "win_rate_pct": 25.0,
+              "net_pts": -550.5,
               "median_pts": -55.42,
               "biggest_win": 145.0,
               "biggest_loss": -125.1,
-              "avg_duration_min": 92.6,
+              "avg_duration_min": 130.5,
               "net_by_session": {
-                "ny_only": 194.3,
+                "ny_only": 85.2,
                 "asia": -127.5,
-                "london": -238.3,
+                "london": -367.9,
                 "overlap": -160.8,
-                "dead": -103.7
+                "dead": 20.7
               }
             }
           },
@@ -5361,18 +5412,18 @@
               }
             },
             "forward": {
-              "n": 15,
-              "win_rate_pct": 53.3,
-              "net_pts": 182.7,
-              "median_pts": 19.0,
+              "n": 18,
+              "win_rate_pct": 50.0,
+              "net_pts": 208.8,
+              "median_pts": -2.5,
               "biggest_win": 156.8,
               "biggest_loss": -108.6,
-              "avg_duration_min": 313.1,
+              "avg_duration_min": 299.3,
               "net_by_session": {
-                "ny_only": 127.3,
+                "ny_only": 98.6,
                 "dead": 79.9,
-                "asia": 205.5,
-                "london": 5.9,
+                "asia": 309.5,
+                "london": -43.3,
                 "overlap": -236.0
               }
             }
@@ -5422,18 +5473,19 @@
               }
             },
             "forward": {
-              "n": 23,
-              "win_rate_pct": 34.8,
-              "net_pts": -43.3,
-              "median_pts": -45.54,
+              "n": 28,
+              "win_rate_pct": 39.3,
+              "net_pts": 19.3,
+              "median_pts": -43.6,
               "biggest_win": 139.2,
-              "biggest_loss": -86.1,
-              "avg_duration_min": 109.3,
+              "biggest_loss": -110.9,
+              "avg_duration_min": 125.4,
               "net_by_session": {
-                "london": -293.6,
-                "dead": -49.7,
+                "london": -249.9,
+                "dead": 58.2,
                 "asia": 275.7,
-                "ny_only": 24.4
+                "ny_only": 46.1,
+                "overlap": -110.9
               }
             }
           },
@@ -5455,17 +5507,17 @@
               }
             },
             "forward": {
-              "n": 4,
+              "n": 6,
               "win_rate_pct": 50.0,
-              "net_pts": -5.6,
-              "median_pts": -16.9,
-              "biggest_win": 100.7,
+              "net_pts": 69.7,
+              "median_pts": -2.2,
+              "biggest_win": 104.0,
               "biggest_loss": -72.5,
-              "avg_duration_min": 82.0,
+              "avg_duration_min": 158.2,
               "net_by_session": {
-                "asia": 42.6,
+                "asia": 146.6,
                 "london": -72.5,
-                "ny_only": 24.3
+                "ny_only": -4.4
               }
             }
           }
@@ -5489,9 +5541,9 @@
               }
             },
             "forward": {
-              "n": 31,
-              "win_rate_pct": 3.2,
-              "net_pts": -86.1,
+              "n": 33,
+              "win_rate_pct": 6.1,
+              "net_pts": -83.6,
               "median_pts": -1.8,
               "biggest_win": 27.6,
               "biggest_loss": -16.5,
@@ -5499,8 +5551,8 @@
               "net_by_session": {
                 "london": -47.2,
                 "asia": -8.0,
-                "dead": -12.6,
-                "ny_only": -18.3
+                "dead": -14.4,
+                "ny_only": -14.0
               }
             }
           },
@@ -5522,19 +5574,19 @@
               }
             },
             "forward": {
-              "n": 97,
-              "win_rate_pct": 4.1,
-              "net_pts": -268.8,
+              "n": 106,
+              "win_rate_pct": 5.7,
+              "net_pts": -295.9,
               "median_pts": -1.8,
-              "biggest_win": 13.3,
-              "biggest_loss": -23.1,
-              "avg_duration_min": 1.2,
+              "biggest_win": 27.4,
+              "biggest_loss": -31.8,
+              "avg_duration_min": 1.4,
               "net_by_session": {
-                "overlap": -41.0,
-                "ny_only": -40.1,
-                "dead": -25.5,
+                "overlap": -37.6,
+                "ny_only": -48.0,
+                "dead": -26.3,
                 "asia": -113.7,
-                "london": -48.5
+                "london": -70.3
               }
             }
           },
@@ -5556,15 +5608,15 @@
               }
             },
             "forward": {
-              "n": 120,
-              "win_rate_pct": 28.3,
-              "net_pts": -170.5,
+              "n": 124,
+              "win_rate_pct": 27.4,
+              "net_pts": -283.8,
               "median_pts": -2.25,
               "biggest_win": 58.3,
-              "biggest_loss": -35.2,
-              "avg_duration_min": 4.9,
+              "biggest_loss": -69.3,
+              "avg_duration_min": 4.7,
               "net_by_session": {
-                "overlap": -70.1,
+                "overlap": -183.4,
                 "ny_only": -145.0,
                 "dead": 14.0,
                 "asia": 52.2,
@@ -5604,18 +5656,19 @@
               }
             },
             "forward": {
-              "n": 131,
-              "win_rate_pct": 18.3,
-              "net_pts": -361.6,
-              "median_pts": -4.3,
+              "n": 156,
+              "win_rate_pct": 16.7,
+              "net_pts": -641.4,
+              "median_pts": -4.45,
               "biggest_win": 122.3,
-              "biggest_loss": -27.0,
+              "biggest_loss": -67.6,
               "avg_duration_min": 3.6,
               "net_by_session": {
-                "london": -212.6,
-                "dead": -58.5,
-                "asia": -71.1,
-                "ny_only": -19.4
+                "london": -222.5,
+                "dead": -73.4,
+                "asia": -105.3,
+                "ny_only": -63.9,
+                "overlap": -176.3
               }
             }
           },
@@ -5665,16 +5718,16 @@
               }
             },
             "forward": {
-              "n": 32,
-              "win_rate_pct": 12.5,
-              "net_pts": -191.5,
-              "median_pts": -6.4,
+              "n": 41,
+              "win_rate_pct": 9.8,
+              "net_pts": -297.6,
+              "median_pts": -5.8,
               "biggest_win": 44.3,
-              "biggest_loss": -44.1,
-              "avg_duration_min": 2.3,
+              "biggest_loss": -59.4,
+              "avg_duration_min": 2.1,
               "net_by_session": {
-                "london": -100.8,
-                "overlap": -81.7,
+                "london": -102.6,
+                "overlap": -186.0,
                 "ny_only": -1.8,
                 "dead": -5.8,
                 "asia": -1.4
@@ -5699,19 +5752,19 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 3.7,
-              "net_pts": -65.4,
+              "n": 40,
+              "win_rate_pct": 2.5,
+              "net_pts": -94.9,
               "median_pts": -1.8,
               "biggest_win": 1.4,
               "biggest_loss": -10.3,
               "avg_duration_min": 0.1,
               "net_by_session": {
-                "ny_only": -0.4,
-                "asia": -23.0,
-                "london": -31.2,
-                "overlap": -7.2,
-                "dead": -3.6
+                "ny_only": -15.5,
+                "asia": -26.6,
+                "london": -33.0,
+                "overlap": -14.4,
+                "dead": -5.4
               }
             }
           },
@@ -5733,19 +5786,19 @@
               }
             },
             "forward": {
-              "n": 50,
-              "win_rate_pct": 6.0,
-              "net_pts": -117.7,
+              "n": 53,
+              "win_rate_pct": 7.5,
+              "net_pts": -130.3,
               "median_pts": -1.8,
               "biggest_win": 20.2,
               "biggest_loss": -23.4,
-              "avg_duration_min": 1.2,
+              "avg_duration_min": 1.3,
               "net_by_session": {
                 "overlap": -26.3,
-                "ny_only": -33.5,
+                "ny_only": -45.8,
                 "dead": 12.3,
-                "asia": -54.3,
-                "london": -15.9
+                "asia": -52.8,
+                "london": -17.7
               }
             }
           },
@@ -5794,18 +5847,19 @@
               }
             },
             "forward": {
-              "n": 104,
-              "win_rate_pct": 15.4,
-              "net_pts": -369.4,
+              "n": 126,
+              "win_rate_pct": 15.1,
+              "net_pts": -507.8,
               "median_pts": -2.2,
               "biggest_win": 34.9,
-              "biggest_loss": -27.0,
+              "biggest_loss": -29.3,
               "avg_duration_min": 3.2,
               "net_by_session": {
-                "london": -251.3,
-                "dead": -38.5,
-                "asia": -58.6,
-                "ny_only": -21.0
+                "london": -261.2,
+                "dead": -53.4,
+                "asia": -59.6,
+                "ny_only": -54.8,
+                "overlap": -78.8
               }
             }
           },
@@ -5827,17 +5881,17 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 0.0,
-              "net_pts": -48.3,
-              "median_pts": -13.6,
-              "biggest_win": -7.0,
+              "n": 6,
+              "win_rate_pct": 16.7,
+              "net_pts": -59.1,
+              "median_pts": -12.75,
+              "biggest_win": 1.5,
               "biggest_loss": -14.1,
-              "avg_duration_min": 3.2,
+              "avg_duration_min": 3.7,
               "net_by_session": {
-                "asia": -20.2,
+                "asia": -18.7,
                 "london": -14.1,
-                "ny_only": -14.0
+                "ny_only": -26.3
               }
             }
           }
@@ -5861,18 +5915,18 @@
               }
             },
             "forward": {
-              "n": 25,
-              "win_rate_pct": 12.0,
-              "net_pts": -1.8,
+              "n": 27,
+              "win_rate_pct": 14.8,
+              "net_pts": 7.0,
               "median_pts": -1.8,
               "biggest_win": 139.3,
               "biggest_loss": -24.2,
-              "avg_duration_min": 7.3,
+              "avg_duration_min": 12.4,
               "net_by_session": {
                 "london": 67.9,
                 "asia": -19.3,
-                "dead": -24.5,
-                "ny_only": -26.0
+                "dead": -28.6,
+                "ny_only": -13.1
               }
             }
           },
@@ -5894,19 +5948,19 @@
               }
             },
             "forward": {
-              "n": 43,
-              "win_rate_pct": 18.6,
-              "net_pts": -240.6,
-              "median_pts": -8.52,
-              "biggest_win": 49.6,
+              "n": 48,
+              "win_rate_pct": 18.8,
+              "net_pts": -235.9,
+              "median_pts": -8.64,
+              "biggest_win": 65.5,
               "biggest_loss": -28.6,
-              "avg_duration_min": 16.7,
+              "avg_duration_min": 17.4,
               "net_by_session": {
-                "overlap": -17.4,
-                "ny_only": -121.4,
-                "dead": -50.5,
+                "overlap": 48.1,
+                "ny_only": -127.6,
+                "dead": -69.5,
                 "asia": -35.4,
-                "london": -16.0
+                "london": -51.5
               }
             }
           },
@@ -5928,15 +5982,15 @@
               }
             },
             "forward": {
-              "n": 64,
-              "win_rate_pct": 26.6,
-              "net_pts": 34.3,
-              "median_pts": -6.23,
+              "n": 68,
+              "win_rate_pct": 25.0,
+              "net_pts": -132.9,
+              "median_pts": -7.38,
               "biggest_win": 188.0,
-              "biggest_loss": -66.0,
-              "avg_duration_min": 68.8,
+              "biggest_loss": -70.8,
+              "avg_duration_min": 64.9,
               "net_by_session": {
-                "overlap": -43.3,
+                "overlap": -210.6,
                 "ny_only": -193.7,
                 "dead": 70.5,
                 "asia": -36.4,
@@ -5976,18 +6030,19 @@
               }
             },
             "forward": {
-              "n": 79,
-              "win_rate_pct": 25.3,
-              "net_pts": -277.4,
-              "median_pts": -11.01,
+              "n": 93,
+              "win_rate_pct": 30.1,
+              "net_pts": -119.4,
+              "median_pts": -10.82,
               "biggest_win": 166.7,
               "biggest_loss": -40.5,
-              "avg_duration_min": 17.3,
+              "avg_duration_min": 19.7,
               "net_by_session": {
-                "london": 159.9,
-                "dead": -81.2,
-                "asia": -326.1,
-                "ny_only": -29.8
+                "london": 208.2,
+                "dead": -118.8,
+                "asia": -267.0,
+                "ny_only": 96.8,
+                "overlap": -38.4
               }
             }
           },
@@ -6037,16 +6092,16 @@
               }
             },
             "forward": {
-              "n": 31,
-              "win_rate_pct": 22.6,
-              "net_pts": -184.3,
+              "n": 39,
+              "win_rate_pct": 20.5,
+              "net_pts": -280.6,
               "median_pts": -10.34,
               "biggest_win": 73.6,
               "biggest_loss": -52.2,
-              "avg_duration_min": 12.7,
+              "avg_duration_min": 11.2,
               "net_by_session": {
-                "london": -101.1,
-                "overlap": -17.6,
+                "london": -115.8,
+                "overlap": -99.3,
                 "ny_only": -10.3,
                 "dead": -3.0,
                 "asia": -52.1
@@ -6071,19 +6126,19 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 14.8,
-              "net_pts": -59.1,
-              "median_pts": -4.5,
+              "n": 39,
+              "win_rate_pct": 17.9,
+              "net_pts": -72.7,
+              "median_pts": -2.4,
               "biggest_win": 86.0,
               "biggest_loss": -23.0,
-              "avg_duration_min": 8.3,
+              "avg_duration_min": 10.4,
               "net_by_session": {
-                "ny_only": 15.5,
-                "asia": -83.0,
-                "london": -60.5,
-                "overlap": 75.3,
-                "dead": -6.3
+                "ny_only": 24.9,
+                "asia": -98.1,
+                "london": -62.9,
+                "overlap": 71.5,
+                "dead": -8.1
               }
             }
           },
@@ -6105,19 +6160,19 @@
               }
             },
             "forward": {
-              "n": 35,
-              "win_rate_pct": 20.0,
-              "net_pts": -259.3,
-              "median_pts": -8.8,
+              "n": 38,
+              "win_rate_pct": 21.1,
+              "net_pts": -299.8,
+              "median_pts": -9.14,
               "biggest_win": 38.6,
               "biggest_loss": -53.1,
-              "avg_duration_min": 16.5,
+              "avg_duration_min": 16.6,
               "net_by_session": {
                 "overlap": -64.3,
-                "ny_only": -107.0,
+                "ny_only": -156.2,
                 "dead": 15.9,
-                "asia": -80.7,
-                "london": -23.2
+                "asia": -93.1,
+                "london": -2.1
               }
             }
           },
@@ -6166,18 +6221,19 @@
               }
             },
             "forward": {
-              "n": 68,
-              "win_rate_pct": 20.6,
-              "net_pts": -302.1,
-              "median_pts": -11.37,
+              "n": 82,
+              "win_rate_pct": 25.6,
+              "net_pts": -165.7,
+              "median_pts": -11.1,
               "biggest_win": 166.7,
               "biggest_loss": -40.5,
-              "avg_duration_min": 16.4,
+              "avg_duration_min": 18.8,
               "net_by_session": {
-                "london": -29.8,
-                "dead": -10.8,
-                "asia": -228.2,
-                "ny_only": -33.2
+                "london": 18.5,
+                "dead": -48.4,
+                "asia": -169.1,
+                "ny_only": 71.8,
+                "overlap": -38.4
               }
             }
           },
@@ -6199,17 +6255,17 @@
               }
             },
             "forward": {
-              "n": 4,
+              "n": 6,
               "win_rate_pct": 0.0,
-              "net_pts": -95.8,
+              "net_pts": -157.4,
               "median_pts": -24.68,
               "biggest_win": -8.8,
-              "biggest_loss": -37.7,
-              "avg_duration_min": 13.0,
+              "biggest_loss": -49.2,
+              "avg_duration_min": 11.2,
               "net_by_session": {
-                "asia": -34.6,
+                "asia": -47.0,
                 "london": -37.7,
-                "ny_only": -23.6
+                "ny_only": -72.8
               }
             }
           }
@@ -6233,18 +6289,18 @@
               }
             },
             "forward": {
-              "n": 31,
-              "win_rate_pct": 9.7,
-              "net_pts": -71.3,
+              "n": 33,
+              "win_rate_pct": 9.1,
+              "net_pts": -74.9,
               "median_pts": -1.8,
               "biggest_win": 36.3,
               "biggest_loss": -15.8,
-              "avg_duration_min": 1.8,
+              "avg_duration_min": 1.7,
               "net_by_session": {
                 "london": -45.2,
                 "asia": -12.0,
-                "dead": -10.5,
-                "ny_only": -3.6
+                "dead": -12.3,
+                "ny_only": -5.4
               }
             }
           },
@@ -6266,19 +6322,19 @@
               }
             },
             "forward": {
-              "n": 68,
-              "win_rate_pct": 20.6,
-              "net_pts": -158.9,
-              "median_pts": -4.55,
+              "n": 78,
+              "win_rate_pct": 20.5,
+              "net_pts": -179.4,
+              "median_pts": -5.15,
               "biggest_win": 45.1,
               "biggest_loss": -42.8,
-              "avg_duration_min": 4.9,
+              "avg_duration_min": 4.8,
               "net_by_session": {
-                "overlap": -19.3,
-                "ny_only": -63.0,
-                "dead": -0.6,
+                "overlap": -24.1,
+                "ny_only": -46.0,
+                "dead": -7.0,
                 "asia": -1.6,
-                "london": -74.4
+                "london": -100.7
               }
             }
           },
@@ -6300,15 +6356,15 @@
               }
             },
             "forward": {
-              "n": 113,
-              "win_rate_pct": 34.5,
-              "net_pts": -67.9,
-              "median_pts": -4.0,
+              "n": 116,
+              "win_rate_pct": 33.6,
+              "net_pts": -124.0,
+              "median_pts": -4.35,
               "biggest_win": 66.0,
               "biggest_loss": -45.0,
-              "avg_duration_min": 32.3,
+              "avg_duration_min": 31.5,
               "net_by_session": {
-                "overlap": -37.4,
+                "overlap": -93.5,
                 "ny_only": -62.9,
                 "dead": -32.5,
                 "asia": 56.7,
@@ -6348,18 +6404,19 @@
               }
             },
             "forward": {
-              "n": 124,
-              "win_rate_pct": 33.1,
-              "net_pts": -215.6,
+              "n": 147,
+              "win_rate_pct": 32.7,
+              "net_pts": -224.7,
               "median_pts": -6.8,
               "biggest_win": 117.3,
               "biggest_loss": -26.3,
               "avg_duration_min": 4.9,
               "net_by_session": {
-                "london": -32.3,
-                "dead": -61.1,
-                "asia": -151.7,
-                "ny_only": 29.5
+                "london": -48.5,
+                "dead": -73.8,
+                "asia": -131.7,
+                "ny_only": -13.0,
+                "overlap": 42.3
               }
             }
           },
@@ -6409,16 +6466,16 @@
               }
             },
             "forward": {
-              "n": 33,
-              "win_rate_pct": 33.3,
-              "net_pts": -122.4,
-              "median_pts": -9.0,
+              "n": 41,
+              "win_rate_pct": 31.7,
+              "net_pts": -175.7,
+              "median_pts": -9.7,
               "biggest_win": 96.6,
               "biggest_loss": -33.1,
-              "avg_duration_min": 5.3,
+              "avg_duration_min": 4.8,
               "net_by_session": {
-                "london": -4.8,
-                "overlap": -122.0,
+                "london": -21.2,
+                "overlap": -158.9,
                 "ny_only": -9.0,
                 "dead": 3.9,
                 "asia": 9.5
@@ -6443,19 +6500,19 @@
               }
             },
             "forward": {
-              "n": 27,
+              "n": 40,
               "win_rate_pct": 0.0,
-              "net_pts": -64.2,
+              "net_pts": -88.8,
               "median_pts": -1.8,
-              "biggest_win": -1.6,
+              "biggest_win": -0.7,
               "biggest_loss": -9.3,
               "avg_duration_min": 0.3,
               "net_by_session": {
-                "ny_only": -3.6,
-                "asia": -21.6,
-                "london": -23.0,
-                "overlap": -7.2,
-                "dead": -8.8
+                "ny_only": -12.6,
+                "asia": -24.1,
+                "london": -24.8,
+                "overlap": -14.9,
+                "dead": -12.4
               }
             }
           },
@@ -6477,19 +6534,19 @@
               }
             },
             "forward": {
-              "n": 45,
-              "win_rate_pct": 28.9,
-              "net_pts": -22.8,
-              "median_pts": -5.0,
+              "n": 48,
+              "win_rate_pct": 29.2,
+              "net_pts": -32.2,
+              "median_pts": -5.3,
               "biggest_win": 56.2,
               "biggest_loss": -24.8,
-              "avg_duration_min": 5.4,
+              "avg_duration_min": 5.2,
               "net_by_session": {
                 "overlap": 16.3,
-                "ny_only": -0.8,
+                "ny_only": -12.7,
                 "dead": 20.6,
-                "asia": -57.0,
-                "london": -1.9
+                "asia": -48.7,
+                "london": -7.7
               }
             }
           },
@@ -6538,18 +6595,19 @@
               }
             },
             "forward": {
-              "n": 93,
-              "win_rate_pct": 32.3,
-              "net_pts": -282.1,
-              "median_pts": -6.8,
-              "biggest_win": 40.6,
+              "n": 112,
+              "win_rate_pct": 32.1,
+              "net_pts": -247.4,
+              "median_pts": -6.6,
+              "biggest_win": 74.3,
               "biggest_loss": -26.3,
-              "avg_duration_min": 4.9,
+              "avg_duration_min": 5.1,
               "net_by_session": {
-                "london": -187.6,
-                "dead": -23.1,
-                "asia": -97.5,
-                "ny_only": 26.1
+                "london": -203.8,
+                "dead": -35.8,
+                "asia": -55.4,
+                "ny_only": -14.0,
+                "overlap": 61.6
               }
             }
           },
@@ -6571,17 +6629,17 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 25.0,
-              "net_pts": -44.0,
+              "n": 6,
+              "win_rate_pct": 33.3,
+              "net_pts": -47.6,
               "median_pts": -11.45,
-              "biggest_win": 3.7,
+              "biggest_win": 8.3,
               "biggest_loss": -24.8,
-              "avg_duration_min": 1.2,
+              "avg_duration_min": 2.0,
               "net_by_session": {
-                "asia": -7.4,
+                "asia": 0.9,
                 "london": -24.8,
-                "ny_only": -11.8
+                "ny_only": -23.7
               }
             }
           }
@@ -6605,18 +6663,18 @@
               }
             },
             "forward": {
-              "n": 31,
-              "win_rate_pct": 9.7,
-              "net_pts": -73.5,
+              "n": 33,
+              "win_rate_pct": 9.1,
+              "net_pts": -77.1,
               "median_pts": -1.8,
               "biggest_win": 36.3,
               "biggest_loss": -15.8,
-              "avg_duration_min": 1.4,
+              "avg_duration_min": 1.3,
               "net_by_session": {
                 "london": -45.2,
                 "asia": -12.0,
-                "dead": -12.7,
-                "ny_only": -3.6
+                "dead": -14.5,
+                "ny_only": -5.4
               }
             }
           },
@@ -6638,19 +6696,19 @@
               }
             },
             "forward": {
-              "n": 68,
-              "win_rate_pct": 22.1,
-              "net_pts": -155.7,
-              "median_pts": -4.55,
+              "n": 78,
+              "win_rate_pct": 21.8,
+              "net_pts": -176.2,
+              "median_pts": -5.15,
               "biggest_win": 45.1,
               "biggest_loss": -42.8,
-              "avg_duration_min": 4.9,
+              "avg_duration_min": 4.8,
               "net_by_session": {
-                "overlap": -19.3,
-                "ny_only": -63.0,
-                "dead": 1.4,
+                "overlap": -24.1,
+                "ny_only": -46.0,
+                "dead": -5.0,
                 "asia": -0.4,
-                "london": -74.4
+                "london": -100.7
               }
             }
           },
@@ -6672,15 +6730,15 @@
               }
             },
             "forward": {
-              "n": 117,
-              "win_rate_pct": 38.5,
-              "net_pts": -21.3,
-              "median_pts": -3.8,
+              "n": 120,
+              "win_rate_pct": 37.5,
+              "net_pts": -77.4,
+              "median_pts": -3.95,
               "biggest_win": 66.0,
               "biggest_loss": -45.0,
-              "avg_duration_min": 30.7,
+              "avg_duration_min": 30.0,
               "net_by_session": {
-                "overlap": -6.6,
+                "overlap": -62.7,
                 "ny_only": -51.3,
                 "dead": -47.6,
                 "asia": 78.8,
@@ -6720,18 +6778,19 @@
               }
             },
             "forward": {
-              "n": 126,
-              "win_rate_pct": 34.1,
-              "net_pts": -214.9,
+              "n": 151,
+              "win_rate_pct": 33.8,
+              "net_pts": -254.8,
               "median_pts": -6.4,
               "biggest_win": 117.3,
               "biggest_loss": -26.3,
-              "avg_duration_min": 4.4,
+              "avg_duration_min": 4.3,
               "net_by_session": {
-                "london": -11.6,
-                "dead": -65.3,
-                "asia": -167.5,
-                "ny_only": 29.5
+                "london": -38.3,
+                "dead": -78.0,
+                "asia": -147.5,
+                "ny_only": -13.0,
+                "overlap": 22.0
               }
             }
           },
@@ -6781,16 +6840,16 @@
               }
             },
             "forward": {
-              "n": 33,
-              "win_rate_pct": 27.3,
-              "net_pts": -129.2,
-              "median_pts": -9.0,
+              "n": 42,
+              "win_rate_pct": 28.6,
+              "net_pts": -185.0,
+              "median_pts": -9.35,
               "biggest_win": 96.6,
               "biggest_loss": -33.1,
-              "avg_duration_min": 3.9,
+              "avg_duration_min": 3.6,
               "net_by_session": {
-                "london": -14.4,
-                "overlap": -107.4,
+                "london": -30.8,
+                "overlap": -146.8,
                 "ny_only": -9.0,
                 "dead": -7.7,
                 "asia": 9.3
@@ -6815,19 +6874,19 @@
               }
             },
             "forward": {
-              "n": 27,
+              "n": 40,
               "win_rate_pct": 0.0,
-              "net_pts": -64.2,
+              "net_pts": -88.8,
               "median_pts": -1.8,
-              "biggest_win": -1.6,
+              "biggest_win": -0.7,
               "biggest_loss": -9.3,
               "avg_duration_min": 0.3,
               "net_by_session": {
-                "ny_only": -3.6,
-                "asia": -21.6,
-                "london": -23.0,
-                "overlap": -7.2,
-                "dead": -8.8
+                "ny_only": -12.6,
+                "asia": -24.1,
+                "london": -24.8,
+                "overlap": -14.9,
+                "dead": -12.4
               }
             }
           },
@@ -6849,19 +6908,19 @@
               }
             },
             "forward": {
-              "n": 45,
-              "win_rate_pct": 28.9,
-              "net_pts": -23.0,
+              "n": 48,
+              "win_rate_pct": 29.2,
+              "net_pts": -32.4,
               "median_pts": -5.0,
               "biggest_win": 56.2,
               "biggest_loss": -24.8,
-              "avg_duration_min": 4.6,
+              "avg_duration_min": 4.4,
               "net_by_session": {
                 "overlap": 23.1,
-                "ny_only": -17.3,
+                "ny_only": -29.2,
                 "dead": 22.3,
-                "asia": -49.2,
-                "london": -1.9
+                "asia": -40.9,
+                "london": -7.7
               }
             }
           },
@@ -6910,18 +6969,19 @@
               }
             },
             "forward": {
-              "n": 95,
-              "win_rate_pct": 33.7,
-              "net_pts": -281.6,
-              "median_pts": -6.4,
-              "biggest_win": 40.6,
+              "n": 116,
+              "win_rate_pct": 33.6,
+              "net_pts": -277.7,
+              "median_pts": -6.35,
+              "biggest_win": 54.3,
               "biggest_loss": -26.3,
               "avg_duration_min": 4.3,
               "net_by_session": {
-                "london": -166.9,
-                "dead": -27.3,
-                "asia": -113.5,
-                "ny_only": 26.1
+                "london": -193.6,
+                "dead": -40.0,
+                "asia": -71.4,
+                "ny_only": -14.0,
+                "overlap": 41.3
               }
             }
           },
@@ -6943,17 +7003,17 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 25.0,
-              "net_pts": -44.0,
+              "n": 6,
+              "win_rate_pct": 33.3,
+              "net_pts": -47.6,
               "median_pts": -11.45,
-              "biggest_win": 3.7,
+              "biggest_win": 8.3,
               "biggest_loss": -24.8,
-              "avg_duration_min": 1.2,
+              "avg_duration_min": 2.0,
               "net_by_session": {
-                "asia": -7.4,
+                "asia": 0.9,
                 "london": -24.8,
-                "ny_only": -11.8
+                "ny_only": -23.7
               }
             }
           }
@@ -6985,19 +7045,19 @@
               }
             },
             "forward": {
-              "n": 51,
-              "win_rate_pct": 29.4,
-              "net_pts": -192.6,
+              "n": 58,
+              "win_rate_pct": 29.3,
+              "net_pts": -220.8,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 9.9,
+              "avg_duration_min": 10.9,
               "net_by_session": {
-                "london": -135.0,
-                "asia": -42.0,
-                "overlap": -12.6,
-                "dead": -7.8,
-                "ny_only": 4.8
+                "london": -160.2,
+                "asia": -37.2,
+                "overlap": -25.2,
+                "dead": 9.6,
+                "ny_only": -7.8
               }
             }
           },
@@ -7019,19 +7079,19 @@
               }
             },
             "forward": {
-              "n": 61,
-              "win_rate_pct": 37.7,
-              "net_pts": -82.5,
+              "n": 76,
+              "win_rate_pct": 36.8,
+              "net_pts": -121.5,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -16.0,
-              "avg_duration_min": 62.3,
+              "avg_duration_min": 51.5,
               "net_by_session": {
                 "overlap": 17.4,
                 "ny_only": -87.6,
-                "dead": 15.3,
-                "asia": 11.4,
-                "london": -39.0
+                "dead": -9.9,
+                "asia": -26.4,
+                "london": -15.0
               }
             }
           },
@@ -7053,19 +7113,19 @@
               }
             },
             "forward": {
-              "n": 138,
-              "win_rate_pct": 32.6,
-              "net_pts": -394.2,
+              "n": 183,
+              "win_rate_pct": 30.6,
+              "net_pts": -644.2,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -18.0,
-              "avg_duration_min": 27.5,
+              "avg_duration_min": 22.4,
               "net_by_session": {
-                "ny_only": 76.2,
-                "dead": -68.4,
-                "asia": -57.6,
-                "london": -253.8,
-                "overlap": -90.6
+                "ny_only": 87.6,
+                "dead": -127.0,
+                "asia": -166.2,
+                "london": -335.4,
+                "overlap": -103.2
               }
             }
           },
@@ -7101,19 +7161,19 @@
               }
             },
             "forward": {
-              "n": 128,
-              "win_rate_pct": 24.2,
-              "net_pts": -682.8,
+              "n": 161,
+              "win_rate_pct": 25.5,
+              "net_pts": -798.6,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 7.1,
+              "avg_duration_min": 7.0,
               "net_by_session": {
-                "dead": -78.6,
-                "asia": -136.2,
-                "ny_only": -184.2,
-                "london": -238.2,
-                "overlap": -45.6
+                "dead": -73.8,
+                "asia": -147.0,
+                "ny_only": -212.4,
+                "london": -274.2,
+                "overlap": -91.2
               }
             }
           },
@@ -7129,6 +7189,18 @@
               "net_by_session": {
                 "asia": 4.8,
                 "london": -25.2
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 100.0,
+              "net_pts": 17.4,
+              "median_pts": 17.4,
+              "biggest_win": 17.4,
+              "biggest_loss": 17.4,
+              "avg_duration_min": 20.0,
+              "net_by_session": {
+                "asia": 17.4
               }
             }
           },
@@ -7192,17 +7264,17 @@
               }
             },
             "forward": {
-              "n": 29,
-              "win_rate_pct": 34.5,
-              "net_pts": -65.4,
+              "n": 45,
+              "win_rate_pct": 28.9,
+              "net_pts": -177.0,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 1.2,
+              "avg_duration_min": 1.1,
               "net_by_session": {
-                "london": -56.4,
-                "overlap": 3.6,
-                "asia": -12.6
+                "london": -89.4,
+                "overlap": -62.4,
+                "asia": -25.2
               }
             }
           },
@@ -7224,18 +7296,19 @@
               }
             },
             "forward": {
-              "n": 23,
-              "win_rate_pct": 34.8,
-              "net_pts": -49.8,
+              "n": 33,
+              "win_rate_pct": 39.4,
+              "net_pts": -25.8,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 5.8,
+              "avg_duration_min": 5.7,
               "net_by_session": {
-                "asia": -6.0,
-                "london": -15.6,
-                "ny_only": -33.0,
-                "overlap": 4.8
+                "asia": -18.6,
+                "london": -28.2,
+                "ny_only": 6.6,
+                "overlap": 27.0,
+                "dead": -12.6
               }
             }
           },
@@ -7287,16 +7360,16 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 25.0,
-              "net_pts": -20.4,
+              "n": 7,
+              "win_rate_pct": 14.3,
+              "net_pts": -58.2,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 3.2,
+              "avg_duration_min": 2.0,
               "net_by_session": {
-                "london": -37.8,
-                "asia": 17.4
+                "london": -63.0,
+                "asia": 4.8
               }
             }
           },
@@ -7318,19 +7391,19 @@
               }
             },
             "forward": {
-              "n": 96,
-              "win_rate_pct": 28.1,
-              "net_pts": -399.6,
+              "n": 121,
+              "win_rate_pct": 28.9,
+              "net_pts": -474.6,
               "median_pts": -12.6,
               "biggest_win": 17.4,
               "biggest_loss": -12.6,
-              "avg_duration_min": 8.4,
+              "avg_duration_min": 8.1,
               "net_by_session": {
-                "dead": -66.0,
-                "ny_only": -133.8,
-                "asia": -52.8,
-                "london": -101.4,
-                "overlap": -45.6
+                "dead": -61.2,
+                "ny_only": -149.4,
+                "asia": -51.0,
+                "london": -121.8,
+                "overlap": -91.2
               }
             }
           },
@@ -7384,19 +7457,19 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 15.0,
-              "net_pts": -699.1,
-              "median_pts": -53.37,
-              "biggest_win": 124.4,
-              "biggest_loss": -98.9,
-              "avg_duration_min": 113.9,
+              "n": 24,
+              "win_rate_pct": 20.8,
+              "net_pts": -490.2,
+              "median_pts": -51.22,
+              "biggest_win": 257.4,
+              "biggest_loss": -115.1,
+              "avg_duration_min": 130.2,
               "net_by_session": {
-                "london": -418.9,
+                "london": -469.3,
                 "asia": -107.4,
-                "overlap": -98.9,
-                "dead": -112.2,
-                "ny_only": 38.4
+                "overlap": 158.5,
+                "dead": 4.9,
+                "ny_only": -76.7
               }
             }
           },
@@ -7418,18 +7491,18 @@
               }
             },
             "forward": {
-              "n": 14,
-              "win_rate_pct": 28.6,
-              "net_pts": -73.8,
-              "median_pts": -35.07,
+              "n": 20,
+              "win_rate_pct": 40.0,
+              "net_pts": 100.1,
+              "median_pts": -29.71,
               "biggest_win": 115.0,
               "biggest_loss": -103.8,
-              "avg_duration_min": 397.2,
+              "avg_duration_min": 324.7,
               "net_by_session": {
-                "dead": 165.6,
-                "london": -70.6,
+                "dead": 91.7,
+                "london": 130.9,
                 "ny_only": -109.4,
-                "asia": -59.4
+                "asia": -13.1
               }
             }
           },
@@ -7451,18 +7524,18 @@
               }
             },
             "forward": {
-              "n": 17,
-              "win_rate_pct": 35.3,
-              "net_pts": 103.3,
-              "median_pts": -59.69,
+              "n": 22,
+              "win_rate_pct": 45.5,
+              "net_pts": 276.7,
+              "median_pts": -45.91,
               "biggest_win": 235.4,
               "biggest_loss": -100.2,
-              "avg_duration_min": 369.4,
+              "avg_duration_min": 336.9,
               "net_by_session": {
                 "ny_only": -63.8,
-                "dead": 47.3,
-                "overlap": 270.3,
-                "london": -113.4,
+                "dead": -22.2,
+                "overlap": 378.2,
+                "london": 21.5,
                 "asia": -37.0
               }
             }
@@ -7499,19 +7572,19 @@
               }
             },
             "forward": {
-              "n": 20,
-              "win_rate_pct": 50.0,
-              "net_pts": 416.4,
-              "median_pts": -11.79,
-              "biggest_win": 141.4,
-              "biggest_loss": -88.9,
-              "avg_duration_min": 188.0,
+              "n": 27,
+              "win_rate_pct": 48.1,
+              "net_pts": 654.2,
+              "median_pts": -16.1,
+              "biggest_win": 257.4,
+              "biggest_loss": -137.3,
+              "avg_duration_min": 181.7,
               "net_by_session": {
-                "dead": -75.1,
-                "ny_only": 15.4,
+                "dead": 48.5,
+                "ny_only": -32.8,
                 "asia": -40.1,
-                "london": 463.9,
-                "overlap": 52.5
+                "london": 506.2,
+                "overlap": 172.6
               }
             }
           },
@@ -7527,6 +7600,18 @@
               "net_by_session": {
                 "asia": 54.9,
                 "london": 199.2
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 0.0,
+              "net_pts": -27.2,
+              "median_pts": -27.24,
+              "biggest_win": -27.2,
+              "biggest_loss": -27.2,
+              "avg_duration_min": 133.0,
+              "net_by_session": {
+                "asia": -27.2
               }
             }
           },
@@ -7590,17 +7675,17 @@
               }
             },
             "forward": {
-              "n": 14,
-              "win_rate_pct": 28.6,
-              "net_pts": -87.0,
-              "median_pts": -41.68,
+              "n": 21,
+              "win_rate_pct": 23.8,
+              "net_pts": -475.0,
+              "median_pts": -48.14,
               "biggest_win": 154.4,
-              "biggest_loss": -99.0,
-              "avg_duration_min": 92.4,
+              "biggest_loss": -127.7,
+              "avg_duration_min": 91.7,
               "net_by_session": {
-                "london": -91.4,
-                "overlap": 41.5,
-                "asia": -37.0
+                "london": -29.2,
+                "overlap": -379.7,
+                "asia": -66.0
               }
             }
           },
@@ -7622,18 +7707,19 @@
               }
             },
             "forward": {
-              "n": 14,
-              "win_rate_pct": 42.9,
-              "net_pts": -60.6,
-              "median_pts": -27.46,
+              "n": 19,
+              "win_rate_pct": 42.1,
+              "net_pts": -89.3,
+              "median_pts": -33.67,
               "biggest_win": 154.4,
-              "biggest_loss": -99.0,
-              "avg_duration_min": 93.9,
+              "biggest_loss": -127.7,
+              "avg_duration_min": 113.1,
               "net_by_session": {
                 "asia": 36.9,
-                "london": -159.1,
-                "ny_only": 6.2,
-                "overlap": 55.4
+                "london": -192.8,
+                "ny_only": 183.0,
+                "overlap": -72.3,
+                "dead": -44.2
               }
             }
           },
@@ -7685,16 +7771,16 @@
               }
             },
             "forward": {
-              "n": 4,
-              "win_rate_pct": 25.0,
-              "net_pts": -155.7,
-              "median_pts": -67.09,
+              "n": 6,
+              "win_rate_pct": 16.7,
+              "net_pts": -235.1,
+              "median_pts": -58.55,
               "biggest_win": 47.8,
               "biggest_loss": -69.3,
-              "avg_duration_min": 15.2,
+              "avg_duration_min": 16.0,
               "net_by_session": {
-                "london": -203.4,
-                "asia": 47.8
+                "london": -253.9,
+                "asia": 18.8
               }
             }
           },
@@ -7716,19 +7802,19 @@
               }
             },
             "forward": {
-              "n": 18,
-              "win_rate_pct": 38.9,
-              "net_pts": 79.0,
+              "n": 24,
+              "win_rate_pct": 41.7,
+              "net_pts": 334.6,
               "median_pts": -43.52,
-              "biggest_win": 141.4,
-              "biggest_loss": -88.9,
-              "avg_duration_min": 205.1,
+              "biggest_win": 257.4,
+              "biggest_loss": -137.3,
+              "avg_duration_min": 194.9,
               "net_by_session": {
-                "dead": -75.1,
-                "ny_only": 15.4,
+                "dead": 48.5,
+                "ny_only": -16.7,
                 "asia": 69.6,
-                "london": 16.7,
-                "overlap": 52.5
+                "london": 60.6,
+                "overlap": 172.6
               }
             }
           },
@@ -7782,19 +7868,19 @@
               }
             },
             "forward": {
-              "n": 58,
-              "win_rate_pct": 1.7,
-              "net_pts": -208.2,
+              "n": 65,
+              "win_rate_pct": 3.1,
+              "net_pts": -218.9,
               "median_pts": -2.6,
               "biggest_win": 32.0,
               "biggest_loss": -25.6,
               "avg_duration_min": 0.9,
               "net_by_session": {
-                "london": -100.1,
-                "asia": -72.8,
-                "overlap": -13.6,
-                "dead": -16.5,
-                "ny_only": -5.2
+                "london": -105.3,
+                "asia": -78.0,
+                "overlap": -16.2,
+                "dead": -19.1,
+                "ny_only": -0.3
               }
             }
           },
@@ -7816,19 +7902,19 @@
               }
             },
             "forward": {
-              "n": 96,
-              "win_rate_pct": 12.5,
-              "net_pts": -213.2,
+              "n": 117,
+              "win_rate_pct": 12.0,
+              "net_pts": -214.3,
               "median_pts": -2.6,
-              "biggest_win": 43.4,
-              "biggest_loss": -18.6,
+              "biggest_win": 58.9,
+              "biggest_loss": -29.1,
               "avg_duration_min": 2.4,
               "net_by_session": {
                 "overlap": -2.6,
                 "ny_only": -61.1,
-                "dead": -24.8,
-                "asia": -81.2,
-                "london": -43.5
+                "dead": -34.7,
+                "asia": -93.6,
+                "london": -22.3
               }
             }
           },
@@ -7850,19 +7936,19 @@
               }
             },
             "forward": {
-              "n": 157,
-              "win_rate_pct": 19.1,
-              "net_pts": -787.0,
-              "median_pts": -3.6,
+              "n": 217,
+              "win_rate_pct": 18.9,
+              "net_pts": -934.6,
+              "median_pts": -4.1,
               "biggest_win": 90.9,
               "biggest_loss": -60.1,
               "avg_duration_min": 4.2,
               "net_by_session": {
-                "ny_only": -124.0,
-                "dead": -48.0,
-                "asia": -116.8,
-                "london": -335.3,
-                "overlap": -162.9
+                "ny_only": -127.6,
+                "dead": -122.2,
+                "asia": -189.2,
+                "london": -302.1,
+                "overlap": -193.5
               }
             }
           },
@@ -7898,19 +7984,19 @@
               }
             },
             "forward": {
-              "n": 142,
-              "win_rate_pct": 11.3,
-              "net_pts": -441.0,
-              "median_pts": -3.6,
+              "n": 171,
+              "win_rate_pct": 13.5,
+              "net_pts": -565.9,
+              "median_pts": -3.1,
               "biggest_win": 127.5,
               "biggest_loss": -56.1,
-              "avg_duration_min": 2.8,
+              "avg_duration_min": 3.1,
               "net_by_session": {
-                "dead": -61.7,
-                "asia": -198.1,
-                "ny_only": -194.4,
-                "london": 105.2,
-                "overlap": -92.0
+                "dead": -72.7,
+                "asia": -199.3,
+                "ny_only": -223.0,
+                "london": 74.4,
+                "overlap": -145.3
               }
             }
           },
@@ -7926,6 +8012,18 @@
               "net_by_session": {
                 "asia": 1.8,
                 "london": -23.7
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 0.0,
+              "net_pts": -3.6,
+              "median_pts": -3.6,
+              "biggest_win": -3.6,
+              "biggest_loss": -3.6,
+              "avg_duration_min": 0.0,
+              "net_by_session": {
+                "asia": -3.6
               }
             }
           },
@@ -7989,17 +8087,17 @@
               }
             },
             "forward": {
-              "n": 27,
-              "win_rate_pct": 0.0,
-              "net_pts": -195.7,
+              "n": 42,
+              "win_rate_pct": 4.8,
+              "net_pts": -286.7,
               "median_pts": -2.6,
-              "biggest_win": -2.6,
-              "biggest_loss": -39.1,
-              "avg_duration_min": 1.4,
+              "biggest_win": 32.4,
+              "biggest_loss": -50.6,
+              "avg_duration_min": 1.7,
               "net_by_session": {
-                "london": -65.4,
-                "overlap": -121.7,
-                "asia": -8.6
+                "london": -115.0,
+                "overlap": -160.5,
+                "asia": -11.2
               }
             }
           },
@@ -8021,18 +8119,19 @@
               }
             },
             "forward": {
-              "n": 27,
+              "n": 37,
               "win_rate_pct": 0.0,
-              "net_pts": -79.2,
+              "net_pts": -109.2,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -7.6,
               "avg_duration_min": 0.0,
               "net_by_session": {
-                "asia": -39.3,
-                "london": -19.1,
-                "ny_only": -15.6,
-                "overlap": -5.2
+                "asia": -43.4,
+                "london": -21.7,
+                "ny_only": -26.0,
+                "overlap": -13.0,
+                "dead": -5.1
               }
             }
           },
@@ -8084,16 +8183,16 @@
               }
             },
             "forward": {
-              "n": 5,
+              "n": 8,
               "win_rate_pct": 0.0,
-              "net_pts": -13.0,
+              "net_pts": -20.8,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -2.6,
               "avg_duration_min": 0.0,
               "net_by_session": {
-                "london": -10.4,
-                "asia": -2.6
+                "london": -15.6,
+                "asia": -5.2
               }
             }
           },
@@ -8115,19 +8214,19 @@
               }
             },
             "forward": {
-              "n": 122,
-              "win_rate_pct": 9.0,
-              "net_pts": -428.7,
+              "n": 146,
+              "win_rate_pct": 10.3,
+              "net_pts": -536.6,
               "median_pts": -2.6,
               "biggest_win": 49.4,
               "biggest_loss": -56.1,
-              "avg_duration_min": 2.4,
+              "avg_duration_min": 2.6,
               "net_by_session": {
-                "dead": -51.0,
-                "ny_only": -144.0,
-                "asia": -130.2,
-                "london": -11.5,
-                "overlap": -92.0
+                "dead": -62.0,
+                "ny_only": -160.5,
+                "asia": -132.3,
+                "london": -36.5,
+                "overlap": -145.3
               }
             }
           },
@@ -8181,19 +8280,19 @@
               }
             },
             "forward": {
-              "n": 51,
-              "win_rate_pct": 9.8,
-              "net_pts": -172.7,
+              "n": 58,
+              "win_rate_pct": 12.1,
+              "net_pts": -196.5,
               "median_pts": -2.6,
               "biggest_win": 68.7,
               "biggest_loss": -31.1,
-              "avg_duration_min": 6.9,
+              "avg_duration_min": 9.2,
               "net_by_session": {
-                "london": -96.2,
-                "asia": -39.9,
-                "overlap": -21.7,
-                "dead": -0.2,
-                "ny_only": -14.8
+                "london": -101.4,
+                "asia": -32.5,
+                "overlap": -35.6,
+                "dead": 5.8,
+                "ny_only": -32.9
               }
             }
           },
@@ -8215,19 +8314,19 @@
               }
             },
             "forward": {
-              "n": 44,
-              "win_rate_pct": 22.7,
-              "net_pts": -112.4,
-              "median_pts": -6.75,
+              "n": 57,
+              "win_rate_pct": 24.6,
+              "net_pts": -40.0,
+              "median_pts": -6.83,
               "biggest_win": 114.4,
               "biggest_loss": -41.8,
-              "avg_duration_min": 90.1,
+              "avg_duration_min": 73.8,
               "net_by_session": {
                 "overlap": 50.8,
                 "ny_only": -107.8,
-                "dead": -29.0,
-                "asia": -14.9,
-                "london": -11.4
+                "dead": -68.6,
+                "asia": -44.0,
+                "london": 129.8
               }
             }
           },
@@ -8249,19 +8348,19 @@
               }
             },
             "forward": {
-              "n": 94,
-              "win_rate_pct": 22.3,
-              "net_pts": -634.7,
-              "median_pts": -12.41,
+              "n": 121,
+              "win_rate_pct": 24.8,
+              "net_pts": -645.8,
+              "median_pts": -11.47,
               "biggest_win": 232.0,
               "biggest_loss": -84.8,
-              "avg_duration_min": 49.4,
+              "avg_duration_min": 43.4,
               "net_by_session": {
-                "ny_only": -55.5,
-                "dead": -36.3,
-                "asia": -175.8,
-                "london": -143.8,
-                "overlap": -224.0
+                "ny_only": 75.9,
+                "dead": -81.0,
+                "asia": -286.8,
+                "london": -89.7,
+                "overlap": -265.1
               }
             }
           },
@@ -8297,19 +8396,19 @@
               }
             },
             "forward": {
-              "n": 82,
-              "win_rate_pct": 24.4,
-              "net_pts": -239.3,
-              "median_pts": -10.57,
+              "n": 100,
+              "win_rate_pct": 26.0,
+              "net_pts": -371.8,
+              "median_pts": -9.71,
               "biggest_win": 290.9,
-              "biggest_loss": -55.9,
-              "avg_duration_min": 21.3,
+              "biggest_loss": -74.5,
+              "avg_duration_min": 23.6,
               "net_by_session": {
-                "dead": 106.4,
-                "asia": -179.4,
-                "ny_only": -217.2,
-                "london": 63.0,
-                "overlap": -11.9
+                "dead": 121.9,
+                "asia": -193.3,
+                "ny_only": -300.4,
+                "london": 158.7,
+                "overlap": -158.2
               }
             }
           },
@@ -8325,6 +8424,18 @@
               "net_by_session": {
                 "asia": 13.6,
                 "london": -52.1
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 100.0,
+              "net_pts": 6.2,
+              "median_pts": 6.19,
+              "biggest_win": 6.2,
+              "biggest_loss": 6.2,
+              "avg_duration_min": 28.0,
+              "net_by_session": {
+                "asia": 6.2
               }
             }
           },
@@ -8388,17 +8499,17 @@
               }
             },
             "forward": {
-              "n": 24,
-              "win_rate_pct": 16.7,
-              "net_pts": -146.2,
-              "median_pts": -9.09,
+              "n": 35,
+              "win_rate_pct": 20.0,
+              "net_pts": -79.7,
+              "median_pts": -6.21,
               "biggest_win": 127.2,
               "biggest_loss": -49.9,
-              "avg_duration_min": 6.7,
+              "avg_duration_min": 8.5,
               "net_by_session": {
-                "london": -87.9,
-                "overlap": -43.2,
-                "asia": -15.1
+                "london": -65.3,
+                "overlap": 8.3,
+                "asia": -22.5
               }
             }
           },
@@ -8420,18 +8531,19 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 3.8,
-              "net_pts": -136.4,
-              "median_pts": -3.21,
-              "biggest_win": 4.2,
+              "n": 34,
+              "win_rate_pct": 11.8,
+              "net_pts": -29.1,
+              "median_pts": -2.96,
+              "biggest_win": 108.4,
               "biggest_loss": -26.4,
-              "avg_duration_min": 2.2,
+              "avg_duration_min": 8.5,
               "net_by_session": {
-                "asia": -45.5,
-                "london": -25.2,
-                "ny_only": -60.4,
-                "overlap": -5.2
+                "asia": -55.6,
+                "london": -27.8,
+                "ny_only": 80.9,
+                "overlap": -14.1,
+                "dead": -12.5
               }
             }
           },
@@ -8483,16 +8595,16 @@
               }
             },
             "forward": {
-              "n": 5,
+              "n": 8,
               "win_rate_pct": 0.0,
-              "net_pts": -26.7,
+              "net_pts": -34.7,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -16.2,
-              "avg_duration_min": 0.6,
+              "avg_duration_min": 0.4,
               "net_by_session": {
-                "london": -24.0,
-                "asia": -2.6
+                "london": -29.2,
+                "asia": -5.5
               }
             }
           },
@@ -8514,19 +8626,19 @@
               }
             },
             "forward": {
-              "n": 69,
-              "win_rate_pct": 30.4,
-              "net_pts": 52.4,
-              "median_pts": -5.33,
+              "n": 84,
+              "win_rate_pct": 27.4,
+              "net_pts": -162.9,
+              "median_pts": -5.75,
               "biggest_win": 277.4,
-              "biggest_loss": -55.9,
-              "avg_duration_min": 24.1,
+              "biggest_loss": -74.5,
+              "avg_duration_min": 25.2,
               "net_by_session": {
-                "dead": 106.4,
-                "ny_only": -180.6,
-                "asia": -96.3,
-                "london": 234.9,
-                "overlap": -11.9
+                "dead": 121.9,
+                "ny_only": -235.2,
+                "asia": -112.0,
+                "london": 220.8,
+                "overlap": -158.2
               }
             }
           },
@@ -8580,19 +8692,19 @@
               }
             },
             "forward": {
-              "n": 57,
-              "win_rate_pct": 5.3,
-              "net_pts": -192.3,
+              "n": 64,
+              "win_rate_pct": 4.7,
+              "net_pts": -214.0,
               "median_pts": -2.6,
               "biggest_win": 31.9,
               "biggest_loss": -12.6,
-              "avg_duration_min": 1.7,
+              "avg_duration_min": 1.8,
               "net_by_session": {
-                "london": -74.7,
-                "asia": -85.7,
-                "overlap": -2.6,
-                "dead": -23.1,
-                "ny_only": -6.2
+                "london": -79.9,
+                "asia": -89.9,
+                "overlap": -5.2,
+                "dead": -30.2,
+                "ny_only": -8.8
               }
             }
           },
@@ -8614,19 +8726,19 @@
               }
             },
             "forward": {
-              "n": 77,
-              "win_rate_pct": 16.9,
-              "net_pts": -287.3,
-              "median_pts": -6.1,
-              "biggest_win": 22.4,
+              "n": 98,
+              "win_rate_pct": 19.4,
+              "net_pts": -252.4,
+              "median_pts": -5.6,
+              "biggest_win": 53.9,
               "biggest_loss": -15.6,
-              "avg_duration_min": 4.4,
+              "avg_duration_min": 4.3,
               "net_by_session": {
                 "overlap": 12.4,
                 "ny_only": -173.7,
-                "dead": -35.6,
-                "asia": -55.3,
-                "london": -35.1
+                "dead": -57.5,
+                "asia": -82.2,
+                "london": 48.6
               }
             }
           },
@@ -8648,19 +8760,19 @@
               }
             },
             "forward": {
-              "n": 152,
-              "win_rate_pct": 28.9,
-              "net_pts": -659.2,
-              "median_pts": -7.1,
+              "n": 205,
+              "win_rate_pct": 25.9,
+              "net_pts": -913.6,
+              "median_pts": -7.6,
               "biggest_win": 92.4,
               "biggest_loss": -48.1,
               "avg_duration_min": 5.4,
               "net_by_session": {
-                "ny_only": -36.8,
-                "dead": -64.4,
-                "asia": -137.4,
-                "london": -322.1,
-                "overlap": -98.5
+                "ny_only": -53.9,
+                "dead": -123.8,
+                "asia": -256.5,
+                "london": -368.3,
+                "overlap": -111.1
               }
             }
           },
@@ -8696,19 +8808,19 @@
               }
             },
             "forward": {
-              "n": 129,
-              "win_rate_pct": 20.9,
-              "net_pts": -561.4,
-              "median_pts": -8.1,
+              "n": 156,
+              "win_rate_pct": 23.1,
+              "net_pts": -572.1,
+              "median_pts": -7.6,
               "biggest_win": 51.4,
-              "biggest_loss": -32.6,
-              "avg_duration_min": 5.3,
+              "biggest_loss": -36.1,
+              "avg_duration_min": 5.6,
               "net_by_session": {
-                "dead": -50.5,
-                "asia": -162.6,
-                "ny_only": -214.7,
-                "london": -66.0,
-                "overlap": -67.6
+                "dead": -52.3,
+                "asia": -196.0,
+                "ny_only": -240.8,
+                "london": -55.6,
+                "overlap": -27.4
               }
             }
           },
@@ -8724,6 +8836,18 @@
               "net_by_session": {
                 "asia": -1.2,
                 "london": -20.7
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 100.0,
+              "net_pts": 4.9,
+              "median_pts": 4.9,
+              "biggest_win": 4.9,
+              "biggest_loss": 4.9,
+              "avg_duration_min": 15.0,
+              "net_by_session": {
+                "asia": 4.9
               }
             }
           },
@@ -8787,17 +8911,17 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 23.1,
-              "net_pts": -20.2,
-              "median_pts": -9.6,
+              "n": 40,
+              "win_rate_pct": 25.0,
+              "net_pts": -161.1,
+              "median_pts": -10.1,
               "biggest_win": 148.4,
-              "biggest_loss": -32.6,
-              "avg_duration_min": 3.0,
+              "biggest_loss": -47.6,
+              "avg_duration_min": 3.1,
               "net_by_session": {
-                "london": -81.9,
-                "overlap": 70.3,
-                "asia": -8.6
+                "london": -112.3,
+                "overlap": -30.1,
+                "asia": -18.7
               }
             }
           },
@@ -8819,18 +8943,19 @@
               }
             },
             "forward": {
-              "n": 28,
+              "n": 38,
               "win_rate_pct": 0.0,
-              "net_pts": -93.8,
+              "net_pts": -128.8,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -7.1,
-              "avg_duration_min": 0.2,
+              "avg_duration_min": 0.5,
               "net_by_session": {
-                "asia": -49.8,
-                "london": -22.2,
-                "ny_only": -16.1,
-                "overlap": -5.7
+                "asia": -55.9,
+                "london": -24.8,
+                "ny_only": -26.5,
+                "overlap": -14.5,
+                "dead": -7.1
               }
             }
           },
@@ -8882,16 +9007,16 @@
               }
             },
             "forward": {
-              "n": 5,
+              "n": 8,
               "win_rate_pct": 0.0,
-              "net_pts": -21.5,
+              "net_pts": -30.3,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -10.6,
-              "avg_duration_min": 0.2,
+              "avg_duration_min": 0.1,
               "net_by_session": {
-                "london": -18.9,
-                "asia": -2.6
+                "london": -24.1,
+                "asia": -6.2
               }
             }
           },
@@ -8913,19 +9038,19 @@
               }
             },
             "forward": {
-              "n": 105,
-              "win_rate_pct": 23.8,
-              "net_pts": -304.6,
-              "median_pts": -7.6,
+              "n": 127,
+              "win_rate_pct": 26.0,
+              "net_pts": -305.7,
+              "median_pts": -7.1,
               "biggest_win": 57.4,
-              "biggest_loss": -32.6,
-              "avg_duration_min": 5.9,
+              "biggest_loss": -36.1,
+              "avg_duration_min": 6.1,
               "net_by_session": {
-                "dead": -31.4,
-                "ny_only": -161.3,
-                "asia": -96.9,
-                "london": 52.6,
-                "overlap": -67.6
+                "dead": -33.2,
+                "ny_only": -173.8,
+                "asia": -123.0,
+                "london": 51.7,
+                "overlap": -27.4
               }
             }
           },
@@ -8979,19 +9104,19 @@
               }
             },
             "forward": {
-              "n": 57,
-              "win_rate_pct": 5.3,
-              "net_pts": -185.8,
+              "n": 64,
+              "win_rate_pct": 4.7,
+              "net_pts": -207.5,
               "median_pts": -2.6,
               "biggest_win": 31.9,
               "biggest_loss": -10.6,
-              "avg_duration_min": 1.7,
+              "avg_duration_min": 1.8,
               "net_by_session": {
-                "london": -68.2,
-                "asia": -85.7,
-                "overlap": -2.6,
-                "dead": -23.1,
-                "ny_only": -6.2
+                "london": -73.4,
+                "asia": -89.9,
+                "overlap": -5.2,
+                "dead": -30.2,
+                "ny_only": -8.8
               }
             }
           },
@@ -9013,19 +9138,19 @@
               }
             },
             "forward": {
-              "n": 77,
-              "win_rate_pct": 16.9,
-              "net_pts": -280.8,
+              "n": 98,
+              "win_rate_pct": 19.4,
+              "net_pts": -245.9,
               "median_pts": -5.6,
-              "biggest_win": 22.4,
+              "biggest_win": 53.9,
               "biggest_loss": -15.6,
-              "avg_duration_min": 4.3,
+              "avg_duration_min": 4.1,
               "net_by_session": {
                 "overlap": 12.4,
                 "ny_only": -173.7,
-                "dead": -32.6,
-                "asia": -51.8,
-                "london": -35.1
+                "dead": -54.5,
+                "asia": -78.7,
+                "london": 48.6
               }
             }
           },
@@ -9047,19 +9172,19 @@
               }
             },
             "forward": {
-              "n": 158,
-              "win_rate_pct": 28.5,
-              "net_pts": -727.8,
-              "median_pts": -7.1,
+              "n": 214,
+              "win_rate_pct": 25.7,
+              "net_pts": -989.0,
+              "median_pts": -7.35,
               "biggest_win": 92.4,
               "biggest_loss": -48.1,
-              "avg_duration_min": 5.0,
+              "avg_duration_min": 4.9,
               "net_by_session": {
-                "ny_only": -36.8,
-                "dead": -54.4,
-                "asia": -138.5,
-                "london": -346.4,
-                "overlap": -151.7
+                "ny_only": -67.0,
+                "dead": -113.8,
+                "asia": -251.3,
+                "london": -392.6,
+                "overlap": -164.3
               }
             }
           },
@@ -9095,19 +9220,19 @@
               }
             },
             "forward": {
-              "n": 133,
-              "win_rate_pct": 20.3,
-              "net_pts": -542.3,
+              "n": 161,
+              "win_rate_pct": 21.7,
+              "net_pts": -586.6,
               "median_pts": -7.6,
               "biggest_win": 51.4,
-              "biggest_loss": -28.1,
-              "avg_duration_min": 4.6,
+              "biggest_loss": -36.1,
+              "avg_duration_min": 4.7,
               "net_by_session": {
-                "dead": -70.7,
-                "asia": -155.3,
-                "ny_only": -198.7,
-                "london": -87.5,
-                "overlap": -30.1
+                "dead": -78.0,
+                "asia": -200.3,
+                "ny_only": -224.8,
+                "london": -93.6,
+                "overlap": 10.1
               }
             }
           },
@@ -9123,6 +9248,18 @@
               "net_by_session": {
                 "asia": -1.2,
                 "london": -20.7
+              }
+            },
+            "forward": {
+              "n": 1,
+              "win_rate_pct": 100.0,
+              "net_pts": 4.9,
+              "median_pts": 4.9,
+              "biggest_win": 4.9,
+              "biggest_loss": 4.9,
+              "avg_duration_min": 15.0,
+              "net_by_session": {
+                "asia": 4.9
               }
             }
           },
@@ -9186,17 +9323,17 @@
               }
             },
             "forward": {
-              "n": 26,
-              "win_rate_pct": 26.9,
-              "net_pts": 23.8,
-              "median_pts": -8.85,
+              "n": 40,
+              "win_rate_pct": 27.5,
+              "net_pts": -134.1,
+              "median_pts": -9.6,
               "biggest_win": 148.4,
-              "biggest_loss": -23.6,
+              "biggest_loss": -47.6,
               "avg_duration_min": 2.8,
               "net_by_session": {
-                "london": -75.4,
-                "overlap": 107.8,
-                "asia": -8.6
+                "london": -105.8,
+                "overlap": -9.6,
+                "asia": -18.7
               }
             }
           },
@@ -9218,18 +9355,19 @@
               }
             },
             "forward": {
-              "n": 28,
+              "n": 38,
               "win_rate_pct": 0.0,
-              "net_pts": -93.8,
+              "net_pts": -122.8,
               "median_pts": -2.6,
-              "biggest_win": -2.6,
+              "biggest_win": -0.1,
               "biggest_loss": -7.1,
-              "avg_duration_min": 0.2,
+              "avg_duration_min": 0.4,
               "net_by_session": {
-                "asia": -49.8,
-                "london": -22.2,
-                "ny_only": -16.1,
-                "overlap": -5.7
+                "asia": -49.9,
+                "london": -24.8,
+                "ny_only": -26.5,
+                "overlap": -14.5,
+                "dead": -7.1
               }
             }
           },
@@ -9281,16 +9419,16 @@
               }
             },
             "forward": {
-              "n": 5,
+              "n": 8,
               "win_rate_pct": 0.0,
-              "net_pts": -21.5,
+              "net_pts": -30.3,
               "median_pts": -2.6,
               "biggest_win": -2.6,
               "biggest_loss": -10.6,
-              "avg_duration_min": 0.2,
+              "avg_duration_min": 0.1,
               "net_by_session": {
-                "london": -18.9,
-                "asia": -2.6
+                "london": -24.1,
+                "asia": -6.2
               }
             }
           },
@@ -9312,19 +9450,19 @@
               }
             },
             "forward": {
-              "n": 108,
-              "win_rate_pct": 23.1,
-              "net_pts": -282.9,
+              "n": 131,
+              "win_rate_pct": 24.4,
+              "net_pts": -317.6,
               "median_pts": -7.1,
               "biggest_win": 57.4,
-              "biggest_loss": -26.6,
+              "biggest_loss": -36.1,
               "avg_duration_min": 5.1,
               "net_by_session": {
-                "dead": -46.0,
-                "ny_only": -145.3,
-                "asia": -92.6,
-                "london": 31.1,
-                "overlap": -30.1
+                "dead": -53.3,
+                "ny_only": -157.8,
+                "asia": -130.3,
+                "london": 13.7,
+                "overlap": 10.1
               }
             }
           },

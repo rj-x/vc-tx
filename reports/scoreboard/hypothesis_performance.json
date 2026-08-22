@@ -1,17 +1,17 @@
 {
-  "engine_commit": "860f648b9be7c631c860c5a66ef79e761d877b94",
+  "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
   "REGISTER_40_AMENDMENT": "per-instrument sections (operator, 2026-08-19): replay-only cross-instrument runs permitted; uk100 canonical; ger40/nas100/us30 PROVISIONAL pending validation evenings; NO POOLING across instruments",
   "instruments": {
     "uk100fut": {
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "860f648b9be7c631c860c5a66ef79e761d877b94",
+      "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
       "instrument": "uk100fut",
       "pair": "uk100",
       "status": "canonical",
       "volume_type": "real futures volume (step-zero audit)",
       "store_span_1min": [
         "2026-07-12 22:06:00+00:00",
-        "2026-08-21 18:47:00+00:00"
+        "2026-08-21 19:59:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -796,33 +796,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 14,
-              "of": 49,
-              "pct": 28.6
+              "of": 50,
+              "pct": 28.0
             },
             "participation_capture_median_pts": 12.7,
             "payoff": {
-              "n": 49,
+              "n": 50,
               "total_pts_right": 160.1,
               "total_pts_wrong": -164.4,
               "net_pts": -4.3,
-              "median_per_fire": -0.7,
+              "median_per_fire": -0.5,
               "horizon_marks_net": {
-                "5": 30.8,
-                "10": 23.2,
+                "5": 34.3,
+                "10": 22.7,
                 "20": 18.9,
                 "30": 6.1
               }
             },
-            "n_fires": 49,
+            "n_fires": 50,
             "precision": {
               "hits": 10,
-              "of": 49,
-              "pct": 20.4
+              "of": 50,
+              "pct": 20.0
             },
             "coverage": {
               "covered": 11,
-              "of": 52,
-              "pct": 21.2
+              "of": 54,
+              "pct": 20.4
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.0,
@@ -849,38 +849,38 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 22,
-              "of": 95,
-              "pct": 23.2
+              "hits": 24,
+              "of": 97,
+              "pct": 24.7
             },
             "participation_capture_median_pts": 12.7,
             "payoff": {
-              "n": 95,
-              "total_pts_right": 147.4,
-              "total_pts_wrong": -393.5,
-              "net_pts": -246.1,
-              "median_per_fire": -3.0,
+              "n": 97,
+              "total_pts_right": 147.9,
+              "total_pts_wrong": -388.7,
+              "net_pts": -240.8,
+              "median_per_fire": -2.0,
               "horizon_marks_net": {
                 "5": 13.0,
-                "10": 39.8,
-                "20": -72.7,
-                "30": -96.9
+                "10": 39.5,
+                "20": -76.0,
+                "30": -105.1
               }
             },
-            "n_fires": 95,
+            "n_fires": 97,
             "precision": {
               "hits": 9,
-              "of": 95,
-              "pct": 9.5
+              "of": 97,
+              "pct": 9.3
             },
             "coverage": {
-              "covered": 8,
-              "of": 52,
-              "pct": 15.4
+              "covered": 9,
+              "of": 54,
+              "pct": 16.7
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 15.9,
-              "n": 8
+              "median_pts_remaining_at_fire": 14.2,
+              "n": 9
             },
             "best_call": {
               "ts": "2026-08-14 16:54:00+00:00",
@@ -911,14 +911,14 @@
             "payoff": {
               "n": 67,
               "total_pts_right": 387.7,
-              "total_pts_wrong": -209.5,
-              "net_pts": 178.2,
+              "total_pts_wrong": -206.5,
+              "net_pts": 181.2,
               "median_per_fire": 3.2,
               "horizon_marks_net": {
                 "5": 47.8,
-                "10": 8.9,
-                "20": 69.7,
-                "30": 92.7
+                "10": 2.9,
+                "20": 64.0,
+                "30": 85.7
               }
             },
             "n_fires": 67,
@@ -929,8 +929,8 @@
             },
             "coverage": {
               "covered": 7,
-              "of": 52,
-              "pct": 13.5
+              "of": 54,
+              "pct": 13.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 8.7,
@@ -988,7 +988,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 52,
+              "of": 54,
               "pct": 0.0
             },
             "earliness": {
@@ -1035,8 +1035,8 @@
             },
             "coverage": {
               "covered": 20,
-              "of": 52,
-              "pct": 38.5
+              "of": 54,
+              "pct": 37.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 13.4,
@@ -1089,8 +1089,8 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 52,
-              "pct": 3.8
+              "of": 54,
+              "pct": 3.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 29.0,
@@ -1123,7 +1123,7 @@
           "S0-H6": {
             "source": "forward_feed_replay",
             "grading": "directional",
-            "conditioned_chance_pct": 41.9,
+            "conditioned_chance_pct": 41.7,
             "conditioned_chance_init_pct": 12.9,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "initiation": {
@@ -1153,8 +1153,8 @@
             },
             "coverage": {
               "covered": 3,
-              "of": 52,
-              "pct": 5.8
+              "of": 54,
+              "pct": 5.6
             },
             "earliness": {
               "median_pts_remaining_at_fire": 6.7,
@@ -1189,14 +1189,14 @@
             "payoff": {
               "n": 42,
               "total_pts_right": 269.0,
-              "total_pts_wrong": -167.1,
-              "net_pts": 101.9,
+              "total_pts_wrong": -166.8,
+              "net_pts": 102.2,
               "median_per_fire": 2.1,
               "horizon_marks_net": {
                 "5": 6.2,
-                "10": 38.7,
-                "20": 32.7,
-                "30": 24.7
+                "10": 36.9,
+                "20": 29.4,
+                "30": 22.9
               }
             },
             "n_fires": 42,
@@ -1207,8 +1207,8 @@
             },
             "coverage": {
               "covered": 5,
-              "of": 52,
-              "pct": 9.6
+              "of": 54,
+              "pct": 9.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 2.2,
@@ -1235,9 +1235,9 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 13,
+              "hits": 14,
               "of": 42,
-              "pct": 31.0
+              "pct": 33.3
             },
             "participation_capture_median_pts": 19.7,
             "payoff": null,
@@ -1248,13 +1248,13 @@
               "pct": 45.2
             },
             "coverage": {
-              "covered": 12,
-              "of": 52,
-              "pct": 23.1
+              "covered": 13,
+              "of": 54,
+              "pct": 24.1
             },
             "earliness": {
               "median_pts_remaining_at_fire": 7.5,
-              "n": 12
+              "n": 13
             },
             "best_call": {
               "ts": "2026-08-19 10:10:00+00:00",
@@ -1291,8 +1291,8 @@
             },
             "coverage": {
               "covered": 30,
-              "of": 52,
-              "pct": 57.7
+              "of": 54,
+              "pct": 55.6
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.6,
@@ -1345,8 +1345,8 @@
             },
             "coverage": {
               "covered": 5,
-              "of": 52,
-              "pct": 9.6
+              "of": 54,
+              "pct": 9.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 15.5,
@@ -1399,7 +1399,7 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 52,
+              "of": 54,
               "pct": 1.9
             },
             "earliness": {
@@ -1453,8 +1453,8 @@
             },
             "coverage": {
               "covered": 18,
-              "of": 52,
-              "pct": 34.6
+              "of": 54,
+              "pct": 33.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 14.8,
@@ -1507,7 +1507,7 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 52,
+              "of": 54,
               "pct": 1.9
             },
             "earliness": {
@@ -1530,18 +1530,18 @@
           },
           "_union": {
             "source": "forward_feed_replay",
-            "episodes_covered_by_any_row": 45,
-            "of": 52,
-            "pct": 86.5
+            "episodes_covered_by_any_row": 46,
+            "of": 54,
+            "pct": 85.2
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 52,
+            "n_qualifying_episodes": 54,
             "n_major": 22,
-            "bar_qualify_base_rate_pct": 44.7,
-            "per_direction_base_rate_pct": 24.5,
-            "initiation_base_either_pct": 39.8,
-            "initiation_base_per_direction_pct": 21.3,
+            "bar_qualify_base_rate_pct": 44.4,
+            "per_direction_base_rate_pct": 24.3,
+            "initiation_base_either_pct": 40.5,
+            "initiation_base_per_direction_pct": 21.9,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -6011,32 +6011,32 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 0,
-                "of": 12,
+                "of": 13,
                 "pct": 0.0
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 12,
+                "n": 13,
                 "total_pts_right": 34.9,
                 "total_pts_wrong": -26.5,
                 "net_pts": 8.4,
-                "median_per_fire": 0.9,
+                "median_per_fire": 0.8,
                 "horizon_marks_net": {
-                  "5": -0.7,
-                  "10": -0.6,
+                  "5": 2.8,
+                  "10": -1.1,
                   "20": 5.0,
                   "30": 5.5
                 }
               },
-              "n_fires": 12,
+              "n_fires": 13,
               "precision": {
                 "hits": 0,
-                "of": 12,
+                "of": 13,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -6057,38 +6057,38 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 3,
-                "of": 26,
-                "pct": 11.5
+                "hits": 5,
+                "of": 28,
+                "pct": 17.9
               },
               "participation_capture_median_pts": 13.5,
               "payoff": {
-                "n": 26,
-                "total_pts_right": 40.4,
-                "total_pts_wrong": -67.4,
-                "net_pts": -27.0,
-                "median_per_fire": -1.0,
+                "n": 28,
+                "total_pts_right": 40.9,
+                "total_pts_wrong": -62.6,
+                "net_pts": -21.7,
+                "median_per_fire": -0.75,
                 "horizon_marks_net": {
                   "5": 29.7,
-                  "10": 47.2,
-                  "20": 12.4,
-                  "30": 12.1
+                  "10": 46.9,
+                  "20": 9.1,
+                  "30": 3.9
                 }
               },
-              "n_fires": 26,
+              "n_fires": 28,
               "precision": {
                 "hits": 1,
-                "of": 26,
-                "pct": 3.8
+                "of": 28,
+                "pct": 3.6
               },
               "coverage": {
-                "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "covered": 2,
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 22.5,
-                "n": 1
+                "median_pts_remaining_at_fire": 14.0,
+                "n": 2
               },
               "best_call": {
                 "ts": "2026-08-14 16:54:00+00:00",
@@ -6119,14 +6119,14 @@
               "payoff": {
                 "n": 25,
                 "total_pts_right": 89.0,
-                "total_pts_wrong": -72.8,
-                "net_pts": 16.2,
+                "total_pts_wrong": -69.8,
+                "net_pts": 19.2,
                 "median_per_fire": 1.8,
                 "horizon_marks_net": {
                   "5": -17.7,
-                  "10": -30.3,
-                  "20": -63.4,
-                  "30": -24.0
+                  "10": -36.3,
+                  "20": -69.1,
+                  "30": -31.0
                 }
               },
               "n_fires": 25,
@@ -6137,8 +6137,8 @@
               },
               "coverage": {
                 "covered": 4,
-                "of": 10,
-                "pct": 40.0
+                "of": 12,
+                "pct": 33.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 11.1,
@@ -6196,7 +6196,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -6243,8 +6243,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 10,
-                "pct": 20.0
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 10.6,
@@ -6297,8 +6297,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 13.0,
@@ -6331,8 +6331,8 @@
             "S0-H6": {
               "source": "forward_feed_replay/ny_only",
               "grading": "directional",
-              "conditioned_chance_pct": 7.0,
-              "conditioned_chance_init_pct": 5.8,
+              "conditioned_chance_pct": 6.4,
+              "conditioned_chance_init_pct": 6.4,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 0,
@@ -6361,7 +6361,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -6390,14 +6390,14 @@
               "payoff": {
                 "n": 9,
                 "total_pts_right": 29.0,
-                "total_pts_wrong": -6.6,
-                "net_pts": 22.4,
+                "total_pts_wrong": -6.3,
+                "net_pts": 22.7,
                 "median_per_fire": 2.2,
                 "horizon_marks_net": {
                   "5": -3.8,
-                  "10": -3.7,
-                  "20": 13.2,
-                  "30": 15.1
+                  "10": -5.5,
+                  "20": 9.9,
+                  "30": 13.3
                 }
               },
               "n_fires": 9,
@@ -6408,8 +6408,8 @@
               },
               "coverage": {
                 "covered": 3,
-                "of": 10,
-                "pct": 30.0
+                "of": 12,
+                "pct": 25.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 6.7,
@@ -6436,9 +6436,9 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 5,
+                "hits": 6,
                 "of": 9,
-                "pct": 55.6
+                "pct": 66.7
               },
               "participation_capture_median_pts": null,
               "payoff": null,
@@ -6449,13 +6449,13 @@
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 5,
-                "of": 10,
+                "covered": 6,
+                "of": 12,
                 "pct": 50.0
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 6.7,
-                "n": 5
+                "median_pts_remaining_at_fire": 7.1,
+                "n": 6
               },
               "best_call": {
                 "ts": "2026-08-17 18:18:00+00:00",
@@ -6492,8 +6492,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 10,
-                "pct": 20.0
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 10.6,
@@ -6546,8 +6546,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 10,
-                "pct": 20.0
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 16.5,
@@ -6605,8 +6605,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 10,
-                "pct": 20.0
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 10.6,
@@ -6633,18 +6633,18 @@
             },
             "_union": {
               "source": "forward_feed_replay/ny_only",
-              "episodes_covered_by_any_row": 8,
-              "of": 10,
-              "pct": 80.0
+              "episodes_covered_by_any_row": 9,
+              "of": 12,
+              "pct": 75.0
             },
             "_moves": {
               "source": "forward_feed_replay/ny_only",
-              "n_qualifying_episodes": 10,
+              "n_qualifying_episodes": 12,
               "n_major": 0,
               "bar_qualify_base_rate_pct": 12.1,
               "per_direction_base_rate_pct": 6.0,
-              "initiation_base_either_pct": 28.7,
-              "initiation_base_per_direction_pct": 15.9,
+              "initiation_base_either_pct": 32.2,
+              "initiation_base_per_direction_pct": 18.9,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -7934,7 +7934,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 52,
+              "of": 54,
               "pct": 0.0
             },
             "earliness": {
@@ -7966,17 +7966,17 @@
           "_union": {
             "source": "forward_feed_replay",
             "episodes_covered_by_any_row": 0,
-            "of": 52,
+            "of": 54,
             "pct": 0.0
           },
           "_moves": {
             "source": "forward_feed_replay",
-            "n_qualifying_episodes": 52,
+            "n_qualifying_episodes": 54,
             "n_major": 22,
-            "bar_qualify_base_rate_pct": 44.7,
-            "per_direction_base_rate_pct": 24.5,
-            "initiation_base_either_pct": 39.8,
-            "initiation_base_per_direction_pct": 21.3,
+            "bar_qualify_base_rate_pct": 44.4,
+            "per_direction_base_rate_pct": 24.3,
+            "initiation_base_either_pct": 40.5,
+            "initiation_base_per_direction_pct": 21.9,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -7990,14 +7990,14 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "860f648b9be7c631c860c5a66ef79e761d877b94",
+      "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
       "instrument": "ger40fut",
       "pair": "ger40",
       "status": "provisional",
       "volume_type": "real futures volume (register 40 first-sync sanity; canonical verdict at this instrument's validation evening)",
       "store_span_1min": [
         "2026-07-19 22:42:00+00:00",
-        "2026-08-21 15:54:00+00:00"
+        "2026-08-21 19:59:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -8816,34 +8816,34 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 11,
-              "of": 49,
-              "pct": 22.4
+              "hits": 12,
+              "of": 50,
+              "pct": 24.0
             },
-            "participation_capture_median_pts": 36.0,
+            "participation_capture_median_pts": 36.2,
             "payoff": {
-              "n": 49,
-              "total_pts_right": 487.7,
+              "n": 50,
+              "total_pts_right": 499.2,
               "total_pts_wrong": -372.3,
-              "net_pts": 115.4,
-              "median_per_fire": -2.5,
+              "net_pts": 126.9,
+              "median_per_fire": -1.75,
               "horizon_marks_net": {
-                "5": -84.8,
-                "10": -130.3,
-                "20": -22.8,
-                "30": 170.7
+                "5": -80.8,
+                "10": -129.6,
+                "20": -26.7,
+                "30": 176.9
               }
             },
-            "n_fires": 49,
+            "n_fires": 50,
             "precision": {
-              "hits": 17,
-              "of": 49,
-              "pct": 34.7
+              "hits": 16,
+              "of": 50,
+              "pct": 32.0
             },
             "coverage": {
               "covered": 15,
-              "of": 56,
-              "pct": 26.8
+              "of": 58,
+              "pct": 25.9
             },
             "earliness": {
               "median_pts_remaining_at_fire": 52.5,
@@ -8870,38 +8870,38 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 19,
-              "of": 77,
-              "pct": 24.7
+              "hits": 21,
+              "of": 80,
+              "pct": 26.2
             },
             "participation_capture_median_pts": 28.9,
             "payoff": {
-              "n": 76,
-              "total_pts_right": 686.8,
-              "total_pts_wrong": -518.6,
-              "net_pts": 168.2,
+              "n": 79,
+              "total_pts_right": 701.3,
+              "total_pts_wrong": -532.0,
+              "net_pts": 169.3,
               "median_per_fire": 3.0,
               "horizon_marks_net": {
-                "5": 81.4,
-                "10": 227.3,
-                "20": 188.9,
-                "30": -49.5
+                "5": 78.2,
+                "10": 219.8,
+                "20": 180.8,
+                "30": -45.7
               }
             },
-            "n_fires": 77,
+            "n_fires": 80,
             "precision": {
               "hits": 19,
-              "of": 77,
-              "pct": 24.7
+              "of": 80,
+              "pct": 23.8
             },
             "coverage": {
-              "covered": 8,
-              "of": 56,
-              "pct": 14.3
+              "covered": 10,
+              "of": 58,
+              "pct": 17.2
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 51.1,
-              "n": 8
+              "median_pts_remaining_at_fire": 38.4,
+              "n": 10
             },
             "best_call": {
               "ts": "2026-08-21 04:12:00+00:00",
@@ -8950,8 +8950,8 @@
             },
             "coverage": {
               "covered": 11,
-              "of": 56,
-              "pct": 19.6
+              "of": 58,
+              "pct": 19.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 28.9,
@@ -9009,8 +9009,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 56,
-              "pct": 1.8
+              "of": 58,
+              "pct": 1.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 113.7,
@@ -9037,9 +9037,9 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 32,
+              "hits": 31,
               "of": 140,
-              "pct": 22.9
+              "pct": 22.1
             },
             "participation_capture_median_pts": 34.2,
             "payoff": {
@@ -9063,11 +9063,11 @@
             },
             "coverage": {
               "covered": 22,
-              "of": 56,
-              "pct": 39.3
+              "of": 58,
+              "pct": 37.9
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 37.4,
+              "median_pts_remaining_at_fire": 40.5,
               "n": 22
             },
             "best_call": {
@@ -9117,8 +9117,8 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 56,
-              "pct": 3.6
+              "of": 58,
+              "pct": 3.4
             },
             "earliness": {
               "median_pts_remaining_at_fire": 11.7,
@@ -9151,8 +9151,8 @@
           "S0-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
-            "conditioned_chance_pct": 37.8,
-            "conditioned_chance_init_pct": 21.6,
+            "conditioned_chance_pct": 37.7,
+            "conditioned_chance_init_pct": 21.5,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "initiation": {
               "hits": 28,
@@ -9181,8 +9181,8 @@
             },
             "coverage": {
               "covered": 12,
-              "of": 56,
-              "pct": 21.4
+              "of": 58,
+              "pct": 20.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 26.1,
@@ -9209,38 +9209,38 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 8,
-              "of": 24,
-              "pct": 33.3
+              "hits": 9,
+              "of": 25,
+              "pct": 36.0
             },
             "participation_capture_median_pts": 85.5,
             "payoff": {
-              "n": 24,
+              "n": 25,
               "total_pts_right": 275.3,
-              "total_pts_wrong": -452.4,
-              "net_pts": -177.1,
-              "median_per_fire": -4.6,
+              "total_pts_wrong": -454.4,
+              "net_pts": -179.1,
+              "median_per_fire": -4.4,
               "horizon_marks_net": {
-                "5": 74.2,
-                "10": 5.4,
-                "20": 24.0,
+                "5": 73.0,
+                "10": -7.1,
+                "20": 22.0,
                 "30": -98.3
               }
             },
-            "n_fires": 24,
+            "n_fires": 25,
             "precision": {
               "hits": 4,
-              "of": 24,
-              "pct": 16.7
+              "of": 25,
+              "pct": 16.0
             },
             "coverage": {
-              "covered": 5,
-              "of": 56,
-              "pct": 8.9
+              "covered": 6,
+              "of": 58,
+              "pct": 10.3
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 42.0,
-              "n": 5
+              "median_pts_remaining_at_fire": 35.1,
+              "n": 6
             },
             "best_call": {
               "ts": "2026-08-20 10:49:00+00:00",
@@ -9263,26 +9263,26 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 12,
-              "of": 24,
-              "pct": 50.0
+              "hits": 13,
+              "of": 25,
+              "pct": 52.0
             },
             "participation_capture_median_pts": 14.6,
             "payoff": null,
-            "n_fires": 24,
+            "n_fires": 25,
             "precision": {
               "hits": 11,
-              "of": 24,
-              "pct": 45.8
+              "of": 25,
+              "pct": 44.0
             },
             "coverage": {
-              "covered": 8,
-              "of": 56,
-              "pct": 14.3
+              "covered": 9,
+              "of": 58,
+              "pct": 15.5
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 35.1,
-              "n": 8
+              "median_pts_remaining_at_fire": 28.2,
+              "n": 9
             },
             "best_call": {
               "ts": "2026-08-18 12:01:00+00:00",
@@ -9319,11 +9319,11 @@
             },
             "coverage": {
               "covered": 28,
-              "of": 56,
-              "pct": 50.0
+              "of": 58,
+              "pct": 48.3
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 38.4,
+              "median_pts_remaining_at_fire": 39.8,
               "n": 28
             },
             "best_call": {
@@ -9373,8 +9373,8 @@
             },
             "coverage": {
               "covered": 3,
-              "of": 56,
-              "pct": 5.4
+              "of": 58,
+              "pct": 5.2
             },
             "earliness": {
               "median_pts_remaining_at_fire": 25.2,
@@ -9427,8 +9427,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 56,
-              "pct": 1.8
+              "of": 58,
+              "pct": 1.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": 162.0,
@@ -9455,9 +9455,9 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 26,
+              "hits": 24,
               "of": 101,
-              "pct": 25.7
+              "pct": 23.8
             },
             "participation_capture_median_pts": 33.1,
             "payoff": {
@@ -9481,11 +9481,11 @@
             },
             "coverage": {
               "covered": 19,
-              "of": 56,
-              "pct": 33.9
+              "of": 58,
+              "pct": 32.8
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 35.4,
+              "median_pts_remaining_at_fire": 41.5,
               "n": 19
             },
             "best_call": {
@@ -9535,8 +9535,8 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 56,
-              "pct": 3.6
+              "of": 58,
+              "pct": 3.4
             },
             "earliness": {
               "median_pts_remaining_at_fire": 2.0,
@@ -9558,18 +9558,18 @@
           },
           "_union": {
             "source": "post_go_live_replay",
-            "episodes_covered_by_any_row": 45,
-            "of": 56,
-            "pct": 80.4
+            "episodes_covered_by_any_row": 47,
+            "of": 58,
+            "pct": 81.0
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 56,
+            "n_qualifying_episodes": 58,
             "n_major": 19,
-            "bar_qualify_base_rate_pct": 40.4,
-            "per_direction_base_rate_pct": 21.9,
-            "initiation_base_either_pct": 43.9,
-            "initiation_base_per_direction_pct": 23.6,
+            "bar_qualify_base_rate_pct": 39.7,
+            "per_direction_base_rate_pct": 21.5,
+            "initiation_base_either_pct": 44.1,
+            "initiation_base_per_direction_pct": 23.7,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -10463,7 +10463,7 @@
             "S0-H6": {
               "source": "backtest_replay/overlap",
               "grading": "directional",
-              "conditioned_chance_pct": 28.7,
+              "conditioned_chance_pct": 28.4,
               "conditioned_chance_init_pct": 13.2,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
@@ -10797,8 +10797,8 @@
               "source": "backtest_replay/overlap",
               "n_qualifying_episodes": 10,
               "n_major": 0,
-              "bar_qualify_base_rate_pct": 46.9,
-              "per_direction_base_rate_pct": 23.9,
+              "bar_qualify_base_rate_pct": 46.8,
+              "per_direction_base_rate_pct": 23.8,
               "initiation_base_either_pct": 26.6,
               "initiation_base_per_direction_pct": 13.3,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
@@ -11450,7 +11450,7 @@
               "source": "backtest_replay/ny_only",
               "n_qualifying_episodes": 19,
               "n_major": 3,
-              "bar_qualify_base_rate_pct": 22.0,
+              "bar_qualify_base_rate_pct": 21.9,
               "per_direction_base_rate_pct": 11.2,
               "initiation_base_either_pct": 34.0,
               "initiation_base_per_direction_pct": 19.1,
@@ -12902,11 +12902,11 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 4,
+                "hits": 5,
                 "of": 13,
-                "pct": 30.8
+                "pct": 38.5
               },
-              "participation_capture_median_pts": 48.2,
+              "participation_capture_median_pts": 50.3,
               "payoff": {
                 "n": 13,
                 "total_pts_right": 207.0,
@@ -12922,9 +12922,9 @@
               },
               "n_fires": 13,
               "precision": {
-                "hits": 6,
+                "hits": 5,
                 "of": 13,
-                "pct": 46.2
+                "pct": 38.5
               },
               "coverage": {
                 "covered": 5,
@@ -13230,8 +13230,8 @@
             "S0-H6": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 36.7,
-              "conditioned_chance_init_pct": 23.6,
+              "conditioned_chance_pct": 36.6,
+              "conditioned_chance_init_pct": 23.7,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 21,
@@ -13598,7 +13598,7 @@
               "n_major": 4,
               "bar_qualify_base_rate_pct": 45.5,
               "per_direction_base_rate_pct": 23.9,
-              "initiation_base_either_pct": 49.3,
+              "initiation_base_either_pct": 49.4,
               "initiation_base_per_direction_pct": 26.9,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
@@ -14130,7 +14130,7 @@
               "source": "post_go_live_replay/overlap",
               "n_qualifying_episodes": 7,
               "n_major": 1,
-              "bar_qualify_base_rate_pct": 38.9,
+              "bar_qualify_base_rate_pct": 38.7,
               "per_direction_base_rate_pct": 19.4,
               "initiation_base_either_pct": 51.0,
               "initiation_base_per_direction_pct": 25.5,
@@ -14146,33 +14146,33 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 1,
-                "of": 7,
-                "pct": 14.3
+                "of": 8,
+                "pct": 12.5
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 7,
-                "total_pts_right": 29.3,
+                "n": 8,
+                "total_pts_right": 40.8,
                 "total_pts_wrong": -57.4,
-                "net_pts": -28.1,
-                "median_per_fire": -7.3,
+                "net_pts": -16.6,
+                "median_per_fire": -5.9,
                 "horizon_marks_net": {
-                  "5": -27.3,
-                  "10": -54.0,
-                  "20": -53.7,
-                  "30": -18.9
+                  "5": -23.3,
+                  "10": -53.3,
+                  "20": -57.6,
+                  "30": -12.7
                 }
               },
-              "n_fires": 7,
+              "n_fires": 8,
               "precision": {
                 "hits": 0,
-                "of": 7,
+                "of": 8,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 52.5,
@@ -14199,38 +14199,38 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 1,
-                "of": 17,
-                "pct": 5.9
+                "hits": 3,
+                "of": 20,
+                "pct": 15.0
               },
               "participation_capture_median_pts": 21.4,
               "payoff": {
-                "n": 17,
-                "total_pts_right": 104.4,
-                "total_pts_wrong": -21.0,
-                "net_pts": 83.4,
-                "median_per_fire": 7.2,
+                "n": 20,
+                "total_pts_right": 118.9,
+                "total_pts_wrong": -34.4,
+                "net_pts": 84.5,
+                "median_per_fire": 6.4,
                 "horizon_marks_net": {
-                  "5": 39.8,
-                  "10": 41.8,
-                  "20": 83.0,
-                  "30": -52.1
+                  "5": 36.6,
+                  "10": 34.3,
+                  "20": 74.9,
+                  "30": -48.3
                 }
               },
-              "n_fires": 17,
+              "n_fires": 20,
               "precision": {
                 "hits": 4,
-                "of": 17,
-                "pct": 23.5
+                "of": 20,
+                "pct": 20.0
               },
               "coverage": {
-                "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "covered": 3,
+                "of": 12,
+                "pct": 25.0
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 59.7,
-                "n": 1
+                "median_pts_remaining_at_fire": 37.3,
+                "n": 3
               },
               "best_call": {
                 "ts": "2026-08-17 15:53:00+00:00",
@@ -14241,9 +14241,9 @@
                 "major": false
               },
               "worst_false_alarm": {
-                "ts": "2026-08-18 18:34:00+00:00",
-                "dir": 1,
-                "adverse_pts": 16.2
+                "ts": "2026-08-21 19:35:00+00:00",
+                "dir": -1,
+                "adverse_pts": 24.9
               }
             },
             "S0-H11": {
@@ -14279,8 +14279,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 60.3,
@@ -14338,7 +14338,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -14359,9 +14359,9 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 8,
+                "hits": 7,
                 "of": 28,
-                "pct": 28.6
+                "pct": 25.0
               },
               "participation_capture_median_pts": null,
               "payoff": {
@@ -14385,19 +14385,19 @@
               },
               "coverage": {
                 "covered": 5,
-                "of": 10,
-                "pct": 50.0
+                "of": 12,
+                "pct": 41.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 24.0,
                 "n": 5
               },
               "best_call": {
-                "ts": "2026-08-20 16:06:00+00:00",
+                "ts": "2026-08-20 16:58:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-08-20 17:06:00+00:00",
-                "pts_remaining_at_fire": 35.4,
-                "episode_total_pts": 55.6,
+                "episode_start": "2026-08-20 17:51:00+00:00",
+                "pts_remaining_at_fire": 59.4,
+                "episode_total_pts": 36.3,
                 "major": false
               },
               "worst_false_alarm": {
@@ -14439,8 +14439,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 19.4,
@@ -14482,40 +14482,47 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 0,
-                "of": 3,
-                "pct": 0.0
+                "hits": 1,
+                "of": 4,
+                "pct": 25.0
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 3,
+                "n": 4,
                 "total_pts_right": 16.4,
-                "total_pts_wrong": -60.1,
-                "net_pts": -43.7,
-                "median_per_fire": -28.5,
+                "total_pts_wrong": -62.1,
+                "net_pts": -45.7,
+                "median_per_fire": -15.25,
                 "horizon_marks_net": {
-                  "5": -1.1,
-                  "10": -9.4,
-                  "20": -17.7,
+                  "5": -2.3,
+                  "10": -21.9,
+                  "20": -19.7,
                   "30": -24.4
                 }
               },
-              "n_fires": 3,
+              "n_fires": 4,
               "precision": {
                 "hits": 0,
-                "of": 3,
+                "of": 4,
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 0,
-                "of": 10,
-                "pct": 0.0
+                "covered": 1,
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
-                "median_pts_remaining_at_fire": null,
-                "n": 0
+                "median_pts_remaining_at_fire": 6.7,
+                "n": 1
               },
-              "best_call": null,
+              "best_call": {
+                "ts": "2026-08-21 19:39:00+00:00",
+                "dir": -1,
+                "episode_start": "2026-08-21 19:47:00+00:00",
+                "pts_remaining_at_fire": 6.7,
+                "episode_total_pts": 17.4,
+                "major": false
+              },
               "worst_false_alarm": {
                 "ts": "2026-08-19 16:29:00+00:00",
                 "dir": 1,
@@ -14529,33 +14536,33 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 1,
-                "of": 3,
-                "pct": 33.3
+                "hits": 2,
+                "of": 4,
+                "pct": 50.0
               },
               "participation_capture_median_pts": null,
               "payoff": null,
-              "n_fires": 3,
+              "n_fires": 4,
               "precision": {
                 "hits": 0,
-                "of": 3,
+                "of": 4,
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "covered": 2,
+                "of": 12,
+                "pct": 16.7
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 4.4,
-                "n": 1
+                "median_pts_remaining_at_fire": 5.6,
+                "n": 2
               },
               "best_call": {
-                "ts": "2026-08-20 18:17:00+00:00",
-                "dir": 1,
-                "episode_start": "2026-08-20 19:16:00+00:00",
-                "pts_remaining_at_fire": 4.4,
-                "episode_total_pts": 23.5,
+                "ts": "2026-08-21 19:39:00+00:00",
+                "dir": -1,
+                "episode_start": "2026-08-21 19:47:00+00:00",
+                "pts_remaining_at_fire": 6.7,
+                "episode_total_pts": 17.4,
                 "major": false
               },
               "worst_false_alarm": {
@@ -14585,19 +14592,19 @@
               },
               "coverage": {
                 "covered": 5,
-                "of": 10,
-                "pct": 50.0
+                "of": 12,
+                "pct": 41.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 24.0,
                 "n": 5
               },
               "best_call": {
-                "ts": "2026-08-19 17:04:00+00:00",
-                "dir": 1,
-                "episode_start": "2026-08-19 18:03:00+00:00",
-                "pts_remaining_at_fire": 35.4,
-                "episode_total_pts": 34.8,
+                "ts": "2026-08-20 16:58:00+00:00",
+                "dir": -1,
+                "episode_start": "2026-08-20 17:51:00+00:00",
+                "pts_remaining_at_fire": 59.4,
+                "episode_total_pts": 36.3,
                 "major": false
               },
               "worst_false_alarm": {
@@ -14639,8 +14646,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 12,
+                "pct": 8.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 57.7,
@@ -14693,7 +14700,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -14714,9 +14721,9 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 6,
+                "hits": 4,
                 "of": 19,
-                "pct": 31.6
+                "pct": 21.1
               },
               "participation_capture_median_pts": null,
               "payoff": {
@@ -14740,19 +14747,19 @@
               },
               "coverage": {
                 "covered": 4,
-                "of": 10,
-                "pct": 40.0
+                "of": 12,
+                "pct": 33.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 24.8,
                 "n": 4
               },
               "best_call": {
-                "ts": "2026-08-20 16:06:00+00:00",
+                "ts": "2026-08-20 16:58:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-08-20 17:06:00+00:00",
-                "pts_remaining_at_fire": 35.4,
-                "episode_total_pts": 55.6,
+                "episode_start": "2026-08-20 17:51:00+00:00",
+                "pts_remaining_at_fire": 59.4,
+                "episode_total_pts": 36.3,
                 "major": false
               },
               "worst_false_alarm": {
@@ -14794,7 +14801,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 12,
                 "pct": 0.0
               },
               "earliness": {
@@ -14810,18 +14817,18 @@
             },
             "_union": {
               "source": "post_go_live_replay/ny_only",
-              "episodes_covered_by_any_row": 7,
-              "of": 10,
-              "pct": 70.0
+              "episodes_covered_by_any_row": 9,
+              "of": 12,
+              "pct": 75.0
             },
             "_moves": {
               "source": "post_go_live_replay/ny_only",
-              "n_qualifying_episodes": 10,
+              "n_qualifying_episodes": 12,
               "n_major": 0,
-              "bar_qualify_base_rate_pct": 10.4,
-              "per_direction_base_rate_pct": 5.2,
-              "initiation_base_either_pct": 37.3,
-              "initiation_base_per_direction_pct": 19.1,
+              "bar_qualify_base_rate_pct": 12.0,
+              "per_direction_base_rate_pct": 6.0,
+              "initiation_base_either_pct": 39.0,
+              "initiation_base_per_direction_pct": 19.9,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -16058,8 +16065,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 56,
-              "pct": 1.8
+              "of": 58,
+              "pct": 1.7
             },
             "earliness": {
               "median_pts_remaining_at_fire": -21.3,
@@ -16097,17 +16104,17 @@
           "_union": {
             "source": "post_go_live_replay",
             "episodes_covered_by_any_row": 1,
-            "of": 56,
-            "pct": 1.8
+            "of": 58,
+            "pct": 1.7
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 56,
+            "n_qualifying_episodes": 58,
             "n_major": 19,
-            "bar_qualify_base_rate_pct": 40.4,
-            "per_direction_base_rate_pct": 21.9,
-            "initiation_base_either_pct": 43.9,
-            "initiation_base_per_direction_pct": 23.6,
+            "bar_qualify_base_rate_pct": 39.7,
+            "per_direction_base_rate_pct": 21.5,
+            "initiation_base_either_pct": 44.1,
+            "initiation_base_per_direction_pct": 23.7,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -16121,14 +16128,14 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "860f648b9be7c631c860c5a66ef79e761d877b94",
+      "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
       "instrument": "nas100fut",
       "pair": "nas100",
       "status": "provisional",
       "volume_type": "real futures volume (register 40 first-sync sanity; canonical verdict at this instrument's validation evening)",
       "store_span_1min": [
         "2026-07-19 22:02:00+00:00",
-        "2026-08-21 15:55:00+00:00"
+        "2026-08-21 20:29:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -16147,11 +16154,11 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 7,
+              "hits": 9,
               "of": 34,
-              "pct": 20.6
+              "pct": 26.5
             },
-            "participation_capture_median_pts": 182.2,
+            "participation_capture_median_pts": 184.4,
             "payoff": {
               "n": 34,
               "total_pts_right": 2899.1,
@@ -16167,9 +16174,9 @@
             },
             "n_fires": 34,
             "precision": {
-              "hits": 14,
+              "hits": 13,
               "of": 34,
-              "pct": 41.2
+              "pct": 38.2
             },
             "coverage": {
               "covered": 8,
@@ -16183,9 +16190,9 @@
             "best_call": {
               "ts": "2026-07-29 18:02:00+00:00",
               "dir": -1,
-              "episode_start": "2026-07-29 18:02:00+00:00",
+              "episode_start": "2026-07-29 18:07:00+00:00",
               "pts_remaining_at_fire": 663.1,
-              "episode_total_pts": 663.1,
+              "episode_total_pts": 667.1,
               "major": true
             },
             "worst_false_alarm": {
@@ -16461,7 +16468,7 @@
             "source": "backtest_replay",
             "grading": "directional",
             "conditioned_chance_pct": 39.2,
-            "conditioned_chance_init_pct": 12.7,
+            "conditioned_chance_init_pct": 12.8,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "initiation": {
               "hits": 5,
@@ -16891,33 +16898,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 13,
-              "of": 34,
-              "pct": 38.2
+              "of": 35,
+              "pct": 37.1
             },
             "participation_capture_median_pts": 74.9,
             "payoff": {
-              "n": 34,
-              "total_pts_right": 1121.9,
+              "n": 35,
+              "total_pts_right": 1144.5,
               "total_pts_wrong": -855.2,
-              "net_pts": 266.7,
-              "median_per_fire": 14.95,
+              "net_pts": 289.3,
+              "median_per_fire": 18.4,
               "horizon_marks_net": {
-                "5": -41.0,
-                "10": -64.0,
-                "20": 52.8,
-                "30": -88.9
+                "5": -29.9,
+                "10": -53.0,
+                "20": 43.2,
+                "30": -68.9
               }
             },
-            "n_fires": 34,
+            "n_fires": 35,
             "precision": {
               "hits": 13,
-              "of": 34,
-              "pct": 38.2
+              "of": 35,
+              "pct": 37.1
             },
             "coverage": {
               "covered": 8,
-              "of": 55,
-              "pct": 14.5
+              "of": 56,
+              "pct": 14.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 48.0,
@@ -16945,33 +16952,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 10,
-              "of": 143,
-              "pct": 7.0
+              "of": 145,
+              "pct": 6.9
             },
             "participation_capture_median_pts": 49.8,
             "payoff": {
-              "n": 143,
+              "n": 145,
               "total_pts_right": 1184.8,
-              "total_pts_wrong": -2595.3,
-              "net_pts": -1410.5,
-              "median_per_fire": -8.8,
+              "total_pts_wrong": -2605.1,
+              "net_pts": -1420.3,
+              "median_per_fire": -8.1,
               "horizon_marks_net": {
-                "5": 108.1,
-                "10": -215.5,
-                "20": -560.2,
-                "30": -668.8
+                "5": 118.5,
+                "10": -177.5,
+                "20": -520.9,
+                "30": -665.7
               }
             },
-            "n_fires": 143,
+            "n_fires": 145,
             "precision": {
               "hits": 27,
-              "of": 143,
-              "pct": 18.9
+              "of": 145,
+              "pct": 18.6
             },
             "coverage": {
               "covered": 5,
-              "of": 55,
-              "pct": 9.1
+              "of": 56,
+              "pct": 8.9
             },
             "earliness": {
               "median_pts_remaining_at_fire": 44.1,
@@ -17024,8 +17031,8 @@
             },
             "coverage": {
               "covered": 13,
-              "of": 55,
-              "pct": 23.6
+              "of": 56,
+              "pct": 23.2
             },
             "earliness": {
               "median_pts_remaining_at_fire": 47.6,
@@ -17088,8 +17095,8 @@
             },
             "coverage": {
               "covered": 27,
-              "of": 55,
-              "pct": 49.1
+              "of": 56,
+              "pct": 48.2
             },
             "earliness": {
               "median_pts_remaining_at_fire": 51.9,
@@ -17147,7 +17154,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 55,
+              "of": 56,
               "pct": 0.0
             },
             "earliness": {
@@ -17169,8 +17176,8 @@
           "S0-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
-            "conditioned_chance_pct": 35.7,
-            "conditioned_chance_init_pct": 17.1,
+            "conditioned_chance_pct": 35.6,
+            "conditioned_chance_init_pct": 17.0,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "initiation": {
               "hits": 5,
@@ -17199,8 +17206,8 @@
             },
             "coverage": {
               "covered": 4,
-              "of": 55,
-              "pct": 7.3
+              "of": 56,
+              "pct": 7.1
             },
             "earliness": {
               "median_pts_remaining_at_fire": 1.8,
@@ -17228,33 +17235,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 10,
-              "of": 38,
-              "pct": 26.3
+              "of": 40,
+              "pct": 25.0
             },
             "participation_capture_median_pts": 101.6,
             "payoff": {
-              "n": 38,
-              "total_pts_right": 1273.0,
-              "total_pts_wrong": -953.1,
-              "net_pts": 319.9,
+              "n": 40,
+              "total_pts_right": 1296.8,
+              "total_pts_wrong": -1023.4,
+              "net_pts": 273.4,
               "median_per_fire": 10.8,
               "horizon_marks_net": {
-                "5": 120.9,
-                "10": 159.6,
-                "20": 382.8,
-                "30": 544.3
+                "5": 97.8,
+                "10": 116.4,
+                "20": 338.1,
+                "30": 500.8
               }
             },
-            "n_fires": 38,
+            "n_fires": 40,
             "precision": {
               "hits": 10,
-              "of": 38,
-              "pct": 26.3
+              "of": 40,
+              "pct": 25.0
             },
             "coverage": {
               "covered": 10,
-              "of": 55,
-              "pct": 18.2
+              "of": 56,
+              "pct": 17.9
             },
             "earliness": {
               "median_pts_remaining_at_fire": 31.2,
@@ -17282,21 +17289,21 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 16,
-              "of": 38,
-              "pct": 42.1
+              "of": 40,
+              "pct": 40.0
             },
             "participation_capture_median_pts": 47.3,
             "payoff": null,
-            "n_fires": 38,
+            "n_fires": 40,
             "precision": {
               "hits": 21,
-              "of": 38,
-              "pct": 55.3
+              "of": 40,
+              "pct": 52.5
             },
             "coverage": {
               "covered": 13,
-              "of": 55,
-              "pct": 23.6
+              "of": 56,
+              "pct": 23.2
             },
             "earliness": {
               "median_pts_remaining_at_fire": 23.2,
@@ -17337,8 +17344,8 @@
             },
             "coverage": {
               "covered": 36,
-              "of": 55,
-              "pct": 65.5
+              "of": 56,
+              "pct": 64.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 47.8,
@@ -17391,8 +17398,8 @@
             },
             "coverage": {
               "covered": 8,
-              "of": 55,
-              "pct": 14.5
+              "of": 56,
+              "pct": 14.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 61.9,
@@ -17445,7 +17452,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 55,
+              "of": 56,
               "pct": 0.0
             },
             "earliness": {
@@ -17488,8 +17495,8 @@
             },
             "coverage": {
               "covered": 25,
-              "of": 55,
-              "pct": 45.5
+              "of": 56,
+              "pct": 44.6
             },
             "earliness": {
               "median_pts_remaining_at_fire": 51.9,
@@ -17542,7 +17549,7 @@
             },
             "coverage": {
               "covered": 2,
-              "of": 55,
+              "of": 56,
               "pct": 3.6
             },
             "earliness": {
@@ -17566,17 +17573,17 @@
           "_union": {
             "source": "post_go_live_replay",
             "episodes_covered_by_any_row": 46,
-            "of": 55,
-            "pct": 83.6
+            "of": 56,
+            "pct": 82.1
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 55,
+            "n_qualifying_episodes": 56,
             "n_major": 15,
-            "bar_qualify_base_rate_pct": 42.3,
-            "per_direction_base_rate_pct": 22.1,
-            "initiation_base_either_pct": 43.0,
-            "initiation_base_per_direction_pct": 23.0,
+            "bar_qualify_base_rate_pct": 40.7,
+            "per_direction_base_rate_pct": 21.3,
+            "initiation_base_either_pct": 42.2,
+            "initiation_base_per_direction_pct": 22.5,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -17617,8 +17624,8 @@
               },
               "coverage": {
                 "covered": 3,
-                "of": 40,
-                "pct": 7.5
+                "of": 41,
+                "pct": 7.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 108.6,
@@ -17671,8 +17678,8 @@
               },
               "coverage": {
                 "covered": 2,
-                "of": 40,
-                "pct": 5.0
+                "of": 41,
+                "pct": 4.9
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 4.3,
@@ -17725,8 +17732,8 @@
               },
               "coverage": {
                 "covered": 6,
-                "of": 40,
-                "pct": 15.0
+                "of": 41,
+                "pct": 14.6
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 186.0,
@@ -17784,7 +17791,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 40,
+                "of": 41,
                 "pct": 0.0
               },
               "earliness": {
@@ -17827,8 +17834,8 @@
               },
               "coverage": {
                 "covered": 7,
-                "of": 40,
-                "pct": 17.5
+                "of": 41,
+                "pct": 17.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 94.1,
@@ -17881,7 +17888,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 40,
+                "of": 41,
                 "pct": 0.0
               },
               "earliness": {
@@ -17904,8 +17911,8 @@
             "S0-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 38.6,
-              "conditioned_chance_init_pct": 20.1,
+              "conditioned_chance_pct": 38.7,
+              "conditioned_chance_init_pct": 19.8,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 4,
@@ -17934,8 +17941,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 40,
-                "pct": 2.5
+                "of": 41,
+                "pct": 2.4
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 303.5,
@@ -17988,8 +17995,8 @@
               },
               "coverage": {
                 "covered": 3,
-                "of": 40,
-                "pct": 7.5
+                "of": 41,
+                "pct": 7.3
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 308.2,
@@ -18030,8 +18037,8 @@
               },
               "coverage": {
                 "covered": 7,
-                "of": 40,
-                "pct": 17.5
+                "of": 41,
+                "pct": 17.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 195.6,
@@ -18072,8 +18079,8 @@
               },
               "coverage": {
                 "covered": 10,
-                "of": 40,
-                "pct": 25.0
+                "of": 41,
+                "pct": 24.4
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 118.6,
@@ -18126,7 +18133,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 40,
+                "of": 41,
                 "pct": 0.0
               },
               "earliness": {
@@ -18178,8 +18185,8 @@
               },
               "coverage": {
                 "covered": 6,
-                "of": 40,
-                "pct": 15.0
+                "of": 41,
+                "pct": 14.6
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 92.3,
@@ -18232,7 +18239,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 40,
+                "of": 41,
                 "pct": 0.0
               },
               "earliness": {
@@ -18249,16 +18256,16 @@
             "_union": {
               "source": "backtest_replay/london",
               "episodes_covered_by_any_row": 15,
-              "of": 40,
-              "pct": 37.5
+              "of": 41,
+              "pct": 36.6
             },
             "_moves": {
               "source": "backtest_replay/london",
-              "n_qualifying_episodes": 40,
+              "n_qualifying_episodes": 41,
               "n_major": 17,
-              "bar_qualify_base_rate_pct": 56.0,
+              "bar_qualify_base_rate_pct": 56.1,
               "per_direction_base_rate_pct": 30.9,
-              "initiation_base_either_pct": 47.9,
+              "initiation_base_either_pct": 47.8,
               "initiation_base_per_direction_pct": 25.8,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
@@ -18302,7 +18309,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18349,7 +18356,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18406,7 +18413,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18468,8 +18475,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 5,
-                "pct": 20.0
+                "of": 4,
+                "pct": 25.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 97.1,
@@ -18522,8 +18529,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 5,
-                "pct": 20.0
+                "of": 4,
+                "pct": 25.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 332.5,
@@ -18564,8 +18571,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 5,
-                "pct": 20.0
+                "of": 4,
+                "pct": 25.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 332.5,
@@ -18602,8 +18609,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 5,
-                "pct": 20.0
+                "of": 4,
+                "pct": 25.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": -105.1,
@@ -18656,7 +18663,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18708,7 +18715,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18755,7 +18762,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 5,
+                "of": 4,
                 "pct": 0.0
               },
               "earliness": {
@@ -18768,12 +18775,12 @@
             "_union": {
               "source": "backtest_replay/overlap",
               "episodes_covered_by_any_row": 2,
-              "of": 5,
-              "pct": 40.0
+              "of": 4,
+              "pct": 50.0
             },
             "_moves": {
               "source": "backtest_replay/overlap",
-              "n_qualifying_episodes": 5,
+              "n_qualifying_episodes": 4,
               "n_major": 1,
               "bar_qualify_base_rate_pct": 70.0,
               "per_direction_base_rate_pct": 37.5,
@@ -18790,11 +18797,11 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 0,
+                "hits": 2,
                 "of": 11,
-                "pct": 0.0
+                "pct": 18.2
               },
-              "participation_capture_median_pts": 246.0,
+              "participation_capture_median_pts": 291.5,
               "payoff": {
                 "n": 11,
                 "total_pts_right": 1555.9,
@@ -18810,9 +18817,9 @@
               },
               "n_fires": 11,
               "precision": {
-                "hits": 7,
+                "hits": 6,
                 "of": 11,
-                "pct": 63.6
+                "pct": 54.5
               },
               "coverage": {
                 "covered": 2,
@@ -18826,9 +18833,9 @@
               "best_call": {
                 "ts": "2026-07-29 18:02:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-07-29 18:02:00+00:00",
+                "episode_start": "2026-07-29 18:07:00+00:00",
                 "pts_remaining_at_fire": 663.1,
-                "episode_total_pts": 663.1,
+                "episode_total_pts": 667.1,
                 "major": true
               },
               "worst_false_alarm": {
@@ -18998,9 +19005,9 @@
               "best_call": {
                 "ts": "2026-07-29 17:43:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-07-29 18:02:00+00:00",
+                "episode_start": "2026-07-29 18:07:00+00:00",
                 "pts_remaining_at_fire": 456.5,
-                "episode_total_pts": 663.1,
+                "episode_total_pts": 667.1,
                 "major": true
               },
               "worst_false_alarm": {
@@ -19269,9 +19276,9 @@
               "best_call": {
                 "ts": "2026-07-29 17:43:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-07-29 18:02:00+00:00",
+                "episode_start": "2026-07-29 18:07:00+00:00",
                 "pts_remaining_at_fire": 456.5,
-                "episode_total_pts": 663.1,
+                "episode_total_pts": 667.1,
                 "major": true
               },
               "worst_false_alarm": {
@@ -20910,7 +20917,7 @@
             "S0-H6": {
               "source": "post_go_live_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 34.8,
+              "conditioned_chance_pct": 34.9,
               "conditioned_chance_init_pct": 26.7,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
@@ -21300,8 +21307,8 @@
               "source": "post_go_live_replay/london",
               "n_qualifying_episodes": 17,
               "n_major": 7,
-              "bar_qualify_base_rate_pct": 61.9,
-              "per_direction_base_rate_pct": 32.5,
+              "bar_qualify_base_rate_pct": 62.1,
+              "per_direction_base_rate_pct": 32.6,
               "initiation_base_either_pct": 57.1,
               "initiation_base_per_direction_pct": 28.7,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
@@ -21787,33 +21794,33 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 2,
-                "of": 2,
-                "pct": 100.0
+                "of": 3,
+                "pct": 66.7
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 2,
-                "total_pts_right": 24.9,
+                "n": 3,
+                "total_pts_right": 47.5,
                 "total_pts_wrong": -12.2,
-                "net_pts": 12.7,
-                "median_per_fire": 6.35,
+                "net_pts": 35.3,
+                "median_per_fire": 22.6,
                 "horizon_marks_net": {
-                  "5": -31.8,
-                  "10": -60.3,
-                  "20": -19.5,
-                  "30": 30.6
+                  "5": -20.7,
+                  "10": -49.3,
+                  "20": -29.1,
+                  "30": 50.6
                 }
               },
-              "n_fires": 2,
+              "n_fires": 3,
               "precision": {
                 "hits": 0,
-                "of": 2,
+                "of": 3,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 10,
+                "pct": 10.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 28.3,
@@ -21841,33 +21848,33 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 1,
-                "of": 22,
-                "pct": 4.5
+                "of": 24,
+                "pct": 4.2
               },
               "participation_capture_median_pts": 32.3,
               "payoff": {
-                "n": 22,
+                "n": 24,
                 "total_pts_right": 185.2,
-                "total_pts_wrong": -351.4,
-                "net_pts": -166.2,
-                "median_per_fire": -15.85,
+                "total_pts_wrong": -361.2,
+                "net_pts": -176.0,
+                "median_per_fire": -14.9,
                 "horizon_marks_net": {
-                  "5": 62.9,
-                  "10": -36.7,
-                  "20": -114.5,
-                  "30": -100.8
+                  "5": 73.3,
+                  "10": 1.3,
+                  "20": -75.2,
+                  "30": -97.7
                 }
               },
-              "n_fires": 22,
+              "n_fires": 24,
               "precision": {
                 "hits": 3,
-                "of": 22,
-                "pct": 13.6
+                "of": 24,
+                "pct": 12.5
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 10,
+                "pct": 10.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 71.1,
@@ -21920,8 +21927,8 @@
               },
               "coverage": {
                 "covered": 4,
-                "of": 9,
-                "pct": 44.4
+                "of": 10,
+                "pct": 40.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 46.7,
@@ -21984,8 +21991,8 @@
               },
               "coverage": {
                 "covered": 5,
-                "of": 9,
-                "pct": 55.6
+                "of": 10,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 51.9,
@@ -22024,7 +22031,7 @@
               "source": "post_go_live_replay/ny_only",
               "grading": "directional",
               "conditioned_chance_pct": 0.0,
-              "conditioned_chance_init_pct": 11.5,
+              "conditioned_chance_init_pct": 10.0,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 0,
@@ -22053,7 +22060,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 9,
+                "of": 10,
                 "pct": 0.0
               },
               "earliness": {
@@ -22075,32 +22082,32 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 0,
-                "of": 5,
+                "of": 7,
                 "pct": 0.0
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 5,
-                "total_pts_right": 160.8,
-                "total_pts_wrong": 0.0,
-                "net_pts": 160.8,
-                "median_per_fire": 30.8,
+                "n": 7,
+                "total_pts_right": 184.6,
+                "total_pts_wrong": -70.3,
+                "net_pts": 114.3,
+                "median_per_fire": 23.8,
                 "horizon_marks_net": {
-                  "5": -13.9,
-                  "10": 67.8,
-                  "20": 51.9,
-                  "30": 146.2
+                  "5": -37.0,
+                  "10": 24.6,
+                  "20": 7.2,
+                  "30": 102.7
                 }
               },
-              "n_fires": 5,
+              "n_fires": 7,
               "precision": {
                 "hits": 0,
-                "of": 5,
+                "of": 7,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 0,
-                "of": 9,
+                "of": 10,
                 "pct": 0.0
               },
               "earliness": {
@@ -22109,9 +22116,9 @@
               },
               "best_call": null,
               "worst_false_alarm": {
-                "ts": "2026-08-19 16:02:00+00:00",
-                "dir": -1,
-                "adverse_pts": 39.5
+                "ts": "2026-08-21 15:56:00+00:00",
+                "dir": 1,
+                "adverse_pts": 70.3
               }
             },
             "S0-H7 (either-dir)": {
@@ -22122,21 +22129,21 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 1,
-                "of": 5,
-                "pct": 20.0
+                "of": 7,
+                "pct": 14.3
               },
               "participation_capture_median_pts": null,
               "payoff": null,
-              "n_fires": 5,
+              "n_fires": 7,
               "precision": {
                 "hits": 0,
-                "of": 5,
+                "of": 7,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 10,
+                "pct": 10.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 108.2,
@@ -22151,9 +22158,9 @@
                 "major": false
               },
               "worst_false_alarm": {
-                "ts": "2026-08-19 16:02:00+00:00",
-                "dir": -1,
-                "adverse_pts": 39.5
+                "ts": "2026-08-21 15:56:00+00:00",
+                "dir": 1,
+                "adverse_pts": 70.3
               }
             },
             "S0-H8": {
@@ -22177,8 +22184,8 @@
               },
               "coverage": {
                 "covered": 6,
-                "of": 9,
-                "pct": 66.7
+                "of": 10,
+                "pct": 60.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 44.0,
@@ -22231,8 +22238,8 @@
               },
               "coverage": {
                 "covered": 4,
-                "of": 9,
-                "pct": 44.4
+                "of": 10,
+                "pct": 40.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 70.6,
@@ -22290,8 +22297,8 @@
               },
               "coverage": {
                 "covered": 5,
-                "of": 9,
-                "pct": 55.6
+                "of": 10,
+                "pct": 50.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 50.6,
@@ -22344,8 +22351,8 @@
               },
               "coverage": {
                 "covered": 1,
-                "of": 9,
-                "pct": 11.1
+                "of": 10,
+                "pct": 10.0
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 56.7,
@@ -22368,17 +22375,17 @@
             "_union": {
               "source": "post_go_live_replay/ny_only",
               "episodes_covered_by_any_row": 9,
-              "of": 9,
-              "pct": 100.0
+              "of": 10,
+              "pct": 90.0
             },
             "_moves": {
               "source": "post_go_live_replay/ny_only",
-              "n_qualifying_episodes": 9,
+              "n_qualifying_episodes": 10,
               "n_major": 0,
-              "bar_qualify_base_rate_pct": 12.6,
-              "per_direction_base_rate_pct": 6.3,
-              "initiation_base_either_pct": 32.7,
-              "initiation_base_per_direction_pct": 19.1,
+              "bar_qualify_base_rate_pct": 10.8,
+              "per_direction_base_rate_pct": 5.4,
+              "initiation_base_either_pct": 31.5,
+              "initiation_base_per_direction_pct": 18.1,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -22627,8 +22634,8 @@
             "S0-H6": {
               "source": "post_go_live_replay/dead",
               "grading": "directional",
-              "conditioned_chance_pct": 20.8,
-              "conditioned_chance_init_pct": 25.0,
+              "conditioned_chance_pct": 19.2,
+              "conditioned_chance_init_pct": 23.1,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 0,
@@ -22916,10 +22923,10 @@
               "source": "post_go_live_replay/dead",
               "n_qualifying_episodes": 6,
               "n_major": 2,
-              "bar_qualify_base_rate_pct": 23.6,
-              "per_direction_base_rate_pct": 12.4,
-              "initiation_base_either_pct": 42.0,
-              "initiation_base_per_direction_pct": 24.1,
+              "bar_qualify_base_rate_pct": 22.8,
+              "per_direction_base_rate_pct": 12.0,
+              "initiation_base_either_pct": 40.6,
+              "initiation_base_per_direction_pct": 23.3,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -23704,7 +23711,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 55,
+              "of": 56,
               "pct": 0.0
             },
             "earliness": {
@@ -23736,17 +23743,17 @@
           "_union": {
             "source": "post_go_live_replay",
             "episodes_covered_by_any_row": 0,
-            "of": 55,
+            "of": 56,
             "pct": 0.0
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 55,
+            "n_qualifying_episodes": 56,
             "n_major": 15,
-            "bar_qualify_base_rate_pct": 42.3,
-            "per_direction_base_rate_pct": 22.1,
-            "initiation_base_either_pct": 43.0,
-            "initiation_base_per_direction_pct": 23.0,
+            "bar_qualify_base_rate_pct": 40.7,
+            "per_direction_base_rate_pct": 21.3,
+            "initiation_base_either_pct": 42.2,
+            "initiation_base_per_direction_pct": 22.5,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -23760,14 +23767,14 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "860f648b9be7c631c860c5a66ef79e761d877b94",
+      "engine_commit": "bcfdc80a68f864aa1d11a58db69e59cb929eb1ab",
       "instrument": "us30fut",
       "pair": "us30",
       "status": "provisional",
       "volume_type": "real futures volume (register 40 first-sync sanity; canonical verdict at this instrument's validation evening)",
       "store_span_1min": [
         "2026-07-19 22:02:00+00:00",
-        "2026-08-21 15:56:00+00:00"
+        "2026-08-21 20:29:00+00:00"
       ],
       "yardsticks": [
         "qualifying_move (registry: operator ratification 2026-08-18)",
@@ -23860,9 +23867,9 @@
             },
             "n_fires": 154,
             "precision": {
-              "hits": 39,
+              "hits": 37,
               "of": 154,
-              "pct": 25.3
+              "pct": 24.0
             },
             "coverage": {
               "covered": 11,
@@ -24606,7 +24613,7 @@
             "source": "backtest_replay",
             "n_qualifying_episodes": 110,
             "n_major": 37,
-            "bar_qualify_base_rate_pct": 44.6,
+            "bar_qualify_base_rate_pct": 44.5,
             "per_direction_base_rate_pct": 23.9,
             "initiation_base_either_pct": 39.3,
             "initiation_base_per_direction_pct": 21.2,
@@ -24622,33 +24629,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 13,
-              "of": 65,
-              "pct": 20.0
+              "of": 66,
+              "pct": 19.7
             },
             "participation_capture_median_pts": 54.8,
             "payoff": {
-              "n": 65,
+              "n": 66,
               "total_pts_right": 1200.0,
-              "total_pts_wrong": -2040.5,
-              "net_pts": -840.5,
-              "median_per_fire": 0.5,
+              "total_pts_wrong": -2062.0,
+              "net_pts": -862.0,
+              "median_per_fire": -1.25,
               "horizon_marks_net": {
-                "5": -57.0,
-                "10": -87.0,
-                "20": -276.0,
-                "30": -453.0
+                "5": -52.5,
+                "10": -105.5,
+                "20": -304.5,
+                "30": -455.5
               }
             },
-            "n_fires": 65,
+            "n_fires": 66,
             "precision": {
               "hits": 22,
-              "of": 65,
-              "pct": 33.8
+              "of": 66,
+              "pct": 33.3
             },
             "coverage": {
               "covered": 10,
-              "of": 48,
-              "pct": 20.8
+              "of": 51,
+              "pct": 19.6
             },
             "earliness": {
               "median_pts_remaining_at_fire": 87.2,
@@ -24679,7 +24686,7 @@
               "of": 156,
               "pct": 16.0
             },
-            "participation_capture_median_pts": 56.5,
+            "participation_capture_median_pts": 56.0,
             "payoff": {
               "n": 156,
               "total_pts_right": 2315.4,
@@ -24695,14 +24702,14 @@
             },
             "n_fires": 156,
             "precision": {
-              "hits": 31,
+              "hits": 32,
               "of": 156,
-              "pct": 19.9
+              "pct": 20.5
             },
             "coverage": {
               "covered": 12,
-              "of": 48,
-              "pct": 25.0
+              "of": 51,
+              "pct": 23.5
             },
             "earliness": {
               "median_pts_remaining_at_fire": 64.0,
@@ -24729,38 +24736,38 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 65,
-              "of": 306,
+              "hits": 68,
+              "of": 321,
               "pct": 21.2
             },
-            "participation_capture_median_pts": 65.2,
+            "participation_capture_median_pts": 71.5,
             "payoff": {
-              "n": 306,
-              "total_pts_right": 5233.7,
-              "total_pts_wrong": -5603.6,
-              "net_pts": -369.9,
+              "n": 321,
+              "total_pts_right": 5972.2,
+              "total_pts_wrong": -6114.6,
+              "net_pts": -142.4,
               "median_per_fire": -5.0,
               "horizon_marks_net": {
-                "5": -1115.3,
-                "10": -1135.4,
-                "20": -1250.1,
-                "30": -721.1
+                "5": -1134.3,
+                "10": -1169.9,
+                "20": -1156.1,
+                "30": -680.1
               }
             },
-            "n_fires": 306,
+            "n_fires": 321,
             "precision": {
-              "hits": 82,
-              "of": 306,
-              "pct": 26.8
+              "hits": 90,
+              "of": 321,
+              "pct": 28.0
             },
             "coverage": {
-              "covered": 25,
-              "of": 48,
-              "pct": 52.1
+              "covered": 27,
+              "of": 51,
+              "pct": 52.9
             },
             "earliness": {
               "median_pts_remaining_at_fire": 41.5,
-              "n": 25
+              "n": 27
             },
             "best_call": {
               "ts": "2026-08-19 09:21:00+00:00",
@@ -24794,33 +24801,33 @@
             "conditioned_class": null,
             "initiation": {
               "hits": 40,
-              "of": 224,
-              "pct": 17.9
+              "of": 225,
+              "pct": 17.8
             },
             "participation_capture_median_pts": 67.8,
             "payoff": {
-              "n": 224,
+              "n": 225,
               "total_pts_right": 4847.8,
-              "total_pts_wrong": -4317.2,
-              "net_pts": 530.6,
-              "median_per_fire": -0.75,
+              "total_pts_wrong": -4369.2,
+              "net_pts": 478.6,
+              "median_per_fire": -1.0,
               "horizon_marks_net": {
-                "5": -21.2,
-                "10": -40.5,
-                "20": 183.5,
-                "30": 35.1
+                "5": -32.2,
+                "10": -53.5,
+                "20": 188.5,
+                "30": 19.1
               }
             },
-            "n_fires": 224,
+            "n_fires": 225,
             "precision": {
               "hits": 62,
-              "of": 224,
-              "pct": 27.7
+              "of": 225,
+              "pct": 27.6
             },
             "coverage": {
               "covered": 19,
-              "of": 48,
-              "pct": 39.6
+              "of": 51,
+              "pct": 37.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 53.5,
@@ -24873,7 +24880,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 48,
+              "of": 51,
               "pct": 0.0
             },
             "earliness": {
@@ -24925,7 +24932,7 @@
             },
             "coverage": {
               "covered": 0,
-              "of": 48,
+              "of": 51,
               "pct": 0.0
             },
             "earliness": {
@@ -24938,21 +24945,21 @@
           "S0-H6": {
             "source": "post_go_live_replay",
             "grading": "directional",
-            "conditioned_chance_pct": 41.4,
-            "conditioned_chance_init_pct": 15.9,
+            "conditioned_chance_pct": 41.2,
+            "conditioned_chance_init_pct": 16.2,
             "conditioned_class": "wide_bar_p90_trailing_day",
             "initiation": {
-              "hits": 10,
+              "hits": 11,
               "of": 47,
-              "pct": 21.3
+              "pct": 23.4
             },
             "participation_capture_median_pts": 88.5,
             "payoff": {
               "n": 47,
-              "total_pts_right": 876.0,
-              "total_pts_wrong": -1473.0,
-              "net_pts": -597.0,
-              "median_per_fire": -14.5,
+              "total_pts_right": 908.5,
+              "total_pts_wrong": -1431.5,
+              "net_pts": -523.0,
+              "median_per_fire": -11.5,
               "horizon_marks_net": {
                 "5": 187.9,
                 "10": 143.5,
@@ -24967,13 +24974,13 @@
               "pct": 40.4
             },
             "coverage": {
-              "covered": 5,
-              "of": 48,
-              "pct": 10.4
+              "covered": 6,
+              "of": 51,
+              "pct": 11.8
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 99.4,
-              "n": 5
+              "median_pts_remaining_at_fire": 98.0,
+              "n": 6
             },
             "best_call": {
               "ts": "2026-08-20 12:09:00+00:00",
@@ -24996,38 +25003,38 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 7,
-              "of": 36,
-              "pct": 19.4
+              "hits": 8,
+              "of": 38,
+              "pct": 21.1
             },
             "participation_capture_median_pts": 70.0,
             "payoff": {
-              "n": 36,
-              "total_pts_right": 1158.0,
-              "total_pts_wrong": -771.5,
-              "net_pts": 386.5,
+              "n": 38,
+              "total_pts_right": 1241.0,
+              "total_pts_wrong": -814.5,
+              "net_pts": 426.5,
               "median_per_fire": 4.75,
               "horizon_marks_net": {
-                "5": 77.5,
-                "10": 228.0,
-                "20": 245.5,
-                "30": -6.5
+                "5": 102.5,
+                "10": 266.5,
+                "20": 290.0,
+                "30": 33.0
               }
             },
-            "n_fires": 36,
+            "n_fires": 38,
             "precision": {
               "hits": 12,
-              "of": 36,
-              "pct": 33.3
+              "of": 38,
+              "pct": 31.6
             },
             "coverage": {
-              "covered": 7,
-              "of": 48,
-              "pct": 14.6
+              "covered": 8,
+              "of": 51,
+              "pct": 15.7
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 33.5,
-              "n": 7
+              "median_pts_remaining_at_fire": 45.0,
+              "n": 8
             },
             "best_call": {
               "ts": "2026-08-19 13:56:00+00:00",
@@ -25050,26 +25057,26 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 11,
-              "of": 36,
-              "pct": 30.6
+              "hits": 12,
+              "of": 38,
+              "pct": 31.6
             },
             "participation_capture_median_pts": 36.0,
             "payoff": null,
-            "n_fires": 36,
+            "n_fires": 38,
             "precision": {
               "hits": 20,
-              "of": 36,
-              "pct": 55.6
+              "of": 38,
+              "pct": 52.6
             },
             "coverage": {
-              "covered": 12,
-              "of": 48,
-              "pct": 25.0
+              "covered": 13,
+              "of": 51,
+              "pct": 25.5
             },
             "earliness": {
-              "median_pts_remaining_at_fire": 56.2,
-              "n": 12
+              "median_pts_remaining_at_fire": 56.5,
+              "n": 13
             },
             "best_call": {
               "ts": "2026-08-21 03:52:00+00:00",
@@ -25092,26 +25099,26 @@
             "conditioned_chance_init_pct": null,
             "conditioned_class": null,
             "initiation": {
-              "hits": 76,
-              "of": 224,
-              "pct": 33.9
+              "hits": 77,
+              "of": 225,
+              "pct": 34.2
             },
             "participation_capture_median_pts": 42.5,
             "payoff": null,
-            "n_fires": 224,
+            "n_fires": 225,
             "precision": {
               "hits": 110,
-              "of": 224,
-              "pct": 49.1
+              "of": 225,
+              "pct": 48.9
             },
             "coverage": {
-              "covered": 28,
-              "of": 48,
-              "pct": 58.3
+              "covered": 29,
+              "of": 51,
+              "pct": 56.9
             },
             "earliness": {
               "median_pts_remaining_at_fire": 53.5,
-              "n": 28
+              "n": 29
             },
             "best_call": {
               "ts": "2026-08-20 09:10:00+00:00",
@@ -25160,8 +25167,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 48,
-              "pct": 2.1
+              "of": 51,
+              "pct": 2.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 64.9,
@@ -25214,8 +25221,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 48,
-              "pct": 2.1
+              "of": 51,
+              "pct": 2.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 4.0,
@@ -25268,8 +25275,8 @@
             },
             "coverage": {
               "covered": 19,
-              "of": 48,
-              "pct": 39.6
+              "of": 51,
+              "pct": 37.3
             },
             "earliness": {
               "median_pts_remaining_at_fire": 53.5,
@@ -25322,8 +25329,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 48,
-              "pct": 2.1
+              "of": 51,
+              "pct": 2.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 64.9,
@@ -25345,18 +25352,18 @@
           },
           "_union": {
             "source": "post_go_live_replay",
-            "episodes_covered_by_any_row": 44,
-            "of": 48,
-            "pct": 91.7
+            "episodes_covered_by_any_row": 47,
+            "of": 51,
+            "pct": 92.2
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 48,
-            "n_major": 16,
-            "bar_qualify_base_rate_pct": 44.8,
-            "per_direction_base_rate_pct": 23.6,
-            "initiation_base_either_pct": 37.9,
-            "initiation_base_per_direction_pct": 20.8,
+            "n_qualifying_episodes": 51,
+            "n_major": 15,
+            "bar_qualify_base_rate_pct": 44.4,
+            "per_direction_base_rate_pct": 23.3,
+            "initiation_base_either_pct": 38.9,
+            "initiation_base_per_direction_pct": 21.3,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
@@ -25783,8 +25790,8 @@
             "S0-H6": {
               "source": "backtest_replay/london",
               "grading": "directional",
-              "conditioned_chance_pct": 40.9,
-              "conditioned_chance_init_pct": 20.0,
+              "conditioned_chance_pct": 40.8,
+              "conditioned_chance_init_pct": 19.9,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
                 "hits": 5,
@@ -26177,7 +26184,7 @@
               "source": "backtest_replay/london",
               "n_qualifying_episodes": 36,
               "n_major": 15,
-              "bar_qualify_base_rate_pct": 65.8,
+              "bar_qualify_base_rate_pct": 65.9,
               "per_direction_base_rate_pct": 36.3,
               "initiation_base_either_pct": 45.2,
               "initiation_base_per_direction_pct": 24.5,
@@ -26683,7 +26690,7 @@
               "source": "backtest_replay/overlap",
               "n_qualifying_episodes": 5,
               "n_major": 2,
-              "bar_qualify_base_rate_pct": 60.2,
+              "bar_qualify_base_rate_pct": 60.3,
               "per_direction_base_rate_pct": 32.7,
               "initiation_base_either_pct": 22.8,
               "initiation_base_per_direction_pct": 11.4,
@@ -26756,7 +26763,7 @@
                 "of": 26,
                 "pct": 15.4
               },
-              "participation_capture_median_pts": 79.4,
+              "participation_capture_median_pts": 80.9,
               "payoff": {
                 "n": 26,
                 "total_pts_right": 911.0,
@@ -26772,9 +26779,9 @@
               },
               "n_fires": 26,
               "precision": {
-                "hits": 6,
+                "hits": 4,
                 "of": 26,
-                "pct": 23.1
+                "pct": 15.4
               },
               "coverage": {
                 "covered": 1,
@@ -26935,7 +26942,7 @@
             "S0-H6": {
               "source": "backtest_replay/ny_only",
               "grading": "directional",
-              "conditioned_chance_pct": 41.4,
+              "conditioned_chance_pct": 41.9,
               "conditioned_chance_init_pct": 5.4,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
@@ -27280,9 +27287,9 @@
               "source": "backtest_replay/ny_only",
               "n_qualifying_episodes": 19,
               "n_major": 4,
-              "bar_qualify_base_rate_pct": 26.3,
-              "per_direction_base_rate_pct": 13.6,
-              "initiation_base_either_pct": 35.1,
+              "bar_qualify_base_rate_pct": 26.1,
+              "per_direction_base_rate_pct": 13.5,
+              "initiation_base_either_pct": 35.3,
               "initiation_base_per_direction_pct": 19.2,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
@@ -28626,7 +28633,7 @@
                 "of": 41,
                 "pct": 24.4
               },
-              "participation_capture_median_pts": 80.5,
+              "participation_capture_median_pts": 74.0,
               "payoff": {
                 "n": 41,
                 "total_pts_right": 885.5,
@@ -28642,9 +28649,9 @@
               },
               "n_fires": 41,
               "precision": {
-                "hits": 14,
+                "hits": 15,
                 "of": 41,
-                "pct": 34.1
+                "pct": 36.6
               },
               "coverage": {
                 "covered": 3,
@@ -29370,10 +29377,10 @@
               "participation_capture_median_pts": 128.5,
               "payoff": {
                 "n": 32,
-                "total_pts_right": 1312.5,
-                "total_pts_wrong": -1097.5,
-                "net_pts": 215.0,
-                "median_per_fire": 5.5,
+                "total_pts_right": 1275.5,
+                "total_pts_wrong": -1127.5,
+                "net_pts": 148.0,
+                "median_per_fire": -16.25,
                 "horizon_marks_net": {
                   "5": -258.5,
                   "10": -158.9,
@@ -29493,20 +29500,20 @@
               "source": "post_go_live_replay/overlap",
               "grading": "directional",
               "conditioned_chance_pct": 40.4,
-              "conditioned_chance_init_pct": 9.0,
+              "conditioned_chance_init_pct": 10.1,
               "conditioned_class": "wide_bar_p90_trailing_day",
               "initiation": {
-                "hits": 6,
+                "hits": 7,
                 "of": 24,
-                "pct": 25.0
+                "pct": 29.2
               },
               "participation_capture_median_pts": 82.5,
               "payoff": {
                 "n": 24,
-                "total_pts_right": 149.0,
-                "total_pts_wrong": -1063.5,
-                "net_pts": -914.5,
-                "median_per_fire": -40.25,
+                "total_pts_right": 181.5,
+                "total_pts_wrong": -1022.0,
+                "net_pts": -840.5,
+                "median_per_fire": -31.5,
                 "horizon_marks_net": {
                   "5": 109.9,
                   "10": 104.5,
@@ -29762,8 +29769,8 @@
               "n_major": 0,
               "bar_qualify_base_rate_pct": 57.8,
               "per_direction_base_rate_pct": 30.5,
-              "initiation_base_either_pct": 18.6,
-              "initiation_base_per_direction_pct": 9.9,
+              "initiation_base_either_pct": 25.6,
+              "initiation_base_per_direction_pct": 13.8,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -29776,33 +29783,33 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 1,
-                "of": 2,
-                "pct": 50.0
+                "of": 3,
+                "pct": 33.3
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 2,
+                "n": 3,
                 "total_pts_right": 61.0,
-                "total_pts_wrong": 0.0,
-                "net_pts": 61.0,
-                "median_per_fire": 30.5,
+                "total_pts_wrong": -21.5,
+                "net_pts": 39.5,
+                "median_per_fire": 2.5,
                 "horizon_marks_net": {
-                  "5": 59.0,
-                  "10": 41.5,
-                  "20": 50.5,
-                  "30": 49.5
+                  "5": 63.5,
+                  "10": 23.0,
+                  "20": 22.0,
+                  "30": 47.0
                 }
               },
-              "n_fires": 2,
+              "n_fires": 3,
               "precision": {
                 "hits": 0,
-                "of": 2,
+                "of": 3,
                 "pct": 0.0
               },
               "coverage": {
                 "covered": 1,
-                "of": 10,
-                "pct": 10.0
+                "of": 13,
+                "pct": 7.7
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 78.0,
@@ -29817,9 +29824,9 @@
                 "major": false
               },
               "worst_false_alarm": {
-                "ts": "2026-08-19 18:08:00+00:00",
-                "dir": 1,
-                "adverse_pts": 13.5
+                "ts": "2026-08-21 16:22:00+00:00",
+                "dir": -1,
+                "adverse_pts": 42.5
               }
             },
             "S0-H10": {
@@ -29855,8 +29862,8 @@
               },
               "coverage": {
                 "covered": 3,
-                "of": 10,
-                "pct": 30.0
+                "of": 13,
+                "pct": 23.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 90.5,
@@ -29865,10 +29872,10 @@
               "best_call": {
                 "ts": "2026-08-17 15:51:00+00:00",
                 "dir": -1,
-                "episode_start": "2026-08-17 16:22:00+00:00",
+                "episode_start": "2026-08-17 16:18:00+00:00",
                 "pts_remaining_at_fire": 122.0,
-                "episode_total_pts": 212.0,
-                "major": true
+                "episode_total_pts": 203.0,
+                "major": false
               },
               "worst_false_alarm": {
                 "ts": "2026-08-17 16:24:00+00:00",
@@ -29883,45 +29890,45 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 4,
-                "of": 22,
-                "pct": 18.2
+                "hits": 7,
+                "of": 36,
+                "pct": 19.4
               },
-              "participation_capture_median_pts": 75.5,
+              "participation_capture_median_pts": 109.5,
               "payoff": {
-                "n": 22,
-                "total_pts_right": 328.5,
-                "total_pts_wrong": -598.0,
-                "net_pts": -269.5,
+                "n": 36,
+                "total_pts_right": 1097.5,
+                "total_pts_wrong": -1079.0,
+                "net_pts": 18.5,
                 "median_per_fire": -7.75,
                 "horizon_marks_net": {
-                  "5": -35.5,
-                  "10": -118.0,
-                  "20": -273.0,
-                  "30": -258.0
+                  "5": -54.5,
+                  "10": -152.5,
+                  "20": -179.0,
+                  "30": -217.0
                 }
               },
-              "n_fires": 22,
+              "n_fires": 36,
               "precision": {
-                "hits": 2,
-                "of": 22,
-                "pct": 9.1
+                "hits": 10,
+                "of": 36,
+                "pct": 27.8
               },
               "coverage": {
-                "covered": 4,
-                "of": 10,
-                "pct": 40.0
+                "covered": 6,
+                "of": 13,
+                "pct": 46.2
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 53.8,
-                "n": 4
+                "n": 6
               },
               "best_call": {
-                "ts": "2026-08-14 17:10:00+00:00",
+                "ts": "2026-08-21 17:47:00+00:00",
                 "dir": 1,
-                "episode_start": "2026-08-14 17:37:00+00:00",
-                "pts_remaining_at_fire": 107.5,
-                "episode_total_pts": 104.5,
+                "episode_start": "2026-08-21 17:55:00+00:00",
+                "pts_remaining_at_fire": 146.5,
+                "episode_total_pts": 160.5,
                 "major": false
               },
               "worst_false_alarm": {
@@ -29948,33 +29955,33 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 8,
-                "of": 26,
-                "pct": 30.8
+                "of": 27,
+                "pct": 29.6
               },
               "participation_capture_median_pts": 96.5,
               "payoff": {
-                "n": 26,
+                "n": 27,
                 "total_pts_right": 336.5,
-                "total_pts_wrong": -601.5,
-                "net_pts": -265.0,
-                "median_per_fire": -5.0,
+                "total_pts_wrong": -653.5,
+                "net_pts": -317.0,
+                "median_per_fire": -6.5,
                 "horizon_marks_net": {
-                  "5": -176.0,
-                  "10": -176.0,
-                  "20": -197.5,
-                  "30": -353.0
+                  "5": -187.0,
+                  "10": -189.0,
+                  "20": -192.5,
+                  "30": -369.0
                 }
               },
-              "n_fires": 26,
+              "n_fires": 27,
               "precision": {
                 "hits": 1,
-                "of": 26,
-                "pct": 3.8
+                "of": 27,
+                "pct": 3.7
               },
               "coverage": {
                 "covered": 3,
-                "of": 10,
-                "pct": 30.0
+                "of": 13,
+                "pct": 23.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 79.5,
@@ -30021,51 +30028,51 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 2,
-                "of": 8,
-                "pct": 25.0
+                "hits": 3,
+                "of": 10,
+                "pct": 30.0
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 8,
-                "total_pts_right": 184.0,
-                "total_pts_wrong": -60.0,
-                "net_pts": 124.0,
+                "n": 10,
+                "total_pts_right": 267.0,
+                "total_pts_wrong": -103.0,
+                "net_pts": 164.0,
                 "median_per_fire": 16.0,
                 "horizon_marks_net": {
-                  "5": 38.5,
-                  "10": 67.0,
-                  "20": 27.5,
-                  "30": -31.0
+                  "5": 63.5,
+                  "10": 105.5,
+                  "20": 72.0,
+                  "30": 8.5
                 }
               },
-              "n_fires": 8,
+              "n_fires": 10,
               "precision": {
                 "hits": 0,
-                "of": 8,
+                "of": 10,
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 2,
-                "of": 10,
-                "pct": 20.0
+                "covered": 3,
+                "of": 13,
+                "pct": 23.1
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 79.8,
-                "n": 2
+                "median_pts_remaining_at_fire": 103.0,
+                "n": 3
               },
               "best_call": {
-                "ts": "2026-08-20 18:37:00+00:00",
-                "dir": -1,
-                "episode_start": "2026-08-20 19:16:00+00:00",
-                "pts_remaining_at_fire": 103.0,
-                "episode_total_pts": 104.5,
+                "ts": "2026-08-21 17:53:00+00:00",
+                "dir": 1,
+                "episode_start": "2026-08-21 17:55:00+00:00",
+                "pts_remaining_at_fire": 162.5,
+                "episode_total_pts": 160.5,
                 "major": false
               },
               "worst_false_alarm": {
-                "ts": "2026-08-18 18:14:00+00:00",
-                "dir": -1,
-                "adverse_pts": 36.5
+                "ts": "2026-08-21 19:27:00+00:00",
+                "dir": 1,
+                "adverse_pts": 43.0
               }
             },
             "S0-H7 (either-dir)": {
@@ -30075,26 +30082,26 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 4,
-                "of": 8,
+                "hits": 5,
+                "of": 10,
                 "pct": 50.0
               },
               "participation_capture_median_pts": null,
               "payoff": null,
-              "n_fires": 8,
+              "n_fires": 10,
               "precision": {
                 "hits": 0,
-                "of": 8,
+                "of": 10,
                 "pct": 0.0
               },
               "coverage": {
-                "covered": 4,
-                "of": 10,
-                "pct": 40.0
+                "covered": 5,
+                "of": 13,
+                "pct": 38.5
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 79.8,
-                "n": 4
+                "median_pts_remaining_at_fire": 103.0,
+                "n": 5
               },
               "best_call": {
                 "ts": "2026-08-20 15:45:00+00:00",
@@ -30105,9 +30112,9 @@
                 "major": false
               },
               "worst_false_alarm": {
-                "ts": "2026-08-18 18:14:00+00:00",
-                "dir": -1,
-                "adverse_pts": 36.5
+                "ts": "2026-08-21 19:27:00+00:00",
+                "dir": 1,
+                "adverse_pts": 43.0
               }
             },
             "S0-H8": {
@@ -30117,26 +30124,26 @@
               "conditioned_chance_init_pct": null,
               "conditioned_class": null,
               "initiation": {
-                "hits": 13,
-                "of": 26,
-                "pct": 50.0
+                "hits": 14,
+                "of": 27,
+                "pct": 51.9
               },
               "participation_capture_median_pts": 8.0,
               "payoff": null,
-              "n_fires": 26,
+              "n_fires": 27,
               "precision": {
                 "hits": 3,
-                "of": 26,
-                "pct": 11.5
+                "of": 27,
+                "pct": 11.1
               },
               "coverage": {
-                "covered": 4,
-                "of": 10,
-                "pct": 40.0
+                "covered": 5,
+                "of": 13,
+                "pct": 38.5
               },
               "earliness": {
-                "median_pts_remaining_at_fire": 77.2,
-                "n": 4
+                "median_pts_remaining_at_fire": 79.0,
+                "n": 5
               },
               "best_call": {
                 "ts": "2026-08-20 15:52:00+00:00",
@@ -30185,7 +30192,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 13,
                 "pct": 0.0
               },
               "earliness": {
@@ -30237,8 +30244,8 @@
               },
               "coverage": {
                 "covered": 3,
-                "of": 10,
-                "pct": 30.0
+                "of": 13,
+                "pct": 23.1
               },
               "earliness": {
                 "median_pts_remaining_at_fire": 79.5,
@@ -30291,7 +30298,7 @@
               },
               "coverage": {
                 "covered": 0,
-                "of": 10,
+                "of": 13,
                 "pct": 0.0
               },
               "earliness": {
@@ -30307,18 +30314,18 @@
             },
             "_union": {
               "source": "post_go_live_replay/ny_only",
-              "episodes_covered_by_any_row": 9,
-              "of": 10,
-              "pct": 90.0
+              "episodes_covered_by_any_row": 11,
+              "of": 13,
+              "pct": 84.6
             },
             "_moves": {
               "source": "post_go_live_replay/ny_only",
-              "n_qualifying_episodes": 10,
-              "n_major": 1,
-              "bar_qualify_base_rate_pct": 19.9,
-              "per_direction_base_rate_pct": 9.9,
-              "initiation_base_either_pct": 36.7,
-              "initiation_base_per_direction_pct": 19.5,
+              "n_qualifying_episodes": 13,
+              "n_major": 0,
+              "bar_qualify_base_rate_pct": 22.5,
+              "per_direction_base_rate_pct": 11.2,
+              "initiation_base_either_pct": 39.3,
+              "initiation_base_per_direction_pct": 20.6,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -30432,15 +30439,15 @@
               "conditioned_class": null,
               "initiation": {
                 "hits": 3,
-                "of": 25,
-                "pct": 12.0
+                "of": 26,
+                "pct": 11.5
               },
               "participation_capture_median_pts": null,
               "payoff": {
-                "n": 25,
-                "total_pts_right": 26.0,
+                "n": 26,
+                "total_pts_right": 32.5,
                 "total_pts_wrong": -243.1,
-                "net_pts": -217.1,
+                "net_pts": -210.6,
                 "median_per_fire": -7.0,
                 "horizon_marks_net": {
                   "5": -50.5,
@@ -30449,10 +30456,10 @@
                   "30": -228.4
                 }
               },
-              "n_fires": 25,
+              "n_fires": 26,
               "precision": {
                 "hits": 0,
-                "of": 25,
+                "of": 26,
                 "pct": 0.0
               },
               "coverage": {
@@ -30800,10 +30807,10 @@
               "source": "post_go_live_replay/dead",
               "n_qualifying_episodes": 2,
               "n_major": 1,
-              "bar_qualify_base_rate_pct": 6.6,
-              "per_direction_base_rate_pct": 3.3,
-              "initiation_base_either_pct": 30.5,
-              "initiation_base_per_direction_pct": 17.1,
+              "bar_qualify_base_rate_pct": 6.3,
+              "per_direction_base_rate_pct": 3.2,
+              "initiation_base_either_pct": 29.5,
+              "initiation_base_per_direction_pct": 16.5,
               "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
             }
           },
@@ -31577,7 +31584,7 @@
             "source": "backtest_replay",
             "n_qualifying_episodes": 110,
             "n_major": 37,
-            "bar_qualify_base_rate_pct": 44.6,
+            "bar_qualify_base_rate_pct": 44.5,
             "per_direction_base_rate_pct": 23.9,
             "initiation_base_either_pct": 39.3,
             "initiation_base_per_direction_pct": 21.2,
@@ -31623,8 +31630,8 @@
             },
             "coverage": {
               "covered": 1,
-              "of": 48,
-              "pct": 2.1
+              "of": 51,
+              "pct": 2.0
             },
             "earliness": {
               "median_pts_remaining_at_fire": 56.0,
@@ -31662,17 +31669,17 @@
           "_union": {
             "source": "post_go_live_replay",
             "episodes_covered_by_any_row": 1,
-            "of": 48,
-            "pct": 2.1
+            "of": 51,
+            "pct": 2.0
           },
           "_moves": {
             "source": "post_go_live_replay",
-            "n_qualifying_episodes": 48,
-            "n_major": 16,
-            "bar_qualify_base_rate_pct": 44.8,
-            "per_direction_base_rate_pct": 23.6,
-            "initiation_base_either_pct": 37.9,
-            "initiation_base_per_direction_pct": 20.8,
+            "n_qualifying_episodes": 51,
+            "n_major": 15,
+            "bar_qualify_base_rate_pct": 44.4,
+            "per_direction_base_rate_pct": 23.3,
+            "initiation_base_either_pct": 38.9,
+            "initiation_base_per_direction_pct": 21.3,
             "base_rate_note": "directional precision reads against per_direction; either-direction rows against bar_qualify (this context's own rates)"
           }
         }
