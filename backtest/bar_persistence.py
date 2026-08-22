@@ -318,10 +318,16 @@ def _emit(results, head):
          "the close of bar+k, k ∈ {1…10}, cumulative and incremental, "
          "gross and net (spread charged once at entry). PURPOSE: peak-k "
          "and the incremental sign-flip bar are the mechanical inputs a "
-         "scalp recipe's time-exit would cite — and no recipe registers "
-         "without its question grading YES (Q2-H" + str(6) + ", "
-         "register 64). The md prints cumulative net medians at "
-         "k ∈ {1,3,5,10} and peak-k; full curves in the JSON.", ""]
+         "scalp recipe's TIME-EXIT would cite; the reach columns are "
+         "what a TARGET-BASED recipe (resting order at the level; touch "
+         "= fill, queue-risk optimism stated) would cite. THE TWO "
+         "COLUMNS NOMINATE DIFFERENT HARVEST MECHANICS BY CONSTRUCTION "
+         "(register 64 amendment): wick-based reach pays a resting "
+         "order, close-based expectancy pays a time-exit — recipes cite "
+         "which column they live on. No recipe registers without its "
+         "question grading YES (Q2-H" + str(6) + ", register 64). The "
+         "md prints cumulative net medians at k ∈ {1,3,5,10} and "
+         "peak-k; full curves in the JSON.", ""]
     for res in results:
         inst = res["instrument"]
         home = inst == "uk100fut"

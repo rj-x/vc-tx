@@ -200,7 +200,12 @@ entry is a separate decision.
     matched floor's full member range. GRADING: ≥30 forward fires
     (home; away cells post-validation); census conventions
     (net-of-spread reach, ensemble floors). NO SCALP RECIPE registers
-    unless this grades YES. STATUS: pending-conditions.
+    unless this grades YES. IF YES (register 64 amendment, 2026-08-23):
+    the recipe must be TARGET-BASED (resting order at the reach level;
+    touch = fill, queue-risk optimism stated) — the time-exit variant is
+    RULED OUT by the expectancy curve (cumulative net median
+    non-positive at all k; peak-k=2 at −0.10). STATUS:
+    pending-conditions.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
   stay recipe layer in the candidate register).
