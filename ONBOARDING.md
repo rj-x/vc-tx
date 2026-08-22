@@ -704,7 +704,34 @@ set still growing toward fold support).
    harvest program pre-registered (6 counted variants, build queued).
    GLOSSARY.md (~130 terms) + test enforcement: undefined acronyms
    fail the suite. B-TREND empty-first-emission bug caught+fixed
-   (missing debug.structure).
+   (missing debug.structure). ENSEMBLE CORRECTION (register 61): the
+   single-seed +12.2 was the ensemble MAX — true floor median −26.5
+   [range −42.1…+12.2]; S0-H1 +31.55 median@3x home = the ONLY cell
+   above the entire floor range.
+34. Doctrine + bar-persistence (registers 62–63, `03706dd`, 112/112):
+   operator doctrine registered — edge = initiation lift + positive
+   median <=3x + clearance beyond floor's full range; tail-carried
+   cells non-evidence at any n; criteria redrafted on 3 axes (numbers
+   await governance sitting); dashboard doctrine-ordered — bleak
+   honest read: EVERY home hypothesis with a measurable forward 3x
+   cell is inside its floor's noise. Census inversion: S0-H6 (London-
+   misleader, negative every width) = strongest SCALP cell (33.9% net
+   0.5xATR reach in 5 bars, clear of floor range, 3-bar touch) —
+   rejection reflex real, sustained move fails; Q2-H6 minting block
+   sent (scalp thread's first question; no recipe unless YES).
+   Background-fallback note: watcher fired stale, checked-and-stopped
+   correctly; hygiene line sent (fallbacks must never be second
+   authors).
+35. Register 64 (`1055e76`, 113/113): Q2-H6 MINTED (scalp reach
+   persists above floor; clock 25/30 — racing Q1-H6 to be the
+   project's FIRST GRADE); expectancy curve live — sanity: B-RANDOM
+   floor = exactly −1.30 (the spread) at every k, measurement proving
+   itself; H6 tempered: peak-k=2 at −0.10, cumulative net median
+   NEVER positive — touch column (wick/target-order harvest) vs
+   expectancy column (time-exit harvest) nominate different mechanics;
+   design note sent: any Q2-H6-YES recipe must be TARGET-based,
+   time-exit variant already ruled out. One-pen hygiene = register
+   64(3), practiced same turn.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
