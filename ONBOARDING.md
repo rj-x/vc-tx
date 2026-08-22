@@ -677,6 +677,20 @@ set still growing toward fold support).
    clocks, pending decisions, artifact map; points-never-grades.
    Operator still owes: H15 param ratification + R2 approval (recs
    yes/yes), then pure calendar.
+32. Operator results view LIVE (register 59, `ca5d8e7`, 105/105):
+   stop-width ladder R-LADDER-{1.5,2,3,4,5}×ATR(15M) + R-NOSTOP
+   (EOD-only) registered as instrumentation, honest fills, twin-run
+   pinned, runs in Part C. reports/SIGNAL_POINTS.md = the operator
+   page: all 20 signals grouped by hypothesis × ladder × session
+   breakdown, n + median beside every net, conditioned views fenced
+   (session-selections of same trades, stated). Dashboard board now
+   points-first (fwd net @3×, strongest/weakest session). First read:
+   width response real + signal-specific (S0-H1 peaks @3× +350 —
+   matches its excursion shape; S0-H14 catastrophic tight; S0-H6
+   negative all widths per its suppression question); medians negative
+   nearly everywhere (tail-carried nets); n collapses at wide widths.
+   Operator review loop: DASHBOARD → SIGNAL_POINTS → drill only on
+   warrant.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
