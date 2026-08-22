@@ -1,6 +1,6 @@
 # Hypothesis Performance — Per-Instrument
 
-Engine `bcfdc80a6` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
+Engine `01e9d5694` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
 
 ---
 
@@ -10,7 +10,7 @@ Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-21 19:59:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -32,9 +32,13 @@ Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S1-H9 | keep-watching | (°▼i-13.8pp (2/19) · p+23.8pp cap45.0 net+263/med+12.8) | (°▼i-26.0pp (0/8) · p+25.1pp cap57.1 net+148/med+17.8) | (°▲i+3.1pp (1/4) · p-24.3pp cap— net-10/med-2.2) | — |
 | S0-H10 | deprioritize | ▼i-8.9pp (45/293) · p-4.5pp cap27.1 net-240/med-1.4 | ▼i-13.9pp (8/66) · p+2.4pp cap33.2 net-62/med+1.9 | ▲i+2.8pp (24/97) · p-15.0pp cap12.7 net-241/med-2.0 | (°▼i-11.3pp (1/12) · p-11.4pp cap21.5 net+27/med+4.8) |
 | S0-H11 | keep-watching | ▲i+2.9pp (86/316) · p+2.3pp cap32.6 net-647/med-2.4 | ▲i+3.1pp (43/148) · p-1.3pp cap35.0 net+250/med-0.6 | ▼i-2.5pp (13/67) · p-0.4pp cap16.7 net+181/med+3.2 | ▼i-7.5pp (4/33) · p-12.9pp cap20.7 net+157/med+4.8 |
+| S1-H11 | keep-watching | ▼i-5.6pp (29/155) · p-1.0pp cap33.0 net-617/med-0.7 | ·i-1.7pp (9/37) · p-8.7pp cap34.0 net-466/med-15.7 | ▼i-8.0pp (11/79) · p+16.2pp cap14.6 net-178/med+0.5 | ▲i+4.7pp (9/37) · p+4.3pp cap18.0 net-226/med-8.8 |
 | S0-H12 | keep-watching | — | — | — | — |
 | S0-H13 | keep-watching | (°▲i+25.7pp (1/2) · p+26.4pp cap37.0 net+28/med+13.8) | (°▲i+24.0pp (1/2) · p+25.1pp cap37.0 net+28/med+13.8) | (°▼i-21.9pp (0/3) · p+9.0pp cap6.7 net-33/med-6.1) | — |
-| **union coverage** | | 55.8% (101/181) | 53.8% (28/52) | 85.2% (46/54) | 91.7% (11/12) |
+| S0-H14 | keep-watching | ▼i-8.7pp (46/294) · p-9.0pp cap24.8 net-695/med-1.9 | ▼i-9.9pp (10/62) · p-5.5pp cap28.1 net-81/med+3.1 | ·i-1.3pp (21/102) · p-15.5pp cap8.9 net-195/med-1.5 | (°▼i-9.6pp (1/10) · p-8.1pp cap20.5 net+14/med+0.1) |
+| S0-H15 | keep-watching | — | — | — | — |
+| S0-H16 | keep-watching | (°▼i-4.3pp (3/15) · p+3.1pp cap33.4 net+5/med+6.0) | — | (°▲i+18.1pp (2/5) · p-4.3pp cap24.7 net+11/med+1.0) | — |
+| **union coverage** | | 60.8% (110/181) | 59.6% (31/52) | 85.2% (46/54) | 91.7% (11/12) |
 
 ### Dual-convention side-by-side — load-bearing patterns
 
@@ -368,7 +372,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-17 14:08 -24.2pts adverse
 - earliness (backtest): median 21.6 pts of move remaining at fire (n=24)
 
-### H11 — 1 signal
+### H11 — 2 signals
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
@@ -390,6 +394,25 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward best call: 2026-08-17 13:04 +22.8pts remaining (episode 32.3pts)
 - forward worst false alarm: 2026-08-21 13:35 -27.0pts adverse
 - earliness (backtest): median 20.5 pts of move remaining at fire (n=27)
+
+**S1-H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▼i-5.6pp (29/155) · p-1.0pp cap33.0 net-617/med-0.7 | ▼i-8.0pp (11/79) · p+16.2pp cap14.6 net-178/med+0.5 |
+| london | ·i-1.7pp (9/37) · p-8.7pp cap34.0 net-466/med-15.7 | ▲i+4.7pp (9/37) · p+4.3pp cap18.0 net-226/med-8.8 |
+| overlap | ▼i-16.3pp (0/30) · p+3.9pp cap34.5 net+73/med-1.6 | (°▼i-25.8pp (0/9) · p+51.7pp cap24.2 net+46/med+7.0) |
+| ny_only | ▼i-7.0pp (6/42) · p+4.1pp cap20.6 net+75/med+0.7 | (°▼i-18.9pp (0/10) · p-6.0pp cap— net+1/med+2.9) |
+| dead | (°▲i+44.3pp (3/4) · p-17.6pp cap— net-21/med-4.5) | (°·i-0.2pp (2/7) · p+39.4pp cap14.6 net+6/med+2.0) |
+| asia | ·i+1.8pp (11/42) · p+0.8pp cap34.3 net-277/med-0.9 | (°▼i-22.9pp (0/16) · p+19.2pp cap11.0 net-5/med+1.2) |
+
+- backtest payoff: right +1033 / wrong -1650 / net -617 pts; median per fire -0.70 (n=155)
+- backtest best call: 2026-07-24 03:18 +96.3pts remaining (episode 104.3pts, major)
+- backtest worst false alarm: 2026-07-31 07:01 -103.0pts adverse
+- forward payoff: right +320 / wrong -499 / net -178 pts; median per fire +0.50 (n=79)
+- forward best call: 2026-08-20 11:09 +45.0pts remaining (episode 70.0pts, major)
+- forward worst false alarm: 2026-08-20 11:15 -40.7pts adverse
+- earliness (backtest): median 18.4 pts of move remaining at fire (n=10)
 
 ### H12 — 1 signal
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
@@ -429,6 +452,68 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward worst false alarm: 2026-08-21 05:25 -10.3pts adverse
 - earliness (backtest): median 43.2 pts of move remaining at fire (n=1)
 
+### H14 — 1 signal
+*Counter-trend No Demand / No Supply prints in an established trend mark absorption and precede trend continuation.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H14** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▼i-8.7pp (46/294) · p-9.0pp cap24.8 net-695/med-1.9 | ·i-1.3pp (21/102) · p-15.5pp cap8.9 net-195/med-1.5 |
+| london | ▼i-9.9pp (10/62) · p-5.5pp cap28.1 net-81/med+3.1 | (°▼i-9.6pp (1/10) · p-8.1pp cap20.5 net+14/med+0.1) |
+| overlap | (°▼i-16.3pp (0/4) · p-1.1pp cap24.0 net+20/med+5.6) | (°▼i-25.8pp (0/9) · p-26.1pp cap— net-131/med-16.0) |
+| ny_only | ▼i-5.1pp (16/99) · p-1.1pp cap24.5 net-174/med-3.1 | ·i-1.8pp (6/35) · p-3.1pp cap14.5 net+19/med+1.7 |
+| dead | ▲i+8.7pp (13/33) · p-11.5pp cap17.2 net-105/med-2.4 | (°▼i-5.7pp (3/13) · p-17.7pp cap— net-15/med+0.0) |
+| asia | ▼i-17.1pp (7/96) · p-12.7pp cap30.8 net-355/med-3.6 | ▲i+8.5pp (11/35) · p-19.9pp cap8.7 net-82/med-3.6 |
+
+- backtest payoff: right +1293 / wrong -1989 / net -695 pts; median per fire -1.95 (n=294)
+- backtest best call: 2026-07-22 06:03 +134.2pts remaining (episode 163.2pts, major)
+- backtest worst false alarm: 2026-07-28 05:56 -59.0pts adverse
+- forward payoff: right +190 / wrong -386 / net -195 pts; median per fire -1.50 (n=102)
+- forward best call: 2026-08-17 03:50 +24.2pts remaining (episode 24.8pts, major)
+- forward worst false alarm: 2026-08-14 15:13 -25.8pts adverse
+- earliness (backtest): median 23.5 pts of move remaining at fire (n=24)
+
+### H15 — 1 signal
+*A range sweep followed by aggressive traversal to the opposite boundary continues toward the range's volume center.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H15** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H16 — 1 signal
+*The opening session's direction predicts the closing session's direction.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H16** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | (°▼i-4.3pp (3/15) · p+3.1pp cap33.4 net+5/med+6.0) | (°▲i+18.1pp (2/5) · p-4.3pp cap24.7 net+11/med+1.0) |
+| london | — | — |
+| overlap | (°▲i+3.7pp (3/15) · p+0.6pp cap33.4 net+5/med+6.0) | (°▲i+14.2pp (2/5) · p-6.1pp cap24.7 net+11/med+1.0) |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+- backtest payoff: right +173 / wrong -169 / net +5 pts; median per fire +6.00 (n=15)
+- backtest best call: 2026-08-03 15:00 +4.5pts remaining (episode 28.5pts)
+- backtest worst false alarm: 2026-07-16 15:00 -61.7pts adverse
+- forward payoff: right +30 / wrong -19 / net +11 pts; median per fire +1.00 (n=5)
+- forward best call: 2026-08-21 15:00 +5.2pts remaining (episode 20.0pts)
+- forward worst false alarm: 2026-08-17 15:00 -15.8pts adverse
+- earliness (backtest): median 1.2 pts of move remaining at fire (n=3)
+
 
 ---
 
@@ -444,7 +529,7 @@ Store span (1M, close ts): 2026-07-19 22:42:00+00:00 → 2026-08-21 19:59:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -466,9 +551,13 @@ Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S1-H9 | keep-watching | (°▼i-21.0pp (0/8) · p+26.2pp cap101.1 net-53/med+13.1) | — | (°▲i+43.0pp (2/3) · p-21.5pp cap— net-127/med-7.7) | (°▲i+73.1pp (1/1) · p-23.9pp cap— net-114/med-114.2) |
 | S0-H10 | deprioritize | ▲i+4.9pp (38/147) · p-4.1pp cap49.6 net-391/med+3.2 | ▲i+2.0pp (9/39) · p-16.1pp cap80.6 net-463/med-12.5 | ▲i+2.5pp (21/80) · p+2.3pp cap28.9 net+169/med+3.0 | (°▲i+6.4pp (5/15) · p+2.8pp cap42.4 net+73/med+17.1) |
 | S0-H11 | keep-watching | ·i-0.7pp (15/74) · p-3.5pp cap68.3 net-452/med-6.0 | (°▼i-21.1pp (0/14) · p-5.0pp cap73.1 net-472/med-58.8) | ▼i-4.9pp (34/181) · p+0.6pp cap45.2 net-416/med-5.5 | ·i+0.9pp (27/97) · p-5.3pp cap53.4 net-220/med-3.0 |
+| S1-H11 | keep-watching | ·i-0.1pp (63/301) · p+6.1pp cap82.4 net+1221/med+5.2 | ▲i+8.4pp (33/112) · p-0.5pp cap85.3 net+267/med+1.2 | ▼i-4.5pp (29/151) · p+6.3pp cap39.9 net-236/med+4.1 | ▼i-11.0pp (10/63) · p+19.0pp cap46.2 net-417/med-10.4 |
 | S0-H12 | keep-watching | — | — | — | — |
 | S0-H13 | keep-watching | (°▼i-4.3pp (1/6) · p+59.5pp cap74.2 net+397/med+58.7) | (°▼i-21.1pp (0/2) · p+73.6pp cap116.8 net+181/med+90.7) | (°·i+1.3pp (1/4) · p-21.5pp cap— net-27/med-2.0) | (°▲i+6.4pp (1/3) · p-23.9pp cap— net-22/med+0.9) |
-| **union coverage** | | 43.6% (48/110) | 25.9% (7/27) | 81.0% (47/58) | 93.8% (15/16) |
+| S0-H14 | keep-watching | ·i-1.5pp (22/113) · p+3.6pp cap50.3 net+312/med+0.5 | ▼i-2.6pp (5/27) · p-11.6pp cap80.6 net-256/med-4.2 | ▲i+6.9pp (26/85) · p+5.6pp cap27.2 net-50/med+1.5 | (°▲i+13.1pp (6/15) · p-3.9pp cap59.0 net-199/med-31.2) |
+| S0-H15 | keep-watching | — | — | — | — |
+| S0-H16 | keep-watching | (°▼i-21.0pp (0/10) · p-3.8pp cap126.3 net+8/med-16.3) | — | (°▼i-3.7pp (1/5) · p-1.5pp cap44.9 net-8/med+18.0) | — |
+| **union coverage** | | 47.3% (52/110) | 33.3% (9/27) | 86.2% (50/58) | 93.8% (15/16) |
 
 Not graded:  — see register entries.
 
@@ -768,7 +857,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-17 09:56 -79.5pts adverse
 - earliness (backtest): median 83.8 pts of move remaining at fire (n=10)
 
-### H11 — 1 signal
+### H11 — 2 signals
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
@@ -790,6 +879,25 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward best call: 2026-08-21 09:38 +105.1pts remaining (episode 144.6pts, major)
 - forward worst false alarm: 2026-08-20 07:09 -100.4pts adverse
 - earliness (backtest): median 104.9 pts of move remaining at fire (n=8)
+
+**S1-H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ·i-0.1pp (63/301) · p+6.1pp cap82.4 net+1221/med+5.2 | ▼i-4.5pp (29/151) · p+6.3pp cap39.9 net-236/med+4.1 |
+| london | ▲i+8.4pp (33/112) · p-0.5pp cap85.3 net+267/med+1.2 | ▼i-11.0pp (10/63) · p+19.0pp cap46.2 net-417/med-10.4 |
+| overlap | ▼i-3.3pp (2/20) · p-13.8pp cap84.7 net+3/med+13.2 | (°▼i-2.4pp (6/26) · p+7.5pp cap40.4 net+87/med+3.4) |
+| ny_only | ▼i-10.6pp (4/47) · p+10.1pp cap83.3 net+89/med+1.0 | ▲i+7.1pp (10/37) · p-6.0pp cap— net+104/med+2.0 |
+| dead | ▲i+10.1pp (12/34) · p+7.1pp cap86.7 net+169/med+5.3 | (°▼i-17.1pp (1/17) · p+10.4pp cap19.6 net+156/med+6.8) |
+| asia | ▼i-9.3pp (12/88) · p+14.0pp cap82.1 net+693/med+16.2 | (°·i+1.9pp (2/8) · p+14.5pp cap16.9 net-166/med+0.5) |
+
+- backtest payoff: right +7407 / wrong -6186 / net +1221 pts; median per fire +5.20 (n=301)
+- backtest best call: 2026-07-30 00:35 +150.2pts remaining (episode 237.6pts, major)
+- backtest worst false alarm: 2026-07-29 19:32 -168.0pts adverse
+- forward payoff: right +1585 / wrong -1821 / net -236 pts; median per fire +4.10 (n=151)
+- forward best call: 2026-08-19 23:11 +72.9pts remaining (episode 72.3pts, major)
+- forward worst false alarm: 2026-08-20 06:33 -145.0pts adverse
+- earliness (backtest): median 58.0 pts of move remaining at fire (n=21)
 
 ### H12 — 1 signal
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
@@ -830,6 +938,66 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward worst false alarm: 2026-08-21 09:44 -41.4pts adverse
 - earliness (backtest): median 115.9 pts of move remaining at fire (n=1)
 
+### H14 — 1 signal
+*Counter-trend No Demand / No Supply prints in an established trend mark absorption and precede trend continuation.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H14** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ·i-1.5pp (22/113) · p+3.6pp cap50.3 net+312/med+0.5 | ▲i+6.9pp (26/85) · p+5.6pp cap27.2 net-50/med+1.5 |
+| london | ▼i-2.6pp (5/27) · p-11.6pp cap80.6 net-256/med-4.2 | (°▲i+13.1pp (6/15) · p-3.9pp cap59.0 net-199/med-31.2) |
+| overlap | (°▼i-13.3pp (0/11) · p-23.8pp cap— net-138/med-20.3) | (°▲i+24.5pp (5/10) · p+10.6pp cap50.3 net-2/med-8.2) |
+| ny_only | ▼i-14.8pp (1/23) · p+23.6pp cap43.2 net+392/med+21.1 | (°▼i-8.8pp (2/18) · p+16.2pp cap20.4 net+78/med+5.5) |
+| dead | (°▲i+19.2pp (4/9) · p-16.4pp cap— net-178/med-20.1) | (°▲i+13.4pp (4/11) · p-13.1pp cap— net+35/med+3.0) |
+| asia | ▲i+5.0pp (12/43) · p+11.6pp cap58.5 net+492/med+8.2 | ▲i+5.9pp (9/31) · p+6.4pp cap23.5 net+39/med+1.4 |
+
+- backtest payoff: right +1733 / wrong -1421 / net +312 pts; median per fire +0.50 (n=113)
+- backtest best call: 2026-07-31 04:56 +164.7pts remaining (episode 169.2pts, major)
+- backtest worst false alarm: 2026-07-28 09:44 -94.3pts adverse
+- forward payoff: right +734 / wrong -783 / net -50 pts; median per fire +1.50 (n=85)
+- forward best call: 2026-08-21 04:05 +84.8pts remaining (episode 94.3pts, major)
+- forward worst false alarm: 2026-08-17 09:54 -87.2pts adverse
+- earliness (backtest): median 78.0 pts of move remaining at fire (n=6)
+
+### H15 — 1 signal
+*A range sweep followed by aggressive traversal to the opposite boundary continues toward the range's volume center.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H15** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H16 — 1 signal
+*The opening session's direction predicts the closing session's direction.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H16** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | (°▼i-21.0pp (0/10) · p-3.8pp cap126.3 net+8/med-16.3) | (°▼i-3.7pp (1/5) · p-1.5pp cap44.9 net-8/med+18.0) |
+| london | — | — |
+| overlap | (°▼i-13.3pp (0/10) · p-3.8pp cap126.3 net+8/med-16.3) | (°▼i-5.5pp (1/5) · p+0.6pp cap44.9 net-8/med+18.0) |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+- backtest payoff: right +262 / wrong -254 / net +8 pts; median per fire -16.30 (n=10)
+- backtest worst false alarm: 2026-07-27 15:00 -114.5pts adverse
+- forward payoff: right +70 / wrong -79 / net -8 pts; median per fire +18.00 (n=5)
+- forward best call: 2026-08-20 15:00 +43.7pts remaining (episode 52.1pts)
+- forward worst false alarm: 2026-08-17 15:00 -54.6pts adverse
+
 
 ---
 
@@ -845,7 +1013,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-21 20:29:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -867,9 +1035,13 @@ Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S1-H9 | keep-watching | ▼i-13.7pp (2/25) · p+6.0pp cap265.9 net-373/med+10.8 | (°▼i-25.8pp (0/5) · p-30.9pp cap— net-57/med+2.3) | (°▲i+20.4pp (3/7) · p-7.0pp cap52.5 net-557/med-25.7) | (°▲i+71.3pp (2/2) · p-32.6pp cap— net-493/med-246.5) |
 | S0-H10 | deprioritize | ·i-0.6pp (37/175) · p-6.0pp cap92.8 net+2743/med+15.3 | (°▼i-12.5pp (2/15) · p-17.6pp cap46.2 net-356/med-1.7) | ▼i-15.6pp (10/145) · p-2.7pp cap49.8 net-1420/med-8.1 | ▼i-15.7pp (3/23) · p+10.9pp cap47.8 net+79/med-0.6 |
 | S0-H11 | keep-watching | ▼i-3.4pp (48/263) · p+2.3pp cap136.1 net+863/med+0.9 | ·i-1.6pp (22/91) · p-2.3pp cap113.7 net+264/med-3.9 | ▼i-2.4pp (34/169) · p+2.4pp cap76.8 net+1035/med+2.4 | ▲i+10.0pp (12/31) · p-0.3pp cap175.6 net+564/med-2.6 |
+| S1-H11 | keep-watching | ▼i-8.5pp (23/174) · p+5.0pp cap130.1 net+293/med-14.1 | ·i+0.6pp (14/53) · p-2.6pp cap109.7 net-436/med-14.7 | ▲i+9.5pp (48/150) · p+1.4pp cap88.4 net-712/med-0.9 | ·i+0.6pp (12/41) · p-0.9pp cap109.8 net-434/med-2.5 |
 | S0-H12 | keep-watching | — | — | — | — |
 | S0-H13 | keep-watching | (°▼i-21.7pp (0/1) · p+78.0pp cap95.7 net+93/med+93.0) | (°▼i-25.8pp (0/1) · p+69.1pp cap95.7 net+93/med+93.0) | — | — |
-| **union coverage** | | 42.1% (48/114) | 36.6% (15/41) | 82.1% (46/56) | 88.2% (15/17) |
+| S0-H14 | keep-watching | ·i+0.5pp (37/167) · p-13.6pp cap70.2 net-692/med+6.9 | ▼i-10.4pp (4/26) · p-19.4pp cap41.8 net-1762/med-17.1 | ▼i-18.5pp (6/149) · p-3.2pp cap52.7 net-694/med-5.7 | ▼i-28.7pp (0/20) · p+12.4pp cap74.6 net+552/med+14.1 |
+| S0-H15 | keep-watching | — | — | — | — |
+| S0-H16 | keep-watching | (°▼i-11.7pp (1/10) · p+28.0pp cap121.0 net+274/med+0.1) | — | (°▼i-5.8pp (1/6) · p-4.6pp cap53.5 net+109/med+21.2) | — |
+| **union coverage** | | 45.6% (52/114) | 39.0% (16/41) | 91.1% (51/56) | 94.1% (16/17) |
 
 Not graded:  — see register entries.
 
@@ -1163,7 +1335,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-18 01:03 -109.1pts adverse
 - earliness (backtest): median 108.5 pts of move remaining at fire (n=7)
 
-### H11 — 1 signal
+### H11 — 2 signals
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
@@ -1185,6 +1357,25 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward best call: 2026-08-19 10:07 +228.8pts remaining (episode 238.9pts, major)
 - forward worst false alarm: 2026-08-20 11:38 -181.6pts adverse
 - earliness (backtest): median 176.0 pts of move remaining at fire (n=14)
+
+**S1-H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▼i-8.5pp (23/174) · p+5.0pp cap130.1 net+293/med-14.1 | ▲i+9.5pp (48/150) · p+1.4pp cap88.4 net-712/med-0.9 |
+| london | ·i+0.6pp (14/53) · p-2.6pp cap109.7 net-436/med-14.7 | ·i+0.6pp (12/41) · p-0.9pp cap109.8 net-434/med-2.5 |
+| overlap | (°·i-1.2pp (1/15) · p-10.8pp cap192.0 net-139/med-40.7) | (°▼i-2.9pp (0/2) · p-34.2pp cap— net-61/med-30.4) |
+| ny_only | ▼i-20.0pp (0/39) · p+10.2pp cap558.0 net+1758/med-19.4 | (°▼i-18.1pp (0/5) · p+14.6pp cap116.2 net+159/med+34.0) |
+| dead | (°▼i-2.1pp (2/12) · p-3.2pp cap141.6 net-253/med+3.9) | (°▲i+26.7pp (4/8) · p+13.0pp cap88.0 net-1/med+0.1) |
+| asia | ▼i-13.4pp (6/55) · p+12.9pp cap124.1 net-637/med-13.4 | ▲i+8.3pp (32/94) · p-4.0pp cap65.0 net-375/med-1.2 |
+
+- backtest payoff: right +9792 / wrong -9499 / net +293 pts; median per fire -14.05 (n=174)
+- backtest best call: 2026-07-29 09:17 +555.3pts remaining (episode 632.8pts, major)
+- backtest worst false alarm: 2026-07-29 19:07 -730.3pts adverse
+- forward payoff: right +3056 / wrong -3768 / net -712 pts; median per fire -0.90 (n=150)
+- forward best call: 2026-08-21 10:37 +253.4pts remaining (episode 309.6pts, major)
+- forward worst false alarm: 2026-08-21 12:50 -221.2pts adverse
+- earliness (backtest): median 113.5 pts of move remaining at fire (n=11)
 
 ### H12 — 1 signal
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
@@ -1219,6 +1410,68 @@ Grading: directional. Latest review: keep-watching (recommendation).
 
 - backtest payoff: right +93 / wrong +0 / net +93 pts; median per fire +93.00 (n=1)
 
+### H14 — 1 signal
+*Counter-trend No Demand / No Supply prints in an established trend mark absorption and precede trend continuation.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H14** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ·i+0.5pp (37/167) · p-13.6pp cap70.2 net-692/med+6.9 | ▼i-18.5pp (6/149) · p-3.2pp cap52.7 net-694/med-5.7 |
+| london | ▼i-10.4pp (4/26) · p-19.4pp cap41.8 net-1762/med-17.1 | ▼i-28.7pp (0/20) · p+12.4pp cap74.6 net+552/med+14.1 |
+| overlap | (°▼i-7.9pp (0/17) · p-37.5pp cap— net+433/med+24.0) | (°▼i-2.9pp (0/23) · p-21.2pp cap101.2 net-792/med-40.9) |
+| ny_only | ▲i+15.3pp (18/51) · p-12.9pp cap— net+410/med+13.6 | ▼i-11.9pp (2/32) · p-2.3pp cap101.5 net-363/med-10.4 |
+| dead | (°▼i-7.7pp (2/18) · p-11.5pp cap— net-56/med+4.5) | (°▼i-9.0pp (1/7) · p-12.0pp cap— net-35/med-4.6) |
+| asia | ·i-0.7pp (13/55) · p+0.2pp cap85.1 net+282/med+6.6 | ▼i-21.2pp (3/67) · p-2.2pp cap48.4 net-56/med-4.0 |
+
+- backtest payoff: right +2905 / wrong -3598 / net -692 pts; median per fire +6.90 (n=167)
+- backtest best call: 2026-08-03 03:48 +195.6pts remaining (episode 209.2pts, major)
+- backtest worst false alarm: 2026-07-27 12:59 -334.6pts adverse
+- forward payoff: right +1878 / wrong -2572 / net -694 pts; median per fire -5.70 (n=149)
+- forward best call: 2026-08-17 04:14 +80.5pts remaining (episode 90.6pts, major)
+- forward worst false alarm: 2026-08-18 01:23 -150.9pts adverse
+- earliness (backtest): median 106.9 pts of move remaining at fire (n=11)
+
+### H15 — 1 signal
+*A range sweep followed by aggressive traversal to the opposite boundary continues toward the range's volume center.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H15** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H16 — 1 signal
+*The opening session's direction predicts the closing session's direction.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H16** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | (°▼i-11.7pp (1/10) · p+28.0pp cap121.0 net+274/med+0.1) | (°▼i-5.8pp (1/6) · p-4.6pp cap53.5 net+109/med+21.2) |
+| london | — | — |
+| overlap | — | — |
+| ny_only | (°▼i-10.0pp (1/10) · p+37.1pp cap121.0 net+274/med+0.1) | (°·i-1.4pp (1/6) · p+11.3pp cap53.5 net+109/med+21.2) |
+| dead | — | — |
+| asia | — | — |
+
+- backtest payoff: right +666 / wrong -392 / net +274 pts; median per fire +0.05 (n=10)
+- backtest best call: 2026-08-03 19:30 +30.1pts remaining (episode 61.6pts)
+- backtest worst false alarm: 2026-07-23 19:30 -188.1pts adverse
+- forward payoff: right +124 / wrong -16 / net +109 pts; median per fire +21.25 (n=6)
+- forward best call: 2026-08-21 19:30 +25.6pts remaining (episode 56.1pts)
+- forward worst false alarm: 2026-08-21 19:30 -33.9pts adverse
+- earliness (backtest): median 30.1 pts of move remaining at fire (n=1)
+
 
 ---
 
@@ -1234,7 +1487,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-21 20:29:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -1256,9 +1509,13 @@ Engine `bcfdc80a6` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 | S1-H9 | keep-watching | (°▼i-21.2pp (0/9) · p-1.7pp cap273.0 net+460/med+1.5) | (°▼i-24.5pp (0/1) · p-36.3pp cap— net-38/med-38.0) | (°▼i-3.1pp (2/11) · p-5.1pp cap169.5 net-375/med-31.0) | (°▲i+4.1pp (2/8) · p-13.1pp cap169.5 net-305/med-84.8) |
 | S0-H10 | deprioritize | ·i-1.7pp (30/154) · p+0.1pp cap71.0 net+1774/med+11.0 | ▼i-19.5pp (2/40) · p+3.7pp cap116.0 net+1480/med+27.5 | ▼i-5.3pp (25/156) · p-2.8pp cap56.0 net+230/med-0.5 | ▲i+3.5pp (10/41) · p-1.5pp cap74.0 net+196/med-11.0 |
 | S0-H11 | keep-watching | ·i-0.4pp (86/413) · p+3.5pp cap98.0 net+1254/med+3.0 | ▼i-5.5pp (31/163) · p+1.1pp cap91.0 net-404/med+5.0 | ·i-0.1pp (68/321) · p+4.7pp cap71.5 net-142/med-5.0 | ▼i-2.3pp (24/129) · p-0.9pp cap75.0 net+175/med+0.0 |
+| S1-H11 | keep-watching | ▲i+4.7pp (49/189) · p+1.5pp cap163.5 net+1560/med+0.5 | (°▼i-15.4pp (1/11) · p+9.2pp cap194.5 net+136/med-24.5) | ▼i-6.8pp (12/83) · p+4.4pp cap118.0 net+218/med-14.0 | ▼i-4.6pp (8/49) · p+0.7pp cap184.0 net+1074/med-14.0 |
 | S0-H12 | keep-watching | — | — | — | — |
 | S0-H13 | keep-watching | (°▲i+78.8pp (1/1) · p-23.9pp cap— net-206/med-206.0) | (°▲i+75.5pp (1/1) · p-36.3pp cap— net-206/med-206.0) | — | — |
-| **union coverage** | | 40.0% (44/110) | 33.3% (12/36) | 92.2% (47/51) | 93.3% (14/15) |
+| S0-H14 | keep-watching | ▲i+3.8pp (37/148) · p+1.8pp cap76.0 net+2606/med+12.5 | ▼i-18.1pp (3/47) · p+8.4pp cap121.5 net+1414/med+12.5 | ▼i-6.3pp (20/133) · p-3.8pp cap81.5 net-216/med-5.0 | ▲i+4.1pp (10/40) · p-3.1pp cap92.5 net+362/med-5.0 |
+| S0-H15 | keep-watching | — | — | — | — |
+| S0-H16 | keep-watching | (°▼i-21.2pp (0/10) · p+26.1pp cap100.0 net+522/med+37.5) | — | (°▼i-21.3pp (0/6) · p+26.7pp cap63.0 net+125/med+43.5) | — |
+| **union coverage** | | 40.0% (44/110) | 33.3% (12/36) | 94.1% (48/51) | 93.3% (14/15) |
 
 Not graded:  — see register entries.
 
@@ -1558,7 +1815,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 - forward worst false alarm: 2026-08-21 12:45 -141.0pts adverse
 - earliness (backtest): median 87.5 pts of move remaining at fire (n=11)
 
-### H11 — 1 signal
+### H11 — 2 signals
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
@@ -1580,6 +1837,25 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - forward best call: 2026-08-19 09:21 +393.5pts remaining (episode 377.5pts, major)
 - forward worst false alarm: 2026-08-19 12:55 -270.0pts adverse
 - earliness (backtest): median 90.5 pts of move remaining at fire (n=23)
+
+**S1-H11** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲i+4.7pp (49/189) · p+1.5pp cap163.5 net+1560/med+0.5 | ▼i-6.8pp (12/83) · p+4.4pp cap118.0 net+218/med-14.0 |
+| london | (°▼i-15.4pp (1/11) · p+9.2pp cap194.5 net+136/med-24.5) | ▼i-4.6pp (8/49) · p+0.7pp cap184.0 net+1074/med-14.0 |
+| overlap | (°▲i+23.1pp (10/29) · p+12.1pp cap250.5 net+278/med+23.0) | (°▲i+86.2pp (1/1) · p-30.5pp cap— net-256/med-255.5) |
+| ny_only | ▼i-12.8pp (3/47) · p+14.2pp cap181.4 net+1460/med+17.0 | (°▼i-20.6pp (0/7) · p-11.2pp cap— net-357/med-52.0) |
+| dead | ▲i+26.3pp (9/22) · p+11.1pp cap86.0 net+232/med+18.2 | (°▼i-16.5pp (0/3) · p-3.2pp cap— net-51/med-25.5) |
+| asia | ▲i+7.5pp (26/80) · p-7.8pp cap65.5 net-546/med-6.2 | ▼i-13.4pp (3/23) · p-8.1pp cap26.8 net-192/med-7.5 |
+
+- backtest payoff: right +9216 / wrong -7657 / net +1560 pts; median per fire +0.50 (n=189)
+- backtest best call: 2026-07-28 04:46 +523.0pts remaining (episode 543.0pts, major)
+- backtest worst false alarm: 2026-07-29 18:58 -665.0pts adverse
+- forward payoff: right +2743 / wrong -2525 / net +218 pts; median per fire -14.00 (n=83)
+- forward best call: 2026-08-20 09:30 +392.0pts remaining (episode 415.0pts, major)
+- forward worst false alarm: 2026-08-19 11:55 -277.0pts adverse
+- earliness (backtest): median 97.5 pts of move remaining at fire (n=8)
 
 ### H12 — 1 signal
 *A zone showing repeated visits with elevated volume, diminishing range-per-unit-volume, and drying pullback volume precedes a directional move away from the zone in the absorber's direction.*
@@ -1616,6 +1892,65 @@ Grading: directional. Latest review: keep-watching (recommendation).
 - backtest best call: 2026-07-28 10:27 +-158.5pts remaining (episode 93.5pts)
 - backtest worst false alarm: 2026-07-28 10:27 -252.0pts adverse
 - earliness (backtest): median -158.5 pts of move remaining at fire (n=1)
+
+### H14 — 1 signal
+*Counter-trend No Demand / No Supply prints in an established trend mark absorption and precede trend continuation.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H14** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | ▲i+3.8pp (37/148) · p+1.8pp cap76.0 net+2606/med+12.5 | ▼i-6.3pp (20/133) · p-3.8pp cap81.5 net-216/med-5.0 |
+| london | ▼i-18.1pp (3/47) · p+8.4pp cap121.5 net+1414/med+12.5 | ▲i+4.1pp (10/40) · p-3.1pp cap92.5 net+362/med-5.0 |
+| overlap | (°▼i-11.4pp (0/7) · p-32.7pp cap— net-40/med+17.0) | (°▲i+19.5pp (1/3) · p-30.5pp cap— net+1/med-10.0) |
+| ny_only | ▼i-2.0pp (5/29) · p-3.2pp cap84.4 net+804/med+53.0 | ▼i-14.9pp (2/35) · p+3.1pp cap118.0 net-578/med-20.0 |
+| dead | (°▲i+38.0pp (10/19) · p-1.8pp cap104.9 net-80/med-14.4) | (°▼i-11.7pp (1/21) · p-3.2pp cap— net-28/med-2.5) |
+| asia | ▲i+16.3pp (19/46) · p+4.3pp cap35.0 net+508/med+7.5 | ▼i-8.8pp (6/34) · p-4.9pp cap43.0 net+28/med+1.0 |
+
+- backtest payoff: right +4618 / wrong -2012 / net +2606 pts; median per fire +12.50 (n=148)
+- backtest best call: 2026-08-03 05:18 +451.0pts remaining (episode 472.0pts, major)
+- backtest worst false alarm: 2026-07-28 13:00 -258.0pts adverse
+- forward payoff: right +1843 / wrong -2058 / net -216 pts; median per fire -5.00 (n=133)
+- forward best call: 2026-08-17 09:50 +175.0pts remaining (episode 249.0pts, major)
+- forward worst false alarm: 2026-08-21 12:50 -124.0pts adverse
+- earliness (backtest): median 71.0 pts of move remaining at fire (n=12)
+
+### H15 — 1 signal
+*A range sweep followed by aggressive traversal to the opposite boundary continues toward the range's volume center.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H15** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | — | — |
+| london | — | — |
+| overlap | — | — |
+| ny_only | — | — |
+| dead | — | — |
+| asia | — | — |
+
+
+### H16 — 1 signal
+*The opening session's direction predicts the closing session's direction.*
+Grading: directional. Latest review: keep-watching (recommendation).
+
+**S0-H16** — session × window grid (cells as in the matrix):
+
+| session | backtest | forward |
+|---|---|---|
+| whole | (°▼i-21.2pp (0/10) · p+26.1pp cap100.0 net+522/med+37.5) | (°▼i-21.3pp (0/6) · p+26.7pp cap63.0 net+125/med+43.5) |
+| london | — | — |
+| overlap | — | — |
+| ny_only | (°▼i-19.2pp (0/10) · p+36.5pp cap100.0 net+522/med+37.5) | (°▼i-20.6pp (0/6) · p+38.8pp cap63.0 net+125/med+43.5) |
+| dead | — | — |
+| asia | — | — |
+
+- backtest payoff: right +588 / wrong -66 / net +522 pts; median per fire +37.50 (n=10)
+- backtest worst false alarm: 2026-07-28 19:30 -58.0pts adverse
+- forward payoff: right +198 / wrong -73 / net +125 pts; median per fire +43.50 (n=6)
+- forward worst false alarm: 2026-08-21 19:30 -73.0pts adverse
 
 
 ---
