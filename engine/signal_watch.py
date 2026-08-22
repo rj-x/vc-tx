@@ -39,6 +39,12 @@ H12_WINDOW_MIN = 90          # ratified
 H12_DRY_RV = 0.7             # ratified (founding low_volume_mult, cited)
 H13_VALUE_AREA_PCT = 0.70    # operator-specified at S0-H13 registration
                              # 2026-08-20 (value-area convention, register 50)
+H15_SPEED_LIMIT_MIN = 30     # PROPOSED (register 56): opposite-boundary
+                             # break within 30 min of the sweep — derived
+                             # from measured t-MFE medians (~25-33 min,
+                             # excursion study); ratification pending
+H16_WINDOW_MIN = 30          # opening/closing window (GHLZ JFE 2018
+                             # construction; operator order register 56)
 
 # row-declaration tables (this module is the one permitted home for
 # hypothesis identifiers; the scoreboard imports these):
@@ -48,8 +54,10 @@ ROW_MIGRATION_RECRUITED = "S1-H9"  # event-derived, recruited-only chains
                                   # (register 49; the claim's core; expected
                                   # starved at current n — stated)
 ROW_CLIMAX_EXTENSION = "S0-H5"    # event-derived (15M read, register 46)
+ROW_INTRADAY_MOMENTUM = "S0-H16"  # event-derived (native-calendar windows,
+                                  # GHLZ JFE 2018 construction; register 56)
 EVENT_DERIVED_ROWS = {ROW_MIGRATION_CHAIN, ROW_MIGRATION_RECRUITED,
-                      ROW_CLIMAX_EXTENSION}
+                      ROW_CLIMAX_EXTENSION, ROW_INTRADAY_MOMENTUM}
 AGNOSTIC_ROWS = {"S0-H8"}          # graded either-direction (register 36)
 DUAL_GRADED = {"S0-H7"}            # graded in BOTH modes (register 36)
 # ONE firing condition, TWO gradings (register 37): the value row's fires
@@ -407,6 +415,103 @@ class _SH13:
         return fire
 
 
+def _ts_ns(ts):
+    """Nanosecond value for either pandas Timestamps or the synthetic
+    integer-minute stamps the scenario rig uses."""
+    return ts.value if hasattr(ts, "value") else int(ts) * 60_000_000_000
+
+
+def _s_h14(bar, ectx, sctx, feats, cores, structural, qualified, prev):
+    """S0-H14 (register 56): COUNTER-trend structural ND/NS in an
+    established 1M trend (trend_age >= ESTABLISHED_TREND_AGE) — the mirror
+    of H10's trend-matched configuration; absorption reading: fire WITH
+    the trend (continuation). Origin: the parked T1d contra-direction
+    curiosity (2026-08-17)."""
+    d = {"NO_SUPPLY": 1, "NO_DEMAND": -1}.get(structural)
+    if d and ectx.trend == -d and ectx.trend_age >= ESTABLISHED_TREND_AGE:
+        return ectx.trend
+    return None
+
+
+class _SH15:
+    """S0-H15 (register 56): sweep-and-reclaim, deliberately LOOSENED
+    three-clause skeleton (the H12/H13 starvation lesson): RANGING phase +
+    a sweep print beyond the phase tracker's own range boundary (the
+    range-definition PROPOSAL: ectx.range_hi/range_lo — the founding
+    ranging criteria's existing object, no new window) + a close beyond
+    the OPPOSITE boundary within H15_SPEED_LIMIT_MIN -> fire toward the
+    session's volume center (trailing-profile PoC). Both parameter
+    choices derivation-stated, ratification pending. The six-clause
+    original schematic is preserved verbatim in the register entry as
+    future S<k> material."""
+
+    def __init__(self):
+        self._prof = None
+        self._sweep = None            # (side, ts_value)
+
+    def __call__(self, bar, ectx, sctx, feats, cores, structural, qualified,
+                 prev):
+        from backtest.location_census import _Profile  # lazy; reader-side
+        if self._prof is None:
+            self._prof = _Profile()
+        self._prof.feed(bar)
+        if ectx.phase != "RANGING" or ectx.range_hi is None                 or ectx.range_lo is None:
+            self._sweep = None
+            return None
+        if bar.high > ectx.range_hi:
+            self._sweep = ("high", _ts_ns(bar.ts))
+        elif bar.low < ectx.range_lo:
+            self._sweep = ("low", _ts_ns(bar.ts))
+        if self._sweep is None:
+            return None
+        side, t0 = self._sweep
+        if (_ts_ns(bar.ts) - t0) > H15_SPEED_LIMIT_MIN * 60_000_000_000:
+            self._sweep = None
+            return None
+        broke = (bar.close < ectx.range_lo if side == "high"
+                 else bar.close > ectx.range_hi)
+        if not broke:
+            return None
+        self._sweep = None
+        # PoC = max-volume bucket of the trailing profile
+        agg = {}
+        for sid in self._prof._order[-5:]:
+            for b, v in self._prof._profiles.get(sid, {}).items():
+                agg[b] = agg.get(b, 0) + v
+        if len(agg) < 10:
+            return None
+        poc = max(agg, key=agg.get)
+        if poc == bar.close:
+            return None
+        return 1 if poc > bar.close else -1
+
+
+class _S1H11:
+    """S1-H11 (register 56; the node-stall clause, grading mode RATIFIED
+    as SUPPRESSION): fires on entry INTO a high-volume node bucket, in the
+    travel direction. THE CLAIM SUCCEEDS WHEN INITIATION LIFT IS NEGATIVE
+    — node entries suppress episode-begins below their conditioned base.
+    Read the sign accordingly; a positive lift REFUTES the stall clause."""
+
+    def __init__(self):
+        from backtest.location_census import _Profile
+        self._p = _Profile()
+        self._prev_cls = None
+
+    def __call__(self, bar, ectx, sctx, feats, cores, structural, qualified,
+                 prev):
+        cls = self._p.feed(bar)
+        fire = None
+        if cls == "node" and self._prev_cls not in (None, "node"):
+            b = round(bar.close / H11_BUCKET_PTS) * H11_BUCKET_PTS
+            prev_b = getattr(self, "_prev_b", None)
+            if prev_b is not None and b != prev_b:
+                fire = 1 if b > prev_b else -1
+        self._prev_cls = cls
+        self._prev_b = round(bar.close / H11_BUCKET_PTS) * H11_BUCKET_PTS
+        return fire
+
+
 FIRING_CONDITIONS = {
     "S0-H1": _s_h1,
     "S0-H2": _s_h2,
@@ -420,6 +525,9 @@ FIRING_CONDITIONS = {
     "S1-H1": _s1_h1,              # register 49 (audit F1 resolution)
     "S1-H2": _s1_h2,              # register 49 (audit F2 resolution)
     "S0-H13": _SH13,              # register 50 (value-area reclaim)
+    "S0-H14": _s_h14,             # register 56 (counter-trend absorption)
+    "S0-H15": _SH15,              # register 56 (sweep-and-reclaim skeleton)
+    "S1-H11": _S1H11,             # register 56 (node-stall, SUPPRESSION)
 }
 
 

@@ -323,9 +323,16 @@ entry is a separate decision.
   row tests exactly this; (b) the bucket is HOME-DERIVED — other
   instruments' cells carry a mis-scale caveat until per-instrument
   values are ratified.
+- **Signals (addendum, register 56):**
+  - **S1-H11** (registered 2026-08-22; the NODE-STALL clause, grading
+    mode RATIFIED as **SUPPRESSION**): fires on entry INTO a high-volume
+    node bucket, travel direction; **the claim succeeds when initiation
+    lift is NEGATIVE** (node entries suppress episode-begins below their
+    class-conditioned baseline). A positive lift REFUTES the stall
+    clause. Closes the register-46 sub-question.
 - **Latest review:** keep-watching (rows begin at the next run).
-- AUDIT: PASS for the traversal clause; stall clause pending its grading
-  mode.
+- AUDIT: PASS — both claim components now measurable (traversal S0,
+  stall S1-suppression).
 
 ## H12
 - **Claim:** A zone showing repeated visits with elevated volume,
@@ -400,6 +407,69 @@ entry is a separate decision.
 - AUDIT: PASS (every parameter cites the registry or H11's ratified
   config; the one new value — the 70% band — was operator-specified at
   registration).
+
+## H14
+- **Claim:** Counter-trend No Demand / No Supply prints in an established
+  trend mark absorption and precede trend continuation.
+- **Origin:** the parked T1d contra-direction curiosity (2026-08-17;
+  minted at the 2026-08-22 sitting, register 56).
+- **Signals:**
+  - **S0-H14** (registered 2026-08-22): structural ND/NS AGAINST the 1M
+    trend's direction with trend_age ≥ 10 (the mirror of H10's
+    trend-matched configuration); fire WITH the trend.
+- **Status:** **signal-live** (1 signal).
+- **Latest review:** keep-watching (record opens at the next run).
+- AUDIT: PASS (all parameters registry-cited; exact mirror of S0-H10).
+
+## H15
+- **Claim:** A range sweep followed by aggressive traversal to the
+  opposite boundary continues toward the range's volume center.
+- **Origin:** operator-relayed external advice (docket #13, 2026-08-20;
+  minted 2026-08-22). **Original six-clause schematic, preserved
+  verbatim as future S<k> material:** range consolidation → sweep of one
+  side → aggressive traversal breaking the opposite side → retrace toward
+  the range's PoC → reaction → entry, stop outside the range. (The
+  retrace/reaction/entry clauses await organs and level-plumbing; the
+  stop geometry is recipe layer.)
+- **Signals:**
+  - **S0-H15** (registered 2026-08-22; deliberately LOOSENED three-clause
+    skeleton — the H12/H13 starvation lesson applied): RANGING phase +
+    sweep print beyond the phase tracker's own range boundary + close
+    beyond the OPPOSITE boundary within 30 min → fire toward the trailing
+    profile's PoC. TWO PROPOSED PARAMETERS, derivation-stated,
+    ratification pending: range definition = `ectx.range_hi/range_lo`
+    (the founding ranging criteria's existing object — no new window);
+    speed limit = 30 min (measured t-MFE medians 25–33 min, excursion
+    study).
+- **Status:** **signal-live** (1 signal; parameters flagged).
+- **Latest review:** keep-watching (record opens at the next run).
+- AUDIT: PASS with the two flags above.
+
+## H16
+- **Claim:** The opening session's direction predicts the closing
+  session's direction.
+- **Origin:** external literature — Gao, Han, Li & Zhou, *Journal of
+  Financial Economics* 2018 (first half-hour return from prior close
+  predicts last half-hour return; stronger on volatile/high-volume/
+  macro-news days, FOMC R² ~11%; survives reasonable costs; holds across
+  international index ETFs). Minted 2026-08-22 (docket #14). Fills the
+  session-boundary coverage hole.
+- **Signals:**
+  - **S0-H16** (registered 2026-08-22, event-derived): fire at the
+    closing window's open (native close − 30 min), direction = the
+    opening window's return sign (first-window return measured from the
+    PRIOR session close to the price 30 min after the native open; GHLZ
+    construction adapted to each instrument's native calendar). Graded on
+    the standard yardsticks for board comparability, with a bespoke
+    RETURN-SIGN companion readout (its native exam) reported
+    census-style alongside (`h16_native_companion` in the scoreboard
+    JSON). One fire per session per instrument.
+- **Questions:** macro-day amplification RESERVED as a future Q-number
+  (not yet registered).
+- **Status:** **signal-live** (1 signal).
+- **Latest review:** keep-watching (record opens at the next run).
+- AUDIT: PASS (window construction literature-cited; 30-min window
+  operator-ordered).
 
 ---
 

@@ -253,11 +253,59 @@ def h5_fires(events, bars15, cfg):
     return out
 
 
-def event_derived_fires(events, cfg, bars):
-    """All event-derived rows in one place (migration chains + the
-    15M-read extension row); every reader consumes this."""
-    return (h9_fires(events, cfg)
-            + h5_fires(events, bars[cfg.mtf.signal_tf], cfg))
+def h16_fires(instr):
+    """S0-H16 (register 56, GHLZ JFE 2018 construction on native
+    calendars): first-window return measured from PRIOR session close to
+    the price 30 min after the native open; fire at the closing window's
+    open (native close - 30 min), direction = the first-window return's
+    sign. Returns (fires, companion) — the companion is the bespoke
+    return-sign readout (its native exam), reported census-style."""
+    import store as store_mod
+    from engine.signal_watch import (H16_WINDOW_MIN,
+                                     ROW_INTRADAY_MOMENTUM)
+    p = os.path.join(ROOT, "clean_finsa", f"{instr}_1min.csv")
+    df = pd.read_csv(p, parse_dates=["time"]).set_index("time")
+    tz = store_mod.SESSION_TZ.get(instr, "Europe/London")
+    cash = df[df["in_cash"]]
+    days = {}
+    for d, g in cash.groupby(pd.DatetimeIndex(
+            cash.index).tz_convert(tz).date):
+        days[d] = g
+    fires, comp = [], []
+    prior_close = None
+    for d in sorted(days):
+        g = days[d]
+        t_open = g.index[0]
+        w = pd.Timedelta(minutes=H16_WINDOW_MIN)
+        first = g[g.index < t_open + w]
+        last_open_ts = g.index[-1] - w
+        last = g[g.index >= last_open_ts]
+        if prior_close is not None and len(first) and len(last) > 1:
+            r_open = first["close"].iloc[-1] - prior_close
+            if r_open != 0:
+                d_sign = 1 if r_open > 0 else -1
+                fire_ts = last.index[0] + pd.Timedelta(minutes=1)
+                fires.append({"ts": fire_ts,
+                              "name": ROW_INTRADAY_MOMENTUM,
+                              "dir": d_sign})
+                r_close = last["close"].iloc[-1] - last["open"].iloc[0]
+                comp.append({"ts": str(fire_ts),
+                             "sign_agree": bool(
+                                 r_close != 0
+                                 and (r_close > 0) == (r_open > 0))})
+        prior_close = g["close"].iloc[-1]
+    return fires, comp
+
+
+def event_derived_fires(events, cfg, bars, instr=None):
+    """All event-derived rows in one place (migration chains, the 15M-read
+    extension row, and — when the instrument is known — the native-window
+    momentum row); every reader consumes this."""
+    out = (h9_fires(events, cfg)
+           + h5_fires(events, bars[cfg.mtf.signal_tf], cfg))
+    if instr is not None:
+        out += h16_fires(instr)[0]
+    return out
 
 
 def h9_fires(events, cfg):
@@ -564,7 +612,9 @@ def run(instr="uk100fut", provisional=False):
     qual, episodes, series, drift = build_moves(
         b1m, bars[cfg.mtf.signal_tf], cfg.context.atr_period)
     recipe_fires = fires_from_events(events)          # CONFIRM = recipe stage
-    signal_fires = watch.fires + event_derived_fires(events, cfg, bars)
+    signal_fires = watch.fires + event_derived_fires(events, cfg, bars,
+                                                     instr=instr)
+    h16_companion = h16_fires(instr)[1]
     # derived rows (register 37): ONE condition, two gradings — copied fires
     for derived, src_row in DERIVED_FIRES.items():
         signal_fires += [{**f, "name": derived}
@@ -609,6 +659,7 @@ def run(instr="uk100fut", provisional=False):
                      "reliably, how early. Trade logic is a separate later "
                      "layer for signals that earn one."),
         "signals": {},
+        "h16_native_companion": None,
         "signals_by_session": {},
         "founding_recipes_at_confirmation": {
             "note": ("graded pattern+wrapper stacks (confirmation = recipe "
@@ -634,6 +685,17 @@ def run(instr="uk100fut", provisional=False):
     windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
                             "backtest_replay"),
                "forward": (gl, far, fwd_lbl)}
+    comp_by_w = {}
+    for c in h16_companion:
+        t = pd.Timestamp(c["ts"])
+        w = ("backtest" if t < boundary else
+             "forward" if t >= gl else None)
+        if w:
+            comp_by_w.setdefault(w, []).append(c["sign_agree"])
+    out["h16_native_companion"] = {
+        w: {"n_sessions": len(v),
+            "sign_agreement_pct": round(100 * float(np.mean(v)), 1)}
+        for w, v in comp_by_w.items()}
     for wname, (lo, hi, lbl) in windows.items():
         out["signals"][wname] = score(signal_fires, qual, episodes, series,
                                       lo, hi, lbl, names=all_names,

@@ -62,7 +62,7 @@ def run_instrument(instr):
         bars[cfg.mtf.execution_tf], bars[cfg.mtf.signal_tf],
         cfg.context.atr_period)
     ts, _cl, _segs = series
-    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars, instr=instr)
     fires = [f for f in fires if not is_sealed(f["ts"])]
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     by_name = {}

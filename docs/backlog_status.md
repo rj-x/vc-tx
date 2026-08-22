@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 55 (freshness-checked by the weekly
+table.** Register-current-through: 56 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -16,8 +16,11 @@ authoritative.
 | H5, H6, H11, H12 | testable-now (ratified 2026-08-20, register 46; all twelve entries signal-live) |
 | H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
+| H14 counter-trend absorption, H15 sweep-reclaim (params flagged), H16 intraday momentum | testable-now (minted 08-22; rows open next run) |
+| S1-H11 node-stall (SUPPRESSION grading) | testable-now (negative lift = the claim winning) |
+| R2 refinement experiment | awaiting-decision-run-approval (design counted, register 56) |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
-| candidate docket | **FROZEN for the sitting (register 52)**: 12 internal + #13 sweep-and-reclaim + #14 intraday momentum + #15 drift-inversion + #16 S1-H13-absorption + #17 (RESOLVED by registers 53–54: dual-convention ruling + Q-family); drift/VWAP/matrix censuses + geometry curves report into it; new ideas queue for the NEXT sitting |
+| candidate docket | **CLEARED at the 2026-08-22 sitting (register 56)**: H14/H15/H16 minted; S1-H11 suppression ratified; R2 design commissioned (run on approval); modifier-reframe + ND/NS-recall routed; rung-consensus + 1M-H5 + drift-inversion parked with reasons; gated items unchanged; new ideas queue for the next sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 

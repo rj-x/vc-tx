@@ -383,7 +383,7 @@ def run_instrument(instr):
                 flips.append((pd.Timestamp(e["ts"]).value, t))
             prev = t
     env = build_env(instr, cfg, bars, narr={"trend_flip": sorted(flips)})
-    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars, instr=instr)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     spread = _spread_median(instr)

@@ -91,7 +91,7 @@ def run_instrument(instr):
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     ts, cl, hi, lo, _s, _b = _series(bars[cfg.mtf.execution_tf])
-    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars)
+    fires = watch.fires + event_derived_fires(engine.narrative.events, cfg, bars, instr=instr)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     narr = _narr_streams(engine.narrative.events, fires)
