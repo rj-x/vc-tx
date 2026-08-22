@@ -15,7 +15,8 @@ PAIRS = [("hypothesis_performance.md", "hypothesis_performance.json"),
          ("flip_cut.md", "flip_cut.json"),
          ("cofire.md", "cofire.json"),
          ("location_census.md", "location_census.json"),
-         (os.path.join("..", "SIGNAL_POINTS.md"), "signal_points.json")]
+         (os.path.join("..", "SIGNAL_POINTS.md"), "signal_points.json"),
+         ("bar_persistence.md", "bar_persistence.json")]
 
 
 def test_md_json_pairs_are_from_the_same_run():

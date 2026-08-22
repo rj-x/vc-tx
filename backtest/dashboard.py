@@ -88,11 +88,16 @@ def generate():
         return (round(tot, 1), int(cnt), sess) if have else None
 
     L += ["## The board (home instrument; away instruments PROVISIONAL — "
-          "see the scoreboard). Points first: **the drill-down is "
+          "see the scoreboard). DOCTRINE ORDER (register 62 — edge = "
+          "consistency): initiation lift, then median-per-trade ≤3×ATR, "
+          "then baseline clearance; net is context. Nothing here "
+          "re-grades — the governance sitting changes what gets acted "
+          "on. **The drill-down is "
           "[SIGNAL_POINTS.md](SIGNAL_POINTS.md)**", "",
-          "| H | fwd net pts @3×ATR (n) | strongest / weakest session "
-          "@3× fwd | init lift (secondary) | fwd trend | status |",
-          "|---|---|---|---|---|---|"]
+          "| H | init lift (best measurable cell) | S0 med/trade @3× "
+          "fwd | baseline clearance (S0 @3× fwd) | context: fwd net @3× "
+          "(n); sessions | fwd trend | status |",
+          "|---|---|---|---|---|---|---|"]
     if sb:
         home = sb.get("instruments", {}).get("uk100fut", {})
         sigs = home.get("signals", {})
@@ -142,29 +147,47 @@ def generate():
             lb, lf = _lift("backtest", s0), _lift("forward", s0)
             if lb is not None and lf is not None:
                 trend = "↑" if lf > lb + 2 else "↓" if lf < lb - 2 else "→"
-            lift_cell = (f"{best[1]} {best[2]} {best[0]:+.1f}pp "
+            lift_cell = (f"**{best[1]} {best[2]} {best[0]:+.1f}pp** "
                          f"(n={best[3]})"
                          if best else "no measurable cell (n<20)")
+            # doctrine axes (ii) and (iii): S0's forward 3x cell from
+            # the ladder — median-per-trade and matched-floor clearance
+            s0_row = sp_home.get(f"S0-H{n}", {})
+            s0_cell = s0_row.get("3x", {}).get("forward")
+            mb = s0_row.get("matched_baseline", {}).get("forward")
+            if s0_cell:
+                dim0 = "°" if s0_cell["n"] < 20 else ""
+                med_cell = (f"{dim0}{s0_cell['median_pts']:+.2f} "
+                            f"(n{s0_cell['n']})")
+            else:
+                med_cell = "—"
+            if s0_cell and mb:
+                lo, hi = mb.get("baseline_range_3x",
+                                [mb["baseline_median_3x"]] * 2)
+                clr = round(s0_cell["median_pts"] - hi, 2)
+                clr_cell = (f"{clr:+.2f} above {mb['name']} max"
+                            if clr > 0 else
+                            f"{clr:+.2f} vs {mb['name']} max — inside "
+                            f"the floor's noise")
+            else:
+                clr_cell = "—"
             pts = _points_at(n, "3x", "forward")
             if pts:
                 net, cnt, sess = pts
                 dim = "°" if cnt < 20 else ""
-                pts_cell = f"**{dim}{net:+.1f}** (n{cnt})"
+                ctx_cell = f"{dim}{net:+.1f} (n{cnt})"
                 if len(sess) == 1:
-                    s0_only = next(iter(sess))
-                    sess_cell = (f"{s0_only} {sess[s0_only]:+.1f} "
-                                 f"(only session)")
+                    s_only = next(iter(sess))
+                    ctx_cell += f"; {s_only} only"
                 elif sess:
                     hi_s = max(sess, key=sess.get)
                     lo_s = min(sess, key=sess.get)
-                    sess_cell = (f"{hi_s} {sess[hi_s]:+.1f} / "
-                                 f"{lo_s} {sess[lo_s]:+.1f}")
-                else:
-                    sess_cell = "—"
+                    ctx_cell += (f"; best {hi_s} {sess[hi_s]:+.1f}, "
+                                 f"worst {lo_s} {sess[lo_s]:+.1f}")
             else:
-                pts_cell, sess_cell = "—", "—"
-            L.append(f"| H{n} | {pts_cell} | {sess_cell} | {lift_cell} "
-                     f"| {trend} | {labels.get(n, '-')} |")
+                ctx_cell = "—"
+            L.append(f"| H{n} | {lift_cell} | {med_cell} | {clr_cell} "
+                     f"| {ctx_cell} | {trend} | {labels.get(n, '-')} |")
     L.append("")
 
     # (c) open questions with clocks
@@ -224,6 +247,9 @@ def generate():
           "under explicit exits. Read weekly; values discussion input.",
           "- `excursion_geometry.md|.json` — stop-width + target-reach "
           "curves. Read at the v1 recipe-values discussion.",
+          "- `bar_persistence.md|.json` — scalp viability: do fires "
+          "persist bar-to-bar past spread, vs the random floor. Read "
+          "weekly; scalp candidates go through their own registrations.",
           "- `conditioning_matrix.md|.json` — where signals work/fail by "
           f"state; grades Q1-H11/Q2-H{9}/Q1-H{6}. Read weekly.",
           "- `cofire.md|.json` — does cross-family agreement help "

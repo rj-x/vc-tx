@@ -306,7 +306,11 @@ def _emit(results, head):
          "ensemble, pinned). The subtraction answers: does the "
          "hypothesis add anything beyond exposure? Baselines are "
          "fenced below, permanently excluded from hypothesis counts, "
-         "labels, and promotion machinery.", ""]
+         "labels, and promotion machinery. DOCTRINE READING (register "
+         "62): the floors are the deep-pockets return made explicit — "
+         "what exposure alone pays someone who can sit through the "
+         "excursions. Beating them, outside their own member range, is "
+         "the operational meaning of edge.", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread charged "

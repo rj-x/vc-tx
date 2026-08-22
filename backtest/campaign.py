@@ -518,10 +518,10 @@ def main(slugs=(SLUG, "uk100")):
     import sys as _c_sys
     import subprocess as _c_sp
     for mod in ("backtest.scoreboard", "backtest.recipes",
-                "backtest.signal_points", "backtest.forward_migration",
-                "backtest.cofire", "backtest.conditioning_matrix",
-                "backtest.vwap_census", "backtest.drift_census",
-                "backtest.excursion_geometry"):
+                "backtest.signal_points", "backtest.bar_persistence",
+                "backtest.forward_migration", "backtest.cofire",
+                "backtest.conditioning_matrix", "backtest.vwap_census",
+                "backtest.drift_census", "backtest.excursion_geometry"):
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # backlog freshness check (register 55; staleness class has precedent)
