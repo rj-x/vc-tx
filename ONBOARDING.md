@@ -651,6 +651,22 @@ set still growing toward fold support).
    graded question (initiation convention, per-instrument). Then:
    probe evening, Saturday campaign + Part C, governance sitting,
    17-item docket discussion. Building phase over; decisions remain.
+30. THE SITTING EXECUTED (register 56, `ed48c93`, 102/102): 16 claims,
+   20 signals, 2 questions, docket CLEARED. Mints: H14 counter-trend
+   absorption (opens 294 fires, init 15.6% — BELOW chance; with H10's
+   mirror also negative, ND/NS may not discriminate by trend alignment
+   at all); H15 sweep-and-reclaim (0 fires even loosened; params
+   derivation-stated awaiting operator: range = phase tracker's own
+   object, 30-min speed from t-MFE); H16 intraday momentum (native
+   exam coin-flip home 46.7%/15, fwd 60%/5 — needs a quarter). S1-H11
+   stall clause opens leaning claim's way (18.7% vs low-20s, below =
+   winning). R2 design commissioned. Routed: modifier→matrix,
+   ND/NS-recall→Cockpit. Parked: rung-consensus, 1M-H5, drift-inv.
+   Part C ADOPTED + first Saturday ran (~11 min, union 85.2%, 173 fwd
+   chains, 11:46Z stands matched=False); backlog freshness marker live
+   (current-through 56). OPERATOR REMAINING: ratify H15 params +
+   approve R2 (recs: yes/yes) → then only evenings (nas100 Monday =
+   question clocks; probe) + weekly accrual.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
