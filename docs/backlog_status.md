@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 60 (freshness-checked by the weekly
+table.** Register-current-through: 61 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -66,7 +66,7 @@ authoritative.
 | validation evenings nas100→ger40→us30 | awaiting-decision-evenings (~35 min each; runbook ready, dry-run verified) |
 | Part C weekly forward studies | ADOPTED (register 55); runs in the weekly campaign |
 | stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
-| baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22 (register 60; controls never candidates; cadence + skew rule awaiting-ratification) |
+| baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |
 | GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 2) |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |

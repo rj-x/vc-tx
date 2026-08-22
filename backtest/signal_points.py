@@ -46,14 +46,17 @@ PAGE = os.path.join(ROOT, "reports", "SIGNAL_POINTS.md")
 LADDER_WIDTHS = (1.5, 2.0, 3.0, 4.0, 5.0)
 SESSIONS = ("asia", "london", "overlap", "ny_only", "dead")
 
-# --- baseline pseudo-signals (register 60; prereg_baselines) -----------
+# --- baseline pseudo-signals (register 60/61; prereg_baselines +
+# prereg_baselines_v2_ensemble) ------------------------------------------
 # CONTROLS, NEVER CANDIDATES: fenced BASELINES section, permanently
 # excluded from hypothesis counts, labels, and promotion machinery.
-# B-TREND fires with the 1M trend at fixed intervals (trend age gated by
-# the SAME constant the trend family fires on); B-RANDOM is uniform
-# random timing/direction (fixed seed, pinned); B-ALWAYS-LONG is
-# periodic longs (the drift reference).
-BASELINE_SEED = 60            # register number; pinned
+# ENSEMBLES (register 61 — the floor is a DISTRIBUTION, not a draw):
+# B-RANDOM runs 20 seeds; B-TREND runs 20 cadence phase-offsets (same
+# interval, shifted starts). Cells report the ensemble MEDIAN with the
+# min–max member range beside it; signals compare against the median.
+# B-ALWAYS-LONG is deterministic (single member, degenerate range).
+BASELINE_SEEDS = tuple(range(60, 80))   # 20 seeds; pinned
+TREND_OFFSETS = tuple(range(0, 60, 3))  # 20 phase-offsets; pinned
 BASELINE_INTERVAL_BARS = 60   # implementer-proposed cadence, FLAGGED
 DRIFT_SKEW_SHARE = 0.8        # implementer-proposed match rule, FLAGGED
 # trend family by DERIVATION: the signals whose firing condition
@@ -64,7 +67,8 @@ BASELINE_NAMES = ("B-TREND", "B-RANDOM", "B-ALWAYS-LONG")
 
 
 def baseline_fires(env, events):
-    """The three controls' fire streams, deterministic (pinned)."""
+    """The controls' fire streams: name -> list of ensemble members
+    (each a fire list). Deterministic (pinned)."""
     ts = env.ts
     n = len(ts)
     trend_map = {}
@@ -76,24 +80,45 @@ def baseline_fires(env, events):
     for i in range(1, n):
         age[i] = age[i - 1] + 1 if (trend[i] != 0
                                     and trend[i] == trend[i - 1]) else 0
-    grid = range(0, n, BASELINE_INTERVAL_BARS)
-    out = {"B-ALWAYS-LONG": [
-        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": 1,
-         "name": "B-ALWAYS-LONG"} for i in grid]}
-    out["B-TREND"] = [
-        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": int(trend[i]),
-         "name": "B-TREND"} for i in grid
-        if trend[i] != 0 and age[i] >= ESTABLISHED_TREND_AGE]
-    rs = np.random.RandomState(BASELINE_SEED)
+
+    def _mk(name, idxs, dirs):
+        return [{"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": int(d),
+                 "name": name} for i, d in zip(idxs, dirs)
+                if not is_sealed(pd.Timestamp(ts[i], tz="UTC"))]
+    out = {"B-ALWAYS-LONG": [_mk(
+        "B-ALWAYS-LONG", range(0, n, BASELINE_INTERVAL_BARS),
+        [1] * len(range(0, n, BASELINE_INTERVAL_BARS)))]}
+    out["B-TREND"] = []
+    for off in TREND_OFFSETS:
+        grid = [i for i in range(off, n, BASELINE_INTERVAL_BARS)
+                if trend[i] != 0 and age[i] >= ESTABLISHED_TREND_AGE]
+        out["B-TREND"].append(_mk("B-TREND", grid,
+                                  [int(trend[i]) for i in grid]))
+    out["B-RANDOM"] = []
     k = max(1, n // BASELINE_INTERVAL_BARS)
-    idx = np.sort(rs.choice(n, size=min(k, n), replace=False))
-    dirs = rs.choice([-1, 1], size=len(idx))
-    out["B-RANDOM"] = [
-        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": int(d),
-         "name": "B-RANDOM"} for i, d in zip(idx, dirs)]
-    for name in out:
-        out[name] = [f for f in out[name] if not is_sealed(f["ts"])]
+    for seed in BASELINE_SEEDS:
+        rs = np.random.RandomState(seed)
+        idx = np.sort(rs.choice(n, size=min(k, n), replace=False))
+        dirs = rs.choice([-1, 1], size=len(idx))
+        out["B-RANDOM"].append(_mk("B-RANDOM", idx, dirs))
     return out
+
+
+def _ensemble_summary(member_cells):
+    """Median-with-range across ensemble members' cell stats. Members
+    with no trades in the window are counted but contribute no stats."""
+    have = [c for c in member_cells if c]
+    if not have:
+        return None
+    med = lambda k: round(float(np.median([c[k] for c in have])), 2)
+    rng = lambda k: [round(float(min(c[k] for c in have)), 2),
+                     round(float(max(c[k] for c in have)), 2)]
+    return {"members": len(member_cells), "members_measured": len(have),
+            "n_median": int(np.median([c["n"] for c in have])),
+            "net_pts_median": med("net_pts"),
+            "net_pts_range": rng("net_pts"),
+            "median_pts_median": med("median_pts"),
+            "median_pts_range": rng("median_pts")}
 
 
 def ladder_recipes():
@@ -167,14 +192,20 @@ def run_instrument(instr):
                 if st:
                     row.setdefault(wname, {})[win] = st
         out["signals"][name] = row
-    # baselines: identical harvest machinery, fenced as controls
+    # baselines: identical harvest machinery, fenced as controls; each
+    # ensemble member simulated independently, cells summarized as
+    # median with min–max member range (register 61)
     out["baselines"] = {}
-    for bname, bf in baseline_fires(env, engine.narrative.events).items():
+    for bname, members in baseline_fires(env,
+                                         engine.narrative.events).items():
         brow = {}
         for wname, recipe in ladder_recipes().items():
-            trades = simulate(bf, env, recipe, spread)
+            per_member = [simulate(mf, env, recipe, spread)
+                          for mf in members]
             for win, sel in windows:
-                st = _cell_stats([t for t in trades if sel(t)])
+                st = _ensemble_summary(
+                    [_cell_stats([t for t in trades if sel(t)])
+                     for trades in per_member])
                 if st:
                     brow.setdefault(wname, {})[win] = st
         out["baselines"][bname] = brow
@@ -204,9 +235,12 @@ def run_instrument(instr):
                 row["matched_baseline"][win] = {
                     "name": bname,
                     "delta_median_3x": round(
-                        cell["median_pts"] - bcell["median_pts"], 2),
-                    "baseline_median_3x": bcell["median_pts"],
-                    "baseline_n": bcell["n"]}
+                        cell["median_pts"]
+                        - bcell["median_pts_median"], 2),
+                    "baseline_median_3x": bcell["median_pts_median"],
+                    "baseline_range_3x": bcell["median_pts_range"],
+                    "baseline_members": bcell["members_measured"],
+                    "baseline_n_median": bcell["n_median"]}
     # the three question-holding conditioned views — SAME simulated trades
     # as the rows above, session-selected after the fact (identical fills;
     # the one-position stream is the full signal's, not the subset's)
@@ -259,16 +293,20 @@ def _emit(results, head):
          "convention); no best-of filtering — every registered signal "
          "prints or none do. Terms: [docs/GLOSSARY.md](../docs/"
          "GLOSSARY.md).", "",
-         "**BASELINE CONTROLS (register 60 — controls, never "
-         "candidates):** the Δmed@3× column reads each signal against "
-         "its MATCHED pseudo-signal baseline — trend-family signals "
-         "(established-trend gate) vs B-TREND; long-skewed signals "
-         "(≥80% long trades, implementer-proposed rule, FLAGGED) vs "
-         "B-ALWAYS-LONG; everything else vs B-RANDOM (fixed seed, "
-         "pinned). The subtraction answers: does the hypothesis add "
-         "anything beyond exposure? Baselines are fenced below, "
-         "permanently excluded from hypothesis counts, labels, and "
-         "promotion machinery.", ""]
+         "**BASELINE CONTROLS (register 60/61 — controls, never "
+         "candidates; ENSEMBLES):** the Δmed@3× column reads each "
+         "signal against its MATCHED pseudo-signal baseline's ENSEMBLE "
+         "MEDIAN, with the floor's own min–max member range printed "
+         "beside it — an above-baseline claim is visibly inside or "
+         "outside the floor's noise. Matching: trend-family signals "
+         "(established-trend gate) vs B-TREND (cadence phase-offset "
+         "ensemble); long-skewed signals (≥80% long trades, "
+         "implementer-proposed rule, FLAGGED) vs B-ALWAYS-LONG "
+         "(deterministic); everything else vs B-RANDOM (20-seed "
+         "ensemble, pinned). The subtraction answers: does the "
+         "hypothesis add anything beyond exposure? Baselines are "
+         "fenced below, permanently excluded from hypothesis counts, "
+         "labels, and promotion machinery.", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread charged "
@@ -288,8 +326,14 @@ def _emit(results, head):
                 else:
                     cells = [_fmt(row.get(w, {}).get(win)) for w in widths]
                     mb = row.get("matched_baseline", {}).get(win)
-                    cells.append(f"{mb['delta_median_3x']:+.2f} vs "
-                                 f"{mb['name']}" if mb else "—")
+                    if mb:
+                        lo, hi = mb["baseline_range_3x"]
+                        rng = ("" if lo == hi
+                               else f" [floor {lo:+.2f}…{hi:+.2f}]")
+                        cells.append(f"{mb['delta_median_3x']:+.2f} vs "
+                                     f"{mb['name']}{rng}")
+                    else:
+                        cells.append("—")
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells) + " |")
             L.append("")
             L += [f"### {inst} / {win} — sessions: net@3x / net@NOSTOP "
@@ -314,22 +358,37 @@ def _emit(results, head):
                                  f"(n{(a or b)['n']})")
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells) + " |")
             L.append("")
-        L += [f"### {inst} — BASELINES (controls — never candidates)", "",
+        L += [f"### {inst} — BASELINES (controls — never candidates; "
+              "ensembles)", "",
               "> Pseudo-signals through the identical harvest machinery "
               "(ladder, sessions, spread, honest fills, one-position). "
               "PERMANENTLY excluded from hypothesis counts, labels, and "
-              "promotion. B-TREND: with-trend fires every "
-              f"{BASELINE_INTERVAL_BARS} bars (cadence FLAGGED "
-              "implementer-proposed), established-trend gate mirrored "
-              "from the trend family. B-RANDOM: uniform random "
-              f"timing/direction, seed {BASELINE_SEED} (pinned). "
-              "B-ALWAYS-LONG: periodic longs — the drift reference.", "",
+              "promotion. THE FLOOR IS A DISTRIBUTION (register 61): "
+              f"B-RANDOM = {len(BASELINE_SEEDS)} seeds; B-TREND = "
+              f"{len(TREND_OFFSETS)} cadence phase-offsets (same "
+              f"{BASELINE_INTERVAL_BARS}-bar interval, shifted starts; "
+              "cadence FLAGGED implementer-proposed); B-ALWAYS-LONG "
+              "deterministic (single member). Cell = ensemble-median net "
+              "/ ensemble-median per-trade median [min…max member range "
+              "of the per-trade median] (median n, members). Signals "
+              "compare against the ensemble MEDIAN; the range beside it "
+              "shows the floor's own noise.", "",
               "| baseline | window | " + " | ".join(widths) + " |",
               "|---|---|" + "---|" * len(widths)]
+
+        def _bfmt(c):
+            if not c:
+                return "—"
+            dim = "°" if c["n_median"] < 20 else ""
+            lo, hi = c["median_pts_range"]
+            rng = "" if lo == hi else f" [{lo:+.2f}…{hi:+.2f}]"
+            return (f"{dim}{c['net_pts_median']:+.1f} / "
+                    f"{c['median_pts_median']:+.2f}{rng} "
+                    f"(n{c['n_median']}, m{c['members_measured']})")
         for bname in BASELINE_NAMES:
             brow = res["baselines"].get(bname, {})
             for win in ("backtest", "forward"):
-                cells = [_fmt(brow.get(w, {}).get(win)) for w in widths]
+                cells = [_bfmt(brow.get(w, {}).get(win)) for w in widths]
                 L.append(f"| {bname} | {win} | " + " | ".join(cells)
                          + " |")
         L.append("")
@@ -376,7 +435,12 @@ def main():
            "ladder": {"widths_atr15": list(LADDER_WIDTHS),
                       "nostop": "EOD-only exit (true no-SL endpoint)"},
            "baselines": {"names": list(BASELINE_NAMES),
-                         "seed": BASELINE_SEED,
+                         "ensemble": ("register 61: floor = distribution; "
+                                      "single-seed history superseded "
+                                      "(archived in git, register 60 "
+                                      "commits)"),
+                         "seeds": list(BASELINE_SEEDS),
+                         "trend_phase_offsets": list(TREND_OFFSETS),
                          "interval_bars": BASELINE_INTERVAL_BARS,
                          "drift_skew_share_FLAGGED": DRIFT_SKEW_SHARE,
                          "fence": ("CONTROLS NEVER CANDIDATES — excluded "

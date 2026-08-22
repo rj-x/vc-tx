@@ -74,9 +74,12 @@ def test_baseline_constants_and_fence():
     never candidates, never countable as signals)."""
     import re
     from backtest.signal_points import (BASELINE_INTERVAL_BARS,
-                                        BASELINE_NAMES, BASELINE_SEED,
-                                        DRIFT_SKEW_SHARE, TREND_FAMILY)
-    assert BASELINE_SEED == 60
+                                        BASELINE_NAMES, BASELINE_SEEDS,
+                                        DRIFT_SKEW_SHARE, TREND_FAMILY,
+                                        TREND_OFFSETS)
+    assert BASELINE_SEEDS == tuple(range(60, 80))       # 20-seed ensemble
+    assert TREND_OFFSETS == tuple(range(0, 60, 3))      # 20 phase-offsets
+    assert len(BASELINE_SEEDS) >= 20 and len(TREND_OFFSETS) >= 20
     assert BASELINE_INTERVAL_BARS == 60
     assert DRIFT_SKEW_SHARE == 0.8
     assert TREND_FAMILY == ("S0-H10", "S0-H14")
@@ -98,8 +101,15 @@ def test_baseline_fires_deterministic():
     b = baseline_fires(env, events)
     assert json.dumps(a, sort_keys=True, default=str) \
         == json.dumps(b, sort_keys=True, default=str)
-    assert len(a["B-ALWAYS-LONG"]) > 0 and len(a["B-RANDOM"]) > 0
+    from backtest.signal_points import BASELINE_SEEDS, TREND_OFFSETS
+    assert len(a["B-ALWAYS-LONG"]) == 1          # deterministic member
+    assert len(a["B-RANDOM"]) == len(BASELINE_SEEDS)
+    assert len(a["B-TREND"]) == len(TREND_OFFSETS)
+    assert all(len(m) > 0 for m in a["B-RANDOM"])
+    # distinct seeds/offsets produce distinct members (a real ensemble)
+    assert len({json.dumps(m, default=str)
+                for m in a["B-RANDOM"]}) == len(BASELINE_SEEDS)
     # B-TREND respects the establishment gate: no fires before the trend
     # has run ESTABLISHED_TREND_AGE bars
     assert all(f["ts"].value >= t0 + 60 * 60_000_000_000
-               for f in a["B-TREND"])
+               for m in a["B-TREND"] for f in m)
