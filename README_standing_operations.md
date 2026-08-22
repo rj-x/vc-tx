@@ -214,6 +214,8 @@ this run's warm_through, since a post-crash sync can erase downtime.
 - `engine/signal_watch.py` — THE one home for hypothesis firing conditions + narrative primitives; passive observer, invariance-pinned; no artifact (fires feed the readers).
 - `backtest/scoreboard.py` — signal scoreboard (precision/coverage/earliness/payoff vs per-context chance) → `hypothesis_performance.md` + `hypothesis_performance.json` (one name, one run) + `READING_GUIDE.md`.
 - `backtest/recipes.py` — recipe layer, grammar v1 (composed/staged stops, honest fills) → `recipe_performance.md|.json`.
+- `backtest/signal_points.py` — stop-width ladder (register 59 instrumentation: k×ATR ∈ {1.5,2,3,4,5} + NOSTOP) → `reports/SIGNAL_POINTS.md` + `signal_points.json`.
+- `backtest/dashboard.py` — the results front page (register 58; points-first board) → `reports/DASHBOARD.md`.
 - `backtest/excursions.py` — MFE/MAE/time-to-MFE profiles + narrative-conditional cut → `excursion_profiles.md|.json`.
 - `backtest/sessions.py` — register-37 session partition (native-tz, DST-proof); no artifact.
 - `backtest/forward_migration.py` — forward-zone migration readout → `reports/forward/`.

@@ -86,6 +86,7 @@ AUTHORITY = {
     "signal_watch.py:H13_VALUE_AREA_PCT": "operator-specified at S0-H13 registration 2026-08-20 (register 50; standard value-area convention); H13's other parameters cite H11's ratified config + founding baseline machinery",
     "signal_watch.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) — S-T3B row fires on T1d's measured conditions exactly (prereg_signal_rows_v1)",
     "signal_watch.py:SEQUENCE_N": "S-EFFORTLESS-SEQ sequence clause: 2 consecutive same-direction effortless prints (prereg_signal_rows_v1; operator-reviewable)",
+    "signal_points.py:LADDER_WIDTHS": "INSTRUMENTATION registered once (register 59; prereg_stopwidth_ladder): the stop-width ladder IS the measurement — values are not strategy parameters awaiting ratification; changes only by re-registration",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
     "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
 }

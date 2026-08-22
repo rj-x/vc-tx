@@ -54,11 +54,43 @@ def generate():
           f"page generated {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}",
           ""]
 
-    # (b) the board — one line per hypothesis (home instrument, canonical)
+    # (b) the board — one line per hypothesis (home instrument, canonical).
+    # POINTS-FIRST (register 59): forward net points at 3xATR leads;
+    # precision lift is the secondary read. Points from the stop-width
+    # ladder (reports/SIGNAL_POINTS.md — the first drill-down).
+    sp = _load("signal_points.json")
+    sp_home = {}
+    if sp:
+        for res in sp.get("results", []):
+            if res.get("instrument") == "uk100fut":
+                sp_home = res.get("signals", {})
+
+    def _points_at(n, width, win):
+        """Sum net/n across ALL of H<n>'s signals (all-or-none, no
+        best-of), plus per-session nets — from signal_points.json."""
+        import re as _re
+        tot = cnt = 0.0
+        have = False
+        sess = {}
+        for key, row in sp_home.items():
+            if not _re.fullmatch(rf"S\d+-H{n}", key) or "note" in row:
+                continue
+            cell = row.get(width, {}).get(win)
+            if not cell:
+                continue
+            have = True
+            tot += cell["net_pts"]
+            cnt += cell["n"]
+            for s, v in cell.get("by_session", {}).items():
+                sess[s] = round(sess.get(s, 0.0) + v["net_pts"], 1)
+        return (round(tot, 1), int(cnt), sess) if have else None
+
     L += ["## The board (home instrument; away instruments PROVISIONAL — "
-          "see the scoreboard)", "",
-          "| H | best current cell (initiation, conditioned where "
-          "declared) | fwd trend | status |", "|---|---|---|---|"]
+          "see the scoreboard). Points first: **the drill-down is "
+          "[SIGNAL_POINTS.md](SIGNAL_POINTS.md)**", "",
+          "| H | fwd net pts @3×ATR (n) | strongest / weakest session "
+          "@3× fwd | init lift (secondary) | fwd trend | status |",
+          "|---|---|---|---|---|---|"]
     if sb:
         home = sb.get("instruments", {}).get("uk100fut", {})
         sigs = home.get("signals", {})
@@ -108,10 +140,29 @@ def generate():
             lb, lf = _lift("backtest", s0), _lift("forward", s0)
             if lb is not None and lf is not None:
                 trend = "↑" if lf > lb + 2 else "↓" if lf < lb - 2 else "→"
-            cell = (f"{best[1]} {best[2]} {best[0]:+.1f}pp (n={best[3]})"
-                    if best else "no measurable cell (n<20 everywhere)")
-            L.append(f"| H{n} | {cell} | {trend} "
-                     f"| {labels.get(n, '-')} |")
+            lift_cell = (f"{best[1]} {best[2]} {best[0]:+.1f}pp "
+                         f"(n={best[3]})"
+                         if best else "no measurable cell (n<20)")
+            pts = _points_at(n, "3x", "forward")
+            if pts:
+                net, cnt, sess = pts
+                dim = "°" if cnt < 20 else ""
+                pts_cell = f"**{dim}{net:+.1f}** (n{cnt})"
+                if len(sess) == 1:
+                    s0_only = next(iter(sess))
+                    sess_cell = (f"{s0_only} {sess[s0_only]:+.1f} "
+                                 f"(only session)")
+                elif sess:
+                    hi_s = max(sess, key=sess.get)
+                    lo_s = min(sess, key=sess.get)
+                    sess_cell = (f"{hi_s} {sess[hi_s]:+.1f} / "
+                                 f"{lo_s} {sess[lo_s]:+.1f}")
+                else:
+                    sess_cell = "—"
+            else:
+                pts_cell, sess_cell = "—", "—"
+            L.append(f"| H{n} | {pts_cell} | {sess_cell} | {lift_cell} "
+                     f"| {trend} | {labels.get(n, '-')} |")
     L.append("")
 
     # (c) open questions with clocks
@@ -159,6 +210,10 @@ def generate():
     # (e) the map
     L += ["## Map — what answers what (reports/scoreboard/ unless noted)",
           "",
+          "- **`reports/SIGNAL_POINTS.md`** — the assessment page: net "
+          "points per signal across the stop-width ladder, per session, "
+          "with the open-question conditioned views. THE first "
+          "drill-down from this board. Read weekly.",
           "- `hypothesis_performance.md|.json` — how every signal grades "
           "(dual-convention). Read weekly.",
           "- `READING_GUIDE.md` — how to read the board. Read once, "

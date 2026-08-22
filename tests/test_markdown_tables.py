@@ -11,8 +11,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def test_generated_tables_are_well_formed():
     bad = []
+    pages = [os.path.join(ROOT, "reports", "SIGNAL_POINTS.md"),
+             os.path.join(ROOT, "reports", "DASHBOARD.md")]
     for path in sorted(glob.glob(os.path.join(
-            ROOT, "reports", "scoreboard", "*.md"))):
+            ROOT, "reports", "scoreboard", "*.md"))) \
+            + [p for p in pages if os.path.exists(p)]:
         lines = open(path).read().splitlines()
         for i, ln in enumerate(lines):
             if re.match(r"^\|(---\|)+$", ln.replace(" ", "")):
