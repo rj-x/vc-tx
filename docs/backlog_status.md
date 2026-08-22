@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 59 (freshness-checked by the weekly
+table.** Register-current-through: 60 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -18,11 +18,13 @@ authoritative.
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
 | H14 counter-trend absorption, H15 sweep-reclaim (params flagged), H16 intraday momentum | testable-now (minted 08-22; rows open next run) |
 | S1-H11 node-stall (SUPPRESSION grading) | testable-now (negative lift = the claim winning) |
-| R2 refinement experiment | awaiting-decision-run-approval (design counted, register 56) |
+| R2 refinement experiment | RUN 2026-08-22 (register 57; refinement negative both sides) → awaiting-decision-verdict-read |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
 | candidate docket | **CLEARED at the 2026-08-22 sitting (register 56)**: H14/H15/H16 minted; S1-H11 suppression ratified; R2 design commissioned (run on approval); modifier-reframe + ND/NS-recall routed; rung-consensus + 1M-H5 + drift-inversion parked with reasons; gated items unchanged; new ideas queue for the next sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
+| Q1-H11, Q2-H9, Q1-H6 (matrix-cell promotions) | testable-now (register 58; clocks on the dashboard; Q2-H9 gated on nas100 validation) |
+| H1 harvest program (6 variants: delay-3/10, confirm-entry, own-curve, session read, knife-guard) | registered-and-counted 2026-08-22 (register 60) → awaiting-build-harvest-harness (template for the next precision-points-gap signal if it works) |
 
 ## Recipes
 
@@ -62,7 +64,10 @@ authoritative.
 | scoreboard live attachment + calendar/suspension fixes | DEPLOYED 2026-08-19 12:38Z restart (attachment itself rides item 22's restart) |
 | thin-tape probe | awaiting-decision-evening (standalone ~50 min; runbook ready) |
 | validation evenings nas100→ger40→us30 | awaiting-decision-evenings (~35 min each; runbook ready, dry-run verified) |
-| Part C weekly forward studies | awaiting-decision-adopt (reviewer recommends ADOPT) |
+| Part C weekly forward studies | ADOPTED (register 55); runs in the weekly campaign |
+| stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
+| baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22 (register 60; controls never candidates; cadence + skew rule awaiting-ratification) |
+| GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 2) |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |
 

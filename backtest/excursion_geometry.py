@@ -156,6 +156,7 @@ def run_instrument(instr):
 def _emit(results, head):
     L = ["# Excursion Geometry — stop-width + target-reach "
          "(GENERATED)", "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{head[:9]}` — OBSERVATIONAL, pre-registered "
          "(prereg_excursion_geometry). BOTH HALVES ARE RECIPE-DESIGN "
          "INPUTS, NOT STRATEGIES. MAE in ATR(15M) units. **WARNING: the "

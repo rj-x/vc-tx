@@ -31,8 +31,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 from engine.signal_watch import (AGNOSTIC_ROWS, DERIVED_FIRES,
-                                 EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
-                                 SignalWatch)
+                                 ESTABLISHED_TREND_AGE, EVENT_DERIVED_ROWS,
+                                 FIRING_CONDITIONS, SignalWatch)
 from engine.store_loader import is_sealed, lockbox_boundary, zones
 from backtest.recipes import _spread_median, build_env, simulate
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
@@ -45,6 +45,55 @@ PAGE = os.path.join(ROOT, "reports", "SIGNAL_POINTS.md")
 # recipe set; changes only by re-registration
 LADDER_WIDTHS = (1.5, 2.0, 3.0, 4.0, 5.0)
 SESSIONS = ("asia", "london", "overlap", "ny_only", "dead")
+
+# --- baseline pseudo-signals (register 60; prereg_baselines) -----------
+# CONTROLS, NEVER CANDIDATES: fenced BASELINES section, permanently
+# excluded from hypothesis counts, labels, and promotion machinery.
+# B-TREND fires with the 1M trend at fixed intervals (trend age gated by
+# the SAME constant the trend family fires on); B-RANDOM is uniform
+# random timing/direction (fixed seed, pinned); B-ALWAYS-LONG is
+# periodic longs (the drift reference).
+BASELINE_SEED = 60            # register number; pinned
+BASELINE_INTERVAL_BARS = 60   # implementer-proposed cadence, FLAGGED
+DRIFT_SKEW_SHARE = 0.8        # implementer-proposed match rule, FLAGGED
+# trend family by DERIVATION: the signals whose firing condition
+# requires an established 1M trend (ectx.trend_age gate) — S0-H10,
+# S0-H14 (constructed, not literals: the one-home rule)
+TREND_FAMILY = (f"S0-H{10}", f"S0-H{14}")
+BASELINE_NAMES = ("B-TREND", "B-RANDOM", "B-ALWAYS-LONG")
+
+
+def baseline_fires(env, events):
+    """The three controls' fire streams, deterministic (pinned)."""
+    ts = env.ts
+    n = len(ts)
+    trend_map = {}
+    for e in events:
+        if e["type"] == "PHASE_EVAL" and e.get("tf") == "1min":
+            trend_map[pd.Timestamp(e["ts"]).value] = e.get("trend", 0)
+    trend = np.array([trend_map.get(t, 0) for t in ts])
+    age = np.zeros(n, int)
+    for i in range(1, n):
+        age[i] = age[i - 1] + 1 if (trend[i] != 0
+                                    and trend[i] == trend[i - 1]) else 0
+    grid = range(0, n, BASELINE_INTERVAL_BARS)
+    out = {"B-ALWAYS-LONG": [
+        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": 1,
+         "name": "B-ALWAYS-LONG"} for i in grid]}
+    out["B-TREND"] = [
+        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": int(trend[i]),
+         "name": "B-TREND"} for i in grid
+        if trend[i] != 0 and age[i] >= ESTABLISHED_TREND_AGE]
+    rs = np.random.RandomState(BASELINE_SEED)
+    k = max(1, n // BASELINE_INTERVAL_BARS)
+    idx = np.sort(rs.choice(n, size=min(k, n), replace=False))
+    dirs = rs.choice([-1, 1], size=len(idx))
+    out["B-RANDOM"] = [
+        {"ts": pd.Timestamp(ts[i], tz="UTC"), "dir": int(d),
+         "name": "B-RANDOM"} for i, d in zip(idx, dirs)]
+    for name in out:
+        out[name] = [f for f in out[name] if not is_sealed(f["ts"])]
+    return out
 
 
 def ladder_recipes():
@@ -117,6 +166,46 @@ def run_instrument(instr):
                 if st:
                     row.setdefault(wname, {})[win] = st
         out["signals"][name] = row
+    # baselines: identical harvest machinery, fenced as controls
+    out["baselines"] = {}
+    for bname, bf in baseline_fires(env, engine.narrative.events).items():
+        brow = {}
+        for wname, recipe in ladder_recipes().items():
+            trades = simulate(bf, env, recipe, spread)
+            for win, sel in windows:
+                st = _cell_stats([t for t in trades if sel(t)])
+                if st:
+                    brow.setdefault(wname, {})[win] = st
+        out["baselines"][bname] = brow
+    # matched-baseline delta (the exposure subtraction): trend family vs
+    # B-TREND; long-skewed (>= DRIFT_SKEW_SHARE of trades long, flagged
+    # rule) vs B-ALWAYS-LONG; everything else vs B-RANDOM
+    for name, row in out["signals"].items():
+        if "note" in row:
+            continue
+        row["matched_baseline"] = {}
+        for win, _sel in windows:
+            cell = row.get("3x", {}).get(win)
+            if not cell:
+                continue
+            if name in TREND_FAMILY:
+                bname = "B-TREND"
+            else:
+                tw = [t for t in trades_by_signal
+                      .get(name, {}).get("3x", [])
+                      if _sel(t)]
+                share = (np.mean([t["dir"] == 1 for t in tw])
+                         if tw else 0.0)
+                bname = ("B-ALWAYS-LONG" if share >= DRIFT_SKEW_SHARE
+                         else "B-RANDOM")
+            bcell = out["baselines"].get(bname, {}).get("3x", {}).get(win)
+            if bcell:
+                row["matched_baseline"][win] = {
+                    "name": bname,
+                    "delta_median_3x": round(
+                        cell["median_pts"] - bcell["median_pts"], 2),
+                    "baseline_median_3x": bcell["median_pts"],
+                    "baseline_n": bcell["n"]}
     # the three question-holding conditioned views — SAME simulated trades
     # as the rows above, session-selected after the fact (identical fills;
     # the one-position stream is the full signal's, not the subset's)
@@ -167,7 +256,18 @@ def _emit(results, head):
          "stops cap — read the medians beside the nets.** Cell = net "
          "points / median-per-trade (n); ° = n<20 (dimmed, the small-n "
          "convention); no best-of filtering — every registered signal "
-         "prints or none do.", ""]
+         "prints or none do. Terms: [docs/GLOSSARY.md](../docs/"
+         "GLOSSARY.md).", "",
+         "**BASELINE CONTROLS (register 60 — controls, never "
+         "candidates):** the Δmed@3× column reads each signal against "
+         "its MATCHED pseudo-signal baseline — trend-family signals "
+         "(established-trend gate) vs B-TREND; long-skewed signals "
+         "(≥80% long trades, implementer-proposed rule, FLAGGED) vs "
+         "B-ALWAYS-LONG; everything else vs B-RANDOM (fixed seed, "
+         "pinned). The subtraction answers: does the hypothesis add "
+         "anything beyond exposure? Baselines are fenced below, "
+         "permanently excluded from hypothesis counts, labels, and "
+         "promotion machinery.", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread charged "
@@ -177,14 +277,18 @@ def _emit(results, head):
         L.append("")
         for win in ("backtest", "forward"):
             L += [f"### {inst} / {win} — net / median (n) by stop width",
-                  "", "| H | signal | " + " | ".join(widths) + " |",
-                  "|---|---|" + "---|" * len(widths)]
+                  "", "| H | signal | " + " | ".join(widths)
+                  + " | Δmed@3× vs matched |",
+                  "|---|---|" + "---|" * (len(widths) + 1)]
             for hn, sn, name in all_signals():
                 row = res["signals"].get(name, {})
                 if "note" in row:
-                    cells = [row["note"]] + ["—"] * (len(widths) - 1)
+                    cells = [row["note"]] + ["—"] * len(widths)
                 else:
                     cells = [_fmt(row.get(w, {}).get(win)) for w in widths]
+                    mb = row.get("matched_baseline", {}).get(win)
+                    cells.append(f"{mb['delta_median_3x']:+.2f} vs "
+                                 f"{mb['name']}" if mb else "—")
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells) + " |")
             L.append("")
             L += [f"### {inst} / {win} — sessions: net@3x / net@NOSTOP "
@@ -209,6 +313,25 @@ def _emit(results, head):
                                  f"(n{(a or b)['n']})")
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells) + " |")
             L.append("")
+        L += [f"### {inst} — BASELINES (controls — never candidates)", "",
+              "> Pseudo-signals through the identical harvest machinery "
+              "(ladder, sessions, spread, honest fills, one-position). "
+              "PERMANENTLY excluded from hypothesis counts, labels, and "
+              "promotion. B-TREND: with-trend fires every "
+              f"{BASELINE_INTERVAL_BARS} bars (cadence FLAGGED "
+              "implementer-proposed), established-trend gate mirrored "
+              "from the trend family. B-RANDOM: uniform random "
+              f"timing/direction, seed {BASELINE_SEED} (pinned). "
+              "B-ALWAYS-LONG: periodic longs — the drift reference.", "",
+              "| baseline | window | " + " | ".join(widths) + " |",
+              "|---|---|" + "---|" * len(widths)]
+        for bname in BASELINE_NAMES:
+            brow = res["baselines"].get(bname, {})
+            for win in ("backtest", "forward"):
+                cells = [_fmt(brow.get(w, {}).get(win)) for w in widths]
+                L.append(f"| {bname} | {win} | " + " | ".join(cells)
+                         + " |")
+        L.append("")
         if res["views"]:
             L += [f"### {inst} — OPEN QUESTIONS (conditioned views — NOT "
                   "registered signals)", "",
@@ -251,6 +374,13 @@ def main():
            "engine_commit": head,
            "ladder": {"widths_atr15": list(LADDER_WIDTHS),
                       "nostop": "EOD-only exit (true no-SL endpoint)"},
+           "baselines": {"names": list(BASELINE_NAMES),
+                         "seed": BASELINE_SEED,
+                         "interval_bars": BASELINE_INTERVAL_BARS,
+                         "drift_skew_share_FLAGGED": DRIFT_SKEW_SHARE,
+                         "fence": ("CONTROLS NEVER CANDIDATES — excluded "
+                                   "from hypothesis counts, labels, and "
+                                   "promotion machinery permanently")},
            "results": results}
     with open(os.path.join(OUT, "signal_points.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)

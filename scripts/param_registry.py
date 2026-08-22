@@ -87,6 +87,11 @@ AUTHORITY = {
     "signal_watch.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10) — S-T3B row fires on T1d's measured conditions exactly (prereg_signal_rows_v1)",
     "signal_watch.py:SEQUENCE_N": "S-EFFORTLESS-SEQ sequence clause: 2 consecutive same-direction effortless prints (prereg_signal_rows_v1; operator-reviewable)",
     "signal_points.py:LADDER_WIDTHS": "INSTRUMENTATION registered once (register 59; prereg_stopwidth_ladder): the stop-width ladder IS the measurement — values are not strategy parameters awaiting ratification; changes only by re-registration",
+    "signal_points.py:BASELINE_SEED": "register 60 (prereg_baselines): B-RANDOM's fixed seed, pinned — controls never candidates",
+    "signal_points.py:BASELINE_INTERVAL_BARS": "IMPLEMENTER-PROPOSED baseline fire cadence (register 60), FLAGGED pending ratification",
+    "signal_points.py:DRIFT_SKEW_SHARE": "IMPLEMENTER-PROPOSED drift-sensitive match rule (register 60), FLAGGED pending ratification",
+    "signal_points.py:TREND_FAMILY": "DERIVED (register 60): the signals whose firing condition requires an established 1M trend — matched to B-TREND",
+    "signal_points.py:BASELINE_NAMES": "register 60: the three controls; fenced, never candidates",
     "lab.py:TRIAL_LOG": "lab discipline — immutable multiple-comparisons record (execution-layer build order)",
     "t3.py:ESTABLISHED_TREND_AGE": "T1d establishment cell (age>=10), pinned in prereg_T3_build",
 }

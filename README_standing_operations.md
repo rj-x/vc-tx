@@ -53,12 +53,15 @@ spread-by-bin, graduation-stop distributions by stop basis, and the basis-at-ent
    run: state, the per-hypothesis board, question clocks, decisions awaiting you, and
    the map of every artifact. Start here for any results review; drill into the
    artifacts it points at. It contains no number that isn't in a stamped artifact.
-2. Funnel trend — labels → spawns → confirmations → gate outcomes. Trend, not levels;
+2. **`docs/GLOSSARY.md` — the terms.** One plain-English line per term; every
+   generated report links it; an enforcement test keeps it complete (an undefined
+   term fails the suite). Reach for it whenever a report word is opaque.
+3. Funnel trend — labels → spawns → confirmations → gate outcomes. Trend, not levels;
    numbers are trend-indicative while baselines grow toward spec.
-3. Drift-adjusted label study — **excess** columns only; raw columns are tape-contaminated.
-4. Any flagged rows: basis deviation flags, `SKIPPED_SIZE`, `CONFIRM_UNDERSTRENGTH`,
+4. Drift-adjusted label study — **excess** columns only; raw columns are tape-contaminated.
+5. Any flagged rows: basis deviation flags, `SKIPPED_SIZE`, `CONFIRM_UNDERSTRENGTH`,
    staleness warnings.
-5. `pre_open` rows in the extended study carry a standing small-n note — do not over-read.
+6. `pre_open` rows in the extended study carry a standing small-n note — do not over-read.
 
 **Not required:** any action. The expected weekly outcome during accumulation is
 "numbers accrued, nothing notable." That is success, not stagnation.

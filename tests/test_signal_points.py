@@ -66,3 +66,40 @@ def test_ladder_twin_run_bit_identity():
         b = simulate(fires, env, recipe, 0.8)
         assert json.dumps(a, sort_keys=True) == json.dumps(b,
                                                            sort_keys=True)
+
+
+def test_baseline_constants_and_fence():
+    """Register 60 pins: B-RANDOM's seed and the cadence are registered
+    values; the controls live outside the hypothesis namespace (fence:
+    never candidates, never countable as signals)."""
+    import re
+    from backtest.signal_points import (BASELINE_INTERVAL_BARS,
+                                        BASELINE_NAMES, BASELINE_SEED,
+                                        DRIFT_SKEW_SHARE, TREND_FAMILY)
+    assert BASELINE_SEED == 60
+    assert BASELINE_INTERVAL_BARS == 60
+    assert DRIFT_SKEW_SHARE == 0.8
+    assert TREND_FAMILY == ("S0-H10", "S0-H14")
+    assert set(BASELINE_NAMES) == {"B-TREND", "B-RANDOM", "B-ALWAYS-LONG"}
+    for b in BASELINE_NAMES:
+        assert not re.fullmatch(r"S\d+-H\d+", b)     # outside the namespace
+
+
+def test_baseline_fires_deterministic():
+    from backtest.signal_points import baseline_fires
+    bars = [(100 + (i % 9) * 0.3, 100.5 + (i % 9) * 0.3,
+             99.5 + (i % 4) * 0.2, 100.1) for i in range(400)]
+    env = _env(bars)
+    t0 = pd.Timestamp("2026-08-17 09:00", tz="UTC").value
+    events = [{"type": "PHASE_EVAL", "tf": "1min",
+               "ts": pd.Timestamp(t0 + i * 60_000_000_000, tz="UTC"),
+               "trend": 1 if i > 50 else 0} for i in range(400)]
+    a = baseline_fires(env, events)
+    b = baseline_fires(env, events)
+    assert json.dumps(a, sort_keys=True, default=str) \
+        == json.dumps(b, sort_keys=True, default=str)
+    assert len(a["B-ALWAYS-LONG"]) > 0 and len(a["B-RANDOM"]) > 0
+    # B-TREND respects the establishment gate: no fires before the trend
+    # has run ESTABLISHED_TREND_AGE bars
+    assert all(f["ts"].value >= t0 + 60 * 60_000_000_000
+               for f in a["B-TREND"])

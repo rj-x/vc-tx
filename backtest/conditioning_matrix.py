@@ -192,6 +192,7 @@ def run_instrument(instr):
 
 def _emit(results, head):
     L = ["# Conditioning-Matrix Census (GENERATED)", "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{head[:9]}` — OBSERVATIONAL, pre-registered "
          "(prereg_conditioning_matrix). STATE-conditioned confirmation "
          "testing: hits are EPISODE-BEGINS-AFTER-FIRE; every cell's lift "

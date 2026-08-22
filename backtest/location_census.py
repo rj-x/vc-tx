@@ -124,6 +124,7 @@ def run_instrument(instr):
 
 def _emit(results, head):
     L = ["# Location-Conditioned Confirmation Census (GENERATED)", "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{head[:9]}` — OBSERVATIONAL, pre-registered "
          "(prereg_location_conditioned_census). Exhaustion-family fires "
          "split by H11-map class at the fire bar (node/gap/neither; "

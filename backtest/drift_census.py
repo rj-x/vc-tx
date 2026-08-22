@@ -97,6 +97,7 @@ def main():
     with open(os.path.join(OUT, "drift_census.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     L = ["# Overnight/Intraday Drift Census (GENERATED)", "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{head[:9]}` — {art['STAMP']}", ""]
     for res in results:
         L += [f"## {res['instrument']} ({res['status'].upper()})"]

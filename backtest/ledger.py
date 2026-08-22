@@ -139,6 +139,7 @@ def write_ledger(hyp_rows, sig_rows, md_path, csv_path):
         for r in hyp_rows + sig_rows:
             w.writerow(r)
     L = ["# Opportunity Ledger (GENERATED — review surface, non-evidential)",
+         "Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).", "",
          "", "No forward returns here by design (event study's job). "
          "Timestamps in both conventions: close-stamped and open-stamped "
          "(close − TF).", "",

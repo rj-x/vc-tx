@@ -151,6 +151,7 @@ def main():
     with open(os.path.join(OUT, "volume_profile.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     L = ["# Volume Profile Organ — first output + parameter proposals",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          "", f"Engine `{head[:9]}` — {art['STAMP']}", "",
          f"Instrument {res['instrument']}, {res['sessions']} working-set "
          f"sessions. Bucket {res['bucket_pts']} pts.", "",

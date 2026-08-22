@@ -995,6 +995,7 @@ def _emit_performance_md(results):
     first = next(iter(results.values()))
     L = ["# Hypothesis Performance — Per-Instrument",
          "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{first['engine_commit'][:9]}` — register 40 fence as "
          "amended 2026-08-19 (operator): one section per instrument, each "
          "computed only from that instrument's own store and native "
@@ -1093,7 +1094,10 @@ instruments' session structure only after their validation evenings.
 
 def _emit_reading_guide():
     with open(os.path.join(OUT, "READING_GUIDE.md"), "w") as f:
-        f.write(_GUIDE)
+        f.write(_GUIDE.replace(
+            "# Reading Guide — Hypothesis Performance\n",
+            "# Reading Guide — Hypothesis Performance\n\n"
+            "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).\n", 1))
 
 
 def main():

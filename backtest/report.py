@@ -51,6 +51,7 @@ def generate_report():
       f"{prim['data']['rows_1m']:,} 1M rows · **Lockbox:** "
       f"{lockbox['boundary_utc']} (loader-enforced, untouched)")
     a(f"**Cost model:** {prim['cost_model']}")
+    a("**Terms:** [docs/GLOSSARY.md](docs/GLOSSARY.md)")
     a("")
     a("## Headline")
     a("")

@@ -157,6 +157,7 @@ def run_instrument(instr):
 
 def _emit(results, head):
     L = ["# R2 Refinement Experiment (GENERATED; register 57)", "",
+         "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
          f"Engine `{head[:9]}` — OBSERVATIONAL, counted (design register "
          "56; approved 2026-08-22). Identical fires, unrefined vs the "
          "founding refinement micro-loop, under R-OP1 stops. Entry "
