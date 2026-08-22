@@ -1,7 +1,7 @@
 {"event": "DRILL_BANNER", "note": "SYNTHETIC DRILL - NOT A LIVE LEDGER"}
 {"event": "ENTRY", "tag": "FORWARD_PAPER", "entry_ts": "2026-07-17 08:01:00+00:00", "price": 145.60045776175883}
 {"event": "STOP", "note": "mid-session kill (drill)", "last_processed": "2026-07-17 09:51:00+00:00"}
-{"event": "RECONCILE_CLOSE", "entry_ts": "2026-07-17 08:01:00+00:00", "note": "position open at crash/restart; closed on reconcile - honest hole, not a backfilled decision", "ts": "2026-08-22 17:10:42.985285+00:00"}
+{"event": "RECONCILE_CLOSE", "entry_ts": "2026-07-17 08:01:00+00:00", "note": "position open at crash/restart; closed on reconcile - honest hole, not a backfilled decision", "ts": "2026-08-22 17:41:46.217936+00:00"}
 {"event": "COVERAGE_GAP", "from": "2026-07-17 09:51:00+00:00", "note": "downtime hole - decisions never backfilled"}
 {"event": "EXIT", "tag": "FORWARD_PAPER", "entry_ts": "2026-07-17 14:01:00+00:00", "exit_ts": "2026-07-17 15:15:00+00:00", "dir": 1, "entry": 149.6542082418588, "exit": 149.91903824740197, "stop": 144.55420824185882, "contracts": 196, "stake": null, "vehicle": "direct", "basis_at_entry": null, "points": 0.2648300055431605, "r_multiple": 0.05192745206728643, "pnl": -732.0933189135405, "costs": 784.0, "reason": "EOD_EXIT", "equity_after": 99267.90668108646, "spec": "DRILL", "hdir": 1, "gate_tag": null, "confirm_branch": null, "entry_tag": "DRILL2", "signal_bars_held": 5}
 {"event": "DRILL_COMPLETE", "eod_exits": 1, "trades": 1}

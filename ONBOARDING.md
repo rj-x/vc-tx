@@ -667,6 +667,16 @@ set still growing toward fold support).
    (current-through 56). OPERATOR REMAINING: ratify H15 params +
    approve R2 (recs: yes/yes) → then only evenings (nas100 Monday =
    question clocks; probe) + weekly accrual.
+31. Dashboard + matrix questions (register 58, `ce3a1a6`, 102/102):
+   Q1-H11 (Overlap lift persists), Q2-H9 (NY/nas100 lift vs its own
+   family trend; numbering = reviewer draft error, retained — 
+   attribution correction sent), Q1-H6 (London SUPPRESSION persists;
+   17/30 fires accrued, UNGATED — likely the project's FIRST graded
+   question, ~2 weeks out). reports/DASHBOARD.md live: one page,
+   every Part C run, reading-order item 1 — board lines, question
+   clocks, pending decisions, artifact map; points-never-grades.
+   Operator still owes: H15 param ratification + R2 approval (recs
+   yes/yes), then pure calendar.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
