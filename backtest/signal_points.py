@@ -291,7 +291,10 @@ def _emit(results, head):
          "stops cap — read the medians beside the nets.** Cell = net "
          "points / median-per-trade (n); ° = n<20 (dimmed, the small-n "
          "convention); no best-of filtering — every registered signal "
-         "prints or none do. Terms: [docs/GLOSSARY.md](../docs/"
+         "prints or none do. **FILL MODEL: PESSIMISTIC (register 65) — "
+         "the harvest-ladder family prices stops as always filling "
+         "against you; not comparable with touch=fill (optimistic) "
+         "artifacts.** Terms: [docs/GLOSSARY.md](../docs/"
          "GLOSSARY.md).", "",
          "**BASELINE CONTROLS (register 60/61 — controls, never "
          "candidates; ENSEMBLES):** the Δmed@3× column reads each "

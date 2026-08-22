@@ -162,7 +162,8 @@ def _emit(results, head):
          "56; approved 2026-08-22). Identical fires, unrefined vs the "
          "founding refinement micro-loop, under R-OP1 stops. Entry "
          "improvement in signature-stop units; spread burden on both stop "
-         "bases; net points paired. Grades founding open question R2.",
+         "bases; net points paired. Grades founding open question R2. "
+         "FILL MODEL: PESSIMISTIC (register 65; ladder family).",
          ""]
     for res in results:
         inst = res["instrument"]

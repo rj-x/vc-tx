@@ -443,7 +443,10 @@ def _emit(results, head):
          "**Honest-fill rules (operator-ruled, part of every recipe's "
          "definition):** (1) both reachable -> stop always; (2) gap -> "
          "gapped (worse) price; (3) composed/trailing stops ratchet only, "
-         "settled bars; (4) EOD flat at native session close.", ""]
+         "settled bars; (4) EOD flat at native session close. **FILL "
+         "MODEL: PESSIMISTIC (register 65) — stops always fill against "
+         "you; not comparable with touch=fill (optimistic) artifacts.**",
+         ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()}; spread charged "

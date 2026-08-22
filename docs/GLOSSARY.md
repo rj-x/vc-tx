@@ -68,6 +68,7 @@ first uses them, or the commit doesn't pass.
 - **VWAP** — volume-weighted average price: the session's average price weighted by volume.
 - **one-position rule** — while a signal's position is open, its further fires are not taken.
 - **honest fills** — the register-41 rules: stop wins ties, gaps fill at the worse price, trails ratchet on settled bars only, flat at end of day.
+- **fill model (pessimistic / optimistic)** — a standing fact of each artifact family (register 65): the harvest-ladder family prices stops PESSIMISTICALLY (always fill against you); any touch=fill family prices targets OPTIMISTICALLY (always fill for you). Every artifact header states its family; numbers across families are not comparable; a real scalp recipe's optimism carries a stated, operator-ratified haircut.
 - **dimming (°)** — the small-n convention: n<20 rows print dimmed and are excluded from label arithmetic; single-digit cells are unmeasurable.
 - **EOD** — end of day: each instrument's native session close, where every simulated position goes flat.
 - **spread** — the buy/sell price gap; charged once per simulated trade at the instrument's measured median.

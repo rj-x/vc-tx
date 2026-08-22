@@ -202,7 +202,10 @@ entry is a separate decision.
     (net-of-spread reach, ensemble floors). NO SCALP RECIPE registers
     unless this grades YES. IF YES (register 64 amendment, 2026-08-23):
     the recipe must be TARGET-BASED (resting order at the reach level;
-    touch = fill, queue-risk optimism stated) — the time-exit variant is
+    touch = fill, queue-risk optimism stated WITH a haircut assumption —
+    e.g. touch must exceed the level by one tick to count as filled —
+    proposed at registration, operator-ratified; register 65) — the
+    time-exit variant is
     RULED OUT by the expectancy curve (cumulative net median
     non-positive at all k; peak-k=2 at −0.10). STATUS:
     pending-conditions.

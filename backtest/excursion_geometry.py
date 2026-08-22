@@ -163,7 +163,12 @@ def _emit(results, head):
          "high-win-rate shapes the TP ladder produces are tail-risk "
          "purchases — each -6xATR loss ≈ 12-24 small wins; spread ≈ a "
          "quarter of a 0.5xATR win at home. The points ladder is uk100 "
-         "HOME-SCALE ONLY, non-comparable across instruments.**", ""]
+         "HOME-SCALE ONLY, non-comparable across instruments.** FILL "
+         "MODELS (register 65): this page renders BOTH families — the "
+         "TP ladder counts target touches as fills (OPTIMISTIC, "
+         "stop-wins-ties) while the MAE/stop side prices stops "
+         "pessimistically; the two column families are NOT COMPARABLE "
+         "and recipes cite which they live on.", ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()})"]

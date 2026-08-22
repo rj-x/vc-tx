@@ -92,8 +92,10 @@ def generate():
           "consistency): initiation lift, then median-per-trade ≤3×ATR, "
           "then baseline clearance; net is context. Nothing here "
           "re-grades — the governance sitting changes what gets acted "
-          "on. **The drill-down is "
-          "[SIGNAL_POINTS.md](SIGNAL_POINTS.md)**", "",
+          "on. Board numbers are the harvest ladder's — fill model "
+          "PESSIMISTIC (register 65); census reach cells (the scalp "
+          "clocks) are touch=fill OPTIMISTIC — not comparable. **The "
+          "drill-down is [SIGNAL_POINTS.md](SIGNAL_POINTS.md)**", "",
           "| H | init lift (best measurable cell) | S0 med/trade @3× "
           "fwd | baseline clearance (S0 @3× fwd) | context: fwd net @3× "
           "(n); sessions | fwd trend | status |",

@@ -327,7 +327,12 @@ def _emit(results, head):
          "which column they live on. No recipe registers without its "
          "question grading YES (Q2-H" + str(6) + ", register 64). The "
          "md prints cumulative net medians at k ∈ {1,3,5,10} and "
-         "peak-k; full curves in the JSON.", ""]
+         "peak-k; full curves in the JSON. **FILL MODELS (register "
+         "65): this page renders BOTH families — the reach columns are "
+         "touch=fill (OPTIMISTIC); the expectancy columns are "
+         "close-based; the harvest ladder (SIGNAL_POINTS) is stop-fill "
+         "PESSIMISTIC. The families are NOT COMPARABLE; recipes cite "
+         "which column they live on.**", ""]
     for res in results:
         inst = res["instrument"]
         home = inst == "uk100fut"
