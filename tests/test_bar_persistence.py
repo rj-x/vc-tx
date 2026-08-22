@@ -67,3 +67,29 @@ def test_twin_run_bit_identity():
     b = persistence(fires, ts, o, h, l, c, lambda t: 6.0, 0.8, home=True)
     assert json.dumps(a, sort_keys=True, default=str) \
         == json.dumps(b, sort_keys=True, default=str)
+
+
+def test_expectancy_curve_and_spread_once():
+    """Register 64 pins: cumulative expectancy = signed points at
+    bar+k's close; increments telescope back to the cumulative; spread
+    is charged ONCE (net = gross − spread at every k; only bar+1's
+    increment nets it)."""
+    from backtest.bar_persistence import _agg
+    bars = [(100, 100, 100, 100), (100, 100.6, 99.8, 100.5),
+            (100.5, 102.1, 100.2, 101), (101, 101.2, 98.9, 99),
+            (99, 100.1, 98.5, 100)]
+    ts, o, h, l, c = _arrs(bars)
+    rows = persistence(_fire(0, 1), ts, o, h, l, c,
+                       lambda t: 8.0, 0.4, home=False)
+    cum = rows[0]["cum"]
+    assert cum[1] == 0.5 and cum[2] == 1.0 and cum[3] == -1.0
+    inc = rows[0]["inc"]
+    assert abs(sum(inc[k] for k in sorted(inc)[:3]) - cum[3]) < 1e-9
+    a = _agg(rows, spread=0.4)
+    e = a["expectancy"]
+    assert e[1]["cum_median_net"] == round(0.5 - 0.4, 2)
+    assert e[3]["cum_median_net"] == round(-1.0 - 0.4, 2)
+    assert e[1]["inc_median_net"] == round(0.5 - 0.4, 2)
+    assert e[2]["inc_median_net"] == e[2]["inc_median_gross"]
+    # peak-k = the bar where the cumulative net median tops out
+    assert a["expectancy_peak"]["k"] == 2

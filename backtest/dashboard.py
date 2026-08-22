@@ -202,6 +202,15 @@ def generate():
                .get(sess, {}))
         r = blk.get(key)
         return r.get("n_fires") if r else 0
+
+    def _bp_fwd_fires(inst, key):
+        bp = _load("bar_persistence.json")
+        for res in (bp or {}).get("results", []):
+            if res.get("instrument") == inst:
+                whole = (res.get("signals", {}).get(key, {})
+                         .get("forward", {}) or {}).get("whole")
+                return whole.get("n_fires", 0) if whole else 0
+        return 0
     q_lines = [
         ("Q1-H1", "≥30 post-validation fwd episodes/instrument — "
          "BLOCKED: awaiting the nas100 validation evening (clock at 0)"),
@@ -212,6 +221,8 @@ def generate():
          "clock starts at its evening"),
         (f"Q1-H{6}", f"≥30 fwd London fires (home accrued: "
          f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
+        (f"Q2-H{6}", f"scalp thread: ≥30 fwd fires, census conventions "
+         f"(home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
     ]
     for q, clock in q_lines:
         L.append(f"- **{q}** — {clock}")

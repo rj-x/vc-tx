@@ -192,6 +192,15 @@ entry is a separate decision.
     conditioned baseline; weekly matrix. IF YES: the composite action is
     a SUPPRESSION RULE (H6-not-in-London), registered THEN, not now.
     DISCOUNTS: best-of-many + single-month. STATUS: pending-conditions.
+  - **Q2-H6** (registered 2026-08-23, register 64; the scalp thread's
+    FIRST question, minted through the census entry's own gate):
+    PREDICTION — S0-H6's net 0.5×ATR/5-bar reach (33.9% backtest,
+    +22.8pp above B-RANDOM's floor, clear of its full member range,
+    bar-persistence census) PERSISTS in forward accrual ABOVE its
+    matched floor's full member range. GRADING: ≥30 forward fires
+    (home; away cells post-validation); census conventions
+    (net-of-spread reach, ensemble floors). NO SCALP RECIPE registers
+    unless this grades YES. STATUS: pending-conditions.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
   stay recipe layer in the candidate register).

@@ -77,7 +77,19 @@ def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
                               for j in range(ei, hi_n)])
         row = {"name": f["name"], "ts": f["ts"],
                "session": session_of(pd.Timestamp(ts[ei], tz="UTC")),
-               "fav_frac": {}, "reach": {}, "touch_min": {}}
+               "fav_frac": {}, "reach": {}, "touch_min": {},
+               "cum": {}, "inc": {}}
+        # per-bar expectancy (register 64): signed points at the close
+        # of bar+k; bar+1 = the entry bar's own close
+        prev = 0.0
+        for k in range(1, max(HORIZONS) + 1):
+            j = ei + k - 1
+            if j >= n:
+                break
+            cum = float(d * (c[j] - entry))
+            row["cum"][k] = round(cum, 4)
+            row["inc"][k] = round(cum - prev, 4)
+            prev = cum
         for N in HORIZONS:
             w = min(N, len(fav_close))
             if w == 0:
@@ -95,12 +107,37 @@ def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
     return rows
 
 
-def _agg(rows):
-    """Aggregate a set of per-fire records into one cell."""
+def _agg(rows, spread=0.0):
+    """Aggregate a set of per-fire records into one cell. Spread is
+    charged ONCE at entry: net cumulative = gross − spread; the
+    increment it nets is bar+1's."""
     if not rows:
         return None
     out = {"n_fires": len(rows), "fav_frac_pct": {}, "reach_pct": {},
-           "touch_min": {}}
+           "touch_min": {}, "expectancy": {}}
+    for k in range(1, max(HORIZONS) + 1):
+        cums = [r["cum"][k] for r in rows if k in r["cum"]]
+        incs = [r["inc"][k] for r in rows if k in r["inc"]]
+        if not cums:
+            continue
+        out["expectancy"][k] = {
+            "n": len(cums),
+            "cum_mean_gross": round(float(np.mean(cums)), 2),
+            "cum_median_gross": round(float(np.median(cums)), 2),
+            "cum_mean_net": round(float(np.mean(cums)) - spread, 2),
+            "cum_median_net": round(float(np.median(cums)) - spread, 2),
+            "inc_mean_gross": round(float(np.mean(incs)), 2),
+            "inc_median_gross": round(float(np.median(incs)), 2),
+            "inc_mean_net": round(float(np.mean(incs))
+                                  - (spread if k == 1 else 0.0), 2),
+            "inc_median_net": round(float(np.median(incs))
+                                    - (spread if k == 1 else 0.0), 2)}
+    if out["expectancy"]:
+        pk = max(out["expectancy"],
+                 key=lambda k: out["expectancy"][k]["cum_median_net"])
+        out["expectancy_peak"] = {
+            "k": pk,
+            "cum_median_net": out["expectancy"][pk]["cum_median_net"]}
     for N in HORIZONS:
         v = [r["fav_frac"][N] for r in rows if N in r["fav_frac"]]
         if v:
@@ -137,6 +174,18 @@ def _ens(cells, lab, N):
             "net_median": round(float(np.median(vals)), 1),
             "net_range": [round(float(min(vals)), 1),
                           round(float(max(vals)), 1)]}
+
+
+def _ens_exp(cells, k):
+    """Ensemble median + range of the cumulative NET median at bar+k."""
+    vals = [c["expectancy"][k]["cum_median_net"] for c in cells
+            if c and c.get("expectancy", {}).get(k)]
+    if not vals:
+        return None
+    return {"members_measured": len(vals),
+            "net_median": round(float(np.median(vals)), 2),
+            "net_range": [round(float(min(vals)), 2),
+                          round(float(max(vals)), 2)]}
 
 
 def run_instrument(instr):
@@ -180,9 +229,9 @@ def run_instrument(instr):
         cell = {}
         for win, sel in windows:
             wr = [r for r in rows if sel(r)]
-            cell[win] = {"whole": _agg(wr)}
+            cell[win] = {"whole": _agg(wr, spread)}
             for s in SESSIONS:
-                a = _agg([r for r in wr if r["session"] == s])
+                a = _agg([r for r in wr if r["session"] == s], spread)
                 if a:
                     cell[win][s] = a
             if wr:
@@ -203,14 +252,16 @@ def run_instrument(instr):
         out["baselines"][bname] = {}
         for win, sel in windows:
             wrows = [[r for r in rows if sel(r)] for rows in member_rows]
-            scopes = {"whole": [_agg(rs) for rs in wrows]}
+            scopes = {"whole": [_agg(rs, spread) for rs in wrows]}
             for s in SESSIONS:
-                scopes[s] = [_agg([r for r in rs if r["session"] == s])
-                             for rs in wrows]
+                scopes[s] = [_agg([r for r in rs if r["session"] == s],
+                                  spread) for rs in wrows]
             member_aggs[bname][win] = scopes["whole"]
             out["baselines"][bname][win] = {
-                scope: {f"{lab}@{N}": _ens(cells, lab, N)
-                        for lab in labs for N in HORIZONS}
+                scope: {**{f"{lab}@{N}": _ens(cells, lab, N)
+                           for lab in labs for N in HORIZONS},
+                        **{f"exp@{k}": _ens_exp(cells, k)
+                           for k in range(1, max(HORIZONS) + 1)}}
                 for scope, cells in scopes.items()}
     # matched-floor delta on the headline cell (net reach 0.5xATR @ N=5)
     for name, cell in out["signals"].items():
@@ -262,7 +313,15 @@ def _emit(results, head):
          "each signal's headline cell reads against its matched "
          "baseline ensemble median [range] — random entries also see "
          "favorable bars. ° = n<20. Full signal×session×horizon×"
-         "threshold grid in the JSON.", ""]
+         "threshold grid in the JSON.", "",
+         "**PER-BAR EXPECTANCY CURVE (register 64):** signed points at "
+         "the close of bar+k, k ∈ {1…10}, cumulative and incremental, "
+         "gross and net (spread charged once at entry). PURPOSE: peak-k "
+         "and the incremental sign-flip bar are the mechanical inputs a "
+         "scalp recipe's time-exit would cite — and no recipe registers "
+         "without its question grading YES (Q2-H" + str(6) + ", "
+         "register 64). The md prints cumulative net medians at "
+         "k ∈ {1,3,5,10} and peak-k; full curves in the JSON.", ""]
     for res in results:
         inst = res["instrument"]
         home = inst == "uk100fut"
@@ -316,6 +375,28 @@ def _emit(results, head):
                     row.append("—")
                 L.append("| " + " | ".join(row) + " |")
             L.append("")
+            # per-bar expectancy: cumulative net median + peak-k
+            L += [f"### {inst} / {win} — expectancy: cumulative net "
+                  "median pts at bar+k", "",
+                  "| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net "
+                  "med) |", "|---|---|---|---|---|---|---|---|"]
+            for hn, sn, name in all_signals():
+                cell = res["signals"].get(name, {})
+                a = (cell.get(win, {}) or {}).get("whole")                     if "note" not in cell else None
+                exp = (a or {}).get("expectancy", {})
+                if not exp:
+                    L.append(f"| H{hn} | {name} | 0 | — | — | — | — "
+                             "| — |")
+                    continue
+                dim = "°" if a["n_fires"] < 20 else ""
+                cells = [f"{dim}{exp[k]['cum_median_net']:+.2f}"
+                         if k in exp else "—" for k in (1, 3, 5, 10)]
+                pk = a.get("expectancy_peak")
+                pk_cell = (f"k={pk['k']} ({pk['cum_median_net']:+.2f})"
+                           if pk else "—")
+                L.append(f"| H{hn} | {name} | {a['n_fires']} | "
+                         + " | ".join(cells) + f" | {pk_cell} |")
+            L.append("")
             # session split on the headline cell
             L += [f"### {inst} / {win} — sessions: net reach 0.5×ATR@5 "
                   "% (n)", "",
@@ -337,6 +418,24 @@ def _emit(results, head):
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells)
                          + " |")
             L.append("")
+        L += [f"### {inst} — expectancy floors (ensemble median [range] "
+              "of cumulative net median pts)", "",
+              "| baseline | window | @1 | @3 | @5 | @10 |",
+              "|---|---|---|---|---|---|"]
+        for bname in ("B-TREND", "B-RANDOM", "B-ALWAYS-LONG"):
+            for win in ("backtest", "forward"):
+                cells = []
+                for k in (1, 3, 5, 10):
+                    e = res["baselines"].get(bname, {}).get(win, {})                         .get("whole", {}).get(f"exp@{k}")
+                    if not e:
+                        cells.append("—")
+                    else:
+                        lo, hi = e["net_range"]
+                        rng = "" if lo == hi else f" [{lo}…{hi}]"
+                        cells.append(f"{e['net_median']:+.2f}{rng}")
+                L.append(f"| {bname} | {win} | " + " | ".join(cells)
+                         + " |")
+        L.append("")
         L += [f"### {inst} — BASELINE FLOORS (ensembles; net reach %, "
               "median [range])", "",
               "| baseline | window | 0.25×ATR@3 | 0.5×ATR@5 | 1×ATR@10 |",

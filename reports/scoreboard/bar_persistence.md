@@ -2,7 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, register 63). **MEASUREMENT FOR SCALP-VIABILITY ASSESSMENT, NOT A STRATEGY: any scalp recipe is a separate counted registration, gated on cells that clear spread AND baseline and survive forward accrual.** Entry = next 1M open after fire; horizons N in {1,3,5,10} settled bars; reach cells print gross/NET-of-spread percentages (the net column is the scalp economics); the points ladder is HOME-REFERENCE ONLY, the ATR ladder cross-instrument. Floors: each signal's headline cell reads against its matched baseline ensemble median [range] — random entries also see favorable bars. ° = n<20. Full signal×session×horizon×threshold grid in the JSON.
+Engine `03706dde6` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, register 63). **MEASUREMENT FOR SCALP-VIABILITY ASSESSMENT, NOT A STRATEGY: any scalp recipe is a separate counted registration, gated on cells that clear spread AND baseline and survive forward accrual.** Entry = next 1M open after fire; horizons N in {1,3,5,10} settled bars; reach cells print gross/NET-of-spread percentages (the net column is the scalp economics); the points ladder is HOME-REFERENCE ONLY, the ATR ladder cross-instrument. Floors: each signal's headline cell reads against its matched baseline ensemble median [range] — random entries also see favorable bars. ° = n<20. Full signal×session×horizon×threshold grid in the JSON.
+
+**PER-BAR EXPECTANCY CURVE (register 64):** signed points at the close of bar+k, k ∈ {1…10}, cumulative and incremental, gross and net (spread charged once at entry). PURPOSE: peak-k and the incremental sign-flip bar are the mechanical inputs a scalp recipe's time-exit would cite — and no recipe registers without its question grading YES (Q2-H6, register 64). The md prints cumulative net medians at k ∈ {1,3,5,10} and peak-k; full curves in the JSON.
 
 ## uk100fut (CANONICAL; spread 1.3 pts)
 
@@ -30,6 +32,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 294 | 47.6/46.9/47.3/47.4 | 26.5/12.6 | 13.3/7.5 | 6.5/4.1 | 41.2/22.4 | 17.7/10.9 | 5 (n66) | -3.8pp vs B-TREND [6.0…18.0] |
 | H15 | S0-H15 | 0 | — | — | — | — | — | — | — | — |
 | H16 | S0-H16 | 15 | 26.7/33.3/36.0/41.3 | °33.3/26.7 | °13.3/13.3 | °0.0/0.0 | °46.7/40.0 | °40.0/20.0 | 3 (n3) | +2.2pp vs B-RANDOM [9.4…15.0] |
+
+### uk100fut / backtest — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 69 | -0.70 | -1.40 | -0.90 | +0.00 | k=9 (+0.70) |
+| H1 | S1-H1 | 5 | °+1.20 | °-0.30 | °+1.80 | °-1.30 | k=9 (+2.00) |
+| H2 | S0-H2 | 347 | -1.30 | -1.60 | -1.80 | -1.50 | k=9 (-1.20) |
+| H2 | S1-H2 | 252 | -1.30 | -1.60 | -1.80 | -1.85 | k=8 (-1.15) |
+| H3 | S0-H3 | 0 | — | — | — | — | — |
+| H4 | S0-H4 | 7 | °+0.20 | °-2.30 | °+2.00 | °+2.70 | k=8 (+3.20) |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 59 | -1.30 | -1.30 | -0.30 | -0.80 | k=2 (-0.10) |
+| H7 | S0-H7 | 112 | -1.30 | -1.30 | -1.60 | -0.20 | k=10 (-0.20) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 55 | -1.40 | -1.00 | -1.00 | -1.10 | k=8 (+0.00) |
+| H9 | S1-H9 | 19 | °-1.70 | °-0.80 | °+0.90 | °+1.40 | k=8 (+1.70) |
+| H10 | S0-H10 | 293 | -1.30 | -1.60 | -1.70 | -2.30 | k=1 (-1.30) |
+| H11 | S0-H11 | 316 | -1.40 | -1.35 | -1.80 | -1.60 | k=3 (-1.35) |
+| H11 | S1-H11 | 155 | -1.50 | -1.10 | -1.80 | -2.00 | k=3 (-1.10) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 2 | °-4.70 | °-3.80 | °-3.05 | °+0.45 | k=8 (+0.60) |
+| H14 | S0-H14 | 294 | -1.30 | -1.50 | -1.30 | -1.80 | k=7 (-1.20) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 15 | °-3.50 | °-2.10 | °-4.80 | °-2.60 | k=7 (-0.80) |
 
 ### uk100fut / backtest — sessions: net reach 0.5×ATR@5 % (n)
 
@@ -81,6 +108,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H15 | S0-H15 | 0 | — | — | — | — | — | — | — | — |
 | H16 | S0-H16 | 5 | 40.0/53.3/60.0/52.0 | °60.0/40.0 | °20.0/20.0 | °0.0/0.0 | °60.0/60.0 | °40.0/40.0 | 4 (n1) | +10.8pp vs B-RANDOM [3.0…15.3] |
 
+### uk100fut / forward — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 50 | -1.15 | -1.20 | -0.50 | -0.85 | k=5 (-0.50) |
+| H1 | S1-H1 | 4 | °+0.00 | °+1.20 | °-0.30 | °+3.00 | k=10 (+3.00) |
+| H2 | S0-H2 | 154 | -1.55 | -1.50 | -1.80 | -1.80 | k=4 (-1.45) |
+| H2 | S1-H2 | 131 | -1.60 | -1.50 | -1.50 | -1.80 | k=4 (-1.30) |
+| H3 | S0-H3 | 10 | °-1.55 | °-0.55 | °-0.95 | °-0.70 | k=3 (-0.55) |
+| H4 | S0-H4 | 0 | — | — | — | — | — |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 25 | -2.80 | -1.50 | -0.60 | -1.80 | k=7 (+1.20) |
+| H7 | S0-H7 | 42 | -1.30 | -0.75 | -1.10 | -1.30 | k=7 (-0.30) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 14 | °-1.30 | °-0.80 | °-3.00 | °-3.40 | k=3 (-0.80) |
+| H9 | S1-H9 | 4 | °-1.60 | °-3.60 | °-4.40 | °-4.95 | k=1 (-1.60) |
+| H10 | S0-H10 | 97 | -1.30 | -1.50 | -0.80 | -0.80 | k=5 (-0.80) |
+| H11 | S0-H11 | 67 | -1.30 | -0.80 | -0.80 | -1.00 | k=3 (-0.80) |
+| H11 | S1-H11 | 79 | -1.80 | -1.60 | -1.10 | -1.00 | k=9 (+0.00) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 3 | °-1.30 | °+1.70 | °+1.20 | °+2.70 | k=7 (+3.70) |
+| H14 | S0-H14 | 102 | -1.30 | -1.30 | -1.00 | -1.00 | k=5 (-1.00) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 5 | °-1.30 | °+0.70 | °-1.00 | °-4.30 | k=2 (+0.90) |
+
 ### uk100fut / forward — sessions: net reach 0.5×ATR@5 % (n)
 
 | H | signal | asia | london | overlap | ny_only | dead |
@@ -105,6 +157,17 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 5.7 (n35) | °10.0 (n10) | °0.0 (n9) | 0.0 (n35) | °0.0 (n13) |
 | H15 | S0-H15 | — | — | — | — | — |
 | H16 | S0-H16 | — | — | °20.0 (n5) | — | — |
+
+### uk100fut — expectancy floors (ensemble median [range] of cumulative net median pts)
+
+| baseline | window | @1 | @3 | @5 | @10 |
+|---|---|---|---|---|---|
+| B-TREND | backtest | -1.30 [-1.8…-0.9] | -1.48 [-1.7…-0.8] | -1.45 [-2.3…-0.3] | -1.15 [-2.3…0.1] |
+| B-TREND | forward | -1.27 [-2.0…-1.0] | -1.10 [-1.8…-0.4] | -1.10 [-2.2…-0.05] | -1.40 [-3.1…-0.2] |
+| B-RANDOM | backtest | -1.30 [-1.5…-1.1] | -1.30 [-1.6…-1.1] | -1.30 [-1.8…-0.75] | -1.30 [-2.2…-0.6] |
+| B-RANDOM | forward | -1.30 [-1.5…-1.1] | -1.30 [-1.65…-0.9] | -1.30 [-2.0…-1.0] | -1.30 [-2.0…-0.8] |
+| B-ALWAYS-LONG | backtest | -1.40 | -1.55 | -1.45 | -1.65 |
+| B-ALWAYS-LONG | forward | -1.40 | -1.50 | -1.65 | -1.10 |
 
 ### uk100fut — BASELINE FLOORS (ensembles; net reach %, median [range])
 
@@ -144,6 +207,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 113 | 44.2/43.4/45.3/49.2 | 25.7/22.1 | 9.7/8.8 | 8.8/8.8 | 6 (n33) | -5.0pp vs B-TREND [7.1…28.4] |
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 10 | 40.0/53.3/50.0/47.0 | °40.0/20.0 | °0.0/0.0 | °0.0/0.0 | 6 (n1) | -15.1pp vs B-RANDOM [12.8…18.4] |
+
+### ger40fut / backtest — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 49 | -2.10 | -2.20 | -0.90 | -0.80 | k=7 (-0.60) |
+| H1 | S1-H1 | 3 | °+0.10 | °+0.50 | °-5.30 | °+0.50 | k=9 (+6.80) |
+| H2 | S0-H2 | 234 | -2.40 | -3.00 | -3.45 | -0.60 | k=10 (-0.60) |
+| H2 | S1-H2 | 176 | -2.25 | -3.80 | -3.55 | -1.40 | k=10 (-1.40) |
+| H3 | S0-H3 | 8 | °-3.20 | °-3.30 | °-4.50 | °-8.90 | k=1 (-3.20) |
+| H4 | S0-H4 | 34 | -1.80 | -0.55 | -0.80 | +2.40 | k=9 (+3.65) |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 36 | -4.10 | -6.20 | -3.70 | +0.25 | k=10 (+0.25) |
+| H7 | S0-H7 | 59 | -0.70 | -0.90 | +1.80 | +2.40 | k=10 (+2.40) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 52 | -1.60 | -3.05 | -3.10 | -2.25 | k=1 (-1.60) |
+| H9 | S1-H9 | 8 | °+0.50 | °-1.20 | °-3.70 | °+4.05 | k=9 (+4.55) |
+| H10 | S0-H10 | 147 | -1.20 | -0.30 | -1.50 | -3.30 | k=3 (-0.30) |
+| H11 | S0-H11 | 74 | -0.85 | +0.65 | -3.35 | -0.65 | k=2 (+0.80) |
+| H11 | S1-H11 | 301 | -1.80 | -1.80 | -1.30 | -0.10 | k=10 (-0.10) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 6 | °-1.95 | °+2.30 | °+5.50 | °+20.30 | k=10 (+20.30) |
+| H14 | S0-H14 | 113 | -1.70 | -2.20 | -2.30 | -0.80 | k=7 (-0.50) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 10 | °-1.50 | °+1.00 | °-1.05 | °-8.15 | k=2 (+1.05) |
 
 ### ger40fut / backtest — sessions: net reach 0.5×ATR@5 % (n)
 
@@ -195,6 +283,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 5 | 80.0/73.3/68.0/64.0 | °80.0/40.0 | °20.0/0.0 | °0.0/0.0 | 3 (n1) | -11.7pp vs B-RANDOM [6.4…18.7] |
 
+### ger40fut / forward — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 50 | -1.50 | -2.15 | -0.75 | -0.80 | k=5 (-0.75) |
+| H1 | S1-H1 | 2 | °+0.35 | °+3.60 | °+3.95 | °+4.45 | k=8 (+7.85) |
+| H2 | S0-H2 | 140 | -1.25 | -1.60 | -1.80 | -2.35 | k=1 (-1.25) |
+| H2 | S1-H2 | 101 | -1.20 | -1.80 | -1.80 | -1.20 | k=1 (-1.20) |
+| H3 | S0-H3 | 10 | °-0.70 | °+0.50 | °+1.35 | °+0.05 | k=7 (+2.80) |
+| H4 | S0-H4 | 0 | — | — | — | — | — |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 60 | -1.80 | -0.90 | -1.80 | -0.10 | k=10 (-0.10) |
+| H7 | S0-H7 | 25 | -0.60 | +0.40 | -2.50 | -3.90 | k=3 (+0.40) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 10 | °-2.00 | °-2.35 | °-4.45 | °-8.65 | k=2 (-1.55) |
+| H9 | S1-H9 | 3 | °-1.50 | °-1.80 | °-4.50 | °-3.00 | k=4 (-0.90) |
+| H10 | S0-H10 | 80 | -1.05 | -1.30 | -1.05 | -0.40 | k=9 (-0.10) |
+| H11 | S0-H11 | 181 | -1.50 | -0.60 | -1.80 | -3.10 | k=3 (-0.60) |
+| H11 | S1-H11 | 151 | -1.30 | -0.95 | -0.55 | +0.10 | k=10 (+0.10) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 4 | °-0.70 | °-5.20 | °-7.25 | °-2.30 | k=7 (+1.80) |
+| H14 | S0-H14 | 85 | -1.00 | -0.40 | -0.20 | -1.10 | k=5 (-0.20) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 5 | °+0.90 | °+0.50 | °-1.10 | °-1.10 | k=2 (+5.00) |
+
 ### ger40fut / forward — sessions: net reach 0.5×ATR@5 % (n)
 
 | H | signal | asia | london | overlap | ny_only | dead |
@@ -219,6 +332,17 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 25.8 (n31) | °13.3 (n15) | °10.0 (n10) | °5.6 (n18) | °0.0 (n11) |
 | H15 | S0-H15 | — | — | — | — | — |
 | H16 | S0-H16 | — | — | °0.0 (n5) | — | — |
+
+### ger40fut — expectancy floors (ensemble median [range] of cumulative net median pts)
+
+| baseline | window | @1 | @3 | @5 | @10 |
+|---|---|---|---|---|---|
+| B-TREND | backtest | -1.88 [-3.05…0.4] | -1.65 [-3.85…2.15] | -1.50 [-3.4…1.3] | -1.77 [-5.8…2.55] |
+| B-TREND | forward | -1.50 [-2.7…-0.55] | -1.43 [-3.3…0.7] | -1.60 [-4.45…1.6] | -1.55 [-4.65…0.6] |
+| B-RANDOM | backtest | -1.50 [-2.1…-0.95] | -1.35 [-3.3…-0.55] | -1.35 [-3.45…-0.1] | -1.35 [-2.95…0.05] |
+| B-RANDOM | forward | -1.48 [-2.05…-0.7] | -1.15 [-2.8…-0.7] | -1.45 [-2.4…-0.2] | -1.30 [-2.8…0.0] |
+| B-ALWAYS-LONG | backtest | -2.35 | -1.80 | -1.45 | -1.55 |
+| B-ALWAYS-LONG | forward | -1.20 | -1.20 | -1.10 | -1.40 |
 
 ### ger40fut — BASELINE FLOORS (ensembles; net reach %, median [range])
 
@@ -258,6 +382,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 167 | 43.1/41.1/43.1/44.3 | 16.2/13.2 | 7.2/6.0 | 1.2/1.2 | 5 (n21) | -9.8pp vs B-TREND [6.1…21.7] |
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 10 | 50.0/53.3/56.0/54.0 | °60.0/60.0 | °40.0/30.0 | °40.0/40.0 | 4 (n5) | +15.9pp vs B-RANDOM [11.2…19.2] |
+
+### nas100fut / backtest — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 34 | +4.25 | -4.40 | +5.90 | +13.00 | k=9 (+16.70) |
+| H1 | S1-H1 | 3 | °+5.60 | °-5.90 | °+23.90 | °-9.60 | k=6 (+33.10) |
+| H2 | S0-H2 | 320 | -1.55 | -3.70 | -0.70 | +0.15 | k=9 (+0.60) |
+| H2 | S1-H2 | 222 | -1.90 | -4.10 | -3.30 | -1.00 | k=9 (-0.45) |
+| H3 | S0-H3 | 1 | °+1.70 | °-4.50 | °-6.80 | °+5.70 | k=10 (+5.70) |
+| H4 | S0-H4 | 0 | — | — | — | — | — |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 29 | -8.80 | -9.40 | -11.20 | -13.10 | k=7 (+2.20) |
+| H7 | S0-H7 | 50 | -0.05 | -2.60 | -0.70 | +1.45 | k=9 (+5.35) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 88 | -2.00 | +0.55 | -1.35 | +4.30 | k=10 (+4.30) |
+| H9 | S1-H9 | 25 | -2.90 | -3.50 | -1.20 | +7.30 | k=10 (+7.30) |
+| H10 | S0-H10 | 175 | -1.30 | -1.00 | -0.80 | +0.80 | k=8 (+1.20) |
+| H11 | S0-H11 | 263 | -2.50 | -2.80 | -5.00 | -3.00 | k=6 (-1.50) |
+| H11 | S1-H11 | 174 | -1.15 | -0.75 | -3.20 | +0.70 | k=8 (+1.85) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 1 | °-7.20 | °-8.70 | °+15.00 | °+9.80 | k=6 (+24.10) |
+| H14 | S0-H14 | 167 | -2.70 | -3.10 | -2.40 | -4.60 | k=4 (-2.20) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 10 | °-0.75 | °+3.75 | °+4.35 | °+11.75 | k=6 (+13.45) |
 
 ### nas100fut / backtest — sessions: net reach 0.5×ATR@5 % (n)
 
@@ -309,6 +458,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 6 | 33.3/44.4/53.3/58.3 | °50.0/33.3 | °0.0/0.0 | °0.0/0.0 | — | -12.1pp vs B-RANDOM [5.5…20.5] |
 
+### nas100fut / forward — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 35 | +0.90 | +0.10 | +2.80 | -5.20 | k=5 (+2.80) |
+| H1 | S1-H1 | 1 | °+0.20 | °+4.60 | °+16.70 | °+13.60 | k=4 (+20.70) |
+| H2 | S0-H2 | 218 | -2.20 | -1.35 | -2.70 | -3.25 | k=3 (-1.35) |
+| H2 | S1-H2 | 157 | -1.80 | +0.20 | -1.40 | -3.90 | k=3 (+0.20) |
+| H3 | S0-H3 | 0 | — | — | — | — | — |
+| H4 | S0-H4 | 10 | °-4.05 | °-9.40 | °-14.65 | °-10.65 | k=1 (-4.05) |
+| H5 | S0-H5 | 0 | — | — | — | — | — |
+| H6 | S0-H6 | 44 | -1.75 | -8.00 | -13.10 | -14.75 | k=1 (-1.75) |
+| H7 | S0-H7 | 40 | -2.00 | -8.35 | -2.60 | +3.40 | k=10 (+3.40) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 69 | -1.10 | -1.10 | -3.00 | -4.90 | k=4 (-0.20) |
+| H9 | S1-H9 | 7 | °-3.80 | °-14.30 | °-19.50 | °-35.90 | k=1 (-3.80) |
+| H10 | S0-H10 | 145 | -2.10 | -1.80 | -1.80 | -3.00 | k=3 (-1.80) |
+| H11 | S0-H11 | 169 | -1.30 | +0.50 | +0.30 | -0.30 | k=6 (+0.80) |
+| H11 | S1-H11 | 150 | -2.90 | -3.40 | -3.55 | -3.00 | k=1 (-2.90) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 0 | — | — | — | — | — |
+| H14 | S0-H14 | 149 | -2.20 | -2.80 | -3.10 | -3.90 | k=2 (-1.50) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 6 | °-3.80 | °-1.40 | °+0.45 | °+5.75 | k=10 (+5.75) |
+
 ### nas100fut / forward — sessions: net reach 0.5×ATR@5 % (n)
 
 | H | signal | asia | london | overlap | ny_only | dead |
@@ -333,6 +507,17 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 13.4 (n67) | 15.0 (n20) | 26.1 (n23) | 9.7 (n31) | °12.5 (n8) |
 | H15 | S0-H15 | — | — | — | — | — |
 | H16 | S0-H16 | — | — | — | °0.0 (n6) | — |
+
+### nas100fut — expectancy floors (ensemble median [range] of cumulative net median pts)
+
+| baseline | window | @1 | @3 | @5 | @10 |
+|---|---|---|---|---|---|
+| B-TREND | backtest | -1.92 [-4.3…0.6] | -1.35 [-4.5…2.7] | -1.52 [-8.15…3.5] | -1.92 [-8.4…2.2] |
+| B-TREND | forward | -2.00 [-5.0…0.4] | -1.70 [-5.8…0.9] | -2.25 [-8.05…2.95] | -5.28 [-13.45…1.05] |
+| B-RANDOM | backtest | -1.90 [-2.6…-0.35] | -1.98 [-4.0…0.9] | -1.73 [-4.8…0.2] | -2.20 [-5.1…1.65] |
+| B-RANDOM | forward | -1.58 [-2.7…-0.7] | -2.10 [-3.95…-0.7] | -2.25 [-4.6…0.8] | -2.30 [-5.3…3.3] |
+| B-ALWAYS-LONG | backtest | -2.10 | -3.70 | -4.20 | -6.95 |
+| B-ALWAYS-LONG | forward | -2.25 | -4.20 | -4.20 | -4.25 |
 
 ### nas100fut — BASELINE FLOORS (ensembles; net reach %, median [range])
 
@@ -372,6 +557,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 148 | 49.3/47.5/48.4/48.5 | 30.4/19.6 | 14.2/6.8 | 4.1/2.0 | 5 (n40) | -6.3pp vs B-TREND [4.4…22.4] |
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 10 | 50.0/60.0/66.0/60.0 | °60.0/50.0 | °40.0/40.0 | °20.0/20.0 | 4 (n5) | +26.1pp vs B-RANDOM [10.9…17.8] |
+
+### us30fut / backtest — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 49 | +0.90 | +0.90 | +0.00 | -0.10 | k=2 (+2.90) |
+| H1 | S1-H1 | 2 | °+10.90 | °+18.90 | °+20.15 | °+21.65 | k=4 (+27.65) |
+| H2 | S0-H2 | 281 | -4.10 | -6.10 | -4.10 | -3.10 | k=10 (-3.10) |
+| H2 | S1-H2 | 220 | -4.10 | -5.60 | -3.85 | -3.60 | k=10 (-3.60) |
+| H3 | S0-H3 | 4 | °-0.10 | °-7.60 | °-5.85 | °-6.60 | k=1 (-0.10) |
+| H4 | S0-H4 | 13 | °+0.40 | °+1.40 | °+2.40 | °-3.60 | k=5 (+2.40) |
+| H5 | S0-H5 | 1 | °-6.60 | °-1.10 | °-14.60 | °+10.90 | k=2 (+16.90) |
+| H6 | S0-H6 | 52 | -3.10 | -2.10 | -6.15 | -7.85 | k=3 (-2.10) |
+| H7 | S0-H7 | 41 | -0.60 | -2.10 | -2.60 | -2.60 | k=8 (+0.40) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 40 | -3.85 | -3.60 | -4.35 | -5.10 | k=2 (-2.60) |
+| H9 | S1-H9 | 9 | °-5.10 | °-5.10 | °-4.10 | °-6.10 | k=5 (-4.10) |
+| H10 | S0-H10 | 154 | -2.10 | -2.55 | -1.60 | +1.40 | k=10 (+1.40) |
+| H11 | S0-H11 | 413 | -2.60 | -4.10 | -4.10 | -3.60 | k=1 (-2.60) |
+| H11 | S1-H11 | 189 | -2.60 | -2.10 | -3.10 | -3.60 | k=3 (-2.10) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 1 | °-10.10 | °-25.60 | °-30.60 | °-8.60 | k=9 (+1.40) |
+| H14 | S0-H14 | 148 | -2.60 | -3.10 | -2.35 | -1.90 | k=10 (-1.90) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 10 | °-2.60 | °+8.15 | °+6.90 | °-6.85 | k=6 (+10.15) |
 
 ### us30fut / backtest — sessions: net reach 0.5×ATR@5 % (n)
 
@@ -423,6 +633,31 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H15 | S0-H15 | 0 | — | — | — | — | — | — |
 | H16 | S0-H16 | 6 | 66.7/55.6/53.3/56.7 | °66.7/33.3 | °50.0/50.0 | °16.7/16.7 | 2 (n3) | +38.7pp vs B-RANDOM [7.8…18.6] |
 
+### us30fut / forward — expectancy: cumulative net median pts at bar+k
+
+| H | signal | n | @1 | @3 | @5 | @10 | peak-k (net med) |
+|---|---|---|---|---|---|---|---|
+| H1 | S0-H1 | 66 | -3.60 | -2.60 | -1.60 | -4.35 | k=5 (-1.60) |
+| H1 | S1-H1 | 8 | °-5.60 | °-2.35 | °-8.85 | °-19.60 | k=2 (-2.35) |
+| H2 | S0-H2 | 225 | -3.60 | -4.10 | -2.60 | -4.10 | k=6 (-2.10) |
+| H2 | S1-H2 | 167 | -3.60 | -3.60 | -2.10 | -3.60 | k=5 (-2.10) |
+| H3 | S0-H3 | 1 | °-4.10 | °+1.90 | °+4.90 | °+8.40 | k=9 (+8.40) |
+| H4 | S0-H4 | 0 | — | — | — | — | — |
+| H5 | S0-H5 | 1 | °+3.90 | °+13.90 | °+37.40 | °+13.90 | k=5 (+37.40) |
+| H6 | S0-H6 | 47 | -1.60 | -3.10 | -3.60 | -4.10 | k=4 (-0.60) |
+| H7 | S0-H7 | 38 | -3.10 | -1.85 | -2.10 | -0.60 | k=9 (+0.90) |
+| H8 | S0-H8 | 0 | — | — | — | — | — |
+| H9 | S0-H9 | 20 | -4.35 | -6.10 | +0.15 | -8.35 | k=5 (+0.15) |
+| H9 | S1-H9 | 11 | °-8.60 | °-7.10 | °-0.10 | °-12.10 | k=5 (-0.10) |
+| H10 | S0-H10 | 156 | -2.10 | -0.85 | -0.85 | -1.10 | k=4 (-0.60) |
+| H11 | S0-H11 | 321 | -2.60 | -3.60 | -3.85 | -3.60 | k=1 (-2.60) |
+| H11 | S1-H11 | 83 | -3.60 | -4.10 | -4.10 | -9.10 | k=4 (-2.60) |
+| H12 | S0-H12 | 0 | — | — | — | — | — |
+| H13 | S0-H13 | 0 | — | — | — | — | — |
+| H14 | S0-H14 | 133 | -2.60 | -3.60 | -3.10 | -3.10 | k=1 (-2.60) |
+| H15 | S0-H15 | 0 | — | — | — | — | — |
+| H16 | S0-H16 | 6 | °-2.10 | °+2.40 | °+7.40 | °-0.60 | k=6 (+10.90) |
+
 ### us30fut / forward — sessions: net reach 0.5×ATR@5 % (n)
 
 | H | signal | asia | london | overlap | ny_only | dead |
@@ -447,6 +682,17 @@ Engine `8e747697e` — OBSERVATIONAL, pre-registered (prereg_bar_persistence, re
 | H14 | S0-H14 | 11.8 (n34) | 12.5 (n40) | °0.0 (n2) | 5.6 (n36) | 0.0 (n21) |
 | H15 | S0-H15 | — | — | — | — | — |
 | H16 | S0-H16 | — | — | — | °50.0 (n6) | — |
+
+### us30fut — expectancy floors (ensemble median [range] of cumulative net median pts)
+
+| baseline | window | @1 | @3 | @5 | @10 |
+|---|---|---|---|---|---|
+| B-TREND | backtest | -2.70 [-5.35…-1.1] | -2.85 [-5.6…2.4] | -2.73 [-7.1…1.4] | -2.48 [-9.6…3.9] |
+| B-TREND | forward | -2.48 [-4.1…-0.1] | -2.10 [-6.1…0.4] | -2.35 [-6.1…0.9] | -1.35 [-8.6…1.65] |
+| B-RANDOM | backtest | -2.60 [-3.6…-2.1] | -2.35 [-3.6…-1.6] | -2.60 [-5.1…0.4] | -2.35 [-6.1…-0.1] |
+| B-RANDOM | forward | -2.60 [-3.1…-2.1] | -2.98 [-4.6…-1.1] | -3.10 [-4.1…-0.1] | -2.73 [-6.6…-0.6] |
+| B-ALWAYS-LONG | backtest | -2.60 | -2.85 | -3.85 | -4.10 |
+| B-ALWAYS-LONG | forward | -3.10 | -5.60 | -5.10 | -2.10 |
 
 ### us30fut — BASELINE FLOORS (ensembles; net reach %, median [range])
 

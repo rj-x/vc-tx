@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 63 (freshness-checked by the weekly
+table.** Register-current-through: 64 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -24,6 +24,7 @@ authoritative.
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 | Q1-H11, Q2-H9, Q1-H6 (matrix-cell promotions) | testable-now (register 58; clocks on the dashboard; Q2-H9 gated on nas100 validation) |
+| Q2-H6 (scalp thread) | testable-now (register 64; ≥30 fwd fires, census conventions; clock on the dashboard) |
 | H1 harvest program (6 variants: delay-3/10, confirm-entry, own-curve, session read, knife-guard) | registered-and-counted 2026-08-22 (register 60) → awaiting-build-harvest-harness (template for the next precision-points-gap signal if it works) |
 
 ## Recipes
@@ -68,7 +69,8 @@ authoritative.
 | stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
 | baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |
 | GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 2) |
-| bar-persistence census (scalp viability) | BUILT 2026-08-22 (register 63; weekly under Part C; scalp recipes = separate counted registrations, gated) |
+| bar-persistence census (scalp viability) | BUILT 2026-08-22; EXTENDED 2026-08-23 with the per-bar expectancy curve (register 63/64; weekly under Part C) |
+| scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |
 
