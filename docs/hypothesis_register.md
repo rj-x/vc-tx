@@ -184,6 +184,14 @@ entry is a separate decision.
   operator-adjustable); close_pos ≤ 0.25 / ≥ 0.75; wick ≥ 0.33;
   volume-agnostic. Walk-forward may still re-tune (two-layer form
   preserved).
+- **Questions:**
+  - **Q1-H6** (registered 2026-08-22, register 58): PREDICTION — S0-H6's
+    London SUPPRESSION (−34.2pp conditioned, n=31 backtest, conditioning
+    matrix) PERSISTS forward: the signal actively misleads in London.
+    GRADING: ≥30 forward London-session fires; initiation convention;
+    conditioned baseline; weekly matrix. IF YES: the composite action is
+    a SUPPRESSION RULE (H6-not-in-London), registered THEN, not now.
+    DISCOUNTS: best-of-many + single-month. STATUS: pending-conditions.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
   stay recipe layer in the candidate register).
@@ -271,7 +279,17 @@ entry is a separate decision.
     RECRUITED-ONLY depth-≥2 chains — the claim's falsifiable core.
     Signal-live now; EXPECTED STARVED at current n (July: 16/89 forward
     chains recruited), stated at registration.
-- **Status:** **signal-live** (2 signals).
+- **Questions:**
+  - **Q2-H9** (registered 2026-08-22, register 58; operator-designated
+    number — Q1-H9 unassigned): PREDICTION — S0-H9's NY-session lift on
+    nas100 (+34.2pp conditioned, conditioning matrix) PERSISTS in forward
+    accrual. GRADING: ≥30 forward NY-session fires POST-VALIDATION
+    (nas100's evening gates this clock); initiation convention;
+    conditioned baseline; the weekly matrix is the instrument. TENSION
+    STATED HONESTLY: H9's family reads forward-negative overall — this
+    cell bets a session-specific exception AGAINST its own family trend.
+    DISCOUNTS: best-of-many + single-month. STATUS: pending-conditions.
+- **Status:** **signal-live** (2 signals, 1 question pending).
 - **Latest review:** keep-watching (per signal).
 - AUDIT: F3 RESOLVED by the S0/S1 split (claim kept).
 
@@ -330,6 +348,16 @@ entry is a separate decision.
     lift is NEGATIVE** (node entries suppress episode-begins below their
     class-conditioned baseline). A positive lift REFUTES the stall
     clause. Closes the register-46 sub-question.
+- **Questions:**
+  - **Q1-H11** (registered 2026-08-22, register 58): PREDICTION — S0-H11's
+    Overlap-session lift (+39.3pp conditioned, n=40 backtest,
+    conditioning matrix) PERSISTS in forward accrual. GRADING: ≥30
+    forward Overlap-session fires (post-validation for away instruments);
+    INITIATION convention; conditioned baseline; the weekly conditioning
+    matrix (Part C) is the grading instrument. DISCOUNTS STATED:
+    best-of-many (the cell was selected from a scanned matrix) and
+    single-month backtest. STATUS: pending-conditions. No composite mints
+    unless YES.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS — both claim components now measurable (traversal S0,
   stall S1-suppression).

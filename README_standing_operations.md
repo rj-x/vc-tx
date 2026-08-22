@@ -49,12 +49,16 @@ study (per-TF, per-instrument), the extended-hours segment-split study (observat
 spread-by-bin, graduation-stop distributions by stop basis, and the basis-at-entry guard.
 
 **What to actually look at (5 minutes):**
-1. Funnel trend — labels → spawns → confirmations → gate outcomes. Trend, not levels;
+1. **`reports/DASHBOARD.md` — the results front page.** One page, regenerated every
+   run: state, the per-hypothesis board, question clocks, decisions awaiting you, and
+   the map of every artifact. Start here for any results review; drill into the
+   artifacts it points at. It contains no number that isn't in a stamped artifact.
+2. Funnel trend — labels → spawns → confirmations → gate outcomes. Trend, not levels;
    numbers are trend-indicative while baselines grow toward spec.
-2. Drift-adjusted label study — **excess** columns only; raw columns are tape-contaminated.
-3. Any flagged rows: basis deviation flags, `SKIPPED_SIZE`, `CONFIRM_UNDERSTRENGTH`,
+3. Drift-adjusted label study — **excess** columns only; raw columns are tape-contaminated.
+4. Any flagged rows: basis deviation flags, `SKIPPED_SIZE`, `CONFIRM_UNDERSTRENGTH`,
    staleness warnings.
-4. `pre_open` rows in the extended study carry a standing small-n note — do not over-read.
+5. `pre_open` rows in the extended study carry a standing small-n note — do not over-read.
 
 **Not required:** any action. The expected weekly outcome during accumulation is
 "numbers accrued, nothing notable." That is success, not stagnation.
