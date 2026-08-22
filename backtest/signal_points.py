@@ -134,7 +134,8 @@ def _cell_stats(trades):
 
 def run_instrument(instr):
     cfg = make_cfg({"session_model.extended_hours": True,
-                    "session_model.ladder": True})
+                    "session_model.ladder": True,
+                    "debug.structure": True})   # PHASE_EVAL for B-TREND
     watch = SignalWatch()
     engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
     env = build_env(instr, cfg, bars)

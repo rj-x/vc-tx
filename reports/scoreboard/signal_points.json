@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL stop-width ladder \u2014 measurement for assessment and the values discussion, not promotion evidence; never validation",
-  "engine_commit": "7272274a7702a015cd3587e353f8c46383efa22f",
+  "engine_commit": "15ffe0f6368b32ca9a07aeb9ac7b5b1880e3b3a9",
   "ladder": {
     "widths_atr15": [
       1.5,
@@ -3120,7 +3120,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": -26.68,
+              "baseline_median_3x": -5.3,
+              "baseline_n": 27
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": -23.61,
+              "baseline_median_3x": 3.0,
+              "baseline_n": 7
+            }
+          }
         },
         "S0-H11": {
           "1.5x": {
@@ -4303,7 +4316,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": -3.42,
+              "baseline_median_3x": -5.3,
+              "baseline_n": 27
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": -25.39,
+              "baseline_median_3x": 3.0,
+              "baseline_n": 7
+            }
+          }
         },
         "S0-H15": {
           "matched_baseline": {}
@@ -5148,7 +5174,359 @@
             }
           }
         },
-        "B-TREND": {},
+        "B-TREND": {
+          "1.5x": {
+            "backtest": {
+              "n": 43,
+              "net_pts": -126.0,
+              "median_pts": -18.3,
+              "by_session": {
+                "asia": {
+                  "n": 9,
+                  "net_pts": -53.7,
+                  "median_pts": -19.84
+                },
+                "london": {
+                  "n": 13,
+                  "net_pts": -85.7,
+                  "median_pts": -20.94
+                },
+                "overlap": {
+                  "n": 3,
+                  "net_pts": 25.4,
+                  "median_pts": 7.0
+                },
+                "ny_only": {
+                  "n": 13,
+                  "net_pts": 71.5,
+                  "median_pts": -23.03
+                },
+                "dead": {
+                  "n": 5,
+                  "net_pts": -83.5,
+                  "median_pts": -16.6
+                }
+              }
+            },
+            "forward": {
+              "n": 14,
+              "net_pts": -122.6,
+              "median_pts": -12.87,
+              "by_session": {
+                "asia": {
+                  "n": 3,
+                  "net_pts": -27.1,
+                  "median_pts": -9.2
+                },
+                "london": {
+                  "n": 5,
+                  "net_pts": -16.4,
+                  "median_pts": -13.89
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": -15.8,
+                  "median_pts": -15.8
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -47.1,
+                  "median_pts": -13.93
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": -16.2,
+                  "median_pts": -16.2
+                }
+              }
+            }
+          },
+          "2x": {
+            "backtest": {
+              "n": 38,
+              "net_pts": -67.7,
+              "median_pts": -20.66,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": -89.4,
+                  "median_pts": -26.6
+                },
+                "london": {
+                  "n": 10,
+                  "net_pts": -128.8,
+                  "median_pts": -31.14
+                },
+                "overlap": {
+                  "n": 3,
+                  "net_pts": 65.6,
+                  "median_pts": 7.0
+                },
+                "ny_only": {
+                  "n": 12,
+                  "net_pts": 112.3,
+                  "median_pts": -16.29
+                },
+                "dead": {
+                  "n": 5,
+                  "net_pts": -27.3,
+                  "median_pts": -18.87
+                }
+              }
+            },
+            "forward": {
+              "n": 13,
+              "net_pts": -174.2,
+              "median_pts": -15.8,
+              "by_session": {
+                "asia": {
+                  "n": 3,
+                  "net_pts": -34.9,
+                  "median_pts": -11.83
+                },
+                "london": {
+                  "n": 4,
+                  "net_pts": -44.8,
+                  "median_pts": -20.31
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": -15.8,
+                  "median_pts": -15.8
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -62.6,
+                  "median_pts": -18.13
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": -16.2,
+                  "median_pts": -16.2
+                }
+              }
+            }
+          },
+          "3x": {
+            "backtest": {
+              "n": 27,
+              "net_pts": 147.1,
+              "median_pts": -5.3,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": 38.8,
+                  "median_pts": 19.4
+                },
+                "london": {
+                  "n": 8,
+                  "net_pts": -75.5,
+                  "median_pts": -22.94
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": 19.2,
+                  "median_pts": 19.2
+                },
+                "ny_only": {
+                  "n": 12,
+                  "net_pts": 191.2,
+                  "median_pts": 13.05
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": -26.5,
+                  "median_pts": -22.13
+                }
+              }
+            },
+            "forward": {
+              "n": 7,
+              "net_pts": 4.9,
+              "median_pts": 3.0,
+              "by_session": {
+                "london": {
+                  "n": 2,
+                  "net_pts": -16.6,
+                  "median_pts": -8.32
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -41.1,
+                  "median_pts": -9.7
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 62.7,
+                  "median_pts": 62.7
+                }
+              }
+            }
+          },
+          "4x": {
+            "backtest": {
+              "n": 27,
+              "net_pts": -102.9,
+              "median_pts": -6.3,
+              "by_session": {
+                "asia": {
+                  "n": 3,
+                  "net_pts": -3.7,
+                  "median_pts": -23.64
+                },
+                "london": {
+                  "n": 7,
+                  "net_pts": -256.5,
+                  "median_pts": -53.67
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 26.9,
+                  "median_pts": 13.45
+                },
+                "ny_only": {
+                  "n": 12,
+                  "net_pts": 226.4,
+                  "median_pts": 30.2
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -96.0,
+                  "median_pts": -36.44
+                }
+              }
+            },
+            "forward": {
+              "n": 7,
+              "net_pts": -12.6,
+              "median_pts": 3.0,
+              "by_session": {
+                "london": {
+                  "n": 2,
+                  "net_pts": -29.1,
+                  "median_pts": -14.55
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -46.2,
+                  "median_pts": -12.9
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 62.7,
+                  "median_pts": 62.7
+                }
+              }
+            }
+          },
+          "5x": {
+            "backtest": {
+              "n": 20,
+              "net_pts": 242.7,
+              "median_pts": 6.55,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": 1.0,
+                  "median_pts": 0.52
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": -60.4,
+                  "median_pts": -30.2
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": 7.7,
+                  "median_pts": 7.7
+                },
+                "ny_only": {
+                  "n": 12,
+                  "net_pts": 409.5,
+                  "median_pts": 30.2
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -115.2,
+                  "median_pts": -45.23
+                }
+              }
+            },
+            "forward": {
+              "n": 7,
+              "net_pts": -32.1,
+              "median_pts": 3.0,
+              "by_session": {
+                "london": {
+                  "n": 2,
+                  "net_pts": -41.5,
+                  "median_pts": -20.77
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -53.2,
+                  "median_pts": -12.9
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 62.7,
+                  "median_pts": 62.7
+                }
+              }
+            }
+          },
+          "nostop": {
+            "backtest": {
+              "n": 17,
+              "net_pts": 406.9,
+              "median_pts": 18.0,
+              "by_session": {
+                "asia": {
+                  "n": 1,
+                  "net_pts": 96.7,
+                  "median_pts": 96.7
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -65.8,
+                  "median_pts": -65.8
+                },
+                "ny_only": {
+                  "n": 12,
+                  "net_pts": 400.2,
+                  "median_pts": 30.2
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -24.2,
+                  "median_pts": -16.6
+                }
+              }
+            },
+            "forward": {
+              "n": 6,
+              "net_pts": 71.1,
+              "median_pts": 6.1,
+              "by_session": {
+                "london": {
+                  "n": 1,
+                  "net_pts": 22.0,
+                  "median_pts": 22.0
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -13.6,
+                  "median_pts": 3.1
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 62.7,
+                  "median_pts": 62.7
+                }
+              }
+            }
+          }
+        },
         "B-RANDOM": {
           "1.5x": {
             "backtest": {
@@ -8564,7 +8942,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": -64.45,
+              "baseline_median_3x": -9.1,
+              "baseline_n": 15
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": -78.1,
+              "baseline_median_3x": 86.2,
+              "baseline_n": 6
+            }
+          }
         },
         "S0-H11": {
           "1.5x": {
@@ -9812,7 +10203,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": -63.94,
+              "baseline_median_3x": -9.1,
+              "baseline_n": 15
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": -35.9,
+              "baseline_median_3x": 86.2,
+              "baseline_n": 6
+            }
+          }
         },
         "S0-H15": {
           "matched_baseline": {}
@@ -10597,7 +11001,289 @@
             }
           }
         },
-        "B-TREND": {},
+        "B-TREND": {
+          "1.5x": {
+            "backtest": {
+              "n": 29,
+              "net_pts": 410.0,
+              "median_pts": -51.85,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": 1001.7,
+                  "median_pts": 79.1
+                },
+                "london": {
+                  "n": 7,
+                  "net_pts": -311.5,
+                  "median_pts": -64.38
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 10.6,
+                  "median_pts": 5.3
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 33.9,
+                  "median_pts": -51.85
+                },
+                "dead": {
+                  "n": 5,
+                  "net_pts": -324.7,
+                  "median_pts": -74.0
+                }
+              }
+            },
+            "forward": {
+              "n": 14,
+              "net_pts": 5.3,
+              "median_pts": -26.45,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": -47.3,
+                  "median_pts": -23.64
+                },
+                "london": {
+                  "n": 5,
+                  "net_pts": -59.6,
+                  "median_pts": -28.33
+                },
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": -38.8,
+                  "median_pts": -41.62
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 151.0,
+                  "median_pts": 151.0
+                }
+              }
+            }
+          },
+          "2x": {
+            "backtest": {
+              "n": 28,
+              "net_pts": 187.2,
+              "median_pts": -53.41,
+              "by_session": {
+                "asia": {
+                  "n": 7,
+                  "net_pts": 590.2,
+                  "median_pts": -34.2
+                },
+                "london": {
+                  "n": 7,
+                  "net_pts": -442.9,
+                  "median_pts": -85.34
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 10.6,
+                  "median_pts": 5.3
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 435.6,
+                  "median_pts": -9.1
+                },
+                "dead": {
+                  "n": 5,
+                  "net_pts": -406.3,
+                  "median_pts": -74.0
+                }
+              }
+            },
+            "forward": {
+              "n": 10,
+              "net_pts": 268.7,
+              "median_pts": -7.2,
+              "by_session": {
+                "asia": {
+                  "n": 1,
+                  "net_pts": -32.2,
+                  "median_pts": -32.24
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": 95.8,
+                  "median_pts": 47.9
+                },
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": 54.1,
+                  "median_pts": -29.89
+                },
+                "dead": {
+                  "n": 1,
+                  "net_pts": 151.0,
+                  "median_pts": 151.0
+                }
+              }
+            }
+          },
+          "3x": {
+            "backtest": {
+              "n": 15,
+              "net_pts": 943.7,
+              "median_pts": -9.1,
+              "by_session": {
+                "asia": {
+                  "n": 4,
+                  "net_pts": 258.0,
+                  "median_pts": 79.1
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -35.1,
+                  "median_pts": -35.1
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 1050.4,
+                  "median_pts": 159.8
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -329.6,
+                  "median_pts": -105.43
+                }
+              }
+            },
+            "forward": {
+              "n": 6,
+              "net_pts": 325.9,
+              "median_pts": 86.2,
+              "by_session": {
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": 325.9,
+                  "median_pts": 86.2
+                }
+              }
+            }
+          },
+          "4x": {
+            "backtest": {
+              "n": 13,
+              "net_pts": 1002.2,
+              "median_pts": 69.8,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": 169.4,
+                  "median_pts": 84.7
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -35.1,
+                  "median_pts": -35.1
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 1057.7,
+                  "median_pts": 159.8
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -189.8,
+                  "median_pts": -76.73
+                }
+              }
+            },
+            "forward": {
+              "n": 6,
+              "net_pts": 375.9,
+              "median_pts": 86.2,
+              "by_session": {
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": 375.9,
+                  "median_pts": 86.2
+                }
+              }
+            }
+          },
+          "5x": {
+            "backtest": {
+              "n": 13,
+              "net_pts": 928.4,
+              "median_pts": 69.8,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": 169.4,
+                  "median_pts": 84.7
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -35.1,
+                  "median_pts": -35.1
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 1057.7,
+                  "median_pts": 159.8
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -263.6,
+                  "median_pts": -95.54
+                }
+              }
+            },
+            "forward": {
+              "n": 6,
+              "net_pts": 375.9,
+              "median_pts": 86.2,
+              "by_session": {
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": 375.9,
+                  "median_pts": 86.2
+                }
+              }
+            }
+          },
+          "nostop": {
+            "backtest": {
+              "n": 12,
+              "net_pts": 1087.7,
+              "median_pts": 88.95,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": 169.4,
+                  "median_pts": 84.7
+                },
+                "ny_only": {
+                  "n": 7,
+                  "net_pts": 1057.7,
+                  "median_pts": 159.8
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -139.4,
+                  "median_pts": -17.7
+                }
+              }
+            },
+            "forward": {
+              "n": 6,
+              "net_pts": 375.9,
+              "median_pts": 86.2,
+              "by_session": {
+                "ny_only": {
+                  "n": 6,
+                  "net_pts": 375.9,
+                  "median_pts": 86.2
+                }
+              }
+            }
+          }
+        },
         "B-RANDOM": {
           "1.5x": {
             "backtest": {
@@ -13750,7 +14436,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": 223.41,
+              "baseline_median_3x": -137.36,
+              "baseline_n": 23
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": 40.6,
+              "baseline_median_3x": -76.5,
+              "baseline_n": 11
+            }
+          }
         },
         "S0-H11": {
           "1.5x": {
@@ -14810,7 +15509,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": 167.06,
+              "baseline_median_3x": -137.36,
+              "baseline_n": 23
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": 50.2,
+              "baseline_median_3x": -76.5,
+              "baseline_n": 11
+            }
+          }
         },
         "S0-H15": {
           "matched_baseline": {}
@@ -15861,7 +16573,379 @@
             }
           }
         },
-        "B-TREND": {},
+        "B-TREND": {
+          "1.5x": {
+            "backtest": {
+              "n": 29,
+              "net_pts": 1526.1,
+              "median_pts": -79.44,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": -301.9,
+                  "median_pts": -68.44
+                },
+                "london": {
+                  "n": 10,
+                  "net_pts": 721.0,
+                  "median_pts": -80.19
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": 104.4,
+                  "median_pts": 104.4
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": 154.4,
+                  "median_pts": 9.05
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 848.3,
+                  "median_pts": -87.34
+                }
+              }
+            },
+            "forward": {
+              "n": 19,
+              "net_pts": -879.5,
+              "median_pts": -54.27,
+              "by_session": {
+                "asia": {
+                  "n": 4,
+                  "net_pts": -216.9,
+                  "median_pts": -58.17
+                },
+                "london": {
+                  "n": 5,
+                  "net_pts": -67.9,
+                  "median_pts": -52.06
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": -190.5,
+                  "median_pts": -95.25
+                },
+                "ny_only": {
+                  "n": 5,
+                  "net_pts": -260.5,
+                  "median_pts": -55.3
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": -143.7,
+                  "median_pts": -45.72
+                }
+              }
+            }
+          },
+          "2x": {
+            "backtest": {
+              "n": 28,
+              "net_pts": 994.3,
+              "median_pts": -101.95,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": -472.6,
+                  "median_pts": -90.64
+                },
+                "london": {
+                  "n": 9,
+                  "net_pts": 629.8,
+                  "median_pts": -107.09
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": 104.4,
+                  "median_pts": 104.4
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": 14.7,
+                  "median_pts": -27.25
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 718.0,
+                  "median_pts": -115.85
+                }
+              }
+            },
+            "forward": {
+              "n": 12,
+              "net_pts": -287.1,
+              "median_pts": -63.53,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": -116.8,
+                  "median_pts": -58.38
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -71.8,
+                  "median_pts": -71.76
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": -252.8,
+                  "median_pts": -126.4
+                },
+                "ny_only": {
+                  "n": 4,
+                  "net_pts": -200.4,
+                  "median_pts": -54.8
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": 354.7,
+                  "median_pts": -51.94
+                }
+              }
+            }
+          },
+          "3x": {
+            "backtest": {
+              "n": 23,
+              "net_pts": 100.7,
+              "median_pts": -137.36,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": -2.6,
+                  "median_pts": -41.36
+                },
+                "london": {
+                  "n": 4,
+                  "net_pts": -148.3,
+                  "median_pts": -161.45
+                },
+                "overlap": {
+                  "n": 3,
+                  "net_pts": -242.6,
+                  "median_pts": -47.5
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": 36.6,
+                  "median_pts": 18.3
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 457.5,
+                  "median_pts": -172.88
+                }
+              }
+            },
+            "forward": {
+              "n": 11,
+              "net_pts": -318.6,
+              "median_pts": -76.5,
+              "by_session": {
+                "asia": {
+                  "n": 2,
+                  "net_pts": -173.3,
+                  "median_pts": -86.67
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -106.7,
+                  "median_pts": -106.74
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": -185.2,
+                  "median_pts": -92.59
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -145.1,
+                  "median_pts": -54.3
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": 291.7,
+                  "median_pts": -77.01
+                }
+              }
+            }
+          },
+          "4x": {
+            "backtest": {
+              "n": 16,
+              "net_pts": 1113.6,
+              "median_pts": 64.1,
+              "by_session": {
+                "asia": {
+                  "n": 5,
+                  "net_pts": 491.9,
+                  "median_pts": 87.4
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": 395.2,
+                  "median_pts": 395.2
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": -398.7,
+                  "median_pts": -398.69
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -259.0,
+                  "median_pts": -295.6
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 884.1,
+                  "median_pts": 113.68
+                }
+              }
+            },
+            "forward": {
+              "n": 11,
+              "net_pts": -539.3,
+              "median_pts": -76.5,
+              "by_session": {
+                "asia": {
+                  "n": 1,
+                  "net_pts": -175.4,
+                  "median_pts": -175.43
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": -212.3,
+                  "median_pts": -106.14
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": -235.3,
+                  "median_pts": -117.63
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -145.1,
+                  "median_pts": -54.3
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": 228.8,
+                  "median_pts": -102.09
+                }
+              }
+            }
+          },
+          "5x": {
+            "backtest": {
+              "n": 15,
+              "net_pts": 1369.0,
+              "median_pts": 101.5,
+              "by_session": {
+                "asia": {
+                  "n": 5,
+                  "net_pts": 451.3,
+                  "median_pts": 87.4
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -265.0,
+                  "median_pts": -265.01
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 396.6,
+                  "median_pts": 198.3
+                },
+                "ny_only": {
+                  "n": 1,
+                  "net_pts": -295.6,
+                  "median_pts": -295.6
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 1081.7,
+                  "median_pts": 285.7
+                }
+              }
+            },
+            "forward": {
+              "n": 9,
+              "net_pts": -306.3,
+              "median_pts": -87.76,
+              "by_session": {
+                "asia": {
+                  "n": 1,
+                  "net_pts": 39.2,
+                  "median_pts": 39.2
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": -264.4,
+                  "median_pts": -132.22
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": -178.3,
+                  "median_pts": -178.3
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": -68.6,
+                  "median_pts": -34.3
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": 165.9,
+                  "median_pts": -127.16
+                }
+              }
+            }
+          },
+          "nostop": {
+            "backtest": {
+              "n": 11,
+              "net_pts": 1674.7,
+              "median_pts": 133.9,
+              "by_session": {
+                "asia": {
+                  "n": 5,
+                  "net_pts": 886.2,
+                  "median_pts": 133.9
+                },
+                "dead": {
+                  "n": 6,
+                  "net_pts": 788.5,
+                  "median_pts": 285.7
+                }
+              }
+            },
+            "forward": {
+              "n": 5,
+              "net_pts": 215.9,
+              "median_pts": 39.2,
+              "by_session": {
+                "asia": {
+                  "n": 1,
+                  "net_pts": 39.2,
+                  "median_pts": 39.2
+                },
+                "london": {
+                  "n": 1,
+                  "net_pts": -107.3,
+                  "median_pts": -107.3
+                },
+                "dead": {
+                  "n": 3,
+                  "net_pts": 284.0,
+                  "median_pts": 95.4
+                }
+              }
+            }
+          }
+        },
         "B-RANDOM": {
           "1.5x": {
             "backtest": {
@@ -19526,7 +20610,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": 45.56,
+              "baseline_median_3x": -60.91,
+              "baseline_n": 20
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": 143.54,
+              "baseline_median_3x": -57.24,
+              "baseline_n": 13
+            }
+          }
         },
         "S0-H11": {
           "1.5x": {
@@ -20606,7 +21703,20 @@
               }
             }
           },
-          "matched_baseline": {}
+          "matched_baseline": {
+            "backtest": {
+              "name": "B-TREND",
+              "delta_median_3x": -48.19,
+              "baseline_median_3x": -60.91,
+              "baseline_n": 20
+            },
+            "forward": {
+              "name": "B-TREND",
+              "delta_median_3x": 55.64,
+              "baseline_median_3x": -57.24,
+              "baseline_n": 13
+            }
+          }
         },
         "S0-H15": {
           "matched_baseline": {}
@@ -21463,7 +22573,349 @@
             }
           }
         },
-        "B-TREND": {},
+        "B-TREND": {
+          "1.5x": {
+            "backtest": {
+              "n": 32,
+              "net_pts": 861.0,
+              "median_pts": -57.86,
+              "by_session": {
+                "asia": {
+                  "n": 10,
+                  "net_pts": 688.4,
+                  "median_pts": -54.52
+                },
+                "london": {
+                  "n": 10,
+                  "net_pts": -166.4,
+                  "median_pts": -71.03
+                },
+                "overlap": {
+                  "n": 3,
+                  "net_pts": 41.6,
+                  "median_pts": -86.4
+                },
+                "ny_only": {
+                  "n": 5,
+                  "net_pts": 178.5,
+                  "median_pts": 15.9
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": 118.9,
+                  "median_pts": -66.25
+                }
+              }
+            },
+            "forward": {
+              "n": 17,
+              "net_pts": 507.0,
+              "median_pts": -31.8,
+              "by_session": {
+                "asia": {
+                  "n": 7,
+                  "net_pts": 317.3,
+                  "median_pts": -29.92
+                },
+                "london": {
+                  "n": 5,
+                  "net_pts": 426.1,
+                  "median_pts": -47.77
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -117.5,
+                  "median_pts": -24.6
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": -118.9,
+                  "median_pts": -59.43
+                }
+              }
+            }
+          },
+          "2x": {
+            "backtest": {
+              "n": 27,
+              "net_pts": 727.7,
+              "median_pts": -73.39,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": 668.5,
+                  "median_pts": -71.83
+                },
+                "london": {
+                  "n": 7,
+                  "net_pts": -134.2,
+                  "median_pts": -98.97
+                },
+                "overlap": {
+                  "n": 3,
+                  "net_pts": -27.6,
+                  "median_pts": -114.33
+                },
+                "ny_only": {
+                  "n": 5,
+                  "net_pts": 178.5,
+                  "median_pts": 15.9
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": 42.5,
+                  "median_pts": -87.47
+                }
+              }
+            },
+            "forward": {
+              "n": 15,
+              "net_pts": 584.4,
+              "median_pts": -39.46,
+              "by_session": {
+                "asia": {
+                  "n": 6,
+                  "net_pts": 275.9,
+                  "median_pts": -39.25
+                },
+                "london": {
+                  "n": 4,
+                  "net_pts": 427.7,
+                  "median_pts": -58.47
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -151.3,
+                  "median_pts": -24.6
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": 32.1,
+                  "median_pts": 16.04
+                }
+              }
+            }
+          },
+          "3x": {
+            "backtest": {
+              "n": 20,
+              "net_pts": 1940.5,
+              "median_pts": -60.91,
+              "by_session": {
+                "asia": {
+                  "n": 8,
+                  "net_pts": 1181.9,
+                  "median_pts": -100.75
+                },
+                "london": {
+                  "n": 3,
+                  "net_pts": 713.0,
+                  "median_pts": 346.9
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 4.2,
+                  "median_pts": 2.09
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": 151.7,
+                  "median_pts": 25.4
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": -110.4,
+                  "median_pts": -129.89
+                }
+              }
+            },
+            "forward": {
+              "n": 13,
+              "net_pts": 724.0,
+              "median_pts": -57.24,
+              "by_session": {
+                "asia": {
+                  "n": 4,
+                  "net_pts": -253.8,
+                  "median_pts": -59.44
+                },
+                "london": {
+                  "n": 5,
+                  "net_pts": 1030.8,
+                  "median_pts": 156.9
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": -48.7,
+                  "median_pts": -24.35
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": -4.3,
+                  "median_pts": -2.14
+                }
+              }
+            }
+          },
+          "4x": {
+            "backtest": {
+              "n": 17,
+              "net_pts": 2148.4,
+              "median_pts": 25.4,
+              "by_session": {
+                "asia": {
+                  "n": 7,
+                  "net_pts": -220.5,
+                  "median_pts": -144.17
+                },
+                "london": {
+                  "n": 3,
+                  "net_pts": 1122.2,
+                  "median_pts": 411.4
+                },
+                "overlap": {
+                  "n": 1,
+                  "net_pts": -213.1,
+                  "median_pts": -213.1
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": 180.8,
+                  "median_pts": 90.4
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": 1279.0,
+                  "median_pts": 165.95
+                }
+              }
+            },
+            "forward": {
+              "n": 11,
+              "net_pts": 444.4,
+              "median_pts": -75.46,
+              "by_session": {
+                "asia": {
+                  "n": 4,
+                  "net_pts": -335.0,
+                  "median_pts": -78.38
+                },
+                "london": {
+                  "n": 3,
+                  "net_pts": 916.3,
+                  "median_pts": 435.4
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": -96.2,
+                  "median_pts": -48.1
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": -40.7,
+                  "median_pts": -20.33
+                }
+              }
+            }
+          },
+          "5x": {
+            "backtest": {
+              "n": 17,
+              "net_pts": 1178.4,
+              "median_pts": -24.1,
+              "by_session": {
+                "asia": {
+                  "n": 7,
+                  "net_pts": -419.1,
+                  "median_pts": -179.56
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": 135.8,
+                  "median_pts": 67.9
+                },
+                "overlap": {
+                  "n": 2,
+                  "net_pts": 41.3,
+                  "median_pts": 20.65
+                },
+                "ny_only": {
+                  "n": 2,
+                  "net_pts": 180.8,
+                  "median_pts": 90.4
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": 1239.6,
+                  "median_pts": 165.95
+                }
+              }
+            },
+            "forward": {
+              "n": 11,
+              "net_pts": -34.4,
+              "median_pts": -83.1,
+              "by_session": {
+                "asia": {
+                  "n": 4,
+                  "net_pts": -409.9,
+                  "median_pts": -97.33
+                },
+                "london": {
+                  "n": 2,
+                  "net_pts": 631.8,
+                  "median_pts": 315.9
+                },
+                "ny_only": {
+                  "n": 3,
+                  "net_pts": -179.3,
+                  "median_pts": -71.6
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": -77.0,
+                  "median_pts": -38.51
+                }
+              }
+            }
+          },
+          "nostop": {
+            "backtest": {
+              "n": 11,
+              "net_pts": 677.9,
+              "median_pts": 99.4,
+              "by_session": {
+                "asia": {
+                  "n": 7,
+                  "net_pts": -732.2,
+                  "median_pts": 99.4
+                },
+                "dead": {
+                  "n": 4,
+                  "net_pts": 1410.1,
+                  "median_pts": 165.95
+                }
+              }
+            },
+            "forward": {
+              "n": 5,
+              "net_pts": -1497.5,
+              "median_pts": -272.6,
+              "by_session": {
+                "asia": {
+                  "n": 3,
+                  "net_pts": -1332.3,
+                  "median_pts": -523.6
+                },
+                "dead": {
+                  "n": 2,
+                  "net_pts": -165.2,
+                  "median_pts": -82.6
+                }
+              }
+            }
+          }
+        },
         "B-RANDOM": {
           "1.5x": {
             "backtest": {
