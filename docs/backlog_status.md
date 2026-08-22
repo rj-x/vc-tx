@@ -18,7 +18,7 @@ authoritative.
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
 | candidate docket | **FROZEN for the sitting (register 52)**: 12 internal + #13 sweep-and-reclaim + #14 intraday momentum + #15 drift-inversion + #16 S1-H13-absorption + #17 scoreboard hit-convention question; drift/VWAP/matrix censuses + geometry curves report into it; new ideas queue for the NEXT sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
-| Q-H1-GEN, Q-H7-GEO | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
+| Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 
 ## Recipes
 

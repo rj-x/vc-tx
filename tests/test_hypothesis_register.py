@@ -47,3 +47,21 @@ def test_unknown_id_refused():
             validate_rows()
     finally:
         sb.register_status = orig
+
+
+def test_question_family_closure():
+    """Register 54: Q<k>-H<n> is the third and FINAL identifier family —
+    parsed from the register, bound to its hypothesis, malformed refused."""
+    from backtest.scoreboard import parse_questions, validate_question_ids
+    qs = parse_questions()
+    assert qs.get(1) == ["Q1-H1"] and qs.get(7) == ["Q1-H7"]
+    validate_question_ids()                    # current doc passes
+    import backtest.scoreboard as sb
+    orig = sb.parse_questions
+    for bad, n in ((["Q-H1-GEN"], 1), (["Q1-H2"], 1), (["QX-H1"], 1)):
+        sb.parse_questions = lambda b=bad, m=n: {m: b}
+        try:
+            with pytest.raises(ValueError, match=r"Q<k>-H<n>"):
+                validate_question_ids()
+        finally:
+            sb.parse_questions = orig

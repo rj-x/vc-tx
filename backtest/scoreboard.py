@@ -280,6 +280,35 @@ def h9_fires(events, cfg):
     return out
 
 
+def parse_questions():
+    """H-number -> [(Qk-Hn, status-line)] from the canonical register
+    (register 54: questions render beneath signals on each card)."""
+    import re as _re
+    out, cur = {}, None
+    for line in open(REGISTER):
+        m = _re.match(r"^## H(\d+)\s*$", line)
+        if m:
+            cur = int(m.group(1))
+            continue
+        m = _re.match(r"^  - \*\*(Q\d+-H\d+)\*\*", line)
+        if m and cur is not None:
+            out.setdefault(cur, []).append(m.group(1))
+    return out
+
+
+def validate_question_ids():
+    """Register 54 namespace closure: question IDs are Q<k>-H<n>, bound to
+    their enclosing hypothesis; anything else is refused."""
+    import re as _re
+    for n, qs in parse_questions().items():
+        for q in qs:
+            m = _re.fullmatch(r"Q(\d+)-H(\d+)", q)
+            if not m or int(m.group(2)) != n:
+                raise ValueError(f"question id {q!r} under H{n}: IDs are "
+                                 f"Q<k>-H<n> bound to their hypothesis "
+                                 f"(register 54)")
+
+
 def register_labels():
     """H-number -> latest review label from the canonical register (the
     governance rule: reviews emit recommendations, never actions — label
@@ -810,7 +839,7 @@ def _section_lines(res, reg, labels, claims):
                                        CONDITIONED_ROWS as _CND)
       _agn_key = next(iter(_AGN))
       _cnd_key = next(iter(_CND))
-      _sbs(_ALL_RESULTS, "S0-H1", "forward", "Q-H1-GEN away cells (S0-H1)")
+      _sbs(_ALL_RESULTS, "S0-H1", "forward", "Q1-H1 away cells (S0-H1)")
       for key in ("S0-H2", "S1-H2"):
           _sbs(_ALL_RESULTS, key, "forward", f"H2 forward ({key})")
       for w in ("backtest", "forward"):
@@ -843,6 +872,9 @@ def _section_lines(res, reg, labels, claims):
               + (" + either-direction (dual)" if both else "")
               + f". Latest review: {labels.get(n, '-')} (recommendation).",
               ""]
+        for q in (parse_questions().get(n) or []):
+            L.append(f"- Question **{q}**: see the register entry "
+                     f"(status there is authoritative).")
         variants = [(k, k) for k in sigs]
         for disp, key in variants:
             L += [f"**{disp}** — session × window grid "

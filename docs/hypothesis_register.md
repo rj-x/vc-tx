@@ -7,7 +7,15 @@ configuration testing that claim: exact condition, parameters, provenance,
 registration date, status. One hypothesis may have many signals; every
 signal belongs to exactly one hypothesis. Global yardsticks stay shared
 and outside both — signals define what fires, never how fires are marked.
-NAMESPACE: H\<n\> and S\<k\>-H\<n\> are the ONLY identifier forms;
+NAMESPACE (CLOSED, register 54): exactly THREE identifier families —
+H\<n\> (claims), S\<k\>-H\<n\> (signal configurations), Q\<k\>-H\<n\>
+(pre-registered questions). A QUESTION = a dated bet about future
+measurements of one hypothesis: prediction + explicit grading conditions
+(data window, thresholds, minimum n) + the convention it grades under
+(initiation, register 53); bound to exactly one hypothesis; graded exactly
+once (YES/NO/PARTIAL) when its conditions are met; never edited — a
+revised prediction is a NEW Q-number; Q-numbers per-hypothesis, never
+reused. Cards list questions beneath signals. Otherwise:
 S-numbers are per-hypothesis, never reused; parameters are never edited in
 place — any change is a NEW S-number. STANDING GUARDS: every signal
 pre-registered with rationale before first computation; configuration
@@ -61,7 +69,16 @@ entry is a separate decision.
     FOUNDING context-qualified climax (qualified POTENTIAL_* labels — the
     "late in an extended move" clause lives in the qualification).
     Signal-live now; record opens at the next run.
-- **Status:** **signal-live** (2 signals).
+- **Questions:**
+  - **Q1-H1** (migrated from Q-H1-GEN, 2026-08-22; description: GEN —
+    generalization): PREDICTION (dated 2026-08-19): S0-H1 shows positive
+    directional lift on ger40/nas100/us30 FORWARD windows; the uk100
+    at-chance home reading stands as the null's advocate. GRADING:
+    INITIATION convention (register 53, stated before any grade); forward
+    accrual + post-validation data ONLY; at the first review where each
+    instrument holds ≥30 forward episodes post-validation. STATUS:
+    pending-conditions.
+- **Status:** **signal-live** (2 signals, 1 question pending).
 - **Latest review:** keep-watching (labels attach to signals; both open).
 - AUDIT: F1 RESOLVED by the S0/S1 split (claim unchanged). Trade logic
   stripped to the recipes section.
@@ -193,6 +210,13 @@ entry is a separate decision.
   direction 30.4%, vs ~22% per-direction chance) — the print localizes
   VOLATILITY, not direction; the either-direction grading now measures
   that property explicitly, and the directional edge question stays open.
+- **Questions:**
+  - **Q1-H7** (migrated from Q-H7-GEO, 2026-08-22; description: GEO —
+    geography): PREDICTION (dated 2026-08-19): S0-H7's lift is positive
+    on European indices (uk100, ger40) and absent on US ones (nas100,
+    us30) in FORWARD windows — the split persists. GRADING: INITIATION
+    convention; same ≥30-post-validation-episode gate as Q1-H1. STATUS:
+    pending-conditions.
 - **Latest review:** keep-watching (2026-08-19, review R1).
 - **Standing adverse evidence, on the record:** the event study reads
   effortless declines as continuing (−19bps excess at +20, n=16), and the

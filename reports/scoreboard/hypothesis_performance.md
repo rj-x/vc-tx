@@ -40,10 +40,10 @@ Engine `860f648b9` — OBSERVATIONAL signal scoreboard - move-detection, not tra
 
 | pattern | context | initiation | participation (cap) |
 |---|---|---|---|
-| Q-H1-GEN away cells (S0-H1) | uk100fut/forward | 28.6% (14/49) | 20.4% (cap 12.7) |
-| Q-H1-GEN away cells (S0-H1) | ger40fut/forward | 22.4% (11/49) | 34.7% (cap 36.0) |
-| Q-H1-GEN away cells (S0-H1) | nas100fut/forward | 38.2% (13/34) | 38.2% (cap 74.9) |
-| Q-H1-GEN away cells (S0-H1) | us30fut/forward | 20.0% (13/65) | 33.8% (cap 54.8) |
+| Q1-H1 away cells (S0-H1) | uk100fut/forward | 28.6% (14/49) | 20.4% (cap 12.7) |
+| Q1-H1 away cells (S0-H1) | ger40fut/forward | 22.4% (11/49) | 34.7% (cap 36.0) |
+| Q1-H1 away cells (S0-H1) | nas100fut/forward | 38.2% (13/34) | 38.2% (cap 74.9) |
+| Q1-H1 away cells (S0-H1) | us30fut/forward | 20.0% (13/65) | 33.8% (cap 54.8) |
 | H2 forward (S0-H2) | uk100fut/forward | 18.2% (28/154) | 27.3% (cap 13.1) |
 | H2 forward (S0-H2) | ger40fut/forward | 22.9% (32/140) | 25.7% (cap 34.2) |
 | H2 forward (S0-H2) | nas100fut/forward | 20.6% (45/218) | 30.7% (cap 75.1) |
@@ -78,6 +78,7 @@ Not graded:  — see register entries.
 *A climactic bar — extreme volume on a wide spread late in an extended move — marks exhaustion, and price then reverses against the climax direction.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H1**: see the register entry (status there is authoritative).
 **S0-H1** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -240,6 +241,7 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
 Grading: directional + either-direction (dual). Latest review: keep-watching (recommendation).
 
+- Question **Q1-H7**: see the register entry (status there is authoritative).
 **S0-H7** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -476,6 +478,7 @@ Not graded:  — see register entries.
 *A climactic bar — extreme volume on a wide spread late in an extended move — marks exhaustion, and price then reverses against the climax direction.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H1**: see the register entry (status there is authoritative).
 **S0-H1** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -640,6 +643,7 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
 Grading: directional + either-direction (dual). Latest review: keep-watching (recommendation).
 
+- Question **Q1-H7**: see the register entry (status there is authoritative).
 **S0-H7** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -875,6 +879,7 @@ Not graded:  — see register entries.
 *A climactic bar — extreme volume on a wide spread late in an extended move — marks exhaustion, and price then reverses against the climax direction.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H1**: see the register entry (status there is authoritative).
 **S0-H1** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1031,6 +1036,7 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
 Grading: directional + either-direction (dual). Latest review: keep-watching (recommendation).
 
+- Question **Q1-H7**: see the register entry (status there is authoritative).
 **S0-H7** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1262,6 +1268,7 @@ Not graded:  — see register entries.
 *A climactic bar — extreme volume on a wide spread late in an extended move — marks exhaustion, and price then reverses against the climax direction.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H1**: see the register entry (status there is authoritative).
 **S0-H1** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1426,6 +1433,7 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *Quiet decline at a session extreme is disguised accumulation: effortless (low-volume) weakness reverses UP once selling fails to attract participation (mirror: quiet advance at a high reverses down).*
 Grading: directional + either-direction (dual). Latest review: keep-watching (recommendation).
 
+- Question **Q1-H7**: see the register entry (status there is authoritative).
 **S0-H7** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
