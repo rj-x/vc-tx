@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 72 (freshness-checked by the weekly
+table.** Register-current-through: 73 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -72,7 +72,8 @@ authoritative.
 | bar-persistence census (scalp viability) | BUILT 2026-08-22; EXTENDED with expectancy curve + quadrant rows + bar+1 scalp screen (registers 63/64/68; weekly under Part C) |
 | quadrant dimension (effort×result 2×2) | BUILT 2026-08-23 (register 66; rides the weekly matrix; narrow-loud has no family — mint follows lift) |
 | seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
-| sequel census (narrative phase two) | BUILT 2026-08-23 (register 71; anchors S0-H1/S0-H2; weekly Part C; the doctrine's first sentence-level instrument) |
+| sequel census (two-anchor) | PILOT (register 71) — superseded by the narrative survey (register 73); artifact retained as the pilot record |
+| narrative survey (the sentence space) | BUILT 2026-08-23 (register 73; every anchor × vocabulary × W, permutation null, focal cell S0-H1×absorption; weekly Part C; Q-minting = notable + mechanism) |
 | narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |

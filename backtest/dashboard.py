@@ -263,9 +263,11 @@ def generate():
           "- `bar_persistence.md|.json` — scalp viability: do fires "
           "persist bar-to-bar past spread, vs the random floor. Read "
           "weekly; scalp candidates go through their own registrations.",
-          "- `sequel_census.md|.json` — the two-chapter story: does "
-          "exhaustion need absorption to become reversal (narrative "
-          "phase two). Read weekly.",
+          "- `narrative_survey.md|.json` — the sentence space with "
+          "luck priced: every anchor × sequel class vs the permutation "
+          "null; the two-chapter focal cell grades within the field. "
+          "Read weekly. (sequel_census = its register-71 pilot, "
+          "superseded.)",
           "- `conditioning_matrix.md|.json` — where signals work/fail by "
           f"state; grades Q1-H11/Q2-H{9}/Q1-H{6}. Read weekly.",
           "- `cofire.md|.json` — does cross-family agreement help "
