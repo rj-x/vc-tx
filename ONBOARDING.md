@@ -738,6 +738,20 @@ set still growing toward fold support).
    retro-catch: excursion TP ladder was already quietly optimistic,
    now labeled. Scalp chain enforced: YES → target-based → haircut
    ratified → recipe registers.
+36. Quadrant + gap censuses (registers 66–67, `8e69c63`, 117/117):
+   effort×result 2x2 rides the matrix (founding thresholds cited,
+   nothing invented; 58 signal×quadrant cells) — FLAT verdict: bar
+   state alone barely predicts episodes (42–45% all quadrants);
+   narrow-loud rare (3.8%) + mildest-highest (45.2%), no mint; lift
+   lives in signal×quadrant cells if anywhere. Gap census live: 
+   micro-gaps FADE (negative persistence every horizon, −1.7…−3.3
+   med, n=85 home — vacuum refills, contrarian texture, note-not-
+   mint, accrues); weekend cells dimmed (3 weekends). Glossary
+   enforcement fired first real use (ATV, INTRASESSION — same-commit
+   resolution); em-dash table incident caught by artifact-read-
+   before-report. Operator review = 5 pages, order unchanged:
+   DASHBOARD → SIGNAL_POINTS → bar_persistence (+2 drill-downs).
+   Board: nas100 evening + governance sitting + H6 grade clocks.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
