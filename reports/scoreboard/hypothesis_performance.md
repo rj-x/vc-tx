@@ -1,6 +1,8 @@
 # Hypothesis Performance — Per-Instrument
 
-Engine `01e9d5694` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
+Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
+
+Engine `67d1f2dac` — register 40 fence as amended 2026-08-19 (operator): one section per instrument, each computed only from that instrument's own store and native calendar; uk100 canonical, ger40/nas100/us30 PROVISIONAL (validation pending). Numbers are NEVER pooled across instruments — cross-instrument aggregation is a future registration. This first cross-instrument read is EXPLORATORY: expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim.
 
 ---
 
@@ -10,7 +12,7 @@ Store span (1M, close ts): 2026-07-12 22:06:00+00:00 → 2026-08-21 19:59:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `67d1f2dac` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -222,6 +224,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H6**: see the register entry (status there is authoritative).
+- Question **Q2-H6**: see the register entry (status there is authoritative).
 **S0-H6** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -311,6 +315,7 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 *Persistent lower-TF directional pressure that recruits expanding participation at the parent timeframe precedes continuation beyond what the parent label alone predicts; pressure without participation expansion does not.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q2-H9**: see the register entry (status there is authoritative).
 **S0-H9** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -376,6 +381,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H11**: see the register entry (status there is authoritative).
 **S0-H11** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -529,7 +535,7 @@ Store span (1M, close ts): 2026-07-19 22:42:00+00:00 → 2026-08-21 19:59:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `67d1f2dac` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -709,6 +715,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H6**: see the register entry (status there is authoritative).
+- Question **Q2-H6**: see the register entry (status there is authoritative).
 **S0-H6** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -798,6 +806,7 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 *Persistent lower-TF directional pressure that recruits expanding participation at the parent timeframe precedes continuation beyond what the parent label alone predicts; pressure without participation expansion does not.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q2-H9**: see the register entry (status there is authoritative).
 **S0-H9** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -861,6 +870,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H11**: see the register entry (status there is authoritative).
 **S0-H11** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1013,7 +1023,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-21 20:29:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `67d1f2dac` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -1185,6 +1195,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H6**: see the register entry (status there is authoritative).
+- Question **Q2-H6**: see the register entry (status there is authoritative).
 **S0-H6** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1274,6 +1286,7 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 *Persistent lower-TF directional pressure that recruits expanding participation at the parent timeframe precedes continuation beyond what the parent label alone predicts; pressure without participation expansion does not.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q2-H9**: see the register entry (status there is authoritative).
 **S0-H9** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1339,6 +1352,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H11**: see the register entry (status there is authoritative).
 **S0-H11** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1487,7 +1501,7 @@ Store span (1M, close ts): 2026-07-19 22:02:00+00:00 → 2026-08-21 20:29:00+00:
 
 ## Summary Matrix (page 1)
 
-Engine `01e9d5694` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
+Engine `67d1f2dac` — OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)
 
 **Review labels are RECOMMENDATIONS — none actioned, review pending operator familiarity.** Cells: marker + precision LIFT vs that context's OWN chance rate, (hits/fires), payoff net/median points (directional rows; either-direction rows have no payoff by construction). ▲/▼ = beyond ±2pp of chance, · = within. (°…) = small-n (fires<20 or episodes<10): dimmed, excluded from any future label arithmetic. Read READING_GUIDE.md first; full detail in hypothesis_performance.json.
 
@@ -1667,6 +1681,8 @@ Grading: directional. Latest review: keep-watching (recommendation).
 *A wide-spread rejection bar at a session extreme (measured day-relative, volume-agnostic) reverses away from the extreme.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H6**: see the register entry (status there is authoritative).
+- Question **Q2-H6**: see the register entry (status there is authoritative).
 **S0-H6** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1756,6 +1772,7 @@ Grading: either-direction. Latest review: keep-watching (recommendation).
 *Persistent lower-TF directional pressure that recruits expanding participation at the parent timeframe precedes continuation beyond what the parent label alone predicts; pressure without participation expansion does not.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q2-H9**: see the register entry (status there is authoritative).
 **S0-H9** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |
@@ -1819,6 +1836,7 @@ Grading: directional. Latest review: deprioritize (recommendation).
 *Price entering a low-volume price zone traverses it faster than baseline; entering a high-volume node it stalls or reverses at above-baseline rates.*
 Grading: directional. Latest review: keep-watching (recommendation).
 
+- Question **Q1-H11**: see the register entry (status there is authoritative).
 **S0-H11** — session × window grid (cells as in the matrix):
 
 | session | backtest | forward |

@@ -14,7 +14,7 @@
       "clamped": 0,
       "median_spread_cash": 1.3
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 23583,
       "cash_bars": 8879,
@@ -71,7 +71,7 @@
       "clamped": 0,
       "median_spread_cash": 0.8
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24036,
       "cash_bars": 9049,
@@ -128,7 +128,7 @@
       "clamped": 0,
       "median_spread_cash": 1.0
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24069,
       "cash_bars": 9043,
@@ -185,7 +185,7 @@
       "clamped": 0,
       "median_spread_cash": 0.4
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24712,
       "cash_bars": 6943,
@@ -242,7 +242,7 @@
       "clamped": 0,
       "median_spread_cash": 1.9
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24719,
       "cash_bars": 6949,
@@ -299,7 +299,7 @@
       "clamped": 0,
       "median_spread_cash": 0.4
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24838,
       "cash_bars": 8613,
@@ -356,7 +356,7 @@
       "clamped": 0,
       "median_spread_cash": 0.2
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24838,
       "cash_bars": 8613,
@@ -413,7 +413,7 @@
       "clamped": 0,
       "median_spread_cash": 0.0001
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.5,
     "15min": {
       "bars": 26077,
       "cash_bars": 14118,
@@ -470,7 +470,7 @@
       "clamped": 0,
       "median_spread_cash": 4.0
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 4618,
       "cash_bars": 1734,
@@ -527,7 +527,7 @@
       "clamped": 0,
       "median_spread_cash": 1.5
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 22964,
       "cash_bars": 8680,
@@ -584,7 +584,7 @@
       "clamped": 0,
       "median_spread_cash": 0.9
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 24719,
       "cash_bars": 6949,
@@ -641,7 +641,7 @@
       "clamped": 0,
       "median_spread_cash": 1.8
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 23730,
       "cash_bars": 6679,
@@ -698,7 +698,7 @@
       "clamped": 0,
       "median_spread_cash": 2.6
     },
-    "stale_1min_days": 0.5,
+    "stale_1min_days": 1.6,
     "15min": {
       "bars": 23732,
       "cash_bars": 6680,

@@ -3,6 +3,7 @@
 **Generated from:** `reports/backtest_v1/*.json` · **Instrument:** `uk100fut` (secondary `uk100`) · **Volume type: real futures contract volume** · **Stack:** 1h / 15min / 1min
 **Data:** 16 sessions, 2026-07-13 07:00:00+00:00 → 2026-08-03 15:29:00+00:00, 8,160 1M rows · **Lockbox:** 2026-08-04T00:00:00+00:00 (loader-enforced, untouched)
 **Cost model:** CASH-CFD VEHICLE (pre-registered 2026-08-13): signals/levels/stops/R on uk100fut; fills on uk100 measured bid/ask (long entry@ask exit@bid, mirrored), basis-at-entry level mapping, GBP-per-point sizing (min stake 0.5), NO commission; EOD-flat asserted
+**Terms:** [docs/GLOSSARY.md](docs/GLOSSARY.md)
 
 ## Headline
 
@@ -135,7 +136,7 @@ Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARM
 
 Run in the same campaign command; every artifact carries its own stamps, conventions (dual-convention grading, register 53; conditioned baselines, register 47), and sealed-window skips. Index + headlines (artifacts in reports/scoreboard/ unless noted):
 
-- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `bcfdc80a6`): 4 instruments; home forward union coverage 85.2% (46/54).
+- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `67d1f2dac`): 4 instruments; home forward union coverage 85.2% (46/54).
 - **Recipe performance** (`recipe_performance.md|.json`): set **recipe_set_v0.2**, 4 instruments; provenance printed per recipe.
 - **Forward migration** (`reports/forward/migration_forward_20260814_20260821.json`): 173 forward chains; 11:46Z grade matched=False.
 - **Co-fire census** (`cofire.md|.json`): cross-family pairs; composites go through the front door only.

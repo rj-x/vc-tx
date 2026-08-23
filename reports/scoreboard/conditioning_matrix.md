@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `3a86d748a` — OBSERVATIONAL, pre-registered (prereg_conditioning_matrix). STATE-conditioned confirmation testing: hits are EPISODE-BEGINS-AFTER-FIRE; every cell's lift reads against its OWN state-conditioned base. Coil dimension is a FLAGGED proxy pending ratification. Cells n<10 UNMEASURABLE (omitted here; full grid in the JSON). Surviving lift -> composite proposal via front door only.
+Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_conditioning_matrix). STATE-conditioned confirmation testing: hits are EPISODE-BEGINS-AFTER-FIRE; every cell's lift reads against its OWN state-conditioned base. Coil dimension is a FLAGGED proxy pending ratification. Cells n<10 UNMEASURABLE (omitted here; full grid in the JSON). Surviving lift -> composite proposal via front door only.
 
 ## uk100fut (CANONICAL)
 

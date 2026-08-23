@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL seam & gap census \u2014 measurement, never validation; gap-fill folk strategy NOT registered (mint-on-lift only)",
-  "engine_commit": "3a86d748a914171e9e8860c281ef1b4730f09446",
+  "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
   "buckets_atr_FLAGGED": [
     0.25,
     1.0

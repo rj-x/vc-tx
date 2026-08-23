@@ -1,6 +1,8 @@
 # Overnight/Intraday Drift Census (GENERATED)
 
-Engine `bcfdc80a6` — OBSERVATIONAL drift census — descriptive; grading-fairness first; never validation
+Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
+
+Engine `67d1f2dac` — OBSERVATIONAL drift census — descriptive; grading-fairness first; never validation
 
 ## uk100fut (CANONICAL)
 

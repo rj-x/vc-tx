@@ -1,5 +1,7 @@
 # Reading Guide — Hypothesis Performance
 
+Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
+
 **Read this before the table. Labels are recommendations only — none
 actioned; status changes need a dated operator decision.**
 

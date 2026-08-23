@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `3a86d748a` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
+Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
 
 ## uk100fut (CANONICAL; spread 1.3 pts)
 

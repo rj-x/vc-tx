@@ -1,4 +1,6 @@
 # Opportunity Ledger (GENERATED — review surface, non-evidential)
+Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
+
 
 No forward returns here by design (event study's job). Timestamps in both conventions: close-stamped and open-stamped (close − TF).
 

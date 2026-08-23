@@ -1,10 +1,10 @@
 {
-  "engine_commit": "01e9d56940ab7ae1d92a45159e8a8e22734c45fa",
+  "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
   "REGISTER_40_AMENDMENT": "per-instrument sections (operator, 2026-08-19): replay-only cross-instrument runs permitted; uk100 canonical; ger40/nas100/us30 PROVISIONAL pending validation evenings; NO POOLING across instruments",
   "instruments": {
     "uk100fut": {
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "01e9d56940ab7ae1d92a45159e8a8e22734c45fa",
+      "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
       "instrument": "uk100fut",
       "pair": "uk100",
       "status": "canonical",
@@ -9556,7 +9556,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "01e9d56940ab7ae1d92a45159e8a8e22734c45fa",
+      "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
       "instrument": "ger40fut",
       "pair": "ger40",
       "status": "provisional",
@@ -19288,7 +19288,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "01e9d56940ab7ae1d92a45159e8a8e22734c45fa",
+      "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
       "instrument": "nas100fut",
       "pair": "nas100",
       "status": "provisional",
@@ -28507,7 +28507,7 @@
         "the forward window (>= go_live) is also a replay over the synced store \u2014 this instrument has NO live attachment yet"
       ],
       "STAMP": "OBSERVATIONAL signal scoreboard - move-detection, not trading; no fills exist here by construction; never validation (docs/hypothesis_lifecycle.md stage 4)",
-      "engine_commit": "01e9d56940ab7ae1d92a45159e8a8e22734c45fa",
+      "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
       "instrument": "us30fut",
       "pair": "us30",
       "status": "provisional",
