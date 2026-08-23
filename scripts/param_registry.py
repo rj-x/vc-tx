@@ -90,6 +90,7 @@ AUTHORITY = {
     "gap_census.py:GAP_BUCKETS_ATR": "IMPLEMENTER-PROPOSED abs-gap/ATR bucket edges (register 67), FLAGGED pending ratification",
     "gap_census.py:WEEKEND_MIN_H": "definitional seam-classification cutoff (register 67): a pause longer than 24h is a weekend",
     "gap_census.py:PAUSE_MIN_MIN": "definitional seam-classification cutoff (register 67): >5 min and <=24h is the instrument's daily pause (register-40 measured pauses all exceed it)",
+    "bar_persistence.py:QUAD_KS": "register 68 (prereg_bar_persistence_quadrant): quadrant rows report k in {1,3,5} — subset of the register-63 horizons, operator order",
     "bar_persistence.py:HORIZONS": "register 63 (prereg_bar_persistence): the census horizons — instrumentation stated in the operator order, registered once",
     "bar_persistence.py:PTS_LADDER": "register 63: reach thresholds +{2,5,10} points, HOME-REFERENCE ONLY (operator order)",
     "bar_persistence.py:ATR_LADDER": "register 63: reach thresholds +{0.25,0.5,1.0}xATR(15M), cross-instrument (operator order)",

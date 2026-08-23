@@ -93,3 +93,18 @@ def test_expectancy_curve_and_spread_once():
     assert e[2]["inc_median_net"] == e[2]["inc_median_gross"]
     # peak-k = the bar where the cumulative net median tops out
     assert a["expectancy_peak"]["k"] == 2
+
+
+def test_quadrant_conventions_mirror():
+    """Register 68 pin: the fade convention is the exact sign mirror of
+    the same-direction convention (same entries, flipped direction)."""
+    bars = [(100, 100.6, 99.8, 100.5), (100.5, 101.2, 100.1, 101),
+            (101, 101.4, 100.2, 100.4), (100.4, 100.9, 99.9, 100.6),
+            (100.6, 101.1, 100.0, 100.2)]
+    ts, o, h, l, c = _arrs(bars)
+    fires = [{"ts": T0, "dir": 1, "name": "QUAD-x"}]
+    fires_f = [{**f, "dir": -f["dir"]} for f in fires]
+    a = persistence(fires, ts, o, h, l, c, lambda t: 6.0, 0.0)
+    b = persistence(fires_f, ts, o, h, l, c, lambda t: 6.0, 0.0)
+    for k in a[0]["cum"]:
+        assert abs(a[0]["cum"][k] + b[0]["cum"][k]) < 1e-9

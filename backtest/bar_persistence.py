@@ -42,6 +42,7 @@ from backtest.sessions import session_of
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
                                  _atr15, _replay, _series,
                                  event_derived_fires, make_cfg)
+from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from backtest.signal_points import (DRIFT_SKEW_SHARE, TREND_FAMILY,
                                     all_signals, baseline_fires)
 
@@ -51,6 +52,8 @@ HORIZONS = (1, 3, 5, 10)               # settled 1M bars after entry
 PTS_LADDER = (2.0, 5.0, 10.0)          # HOME-REFERENCE ONLY
 ATR_LADDER = (0.25, 0.5, 1.0)          # cross-instrument
 SESSIONS = ("asia", "london", "overlap", "ny_only", "dead")
+QUADRANTS = ("wide-loud", "wide-quiet", "narrow-loud", "narrow-quiet")
+QUAD_KS = (1, 3, 5)      # register 68: quadrant rows report k in {1,3,5}
 
 
 def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
@@ -193,7 +196,12 @@ def run_instrument(instr):
                     "session_model.ladder": True,
                     "debug.structure": True})
     watch = SignalWatch()
-    engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
+    rec = _FeatRecorder()
+
+    def _hook(engine):
+        watch.attach(engine)
+        rec.attach(engine)
+    engine, bars, _ = _replay(cfg, instr, engine_hook=_hook)
     b1m_all = bars[cfg.mtf.execution_tf]
     b1m = [x for x in b1m_all if not x.is_stub]
     ts, cl, hi, lo, _s, _b = _series(b1m_all)
@@ -239,6 +247,55 @@ def run_instrument(instr):
                     [f["dir"] == 1 for f in fires
                      if f["name"] == name]))
         out["signals"][name] = cell
+    # register 68: the four quadrant classes as bare directional events
+    # (direction = the bar's close direction; both conventions). QUESTION
+    # STATED: does a bar's effort x result class predict the NEXT close
+    # (scalp horizon), independent of episode prediction (already
+    # answered flat)? HONESTY: adjacent bars share forward windows —
+    # rows are not independent, n is overstated (the 1M label-study
+    # autocorrelation caveat applies).
+    quad = np.array([quadrant_of(*rec.map.get(t, (None, None)),
+                                 cfg.labels.wide_spread_pctile,
+                                 cfg.labels.high_volume_mult)
+                     for t in ts], dtype=object)
+
+    def _prune(a):
+        if not a:
+            return None
+        return {"n_fires": a["n_fires"],
+                "fav_frac_pct": {k: v for k, v in
+                                 a["fav_frac_pct"].items()
+                                 if k in QUAD_KS},
+                "expectancy": {k: v for k, v in a["expectancy"].items()
+                               if k in QUAD_KS}}
+    out["quadrants"] = {}
+    for qv in QUADRANTS:
+        idxs = np.nonzero(quad == qv)[0]
+        base_fires = []
+        for i in idxs:
+            if cl[i] == op[i]:
+                continue                     # doji: no close direction
+            t = pd.Timestamp(ts[i], tz="UTC")
+            if is_sealed(t):
+                continue
+            base_fires.append({"ts": t, "name": f"QUAD-{qv}",
+                               "dir": 1 if cl[i] > op[i] else -1})
+        qcell = {}
+        for conv, flip in (("same", 1), ("fade", -1)):
+            fires_c = [{**f, "dir": f["dir"] * flip} for f in base_fires]
+            rows = persistence(fires_c, ts, op, hi, lo, cl, atr_at,
+                               spread, home=False)
+            cc = {}
+            for win, sel in windows:
+                wr = [r for r in rows if sel(r)]
+                cc[win] = {"whole": _prune(_agg(wr, spread))}
+                for sv in SESSIONS:
+                    a = _prune(_agg([r for r in wr
+                                     if r["session"] == sv], spread))
+                    if a:
+                        cc[win][sv] = a
+            qcell[conv] = cc
+        out["quadrants"][qv] = qcell
     # baselines through the identical measurement (ensembles); floors
     # computed for EVERY scope the signals report (whole + sessions)
     member_aggs = {}
@@ -342,7 +399,9 @@ def _emit(results, head):
             L += [f"> {PROVISIONAL_STAMP}"]
         L.append("")
         for win in ("backtest", "forward"):
-            hdr = ["H", "signal", "n", "fav-close% @1/3/5/10",
+            hdr = ["H", "signal", "n",
+                   "bar+1: fav% / net exp (the scalp screen)",
+                   "fav-close% @1/3/5/10",
                    "reach 0.25×ATR@3 g/n", "reach 0.5×ATR@5 g/n",
                    "reach 1×ATR@10 g/n"]
             if home:
@@ -367,7 +426,12 @@ def _emit(results, head):
                 fav = "/".join(
                     str(a["fav_frac_pct"].get(N, "—"))
                     for N in HORIZONS)
-                row = [f"H{hn}", name, str(a["n_fires"]), fav,
+                e1 = a.get("expectancy", {}).get(1)
+                f1 = a.get("fav_frac_pct", {}).get(1)
+                dim1 = "°" if a["n_fires"] < 20 else ""
+                b1 = (f"{dim1}{f1}% / {e1['cum_median_net']:+.2f}"
+                      if e1 is not None and f1 is not None else "—")
+                row = [f"H{hn}", name, str(a["n_fires"]), b1, fav,
                        _fmtcell(a, "atr_0.25", 3),
                        _fmtcell(a, "atr_0.5", 5),
                        _fmtcell(a, "atr_1", 10)]
@@ -428,6 +492,53 @@ def _emit(results, head):
                         cells.append(f"{dim}{r['net']} (n{r['n']})")
                 L.append(f"| H{hn} | {name} | " + " | ".join(cells)
                          + " |")
+            L.append("")
+        qd = res.get("quadrants", {})
+        if qd:
+            L += [f"### {inst} — QUADRANT ROWS (register 68: the four "
+                  "effort×result classes as bare directional events)", "",
+                  "> Direction = the bar's close direction; both "
+                  "conventions (same-direction and fade). QUESTION: does "
+                  "a bar's effort×result class predict the NEXT close "
+                  "(scalp horizon), independent of episode prediction "
+                  "(already answered flat by the base-rate table)? "
+                  "HONESTY: adjacent bars share forward windows — n is "
+                  "overstated (the 1M label-study autocorrelation "
+                  "caveat). Δexp@1 reads against B-RANDOM's expectancy "
+                  "floor. Mint-on-lift, front door, as everywhere.", "",
+                  "| quadrant | conv | window | n | fav% @1/3/5 | net "
+                  "exp @1/3/5 | Δexp@1 vs B-RANDOM [range] |",
+                  "|---|---|---|---|---|---|---|"]
+            for qv in QUADRANTS:
+                for conv in ("same", "fade"):
+                    for win in ("backtest", "forward"):
+                        a = (qd.get(qv, {}).get(conv, {})
+                             .get(win, {}) or {}).get("whole")
+                        if not a or not a.get("expectancy"):
+                            L.append(f"| {qv} | {conv} | {win} | 0 | — "
+                                     "| — | — |")
+                            continue
+                        dim = "°" if a["n_fires"] < 20 else ""
+                        fav = "/".join(
+                            str(a["fav_frac_pct"].get(k, "—"))
+                            for k in QUAD_KS)
+                        exp = "/".join(
+                            (f"{a['expectancy'][k]['cum_median_net']:+.2f}"
+                             if k in a["expectancy"] else "—")
+                            for k in QUAD_KS)
+                        e1 = a["expectancy"].get(1)
+                        fl = (res["baselines"].get("B-RANDOM", {})
+                              .get(win, {}).get("whole", {})
+                              .get("exp@1"))
+                        if e1 and fl:
+                            lo, hi = fl["net_range"]
+                            dcell = (f"{e1['cum_median_net'] - fl['net_median']:+.2f} "
+                                     f"[{lo}…{hi}]")
+                        else:
+                            dcell = "—"
+                        L.append(f"| {qv} | {conv} | {win} "
+                                 f"| {dim}{a['n_fires']} | {fav} | {exp} "
+                                 f"| {dcell} |")
             L.append("")
         L += [f"### {inst} — expectancy floors (ensemble median [range] "
               "of cumulative net median pts)", "",
