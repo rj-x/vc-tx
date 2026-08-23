@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 65 (freshness-checked by the weekly
+table.** Register-current-through: 67 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -70,6 +70,8 @@ authoritative.
 | baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |
 | GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 2) |
 | bar-persistence census (scalp viability) | BUILT 2026-08-22; EXTENDED 2026-08-23 with the per-bar expectancy curve (register 63/64; weekly under Part C) |
+| quadrant dimension (effort×result 2×2) | BUILT 2026-08-23 (register 66; rides the weekly matrix; narrow-loud has no family — mint follows lift) |
+| seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |

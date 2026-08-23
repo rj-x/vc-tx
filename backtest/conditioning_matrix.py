@@ -4,7 +4,12 @@ STATE-CONDITIONED per the co-fire lesson: every live signal's fires split
 by standing context-state dimensions; full fire counts preserved (never
 time-coincidence).
 
-Dimensions per fire bar: H11 position (node/gap/neither) · coil-state
+Dimensions per fire bar: effort×result QUADRANT (register 66: spread
+wide/narrow at labels.wide_spread_pctile vs the time-matched rel_spread
+percentile · volume loud/quiet at labels.high_volume_mult vs rel_volume's
+time-matched baseline — the existing founding conventions, cited, no new
+thresholds; "narrow"/"quiet" = below the wide/loud cuts) · H11 position
+(node/gap/neither) · coil-state
 preceding (FLAGGED proxy: trailing 30-bar 1M range-sum <= p20 of its
 trailing-day distribution; parameters implementer-proposed pending
 ratification — organ #3 is the eventual instrument) · H13 value-area
@@ -43,6 +48,35 @@ OUT = os.path.join(ROOT, "reports", "scoreboard")
 
 COIL_WINDOW = 30      # flagged implementer proposal (prereg)
 COIL_PCTILE = 0.20    # flagged implementer proposal (prereg)
+
+
+class _FeatRecorder:
+    """Per-1M-bar (rel_spread_pct, rel_volume) capture — the engine's own
+    time-matched instruments (register 66: rel_volume's time-matched
+    baseline is the existing correct instrument; no new primitive)."""
+
+    def __init__(self):
+        self.map = {}
+
+    def attach(self, engine):
+        orig = engine.exec_pipe.on_close
+
+        def observed(bar, ctx_tf=None, signal_ctx=None):
+            out = orig(bar, ctx_tf=ctx_tf, signal_ctx=signal_ctx)
+            if out is not None and not bar.is_stub:
+                feats = out[0]
+                if feats.valid:
+                    self.map[bar.ts.value] = (feats.rel_spread_pct,
+                                              feats.rel_volume)
+            return out
+        engine.exec_pipe.on_close = observed
+
+
+def quadrant_of(rs, rv, wide_pctile, loud_mult):
+    if rs is None or rv is None:
+        return "unclassified"
+    return (("wide" if rs >= wide_pctile else "narrow") + "-"
+            + ("loud" if rv >= loud_mult else "quiet"))
 
 
 class _VATracker:
@@ -95,7 +129,12 @@ def run_instrument(instr):
                     "session_model.ladder": True,
                     "debug.structure": True})
     watch = SignalWatch()
-    engine, bars, _ = _replay(cfg, instr, engine_hook=watch.attach)
+    rec = _FeatRecorder()
+
+    def _hook(engine):
+        watch.attach(engine)
+        rec.attach(engine)
+    engine, bars, _ = _replay(cfg, instr, engine_hook=_hook)
     qual, eps, series, _d = build_moves(
         bars[cfg.mtf.execution_tf], bars[cfg.mtf.signal_tf],
         cfg.context.atr_period)
@@ -129,17 +168,27 @@ def run_instrument(instr):
     phase = np.array(["trending" if trend_map.get(t, 0) != 0 else "ranging"
                       for t in ts], dtype=object)
     sess = sessions_of_index(pd.DatetimeIndex(ts, tz="UTC"))
-    DIMS = {"h11": h11, "coil": coil, "va": va, "phase": phase,
-            "session": sess}
+    quad = np.array([quadrant_of(*rec.map.get(t, (None, None)),
+                                 cfg.labels.wide_spread_pctile,
+                                 cfg.labels.high_volume_mult)
+                     for t in ts], dtype=object)
+    DIMS = {"quadrant": quad, "h11": h11, "coil": coil, "va": va,
+            "phase": phase, "session": sess}
     fires = watch.fires + event_derived_fires(engine.narrative.events, cfg,
                                               bars)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     win = pd.Timedelta(minutes=60)
+    idx60 = np.searchsorted(ts, ts + 3_600_000_000_000, side="left")
+    valid60 = idx60 < len(ts)
+    drift60 = np.full(len(ts), np.nan)
+    drift60[valid60] = cl[np.minimum(idx60, len(ts) - 1)][valid60] \
+        - cl[valid60]
     out = {"instrument": instr,
            "status": ("provisional" if instr in PROVISIONAL_INSTRS
                       else "canonical"),
+           "quadrant_base_rates": {},
            "coil_proxy_flag": ("trailing 30-bar range-sum <= p20 of "
                                "trailing day — implementer-proposed, "
                                "ratification pending"),
@@ -156,6 +205,30 @@ def run_instrument(instr):
                 m = wmask & (arr == val)
                 bases[(dim, val)] = (round(100 * float(hits_all[m].mean()),
                                            1) if m.any() else None)
+        # register 66: standalone quadrant base-rate table — frequency,
+        # episode-begin rate, forward drift, per quadrant x session; all
+        # four quadrants reported symmetrically
+        qtab = {}
+        nw = int(wmask.sum())
+        sess_arr = np.asarray(sess, dtype=object)
+        for qv in ("wide-loud", "wide-quiet", "narrow-loud",
+                   "narrow-quiet"):
+            for sv in list(np.unique(sess_arr[wmask])) + ["whole"]:
+                m = wmask & (quad == qv)
+                if sv != "whole":
+                    m = m & (sess_arr == sv)
+                if not m.any():
+                    continue
+                dr = drift60[m]
+                dr = dr[~np.isnan(dr)]
+                qtab[f"{qv}|{sv}"] = {
+                    "n_bars": int(m.sum()),
+                    "freq_pct": round(100 * float(m.sum()) / nw, 1),
+                    "episode_begin_pct": round(
+                        100 * float(hits_all[m].mean()), 1),
+                    "fwd_drift_60m_mean_pts": (round(float(dr.mean()), 2)
+                                               if len(dr) else None)}
+        out["quadrant_base_rates"][w] = qtab
         for f in fires:
             if not (w_lo <= f["ts"] < w_hi):
                 continue
@@ -205,6 +278,34 @@ def _emit(results, head):
         L += [f"## {inst} ({res['status'].upper()})"]
         if res["status"] == "provisional":
             L += [f"> {PROVISIONAL_STAMP}"]
+        L += ["", f"### {inst} — quadrant base rates (register 66; "
+              "whole-window rows; full session grid in the JSON)", "",
+              "> Effort×result 2×2 at the FOUNDING conventions (cited: "
+              "labels.wide_spread_pctile=80 on the time-matched "
+              "rel_spread percentile; labels.high_volume_mult=1.5 on "
+              "time-matched rel_volume). All four quadrants reported "
+              "symmetrically. CONTEXT NOTE (not a focus): existing "
+              "families map to three quadrants — wide-loud (climax "
+              "family), wide-quiet (effortless family), narrow-quiet "
+              "(the ND/NS family) — narrow-loud (effort without result: "
+              "the absorption fingerprint) has no hypothesis family. "
+              "Any minting FOLLOWS THE LIFT, not the map — front door "
+              "only.", "",
+              "| quadrant | window | freq % | episode-begin % | fwd "
+              "drift 60m (pts) | n |", "|---|---|---|---|---|---|"]
+        for qv in ("wide-loud", "wide-quiet", "narrow-loud",
+                   "narrow-quiet"):
+            for w in ("backtest", "forward"):
+                c = res.get("quadrant_base_rates", {}).get(w, {}) \
+                    .get(f"{qv}|whole")
+                if not c:
+                    L.append(f"| {qv} | {w} | — | — | — | — |")
+                    continue
+                L.append(f"| {qv} | {w} | {c['freq_pct']} "
+                         f"| {c['episode_begin_pct']} "
+                         f"| {c['fwd_drift_60m_mean_pts']} "
+                         f"| {c['n_bars']} |")
+        L.append("")
         L += ["", "| signal | window | dim | state | n | precision "
               "| state base | lift | payoff net/med |",
               "|---|---|---|---|---|---|---|---|---|"]

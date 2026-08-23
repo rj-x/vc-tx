@@ -37,8 +37,8 @@ def _sweep_targets():
 # plain-English words the system dictionary (web2, 1934) happens to
 # lack — emphasis exemptions, NOT domain terms; domain terms go in the
 # glossary
-EMPHASIS_EXTRA = {"held", "checklist", "intraday", "readout", "readouts",
-                  "standalone", "retro"}
+EMPHASIS_EXTRA = {"held", "checklist", "intraday", "intrasession",
+                  "readout", "readouts", "standalone", "retro"}
 
 
 def _tokens(text):

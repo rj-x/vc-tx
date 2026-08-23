@@ -146,6 +146,7 @@ first uses them, or the commit doesn't pass.
 - **HHMM** — a time printed as hours+minutes.
 - **GHLZ / JFE** — the Gao-Han-Li-Zhou paper (Journal of Financial Economics, 2018) H16 cites.
 - **OP1** — the numbering in R-OP1: operator-specified recipe #1.
+- **ATV** — "average time-of-day volume": the operator's 2026-08-22 shorthand; retired unneeded — rel_volume's time-matched baseline is the existing instrument (register 66).
 - **SEQ** — sequence (S-EFFORTLESS-SEQ: consecutive effortless prints).
 - **GEN / GEO** — the origin-lapse suffixes of the migrated question names (general / geometry), retired at namespace closure.
 - **CPG** — CONFIRMED_PENDING_GATE: the hypothesis-lifecycle state between confirmation and the entry gate.
