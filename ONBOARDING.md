@@ -752,6 +752,16 @@ set still growing toward fold support).
    before-report. Operator review = 5 pages, order unchanged:
    DASHBOARD → SIGNAL_POINTS → bar_persistence (+2 drill-downs).
    Board: nas100 evening + governance sitting + H6 grade clocks.
+37. Register 68 (`8a50272`, 118/118): quadrant-as-signal for bar+1 =
+   CLEAN NO — all four quadrants, both conventions, exactly at floor
+   (Δexp@1 +0.00 vs [−1.5…−1.1]; same/fade symmetry = self-check:
+   both-at-zero proves flat, not sign error). Quadrant idea fully
+   measured + filed: predicts neither episodes nor next close; only
+   signal×quadrant matrix cells remain live (weekly). Bar+1 scalp
+   screen = column 4 of persistence tables (fav% + net exp @k=1 vs
+   −1.30 floor) — nothing clears yet except H6's touch column
+   (Q2-H6 grading). Autocorrelation caveat carried; QUAD_KS in
+   AUTHORITY.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
