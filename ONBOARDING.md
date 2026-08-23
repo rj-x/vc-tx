@@ -762,6 +762,24 @@ set still growing toward fold support).
    −1.30 floor) — nothing clears yet except H6's touch column
    (Q2-H6 grading). Autocorrelation caveat carried; QUAD_KS in
    AUTHORITY.
+38. NARRATIVE DOCTRINE + first sentence READS (registers 69–72,
+   `72448df`, 121/121): doctrine = narrative (sequences+context) is
+   the edge thesis; atoms are vocabulary; falsifiable both ways
+   (clause 3). R2 verdict registered: refinement per-family never
+   universal (worsens climax −77→−140; rescues rejection — S0-H6 fwd
+   −11→+38 only green cell). SEQUEL CENSUS first emission = best-
+   shaped finding to date: S0-H1 absorption-sequel +9.2/+8.1pp BOTH
+   windows (n=34/27), payoff medians POSITIVE (+3.5/+4.0), floors
+   cleared, mechanism pre-stated; S0-H2 sequel cell NEGATIVE (−6.6,
+   n=147) = climax-specific story (specificity credential); no-sequel
+   = the knife. Q2-H1 minting block SENT (thesis's first graded
+   sentence; delay variant chains on YES, mirroring Q2-H6). H1
+   program amended (confirm arm dropped, nas100 arm gated); Q2-H6
+   prep drafted (one-tick haircut 0.5pt home). Home board inside
+   floors = honest 08-23 baseline, register 53 credited. Review
+   deep-dive done off 9 artifacts (conditioning_matrix not
+   re-verified). Clocks racing: Q2-H6 25/30, Q1-H6 17+/30, Q2-H1
+   accruing fast (27 fwd fires); nas100 evening = the other keys.
 17. Table COMPLETE + reformatted (`656dc3f`, 79/79): matrix + per-H
    cards, per-context true base rates (fix corrected H2 backtest to
    +1.2pp — AT CHANCE; promote case now rests on forward +10pp / London
