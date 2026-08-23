@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 68 (freshness-checked by the weekly
+table.** Register-current-through: 72 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -18,14 +18,14 @@ authoritative.
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
 | H14 counter-trend absorption, H15 sweep-reclaim (params flagged), H16 intraday momentum | testable-now (minted 08-22; rows open next run) |
 | S1-H11 node-stall (SUPPRESSION grading) | testable-now (negative lift = the claim winning) |
-| R2 refinement experiment | RUN 2026-08-22 (register 57; refinement negative both sides) → awaiting-decision-verdict-read |
+| R2 refinement experiment | VERDICT READ 2026-08-23 (register 70): refinement = PER-FAMILY design choice — worsens climax/trend, improves rejection/absorption; future recipes cite refined/unrefined |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
 | candidate docket | **CLEARED at the 2026-08-22 sitting (register 56)**: H14/H15/H16 minted; S1-H11 suppression ratified; R2 design commissioned (run on approval); modifier-reframe + ND/NS-recall routed; rung-consensus + 1M-H5 + drift-inversion parked with reasons; gated items unchanged; new ideas queue for the next sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 | Q1-H11, Q2-H9, Q1-H6 (matrix-cell promotions) | testable-now (register 58; clocks on the dashboard; Q2-H9 gated on nas100 validation) |
 | Q2-H6 (scalp thread) | testable-now (register 64; ≥30 fwd fires, census conventions; clock on the dashboard) |
-| H1 harvest program (6 variants: delay-3/10, confirm-entry, own-curve, session read, knife-guard) | registered-and-counted 2026-08-22 (register 60) → awaiting-build-harvest-harness (template for the next precision-points-gap signal if it works) |
+| H1 harvest program | AMENDED 2026-08-23 (register 72a): confirm-entry arm DROPPED (R2), nas100 arm added (post-validation; the +15.8pp n=35 target), delay arm gains sequel-contingent variant (registers on census separation) → awaiting-build-harvest-harness |
 
 ## Recipes
 
@@ -72,6 +72,8 @@ authoritative.
 | bar-persistence census (scalp viability) | BUILT 2026-08-22; EXTENDED with expectancy curve + quadrant rows + bar+1 scalp screen (registers 63/64/68; weekly under Part C) |
 | quadrant dimension (effort×result 2×2) | BUILT 2026-08-23 (register 66; rides the weekly matrix; narrow-loud has no family — mint follows lift) |
 | seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
+| sequel census (narrative phase two) | BUILT 2026-08-23 (register 71; anchors S0-H1/S0-H2; weekly Part C; the doctrine's first sentence-level instrument) |
+| narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |

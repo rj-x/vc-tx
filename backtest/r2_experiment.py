@@ -163,7 +163,10 @@ def _emit(results, head):
          "founding refinement micro-loop, under R-OP1 stops. Entry "
          "improvement in signature-stop units; spread burden on both stop "
          "bases; net points paired. Grades founding open question R2. "
-         "FILL MODEL: PESSIMISTIC (register 65; ladder family).",
+         "FILL MODEL: PESSIMISTIC (register 65; ladder family). "
+         "VERDICT READ (register 70): refinement is a PER-FAMILY design "
+         "choice — worsens climax/trend, improves rejection/absorption; "
+         "recipes cite refined/unrefined.",
          ""]
     for res in results:
         inst = res["instrument"]
