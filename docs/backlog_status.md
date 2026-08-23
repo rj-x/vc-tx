@@ -79,6 +79,24 @@ authoritative.
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |
 
+## Negative verdicts & expiries (register 74-C.3 — verdicts age with accrual; expiries implementer-proposed, operator-adjustable)
+
+| verdict | registered | expiry condition |
+|---|---|---|
+| VWAP: nothing survives the re-cut (−0.9pp) | register 51 | re-read when forward fires double from the verdict date, or at the first monthly review |
+| H8: at/below base rate (collapse) | register 36; re-verified under initiation (register 74) | re-read at ≥30 forward initiation episodes |
+| quadrant persistence: class doesn't predict next close | register 68; survives consistency lens (74-A4) | re-read when forward quadrant n doubles (~1400 bars/quadrant) |
+| quadrant base rates: "flat" — AMENDED (74-A3: sign-consistent structure found) | register 66/74 | watched weekly under the consistency lens; sitting item queued |
+| co-fire: starved/UNMEASURABLE — STALE (74-A5) | register 45/74 | RE-READ ORDERED: next weekly sitting |
+| drift census: no base-rate change | register 51 | re-read on change only (self-expiring by design) |
+| flip-gate: NOT PASSED | register 44 | no expiry — procedural gate, re-openable only by re-registration |
+| R2: refinement worsens climax family | register 70 | re-read if the H1 harvest program's arms contradict it at n≥30 |
+
+## Next-sitting docket (register 74-C.4)
+
+- 74-A3 quadrant base-rate structure under the consistency lens (wide-loud 7/8 negative ≈−4pp; narrow-quiet 7/8 positive ≈+1pp) — read, no mint implied.
+- 74-A5 co-fire re-read: 248 cells at n≥15 (max n 347) — the starved verdict is three weeks stale.
+
 ## Standing ratifications (one sitting clears them)
 
 promote/deprioritize criteria — REDRAFTED on the register-62 doctrine axes
