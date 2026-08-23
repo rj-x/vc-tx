@@ -271,7 +271,8 @@ def generate():
           "- `conditioning_matrix.md|.json` — where signals work/fail by "
           f"state; grades Q1-H11/Q2-H{9}/Q1-H{6}. Read weekly.",
           "- `cofire.md|.json` — does cross-family agreement help "
-          "(composites gate). Read weekly, expect UNMEASURABLE.",
+          "(composites gate). Read weekly — the starved verdict is "
+          "STALE (register 74-A5); re-read ordered.",
           "- `vwap_census.md|.json` / `drift_census.md|.json` — VWAP and "
           "drift verdicts (nothing survives / no base-rate change). Read "
           "on change only.",
