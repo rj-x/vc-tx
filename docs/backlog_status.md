@@ -73,7 +73,7 @@ authoritative.
 | quadrant dimension (effort×result 2×2) | BUILT 2026-08-23 (register 66; rides the weekly matrix; narrow-loud has no family — mint follows lift) |
 | seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
 | sequel census (two-anchor) | PILOT (register 71) — superseded by the narrative survey (register 73); artifact retained as the pilot record |
-| narrative survey (the sentence space) | BUILT 2026-08-23 (register 73; every anchor × vocabulary × W, permutation null, focal cell S0-H1×absorption; weekly Part C; Q-minting = notable + mechanism) |
+| narrative survey (the sentence space) | BUILT 2026-08-23; AMENDED same day with the consistency statistic (register 73 + amendment: extremity + consistency side by side, either route mints with a mechanism; focal cell S0-H1×absorption; weekly Part C) |
 | narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |

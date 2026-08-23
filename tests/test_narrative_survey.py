@@ -4,9 +4,12 @@ import json
 
 import numpy as np
 
-from backtest.narrative_survey import (CLASSES, FOCAL, NULL_SEEDS,
+from backtest.narrative_survey import (CLASSES, CONS_MIN_CELLS,
+                                       CONS_MIN_LIFT_PP, CONS_MIN_N,
+                                       CONS_PCTL, FOCAL, NULL_SEEDS,
                                        NULL_SHUFFLES, SEQUEL_WINDOWS,
-                                       classify, null_calibration)
+                                       _pair_qualifies, classify,
+                                       survey_nulls)
 
 
 def test_instrumentation():
@@ -61,11 +64,39 @@ def test_precedence_within_bar_and_first_bar():
 def test_null_calibration_deterministic_and_shaped():
     rs = np.random.RandomState(7)
     pairs = [(CLASSES[i % 3], bool(rs.randint(2))) for i in range(120)]
-    cba = {("S0-Hx", 5, "backtest"): pairs}
-    bases = {(5, "backtest", c): 45.0 for c in CLASSES}
-    a = null_calibration(cba, bases)
-    b = null_calibration(cba, bases)
+    cba = {("S0-Hx", 5, "backtest"): pairs,
+           ("S0-Hx", 15, "forward"): pairs[:60]}
+    bases = {(W, w, c): 45.0 for W in (5, 15)
+             for w in ("backtest", "forward") for c in CLASSES}
+    a = survey_nulls(cba, bases)
+    b = survey_nulls(cba, bases)
     assert json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True)
     assert a["shuffles"] == 100
     assert a["expected_max_abs_lift_pp"] > 0
     assert a["null_expected_glow_cells"] >= 0
+    assert len(a["_cons_counts"]) == 100
+
+
+def test_consistency_pair_rule():
+    assert (CONS_MIN_CELLS, CONS_MIN_N, CONS_MIN_LIFT_PP, CONS_PCTL) \
+        == (3, 15, 3.0, 95.0)
+    # 3 measurable same-signed strong cells spanning both windows
+    ok, nm, spans = _pair_qualifies(
+        [("backtest", 30, 5.0), ("backtest", 25, 4.0),
+         ("forward", 20, 6.0)])
+    assert ok and nm == 3 and spans
+    # a sub-threshold cell breaks it
+    ok2, _, _ = _pair_qualifies(
+        [("backtest", 30, 5.0), ("backtest", 25, 2.0),
+         ("forward", 20, 6.0)])
+    assert not ok2
+    # mixed sign breaks it
+    ok3, _, _ = _pair_qualifies(
+        [("backtest", 30, 5.0), ("backtest", 25, -4.0),
+         ("forward", 20, 6.0)])
+    assert not ok3
+    # n<15 cells don't count toward the 3
+    ok4, nm4, _ = _pair_qualifies(
+        [("backtest", 30, 5.0), ("backtest", 10, 9.0),
+         ("forward", 20, 6.0)])
+    assert not ok4 and nm4 == 2

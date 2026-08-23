@@ -82,6 +82,13 @@ CLASSES = ("absorption", "opposing", "effortless-same", "trend-flip",
 NULL_SHUFFLES = 100                       # clause 3; pinned
 NULL_SEEDS = tuple(range(NULL_SHUFFLES))  # pinned seed set
 FOCAL = ("S0-H1", "absorption")           # clause 4
+# consistency statistic (register 73 amendment — the doctrine's actual
+# prediction shape): a PAIR (anchor x sequel) qualifies when >=3 of its
+# measurable cells (n >= 15) carry same-signed lifts, each |lift| > 3pp
+CONS_MIN_CELLS = 3
+CONS_MIN_N = 15
+CONS_MIN_LIFT_PP = 3.0
+CONS_PCTL = 95.0
 
 
 class _SurveyRecorder:
@@ -128,48 +135,70 @@ def classify(i, d, anchor_dir_close, W, arrs, n):
     return "none"
 
 
-def null_calibration(cells_by_anchor, bases):
-    """Permutation null (clause 3): shuffle sequel labels within anchor,
-    preserving per-class n; recompute |lift| per measurable cell; the
-    expected max and expected glow count over the pinned seed set.
-    cells_by_anchor: {(anchor, W, win): [(class, hit_bool), ...]}."""
-    maxima, glow_counts = [], []
+def _pair_qualifies(cells):
+    """cells: list of (window, n, lift). Returns (qualifies,
+    n_measurable, spans_both_windows_same_signed)."""
+    meas = [(w, n_, l) for w, n_, l in cells
+            if n_ >= CONS_MIN_N and l is not None]
+    if len(meas) < CONS_MIN_CELLS:
+        return False, len(meas), False
+    signs = {1 if l > 0 else -1 if l < 0 else 0 for _w, _n, l in meas}
+    same = len(signs) == 1 and 0 not in signs
+    strong = all(abs(l) > CONS_MIN_LIFT_PP for _w, _n, l in meas)
+    wins = {w for w, _n, _l in meas}
+    return (same and strong), len(meas), \
+        (same and len(wins) >= 2)
+
+
+def survey_nulls(cells_by_anchor, bases):
+    """Both permutation statistics over the SAME pinned shuffles
+    (register 73 + amendment): EXTREMITY — expected max |lift| among
+    measurable (n>=20) cells; CONSISTENCY — the null distribution of
+    the count of qualifying pairs (>=3 cells n>=15, same-signed,
+    |lift|>3pp). Labels permute within (anchor, W, window); each cell's
+    n is preserved; bases do not reshuffle. Deterministic (pinned)."""
+    keys = list(cells_by_anchor)
+    maxima, cons_counts = [], []
     for seed in NULL_SEEDS:
         rs = np.random.RandomState(seed)
         lifts = []
-        for key, pairs in cells_by_anchor.items():
-            _anchor, W, win = key
+        pair_cells = {}
+        for key in keys:
+            anchor, W, win = key
+            pairs = cells_by_anchor[key]
             labels = [p[0] for p in pairs]
             hits = np.array([p[1] for p in pairs])
             perm = rs.permutation(len(labels))
             shuffled = [labels[k] for k in perm]
             for cls in CLASSES:
-                m = np.array([s == cls for s in shuffled])
-                if m.sum() < 20:
-                    continue                # dimmed: excluded, as stated
+                m = np.array([sh == cls for sh in shuffled])
+                nc = int(m.sum())
                 base = bases.get((W, win, cls))
-                if base is None:
+                if base is None or nc == 0:
                     continue
-                lifts.append(abs(100 * float(hits[m].mean()) - base))
-        if lifts:
-            mx = max(lifts)
-            maxima.append(mx)
-            glow_counts.append(0)           # filled after expected max
-    if not maxima:
-        return None
+                lift = 100 * float(hits[m].mean()) - base
+                if nc >= 20:
+                    lifts.append(abs(lift))
+                pair_cells.setdefault((anchor, cls), []).append(
+                    (win, nc, lift))
+        maxima.append(max(lifts) if lifts else 0.0)
+        cons_counts.append(sum(
+            1 for cells in pair_cells.values()
+            if _pair_qualifies(cells)[0]))
     exp_max = float(np.mean(maxima))
     glows = []
-    for seed in NULL_SEEDS:
+    for k, seed in enumerate(NULL_SEEDS):
         rs = np.random.RandomState(seed)
         cnt = 0
-        for key, pairs in cells_by_anchor.items():
-            _anchor, W, win = key
+        for key in keys:
+            anchor, W, win = key
+            pairs = cells_by_anchor[key]
             labels = [p[0] for p in pairs]
             hits = np.array([p[1] for p in pairs])
             perm = rs.permutation(len(labels))
-            shuffled = [labels[k] for k in perm]
+            shuffled = [labels[k2] for k2 in perm]
             for cls in CLASSES:
-                m = np.array([s == cls for s in shuffled])
+                m = np.array([sh == cls for sh in shuffled])
                 if m.sum() < 20:
                     continue
                 base = bases.get((W, win, cls))
@@ -180,7 +209,12 @@ def null_calibration(cells_by_anchor, bases):
         glows.append(cnt)
     return {"shuffles": NULL_SHUFFLES,
             "expected_max_abs_lift_pp": round(exp_max, 1),
-            "null_expected_glow_cells": round(float(np.mean(glows)), 2)}
+            "null_expected_glow_cells": round(float(np.mean(glows)), 2),
+            "null_consistent_pairs": {
+                "median": float(np.median(cons_counts)),
+                "p95": float(np.percentile(cons_counts, 95)),
+                "mean": round(float(np.mean(cons_counts)), 2)},
+            "_cons_counts": cons_counts}
 
 
 def run_instrument(instr):
@@ -305,10 +339,10 @@ def run_instrument(instr):
                         "payoff_median": (pay["median_per_fire"]
                                           if pay else None)}
     out["total_cells"] = len(out["cells"])
-    out["null"] = null_calibration(cells_by_anchor, bases)
-    # notable marking (clause 3): measurable cells beyond the null's
-    # expected max
+    out["null"] = survey_nulls(cells_by_anchor, bases)
     if out["null"]:
+        # EXTREMITY marking (clause 3): measurable cells beyond the
+        # null's expected max
         thr = out["null"]["expected_max_abs_lift_pp"]
         glow = 0
         for c in out["cells"].values():
@@ -317,6 +351,35 @@ def run_instrument(instr):
                 and abs(c["lift_pp"]) > thr)
             glow += int(c["survey_notable"])
         out["null"]["actual_glow_cells"] = glow
+        # CONSISTENCY statistic (register 73 amendment): observed
+        # qualifying pairs vs the null count distribution
+        pair_obs = {}
+        for key, v in out["cells"].items():
+            anchor, _W, wname, cls = key.split("|")
+            pair_obs.setdefault((anchor, cls), []).append(
+                (wname, v["n"], v["lift_pp"]))
+        actual, candidates, marked = 0, 0, []
+        for pk, cells in pair_obs.items():
+            q, nm, spans = _pair_qualifies(cells)
+            if nm >= CONS_MIN_CELLS:
+                candidates += 1
+            if q:
+                actual += 1
+                if spans:
+                    marked.append(pk)
+        counts = out["null"].pop("_cons_counts")
+        pct = round(100 * float(np.mean(
+            [actual > c for c in counts])), 1)
+        significant = pct > CONS_PCTL
+        out["null"]["consistency"] = {
+            "actual_qualifying_pairs": actual,
+            "candidate_pairs": candidates,
+            "percentile_vs_null": pct,
+            "field_significant": significant}
+        for key, v in out["cells"].items():
+            anchor, _W, wname, cls = key.split("|")
+            v["consistency_notable"] = bool(
+                significant and (anchor, cls) in marked)
     return out
 
 
@@ -336,9 +399,15 @@ def _emit(results, head):
          "NULL CALIBRATION: sequel labels permuted within anchor "
          f"({NULL_SHUFFLES} shuffles, pinned seeds); a cell is "
          "SURVEY-NOTABLE only if its |lift| exceeds the null's expected "
-         "max among measurable (n≥20) cells. Q-MINTING RULE: "
-         "survey-notable AND a written mechanism sentence — no "
-         "mechanism, no clock, however bright. FOCAL CELL: "
+         "max among measurable (n≥20) cells. CONSISTENCY STATISTIC "
+         "(register 73 amendment — the doctrine's actual prediction "
+         "shape): same pinned shuffles; a pair qualifies on ≥3 "
+         "measurable cells (n≥15) same-signed at |lift|>3pp; "
+         "consistency-notable requires the field percentile > 95 AND "
+         "the pair same-signed across windows. Q-MINTING RULE: notable "
+         "BY EITHER ROUTE (extremity or consistency) AND a written "
+         "mechanism sentence — no mechanism, no clock, however bright. "
+         "FOCAL CELL: "
          f"{FOCAL[0]} × {FOCAL[1]} (pre-registered, register 71 pilot; "
          "head start cited; grades within the field, same null, no "
          "special arithmetic). If the field glows only at null-expected "
@@ -353,11 +422,24 @@ def _emit(results, head):
             L += [f"> {PROVISIONAL_STAMP}"]
         nu = res.get("null")
         if nu:
-            L += ["", f"**Luck budget ({inst}):** {res['total_cells']} "
-                  f"cells; null expected max |lift| "
+            co = nu.get("consistency", {})
+            np_ = nu.get("null_consistent_pairs", {})
+            L += ["", f"**Luck budget ({inst}) — both statistics side "
+                  f"by side.** EXTREMITY: {res['total_cells']} cells; "
+                  f"null expected max |lift| "
                   f"{nu['expected_max_abs_lift_pp']}pp; null predicts "
-                  f"{nu['null_expected_glow_cells']} glowing cells; "
-                  f"**actually glowing: {nu['actual_glow_cells']}**.",
+                  f"{nu['null_expected_glow_cells']} glowing; actually "
+                  f"glowing: {nu['actual_glow_cells']}. CONSISTENCY "
+                  "(the doctrine's actual prediction shape): "
+                  f"**{co.get('actual_qualifying_pairs', '—')} of "
+                  f"{co.get('candidate_pairs', '—')} candidate pairs "
+                  "qualify** (≥3 cells n≥15, same-signed, |lift|>3pp) "
+                  f"vs null median {np_.get('median', '—')} / p95 "
+                  f"{np_.get('p95', '—')}; percentile "
+                  f"{co.get('percentile_vs_null', '—')} — "
+                  + ("**FIELD-SIGNIFICANT**"
+                     if co.get("field_significant")
+                     else "not field-significant") + ".",
                   ""]
         L += ["| anchor | W | window | sequel | n | init % | base % "
               "| lift | notable | payoff net/med |",
@@ -369,8 +451,10 @@ def _emit(results, head):
         for (anchor, W, wname, cls), v in rows:
             if (anchor, cls) == FOCAL:
                 focal_key = True
-            mark = ("**NOTABLE**" if v.get("survey_notable")
-                    else "—")
+            routes = ([r for r, k in (("EXT", "survey_notable"),
+                                      ("CONS", "consistency_notable"))
+                       if v.get(k)])
+            mark = "**" + "+".join(routes) + "**" if routes else "—"
             foc = " ← FOCAL" if (anchor, cls) == FOCAL else ""
             L.append(f"| {anchor} | {W} | {wname} | {cls}{foc} "
                      f"| {v['n']} | {v['init_pct']} "

@@ -2,77 +2,77 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `3bdc0f904` — OBSERVATIONAL, pre-registered (prereg_narrative_survey, register 73). The narrative doctrine's THOROUGHNESS instrument (register 69): every signal-live anchor × the registered sequel vocabulary × W ∈ {5,15} bars, two-clause sentences only (v1; three-clause gates behind survivors — the H12/H15 starvation precedent). **FIELD SIZE: 1130 cells this emission.** Lifts read against class-conditioned floors (register-47 method). NULL CALIBRATION: sequel labels permuted within anchor (100 shuffles, pinned seeds); a cell is SURVEY-NOTABLE only if its |lift| exceeds the null's expected max among measurable (n≥20) cells. Q-MINTING RULE: survey-notable AND a written mechanism sentence — no mechanism, no clock, however bright. FOCAL CELL: S0-H1 × absorption (pre-registered, register 71 pilot; head start cited; grades within the field, same null, no special arithmetic). If the field glows only at null-expected rates, that reading stresses the doctrine itself (register 69 clause 3). The pilot (sequel_census, register 71) is superseded by this survey. ° = n<20; full grid in the JSON.
+Engine `cdac3938c` — OBSERVATIONAL, pre-registered (prereg_narrative_survey, register 73). The narrative doctrine's THOROUGHNESS instrument (register 69): every signal-live anchor × the registered sequel vocabulary × W ∈ {5,15} bars, two-clause sentences only (v1; three-clause gates behind survivors — the H12/H15 starvation precedent). **FIELD SIZE: 1130 cells this emission.** Lifts read against class-conditioned floors (register-47 method). NULL CALIBRATION: sequel labels permuted within anchor (100 shuffles, pinned seeds); a cell is SURVEY-NOTABLE only if its |lift| exceeds the null's expected max among measurable (n≥20) cells. CONSISTENCY STATISTIC (register 73 amendment — the doctrine's actual prediction shape): same pinned shuffles; a pair qualifies on ≥3 measurable cells (n≥15) same-signed at |lift|>3pp; consistency-notable requires the field percentile > 95 AND the pair same-signed across windows. Q-MINTING RULE: notable BY EITHER ROUTE (extremity or consistency) AND a written mechanism sentence — no mechanism, no clock, however bright. FOCAL CELL: S0-H1 × absorption (pre-registered, register 71 pilot; head start cited; grades within the field, same null, no special arithmetic). If the field glows only at null-expected rates, that reading stresses the doctrine itself (register 69 clause 3). The pilot (sequel_census, register 71) is superseded by this survey. ° = n<20; full grid in the JSON.
 
 ## uk100fut (CANONICAL)
 
-**Luck budget (uk100fut):** 285 cells; null expected max |lift| 28.8pp; null predicts 0.5 glowing cells; **actually glowing: 0**.
+**Luck budget (uk100fut) — both statistics side by side.** EXTREMITY: 285 cells; null expected max |lift| 28.8pp; null predicts 0.5 glowing; actually glowing: 0. CONSISTENCY (the doctrine's actual prediction shape): **13 of 20 candidate pairs qualify** (≥3 cells n≥15, same-signed, |lift|>3pp) vs null median 6.0 / p95 8.0; percentile 100.0 — **FIELD-SIGNIFICANT**.
 
 | anchor | W | window | sequel | n | init % | base % | lift | notable | payoff net/med |
 |---|---|---|---|---|---|---|---|---|---|
 | S0-H14 | 15 | forward | none | 26 | 69.2 | 43.0 | +26.2pp | — | -130.3/-4.5 |
 | S0-H14 | 15 | forward | effortless-same | 32 | 62.5 | 37.1 | +25.4pp | — | -11.7/0.6 |
-| S0-H11 | 15 | forward | effortless-same | 20 | 60.0 | 37.1 | +22.9pp | — | 104.3/2.25 |
-| S0-H11 | 5 | backtest | effortless-same | 51 | 60.8 | 40.7 | +20.1pp | — | 308.3/3.8 |
-| S1-H11 | 5 | backtest | none | 61 | 26.2 | 44.6 | -18.4pp | — | -341.5/-0.5 |
+| S0-H11 | 15 | forward | effortless-same | 20 | 60.0 | 37.1 | +22.9pp | **CONS** | 104.3/2.25 |
+| S0-H11 | 5 | backtest | effortless-same | 51 | 60.8 | 40.7 | +20.1pp | **CONS** | 308.3/3.8 |
+| S1-H11 | 5 | backtest | none | 61 | 26.2 | 44.6 | -18.4pp | **CONS** | -341.5/-0.5 |
 | S0-H14 | 5 | forward | none | 71 | 57.7 | 42.1 | +15.6pp | — | -159.6/-2.3 |
-| S0-H2 | 15 | forward | opposing | 42 | 23.8 | 39.4 | -15.6pp | — | -8.2/-0.9 |
-| S1-H11 | 5 | backtest | absorption | 22 | 31.8 | 46.8 | -15.0pp | — | -53.1/-1.4 |
-| S0-H11 | 15 | backtest | effortless-same | 77 | 55.8 | 40.9 | +14.9pp | — | 375.8/4.5 |
-| S0-H2 | 5 | backtest | effortless-same | 36 | 55.6 | 40.7 | +14.9pp | — | 307.9/3.25 |
-| S1-H2 | 15 | forward | opposing | 36 | 25.0 | 39.4 | -14.4pp | — | 6.7/-0.9 |
-| S1-H11 | 15 | backtest | trend-flip | 54 | 29.6 | 43.9 | -14.3pp | — | 27.1/1.05 |
-| S0-H2 | 15 | backtest | effortless-same | 44 | 54.5 | 40.9 | +13.6pp | — | 286.5/3.0 |
+| S0-H2 | 15 | forward | opposing | 42 | 23.8 | 39.4 | -15.6pp | **CONS** | -8.2/-0.9 |
+| S1-H11 | 5 | backtest | absorption | 22 | 31.8 | 46.8 | -15.0pp | **CONS** | -53.1/-1.4 |
+| S0-H11 | 15 | backtest | effortless-same | 77 | 55.8 | 40.9 | +14.9pp | **CONS** | 375.8/4.5 |
+| S0-H2 | 5 | backtest | effortless-same | 36 | 55.6 | 40.7 | +14.9pp | **CONS** | 307.9/3.25 |
+| S1-H2 | 15 | forward | opposing | 36 | 25.0 | 39.4 | -14.4pp | **CONS** | 6.7/-0.9 |
+| S1-H11 | 15 | backtest | trend-flip | 54 | 29.6 | 43.9 | -14.3pp | **CONS** | 27.1/1.05 |
+| S0-H2 | 15 | backtest | effortless-same | 44 | 54.5 | 40.9 | +13.6pp | **CONS** | 286.5/3.0 |
 | S0-H14 | 15 | backtest | absorption | 23 | 60.9 | 47.8 | +13.1pp | — | -38.4/-1.5 |
-| S1-H2 | 5 | forward | absorption | 59 | 32.2 | 44.9 | -12.7pp | — | 11.1/-0.4 |
+| S1-H2 | 5 | forward | absorption | 59 | 32.2 | 44.9 | -12.7pp | **CONS** | 11.1/-0.4 |
 | S0-H14 | 15 | backtest | map-arrival | 36 | 30.6 | 43.1 | -12.5pp | — | -186.4/-5.75 |
-| S1-H2 | 15 | backtest | absorption | 99 | 35.4 | 47.8 | -12.4pp | — | 360.8/2.1 |
-| S0-H2 | 5 | forward | opposing | 39 | 25.6 | 37.8 | -12.2pp | — | -20.0/-1.3 |
-| S1-H11 | 5 | backtest | trend-flip | 28 | 32.1 | 44.2 | -12.1pp | — | 38.1/1.75 |
-| S1-H11 | 15 | backtest | absorption | 25 | 36.0 | 47.8 | -11.8pp | — | -38.1/0.2 |
-| S0-H1 | 15 | backtest | absorption ← FOCAL | 32 | 59.4 | 47.8 | +11.6pp | — | 137.3/5.5 |
-| S0-H1 | 5 | backtest | absorption ← FOCAL | 31 | 58.1 | 46.8 | +11.3pp | — | 120.6/5.0 |
+| S1-H2 | 15 | backtest | absorption | 99 | 35.4 | 47.8 | -12.4pp | **CONS** | 360.8/2.1 |
+| S0-H2 | 5 | forward | opposing | 39 | 25.6 | 37.8 | -12.2pp | **CONS** | -20.0/-1.3 |
+| S1-H11 | 5 | backtest | trend-flip | 28 | 32.1 | 44.2 | -12.1pp | **CONS** | 38.1/1.75 |
+| S1-H11 | 15 | backtest | absorption | 25 | 36.0 | 47.8 | -11.8pp | **CONS** | -38.1/0.2 |
+| S0-H1 | 15 | backtest | absorption ← FOCAL | 32 | 59.4 | 47.8 | +11.6pp | **CONS** | 137.3/5.5 |
+| S0-H1 | 5 | backtest | absorption ← FOCAL | 31 | 58.1 | 46.8 | +11.3pp | **CONS** | 120.6/5.0 |
 | S0-H10 | 15 | backtest | absorption | 22 | 59.1 | 47.8 | +11.3pp | — | 22.3/-2.75 |
-| S0-H2 | 15 | backtest | absorption | 139 | 36.7 | 47.8 | -11.1pp | — | 498.1/3.9 |
+| S0-H2 | 15 | backtest | absorption | 139 | 36.7 | 47.8 | -11.1pp | **CONS** | 498.1/3.9 |
 | S0-H9 | 5 | backtest | none | 27 | 55.6 | 44.6 | +11.0pp | — | 51.7/3.2 |
-| S1-H2 | 5 | forward | opposing | 33 | 27.3 | 37.8 | -10.5pp | — | -5.1/-2.2 |
-| S0-H11 | 5 | forward | none | 23 | 52.2 | 42.1 | +10.1pp | — | 26.3/2.7 |
-| S1-H2 | 5 | backtest | absorption | 95 | 36.8 | 46.8 | -10.0pp | — | 393.8/3.9 |
-| S1-H2 | 15 | forward | absorption | 66 | 34.8 | 44.6 | -9.8pp | — | -2.7/-0.45 |
-| S0-H2 | 5 | forward | absorption | 70 | 35.7 | 44.9 | -9.2pp | — | 5.2/-0.45 |
+| S1-H2 | 5 | forward | opposing | 33 | 27.3 | 37.8 | -10.5pp | **CONS** | -5.1/-2.2 |
+| S0-H11 | 5 | forward | none | 23 | 52.2 | 42.1 | +10.1pp | **CONS** | 26.3/2.7 |
+| S1-H2 | 5 | backtest | absorption | 95 | 36.8 | 46.8 | -10.0pp | **CONS** | 393.8/3.9 |
+| S1-H2 | 15 | forward | absorption | 66 | 34.8 | 44.6 | -9.8pp | **CONS** | -2.7/-0.45 |
+| S0-H2 | 5 | forward | absorption | 70 | 35.7 | 44.9 | -9.2pp | **CONS** | 5.2/-0.45 |
 | S0-H10 | 5 | backtest | map-arrival | 23 | 34.8 | 43.9 | -9.1pp | — | 53.5/1.2 |
-| S0-H2 | 5 | backtest | absorption | 135 | 37.8 | 46.8 | -9.0pp | — | 531.1/3.9 |
+| S0-H2 | 5 | backtest | absorption | 135 | 37.8 | 46.8 | -9.0pp | **CONS** | 531.1/3.9 |
 | S1-H11 | 15 | backtest | effortless-same | 47 | 31.9 | 40.9 | -9.0pp | — | -379.8/-4.2 |
 | S0-H14 | 5 | backtest | map-arrival | 20 | 35.0 | 43.9 | -8.9pp | — | -75.9/-5.75 |
-| S0-H2 | 15 | forward | absorption | 78 | 37.2 | 44.6 | -7.4pp | — | -8.1/-0.45 |
+| S0-H2 | 15 | forward | absorption | 78 | 37.2 | 44.6 | -7.4pp | **CONS** | -8.1/-0.45 |
 | S0-H7 | 5 | backtest | effortless-same | 27 | 48.1 | 40.7 | +7.4pp | — | 242.8/3.5 |
 | S0-H10 | 15 | forward | none | 32 | 50.0 | 43.0 | +7.0pp | — | -122.5/-4.35 |
-| S0-H11 | 5 | backtest | none | 119 | 51.3 | 44.6 | +6.7pp | — | -698.9/-5.7 |
-| S0-H2 | 15 | backtest | opposing | 128 | 41.4 | 48.1 | -6.7pp | — | 147.0/-0.25 |
-| S0-H2 | 5 | backtest | opposing | 126 | 40.5 | 46.8 | -6.3pp | — | 156.7/0.2 |
+| S0-H11 | 5 | backtest | none | 119 | 51.3 | 44.6 | +6.7pp | **CONS** | -698.9/-5.7 |
+| S0-H2 | 15 | backtest | opposing | 128 | 41.4 | 48.1 | -6.7pp | **CONS** | 147.0/-0.25 |
+| S0-H2 | 5 | backtest | opposing | 126 | 40.5 | 46.8 | -6.3pp | **CONS** | 156.7/0.2 |
 | S0-H14 | 15 | backtest | trend-flip | 50 | 38.0 | 43.9 | -5.9pp | — | -192.1/-2.0 |
-| S0-H11 | 5 | backtest | trend-flip | 34 | 50.0 | 44.2 | +5.8pp | — | -17.6/-2.4 |
+| S0-H11 | 5 | backtest | trend-flip | 34 | 50.0 | 44.2 | +5.8pp | **CONS** | -17.6/-2.4 |
 | S0-H10 | 15 | backtest | effortless-same | 71 | 46.5 | 40.9 | +5.6pp | — | 90.9/0.7 |
-| S1-H2 | 5 | backtest | effortless-same | 26 | 46.2 | 40.7 | +5.5pp | — | 6.7/2.25 |
-| S1-H2 | 15 | backtest | opposing | 94 | 42.6 | 48.1 | -5.5pp | — | 245.3/0.2 |
-| S0-H1 | 15 | forward | absorption ← FOCAL | 24 | 50.0 | 44.6 | +5.4pp | — | 13.5/-0.5 |
-| S0-H1 | 5 | forward | absorption ← FOCAL | 24 | 50.0 | 44.9 | +5.1pp | — | 13.5/-0.5 |
+| S1-H2 | 5 | backtest | effortless-same | 26 | 46.2 | 40.7 | +5.5pp | **CONS** | 6.7/2.25 |
+| S1-H2 | 15 | backtest | opposing | 94 | 42.6 | 48.1 | -5.5pp | **CONS** | 245.3/0.2 |
+| S0-H1 | 15 | forward | absorption ← FOCAL | 24 | 50.0 | 44.6 | +5.4pp | **CONS** | 13.5/-0.5 |
+| S0-H1 | 5 | forward | absorption ← FOCAL | 24 | 50.0 | 44.9 | +5.1pp | **CONS** | 13.5/-0.5 |
 | S0-H14 | 15 | backtest | effortless-same | 96 | 45.8 | 40.9 | +4.9pp | — | -250.4/-1.15 |
-| S1-H2 | 5 | backtest | opposing | 93 | 41.9 | 46.8 | -4.9pp | — | 249.4/0.3 |
-| S1-H2 | 15 | backtest | effortless-same | 33 | 45.5 | 40.9 | +4.6pp | — | -13.4/1.5 |
+| S1-H2 | 5 | backtest | opposing | 93 | 41.9 | 46.8 | -4.9pp | **CONS** | 249.4/0.3 |
+| S1-H2 | 15 | backtest | effortless-same | 33 | 45.5 | 40.9 | +4.6pp | **CONS** | -13.4/1.5 |
 | S0-H11 | 15 | backtest | opposing | 57 | 52.6 | 48.1 | +4.5pp | — | -197.4/-4.3 |
-| S0-H11 | 15 | backtest | none | 28 | 50.0 | 45.5 | +4.5pp | — | -157.0/-2.85 |
+| S0-H11 | 15 | backtest | none | 28 | 50.0 | 45.5 | +4.5pp | **CONS** | -157.0/-2.85 |
 | S0-H10 | 15 | backtest | map-arrival | 31 | 38.7 | 43.1 | -4.4pp | — | -62.1/0.5 |
 | S0-H11 | 15 | backtest | absorption | 67 | 52.2 | 47.8 | +4.4pp | — | -200.7/-5.7 |
-| S1-H11 | 5 | forward | absorption | 27 | 40.7 | 44.9 | -4.2pp | — | -79.5/-3.1 |
+| S1-H11 | 5 | forward | absorption | 27 | 40.7 | 44.9 | -4.2pp | **CONS** | -79.5/-3.1 |
 | S0-H11 | 5 | backtest | absorption | 53 | 50.9 | 46.8 | +4.1pp | — | -53.4/-1.7 |
 | S0-H2 | 15 | backtest | trend-flip | 25 | 48.0 | 43.9 | +4.1pp | — | -47.7/-1.3 |
 | S0-H10 | 5 | backtest | effortless-same | 38 | 36.8 | 40.7 | -3.9pp | — | 19.6/1.15 |
-| S0-H11 | 15 | backtest | trend-flip | 69 | 47.8 | 43.9 | +3.9pp | — | -300.1/-4.1 |
+| S0-H11 | 15 | backtest | trend-flip | 69 | 47.8 | 43.9 | +3.9pp | **CONS** | -300.1/-4.1 |
 | S0-H14 | 15 | backtest | none | 77 | 41.6 | 45.5 | -3.9pp | — | -84.5/-2.7 |
 | S0-H10 | 15 | forward | effortless-same | 22 | 40.9 | 37.1 | +3.8pp | — | -6.0/-0.65 |
 | S0-H10 | 15 | backtest | none | 91 | 41.8 | 45.5 | -3.7pp | — | -216.1/-2.1 |
-| S1-H11 | 15 | forward | absorption | 29 | 41.4 | 44.6 | -3.2pp | — | -90.6/-3.1 |
+| S1-H11 | 15 | forward | absorption | 29 | 41.4 | 44.6 | -3.2pp | **CONS** | -90.6/-3.1 |
 | S0-H10 | 15 | backtest | trend-flip | 66 | 47.0 | 43.9 | +3.1pp | — | -140.6/-3.0 |
 | S0-H10 | 5 | backtest | none | 213 | 47.4 | 44.6 | +2.8pp | — | -261.0/-1.5 |
 | S0-H10 | 5 | forward | none | 70 | 44.3 | 42.1 | +2.2pp | — | -215.2/-3.7 |
@@ -92,7 +92,7 @@ Engine `3bdc0f904` — OBSERVATIONAL, pre-registered (prereg_narrative_survey, r
 ## ger40fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-**Luck budget (ger40fut):** 298 cells; null expected max |lift| 28.7pp; null predicts 0.55 glowing cells; **actually glowing: 0**.
+**Luck budget (ger40fut) — both statistics side by side.** EXTREMITY: 298 cells; null expected max |lift| 28.7pp; null predicts 0.55 glowing; actually glowing: 0. CONSISTENCY (the doctrine's actual prediction shape): **4 of 17 candidate pairs qualify** (≥3 cells n≥15, same-signed, |lift|>3pp) vs null median 2.0 / p95 4.0; percentile 83.0 — not field-significant.
 
 | anchor | W | window | sequel | n | init % | base % | lift | notable | payoff net/med |
 |---|---|---|---|---|---|---|---|---|---|
@@ -165,12 +165,12 @@ Engine `3bdc0f904` — OBSERVATIONAL, pre-registered (prereg_narrative_survey, r
 ## nas100fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-**Luck budget (nas100fut):** 260 cells; null expected max |lift| 42.5pp; null predicts 0.49 glowing cells; **actually glowing: 2**.
+**Luck budget (nas100fut) — both statistics side by side.** EXTREMITY: 260 cells; null expected max |lift| 42.5pp; null predicts 0.49 glowing; actually glowing: 2. CONSISTENCY (the doctrine's actual prediction shape): **5 of 23 candidate pairs qualify** (≥3 cells n≥15, same-signed, |lift|>3pp) vs null median 2.0 / p95 5.0; percentile 93.0 — not field-significant.
 
 | anchor | W | window | sequel | n | init % | base % | lift | notable | payoff net/med |
 |---|---|---|---|---|---|---|---|---|---|
-| S1-H11 | 5 | forward | trend-flip | 22 | 86.4 | 40.3 | +46.1pp | **NOTABLE** | 281.3/2.55 |
-| S1-H11 | 15 | forward | trend-flip | 32 | 81.2 | 37.4 | +43.8pp | **NOTABLE** | -324.8/-3.3 |
+| S1-H11 | 5 | forward | trend-flip | 22 | 86.4 | 40.3 | +46.1pp | **EXT** | 281.3/2.55 |
+| S1-H11 | 15 | forward | trend-flip | 32 | 81.2 | 37.4 | +43.8pp | **EXT** | -324.8/-3.3 |
 | S0-H14 | 15 | forward | trend-flip | 45 | 6.7 | 37.4 | -30.7pp | — | -684.1/-22.0 |
 | S0-H10 | 15 | forward | map-arrival | 27 | 14.8 | 43.7 | -28.9pp | — | 193.4/3.4 |
 | S0-H14 | 15 | backtest | trend-flip | 50 | 70.0 | 41.9 | +28.1pp | — | 90.5/12.85 |
@@ -262,7 +262,7 @@ Engine `3bdc0f904` — OBSERVATIONAL, pre-registered (prereg_narrative_survey, r
 ## us30fut (PROVISIONAL)
 > PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
 
-**Luck budget (us30fut):** 287 cells; null expected max |lift| 25.4pp; null predicts 0.7 glowing cells; **actually glowing: 0**.
+**Luck budget (us30fut) — both statistics side by side.** EXTREMITY: 287 cells; null expected max |lift| 25.4pp; null predicts 0.7 glowing; actually glowing: 0. CONSISTENCY (the doctrine's actual prediction shape): **4 of 22 candidate pairs qualify** (≥3 cells n≥15, same-signed, |lift|>3pp) vs null median 4.0 / p95 7.0; percentile 30.0 — not field-significant.
 
 | anchor | W | window | sequel | n | init % | base % | lift | notable | payoff net/med |
 |---|---|---|---|---|---|---|---|---|---|
