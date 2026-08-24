@@ -4,7 +4,12 @@ STATE-CONDITIONED per the co-fire lesson: every live signal's fires split
 by standing context-state dimensions; full fire counts preserved (never
 time-coincidence).
 
-Dimensions per fire bar: effort×result QUADRANT (register 66: spread
+Dimensions per fire bar: MTF-ALIGNMENT (register 79, external advice
+operator-relayed: fire direction vs the 1M and 15M phase trackers —
+"pullback" = counter-1M + with-15M; STATED QUESTION: does the pullback
+conjunction lift the fade family, H14 first? Front door on lift; bar-
+population bases use the close-direction proxy, the register-71/73
+convention, stated) · effort×result QUADRANT (register 66: spread
 wide/narrow at labels.wide_spread_pctile vs the time-matched rel_spread
 percentile · volume loud/quiet at labels.high_volume_mult vs rel_volume's
 time-matched baseline — the existing founding conventions, cited, no new
@@ -161,19 +166,52 @@ def run_instrument(instr):
     coil = np.where((rsum <= thr).fillna(False).to_numpy(), "coil",
                     "no-coil")
     trend_map = {}
+    trend15_map = {}
     prev = 0
     for e in engine.narrative.events:
         if e["type"] == "PHASE_EVAL" and e.get("tf") == "1min":
             trend_map[pd.Timestamp(e["ts"]).value] = e.get("trend", 0)
+        elif e["type"] == "PHASE_EVAL" and e.get("tf") == "15min":
+            trend15_map[pd.Timestamp(e["ts"]).value] = e.get("trend", 0)
     phase = np.array(["trending" if trend_map.get(t, 0) != 0 else "ranging"
                       for t in ts], dtype=object)
+    t1_arr = np.array([trend_map.get(t, 0) for t in ts])
+    t15_keys = np.array(sorted(trend15_map))
+    t15_vals = np.array([trend15_map[k] for k in sorted(trend15_map)])
+
+    def _t15_at(t_ns):
+        j = np.searchsorted(t15_keys, t_ns, side="right") - 1
+        return int(t15_vals[j]) if j >= 0 else 0
+
+    def mtf_of(d, t1, t15):
+        """register 79: fire-relative MTF alignment; 'pullback' =
+        counter-1M + with-15M (the stated question's conjunction)."""
+        if d == 0 or t15 == 0:
+            return "no-15M-trend"
+        with15 = (d * t15) > 0
+        if t1 == 0:
+            return "with-15M-flat-1M" if with15 else "against-15M"
+        with1 = (d * t1) > 0
+        if with15 and with1:
+            return "with-both"
+        if with15 and not with1:
+            return "pullback"
+        if not with15 and with1:
+            return "counter-15M"
+        return "against-both"
+    op_arr = np.array([x.open for x in b1m])
+    closedir = np.sign(np.array(cl) - op_arr).astype(int)
+    t15_arr = np.array([_t15_at(t) for t in ts])
+    mtf_proxy = np.array([mtf_of(int(closedir[i]), int(t1_arr[i]),
+                                 int(t15_arr[i]))
+                          for i in range(len(ts))], dtype=object)
     sess = sessions_of_index(pd.DatetimeIndex(ts, tz="UTC"))
     quad = np.array([quadrant_of(*rec.map.get(t, (None, None)),
                                  cfg.labels.wide_spread_pctile,
                                  cfg.labels.high_volume_mult)
                      for t in ts], dtype=object)
-    DIMS = {"quadrant": quad, "h11": h11, "coil": coil, "va": va,
-            "phase": phase, "session": sess}
+    DIMS = {"mtf": mtf_proxy, "quadrant": quad, "h11": h11,
+            "coil": coil, "va": va, "phase": phase, "session": sess}
     fires = watch.fires + event_derived_fires(engine.narrative.events, cfg,
                                               bars)
     fires = [f for f in fires
@@ -238,6 +276,9 @@ def run_instrument(instr):
             h = ep_hit(ts[i])
             for dim, arr in DIMS.items():
                 val = arr[i]
+                if dim == "mtf":
+                    val = mtf_of(int(f["dir"]), int(t1_arr[i]),
+                                 int(t15_arr[i]))
                 key = (f["name"], w, dim, str(val))
                 c = out["cells"].setdefault("|".join(key), {
                     "n": 0, "hits": 0, "fires": [],

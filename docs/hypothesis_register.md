@@ -488,6 +488,13 @@ entry is a separate decision.
 - **Status:** **signal-live** (1 signal).
 - **Latest review:** keep-watching (record opens at the next run).
 - AUDIT: PASS with the two flags above.
+- **Parked S-variant note (register 79, external advice
+  operator-relayed 2026-08-24; NO BUILD until H15's own record
+  justifies variants):** entry at the sweep-termination zone (the
+  stop-cluster side) versus after-reclaim — mechanism quote as relayed:
+  "the fill you want is where the stops were run, not after the reclaim
+  confirms; the reclaim is the exam, the sweep extreme is the price."
+  A future S-number configuration, registered then, not now.
 
 ## H16
 - **Claim:** The opening session's direction predicts the closing

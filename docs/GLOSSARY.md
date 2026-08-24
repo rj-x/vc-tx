@@ -150,6 +150,7 @@ first uses them, or the commit doesn't pass.
 - **OP1 / OP2** — the numbering in R-OP1/R-OP2: operator-specified recipes #1 and #2.
 - **HH / HL / LH / LL** — higher high / higher low / lower high / lower low: the latest confirmed swing compared with the previous swing of its type (the trade journal's structure tags).
 - **post-hoc** — after the fact: analysis done on results already seen — exploratory by definition, never a gate without the front door.
+- **counterfactual** — what would have happened under a different rule on the same trades and fills — a ledger comparison, never a strategy by itself.
 - **ATV** — "average time-of-day volume": the operator's 2026-08-22 shorthand; retired unneeded — rel_volume's time-matched baseline is the existing instrument (register 66).
 - **SEQ** — sequence (S-EFFORTLESS-SEQ: consecutive effortless prints).
 - **GEN / GEO** — the origin-lapse suffixes of the migrated question names (general / geometry), retired at namespace closure.

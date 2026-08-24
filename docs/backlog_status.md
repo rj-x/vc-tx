@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 78 (freshness-checked by the weekly
+table.** Register-current-through: 79 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -79,6 +79,9 @@ authoritative.
 | management ladder v2 (R-BE / R-ARM15 / R-NOTRAIL vs R-OP2) | GRADING (register 77; doctrine axes; forward accrual decides; home first-read all-negative post-control) |
 | in-trade narrative census | BUILT 2026-08-24 (register 78; measurement before machinery; flip trade needs both legs) |
 | exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned; gated on the census report) |
+| pyramiding counterfactual | PRE-REGISTERED 2026-08-24 (register 79; measurement, no grammar; build slot queued behind census reads) |
+| H15 sweep-zone entry variant | PARKED (register 79; mechanism quote in the register doc; no build until H15's record justifies) |
+| MTF pullback question (fade family, H14 first) | testable-now (register 79; rides the weekly matrix; front door on lift) |
 | regime overlay (hold-to-EOD on trending days) | DOCKETED future pre-registration (register 77; not built) |
 | portfolio heat / sizing | OPEN DESIGN ITEM (register 77; no ad-hoc sizing) |
 | instrument exclusion (spread burden) | OPEN RECOMMENDATION to operator (register 77; home 0.111xATR flagged; never auto-applied) |
