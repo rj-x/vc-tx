@@ -11,7 +11,7 @@ import os
 from helpers import Rig, sig_zigzag, zigzag_gen
 
 OUTDIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                      "reports", "scenarios")
+                      "tests", "fixtures", "scenarios")
 os.makedirs(OUTDIR, exist_ok=True)
 
 

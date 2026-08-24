@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 74 (freshness-checked by the weekly
+table.** Register-current-through: 76 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -74,6 +74,8 @@ authoritative.
 | seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
 | sequel census (two-anchor) | PILOT (register 71) — superseded by the narrative survey (register 73); artifact retained as the pilot record |
 | narrative survey (the sentence space) | BUILT 2026-08-23; AMENDED same day with the consistency statistic (register 73 + amendment: extremity + consistency side by side, either route mints with a mechanism; focal cell S0-H1×absorption; weekly Part C) |
+| H17/H18/H19 composite sentences | MINTED 2026-08-24 (register 76; front door from the consistency families; rows open next run; H19 = suppression/fade and says so) |
+| narrative trade layer (trades.csv + weekly_summary.csv) | BUILT 2026-08-24 (register 76; R-OP2, unrefined-cited; weekly Part C; tags post-hoc exploratory) |
 | narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |

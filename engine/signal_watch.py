@@ -512,6 +512,99 @@ class _S1H11:
         return fire
 
 
+# --- composite sentences (register 76; narrative doctrine register 69;
+# origin: the survey's consistency families, register 73 amendment) ----
+# Sequel window cited from the survey (register 71/73); quadrant cuts
+# are MIRRORS of the founding config (labels.wide_spread_pctile=80,
+# labels.high_volume_mult=1.5), the scoreboard-mirror precedent.
+H17_SEQUEL_WINDOW = 5
+QUAD_WIDE_PCTILE = 80.0
+QUAD_LOUD_MULT = 1.5
+
+
+class _SComposite:
+    """Two-clause sentence: anchor fire + qualifying sequel within
+    H17_SEQUEL_WINDOW bars (survey vocabulary, cited). Sequel checks run
+    BEFORE anchor detection on each bar (the anchor bar itself is never
+    its own sequel). One composite fire per anchor; the first qualifying
+    sequel consumes it."""
+
+    def __init__(self, anchor, sequel, fade=False):
+        self._anchor = anchor() if isinstance(anchor, type) else anchor
+        self._sequel = sequel            # "absorption"|"effortless"|"opposing"
+        self._fade = fade
+        self._pending = []               # (idx, fire_dir, anchor_close_dir)
+        self._h3 = _SH3()                # own instance for the signature
+
+    def __call__(self, bar, ectx, sctx, feats, cores, structural,
+                 qualified, prev):
+        h3_fired = self._h3(bar, ectx, sctx, feats, cores, structural,
+                            qualified, prev)
+        wide = (feats.rel_spread_pct is not None
+                and feats.rel_spread_pct >= QUAD_WIDE_PCTILE)
+        loud = (feats.rel_volume is not None
+                and feats.rel_volume >= QUAD_LOUD_MULT)
+        cd = 1 if bar.close > bar.open else (-1 if bar.close < bar.open
+                                             else 0)
+        out = None
+        keep = []
+        for idx, d, acd in self._pending:
+            if ectx.idx - idx > H17_SEQUEL_WINDOW:
+                continue
+            hit = False
+            if self._sequel == "absorption":
+                hit = bool(h3_fired) or ((not wide) and loud)                     or qualified == "TEST"
+            elif self._sequel == "effortless":
+                hit = {"EFFORTLESS_ADVANCE": 1,
+                       "EFFORTLESS_DECLINE": -1}.get(structural) == d
+            elif self._sequel == "opposing":
+                ad = acd if acd != 0 else -d
+                hit = wide and loud and cd == ad
+            if hit and out is None:
+                out = -d if self._fade else d
+            elif not hit:
+                keep.append((idx, d, acd))
+        self._pending = keep
+        ad_new = self._anchor(bar, ectx, sctx, feats, cores, structural,
+                              qualified, prev)
+        if ad_new:
+            self._pending.append((ectx.idx, int(ad_new), cd))
+        return out
+
+
+class _SH17(_SComposite):
+    """H17 (register 76): climax-into-absorption -> reversal. Anchor
+    S0-H1; absorption sequel (survey vocabulary); direction = the
+    anchor's reversal call. Origin: the survey focal family."""
+
+    def __init__(self):
+        super().__init__(_s_h1, "absorption")
+
+
+class _SH18(_SComposite):
+    """H18 (register 76): gap-traversal-into-effortless-continuation.
+    Anchor S0-H11; same-direction effortless sequel; direction = the
+    traversal direction. Origin: the S0-H11 x effortless-same
+    consistency pair."""
+
+    def __init__(self):
+        super().__init__(_SH11, "effortless")
+
+
+class _SH19(_SComposite):
+    """H19 (register 76): probe-failure-into-continued-effort — a
+    SUPPRESSION/FADE configuration, and says so: anchor S0-H2; opposing
+    sequel (continued wide-loud in the anchor bar's own close
+    direction); fire direction = the FADE of the anchor's reversal
+    call. Origin evidence (S0-H2/S1-H2 x opposing, consistently
+    negative direction-agnostic lift) supports SUPPRESSION of the
+    reversal claim; the fade direction is a configuration choice, not
+    an evidenced direction — stated in the register entry."""
+
+    def __init__(self):
+        super().__init__(_s_h2, "opposing", fade=True)
+
+
 FIRING_CONDITIONS = {
     "S0-H1": _s_h1,
     "S0-H2": _s_h2,
@@ -528,6 +621,9 @@ FIRING_CONDITIONS = {
     "S0-H14": _s_h14,             # register 56 (counter-trend absorption)
     "S0-H15": _SH15,              # register 56 (sweep-and-reclaim skeleton)
     "S1-H11": _S1H11,             # register 56 (node-stall, SUPPRESSION)
+    "S0-H17": _SH17,              # register 76 (composite sentence)
+    "S0-H18": _SH18,              # register 76 (composite sentence)
+    "S0-H19": _SH19,              # register 76 (suppression/fade)
 }
 
 

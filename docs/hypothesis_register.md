@@ -546,3 +546,63 @@ in the scoreboard, kept distinct from signal rows. Candidate recipe
 layers (H6–H9 confirm/refute/stop anatomy; H7's "quiet ages,
 participation kills" core) stay frozen in audit/candidate_hypotheses.md
 for walk-forward.
+
+## H17
+- **Claim:** A climax reversal signal followed by absorption within five
+  bars — effort meeting a quiet counter-party — marks a genuine
+  exhaustion turn: the two-chapter story (exhaustion needs absorption to
+  become reversal).
+- **Origin:** COMPOSITE, front door (register 76; narrative doctrine
+  register 69): the survey's focal family — S0-H1 × absorption
+  consistency-notable at register 73 amendment (all four cells
+  same-signed: +11.3/+11.6pp backtest, +5.1/+5.4pp forward), mechanism
+  and prediction pre-registered before the survey existed (register 71
+  pilot). Operator mechanism sentence approved 2026-08-24.
+- **Signals:**
+  - **S0-H17** (registered 2026-08-24): anchor S0-H1 fire + absorption
+    sequel (S0-H3 signature, narrow-loud quadrant bar, or qualifying
+    TEST print — survey vocabulary, register 73 cited) within 5 bars;
+    direction = the anchor's reversal call; one composite fire per
+    anchor, first qualifying sequel consumes it.
+- **Status:** **signal-live** (statistic shape at mint: cross-window
+  consistency, field-priced).
+- **Latest review:** rows begin at the next run.
+
+## H18
+- **Claim:** A gap-traversal signal followed by a same-direction
+  effortless print within five bars — travel meeting no opposition —
+  continues: the map says vacuum, the tape confirms no resistance.
+- **Origin:** COMPOSITE, front door (register 76): the S0-H11 ×
+  effortless-same consistency pair (register 73 amendment; +20.1pp
+  backtest n=51, +22.9pp forward n=20, positive payoff both windows).
+  Operator mechanism sentence approved 2026-08-24.
+- **Signals:**
+  - **S0-H18** (registered 2026-08-24): anchor S0-H11 fire +
+    same-direction EFFORTLESS print within 5 bars; direction = the
+    traversal direction.
+- **Status:** **signal-live** (statistic shape at mint: cross-window
+  consistency, field-priced).
+- **Latest review:** rows begin at the next run.
+
+## H19
+- **Claim:** A probe-failure reversal signal followed by continued
+  wide-loud effort in the anchor bar's own close direction within five
+  bars is NOT the start of the claimed reversal — a SUPPRESSION/FADE
+  configuration, and it says so.
+- **Origin:** COMPOSITE, front door (register 76): the S0-H2/S1-H2 ×
+  opposing consistency pairs (register 73 amendment; direction-agnostic
+  lift consistently NEGATIVE). The origin evidence supports SUPPRESSION
+  of the reversal claim; the fade DIRECTION is a configuration choice,
+  not an evidenced direction — stated here and in the module. Operator
+  mechanism sentence approved 2026-08-24.
+- **Signals:**
+  - **S0-H19** (registered 2026-08-24, SUPPRESSION/FADE): anchor S0-H2
+    fire + opposing sequel (wide-loud closing in the anchor bar's own
+    close direction — survey vocabulary as computed; the survey
+    docstring's "(against the predicted move)" gloss was anchor-specific
+    and is corrected at register 76) within 5 bars; fire direction = the
+    FADE of the anchor's reversal call.
+- **Status:** **signal-live** (statistic shape at mint: cross-window
+  consistency of a NEGATIVE, field-priced; suppression grading reads
+  negative anchor-claim lift as the sentence winning).
+- **Latest review:** rows begin at the next run.

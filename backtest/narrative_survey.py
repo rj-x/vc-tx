@@ -9,8 +9,11 @@ definitions cited, no new thresholds):
   absorption     — S0-H3 signature fire, narrow-loud quadrant bar
                    (register-66 conventions), or qualifying TEST print;
   opposing       — continued wide-loud effort in the ANCHOR BAR's own
-                   close direction (against the predicted move; doji
-                   anchor bars fall back to the anti-fire direction);
+                   close direction (doji anchor bars fall back to the
+                   anti-fire direction; the earlier "(against the
+                   predicted move)" gloss was anchor-specific — true for
+                   climax anchors, not probe-failures — corrected at
+                   register 76, logged);
   effortless-same— EFFORTLESS_ADVANCE/_DECLINE structural print in the
                    fire's predicted direction;
   trend-flip     — a 1M phase-tracker trend flip, either direction

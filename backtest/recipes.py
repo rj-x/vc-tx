@@ -64,9 +64,22 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.2"
+RECIPE_SET_VERSION = "recipe_set_v0.3"
 RECIPE_SETS = {
-    "recipe_set_v0.2": {
+    "recipe_set_v0.3": {
+        # R-OP2 — operator-specified 2026-08-24 (register 76): initial
+        # 2.5xATR(15M) composed tighter-of with a 0.25xATR(15M) trail
+        # beyond the 2nd-previous settled 1M bar's extreme; ratchet-only,
+        # no target, EOD flat native; honest fills. The narrative trade
+        # layer's recipe. UNREFINED entries (register 70: refinement is
+        # per-family; the layer states its choice).
+        "R-OP2": {"provenance": "operator-specified 2026-08-24 "
+                                "(register 76)",
+                  "stages": [{"stop": [("atr", 2.5, "15min"),
+                                       ("trail_nth", 2,
+                                        ("atr", 0.25, "15min"),
+                                        "1min")], "target": None}]},
+        # v0.2 members carried forward unchanged below.
         # v0 four — ILLUSTRATIVE, unratified (provenance: operator design
         # examples; R-TRAIL-ATR offset a reviewer invention). ATR TFs
         # retro-annotated 15min (register 42b).

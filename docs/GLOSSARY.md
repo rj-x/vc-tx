@@ -141,11 +141,14 @@ first uses them, or the commit doesn't pass.
 - **NaN / NULL** — missing values.
 - **EOF** — end of file.
 - **TBD** — to be decided.
+- **ISO** — the international standards body; ISO week = the Monday-anchored week numbering used in weekly_summary.csv.
 - **WIP** — work in progress.
 - **MB / GB** — megabytes / gigabytes.
 - **HHMM** — a time printed as hours+minutes.
 - **GHLZ / JFE** — the Gao-Han-Li-Zhou paper (Journal of Financial Economics, 2018) H16 cites.
-- **OP1** — the numbering in R-OP1: operator-specified recipe #1.
+- **OP1 / OP2** — the numbering in R-OP1/R-OP2: operator-specified recipes #1 and #2.
+- **HH / HL / LH / LL** — higher high / higher low / lower high / lower low: the latest confirmed swing compared with the previous swing of its type (the trade journal's structure tags).
+- **post-hoc** — after the fact: analysis done on results already seen — exploratory by definition, never a gate without the front door.
 - **ATV** — "average time-of-day volume": the operator's 2026-08-22 shorthand; retired unneeded — rel_volume's time-matched baseline is the existing instrument (register 66).
 - **SEQ** — sequence (S-EFFORTLESS-SEQ: consecutive effortless prints).
 - **GEN / GEO** — the origin-lapse suffixes of the migrated question names (general / geometry), retired at namespace closure.

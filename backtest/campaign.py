@@ -517,14 +517,30 @@ def main(slugs=(SLUG, "uk100")):
     # its own stamps, conventions, and sealed-window skips.
     import sys as _c_sys
     import subprocess as _c_sp
+    import time as _c_time
+    _partc_start = _c_time.time()
     for mod in ("backtest.scoreboard", "backtest.recipes",
                 "backtest.signal_points", "backtest.bar_persistence",
                 "backtest.forward_migration", "backtest.cofire",
                 "backtest.conditioning_matrix", "backtest.gap_census",
-                "backtest.narrative_survey", "backtest.vwap_census",
+                "backtest.narrative_survey", "backtest.trade_layer",
+                "backtest.vwap_census",
                 "backtest.drift_census", "backtest.excursion_geometry"):
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
+    # register 75 standing rule: not-campaign-regenerated +
+    # not-dashboard-linked -> archived at the weekly run (warn-only;
+    # moves are logged by hand in reports/archive/ARCHIVE_LOG.md)
+    _sb = os.path.join(ROOT, "reports", "scoreboard")
+    _keep = {"r2_experiment", "location_census"}   # dashboard-linked
+    _stale = [f for f in sorted(os.listdir(_sb))
+              if f.endswith((".md", ".json"))
+              and os.path.getmtime(os.path.join(_sb, f)) < _partc_start
+              and f.split(".")[0] not in _keep]
+    if _stale:
+        print(f"!! ARCHIVE CANDIDATES (register 75): {_stale} — "
+              "not regenerated this run and not dashboard-linked; move "
+              "to reports/archive/ with a dated ARCHIVE_LOG.md reason")
     # backlog freshness check (register 55; staleness class has precedent)
     import re as _c_re
     reg_txt = open(os.path.join(ROOT, "audit",
