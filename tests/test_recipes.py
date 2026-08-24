@@ -162,3 +162,40 @@ def test_geometry_twin_run_and_stop_wins_race():
     r2 = geometry(fires, ts, o, h, l, c, lambda t: 10.0, eod)
     assert _json.dumps(r1, default=str) == _json.dumps(r2, default=str)
     assert r1[0]["reached"]["atr_0.5"] is False   # stop won the tie
+
+
+def test_rule5_stop_at_or_beyond_entry_never_opens():
+    """Register 77: if the effective stop at fill is at-or-beyond entry
+    (trail already past the entry price), the trade does not open — no
+    spread donated, no instant kill. A later fire still trades."""
+    # trail ref = 2nd-previous settled 1M bar's LOW with 0 offset; bars
+    # fall so entry (bar 2 open, 100) sits BELOW the trail level (104)
+    bars = [(110, 111, 104, 105), (105, 106, 99, 100),
+            (100, 101, 95, 96), (96, 97, 90, 91)]
+    tr = simulate(_fire(1, 1), _env(bars),
+                  _stage([("trail_nth", 2, ("pts", 0.0), "1min")]), 0.8)
+    assert tr == []                         # never opened, no spread paid
+    # sanity: a normal ATR stop below entry still opens and trades
+    tr2 = simulate(_fire(1, 1), _env(bars),
+                   _stage([("atr", 1.5, "15min")]), 0.8)
+    assert len(tr2) == 1
+
+
+def test_reverse_on_exit_capability_links_rows():
+    """Register 78 capability pin: a narrative exit with reverse_on_exit
+    chains the opposite entry as a LINKED row (shared name, flagged);
+    without the flag, no chain."""
+    t0 = pd.Timestamp("2026-08-17 09:00", tz="UTC").value
+    bars = [(100, 100, 100, 100)] + [(100, 101, 99, 100)] * 7
+    narr = {"trend_flip": [(t0 + 3 * 60_000_000_000, -1)]}
+    r = {"stages": [{"stop": [("fixed_pts", 50.0)], "target": None,
+                     "exit_on": [("trend_flip",)],
+                     "reverse_on_exit": True}]}
+    tr = simulate(_fire(0, 1), _env(bars, narr=narr), r, 0.0)
+    assert len(tr) == 2
+    assert tr[0]["reason"] == "narrative_reversed"
+    assert tr[1]["linked_reverse"] is True and tr[1]["dir"] == -1
+    r2 = {"stages": [{"stop": [("fixed_pts", 50.0)], "target": None,
+                      "exit_on": [("trend_flip",)]}]}
+    tr2 = simulate(_fire(0, 1), _env(bars, narr=narr), r2, 0.0)
+    assert len(tr2) == 1 and tr2[0]["reason"] == "narrative"

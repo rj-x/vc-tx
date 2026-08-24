@@ -11,6 +11,21 @@ instruments, both windows, and emits the operator's working files:
   reports/weekly_summary.csv  — per sentence per ISO week: trades,
     winners, losers, points won, points lost, net, plus running totals.
 
+MANAGEMENT LADDER v2 (register 77): every journal row carries a
+variant — the v0.3 incumbent R-OP2 plus R-BE / R-ARM15 / R-NOTRAIL —
+and reports/management_grades.csv grades each variant x signal on the
+doctrine axes (median-per-trade in ATR units, floor clearance beyond
+the matched baseline ensemble's FULL member range, weekly-consistency
+count). THE MISSING CONTROL, MANDATORY (register 77 clause 3): the
+baseline ensembles run under the IDENTICAL management scheme per
+variant; NO VARIANT'S NET IS QUOTABLE without its vs-baseline line
+(hold-to-EOD numbers are suspected trend-exposure until it prints).
+RE-FIRE DEDUP (register 77 clause 4): same sentence, same direction,
+within REFIRE_DEDUP_BARS = one trade (derivation: the sequel window —
+the scale that admits repeated sequels of one anchor episode;
+operator-ratification pending). Honest-fills rule 5 (register 77)
+removes the instant-kill class at the fill-logic level.
+
 FILL MODEL: PESSIMISTIC (register 65; ladder family). Entries UNREFINED
 (register 70: refinement is per-family; this layer's choice, stated).
 CONTEXT-TAG ANALYSIS IS POST-HOC EXPLORATORY (register 76 clause 5):
@@ -33,13 +48,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 from engine.signal_watch import (AGNOSTIC_ROWS, H6_PROX_ATR_FRAC,
-                                 SignalWatch)
+                                 H17_SEQUEL_WINDOW, SignalWatch)
 from engine.store_loader import is_sealed
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
                               _spread_median, build_env, simulate)
 from backtest.scoreboard import (PROVISIONAL_INSTRS, _replay,
                                  event_derived_fires, make_cfg)
-from backtest.signal_points import all_signals
+from backtest.signal_points import (DRIFT_SKEW_SHARE, TREND_FAMILY,
+                                    all_signals, baseline_fires)
 
 TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
 WEEKLY_CSV = os.path.join(ROOT, "reports", "weekly_summary.csv")
@@ -47,6 +63,24 @@ WEEKLY_CSV = os.path.join(ROOT, "reports", "weekly_summary.csv")
 SENTENCES = (f"S0-H{17}", f"S0-H{18}", f"S0-H{19}")
 TAGS = ("with_trend", "new_hh", "new_hl", "new_lh", "new_ll",
         "retest_level")
+VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL")
+REFIRE_DEDUP_BARS = H17_SEQUEL_WINDOW   # derivation: the sequel window
+GRADES_CSV = os.path.join(ROOT, "reports", "management_grades.csv")
+
+
+def dedup_fires(fires):
+    """Register 77 clause 4: same signal, same direction, within
+    REFIRE_DEDUP_BARS bars = one trade (the first)."""
+    out, last = [], {}
+    for f in sorted(fires, key=lambda x: x["ts"].value):
+        key = (f["name"], f["dir"])
+        prev = last.get(key)
+        if prev is not None and (f["ts"].value - prev) \
+                <= REFIRE_DEDUP_BARS * 60_000_000_000:
+            continue
+        last[key] = f["ts"].value
+        out.append(f)
+    return out
 
 
 class _TagRecorder:
@@ -102,59 +136,123 @@ def run_instrument(instr):
                                               cfg, bars, instr=instr)
     fires = [f for f in fires
              if f["name"] not in AGNOSTIC_ROWS and not is_sealed(f["ts"])]
+    fires = dedup_fires(fires)              # register 77 clause 4
     spread = _spread_median(instr)
-    recipe = RECIPE_SETS[RECIPE_SET_VERSION]["R-OP2"]
+
+    def atr_of(ts_str):
+        return env.atr_at("15min", pd.Timestamp(ts_str).value)
+    # per-instrument spread burden (register 77 clause 4): spread as
+    # a fraction of the median 15M ATR — the journal-header line
+    atrs = env.atr_by_tf["15min"]["vals"]
+    med_atr = float(np.median(atrs)) if len(atrs) else float("nan")
+    burden = round(spread / med_atr, 3) if med_atr == med_atr else None
     names = sorted({f["name"] for f in fires})
     rows = []
     status = ("provisional" if instr in PROVISIONAL_INSTRS
               else "canonical")
-    for name in names:
-        nf = [f for f in fires if f["name"] == name]
-        fire_by_entry = {}
-        for f in nf:
-            fire_by_entry[f["ts"].value] = f
-        trades = simulate(nf, env, recipe, spread)
-        for t in trades:
-            fire_ts = pd.Timestamp(t["fire_ts"])
-            tg = tags.map.get(fire_ts.value, {})
-            rows.append({
-                "instrument": instr, "status": status,
-                "sentence_id": name,
-                "is_composite": name in SENTENCES,
-                "open_ts": t["entry_ts"], "open_price": t["entry"],
-                "close_ts": None, "close_price": t["exit"],
-                "direction": t["dir"], "session": t["session"],
-                "points": t["pts"], "exit_reason": t["reason"],
-                "duration_min": t["duration_min"],
-                "with_trend": tg.get("trend", 0) == t["dir"],
-                "new_hh": tg.get("new_hh", False),
-                "new_hl": tg.get("new_hl", False),
-                "new_lh": tg.get("new_lh", False),
-                "new_ll": tg.get("new_ll", False),
-                "retest_level": tg.get("retest_level", False)})
-            rows[-1]["close_ts"] = str(
-                pd.Timestamp(t["entry_ts"])
-                + pd.Timedelta(minutes=t["duration_min"]))
-    return rows
+    rset = RECIPE_SETS[RECIPE_SET_VERSION]
+    grade_pts = {}          # (variant, name) -> list of (pts, atr, week)
+    for variant in VARIANTS:
+        recipe = rset[variant]
+        for name in names:
+            nf = [f for f in fires if f["name"] == name]
+            for t in simulate(nf, env, recipe, spread):
+                fire_ts = pd.Timestamp(t["fire_ts"])
+                tg = tags.map.get(fire_ts.value, {})
+                a0 = atr_of(t["entry_ts"])
+                iso = pd.Timestamp(t["entry_ts"]).isocalendar()
+                grade_pts.setdefault((variant, name), []).append(
+                    (t["pts"], a0, f"{iso.year}-W{iso.week:02d}"))
+                rows.append({
+                    "instrument": instr, "status": status,
+                    "variant": variant, "sentence_id": name,
+                    "is_composite": name in SENTENCES,
+                    "open_ts": t["entry_ts"], "open_price": t["entry"],
+                    "close_ts": str(pd.Timestamp(t["entry_ts"])
+                                    + pd.Timedelta(
+                                        minutes=t["duration_min"])),
+                    "close_price": t["exit"],
+                    "direction": t["dir"], "session": t["session"],
+                    "points": t["pts"], "exit_reason": t["reason"],
+                    "duration_min": t["duration_min"],
+                    "atr_entry": (round(a0, 2) if a0 else None),
+                    "spread_x_atr": (round(spread / a0, 3)
+                                     if a0 else None),
+                    "with_trend": tg.get("trend", 0) == t["dir"],
+                    "new_hh": tg.get("new_hh", False),
+                    "new_hl": tg.get("new_hl", False),
+                    "new_lh": tg.get("new_lh", False),
+                    "new_ll": tg.get("new_ll", False),
+                    "retest_level": tg.get("retest_level", False)})
+    # the missing control (clause 3): baseline ensembles under the
+    # IDENTICAL management scheme, per variant; grades only (members
+    # are not journal rows — stated)
+    long_share = {name: float(np.mean(
+        [f["dir"] == 1 for f in fires if f["name"] == name]))
+        for name in names}
+    base_members = baseline_fires(env, engine.narrative.events)
+    floors = {}             # (variant, bname) -> list of member med_atr
+    for variant in VARIANTS:
+        recipe = rset[variant]
+        for bname, members in base_members.items():
+            meds = []
+            for mf in members:
+                bt = simulate(mf, env, recipe, spread)
+                vals = [t["pts"] / a for t in bt
+                        for a in [atr_of(t["entry_ts"])] if a]
+                if vals:
+                    meds.append(float(np.median(vals)))
+            floors[(variant, bname)] = meds
+    grades = []
+    for (variant, name), recs in sorted(grade_pts.items()):
+        pts = np.array([p for p, _a, _w in recs])
+        atr_vals = [p / a for p, a, _w in recs if a]
+        weeks = {}
+        for p, _a, w in recs:
+            weeks[w] = weeks.get(w, 0.0) + p
+        bname = ("B-TREND" if name in TREND_FAMILY else
+                 "B-ALWAYS-LONG" if long_share.get(name, 0)
+                 >= DRIFT_SKEW_SHARE else "B-RANDOM")
+        fl = floors.get((variant, bname), [])
+        med_atr_sig = (round(float(np.median(atr_vals)), 4)
+                       if atr_vals else None)
+        grades.append({
+            "instrument": instr, "variant": variant,
+            "sentence_id": name, "n": len(recs),
+            "net_pts": round(float(pts.sum()), 1),
+            "median_pts": round(float(np.median(pts)), 2),
+            "median_pts_atr": med_atr_sig,
+            "matched_baseline": bname,
+            "floor_median_atr": (round(float(np.median(fl)), 4)
+                                 if fl else None),
+            "floor_max_atr": (round(float(max(fl)), 4) if fl else None),
+            "floor_min_atr": (round(float(min(fl)), 4) if fl else None),
+            "clearance_atr": (round(med_atr_sig - max(fl), 4)
+                              if fl and med_atr_sig is not None
+                              else None),
+            "weeks_positive": sum(1 for v in weeks.values() if v > 0),
+            "weeks_total": len(weeks),
+            "spread_burden_x_atr": burden})
+    return rows, grades
 
 
-def emit(all_rows):
-    all_rows.sort(key=lambda r: (r["instrument"], r["sentence_id"],
-                                 r["open_ts"]))
-    cols = ["instrument", "status", "sentence_id", "is_composite",
-            "open_ts", "open_price", "close_ts", "close_price",
-            "direction", "session", "points", "exit_reason",
-            "duration_min"] + list(TAGS)
+def emit(all_rows, all_grades):
+    all_rows.sort(key=lambda r: (r["instrument"], r["variant"],
+                                 r["sentence_id"], r["open_ts"]))
+    cols = ["instrument", "status", "variant", "sentence_id",
+            "is_composite", "open_ts", "open_price", "close_ts",
+            "close_price", "direction", "session", "points",
+            "exit_reason", "duration_min", "atr_entry",
+            "spread_x_atr"] + list(TAGS)
     with open(TRADES_CSV, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows({k: r[k] for k in cols} for r in all_rows)
-    # weekly summary per sentence per ISO week + running totals
     wk = {}
     for r in all_rows:
         ts = pd.Timestamp(r["open_ts"])
         iso = ts.isocalendar()
-        key = (r["instrument"], r["sentence_id"],
+        key = (r["instrument"], r["variant"], r["sentence_id"],
                f"{iso.year}-W{iso.week:02d}")
         c = wk.setdefault(key, {"trades": 0, "winners": 0, "losers": 0,
                                 "points_won": 0.0, "points_lost": 0.0})
@@ -167,15 +265,16 @@ def emit(all_rows):
             c["points_lost"] += r["points"]
     with open(WEEKLY_CSV, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["instrument", "sentence_id", "iso_week", "trades",
-                    "winners", "losers", "points_won", "points_lost",
-                    "net_points", "running_trades", "running_winners",
-                    "running_losers", "running_points_won",
-                    "running_points_lost", "running_net"])
+        w.writerow(["instrument", "variant", "sentence_id", "iso_week",
+                    "trades", "winners", "losers", "points_won",
+                    "points_lost", "net_points", "running_trades",
+                    "running_winners", "running_losers",
+                    "running_points_won", "running_points_lost",
+                    "running_net"])
         run = {}
-        for (instr, name, week) in sorted(wk):
-            c = wk[(instr, name, week)]
-            r = run.setdefault((instr, name),
+        for (instr, variant, name, week) in sorted(wk):
+            c = wk[(instr, variant, name, week)]
+            r = run.setdefault((instr, variant, name),
                                dict(trades=0, winners=0, losers=0,
                                     won=0.0, lost=0.0))
             r["trades"] += c["trades"]
@@ -183,13 +282,25 @@ def emit(all_rows):
             r["losers"] += c["losers"]
             r["won"] += c["points_won"]
             r["lost"] += c["points_lost"]
-            w.writerow([instr, name, week, c["trades"], c["winners"],
-                        c["losers"], round(c["points_won"], 1),
+            w.writerow([instr, variant, name, week, c["trades"],
+                        c["winners"], c["losers"],
+                        round(c["points_won"], 1),
                         round(c["points_lost"], 1),
                         round(c["points_won"] + c["points_lost"], 1),
                         r["trades"], r["winners"], r["losers"],
                         round(r["won"], 1), round(r["lost"], 1),
                         round(r["won"] + r["lost"], 1)])
+    gcols = ["instrument", "variant", "sentence_id", "n", "net_pts",
+             "median_pts", "median_pts_atr", "matched_baseline",
+             "floor_median_atr", "floor_max_atr", "floor_min_atr",
+             "clearance_atr", "weeks_positive", "weeks_total",
+             "spread_burden_x_atr"]
+    all_grades.sort(key=lambda g: (g["instrument"], g["variant"],
+                                   g["sentence_id"]))
+    with open(GRADES_CSV, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=gcols)
+        w.writeheader()
+        w.writerows(all_grades)
 
 
 def main():
@@ -197,13 +308,15 @@ def main():
     ap.add_argument("--instr", nargs="*",
                     default=["uk100fut", "ger40fut", "nas100fut", "us30fut"])
     a = ap.parse_args()
-    rows = []
+    rows, grades = [], []
     for instr in a.instr:
         print(f"# trade_layer: {instr} ...", file=sys.stderr)
-        rows.extend(run_instrument(instr))
-    emit(rows)
-    print(f"trade journal -> {TRADES_CSV} ({len(rows)} trades) + "
-          f"{WEEKLY_CSV}")
+        r, g = run_instrument(instr)
+        rows.extend(r)
+        grades.extend(g)
+    emit(rows, grades)
+    print(f"trade journal -> {TRADES_CSV} ({len(rows)} trades, "
+          f"{len(VARIANTS)} variants) + {WEEKLY_CSV} + {GRADES_CSV}")
 
 
 if __name__ == "__main__":

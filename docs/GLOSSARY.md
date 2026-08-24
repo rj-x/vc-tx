@@ -62,6 +62,7 @@ first uses them, or the commit doesn't pass.
 - **stop-width ladder** — the register-59 instrument: the same fires harvested at stops of 1.5/2/3/4/5×ATR(15M) plus NOSTOP.
 - **NOSTOP** — the ladder's endpoint: no stop-loss at all, exit at end of day — what looseness ultimately buys or costs.
 - **R- prefix (R-OP1, R-FLIPGUARD, R-LADDER, …)** — recipes: exit/stop harvest rules applied to fires; the signal layer never changes.
+- **R-BE / R-ARM15 / R-NOTRAIL** — the management ladder v2 (register 77): breakeven-at-thesis-scale, trail-armed-at-progress (15M anchor), and stop-only-hold-to-EOD — graded beside the R-OP2 incumbent.
 - **B- prefix (B-TREND, B-RANDOM, B-ALWAYS-LONG)** — baseline pseudo-signals: controls run through the identical harvest machinery, never candidates; they print in the fenced BASELINES section only.
 - **PoC / POC** — point of control: the price with the most traded volume in a profile.
 - **value area** — the price band around the PoC holding the registered share (70%) of traded volume; VA / VAL / VAH = the area and its low/high edges.

@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 76 (freshness-checked by the weekly
+table.** Register-current-through: 78 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -75,7 +75,13 @@ authoritative.
 | sequel census (two-anchor) | PILOT (register 71) — superseded by the narrative survey (register 73); artifact retained as the pilot record |
 | narrative survey (the sentence space) | BUILT 2026-08-23; AMENDED same day with the consistency statistic (register 73 + amendment: extremity + consistency side by side, either route mints with a mechanism; focal cell S0-H1×absorption; weekly Part C) |
 | H17/H18/H19 composite sentences | MINTED 2026-08-24 (register 76; front door from the consistency families; rows open next run; H19 = suppression/fade and says so) |
-| narrative trade layer (trades.csv + weekly_summary.csv) | BUILT 2026-08-24 (register 76; R-OP2, unrefined-cited; weekly Part C; tags post-hoc exploratory) |
+| narrative trade layer (trades.csv + weekly_summary.csv + management_grades.csv) | BUILT 2026-08-24; REWORKED same day (registers 76/77: rule-5 fill fix, 4-variant ladder, mandatory baseline control, re-fire dedup) |
+| management ladder v2 (R-BE / R-ARM15 / R-NOTRAIL vs R-OP2) | GRADING (register 77; doctrine axes; forward accrual decides; home first-read all-negative post-control) |
+| in-trade narrative census | BUILT 2026-08-24 (register 78; measurement before machinery; flip trade needs both legs) |
+| exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned; gated on the census report) |
+| regime overlay (hold-to-EOD on trending days) | DOCKETED future pre-registration (register 77; not built) |
+| portfolio heat / sizing | OPEN DESIGN ITEM (register 77; no ad-hoc sizing) |
+| instrument exclusion (spread burden) | OPEN RECOMMENDATION to operator (register 77; home 0.111xATR flagged; never auto-applied) |
 | narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |
@@ -92,7 +98,7 @@ authoritative.
 | co-fire: starved/UNMEASURABLE — STALE (74-A5) | register 45/74 | RE-READ ORDERED: next weekly sitting |
 | drift census: no base-rate change | register 51 | re-read on change only (self-expiring by design) |
 | flip-gate: NOT PASSED | register 44 | no expiry — procedural gate, re-openable only by re-registration |
-| R2: refinement worsens climax family | register 70 | re-read if the H1 harvest program's arms contradict it at n≥30 |
+| R2: refinement worsens climax family | register 70 | TAINTED-RERUNNABLE post rule-5 (register 77): family-split direction is an expiring claim until the re-emit verifies it |
 
 ## Next-sitting docket (register 74-C.4)
 

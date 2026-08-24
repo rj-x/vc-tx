@@ -25,13 +25,23 @@ normalize into it unchanged):
       candidate; per-hypothesis cherry-picks are a FORBIDDEN MOVE
       (register 44).
     until: ("progress_atr", k, tf) | ("progress_or_age", k, tf, minutes)
+    reverse_on_exit: bool — CAPABILITY ONLY (register 78): a narrative
+      exit may chain the opposite entry as a LINKED journal row (two
+      rows, shared fire timestamp, separable stats). No
+      narrative-management recipe registers until the in-trade
+      narrative census reports — the flip-gate precedent.
   Stop evaluation cadence is ALWAYS 1M, regardless of any component's TF.
 
-HONEST-FILL RULES (operator-ruled 2026-08-19; unchanged; each pinned):
+HONEST-FILL RULES (operator-ruled 2026-08-19; rule 5 added 2026-08-24,
+register 77; each pinned):
   1. Intrabar stop+target both reachable -> STOP fills, always.
   2. Gap through a level -> filled at the gapped (worse) price (the open).
   3. Trailing/composed stops RATCHET ONLY, evaluated on settled bars.
   4. EOD flat at each instrument's NATIVE session close.
+  5. If the effective stop AT FILL would be at-or-beyond the entry
+     price, the trade DOES NOT OPEN (fill-logic correction, register 77:
+     the instant-kill class — a trail already beyond entry closed the
+     trade at the entry instant and donated the spread).
 
 Sets are versioned registry objects; a run's artifact states its set
 version; additions/changes only by re-registration, counted in the trial
@@ -64,9 +74,45 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.3"
+RECIPE_SET_VERSION = "recipe_set_v0.4"
 RECIPE_SETS = {
-    "recipe_set_v0.3": {
+    "recipe_set_v0.4": {
+        # --- management ladder v2 (register 77; external review
+        # registered as design-input evidence, in-sample, 7 tickets
+        # counted; findings verified where they overlap our artifacts).
+        # All three graded beside the v0.3 incumbent on the doctrine
+        # axes; forward accrual decides.
+        # R-BE — the review's best risk-adjusted: BE at +1.5xATR MFE,
+        # else ride to EOD. The grammar's breakeven literature-caution
+        # (register 42d) is CITED and the tension RECORDED: this BE is
+        # thesis-scale (1.5xATR), not noise-scale — the data decides.
+        "R-BE": {"provenance": "operator-registered 2026-08-24 "
+                               "(register 77; review design-input)",
+                 "stages": [{"stop": [("atr", 2.5, "15min")],
+                             "target": None,
+                             "until": ("progress_atr", 1.5, "15min")},
+                            {"stop": [("atr", 2.5, "15min"),
+                                      ("breakeven", 0.0)],
+                             "target": None}]},
+        # R-ARM15 — trail armed only at +1.0xATR MFE, anchored to
+        # settled 15M bars with a 1.0xATR buffer. N=1 (the previous
+        # settled 15M bar) ASSUMED — unstated in the order, flagged.
+        "R-ARM15": {"provenance": "operator-registered 2026-08-24 "
+                                  "(register 77; N=1 assumed, flagged)",
+                    "stages": [{"stop": [("atr", 2.5, "15min")],
+                                "target": None,
+                                "until": ("progress_atr", 1.0, "15min")},
+                               {"stop": [("atr", 2.5, "15min"),
+                                         ("trail_nth", 1,
+                                          ("atr", 1.0, "15min"),
+                                          "15min")], "target": None}]},
+        # R-NOTRAIL — 2.5xATR SL only, hold to EOD (the review's
+        # largest net; SUSPECTED TREND-EXPOSURE until the baseline
+        # column prints — register 77 clause 3).
+        "R-NOTRAIL": {"provenance": "operator-registered 2026-08-24 "
+                                    "(register 77)",
+                      "stages": [{"stop": [("atr", 2.5, "15min")],
+                                  "target": None}]},
         # R-OP2 — operator-specified 2026-08-24 (register 76): initial
         # 2.5xATR(15M) composed tighter-of with a 0.25xATR(15M) trail
         # beyond the 2nd-previous settled 1M bar's extreme; ratchet-only,
@@ -166,6 +212,7 @@ def normalize(recipe):
             "target": st.get("target"),
             "until": st.get("until"),
             "exit_on": st.get("exit_on", []),
+            "reverse_on_exit": bool(st.get("reverse_on_exit", False)),
         })
     return stages
 
@@ -218,7 +265,8 @@ def simulate(fires, env, recipe, spread):
     n = len(ts)
     trades = []
     open_until = -1
-    for f in sorted(fires, key=lambda x: x["ts"].value):
+    fires_iter = sorted(fires, key=lambda x: x["ts"].value)
+    for f in fires_iter:
         fi = np.searchsorted(ts, f["ts"].value, side="right") - 1
         ei = fi + 1
         if fi < 0 or ei >= n or ei <= open_until:
@@ -288,6 +336,11 @@ def simulate(fires, env, recipe, spread):
                     if e[1] == 0 or e[1] == -d:
                         narr_hit = True
                         break
+            if j == ei and eff_stop is not None and (
+                    (d == 1 and eff_stop >= entry)
+                    or (d == -1 and eff_stop <= entry)):
+                exit_px, reason = None, "no_open"           # rule 5
+                break
             if eff_stop is not None:
                 if (d == 1 and o[j] <= eff_stop) or (d == -1
                                                      and o[j] >= eff_stop):
@@ -310,6 +363,8 @@ def simulate(fires, env, recipe, spread):
                 break
             if narr_hit:                    # settled-bar close exit
                 exit_px, reason = c[j], "narrative"
+                if st.get("reverse_on_exit"):
+                    reason = "narrative_reversed"
                 break
             if env.eod[j]:                                  # rule 4
                 exit_px, reason = c[j], "eod"
@@ -317,6 +372,8 @@ def simulate(fires, env, recipe, spread):
             fav_ext = max(fav_ext, (h[j] - entry) if d == 1
                           else (entry - l[j]))
             j += 1
+        if reason == "no_open":
+            continue                        # rule 5: never opened
         if exit_px is None:
             j = n - 1
             exit_px, reason = c[j], "end_of_data"
@@ -326,8 +383,19 @@ def simulate(fires, env, recipe, spread):
             "entry": float(entry), "exit": float(exit_px), "reason": reason,
             "pts": round(float(pts), 2),
             "duration_min": round((ts[j] - ts[ei]) / 60e9, 1),
-            "session": session_of(pd.Timestamp(ts[ei], tz="UTC"))})
+            "session": session_of(pd.Timestamp(ts[ei], tz="UTC")),
+            "linked_reverse": f.get("_linked_reverse", False)})
         open_until = j
+        if reason == "narrative_reversed" and j + 1 < n:
+            # register 78 capability: chain the opposite entry as a
+            # LINKED row (shared fire ts, separable stats). CAVEAT
+            # (capability-only): chained rows process after the original
+            # stream — one-position semantics across a chained row and a
+            # later original fire are finalized when a narrative-
+            # management recipe registers (flip-gate precedent).
+            fires_iter.append({"ts": pd.Timestamp(ts[j], tz="UTC"),
+                               "dir": -d, "name": f["name"],
+                               "_linked_reverse": True})
     return trades
 
 

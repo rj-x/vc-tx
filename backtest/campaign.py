@@ -524,6 +524,7 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.forward_migration", "backtest.cofire",
                 "backtest.conditioning_matrix", "backtest.gap_census",
                 "backtest.narrative_survey", "backtest.trade_layer",
+                "backtest.intra_trade_census",
                 "backtest.vwap_census",
                 "backtest.drift_census", "backtest.excursion_geometry"):
         print(f"\n==== Part C: {mod} ====")
