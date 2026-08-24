@@ -83,6 +83,7 @@ AUTHORITY = {
     "signal_watch.py:H12_DRY_RV": "ratified 2026-08-20 (founding low_volume_mult, cited)",
     "signal_watch.py:H15_SPEED_LIMIT_MIN": "RATIFIED 2026-08-22 (register 57; derivation: measured t-MFE medians 25-33 min). Range definition = the phase tracker's own ranging object — no new free parameter, ratified as the best possible derivation",
     "signal_watch.py:H16_WINDOW_MIN": "GHLZ JFE 2018 window construction; operator order register 56",
+    "trade_layer.py:SENTENCES": "register 76: the three composite sentences the trade layer reports as is_composite — the minted S0 rows, not a tunable",
     "signal_watch.py:H17_SEQUEL_WINDOW": "register 76: composite sequel window, cited from the survey (register 71/73 W=5)",
     "signal_watch.py:QUAD_WIDE_PCTILE": "register 76: MIRROR of founding labels.wide_spread_pctile=80 (scoreboard-mirror precedent)",
     "signal_watch.py:QUAD_LOUD_MULT": "register 76: MIRROR of founding labels.high_volume_mult=1.5 (scoreboard-mirror precedent)",
