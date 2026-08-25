@@ -25,7 +25,7 @@ authoritative.
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 | Q1-H11, Q2-H9, Q1-H6 (matrix-cell promotions) | testable-now (register 58; clocks on the dashboard; Q2-H9 gated on nas100 validation) |
 | Q2-H6 (scalp thread) | testable-now (register 64; ≥30 fwd fires, census conventions; clock on the dashboard) |
-| H1 harvest program | AMENDED 2026-08-23 (register 72a): confirm-entry arm DROPPED (R2), nas100 arm added (post-validation; the +15.8pp n=35 target), delay arm gains sequel-contingent variant (registers on census separation) → awaiting-build-harvest-harness |
+| H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 
 ## Recipes
 
@@ -64,7 +64,7 @@ authoritative.
 | item 22 session-JSONL | awaiting-build (the active slot immediately behind the organ start) |
 | scoreboard live attachment + calendar/suspension fixes | DEPLOYED 2026-08-19 12:38Z restart (attachment itself rides item 22's restart) |
 | thin-tape probe | awaiting-decision-evening (standalone ~50 min; runbook ready) |
-| validation evenings nas100→ger40→us30 | awaiting-decision-evenings (~35 min each; runbook ready, dry-run verified) |
+| validation evenings | nas100 DONE 2026-08-25 (register 40 amendment: CANONICAL; Q1-H1/Q1-H7/Q2-H9 clocks live; H1 nas100 arm armed) → ger40, us30 remain (~35 min each) |
 | Part C weekly forward studies | ADOPTED (register 55); runs in the weekly campaign |
 | stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
 | baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |

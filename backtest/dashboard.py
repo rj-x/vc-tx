@@ -232,12 +232,14 @@ def generate():
         return 0
     q_lines = [
         ("Q1-H1", "≥30 post-validation fwd episodes/instrument — "
-         "BLOCKED: awaiting the nas100 validation evening (clock at 0)"),
-        (f"Q1-H{7}", "same gate as Q1-H1 — BLOCKED on validation"),
+         "nas100 VALIDATED 2026-08-25 (reg 40 amdt): clock LIVE from "
+         "the next sync's forward episodes; ger40/us30 still gated"),
+        (f"Q1-H{7}", "same gate as Q1-H1 — nas100 clock LIVE; "
+         "ger40/us30 gated"),
         ("Q1-H11", f"≥30 fwd Overlap fires (home accrued: "
          f"{_sess_fires('uk100fut', 'S0-H11', 'overlap')})"),
-        (f"Q2-H{9}", "≥30 fwd NY-session fires POST-VALIDATION on nas100 — "
-         "clock starts at its evening"),
+        (f"Q2-H{9}", "≥30 fwd NY-session fires on nas100 — VALIDATED "
+         "2026-08-25: clock LIVE from the next sync"),
         (f"Q1-H{6}", f"≥30 fwd London fires (home accrued: "
          f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
         (f"Q2-H{6}", f"scalp thread: ≥30 fwd fires, census conventions "

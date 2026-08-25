@@ -122,7 +122,7 @@ first uses them, or the commit doesn't pass.
 
 - **UTC / GMT / BST / CET / CEST / EST / EDT / ET / JST** — timezones; all storage is UTC, sessions are defined in native market timezones.
 - **DST** — daylight saving time; session logic is tested against its transitions.
-- **FTSE / DAX / NASDAQ** — the UK, German, and US indices behind uk100, ger40, nas100; US30 tracks the Dow.
+- **FTSE / DAX / NASDAQ / NQ** — the UK, German, and US indices behind uk100, ger40, nas100 (NQ = the CME NASDAQ-100 future, the volume-plausibility reference); US30 tracks the Dow.
 - **UK / US / GB / NY** — United Kingdom / United States / Great Britain / New York.
 - **GBP / USD / EURUSD** — pound sterling / US dollar / the euro-dollar currency pair.
 - **LSE** — London Stock Exchange.

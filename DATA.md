@@ -45,8 +45,8 @@ working directory.
 | `uk100sep26` | 72516 | UK 100 Future, Sep-2026 outright | Roll verification (see below) |
 | `ger40` | 17068 | DAX cash CFD | Pair cash leg (register 40); **validation pending** |
 | `ger40fut` | 70088 | DAX Rolling Future | Pair future leg (register 40); **validation pending** |
-| `nas100` | 20190 | NASDAQ 100 cash CFD (slug renamed from `ustech100`, register 40 — stores git-mv'd, history intact) | Pair cash leg; **validation pending** |
-| `nas100fut` | 70433 | NASDAQ 100 Rolling Future | Pair future leg (register 40); **validation pending** |
+| `nas100` | 20190 | NASDAQ 100 cash CFD (slug renamed from `ustech100`, register 40 — stores git-mv'd, history intact) | Pair cash leg; **VALIDATED 2026-08-25** (register 40 amendment) |
+| `nas100fut` | 70433 | NASDAQ 100 Rolling Future | Pair future leg (register 40); **VALIDATED 2026-08-25**: real futures volume (quantum 1, cash/fut ratio 9.37, 0.0% zero-vol in-cash), pause 20:59→22:00Z, Fri close 20:29Z / Sun reopen 22:01Z |
 | `us30` | 17322 | Dow cash CFD | Pair cash leg (register 40); **validation pending** |
 | `us30fut` | 70153 | Dow Rolling Future | Pair future leg (register 40); **validation pending** |
 | `us500` | 67995 | S&P cash CFD | Collected, unused by strategy |
