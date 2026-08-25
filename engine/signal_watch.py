@@ -69,7 +69,11 @@ DERIVED_FIRES = {"S0-H8": "S0-H2"}
 # this set). CAPABILITY ONLY until the excursion study's conditional cut
 # reports — no narrative recipe may be registered before then.
 NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
-                             "phase_transition", "opposing_signal_fire")
+                             "phase_transition", "opposing_signal_fire",
+                             # register 81 (survey vocabulary as exit
+                             # events; the flip-gate fence lifted FOR
+                             # THESE TWO COUNTED VARIANTS only):
+                             "opposing_effort", "absorption_event")
 # rows whose firing condition CONDITIONS on a bar-size/volatility class
 # (register 47 fairness amendment): the scoreboard computes the named
 # class's own chance rate and grades lift against it — unconditioned lift

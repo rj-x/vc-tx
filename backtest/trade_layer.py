@@ -49,6 +49,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 from engine.signal_watch import (AGNOSTIC_ROWS, H6_PROX_ATR_FRAC,
                                  H17_SEQUEL_WINDOW, SignalWatch)
+from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from engine.store_loader import is_sealed
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
                               _spread_median, build_env, simulate)
@@ -63,7 +64,8 @@ WEEKLY_CSV = os.path.join(ROOT, "reports", "weekly_summary.csv")
 SENTENCES = (f"S0-H{17}", f"S0-H{18}", f"S0-H{19}")
 TAGS = ("with_trend", "new_hh", "new_hl", "new_lh", "new_ll",
         "retest_level")
-VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL")
+VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL",
+            "R-NEXIT-EARLY", "R-NEXIT-FULL")   # register 81
 REFIRE_DEDUP_BARS = H17_SEQUEL_WINDOW   # derivation: the sequel window
 GRADES_CSV = os.path.join(ROOT, "reports", "management_grades.csv")
 
@@ -130,8 +132,35 @@ def run_instrument(instr):
     def _hook(engine):
         watch.attach(engine)
         tags.attach(engine)
-    engine, bars, _ = _replay(cfg, instr, engine_hook=_hook)
+    feats_rec = _FeatRecorder()
+    _orig_hook = _hook
+
+    def _hook2(engine):
+        _orig_hook(engine)
+        feats_rec.attach(engine)
+    engine, bars, _ = _replay(cfg, instr, engine_hook=_hook2)
     env = build_env(instr, cfg, bars)
+    # register 81: opposing-event streams for the narrative-exit
+    # variants (survey vocabulary; events stamped at BAR CLOSE so the
+    # simulate() settled-window check has no lookahead)
+    _b1m = [x for x in bars[cfg.mtf.execution_tf] if not x.is_stub]
+    narr = {"opposing_effort": [], "absorption_event": [],
+            "opposing_signal_fire": []}
+    _h3_ts = {f["ts"].value for f in watch.fires
+              if f["name"] == f"S0-H{3}"}
+    for x in _b1m:
+        fm = feats_rec.map.get(x.ts.value)
+        if not fm:
+            continue
+        q = quadrant_of(fm[0], fm[1], cfg.labels.wide_spread_pctile,
+                        cfg.labels.high_volume_mult)
+        close_ns = x.ts.value + 60_000_000_000
+        cd = 1 if x.close > x.open else (-1 if x.close < x.open else 0)
+        if q == "wide-loud" and cd != 0:
+            narr["opposing_effort"].append((close_ns, cd))
+        if q == "narrow-loud" or x.ts.value in _h3_ts:
+            narr["absorption_event"].append((close_ns, 0))
+    env.narr = narr
     fires = watch.fires + event_derived_fires(engine.narrative.events,
                                               cfg, bars, instr=instr)
     fires = [f for f in fires
@@ -151,11 +180,16 @@ def run_instrument(instr):
     status = ("provisional" if instr in PROVISIONAL_INSTRS
               else "canonical")
     rset = RECIPE_SETS[RECIPE_SET_VERSION]
+    all_fire_events = sorted(
+        (f["ts"].value + 60_000_000_000, int(f["dir"]), f["name"])
+        for f in fires)
     grade_pts = {}          # (variant, name) -> list of (pts, atr, week)
     for variant in VARIANTS:
         recipe = rset[variant]
         for name in names:
             nf = [f for f in fires if f["name"] == name]
+            env.narr["opposing_signal_fire"] = [
+                (t, d) for t, d, n_ in all_fire_events if n_ != name]
             for t in simulate(nf, env, recipe, spread):
                 fire_ts = pd.Timestamp(t["fire_ts"])
                 tg = tags.map.get(fire_ts.value, {})
@@ -192,6 +226,9 @@ def run_instrument(instr):
         for name in names}
     base_members = baseline_fires(env, engine.narrative.events)
     floors = {}             # (variant, bname) -> list of member med_atr
+    floor_sessions = {}     # (variant, bname, session) -> member med PTS
+    env.narr["opposing_signal_fire"] = [
+        (t, d) for t, d, _n in all_fire_events]
     for variant in VARIANTS:
         recipe = rset[variant]
         for bname, members in base_members.items():
@@ -202,6 +239,13 @@ def run_instrument(instr):
                         for a in [atr_of(t["entry_ts"])] if a]
                 if vals:
                     meds.append(float(np.median(vals)))
+                by_s = {}
+                for t in bt:
+                    by_s.setdefault(t["session"], []).append(t["pts"])
+                for sess_, pl in by_s.items():
+                    floor_sessions.setdefault(
+                        (variant, bname, sess_), []).append(
+                        float(np.median(pl)))
             floors[(variant, bname)] = meds
     grades = []
     for (variant, name), recs in sorted(grade_pts.items()):
@@ -233,7 +277,9 @@ def run_instrument(instr):
             "weeks_positive": sum(1 for v in weeks.values() if v > 0),
             "weeks_total": len(weeks),
             "spread_burden_x_atr": burden})
-    return rows, grades
+    fs = {"|".join(k): [round(v, 3) for v in vals]
+          for k, vals in floor_sessions.items()}
+    return rows, grades, fs
 
 
 def emit(all_rows, all_grades):
@@ -308,13 +354,21 @@ def main():
     ap.add_argument("--instr", nargs="*",
                     default=["uk100fut", "ger40fut", "nas100fut", "us30fut"])
     a = ap.parse_args()
-    rows, grades = [], []
+    rows, grades, floor_sess = [], [], {}
     for instr in a.instr:
         print(f"# trade_layer: {instr} ...", file=sys.stderr)
-        r, g = run_instrument(instr)
+        r, g, fs = run_instrument(instr)
         rows.extend(r)
         grades.extend(g)
+        floor_sess[instr] = fs
     emit(rows, grades)
+    import json as _json
+    with open(os.path.join(ROOT, "reports", "scoreboard",
+                           "journal_baselines.json"), "w") as f:
+        _json.dump({"NOTE": ("per-variant per-session baseline member "
+                             "MEDIAN PTS (register 80: session-scoped "
+                             "floors for the journal field survey)"),
+                    "floors": floor_sess}, f, indent=1)
     print(f"trade journal -> {TRADES_CSV} ({len(rows)} trades, "
           f"{len(VARIANTS)} variants) + {WEEKLY_CSV} + {GRADES_CSV}")
 

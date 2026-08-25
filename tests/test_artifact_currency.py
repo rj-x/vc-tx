@@ -20,7 +20,8 @@ PAIRS = [("hypothesis_performance.md", "hypothesis_performance.json"),
          ("gap_census.md", "gap_census.json"),
          ("sequel_census.md", "sequel_census.json"),
          ("narrative_survey.md", "narrative_survey.json"),
-         ("intra_trade_census.md", "intra_trade_census.json")]
+         ("intra_trade_census.md", "intra_trade_census.json"),
+         ("journal_survey.md", "journal_survey.json")]
 
 
 def test_md_json_pairs_are_from_the_same_run():

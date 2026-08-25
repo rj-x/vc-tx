@@ -205,6 +205,23 @@ def generate():
         r = blk.get(key)
         return r.get("n_fires") if r else 0
 
+    def _journal_q19():
+        import csv as _csv
+        p_ = os.path.join(ROOT, "reports", "trades.csv")
+        if not os.path.exists(p_):
+            return 0
+        import pandas as _pd
+        gl = _pd.Timestamp("2026-08-14T15:04:09Z")
+        n_ = 0
+        for r in _csv.DictReader(open(p_)):
+            if (r["sentence_id"] == "S0-H19"
+                    and r["variant"] == "R-ARM15"
+                    and r["session"] == "london"
+                    and r["status"] == "canonical"
+                    and _pd.Timestamp(r["open_ts"]) >= gl):
+                n_ += 1
+        return n_
+
     def _bp_fwd_fires(inst, key):
         bp = _load("bar_persistence.json")
         for res in (bp or {}).get("results", []):
@@ -225,6 +242,8 @@ def generate():
          f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
         (f"Q2-H{6}", f"scalp thread: ≥30 fwd fires, census conventions "
          f"(home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
+        ("Q1-H19", "≥30 fwd London R-ARM15 trades, canonical pooled "
+         f"(accrued: {_journal_q19()})"),
     ]
     for q, clock in q_lines:
         L.append(f"- **{q}** — {clock}")
@@ -292,7 +311,10 @@ def generate():
           "carries the MANDATORY vs-baseline line — no variant's net "
           "is quotable without it. `intra_trade_census.md` measures "
           "in-hold opposing narrative (register 78) before any "
-          "narrative-management machinery. Tags post-hoc exploratory.",
+          "narrative-management machinery. `journal_survey.md` prices "
+          "the journal's own luck (register 80) — its survivors are "
+          "question candidates, listed not minted. Tags post-hoc "
+          "exploratory.",
           "- `reports/backtest_v1.md` — the evidential pipeline + Part C "
           "index. The weekly 5-minute read.",
           "- `docs/backlog_status.md` — is everything moving. Glance "

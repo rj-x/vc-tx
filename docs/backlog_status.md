@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 79 (freshness-checked by the weekly
+table.** Register-current-through: 81 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -76,7 +76,10 @@ authoritative.
 | narrative survey (the sentence space) | BUILT 2026-08-23; AMENDED same day with the consistency statistic (register 73 + amendment: extremity + consistency side by side, either route mints with a mechanism; focal cell S0-H1×absorption; weekly Part C) |
 | H17/H18/H19 composite sentences | MINTED 2026-08-24 (register 76; front door from the consistency families; rows open next run; H19 = suppression/fade and says so) |
 | narrative trade layer (trades.csv + weekly_summary.csv + management_grades.csv) | BUILT 2026-08-24; REWORKED same day (registers 76/77: rule-5 fill fix, 4-variant ladder, mandatory baseline control, re-fire dedup) |
-| management ladder v2 (R-BE / R-ARM15 / R-NOTRAIL vs R-OP2) | GRADING (register 77; doctrine axes; forward accrual decides; home first-read all-negative post-control) |
+| management ladder v2 + narrative exits (6 variants) | GRADING (registers 77/80/81; R-ARM15 concentration observed 13/57-vs-0/151; NEXIT head-to-head tests the flip-gate-vs-census disagreement; forward accrual decides) |
+| journal field survey | BUILT 2026-08-25 (register 80; concentration null + session floors; survivors listed, not minted; weekly Part C) |
+| Q1-H19 (S0-H19 x R-ARM15 x London) | testable-now (register 80; >=30 fwd London canonical-pooled; clock on the dashboard) |
+| weekly runbook | WRITTEN 2026-08-25 (register 81; docs/runbook_weekly.md) |
 | in-trade narrative census | BUILT 2026-08-24 (register 78; measurement before machinery; flip trade needs both legs) |
 | exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned; gated on the census report) |
 | pyramiding counterfactual | PRE-REGISTERED 2026-08-24 (register 79; measurement, no grammar; build slot queued behind census reads) |

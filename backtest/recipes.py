@@ -74,9 +74,44 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.4"
+RECIPE_SET_VERSION = "recipe_set_v0.5"
 RECIPE_SETS = {
-    "recipe_set_v0.4": {
+    "recipe_set_v0.5": {
+        # --- narrative-exit variants (register 81; front door, counted,
+        # forward-graded). Base mechanics = R-ARM15 (the register-80
+        # concentration observation). Exit trigger = any opposing
+        # sentence-class event (survey vocabulary): opposing-effort,
+        # absorption-against, opposing sentence-fire. THE RECORDED
+        # DISAGREEMENT: the flip-gate lesson says exits pay PRE-ARMING
+        # only; the in-trade census texture says exits pay ANY TIME —
+        # this head-to-head is that disagreement's test. The census
+        # remains the deeper instrument; its maturity read supersedes
+        # on conflict.
+        "R-NEXIT-EARLY": {
+            "provenance": "register 81 (counted); exits PRE-ARMING only "
+                          "(the flip-gate lesson)",
+            "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
+                        "exit_on": [("opposing_effort",),
+                                    ("absorption_event",),
+                                    ("opposing_signal_fire",)],
+                        "until": ("progress_atr", 1.0, "15min")},
+                       {"stop": [("atr", 2.5, "15min"),
+                                 ("trail_nth", 1, ("atr", 1.0, "15min"),
+                                  "15min")], "target": None}]},
+        "R-NEXIT-FULL": {
+            "provenance": "register 81 (counted); exits ANY TIME in the "
+                          "hold (the in-trade census texture)",
+            "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
+                        "exit_on": [("opposing_effort",),
+                                    ("absorption_event",),
+                                    ("opposing_signal_fire",)],
+                        "until": ("progress_atr", 1.0, "15min")},
+                       {"stop": [("atr", 2.5, "15min"),
+                                 ("trail_nth", 1, ("atr", 1.0, "15min"),
+                                  "15min")], "target": None,
+                        "exit_on": [("opposing_effort",),
+                                    ("absorption_event",),
+                                    ("opposing_signal_fire",)]}]},
         # --- management ladder v2 (register 77; external review
         # registered as design-input evidence, in-sample, 7 tickets
         # counted; findings verified where they overlap our artifacts).

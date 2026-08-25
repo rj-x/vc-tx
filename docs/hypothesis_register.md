@@ -609,6 +609,20 @@ for walk-forward.
     docstring's "(against the predicted move)" gloss was anchor-specific
     and is corrected at register 76) within 5 bars; fire direction = the
     FADE of the anchor's reversal call.
+- **Questions:**
+  - **Q1-H19** (registered 2026-08-25, register 80): PREDICTION —
+    S0-H19 under R-ARM15 management, London session, RETAINS positive
+    median-per-trade (founding cell: +7.1 pts median, n=63 pooled) and
+    CLEARS its session-scoped baseline floor in forward accrual.
+    GRADING: ≥30 forward London trades pooled across CANONICAL
+    instruments (per-instrument reported; pooling PROVISIONAL until
+    the validation evenings). PROVENANCE, stated: POST-HOC — the cell
+    was found by the operator's session-cut of the journal
+    (2026-08-25); seasonality (single-month) and best-of-many
+    discounts apply. MECHANISM SENTENCE: probe-failure fades need room
+    then protection — the armed trail is that shape, and London is
+    where probes fail into effort. NO recipe scoping, NO live-signal
+    gating: the question grades first. STATUS: pending-conditions.
 - **Status:** **signal-live** (statistic shape at mint: cross-window
   consistency of a NEGATIVE, field-priced; suppression grading reads
   negative anchor-claim lift as the sentence winning).

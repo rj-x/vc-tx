@@ -63,6 +63,7 @@ first uses them, or the commit doesn't pass.
 - **NOSTOP** — the ladder's endpoint: no stop-loss at all, exit at end of day — what looseness ultimately buys or costs.
 - **R- prefix (R-OP1, R-FLIPGUARD, R-LADDER, …)** — recipes: exit/stop harvest rules applied to fires; the signal layer never changes.
 - **R-BE / R-ARM15 / R-NOTRAIL** — the management ladder v2 (register 77): breakeven-at-thesis-scale, trail-armed-at-progress (15M anchor), and stop-only-hold-to-EOD — graded beside the R-OP2 incumbent.
+- **R-NEXIT-EARLY / R-NEXIT-FULL** — the narrative-exit head-to-head (register 81): ARM15 mechanics plus opposing-event exits, pre-arming-only vs any-time — the flip-gate-vs-census disagreement's test.
 - **B- prefix (B-TREND, B-RANDOM, B-ALWAYS-LONG)** — baseline pseudo-signals: controls run through the identical harvest machinery, never candidates; they print in the fenced BASELINES section only.
 - **PoC / POC** — point of control: the price with the most traded volume in a profile.
 - **value area** — the price band around the PoC holding the registered share (70%) of traded volume; VA / VAL / VAH = the area and its low/high edges.
@@ -101,6 +102,7 @@ first uses them, or the commit doesn't pass.
 - **canonical** — the home, fully-validated instrument (uk100fut) whose readings carry evidential weight.
 - **GENERATED** — the stamp on reports built entirely by code from logged artifacts; hand-editing them is banned.
 - **register** — audit/strategy_findings_and_risks.md: the append-only numbered record of findings, rulings, and orders.
+- **runbook** — a step-by-step operator procedure document (docs/runbook_*.md): what to run, what healthy output looks like, what to escalate.
 - **docket** — the agenda of items awaiting an operator sitting.
 - **sitting** — an operator decision session that disposes of the docket.
 - **campaign / Part C** — the weekly one-command evidential pipeline; Part C is its forward-zone study block.
