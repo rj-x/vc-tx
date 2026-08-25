@@ -73,7 +73,15 @@ NARRATIVE_EXIT_PRIMITIVES = ("opposing_structural_core", "trend_flip",
                              # register 81 (survey vocabulary as exit
                              # events; the flip-gate fence lifted FOR
                              # THESE TWO COUNTED VARIANTS only):
-                             "opposing_effort", "absorption_event")
+                             "opposing_effort", "absorption_event",
+                             # register 82: EXITS ARE SENTENCES — a
+                             # minted composite firing against the
+                             # position (future sentences join via
+                             # COMPOSITE_SENTENCES automatically)
+                             "opposing_sentence_fire")
+# the minted composite sentences (register 82: one home; future mints
+# append here and every sentence-scoped consumer follows automatically)
+COMPOSITE_SENTENCES = ("S0-H17", "S0-H18", "S0-H19")
 # rows whose firing condition CONDITIONS on a bar-size/volatility class
 # (register 47 fairness amendment): the scoreboard computes the named
 # class's own chance rate and grades lift against it — unconditioned lift

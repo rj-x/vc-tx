@@ -1,10 +1,10 @@
 {
   "STAMP": "OBSERVATIONAL in-trade narrative census \u2014 measurement before machinery; never validation",
-  "engine_commit": "b049993e3202e94941554735e3937ab3e9fed08e",
+  "engine_commit": "89c6ccac0efcf68a36296244d3d7788d757ef225",
   "event_classes": [
     "opposing-effort",
     "absorption-against",
-    "opposing-fire",
+    "opposing-sentence",
     "trend-flip"
   ],
   "arming": {
@@ -34,31 +34,31 @@
           "n_without": 62,
           "remaining_median_pts": -2.8,
           "without_hold_median_pts": -14.43,
-          "floor_remaining_median_pts": -1.0,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 297,
           "post_arming_n": 105,
           "early_remaining_median": -2.0,
           "post_arming_remaining_median": -4.8,
           "counterfactual_actual_minus_exit_median": -4.61
         },
-        "R-ARM15|backtest|opposing-fire": {
-          "n_with": 432,
-          "n_without": 32,
-          "remaining_median_pts": -5.0,
-          "without_hold_median_pts": -16.11,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 325,
-          "post_arming_n": 107,
-          "early_remaining_median": -4.0,
-          "post_arming_remaining_median": -9.6,
-          "counterfactual_actual_minus_exit_median": -5.93
+        "R-ARM15|backtest|opposing-sentence": {
+          "n_with": 267,
+          "n_without": 197,
+          "remaining_median_pts": -4.0,
+          "without_hold_median_pts": -10.77,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 153,
+          "post_arming_n": 114,
+          "early_remaining_median": -0.8,
+          "post_arming_remaining_median": -4.9,
+          "counterfactual_actual_minus_exit_median": -5.21
         },
         "R-ARM15|backtest|trend-flip": {
           "n_with": 420,
           "n_without": 44,
           "remaining_median_pts": -3.8,
           "without_hold_median_pts": -22.37,
-          "floor_remaining_median_pts": -0.8,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 331,
           "post_arming_n": 89,
           "early_remaining_median": -2.7,
@@ -82,36 +82,180 @@
           "n_without": 56,
           "remaining_median_pts": -3.5,
           "without_hold_median_pts": -1.3,
-          "floor_remaining_median_pts": -1.0,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 239,
           "post_arming_n": 88,
           "early_remaining_median": -1.7,
           "post_arming_remaining_median": -9.5,
           "counterfactual_actual_minus_exit_median": -5.0
         },
-        "R-BE|backtest|opposing-fire": {
-          "n_with": 355,
-          "n_without": 28,
+        "R-BE|backtest|opposing-sentence": {
+          "n_with": 237,
+          "n_without": 146,
           "remaining_median_pts": -5.7,
           "without_hold_median_pts": -1.3,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 269,
-          "post_arming_n": 86,
-          "early_remaining_median": -4.5,
-          "post_arming_remaining_median": -7.25,
-          "counterfactual_actual_minus_exit_median": -6.8
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 122,
+          "post_arming_n": 115,
+          "early_remaining_median": -5.15,
+          "post_arming_remaining_median": -8.6,
+          "counterfactual_actual_minus_exit_median": -6.6
         },
         "R-BE|backtest|trend-flip": {
           "n_with": 350,
           "n_without": 33,
           "remaining_median_pts": -5.6,
           "without_hold_median_pts": -25.44,
-          "floor_remaining_median_pts": -0.8,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 276,
           "post_arming_n": 74,
           "early_remaining_median": -2.75,
           "post_arming_remaining_median": -10.15,
           "counterfactual_actual_minus_exit_median": -5.8
+        },
+        "R-NEXIT-EARLY|backtest|opposing-effort": {
+          "n_with": 318,
+          "n_without": 1051,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 250,
+          "post_arming_n": 68,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -7.4,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|backtest|absorption-against": {
+          "n_with": 376,
+          "n_without": 993,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.8,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 303,
+          "post_arming_n": 73,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -6.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|backtest|opposing-sentence": {
+          "n_with": 137,
+          "n_without": 1232,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.8,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 97,
+          "post_arming_n": 40,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -2.55,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|backtest|trend-flip": {
+          "n_with": 345,
+          "n_without": 1024,
+          "remaining_median_pts": -0.3,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 283,
+          "post_arming_n": 62,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -11.0,
+          "counterfactual_actual_minus_exit_median": -1.6
+        },
+        "R-NEXIT-FULL|backtest|opposing-effort": {
+          "n_with": 292,
+          "n_without": 1177,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.0,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 262,
+          "post_arming_n": 30,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|backtest|absorption-against": {
+          "n_with": 373,
+          "n_without": 1096,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.6,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 324,
+          "post_arming_n": 49,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|backtest|opposing-sentence": {
+          "n_with": 105,
+          "n_without": 1364,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.6,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 98,
+          "post_arming_n": 7,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -2.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|backtest|trend-flip": {
+          "n_with": 356,
+          "n_without": 1113,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.4,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 320,
+          "post_arming_n": 36,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -4.1,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|backtest|opposing-effort": {
+          "n_with": 586,
+          "n_without": 272,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.1,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 449,
+          "post_arming_n": 137,
+          "early_remaining_median": 0.3,
+          "post_arming_remaining_median": -2.7,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|backtest|absorption-against": {
+          "n_with": 569,
+          "n_without": 289,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 464,
+          "post_arming_n": 105,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|backtest|opposing-sentence": {
+          "n_with": 505,
+          "n_without": 353,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.5,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 322,
+          "post_arming_n": 183,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|backtest|trend-flip": {
+          "n_with": 513,
+          "n_without": 345,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 438,
+          "post_arming_n": 75,
+          "early_remaining_median": 0.2,
+          "post_arming_remaining_median": -3.8,
+          "counterfactual_actual_minus_exit_median": -1.3
         },
         "R-NOTRAIL|backtest|opposing-effort": {
           "n_with": 249,
@@ -130,31 +274,31 @@
           "n_without": 28,
           "remaining_median_pts": -19.1,
           "without_hold_median_pts": -26.27,
-          "floor_remaining_median_pts": -1.0,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 187,
           "post_arming_n": 74,
           "early_remaining_median": -21.0,
           "post_arming_remaining_median": -11.45,
           "counterfactual_actual_minus_exit_median": -20.33
         },
-        "R-NOTRAIL|backtest|opposing-fire": {
-          "n_with": 274,
-          "n_without": 15,
-          "remaining_median_pts": -20.3,
-          "without_hold_median_pts": -19.3,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 206,
-          "post_arming_n": 68,
-          "early_remaining_median": -19.35,
-          "post_arming_remaining_median": -21.35,
-          "counterfactual_actual_minus_exit_median": -21.58
+        "R-NOTRAIL|backtest|opposing-sentence": {
+          "n_with": 206,
+          "n_without": 83,
+          "remaining_median_pts": -18.1,
+          "without_hold_median_pts": -26.0,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 93,
+          "post_arming_n": 113,
+          "early_remaining_median": -22.3,
+          "post_arming_remaining_median": -12.5,
+          "counterfactual_actual_minus_exit_median": -17.81
         },
         "R-NOTRAIL|backtest|trend-flip": {
           "n_with": 275,
           "n_without": 14,
           "remaining_median_pts": -18.7,
           "without_hold_median_pts": -28.7,
-          "floor_remaining_median_pts": -0.8,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 212,
           "post_arming_n": 63,
           "early_remaining_median": -20.6,
@@ -178,31 +322,31 @@
           "n_without": 918,
           "remaining_median_pts": -1.05,
           "without_hold_median_pts": -3.75,
-          "floor_remaining_median_pts": -1.0,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 411,
           "post_arming_n": 41,
           "early_remaining_median": -1.3,
           "post_arming_remaining_median": -0.5,
           "counterfactual_actual_minus_exit_median": -2.79
         },
-        "R-OP2|backtest|opposing-fire": {
-          "n_with": 479,
-          "n_without": 891,
-          "remaining_median_pts": -1.0,
-          "without_hold_median_pts": -3.72,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 438,
-          "post_arming_n": 41,
-          "early_remaining_median": -0.9,
-          "post_arming_remaining_median": -2.0,
-          "counterfactual_actual_minus_exit_median": -2.89
+        "R-OP2|backtest|opposing-sentence": {
+          "n_with": 209,
+          "n_without": 1161,
+          "remaining_median_pts": -1.8,
+          "without_hold_median_pts": -3.27,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 183,
+          "post_arming_n": 26,
+          "early_remaining_median": -1.7,
+          "post_arming_remaining_median": -4.0,
+          "counterfactual_actual_minus_exit_median": -3.94
         },
         "R-OP2|backtest|trend-flip": {
           "n_with": 345,
           "n_without": 1025,
           "remaining_median_pts": -1.0,
           "without_hold_median_pts": -3.7,
-          "floor_remaining_median_pts": -0.8,
+          "floor_remaining_median_pts": -0.7,
           "early_n": 311,
           "post_arming_n": 34,
           "early_remaining_median": -1.0,
@@ -210,195 +354,339 @@
           "counterfactual_actual_minus_exit_median": -2.64
         },
         "R-ARM15|forward|opposing-effort": {
-          "n_with": 204,
-          "n_without": 31,
+          "n_with": 243,
+          "n_without": 34,
           "remaining_median_pts": -3.5,
-          "without_hold_median_pts": 0.59,
+          "without_hold_median_pts": 0.4,
           "floor_remaining_median_pts": 0.0,
-          "early_n": 132,
-          "post_arming_n": 72,
+          "early_n": 158,
+          "post_arming_n": 85,
           "early_remaining_median": -0.15,
-          "post_arming_remaining_median": -7.3,
-          "counterfactual_actual_minus_exit_median": -4.38
+          "post_arming_remaining_median": -6.8,
+          "counterfactual_actual_minus_exit_median": -4.65
         },
         "R-ARM15|forward|absorption-against": {
-          "n_with": 214,
-          "n_without": 21,
-          "remaining_median_pts": -0.8,
+          "n_with": 254,
+          "n_without": 23,
+          "remaining_median_pts": -1.0,
           "without_hold_median_pts": -10.06,
-          "floor_remaining_median_pts": -1.0,
-          "early_n": 178,
-          "post_arming_n": 36,
-          "early_remaining_median": -1.25,
-          "post_arming_remaining_median": 4.3,
-          "counterfactual_actual_minus_exit_median": -1.83
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 211,
+          "post_arming_n": 43,
+          "early_remaining_median": -1.0,
+          "post_arming_remaining_median": -0.5,
+          "counterfactual_actual_minus_exit_median": -2.01
         },
-        "R-ARM15|forward|opposing-fire": {
-          "n_with": 216,
-          "n_without": 19,
-          "remaining_median_pts": -2.15,
-          "without_hold_median_pts": -10.06,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 159,
-          "post_arming_n": 57,
-          "early_remaining_median": -0.4,
-          "post_arming_remaining_median": -6.5,
-          "counterfactual_actual_minus_exit_median": -1.7
+        "R-ARM15|forward|opposing-sentence": {
+          "n_with": 189,
+          "n_without": 88,
+          "remaining_median_pts": -3.5,
+          "without_hold_median_pts": -9.2,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 90,
+          "post_arming_n": 99,
+          "early_remaining_median": -1.65,
+          "post_arming_remaining_median": -4.0,
+          "counterfactual_actual_minus_exit_median": -2.71
         },
         "R-ARM15|forward|trend-flip": {
-          "n_with": 228,
-          "n_without": 7,
-          "remaining_median_pts": -1.5,
-          "without_hold_median_pts": -13.43,
-          "floor_remaining_median_pts": -0.8,
-          "early_n": 184,
-          "post_arming_n": 44,
-          "early_remaining_median": -1.6,
-          "post_arming_remaining_median": 2.0,
-          "counterfactual_actual_minus_exit_median": -2.07
-        },
-        "R-BE|forward|opposing-effort": {
-          "n_with": 193,
-          "n_without": 27,
-          "remaining_median_pts": -6.9,
-          "without_hold_median_pts": -1.3,
-          "floor_remaining_median_pts": 0.0,
-          "early_n": 120,
-          "post_arming_n": 73,
-          "early_remaining_median": -0.7,
-          "post_arming_remaining_median": -10.8,
-          "counterfactual_actual_minus_exit_median": -7.0
-        },
-        "R-BE|forward|absorption-against": {
-          "n_with": 199,
-          "n_without": 21,
-          "remaining_median_pts": -3.2,
-          "without_hold_median_pts": -1.3,
-          "floor_remaining_median_pts": -1.0,
-          "early_n": 167,
-          "post_arming_n": 32,
-          "early_remaining_median": -2.5,
-          "post_arming_remaining_median": -5.3,
+          "n_with": 269,
+          "n_without": 8,
+          "remaining_median_pts": -1.8,
+          "without_hold_median_pts": -14.48,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 215,
+          "post_arming_n": 54,
+          "early_remaining_median": -1.5,
+          "post_arming_remaining_median": -3.8,
           "counterfactual_actual_minus_exit_median": -3.1
         },
-        "R-BE|forward|opposing-fire": {
-          "n_with": 200,
-          "n_without": 20,
-          "remaining_median_pts": -4.5,
-          "without_hold_median_pts": -4.3,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 152,
-          "post_arming_n": 48,
+        "R-BE|forward|opposing-effort": {
+          "n_with": 227,
+          "n_without": 32,
+          "remaining_median_pts": -7.5,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 143,
+          "post_arming_n": 84,
+          "early_remaining_median": -2.0,
+          "post_arming_remaining_median": -10.15,
+          "counterfactual_actual_minus_exit_median": -7.3
+        },
+        "R-BE|forward|absorption-against": {
+          "n_with": 235,
+          "n_without": 24,
+          "remaining_median_pts": -3.8,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 199,
+          "post_arming_n": 36,
+          "early_remaining_median": -3.3,
+          "post_arming_remaining_median": -8.0,
+          "counterfactual_actual_minus_exit_median": -3.8
+        },
+        "R-BE|forward|opposing-sentence": {
+          "n_with": 178,
+          "n_without": 81,
+          "remaining_median_pts": -5.7,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 85,
+          "post_arming_n": 93,
           "early_remaining_median": -4.5,
-          "post_arming_remaining_median": -9.65,
-          "counterfactual_actual_minus_exit_median": -4.1
+          "post_arming_remaining_median": -8.7,
+          "counterfactual_actual_minus_exit_median": -6.3
         },
         "R-BE|forward|trend-flip": {
-          "n_with": 211,
-          "n_without": 9,
-          "remaining_median_pts": -3.5,
+          "n_with": 248,
+          "n_without": 11,
+          "remaining_median_pts": -3.95,
           "without_hold_median_pts": -5.0,
-          "floor_remaining_median_pts": -0.8,
-          "early_n": 174,
-          "post_arming_n": 37,
-          "early_remaining_median": -2.65,
-          "post_arming_remaining_median": -7.4,
-          "counterfactual_actual_minus_exit_median": -3.3
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 203,
+          "post_arming_n": 45,
+          "early_remaining_median": -3.3,
+          "post_arming_remaining_median": -9.8,
+          "counterfactual_actual_minus_exit_median": -4.7
+        },
+        "R-NEXIT-EARLY|forward|opposing-effort": {
+          "n_with": 156,
+          "n_without": 766,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.2,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 127,
+          "post_arming_n": 29,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.5,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|forward|absorption-against": {
+          "n_with": 300,
+          "n_without": 622,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 268,
+          "post_arming_n": 32,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.7,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|forward|opposing-sentence": {
+          "n_with": 79,
+          "n_without": 843,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 65,
+          "post_arming_n": 14,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -4.4,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-EARLY|forward|trend-flip": {
+          "n_with": 150,
+          "n_without": 772,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 127,
+          "post_arming_n": 23,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 10.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|forward|opposing-effort": {
+          "n_with": 149,
+          "n_without": 823,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.2,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 133,
+          "post_arming_n": 16,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.1,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|forward|absorption-against": {
+          "n_with": 310,
+          "n_without": 662,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 288,
+          "post_arming_n": 22,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|forward|opposing-sentence": {
+          "n_with": 68,
+          "n_without": 904,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 66,
+          "post_arming_n": 2,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-FULL|forward|trend-flip": {
+          "n_with": 157,
+          "n_without": 815,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 143,
+          "post_arming_n": 14,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|forward|opposing-effort": {
+          "n_with": 395,
+          "n_without": 167,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.3,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 308,
+          "post_arming_n": 87,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.2,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|forward|absorption-against": {
+          "n_with": 439,
+          "n_without": 123,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 379,
+          "post_arming_n": 60,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 2.6,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|forward|opposing-sentence": {
+          "n_with": 361,
+          "n_without": 201,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.95,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 198,
+          "post_arming_n": 163,
+          "early_remaining_median": -0.1,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.3
+        },
+        "R-NEXIT-SENT|forward|trend-flip": {
+          "n_with": 385,
+          "n_without": 177,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.6,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 323,
+          "post_arming_n": 62,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.9,
+          "counterfactual_actual_minus_exit_median": -1.3
         },
         "R-NOTRAIL|forward|opposing-effort": {
-          "n_with": 138,
-          "n_without": 17,
-          "remaining_median_pts": -12.8,
-          "without_hold_median_pts": 1.7,
+          "n_with": 160,
+          "n_without": 18,
+          "remaining_median_pts": -14.5,
+          "without_hold_median_pts": 2.3,
           "floor_remaining_median_pts": 0.0,
-          "early_n": 80,
-          "post_arming_n": 58,
-          "early_remaining_median": -10.15,
-          "post_arming_remaining_median": -23.3,
-          "counterfactual_actual_minus_exit_median": -14.39
+          "early_n": 96,
+          "post_arming_n": 64,
+          "early_remaining_median": -10.9,
+          "post_arming_remaining_median": -24.6,
+          "counterfactual_actual_minus_exit_median": -16.61
         },
         "R-NOTRAIL|forward|absorption-against": {
-          "n_with": 142,
-          "n_without": 13,
-          "remaining_median_pts": -12.2,
-          "without_hold_median_pts": -11.6,
-          "floor_remaining_median_pts": -1.0,
-          "early_n": 117,
+          "n_with": 164,
+          "n_without": 14,
+          "remaining_median_pts": -13.6,
+          "without_hold_median_pts": -8.3,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 139,
           "post_arming_n": 25,
-          "early_remaining_median": -11.5,
-          "post_arming_remaining_median": -16.3,
-          "counterfactual_actual_minus_exit_median": -13.16
+          "early_remaining_median": -13.1,
+          "post_arming_remaining_median": -22.5,
+          "counterfactual_actual_minus_exit_median": -14.7
         },
-        "R-NOTRAIL|forward|opposing-fire": {
-          "n_with": 142,
-          "n_without": 13,
-          "remaining_median_pts": -12.35,
-          "without_hold_median_pts": -13.43,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 102,
-          "post_arming_n": 40,
+        "R-NOTRAIL|forward|opposing-sentence": {
+          "n_with": 133,
+          "n_without": 45,
+          "remaining_median_pts": -13.7,
+          "without_hold_median_pts": -13.78,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 51,
+          "post_arming_n": 82,
           "early_remaining_median": -10.7,
-          "post_arming_remaining_median": -20.7,
-          "counterfactual_actual_minus_exit_median": -14.24
+          "post_arming_remaining_median": -17.6,
+          "counterfactual_actual_minus_exit_median": -16.38
         },
         "R-NOTRAIL|forward|trend-flip": {
-          "n_with": 150,
-          "n_without": 5,
-          "remaining_median_pts": -11.3,
-          "without_hold_median_pts": -13.43,
-          "floor_remaining_median_pts": -0.8,
-          "early_n": 125,
-          "post_arming_n": 25,
-          "early_remaining_median": -11.0,
-          "post_arming_remaining_median": -15.9,
-          "counterfactual_actual_minus_exit_median": -13.04
+          "n_with": 172,
+          "n_without": 6,
+          "remaining_median_pts": -13.15,
+          "without_hold_median_pts": -14.48,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 145,
+          "post_arming_n": 27,
+          "early_remaining_median": -11.3,
+          "post_arming_remaining_median": -20.1,
+          "counterfactual_actual_minus_exit_median": -14.05
         },
         "R-OP2|forward|opposing-effort": {
-          "n_with": 286,
-          "n_without": 415,
-          "remaining_median_pts": 0.0,
-          "without_hold_median_pts": -2.56,
+          "n_with": 360,
+          "n_without": 494,
+          "remaining_median_pts": -0.1,
+          "without_hold_median_pts": -2.57,
           "floor_remaining_median_pts": 0.0,
-          "early_n": 252,
-          "post_arming_n": 34,
+          "early_n": 316,
+          "post_arming_n": 44,
           "early_remaining_median": 0.0,
-          "post_arming_remaining_median": -1.5,
-          "counterfactual_actual_minus_exit_median": -1.72
+          "post_arming_remaining_median": -0.4,
+          "counterfactual_actual_minus_exit_median": -1.78
         },
         "R-OP2|forward|absorption-against": {
-          "n_with": 346,
-          "n_without": 355,
+          "n_with": 447,
+          "n_without": 407,
           "remaining_median_pts": -0.8,
-          "without_hold_median_pts": -2.74,
-          "floor_remaining_median_pts": -1.0,
-          "early_n": 330,
-          "post_arming_n": 16,
+          "without_hold_median_pts": -2.76,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 427,
+          "post_arming_n": 20,
           "early_remaining_median": -0.8,
-          "post_arming_remaining_median": -0.6,
+          "post_arming_remaining_median": 0.0,
           "counterfactual_actual_minus_exit_median": -2.34
         },
-        "R-OP2|forward|opposing-fire": {
-          "n_with": 230,
-          "n_without": 471,
-          "remaining_median_pts": -1.0,
-          "without_hold_median_pts": -2.66,
-          "floor_remaining_median_pts": -0.5,
-          "early_n": 204,
-          "post_arming_n": 26,
-          "early_remaining_median": -0.8,
-          "post_arming_remaining_median": -3.0,
-          "counterfactual_actual_minus_exit_median": -2.31
+        "R-OP2|forward|opposing-sentence": {
+          "n_with": 124,
+          "n_without": 730,
+          "remaining_median_pts": -1.05,
+          "without_hold_median_pts": -2.51,
+          "floor_remaining_median_pts": -1.15,
+          "early_n": 109,
+          "post_arming_n": 15,
+          "early_remaining_median": -1.0,
+          "post_arming_remaining_median": -1.2,
+          "counterfactual_actual_minus_exit_median": -2.56
         },
         "R-OP2|forward|trend-flip": {
-          "n_with": 186,
-          "n_without": 515,
+          "n_with": 231,
+          "n_without": 623,
           "remaining_median_pts": -0.7,
           "without_hold_median_pts": -2.6,
-          "floor_remaining_median_pts": -0.8,
-          "early_n": 173,
-          "post_arming_n": 13,
+          "floor_remaining_median_pts": -0.7,
+          "early_n": 209,
+          "post_arming_n": 22,
           "early_remaining_median": -0.7,
-          "post_arming_remaining_median": -1.3,
+          "post_arming_remaining_median": -0.4,
           "counterfactual_actual_minus_exit_median": -2.08
         }
       },
@@ -407,49 +695,49 @@
         "backtest|opposing-effort": {
           "n": 193,
           "median_pts": -3.04,
-          "floor_median_pts": -2.55,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
         "backtest|absorption-against": {
           "n": 207,
           "median_pts": -3.11,
-          "floor_median_pts": -2.55,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
-        "backtest|opposing-fire": {
-          "n": 203,
-          "median_pts": -2.58,
-          "floor_median_pts": -2.55,
+        "backtest|opposing-sentence": {
+          "n": 85,
+          "median_pts": -2.24,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
         "backtest|trend-flip": {
           "n": 190,
           "median_pts": -2.87,
-          "floor_median_pts": -2.55,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
         "forward|opposing-effort": {
-          "n": 124,
-          "median_pts": -2.37,
-          "floor_median_pts": -2.55,
+          "n": 151,
+          "median_pts": -2.22,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
         "forward|absorption-against": {
-          "n": 153,
-          "median_pts": -2.46,
-          "floor_median_pts": -2.55,
+          "n": 197,
+          "median_pts": -2.45,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
-        "forward|opposing-fire": {
-          "n": 92,
-          "median_pts": -2.2,
-          "floor_median_pts": -2.55,
+        "forward|opposing-sentence": {
+          "n": 49,
+          "median_pts": -2.09,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         },
         "forward|trend-flip": {
-          "n": 93,
-          "median_pts": -2.3,
-          "floor_median_pts": -2.55,
+          "n": 114,
+          "median_pts": -2.43,
+          "floor_median_pts": -2.53,
           "both_legs_clear": null
         }
       },
@@ -483,17 +771,17 @@
           "post_arming_remaining_median": -12.95,
           "counterfactual_actual_minus_exit_median": -1.22
         },
-        "R-ARM15|backtest|opposing-fire": {
-          "n_with": 250,
-          "n_without": 14,
-          "remaining_median_pts": -4.1,
-          "without_hold_median_pts": -29.05,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 192,
-          "post_arming_n": 58,
-          "early_remaining_median": -3.75,
-          "post_arming_remaining_median": -8.1,
-          "counterfactual_actual_minus_exit_median": -2.8
+        "R-ARM15|backtest|opposing-sentence": {
+          "n_with": 171,
+          "n_without": 93,
+          "remaining_median_pts": -8.2,
+          "without_hold_median_pts": -5.74,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 88,
+          "post_arming_n": 83,
+          "early_remaining_median": 1.55,
+          "post_arming_remaining_median": -15.3,
+          "counterfactual_actual_minus_exit_median": -10.28
         },
         "R-ARM15|backtest|trend-flip": {
           "n_with": 251,
@@ -531,17 +819,17 @@
           "post_arming_remaining_median": -28.2,
           "counterfactual_actual_minus_exit_median": -10.8
         },
-        "R-BE|backtest|opposing-fire": {
-          "n_with": 197,
-          "n_without": 15,
-          "remaining_median_pts": -8.5,
-          "without_hold_median_pts": -33.1,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 158,
-          "post_arming_n": 39,
-          "early_remaining_median": -8.7,
-          "post_arming_remaining_median": -6.0,
-          "counterfactual_actual_minus_exit_median": -10.6
+        "R-BE|backtest|opposing-sentence": {
+          "n_with": 150,
+          "n_without": 62,
+          "remaining_median_pts": -18.3,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 74,
+          "post_arming_n": 76,
+          "early_remaining_median": -11.4,
+          "post_arming_remaining_median": -31.25,
+          "counterfactual_actual_minus_exit_median": -19.8
         },
         "R-BE|backtest|trend-flip": {
           "n_with": 201,
@@ -554,6 +842,150 @@
           "early_remaining_median": -7.6,
           "post_arming_remaining_median": -34.2,
           "counterfactual_actual_minus_exit_median": -12.2
+        },
+        "R-NEXIT-EARLY|backtest|opposing-effort": {
+          "n_with": 197,
+          "n_without": 653,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 162,
+          "post_arming_n": 35,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.2,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|backtest|absorption-against": {
+          "n_with": 224,
+          "n_without": 626,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.4,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 188,
+          "post_arming_n": 36,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -7.7,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|backtest|opposing-sentence": {
+          "n_with": 95,
+          "n_without": 755,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.3,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 78,
+          "post_arming_n": 17,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -15.3,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|backtest|trend-flip": {
+          "n_with": 195,
+          "n_without": 655,
+          "remaining_median_pts": -0.1,
+          "without_hold_median_pts": -2.0,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 165,
+          "post_arming_n": 30,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -10.9,
+          "counterfactual_actual_minus_exit_median": -1.6
+        },
+        "R-NEXIT-FULL|backtest|opposing-effort": {
+          "n_with": 194,
+          "n_without": 734,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.8,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 179,
+          "post_arming_n": 15,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 1.5,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|backtest|absorption-against": {
+          "n_with": 220,
+          "n_without": 708,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.7,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 202,
+          "post_arming_n": 18,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|backtest|opposing-sentence": {
+          "n_with": 88,
+          "n_without": 840,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.7,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 86,
+          "post_arming_n": 2,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|backtest|trend-flip": {
+          "n_with": 200,
+          "n_without": 728,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 188,
+          "post_arming_n": 12,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 15.1,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-SENT|backtest|opposing-effort": {
+          "n_with": 350,
+          "n_without": 146,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 0.04,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 289,
+          "post_arming_n": 61,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.5,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-SENT|backtest|absorption-against": {
+          "n_with": 303,
+          "n_without": 193,
+          "remaining_median_pts": 2.6,
+          "without_hold_median_pts": -3.0,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 245,
+          "post_arming_n": 58,
+          "early_remaining_median": 5.1,
+          "post_arming_remaining_median": -9.05,
+          "counterfactual_actual_minus_exit_median": 0.7
+        },
+        "R-NEXIT-SENT|backtest|opposing-sentence": {
+          "n_with": 311,
+          "n_without": 185,
+          "remaining_median_pts": 0.9,
+          "without_hold_median_pts": -2.8,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 192,
+          "post_arming_n": 119,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 1.8,
+          "counterfactual_actual_minus_exit_median": -0.4
+        },
+        "R-NEXIT-SENT|backtest|trend-flip": {
+          "n_with": 301,
+          "n_without": 195,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 0.0,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 269,
+          "post_arming_n": 32,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.3,
+          "counterfactual_actual_minus_exit_median": -1.5
         },
         "R-NOTRAIL|backtest|opposing-effort": {
           "n_with": 131,
@@ -579,17 +1011,17 @@
           "post_arming_remaining_median": -55.3,
           "counterfactual_actual_minus_exit_median": -44.95
         },
-        "R-NOTRAIL|backtest|opposing-fire": {
-          "n_with": 140,
-          "n_without": 11,
-          "remaining_median_pts": -63.1,
-          "without_hold_median_pts": -50.64,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 113,
-          "post_arming_n": 27,
-          "early_remaining_median": -67.0,
+        "R-NOTRAIL|backtest|opposing-sentence": {
+          "n_with": 112,
+          "n_without": 39,
+          "remaining_median_pts": -38.0,
+          "without_hold_median_pts": -60.27,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 52,
+          "post_arming_n": 60,
+          "early_remaining_median": -50.55,
           "post_arming_remaining_median": -30.4,
-          "counterfactual_actual_minus_exit_median": -59.23
+          "counterfactual_actual_minus_exit_median": -41.55
         },
         "R-NOTRAIL|backtest|trend-flip": {
           "n_with": 145,
@@ -627,17 +1059,17 @@
           "post_arming_remaining_median": 1.25,
           "counterfactual_actual_minus_exit_median": -3.84
         },
-        "R-OP2|backtest|opposing-fire": {
-          "n_with": 377,
-          "n_without": 414,
-          "remaining_median_pts": -2.2,
-          "without_hold_median_pts": -8.13,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 349,
-          "post_arming_n": 28,
-          "early_remaining_median": -2.2,
-          "post_arming_remaining_median": -2.75,
-          "counterfactual_actual_minus_exit_median": -4.67
+        "R-OP2|backtest|opposing-sentence": {
+          "n_with": 153,
+          "n_without": 638,
+          "remaining_median_pts": -4.3,
+          "without_hold_median_pts": -7.24,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 143,
+          "post_arming_n": 10,
+          "early_remaining_median": -3.9,
+          "post_arming_remaining_median": -11.2,
+          "counterfactual_actual_minus_exit_median": -7.16
         },
         "R-OP2|backtest|trend-flip": {
           "n_with": 256,
@@ -675,17 +1107,17 @@
           "post_arming_remaining_median": 2.5,
           "counterfactual_actual_minus_exit_median": -7.1
         },
-        "R-ARM15|forward|opposing-fire": {
-          "n_with": 222,
-          "n_without": 9,
-          "remaining_median_pts": -6.95,
-          "without_hold_median_pts": -31.37,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 179,
-          "post_arming_n": 43,
-          "early_remaining_median": -6.2,
-          "post_arming_remaining_median": -12.5,
-          "counterfactual_actual_minus_exit_median": -8.17
+        "R-ARM15|forward|opposing-sentence": {
+          "n_with": 154,
+          "n_without": 77,
+          "remaining_median_pts": -6.8,
+          "without_hold_median_pts": -21.96,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 84,
+          "post_arming_n": 70,
+          "early_remaining_median": -6.8,
+          "post_arming_remaining_median": -6.3,
+          "counterfactual_actual_minus_exit_median": -3.14
         },
         "R-ARM15|forward|trend-flip": {
           "n_with": 219,
@@ -723,17 +1155,17 @@
           "post_arming_remaining_median": -3.15,
           "counterfactual_actual_minus_exit_median": -6.3
         },
-        "R-BE|forward|opposing-fire": {
-          "n_with": 192,
-          "n_without": 6,
-          "remaining_median_pts": -7.3,
-          "without_hold_median_pts": -36.55,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 159,
-          "post_arming_n": 33,
-          "early_remaining_median": -4.2,
-          "post_arming_remaining_median": -15.0,
-          "counterfactual_actual_minus_exit_median": -7.6
+        "R-BE|forward|opposing-sentence": {
+          "n_with": 137,
+          "n_without": 61,
+          "remaining_median_pts": -7.0,
+          "without_hold_median_pts": -24.9,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 66,
+          "post_arming_n": 71,
+          "early_remaining_median": -6.9,
+          "post_arming_remaining_median": -8.0,
+          "counterfactual_actual_minus_exit_median": -5.6
         },
         "R-BE|forward|trend-flip": {
           "n_with": 190,
@@ -746,6 +1178,150 @@
           "early_remaining_median": -3.4,
           "post_arming_remaining_median": -19.5,
           "counterfactual_actual_minus_exit_median": -7.05
+        },
+        "R-NEXIT-EARLY|forward|opposing-effort": {
+          "n_with": 138,
+          "n_without": 621,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.3,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 107,
+          "post_arming_n": 31,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -4.2,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|forward|absorption-against": {
+          "n_with": 218,
+          "n_without": 541,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.8,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 188,
+          "post_arming_n": 30,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -8.5,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|forward|opposing-sentence": {
+          "n_with": 65,
+          "n_without": 694,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.75,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 50,
+          "post_arming_n": 15,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -3.5,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-EARLY|forward|trend-flip": {
+          "n_with": 94,
+          "n_without": 665,
+          "remaining_median_pts": -3.15,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 73,
+          "post_arming_n": 21,
+          "early_remaining_median": -1.0,
+          "post_arming_remaining_median": -16.6,
+          "counterfactual_actual_minus_exit_median": -4.65
+        },
+        "R-NEXIT-FULL|forward|opposing-effort": {
+          "n_with": 128,
+          "n_without": 685,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.0,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 113,
+          "post_arming_n": 15,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.3,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|forward|absorption-against": {
+          "n_with": 223,
+          "n_without": 590,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.7,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 203,
+          "post_arming_n": 20,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.4,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|forward|opposing-sentence": {
+          "n_with": 54,
+          "n_without": 759,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 51,
+          "post_arming_n": 3,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-FULL|forward|trend-flip": {
+          "n_with": 104,
+          "n_without": 709,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 91,
+          "post_arming_n": 13,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -6.5,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-SENT|forward|opposing-effort": {
+          "n_with": 296,
+          "n_without": 146,
+          "remaining_median_pts": -0.5,
+          "without_hold_median_pts": 0.35,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 238,
+          "post_arming_n": 58,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -2.4,
+          "counterfactual_actual_minus_exit_median": -2.0
+        },
+        "R-NEXIT-SENT|forward|absorption-against": {
+          "n_with": 335,
+          "n_without": 107,
+          "remaining_median_pts": -1.7,
+          "without_hold_median_pts": -1.6,
+          "floor_remaining_median_pts": -2.2,
+          "early_n": 294,
+          "post_arming_n": 41,
+          "early_remaining_median": -2.65,
+          "post_arming_remaining_median": 2.5,
+          "counterfactual_actual_minus_exit_median": -3.2
+        },
+        "R-NEXIT-SENT|forward|opposing-sentence": {
+          "n_with": 291,
+          "n_without": 151,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -9.22,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 165,
+          "post_arming_n": 126,
+          "early_remaining_median": 0.2,
+          "post_arming_remaining_median": -0.8,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-SENT|forward|trend-flip": {
+          "n_with": 274,
+          "n_without": 168,
+          "remaining_median_pts": -5.5,
+          "without_hold_median_pts": 0.35,
+          "floor_remaining_median_pts": -1.9,
+          "early_n": 237,
+          "post_arming_n": 37,
+          "early_remaining_median": -4.9,
+          "post_arming_remaining_median": -11.7,
+          "counterfactual_actual_minus_exit_median": -6.85
         },
         "R-NOTRAIL|forward|opposing-effort": {
           "n_with": 127,
@@ -771,17 +1347,17 @@
           "post_arming_remaining_median": 18.2,
           "counterfactual_actual_minus_exit_median": -27.29
         },
-        "R-NOTRAIL|forward|opposing-fire": {
-          "n_with": 135,
-          "n_without": 3,
-          "remaining_median_pts": -24.5,
-          "without_hold_median_pts": -42.14,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 104,
-          "post_arming_n": 31,
-          "early_remaining_median": -18.65,
-          "post_arming_remaining_median": -36.8,
-          "counterfactual_actual_minus_exit_median": -23.8
+        "R-NOTRAIL|forward|opposing-sentence": {
+          "n_with": 102,
+          "n_without": 36,
+          "remaining_median_pts": -10.8,
+          "without_hold_median_pts": -33.75,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 37,
+          "post_arming_n": 65,
+          "early_remaining_median": -16.7,
+          "post_arming_remaining_median": -8.8,
+          "counterfactual_actual_minus_exit_median": -13.11
         },
         "R-NOTRAIL|forward|trend-flip": {
           "n_with": 134,
@@ -819,17 +1395,17 @@
           "post_arming_remaining_median": -2.3,
           "counterfactual_actual_minus_exit_median": -4.28
         },
-        "R-OP2|forward|opposing-fire": {
-          "n_with": 310,
-          "n_without": 432,
-          "remaining_median_pts": -1.8,
-          "without_hold_median_pts": -5.13,
-          "floor_remaining_median_pts": -2.3,
-          "early_n": 282,
-          "post_arming_n": 28,
-          "early_remaining_median": -1.8,
-          "post_arming_remaining_median": -1.2,
-          "counterfactual_actual_minus_exit_median": -3.41
+        "R-OP2|forward|opposing-sentence": {
+          "n_with": 116,
+          "n_without": 626,
+          "remaining_median_pts": -2.0,
+          "without_hold_median_pts": -4.5,
+          "floor_remaining_median_pts": -3.3,
+          "early_n": 102,
+          "post_arming_n": 14,
+          "early_remaining_median": -2.7,
+          "post_arming_remaining_median": 0.6,
+          "counterfactual_actual_minus_exit_median": -3.62
         },
         "R-OP2|forward|trend-flip": {
           "n_with": 190,
@@ -858,9 +1434,9 @@
           "floor_median_pts": -4.95,
           "both_legs_clear": null
         },
-        "backtest|opposing-fire": {
-          "n": 163,
-          "median_pts": -6.62,
+        "backtest|opposing-sentence": {
+          "n": 64,
+          "median_pts": -6.6,
           "floor_median_pts": -4.95,
           "both_legs_clear": null
         },
@@ -882,9 +1458,9 @@
           "floor_median_pts": -4.95,
           "both_legs_clear": null
         },
-        "forward|opposing-fire": {
-          "n": 141,
-          "median_pts": -4.31,
+        "forward|opposing-sentence": {
+          "n": 52,
+          "median_pts": -4.42,
           "floor_median_pts": -4.95,
           "both_legs_clear": null
         },
@@ -925,17 +1501,17 @@
           "post_arming_remaining_median": -49.0,
           "counterfactual_actual_minus_exit_median": -2.04
         },
-        "R-ARM15|backtest|opposing-fire": {
-          "n_with": 264,
-          "n_without": 15,
-          "remaining_median_pts": -4.85,
-          "without_hold_median_pts": -54.6,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 205,
-          "post_arming_n": 59,
-          "early_remaining_median": -4.1,
-          "post_arming_remaining_median": -6.6,
-          "counterfactual_actual_minus_exit_median": -7.29
+        "R-ARM15|backtest|opposing-sentence": {
+          "n_with": 199,
+          "n_without": 80,
+          "remaining_median_pts": -24.7,
+          "without_hold_median_pts": -22.5,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 112,
+          "post_arming_n": 87,
+          "early_remaining_median": -7.55,
+          "post_arming_remaining_median": -28.8,
+          "counterfactual_actual_minus_exit_median": -22.33
         },
         "R-ARM15|backtest|trend-flip": {
           "n_with": 266,
@@ -973,17 +1549,17 @@
           "post_arming_remaining_median": -68.4,
           "counterfactual_actual_minus_exit_median": -9.55
         },
-        "R-BE|backtest|opposing-fire": {
-          "n_with": 186,
-          "n_without": 11,
-          "remaining_median_pts": -8.8,
-          "without_hold_median_pts": -42.4,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 136,
-          "post_arming_n": 50,
-          "early_remaining_median": -7.35,
-          "post_arming_remaining_median": -19.4,
-          "counterfactual_actual_minus_exit_median": -15.0
+        "R-BE|backtest|opposing-sentence": {
+          "n_with": 153,
+          "n_without": 44,
+          "remaining_median_pts": -28.8,
+          "without_hold_median_pts": -1.8,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 75,
+          "post_arming_n": 78,
+          "early_remaining_median": -6.0,
+          "post_arming_remaining_median": -45.75,
+          "counterfactual_actual_minus_exit_median": -28.7
         },
         "R-BE|backtest|trend-flip": {
           "n_with": 190,
@@ -996,6 +1572,150 @@
           "early_remaining_median": 5.6,
           "post_arming_remaining_median": -73.4,
           "counterfactual_actual_minus_exit_median": -14.1
+        },
+        "R-NEXIT-EARLY|backtest|opposing-effort": {
+          "n_with": 229,
+          "n_without": 809,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.5,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 206,
+          "post_arming_n": 23,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -55.9,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|backtest|absorption-against": {
+          "n_with": 237,
+          "n_without": 801,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.3,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 216,
+          "post_arming_n": 21,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -4.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|backtest|opposing-sentence": {
+          "n_with": 112,
+          "n_without": 926,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.7,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 97,
+          "post_arming_n": 15,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -45.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|backtest|trend-flip": {
+          "n_with": 172,
+          "n_without": 866,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.4,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 143,
+          "post_arming_n": 29,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -7.3,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|backtest|opposing-effort": {
+          "n_with": 229,
+          "n_without": 871,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 0.2,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 216,
+          "post_arming_n": 13,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -2.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|backtest|absorption-against": {
+          "n_with": 242,
+          "n_without": 858,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 232,
+          "post_arming_n": 10,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -4.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|backtest|opposing-sentence": {
+          "n_with": 107,
+          "n_without": 993,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.4,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 103,
+          "post_arming_n": 4,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 6.1,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|backtest|trend-flip": {
+          "n_with": 182,
+          "n_without": 918,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.05,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 161,
+          "post_arming_n": 21,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 2.7,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|backtest|opposing-effort": {
+          "n_with": 424,
+          "n_without": 219,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 5.8,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 371,
+          "post_arming_n": 53,
+          "early_remaining_median": 0.6,
+          "post_arming_remaining_median": -24.7,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|backtest|absorption-against": {
+          "n_with": 393,
+          "n_without": 250,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 1.2,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 358,
+          "post_arming_n": 35,
+          "early_remaining_median": 0.2,
+          "post_arming_remaining_median": -50.2,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|backtest|opposing-sentence": {
+          "n_with": 451,
+          "n_without": 192,
+          "remaining_median_pts": -0.7,
+          "without_hold_median_pts": -5.0,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 313,
+          "post_arming_n": 138,
+          "early_remaining_median": -1.8,
+          "post_arming_remaining_median": -0.2,
+          "counterfactual_actual_minus_exit_median": -2.8
+        },
+        "R-NEXIT-SENT|backtest|trend-flip": {
+          "n_with": 333,
+          "n_without": 310,
+          "remaining_median_pts": -6.7,
+          "without_hold_median_pts": 3.35,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 284,
+          "post_arming_n": 49,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -35.0,
+          "counterfactual_actual_minus_exit_median": -8.7
         },
         "R-NOTRAIL|backtest|opposing-effort": {
           "n_with": 123,
@@ -1021,17 +1741,17 @@
           "post_arming_remaining_median": -68.75,
           "counterfactual_actual_minus_exit_median": -122.8
         },
-        "R-NOTRAIL|backtest|opposing-fire": {
-          "n_with": 134,
-          "n_without": 11,
-          "remaining_median_pts": -113.0,
-          "without_hold_median_pts": -42.4,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 95,
-          "post_arming_n": 39,
+        "R-NOTRAIL|backtest|opposing-sentence": {
+          "n_with": 120,
+          "n_without": 25,
+          "remaining_median_pts": -108.1,
+          "without_hold_median_pts": -18.1,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 53,
+          "post_arming_n": 67,
           "early_remaining_median": -112.4,
-          "post_arming_remaining_median": -127.1,
-          "counterfactual_actual_minus_exit_median": -110.88
+          "post_arming_remaining_median": -99.1,
+          "counterfactual_actual_minus_exit_median": -108.85
         },
         "R-NOTRAIL|backtest|trend-flip": {
           "n_with": 143,
@@ -1069,17 +1789,17 @@
           "post_arming_remaining_median": 0.0,
           "counterfactual_actual_minus_exit_median": -11.93
         },
-        "R-OP2|backtest|opposing-fire": {
-          "n_with": 474,
-          "n_without": 454,
-          "remaining_median_pts": -5.85,
-          "without_hold_median_pts": -15.46,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 448,
-          "post_arming_n": 26,
-          "early_remaining_median": -5.8,
-          "post_arming_remaining_median": -12.5,
-          "counterfactual_actual_minus_exit_median": -9.33
+        "R-OP2|backtest|opposing-sentence": {
+          "n_with": 222,
+          "n_without": 706,
+          "remaining_median_pts": -9.45,
+          "without_hold_median_pts": -13.36,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 208,
+          "post_arming_n": 14,
+          "early_remaining_median": -8.3,
+          "post_arming_remaining_median": -27.0,
+          "counterfactual_actual_minus_exit_median": -13.13
         },
         "R-OP2|backtest|trend-flip": {
           "n_with": 269,
@@ -1117,17 +1837,17 @@
           "post_arming_remaining_median": -4.8,
           "counterfactual_actual_minus_exit_median": -3.96
         },
-        "R-ARM15|forward|opposing-fire": {
-          "n_with": 248,
-          "n_without": 15,
-          "remaining_median_pts": -7.5,
-          "without_hold_median_pts": -15.8,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 191,
-          "post_arming_n": 57,
-          "early_remaining_median": -6.2,
-          "post_arming_remaining_median": -11.5,
-          "counterfactual_actual_minus_exit_median": -9.48
+        "R-ARM15|forward|opposing-sentence": {
+          "n_with": 185,
+          "n_without": 78,
+          "remaining_median_pts": -8.3,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 103,
+          "post_arming_n": 82,
+          "early_remaining_median": -7.4,
+          "post_arming_remaining_median": -10.6,
+          "counterfactual_actual_minus_exit_median": -12.27
         },
         "R-ARM15|forward|trend-flip": {
           "n_with": 245,
@@ -1165,17 +1885,17 @@
           "post_arming_remaining_median": -13.5,
           "counterfactual_actual_minus_exit_median": -12.71
         },
-        "R-BE|forward|opposing-fire": {
-          "n_with": 195,
-          "n_without": 9,
-          "remaining_median_pts": -11.7,
+        "R-BE|forward|opposing-sentence": {
+          "n_with": 162,
+          "n_without": 42,
+          "remaining_median_pts": -19.3,
           "without_hold_median_pts": -1.8,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 151,
-          "post_arming_n": 44,
-          "early_remaining_median": -6.6,
-          "post_arming_remaining_median": -29.4,
-          "counterfactual_actual_minus_exit_median": -11.7
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 86,
+          "post_arming_n": 76,
+          "early_remaining_median": -15.5,
+          "post_arming_remaining_median": -20.5,
+          "counterfactual_actual_minus_exit_median": -20.5
         },
         "R-BE|forward|trend-flip": {
           "n_with": 191,
@@ -1188,6 +1908,150 @@
           "early_remaining_median": -3.85,
           "post_arming_remaining_median": -38.6,
           "counterfactual_actual_minus_exit_median": -6.1
+        },
+        "R-NEXIT-EARLY|forward|opposing-effort": {
+          "n_with": 179,
+          "n_without": 742,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.2,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 153,
+          "post_arming_n": 26,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -3.6,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|forward|absorption-against": {
+          "n_with": 180,
+          "n_without": 741,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.1,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 157,
+          "post_arming_n": 23,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -7.3,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|forward|opposing-sentence": {
+          "n_with": 127,
+          "n_without": 794,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.8,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 103,
+          "post_arming_n": 24,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -7.95,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-EARLY|forward|trend-flip": {
+          "n_with": 174,
+          "n_without": 747,
+          "remaining_median_pts": -1.5,
+          "without_hold_median_pts": -1.7,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 148,
+          "post_arming_n": 26,
+          "early_remaining_median": -1.4,
+          "post_arming_remaining_median": -29.25,
+          "counterfactual_actual_minus_exit_median": -3.51
+        },
+        "R-NEXIT-FULL|forward|opposing-effort": {
+          "n_with": 175,
+          "n_without": 812,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.6,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 159,
+          "post_arming_n": 16,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|forward|absorption-against": {
+          "n_with": 179,
+          "n_without": 808,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.5,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 166,
+          "post_arming_n": 13,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|forward|opposing-sentence": {
+          "n_with": 113,
+          "n_without": 874,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.5,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 108,
+          "post_arming_n": 5,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-FULL|forward|trend-flip": {
+          "n_with": 183,
+          "n_without": 804,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.45,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 172,
+          "post_arming_n": 11,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -5.4,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|forward|opposing-effort": {
+          "n_with": 361,
+          "n_without": 210,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 5.5,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 297,
+          "post_arming_n": 64,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.8,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|forward|absorption-against": {
+          "n_with": 331,
+          "n_without": 240,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 1.8,
+          "floor_remaining_median_pts": -5.0,
+          "early_n": 284,
+          "post_arming_n": 47,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -0.9,
+          "counterfactual_actual_minus_exit_median": -1.8
+        },
+        "R-NEXIT-SENT|forward|opposing-sentence": {
+          "n_with": 384,
+          "n_without": 187,
+          "remaining_median_pts": 0.3,
+          "without_hold_median_pts": -2.9,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 267,
+          "post_arming_n": 117,
+          "early_remaining_median": 0.1,
+          "post_arming_remaining_median": 0.3,
+          "counterfactual_actual_minus_exit_median": -1.5
+        },
+        "R-NEXIT-SENT|forward|trend-flip": {
+          "n_with": 319,
+          "n_without": 252,
+          "remaining_median_pts": -0.6,
+          "without_hold_median_pts": 1.35,
+          "floor_remaining_median_pts": -3.9,
+          "early_n": 285,
+          "post_arming_n": 34,
+          "early_remaining_median": -0.4,
+          "post_arming_remaining_median": -0.8,
+          "counterfactual_actual_minus_exit_median": -2.1
         },
         "R-NOTRAIL|forward|opposing-effort": {
           "n_with": 131,
@@ -1213,17 +2077,17 @@
           "post_arming_remaining_median": -25.0,
           "counterfactual_actual_minus_exit_median": -58.55
         },
-        "R-NOTRAIL|forward|opposing-fire": {
-          "n_with": 146,
-          "n_without": 8,
-          "remaining_median_pts": -51.7,
-          "without_hold_median_pts": -9.0,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 106,
-          "post_arming_n": 40,
-          "early_remaining_median": -46.5,
-          "post_arming_remaining_median": -60.0,
-          "counterfactual_actual_minus_exit_median": -58.2
+        "R-NOTRAIL|forward|opposing-sentence": {
+          "n_with": 129,
+          "n_without": 25,
+          "remaining_median_pts": -40.8,
+          "without_hold_median_pts": -61.55,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 55,
+          "post_arming_n": 74,
+          "early_remaining_median": -40.5,
+          "post_arming_remaining_median": -61.25,
+          "counterfactual_actual_minus_exit_median": -47.96
         },
         "R-NOTRAIL|forward|trend-flip": {
           "n_with": 146,
@@ -1261,17 +2125,17 @@
           "post_arming_remaining_median": -2.3,
           "counterfactual_actual_minus_exit_median": -7.93
         },
-        "R-OP2|forward|opposing-fire": {
-          "n_with": 409,
-          "n_without": 484,
-          "remaining_median_pts": -5.1,
-          "without_hold_median_pts": -9.75,
-          "floor_remaining_median_pts": -3.1,
-          "early_n": 380,
-          "post_arming_n": 29,
-          "early_remaining_median": -4.95,
-          "post_arming_remaining_median": -8.5,
-          "counterfactual_actual_minus_exit_median": -6.34
+        "R-OP2|forward|opposing-sentence": {
+          "n_with": 184,
+          "n_without": 709,
+          "remaining_median_pts": -6.25,
+          "without_hold_median_pts": -8.02,
+          "floor_remaining_median_pts": -6.2,
+          "early_n": 167,
+          "post_arming_n": 17,
+          "early_remaining_median": -6.9,
+          "post_arming_remaining_median": -3.0,
+          "counterfactual_actual_minus_exit_median": -7.75
         },
         "R-OP2|forward|trend-flip": {
           "n_with": 257,
@@ -1300,9 +2164,9 @@
           "floor_median_pts": -8.0,
           "both_legs_clear": null
         },
-        "backtest|opposing-fire": {
-          "n": 192,
-          "median_pts": -14.73,
+        "backtest|opposing-sentence": {
+          "n": 96,
+          "median_pts": -16.62,
           "floor_median_pts": -8.0,
           "both_legs_clear": null
         },
@@ -1324,9 +2188,9 @@
           "floor_median_pts": -8.0,
           "both_legs_clear": null
         },
-        "forward|opposing-fire": {
-          "n": 172,
-          "median_pts": -7.0,
+        "forward|opposing-sentence": {
+          "n": 74,
+          "median_pts": -7.54,
           "floor_median_pts": -8.0,
           "both_legs_clear": null
         },
@@ -1367,17 +2231,17 @@
           "post_arming_remaining_median": -3.0,
           "counterfactual_actual_minus_exit_median": -2.63
         },
-        "R-ARM15|backtest|opposing-fire": {
-          "n_with": 263,
-          "n_without": 17,
-          "remaining_median_pts": -2.0,
-          "without_hold_median_pts": 8.9,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 220,
-          "post_arming_n": 43,
-          "early_remaining_median": -0.75,
-          "post_arming_remaining_median": -5.0,
-          "counterfactual_actual_minus_exit_median": 0.22
+        "R-ARM15|backtest|opposing-sentence": {
+          "n_with": 191,
+          "n_without": 89,
+          "remaining_median_pts": 8.5,
+          "without_hold_median_pts": -16.7,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 119,
+          "post_arming_n": 72,
+          "early_remaining_median": 10.5,
+          "post_arming_remaining_median": -32.0,
+          "counterfactual_actual_minus_exit_median": 6.9
         },
         "R-ARM15|backtest|trend-flip": {
           "n_with": 269,
@@ -1415,17 +2279,17 @@
           "post_arming_remaining_median": -57.0,
           "counterfactual_actual_minus_exit_median": -34.93
         },
-        "R-BE|backtest|opposing-fire": {
-          "n_with": 200,
-          "n_without": 14,
-          "remaining_median_pts": -25.0,
+        "R-BE|backtest|opposing-sentence": {
+          "n_with": 155,
+          "n_without": 59,
+          "remaining_median_pts": -50.5,
           "without_hold_median_pts": -2.6,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 166,
-          "post_arming_n": 34,
-          "early_remaining_median": -16.95,
-          "post_arming_remaining_median": -45.25,
-          "counterfactual_actual_minus_exit_median": -25.55
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 90,
+          "post_arming_n": 65,
+          "early_remaining_median": -5.75,
+          "post_arming_remaining_median": -65.0,
+          "counterfactual_actual_minus_exit_median": -41.1
         },
         "R-BE|backtest|trend-flip": {
           "n_with": 206,
@@ -1438,6 +2302,150 @@
           "early_remaining_median": -25.0,
           "post_arming_remaining_median": -5.0,
           "counterfactual_actual_minus_exit_median": -26.6
+        },
+        "R-NEXIT-EARLY|backtest|opposing-effort": {
+          "n_with": 225,
+          "n_without": 884,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.1,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 198,
+          "post_arming_n": 27,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|backtest|absorption-against": {
+          "n_with": 243,
+          "n_without": 866,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 220,
+          "post_arming_n": 23,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -1.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|backtest|opposing-sentence": {
+          "n_with": 109,
+          "n_without": 1000,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 92,
+          "post_arming_n": 17,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -46.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|backtest|trend-flip": {
+          "n_with": 206,
+          "n_without": 903,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 173,
+          "post_arming_n": 33,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|backtest|opposing-effort": {
+          "n_with": 224,
+          "n_without": 940,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.1,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 207,
+          "post_arming_n": 17,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|backtest|absorption-against": {
+          "n_with": 242,
+          "n_without": 922,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 229,
+          "post_arming_n": 13,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 2.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|backtest|opposing-sentence": {
+          "n_with": 95,
+          "n_without": 1069,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 94,
+          "post_arming_n": 1,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -34.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|backtest|trend-flip": {
+          "n_with": 217,
+          "n_without": 947,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 193,
+          "post_arming_n": 24,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|backtest|opposing-effort": {
+          "n_with": 428,
+          "n_without": 239,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -0.1,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 380,
+          "post_arming_n": 48,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|backtest|absorption-against": {
+          "n_with": 383,
+          "n_without": 284,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -1.35,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 344,
+          "post_arming_n": 39,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 33.5,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|backtest|opposing-sentence": {
+          "n_with": 471,
+          "n_without": 196,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 328,
+          "post_arming_n": 143,
+          "early_remaining_median": 0.5,
+          "post_arming_remaining_median": -2.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|backtest|trend-flip": {
+          "n_with": 365,
+          "n_without": 302,
+          "remaining_median_pts": 2.5,
+          "without_hold_median_pts": -2.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 320,
+          "post_arming_n": 45,
+          "early_remaining_median": 0.5,
+          "post_arming_remaining_median": 18.5,
+          "counterfactual_actual_minus_exit_median": -2.1
         },
         "R-NOTRAIL|backtest|opposing-effort": {
           "n_with": 143,
@@ -1463,17 +2471,17 @@
           "post_arming_remaining_median": -75.5,
           "counterfactual_actual_minus_exit_median": -108.49
         },
-        "R-NOTRAIL|backtest|opposing-fire": {
-          "n_with": 165,
-          "n_without": 12,
-          "remaining_median_pts": -90.0,
-          "without_hold_median_pts": -12.35,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 132,
-          "post_arming_n": 33,
-          "early_remaining_median": -88.25,
-          "post_arming_remaining_median": -121.0,
-          "counterfactual_actual_minus_exit_median": -93.8
+        "R-NOTRAIL|backtest|opposing-sentence": {
+          "n_with": 130,
+          "n_without": 47,
+          "remaining_median_pts": -88.75,
+          "without_hold_median_pts": -91.26,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 69,
+          "post_arming_n": 61,
+          "early_remaining_median": -52.5,
+          "post_arming_remaining_median": -102.0,
+          "counterfactual_actual_minus_exit_median": -94.72
         },
         "R-NOTRAIL|backtest|trend-flip": {
           "n_with": 167,
@@ -1511,17 +2519,17 @@
           "post_arming_remaining_median": -11.45,
           "counterfactual_actual_minus_exit_median": -9.51
         },
-        "R-OP2|backtest|opposing-fire": {
-          "n_with": 503,
-          "n_without": 493,
-          "remaining_median_pts": -4.0,
-          "without_hold_median_pts": -13.88,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 458,
-          "post_arming_n": 45,
-          "early_remaining_median": -4.0,
-          "post_arming_remaining_median": -2.0,
-          "counterfactual_actual_minus_exit_median": -8.15
+        "R-OP2|backtest|opposing-sentence": {
+          "n_with": 210,
+          "n_without": 786,
+          "remaining_median_pts": -3.0,
+          "without_hold_median_pts": -11.82,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 194,
+          "post_arming_n": 16,
+          "early_remaining_median": -3.0,
+          "post_arming_remaining_median": -9.0,
+          "counterfactual_actual_minus_exit_median": -8.8
         },
         "R-OP2|backtest|trend-flip": {
           "n_with": 318,
@@ -1559,17 +2567,17 @@
           "post_arming_remaining_median": -21.0,
           "counterfactual_actual_minus_exit_median": -18.77
         },
-        "R-ARM15|forward|opposing-fire": {
-          "n_with": 242,
-          "n_without": 12,
-          "remaining_median_pts": -18.5,
-          "without_hold_median_pts": -13.6,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 192,
-          "post_arming_n": 50,
-          "early_remaining_median": -15.75,
-          "post_arming_remaining_median": -26.0,
-          "counterfactual_actual_minus_exit_median": -19.82
+        "R-ARM15|forward|opposing-sentence": {
+          "n_with": 189,
+          "n_without": 65,
+          "remaining_median_pts": -14.5,
+          "without_hold_median_pts": -32.87,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 105,
+          "post_arming_n": 84,
+          "early_remaining_median": -14.5,
+          "post_arming_remaining_median": -14.5,
+          "counterfactual_actual_minus_exit_median": -15.54
         },
         "R-ARM15|forward|trend-flip": {
           "n_with": 238,
@@ -1607,17 +2615,17 @@
           "post_arming_remaining_median": -29.0,
           "counterfactual_actual_minus_exit_median": -15.35
         },
-        "R-BE|forward|opposing-fire": {
-          "n_with": 212,
-          "n_without": 7,
-          "remaining_median_pts": -12.0,
-          "without_hold_median_pts": -2.6,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 171,
-          "post_arming_n": 41,
-          "early_remaining_median": -8.0,
-          "post_arming_remaining_median": -25.0,
-          "counterfactual_actual_minus_exit_median": -12.35
+        "R-BE|forward|opposing-sentence": {
+          "n_with": 169,
+          "n_without": 50,
+          "remaining_median_pts": -15.6,
+          "without_hold_median_pts": -15.35,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 100,
+          "post_arming_n": 69,
+          "early_remaining_median": -11.25,
+          "post_arming_remaining_median": -25.5,
+          "counterfactual_actual_minus_exit_median": -17.1
         },
         "R-BE|forward|trend-flip": {
           "n_with": 204,
@@ -1630,6 +2638,150 @@
           "early_remaining_median": -5.75,
           "post_arming_remaining_median": -22.25,
           "counterfactual_actual_minus_exit_median": -12.6
+        },
+        "R-NEXIT-EARLY|forward|opposing-effort": {
+          "n_with": 193,
+          "n_without": 895,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.1,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 174,
+          "post_arming_n": 19,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -10.4,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|forward|absorption-against": {
+          "n_with": 288,
+          "n_without": 800,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -4.1,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 260,
+          "post_arming_n": 28,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 7.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|forward|opposing-sentence": {
+          "n_with": 115,
+          "n_without": 973,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -4.1,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 95,
+          "post_arming_n": 20,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -11.7,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-EARLY|forward|trend-flip": {
+          "n_with": 149,
+          "n_without": 939,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 120,
+          "post_arming_n": 29,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.5,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|forward|opposing-effort": {
+          "n_with": 189,
+          "n_without": 954,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -2.85,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 181,
+          "post_arming_n": 8,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 0.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|forward|absorption-against": {
+          "n_with": 295,
+          "n_without": 848,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 277,
+          "post_arming_n": 18,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 3.25,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|forward|opposing-sentence": {
+          "n_with": 102,
+          "n_without": 1041,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 99,
+          "post_arming_n": 3,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 1.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-FULL|forward|trend-flip": {
+          "n_with": 150,
+          "n_without": 993,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -3.6,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 134,
+          "post_arming_n": 16,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -12.5,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|forward|opposing-effort": {
+          "n_with": 442,
+          "n_without": 224,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": 1.65,
+          "floor_remaining_median_pts": 0.0,
+          "early_n": 392,
+          "post_arming_n": 50,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -8.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|forward|absorption-against": {
+          "n_with": 469,
+          "n_without": 197,
+          "remaining_median_pts": 0.0,
+          "without_hold_median_pts": -5.6,
+          "floor_remaining_median_pts": -4.5,
+          "early_n": 421,
+          "post_arming_n": 48,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": -5.0,
+          "counterfactual_actual_minus_exit_median": -2.6
+        },
+        "R-NEXIT-SENT|forward|opposing-sentence": {
+          "n_with": 488,
+          "n_without": 178,
+          "remaining_median_pts": 0.5,
+          "without_hold_median_pts": -8.15,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 333,
+          "post_arming_n": 155,
+          "early_remaining_median": 0.0,
+          "post_arming_remaining_median": 1.5,
+          "counterfactual_actual_minus_exit_median": -2.1
+        },
+        "R-NEXIT-SENT|forward|trend-flip": {
+          "n_with": 361,
+          "n_without": 305,
+          "remaining_median_pts": -1.5,
+          "without_hold_median_pts": -0.6,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 317,
+          "post_arming_n": 44,
+          "early_remaining_median": -0.5,
+          "post_arming_remaining_median": -7.55,
+          "counterfactual_actual_minus_exit_median": -4.1
         },
         "R-NOTRAIL|forward|opposing-effort": {
           "n_with": 142,
@@ -1655,17 +2807,17 @@
           "post_arming_remaining_median": -58.0,
           "counterfactual_actual_minus_exit_median": -41.76
         },
-        "R-NOTRAIL|forward|opposing-fire": {
-          "n_with": 152,
-          "n_without": 5,
-          "remaining_median_pts": -33.5,
-          "without_hold_median_pts": 22.4,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 121,
-          "post_arming_n": 31,
+        "R-NOTRAIL|forward|opposing-sentence": {
+          "n_with": 126,
+          "n_without": 31,
+          "remaining_median_pts": -34.75,
+          "without_hold_median_pts": -48.69,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 69,
+          "post_arming_n": 57,
           "early_remaining_median": -28.5,
-          "post_arming_remaining_median": -54.5,
-          "counterfactual_actual_minus_exit_median": -37.91
+          "post_arming_remaining_median": -43.0,
+          "counterfactual_actual_minus_exit_median": -40.96
         },
         "R-NOTRAIL|forward|trend-flip": {
           "n_with": 150,
@@ -1703,17 +2855,17 @@
           "post_arming_remaining_median": -14.5,
           "counterfactual_actual_minus_exit_median": -7.11
         },
-        "R-OP2|forward|opposing-fire": {
-          "n_with": 459,
-          "n_without": 520,
-          "remaining_median_pts": -3.0,
-          "without_hold_median_pts": -8.76,
-          "floor_remaining_median_pts": -3.0,
-          "early_n": 428,
-          "post_arming_n": 31,
-          "early_remaining_median": -3.0,
+        "R-OP2|forward|opposing-sentence": {
+          "n_with": 227,
+          "n_without": 752,
+          "remaining_median_pts": -4.5,
+          "without_hold_median_pts": -8.02,
+          "floor_remaining_median_pts": -4.0,
+          "early_n": 206,
+          "post_arming_n": 21,
+          "early_remaining_median": -4.5,
           "post_arming_remaining_median": 0.0,
-          "counterfactual_actual_minus_exit_median": -6.56
+          "counterfactual_actual_minus_exit_median": -7.58
         },
         "R-OP2|forward|trend-flip": {
           "n_with": 255,
@@ -1742,9 +2894,9 @@
           "floor_median_pts": -7.65,
           "both_legs_clear": null
         },
-        "backtest|opposing-fire": {
-          "n": 208,
-          "median_pts": -9.87,
+        "backtest|opposing-sentence": {
+          "n": 84,
+          "median_pts": -12.59,
           "floor_median_pts": -7.65,
           "both_legs_clear": null
         },
@@ -1766,9 +2918,9 @@
           "floor_median_pts": -7.65,
           "both_legs_clear": null
         },
-        "forward|opposing-fire": {
-          "n": 194,
-          "median_pts": -6.72,
+        "forward|opposing-sentence": {
+          "n": 86,
+          "median_pts": -4.29,
           "floor_median_pts": -7.65,
           "both_legs_clear": null
         },

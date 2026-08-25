@@ -74,9 +74,26 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.5"
+RECIPE_SET_VERSION = "recipe_set_v0.6"
 RECIPE_SETS = {
-    "recipe_set_v0.5": {
+    "recipe_set_v0.6": {
+        # R-NEXIT-SENT (register 82; counted): EXITS ARE SENTENCES, NOT
+        # ATOMS — ARM15 base mechanics; exit ONLY on a minted composite
+        # sentence firing against the position (COMPOSITE_SENTENCES —
+        # future graded sentences join automatically); FULL-HOLD scope
+        # (the census's post-arming texture). The atoms-vs-sentences
+        # head-to-head (vs R-NEXIT-FULL) is the narrative doctrine's
+        # exit-layer test.
+        "R-NEXIT-SENT": {
+            "provenance": "register 82 (counted; operator diagnosis: "
+                          "exits are sentences)",
+            "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
+                        "exit_on": [("opposing_sentence_fire",)],
+                        "until": ("progress_atr", 1.0, "15min")},
+                       {"stop": [("atr", 2.5, "15min"),
+                                 ("trail_nth", 1, ("atr", 1.0, "15min"),
+                                  "15min")], "target": None,
+                        "exit_on": [("opposing_sentence_fire",)]}]},
         # --- narrative-exit variants (register 81; front door, counted,
         # forward-graded). Base mechanics = R-ARM15 (the register-80
         # concentration observation). Exit trigger = any opposing
@@ -88,8 +105,10 @@ RECIPE_SETS = {
         # remains the deeper instrument; its maturity read supersedes
         # on conflict.
         "R-NEXIT-EARLY": {
-            "provenance": "register 81 (counted); exits PRE-ARMING only "
-                          "(the flip-gate lesson)",
+            "provenance": "register 81 (counted); RE-LABELED register "
+                          "82: the ATOMIC-TRIGGER control, pre-arming "
+                          "scope — atoms saturate (21,076 narrative "
+                          "exits in the first 6-variant journal)",
             "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
                         "exit_on": [("opposing_effort",),
                                     ("absorption_event",),
@@ -99,8 +118,10 @@ RECIPE_SETS = {
                                  ("trail_nth", 1, ("atr", 1.0, "15min"),
                                   "15min")], "target": None}]},
         "R-NEXIT-FULL": {
-            "provenance": "register 81 (counted); exits ANY TIME in the "
-                          "hold (the in-trade census texture)",
+            "provenance": "register 81 (counted); RE-LABELED register "
+                          "82: the ATOMIC-TRIGGER control, full-hold "
+                          "scope — R-NEXIT-SENT vs this row is the "
+                          "atoms-vs-sentences head-to-head",
             "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
                         "exit_on": [("opposing_effort",),
                                     ("absorption_event",),

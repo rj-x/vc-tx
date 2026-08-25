@@ -47,8 +47,9 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
-from engine.signal_watch import (AGNOSTIC_ROWS, H6_PROX_ATR_FRAC,
-                                 H17_SEQUEL_WINDOW, SignalWatch)
+from engine.signal_watch import (AGNOSTIC_ROWS, COMPOSITE_SENTENCES,
+                                 H6_PROX_ATR_FRAC, H17_SEQUEL_WINDOW,
+                                 SignalWatch)
 from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from engine.store_loader import is_sealed
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
@@ -65,7 +66,9 @@ SENTENCES = (f"S0-H{17}", f"S0-H{18}", f"S0-H{19}")
 TAGS = ("with_trend", "new_hh", "new_hl", "new_lh", "new_ll",
         "retest_level")
 VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL",
-            "R-NEXIT-EARLY", "R-NEXIT-FULL")   # register 81
+            "R-NEXIT-EARLY", "R-NEXIT-FULL",   # register 81 (atomic
+                                               # controls, register 82)
+            "R-NEXIT-SENT")                    # register 82 (sentences)
 REFIRE_DEDUP_BARS = H17_SEQUEL_WINDOW   # derivation: the sequel window
 GRADES_CSV = os.path.join(ROOT, "reports", "management_grades.csv")
 
@@ -183,6 +186,8 @@ def run_instrument(instr):
     all_fire_events = sorted(
         (f["ts"].value + 60_000_000_000, int(f["dir"]), f["name"])
         for f in fires)
+    sentence_events = [(t, d) for t, d, n_ in all_fire_events
+                       if n_ in COMPOSITE_SENTENCES]
     grade_pts = {}          # (variant, name) -> list of (pts, atr, week)
     for variant in VARIANTS:
         recipe = rset[variant]
@@ -190,6 +195,8 @@ def run_instrument(instr):
             nf = [f for f in fires if f["name"] == name]
             env.narr["opposing_signal_fire"] = [
                 (t, d) for t, d, n_ in all_fire_events if n_ != name]
+            env.narr["opposing_sentence_fire"] = [
+                (t, d) for t, d in sentence_events]
             for t in simulate(nf, env, recipe, spread):
                 fire_ts = pd.Timestamp(t["fire_ts"])
                 tg = tags.map.get(fire_ts.value, {})
@@ -229,6 +236,7 @@ def run_instrument(instr):
     floor_sessions = {}     # (variant, bname, session) -> member med PTS
     env.narr["opposing_signal_fire"] = [
         (t, d) for t, d, _n in all_fire_events]
+    env.narr["opposing_sentence_fire"] = list(sentence_events)
     for variant in VARIANTS:
         recipe = rset[variant]
         for bname, members in base_members.items():

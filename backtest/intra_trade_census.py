@@ -9,7 +9,9 @@ events during the hold using the survey vocabulary (register 73):
   opposing-effort   — wide-loud bar closing against the trade;
   absorption-against— absorption-class bar (S0-H3 signature,
                       narrow-loud, TEST) during the hold;
-  opposing-fire     — any registered signal firing opposite the trade;
+  opposing-sentence — a MINTED COMPOSITE sentence firing opposite the
+                      trade (register 82 amendment: composites only;
+                      atoms stay in their own classes);
   trend-flip        — 1M phase flip (either direction; continuity).
 First event of each class per trade recorded; a trade may carry
 several classes (classes are analysis splits, not a partition).
@@ -46,7 +48,7 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
-from engine.signal_watch import SignalWatch
+from engine.signal_watch import COMPOSITE_SENTENCES, SignalWatch
 from engine.store_loader import lockbox_boundary, zones
 from backtest.conditioning_matrix import quadrant_of
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
@@ -59,8 +61,11 @@ from backtest.narrative_survey import _SurveyRecorder
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
 
+# register 82 amendment: the opposing-SENTENCE class means MINTED
+# COMPOSITES ONLY (atoms stay in their own classes) — the sentence-
+# warning's information content prints apart from the atomic noise
 EVENT_CLASSES = ("opposing-effort", "absorption-against",
-                 "opposing-fire", "trend-flip")
+                 "opposing-sentence", "trend-flip")
 # arming split: the RATIFIED R-FLIPGUARD transition, cited (register 46)
 ARM_PROGRESS_ATR = 1.0
 ARM_AGE_MIN = 45
@@ -104,6 +109,8 @@ def build_arrays(instr):
         engine.narrative.events, cfg, bars, instr=instr)
     fire_dir_by_bar = {}
     for f in all_fires:
+        if f["name"] not in COMPOSITE_SENTENCES:
+            continue                        # register 82: sentences only
         j = int(np.searchsorted(ts, f["ts"].value, side="right") - 1)
         fire_dir_by_bar.setdefault(j, set()).add(int(f["dir"]))
     h3_bars = {int(np.searchsorted(ts, f["ts"].value, side="right") - 1)
@@ -139,9 +146,9 @@ def classify_hold(A, i_entry, i_exit, d, entry, atr0):
                 j in A["h3"] or A["quad"][j] == "narrow-loud"
                 or A["test"][j]):
             firsts["absorption-against"] = j
-        if "opposing-fire" not in firsts \
+        if "opposing-sentence" not in firsts \
                 and -d in A["fires_by_bar"].get(j, set()):
-            firsts["opposing-fire"] = j
+            firsts["opposing-sentence"] = j
         if "trend-flip" not in firsts and A["flips"][j]:
             firsts["trend-flip"] = j
     return firsts, arm_bar
