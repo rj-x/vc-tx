@@ -144,9 +144,12 @@ def build_instrument(instr):
                          "EFFORTLESS_DECLINE": -1}.get(
                             getm(t, (None,) * 4)[2], 0) for t in ts])
     t15_map = {}
+    t1_map = {}
     for e in engine.narrative.events:
         if e["type"] == "PHASE_EVAL" and e.get("tf") == "15min":
             t15_map[pd.Timestamp(e["ts"]).value] = e.get("trend", 0)
+        elif e["type"] == "PHASE_EVAL" and e.get("tf") == "1min":
+            t1_map[pd.Timestamp(e["ts"]).value] = e.get("trend", 0)
     keys = np.array(sorted(t15_map))
     vals = np.array([t15_map[k] for k in sorted(t15_map)] or [0])
     idx = np.searchsorted(keys, ts, side="right") - 1
@@ -161,9 +164,11 @@ def build_instrument(instr):
             (f["ts"].value, int(f["dir"])))
     for v in undeduped.values():
         v.sort()
+    t1 = np.array([t1_map.get(t, 0) for t in ts])
     return {"env": env, "ts": ts, "o": env.o, "h": env.h, "l": env.l,
             "c": env.c, "eod": env.eod, "loud": loud,
-            "eff_dir": eff_dir, "t15": np.sign(t15).astype(int),
+            "eff_dir": eff_dir, "t1": t1,
+            "t15": np.sign(t15).astype(int),
             "undeduped": undeduped, "spread": _spread_median(instr),
             "engine_events": engine.narrative.events, "cfg": cfg}
 

@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL capture study \u2014 scoped policies expected, none adopted; front-door-only outcomes; never validation",
-  "engine_commit": "5629bb101f3faea139abe05eaa3b9b508a2902b7",
+  "engine_commit": "87709dd4ab9db5c0c1ce0736af11247b8cab2ca3",
   "policies": [
     "BE@0.25",
     "BE@0.5",
@@ -5564,63 +5564,63 @@
       "floors": {
         "BE@0.25": {
           "members": 20,
-          "median": 271.6,
-          "min": -577.1,
-          "max": 637.5
+          "median": 372.6,
+          "min": -19.7,
+          "max": 805.1
         },
         "BE@0.5": {
           "members": 20,
-          "median": 230.2,
-          "min": -476.0,
-          "max": 745.7
+          "median": 299.4,
+          "min": -150.0,
+          "max": 725.4
         },
         "BE@1": {
           "members": 20,
-          "median": 150.6,
-          "min": -410.4,
-          "max": 585.7
+          "median": 221.4,
+          "min": -318.9,
+          "max": 578.4
         },
         "BE@1.5": {
           "members": 20,
-          "median": 89.5,
-          "min": -367.7,
-          "max": 386.2
+          "median": 93.2,
+          "min": -329.8,
+          "max": 516.6
         },
         "TRAIL-0.5-0.5": {
           "members": 20,
-          "median": 327.1,
-          "min": -444.5,
-          "max": 939.9
+          "median": 433.6,
+          "min": 15.1,
+          "max": 850.8
         },
         "TRAIL-0.5-1": {
           "members": 20,
-          "median": 330.8,
-          "min": -518.9,
-          "max": 942.4
+          "median": 405.4,
+          "min": -124.0,
+          "max": 854.6
         },
         "TRAIL-1-0.5": {
           "members": 20,
-          "median": 463.9,
-          "min": -193.4,
-          "max": 931.5
+          "median": 498.3,
+          "min": 45.0,
+          "max": 1002.1
         },
         "TRAIL-1-1": {
           "members": 20,
-          "median": 373.1,
-          "min": -169.9,
-          "max": 882.6
+          "median": 499.9,
+          "min": -3.8,
+          "max": 867.5
         },
         "RATCHET-1.0-1.0": {
           "members": 20,
-          "median": 373.1,
-          "min": -169.9,
-          "max": 882.6
+          "median": 499.9,
+          "min": -3.8,
+          "max": 867.5
         },
         "RATCHET-1.0-0.5": {
           "members": 20,
-          "median": 463.9,
-          "min": -193.4,
-          "max": 931.5
+          "median": 498.3,
+          "min": 45.0,
+          "max": 1002.1
         }
       },
       "luck_budget": {
@@ -5628,6 +5628,142 @@
         "null_median": 0.0,
         "null_p95": 0.0,
         "percentile_vs_null": 0.0
+      },
+      "regime_split": {
+        "ranging-day": {
+          "BE@0.25": {
+            "n": 55,
+            "net_delta": 41.2,
+            "median_kept_pts": -1.3
+          },
+          "BE@0.5": {
+            "n": 55,
+            "net_delta": 0.2,
+            "median_kept_pts": -1.3
+          },
+          "BE@1": {
+            "n": 55,
+            "net_delta": -115.2,
+            "median_kept_pts": -1.3
+          },
+          "BE@1.5": {
+            "n": 55,
+            "net_delta": -158.2,
+            "median_kept_pts": -1.3
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 55,
+            "net_delta": 209.9,
+            "median_kept_pts": 1.47
+          },
+          "TRAIL-0.5-1": {
+            "n": 55,
+            "net_delta": 198.5,
+            "median_kept_pts": -1.29
+          },
+          "TRAIL-1-0.5": {
+            "n": 55,
+            "net_delta": 94.1,
+            "median_kept_pts": 3.21
+          },
+          "TRAIL-1-1": {
+            "n": 55,
+            "net_delta": 91.3,
+            "median_kept_pts": 0.91
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 55,
+            "net_delta": 91.3,
+            "median_kept_pts": 0.91
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 55,
+            "net_delta": 94.1,
+            "median_kept_pts": 3.21
+          }
+        },
+        "trending-day": {
+          "BE@0.25": {
+            "n": 442,
+            "net_delta": 1953.7,
+            "median_kept_pts": -1.3
+          },
+          "BE@0.5": {
+            "n": 442,
+            "net_delta": 1632.7,
+            "median_kept_pts": -1.3
+          },
+          "BE@1": {
+            "n": 442,
+            "net_delta": 1142.6,
+            "median_kept_pts": -1.3
+          },
+          "BE@1.5": {
+            "n": 442,
+            "net_delta": 1292.9,
+            "median_kept_pts": -1.3
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 442,
+            "net_delta": 2683.3,
+            "median_kept_pts": 1.66
+          },
+          "TRAIL-0.5-1": {
+            "n": 442,
+            "net_delta": 2372.3,
+            "median_kept_pts": -1.29
+          },
+          "TRAIL-1-0.5": {
+            "n": 442,
+            "net_delta": 2522.6,
+            "median_kept_pts": 7.34
+          },
+          "TRAIL-1-1": {
+            "n": 442,
+            "net_delta": 2347.4,
+            "median_kept_pts": 2.89
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 442,
+            "net_delta": 2347.4,
+            "median_kept_pts": 2.89
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 442,
+            "net_delta": 2522.6,
+            "median_kept_pts": 7.34
+          }
+        }
+      },
+      "never_again": {
+        "BE@0.25": {
+          "rung_atr": 0.25,
+          "qualifies": true,
+          "winners_amputated": 130,
+          "amputation_pts_total": 6167.7,
+          "amputation_pts_per_100_trades": 1241.0
+        },
+        "BE@0.5": {
+          "rung_atr": 0.5,
+          "qualifies": true,
+          "winners_amputated": 109,
+          "amputation_pts_total": 5424.1,
+          "amputation_pts_per_100_trades": 1091.4
+        },
+        "BE@1": {
+          "rung_atr": 1.0,
+          "qualifies": true,
+          "winners_amputated": 78,
+          "amputation_pts_total": 3966.8,
+          "amputation_pts_per_100_trades": 798.1
+        },
+        "BE@1.5": {
+          "rung_atr": 1.5,
+          "qualifies": false,
+          "winners_amputated": 61,
+          "amputation_pts_total": 2953.5,
+          "amputation_pts_per_100_trades": 594.3
+        }
       }
     },
     "ger40fut": {
@@ -10559,6 +10695,142 @@
         "null_median": 0.0,
         "null_p95": 0.0,
         "percentile_vs_null": 0.0
+      },
+      "regime_split": {
+        "ranging-day": {
+          "BE@0.25": {
+            "n": 5,
+            "net_delta": 122.4,
+            "median_kept_pts": -1.5
+          },
+          "BE@0.5": {
+            "n": 5,
+            "net_delta": 122.4,
+            "median_kept_pts": -1.5
+          },
+          "BE@1": {
+            "n": 5,
+            "net_delta": 122.4,
+            "median_kept_pts": -1.5
+          },
+          "BE@1.5": {
+            "n": 5,
+            "net_delta": 122.4,
+            "median_kept_pts": -1.5
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 5,
+            "net_delta": 218.3,
+            "median_kept_pts": 13.45
+          },
+          "TRAIL-0.5-1": {
+            "n": 5,
+            "net_delta": 193.8,
+            "median_kept_pts": 7.1
+          },
+          "TRAIL-1-0.5": {
+            "n": 5,
+            "net_delta": 218.3,
+            "median_kept_pts": 13.45
+          },
+          "TRAIL-1-1": {
+            "n": 5,
+            "net_delta": 193.8,
+            "median_kept_pts": 7.1
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 5,
+            "net_delta": 193.8,
+            "median_kept_pts": 7.1
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 5,
+            "net_delta": 218.3,
+            "median_kept_pts": 13.45
+          }
+        },
+        "trending-day": {
+          "BE@0.25": {
+            "n": 350,
+            "net_delta": 784.0,
+            "median_kept_pts": -1.5
+          },
+          "BE@0.5": {
+            "n": 350,
+            "net_delta": 817.9,
+            "median_kept_pts": -1.5
+          },
+          "BE@1": {
+            "n": 350,
+            "net_delta": 515.4,
+            "median_kept_pts": -1.5
+          },
+          "BE@1.5": {
+            "n": 350,
+            "net_delta": 103.7,
+            "median_kept_pts": -1.5
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 350,
+            "net_delta": 1655.6,
+            "median_kept_pts": 4.82
+          },
+          "TRAIL-0.5-1": {
+            "n": 350,
+            "net_delta": 2014.8,
+            "median_kept_pts": -1.23
+          },
+          "TRAIL-1-0.5": {
+            "n": 350,
+            "net_delta": 3261.4,
+            "median_kept_pts": 18.66
+          },
+          "TRAIL-1-1": {
+            "n": 350,
+            "net_delta": 2621.0,
+            "median_kept_pts": 8.6
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 350,
+            "net_delta": 2621.0,
+            "median_kept_pts": 8.6
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 350,
+            "net_delta": 3261.4,
+            "median_kept_pts": 18.66
+          }
+        }
+      },
+      "never_again": {
+        "BE@0.25": {
+          "rung_atr": 0.25,
+          "qualifies": true,
+          "winners_amputated": 116,
+          "amputation_pts_total": 10992.1,
+          "amputation_pts_per_100_trades": 3096.4
+        },
+        "BE@0.5": {
+          "rung_atr": 0.5,
+          "qualifies": true,
+          "winners_amputated": 103,
+          "amputation_pts_total": 9593.7,
+          "amputation_pts_per_100_trades": 2702.5
+        },
+        "BE@1": {
+          "rung_atr": 1.0,
+          "qualifies": true,
+          "winners_amputated": 86,
+          "amputation_pts_total": 7720.9,
+          "amputation_pts_per_100_trades": 2174.9
+        },
+        "BE@1.5": {
+          "rung_atr": 1.5,
+          "qualifies": false,
+          "winners_amputated": 62,
+          "amputation_pts_total": 5737.1,
+          "amputation_pts_per_100_trades": 1616.1
+        }
       }
     },
     "nas100fut": {
@@ -15889,6 +16161,142 @@
         "null_median": 0.0,
         "null_p95": 0.0,
         "percentile_vs_null": 0.0
+      },
+      "regime_split": {
+        "ranging-day": {
+          "BE@0.25": {
+            "n": 6,
+            "net_delta": 1053.9,
+            "median_kept_pts": -1.8
+          },
+          "BE@0.5": {
+            "n": 6,
+            "net_delta": 1053.9,
+            "median_kept_pts": -1.8
+          },
+          "BE@1": {
+            "n": 6,
+            "net_delta": 1053.9,
+            "median_kept_pts": -1.8
+          },
+          "BE@1.5": {
+            "n": 6,
+            "net_delta": 895.8,
+            "median_kept_pts": -1.8
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 6,
+            "net_delta": 1182.7,
+            "median_kept_pts": 12.02
+          },
+          "TRAIL-0.5-1": {
+            "n": 6,
+            "net_delta": 1082.7,
+            "median_kept_pts": 9.32
+          },
+          "TRAIL-1-0.5": {
+            "n": 6,
+            "net_delta": 1358.4,
+            "median_kept_pts": 48.07
+          },
+          "TRAIL-1-1": {
+            "n": 6,
+            "net_delta": 1147.6,
+            "median_kept_pts": 14.18
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 6,
+            "net_delta": 1147.6,
+            "median_kept_pts": 14.18
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 6,
+            "net_delta": 1358.4,
+            "median_kept_pts": 48.07
+          }
+        },
+        "trending-day": {
+          "BE@0.25": {
+            "n": 349,
+            "net_delta": -5999.8,
+            "median_kept_pts": -1.8
+          },
+          "BE@0.5": {
+            "n": 349,
+            "net_delta": -5923.1,
+            "median_kept_pts": -1.8
+          },
+          "BE@1": {
+            "n": 349,
+            "net_delta": -3878.8,
+            "median_kept_pts": -1.8
+          },
+          "BE@1.5": {
+            "n": 349,
+            "net_delta": -191.2,
+            "median_kept_pts": -1.8
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 349,
+            "net_delta": -2502.6,
+            "median_kept_pts": 13.5
+          },
+          "TRAIL-0.5-1": {
+            "n": 349,
+            "net_delta": -1660.2,
+            "median_kept_pts": 5.58
+          },
+          "TRAIL-1-0.5": {
+            "n": 349,
+            "net_delta": -2342.4,
+            "median_kept_pts": 30.99
+          },
+          "TRAIL-1-1": {
+            "n": 349,
+            "net_delta": -2258.4,
+            "median_kept_pts": 17.36
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 349,
+            "net_delta": -2258.4,
+            "median_kept_pts": 17.36
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 349,
+            "net_delta": -2342.4,
+            "median_kept_pts": 30.99
+          }
+        }
+      },
+      "never_again": {
+        "BE@0.25": {
+          "rung_atr": 0.25,
+          "qualifies": true,
+          "winners_amputated": 114,
+          "amputation_pts_total": 27637.4,
+          "amputation_pts_per_100_trades": 7785.2
+        },
+        "BE@0.5": {
+          "rung_atr": 0.5,
+          "qualifies": true,
+          "winners_amputated": 99,
+          "amputation_pts_total": 25684.5,
+          "amputation_pts_per_100_trades": 7235.1
+        },
+        "BE@1": {
+          "rung_atr": 1.0,
+          "qualifies": true,
+          "winners_amputated": 76,
+          "amputation_pts_total": 18723.7,
+          "amputation_pts_per_100_trades": 5274.3
+        },
+        "BE@1.5": {
+          "rung_atr": 1.5,
+          "qualifies": false,
+          "winners_amputated": 56,
+          "amputation_pts_total": 11687.2,
+          "amputation_pts_per_100_trades": 3292.2
+        }
       }
     },
     "us30fut": {
@@ -21276,6 +21684,142 @@
         "null_median": 0.0,
         "null_p95": 0.0,
         "percentile_vs_null": 0.0
+      },
+      "regime_split": {
+        "ranging-day": {
+          "BE@0.25": {
+            "n": 8,
+            "net_delta": -908.9,
+            "median_kept_pts": -2.6
+          },
+          "BE@0.5": {
+            "n": 8,
+            "net_delta": 157.4,
+            "median_kept_pts": -2.6
+          },
+          "BE@1": {
+            "n": 8,
+            "net_delta": 0.0,
+            "median_kept_pts": 51.16
+          },
+          "BE@1.5": {
+            "n": 8,
+            "net_delta": 0.0,
+            "median_kept_pts": 51.16
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 8,
+            "net_delta": -777.6,
+            "median_kept_pts": 14.47
+          },
+          "TRAIL-0.5-1": {
+            "n": 8,
+            "net_delta": -729.8,
+            "median_kept_pts": 19.84
+          },
+          "TRAIL-1-0.5": {
+            "n": 8,
+            "net_delta": -1338.1,
+            "median_kept_pts": -64.84
+          },
+          "TRAIL-1-1": {
+            "n": 8,
+            "net_delta": -1332.2,
+            "median_kept_pts": -54.68
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 8,
+            "net_delta": -1332.2,
+            "median_kept_pts": -54.68
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 8,
+            "net_delta": -1338.1,
+            "median_kept_pts": -64.84
+          }
+        },
+        "trending-day": {
+          "BE@0.25": {
+            "n": 386,
+            "net_delta": -9945.2,
+            "median_kept_pts": -2.6
+          },
+          "BE@0.5": {
+            "n": 386,
+            "net_delta": -9192.4,
+            "median_kept_pts": -2.6
+          },
+          "BE@1": {
+            "n": 386,
+            "net_delta": -2537.3,
+            "median_kept_pts": -2.6
+          },
+          "BE@1.5": {
+            "n": 386,
+            "net_delta": -3625.2,
+            "median_kept_pts": -2.6
+          },
+          "TRAIL-0.5-0.5": {
+            "n": 386,
+            "net_delta": -9147.2,
+            "median_kept_pts": 8.02
+          },
+          "TRAIL-0.5-1": {
+            "n": 386,
+            "net_delta": -9464.5,
+            "median_kept_pts": -0.52
+          },
+          "TRAIL-1-0.5": {
+            "n": 386,
+            "net_delta": -8065.8,
+            "median_kept_pts": 23.7
+          },
+          "TRAIL-1-1": {
+            "n": 386,
+            "net_delta": -7985.3,
+            "median_kept_pts": 8.45
+          },
+          "RATCHET-1.0-1.0": {
+            "n": 386,
+            "net_delta": -7985.3,
+            "median_kept_pts": 8.45
+          },
+          "RATCHET-1.0-0.5": {
+            "n": 386,
+            "net_delta": -8065.8,
+            "median_kept_pts": 23.7
+          }
+        }
+      },
+      "never_again": {
+        "BE@0.25": {
+          "rung_atr": 0.25,
+          "qualifies": true,
+          "winners_amputated": 108,
+          "amputation_pts_total": 33246.3,
+          "amputation_pts_per_100_trades": 8438.1
+        },
+        "BE@0.5": {
+          "rung_atr": 0.5,
+          "qualifies": true,
+          "winners_amputated": 91,
+          "amputation_pts_total": 28055.0,
+          "amputation_pts_per_100_trades": 7120.6
+        },
+        "BE@1": {
+          "rung_atr": 1.0,
+          "qualifies": true,
+          "winners_amputated": 59,
+          "amputation_pts_total": 17477.9,
+          "amputation_pts_per_100_trades": 4436.0
+        },
+        "BE@1.5": {
+          "rung_atr": 1.5,
+          "qualifies": false,
+          "winners_amputated": 46,
+          "amputation_pts_total": 14870.1,
+          "amputation_pts_per_100_trades": 3774.1
+        }
       }
     }
   }

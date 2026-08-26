@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 88 (freshness-checked by the weekly
+table.** Register-current-through: 89 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -79,7 +79,7 @@ authoritative.
 | management ladder v2 + narrative exits (7 variants) | GRADING (registers 77/80/81/82; ARM15 concentration field-significant; R-NEXIT-SENT vs R-NEXIT-FULL = the atoms-vs-sentences exit-layer test; EARLY/FULL relabeled atomic controls) |
 | journal field survey | BUILT 2026-08-25 (register 80; concentration null + session floors; survivors listed, not minted; weekly Part C) |
 | Q1-H19 (S0-H19 x R-ARM15 x London) | GRADED: NO (the sitting 2026-08-28, register 88 — the register's first grade; fwd London pooled -16.84 median n=38; row accrues unchanged) |
-| Q2-H11 (ger40fut S0-H11 x R-NEXIT-EARLY x London) | testable-now (register 88; >=30 further fwd London trades from mint; clock on the dashboard; mechanism sentence operator-reword-or-strike pending) |
+| Q2-H11 (ger40fut S0-H11 x R-NEXIT-EARLY x London) | testable-now (register 88; >=30 further fwd London trades from mint; clock on the dashboard; mechanism REWORDED by operator ruling, register 89 — prediction/clock/conditions unchanged) |
 | capture study (protection ladder x tape-character) | testable-now (register 88 item 4; weekly under Part C; scoped policies expected, front-door outcomes only) |
 | account mode (bankroll lens) | Restructured 2026-08-27 (register 86: per-strategy isolated accounts, reports/account_curves/ + _LEADERBOARD.csv, blended stream retired/archived; curves born ex-lockbox per register 85; NEVER evidence; leverage/maintenance/minis still flagged operator-unverified) |
 | weekly runbook | WRITTEN 2026-08-25 (register 81; docs/runbook_weekly.md) |

@@ -68,6 +68,78 @@ POLICIES = tuple(
        ("RATCHET-1.0-0.5", "RATCHET", 1.0, 0.5)])
 GAP_MIN_PTS = 5.0        # differentiation threshold — implementer-
                          # proposed at prereg, FLAGGED
+NEVER_AGAIN_BOUND_ATR = 1.0   # register 89 item 1: the operator's
+                              # never-again bound (no trade exceeds
+                              # +1.0xATR MFE unprotected)
+
+
+def day_regimes(A):
+    """Register 89 item 1 (AMENDMENT_capture_regime_neveragain): a
+    trade's UTC day classified by the MAJORITY 1M phase-tracker state
+    over that day's bars — the conditioning-matrix trending/ranging
+    reduction; majority is the parameter-free reduction (the 'day'
+    interpretation, stated, operator-correctable). No new thresholds."""
+    days = pd.DatetimeIndex(pd.to_datetime(A["ts"], utc=True)).date
+    trending = A["t1"] != 0
+    out = {}
+    df = pd.DataFrame({"day": days, "tr": trending})
+    for day, g in df.groupby("day"):
+        out[day] = "trending-day" if g["tr"].mean() > 0.5 \
+            else "ranging-day"
+    return out
+
+
+def regime_split(base, spread, regimes, A):
+    """Per policy x regime: n, net delta, median kept. Descriptive,
+    counts adjacent (the generalize-vs-geography test's input)."""
+    ts = A["ts"]
+    out = {}
+    for t in base:
+        day = pd.Timestamp(ts[t["ei"]], tz="UTC").date()
+        reg = regimes.get(day, "ranging-day")
+        out.setdefault(reg, []).append(t)
+    res = {}
+    for reg, ts_ in sorted(out.items()):
+        per = {}
+        for p in POLICIES:
+            cf = [protect_outcome(t, spread, p) for t in ts_]
+            per[p[0]] = {
+                "n": len(ts_),
+                "net_delta": round(float(sum(
+                    c - t["pts"] for c, t in zip(cf, ts_))), 1),
+                "median_kept_pts": round(float(np.median(cf)), 2)}
+        res[reg] = per
+    return res
+
+
+def never_again_pricing(base, spread):
+    """Register 89 item 1: per BE rung, the amputation cost (forfeited
+    points on would-be winners) per 100 base trades of guaranteeing no
+    trade exceeds +NEVER_AGAIN_BOUND_ATR MFE unprotected. Rungs above
+    the bound do not guarantee it (printed NON-QUALIFYING). The
+    guarantee holds up to the register-87 single-bar span exception
+    (arming and stop in one bar), restated."""
+    out = {}
+    n = len(base)
+    for p in POLICIES:
+        if p[1] != "BE":
+            continue
+        rung = p[2]
+        amput = 0.0
+        n_amput = 0
+        for t in base:
+            cf = protect_outcome(t, spread, p)
+            if cf != t["pts"] and t["pts"] > cf:
+                amput += t["pts"] - cf
+                n_amput += 1
+        out[p[0]] = {
+            "rung_atr": rung,
+            "qualifies": rung <= NEVER_AGAIN_BOUND_ATR,
+            "winners_amputated": n_amput,
+            "amputation_pts_total": round(amput, 1),
+            "amputation_pts_per_100_trades": (round(100 * amput / n, 1)
+                                              if n else None)}
+    return out
 
 
 def protect_outcome(t, spread, policy):
@@ -237,7 +309,10 @@ def main():
                     protect_outcome(t, A["spread"], p) - t["pts"]
                     for t in base)), 1) for p in POLICIES},
             "floors": policy_floors(A),
-            "luck_budget": diff_statistic(base, A["spread"])}
+            "luck_budget": diff_statistic(base, A["spread"]),
+            "regime_split": regime_split(base, A["spread"],
+                                         day_regimes(A), A),
+            "never_again": never_again_pricing(base, A["spread"])}
     with open(os.path.join(OUT, "capture_study.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)
@@ -282,6 +357,36 @@ def _emit(art, head):
             fb = res["floors"][pname]
             L.append(f"| {pname} | {net} | {fb['median']} "
                      f"({fb['min']}..{fb['max']}) |")
+        L += ["", "### Regime split (register 89 item 1: trending-day "
+              "vs ranging-day, majority 1M phase state per UTC day; "
+              "the generalize-vs-geography test — if trails clear on "
+              "trending days regardless of continent, the scope "
+              "generalizes)", "",
+              "| regime | n | best policy | best net delta | BE@0.25 "
+              "net delta |", "|---|---|---|---|---|"]
+        for reg, per in sorted(res["regime_split"].items()):
+            best = max(per, key=lambda k: per[k]["net_delta"])
+            n_ = per[best]["n"]
+            dim = "°" if n_ < MIN_CELL_N else ""
+            L.append(f"| {reg} | {dim}{n_} | {best} "
+                     f"| {per[best]['net_delta']} "
+                     f"| {per['BE@0.25']['net_delta']} |")
+        L += ["", "### NEVER-AGAIN pricing (register 89 item 1: the "
+              f"cost of guaranteeing no trade exceeds "
+              f"+{NEVER_AGAIN_BOUND_ATR:g}xATR MFE unprotected — a "
+              "risk-rule pricing, separable from the edge question, "
+              "enactable by operator fiat once priced; guarantee "
+              "holds up to the register-87 single-bar span "
+              "exception)", "",
+              "| rung | qualifies | winners amputated | amputation "
+              "pts | per 100 trades |", "|---|---|---|---|---|"]
+        for name, d_ in sorted(res["never_again"].items(),
+                               key=lambda x: x[1]["rung_atr"]):
+            q = ("YES" if d_["qualifies"]
+                 else "NO (above the bound)")
+            L.append(f"| {name} | {q} | {d_['winners_amputated']} "
+                     f"| {d_['amputation_pts_total']} "
+                     f"| {d_['amputation_pts_per_100_trades']} |")
         L += ["", "### Best policy per cell (measurable cells; full "
               "grid in the JSON)", "",
               "| family | session | tape | n | best policy | best "

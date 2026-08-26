@@ -263,10 +263,11 @@ def generate():
           "(promote/deprioritize numbers, ±2pp band, session scoping, "
           "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
           "history).",
-          "- Reads: R2 experiment verdict (r2_experiment.md) · matrix "
-          "survivors · Q2-H11 mechanism wording (operator may reword "
-          "or strike — struck sends the cell to WATCH) · the co-fire "
-          "consistency re-read (next sitting).",
+          "- Reads: matrix survivors · the co-fire consistency "
+          "re-read (next sitting; stands as emitted — thinness "
+          "census, accrual decides). R2 re-verified post-rule-5 "
+          "(register 89) and Q2-H11's mechanism reworded by operator "
+          "ruling — both closed.",
           "- Open operator items: thin-tape probe (optional calendar); "
           "broker verifications (leverage/maintenance/minis).",
           ""]

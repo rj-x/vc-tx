@@ -5,7 +5,8 @@ import json
 
 import numpy as np
 
-from backtest.capture_study import (POLICIES, cell_grid,
+from backtest.capture_study import (NEVER_AGAIN_BOUND_ATR, POLICIES,
+                                    cell_grid, never_again_pricing,
                                     protect_outcome, tape_class)
 from backtest.underwater_census import trajectory
 
@@ -42,6 +43,19 @@ def test_tape_classes():
     assert tape_class(_trade([99, 101], 1.0)["traj"]) == "quiet-dip"
     assert tape_class(_trade([99, 101], 1.0,
                              loud=[True, False])["traj"]) == "loud-dip"
+
+
+def test_never_again_pricing_qualifies_and_costs():
+    # winner 100->103->100.4 amputated by BE@0.5 (kept -1 vs +2.4-ish
+    # actual); rung 1.5 marked non-qualifying vs the 1.0 bound
+    ts_ = [_trade([100.0, 103.0, 100.4], 2.4)] * 4
+    na = never_again_pricing(ts_, 1.0)
+    assert na["BE@0.5"]["qualifies"] is True
+    assert na["BE@1.5"]["qualifies"] is False
+    assert na["BE@0.5"]["winners_amputated"] == 4
+    assert na["BE@0.5"]["amputation_pts_per_100_trades"] == round(
+        100 * 4 * (2.4 - -1.0) / 4, 1)
+    assert NEVER_AGAIN_BOUND_ATR == 1.0
 
 
 def test_cell_grid_twin_run():

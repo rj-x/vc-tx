@@ -387,11 +387,15 @@ entry is a separate decision.
     R-NEXIT-EARLY × London cell RETAINS POSITIVE NET and floor
     clearance at ≥30 FURTHER forward London trades (accrual from
     mint). Founding cell verified at mint: forward net +158.6 pts,
-    n=43, median +1.5. MECHANISM SENTENCE (operator-accepted;
-    operator may reword or strike — if struck, the cell goes to
-    WATCH): map-events fire most meaningfully in ger40's home
-    session, and story-exits protect young trades where the
-    four-window calendar chops holds. PROVENANCE: two-lens
+    n=43, median +1.5. MECHANISM SENTENCE (operator ruling
+    2026-08-28, register 89 — REWORDED to the minimum the data
+    supports; prediction, clock, and conditions unchanged): "H11
+    map-events carry their edge in ger40's home session, where
+    story-exits protect young trades." [Superseded original, kept
+    per the append-only convention: map-events fire most
+    meaningfully in ger40's home session, and story-exits protect
+    young trades where the four-window calendar chops holds.]
+    PROVENANCE: two-lens
     convergence (register-84 separator survivors + net-ledger
     forward-positive top cell); post-hoc discovery discounts apply.
     Census conventions; ex-lockbox (register 85); NO recipe until
