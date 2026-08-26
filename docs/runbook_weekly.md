@@ -38,8 +38,9 @@ venv/bin/python -m backtest.campaign
   dims), gap census, narrative survey, **trades.csv /
   weekly_summary.csv / management_grades.csv** (the trade layer),
   the in-trade census, the **journal field survey**, VWAP census,
-  drift census, excursion geometry — then the parameter registry and
-  **reports/DASHBOARD.md**.
+  drift census, excursion geometry, **trade forensics**
+  (trades_enriched.csv + reports/forensics/) — then the parameter
+  registry and **reports/DASHBOARD.md**.
 - **Header-only refreshes:** artifacts whose *templates* changed since
   their last emission print the new headers only when their module
   re-runs — everything in Part C refreshes weekly, so after this step
@@ -63,7 +64,12 @@ venv/bin/python -m backtest.campaign
    working files for operator cuts (`management_grades.csv` is the
    quotability gate: no variant's net without its floor line;
    `journal_survey.md` prices the cuts' luck).
-5. Drill-downs on warrant: the conditioning matrix, the narrative
+5. **`reports/forensics/`** (+ `reports/trades_enriched.csv`) — the
+   trade-forensics deliverable (register 84): per-market
+   winner/loser separators with their luck budgets, exit-efficiency,
+   winner-MAE, the WATCH list, cross-market synthesis. Candidates
+   only — reserved for the operator+reviewer sitting.
+6. Drill-downs on warrant: the conditioning matrix, the narrative
    survey, the in-trade census, gap census, bar persistence.
 
 ## Step 4 — freshness checks (30 seconds)

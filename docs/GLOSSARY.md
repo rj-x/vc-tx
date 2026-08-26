@@ -109,6 +109,8 @@ first uses them, or the commit doesn't pass.
 - **scoreboard** — the per-instrument signal grading artifact (hypothesis_performance.md).
 - **census** — a pre-registered observational sweep over a dimension (VWAP, drift, location, co-fire, conditioning).
 - **conditioning matrix** — the census splitting every signal's fires by market state; the grading instrument for the open questions.
+- **trade forensics** — the journal deep-review layer (register 84): reports/trades_enriched.csv (mechanical per-trade entry/path/outcome context) + reports/forensics/ (winner/loser separators vs a permutation null, exit-efficiency and winner-MAE design inputs, WATCH list, cross-market synthesis). Candidate-generation only — no gate, filter, or recipe change without its own Q-number.
+- **WATCH list** — forensics cells too thin to measure but bright enough to track; each carries its n-to-measurable (rows still needed before it can be read).
 - **co-fire** — two signals from different families firing in the same window.
 - **organ / sense organ** — a planned market-structure instrument (volume profile, velocity/efficiency) feeding future signals.
 - **backlog** — docs/backlog_status.md: one status line per idea so nothing silently stalls.

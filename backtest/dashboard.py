@@ -316,6 +316,13 @@ def generate():
           "the journal's own luck (register 80) — its survivors are "
           "question candidates, listed not minted. Tags post-hoc "
           "exploratory.",
+          "- **`reports/forensics/` + `reports/trades_enriched.csv`** — "
+          "trade forensics (register 84): per-market winner/loser "
+          "separators vs a permutation null, exit-efficiency and "
+          "winner-MAE design inputs, WATCH list, cross-market "
+          "synthesis. Candidate-generation only — read at the "
+          "operator+reviewer sitting; questions through the front "
+          "door.",
           "- `reports/backtest_v1.md` — the evidential pipeline + Part C "
           "index. The weekly 5-minute read.",
           "- `docs/backlog_status.md` — is everything moving. Glance "
