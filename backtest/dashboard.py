@@ -232,10 +232,10 @@ def generate():
         return 0
     q_lines = [
         ("Q1-H1", "≥30 post-validation fwd episodes/instrument — "
-         "nas100 VALIDATED 2026-08-25 (reg 40 amdt): clock LIVE from "
-         "the next sync's forward episodes; ger40/us30 still gated"),
-        (f"Q1-H{7}", "same gate as Q1-H1 — nas100 clock LIVE; "
-         "ger40/us30 gated"),
+         "nas100 + ger40 VALIDATED (reg 40 amdts 08-25/08-26): both "
+         "clocks LIVE from the next sync; us30 still gated"),
+        (f"Q1-H{7}", "same gate as Q1-H1 — nas100/ger40 clocks LIVE; "
+         "us30 gated"),
         ("Q1-H11", f"≥30 fwd Overlap fires (home accrued: "
          f"{_sess_fires('uk100fut', 'S0-H11', 'overlap')})"),
         (f"Q2-H{9}", "≥30 fwd NY-session fires on nas100 — VALIDATED "

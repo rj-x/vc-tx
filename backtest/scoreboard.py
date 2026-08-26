@@ -108,10 +108,10 @@ MOVE_WINDOW_MIN = 60           # registry: qualifying_move window clause
 # The future leg carries each pair's scoreboard (the uk100->uk100fut
 # convention: the leg with real futures volume).
 CANONICAL_INSTR = "uk100fut"
-# nas100fut VALIDATED 2026-08-25 (register 40 amendment: feed contract
-# measured, volume provenance real, native boundaries measured, store
-# verify green) — removed from the provisional set
-PROVISIONAL_INSTRS = ("ger40fut", "us30fut")
+# nas100fut VALIDATED 2026-08-25, ger40fut VALIDATED 2026-08-26
+# (register 40 amendments: feed contract measured, volume provenance
+# real, native boundaries measured, store verify green)
+PROVISIONAL_INSTRS = ("us30fut",)
 PAIR_OF = {"uk100fut": "uk100", "ger40fut": "ger40",
            "nas100fut": "nas100", "us30fut": "us30"}
 _R40_VOL = ("real futures volume (register 40 first-sync sanity; canonical "
