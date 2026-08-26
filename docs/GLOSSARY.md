@@ -124,7 +124,10 @@ first uses them, or the commit doesn't pass.
 - **DST** — daylight saving time; session logic is tested against its transitions.
 - **FTSE / DAX / NASDAQ / NQ** — the UK, German, and US indices behind uk100, ger40, nas100 (NQ = the CME NASDAQ-100 future, the volume-plausibility reference); US30 tracks the Dow.
 - **UK / US / GB / NY** — United Kingdom / United States / Great Britain / New York.
-- **GBP / USD / EURUSD** — pound sterling / US dollar / the euro-dollar currency pair.
+- **GBP / USD / EURUSD** — pound sterling / US dollar / the euro-dollar currency pair (amounts like GBP0.5 / GBP1 / GBP25 read "£0.5" etc.).
+- **bankroll** — the account balance the lens simulates; a bankroll lens reports affordability, never evidence (register 83).
+- **D1** — the daily timeframe (one bar per day) — accepted by --exec-tf but refused until the ladder carries a daily rung.
+- **maxDD** — maximum drawdown: the deepest peak-to-trough fall of the balance curve.
 - **LSE** — London Stock Exchange.
 - **CFD** — contract for difference: the cash execution vehicle quoted with bid/ask.
 - **OTC** — over the counter (not exchange-traded).

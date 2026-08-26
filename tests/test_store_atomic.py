@@ -85,3 +85,18 @@ def test_report_json_atomic(tmp_path):
     import json
     assert json.load(open(path)) == {"a": 1}
     assert not os.path.exists(path + ".tmp")
+
+
+def test_period_scoping_env(tmp_path, monkeypatch):
+    """Register 83: VC_PERIOD_FROM/TO slice every frame at the one
+    choke point; unset -> full frame."""
+    import pandas as pd
+    from engine import store_loader as sl
+    full = sl.load_frame("uk100fut", "1min")
+    lo = full.index[len(full) // 3]
+    hi = full.index[2 * len(full) // 3]
+    monkeypatch.setenv("VC_PERIOD_FROM", str(lo))
+    monkeypatch.setenv("VC_PERIOD_TO", str(hi))
+    cut = sl.load_frame("uk100fut", "1min")
+    assert cut.index.min() >= lo and cut.index.max() <= hi
+    assert len(cut) < len(full)

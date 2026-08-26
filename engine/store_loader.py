@@ -108,6 +108,14 @@ def load_frame(slug, tf, root=None, lockbox_evaluation=False,
     if not os.path.exists(p):
         raise FileNotFoundError(f"no clean store for {slug}/{tf} - run store.py build")
     df = pd.read_csv(p, index_col=0, parse_dates=[0])
+    # register 83: --from/--to period scoping for ALL campaign modes —
+    # one choke point; zone/seal logic downstream is unchanged
+    _pf, _pt = os.environ.get("VC_PERIOD_FROM"), os.environ.get(
+        "VC_PERIOD_TO")
+    if _pf:
+        df = df[df.index >= pd.Timestamp(_pf, tz="UTC")]
+    if _pt:
+        df = df[df.index <= pd.Timestamp(_pt, tz="UTC")]
     boundary = lockbox_boundary(root)
     if lockbox_evaluation:
         log_fn(f"!! LOCKBOX ACCESS: {slug}/{tf} served INCLUDING data at/after "

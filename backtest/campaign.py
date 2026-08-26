@@ -571,4 +571,17 @@ def main(slugs=(SLUG, "uk100")):
 
 
 if __name__ == "__main__":
-    main()
+    import sys as _sys
+    # register 83: the account lens activates on --pot; --from/--to
+    # period-scope EVERY campaign mode via the loader choke point
+    if "--pot" in _sys.argv:
+        from backtest.account_mode import main as _acct
+        _acct(_sys.argv[1:])
+    else:
+        _argv = _sys.argv[1:]
+        for flag, env in (("--from", "VC_PERIOD_FROM"),
+                          ("--to", "VC_PERIOD_TO")):
+            if flag in _argv:
+                i = _argv.index(flag)
+                os.environ[env] = _argv[i + 1]
+        main()
