@@ -327,6 +327,12 @@ def generate():
           "83/86): per-strategy isolated accounts + `_LEADERBOARD.csv` "
           "with the B-RANDOM luck reference. Never evidence; runs on "
           "`--pot`.",
+          "- `underwater_census.md` + `thesis_campaign.md` — "
+          "loser-cutting and the operator's trading loop, measured "
+          "(register 87): survival curves, cut/BE ladders with "
+          "floors, re-entry on the undeduped stream, thesis-campaign "
+          "accounting vs random-thesis controls. Measurement before "
+          "machinery; candidates via the front door.",
           "- `reports/backtest_v1.md` — the evidential pipeline + Part C "
           "index. The weekly 5-minute read.",
           "- `docs/backlog_status.md` — is everything moving. Glance "

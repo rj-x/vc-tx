@@ -113,6 +113,9 @@ first uses them, or the commit doesn't pass.
 - **WATCH list** — forensics cells too thin to measure but bright enough to track; each carries its n-to-measurable (rows still needed before it can be read).
 - **NET LEDGER** — the forensics discovery table (register 84 amendment): cells ranked by pooled net points with mandatory working/lockbox/forward decomposition columns and a one-word forward verdict. Pooled net is candidate-generation only; no cell quotable without its forward column.
 - **leaderboard** — reports/account_curves/_LEADERBOARD.csv (register 86): one row per account curve sorted by end balance, B-RANDOM member curves as the luck reference. Leaderboard-top is best-of-field by construction — never quoted alone.
+- **VSA** — volume-spread analysis: reading each bar's volume against its range and result. The in-trade VSA question (register 87): a quiet dip is the story breathing, a loud dip is the story changing — graded by conditional win rates, never assumed.
+- **underwater census** — the loser-cutting measurement layer (register 87): per-trade underwater trajectories, path classes, survival curves, the cut-rule and breakeven ladders with baseline floors, and the re-entry read on the undeduped fire stream. Measurement before machinery; no cut rule without its own Q-number.
+- **thesis-campaign** — a maximal constant-direction narrative-state episode (register 87; v1 state = the 15M phase-tracker trend). Named to avoid colliding with the weekly campaign pipeline. The thesis-campaign study replays the journal under the operator's probe/BE/re-entry/backoff loop against mandatory random-thesis controls.
 - **co-fire** — two signals from different families firing in the same window.
 - **organ / sense organ** — a planned market-structure instrument (volume profile, velocity/efficiency) feeding future signals.
 - **backlog** — docs/backlog_status.md: one status line per idea so nothing silently stalls.

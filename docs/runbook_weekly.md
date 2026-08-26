@@ -39,8 +39,9 @@ venv/bin/python -m backtest.campaign
   weekly_summary.csv / management_grades.csv** (the trade layer),
   the in-trade census, the **journal field survey**, VWAP census,
   drift census, excursion geometry, **trade forensics**
-  (trades_enriched.csv + reports/forensics/) — then the parameter
-  registry and **reports/DASHBOARD.md**.
+  (trades_enriched.csv + reports/forensics/), the **underwater
+  census + thesis-campaign study** — then the parameter registry
+  and **reports/DASHBOARD.md**.
 - **Header-only refreshes:** artifacts whose *templates* changed since
   their last emission print the new headers only when their module
   re-runs — everything in Part C refreshes weekly, so after this step

@@ -527,8 +527,9 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",
                 "backtest.drift_census", "backtest.excursion_geometry",
-                "backtest.trade_forensics"):    # register 84 (after the
+                "backtest.trade_forensics",     # register 84 (after the
                                                 # journal survey)
+                "backtest.underwater_census"):  # register 87
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # register 75 standing rule: not-campaign-regenerated +
