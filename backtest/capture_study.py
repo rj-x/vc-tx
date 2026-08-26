@@ -89,17 +89,9 @@ def day_regimes(A):
     return out
 
 
-def regime_split(base, spread, regimes, A):
-    """Per policy x regime: n, net delta, median kept. Descriptive,
-    counts adjacent (the generalize-vs-geography test's input)."""
-    ts = A["ts"]
-    out = {}
-    for t in base:
-        day = pd.Timestamp(ts[t["ei"]], tz="UTC").date()
-        reg = regimes.get(day, "ranging-day")
-        out.setdefault(reg, []).append(t)
+def _policy_agg(groups, spread):
     res = {}
-    for reg, ts_ in sorted(out.items()):
+    for reg, ts_ in sorted(groups.items()):
         per = {}
         for p in POLICIES:
             cf = [protect_outcome(t, spread, p) for t in ts_]
@@ -110,6 +102,34 @@ def regime_split(base, spread, regimes, A):
                 "median_kept_pts": round(float(np.median(cf)), 2)}
         res[reg] = per
     return res
+
+
+def regime_split(base, spread, regimes, A):
+    """DAY-LEVEL regime cut — stands as the RECORDED FIRST ATTEMPT
+    (register 90 item 1) with its saturation finding: 98% of days
+    classify trending on three legs, no contrast available.
+    Superseded as the regime lens by phase_regime_split."""
+    ts = A["ts"]
+    out = {}
+    for t in base:
+        day = pd.Timestamp(ts[t["ei"]], tz="UTC").date()
+        out.setdefault(regimes.get(day, "ranging-day"), []).append(t)
+    return _policy_agg(out, spread)
+
+
+def phase_regime_split(base, spread, A):
+    """Register 90 item 1 (operator ruling, re-registered): regime =
+    PHASE-AT-ENTRY — trending/ranging by the 1M phase tracker at the
+    FIRE BAR (the enrichment column's convention; existing field, no
+    new thresholds). The question unchanged: do protection rules
+    scope by tape-character rather than by geography?"""
+    out = {}
+    for t in base:
+        fi = max(t["ei"] - 1, 0)
+        reg = ("trending-at-entry" if A["t1"][fi] != 0
+               else "ranging-at-entry")
+        out.setdefault(reg, []).append(t)
+    return _policy_agg(out, spread)
 
 
 def never_again_pricing(base, spread):
@@ -310,8 +330,10 @@ def main():
                     for t in base)), 1) for p in POLICIES},
             "floors": policy_floors(A),
             "luck_budget": diff_statistic(base, A["spread"]),
-            "regime_split": regime_split(base, A["spread"],
-                                         day_regimes(A), A),
+            "phase_regime_split": phase_regime_split(base, A["spread"],
+                                                     A),
+            "day_regime_split_first_attempt": regime_split(
+                base, A["spread"], day_regimes(A), A),
             "never_again": never_again_pricing(base, A["spread"])}
     with open(os.path.join(OUT, "capture_study.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
@@ -357,14 +379,30 @@ def _emit(art, head):
             fb = res["floors"][pname]
             L.append(f"| {pname} | {net} | {fb['median']} "
                      f"({fb['min']}..{fb['max']}) |")
-        L += ["", "### Regime split (register 89 item 1: trending-day "
-              "vs ranging-day, majority 1M phase state per UTC day; "
-              "the generalize-vs-geography test — if trails clear on "
-              "trending days regardless of continent, the scope "
+        L += ["", "### Regime split — PHASE-AT-ENTRY (register 90 "
+              "item 1, re-registered by operator ruling: the "
+              "enrichment convention, 1M phase at the fire bar; the "
+              "generalize-vs-geography test — if trails clear on "
+              "trending entries regardless of continent, the scope "
               "generalizes)", "",
               "| regime | n | best policy | best net delta | BE@0.25 "
               "net delta |", "|---|---|---|---|---|"]
-        for reg, per in sorted(res["regime_split"].items()):
+        for reg, per in sorted(res["phase_regime_split"].items()):
+            best = max(per, key=lambda k: per[k]["net_delta"])
+            n_ = per[best]["n"]
+            dim = "°" if n_ < MIN_CELL_N else ""
+            L.append(f"| {reg} | {dim}{n_} | {best} "
+                     f"| {per[best]['net_delta']} "
+                     f"| {per['BE@0.25']['net_delta']} |")
+        L += ["", "### Day-level regime cut — the RECORDED FIRST "
+              "ATTEMPT (register 89/90: saturation finding — 98% of "
+              "days classified trending on three legs, no contrast "
+              "available; stands as history, superseded as the "
+              "regime lens)", "",
+              "| regime | n | best policy | best net delta | BE@0.25 "
+              "net delta |", "|---|---|---|---|---|"]
+        for reg, per in sorted(
+                res["day_regime_split_first_attempt"].items()):
             best = max(per, key=lambda k: per[k]["net_delta"])
             n_ = per[best]["n"]
             dim = "°" if n_ < MIN_CELL_N else ""
@@ -374,10 +412,15 @@ def _emit(art, head):
         L += ["", "### NEVER-AGAIN pricing (register 89 item 1: the "
               f"cost of guaranteeing no trade exceeds "
               f"+{NEVER_AGAIN_BOUND_ATR:g}xATR MFE unprotected — a "
-              "risk-rule pricing, separable from the edge question, "
-              "enactable by operator fiat once priced; guarantee "
-              "holds up to the register-87 single-bar span "
-              "exception)", "",
+              "risk-rule pricing, separable from the edge question; "
+              "guarantee holds up to the register-87 single-bar span "
+              "exception). FIAT DEFERRED (register 90 item 2, "
+              "operator ruling: option c) — NOT ENACTED at any "
+              "scope; the per-cell grid may deliver the guarantee as "
+              "a byproduct of scoped policies; this table stands as "
+              "the decision's evidence base, revisit when cells "
+              "measure; the +216 class remains possible in the "
+              "interim — accepted, dated.", "",
               "| rung | qualifies | winners amputated | amputation "
               "pts | per 100 trades |", "|---|---|---|---|---|"]
         for name, d_ in sorted(res["never_again"].items(),

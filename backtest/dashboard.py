@@ -263,11 +263,13 @@ def generate():
           "(promote/deprioritize numbers, ±2pp band, session scoping, "
           "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
           "history).",
-          "- Reads: matrix survivors · the co-fire consistency "
-          "re-read (next sitting; stands as emitted — thinness "
-          "census, accrual decides). R2 re-verified post-rule-5 "
-          "(register 89) and Q2-H11's mechanism reworded by operator "
-          "ruling — both closed.",
+          "- **DECISION QUEUE EMPTY (register 90, 2026-08-28)** — all "
+          "clocks and studies accrue. Never-again fiat DEFERRED "
+          "(option c; pricing stands as the evidence base, revisit "
+          "when capture cells measure). Regime lens re-registered on "
+          "phase-at-entry (emits at the next capture run).",
+          "- Next-sitting reads: matrix survivors · the co-fire "
+          "consistency re-read (stands as emitted; accrual decides).",
           "- Open operator items: thin-tape probe (optional calendar); "
           "broker verifications (leverage/maintenance/minis).",
           ""]

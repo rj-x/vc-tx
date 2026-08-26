@@ -7,6 +7,7 @@ import numpy as np
 
 from backtest.capture_study import (NEVER_AGAIN_BOUND_ATR, POLICIES,
                                     cell_grid, never_again_pricing,
+                                    phase_regime_split,
                                     protect_outcome, tape_class)
 from backtest.underwater_census import trajectory
 
@@ -56,6 +57,18 @@ def test_never_again_pricing_qualifies_and_costs():
     assert na["BE@0.5"]["amputation_pts_per_100_trades"] == round(
         100 * 4 * (2.4 - -1.0) / 4, 1)
     assert NEVER_AGAIN_BOUND_ATR == 1.0
+
+
+def test_phase_regime_split_at_fire_bar():
+    # register 90: regime from the 1M phase at the FIRE BAR (ei-1)
+    ts_ = [dict(_trade([100, 101], 1.0), ei=5),
+           dict(_trade([100, 101], 1.0), ei=10)]
+    t1 = np.zeros(20, int)
+    t1[4] = 1                       # fire bar of the first trade only
+    res = phase_regime_split(ts_, 1.0, {"t1": t1})
+    assert set(res) == {"trending-at-entry", "ranging-at-entry"}
+    assert res["trending-at-entry"]["BE@0.25"]["n"] == 1
+    assert res["ranging-at-entry"]["BE@0.25"]["n"] == 1
 
 
 def test_cell_grid_twin_run():

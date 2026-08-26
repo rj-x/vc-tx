@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 89 (freshness-checked by the weekly
+table.** Register-current-through: 90 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -40,7 +40,7 @@ authoritative.
 
 | idea | status |
 |---|---|
-| co-fire census | RE-READ ORDERED (register 74-A5: the starved verdict is stale — 248 cells now at n≥15); next weekly sitting |
+| co-fire census | RE-READ EXECUTED 2026-08-28 (register 88 item 7: zero qualifying pairs — the with-stacks are the thin leg, 3 cells at n≥15; the sitting's 248 reconciled to total-n; accrual decides; dated artifact archive-bound after the next sitting) |
 | excursion profiles | testable-now (weekly; the v1 values input) |
 | flip cut | archived standing reference (register 44) |
 | aggregation-decay census | awaiting-build-T3b (gated behind it in the lab queue) |
