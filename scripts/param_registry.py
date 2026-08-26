@@ -110,6 +110,7 @@ AUTHORITY = {
     "underwater_census.py:FAMILY_OF": "register 87: full-coverage signal-family map extending the registered cofire/trend groupings — implementer-proposed at prereg, FLAGGED for operator ratification",
     "capture_study.py:POLICIES": "register 88 item 4: the pre-registered protection ladder (4 BE rungs + 4 TRAIL arm x distance + 2 RATCHET schedules) — prereg_capture_study, counted",
     "capture_study.py:GAP_MIN_PTS": "register 88 item 4: tape-differentiation threshold 5 pts/trade — implementer-proposed at prereg, FLAGGED",
+    "capture_study.py:NEVER_AGAIN_BOUND_ATR": "register 89 item 1: the operator's never-again bound (+1.0xATR MFE unprotected) — operator-stated in the order; a risk-rule pricing input, enactable by operator fiat once priced",
     "cofire_reread.py:CONS_MIN_CELLS": "register 73 consistency yardsticks reused (register 88 item 7, one emission)",
     "cofire_reread.py:CONS_MIN_N": "register 73 consistency yardsticks reused (register 88 item 7)",
     "cofire_reread.py:CONS_MIN_LIFT_PP": "register 73 consistency yardsticks reused (register 88 item 7)",
