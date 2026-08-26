@@ -107,6 +107,7 @@ AUTHORITY = {
     "underwater_census.py:SPLIT_MIN_PP": "register 87: qualifying gap 10pp — the register-84 convention reused",
     "underwater_census.py:NULL_SHUFFLES": "register 87: label-permutation null, 100 pinned seeds — the survey convention (register 73 clause 3 lineage)",
     "underwater_census.py:THESIS_SEEDS": "register 87: 20 random-thesis members, seeds range(60,80) — the B-RANDOM seed lineage, stated at prereg",
+    "underwater_census.py:FAMILY_OF": "register 87: full-coverage signal-family map extending the registered cofire/trend groupings — implementer-proposed at prereg, FLAGGED for operator ratification",
     "trade_forensics.py:MIN_SIDE_N": "register 84: each label side >=10 in a measurable cell — implementer-proposed at prereg, flagged",
     "trade_forensics.py:SPLIT_MIN_PP": "register 84: qualifying winner-loser split >=10pp — implementer-proposed at prereg, flagged",
     "trade_forensics.py:NULL_SHUFFLES": "register 84: win/loss label-permutation null, pinned seeds — the survey convention (register 73 clause 3 lineage)",
