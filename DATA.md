@@ -47,8 +47,8 @@ working directory.
 | `ger40fut` | 70088 | DAX Rolling Future | Pair future leg (register 40); **VALIDATED 2026-08-26**: real futures volume (quantum 1, cash/fut ratio 1.72, 0.0% zero-vol in-cash); FOUR recurring windows — main pause 20:59→22:02Z, nightly 23:59→00:15Z, evening micro-pauses 19:59→20:05Z (present from 2026-08-18, dated) and 20:14→20:30Z; Fri close 19:59Z; Sun reopen with JITTER (22:06Z/22:42Z observed, recorded not averaged) — these seed the instrument watchdog/session calendar |
 | `nas100` | 20190 | NASDAQ 100 cash CFD (slug renamed from `ustech100`, register 40 — stores git-mv'd, history intact) | Pair cash leg; **VALIDATED 2026-08-25** (register 40 amendment) |
 | `nas100fut` | 70433 | NASDAQ 100 Rolling Future | Pair future leg (register 40); **VALIDATED 2026-08-25**: real futures volume (quantum 1, cash/fut ratio 9.37, 0.0% zero-vol in-cash), pause 20:59→22:00Z, Fri close 20:29Z / Sun reopen 22:01Z |
-| `us30` | 17322 | Dow cash CFD | Pair cash leg (register 40); **validation pending** |
-| `us30fut` | 70153 | Dow Rolling Future | Pair future leg (register 40); **validation pending** |
+| `us30` | 17322 | Dow cash CFD | Pair cash leg; **VALIDATED 2026-08-26** (register 40 amendment) |
+| `us30fut` | 70153 | Dow Rolling Future | Pair future leg (register 40); **VALIDATED 2026-08-26**: real futures volume (quantum 1, cash/fut ratio 8.35, 0.0% zero-vol in-cash); CME calendar matching nas100 — pause 20:59→22:00Z, Fri close 20:29Z, Sun reopen 22:01Z |
 | `us500` | 67995 | S&P cash CFD | Collected, unused by strategy |
 | `gold` / `goldvar` | 68924 / 72302 | Gold (fixed / variable spread) | **Examined and PARKED (register 40, 2026-08-19): no rolling-future / real-volume feed visible at the provider** — revisitable by re-registration |
 | `eurusd` | 16635 | EURUSD | **Examined and PARKED (register 40): spot FX volume is synthetic; futures volume is a minority shadow of an OTC market** — revisitable by re-registration |

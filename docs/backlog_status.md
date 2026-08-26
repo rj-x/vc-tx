@@ -64,7 +64,7 @@ authoritative.
 | item 22 session-JSONL | awaiting-build (the active slot immediately behind the organ start) |
 | scoreboard live attachment + calendar/suspension fixes | DEPLOYED 2026-08-19 12:38Z restart (attachment itself rides item 22's restart) |
 | thin-tape probe | awaiting-decision-evening (standalone ~50 min; runbook ready) |
-| validation evenings | nas100 DONE 08-25, ger40 DONE 08-26 (register 40 amendments: both CANONICAL; ger40 has FOUR pause windows + Sunday-reopen jitter, recorded) → us30 remains (~35 min) |
+| validation evenings | ALL DONE (register 40 amendments: nas100 08-25, ger40 08-26, us30 08-26 — EXPANSION COMPLETE, every pair canonical; provisional set empty) |
 | Part C weekly forward studies | ADOPTED (register 55); runs in the weekly campaign |
 | stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
 | baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |
