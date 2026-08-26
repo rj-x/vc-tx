@@ -1,0 +1,22 @@
+# ACCOUNT CURVE R-NOTRAIL x S0-H4 — BANKROLL LENS, NEVER EVIDENCE (registers 83/86). EX-LOCKBOX (register 85): lockbox-span entries excluded before simulation. COLLISION RULE: strict fill-order first-come; a subsequent entry is refused (SKIPPED_RISK) if combined open risk would breach the gate. pot=100 risk=2% stake=0.5/pt exec-tf=1M leverage=200(FLAGGED) maintenance=0.5(FLAGGED) spread-markup=0 period=None..None scope=all4
+entry_ts,exit_ts,instrument,sentence_id,gate,stake,stop_pts,risk_gbp,risk_budget_gbp,pnl_gbp,exit_reason,balance
+2026-07-26 22:48:00+00:00,2026-07-26 22:56:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,6.6,3.32,2.0,,close,100.0
+2026-07-26 23:30:00+00:00,2026-07-27 00:16:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,6.1,3.03,2.0,,close,100.0
+2026-07-27 05:51:00+00:00,2026-07-27 15:29:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,15.7,7.85,2.0,,close,100.0
+2026-07-27 12:19:00+00:00,2026-07-27 13:56:00+00:00,us30fut,S0-H4,SKIPPED_RISK,0.5,38.1,19.07,2.0,,close,100.0
+2026-07-28 12:18:00+00:00,2026-07-28 13:32:00+00:00,us30fut,S0-H4,SKIPPED_RISK,0.5,33.5,16.73,2.0,,close,100.0
+2026-07-28 16:07:00+00:00,2026-07-28 17:48:00+00:00,uk100fut,S0-H4,SKIPPED_RISK,0.5,7.9,3.94,2.0,,close,100.0
+2026-07-30 17:01:00+00:00,2026-07-31 12:58:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,14.2,7.08,2.0,,close,100.0
+2026-07-31 07:56:00+00:00,2026-07-31 08:10:00+00:00,uk100fut,S0-H4,SKIPPED_RISK,0.5,10.3,5.17,2.0,,close,100.0
+2026-08-03 04:55:00+00:00,2026-08-03 04:56:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,8.8,4.39,2.0,,close,100.0
+2026-08-03 09:55:00+00:00,2026-08-03 09:59:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,19.7,9.86,2.0,,close,100.0
+2026-08-03 10:07:00+00:00,2026-08-03 12:08:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,22.4,11.21,2.0,,close,100.0
+2026-08-03 11:41:00+00:00,2026-08-03 13:31:00+00:00,us30fut,S0-H4,SKIPPED_RISK,0.5,37.9,18.93,2.0,,close,100.0
+2026-08-03 14:11:00+00:00,2026-08-03 14:32:00+00:00,us30fut,S0-H4,SKIPPED_RISK,0.5,78.0,39.02,2.0,,close,100.0
+2026-08-03 14:22:00+00:00,2026-08-03 15:29:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,25.1,12.57,2.0,,close,100.0
+2026-08-03 22:03:00+00:00,2026-08-04 00:19:00+00:00,ger40fut,S0-H4,SKIPPED_RISK,0.5,5.7,2.86,2.0,,close,100.0
+2026-08-03 22:59:00+00:00,2026-08-03 23:13:00+00:00,us30fut,S0-H4,SKIPPED_RISK,0.5,11.2,5.61,2.0,,close,100.0
+2026-08-17 06:15:00+00:00,2026-08-17 06:17:00+00:00,nas100fut,S0-H4,SKIPPED_RISK,0.5,9.9,4.93,2.0,,close,100.0
+2026-08-17 06:21:00+00:00,2026-08-17 07:16:00+00:00,nas100fut,S0-H4,SKIPPED_RISK,0.5,9.7,4.85,2.0,,close,100.0
+2026-08-17 07:30:00+00:00,2026-08-17 07:34:00+00:00,nas100fut,S0-H4,SKIPPED_RISK,0.5,16.3,8.16,2.0,,close,100.0
+# FOOTER end_balance=100.0 max_dd=0.0 (0.0%) ruin=survived taken=0 skipped_risk=19 skipped_margin=0 closeouts=0 | ger40fut: taken=0 net=+0.00 refused=9; nas100fut: taken=0 net=+0.00 refused=3; uk100fut: taken=0 net=+0.00 refused=2; us30fut: taken=0 net=+0.00 refused=5

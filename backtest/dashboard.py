@@ -323,6 +323,10 @@ def generate():
           "synthesis. Candidate-generation only — read at the "
           "operator+reviewer sitting; questions through the front "
           "door.",
+          "- `reports/account_curves/` — the bankroll lens (registers "
+          "83/86): per-strategy isolated accounts + `_LEADERBOARD.csv` "
+          "with the B-RANDOM luck reference. Never evidence; runs on "
+          "`--pot`.",
           "- `reports/backtest_v1.md` — the evidential pipeline + Part C "
           "index. The weekly 5-minute read.",
           "- `docs/backlog_status.md` — is everything moving. Glance "

@@ -33,12 +33,14 @@ medians and quantiles. FENCE: forensics is CANDIDATE-GENERATION ONLY —
 no pattern becomes a gate, filter, or recipe change without its own
 Q-number and forward grade; candidates are read at an operator +
 reviewer sitting on the emitted mds; questions minted through the
-front door only. Lockbox-span opens EXCLUDED from every aggregate
-(the stricter journal-reader precedent; the enriched CSV carries
-in_lockbox_span so the cut is auditable); sealed opens excluded and
-counted. FILL MODEL: PESSIMISTIC (inherited from the journal,
-register 65). Twin-run pinned (tests/test_trade_forensics.py). Weekly
-under Part C after the journal survey.
+front door only. Lockbox-span opens EXCLUDED from every aggregate —
+now the PROJECT-WIDE RULING (register 85, 2026-08-27: the span is its
+own zone, neither backtest nor forward; this module's stance at first
+build generalized). The enriched CSV carries in_lockbox_span as the
+audit trail; sealed opens excluded and counted. FILL MODEL:
+PESSIMISTIC (inherited from the journal, register 65). Twin-run
+pinned (tests/test_trade_forensics.py). Weekly under Part C after the
+journal survey.
 """
 
 import argparse
@@ -54,7 +56,8 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
-from engine.store_loader import is_sealed, lockbox_boundary, zones
+from engine.store_loader import (in_lockbox_span, is_sealed,
+                                 lockbox_boundary, zones)
 from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from backtest.location_census import _Profile
 from backtest.recipes import _spread_median, build_env
@@ -263,12 +266,12 @@ ENRICH_COLS = ("dow", "hour_utc", "quadrant", "mtf", "h11", "phase",
 # ---------------------------------------------------------------- report
 
 def usable(rows):
-    """Aggregate-eligible rows + exclusion counts (lockbox / sealed)."""
-    boundary, gl = lockbox_boundary(), zones()["go_live"]
+    """Aggregate-eligible rows + exclusion counts (lockbox / sealed).
+    Lockbox test = the shared choke-point helper (register 85)."""
     keep, n_lock, n_seal = [], 0, 0
     for r in rows:
         t = pd.Timestamp(r["open_ts"])
-        if boundary <= t < gl:
+        if in_lockbox_span(t):
             n_lock += 1
         elif is_sealed(t):
             n_seal += 1

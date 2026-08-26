@@ -622,7 +622,15 @@ for walk-forward.
     discounts apply. MECHANISM SENTENCE: probe-failure fades need room
     then protection — the armed trail is that shape, and London is
     where probes fail into effort. NO recipe scoping, NO live-signal
-    gating: the question grades first. STATUS: pending-conditions.
+    gating: the question grades first.
+    ANNOTATION (register 85, 2026-08-27): the founding cell FAILS
+    re-verification on the excluded cut — ex-lockbox pooled median
+    −7.29, n=62 (registered +7.1, n=63). Zone decomposition: working
+    set +30.32 (n=24) · lockbox slice +3.75 (n=15, excluded by the
+    ruling) · forward −16.84 (n=38) — the reversal is FORWARD-DRIVEN,
+    not exclusion-driven. STATUS: conditions-met — the grading clock
+    crossed 2026-08-27 (38 ≥ 30 forward London trades pooled
+    canonical); the grade is the operator sitting's front-door act.
 - **Status:** **signal-live** (statistic shape at mint: cross-window
   consistency of a NEGATIVE, field-priced; suppression grading reads
   negative anchor-claim lift as the sentence winning).

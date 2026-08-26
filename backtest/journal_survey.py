@@ -18,9 +18,16 @@ instruments POOLED; per-instrument breakdown in the JSON).
 
 Statistic shapes declared (74-B): concentration = field count vs
 permutation null; floors = single-cell median vs session-scoped
-ensemble range. Counts, dimming, sealed/lockbox inherited from the
-journal, twin-run pinned. Weekly under Part C (runs after the trade
-layer).
+ensemble range. Counts, dimming, twin-run pinned. Weekly under Part C
+(runs after the trade layer).
+
+LOCKBOX-SPAN RULING (register 85, 2026-08-27): journal rows OPENING
+inside the legacy lockbox span are excluded here — the span is its own
+zone, neither backtest nor forward. The pre-ruling emissions pooled
+those rows ("inherited from the journal", caught by the forensics
+build's flag); the register-80 headline findings were declared
+TAINTED-RERUNNABLE and re-verified on the excluded cut at the ruling
+(outcome in register 85). Row counts reconcile in the header.
 """
 
 import argparse
@@ -36,6 +43,7 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
+from engine.store_loader import in_lockbox_span
 from backtest.signal_points import DRIFT_SKEW_SHARE, TREND_FAMILY
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
@@ -100,7 +108,10 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
-    rows = list(csv.DictReader(open(TRADES_CSV)))
+    all_rows = list(csv.DictReader(open(TRADES_CSV)))
+    rows = [r for r in all_rows
+            if not in_lockbox_span(r["open_ts"])]   # register 85
+    n_excl = len(all_rows) - len(rows)
     floors = (json.load(open(BASE_JSON))["floors"]
               if os.path.exists(BASE_JSON) else {})
     cells, per_instr = build_cells(rows)
@@ -149,6 +160,10 @@ def main():
                      "minted; never validation"),
            "engine_commit": head, "min_cell_n": MIN_CELL_N,
            "null_shuffles": NULL_SHUFFLES,
+           "ex_lockbox": {"journal_rows": len(all_rows),
+                          "excluded_lockbox_span": n_excl,
+                          "rows_used": len(rows),
+                          "ruling": "register 85 (2026-08-27)"},
            "concentration": {"positive_by_variant": pos,
                              "measurable_by_variant": tot,
                              "observed_max": mx,
@@ -171,7 +186,10 @@ def main():
          f"{NULL_SHUFFLES} pinned shuffles); floors = single-cell "
          "median vs the session-scoped baseline ensemble range under "
          "IDENTICAL management. Survivors are QUESTION CANDIDATES "
-         "through the front door — LISTED, NOT MINTED.", "",
+         "through the front door — LISTED, NOT MINTED. EX-LOCKBOX "
+         "(register 85): the lockbox span is its own zone — "
+         f"{len(rows)} of {len(all_rows)} journal rows used, "
+         f"{n_excl} lockbox-span opens excluded.", "",
          "**Luck budget:** positive-median cells by variant: "
          f"{c['positive_by_variant']} of {c['measurable_by_variant']} "
          f"measurable; observed max-in-one-variant {c['observed_max']} "

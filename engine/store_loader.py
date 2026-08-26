@@ -48,6 +48,19 @@ def zones(root=None):
                         if j.get("go_live_utc") else None)}
 
 
+def in_lockbox_span(ts, root=None):
+    """Register 85 ruling (2026-08-27): the legacy lockbox span is its
+    OWN ZONE — neither backtest nor forward. Trades OPENING inside it
+    are excluded from every evidential aggregate project-wide; the span
+    is spendable only by a future dated ruling, never by default. This
+    helper is the one shared definition (the choke-point pattern)."""
+    z = zones(root)
+    t = pd.Timestamp(ts)
+    t = t.tz_localize("UTC") if t.tzinfo is None else t.tz_convert("UTC")
+    gl = z["go_live"]
+    return bool(t >= z["working_end"] and (gl is None or t < gl))
+
+
 def stamp_go_live(ts, root=None):
     """One-shot terminal boundary: first paper go-live. Never overwrites."""
     path = os.path.join(root, "lockbox.json") if root else LOCKBOX_PATH

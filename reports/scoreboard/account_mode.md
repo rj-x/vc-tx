@@ -2,455 +2,188 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `d3d5f1d77` — **BANKROLL LENS, NEVER EVIDENCE (register 83).** THE OPERATOR'S REAL QUESTION: what fraction of the book can this bankroll touch, and does the accessible fraction carry edge? UK spread betting: P&L tax-free (no haircut anywhere); all-in-spread costs (provider-markup caveat: measured feed spreads may understate live bet spreads); EOD-flat makes overnight funding ignorable. Sizing = fixed stake + risk gate (pass, never shrink). Equity marking is per-position (limitation stated). Defaults FLAGGED operator-unverified: leverage 200:1, maintenance 0.5, min stake 0.5.
+Engine `c68ba4f77` — **BANKROLL LENS, NEVER EVIDENCE (registers 83/86).** Per-strategy isolated accounts: each variant x sentence pair is its own pot hunting the scoped instrument set; the blended single stream is RETIRED (register 86; archived). Curves born EX-LOCKBOX (register 85): 82120 lockbox-span entries excluded. Collision rule: strict fill-order first-come; combined open risk gates. LEADERBOARD-TOP IS BEST-OF-FIELD BY CONSTRUCTION — read against the B-RANDOM bands below. Defaults FLAGGED operator-unverified: leverage 200:1, maintenance 0.5, min stake 0.5.
 
-**Parameters:** pot £100, risk 2%, stake £0.5/pt, exec-TF ['1min', '5min', '15min'], spread markup 0 pts, period None..None.
+**Parameters:** pot=100 risk=2% stake=0.5/pt exec-tf=1M leverage=200(FLAGGED) maintenance=0.5(FLAGGED) spread-markup=0 period=None..None; scope all4 (uk100fut, ger40fut, nas100fut, us30fut); field 140 strategy + 140 baseline curves.
 
-| exec-TF | variant | end £ | maxDD £ (%) | ruin | taken | skip-risk | skip-margin | closeouts |
-|---|---|---|---|---|---|---|---|---|
-| 15min | R-ARM15 | 100.0 | 0.0 (0.0%) | survived | 0 | 3823 | 0 | 0 |
-| 15min | R-BE | 100.0 | 0.0 (0.0%) | survived | 0 | 3077 | 0 | 0 |
-| 15min | R-NEXIT-EARLY | 100.0 | 0.0 (0.0%) | survived | 0 | 3823 | 0 | 0 |
-| 15min | R-NEXIT-FULL | 100.0 | 0.0 (0.0%) | survived | 0 | 3823 | 0 | 0 |
-| 15min | R-NEXIT-SENT | 100.0 | 0.0 (0.0%) | survived | 0 | 3823 | 0 | 0 |
-| 15min | R-NOTRAIL | 100.0 | 0.0 (0.0%) | survived | 0 | 2284 | 0 | 0 |
-| 15min | R-OP2 | 100.0 | 0.0 (0.0%) | survived | 0 | 6352 | 0 | 0 |
-| 1min | R-ARM15 | 29.53 | 72.22 (71.0%) | survived | 79 | 8895 | 27 | 0 |
-| 1min | R-BE | 34.87 | 65.13 (65.1%) | survived | 54 | 5369 | 11 | 0 |
-| 1min | R-NEXIT-EARLY | 29.53 | 72.22 (71.0%) | survived | 79 | 8895 | 27 | 0 |
-| 1min | R-NEXIT-FULL | 29.53 | 72.22 (71.0%) | survived | 79 | 8895 | 27 | 0 |
-| 1min | R-NEXIT-SENT | 29.53 | 72.22 (71.0%) | survived | 79 | 8895 | 27 | 0 |
-| 1min | R-NOTRAIL | 35.37 | 64.63 (64.6%) | survived | 50 | 4849 | 12 | 0 |
-| 1min | R-OP2 | 26.31 | 73.69 (73.7%) | survived | 116 | 13421 | 16 | 0 |
-| 5min | R-ARM15 | 90.38 | 9.62 (9.6%) | survived | 4 | 5588 | 0 | 0 |
-| 5min | R-BE | 97.39 | 2.61 (2.6%) | survived | 1 | 3759 | 0 | 0 |
-| 5min | R-NEXIT-EARLY | 90.38 | 9.62 (9.6%) | survived | 4 | 5588 | 0 | 0 |
-| 5min | R-NEXIT-FULL | 90.38 | 9.62 (9.6%) | survived | 4 | 5588 | 0 | 0 |
-| 5min | R-NEXIT-SENT | 90.38 | 9.62 (9.6%) | survived | 4 | 5588 | 0 | 0 |
-| 5min | R-NOTRAIL | 97.37 | 2.63 (2.6%) | survived | 1 | 3055 | 0 | 0 |
-| 5min | R-OP2 | 83.32 | 16.68 (16.7%) | survived | 17 | 8878 | 0 | 0 |
+## Leaderboard head (top 20 of the field; full board in reports/account_curves/_LEADERBOARD.csv)
 
-## Accessibility census (headline): pass fraction + the points-physics of the ACCESSIBLE subset only
+| variant | sentence | end £ | maxDD £ (%) | ruin | taken | skip-risk | closeouts |
+|---|---|---|---|---|---|---|---|
+| R-ARM15 | S0-H13 | 109.24 | 0.0 (0.0%) | survived | 2 | 21 | 0 |
+| R-NEXIT-EARLY | S0-H13 | 109.24 | 0.0 (0.0%) | survived | 2 | 21 | 0 |
+| R-NEXIT-FULL | S0-H13 | 109.24 | 0.0 (0.0%) | survived | 2 | 21 | 0 |
+| R-NEXIT-SENT | S0-H13 | 109.24 | 0.0 (0.0%) | survived | 2 | 21 | 0 |
+| R-ARM15 | S0-H6 | 101.98 | 2.64 (2.5%) | survived | 6 | 286 | 0 |
+| R-NEXIT-EARLY | S0-H6 | 101.98 | 2.64 (2.5%) | survived | 6 | 286 | 0 |
+| R-NEXIT-FULL | S0-H6 | 101.98 | 2.64 (2.5%) | survived | 6 | 286 | 0 |
+| R-NEXIT-SENT | S0-H6 | 101.98 | 2.64 (2.5%) | survived | 6 | 286 | 0 |
+| R-ARM15 | S0-H16 | 100.0 | 0.0 (0.0%) | survived | 0 | 79 | 0 |
+| R-ARM15 | S0-H4 | 100.0 | 0.0 (0.0%) | survived | 0 | 28 | 0 |
+| R-ARM15 | S0-H5 | 100.0 | 0.0 (0.0%) | survived | 0 | 2 | 0 |
+| R-ARM15 | S1-H1 | 100.0 | 0.0 (0.0%) | survived | 0 | 30 | 0 |
+| R-BE | S0-H16 | 100.0 | 0.0 (0.0%) | survived | 0 | 79 | 0 |
+| R-BE | S0-H4 | 100.0 | 0.0 (0.0%) | survived | 0 | 19 | 0 |
+| R-BE | S0-H5 | 100.0 | 0.0 (0.0%) | survived | 0 | 2 | 0 |
+| R-BE | S1-H1 | 100.0 | 0.0 (0.0%) | survived | 0 | 29 | 0 |
+| R-NEXIT-EARLY | S0-H16 | 100.0 | 0.0 (0.0%) | survived | 0 | 79 | 0 |
+| R-NEXIT-EARLY | S0-H4 | 100.0 | 0.0 (0.0%) | survived | 0 | 28 | 0 |
+| R-NEXIT-EARLY | S0-H5 | 100.0 | 0.0 (0.0%) | survived | 0 | 2 | 0 |
+| R-NEXIT-EARLY | S1-H1 | 100.0 | 0.0 (0.0%) | survived | 0 | 30 | 0 |
 
-| exec-TF | variant | sentence | n | accessible | pass % | acc median pts | floor med/max | clears |
-|---|---|---|---|---|---|---|---|---|
-| 15min | R-ARM15 | S0-H1 | 239 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H10 | 373 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H11 | 267 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H13 | 31 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H14 | 343 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H17 | 182 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H18 | 168 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H19 | 235 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H2 | 331 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H3 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H4 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H6 | 301 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H7 | 276 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S0-H9 | 240 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S1-H1 | 32 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S1-H11 | 236 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S1-H2 | 316 | 0 | 0% | — | —/— | — |
-| 15min | R-ARM15 | S1-H9 | 70 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H1 | 191 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H10 | 261 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H11 | 214 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H13 | 29 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H14 | 244 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H17 | 153 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H18 | 151 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H19 | 192 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H2 | 254 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H3 | 31 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H4 | 28 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H6 | 270 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H7 | 225 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S0-H9 | 188 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S1-H1 | 32 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S1-H11 | 190 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S1-H2 | 238 | 0 | 0% | — | —/— | — |
-| 15min | R-BE | S1-H9 | 69 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H1 | 239 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H10 | 373 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H11 | 267 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H13 | 31 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H14 | 343 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H17 | 182 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H18 | 168 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H19 | 235 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H2 | 331 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H3 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H4 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H6 | 301 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H7 | 276 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S0-H9 | 240 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S1-H1 | 32 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S1-H11 | 236 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S1-H2 | 316 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-EARLY | S1-H9 | 70 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H1 | 239 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H10 | 373 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H11 | 267 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H13 | 31 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H14 | 343 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H17 | 182 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H18 | 168 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H19 | 235 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H2 | 331 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H3 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H4 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H6 | 301 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H7 | 276 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S0-H9 | 240 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S1-H1 | 32 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S1-H11 | 236 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S1-H2 | 316 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-FULL | S1-H9 | 70 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H1 | 239 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H10 | 373 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H11 | 267 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H13 | 31 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H14 | 343 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H17 | 182 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H18 | 168 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H19 | 235 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H2 | 331 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H3 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H4 | 33 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H6 | 301 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H7 | 276 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S0-H9 | 240 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S1-H1 | 32 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S1-H11 | 236 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S1-H2 | 316 | 0 | 0% | — | —/— | — |
-| 15min | R-NEXIT-SENT | S1-H9 | 70 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H1 | 146 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H10 | 182 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H11 | 139 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H13 | 26 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H14 | 177 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H17 | 117 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H18 | 113 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H19 | 138 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H2 | 175 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H3 | 29 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H4 | 22 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H6 | 205 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H7 | 177 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S0-H9 | 148 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S1-H1 | 28 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S1-H11 | 121 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S1-H2 | 168 | 0 | 0% | — | —/— | — |
-| 15min | R-NOTRAIL | S1-H9 | 56 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H1 | 262 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H10 | 820 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H11 | 568 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H13 | 30 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H14 | 819 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H16 | 97 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H17 | 165 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H18 | 261 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H19 | 402 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H2 | 685 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H3 | 39 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H4 | 47 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H5 | 1 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H6 | 239 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H7 | 293 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S0-H9 | 428 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S1-H1 | 8 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S1-H11 | 522 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S1-H2 | 589 | 0 | 0% | — | —/— | — |
-| 15min | R-OP2 | S1-H9 | 77 | 0 | 0% | — | —/— | — |
-| 1min | R-ARM15 | S0-H1 | 420 | 26 | 6% | -3.87 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H10 | 1160 | 134 | 12% | -3.9 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H11 | 785 | 26 | 3% | -3.84 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H13 | 38 | 8 | 21% | -4.25 | -12.2/-4.15 | — |
-| 1min | R-ARM15 | S0-H14 | 1112 | 124 | 11% | -3.92 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-ARM15 | S0-H17 | 283 | 17 | 6% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H18 | 327 | 10 | 3% | -0.54 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H19 | 548 | 20 | 4% | -4.62 | -12.2/-4.15 | — |
-| 1min | R-ARM15 | S0-H2 | 945 | 57 | 6% | -3.78 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H3 | 45 | 11 | 24% | -2.94 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H4 | 70 | 0 | 0% | — | —/— | — |
-| 1min | R-ARM15 | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-ARM15 | S0-H6 | 443 | 7 | 2% | 0.69 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H7 | 445 | 18 | 4% | -4.14 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S0-H9 | 555 | 55 | 10% | -3.53 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 1min | R-ARM15 | S1-H11 | 769 | 28 | 4% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S1-H2 | 816 | 47 | 6% | -3.82 | -12.2/-4.15 | YES |
-| 1min | R-ARM15 | S1-H9 | 89 | 2 | 2% | -5.03 | -12.2/-4.15 | — |
-| 1min | R-BE | S0-H1 | 319 | 22 | 7% | -4.15 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H10 | 583 | 54 | 9% | -4.29 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H11 | 433 | 17 | 4% | -3.89 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H13 | 36 | 7 | 19% | -4.42 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H14 | 579 | 56 | 10% | -4.23 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-BE | S0-H17 | 230 | 15 | 6% | -4.48 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H18 | 261 | 10 | 4% | -2.9 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H19 | 324 | 12 | 4% | -4.63 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H2 | 465 | 26 | 6% | -3.82 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H3 | 41 | 10 | 24% | -3.14 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H4 | 44 | 0 | 0% | — | —/— | — |
-| 1min | R-BE | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-BE | S0-H6 | 341 | 6 | 2% | -2.98 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H7 | 318 | 15 | 5% | -4.44 | -14.62/-5.29 | YES |
-| 1min | R-BE | S0-H9 | 381 | 45 | 12% | -3.53 | -14.62/-5.29 | YES |
-| 1min | R-BE | S1-H1 | 33 | 0 | 0% | — | —/— | — |
-| 1min | R-BE | S1-H11 | 427 | 18 | 4% | -4.43 | -14.62/-5.29 | YES |
-| 1min | R-BE | S1-H2 | 419 | 24 | 6% | -3.82 | -14.62/-5.29 | YES |
-| 1min | R-BE | S1-H9 | 83 | 2 | 2% | -5.03 | -14.62/-5.29 | YES |
-| 1min | R-NEXIT-EARLY | S0-H1 | 420 | 26 | 6% | -3.87 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H10 | 1160 | 134 | 12% | -3.9 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H11 | 785 | 26 | 3% | -3.84 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H13 | 38 | 8 | 21% | -4.25 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-EARLY | S0-H14 | 1112 | 124 | 11% | -3.92 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-EARLY | S0-H17 | 283 | 17 | 6% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H18 | 327 | 10 | 3% | -0.54 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H19 | 548 | 20 | 4% | -4.62 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-EARLY | S0-H2 | 945 | 57 | 6% | -3.78 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H3 | 45 | 11 | 24% | -2.94 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H4 | 70 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-EARLY | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-EARLY | S0-H6 | 443 | 7 | 2% | 0.69 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H7 | 445 | 18 | 4% | -4.14 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S0-H9 | 555 | 55 | 10% | -3.53 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-EARLY | S1-H11 | 769 | 28 | 4% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S1-H2 | 816 | 47 | 6% | -3.82 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-EARLY | S1-H9 | 89 | 2 | 2% | -5.03 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-FULL | S0-H1 | 420 | 26 | 6% | -3.87 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H10 | 1160 | 134 | 12% | -3.9 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H11 | 785 | 26 | 3% | -3.84 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H13 | 38 | 8 | 21% | -4.25 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-FULL | S0-H14 | 1112 | 124 | 11% | -3.92 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-FULL | S0-H17 | 283 | 17 | 6% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H18 | 327 | 10 | 3% | -0.54 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H19 | 548 | 20 | 4% | -4.62 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-FULL | S0-H2 | 945 | 57 | 6% | -3.78 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H3 | 45 | 11 | 24% | -2.94 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H4 | 70 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-FULL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-FULL | S0-H6 | 443 | 7 | 2% | 0.69 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H7 | 445 | 18 | 4% | -4.14 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S0-H9 | 555 | 55 | 10% | -3.53 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-FULL | S1-H11 | 769 | 28 | 4% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S1-H2 | 816 | 47 | 6% | -3.82 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-FULL | S1-H9 | 89 | 2 | 2% | -5.03 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-SENT | S0-H1 | 420 | 26 | 6% | -3.87 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H10 | 1160 | 134 | 12% | -3.9 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H11 | 785 | 26 | 3% | -3.84 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H13 | 38 | 8 | 21% | -4.25 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-SENT | S0-H14 | 1112 | 124 | 11% | -3.92 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-SENT | S0-H17 | 283 | 17 | 6% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H18 | 327 | 10 | 3% | -0.54 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H19 | 548 | 20 | 4% | -4.62 | -12.2/-4.15 | — |
-| 1min | R-NEXIT-SENT | S0-H2 | 945 | 57 | 6% | -3.78 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H3 | 45 | 11 | 24% | -2.94 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H4 | 70 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-SENT | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-SENT | S0-H6 | 443 | 7 | 2% | 0.69 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H7 | 445 | 18 | 4% | -4.14 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S0-H9 | 555 | 55 | 10% | -3.53 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 1min | R-NEXIT-SENT | S1-H11 | 769 | 28 | 4% | -4.07 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S1-H2 | 816 | 47 | 6% | -3.82 | -12.2/-4.15 | YES |
-| 1min | R-NEXIT-SENT | S1-H9 | 89 | 2 | 2% | -5.03 | -12.2/-4.15 | — |
-| 1min | R-NOTRAIL | S0-H1 | 299 | 21 | 7% | -4.3 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H10 | 537 | 52 | 10% | -4.3 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H11 | 359 | 16 | 4% | -4.31 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H13 | 34 | 7 | 21% | -4.42 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H14 | 542 | 49 | 9% | -4.5 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 1min | R-NOTRAIL | S0-H17 | 223 | 15 | 7% | -4.78 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H18 | 243 | 9 | 4% | -4.7 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H19 | 286 | 7 | 2% | -4.5 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H2 | 422 | 23 | 6% | -4.51 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H3 | 40 | 9 | 22% | -4.66 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H4 | 42 | 0 | 0% | — | —/— | — |
-| 1min | R-NOTRAIL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-NOTRAIL | S0-H6 | 306 | 6 | 2% | -4.92 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H7 | 293 | 15 | 5% | -4.48 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S0-H9 | 354 | 42 | 12% | -3.98 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S1-H1 | 33 | 0 | 0% | — | —/— | — |
-| 1min | R-NOTRAIL | S1-H11 | 338 | 18 | 5% | -4.53 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S1-H2 | 362 | 21 | 6% | -4.5 | -17.68/-6.6 | YES |
-| 1min | R-NOTRAIL | S1-H9 | 81 | 2 | 2% | -5.03 | -17.68/-6.6 | YES |
-| 1min | R-OP2 | S0-H1 | 162 | 12 | 7% | -1.55 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H10 | 1657 | 189 | 11% | -1.59 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H11 | 1897 | 54 | 3% | -1.56 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H13 | 39 | 9 | 23% | -1.71 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H14 | 1918 | 239 | 12% | -1.66 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H16 | 94 | 0 | 0% | — | —/— | — |
-| 1min | R-OP2 | S0-H17 | 301 | 18 | 6% | -1.66 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H18 | 441 | 10 | 2% | -0.38 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H19 | 605 | 30 | 5% | -1.54 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H2 | 1745 | 116 | 7% | -1.68 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H3 | 45 | 11 | 24% | -1.46 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H4 | 88 | 0 | 0% | — | —/— | — |
-| 1min | R-OP2 | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 1min | R-OP2 | S0-H6 | 523 | 7 | 1% | -2.0 | -3.75/-1.79 | — |
-| 1min | R-OP2 | S0-H7 | 46 | 1 | 2% | -1.31 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S0-H9 | 606 | 50 | 8% | -1.5 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S1-H1 | 9 | 0 | 0% | — | —/— | — |
-| 1min | R-OP2 | S1-H11 | 1892 | 60 | 3% | -1.67 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S1-H2 | 1389 | 90 | 6% | -1.67 | -3.75/-1.79 | YES |
-| 1min | R-OP2 | S1-H9 | 92 | 2 | 2% | -2.72 | -3.75/-1.79 | — |
-| 5min | R-ARM15 | S0-H1 | 322 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H10 | 636 | 1 | 0% | -5.0 | -2.58/3.71 | — |
-| 5min | R-ARM15 | S0-H11 | 426 | 2 | 0% | -4.69 | -2.58/3.71 | — |
-| 5min | R-ARM15 | S0-H13 | 36 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H14 | 599 | 2 | 0% | -2.23 | -2.58/3.71 | — |
-| 5min | R-ARM15 | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H17 | 232 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H18 | 229 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H19 | 332 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H2 | 534 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-ARM15 | S0-H3 | 38 | 1 | 3% | -5.19 | -2.58/3.71 | — |
-| 5min | R-ARM15 | S0-H4 | 43 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H6 | 361 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H7 | 352 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S0-H9 | 361 | 1 | 0% | -5.21 | -2.58/3.71 | — |
-| 5min | R-ARM15 | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S1-H11 | 378 | 0 | 0% | — | —/— | — |
-| 5min | R-ARM15 | S1-H2 | 484 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-ARM15 | S1-H9 | 78 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H1 | 247 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H10 | 338 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H11 | 272 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H13 | 33 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H14 | 338 | 1 | 0% | -5.26 | -2.92/-1.3 | — |
-| 5min | R-BE | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H17 | 185 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H18 | 176 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H19 | 231 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H2 | 308 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H3 | 32 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H4 | 34 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H6 | 295 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H7 | 259 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S0-H9 | 246 | 1 | 0% | -5.21 | -2.92/-1.3 | — |
-| 5min | R-BE | S1-H1 | 33 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S1-H11 | 249 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S1-H2 | 296 | 0 | 0% | — | —/— | — |
-| 5min | R-BE | S1-H9 | 71 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H1 | 322 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H10 | 636 | 1 | 0% | -5.0 | -2.58/3.71 | — |
-| 5min | R-NEXIT-EARLY | S0-H11 | 426 | 2 | 0% | -4.69 | -2.58/3.71 | — |
-| 5min | R-NEXIT-EARLY | S0-H13 | 36 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H14 | 599 | 2 | 0% | -2.23 | -2.58/3.71 | — |
-| 5min | R-NEXIT-EARLY | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H17 | 232 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H18 | 229 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H19 | 332 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H2 | 534 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-EARLY | S0-H3 | 38 | 1 | 3% | -5.19 | -2.58/3.71 | — |
-| 5min | R-NEXIT-EARLY | S0-H4 | 43 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H6 | 361 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H7 | 352 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S0-H9 | 361 | 1 | 0% | -5.21 | -2.58/3.71 | — |
-| 5min | R-NEXIT-EARLY | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S1-H11 | 378 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-EARLY | S1-H2 | 484 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-EARLY | S1-H9 | 78 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H1 | 322 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H10 | 636 | 1 | 0% | -5.0 | -2.58/3.71 | — |
-| 5min | R-NEXIT-FULL | S0-H11 | 426 | 2 | 0% | -4.69 | -2.58/3.71 | — |
-| 5min | R-NEXIT-FULL | S0-H13 | 36 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H14 | 599 | 2 | 0% | -2.23 | -2.58/3.71 | — |
-| 5min | R-NEXIT-FULL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H17 | 232 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H18 | 229 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H19 | 332 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H2 | 534 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-FULL | S0-H3 | 38 | 1 | 3% | -5.19 | -2.58/3.71 | — |
-| 5min | R-NEXIT-FULL | S0-H4 | 43 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H6 | 361 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H7 | 352 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S0-H9 | 361 | 1 | 0% | -5.21 | -2.58/3.71 | — |
-| 5min | R-NEXIT-FULL | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S1-H11 | 378 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-FULL | S1-H2 | 484 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-FULL | S1-H9 | 78 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H1 | 322 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H10 | 636 | 1 | 0% | -5.0 | -2.58/3.71 | — |
-| 5min | R-NEXIT-SENT | S0-H11 | 426 | 2 | 0% | -4.69 | -2.58/3.71 | — |
-| 5min | R-NEXIT-SENT | S0-H13 | 36 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H14 | 599 | 2 | 0% | -2.23 | -2.58/3.71 | — |
-| 5min | R-NEXIT-SENT | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H17 | 232 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H18 | 229 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H19 | 332 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H2 | 534 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-SENT | S0-H3 | 38 | 1 | 3% | -5.19 | -2.58/3.71 | — |
-| 5min | R-NEXIT-SENT | S0-H4 | 43 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H6 | 361 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H7 | 352 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S0-H9 | 361 | 1 | 0% | -5.21 | -2.58/3.71 | — |
-| 5min | R-NEXIT-SENT | S1-H1 | 34 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S1-H11 | 378 | 0 | 0% | — | —/— | — |
-| 5min | R-NEXIT-SENT | S1-H2 | 484 | 1 | 0% | 8.01 | -2.58/3.71 | YES |
-| 5min | R-NEXIT-SENT | S1-H9 | 78 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H1 | 203 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H10 | 271 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H11 | 198 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H13 | 29 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H14 | 280 | 1 | 0% | -5.26 | -40.9/-13.14 | YES |
-| 5min | R-NOTRAIL | S0-H16 | 113 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H17 | 159 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H18 | 146 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H19 | 183 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H2 | 235 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H3 | 30 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H4 | 29 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H5 | 4 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H6 | 245 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H7 | 221 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S0-H9 | 203 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S1-H1 | 31 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S1-H11 | 181 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S1-H2 | 232 | 0 | 0% | — | —/— | — |
-| 5min | R-NOTRAIL | S1-H9 | 63 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H1 | 240 | 1 | 0% | -0.8 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S0-H10 | 1066 | 10 | 1% | -1.87 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S0-H11 | 1048 | 2 | 0% | -3.13 | -6.45/-2.51 | — |
-| 5min | R-OP2 | S0-H13 | 31 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H14 | 1082 | 7 | 1% | -1.9 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S0-H16 | 94 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H17 | 159 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H18 | 353 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H19 | 575 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H2 | 1063 | 3 | 0% | -0.31 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S0-H3 | 45 | 1 | 2% | -4.5 | -6.45/-2.51 | — |
-| 5min | R-OP2 | S0-H4 | 71 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H5 | 5 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H6 | 313 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H7 | 240 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S0-H9 | 536 | 1 | 0% | -1.66 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S1-H1 | 12 | 0 | 0% | — | —/— | — |
-| 5min | R-OP2 | S1-H11 | 1003 | 2 | 0% | -1.97 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S1-H2 | 871 | 3 | 0% | -1.5 | -6.45/-2.51 | YES |
-| 5min | R-OP2 | S1-H9 | 88 | 0 | 0% | — | —/— | — |
+## B-RANDOM end-balance bands per variant (the luck reference)
+
+| variant | members | median £ | min £ | max £ |
+|---|---|---|---|---|
+| R-ARM15 | 20 | 63.61 | 53.82 | 99.63 |
+| R-BE | 20 | 61.32 | 48.18 | 71.43 |
+| R-NEXIT-EARLY | 20 | 63.61 | 53.82 | 99.63 |
+| R-NEXIT-FULL | 20 | 63.61 | 53.82 | 99.63 |
+| R-NEXIT-SENT | 20 | 63.61 | 53.82 | 99.63 |
+| R-NOTRAIL | 20 | 60.7 | 46.04 | 77.73 |
+| R-OP2 | 20 | 62.34 | 55.84 | 68.28 |
+
+## Accessibility census (pass fraction + accessible medians; static single-trade gate, stated)
+
+| variant | sentence | n | accessible | pass % | acc median pts |
+|---|---|---|---|---|---|
+| R-ARM15 | S0-H1 | 358 | 23 | 6% | -3.64 |
+| R-ARM15 | S0-H10 | 511 | 68 | 13% | -4.14 |
+| R-ARM15 | S0-H11 | 579 | 20 | 4% | -3.79 |
+| R-ARM15 | S0-H13 | 23 | 2 | 9% | 9.24 |
+| R-ARM15 | S0-H14 | 484 | 57 | 12% | -4.14 |
+| R-ARM15 | S0-H16 | 79 | 0 | 0% | None |
+| R-ARM15 | S0-H17 | 250 | 14 | 6% | -3.55 |
+| R-ARM15 | S0-H18 | 254 | 10 | 4% | -0.54 |
+| R-ARM15 | S0-H19 | 528 | 20 | 4% | -4.62 |
+| R-ARM15 | S0-H2 | 852 | 52 | 6% | -3.96 |
+| R-ARM15 | S0-H3 | 40 | 7 | 18% | -3.34 |
+| R-ARM15 | S0-H4 | 28 | 0 | 0% | None |
+| R-ARM15 | S0-H5 | 2 | 0 | 0% | None |
+| R-ARM15 | S0-H6 | 292 | 6 | 2% | -1.99 |
+| R-ARM15 | S0-H7 | 372 | 16 | 4% | -4.22 |
+| R-ARM15 | S0-H9 | 219 | 17 | 8% | -4.66 |
+| R-ARM15 | S1-H1 | 30 | 0 | 0% | None |
+| R-ARM15 | S1-H11 | 416 | 7 | 2% | -4.59 |
+| R-ARM15 | S1-H2 | 738 | 45 | 6% | -4.09 |
+| R-ARM15 | S1-H9 | 85 | 2 | 2% | -5.03 |
+| R-BE | S0-H1 | 268 | 19 | 7% | -4.01 |
+| R-BE | S0-H10 | 294 | 44 | 15% | -4.29 |
+| R-BE | S0-H11 | 326 | 11 | 3% | -3.6 |
+| R-BE | S0-H13 | 22 | 2 | 9% | -2.19 |
+| R-BE | S0-H14 | 307 | 40 | 13% | -4.23 |
+| R-BE | S0-H16 | 79 | 0 | 0% | None |
+| R-BE | S0-H17 | 199 | 12 | 6% | -4.35 |
+| R-BE | S0-H18 | 201 | 10 | 5% | -2.9 |
+| R-BE | S0-H19 | 305 | 12 | 4% | -4.63 |
+| R-BE | S0-H2 | 387 | 23 | 6% | -4.5 |
+| R-BE | S0-H3 | 37 | 7 | 19% | -3.34 |
+| R-BE | S0-H4 | 19 | 0 | 0% | None |
+| R-BE | S0-H5 | 2 | 0 | 0% | None |
+| R-BE | S0-H6 | 225 | 5 | 2% | -4.66 |
+| R-BE | S0-H7 | 255 | 13 | 5% | -4.48 |
+| R-BE | S0-H9 | 164 | 13 | 8% | -4.8 |
+| R-BE | S1-H1 | 29 | 0 | 0% | None |
+| R-BE | S1-H11 | 221 | 4 | 2% | -4.04 |
+| R-BE | S1-H2 | 356 | 23 | 6% | -4.25 |
+| R-BE | S1-H9 | 79 | 2 | 2% | -5.03 |
+| R-NEXIT-EARLY | S0-H1 | 358 | 23 | 6% | -3.64 |
+| R-NEXIT-EARLY | S0-H10 | 511 | 68 | 13% | -4.14 |
+| R-NEXIT-EARLY | S0-H11 | 579 | 20 | 4% | -3.79 |
+| R-NEXIT-EARLY | S0-H13 | 23 | 2 | 9% | 9.24 |
+| R-NEXIT-EARLY | S0-H14 | 484 | 57 | 12% | -4.14 |
+| R-NEXIT-EARLY | S0-H16 | 79 | 0 | 0% | None |
+| R-NEXIT-EARLY | S0-H17 | 250 | 14 | 6% | -3.55 |
+| R-NEXIT-EARLY | S0-H18 | 254 | 10 | 4% | -0.54 |
+| R-NEXIT-EARLY | S0-H19 | 528 | 20 | 4% | -4.62 |
+| R-NEXIT-EARLY | S0-H2 | 852 | 52 | 6% | -3.96 |
+| R-NEXIT-EARLY | S0-H3 | 40 | 7 | 18% | -3.34 |
+| R-NEXIT-EARLY | S0-H4 | 28 | 0 | 0% | None |
+| R-NEXIT-EARLY | S0-H5 | 2 | 0 | 0% | None |
+| R-NEXIT-EARLY | S0-H6 | 292 | 6 | 2% | -1.99 |
+| R-NEXIT-EARLY | S0-H7 | 372 | 16 | 4% | -4.22 |
+| R-NEXIT-EARLY | S0-H9 | 219 | 17 | 8% | -4.66 |
+| R-NEXIT-EARLY | S1-H1 | 30 | 0 | 0% | None |
+| R-NEXIT-EARLY | S1-H11 | 416 | 7 | 2% | -4.59 |
+| R-NEXIT-EARLY | S1-H2 | 738 | 45 | 6% | -4.09 |
+| R-NEXIT-EARLY | S1-H9 | 85 | 2 | 2% | -5.03 |
+| R-NEXIT-FULL | S0-H1 | 358 | 23 | 6% | -3.64 |
+| R-NEXIT-FULL | S0-H10 | 511 | 68 | 13% | -4.14 |
+| R-NEXIT-FULL | S0-H11 | 579 | 20 | 4% | -3.79 |
+| R-NEXIT-FULL | S0-H13 | 23 | 2 | 9% | 9.24 |
+| R-NEXIT-FULL | S0-H14 | 484 | 57 | 12% | -4.14 |
+| R-NEXIT-FULL | S0-H16 | 79 | 0 | 0% | None |
+| R-NEXIT-FULL | S0-H17 | 250 | 14 | 6% | -3.55 |
+| R-NEXIT-FULL | S0-H18 | 254 | 10 | 4% | -0.54 |
+| R-NEXIT-FULL | S0-H19 | 528 | 20 | 4% | -4.62 |
+| R-NEXIT-FULL | S0-H2 | 852 | 52 | 6% | -3.96 |
+| R-NEXIT-FULL | S0-H3 | 40 | 7 | 18% | -3.34 |
+| R-NEXIT-FULL | S0-H4 | 28 | 0 | 0% | None |
+| R-NEXIT-FULL | S0-H5 | 2 | 0 | 0% | None |
+| R-NEXIT-FULL | S0-H6 | 292 | 6 | 2% | -1.99 |
+| R-NEXIT-FULL | S0-H7 | 372 | 16 | 4% | -4.22 |
+| R-NEXIT-FULL | S0-H9 | 219 | 17 | 8% | -4.66 |
+| R-NEXIT-FULL | S1-H1 | 30 | 0 | 0% | None |
+| R-NEXIT-FULL | S1-H11 | 416 | 7 | 2% | -4.59 |
+| R-NEXIT-FULL | S1-H2 | 738 | 45 | 6% | -4.09 |
+| R-NEXIT-FULL | S1-H9 | 85 | 2 | 2% | -5.03 |
+| R-NEXIT-SENT | S0-H1 | 358 | 23 | 6% | -3.64 |
+| R-NEXIT-SENT | S0-H10 | 511 | 68 | 13% | -4.14 |
+| R-NEXIT-SENT | S0-H11 | 579 | 20 | 4% | -3.79 |
+| R-NEXIT-SENT | S0-H13 | 23 | 2 | 9% | 9.24 |
+| R-NEXIT-SENT | S0-H14 | 484 | 57 | 12% | -4.14 |
+| R-NEXIT-SENT | S0-H16 | 79 | 0 | 0% | None |
+| R-NEXIT-SENT | S0-H17 | 250 | 14 | 6% | -3.55 |
+| R-NEXIT-SENT | S0-H18 | 254 | 10 | 4% | -0.54 |
+| R-NEXIT-SENT | S0-H19 | 528 | 20 | 4% | -4.62 |
+| R-NEXIT-SENT | S0-H2 | 852 | 52 | 6% | -3.96 |
+| R-NEXIT-SENT | S0-H3 | 40 | 7 | 18% | -3.34 |
+| R-NEXIT-SENT | S0-H4 | 28 | 0 | 0% | None |
+| R-NEXIT-SENT | S0-H5 | 2 | 0 | 0% | None |
+| R-NEXIT-SENT | S0-H6 | 292 | 6 | 2% | -1.99 |
+| R-NEXIT-SENT | S0-H7 | 372 | 16 | 4% | -4.22 |
+| R-NEXIT-SENT | S0-H9 | 219 | 17 | 8% | -4.66 |
+| R-NEXIT-SENT | S1-H1 | 30 | 0 | 0% | None |
+| R-NEXIT-SENT | S1-H11 | 416 | 7 | 2% | -4.59 |
+| R-NEXIT-SENT | S1-H2 | 738 | 45 | 6% | -4.09 |
+| R-NEXIT-SENT | S1-H9 | 85 | 2 | 2% | -5.03 |
+| R-NOTRAIL | S0-H1 | 250 | 18 | 7% | -4.27 |
+| R-NOTRAIL | S0-H10 | 281 | 44 | 16% | -4.33 |
+| R-NOTRAIL | S0-H11 | 271 | 10 | 4% | -4.31 |
+| R-NOTRAIL | S0-H13 | 20 | 2 | 10% | -3.54 |
+| R-NOTRAIL | S0-H14 | 295 | 35 | 12% | -4.34 |
+| R-NOTRAIL | S0-H16 | 79 | 0 | 0% | None |
+| R-NOTRAIL | S0-H17 | 194 | 12 | 6% | -4.69 |
+| R-NOTRAIL | S0-H18 | 185 | 9 | 5% | -4.7 |
+| R-NOTRAIL | S0-H19 | 268 | 7 | 3% | -4.5 |
+| R-NOTRAIL | S0-H2 | 345 | 20 | 6% | -4.48 |
+| R-NOTRAIL | S0-H3 | 36 | 6 | 17% | -4.68 |
+| R-NOTRAIL | S0-H4 | 19 | 0 | 0% | None |
+| R-NOTRAIL | S0-H5 | 2 | 0 | 0% | None |
+| R-NOTRAIL | S0-H6 | 201 | 5 | 2% | -4.76 |
+| R-NOTRAIL | S0-H7 | 234 | 13 | 6% | -4.5 |
+| R-NOTRAIL | S0-H9 | 158 | 13 | 8% | -4.8 |
+| R-NOTRAIL | S1-H1 | 29 | 0 | 0% | None |
+| R-NOTRAIL | S1-H11 | 198 | 4 | 2% | -4.04 |
+| R-NOTRAIL | S1-H2 | 301 | 20 | 7% | -4.48 |
+| R-NOTRAIL | S1-H9 | 77 | 2 | 3% | -5.03 |
+| R-OP2 | S0-H1 | 148 | 12 | 8% | -1.55 |
+| R-OP2 | S0-H10 | 674 | 78 | 12% | -1.6 |
+| R-OP2 | S0-H11 | 1390 | 38 | 3% | -1.69 |
+| R-OP2 | S0-H13 | 23 | 2 | 9% | -1.08 |
+| R-OP2 | S0-H14 | 749 | 94 | 13% | -1.71 |
+| R-OP2 | S0-H16 | 65 | 0 | 0% | None |
+| R-OP2 | S0-H17 | 270 | 15 | 6% | -1.62 |
+| R-OP2 | S0-H18 | 351 | 10 | 3% | -0.38 |
+| R-OP2 | S0-H19 | 588 | 30 | 5% | -1.54 |
+| R-OP2 | S0-H2 | 1640 | 112 | 7% | -1.68 |
+| R-OP2 | S0-H3 | 40 | 7 | 18% | -1.46 |
+| R-OP2 | S0-H4 | 34 | 0 | 0% | None |
+| R-OP2 | S0-H5 | 2 | 0 | 0% | None |
+| R-OP2 | S0-H6 | 348 | 6 | 2% | -2.09 |
+| R-OP2 | S0-H7 | 41 | 1 | 2% | -1.31 |
+| R-OP2 | S0-H9 | 239 | 16 | 7% | -1.56 |
+| R-OP2 | S1-H1 | 9 | 0 | 0% | None |
+| R-OP2 | S1-H11 | 1045 | 19 | 2% | -1.7 |
+| R-OP2 | S1-H2 | 1303 | 89 | 7% | -1.65 |
+| R-OP2 | S1-H9 | 88 | 2 | 2% | -2.72 |

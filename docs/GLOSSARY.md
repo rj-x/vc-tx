@@ -32,7 +32,7 @@ first uses them, or the commit doesn't pass.
 
 - **working set** — history up to 2026-08-04: freely simulatable, tunable, re-runnable.
 - **forward zone** — everything after go-live (2026-08-14): visible to paper trading and grading, never used for tuning.
-- **lockbox** — the sealed span between working set and go-live: served for narrative replay only, no metrics or aggregates permitted.
+- **lockbox** — the sealed span between working set and go-live: served for narrative replay only, no metrics or aggregates permitted. Register 85 (2026-08-27): the span is its OWN ZONE — neither backtest nor forward; trades opening inside it are excluded from every evidential aggregate project-wide; spendable only by a future dated ruling, never by default.
 - **sealed window** — quarterly futures-roll windows (from 2026-09-01: Sep/Dec/Mar/Jun days 1–14 UTC) excluded from every study.
 - **backtest window / forward window** — the two reporting spans: before the lockbox boundary, and after go-live.
 - **session names** — asia (Tokyo hours), london (LSE open to NY open), overlap (London and NY both open), ny_only (NY after London close), dead (none of the above); NY = New York.
@@ -111,6 +111,7 @@ first uses them, or the commit doesn't pass.
 - **conditioning matrix** — the census splitting every signal's fires by market state; the grading instrument for the open questions.
 - **trade forensics** — the journal deep-review layer (register 84): reports/trades_enriched.csv (mechanical per-trade entry/path/outcome context) + reports/forensics/ (winner/loser separators vs a permutation null, exit-efficiency and winner-MAE design inputs, WATCH list, cross-market synthesis). Candidate-generation only — no gate, filter, or recipe change without its own Q-number.
 - **WATCH list** — forensics cells too thin to measure but bright enough to track; each carries its n-to-measurable (rows still needed before it can be read).
+- **leaderboard** — reports/account_curves/_LEADERBOARD.csv (register 86): one row per account curve sorted by end balance, B-RANDOM member curves as the luck reference. Leaderboard-top is best-of-field by construction — never quoted alone.
 - **co-fire** — two signals from different families firing in the same window.
 - **organ / sense organ** — a planned market-structure instrument (volume profile, velocity/efficiency) feeding future signals.
 - **backlog** — docs/backlog_status.md: one status line per idea so nothing silently stalls.

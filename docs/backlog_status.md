@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 84 (freshness-checked by the weekly
+table.** Register-current-through: 86 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -79,7 +79,7 @@ authoritative.
 | management ladder v2 + narrative exits (7 variants) | GRADING (registers 77/80/81/82; ARM15 concentration field-significant; R-NEXIT-SENT vs R-NEXIT-FULL = the atoms-vs-sentences exit-layer test; EARLY/FULL relabeled atomic controls) |
 | journal field survey | BUILT 2026-08-25 (register 80; concentration null + session floors; survivors listed, not minted; weekly Part C) |
 | Q1-H19 (S0-H19 x R-ARM15 x London) | testable-now (register 80; >=30 fwd London canonical-pooled; clock on the dashboard) |
-| account mode (bankroll lens) | BUILT 2026-08-26 (register 83; --pot on the campaign; NEVER evidence; leverage/maintenance/minis flagged operator-unverified; first experiment running) |
+| account mode (bankroll lens) | Restructured 2026-08-27 (register 86: per-strategy isolated accounts, reports/account_curves/ + _LEADERBOARD.csv, blended stream retired/archived; curves born ex-lockbox per register 85; NEVER evidence; leverage/maintenance/minis still flagged operator-unverified) |
 | weekly runbook | WRITTEN 2026-08-25 (register 81; docs/runbook_weekly.md) |
 | in-trade narrative census | BUILT 2026-08-24 (register 78; measurement before machinery; flip trade needs both legs) |
 | exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned; gated on the census report) |

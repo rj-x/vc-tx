@@ -10,5 +10,6 @@ archived at the weekly run; each move logged here with a dated reason.
 - 2026-08-24 `excursion_profiles.md|.json` — prior-cycle output (register 42); superseded by excursion_geometry (register 52) in the weekly loop.
 - 2026-08-24 `flip_cut.md|.json` — ARCHIVED standing reference (register 44); verdict procedural and frozen; artifact unchanged since.
 - 2026-08-24 `sequel_census.md|.json` — the register-71 pilot; superseded by the narrative survey (register 73); retained as the pilot record.
+- 2026-08-27 `account_curve_blended.csv` — the register-83 blended single-stream account curve, RETIRED by register 86: it interleaved mutually exclusive management schemes and all sentences into one balance — an account nobody would run. Superseded by reports/account_curves/ (per-strategy isolated accounts + _LEADERBOARD.csv). Final blended emission frozen here.
 - 2026-08-24 `volume_profile.md|.json` — organ #1 first output (register 45); proposals ratified (register 46); regenerate on demand.
 - 2026-08-24 `reports/scenarios/` → tests/fixtures/scenarios/ — scenario fixtures are pin inputs (test_scenarios path updated).
