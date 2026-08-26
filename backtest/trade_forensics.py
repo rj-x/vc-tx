@@ -316,10 +316,17 @@ def net_ledger(rows_all, floors, long_share):
     the session-scoped baseline floor max. Verdict: forward-thin at
     forward n < MIN_CELL_N, else the FORWARD MEDIAN's sign."""
     cells = {}
+    fwd_weeks = {}
     for r in rows_all:
         k = (r["sentence_id"], r["variant"], r["session"])
-        cells.setdefault(k, {}).setdefault(
-            zone_of(r["open_ts"]), []).append(float(r["points"]))
+        z = zone_of(r["open_ts"])
+        cells.setdefault(k, {}).setdefault(z, []).append(
+            float(r["points"]))
+        if z == "forward":
+            iso = pd.Timestamp(r["open_ts"]).isocalendar()
+            wk = fwd_weeks.setdefault(k, {})
+            kk = f"{iso.year}-W{iso.week:02d}"
+            wk[kk] = wk.get(kk, 0.0) + float(r["points"])
     out = []
     for (sent, var, sess), zones_ in sorted(cells.items()):
         row = {"sentence": sent, "variant": var, "session": sess}
@@ -332,6 +339,12 @@ def net_ledger(rows_all, floors, long_share):
                                   if pts else None)
             row[f"{z}_n"] = len(pts)
         row["pooled_net"] = round(float(np.sum(pooled)), 1)
+        # register 88 item 3: week columns — forward ISO weeks with
+        # positive net, so accrual reads without re-runs
+        fwd_wk = fwd_weeks.get((sent, var, sess), {})
+        row["fwd_weeks_pos"] = sum(1 for v in fwd_wk.values()
+                                   if v > 0)
+        row["fwd_weeks_total"] = len(fwd_wk)
         ex_lb = zones_.get("working", []) + zones_.get("forward", [])
         med_ex = float(np.median(ex_lb)) if ex_lb else None
         bname = ("B-TREND" if sent in TREND_FAMILY else
@@ -669,8 +682,8 @@ def emit_market(instr, res, head):
           "without its forward column.", "",
           "| sentence | variant | session | pooled net | working "
           "net / med (n) | lockbox net / med (n) | forward net / med "
-          "(n) | floor (base) | clears | verdict |",
-          "|---|---|---|---|---|---|---|---|---|---|"]
+          "(n) | fwd wks +/tot | floor (base) | clears | verdict |",
+          "|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in nl[:TOP_LEDGER]:
         zc = {z: (f"{r[f'{z}_net']} / {r[f'{z}_median']} "
                   f"({r[f'{z}_n']})")
@@ -679,11 +692,13 @@ def emit_market(instr, res, head):
         L.append(f"| {r['sentence']} | {r['variant']} "
                  f"| {r['session']} | {r['pooled_net']} "
                  f"| {zc['working']} | {zc['lockbox']} "
-                 f"| {zc['forward']} | {r['floor_baseline']} | {cl} "
+                 f"| {zc['forward']} "
+                 f"| {r['fwd_weeks_pos']}/{r['fwd_weeks_total']} "
+                 f"| {r['floor_baseline']} | {cl} "
                  f"| {r['verdict']} |")
     if len(nl) > TOP_LEDGER:
         L.append(f"| … | | | ({len(nl) - TOP_LEDGER} more cells in "
-                 "the JSON) | | | | | | |")
+                 "the JSON) | | | | | | | |")
     L += ["", "## Winner/loser separators clearing their null", ""]
     surv = [c for c in res["separators"] if c["survivor"]]
     if surv:

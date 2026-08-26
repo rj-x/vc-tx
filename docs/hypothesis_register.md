@@ -102,6 +102,10 @@ entry is a separate decision.
     FOUNDING qualified upthrust/spring (range-extreme context in the
     qualification). Signal-live now; record opens at the next run.
 - **Status:** **signal-live** (2 signals).
+- **Label resolution (the sitting, 2026-08-28, register 88):** the
+  promote-candidate label on S0-H2 is WITHDRAWN — the case was
+  participation, per register 53 (recorded; NOT a demotion of the
+  hypothesis; the row accrues unchanged).
 - **Latest review:** promote-candidate ATTACHES TO S0-H2 (2026-08-19,
   review R1; note amended same day under the corrected PER-CONTEXT chance
   rates of register 38 — backtest lift is only +1.2pp (86/347 vs 23.6% directional
@@ -327,6 +331,9 @@ entry is a separate decision.
   chance in both windows, n=293 backtest, per the register-36 criterion;
   evidence keeps accruing free; the T3b recipe-layer question and any
   status change are the operator's queue decision).
+- **Label resolution (the sitting, 2026-08-28, register 88):**
+  deprioritize ENACTED under the ratified criteria — S0-H10 accrues
+  free, no active workstream; any revival is a fresh review call.
 - AUDIT: PASS. First readouts at/below chance (18.8% backtest, 7.1%
   forward vs ~23%) — evidence, not verdict.
 
@@ -375,6 +382,20 @@ entry is a separate decision.
     best-of-many (the cell was selected from a scanned matrix) and
     single-month backtest. STATUS: pending-conditions. No composite mints
     unless YES.
+  - **Q2-H11** (registered 2026-08-28, the sitting, register 88;
+    prereg_Q2-H11 counted): PREDICTION — the ger40fut S0-H11 ×
+    R-NEXIT-EARLY × London cell RETAINS POSITIVE NET and floor
+    clearance at ≥30 FURTHER forward London trades (accrual from
+    mint). Founding cell verified at mint: forward net +158.6 pts,
+    n=43, median +1.5. MECHANISM SENTENCE (operator-accepted;
+    operator may reword or strike — if struck, the cell goes to
+    WATCH): map-events fire most meaningfully in ger40's home
+    session, and story-exits protect young trades where the
+    four-window calendar chops holds. PROVENANCE: two-lens
+    convergence (register-84 separator survivors + net-ledger
+    forward-positive top cell); post-hoc discovery discounts apply.
+    Census conventions; ex-lockbox (register 85); NO recipe until
+    graded. STATUS: pending-conditions; clock on the dashboard.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS — both claim components now measurable (traversal S0,
   stall S1-suppression).
@@ -628,9 +649,18 @@ for walk-forward.
     −7.29, n=62 (registered +7.1, n=63). Zone decomposition: working
     set +30.32 (n=24) · lockbox slice +3.75 (n=15, excluded by the
     ruling) · forward −16.84 (n=38) — the reversal is FORWARD-DRIVEN,
-    not exclusion-driven. STATUS: conditions-met — the grading clock
-    crossed 2026-08-27 (38 ≥ 30 forward London trades pooled
-    canonical); the grade is the operator sitting's front-door act.
+    not exclusion-driven.
+    **GRADED: NO (the sitting, operator + reviewer, 2026-08-28;
+    register 88 — the register's first grade, enacted by the
+    operator on an operator-found cell).** Forward London pooled
+    median −16.84 (n=38); 27/38 losers; all four instruments
+    negative-median (ger40 −6.54 / uk100 −15.86 / us30 −18.49 /
+    nas100 −40.16); regime split ISO week 34 net +95.6 vs week 35 net −640.2;
+    capture-failure texture: twelve losers with MFE ≥ 40 pts (range
+    43.9..216.5 — reviewer count; the sitting's "ten" was the
+    operator's cut, drift stated). The fade-direction
+    re-registration is NOT exercised off this window
+    (fitting-to-the-grade barred); S0-H19's row accrues unchanged.
 - **Status:** **signal-live** (statistic shape at mint: cross-window
   consistency of a NEGATIVE, field-priced; suppression grading reads
   negative anchor-claim lift as the sentence winning).

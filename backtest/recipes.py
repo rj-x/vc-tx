@@ -154,7 +154,7 @@ RECIPE_SETS = {
         # settled 15M bars with a 1.0xATR buffer. N=1 (the previous
         # settled 15M bar) ASSUMED — unstated in the order, flagged.
         "R-ARM15": {"provenance": "operator-registered 2026-08-24 "
-                                  "(register 77; N=1 assumed, flagged)",
+                                  "(register 77; N=1 RATIFIED, 2026-08-28 sitting, register 88)",
                     "stages": [{"stop": [("atr", 2.5, "15min")],
                                 "target": None,
                                 "until": ("progress_atr", 1.0, "15min")},

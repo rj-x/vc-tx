@@ -1,0 +1,47 @@
+{
+  "STAMP": "OBSERVATIONAL co-fire consistency re-read (74-A5, one emission) \u2014 results to the next sitting; no pair mints from this read; never validation",
+  "engine_commit": "5629bb101f3faea139abe05eaa3b9b508a2902b7",
+  "source_cofire_commit": "d3d5f1d77269b16f7b9611aa085e95dd76dcce03",
+  "yardsticks": {
+    "min_cells": 3,
+    "min_n": 15,
+    "min_lift_pp": 3.0,
+    "pctl": 95.0
+  },
+  "thinness_census": {
+    "cells_total": 344,
+    "total_n_ge_15": 272,
+    "with_n_ge_5": 42,
+    "with_n_ge_10": 16,
+    "with_n_ge_15": 3,
+    "max_with_n": 23
+  },
+  "measurable_pairs": {
+    "S0-H2->S0-H7": [
+      [
+        "uk100fut|w15|backtest",
+        18,
+        -2.7
+      ]
+    ],
+    "S0-H2->S0-H9": [
+      [
+        "nas100fut|w15|backtest",
+        23,
+        2.2
+      ],
+      [
+        "us30fut|w15|forward",
+        17,
+        15.2
+      ]
+    ]
+  },
+  "qualifying_pairs": [],
+  "luck": {
+    "observed": 0,
+    "null_median": 0.0,
+    "null_p95": 0.0,
+    "percentile_vs_null": 0.0
+  }
+}

@@ -15,9 +15,9 @@ percentile · volume loud/quiet at labels.high_volume_mult vs rel_volume's
 time-matched baseline — the existing founding conventions, cited, no new
 thresholds; "narrow"/"quiet" = below the wide/loud cuts) · H11 position
 (node/gap/neither) · coil-state
-preceding (FLAGGED proxy: trailing 30-bar 1M range-sum <= p20 of its
-trailing-day distribution; parameters implementer-proposed pending
-ratification — organ #3 is the eventual instrument) · H13 value-area
+preceding (proxy RATIFIED as flagged, 2026-08-28 sitting, register
+88: trailing 30-bar 1M range-sum <= p20 of its trailing-day
+distribution; organ #3 is the eventual instrument) · H13 value-area
 geometry (inside/edge/outside; edge = within one bucket of a band edge) ·
 1M phase (trending/ranging) · session.
 
@@ -51,8 +51,8 @@ from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-COIL_WINDOW = 30      # flagged implementer proposal (prereg)
-COIL_PCTILE = 0.20    # flagged implementer proposal (prereg)
+COIL_WINDOW = 30      # RATIFIED as flagged (register 88)
+COIL_PCTILE = 0.20    # RATIFIED as flagged (register 88)
 
 
 class _FeatRecorder:
@@ -228,8 +228,8 @@ def run_instrument(instr):
                       else "canonical"),
            "quadrant_base_rates": {},
            "coil_proxy_flag": ("trailing 30-bar range-sum <= p20 of "
-                               "trailing day — implementer-proposed, "
-                               "ratification pending"),
+                               "trailing day — RATIFIED as flagged, "
+                               "register 88; organ #3 eventual"),
            "cells": {}}
     for w_lo, w_hi, w in ((pd.Timestamp.min.tz_localize("UTC"), boundary,
                            "backtest"),
@@ -311,7 +311,7 @@ def _emit(results, head):
          "(prereg_conditioning_matrix). STATE-conditioned confirmation "
          "testing: hits are EPISODE-BEGINS-AFTER-FIRE; every cell's lift "
          "reads against its OWN state-conditioned base. Coil dimension is "
-         "a FLAGGED proxy pending ratification. Cells n<10 UNMEASURABLE "
+         "a proxy RATIFIED as flagged (register 88). Cells n<10 UNMEASURABLE "
          "(omitted here; full grid in the JSON). Surviving lift -> "
          "composite proposal via front door only.", ""]
     for res in results:

@@ -23,7 +23,7 @@ variant; NO VARIANT'S NET IS QUOTABLE without its vs-baseline line
 RE-FIRE DEDUP (register 77 clause 4): same sentence, same direction,
 within REFIRE_DEDUP_BARS = one trade (derivation: the sequel window —
 the scale that admits repeated sequels of one anchor episode;
-operator-ratification pending). Honest-fills rule 5 (register 77)
+RATIFIED at the 2026-08-28 sitting, register 88). Honest-fills rule 5 (register 77)
 removes the instant-kill class at the fill-logic level.
 
 FILL MODEL: PESSIMISTIC (register 65; ladder family). Entries UNREFINED

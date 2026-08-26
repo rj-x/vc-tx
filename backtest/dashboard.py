@@ -205,20 +205,20 @@ def generate():
         r = blk.get(key)
         return r.get("n_fires") if r else 0
 
-    def _journal_q19():
+    def _journal_q2h11():
         import csv as _csv
         p_ = os.path.join(ROOT, "reports", "trades.csv")
         if not os.path.exists(p_):
             return 0
         import pandas as _pd
-        gl = _pd.Timestamp("2026-08-14T15:04:09Z")
+        mint = _pd.Timestamp("2026-08-28T00:00:00Z")   # Q2-H11 mint
         n_ = 0
         for r in _csv.DictReader(open(p_)):
-            if (r["sentence_id"] == "S0-H19"
-                    and r["variant"] == "R-ARM15"
+            if (r["instrument"] == "ger40fut"
+                    and r["sentence_id"] == "S0-H11"
+                    and r["variant"] == "R-NEXIT-EARLY"
                     and r["session"] == "london"
-                    and r["status"] == "canonical"
-                    and _pd.Timestamp(r["open_ts"]) >= gl):
+                    and _pd.Timestamp(r["open_ts"]) >= mint):
                 n_ += 1
         return n_
 
@@ -243,8 +243,12 @@ def generate():
          f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
         (f"Q2-H{6}", f"scalp thread: ≥30 fwd fires, census conventions "
          f"(home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
-        ("Q1-H19", "≥30 fwd London R-ARM15 trades, canonical pooled "
-         f"(accrued: {_journal_q19()})"),
+        ("Q1-H19", "**GRADED: NO** (the sitting 2026-08-28, register "
+         "88 — the register's first grade; fwd London pooled −16.84 "
+         "median, n=38; row accrues unchanged)"),
+        ("Q2-H11", "≥30 FURTHER fwd London ger40fut S0-H11 "
+         "R-NEXIT-EARLY trades from mint 2026-08-28 "
+         f"(accrued: {_journal_q2h11()})"),
     ]
     for q, clock in q_lines:
         L.append(f"- **{q}** — {clock}")
@@ -252,17 +256,19 @@ def generate():
 
     # (d) recommendations awaiting decisions
     L += ["## Awaiting operator decisions", "",
-          "- Review labels (recommendations, unactioned): H2 "
-          "promote-candidate (initiation-vs-participation divergence is "
-          "new input, register 53), H10 deprioritize; "
-          f"S0-H{9} retirement flag (register 49).",
-          "- Ratifications: promote/deprioritize criteria numbers · ±2pp "
-          "marker band · session scoping · v0 recipe values (excursion "
-          "geometry is the evidence base) · coil-proxy parameters.",
-          "- Reads: R2 experiment verdict (r2_experiment.md — refinement "
-          "costs both sides at signal granularity) · matrix survivors.",
-          f"- Evenings: nas100 validation (gates Q1-H1/Q1-H{7}/Q2-H{9}) → "
-          "ger40 → us30; thin-tape probe (standalone, ~50 min).",
+          "- The 2026-08-28 sitting (register 88) cleared the standing "
+          "batch: review labels resolved (H2 label withdrawn, H10 "
+          "deprioritize enacted, S0-H"
+          f"{9} keeps running), ratifications passed in one sweep "
+          "(promote/deprioritize numbers, ±2pp band, session scoping, "
+          "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
+          "history).",
+          "- Reads: R2 experiment verdict (r2_experiment.md) · matrix "
+          "survivors · Q2-H11 mechanism wording (operator may reword "
+          "or strike — struck sends the cell to WATCH) · the co-fire "
+          "consistency re-read (next sitting).",
+          "- Open operator items: thin-tape probe (optional calendar); "
+          "broker verifications (leverage/maintenance/minis).",
           ""]
 
     # (e) the map
