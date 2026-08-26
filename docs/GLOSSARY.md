@@ -111,6 +111,7 @@ first uses them, or the commit doesn't pass.
 - **conditioning matrix** — the census splitting every signal's fires by market state; the grading instrument for the open questions.
 - **trade forensics** — the journal deep-review layer (register 84): reports/trades_enriched.csv (mechanical per-trade entry/path/outcome context) + reports/forensics/ (winner/loser separators vs a permutation null, exit-efficiency and winner-MAE design inputs, WATCH list, cross-market synthesis). Candidate-generation only — no gate, filter, or recipe change without its own Q-number.
 - **WATCH list** — forensics cells too thin to measure but bright enough to track; each carries its n-to-measurable (rows still needed before it can be read).
+- **NET LEDGER** — the forensics discovery table (register 84 amendment): cells ranked by pooled net points with mandatory working/lockbox/forward decomposition columns and a one-word forward verdict. Pooled net is candidate-generation only; no cell quotable without its forward column.
 - **leaderboard** — reports/account_curves/_LEADERBOARD.csv (register 86): one row per account curve sorted by end balance, B-RANDOM member curves as the luck reference. Leaderboard-top is best-of-field by construction — never quoted alone.
 - **co-fire** — two signals from different families firing in the same window.
 - **organ / sense organ** — a planned market-structure instrument (volume profile, velocity/efficiency) feeding future signals.

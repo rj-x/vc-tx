@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `c68ba4f77` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
+Engine `4a06526e3` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
 
-STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. EXCLUDED FROM AGGREGATES: 3280 lockbox-span rows, 0 sealed rows (of 11429 journal rows; 8149 used).
+STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. NET LEDGER = per-cell pooled net with MANDATORY zone decomposition (descriptive, no null; ranking is best-of-field by construction): pooled INCLUDES the lockbox span under the dated operator order of 2026-08-27 — the one sanctioned decomposition display; register 85 stands for every evidential aggregate, and the decomposition columns are why the pooled number is candidate-generation only. NO CELL IS QUOTABLE FROM THE LEDGER WITHOUT ITS FORWARD COLUMN. EXCLUDED FROM AGGREGATES: 3280 lockbox-span rows, 0 sealed rows (of 11429 journal rows; 8149 used).
 
 **Luck budget (ger40fut):** 887 of 2831 measurable separator cells reach |split| >= 10pp vs null median 919.5 / p95 971; percentile 11.0. Survivors also clear their own cell's null p95.
 
@@ -54,6 +54,39 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 | S1-H2 | R-NEXIT-FULL | -1.5 (129) | -0.5 (39) | 5.0 (°16) | -1.5 (56) | -1.8 (47) |
 | S1-H2 | R-NEXIT-SENT | -1.35 (70) | -2.8 (25) | -9.45 (°8) | -2.0 (35) | 0.45 (32) |
 | S1-H2 | R-OP2 | -3.17 (107) | -9.27 (34) | -8.24 (°16) | -2.6 (40) | -4.33 (31) |
+
+## NET LEDGER — top 25 of 600 cells by pooled net points (the discovery lens; full ledger in the JSON)
+
+> Pooled net is CANDIDATE-GENERATION ONLY — the decomposition columns are why. Verdict: forward-thin at forward n < 25, else the forward median's sign. Floor clearance = ex-lockbox cell median vs the session-scoped baseline floor max. No cell quotable without its forward column.
+
+| sentence | variant | session | pooled net | working net / med (n) | lockbox net / med (n) | forward net / med (n) | floor (base) | clears | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| S0-H11 | R-NEXIT-EARLY | london | 590.0 | 155.5 / 78.73 (3) | 275.9 / -0.5 (23) | 158.6 / 1.5 (43) | B-RANDOM | YES | forward-positive |
+| S0-H6 | R-ARM15 | london | 446.3 | 222.6 / 9.7 (7) | 499.9 / 13.01 (12) | -276.1 / -31.14 (17) | B-RANDOM | no | forward-thin |
+| S0-H6 | R-NEXIT-EARLY | london | 429.8 | 246.9 / 4.6 (9) | 222.3 / -3.5 (14) | -39.4 / 0.4 (26) | B-RANDOM | YES | forward-positive |
+| S0-H7 | R-BE | london | 412.2 | 465.2 / 63.0 (5) | 9.9 / -1.5 (7) | -62.8 / -1.5 (5) | B-RANDOM | no | forward-thin |
+| S1-H11 | R-NEXIT-SENT | ny_only | 364.9 | -8.9 / -6.95 (6) | 360.5 / 61.62 (3) | 13.3 / -6.5 (3) | B-RANDOM | no | forward-thin |
+| S0-H19 | R-ARM15 | london | 362.1 | 277.8 / 74.91 (4) | 193.1 / 20.7 (3) | -108.8 / -6.54 (10) | B-RANDOM | no | forward-thin |
+| S1-H2 | R-NEXIT-SENT | asia | 361.2 | 299.0 / -2.1 (27) | -1.8 / 0.76 (6) | 64.0 / -1.2 (43) | B-RANDOM | no | forward-negative |
+| S0-H14 | R-NEXIT-SENT | london | 350.7 | -34.4 / -1.81 (5) | 309.0 / 2.72 (18) | 76.1 / 10.0 (9) | B-TREND | no | forward-thin |
+| S0-H14 | R-ARM15 | london | 348.2 | -34.1 / -1.81 (5) | 238.4 / -19.85 (17) | 143.9 / 16.01 (8) | B-TREND | no | forward-thin |
+| S0-H10 | R-BE | ny_only | 347.9 | 263.8 / -1.5 (4) | -147.4 / -1.5 (9) | 231.5 / -1.5 (6) | B-TREND | no | forward-thin |
+| S0-H1 | R-ARM15 | dead | 321.2 | 260.6 / 130.29 (2) | 49.0 / 48.99 (1) | 11.6 / 14.6 (3) | B-RANDOM | no | forward-thin |
+| S0-H7 | R-ARM15 | london | 318.2 | 418.2 / 45.18 (8) | 84.9 / -7.23 (9) | -184.9 / -22.11 (8) | B-RANDOM | no | forward-thin |
+| S0-H10 | R-ARM15 | ny_only | 309.0 | 60.8 / -1.65 (4) | 93.2 / 11.51 (9) | 155.0 / 16.61 (6) | B-TREND | no | forward-thin |
+| S0-H13 | R-ARM15 | asia | 304.8 | 342.9 / 104.09 (3) | -38.0 / -38.04 (1) | 0.0 / None (0) | B-RANDOM | YES | forward-thin |
+| S0-H7 | R-BE | ny_only | 298.1 | 394.1 / -1.5 (3) | -71.2 / -30.07 (3) | -24.8 / -53.48 (4) | B-RANDOM | no | forward-thin |
+| S0-H9 | R-NEXIT-EARLY | asia | 297.6 | 4.9 / 0.25 (6) | 295.7 / -0.1 (22) | -3.0 / -1.55 (6) | B-RANDOM | no | forward-thin |
+| S0-H14 | R-NOTRAIL | dead | 280.5 | -49.5 / -49.54 (1) | 66.8 / 66.8 (1) | 263.3 / 143.9 (3) | B-TREND | no | forward-thin |
+| S0-H2 | R-NEXIT-SENT | asia | 274.8 | 284.3 / 2.0 (34) | 0.2 / 0.76 (6) | -9.7 / -1.5 (49) | B-RANDOM | no | forward-negative |
+| S0-H2 | R-ARM15 | ny_only | 260.5 | -46.2 / 35.65 (5) | 156.9 / 4.56 (4) | 149.8 / -4.2 (6) | B-RANDOM | no | forward-thin |
+| S0-H19 | R-NEXIT-SENT | london | 258.9 | 324.1 / 73.69 (5) | 10.7 / 13.0 (3) | -75.9 / -7.2 (12) | B-RANDOM | no | forward-thin |
+| S0-H9 | R-NOTRAIL | dead | 235.8 | 93.9 / 46.97 (2) | 36.3 / -43.29 (4) | 105.6 / 52.78 (2) | B-RANDOM | no | forward-thin |
+| S1-H11 | R-ARM15 | ny_only | 235.8 | -145.6 / -113.5 (3) | 315.2 / 61.62 (3) | 66.2 / 10.79 (3) | B-RANDOM | no | forward-thin |
+| S0-H7 | R-NOTRAIL | ny_only | 231.3 | 374.4 / 110.3 (3) | -118.4 / -39.64 (3) | -24.8 / -53.48 (4) | B-RANDOM | no | forward-thin |
+| S0-H11 | R-NEXIT-FULL | london | 229.8 | 79.4 / 41.9 (3) | 189.9 / -0.5 (29) | -39.6 / 1.5 (55) | B-RANDOM | YES | forward-positive |
+| S1-H11 | R-NEXIT-SENT | london | 224.7 | 102.4 / 33.15 (8) | 86.5 / -13.51 (5) | 35.8 / 8.05 (8) | B-RANDOM | YES | forward-thin |
+| … | | | (575 more cells in the JSON) | | | | | | |
 
 ## Winner/loser separators clearing their null
 

@@ -62,13 +62,18 @@ from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from backtest.location_census import _Profile
 from backtest.recipes import _spread_median, build_env
 from backtest.scoreboard import _replay, make_cfg
+from backtest.signal_points import DRIFT_SKEW_SHARE, TREND_FAMILY
 from backtest.vwap_census import _band, _vwap_frame
 
 OUT = os.path.join(ROOT, "reports", "forensics")
 TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
 ENRICHED_CSV = os.path.join(ROOT, "reports", "trades_enriched.csv")
+BASE_JSON = os.path.join(ROOT, "reports", "scoreboard",
+                         "journal_baselines.json")
 
 MIN_CELL_N = 25          # journal-survey measurability convention
+TOP_LEDGER = 25          # NET LEDGER rows per market (cap stated,
+                         # drop count printed; full ledger in JSON)
 MIN_SIDE_N = 10          # both labels must carry at least this
 SPLIT_MIN_PP = 10.0      # separator qualifying |split|
 NULL_SHUFFLES = 100
@@ -290,6 +295,61 @@ def grid(rows):
     return {k: {"n": len(v),
                 "median_pts": round(float(np.median(v)), 2)}
             for k, v in sorted(cells.items())}
+
+
+def zone_of(ts):
+    """working | lockbox | forward (register 85 three-zone model)."""
+    t = pd.Timestamp(ts)
+    if in_lockbox_span(t):
+        return "lockbox"
+    return "working" if t < lockbox_boundary() else "forward"
+
+
+def net_ledger(rows_all, floors, long_share):
+    """NET LEDGER (register 84 amendment, operator order 2026-08-27):
+    cells ranked by POOLED net points — the discovery lens. Pooled =
+    working + lockbox + forward: the ONE table where the lockbox span
+    appears inside a printed aggregate, sanctioned by the dated order
+    for decomposition display only (register 85 stands everywhere
+    else); the mandatory per-zone columns are why the pooled number is
+    unquotable. Floor clearance reads the EX-LOCKBOX cell median vs
+    the session-scoped baseline floor max. Verdict: forward-thin at
+    forward n < MIN_CELL_N, else the FORWARD MEDIAN's sign."""
+    cells = {}
+    for r in rows_all:
+        k = (r["sentence_id"], r["variant"], r["session"])
+        cells.setdefault(k, {}).setdefault(
+            zone_of(r["open_ts"]), []).append(float(r["points"]))
+    out = []
+    for (sent, var, sess), zones_ in sorted(cells.items()):
+        row = {"sentence": sent, "variant": var, "session": sess}
+        pooled = []
+        for z in ("working", "lockbox", "forward"):
+            pts = zones_.get(z, [])
+            pooled.extend(pts)
+            row[f"{z}_net"] = round(float(np.sum(pts)), 1)
+            row[f"{z}_median"] = (round(float(np.median(pts)), 2)
+                                  if pts else None)
+            row[f"{z}_n"] = len(pts)
+        row["pooled_net"] = round(float(np.sum(pooled)), 1)
+        ex_lb = zones_.get("working", []) + zones_.get("forward", [])
+        med_ex = float(np.median(ex_lb)) if ex_lb else None
+        bname = ("B-TREND" if sent in TREND_FAMILY else
+                 "B-ALWAYS-LONG"
+                 if long_share.get(sent, 0.0) >= DRIFT_SKEW_SHARE
+                 else "B-RANDOM")
+        fl = floors.get("|".join((var, bname, sess)), [])
+        row["floor_baseline"] = bname
+        row["clears_floor"] = (None if not fl or med_ex is None
+                               else bool(med_ex > max(fl)))
+        nf, mf = row["forward_n"], row["forward_median"]
+        row["verdict"] = ("forward-thin" if nf < MIN_CELL_N else
+                          "forward-positive" if mf > 0 else
+                          "forward-negative")
+        out.append(row)
+    out.sort(key=lambda r: (-r["pooled_net"], r["sentence"],
+                            r["variant"], r["session"]))
+    return out
 
 
 def separators(rows):
@@ -548,7 +608,16 @@ def _hdr(title, head, extra=""):
             "management-outcomes, not independent fires (stated). "
             "Prices are the FUTURES leg (the journal's basis). "
             "FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below "
-            "measurability), excluded from the arithmetic." + extra,
+            "measurability), excluded from the arithmetic. NET LEDGER "
+            "= per-cell pooled net with MANDATORY zone decomposition "
+            "(descriptive, no null; ranking is best-of-field by "
+            "construction): pooled INCLUDES the lockbox span under "
+            "the dated operator order of 2026-08-27 — the one "
+            "sanctioned decomposition display; register 85 stands for "
+            "every evidential aggregate, and the decomposition "
+            "columns are why the pooled number is candidate-"
+            "generation only. NO CELL IS QUOTABLE FROM THE LEDGER "
+            "WITHOUT ITS FORWARD COLUMN." + extra,
             ""]
 
 
@@ -588,6 +657,33 @@ def emit_market(instr, res, head):
                 dim = "°" if c["n"] < MIN_CELL_N else ""
                 row.append(f"{c['median_pts']} ({dim}{c['n']})")
         L.append("| " + " | ".join(row) + " |")
+    nl = res["net_ledger"]
+    L += ["", f"## NET LEDGER — top {min(TOP_LEDGER, len(nl))} of "
+          f"{len(nl)} cells by pooled net points (the discovery lens; "
+          "full ledger in the JSON)", "",
+          "> Pooled net is CANDIDATE-GENERATION ONLY — the "
+          "decomposition columns are why. Verdict: forward-thin at "
+          f"forward n < {MIN_CELL_N}, else the forward median's sign. "
+          "Floor clearance = ex-lockbox cell median vs the "
+          "session-scoped baseline floor max. No cell quotable "
+          "without its forward column.", "",
+          "| sentence | variant | session | pooled net | working "
+          "net / med (n) | lockbox net / med (n) | forward net / med "
+          "(n) | floor (base) | clears | verdict |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    for r in nl[:TOP_LEDGER]:
+        zc = {z: (f"{r[f'{z}_net']} / {r[f'{z}_median']} "
+                  f"({r[f'{z}_n']})")
+              for z in ("working", "lockbox", "forward")}
+        cl = {True: "YES", False: "no", None: "—"}[r["clears_floor"]]
+        L.append(f"| {r['sentence']} | {r['variant']} "
+                 f"| {r['session']} | {r['pooled_net']} "
+                 f"| {zc['working']} | {zc['lockbox']} "
+                 f"| {zc['forward']} | {r['floor_baseline']} | {cl} "
+                 f"| {r['verdict']} |")
+    if len(nl) > TOP_LEDGER:
+        L.append(f"| … | | | ({len(nl) - TOP_LEDGER} more cells in "
+                 "the JSON) | | | | | | |")
     L += ["", "## Winner/loser separators clearing their null", ""]
     surv = [c for c in res["separators"] if c["survivor"]]
     if surv:
@@ -693,21 +789,33 @@ def emit_cross(cm, per_instr, head):
         f.write("\n".join(L))
 
 
-def report(enriched, head):
+def report(enriched, head, baselines=None):
     """The comparison engine over enriched rows. Pure given inputs;
-    twin-run pinned in tests."""
+    twin-run pinned in tests. baselines: journal_baselines floors per
+    instrument (loaded from disk when None and present)."""
+    if baselines is None:
+        baselines = (json.load(open(BASE_JSON))["floors"]
+                     if os.path.exists(BASE_JSON) else {})
     per_instr = {}
     for instr in sorted({r["instrument"] for r in enriched}):
         rows = [r for r in enriched if r["instrument"] == instr]
         use, n_lock, n_seal = usable(rows)
         cells, luck = separators(use)
+        share = {}
+        for r in rows:
+            if r.get("direction") is not None:
+                share.setdefault(r["sentence_id"], []).append(
+                    int(r["direction"]) == 1)
+        share = {k: float(np.mean(v)) for k, v in share.items()}
         per_instr[instr] = {
             "n_journal": len(rows), "n_used": len(use),
             "excluded_lockbox": n_lock, "excluded_sealed": n_seal,
             "grid": grid(use), "separators": cells, "luck": luck,
             "watch": watch_list(use),
             "exit_efficiency": exit_efficiency(use),
-            "winner_mae": winner_mae(use)}
+            "winner_mae": winner_mae(use),
+            "net_ledger": net_ledger(rows, baselines.get(instr, {}),
+                                     share)}
     cm = cross_market(per_instr)
     art = {"STAMP": ("OBSERVATIONAL trade forensics — luck priced; "
                      "candidate-generation only, read at an "

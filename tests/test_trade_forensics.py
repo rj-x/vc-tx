@@ -8,8 +8,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from backtest.trade_forensics import (FEATURES, outcome_of, report,
-                                      usable)
+from backtest.trade_forensics import (FEATURES, net_ledger, outcome_of,
+                                      report, usable, zone_of)
 
 
 def _rows():
@@ -51,6 +51,31 @@ def test_lockbox_and_sealed_excluded():
             {"open_ts": "2026-07-20 10:00:00+00:00"}]   # working set
     keep, n_lock, n_seal = usable(rows)
     assert (len(keep), n_lock, n_seal) == (2, 1, 1)
+
+
+def test_net_ledger_zones_verdict_and_floor():
+    # register 84 amendment: pooled = W+L+F; verdict thin below n=25;
+    # floor clearance on the EX-LOCKBOX median only
+    def _r(ts, pts):
+        return {"sentence_id": "S0-H1", "variant": "R-X",
+                "session": "london", "open_ts": ts, "points": pts}
+    rows = ([_r("2026-07-20 10:00:00+00:00", 5.0)] * 10
+            + [_r("2026-08-05 10:00:00+00:00", 3.0)] * 5
+            + [_r("2026-08-20 10:00:00+00:00", -2.0)] * 8)
+    assert [zone_of(r["open_ts"]) for r in rows[:1] + rows[10:11]
+            + rows[15:16]] == ["working", "lockbox", "forward"]
+    nl = net_ledger(rows, {"R-X|B-RANDOM|london": [0.0]}, {})
+    assert len(nl) == 1
+    r = nl[0]
+    assert (r["working_net"], r["lockbox_net"], r["forward_net"]) \
+        == (50.0, 15.0, -16.0)
+    assert r["pooled_net"] == 49.0
+    assert (r["working_n"], r["lockbox_n"], r["forward_n"]) == (10, 5, 8)
+    assert r["verdict"] == "forward-thin"          # forward n < 25
+    assert r["clears_floor"] is True               # ex-lockbox med 1.5
+    # forward-deep cells key on the forward median's sign
+    rows2 = [_r("2026-08-20 10:00:00+00:00", -2.0)] * 30
+    assert net_ledger(rows2, {}, {})[0]["verdict"] == "forward-negative"
 
 
 def test_separator_survives_and_luck_budget_prints():
