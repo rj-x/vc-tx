@@ -269,3 +269,4 @@ Each needs one operator line: **ratify** (becomes authority) / **source** (cite 
 
 | constant | value | source | date set | disposition |
 |---|---|---|---|---|
+| capture_study.py:NEVER_AGAIN_BOUND_ATR | 1.0 | backtest/capture_study.py:71 | 2026-08-26 | PENDING RULING |
