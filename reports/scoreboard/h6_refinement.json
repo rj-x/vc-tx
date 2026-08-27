@@ -1,6 +1,6 @@
 {
-  "STAMP": "OBSERVATIONAL H6 refinement program \u2014 a counted experiment family; v0 untouched; candidates through the front door only; never validation",
-  "engine_commit": "727590f3c82e6a9d9c2e4739831d075767ead578",
+  "STAMP": "OBSERVATIONAL Scalp refinement program \u2014 a counted experiment family; v0 untouched; candidates through the front door only; never validation",
+  "engine_commit": "878fb1b132afa953fd8d3c8efc04717f5d0d7152",
   "n_fires": 454,
   "cell_budget": {
     "split_cells": 249,
@@ -8,6 +8,376 @@
     "features": 38,
     "instruments": 4,
     "windows": 2
+  },
+  "n_scalp_rows": 302,
+  "real_basis": {
+    "uk100fut|backtest": {
+      "n_rows": 45,
+      "n_eventual_nonreach": 8,
+      "caps": {
+        "3": {
+          "n_dry": 34,
+          "delta_total": -78.2,
+          "delta_late_reach": -231.3,
+          "n_late_reach": 26,
+          "delta_eod": 24.0,
+          "n_eod": 3,
+          "delta_stop": 129.1,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 29,
+          "delta_total": -74.7,
+          "delta_late_reach": -219.9,
+          "n_late_reach": 21,
+          "delta_eod": 10.5,
+          "n_eod": 3,
+          "delta_stop": 134.7,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 26,
+          "delta_total": -143.1,
+          "delta_late_reach": -222.0,
+          "n_late_reach": 18,
+          "delta_eod": -16.7,
+          "n_eod": 3,
+          "delta_stop": 95.6,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        }
+      }
+    },
+    "uk100fut|forward": {
+      "n_rows": 47,
+      "n_eventual_nonreach": 6,
+      "caps": {
+        "3": {
+          "n_dry": 35,
+          "delta_total": -102.5,
+          "delta_late_reach": -177.7,
+          "n_late_reach": 29,
+          "delta_eod": 9.5,
+          "n_eod": 1,
+          "delta_stop": 65.7,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 32,
+          "delta_total": -100.1,
+          "delta_late_reach": -165.9,
+          "n_late_reach": 27,
+          "delta_eod": 7.0,
+          "n_eod": 1,
+          "delta_stop": 58.7,
+          "n_stop_dodged": 4,
+          "n_stop_before_cap": 1,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 26,
+          "delta_total": -79.4,
+          "delta_late_reach": -149.0,
+          "n_late_reach": 21,
+          "delta_eod": 9.0,
+          "n_eod": 1,
+          "delta_stop": 60.6,
+          "n_stop_dodged": 4,
+          "n_stop_before_cap": 1,
+          "holds": false
+        }
+      }
+    },
+    "ger40fut|backtest": {
+      "n_rows": 25,
+      "n_eventual_nonreach": 4,
+      "caps": {
+        "3": {
+          "n_dry": 20,
+          "delta_total": -57.3,
+          "delta_late_reach": -329.2,
+          "n_late_reach": 16,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 271.9,
+          "n_stop_dodged": 4,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 17,
+          "delta_total": -37.8,
+          "delta_late_reach": -278.0,
+          "n_late_reach": 13,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 240.2,
+          "n_stop_dodged": 4,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 15,
+          "delta_total": 22.0,
+          "delta_late_reach": -228.3,
+          "n_late_reach": 11,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 250.3,
+          "n_stop_dodged": 4,
+          "n_stop_before_cap": 0,
+          "holds": true
+        }
+      }
+    },
+    "ger40fut|forward": {
+      "n_rows": 50,
+      "n_eventual_nonreach": 9,
+      "caps": {
+        "3": {
+          "n_dry": 36,
+          "delta_total": 13.0,
+          "delta_late_reach": -321.7,
+          "n_late_reach": 27,
+          "delta_eod": 45.7,
+          "n_eod": 1,
+          "delta_stop": 288.9,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": true
+        },
+        "5": {
+          "n_dry": 32,
+          "delta_total": -77.3,
+          "delta_late_reach": -358.3,
+          "n_late_reach": 23,
+          "delta_eod": 43.7,
+          "n_eod": 1,
+          "delta_stop": 237.3,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 23,
+          "delta_total": -173.8,
+          "delta_late_reach": -345.1,
+          "n_late_reach": 17,
+          "delta_eod": 36.1,
+          "n_eod": 1,
+          "delta_stop": 135.2,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 3,
+          "holds": false
+        }
+      }
+    },
+    "nas100fut|backtest": {
+      "n_rows": 21,
+      "n_eventual_nonreach": 3,
+      "caps": {
+        "3": {
+          "n_dry": 12,
+          "delta_total": -262.7,
+          "delta_late_reach": -550.7,
+          "n_late_reach": 9,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 288.1,
+          "n_stop_dodged": 3,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 11,
+          "delta_total": -205.3,
+          "delta_late_reach": -515.9,
+          "n_late_reach": 8,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 310.6,
+          "n_stop_dodged": 3,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 9,
+          "delta_total": -215.3,
+          "delta_late_reach": -559.2,
+          "n_late_reach": 6,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 344.0,
+          "n_stop_dodged": 3,
+          "n_stop_before_cap": 0,
+          "holds": false
+        }
+      }
+    },
+    "nas100fut|forward": {
+      "n_rows": 46,
+      "n_eventual_nonreach": 9,
+      "caps": {
+        "3": {
+          "n_dry": 34,
+          "delta_total": -57.6,
+          "delta_late_reach": -664.4,
+          "n_late_reach": 25,
+          "delta_eod": 20.7,
+          "n_eod": 1,
+          "delta_stop": 586.1,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 29,
+          "delta_total": -97.8,
+          "delta_late_reach": -646.8,
+          "n_late_reach": 21,
+          "delta_eod": 14.0,
+          "n_eod": 1,
+          "delta_stop": 535.0,
+          "n_stop_dodged": 7,
+          "n_stop_before_cap": 1,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 27,
+          "delta_total": -121.9,
+          "delta_late_reach": -610.5,
+          "n_late_reach": 19,
+          "delta_eod": 12.2,
+          "n_eod": 1,
+          "delta_stop": 476.5,
+          "n_stop_dodged": 7,
+          "n_stop_before_cap": 1,
+          "holds": false
+        }
+      }
+    },
+    "us30fut|backtest": {
+      "n_rows": 31,
+      "n_eventual_nonreach": 10,
+      "caps": {
+        "3": {
+          "n_dry": 27,
+          "delta_total": 393.1,
+          "delta_late_reach": -685.9,
+          "n_late_reach": 17,
+          "delta_eod": 84.0,
+          "n_eod": 2,
+          "delta_stop": 995.0,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": true
+        },
+        "5": {
+          "n_dry": 23,
+          "delta_total": 400.0,
+          "delta_late_reach": -657.5,
+          "n_late_reach": 13,
+          "delta_eod": 69.0,
+          "n_eod": 2,
+          "delta_stop": 988.5,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": true
+        },
+        "8": {
+          "n_dry": 23,
+          "delta_total": 223.0,
+          "delta_late_reach": -677.0,
+          "n_late_reach": 13,
+          "delta_eod": 48.5,
+          "n_eod": 2,
+          "delta_stop": 851.5,
+          "n_stop_dodged": 8,
+          "n_stop_before_cap": 0,
+          "holds": true
+        }
+      }
+    },
+    "us30fut|forward": {
+      "n_rows": 37,
+      "n_eventual_nonreach": 5,
+      "caps": {
+        "3": {
+          "n_dry": 28,
+          "delta_total": -350.9,
+          "delta_late_reach": -688.5,
+          "n_late_reach": 23,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 337.6,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "5": {
+          "n_dry": 24,
+          "delta_total": -220.3,
+          "delta_late_reach": -558.9,
+          "n_late_reach": 19,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 338.6,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        },
+        "8": {
+          "n_dry": 22,
+          "delta_total": -322.5,
+          "delta_late_reach": -594.6,
+          "n_late_reach": 17,
+          "delta_eod": 0.0,
+          "n_eod": 0,
+          "delta_stop": 272.1,
+          "n_stop_dodged": 5,
+          "n_stop_before_cap": 0,
+          "holds": false
+        }
+      }
+    }
+  },
+  "stop_cluster_week32": {
+    "iso_week": 32,
+    "rows_ex_lockbox": 13,
+    "stops": 6,
+    "stops_mfe_le_55": 6,
+    "lockbox_note": "ISO week 32 (2026-08-03..09) straddles the excluded lockbox span from 2026-08-04 \u2014 only its pre-boundary rows count here"
+  },
+  "joint_v1_proposal": {
+    "triggered": false,
+    "legs_holding_cap3_forward": [
+      "ger40fut"
+    ],
+    "per_instrument": {
+      "uk100fut": {
+        "n_nonreach": 6,
+        "note": "unmeasurable"
+      },
+      "ger40fut": {
+        "n_nonreach": 9,
+        "note": "unmeasurable"
+      },
+      "nas100fut": {
+        "n_nonreach": 9,
+        "note": "unmeasurable"
+      },
+      "us30fut": {
+        "n_nonreach": 5,
+        "note": "unmeasurable"
+      }
+    }
   },
   "luck_budget": {
     "measurable_cells": 80,

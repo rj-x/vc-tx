@@ -315,6 +315,156 @@ def time_cap(bp):
     return out
 
 
+# ------------------------------------------------ register 101: real basis
+
+SCALP_ARM = "R-SCALP-H" + str(6)
+REACH_REASONS = ("target", "target_gap")
+STOP_REASONS = ("stop", "stop_gap")
+PROPOSAL_MIN_LEGS = 3        # order-stated: cap@3 must hold on >= 3 legs
+STOP_PCTILE = 75             # candidate stop = p75 of forward non-reach MAE
+
+
+def load_scalp_rows():
+    """The plain scalp arm's journal rows from trades_enriched.csv,
+    ex-lockbox, with window and the fire key (open_ts - 1M)."""
+    from engine.store_loader import in_lockbox_span, lockbox_boundary, zones
+    boundary, gl = lockbox_boundary(), zones()["go_live"]
+    out = []
+    if not os.path.exists(ENRICHED):
+        return out
+    for r in csv.DictReader(open(ENRICHED)):
+        if r["variant"] != SCALP_ARM or in_lockbox_span(r["open_ts"]):
+            continue
+        t = pd.Timestamp(r["open_ts"])
+        w = "backtest" if t < boundary else "forward" if t >= gl else None
+        if w is None:
+            continue
+        r = dict(r)
+        r["_window"] = w
+        r["_fire_ns"] = (t - pd.Timedelta(minutes=1)).value
+        out.append(r)
+    return out
+
+
+def real_basis(scalp_rows, bp):
+    """Cap at bar k applied to every scalp row still DRY at bar k (not
+    reached by the close of bar k: target rows with duration >= k, and
+    all eod/stop rows) vs the ACTUAL journal outcome, same fires, net
+    of spread. Delta decomposed by the avoided tail: late-reach
+    (AMPUTATION — the target would have hit later), eod (drift
+    savings), stop (disaster savings; stops in the dry set exit after
+    bar k, so the cap dodges them by construction; stops at or before
+    bar k are counted apart as not-dodgeable). holds = net delta > 0
+    at n >= MIN_SIDE_N."""
+    bp_idx = {(r["instrument"], pd.Timestamp(r["fire_ts"]).value): r
+              for r in bp}
+    out = {}
+    for instr in INSTRUMENTS:
+        for w in ("backtest", "forward"):
+            rows = [r for r in scalp_rows
+                    if r["instrument"] == instr and r["_window"] == w]
+            cell = {"n_rows": len(rows),
+                    "n_eventual_nonreach": sum(
+                        1 for r in rows
+                        if r["exit_reason"] not in REACH_REASONS),
+                    "caps": {}}
+            for k in CAP_KS:
+                col = f"cum_pts_bar{k}"
+                agg = {"n_dry": 0, "delta_total": 0.0,
+                       "delta_late_reach": 0.0, "n_late_reach": 0,
+                       "delta_eod": 0.0, "n_eod": 0,
+                       "delta_stop": 0.0, "n_stop_dodged": 0,
+                       "n_stop_before_cap": 0}
+                for r in rows:
+                    dur = float(r["duration_min"])
+                    reach = r["exit_reason"] in REACH_REASONS
+                    if reach and dur < k:
+                        continue                       # reached by bar k
+                    if not reach and r["exit_reason"] in STOP_REASONS \
+                            and dur < k:
+                        agg["n_stop_before_cap"] += 1  # not dodgeable
+                        continue
+                    b = bp_idx.get((instr, r["_fire_ns"]))
+                    if not b or b.get(col) in ("", "None", None):
+                        continue
+                    cap = float(b[col]) - float(b["spread_pts"])
+                    delta = cap - float(r["points"])
+                    agg["n_dry"] += 1
+                    agg["delta_total"] += delta
+                    if reach:
+                        agg["n_late_reach"] += 1
+                        agg["delta_late_reach"] += delta
+                    elif r["exit_reason"] in STOP_REASONS:
+                        agg["n_stop_dodged"] += 1
+                        agg["delta_stop"] += delta
+                    else:
+                        agg["n_eod"] += 1
+                        agg["delta_eod"] += delta
+                for key in ("delta_total", "delta_late_reach",
+                            "delta_eod", "delta_stop"):
+                    agg[key] = round(agg[key], 1)
+                agg["holds"] = bool(agg["n_dry"] >= MIN_SIDE_N
+                                    and agg["delta_total"] > 0)
+                cell["caps"][str(k)] = agg
+            out[f"{instr}|{w}"] = cell
+    return out
+
+
+def stop_cluster_check(scalp_rows, iso_week=32):
+    """Re-verify the referenced week forensic on the scalp rows: stop
+    rows in the ISO week, their MFE distribution, and the lockbox
+    overlap (the week may straddle the excluded span)."""
+    from engine.store_loader import lockbox_boundary, zones
+    rows = [r for r in scalp_rows
+            if pd.Timestamp(r["open_ts"]).isocalendar().week == iso_week]
+    stops = [r for r in rows if r["exit_reason"] in STOP_REASONS]
+    mfe = [float(r["mfe_pts"]) for r in stops
+           if r.get("mfe_pts") not in ("", "None", None)]
+    return {"iso_week": iso_week, "rows_ex_lockbox": len(rows),
+            "stops": len(stops),
+            "stops_mfe_le_55": sum(1 for m in mfe if m <= 55),
+            "lockbox_note": ("ISO week 32 (2026-08-03..09) straddles the "
+                             "excluded lockbox span from 2026-08-04 — only "
+                             "its pre-boundary rows count here")}
+
+
+def joint_proposal(scalp_rows, rb):
+    """Emit the joint v1 package only if cap@3 holds on the real basis
+    on >= PROPOSAL_MIN_LEGS legs (forward window). Candidate stop =
+    p75 of forward non-reachers' MAE (xATR15) per instrument;
+    amputation = share of forward reachers whose MAE exceeded it."""
+    holding = [i for i in INSTRUMENTS
+               if rb.get(f"{i}|forward", {}).get("caps", {})
+               .get("3", {}).get("holds")]
+    pkg = {"triggered": len(holding) >= PROPOSAL_MIN_LEGS,
+           "legs_holding_cap3_forward": holding, "per_instrument": {}}
+    for instr in INSTRUMENTS:
+        rows = [r for r in scalp_rows
+                if r["instrument"] == instr and r["_window"] == "forward"
+                and r.get("mae_atr") not in ("", "None", None)]
+        non = [float(r["mae_atr"]) for r in rows
+               if r["exit_reason"] not in REACH_REASONS]
+        reach = [float(r["mae_atr"]) for r in rows
+                 if r["exit_reason"] in REACH_REASONS]
+        if len(non) < MIN_SIDE_N:
+            pkg["per_instrument"][instr] = {"n_nonreach": len(non),
+                                            "note": "unmeasurable"}
+            continue
+        p = {q: round(float(np.percentile(non, q)), 3)
+             for q in (50, STOP_PCTILE, 90)}
+        cand = p[STOP_PCTILE]
+        amput = (round(float(np.mean([m > cand for m in reach])), 3)
+                 if reach else None)
+        pkg["per_instrument"][instr] = {
+            "n_nonreach": len(non), "n_reach": len(reach),
+            "nonreach_mae_atr_pctiles": p,
+            "candidate_stop_atr": cand,
+            "derivation": (f"p{STOP_PCTILE} of forward non-reachers' "
+                           "MAE (xATR15 at fire), ex-lockbox"),
+            "reachers_amputated_share": amput}
+    return pkg
+
+
 def run():
     bp, fires, enr = load_rows()
     tags = cofire_tags(bp, fires)
@@ -335,7 +485,13 @@ def run():
                    "measurable_cells": budget["measurable_cells"],
                    "features": len({k[2] for k in cells}),
                    "instruments": len(INSTRUMENTS), "windows": 2}
+    scalp = load_scalp_rows()
+    rb = real_basis(scalp, bp)
     return {"n_fires": len(bp), "cell_budget": cell_budget,
+            "n_scalp_rows": len(scalp),
+            "real_basis": rb,
+            "stop_cluster_week32": stop_cluster_check(scalp),
+            "joint_v1_proposal": joint_proposal(scalp, rb),
             "luck_budget": budget,
             "splits": {"|".join(k): {"with": c["with"],
                                      "without": c["without"],
@@ -432,6 +588,58 @@ def _emit(art, head):
                     f"({c['n_nonreach']})" if c else "—")
         L.append(f"| {instr} | {_c(1)} | {_c(2)} | {_c(3)} | {_c(4)} "
                  f"| {_cap(3)} | {_cap(5)} | {_cap(8)} |")
+    L += ["", "## Time-cap on the REAL BASIS (register 101): exit-at-k "
+          "for non-reachers vs the scalp arm's actual journal outcome, "
+          f"same fires, net of spread; {art['n_scalp_rows']} scalp rows "
+          "ex-lockbox; savings decomposed by the avoided tail's exit "
+          "reason; stops dodged = exits after bar k", "",
+          "| instrument | window | rows | eventual non-reach | dry@3 n | "
+          "cap@3 Δ total (late-reach / eod / stop) | stops dodged : "
+          "before cap | cap@5 Δ | cap@8 Δ | holds@3 |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    for key, c in art["real_basis"].items():
+        instr, w = key.split("|")
+        c3, c5, c8 = (c["caps"].get(k, {}) for k in ("3", "5", "8"))
+        dim = "°" if c3.get("n_dry", 0) < MIN_SIDE_N else ""
+        L.append(f"| {instr} | {w} | {c['n_rows']} "
+                 f"| {c['n_eventual_nonreach']} | {dim}{c3.get('n_dry', 0)} "
+                 f"| {c3.get('delta_total', '—')} "
+                 f"({c3.get('delta_late_reach', '—')} / "
+                 f"{c3.get('delta_eod', '—')} / {c3.get('delta_stop', '—')}) "
+                 f"| {c3.get('n_stop_dodged', '—')} : "
+                 f"{c3.get('n_stop_before_cap', '—')} "
+                 f"| {c5.get('delta_total', '—')} | {c8.get('delta_total', '—')} "
+                 f"| {'YES' if c3.get('holds') else 'no'} |")
+    wk = art["stop_cluster_week32"]
+    L += ["", f"Week-{wk['iso_week']} stop-cluster check on the scalp rows: "
+          f"{wk['stops']} stop rows ({wk['stops_mfe_le_55']} with MFE <= 55) "
+          f"of {wk['rows_ex_lockbox']} ex-lockbox rows — {wk['lockbox_note']}.",
+          ""]
+    pk = art["joint_v1_proposal"]
+    L += ["## Joint v1 proposal (register 101; emitted only if cap@3 holds "
+          f"on the real basis on >= {PROPOSAL_MIN_LEGS} forward legs; "
+          "NOTHING REGISTERED until the operator rules)", "",
+          f"Trigger: cap@3 holds forward on {pk['legs_holding_cap3_forward']} "
+          f"→ {'TRIGGERED — the package below is a RATIFICATION PACKAGE' if pk['triggered'] else 'NOT TRIGGERED — no package'}.",
+          ""]
+    if pk["triggered"]:
+        L += ["| instrument | fwd non-reach n | non-reach MAE xATR p50 / p75 / "
+              "p90 | candidate stop (p75) | reachers amputated (share) | "
+              "derivation |", "|---|---|---|---|---|---|"]
+        for instr, v in pk["per_instrument"].items():
+            if "note" in v:
+                L.append(f"| {instr} | {v['n_nonreach']} | — | — | — | "
+                         f"{v['note']} |")
+                continue
+            p = v["nonreach_mae_atr_pctiles"]
+            L.append(f"| {instr} | {v['n_nonreach']} | {p[50]} / "
+                     f"{p[STOP_PCTILE]} / {p[90]} | {v['candidate_stop_atr']} "
+                     f"| {v['reachers_amputated_share']} | {v['derivation']} |")
+        L += ["", "Package = bar-3 cap for non-reachers (target retained) + "
+              "the per-instrument candidate stop above, registered as ONE v1 "
+              "arm only on operator ratification; both derive from the same "
+              "forward non-reach accrual (register 64 distinguished: no "
+              "time-exit harvest)."]
     L.append("")
     with open(os.path.join(SB, "h6_refinement.md"), "w") as f:
         f.write("\n".join(L))

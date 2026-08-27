@@ -83,3 +83,30 @@ def test_time_cap_curve():
     k3 = tc["conditional_reach"][2]
     assert k3["n_dry"] == 3 and k3["p_touch_by_5"] == round(1 / 3, 3)
     assert tc["caps"]["5"]["n_nonreach"] == 2
+
+
+def test_real_basis_dry_at_k_decomposition():
+    from backtest.h6_refinement import real_basis
+    fire = "2026-08-20 10:00:00+00:00"
+    open_ts = "2026-08-20 10:01:00+00:00"
+    fire_ns = pd.Timestamp(fire).value
+
+    def _row(reason, dur, pts):
+        return {"instrument": "uk100fut", "_window": "forward",
+                "_fire_ns": fire_ns, "exit_reason": reason,
+                "duration_min": str(dur), "points": str(pts),
+                "open_ts": open_ts}
+    rows = [_row("target", 0.0, 5.0),      # reached by bar 3: excluded
+            _row("target", 10.0, 5.0),     # late reach: amputated
+            _row("eod", 300.0, -4.0),      # drift: saved
+            _row("stop", 20.0, -12.0),     # stop after cap: dodged
+            _row("stop", 1.0, -12.0)]      # stop before cap: not dodgeable
+    bp = [_bp("uk100fut", fire, True, c5=-1.0)]
+    bp[0]["cum_pts_bar3"] = "-1.0"        # cap@3 = -1 - spread(1) = -2
+    rb = real_basis(rows, bp)["uk100fut|forward"]
+    c3 = rb["caps"]["3"]
+    assert c3["n_dry"] == 3 and c3["n_stop_before_cap"] == 1
+    assert c3["n_late_reach"] == 1 and c3["delta_late_reach"] == -7.0
+    assert c3["n_eod"] == 1 and c3["delta_eod"] == 2.0
+    assert c3["n_stop_dodged"] == 1 and c3["delta_stop"] == 10.0
+    assert c3["delta_total"] == 5.0 and not c3["holds"]   # n_dry < 10
