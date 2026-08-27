@@ -195,7 +195,14 @@ entry is a separate decision.
     GRADING: ≥30 forward London-session fires; initiation convention;
     conditioned baseline; weekly matrix. IF YES: the composite action is
     a SUPPRESSION RULE (H6-not-in-London), registered THEN, not now.
-    DISCOUNTS: best-of-many + single-month. STATUS: pending-conditions.
+    DISCOUNTS: best-of-many + single-month.
+    **GRADED: YES (2026-08-27, register 92; enacted on row-level
+    review per the register-91 rule).** Forward London home
+    initiation 3/40 (7.5%) at the conditioned base (7.0%), collapsed
+    from the founding 16%; 0 hits on 7 of 9 days; date table and
+    reconciliation in the register entry; row file fires.csv. The
+    suppression composite may now register — register-now-or-hold
+    is the operator's open choice on the dashboard queue.
   - **Q2-H6** (registered 2026-08-23, register 64; the scalp thread's
     FIRST question, minted through the census entry's own gate):
     PREDICTION — S0-H6's net 0.5×ATR/5-bar reach (33.9% backtest,
@@ -213,6 +220,15 @@ entry is a separate decision.
     RULED OUT by the expectancy curve (cumulative net median
     non-positive at all k; peak-k=2 at −0.10). STATUS:
     pending-conditions.
+    **GRADED: YES (2026-08-27, register 92; enacted on row-level
+    review per the register-91 rule; the conditional resolved on the
+    stated floor).** Net 0.5×ATR/5-bar reach 18/62 = 29.0% forward
+    home vs the B-RANDOM member range [5.7 .. 12.8] — exceeds the
+    range max 2.3×; gross 38.7%, touch-bar median 2, net touches on
+    9 of 10 days; date table in the register entry; row file
+    bar_persistence_fires.csv. THE CHAIN ACTIVATES: target-based
+    recipe design → 0.5pt haircut ratification → scalp recipe
+    registration, each its own front-door step, nothing auto-built.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
   stay recipe layer in the candidate register).

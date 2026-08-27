@@ -239,13 +239,14 @@ def generate():
          f"{_sess_fires('uk100fut', 'S0-H11', 'overlap')})"),
         (f"Q2-H{9}", "≥30 fwd NY-session fires on nas100 — VALIDATED "
          "2026-08-25: clock LIVE from the next sync"),
-        (f"Q1-H{6}", "CONDITIONS MET — WAITS on row-level review "
-         "(register 91: aggregates propose, rows confirm; "
-         "reports/fires.csv is the instrument; home accrued: "
-         f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
-        (f"Q2-H{6}", "CONDITIONS MET — WAITS on row-level review "
-         "(register 91; bar_persistence_fires.csv is the instrument; "
-         f"home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
+        (f"Q1-H{6}", "**GRADED: YES** (2026-08-27, register 92, on "
+         "row-level review — fwd London initiation 3/40 at the class "
+         "chance, collapsed from founding 16%; suppression composite "
+         "now registerable, operator's register-now-or-hold below)"),
+        (f"Q2-H{6}", "**GRADED: YES** (2026-08-27, register 92, on "
+         "row-level review — net reach 29.0% vs member range max "
+         "12.8; the target-based recipe chain activates, first "
+         "front-door step below)"),
         ("Q1-H19", "**GRADED: NO** (the sitting 2026-08-28, register "
          "88 — the register's first grade; fwd London pooled −16.84 "
          "median, n=38; row accrues unchanged)"),
@@ -266,11 +267,16 @@ def generate():
           "(promote/deprioritize numbers, ±2pp band, session scoping, "
           "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
           "history).",
-          "- **DECISION QUEUE EMPTY (register 90, 2026-08-28)** — all "
-          "clocks and studies accrue. Never-again fiat DEFERRED "
-          "(option c; pricing stands as the evidence base, revisit "
-          "when capture cells measure). Regime lens re-registered on "
-          "phase-at-entry (emits at the next capture run).",
+          "- Register 92 grades opened two operator choices: "
+          f"(a) the H{6}-not-in-London SUPPRESSION COMPOSITE — "
+          "register now or hold; (b) the scalp chain's first step — "
+          "the target-based recipe design proposal (then the 0.5pt "
+          "haircut ratification, then registration; each front-door, "
+          "nothing auto-built).",
+          "- Standing deferrals: never-again fiat (register 90, "
+          "option c; revisit when capture cells measure); "
+          "R-SCOPED-BE waits on its register-92 gate (ranging-entry "
+          "BE advantage beyond luck).",
           "- Next-sitting reads: matrix survivors · the co-fire "
           "consistency re-read (stands as emitted; accrual decides).",
           "- Open operator items: thin-tape probe (optional calendar); "

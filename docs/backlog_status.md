@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 91 (freshness-checked by the weekly
+table.** Register-current-through: 92 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -24,7 +24,9 @@ authoritative.
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
 | Q1-H11, Q2-H9 (matrix-cell promotions) | testable-now (register 58; clocks on the dashboard) |
-| Q1-H6, Q2-H6 | CONDITIONS MET — WAIT on row-level review (register 91: aggregates propose, rows confirm; fires.csv / bar_persistence_fires.csv are the instruments; grades at an operator+reviewer sitting) |
+| Q1-H6 | GRADED: YES (2026-08-27, register 92, row-level review — London suppression persists; the H6-not-in-London composite registerable, operator register-now-or-hold OPEN) |
+| Q2-H6 | GRADED: YES (2026-08-27, register 92, row-level review — net reach 29.0% vs member range max 12.8; scalp chain ACTIVATED: design -> haircut -> registration, each front-door) |
+| R-SCOPED-BE (contingent variant) | pre-registered (register 92); builds ONLY on its gate — ranging-entry BE advantage beyond luck in the phase-at-entry capture cut |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 
 ## Recipes
