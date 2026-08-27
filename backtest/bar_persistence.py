@@ -79,7 +79,7 @@ def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
                             for j in range(ei, hi_n)])
         fav_close = np.array([d * (c[j] - entry) > 0
                               for j in range(ei, hi_n)])
-        row = {"name": f["name"], "ts": f["ts"], "dir": d,
+        row = {"name": f["name"], "ts": f["ts"], "dir": d, "atr0": a0,
                "session": session_of(pd.Timestamp(ts[ei], tz="UTC")),
                "fav_frac": {}, "reach": {}, "touch_min": {},
                "cum": {}, "inc": {}}
@@ -252,7 +252,13 @@ def run_instrument(instr):
                 "touched_0p5atr_5b": rc.get("gross"),
                 "touched_0p5atr_5b_net_of_spread": rc.get("net"),
                 "bar_of_first_touch": tm,
-                "spread_pts": spread})
+                "spread_pts": spread,
+                # register 100: scalp economics per fire
+                "atr15_at_fire": round(r["atr0"], 4),
+                "cum_pts_bar3": r["cum"].get(3),
+                "cum_pts_bar5": r["cum"].get(5),
+                "cum_pts_bar8": r["cum"].get(8),
+                "cum_pts_bar10": r["cum"].get(10)})
         cell = {}
         for win, sel in windows:
             wr = [r for r in rows if sel(r)]
@@ -620,7 +626,8 @@ def main():
     cols = ["instrument", "fire_ts", "signal", "direction", "session",
             "zone", "touched_0p5atr_5b",
             "touched_0p5atr_5b_net_of_spread", "bar_of_first_touch",
-            "spread_pts"]
+            "spread_pts", "atr15_at_fire", "cum_pts_bar3",
+            "cum_pts_bar5", "cum_pts_bar8", "cum_pts_bar10"]
     with open(os.path.join(OUT, "bar_persistence_fires.csv"), "w",
               newline="") as f:
         w = _csv.DictWriter(f, fieldnames=cols)

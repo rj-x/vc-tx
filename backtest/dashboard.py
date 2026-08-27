@@ -357,6 +357,10 @@ def generate():
           "83/86): per-strategy isolated accounts + `_LEADERBOARD.csv` "
           "with the B-RANDOM luck reference. Never evidence; runs on "
           "`--pot`.",
+          "- `h6_refinement.md` — the scalp refinement program (register "
+          "100): co-fire context census with a 3-of-4 discriminator, "
+          "veto counterfactuals, time-cap derivation; v0 untouched, "
+          "survivors are candidate v1 arms via the front door.",
           "- `zone_census.md` — the H4 key-zone conditioner, v2 "
           "strictness ladder (registers 95/96) — PARKED as the "
           "standing null (register 97): flat-to-negative density-vs-"

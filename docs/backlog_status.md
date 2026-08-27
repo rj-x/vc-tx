@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 99 (freshness-checked by the weekly
+table.** Register-current-through: 100 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -28,6 +28,7 @@ authoritative.
 | Q2-H6 | GRADED: YES (register 92) — CHAIN COMPLETE: R-SCALP-H6 (v0) REGISTERED with two counted arms (register 94, all gates ratified); runs in the journal from the next Part C; v1 tighter stop deferred, derivation-required |
 | Q3-H6 (away reach) | GRADED: YES x3 (register 99, rows-confirm on the current emission: ger40 35.8 / nas100 29.0 / us30 41.9 net vs range maxes 18.7 / 19.2 / 16.7); register 94's evidence base amended to four-instrument; scalp away rows carry claim status; ger40 S0-H19 glint WATCH-only |
 | August-vs-July regime observations | sealed-window docket (register 93: the wide-bar class's London initiation chance collapsed ~41% -> 7.0%; the September window arbitrates; no mint) |
+| H6 refinement program (counted family) | PRE-REGISTERED + BUILT 2026-08-28 (register 100: co-fire context census with 3-of-4 discriminator, veto counterfactuals, time-cap derivation; v0 untouched; survivors -> ratification -> v1 arms; weekly Part C) |
 | R-SCOPED-BE (contingent variant) | pre-registered (register 92); builds ONLY on its gate — ranging-entry BE advantage beyond luck in the phase-at-entry capture cut |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 
