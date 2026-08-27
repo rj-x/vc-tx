@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL co-fire census \u2014 pre-registered; never validation",
-  "engine_commit": "67d1f2dac584bd114348fc8d03e0b09945e44d91",
+  "engine_commit": "0bfa4cc47934e83e4c4cd95cef17bcc2cd7a05a9",
   "results": [
     {
       "instrument": "uk100fut",
@@ -30,9 +30,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -60,9 +60,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -82,7 +82,7 @@
                 "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
@@ -92,11 +92,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           },
           "w15": {
@@ -112,21 +112,21 @@
                 "hits": 14,
                 "pct": 22.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 4,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 49,
-                "hits": 10,
-                "pct": 20.4
+                "n": 80,
+                "hits": 21,
+                "pct": 26.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           }
         },
@@ -154,9 +154,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 154,
-                "hits": 42,
-                "pct": 27.3
+                "n": 304,
+                "hits": 77,
+                "pct": 25.3
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -184,9 +184,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 154,
-                "hits": 42,
-                "pct": 27.3
+                "n": 304,
+                "hits": 77,
+                "pct": 25.3
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -206,21 +206,21 @@
                 "hits": 86,
                 "pct": 24.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 153,
-                "hits": 42,
-                "pct": 27.5
+                "n": 302,
+                "hits": 77,
+                "pct": 25.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           },
           "w15": {
@@ -236,21 +236,21 @@
                 "hits": 82,
                 "pct": 24.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
-                "n": 4,
+                "n": 10,
                 "hits": 2,
-                "pct": 50.0,
-                "unmeasurable": true
+                "pct": 20.0,
+                "unmeasurable": false
               },
               "without": {
-                "n": 150,
-                "hits": 40,
-                "pct": 26.7
+                "n": 294,
+                "hits": 75,
+                "pct": 25.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           }
         },
@@ -268,7 +268,7 @@
                 "hits": 17,
                 "pct": 24.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
@@ -278,11 +278,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           },
           "w15": {
@@ -298,7 +298,7 @@
                 "hits": 17,
                 "pct": 24.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
@@ -308,11 +308,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           }
         },
@@ -330,7 +330,7 @@
                 "hits": 14,
                 "pct": 21.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
@@ -340,11 +340,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 84,
+                "hits": 21,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           },
           "w15": {
@@ -360,21 +360,21 @@
                 "hits": 13,
                 "pct": 20.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 10,
-                "pct": 20.0
+                "n": 83,
+                "hits": 21,
+                "pct": 25.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           }
         },
@@ -392,21 +392,21 @@
                 "hits": 86,
                 "pct": 24.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 1,
-                "pct": 100.0,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 153,
-                "hits": 41,
-                "pct": 26.8
+                "n": 302,
+                "hits": 76,
+                "pct": 25.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           },
           "w15": {
@@ -422,21 +422,21 @@
                 "hits": 86,
                 "pct": 24.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 4,
                 "hits": 1,
-                "pct": 100.0,
+                "pct": 25.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 153,
-                "hits": 41,
-                "pct": 26.8
+                "n": 300,
+                "hits": 76,
+                "pct": 25.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           }
         },
@@ -454,21 +454,21 @@
                 "hits": 83,
                 "pct": 24.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 154,
-                "hits": 42,
-                "pct": 27.3
+                "n": 303,
+                "hits": 77,
+                "pct": 25.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           },
           "w15": {
@@ -484,21 +484,21 @@
                 "hits": 82,
                 "pct": 24.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 153,
-                "hits": 42,
-                "pct": 27.5
+                "n": 302,
+                "hits": 77,
+                "pct": 25.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           }
         },
@@ -516,7 +516,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           },
           "w15": {
@@ -532,7 +532,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           }
         },
@@ -550,7 +550,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           },
           "w15": {
@@ -566,7 +566,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           }
         },
@@ -584,7 +584,7 @@
                 "hits": 32,
                 "pct": 29.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             },
             "forward": {
               "with": {
@@ -594,11 +594,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 79,
+                "hits": 22,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           },
           "w15": {
@@ -614,21 +614,21 @@
                 "hits": 32,
                 "pct": 29.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
-                "hits": 0,
-                "pct": null,
+                "n": 2,
+                "hits": 1,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 77,
+                "hits": 21,
+                "pct": 27.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           }
         },
@@ -646,21 +646,21 @@
                 "hits": 33,
                 "pct": 30.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             },
             "forward": {
               "with": {
-                "n": 4,
+                "n": 5,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 13,
-                "pct": 34.2
+                "n": 74,
+                "hits": 22,
+                "pct": 29.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           },
           "w15": {
@@ -676,21 +676,21 @@
                 "hits": 33,
                 "pct": 32.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             },
             "forward": {
               "with": {
-                "n": 7,
+                "n": 11,
                 "hits": 1,
-                "pct": 14.3,
-                "unmeasurable": true
+                "pct": 9.1,
+                "unmeasurable": false
               },
               "without": {
-                "n": 35,
-                "hits": 12,
-                "pct": 34.3
+                "n": 68,
+                "hits": 21,
+                "pct": 30.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           }
         },
@@ -708,7 +708,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           },
           "w15": {
@@ -724,7 +724,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           }
         },
@@ -742,7 +742,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           },
           "w15": {
@@ -758,7 +758,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           }
         },
@@ -776,7 +776,7 @@
                 "hits": 33,
                 "pct": 29.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
@@ -786,11 +786,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 79,
+                "hits": 22,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           },
           "w15": {
@@ -806,7 +806,7 @@
                 "hits": 33,
                 "pct": 29.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             },
             "forward": {
               "with": {
@@ -816,11 +816,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 79,
+                "hits": 22,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 16 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 20 fires total)"
             }
           }
         },
@@ -838,7 +838,7 @@
                 "hits": 32,
                 "pct": 28.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
@@ -848,11 +848,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 79,
+                "hits": 22,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           },
           "w15": {
@@ -868,7 +868,7 @@
                 "hits": 31,
                 "pct": 28.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             },
             "forward": {
               "with": {
@@ -878,11 +878,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 42,
-                "hits": 13,
-                "pct": 31.0
+                "n": 79,
+                "hits": 22,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 177 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 188 fires total)"
             }
           }
         },
@@ -896,11 +896,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 14,
+                "hits": 5,
+                "pct": 35.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           },
           "w15": {
@@ -912,11 +912,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 14,
+                "hits": 5,
+                "pct": 35.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           }
         },
@@ -924,33 +924,33 @@
           "w5": {
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 13,
+                "hits": 5,
+                "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           },
           "w15": {
             "forward": {
               "with": {
-                "n": 3,
+                "n": 5,
                 "hits": 1,
-                "pct": 33.3,
+                "pct": 20.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 7,
-                "hits": 3,
-                "pct": 42.9
+                "n": 9,
+                "hits": 4,
+                "pct": 44.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           }
         },
@@ -965,10 +965,10 @@
               },
               "without": {
                 "n": 54,
-                "hits": 14,
-                "pct": 25.9
+                "hits": 15,
+                "pct": 27.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             },
             "forward": {
               "with": {
@@ -978,11 +978,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 14,
+                "n": 25,
                 "hits": 1,
-                "pct": 7.1
+                "pct": 4.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           },
           "w15": {
@@ -995,24 +995,24 @@
               },
               "without": {
                 "n": 53,
-                "hits": 14,
-                "pct": 26.4
+                "hits": 15,
+                "pct": 28.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 3,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 13,
+                "n": 22,
                 "hits": 1,
-                "pct": 7.7
+                "pct": 4.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 136 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 170 fires total)"
             }
           }
         },
@@ -1027,24 +1027,24 @@
               },
               "without": {
                 "n": 47,
-                "hits": 9,
-                "pct": 19.1
+                "hits": 10,
+                "pct": 21.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
+                "n": 6,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 12,
+                "n": 19,
                 "hits": 1,
-                "pct": 8.3
+                "pct": 5.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           },
           "w15": {
@@ -1057,24 +1057,24 @@
               },
               "without": {
                 "n": 43,
-                "hits": 7,
-                "pct": 16.3
+                "hits": 8,
+                "pct": 18.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
+                "n": 7,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 12,
+                "n": 18,
                 "hits": 1,
-                "pct": 8.3
+                "pct": 5.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 534 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 684 fires total)"
             }
           }
         },
@@ -1088,9 +1088,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 14,
+                "hits": 5,
+                "pct": 35.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -1104,9 +1104,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 14,
+                "hits": 5,
+                "pct": 35.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -1122,11 +1122,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 4,
-                "pct": 40.0
+                "n": 14,
+                "hits": 5,
+                "pct": 35.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           },
           "w15": {
@@ -1138,11 +1138,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 9,
-                "hits": 4,
-                "pct": 44.4
+                "n": 13,
+                "hits": 5,
+                "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           }
         },
@@ -1157,8 +1157,8 @@
               },
               "without": {
                 "n": 55,
-                "hits": 15,
-                "pct": 27.3
+                "hits": 16,
+                "pct": 29.1
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             },
@@ -1170,9 +1170,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 14,
+                "n": 25,
                 "hits": 1,
-                "pct": 7.1
+                "pct": 4.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -1187,8 +1187,8 @@
               },
               "without": {
                 "n": 55,
-                "hits": 15,
-                "pct": 27.3
+                "hits": 16,
+                "pct": 29.1
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             },
@@ -1200,9 +1200,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 14,
+                "n": 25,
                 "hits": 1,
-                "pct": 7.1
+                "pct": 4.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 7 fires total)"
             }
@@ -1219,10 +1219,10 @@
               },
               "without": {
                 "n": 55,
-                "hits": 15,
-                "pct": 27.3
+                "hits": 16,
+                "pct": 29.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
@@ -1232,11 +1232,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 14,
+                "n": 25,
                 "hits": 1,
-                "pct": 7.1
+                "pct": 4.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           },
           "w15": {
@@ -1249,10 +1249,10 @@
               },
               "without": {
                 "n": 54,
-                "hits": 15,
-                "pct": 27.8
+                "hits": 16,
+                "pct": 29.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             },
             "forward": {
               "with": {
@@ -1262,11 +1262,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 14,
+                "n": 25,
                 "hits": 1,
-                "pct": 7.1
+                "pct": 4.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 172 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 209 fires total)"
             }
           }
         }
@@ -1274,7 +1274,7 @@
     },
     {
       "instrument": "ger40fut",
-      "status": "provisional",
+      "status": "canonical",
       "pairs": {
         "S0-H1->S0-H4": {
           "w5": {
@@ -1300,9 +1300,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 16,
-                "pct": 32.0
+                "n": 86,
+                "hits": 27,
+                "pct": 31.4
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -1330,9 +1330,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 16,
-                "pct": 32.0
+                "n": 86,
+                "hits": 27,
+                "pct": 31.4
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -1352,7 +1352,7 @@
                 "hits": 17,
                 "pct": 35.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -1362,11 +1362,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 16,
-                "pct": 32.0
+                "n": 86,
+                "hits": 27,
+                "pct": 31.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -1382,7 +1382,7 @@
                 "hits": 17,
                 "pct": 36.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -1392,11 +1392,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 49,
-                "hits": 16,
-                "pct": 32.7
+                "n": 85,
+                "hits": 27,
+                "pct": 31.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -1424,9 +1424,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 140,
-                "hits": 36,
-                "pct": 25.7
+                "n": 284,
+                "hits": 69,
+                "pct": 24.3
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -1454,9 +1454,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 140,
-                "hits": 36,
-                "pct": 25.7
+                "n": 284,
+                "hits": 69,
+                "pct": 24.3
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -1476,21 +1476,21 @@
                 "hits": 57,
                 "pct": 24.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 140,
-                "hits": 36,
-                "pct": 25.7
+                "n": 283,
+                "hits": 69,
+                "pct": 24.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -1506,21 +1506,21 @@
                 "hits": 57,
                 "pct": 24.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 7,
+                "hits": 1,
+                "pct": 14.3,
                 "unmeasurable": true
               },
               "without": {
-                "n": 138,
-                "hits": 36,
-                "pct": 26.1
+                "n": 277,
+                "hits": 68,
+                "pct": 24.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -1538,21 +1538,21 @@
                 "hits": 17,
                 "pct": 34.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 16,
-                "pct": 32.0
+                "n": 85,
+                "hits": 27,
+                "pct": 31.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           },
           "w15": {
@@ -1568,21 +1568,21 @@
                 "hits": 17,
                 "pct": 34.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 50,
-                "hits": 16,
-                "pct": 32.0
+                "n": 85,
+                "hits": 27,
+                "pct": 31.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           }
         },
@@ -1600,21 +1600,21 @@
                 "hits": 17,
                 "pct": 34.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 49,
-                "hits": 16,
-                "pct": 32.7
+                "n": 84,
+                "hits": 27,
+                "pct": 32.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           },
           "w15": {
@@ -1630,21 +1630,21 @@
                 "hits": 17,
                 "pct": 36.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 4,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 49,
-                "hits": 16,
-                "pct": 32.7
+                "n": 82,
+                "hits": 27,
+                "pct": 32.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           }
         },
@@ -1662,7 +1662,7 @@
                 "hits": 57,
                 "pct": 24.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
@@ -1672,11 +1672,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 139,
-                "hits": 36,
-                "pct": 25.9
+                "n": 283,
+                "hits": 69,
+                "pct": 24.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           },
           "w15": {
@@ -1692,21 +1692,21 @@
                 "hits": 57,
                 "pct": 24.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 5,
+                "hits": 2,
+                "pct": 40.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 138,
-                "hits": 36,
-                "pct": 26.1
+                "n": 279,
+                "hits": 67,
+                "pct": 24.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           }
         },
@@ -1724,21 +1724,21 @@
                 "hits": 56,
                 "pct": 24.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 2,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 140,
-                "hits": 36,
-                "pct": 25.7
+                "n": 282,
+                "hits": 69,
+                "pct": 24.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           },
           "w15": {
@@ -1754,21 +1754,21 @@
                 "hits": 51,
                 "pct": 22.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 5,
+                "hits": 1,
+                "pct": 20.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 139,
-                "hits": 36,
-                "pct": 25.9
+                "n": 279,
+                "hits": 68,
+                "pct": 24.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           }
         },
@@ -1783,10 +1783,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           },
           "w15": {
@@ -1799,10 +1799,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           }
         },
@@ -1817,10 +1817,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           },
           "w15": {
@@ -1833,10 +1833,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           }
         },
@@ -1854,7 +1854,7 @@
                 "hits": 21,
                 "pct": 35.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
@@ -1864,11 +1864,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 25,
-                "hits": 4,
-                "pct": 16.0
+                "n": 53,
+                "hits": 9,
+                "pct": 17.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           },
           "w15": {
@@ -1884,21 +1884,21 @@
                 "hits": 21,
                 "pct": 37.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 24,
-                "hits": 4,
-                "pct": 16.7
+                "n": 51,
+                "hits": 9,
+                "pct": 17.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           }
         },
@@ -1916,21 +1916,21 @@
                 "hits": 21,
                 "pct": 36.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 24,
-                "hits": 4,
-                "pct": 16.7
+                "n": 51,
+                "hits": 9,
+                "pct": 17.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           },
           "w15": {
@@ -1946,21 +1946,21 @@
                 "hits": 21,
                 "pct": 38.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
+                "n": 3,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 23,
-                "hits": 4,
-                "pct": 17.4
+                "n": 50,
+                "hits": 9,
+                "pct": 18.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           }
         },
@@ -1975,10 +1975,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           },
           "w15": {
@@ -1991,10 +1991,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 10,
-                "pct": 29.4
+                "hits": 11,
+                "pct": 32.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           }
         },
@@ -2009,10 +2009,10 @@
               },
               "without": {
                 "n": 31,
-                "hits": 10,
-                "pct": 32.3
+                "hits": 11,
+                "pct": 35.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           },
           "w15": {
@@ -2025,10 +2025,10 @@
               },
               "without": {
                 "n": 31,
-                "hits": 10,
-                "pct": 32.3
+                "hits": 11,
+                "pct": 35.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           }
         },
@@ -2046,7 +2046,7 @@
                 "hits": 21,
                 "pct": 35.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
@@ -2056,11 +2056,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 25,
-                "hits": 4,
-                "pct": 16.0
+                "n": 53,
+                "hits": 9,
+                "pct": 17.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           },
           "w15": {
@@ -2076,7 +2076,7 @@
                 "hits": 21,
                 "pct": 35.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             },
             "forward": {
               "with": {
@@ -2086,11 +2086,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 25,
-                "hits": 4,
-                "pct": 16.0
+                "n": 53,
+                "hits": 9,
+                "pct": 17.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 18 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 28 fires total)"
             }
           }
         },
@@ -2108,7 +2108,7 @@
                 "hits": 21,
                 "pct": 35.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
@@ -2118,11 +2118,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 25,
-                "hits": 4,
-                "pct": 16.0
+                "n": 53,
+                "hits": 9,
+                "pct": 17.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           },
           "w15": {
@@ -2138,7 +2138,7 @@
                 "hits": 21,
                 "pct": 35.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             },
             "forward": {
               "with": {
@@ -2148,11 +2148,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 24,
-                "hits": 4,
-                "pct": 16.7
+                "n": 52,
+                "hits": 9,
+                "pct": 17.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 196 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 211 fires total)"
             }
           }
         },
@@ -2170,7 +2170,7 @@
                 "hits": 1,
                 "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
@@ -2180,11 +2180,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           },
           "w15": {
@@ -2200,7 +2200,7 @@
                 "hits": 1,
                 "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
@@ -2210,11 +2210,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           }
         },
@@ -2232,21 +2232,21 @@
                 "hits": 1,
                 "pct": 16.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 2,
+                "hits": 1,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 9,
-                "hits": 0,
-                "pct": 0.0
+                "n": 18,
+                "hits": 3,
+                "pct": 16.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           },
           "w15": {
@@ -2262,21 +2262,21 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 5,
+                "hits": 2,
+                "pct": 40.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 8,
-                "hits": 0,
-                "pct": 0.0
+                "n": 15,
+                "hits": 2,
+                "pct": 13.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           }
         },
@@ -2294,21 +2294,21 @@
                 "hits": 8,
                 "pct": 15.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 2,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 23,
+                "hits": 2,
+                "pct": 8.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           },
           "w15": {
@@ -2324,21 +2324,21 @@
                 "hits": 8,
                 "pct": 16.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
-                "hits": 0,
-                "pct": null,
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
+                "n": 21,
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 120 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 156 fires total)"
             }
           }
         },
@@ -2356,21 +2356,21 @@
                 "hits": 8,
                 "pct": 16.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 9,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 9,
-                "hits": 0,
-                "pct": 0.0
+                "n": 16,
+                "hits": 2,
+                "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           },
           "w15": {
@@ -2386,21 +2386,21 @@
                 "hits": 7,
                 "pct": 14.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
+                "n": 11,
                 "hits": 0,
                 "pct": 0.0,
-                "unmeasurable": true
+                "unmeasurable": false
               },
               "without": {
-                "n": 8,
-                "hits": 0,
-                "pct": 0.0
+                "n": 14,
+                "hits": 2,
+                "pct": 14.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 408 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 552 fires total)"
             }
           }
         },
@@ -2428,9 +2428,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -2458,9 +2458,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -2480,7 +2480,7 @@
                 "hits": 1,
                 "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -2490,11 +2490,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -2510,7 +2510,7 @@
                 "hits": 1,
                 "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -2520,11 +2520,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 20,
+                "hits": 4,
+                "pct": 20.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -2552,9 +2552,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 25,
+                "hits": 2,
+                "pct": 8.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -2582,9 +2582,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 25,
+                "hits": 2,
+                "pct": 8.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 82 fires total)"
             }
@@ -2604,7 +2604,7 @@
                 "hits": 8,
                 "pct": 15.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -2614,11 +2614,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 25,
+                "hits": 2,
+                "pct": 8.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -2634,7 +2634,7 @@
                 "hits": 8,
                 "pct": 15.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -2644,11 +2644,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 10,
-                "hits": 0,
-                "pct": 0.0
+                "n": 25,
+                "hits": 2,
+                "pct": 8.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 103 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         }
@@ -2656,7 +2656,7 @@
     },
     {
       "instrument": "nas100fut",
-      "status": "provisional",
+      "status": "canonical",
       "pairs": {
         "S0-H1->S0-H4": {
           "w5": {
@@ -2669,8 +2669,8 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             },
@@ -2682,9 +2682,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -2699,8 +2699,8 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             },
@@ -2712,9 +2712,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -2731,10 +2731,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
@@ -2744,11 +2744,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           },
           "w15": {
@@ -2761,10 +2761,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
@@ -2774,11 +2774,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           }
         },
@@ -2806,9 +2806,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 218,
-                "hits": 67,
-                "pct": 30.7
+                "n": 343,
+                "hits": 108,
+                "pct": 31.5
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -2836,9 +2836,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 218,
-                "hits": 67,
-                "pct": 30.7
+                "n": 343,
+                "hits": 108,
+                "pct": 31.5
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -2858,21 +2858,21 @@
                 "hits": 61,
                 "pct": 19.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 5,
+                "hits": 1,
+                "pct": 20.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 216,
-                "hits": 67,
-                "pct": 31.0
+                "n": 338,
+                "hits": 107,
+                "pct": 31.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           },
           "w15": {
@@ -2888,21 +2888,21 @@
                 "hits": 59,
                 "pct": 19.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
-                "n": 11,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 15,
+                "hits": 2,
+                "pct": 13.3,
                 "unmeasurable": false
               },
               "without": {
-                "n": 207,
-                "hits": 67,
-                "pct": 32.4
+                "n": 328,
+                "hits": 106,
+                "pct": 32.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           }
         },
@@ -2917,10 +2917,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -2930,11 +2930,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           },
           "w15": {
@@ -2947,10 +2947,10 @@
               },
               "without": {
                 "n": 34,
-                "hits": 13,
-                "pct": 38.2
+                "hits": 14,
+                "pct": 41.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -2960,11 +2960,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           }
         },
@@ -2979,10 +2979,10 @@
               },
               "without": {
                 "n": 33,
-                "hits": 13,
-                "pct": 39.4
+                "hits": 14,
+                "pct": 42.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
@@ -2992,11 +2992,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           },
           "w15": {
@@ -3009,10 +3009,10 @@
               },
               "without": {
                 "n": 32,
-                "hits": 13,
-                "pct": 40.6
+                "hits": 14,
+                "pct": 43.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
@@ -3022,11 +3022,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 13,
-                "pct": 37.1
+                "n": 60,
+                "hits": 25,
+                "pct": 41.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           }
         },
@@ -3044,7 +3044,7 @@
                 "hits": 63,
                 "pct": 19.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -3054,11 +3054,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 218,
-                "hits": 67,
-                "pct": 30.7
+                "n": 343,
+                "hits": 108,
+                "pct": 31.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           },
           "w15": {
@@ -3074,7 +3074,7 @@
                 "hits": 63,
                 "pct": 19.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -3084,11 +3084,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 218,
-                "hits": 67,
-                "pct": 30.7
+                "n": 343,
+                "hits": 108,
+                "pct": 31.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           }
         },
@@ -3106,7 +3106,7 @@
                 "hits": 62,
                 "pct": 19.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
@@ -3116,11 +3116,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 216,
-                "hits": 67,
-                "pct": 31.0
+                "n": 341,
+                "hits": 108,
+                "pct": 31.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           },
           "w15": {
@@ -3136,21 +3136,21 @@
                 "hits": 58,
                 "pct": 19.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
-                "n": 4,
+                "n": 5,
                 "hits": 1,
-                "pct": 25.0,
+                "pct": 20.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 214,
-                "hits": 66,
-                "pct": 30.8
+                "n": 338,
+                "hits": 107,
+                "pct": 31.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           }
         },
@@ -3168,7 +3168,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           },
           "w15": {
@@ -3184,7 +3184,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           }
         },
@@ -3202,7 +3202,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           },
           "w15": {
@@ -3218,7 +3218,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           }
         },
@@ -3236,7 +3236,7 @@
                 "hits": 11,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             },
             "forward": {
               "with": {
@@ -3246,11 +3246,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
+                "n": 68,
+                "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           },
           "w15": {
@@ -3266,21 +3266,21 @@
                 "hits": 11,
                 "pct": 22.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
-                "pct": 25.0
+                "n": 67,
+                "hits": 17,
+                "pct": 25.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           }
         },
@@ -3298,21 +3298,21 @@
                 "hits": 10,
                 "pct": 22.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 0,
                 "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 39,
-                "hits": 10,
-                "pct": 25.6
+                "n": 66,
+                "hits": 17,
+                "pct": 25.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           },
           "w15": {
@@ -3328,21 +3328,21 @@
                 "hits": 7,
                 "pct": 17.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             },
             "forward": {
               "with": {
-                "n": 5,
+                "n": 8,
                 "hits": 1,
-                "pct": 20.0,
+                "pct": 12.5,
                 "unmeasurable": true
               },
               "without": {
-                "n": 35,
-                "hits": 9,
-                "pct": 25.7
+                "n": 60,
+                "hits": 16,
+                "pct": 26.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           }
         },
@@ -3360,7 +3360,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           },
           "w15": {
@@ -3376,7 +3376,7 @@
                 "hits": 6,
                 "pct": 60.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           }
         },
@@ -3394,7 +3394,7 @@
                 "hits": 3,
                 "pct": 42.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           },
           "w15": {
@@ -3410,7 +3410,7 @@
                 "hits": 3,
                 "pct": 42.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           }
         },
@@ -3428,7 +3428,7 @@
                 "hits": 11,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -3438,11 +3438,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
+                "n": 68,
+                "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           },
           "w15": {
@@ -3458,7 +3458,7 @@
                 "hits": 10,
                 "pct": 20.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             },
             "forward": {
               "with": {
@@ -3468,11 +3468,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
+                "n": 68,
+                "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 1 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 2 fires total)"
             }
           }
         },
@@ -3490,7 +3490,7 @@
                 "hits": 11,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
@@ -3500,11 +3500,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
+                "n": 68,
+                "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           },
           "w15": {
@@ -3520,7 +3520,7 @@
                 "hits": 10,
                 "pct": 20.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             },
             "forward": {
               "with": {
@@ -3530,11 +3530,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 40,
-                "hits": 10,
+                "n": 68,
+                "hits": 17,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 414 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 429 fires total)"
             }
           }
         },
@@ -3552,7 +3552,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           },
           "w15": {
@@ -3568,7 +3582,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           }
         },
@@ -3586,7 +3614,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           },
           "w15": {
@@ -3602,7 +3644,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           }
         },
@@ -3620,7 +3676,7 @@
                 "hits": 20,
                 "pct": 22.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             },
             "forward": {
               "with": {
@@ -3630,11 +3686,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 69,
-                "hits": 10,
-                "pct": 14.5
+                "n": 84,
+                "hits": 11,
+                "pct": 13.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           },
           "w15": {
@@ -3650,7 +3706,7 @@
                 "hits": 19,
                 "pct": 22.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             },
             "forward": {
               "with": {
@@ -3660,11 +3716,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 69,
-                "hits": 10,
-                "pct": 14.5
+                "n": 84,
+                "hits": 11,
+                "pct": 13.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 81 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 106 fires total)"
             }
           }
         },
@@ -3682,21 +3738,21 @@
                 "hits": 18,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             },
             "forward": {
               "with": {
-                "n": 6,
+                "n": 11,
                 "hits": 1,
-                "pct": 16.7,
-                "unmeasurable": true
+                "pct": 9.1,
+                "unmeasurable": false
               },
               "without": {
-                "n": 63,
-                "hits": 9,
-                "pct": 14.3
+                "n": 73,
+                "hits": 10,
+                "pct": 13.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           },
           "w15": {
@@ -3712,21 +3768,21 @@
                 "hits": 14,
                 "pct": 18.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             },
             "forward": {
               "with": {
-                "n": 6,
+                "n": 11,
                 "hits": 1,
-                "pct": 16.7,
-                "unmeasurable": true
+                "pct": 9.1,
+                "unmeasurable": false
               },
               "without": {
-                "n": 63,
-                "hits": 9,
-                "pct": 14.3
+                "n": 73,
+                "hits": 10,
+                "pct": 13.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 570 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 695 fires total)"
             }
           }
         },
@@ -3745,6 +3801,20 @@
                 "pct": 100.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
           },
           "w15": {
@@ -3759,6 +3829,20 @@
                 "n": 1,
                 "hits": 1,
                 "pct": 100.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -3778,7 +3862,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           },
           "w15": {
@@ -3794,7 +3892,21 @@
                 "hits": 1,
                 "pct": 100.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
+            },
+            "forward": {
+              "with": {
+                "n": 0,
+                "hits": 0,
+                "pct": null,
+                "unmeasurable": true
+              },
+              "without": {
+                "n": 1,
+                "hits": 0,
+                "pct": 0.0
+              },
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           }
         },
@@ -3822,9 +3934,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 68,
-                "hits": 9,
-                "pct": 13.2
+                "n": 83,
+                "hits": 10,
+                "pct": 12.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -3852,9 +3964,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 68,
-                "hits": 9,
-                "pct": 13.2
+                "n": 83,
+                "hits": 10,
+                "pct": 12.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 55 fires total)"
             }
@@ -3874,7 +3986,7 @@
                 "hits": 20,
                 "pct": 22.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
@@ -3884,11 +3996,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 69,
-                "hits": 10,
-                "pct": 14.5
+                "n": 84,
+                "hits": 11,
+                "pct": 13.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           },
           "w15": {
@@ -3904,7 +4016,7 @@
                 "hits": 19,
                 "pct": 21.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             },
             "forward": {
               "with": {
@@ -3914,11 +4026,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 69,
-                "hits": 10,
-                "pct": 14.5
+                "n": 84,
+                "hits": 11,
+                "pct": 13.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 108 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 136 fires total)"
             }
           }
         }
@@ -3926,7 +4038,7 @@
     },
     {
       "instrument": "us30fut",
-      "status": "provisional",
+      "status": "canonical",
       "pairs": {
         "S0-H1->S0-H4": {
           "w5": {
@@ -3952,9 +4064,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 66,
-                "hits": 22,
-                "pct": 33.3
+                "n": 117,
+                "hits": 32,
+                "pct": 27.4
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -3982,9 +4094,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 66,
-                "hits": 22,
-                "pct": 33.3
+                "n": 117,
+                "hits": 32,
+                "pct": 27.4
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -4004,7 +4116,7 @@
                 "hits": 16,
                 "pct": 34.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -4014,11 +4126,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 65,
-                "hits": 22,
-                "pct": 33.8
+                "n": 116,
+                "hits": 32,
+                "pct": 27.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -4034,21 +4146,21 @@
                 "hits": 16,
                 "pct": 34.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
-                "n": 3,
-                "hits": 2,
+                "n": 6,
+                "hits": 4,
                 "pct": 66.7,
                 "unmeasurable": true
               },
               "without": {
-                "n": 63,
-                "hits": 20,
-                "pct": 31.7
+                "n": 111,
+                "hits": 28,
+                "pct": 25.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -4063,8 +4175,8 @@
               },
               "without": {
                 "n": 281,
-                "hits": 71,
-                "pct": 25.3
+                "hits": 72,
+                "pct": 25.6
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             },
@@ -4076,9 +4188,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 225,
-                "hits": 62,
-                "pct": 27.6
+                "n": 370,
+                "hits": 95,
+                "pct": 25.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -4093,8 +4205,8 @@
               },
               "without": {
                 "n": 281,
-                "hits": 71,
-                "pct": 25.3
+                "hits": 72,
+                "pct": 25.6
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             },
@@ -4106,9 +4218,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 225,
-                "hits": 62,
-                "pct": 27.6
+                "n": 370,
+                "hits": 95,
+                "pct": 25.7
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -4125,24 +4237,24 @@
               },
               "without": {
                 "n": 277,
-                "hits": 71,
-                "pct": 25.6
+                "hits": 72,
+                "pct": 26.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0,
+                "n": 4,
+                "hits": 1,
+                "pct": 25.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 224,
-                "hits": 62,
-                "pct": 27.7
+                "n": 366,
+                "hits": 94,
+                "pct": 25.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -4155,24 +4267,24 @@
               },
               "without": {
                 "n": 272,
-                "hits": 71,
-                "pct": 26.1
+                "hits": 72,
+                "pct": 26.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
-                "n": 7,
-                "hits": 0,
-                "pct": 0.0,
-                "unmeasurable": true
+                "n": 12,
+                "hits": 1,
+                "pct": 8.3,
+                "unmeasurable": false
               },
               "without": {
-                "n": 218,
-                "hits": 62,
-                "pct": 28.4
+                "n": 358,
+                "hits": 94,
+                "pct": 26.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -4190,21 +4302,21 @@
                 "hits": 16,
                 "pct": 32.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
-                "hits": 0,
-                "pct": null,
+                "n": 1,
+                "hits": 1,
+                "pct": 100.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 66,
-                "hits": 22,
-                "pct": 33.3
+                "n": 116,
+                "hits": 31,
+                "pct": 26.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           },
           "w15": {
@@ -4220,21 +4332,21 @@
                 "hits": 16,
                 "pct": 32.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
-                "hits": 0,
-                "pct": null,
+                "n": 1,
+                "hits": 1,
+                "pct": 100.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 66,
-                "hits": 22,
-                "pct": 33.3
+                "n": 116,
+                "hits": 31,
+                "pct": 26.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           }
         },
@@ -4252,7 +4364,7 @@
                 "hits": 15,
                 "pct": 31.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
@@ -4262,11 +4374,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 65,
-                "hits": 22,
-                "pct": 33.8
+                "n": 116,
+                "hits": 32,
+                "pct": 27.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           },
           "w15": {
@@ -4282,7 +4394,7 @@
                 "hits": 15,
                 "pct": 31.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
@@ -4292,11 +4404,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 65,
-                "hits": 22,
-                "pct": 33.8
+                "n": 116,
+                "hits": 32,
+                "pct": 27.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           }
         },
@@ -4311,10 +4423,10 @@
               },
               "without": {
                 "n": 281,
-                "hits": 71,
-                "pct": 25.3
+                "hits": 72,
+                "pct": 25.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
@@ -4324,11 +4436,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 225,
-                "hits": 62,
-                "pct": 27.6
+                "n": 370,
+                "hits": 95,
+                "pct": 25.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           },
           "w15": {
@@ -4341,10 +4453,10 @@
               },
               "without": {
                 "n": 279,
-                "hits": 70,
-                "pct": 25.1
+                "hits": 71,
+                "pct": 25.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
@@ -4354,11 +4466,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 225,
-                "hits": 62,
-                "pct": 27.6
+                "n": 370,
+                "hits": 95,
+                "pct": 25.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           }
         },
@@ -4373,24 +4485,24 @@
               },
               "without": {
                 "n": 276,
-                "hits": 69,
-                "pct": 25.0
+                "hits": 70,
+                "pct": 25.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
-                "n": 10,
+                "n": 11,
                 "hits": 4,
-                "pct": 40.0,
+                "pct": 36.4,
                 "unmeasurable": false
               },
               "without": {
-                "n": 215,
-                "hits": 58,
-                "pct": 27.0
+                "n": 359,
+                "hits": 91,
+                "pct": 25.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           },
           "w15": {
@@ -4403,24 +4515,24 @@
               },
               "without": {
                 "n": 270,
-                "hits": 68,
-                "pct": 25.2
+                "hits": 69,
+                "pct": 25.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
-                "n": 14,
+                "n": 18,
                 "hits": 7,
-                "pct": 50.0,
+                "pct": 38.9,
                 "unmeasurable": false
               },
               "without": {
-                "n": 211,
-                "hits": 55,
-                "pct": 26.1
+                "n": 352,
+                "hits": 88,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           }
         },
@@ -4438,7 +4550,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           },
           "w15": {
@@ -4454,7 +4566,7 @@
                 "hits": 4,
                 "pct": 33.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           }
         },
@@ -4472,7 +4584,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           },
           "w15": {
@@ -4488,7 +4600,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           }
         },
@@ -4506,21 +4618,21 @@
                 "hits": 9,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 12,
-                "pct": 31.6
+                "n": 64,
+                "hits": 16,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           },
           "w15": {
@@ -4536,21 +4648,21 @@
                 "hits": 9,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
-                "n": 1,
+                "n": 2,
                 "hits": 1,
-                "pct": 100.0,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 37,
-                "hits": 11,
-                "pct": 29.7
+                "n": 63,
+                "hits": 15,
+                "pct": 23.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           }
         },
@@ -4568,21 +4680,21 @@
                 "hits": 9,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
-                "n": 2,
+                "n": 6,
                 "hits": 1,
-                "pct": 50.0,
+                "pct": 16.7,
                 "unmeasurable": true
               },
               "without": {
-                "n": 36,
-                "hits": 11,
-                "pct": 30.6
+                "n": 59,
+                "hits": 15,
+                "pct": 25.4
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           },
           "w15": {
@@ -4598,21 +4710,21 @@
                 "hits": 9,
                 "pct": 23.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
-                "n": 8,
+                "n": 13,
                 "hits": 2,
-                "pct": 25.0,
-                "unmeasurable": true
+                "pct": 15.4,
+                "unmeasurable": false
               },
               "without": {
-                "n": 30,
-                "hits": 10,
-                "pct": 33.3
+                "n": 52,
+                "hits": 14,
+                "pct": 26.9
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           }
         },
@@ -4630,7 +4742,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           },
           "w15": {
@@ -4646,7 +4758,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           }
         },
@@ -4664,7 +4776,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           },
           "w15": {
@@ -4680,7 +4792,7 @@
                 "hits": 5,
                 "pct": 38.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           }
         },
@@ -4698,7 +4810,7 @@
                 "hits": 9,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
@@ -4708,11 +4820,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 12,
-                "pct": 31.6
+                "n": 65,
+                "hits": 16,
+                "pct": 24.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           },
           "w15": {
@@ -4728,7 +4840,7 @@
                 "hits": 9,
                 "pct": 22.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             },
             "forward": {
               "with": {
@@ -4738,11 +4850,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 12,
-                "pct": 31.6
+                "n": 65,
+                "hits": 16,
+                "pct": 24.6
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 5 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H3: 8 fires total)"
             }
           }
         },
@@ -4760,21 +4872,21 @@
                 "hits": 9,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 12,
-                "pct": 31.6
+                "n": 64,
+                "hits": 16,
+                "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           },
           "w15": {
@@ -4790,21 +4902,21 @@
                 "hits": 8,
                 "pct": 20.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
-                "hits": 0,
-                "pct": null,
+                "n": 2,
+                "hits": 1,
+                "pct": 50.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 38,
-                "hits": 12,
-                "pct": 31.6
+                "n": 63,
+                "hits": 15,
+                "pct": 23.8
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 238 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H9: 251 fires total)"
             }
           }
         },
@@ -4822,7 +4934,7 @@
                 "hits": 1,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
@@ -4832,11 +4944,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           },
           "w15": {
@@ -4852,21 +4964,21 @@
                 "hits": 1,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 3,
+                "hits": 2,
+                "pct": 66.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           }
         },
@@ -4884,7 +4996,7 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
@@ -4894,11 +5006,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           },
           "w15": {
@@ -4914,21 +5026,21 @@
                 "hits": 0,
                 "pct": 0.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
-                "n": 0,
+                "n": 1,
                 "hits": 0,
-                "pct": null,
+                "pct": 0.0,
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 3,
+                "hits": 2,
+                "pct": 66.7
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           }
         },
@@ -4946,7 +5058,7 @@
                 "hits": 9,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
@@ -4956,11 +5068,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 20,
-                "hits": 2,
-                "pct": 10.0
+                "n": 33,
+                "hits": 4,
+                "pct": 12.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           },
           "w15": {
@@ -4976,7 +5088,7 @@
                 "hits": 9,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             },
             "forward": {
               "with": {
@@ -4986,11 +5098,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 19,
-                "hits": 2,
-                "pct": 10.5
+                "n": 32,
+                "hits": 4,
+                "pct": 12.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 135 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H1: 186 fires total)"
             }
           }
         },
@@ -5008,21 +5120,21 @@
                 "hits": 8,
                 "pct": 21.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
-                "n": 7,
+                "n": 9,
                 "hits": 2,
-                "pct": 28.6,
+                "pct": 22.2,
                 "unmeasurable": true
               },
               "without": {
-                "n": 13,
-                "hits": 0,
-                "pct": 0.0
+                "n": 24,
+                "hits": 2,
+                "pct": 8.3
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           },
           "w15": {
@@ -5038,21 +5150,21 @@
                 "hits": 8,
                 "pct": 22.2
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             },
             "forward": {
               "with": {
-                "n": 9,
+                "n": 12,
                 "hits": 2,
-                "pct": 22.2,
-                "unmeasurable": true
+                "pct": 16.7,
+                "unmeasurable": false
               },
               "without": {
-                "n": 11,
-                "hits": 0,
-                "pct": 0.0
+                "n": 21,
+                "hits": 2,
+                "pct": 9.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 542 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H2: 687 fires total)"
             }
           }
         },
@@ -5080,9 +5192,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -5110,9 +5222,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -5132,7 +5244,7 @@
                 "hits": 1,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -5142,11 +5254,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -5162,7 +5274,7 @@
                 "hits": 1,
                 "pct": 25.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -5172,11 +5284,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 1,
-                "hits": 0,
-                "pct": 0.0
+                "n": 4,
+                "hits": 2,
+                "pct": 50.0
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         },
@@ -5204,9 +5316,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 20,
-                "hits": 2,
-                "pct": 10.0
+                "n": 33,
+                "hits": 4,
+                "pct": 12.1
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -5234,9 +5346,9 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 20,
-                "hits": 2,
-                "pct": 10.0
+                "n": 33,
+                "hits": 4,
+                "pct": 12.1
               },
               "coverage_note": "with-stack bounded by rarer leg (S0-H4: 40 fires total)"
             }
@@ -5256,7 +5368,7 @@
                 "hits": 9,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -5266,11 +5378,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 20,
-                "hits": 2,
-                "pct": 10.0
+                "n": 33,
+                "hits": 4,
+                "pct": 12.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           },
           "w15": {
@@ -5286,7 +5398,7 @@
                 "hits": 9,
                 "pct": 22.5
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             },
             "forward": {
               "with": {
@@ -5296,11 +5408,11 @@
                 "unmeasurable": true
               },
               "without": {
-                "n": 20,
-                "hits": 2,
-                "pct": 10.0
+                "n": 33,
+                "hits": 4,
+                "pct": 12.1
               },
-              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 104 fires total)"
+              "coverage_note": "with-stack bounded by rarer leg (S0-H7: 131 fires total)"
             }
           }
         }

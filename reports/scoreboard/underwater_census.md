@@ -2,403 +2,402 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `737bfe19d` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 38639 of 52689 journal rows used, 14050 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
+Engine `0bfa4cc47` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 42149 of 56499 journal rows used, 14350 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
 
 STATISTIC SHAPES (74-B): loss decomposition = per-cell class fractions (descriptive); survival = conditional P(win | underwater at k) with n at every k; frontier = conditional-minus-marginal loss rate beside residual avoidable points; volume split = conditional win rates quiet vs loud; ladders = mechanical re-pricing on identical paths (saved / amputated / net). The operator hypothesis ('winners become positive within 2 bars') is graded by the curve below, per family. Base variant for paths and ladders: R-NOTRAIL (unmanaged full hold, declared; per-variant grids in the JSON follow-up flag).
 
-## ger40fut (spread 1.5; 8149 rows used)
+## ger40fut (spread 1.5; 9157 rows used)
 
-**Luck budget (ger40fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 1 (pctl 0.0); volume-gap cells: 1 vs null median 1 / p95 1 (pctl 40.0).
+**Luck budget (ger40fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 1 (pctl 0.0); volume-gap cells: 1 vs null median 1 / p95 1 (pctl 46.0).
 
 ### Loss decomposition + the operator hypothesis (per family)
 
 | family | n | never-positive loss share | after-positive loss share | winners positive <=2 bars |
 |---|---|---|---|---|
-| composite | 65 | 0.036 (105.0 pts) | 0.964 | 0.667 |
-| event | 84 | 0.083 (326.8 pts) | 0.917 | 0.647 |
-| event-derived | °18 | 0.464 (147.4 pts) | 0.536 | 1.0 |
-| map | 38 | 0.079 (123.7 pts) | 0.921 | 0.643 |
-| retest | 32 | 0.103 (116.2 pts) | 0.897 | 0.889 |
-| structure | 39 | 0.147 (249.8 pts) | 0.853 | 0.692 |
-| texture | 30 | 0.095 (102.5 pts) | 0.905 | 0.643 |
-| trend | 49 | 0.049 (110.3 pts) | 0.951 | 0.647 |
+| composite | 69 | 0.035 (105.0 pts) | 0.965 | 0.682 |
+| event | 89 | 0.089 (377.3 pts) | 0.911 | 0.647 |
+| event-derived | °19 | 0.28 (76.5 pts) | 0.72 | 1.0 |
+| map | 45 | 0.117 (212.3 pts) | 0.883 | 0.688 |
+| retest | 33 | 0.103 (116.2 pts) | 0.897 | 0.8 |
+| structure | 44 | 0.125 (249.8 pts) | 0.875 | 0.714 |
+| texture | 32 | 0.092 (102.5 pts) | 0.908 | 0.643 |
+| trend | 52 | 0.049 (110.3 pts) | 0.951 | 0.611 |
 
 ### Survival, frontier, volume split at the reference bar k=3 (full curves in the JSON)
 
 | family | n@k | P(win given underwater) | separation | avoidable pts | P(win given quiet dip) | P(win given loud dip) |
 |---|---|---|---|---|---|---|
-| composite | °22 | 0.318 | 0.5pp | 697.4 | 0.182 | 0.455 |
-| event | 29 | 0.345 | 6.0pp | 1366.6 | 0.7 | 0.158 |
-| event-derived | °3 | 0.0 | 38.9pp | 82.7 | 0.0 | None |
-| map | °14 | 0.214 | 15.4pp | 558.5 | 0.375 | 0.0 |
-| retest | °6 | 0.167 | 11.5pp | 111.9 | 0.0 | 0.5 |
-| structure | °11 | 0.182 | 15.2pp | 399.7 | 0.25 | 0.0 |
-| texture | °12 | 0.417 | 5.0pp | 540.9 | 0.455 | 0.0 |
-| trend | °15 | 0.4 | -5.3pp | 584.4 | 0.429 | 0.0 |
+| composite | °24 | 0.292 | 2.7pp | 718.8 | 0.167 | 0.417 |
+| event | 30 | 0.333 | 4.9pp | 1399.5 | 0.636 | 0.158 |
+| event-derived | °3 | 0.0 | 42.1pp | 46.8 | 0.0 | None |
+| map | °16 | 0.188 | 16.8pp | 682.1 | 0.333 | 0.0 |
+| retest | °7 | 0.286 | 1.7pp | 111.9 | 0.0 | 0.667 |
+| structure | °13 | 0.154 | 16.4pp | 491.8 | 0.2 | 0.0 |
+| texture | °13 | 0.385 | 8.4pp | 573.4 | 0.417 | 0.0 |
+| trend | °16 | 0.438 | -9.1pp | 584.4 | 0.467 | 0.0 |
 
 ### Rule ladder (per family; saved on losers / amputated from winners / net, pts; floor = B-RANDOM member NET-DELTA band under R-NOTRAIL with the identical rule)
 
 | family | rule | n trig | saved | amputated | net | floor med (min..max) |
 |---|---|---|---|---|---|---|
-| composite | cut-loud | 26 | 884.9 | -619.2 | 265.7 | 132.0 (-545.6..604.6) |
-| composite | cut-mae0.5 | 22 | 683.1 | -583.7 | 99.4 | 105.8 (-505.9..445.8) |
-| composite | cut-mae1 | 7 | 204.7 | -80.8 | 123.9 | 41.7 (-328.7..377.1) |
-| composite | cut@2 | 26 | 1017.1 | -537.6 | 479.5 | -355.6 (-779.0..554.1) |
-| composite | cut@3 | 22 | 697.4 | -548.9 | 148.5 | -178.5 (-751.9..626.2) |
-| composite | cut@5 | 17 | 434.9 | -504.2 | -69.3 | -135.2 (-571.8..760.8) |
-| event | cut-loud | 30 | 1452.5 | -1159.3 | 293.2 | 132.0 (-545.6..604.6) |
-| event | cut-mae0.5 | 24 | 1125.7 | -577.4 | 548.3 | 105.8 (-505.9..445.8) |
-| event | cut-mae1 | 9 | 338.3 | -37.1 | 301.2 | 41.7 (-328.7..377.1) |
-| event | cut@2 | 31 | 1407.3 | -1351.6 | 55.7 | -355.6 (-779.0..554.1) |
-| event | cut@3 | 29 | 1366.6 | -1214.4 | 152.2 | -178.5 (-751.9..626.2) |
-| event | cut@5 | 23 | 1237.4 | -735.4 | 502.0 | -135.2 (-571.8..760.8) |
-| event-derived | cut-loud | 1 | 38.2 | 0.0 | 38.2 | 132.0 (-545.6..604.6) |
-| event-derived | cut-mae0.5 | 8 | 89.9 | -135.1 | -45.2 | 105.8 (-505.9..445.8) |
-| event-derived | cut-mae1 | 1 | 41.7 | 0.0 | 41.7 | 41.7 (-328.7..377.1) |
-| event-derived | cut@2 | 3 | 110.1 | 0.0 | 110.1 | -355.6 (-779.0..554.1) |
-| event-derived | cut@3 | 3 | 82.7 | 0.0 | 82.7 | -178.5 (-751.9..626.2) |
-| event-derived | cut@5 | 3 | 91.5 | 0.0 | 91.5 | -135.2 (-571.8..760.8) |
-| map | cut-loud | 9 | 356.4 | 0.0 | 356.4 | 132.0 (-545.6..604.6) |
-| map | cut-mae0.5 | 17 | 415.9 | -939.3 | -523.4 | 105.8 (-505.9..445.8) |
-| map | cut-mae1 | 7 | 168.3 | -128.5 | 39.8 | 41.7 (-328.7..377.1) |
-| map | cut@2 | 17 | 658.1 | -821.3 | -163.2 | -355.6 (-779.0..554.1) |
-| map | cut@3 | 14 | 558.5 | -466.9 | 91.6 | -178.5 (-751.9..626.2) |
-| map | cut@5 | 12 | 407.2 | -386.8 | 20.4 | -135.2 (-571.8..760.8) |
-| retest | cut-loud | 7 | 224.9 | -126.2 | 98.7 | 132.0 (-545.6..604.6) |
-| retest | cut-mae0.5 | 17 | 511.7 | -181.2 | 330.5 | 105.8 (-505.9..445.8) |
-| retest | cut-mae1 | 7 | 191.5 | 0.0 | 191.5 | 41.7 (-328.7..377.1) |
-| retest | cut@2 | 7 | 147.5 | -130.2 | 17.3 | -355.6 (-779.0..554.1) |
-| retest | cut@3 | 6 | 111.9 | -133.1 | -21.2 | -178.5 (-751.9..626.2) |
-| retest | cut@5 | 6 | 92.4 | -133.2 | -40.8 | -135.2 (-571.8..760.8) |
-| structure | cut-loud | 10 | 560.7 | -138.4 | 422.3 | 132.0 (-545.6..604.6) |
-| structure | cut-mae0.5 | 7 | 264.2 | 0.0 | 264.2 | 105.8 (-505.9..445.8) |
-| structure | cut-mae1 | 5 | 155.4 | 0.0 | 155.4 | 41.7 (-328.7..377.1) |
-| structure | cut@2 | 14 | 524.2 | -534.4 | -10.2 | -355.6 (-779.0..554.1) |
-| structure | cut@3 | 11 | 399.7 | -281.2 | 118.5 | -178.5 (-751.9..626.2) |
-| structure | cut@5 | 7 | 294.0 | 0.0 | 294.0 | -135.2 (-571.8..760.8) |
-| texture | cut-loud | 7 | 501.3 | 0.0 | 501.3 | 132.0 (-545.6..604.6) |
-| texture | cut-mae0.5 | 8 | 237.6 | -336.2 | -98.6 | 105.8 (-505.9..445.8) |
-| texture | cut-mae1 | 2 | 18.1 | -240.1 | -222.0 | 41.7 (-328.7..377.1) |
-| texture | cut@2 | 13 | 579.9 | -553.2 | 26.7 | -355.6 (-779.0..554.1) |
-| texture | cut@3 | 12 | 540.9 | -542.4 | -1.5 | -178.5 (-751.9..626.2) |
-| texture | cut@5 | 9 | 546.5 | -193.2 | 353.3 | -135.2 (-571.8..760.8) |
-| trend | cut-loud | 7 | 274.6 | -169.4 | 105.2 | 132.0 (-545.6..604.6) |
-| trend | cut-mae0.5 | 6 | 295.7 | -152.9 | 142.8 | 105.8 (-505.9..445.8) |
-| trend | cut-mae1 | 3 | 90.6 | 0.0 | 90.6 | 41.7 (-328.7..377.1) |
-| trend | cut@2 | 17 | 756.1 | -730.4 | 25.7 | -355.6 (-779.0..554.1) |
-| trend | cut@3 | 15 | 584.4 | -732.8 | -148.4 | -178.5 (-751.9..626.2) |
-| trend | cut@5 | 12 | 536.1 | -467.9 | 68.2 | -135.2 (-571.8..760.8) |
+| composite | cut-loud | 27 | 917.8 | -619.2 | 298.6 | 81.4 (-419.8..454.2) |
+| composite | cut-mae0.5 | 24 | 759.3 | -522.4 | 236.9 | -27.2 (-717.6..1112.7) |
+| composite | cut-mae1 | 7 | 204.7 | -80.8 | 123.9 | 44.0 (-204.7..296.5) |
+| composite | cut@2 | 28 | 1044.1 | -537.6 | 506.5 | -14.7 (-840.6..1289.5) |
+| composite | cut@3 | 24 | 718.8 | -548.9 | 169.9 | -94.7 (-570.1..991.2) |
+| composite | cut@5 | 19 | 465.2 | -504.2 | -39.0 | 94.0 (-621.7..719.0) |
+| event | cut-loud | 31 | 1463.8 | -1159.3 | 304.5 | 81.4 (-419.8..454.2) |
+| event | cut-mae0.5 | 27 | 1272.2 | -520.8 | 751.4 | -27.2 (-717.6..1112.7) |
+| event | cut-mae1 | 10 | 367.8 | -37.1 | 330.7 | 44.0 (-204.7..296.5) |
+| event | cut@2 | 32 | 1440.9 | -1351.6 | 89.3 | -14.7 (-840.6..1289.5) |
+| event | cut@3 | 30 | 1399.5 | -1214.4 | 185.1 | -94.7 (-570.1..991.2) |
+| event | cut@5 | 24 | 1266.2 | -735.4 | 530.8 | 94.0 (-621.7..719.0) |
+| event-derived | cut-loud | 1 | 38.2 | 0.0 | 38.2 | 81.4 (-419.8..454.2) |
+| event-derived | cut-mae0.5 | 8 | 39.8 | -135.1 | -95.3 | -27.2 (-717.6..1112.7) |
+| event-derived | cut@2 | 3 | 60.6 | 0.0 | 60.6 | -14.7 (-840.6..1289.5) |
+| event-derived | cut@3 | 3 | 46.8 | 0.0 | 46.8 | -94.7 (-570.1..991.2) |
+| event-derived | cut@5 | 3 | 58.8 | 0.0 | 58.8 | 94.0 (-621.7..719.0) |
+| map | cut-loud | 10 | 439.7 | 0.0 | 439.7 | 81.4 (-419.8..454.2) |
+| map | cut-mae0.5 | 17 | 415.9 | -829.6 | -413.7 | -27.2 (-717.6..1112.7) |
+| map | cut-mae1 | 7 | 168.3 | -128.5 | 39.8 | 44.0 (-204.7..296.5) |
+| map | cut@2 | 19 | 781.5 | -711.6 | 69.9 | -14.7 (-840.6..1289.5) |
+| map | cut@3 | 16 | 682.1 | -466.9 | 215.2 | -94.7 (-570.1..991.2) |
+| map | cut@5 | 14 | 533.3 | -386.8 | 146.5 | 94.0 (-621.7..719.0) |
+| retest | cut-loud | 8 | 224.9 | -152.9 | 72.0 | 81.4 (-419.8..454.2) |
+| retest | cut-mae0.5 | 18 | 511.7 | -212.4 | 299.3 | -27.2 (-717.6..1112.7) |
+| retest | cut-mae1 | 7 | 191.5 | 0.0 | 191.5 | 44.0 (-204.7..296.5) |
+| retest | cut@2 | 8 | 147.5 | -160.4 | -12.9 | -14.7 (-840.6..1289.5) |
+| retest | cut@3 | 7 | 111.9 | -159.8 | -47.9 | -94.7 (-570.1..991.2) |
+| retest | cut@5 | 6 | 92.4 | -133.2 | -40.8 | 94.0 (-621.7..719.0) |
+| structure | cut-loud | 12 | 647.5 | -138.4 | 509.1 | 81.4 (-419.8..454.2) |
+| structure | cut-mae0.5 | 9 | 340.7 | 0.0 | 340.7 | -27.2 (-717.6..1112.7) |
+| structure | cut-mae1 | 5 | 155.4 | 0.0 | 155.4 | 44.0 (-204.7..296.5) |
+| structure | cut@2 | 16 | 618.2 | -534.4 | 83.8 | -14.7 (-840.6..1289.5) |
+| structure | cut@3 | 13 | 491.8 | -281.2 | 210.6 | -94.7 (-570.1..991.2) |
+| structure | cut@5 | 9 | 369.2 | 0.0 | 369.2 | 94.0 (-621.7..719.0) |
+| texture | cut-loud | 7 | 501.3 | 0.0 | 501.3 | 81.4 (-419.8..454.2) |
+| texture | cut-mae0.5 | 8 | 237.6 | -336.2 | -98.6 | -27.2 (-717.6..1112.7) |
+| texture | cut-mae1 | 2 | 18.1 | -240.1 | -222.0 | 44.0 (-204.7..296.5) |
+| texture | cut@2 | 14 | 614.3 | -553.2 | 61.1 | -14.7 (-840.6..1289.5) |
+| texture | cut@3 | 13 | 573.4 | -542.4 | 31.0 | -94.7 (-570.1..991.2) |
+| texture | cut@5 | 10 | 578.7 | -193.2 | 385.5 | 94.0 (-621.7..719.0) |
+| trend | cut-loud | 7 | 274.6 | -169.4 | 105.2 | 81.4 (-419.8..454.2) |
+| trend | cut-mae0.5 | 6 | 295.7 | -152.9 | 142.8 | -27.2 (-717.6..1112.7) |
+| trend | cut-mae1 | 3 | 90.6 | 0.0 | 90.6 | 44.0 (-204.7..296.5) |
+| trend | cut@2 | 18 | 756.1 | -790.1 | -34.0 | -14.7 (-840.6..1289.5) |
+| trend | cut@3 | 16 | 584.4 | -796.7 | -212.3 | -94.7 (-570.1..991.2) |
+| trend | cut@5 | 13 | 536.1 | -528.8 | 7.3 | 94.0 (-621.7..719.0) |
 
 ### BE ladder + NEVER-AGAIN table (R-NOTRAIL base)
 
 | rung xATR | scratches | winners amputated (pts) | losses capped (pts saved) | net delta | floor med (min..max) | max MFE of eventual losers (xATR / pts) |
 |---|---|---|---|---|---|---|
-| 0.25 | 304 | 113 (10989.9) | 191 (11896.3) | 906.4 | -481.9 (-2199.2..932.3) | 0.244 / 4.8 |
-| 0.5 | 269 | 101 (9592.2) | 168 (10532.5) | 940.2 | -481.8 (-1558.2..656.9) | 0.482 / 21.7 |
-| 1 | 219 | 86 (7720.9) | 133 (8358.7) | 637.8 | -237.1 (-1170.1..767.4) | 0.973 / 43.6 |
-| 1.5 | 157 | 62 (5737.1) | 95 (5963.2) | 226.1 | -178.3 (-1187.4..463.5) | 1.483 / 35.8 |
+| 0.25 | 326 | 116 (10752.7) | 209 (12807.9) | 2053.7 | 101.2 (-1220.8..1939.9) | 0.244 / 4.8 |
+| 0.5 | 289 | 104 (9355.0) | 184 (11348.4) | 1991.9 | 102.3 (-1153.0..1239.2) | 0.482 / 21.7 |
+| 1 | 239 | 93 (7740.1) | 146 (8932.3) | 1192.2 | 190.9 (-737.4..913.3) | 0.973 / 43.6 |
+| 1.5 | 177 | 69 (6085.4) | 108 (6536.9) | 451.5 | 156.9 (-710.9..758.7) | 1.483 / 35.8 |
 
 ### Re-entry (BE@0.25 scratches, UNDEDUPED stream; the 5-bar dedup hides near re-fires — stated)
 
 | window min | scratched | re-fired | rate |
 |---|---|---|---|
-| 15 | 304 | 44 | 0.145 |
-| 30 | 304 | 62 | 0.204 |
-| 60 | 304 | 95 | 0.312 |
+| 15 | 326 | 48 | 0.147 |
+| 30 | 326 | 68 | 0.209 |
+| 60 | 326 | 105 | 0.322 |
 
-## nas100fut (spread 1.8; 9356 rows used)
+## nas100fut (spread 1.8; 10155 rows used)
 
-**Luck budget (nas100fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 0 (pctl 0.0); volume-gap cells: 0 vs null median 1 / p95 1 (pctl 0.0).
+**Luck budget (nas100fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 1 (pctl 0.0); volume-gap cells: 1 vs null median 1 / p95 2 (pctl 11.0).
 
 ### Loss decomposition + the operator hypothesis (per family)
 
 | family | n | never-positive loss share | after-positive loss share | winners positive <=2 bars |
 |---|---|---|---|---|
-| composite | 65 | 0.072 (353.5 pts) | 0.928 | 0.583 |
-| event | 78 | 0.023 (149.4 pts) | 0.977 | 0.655 |
-| event-derived | °19 | 0.09 (15.8 pts) | 0.91 | 0.636 |
-| map | 44 | 0.02 (66.1 pts) | 0.98 | 0.824 |
-| retest | 32 | 0.23 (469.2 pts) | 0.77 | 0.583 |
-| structure | 42 | 0.125 (398.8 pts) | 0.875 | 0.692 |
-| texture | 32 | 0.07 (215.4 pts) | 0.93 | 0.667 |
-| trend | 43 | 0.0 (0 pts) | 1.0 | 0.647 |
+| composite | 69 | 0.069 (353.5 pts) | 0.931 | 0.6 |
+| event | 85 | 0.051 (349.2 pts) | 0.949 | 0.594 |
+| event-derived | °20 | 0.072 (15.8 pts) | 0.928 | 0.545 |
+| map | 50 | 0.05 (184.8 pts) | 0.95 | 0.789 |
+| retest | 33 | 0.225 (469.2 pts) | 0.775 | 0.583 |
+| structure | 44 | 0.124 (398.8 pts) | 0.876 | 0.733 |
+| texture | 36 | 0.064 (215.4 pts) | 0.936 | 0.667 |
+| trend | 45 | 0.0 (0 pts) | 1.0 | 0.684 |
 
 ### Survival, frontier, volume split at the reference bar k=3 (full curves in the JSON)
 
 | family | n@k | P(win given underwater) | separation | avoidable pts | P(win given quiet dip) | P(win given loud dip) |
 |---|---|---|---|---|---|---|
-| composite | 26 | 0.308 | 6.2pp | 1852.1 | 0.312 | 0.3 |
-| event | °24 | 0.417 | -4.5pp | 1406.1 | 0.571 | 0.2 |
-| event-derived | °6 | 0.333 | 24.6pp | 34.3 | 0.333 | None |
-| map | °14 | 0.214 | 17.2pp | 953.6 | 0.231 | 0.0 |
-| retest | °17 | 0.235 | 14.0pp | 1112.1 | 0.333 | 0.125 |
-| structure | °13 | 0.231 | 7.9pp | 1218.9 | 0.5 | 0.111 |
-| texture | °12 | 0.167 | 11.5pp | 1199.2 | 0.182 | 0.0 |
-| trend | °11 | 0.273 | 12.3pp | 915.5 | 0.273 | None |
+| composite | 27 | 0.296 | 6.6pp | 1859.1 | 0.312 | 0.273 |
+| event | 28 | 0.429 | -5.2pp | 1528.9 | 0.625 | 0.167 |
+| event-derived | °7 | 0.429 | 12.1pp | 34.3 | 0.429 | None |
+| map | °17 | 0.235 | 14.5pp | 1052.0 | 0.267 | 0.0 |
+| retest | °18 | 0.222 | 14.1pp | 1148.8 | 0.3 | 0.125 |
+| structure | °13 | 0.231 | 11.0pp | 1218.9 | 0.5 | 0.111 |
+| texture | °13 | 0.154 | 9.6pp | 1258.8 | 0.182 | 0.0 |
+| trend | °11 | 0.273 | 14.9pp | 915.5 | 0.273 | None |
 
 ### Rule ladder (per family; saved on losers / amputated from winners / net, pts; floor = B-RANDOM member NET-DELTA band under R-NOTRAIL with the identical rule)
 
 | family | rule | n trig | saved | amputated | net | floor med (min..max) |
 |---|---|---|---|---|---|---|
-| composite | cut-loud | 28 | 2320.9 | -1067.4 | 1253.5 | -3.9 (-1344.7..1075.5) |
-| composite | cut-mae0.5 | 22 | 1024.5 | -1722.9 | -698.3 | -213.4 (-2208.9..1077.5) |
-| composite | cut-mae1 | 3 | 186.3 | 0.0 | 186.3 | 65.7 (-800.5..586.3) |
-| composite | cut@2 | 30 | 2089.6 | -1428.2 | 661.4 | 89.1 (-1224.6..924.4) |
-| composite | cut@3 | 26 | 1852.1 | -1285.8 | 566.3 | 51.2 (-1496.4..958.8) |
-| composite | cut@5 | 17 | 1192.8 | -982.9 | 209.9 | -3.8 (-1704.8..1519.6) |
-| event | cut-loud | 30 | 1543.8 | -3763.2 | -2219.4 | -3.9 (-1344.7..1075.5) |
-| event | cut-mae0.5 | 18 | 1488.0 | -808.7 | 679.3 | -213.4 (-2208.9..1077.5) |
-| event | cut-mae1 | 6 | 226.6 | -138.2 | 88.4 | 65.7 (-800.5..586.3) |
-| event | cut@2 | 24 | 1455.7 | -2248.3 | -792.6 | 89.1 (-1224.6..924.4) |
-| event | cut@3 | 24 | 1406.1 | -2271.0 | -864.9 | 51.2 (-1496.4..958.8) |
-| event | cut@5 | 16 | 906.9 | -1567.1 | -660.2 | -3.8 (-1704.8..1519.6) |
-| event-derived | cut-loud | 2 | 0.0 | -427.6 | -427.6 | -3.9 (-1344.7..1075.5) |
-| event-derived | cut-mae0.5 | 7 | -47.9 | -173.5 | -221.5 | -213.4 (-2208.9..1077.5) |
-| event-derived | cut@2 | 8 | 44.9 | -536.8 | -491.9 | 89.1 (-1224.6..924.4) |
-| event-derived | cut@3 | 6 | 34.3 | -135.2 | -100.9 | 51.2 (-1496.4..958.8) |
-| event-derived | cut@5 | 4 | -7.1 | -65.5 | -72.6 | -3.8 (-1704.8..1519.6) |
-| map | cut-loud | 8 | 561.2 | -496.8 | 64.4 | -3.9 (-1344.7..1075.5) |
-| map | cut-mae0.5 | 12 | 842.9 | -835.7 | 7.2 | -213.4 (-2208.9..1077.5) |
-| map | cut-mae1 | 4 | 164.1 | -105.0 | 59.1 | 65.7 (-800.5..586.3) |
-| map | cut@2 | 16 | 1128.4 | -370.8 | 757.6 | 89.1 (-1224.6..924.4) |
-| map | cut@3 | 14 | 953.6 | -364.7 | 588.9 | 51.2 (-1496.4..958.8) |
-| map | cut@5 | 10 | 722.9 | -79.2 | 643.7 | -3.8 (-1704.8..1519.6) |
-| retest | cut-loud | 11 | 817.7 | -528.0 | 289.7 | -3.9 (-1344.7..1075.5) |
-| retest | cut-mae0.5 | 21 | 1168.2 | -1030.5 | 137.7 | -213.4 (-2208.9..1077.5) |
-| retest | cut-mae1 | 12 | 574.0 | -401.6 | 172.4 | 65.7 (-800.5..586.3) |
-| retest | cut@2 | 18 | 1145.4 | -1430.8 | -285.4 | 89.1 (-1224.6..924.4) |
-| retest | cut@3 | 17 | 1112.1 | -658.7 | 453.4 | 51.2 (-1496.4..958.8) |
-| retest | cut@5 | 15 | 894.3 | -610.6 | 283.7 | -3.8 (-1704.8..1519.6) |
-| structure | cut-loud | 12 | 1179.4 | -191.0 | 988.4 | -3.9 (-1344.7..1075.5) |
-| structure | cut-mae0.5 | 15 | 697.2 | -568.9 | 128.4 | -213.4 (-2208.9..1077.5) |
-| structure | cut-mae1 | 4 | 349.7 | 0.0 | 349.7 | 65.7 (-800.5..586.3) |
-| structure | cut@2 | 15 | 1296.7 | -357.1 | 939.6 | 89.1 (-1224.6..924.4) |
-| structure | cut@3 | 13 | 1218.9 | -235.3 | 983.6 | 51.2 (-1496.4..958.8) |
-| structure | cut@5 | 10 | 979.5 | -190.3 | 789.2 | -3.8 (-1704.8..1519.6) |
-| texture | cut-loud | 9 | 936.5 | -264.1 | 672.4 | -3.9 (-1344.7..1075.5) |
-| texture | cut-mae0.5 | 11 | 802.5 | -140.7 | 661.9 | -213.4 (-2208.9..1077.5) |
-| texture | cut-mae1 | 4 | 255.2 | 0.0 | 255.2 | 65.7 (-800.5..586.3) |
-| texture | cut@2 | 15 | 1377.6 | -483.1 | 894.5 | 89.1 (-1224.6..924.4) |
-| texture | cut@3 | 12 | 1199.2 | -345.1 | 854.1 | 51.2 (-1496.4..958.8) |
-| texture | cut@5 | 10 | 691.6 | -347.3 | 344.3 | -3.8 (-1704.8..1519.6) |
-| trend | cut-loud | 4 | 377.6 | 0.0 | 377.6 | -3.9 (-1344.7..1075.5) |
-| trend | cut-mae0.5 | 6 | 371.3 | -563.0 | -191.7 | -213.4 (-2208.9..1077.5) |
-| trend | cut@2 | 16 | 1147.3 | -1693.0 | -545.7 | 89.1 (-1224.6..924.4) |
-| trend | cut@3 | 11 | 915.5 | -1524.8 | -609.3 | 51.2 (-1496.4..958.8) |
-| trend | cut@5 | 9 | 786.4 | -1512.5 | -726.1 | -3.8 (-1704.8..1519.6) |
+| composite | cut-loud | 30 | 2482.4 | -1067.4 | 1415.0 | -66.8 (-900.4..957.8) |
+| composite | cut-mae0.5 | 22 | 1024.5 | -1701.3 | -676.8 | -19.9 (-1294.4..1124.5) |
+| composite | cut-mae1 | 3 | 186.3 | 0.0 | 186.3 | 33.6 (-885.4..426.0) |
+| composite | cut@2 | 31 | 2092.3 | -1428.2 | 664.1 | -213.8 (-1598.8..1497.2) |
+| composite | cut@3 | 27 | 1859.1 | -1285.8 | 573.3 | -277.5 (-1894.2..1311.2) |
+| composite | cut@5 | 17 | 1192.8 | -982.9 | 209.9 | -165.9 (-1529.1..1128.4) |
+| event | cut-loud | 35 | 1986.3 | -4006.0 | -2019.7 | -66.8 (-900.4..957.8) |
+| event | cut-mae0.5 | 23 | 1645.0 | -1355.3 | 289.7 | -19.9 (-1294.4..1124.5) |
+| event | cut-mae1 | 8 | 344.3 | -116.6 | 227.7 | 33.6 (-885.4..426.0) |
+| event | cut@2 | 29 | 1580.7 | -2764.2 | -1183.5 | -213.8 (-1598.8..1497.2) |
+| event | cut@3 | 28 | 1528.9 | -2523.4 | -994.5 | -277.5 (-1894.2..1311.2) |
+| event | cut@5 | 20 | 1041.7 | -1822.3 | -780.6 | -165.9 (-1529.1..1128.4) |
+| event-derived | cut-loud | 2 | 0.0 | -427.6 | -427.6 | -66.8 (-900.4..957.8) |
+| event-derived | cut-mae0.5 | 6 | -47.9 | -62.3 | -110.3 | -19.9 (-1294.4..1124.5) |
+| event-derived | cut@2 | 10 | 86.1 | -548.0 | -461.9 | -213.8 (-1598.8..1497.2) |
+| event-derived | cut@3 | 7 | 34.3 | -151.4 | -117.1 | -277.5 (-1894.2..1311.2) |
+| event-derived | cut@5 | 5 | -7.1 | -80.9 | -88.0 | -165.9 (-1529.1..1128.4) |
+| map | cut-loud | 10 | 623.9 | -496.8 | 127.1 | -66.8 (-900.4..957.8) |
+| map | cut-mae0.5 | 16 | 1093.4 | -911.2 | 182.2 | -19.9 (-1294.4..1124.5) |
+| map | cut-mae1 | 7 | 351.9 | -105.0 | 246.9 | 33.6 (-885.4..426.0) |
+| map | cut@2 | 19 | 1226.7 | -396.1 | 830.6 | -213.8 (-1598.8..1497.2) |
+| map | cut@3 | 17 | 1052.0 | -423.2 | 628.8 | -277.5 (-1894.2..1311.2) |
+| map | cut@5 | 12 | 794.8 | -152.1 | 642.7 | -165.9 (-1529.1..1128.4) |
+| retest | cut-loud | 11 | 817.7 | -528.0 | 289.7 | -66.8 (-900.4..957.8) |
+| retest | cut-mae0.5 | 21 | 1168.2 | -1030.5 | 137.7 | -19.9 (-1294.4..1124.5) |
+| retest | cut-mae1 | 12 | 574.0 | -401.6 | 172.4 | 33.6 (-885.4..426.0) |
+| retest | cut@2 | 19 | 1181.0 | -1430.8 | -249.8 | -213.8 (-1598.8..1497.2) |
+| retest | cut@3 | 18 | 1148.8 | -658.7 | 490.1 | -277.5 (-1894.2..1311.2) |
+| retest | cut@5 | 16 | 929.7 | -610.6 | 319.1 | -165.9 (-1529.1..1128.4) |
+| structure | cut-loud | 12 | 1179.4 | -191.0 | 988.4 | -66.8 (-900.4..957.8) |
+| structure | cut-mae0.5 | 15 | 697.2 | -568.9 | 128.4 | -19.9 (-1294.4..1124.5) |
+| structure | cut-mae1 | 4 | 349.7 | 0.0 | 349.7 | 33.6 (-885.4..426.0) |
+| structure | cut@2 | 15 | 1296.7 | -357.1 | 939.6 | -213.8 (-1598.8..1497.2) |
+| structure | cut@3 | 13 | 1218.9 | -235.3 | 983.6 | -277.5 (-1894.2..1311.2) |
+| structure | cut@5 | 10 | 979.5 | -190.3 | 789.2 | -165.9 (-1529.1..1128.4) |
+| texture | cut-loud | 10 | 996.1 | -264.1 | 732.0 | -66.8 (-900.4..957.8) |
+| texture | cut-mae0.5 | 12 | 875.6 | -140.7 | 735.0 | -19.9 (-1294.4..1124.5) |
+| texture | cut-mae1 | 5 | 310.0 | 0.0 | 310.0 | 33.6 (-885.4..426.0) |
+| texture | cut@2 | 16 | 1463.5 | -483.1 | 980.3 | -213.8 (-1598.8..1497.2) |
+| texture | cut@3 | 13 | 1258.8 | -345.1 | 913.7 | -277.5 (-1894.2..1311.2) |
+| texture | cut@5 | 11 | 756.5 | -347.3 | 409.2 | -165.9 (-1529.1..1128.4) |
+| trend | cut-loud | 4 | 377.6 | 0.0 | 377.6 | -66.8 (-900.4..957.8) |
+| trend | cut-mae0.5 | 6 | 371.3 | -563.0 | -191.7 | -19.9 (-1294.4..1124.5) |
+| trend | cut@2 | 16 | 1147.3 | -1671.4 | -524.1 | -213.8 (-1598.8..1497.2) |
+| trend | cut@3 | 11 | 915.5 | -1524.8 | -609.3 | -277.5 (-1894.2..1311.2) |
+| trend | cut@5 | 9 | 786.4 | -1512.5 | -726.1 | -165.9 (-1529.1..1128.4) |
 
 ### BE ladder + NEVER-AGAIN table (R-NOTRAIL base)
 
 | rung xATR | scratches | winners amputated (pts) | losses capped (pts saved) | net delta | floor med (min..max) | max MFE of eventual losers (xATR / pts) |
 |---|---|---|---|---|---|---|
-| 0.25 | 314 | 113 (27636.2) | 201 (22690.3) | -4945.9 | -200.8 (-2087.3..1107.5) | 0.229 / 9.2 |
-| 0.5 | 279 | 98 (25683.3) | 181 (20814.1) | -4869.2 | -402.9 (-1432.2..452.9) | 0.464 / 43.9 |
-| 1 | 214 | 75 (18722.5) | 139 (15897.6) | -2824.9 | -286.0 (-1453.3..1583.9) | 0.994 / 33.6 |
-| 1.5 | 163 | 55 (11686.0) | 108 (12390.6) | 704.6 | 6.2 (-1357.0..1389.2) | 1.496 / 74.7 |
+| 0.25 | 338 | 122 (28571.5) | 216 (24098.1) | -4473.4 | -332.2 (-2531.9..1385.0) | 0.229 / 9.2 |
+| 0.5 | 300 | 108 (26783.6) | 192 (21791.9) | -4991.7 | -604.8 (-2196.5..1594.2) | 0.464 / 43.9 |
+| 1 | 233 | 84 (19576.8) | 149 (16715.2) | -2861.6 | -438.3 (-2094.2..1547.4) | 0.994 / 33.6 |
+| 1.5 | 179 | 64 (12373.3) | 115 (12835.7) | 462.4 | -303.0 (-1544.2..851.7) | 1.496 / 74.7 |
 
 ### Re-entry (BE@0.25 scratches, UNDEDUPED stream; the 5-bar dedup hides near re-fires — stated)
 
 | window min | scratched | re-fired | rate |
 |---|---|---|---|
-| 15 | 314 | 62 | 0.197 |
-| 30 | 314 | 82 | 0.261 |
-| 60 | 314 | 111 | 0.354 |
+| 15 | 338 | 66 | 0.195 |
+| 30 | 338 | 89 | 0.263 |
+| 60 | 338 | 118 | 0.349 |
 
-## uk100fut (spread 1.3; 10770 rows used)
+## uk100fut (spread 1.3; 11571 rows used)
 
-**Luck budget (uk100fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 1 vs null median 0 / p95 0 (pctl 98.0); volume-gap cells: 1 vs null median 1 / p95 2 (pctl 27.0).
+**Luck budget (uk100fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 2 vs null median 0 / p95 1 (pctl 99.0); volume-gap cells: 1 vs null median 1 / p95 2 (pctl 27.0).
 
 ### Loss decomposition + the operator hypothesis (per family)
 
 | family | n | never-positive loss share | after-positive loss share | winners positive <=2 bars |
 |---|---|---|---|---|
-| composite | 96 | 0.081 (159.8 pts) | 0.919 | 0.517 |
-| event | 108 | 0.081 (168.9 pts) | 0.919 | 0.789 |
-| event-derived | °23 | 0.61 (115.1 pts) | 0.39 | 0.636 |
-| map | 63 | 0.122 (178.1 pts) | 0.878 | 0.714 |
-| retest | 41 | 0.108 (80.9 pts) | 0.892 | 0.545 |
-| structure | 45 | 0.068 (62.1 pts) | 0.932 | 0.5 |
-| texture | 41 | 0.049 (42.5 pts) | 0.951 | 0.667 |
+| composite | 101 | 0.099 (204.2 pts) | 0.901 | 0.533 |
+| event | 115 | 0.077 (168.9 pts) | 0.923 | 0.756 |
+| event-derived | °24 | 0.58 (115.1 pts) | 0.42 | 0.636 |
+| map | 66 | 0.122 (183.4 pts) | 0.878 | 0.733 |
+| retest | 44 | 0.102 (80.9 pts) | 0.898 | 0.583 |
+| structure | 50 | 0.149 (155.6 pts) | 0.851 | 0.5 |
+| texture | 43 | 0.048 (42.5 pts) | 0.952 | 0.667 |
 | trend | 80 | 0.122 (227.8 pts) | 0.878 | 0.68 |
 
 ### Survival, frontier, volume split at the reference bar k=3 (full curves in the JSON)
 
 | family | n@k | P(win given underwater) | separation | avoidable pts | P(win given quiet dip) | P(win given loud dip) |
 |---|---|---|---|---|---|---|
-| composite | 42 | 0.31 | -0.7pp | 702.7 | 0.182 | 0.45 |
-| event | 37 | 0.189 | 16.3pp | 826.7 | 0.192 | 0.182 |
-| event-derived | °11 | 0.364 | 11.5pp | 104.3 | 0.333 | 0.5 |
-| map | °24 | 0.125 | 9.7pp | 383.3 | 0.167 | 0.0 |
-| retest | °14 | 0.286 | -1.7pp | 138.8 | 0.25 | 0.333 |
-| structure | °11 | 0.182 | 8.5pp | 165.9 | 0.4 | 0.0 |
-| texture | °14 | 0.214 | 15.2pp | 237.0 | 0.273 | 0.0 |
+| composite | 43 | 0.302 | -0.5pp | 743.2 | 0.174 | 0.45 |
+| event | 39 | 0.205 | 15.1pp | 839.1 | 0.214 | 0.182 |
+| event-derived | °12 | 0.333 | 12.5pp | 105.8 | 0.3 | 0.5 |
+| map | 26 | 0.115 | 11.2pp | 417.0 | 0.15 | 0.0 |
+| retest | °15 | 0.267 | 0.6pp | 152.9 | 0.222 | 0.333 |
+| structure | °16 | 0.125 | 11.5pp | 268.9 | 0.333 | 0.0 |
+| texture | °14 | 0.214 | 13.5pp | 237.0 | 0.273 | 0.0 |
 | trend | 32 | 0.25 | 6.2pp | 688.4 | 0.25 | None |
 
 ### Rule ladder (per family; saved on losers / amputated from winners / net, pts; floor = B-RANDOM member NET-DELTA band under R-NOTRAIL with the identical rule)
 
 | family | rule | n trig | saved | amputated | net | floor med (min..max) |
 |---|---|---|---|---|---|---|
-| composite | cut-loud | 35 | 561.2 | -550.2 | 11.0 | 55.8 (-378.4..279.7) |
-| composite | cut-mae0.5 | 32 | 489.9 | -363.6 | 126.3 | 75.8 (-154.6..298.3) |
-| composite | cut-mae1 | 11 | 94.7 | -40.1 | 54.6 | -15.4 (-140.3..141.8) |
-| composite | cut@2 | 46 | 813.5 | -676.3 | 137.2 | 151.7 (-296.7..423.3) |
-| composite | cut@3 | 42 | 702.7 | -609.3 | 93.4 | 67.7 (-364.6..338.4) |
-| composite | cut@5 | 36 | 583.7 | -572.3 | 11.4 | 23.2 (-176.7..289.0) |
-| event | cut-loud | 37 | 774.0 | -451.0 | 323.0 | 55.8 (-378.4..279.7) |
-| event | cut-mae0.5 | 27 | 368.9 | -388.0 | -19.1 | 75.8 (-154.6..298.3) |
-| event | cut-mae1 | 5 | 82.3 | -95.6 | -13.3 | -15.4 (-140.3..141.8) |
-| event | cut@2 | 39 | 862.8 | -412.3 | 450.5 | 151.7 (-296.7..423.3) |
-| event | cut@3 | 37 | 826.7 | -387.8 | 438.9 | 67.7 (-364.6..338.4) |
-| event | cut@5 | 29 | 665.7 | -159.7 | 506.0 | 23.2 (-176.7..289.0) |
-| event-derived | cut-loud | 4 | 50.4 | -8.3 | 42.1 | 55.8 (-378.4..279.7) |
-| event-derived | cut-mae0.5 | 9 | 62.3 | -21.2 | 41.0 | 75.8 (-154.6..298.3) |
-| event-derived | cut-mae1 | 2 | 9.5 | 0.0 | 9.5 | -15.4 (-140.3..141.8) |
-| event-derived | cut@2 | 12 | 112.2 | -54.1 | 58.1 | 151.7 (-296.7..423.3) |
-| event-derived | cut@3 | 11 | 104.3 | -59.5 | 44.8 | 67.7 (-364.6..338.4) |
-| event-derived | cut@5 | 9 | 75.5 | -43.6 | 31.9 | 23.2 (-176.7..289.0) |
-| map | cut-loud | 17 | 334.7 | -59.8 | 274.9 | 55.8 (-378.4..279.7) |
-| map | cut-mae0.5 | 29 | 397.9 | -296.8 | 101.1 | 75.8 (-154.6..298.3) |
-| map | cut-mae1 | 16 | 164.7 | -140.3 | 24.4 | -15.4 (-140.3..141.8) |
-| map | cut@2 | 27 | 461.1 | -164.1 | 297.0 | 151.7 (-296.7..423.3) |
-| map | cut@3 | 24 | 383.3 | -153.3 | 229.9 | 67.7 (-364.6..338.4) |
-| map | cut@5 | 23 | 357.1 | -148.8 | 208.3 | 23.2 (-176.7..289.0) |
-| retest | cut-loud | 12 | 181.9 | -206.0 | -24.1 | 55.8 (-378.4..279.7) |
-| retest | cut-mae0.5 | 22 | 347.3 | -194.3 | 153.0 | 75.8 (-154.6..298.3) |
-| retest | cut-mae1 | 14 | 148.0 | -108.8 | 39.2 | -15.4 (-140.3..141.8) |
-| retest | cut@2 | 17 | 230.8 | -146.6 | 84.2 | 151.7 (-296.7..423.3) |
-| retest | cut@3 | 14 | 138.8 | -63.1 | 75.7 | 67.7 (-364.6..338.4) |
-| retest | cut@5 | 11 | 137.8 | -20.5 | 117.3 | 23.2 (-176.7..289.0) |
-| structure | cut-loud | 14 | 270.1 | -38.7 | 231.4 | 55.8 (-378.4..279.7) |
-| structure | cut-mae0.5 | 16 | 183.7 | -125.4 | 58.3 | 75.8 (-154.6..298.3) |
-| structure | cut-mae1 | 5 | 23.9 | -57.4 | -33.5 | -15.4 (-140.3..141.8) |
-| structure | cut@2 | 16 | 183.4 | -191.0 | -7.6 | 151.7 (-296.7..423.3) |
-| structure | cut@3 | 11 | 165.9 | -101.4 | 64.5 | 67.7 (-364.6..338.4) |
-| structure | cut@5 | 11 | 159.0 | -101.0 | 58.0 | 23.2 (-176.7..289.0) |
-| texture | cut-loud | 7 | 110.0 | -52.8 | 57.2 | 55.8 (-378.4..279.7) |
-| texture | cut-mae0.5 | 12 | 209.4 | -194.2 | 15.2 | 75.8 (-154.6..298.3) |
-| texture | cut-mae1 | 4 | 48.3 | -99.2 | -50.9 | -15.4 (-140.3..141.8) |
-| texture | cut@2 | 17 | 286.7 | -295.3 | -8.6 | 151.7 (-296.7..423.3) |
-| texture | cut@3 | 14 | 237.0 | -192.6 | 44.4 | 67.7 (-364.6..338.4) |
-| texture | cut@5 | 7 | 113.4 | -127.1 | -13.7 | 23.2 (-176.7..289.0) |
-| trend | cut-loud | 18 | 337.6 | -220.7 | 116.9 | 55.8 (-378.4..279.7) |
-| trend | cut-mae0.5 | 19 | 368.1 | -230.2 | 137.9 | 75.8 (-154.6..298.3) |
-| trend | cut-mae1 | 3 | 37.7 | 0.0 | 37.7 | -15.4 (-140.3..141.8) |
-| trend | cut@2 | 35 | 812.8 | -336.5 | 476.3 | 151.7 (-296.7..423.3) |
-| trend | cut@3 | 32 | 688.4 | -344.8 | 343.6 | 67.7 (-364.6..338.4) |
-| trend | cut@5 | 26 | 581.5 | -249.3 | 332.2 | 23.2 (-176.7..289.0) |
+| composite | cut-loud | 37 | 602.1 | -550.2 | 51.9 | 51.5 (-252.7..272.5) |
+| composite | cut-mae0.5 | 34 | 536.0 | -363.6 | 172.4 | 108.3 (-151.1..241.6) |
+| composite | cut-mae1 | 11 | 94.7 | -40.1 | 54.6 | 16.8 (-119.8..93.7) |
+| composite | cut@2 | 48 | 871.3 | -676.3 | 195.0 | 146.1 (-312.7..448.2) |
+| composite | cut@3 | 43 | 743.2 | -609.3 | 133.9 | 98.8 (-228.1..393.9) |
+| composite | cut@5 | 37 | 622.4 | -572.3 | 50.1 | 49.2 (-249.5..345.6) |
+| event | cut-loud | 39 | 785.7 | -495.3 | 290.4 | 51.5 (-252.7..272.5) |
+| event | cut-mae0.5 | 28 | 380.4 | -388.0 | -7.6 | 108.3 (-151.1..241.6) |
+| event | cut-mae1 | 6 | 90.9 | -95.6 | -4.6 | 16.8 (-119.8..93.7) |
+| event | cut@2 | 42 | 875.1 | -517.9 | 357.2 | 146.1 (-312.7..448.2) |
+| event | cut@3 | 39 | 839.1 | -449.6 | 389.5 | 98.8 (-228.1..393.9) |
+| event | cut@5 | 30 | 678.4 | -159.7 | 518.7 | 49.2 (-249.5..345.6) |
+| event-derived | cut-loud | 4 | 50.4 | -8.3 | 42.1 | 51.5 (-252.7..272.5) |
+| event-derived | cut-mae0.5 | 9 | 62.3 | -21.2 | 41.0 | 108.3 (-151.1..241.6) |
+| event-derived | cut-mae1 | 2 | 9.5 | 0.0 | 9.5 | 16.8 (-119.8..93.7) |
+| event-derived | cut@2 | 13 | 114.7 | -54.1 | 60.6 | 146.1 (-312.7..448.2) |
+| event-derived | cut@3 | 12 | 105.8 | -59.5 | 46.3 | 98.8 (-228.1..393.9) |
+| event-derived | cut@5 | 10 | 82.7 | -43.6 | 39.1 | 49.2 (-249.5..345.6) |
+| map | cut-loud | 18 | 328.9 | -59.8 | 269.1 | 51.5 (-252.7..272.5) |
+| map | cut-mae0.5 | 30 | 393.7 | -296.8 | 96.9 | 108.3 (-151.1..241.6) |
+| map | cut-mae1 | 16 | 164.7 | -140.3 | 24.4 | 16.8 (-119.8..93.7) |
+| map | cut@2 | 29 | 491.7 | -164.1 | 327.6 | 146.1 (-312.7..448.2) |
+| map | cut@3 | 26 | 417.0 | -153.3 | 263.7 | 98.8 (-228.1..393.9) |
+| map | cut@5 | 24 | 358.8 | -148.8 | 210.0 | 49.2 (-249.5..345.6) |
+| retest | cut-loud | 14 | 196.9 | -210.7 | -13.8 | 51.5 (-252.7..272.5) |
+| retest | cut-mae0.5 | 23 | 367.9 | -194.3 | 173.6 | 108.3 (-151.1..241.6) |
+| retest | cut-mae1 | 14 | 148.0 | -108.8 | 39.2 | 16.8 (-119.8..93.7) |
+| retest | cut@2 | 18 | 245.8 | -146.6 | 99.2 | 146.1 (-312.7..448.2) |
+| retest | cut@3 | 15 | 152.9 | -63.1 | 89.8 | 98.8 (-228.1..393.9) |
+| retest | cut@5 | 12 | 152.9 | -20.5 | 132.4 | 49.2 (-249.5..345.6) |
+| structure | cut-loud | 19 | 373.6 | -38.7 | 334.9 | 51.5 (-252.7..272.5) |
+| structure | cut-mae0.5 | 21 | 285.0 | -125.4 | 159.6 | 108.3 (-151.1..241.6) |
+| structure | cut-mae1 | 7 | 69.9 | -57.4 | 12.5 | 16.8 (-119.8..93.7) |
+| structure | cut@2 | 21 | 282.3 | -191.0 | 91.3 | 146.1 (-312.7..448.2) |
+| structure | cut@3 | 16 | 268.9 | -101.4 | 167.5 | 98.8 (-228.1..393.9) |
+| structure | cut@5 | 16 | 227.7 | -101.0 | 126.7 | 49.2 (-249.5..345.6) |
+| texture | cut-loud | 7 | 110.0 | -52.8 | 57.2 | 51.5 (-252.7..272.5) |
+| texture | cut-mae0.5 | 12 | 209.4 | -194.2 | 15.2 | 108.3 (-151.1..241.6) |
+| texture | cut-mae1 | 4 | 48.3 | -99.2 | -50.9 | 16.8 (-119.8..93.7) |
+| texture | cut@2 | 17 | 286.7 | -295.3 | -8.6 | 146.1 (-312.7..448.2) |
+| texture | cut@3 | 14 | 237.0 | -192.6 | 44.4 | 98.8 (-228.1..393.9) |
+| texture | cut@5 | 7 | 113.4 | -127.1 | -13.7 | 49.2 (-249.5..345.6) |
+| trend | cut-loud | 18 | 337.6 | -220.7 | 116.9 | 51.5 (-252.7..272.5) |
+| trend | cut-mae0.5 | 19 | 368.1 | -230.2 | 137.9 | 108.3 (-151.1..241.6) |
+| trend | cut-mae1 | 3 | 37.7 | 0.0 | 37.7 | 16.8 (-119.8..93.7) |
+| trend | cut@2 | 35 | 812.8 | -336.5 | 476.3 | 146.1 (-312.7..448.2) |
+| trend | cut@3 | 32 | 688.4 | -344.8 | 343.6 | 98.8 (-228.1..393.9) |
+| trend | cut@5 | 26 | 581.5 | -249.3 | 332.2 | 49.2 (-249.5..345.6) |
 
 ### BE ladder + NEVER-AGAIN table (R-NOTRAIL base)
 
 | rung xATR | scratches | winners amputated (pts) | losses capped (pts saved) | net delta | floor med (min..max) | max MFE of eventual losers (xATR / pts) |
 |---|---|---|---|---|---|---|
-| 0.25 | 417 | 129 (6167.5) | 288 (8162.5) | 1995.0 | 391.0 (-244.9..744.1) | 0.22 / 1.5 |
-| 0.5 | 360 | 108 (5423.9) | 252 (7056.8) | 1632.9 | 386.5 (-268.6..653.1) | 0.498 / 9.0 |
-| 1 | 263 | 78 (3966.8) | 185 (4994.2) | 1027.4 | 234.7 (-330.7..530.5) | 0.998 / 12.3 |
-| 1.5 | 218 | 61 (2953.5) | 157 (4088.2) | 1134.7 | 167.9 (-150.6..396.6) | 1.496 / 25.5 |
+| 0.25 | 439 | 136 (6542.3) | 303 (8458.1) | 1915.8 | 357.8 (-143.1..657.3) | 0.22 / 1.5 |
+| 0.5 | 381 | 115 (5798.7) | 266 (7344.0) | 1545.3 | 273.2 (-170.3..540.8) | 0.498 / 9.0 |
+| 1 | 276 | 83 (4219.3) | 193 (5154.4) | 935.0 | 129.0 (-249.2..472.9) | 0.998 / 12.3 |
+| 1.5 | 230 | 65 (3129.1) | 165 (4248.4) | 1119.3 | 110.6 (-130.4..444.6) | 1.496 / 25.5 |
 
 ### Re-entry (BE@0.25 scratches, UNDEDUPED stream; the 5-bar dedup hides near re-fires — stated)
 
 | window min | scratched | re-fired | rate |
 |---|---|---|---|
-| 15 | 417 | 47 | 0.113 |
-| 30 | 417 | 76 | 0.182 |
-| 60 | 417 | 136 | 0.326 |
+| 15 | 439 | 48 | 0.109 |
+| 30 | 439 | 78 | 0.178 |
+| 60 | 439 | 141 | 0.321 |
 
-## us30fut (spread 2.6; 10364 rows used)
+## us30fut (spread 2.6; 11266 rows used)
 
-**Luck budget (us30fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 1 (pctl 0.0); volume-gap cells: 0 vs null median 1 / p95 1 (pctl 0.0).
+**Luck budget (us30fut, k=3, R-NOTRAIL slice, labels permuted within family x session strata, 100 pinned seeds):** separation cells >= 10pp: 0 vs null median 0 / p95 0.05 (pctl 0.0); volume-gap cells: 0 vs null median 1 / p95 1 (pctl 0.0).
 
 ### Loss decomposition + the operator hypothesis (per family)
 
 | family | n | never-positive loss share | after-positive loss share | winners positive <=2 bars |
 |---|---|---|---|---|
-| composite | 69 | 0.073 (390.6 pts) | 0.927 | 0.55 |
-| event | 107 | 0.089 (783.0 pts) | 0.911 | 0.633 |
-| event-derived | °21 | 0.0 (0 pts) | 1.0 | 0.727 |
-| map | 40 | 0.148 (460.3 pts) | 0.852 | 0.467 |
-| retest | 31 | 0.064 (166.1 pts) | 0.936 | 0.833 |
-| structure | 40 | 0.199 (515.2 pts) | 0.801 | 0.778 |
-| texture | 40 | 0.087 (275.6 pts) | 0.913 | 0.8 |
-| trend | 46 | 0.065 (163.7 pts) | 0.935 | 0.65 |
+| composite | 77 | 0.078 (475.2 pts) | 0.922 | 0.55 |
+| event | 117 | 0.084 (783.0 pts) | 0.916 | 0.657 |
+| event-derived | °22 | 0.0 (0 pts) | 1.0 | 0.818 |
+| map | 45 | 0.142 (475.9 pts) | 0.858 | 0.5 |
+| retest | 34 | 0.088 (243.5 pts) | 0.912 | 0.857 |
+| structure | 43 | 0.172 (515.2 pts) | 0.828 | 0.75 |
+| texture | 45 | 0.08 (275.6 pts) | 0.92 | 0.75 |
+| trend | 56 | 0.084 (273.9 pts) | 0.916 | 0.667 |
 
 ### Survival, frontier, volume split at the reference bar k=3 (full curves in the JSON)
 
 | family | n@k | P(win given underwater) | separation | avoidable pts | P(win given quiet dip) | P(win given loud dip) |
 |---|---|---|---|---|---|---|
-| composite | 32 | 0.219 | 7.1pp | 2281.7 | 0.222 | 0.214 |
-| event | 34 | 0.324 | -4.3pp | 2148.0 | 0.111 | 0.4 |
-| event-derived | °4 | 0.75 | -22.6pp | 1.5 | 0.75 | None |
-| map | °18 | 0.333 | 4.2pp | 1458.8 | 0.385 | 0.2 |
-| retest | °12 | 0.0 | 19.4pp | 904.0 | 0.0 | 0.0 |
-| structure | °23 | 0.087 | 13.8pp | 1405.5 | 0.0 | 0.2 |
-| texture | °9 | 0.111 | 13.9pp | 804.0 | 0.111 | None |
-| trend | °17 | 0.176 | 25.8pp | 1310.5 | 0.133 | 0.5 |
+| composite | 34 | 0.206 | 5.4pp | 2353.7 | 0.2 | 0.214 |
+| event | 36 | 0.333 | -3.4pp | 2201.7 | 0.0 | 0.444 |
+| event-derived | °4 | 0.5 | 0.0pp | 32.5 | 0.5 | None |
+| map | °19 | 0.316 | 4.0pp | 1435.8 | 0.357 | 0.2 |
+| retest | °13 | 0.0 | 20.6pp | 971.3 | 0.0 | 0.0 |
+| structure | °23 | 0.087 | 9.9pp | 1405.5 | 0.0 | 0.2 |
+| texture | °9 | 0.111 | 15.6pp | 804.0 | 0.111 | None |
+| trend | °19 | 0.158 | 21.7pp | 1451.6 | 0.118 | 0.5 |
 
 ### Rule ladder (per family; saved on losers / amputated from winners / net, pts; floor = B-RANDOM member NET-DELTA band under R-NOTRAIL with the identical rule)
 
 | family | rule | n trig | saved | amputated | net | floor med (min..max) |
 |---|---|---|---|---|---|---|
-| composite | cut-loud | 26 | 1839.7 | -3751.9 | -1912.2 | -369.2 (-2659.4..245.8) |
-| composite | cut-mae0.5 | 24 | 1634.3 | -1305.0 | 329.2 | -510.6 (-1910.8..830.2) |
-| composite | cut-mae1 | 7 | 283.1 | -201.2 | 81.9 | 67.9 (-815.6..487.5) |
-| composite | cut@2 | 37 | 2584.4 | -4407.0 | -1822.6 | -468.0 (-3210.2..689.3) |
-| composite | cut@3 | 32 | 2281.7 | -3080.5 | -798.8 | -443.1 (-3101.4..592.4) |
-| composite | cut@5 | 25 | 1805.2 | -2263.0 | -457.8 | -240.9 (-2053.4..960.2) |
-| event | cut-loud | 39 | 2723.0 | -3656.2 | -933.2 | -369.2 (-2659.4..245.8) |
-| event | cut-mae0.5 | 35 | 1733.6 | -3790.5 | -2056.9 | -510.6 (-1910.8..830.2) |
-| event | cut-mae1 | 18 | 664.3 | -3136.5 | -2472.2 | 67.9 (-815.6..487.5) |
-| event | cut@2 | 37 | 2429.4 | -3675.2 | -1245.8 | -468.0 (-3210.2..689.3) |
-| event | cut@3 | 34 | 2148.0 | -3815.7 | -1667.7 | -443.1 (-3101.4..592.4) |
-| event | cut@5 | 27 | 1655.6 | -3265.2 | -1609.6 | -240.9 (-2053.4..960.2) |
-| event-derived | cut-mae0.5 | 4 | 106.2 | -62.4 | 43.8 | -510.6 (-1910.8..830.2) |
-| event-derived | cut-mae1 | 1 | 92.7 | 0.0 | 92.7 | 67.9 (-815.6..487.5) |
-| event-derived | cut@2 | 5 | -9.5 | -150.0 | -159.5 | -468.0 (-3210.2..689.3) |
-| event-derived | cut@3 | 4 | 1.5 | -138.5 | -137.0 | -443.1 (-3101.4..592.4) |
-| event-derived | cut@5 | 3 | -7.5 | -66.5 | -74.0 | -240.9 (-2053.4..960.2) |
-| map | cut-loud | 15 | 1282.2 | -2321.0 | -1038.8 | -369.2 (-2659.4..245.8) |
-| map | cut-mae0.5 | 19 | 1585.3 | -1876.1 | -290.8 | -510.6 (-1910.8..830.2) |
-| map | cut-mae1 | 6 | 536.0 | -110.7 | 425.3 | 67.9 (-815.6..487.5) |
-| map | cut@2 | 22 | 1667.0 | -3024.6 | -1357.6 | -468.0 (-3210.2..689.3) |
-| map | cut@3 | 18 | 1458.8 | -2422.1 | -963.3 | -443.1 (-3101.4..592.4) |
-| map | cut@5 | 17 | 1301.6 | -2419.1 | -1117.5 | -240.9 (-2053.4..960.2) |
-| retest | cut-loud | 9 | 790.7 | 0.0 | 790.7 | -369.2 (-2659.4..245.8) |
-| retest | cut-mae0.5 | 17 | 1208.3 | 0.0 | 1208.3 | -510.6 (-1910.8..830.2) |
-| retest | cut-mae1 | 6 | 239.0 | 0.0 | 239.0 | 67.9 (-815.6..487.5) |
-| retest | cut@2 | 13 | 1002.5 | -374.0 | 628.5 | -468.0 (-3210.2..689.3) |
-| retest | cut@3 | 12 | 904.0 | 0.0 | 904.0 | -443.1 (-3101.4..592.4) |
-| retest | cut@5 | 10 | 840.1 | 0.0 | 840.1 | -240.9 (-2053.4..960.2) |
-| structure | cut-loud | 22 | 1136.4 | -1957.0 | -820.6 | -369.2 (-2659.4..245.8) |
-| structure | cut-mae0.5 | 20 | 838.0 | -2361.4 | -1523.3 | -510.6 (-1910.8..830.2) |
-| structure | cut-mae1 | 8 | 280.6 | -1021.2 | -740.6 | 67.9 (-815.6..487.5) |
-| structure | cut@2 | 24 | 1452.1 | -884.0 | 568.1 | -468.0 (-3210.2..689.3) |
-| structure | cut@3 | 23 | 1405.5 | -878.0 | 527.5 | -443.1 (-3101.4..592.4) |
-| structure | cut@5 | 20 | 1036.5 | -897.0 | 139.5 | -240.9 (-2053.4..960.2) |
-| texture | cut-loud | 7 | 632.3 | -195.5 | 436.8 | -369.2 (-2659.4..245.8) |
-| texture | cut-mae0.5 | 13 | 886.6 | -225.9 | 660.8 | -510.6 (-1910.8..830.2) |
-| texture | cut-mae1 | 2 | 97.3 | 0.0 | 97.3 | 67.9 (-815.6..487.5) |
-| texture | cut@2 | 10 | 811.5 | -275.5 | 536.0 | -468.0 (-3210.2..689.3) |
-| texture | cut@3 | 9 | 804.0 | -192.0 | 612.0 | -443.1 (-3101.4..592.4) |
-| texture | cut@5 | 7 | 475.8 | -206.5 | 269.3 | -240.9 (-2053.4..960.2) |
-| trend | cut-loud | 12 | 860.7 | -1497.5 | -636.8 | -369.2 (-2659.4..245.8) |
-| trend | cut-mae0.5 | 11 | 452.6 | -2000.5 | -1547.9 | -510.6 (-1910.8..830.2) |
-| trend | cut-mae1 | 3 | 34.8 | -455.8 | -421.0 | 67.9 (-815.6..487.5) |
-| trend | cut@2 | 23 | 1436.6 | -3688.0 | -2251.4 | -468.0 (-3210.2..689.3) |
-| trend | cut@3 | 17 | 1310.5 | -1413.0 | -102.5 | -443.1 (-3101.4..592.4) |
-| trend | cut@5 | 17 | 1329.0 | -1457.6 | -128.6 | -240.9 (-2053.4..960.2) |
+| composite | cut-loud | 28 | 1839.7 | -3751.9 | -1912.2 | 161.3 (-3291.7..1574.8) |
+| composite | cut-mae0.5 | 26 | 1691.2 | -1305.0 | 386.1 | 173.7 (-1872.9..1880.1) |
+| composite | cut-mae1 | 8 | 287.2 | -201.2 | 86.0 | 127.2 (-512.3..639.6) |
+| composite | cut@2 | 39 | 2668.4 | -4407.0 | -1738.6 | -31.0 (-2862.3..2145.9) |
+| composite | cut@3 | 34 | 2353.7 | -3080.5 | -726.8 | 66.7 (-2062.1..1857.6) |
+| composite | cut@5 | 27 | 1865.2 | -2263.0 | -397.8 | 247.5 (-1374.3..1540.7) |
+| event | cut-loud | 42 | 2885.3 | -3794.7 | -909.4 | 161.3 (-3291.7..1574.8) |
+| event | cut-mae0.5 | 39 | 1890.0 | -4008.7 | -2118.7 | 173.7 (-1872.9..1880.1) |
+| event | cut-mae1 | 20 | 781.6 | -3136.5 | -2354.8 | 127.2 (-512.3..639.6) |
+| event | cut@2 | 39 | 2482.7 | -3833.7 | -1351.0 | -31.0 (-2862.3..2145.9) |
+| event | cut@3 | 36 | 2201.7 | -3977.7 | -1776.0 | 66.7 (-2062.1..1857.6) |
+| event | cut@5 | 29 | 1655.6 | -3456.2 | -1800.6 | 247.5 (-1374.3..1540.7) |
+| event-derived | cut-mae0.5 | 3 | 106.2 | 0.0 | 106.2 | 173.7 (-1872.9..1880.1) |
+| event-derived | cut-mae1 | 1 | 92.7 | 0.0 | 92.7 | 127.2 (-512.3..639.6) |
+| event-derived | cut@2 | 5 | 20.5 | -71.5 | -51.0 | -31.0 (-2862.3..2145.9) |
+| event-derived | cut@3 | 4 | 32.5 | -73.0 | -40.5 | 66.7 (-2062.1..1857.6) |
+| event-derived | cut@5 | 4 | 24.5 | -66.5 | -42.0 | 247.5 (-1374.3..1540.7) |
+| map | cut-loud | 15 | 1282.2 | -2321.0 | -1038.8 | 161.3 (-3291.7..1574.8) |
+| map | cut-mae0.5 | 20 | 1557.8 | -1876.1 | -318.3 | 173.7 (-1872.9..1880.1) |
+| map | cut-mae1 | 6 | 536.0 | -110.7 | 425.3 | 127.2 (-512.3..639.6) |
+| map | cut@2 | 23 | 1650.0 | -3024.6 | -1374.6 | -31.0 (-2862.3..2145.9) |
+| map | cut@3 | 19 | 1435.8 | -2422.1 | -986.3 | 66.7 (-2062.1..1857.6) |
+| map | cut@5 | 18 | 1279.1 | -2419.1 | -1140.0 | 247.5 (-1374.3..1540.7) |
+| retest | cut-loud | 10 | 821.5 | 0.0 | 821.5 | 161.3 (-3291.7..1574.8) |
+| retest | cut-mae0.5 | 20 | 1329.8 | -295.7 | 1034.1 | 173.7 (-1872.9..1880.1) |
+| retest | cut-mae1 | 8 | 330.1 | 0.0 | 330.1 | 127.2 (-512.3..639.6) |
+| retest | cut@2 | 14 | 1070.8 | -374.0 | 696.8 | -31.0 (-2862.3..2145.9) |
+| retest | cut@3 | 13 | 971.3 | 0.0 | 971.3 | 66.7 (-2062.1..1857.6) |
+| retest | cut@5 | 11 | 903.9 | 0.0 | 903.9 | 247.5 (-1374.3..1540.7) |
+| structure | cut-loud | 24 | 1385.2 | -1957.0 | -571.8 | 161.3 (-3291.7..1574.8) |
+| structure | cut-mae0.5 | 20 | 838.0 | -2361.4 | -1523.3 | 173.7 (-1872.9..1880.1) |
+| structure | cut-mae1 | 8 | 280.6 | -1021.2 | -740.6 | 127.2 (-512.3..639.6) |
+| structure | cut@2 | 26 | 1703.9 | -884.0 | 819.9 | -31.0 (-2862.3..2145.9) |
+| structure | cut@3 | 23 | 1405.5 | -878.0 | 527.5 | 66.7 (-2062.1..1857.6) |
+| structure | cut@5 | 20 | 1036.5 | -897.0 | 139.5 | 247.5 (-1374.3..1540.7) |
+| texture | cut-loud | 8 | 632.3 | -218.5 | 413.8 | 161.3 (-3291.7..1574.8) |
+| texture | cut-mae0.5 | 15 | 1014.9 | -225.9 | 789.0 | 173.7 (-1872.9..1880.1) |
+| texture | cut-mae1 | 3 | 148.6 | 0.0 | 148.6 | 127.2 (-512.3..639.6) |
+| texture | cut@2 | 11 | 811.5 | -301.5 | 510.0 | -31.0 (-2862.3..2145.9) |
+| texture | cut@3 | 9 | 804.0 | -192.0 | 612.0 | 66.7 (-2062.1..1857.6) |
+| texture | cut@5 | 7 | 475.8 | -206.5 | 269.3 | 247.5 (-1374.3..1540.7) |
+| trend | cut-loud | 13 | 947.8 | -1497.5 | -549.7 | 161.3 (-3291.7..1574.8) |
+| trend | cut-mae0.5 | 16 | 795.8 | -2000.5 | -1204.8 | 173.7 (-1872.9..1880.1) |
+| trend | cut-mae1 | 6 | 189.6 | -455.8 | -266.1 | 127.2 (-512.3..639.6) |
+| trend | cut@2 | 25 | 1586.7 | -3688.0 | -2101.3 | -31.0 (-2862.3..2145.9) |
+| trend | cut@3 | 19 | 1451.6 | -1413.0 | 38.6 | 66.7 (-2062.1..1857.6) |
+| trend | cut@5 | 19 | 1474.1 | -1457.6 | 16.5 | 247.5 (-1374.3..1540.7) |
 
 ### BE ladder + NEVER-AGAIN table (R-NOTRAIL base)
 
 | rung xATR | scratches | winners amputated (pts) | losses capped (pts saved) | net delta | floor med (min..max) | max MFE of eventual losers (xATR / pts) |
 |---|---|---|---|---|---|---|
-| 0.25 | 335 | 107 (33243.8) | 228 (22389.7) | -10854.0 | -1546.2 (-2788.1..1031.1) | 0.238 / 9.5 |
-| 0.5 | 282 | 90 (28052.5) | 192 (19017.5) | -9035.0 | -1475.8 (-2816.2..673.1) | 0.493 / 33.5 |
-| 1 | 209 | 59 (17477.9) | 150 (14940.6) | -2537.3 | -672.3 (-2582.2..1016.1) | 0.999 / 91.6 |
-| 1.5 | 162 | 46 (14870.1) | 116 (11244.9) | -3625.2 | -704.2 (-1911.4..1407.6) | 2.533 / 123.6 |
+| 0.25 | 368 | 111 (33734.8) | 257 (24759.0) | -8975.8 | -1133.4 (-3132.5..3885.3) | 0.239 / 12.0 |
+| 0.5 | 306 | 92 (28439.5) | 214 (20730.9) | -7708.6 | -938.7 (-2864.8..3755.5) | 0.493 / 33.5 |
+| 1 | 222 | 59 (17812.4) | 163 (15994.7) | -1817.7 | -194.2 (-2422.8..2082.6) | 0.999 / 91.6 |
+| 1.5 | 175 | 46 (15204.6) | 129 (12298.9) | -2905.6 | 266.4 (-1613.6..1564.7) | 2.533 / 123.6 |
 
 ### Re-entry (BE@0.25 scratches, UNDEDUPED stream; the 5-bar dedup hides near re-fires — stated)
 
 | window min | scratched | re-fired | rate |
 |---|---|---|---|
-| 15 | 335 | 55 | 0.164 |
-| 30 | 335 | 77 | 0.23 |
-| 60 | 335 | 104 | 0.31 |
+| 15 | 368 | 59 | 0.16 |
+| 30 | 368 | 85 | 0.231 |
+| 60 | 368 | 114 | 0.31 |

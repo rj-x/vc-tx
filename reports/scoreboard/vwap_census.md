@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_vwap_census); NO hypothesis minted. Session-anchored VWAP + sigma-bands from futures volume, native cash sessions. Mechanism note: institutional execution benchmarking — VWAP algorithms are the H12 order-slicing behavior industrialized; practitioner win-rate claims NOT carried. Cells: band x signed (away/toward VWAP vs fire direction); n<10 UNMEASURABLE.
+Engine `0bfa4cc47` — OBSERVATIONAL, pre-registered (prereg_vwap_census); NO hypothesis minted. Session-anchored VWAP + sigma-bands from futures volume, native cash sessions. Mechanism note: institutional execution benchmarking — VWAP algorithms are the H12 order-slicing behavior industrialized; practitioner win-rate claims NOT carried. Cells: band x signed (away/toward VWAP vs fire direction); n<10 UNMEASURABLE.
 
 **RE-CUT (register 51 amendment): the first cut's headline numbers used the forward-excursion hit convention and the UNCONDITIONED base — both retired for this census. The finding is the recut_episode_start_forward block ONLY: episode-must-begin-after-the-touch hits, range-decile-matched baseline for 2-sigma touches (register-47 method), phase-conditioned bases for the VWAP-touch cells. The 63.3% is not quoted.**
 
@@ -12,12 +12,12 @@ Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_vwap_census); NO hy
 
 | window | event | n | qualifying% | either-dir base |
 |---|---|---|---|---|
-| backtest | touch_2s (RE-CUT) | 1050 | 38.8% | 39.9% cond → -1.1pp |
+| backtest | touch_2s (RE-CUT) | 1050 | 39.7% | 40.6% cond → -0.9pp |
 | backtest | touch_vwap_ranging (RE-CUT) | 249 | 45.8% | 46.1% cond → -0.3pp |
-| backtest | touch_vwap_trending (RE-CUT) | 369 | 40.9% | 41.6% cond → -0.7pp |
-| forward | touch_2s (RE-CUT) | 606 | 42.1% | 40.3% cond → +1.8pp |
-| forward | touch_vwap_ranging (RE-CUT) | 111 | 32.4% | 39.9% cond → -7.5pp |
-| forward | touch_vwap_trending (RE-CUT) | 80 | 33.8% | 43.3% cond → -9.5pp |
+| backtest | touch_vwap_trending (RE-CUT) | 369 | 41.5% | 42.2% cond → -0.7pp |
+| forward | touch_2s (RE-CUT) | 988 | 31.8% | 33.0% cond → -1.2pp |
+| forward | touch_vwap_ranging (RE-CUT) | 190 | 31.6% | 34.9% cond → -3.3pp |
+| forward | touch_vwap_trending (RE-CUT) | 183 | 27.3% | 37.0% cond → -9.7pp |
 
 ### conditioner cut (measurable cells only; full grid in the JSON)
 
@@ -26,89 +26,114 @@ Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_vwap_census); NO hy
 | S0-H10 | backtest | 1s/away | 22 | 18.2% (4/22) | -120.2/-1.65 |
 | S0-H10 | backtest | 1s/toward | 13 | 61.5% (8/13) | 157.9/19.0 |
 | S0-H10 | backtest | 2s/away | 17 | 23.5% (4/17) | 152.6/6.8 |
+| S0-H10 | forward | 1s/toward | 12 | 8.3% (1/12) | -62.6/-6.9 |
+| S0-H10 | forward | 2s/away | 12 | 8.3% (1/12) | -16.4/-2.5 |
 | S0-H11 | backtest | 1s/away | 44 | 22.7% (10/44) | 307.8/1.0 |
 | S0-H11 | backtest | 1s/toward | 61 | 13.1% (8/61) | -107.8/0.5 |
 | S0-H11 | backtest | 2s/away | 18 | 16.7% (3/18) | -134.2/-6.75 |
 | S0-H11 | backtest | 2s/toward | 14 | 35.7% (5/14) | -143.1/-9.35 |
 | S0-H11 | backtest | at/away | 33 | 6.1% (2/33) | -313.9/-10.3 |
-| S0-H11 | forward | 1s/away | 10 | 40.0% (4/10) | 60.8/7.1 |
-| S0-H11 | forward | 1s/toward | 10 | 20.0% (2/10) | 135.0/12.85 |
-| S0-H11 | forward | 2s/away | 14 | 7.1% (1/14) | -33.7/-2.25 |
+| S0-H11 | forward | 1s/away | 36 | 25.0% (9/36) | -25.6/-0.75 |
+| S0-H11 | forward | 1s/toward | 33 | 36.4% (12/33) | 186.7/8.5 |
+| S0-H11 | forward | 2s/away | 22 | 22.7% (5/22) | -75.8/-2.4 |
+| S0-H11 | forward | 2s/toward | 10 | 20.0% (2/10) | 44.8/6.9 |
 | S0-H14 | backtest | 1s/away | 23 | 13.0% (3/23) | -63.8/4.3 |
 | S0-H14 | backtest | 1s/toward | 12 | 33.3% (4/12) | 85.5/9.35 |
 | S0-H14 | backtest | 2s/away | 17 | 35.3% (6/17) | 133.1/4.7 |
+| S0-H14 | forward | 1s/toward | 12 | 8.3% (1/12) | -97.4/-11.65 |
+| S0-H14 | forward | 2s/away | 10 | 30.0% (3/10) | 2.7/-3.6 |
+| S0-H18 | forward | 1s/toward | 12 | 33.3% (4/12) | 90.4/12.85 |
+| S0-H19 | backtest | 1s/away | 19 | 0.0% (0/19) | -188.0/-10.5 |
+| S0-H19 | backtest | 1s/toward | 16 | 18.8% (3/16) | -35.8/-6.25 |
 | S0-H2 | backtest | 1s/away | 29 | 20.7% (6/29) | 165.8/8.7 |
 | S0-H2 | backtest | 1s/toward | 28 | 32.1% (9/28) | 221.8/8.25 |
 | S0-H2 | backtest | 2s/away | 12 | 33.3% (4/12) | -91.0/-13.0 |
-| S0-H2 | forward | 1s/away | 10 | 20.0% (2/10) | 8.7/0.0 |
+| S0-H2 | forward | 1s/away | 14 | 21.4% (3/14) | 31.9/0.0 |
+| S0-H2 | forward | 1s/toward | 19 | 31.6% (6/19) | 103.7/9.0 |
 | S0-H2 | forward | 2s/away | 10 | 10.0% (1/10) | -116.5/-13.85 |
+| S0-H2 | forward | at/away | 11 | 36.4% (4/11) | 40.4/4.5 |
 | S0-H6 | backtest | 1s/toward | 16 | 25.0% (4/16) | -166.0/-12.45 |
+| S0-H6 | forward | 1s/toward | 13 | 69.2% (9/13) | 123.7/9.8 |
+| S0-H6 | forward | 2s/toward | 19 | 36.8% (7/19) | 9.9/-2.5 |
 | S0-H7 | backtest | 1s/toward | 21 | 28.6% (6/21) | 180.3/8.2 |
 | S0-H7 | backtest | 2s/toward | 15 | 26.7% (4/15) | 10.1/4.0 |
+| S0-H7 | forward | 1s/toward | 13 | 38.5% (5/13) | 69.2/8.8 |
 | S1-H11 | backtest | 1s/away | 23 | 30.4% (7/23) | 111.4/9.3 |
 | S1-H11 | backtest | 1s/toward | 10 | 0.0% (0/10) | -203.7/-12.25 |
 | S1-H11 | backtest | 2s/away | 24 | 20.8% (5/24) | -81.6/-3.55 |
-| S1-H11 | forward | 1s/away | 11 | 90.9% (10/11) | 79.7/8.0 |
-| S1-H11 | forward | at/away | 15 | 20.0% (3/15) | -127.2/-11.0 |
+| S1-H11 | forward | 1s/away | 14 | 78.6% (11/14) | 92.6/7.5 |
+| S1-H11 | forward | 2s/toward | 10 | 80.0% (8/10) | 79.7/11.75 |
+| S1-H11 | forward | at/away | 19 | 21.1% (4/19) | -164.5/-14.3 |
 | S1-H2 | backtest | 1s/away | 25 | 20.0% (5/25) | 217.8/9.0 |
 | S1-H2 | backtest | 1s/toward | 23 | 30.4% (7/23) | 238.9/11.5 |
+| S1-H2 | forward | 1s/toward | 19 | 31.6% (6/19) | 103.7/9.0 |
+| S1-H2 | forward | at/away | 10 | 40.0% (4/10) | 35.9/8.75 |
 
-## ger40fut (PROVISIONAL)
-> PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
+## ger40fut (CANONICAL)
 
 ### direct measurements
 
 | window | event | n | qualifying% | either-dir base |
 |---|---|---|---|---|
-| backtest | touch_2s (RE-CUT) | 819 | 45.7% | 36.2% cond → +9.5pp |
-| backtest | touch_vwap_ranging (RE-CUT) | 185 | 31.4% | 37.1% cond → -5.7pp |
-| backtest | touch_vwap_trending (RE-CUT) | 268 | 29.1% | 37.9% cond → -8.8pp |
-| forward | touch_2s (RE-CUT) | 296 | 54.4% | 50.8% cond → +3.6pp |
-| forward | touch_vwap_ranging (RE-CUT) | 129 | 49.6% | 46.6% cond → +3.0pp |
-| forward | touch_vwap_trending (RE-CUT) | 119 | 66.4% | 52.9% cond → +13.5pp |
+| backtest | touch_2s (RE-CUT) | 819 | 44.0% | 35.2% cond → +8.8pp |
+| backtest | touch_vwap_ranging (RE-CUT) | 185 | 31.4% | 35.5% cond → -4.1pp |
+| backtest | touch_vwap_trending (RE-CUT) | 268 | 29.1% | 37.6% cond → -8.5pp |
+| forward | touch_2s (RE-CUT) | 671 | 39.0% | 44.2% cond → -5.2pp |
+| forward | touch_vwap_ranging (RE-CUT) | 211 | 48.3% | 44.6% cond → +3.7pp |
+| forward | touch_vwap_trending (RE-CUT) | 228 | 51.8% | 46.3% cond → +5.5pp |
 
 ### conditioner cut (measurable cells only; full grid in the JSON)
 
 | signal | window | cell | n | precision | payoff net/med |
 |---|---|---|---|---|---|
 | S0-H10 | backtest | 1s/away | 14 | 7.1% (1/14) | -312.8/-36.05 |
-| S0-H10 | backtest | 2s/away | 21 | 19.0% (4/21) | -5.6/7.0 |
-| S0-H10 | forward | 1s/away | 12 | 16.7% (2/12) | -147.5/-22.4 |
+| S0-H10 | backtest | 2s/away | 21 | 14.3% (3/21) | -5.6/7.0 |
+| S0-H10 | forward | 1s/away | 13 | 23.1% (3/13) | -161.7/-21.8 |
 | S0-H11 | backtest | 2s/away | 11 | 9.1% (1/11) | -413.2/-47.3 |
-| S0-H11 | forward | 1s/away | 36 | 13.9% (5/36) | -294.3/-11.85 |
-| S0-H11 | forward | 1s/toward | 17 | 17.6% (3/17) | -59.1/15.1 |
-| S0-H11 | forward | at/away | 25 | 16.0% (4/25) | -135.8/-11.0 |
-| S0-H11 | forward | at/toward | 20 | 10.0% (2/20) | 42.3/7.0 |
+| S0-H11 | forward | 1s/away | 62 | 8.1% (5/62) | -400.6/-7.6 |
+| S0-H11 | forward | 1s/toward | 39 | 15.4% (6/39) | 313.3/15.0 |
+| S0-H11 | forward | 2s/away | 15 | 53.3% (8/15) | 449.5/36.1 |
+| S0-H11 | forward | 2s/toward | 17 | 11.8% (2/17) | 32.6/8.2 |
+| S0-H11 | forward | at/away | 37 | 10.8% (4/37) | -562.3/-16.9 |
+| S0-H11 | forward | at/toward | 25 | 20.0% (5/25) | 205.3/8.8 |
 | S0-H14 | backtest | 2s/away | 18 | 5.6% (1/18) | -44.2/-6.95 |
 | S0-H14 | forward | 1s/away | 12 | 41.7% (5/12) | -37.4/-13.1 |
+| S0-H18 | forward | 1s/away | 15 | 0.0% (0/15) | -325.1/-21.2 |
+| S0-H18 | forward | at/toward | 10 | 40.0% (4/10) | 325.1/20.7 |
 | S0-H2 | backtest | 1s/toward | 10 | 20.0% (2/10) | -185.6/-39.4 |
-| S0-H6 | forward | 1s/toward | 14 | 21.4% (3/14) | -465.1/-25.05 |
-| S0-H6 | forward | 2s/toward | 10 | 30.0% (3/10) | -7.4/-4.1 |
+| S0-H2 | forward | 1s/away | 17 | 0.0% (0/17) | -155.9/-8.6 |
+| S0-H2 | forward | 1s/toward | 12 | 16.7% (2/12) | -20.3/-7.2 |
+| S0-H2 | forward | at/away | 10 | 10.0% (1/10) | -204.7/-20.45 |
+| S0-H6 | forward | 1s/toward | 20 | 40.0% (8/20) | -369.1/-21.35 |
+| S0-H6 | forward | 2s/toward | 15 | 33.3% (5/15) | 121.7/11.1 |
+| S0-H6 | forward | at/toward | 11 | 9.1% (1/11) | -161.5/-8.0 |
 | S0-H7 | backtest | 1s/toward | 10 | 40.0% (4/10) | 364.2/27.45 |
-| S1-H11 | backtest | 1s/away | 29 | 31.0% (9/29) | 762.0/19.1 |
-| S1-H11 | backtest | 1s/toward | 30 | 3.3% (1/30) | -733.6/-13.75 |
+| S1-H11 | backtest | 1s/away | 29 | 24.1% (7/29) | 762.0/19.1 |
+| S1-H11 | backtest | 1s/toward | 30 | 6.7% (2/30) | -733.6/-13.75 |
 | S1-H11 | backtest | 2s/away | 24 | 33.3% (8/24) | 98.9/5.75 |
 | S1-H11 | backtest | 2s/toward | 11 | 0.0% (0/11) | -143.9/-26.4 |
 | S1-H11 | backtest | at/away | 19 | 21.1% (4/19) | -172.5/3.4 |
 | S1-H11 | backtest | at/toward | 14 | 42.9% (6/14) | 310.8/20.85 |
 | S1-H11 | forward | 1s/away | 21 | 33.3% (7/21) | -183.7/-8.0 |
-| S1-H11 | forward | 1s/toward | 22 | 31.8% (7/22) | -72.0/-8.8 |
-| S1-H11 | forward | 2s/away | 18 | 72.2% (13/18) | 227.8/22.0 |
-| S1-H11 | forward | 2s/toward | 13 | 7.7% (1/13) | -188.8/-13.3 |
+| S1-H11 | forward | 1s/toward | 28 | 28.6% (8/28) | -17.0/-5.45 |
+| S1-H11 | forward | 2s/away | 20 | 70.0% (14/20) | 205.2/22.0 |
+| S1-H11 | forward | 2s/toward | 16 | 12.5% (2/16) | -95.5/-12.3 |
+| S1-H11 | forward | at/toward | 13 | 30.8% (4/13) | 176.8/21.2 |
+| S1-H2 | forward | 1s/away | 12 | 0.0% (0/12) | -148.5/-15.55 |
+| S1-H2 | forward | 1s/toward | 10 | 10.0% (1/10) | -70.5/-10.5 |
 
-## nas100fut (PROVISIONAL)
-> PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
+## nas100fut (CANONICAL)
 
 ### direct measurements
 
 | window | event | n | qualifying% | either-dir base |
 |---|---|---|---|---|
-| backtest | touch_2s (RE-CUT) | 596 | 18.5% | 29.3% cond → -10.8pp |
-| backtest | touch_vwap_ranging (RE-CUT) | 113 | 36.3% | 32.7% cond → +3.6pp |
-| backtest | touch_vwap_trending (RE-CUT) | 181 | 31.5% | 30.2% cond → +1.3pp |
-| forward | touch_2s (RE-CUT) | 378 | 14.8% | 21.7% cond → -6.9pp |
-| forward | touch_vwap_ranging (RE-CUT) | 75 | 22.7% | 21.1% cond → +1.6pp |
-| forward | touch_vwap_trending (RE-CUT) | 131 | 42.0% | 26.9% cond → +15.1pp |
+| backtest | touch_2s (RE-CUT) | 596 | 18.5% | 29.0% cond → -10.5pp |
+| backtest | touch_vwap_ranging (RE-CUT) | 113 | 36.3% | 32.4% cond → +3.9pp |
+| backtest | touch_vwap_trending (RE-CUT) | 181 | 32.6% | 30.0% cond → +2.6pp |
+| forward | touch_2s (RE-CUT) | 548 | 23.9% | 28.8% cond → -4.9pp |
+| forward | touch_vwap_ranging (RE-CUT) | 108 | 29.6% | 29.9% cond → -0.3pp |
+| forward | touch_vwap_trending (RE-CUT) | 206 | 36.4% | 34.1% cond → +2.3pp |
 
 ### conditioner cut (measurable cells only; full grid in the JSON)
 
@@ -116,73 +141,96 @@ Engine `67d1f2dac` — OBSERVATIONAL, pre-registered (prereg_vwap_census); NO hy
 |---|---|---|---|---|---|
 | S0-H10 | backtest | 2s/away | 42 | 7.1% (3/42) | 1247.9/27.4 |
 | S0-H10 | backtest | 2s/toward | 14 | 0.0% (0/14) | -250.4/-13.4 |
-| S0-H10 | forward | 2s/away | 17 | 0.0% (0/17) | -479.3/-22.7 |
+| S0-H10 | forward | 1s/away | 20 | 25.0% (5/20) | 154.3/4.2 |
+| S0-H10 | forward | 2s/away | 22 | 4.5% (1/22) | -709.4/-26.7 |
+| S0-H10 | forward | at/away | 12 | 8.3% (1/12) | -359.0/-44.7 |
+| S0-H10 | forward | at/toward | 14 | 0.0% (0/14) | -43.3/3.65 |
 | S0-H11 | backtest | 1s/away | 16 | 62.5% (10/16) | 477.1/57.45 |
 | S0-H11 | backtest | 1s/toward | 12 | 25.0% (3/12) | -168.3/-72.85 |
 | S0-H11 | backtest | at/toward | 10 | 0.0% (0/10) | -302.7/-73.4 |
-| S0-H11 | forward | 1s/away | 20 | 0.0% (0/20) | -300.1/-1.55 |
-| S0-H11 | forward | 1s/toward | 17 | 11.8% (2/17) | 23.8/-5.2 |
-| S0-H11 | forward | 2s/away | 12 | 25.0% (3/12) | -193.9/-12.2 |
+| S0-H11 | forward | 1s/away | 28 | 3.6% (1/28) | -195.7/1.5 |
+| S0-H11 | forward | 1s/toward | 24 | 8.3% (2/24) | -70.2/-4.75 |
+| S0-H11 | forward | 2s/away | 19 | 15.8% (3/19) | -145.9/-10.4 |
 | S0-H11 | forward | 2s/toward | 14 | 14.3% (2/14) | 412.0/23.1 |
 | S0-H14 | backtest | 2s/away | 50 | 0.0% (0/50) | 873.1/15.05 |
-| S0-H14 | forward | 1s/away | 16 | 25.0% (4/16) | -43.6/4.7 |
-| S0-H14 | forward | 2s/away | 16 | 0.0% (0/16) | -482.5/-24.5 |
+| S0-H14 | forward | 1s/away | 27 | 14.8% (4/27) | 35.9/7.8 |
+| S0-H14 | forward | 1s/toward | 11 | 0.0% (0/11) | -212.3/-14.0 |
+| S0-H14 | forward | 2s/away | 24 | 0.0% (0/24) | -938.2/-38.65 |
+| S0-H14 | forward | at/away | 14 | 0.0% (0/14) | -215.8/-42.45 |
+| S0-H14 | forward | at/toward | 12 | 0.0% (0/12) | 68.1/7.35 |
+| S0-H19 | backtest | 1s/away | 21 | 38.1% (8/21) | -252.2/46.9 |
+| S0-H19 | backtest | 1s/toward | 17 | 52.9% (9/17) | 964.2/82.5 |
+| S0-H19 | backtest | at/toward | 12 | 8.3% (1/12) | -872.7/-62.4 |
 | S0-H2 | backtest | 1s/away | 28 | 21.4% (6/28) | -2175.4/-98.7 |
 | S0-H2 | backtest | 1s/toward | 30 | 23.3% (7/30) | -128.4/-20.85 |
 | S0-H2 | backtest | 2s/away | 11 | 27.3% (3/11) | -1756.6/22.8 |
 | S0-H2 | backtest | at/away | 16 | 6.2% (1/16) | 699.4/46.05 |
 | S0-H2 | backtest | at/toward | 14 | 0.0% (0/14) | -456.3/-4.7 |
 | S0-H2 | forward | at/away | 10 | 0.0% (0/10) | -12.0/-1.05 |
-| S0-H6 | forward | 1s/toward | 10 | 60.0% (6/10) | 181.2/13.65 |
+| S0-H6 | forward | 1s/toward | 14 | 57.1% (8/14) | 279.9/16.05 |
 | S0-H9 | backtest | 2s/away | 12 | 50.0% (6/12) | 271.8/51.3 |
 | S0-H9 | backtest | 2s/toward | 13 | 0.0% (0/13) | -395.5/-42.7 |
 | S0-H9 | forward | 1s/away | 14 | 0.0% (0/14) | -231.4/-21.75 |
 | S1-H11 | backtest | 2s/away | 14 | 7.1% (1/14) | -2149.6/-33.8 |
 | S1-H11 | backtest | 2s/toward | 12 | 41.7% (5/12) | 2796.4/81.3 |
+| S1-H11 | forward | 1s/away | 19 | 47.4% (9/19) | -113.0/9.0 |
+| S1-H11 | forward | 1s/toward | 18 | 5.6% (1/18) | -264.0/-42.7 |
+| S1-H11 | forward | 2s/away | 12 | 33.3% (4/12) | -223.5/-15.65 |
 | S1-H2 | backtest | 1s/away | 17 | 23.5% (4/17) | -1335.0/-32.0 |
 | S1-H2 | backtest | 1s/toward | 25 | 20.0% (5/25) | -485.0/-7.4 |
 | S1-H2 | backtest | at/away | 12 | 8.3% (1/12) | 646.2/49.05 |
 
-## us30fut (PROVISIONAL)
-> PROVISIONAL — validation pending (register 40 fence as amended 2026-08-19): replay-only study over the synced store; canonical status, live attachment, and Asia/pause-sensitive cell interpretation await this instrument's validation evening. EXPLORATORY first cross-instrument look — expectations deliberately unregistered; anything interesting becomes a pre-registered question before it becomes a claim. NO POOLING across instruments.
+## us30fut (CANONICAL)
 
 ### direct measurements
 
 | window | event | n | qualifying% | either-dir base |
 |---|---|---|---|---|
-| backtest | touch_2s (RE-CUT) | 743 | 24.5% | 29.7% cond → -5.2pp |
-| backtest | touch_vwap_ranging (RE-CUT) | 136 | 17.6% | 33.1% cond → -15.5pp |
+| backtest | touch_2s (RE-CUT) | 743 | 23.8% | 29.8% cond → -6.0pp |
+| backtest | touch_vwap_ranging (RE-CUT) | 136 | 17.6% | 33.0% cond → -15.4pp |
 | backtest | touch_vwap_trending (RE-CUT) | 159 | 14.5% | 31.3% cond → -16.8pp |
-| forward | touch_2s (RE-CUT) | 468 | 38.0% | 35.5% cond → +2.5pp |
-| forward | touch_vwap_ranging (RE-CUT) | 64 | 21.9% | 37.2% cond → -15.3pp |
-| forward | touch_vwap_trending (RE-CUT) | 140 | 35.7% | 35.5% cond → +0.2pp |
+| forward | touch_2s (RE-CUT) | 623 | 40.9% | 38.0% cond → +2.9pp |
+| forward | touch_vwap_ranging (RE-CUT) | 113 | 23.0% | 40.3% cond → -17.3pp |
+| forward | touch_vwap_trending (RE-CUT) | 225 | 38.2% | 39.4% cond → -1.2pp |
 
 ### conditioner cut (measurable cells only; full grid in the JSON)
 
 | signal | window | cell | n | precision | payoff net/med |
 |---|---|---|---|---|---|
 | S0-H10 | backtest | 2s/away | 17 | 11.8% (2/17) | -721.5/7.0 |
-| S0-H10 | forward | 1s/away | 17 | 5.9% (1/17) | -99.5/6.5 |
-| S0-H10 | forward | 2s/away | 10 | 0.0% (0/10) | -65.5/8.25 |
-| S0-H10 | forward | at/toward | 11 | 0.0% (0/11) | -96.5/0.0 |
+| S0-H10 | forward | 1s/away | 27 | 3.7% (1/27) | 131.0/17.0 |
+| S0-H10 | forward | 2s/away | 13 | 0.0% (0/13) | -106.5/7.5 |
+| S0-H10 | forward | at/away | 16 | 0.0% (0/16) | -309.0/-16.25 |
+| S0-H10 | forward | at/toward | 15 | 0.0% (0/15) | -26.5/0.0 |
 | S0-H11 | backtest | 2s/away | 22 | 13.6% (3/22) | 725.5/24.0 |
 | S0-H11 | backtest | 2s/toward | 13 | 0.0% (0/13) | -555.4/-42.0 |
 | S0-H11 | backtest | at/toward | 11 | 45.5% (5/11) | -667.1/-36.0 |
 | S0-H11 | forward | 1s/away | 25 | 20.0% (5/25) | 30.0/-17.0 |
 | S0-H11 | forward | 1s/toward | 16 | 56.2% (9/16) | 666.0/71.25 |
-| S0-H11 | forward | 2s/away | 13 | 30.8% (4/13) | -134.5/-14.5 |
-| S0-H14 | backtest | 2s/away | 12 | 8.3% (1/12) | 131.9/45.0 |
-| S0-H14 | forward | 1s/away | 14 | 21.4% (3/14) | -265.0/-31.0 |
+| S0-H11 | forward | 2s/away | 17 | 23.5% (4/17) | -74.0/-6.5 |
+| S0-H11 | forward | 2s/toward | 10 | 10.0% (1/10) | 55.5/-12.5 |
+| S0-H14 | backtest | 2s/away | 12 | 0.0% (0/12) | 131.9/45.0 |
+| S0-H14 | forward | 1s/away | 24 | 12.5% (3/24) | -139.0/8.25 |
+| S0-H14 | forward | at/away | 16 | 12.5% (2/16) | 39.9/-14.0 |
+| S0-H19 | backtest | 1s/away | 13 | 46.2% (6/13) | 442.9/68.5 |
+| S0-H19 | backtest | 1s/toward | 14 | 50.0% (7/14) | 1860.6/9.5 |
 | S0-H2 | backtest | 1s/away | 15 | 26.7% (4/15) | -1613.0/-23.5 |
-| S0-H2 | backtest | 1s/toward | 19 | 36.8% (7/19) | -595.0/-72.0 |
+| S0-H2 | backtest | 1s/toward | 19 | 31.6% (6/19) | -595.0/-72.0 |
 | S0-H2 | backtest | 2s/away | 13 | 15.4% (2/13) | -1310.0/4.0 |
 | S0-H2 | backtest | 2s/toward | 12 | 33.3% (4/12) | 72.9/-22.75 |
-| S0-H2 | backtest | at/away | 12 | 58.3% (7/12) | 1678.0/130.5 |
-| S0-H2 | forward | 1s/away | 14 | 0.0% (0/14) | -448.0/-21.25 |
+| S0-H2 | backtest | at/away | 12 | 66.7% (8/12) | 1678.0/130.5 |
+| S0-H2 | forward | 1s/away | 15 | 0.0% (0/15) | -452.5/-20.0 |
+| S0-H2 | forward | 1s/toward | 10 | 10.0% (1/10) | 119.5/9.75 |
 | S0-H6 | backtest | 1s/toward | 13 | 30.8% (4/13) | -81.5/7.5 |
+| S0-H6 | forward | 1s/toward | 12 | 41.7% (5/12) | -264.0/-46.75 |
 | S1-H11 | backtest | 1s/away | 15 | 13.3% (2/15) | -2646.5/-163.5 |
 | S1-H11 | backtest | 2s/away | 20 | 30.0% (6/20) | 1388.3/68.25 |
 | S1-H11 | backtest | 2s/toward | 18 | 27.8% (5/18) | 59.0/-70.25 |
+| S1-H11 | forward | 1s/away | 30 | 6.7% (2/30) | -682.0/-9.0 |
+| S1-H11 | forward | 1s/toward | 19 | 26.3% (5/19) | 512.0/19.0 |
+| S1-H11 | forward | 2s/away | 12 | 41.7% (5/12) | 162.0/15.75 |
+| S1-H11 | forward | at/away | 20 | 10.0% (2/20) | 4.0/5.0 |
+| S1-H11 | forward | at/toward | 11 | 0.0% (0/11) | -993.5/-114.0 |
 | S1-H2 | backtest | 1s/toward | 16 | 31.2% (5/16) | -930.0/-82.5 |
 | S1-H2 | backtest | 2s/toward | 12 | 33.3% (4/12) | 72.9/-22.75 |
-| S1-H2 | forward | 1s/away | 13 | 0.0% (0/13) | -412.0/-20.0 |
+| S1-H2 | forward | 1s/away | 14 | 0.0% (0/14) | -416.5/-16.5 |

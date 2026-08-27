@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `87709dd4a` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (1601 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
+Engine `0bfa4cc47` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (1727 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
 
-## ger40fut (355 base trades)
+## ger40fut (383 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -12,39 +12,46 @@ Engine `87709dd4a` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | 906.4 | -481.9 (-2199.2..932.3) |
-| BE@0.5 | 940.2 | -481.8 (-1558.2..656.9) |
-| BE@1 | 637.8 | -237.1 (-1170.2..767.4) |
-| BE@1.5 | 226.1 | -178.3 (-1187.4..463.5) |
-| TRAIL-0.5-0.5 | 1873.9 | -631.6 (-1735.6..883.0) |
-| TRAIL-0.5-1 | 2208.6 | -559.3 (-1843.3..743.1) |
-| TRAIL-1-0.5 | 3479.7 | -395.2 (-1463.5..612.9) |
-| TRAIL-1-1 | 2814.8 | -487.3 (-1574.8..446.2) |
-| RATCHET-1.0-1.0 | 2814.8 | -487.3 (-1574.8..446.2) |
-| RATCHET-1.0-0.5 | 3479.7 | -395.2 (-1463.5..612.9) |
+| BE@0.25 | 2053.7 | 101.2 (-1220.8..1939.9) |
+| BE@0.5 | 1991.9 | 102.3 (-1153.0..1239.2) |
+| BE@1 | 1192.2 | 190.9 (-737.4..913.3) |
+| BE@1.5 | 451.5 | 156.9 (-710.9..758.7) |
+| TRAIL-0.5-0.5 | 2959.3 | 237.8 (-1413.4..1744.0) |
+| TRAIL-0.5-1 | 3515.3 | 51.0 (-1536.8..1777.9) |
+| TRAIL-1-0.5 | 4592.5 | 270.3 (-1250.7..1619.6) |
+| TRAIL-1-1 | 3983.4 | -5.5 (-1481.0..1433.6) |
+| RATCHET-1.0-1.0 | 3983.4 | -5.5 (-1481.0..1433.6) |
+| RATCHET-1.0-0.5 | 4592.5 | 270.3 (-1250.7..1619.6) |
 
-### Regime split (register 89 item 1: trending-day vs ranging-day, majority 1M phase state per UTC day; the generalize-vs-geography test — if trails clear on trending days regardless of continent, the scope generalizes)
+### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
+
+| regime | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| ranging-at-entry | 107 | TRAIL-1-0.5 | 1958.0 | 414.7 |
+| trending-at-entry | 276 | TRAIL-1-0.5 | 2634.5 | 1638.9 |
+
+### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
 | ranging-day | °5 | TRAIL-0.5-0.5 | 218.3 | 122.4 |
-| trending-day | 350 | TRAIL-1-0.5 | 3261.4 | 784.0 |
+| trending-day | 378 | TRAIL-1-0.5 | 4374.1 | 1931.3 |
 
-### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question, enactable by operator fiat once priced; guarantee holds up to the register-87 single-bar span exception)
+### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 116 | 10992.1 | 3096.4 |
-| BE@0.5 | YES | 103 | 9593.7 | 2702.5 |
-| BE@1 | YES | 86 | 7720.9 | 2174.9 |
-| BE@1.5 | NO (above the bound) | 62 | 5737.1 | 1616.1 |
+| BE@0.25 | YES | 120 | 10756.4 | 2808.5 |
+| BE@0.5 | YES | 107 | 9358.0 | 2443.3 |
+| BE@1 | YES | 93 | 7740.1 | 2020.9 |
+| BE@1.5 | NO (above the bound) | 69 | 6085.4 | 1588.9 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
 
-## nas100fut (355 base trades)
+## nas100fut (382 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -52,39 +59,46 @@ Engine `87709dd4a` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | -4945.9 | -200.8 (-2087.3..1107.5) |
-| BE@0.5 | -4869.2 | -402.9 (-1432.2..452.9) |
-| BE@1 | -2824.9 | -286.0 (-1453.3..1583.9) |
-| BE@1.5 | 704.6 | 6.2 (-1357.0..1389.2) |
-| TRAIL-0.5-0.5 | -1319.9 | -417.9 (-1956.3..713.1) |
-| TRAIL-0.5-1 | -577.4 | -155.2 (-1958.1..745.7) |
-| TRAIL-1-0.5 | -984.0 | -442.8 (-1975.3..1414.4) |
-| TRAIL-1-1 | -1110.8 | -391.2 (-2177.8..1662.4) |
-| RATCHET-1.0-1.0 | -1110.8 | -391.2 (-2177.8..1662.4) |
-| RATCHET-1.0-0.5 | -984.0 | -442.8 (-1975.3..1414.4) |
+| BE@0.25 | -4473.4 | -332.2 (-2532.0..1385.0) |
+| BE@0.5 | -4991.7 | -604.8 (-2196.5..1594.2) |
+| BE@1 | -2861.6 | -438.3 (-2094.2..1547.4) |
+| BE@1.5 | 462.4 | -303.0 (-1544.2..851.7) |
+| TRAIL-0.5-0.5 | -568.0 | -64.3 (-2077.2..1513.1) |
+| TRAIL-0.5-1 | 470.5 | 206.4 (-2038.9..2048.7) |
+| TRAIL-1-0.5 | 103.5 | 16.2 (-2318.4..1309.1) |
+| TRAIL-1-1 | 55.8 | -216.4 (-2254.2..1714.6) |
+| RATCHET-1.0-1.0 | 55.8 | -216.4 (-2254.2..1714.6) |
+| RATCHET-1.0-0.5 | 103.5 | 16.2 (-2318.4..1309.1) |
 
-### Regime split (register 89 item 1: trending-day vs ranging-day, majority 1M phase state per UTC day; the generalize-vs-geography test — if trails clear on trending days regardless of continent, the scope generalizes)
+### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
+
+| regime | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| ranging-at-entry | 126 | TRAIL-1-0.5 | 2700.1 | 460.3 |
+| trending-at-entry | 256 | BE@1.5 | 1675.4 | -4933.7 |
+
+### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
 | ranging-day | °6 | TRAIL-1-0.5 | 1358.4 | 1053.9 |
-| trending-day | 349 | BE@1.5 | -191.2 | -5999.8 |
+| trending-day | 376 | BE@1.5 | -433.4 | -5527.3 |
 
-### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question, enactable by operator fiat once priced; guarantee holds up to the register-87 single-bar span exception)
+### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 114 | 27637.4 | 7785.2 |
-| BE@0.5 | YES | 99 | 25684.5 | 7235.1 |
-| BE@1 | YES | 76 | 18723.7 | 5274.3 |
-| BE@1.5 | NO (above the bound) | 56 | 11687.2 | 3292.2 |
+| BE@0.25 | YES | 124 | 28574.0 | 7480.1 |
+| BE@0.5 | YES | 110 | 26786.1 | 7012.1 |
+| BE@1 | YES | 86 | 19579.3 | 5125.5 |
+| BE@1.5 | NO (above the bound) | 66 | 12375.8 | 3239.7 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
 
-## uk100fut (497 base trades)
+## uk100fut (523 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -92,40 +106,47 @@ Engine `87709dd4a` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | 1995.0 | 372.6 (-19.7..805.1) |
-| BE@0.5 | 1632.9 | 299.4 (-150.0..725.4) |
-| BE@1 | 1027.4 | 221.4 (-318.9..578.4) |
-| BE@1.5 | 1134.7 | 93.2 (-329.8..516.6) |
-| TRAIL-0.5-0.5 | 2893.2 | 433.6 (15.1..850.8) |
-| TRAIL-0.5-1 | 2570.8 | 405.4 (-124.0..854.6) |
-| TRAIL-1-0.5 | 2616.7 | 498.3 (45.0..1002.1) |
-| TRAIL-1-1 | 2438.7 | 499.9 (-3.8..867.5) |
-| RATCHET-1.0-1.0 | 2438.7 | 499.9 (-3.8..867.5) |
-| RATCHET-1.0-0.5 | 2616.7 | 498.3 (45.0..1002.1) |
+| BE@0.25 | 1915.8 | 357.8 (-143.1..657.3) |
+| BE@0.5 | 1545.3 | 273.2 (-170.3..540.8) |
+| BE@1 | 935.1 | 129.0 (-249.2..472.9) |
+| BE@1.5 | 1119.3 | 110.6 (-130.4..444.6) |
+| TRAIL-0.5-0.5 | 2851.4 | 381.0 (5.9..894.1) |
+| TRAIL-0.5-1 | 2487.4 | 345.5 (-173.4..876.4) |
+| TRAIL-1-0.5 | 2526.3 | 433.9 (162.0..947.9) |
+| TRAIL-1-1 | 2384.8 | 343.5 (90.3..835.3) |
+| RATCHET-1.0-1.0 | 2384.8 | 343.5 (90.3..835.3) |
+| RATCHET-1.0-0.5 | 2526.3 | 433.9 (162.0..947.9) |
 
-### Regime split (register 89 item 1: trending-day vs ranging-day, majority 1M phase state per UTC day; the generalize-vs-geography test — if trails clear on trending days regardless of continent, the scope generalizes)
+### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
+
+| regime | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| ranging-at-entry | 177 | TRAIL-0.5-0.5 | 637.0 | 80.5 |
+| trending-at-entry | 346 | TRAIL-0.5-1 | 2219.6 | 1835.3 |
+
+### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
 | ranging-day | 55 | TRAIL-0.5-0.5 | 209.9 | 41.2 |
-| trending-day | 442 | TRAIL-0.5-0.5 | 2683.3 | 1953.7 |
+| trending-day | 468 | TRAIL-0.5-0.5 | 2641.5 | 1874.6 |
 
-### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question, enactable by operator fiat once priced; guarantee holds up to the register-87 single-bar span exception)
+### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 130 | 6167.7 | 1241.0 |
-| BE@0.5 | YES | 109 | 5424.1 | 1091.4 |
-| BE@1 | YES | 78 | 3966.8 | 798.1 |
-| BE@1.5 | NO (above the bound) | 61 | 2953.5 | 594.3 |
+| BE@0.25 | YES | 137 | 6542.5 | 1251.0 |
+| BE@0.5 | YES | 116 | 5798.9 | 1108.8 |
+| BE@1 | YES | 83 | 4219.3 | 806.7 |
+| BE@1.5 | NO (above the bound) | 65 | 3129.1 | 598.3 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
-| event | ny_only | clean | 25 | TRAIL-1-0.5 | 125.9 | 9.3 |
+| event | ny_only | clean | 26 | TRAIL-1-0.5 | 166.7 | 9.6 |
 
-## us30fut (394 base trades)
+## us30fut (439 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -133,32 +154,39 @@ Engine `87709dd4a` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | -10854.0 | -1546.2 (-2788.1..1031.1) |
-| BE@0.5 | -9035.0 | -1475.8 (-2816.2..673.1) |
-| BE@1 | -2537.3 | -672.3 (-2582.2..1016.1) |
-| BE@1.5 | -3625.2 | -704.2 (-1911.4..1407.6) |
-| TRAIL-0.5-0.5 | -9924.8 | -1564.0 (-4046.0..398.0) |
-| TRAIL-0.5-1 | -10194.3 | -1613.5 (-3829.9..233.1) |
-| TRAIL-1-0.5 | -9403.9 | -1681.1 (-3236.4..300.1) |
-| TRAIL-1-1 | -9317.4 | -1746.6 (-3238.4..-59.8) |
-| RATCHET-1.0-1.0 | -9317.4 | -1746.6 (-3238.4..-59.8) |
-| RATCHET-1.0-0.5 | -9403.9 | -1681.1 (-3236.4..300.1) |
+| BE@0.25 | -8975.8 | -1133.4 (-3132.5..3885.3) |
+| BE@0.5 | -7708.6 | -938.7 (-2864.8..3755.5) |
+| BE@1 | -1817.7 | -194.2 (-2422.8..2082.7) |
+| BE@1.5 | -2905.6 | 266.4 (-1613.6..1564.7) |
+| TRAIL-0.5-0.5 | -8459.9 | -1263.0 (-3117.9..3504.6) |
+| TRAIL-0.5-1 | -8848.7 | -1137.1 (-3175.6..3272.8) |
+| TRAIL-1-0.5 | -8250.5 | -1196.5 (-2623.5..1827.7) |
+| TRAIL-1-1 | -8325.7 | -1335.5 (-3173.3..1666.9) |
+| RATCHET-1.0-1.0 | -8325.7 | -1335.5 (-3173.3..1666.9) |
+| RATCHET-1.0-0.5 | -8250.5 | -1196.5 (-2623.5..1827.7) |
 
-### Regime split (register 89 item 1: trending-day vs ranging-day, majority 1M phase state per UTC day; the generalize-vs-geography test — if trails clear on trending days regardless of continent, the scope generalizes)
+### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
+
+| regime | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| ranging-at-entry | 153 | BE@1 | 522.4 | -1510.6 |
+| trending-at-entry | 286 | BE@1.5 | -2224.2 | -7465.3 |
+
+### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
 | ranging-day | °8 | BE@0.5 | 157.4 | -908.9 |
-| trending-day | 386 | BE@1 | -2537.3 | -9945.2 |
+| trending-day | 431 | BE@1 | -1817.7 | -8066.9 |
 
-### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question, enactable by operator fiat once priced; guarantee holds up to the register-87 single-bar span exception)
+### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 108 | 33246.3 | 8438.1 |
-| BE@0.5 | YES | 91 | 28055.0 | 7120.6 |
-| BE@1 | YES | 59 | 17477.9 | 4436.0 |
-| BE@1.5 | NO (above the bound) | 46 | 14870.1 | 3774.1 |
+| BE@0.25 | YES | 112 | 33737.3 | 7685.0 |
+| BE@0.5 | YES | 93 | 28442.0 | 6478.8 |
+| BE@1 | YES | 59 | 17812.4 | 4057.5 |
+| BE@1.5 | NO (above the bound) | 46 | 15204.6 | 3463.5 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 

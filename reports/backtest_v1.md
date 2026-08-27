@@ -128,7 +128,7 @@ In-cash releases inside the working set: **8** · median volume ratio in [releas
 
 ## FORWARD_PAPER (live paper ledger; forward zone)
 
-go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 4 · NOTE 5 · START 7 · STOP 4 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 37
+go_live_utc: **2026-08-14 15:04:09.240421+00:00** · ledger events: COVERAGE_GAP 6 · EXECUTOR_ERROR 9 · NOTE 5 · START 7 · STOP 4 · SUSPENSION_GAP 49 · UNCLEAN_PREDECESSOR 1 · WATCHDOG_STALL 43
 Paper trades to date: **0** (first-session silence is the likely and correct outcome)
 Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARMED ahead of first trade
 
@@ -136,9 +136,9 @@ Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARM
 
 Run in the same campaign command; every artifact carries its own stamps, conventions (dual-convention grading, register 53; conditioned baselines, register 47), and sealed-window skips. Index + headlines (artifacts in reports/scoreboard/ unless noted):
 
-- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `67d1f2dac`): 4 instruments; home forward union coverage 85.2% (46/54).
-- **Recipe performance** (`recipe_performance.md|.json`): set **recipe_set_v0.2**, 4 instruments; provenance printed per recipe.
-- **Forward migration** (`reports/forward/migration_forward_20260814_20260821.json`): 173 forward chains; 11:46Z grade matched=False.
+- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `0bfa4cc47`): 4 instruments; home forward union coverage 86.7% (78/90).
+- **Recipe performance** (`recipe_performance.md|.json`): set **recipe_set_v0.7**, 4 instruments; provenance printed per recipe.
+- **Forward migration** (`reports/forward/migration_forward_20260814_20260827.json`): 281 forward chains; 11:46Z grade matched=False.
 - **Co-fire census** (`cofire.md|.json`): cross-family pairs; composites go through the front door only.
 - **Conditioning matrix** (`conditioning_matrix.md|.json`): state-conditioned cells, episode-start hits; survivors are sitting material.
 - **VWAP census** (`vwap_census.md|.json`): re-cut conventions (episode-start hits, decile-matched + phase-conditioned bases); nothing survives at home as of the re-cut.

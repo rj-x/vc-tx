@@ -2,38 +2,39 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `4a06526e3` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
+Engine `0bfa4cc47` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
 
 STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. NET LEDGER = per-cell pooled net with MANDATORY zone decomposition (descriptive, no null; ranking is best-of-field by construction): pooled INCLUDES the lockbox span under the dated operator order of 2026-08-27 — the one sanctioned decomposition display; register 85 stands for every evidential aggregate, and the decomposition columns are why the pooled number is candidate-generation only. NO CELL IS QUOTABLE FROM THE LEDGER WITHOUT ITS FORWARD COLUMN. COMPARISON ONLY, NEVER POOLING (register 40e): each column is its own instrument's statistic. H11 carries the standing MIS-SCALE caveat off-home (4.0pt bucket is a uk100fut value).
 
-Survivor patterns: 462 total — 20 repeated across markets, 442 single-market glints (glints are counted, not listed; the per-market files carry them).
+Survivor patterns: 489 total — 21 repeated across markets, 468 single-market glints (glints are counted, not listed; the per-market files carry them).
 
 | class | sentence | variant | session | feature | value | sign | splits (pp) |
 |---|---|---|---|---|---|---|---|
-| family-repeat (EU) | S0-H11 | R-NEXIT-FULL | asia | retest_level | False | + | ger40fut:+28.9, uk100fut:+35.3 |
-| family-repeat (EU) | S0-H11 | R-NEXIT-FULL | asia | retest_level | True | - | ger40fut:-28.9, uk100fut:-35.3 |
-| family-repeat (CME) | S0-H2 | R-NEXIT-SENT | ny_only | new_hh | False | + | nas100fut:+30.5, us30fut:+34.6 |
-| family-repeat (CME) | S0-H2 | R-NEXIT-SENT | ny_only | new_hh | True | - | nas100fut:-30.5, us30fut:-34.6 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_hl | False | + | nas100fut:+20.8, us30fut:+24.4 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_hl | True | - | nas100fut:-20.8, us30fut:-24.4 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_lh | False | - | nas100fut:-22.0, us30fut:-32.7 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_lh | True | + | nas100fut:+22.0, us30fut:+32.7 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-FULL | asia | new_lh | False | - | nas100fut:-22.1, us30fut:-25.8 |
-| family-repeat (CME) | S1-H11 | R-NEXIT-FULL | asia | new_lh | True | + | nas100fut:+22.1, us30fut:+25.8 |
-| family-repeat (CME) | S1-H2 | R-NEXIT-EARLY | london | with_trend | False | - | nas100fut:-21.6, us30fut:-21.6 |
-| family-repeat (CME) | S1-H2 | R-NEXIT-EARLY | london | with_trend | True | + | nas100fut:+21.6, us30fut:+21.6 |
-| family-repeat (CME) | S1-H2 | R-NEXIT-FULL | london | with_trend | False | - | nas100fut:-17.6, us30fut:-21.6 |
-| family-repeat (CME) | S1-H2 | R-NEXIT-FULL | london | with_trend | True | + | nas100fut:+17.6, us30fut:+21.6 |
-| family-repeat (CME) | S1-H2 | R-NEXIT-SENT | dead | mtf | no-15M-trend | + | nas100fut:+39.3, us30fut:+55.7 |
-| multi-market | S0-H11 | R-NEXIT-EARLY | asia | quadrant | wide-quiet | + | ger40fut:+16.8, us30fut:+18.9 |
-| multi-market | S0-H11 | R-NEXIT-FULL | london | dow | Thu | + | nas100fut:+22.8, uk100fut:+18.9 |
-| multi-market | S0-H11 | R-NEXIT-SENT | london | dow | Thu | + | nas100fut:+31.7, uk100fut:+29.2 |
-| multi-market | S0-H19 | R-NEXIT-FULL | asia | mtf | no-15M-trend | + | ger40fut:+22.3, us30fut:+23.2 |
-| multi-market | S0-H2 | R-NEXIT-SENT | asia | dow | Wed | - | uk100fut:-28.8, us30fut:-18.2 |
+| family-repeat (EU) | S0-H11 | R-NEXIT-FULL | asia | retest_level | False | + | ger40fut:+26.1, uk100fut:+35.3 |
+| family-repeat (EU) | S0-H11 | R-NEXIT-FULL | asia | retest_level | True | - | ger40fut:-26.1, uk100fut:-35.3 |
+| family-repeat (EU) | S0-H2 | R-NEXIT-SENT | london | with_trend | False | - | ger40fut:-30.8, uk100fut:-21.2 |
+| family-repeat (EU) | S0-H2 | R-NEXIT-SENT | london | with_trend | True | + | ger40fut:+30.8, uk100fut:+21.2 |
+| family-repeat (CME) | S0-H2 | R-NEXIT-SENT | ny_only | new_hh | False | + | nas100fut:+30.5, us30fut:+35.3 |
+| family-repeat (CME) | S0-H2 | R-NEXIT-SENT | ny_only | new_hh | True | - | nas100fut:-30.5, us30fut:-35.3 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_hl | False | + | nas100fut:+20.8, us30fut:+25.0 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_hl | True | - | nas100fut:-20.8, us30fut:-25.0 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_lh | False | - | nas100fut:-22.0, us30fut:-30.9 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-EARLY | asia | new_lh | True | + | nas100fut:+22.0, us30fut:+30.9 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-FULL | asia | new_lh | False | - | nas100fut:-22.1, us30fut:-22.5 |
+| family-repeat (CME) | S1-H11 | R-NEXIT-FULL | asia | new_lh | True | + | nas100fut:+22.1, us30fut:+22.5 |
+| family-repeat (CME) | S1-H2 | R-NEXIT-EARLY | london | with_trend | False | - | nas100fut:-20.1, us30fut:-22.8 |
+| family-repeat (CME) | S1-H2 | R-NEXIT-EARLY | london | with_trend | True | + | nas100fut:+20.1, us30fut:+22.8 |
+| family-repeat (CME) | S1-H2 | R-NEXIT-FULL | london | with_trend | False | - | nas100fut:-16.5, us30fut:-22.8 |
+| family-repeat (CME) | S1-H2 | R-NEXIT-FULL | london | with_trend | True | + | nas100fut:+16.5, us30fut:+22.8 |
+| family-repeat (CME) | S1-H2 | R-NEXIT-SENT | dead | mtf | no-15M-trend | + | nas100fut:+46.1, us30fut:+36.1 |
+| multi-market | S0-H11 | R-NEXIT-FULL | london | dow | Thu | + | nas100fut:+33.9, uk100fut:+22.8 |
+| multi-market | S0-H11 | R-NEXIT-SENT | london | dow | Thu | + | nas100fut:+29.1, uk100fut:+27.7 |
+| multi-market | S0-H19 | R-NEXIT-EARLY | asia | h11 | gap | + | ger40fut:+18.3, us30fut:+13.5 |
+| multi-market | S0-H2 | R-NEXIT-SENT | asia | dow | Wed | - | uk100fut:-28.4, us30fut:-18.0 |
 
 Per-market luck budgets:
 
-- ger40fut: 887 of 2831 measurable qualify vs null median 919.5 / p95 971; percentile 11.0.
-- nas100fut: 974 of 3092 measurable qualify vs null median 882.5 / p95 946.3; percentile 100.0.
-- uk100fut: 924 of 2699 measurable qualify vs null median 891.5 / p95 935; percentile 86.0.
-- us30fut: 1069 of 3609 measurable qualify vs null median 1112.5 / p95 1164.1; percentile 6.0.
+- ger40fut: 953 of 3104 measurable qualify vs null median 1005 / p95 1057.05; percentile 2.0.
+- nas100fut: 1093 of 3433 measurable qualify vs null median 993.5 / p95 1047; percentile 100.0.
+- uk100fut: 959 of 2842 measurable qualify vs null median 919.5 / p95 963.15; percentile 92.0.
+- us30fut: 1192 of 4031 measurable qualify vs null median 1244.5 / p95 1296.15; percentile 1.0.
