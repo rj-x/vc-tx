@@ -16,7 +16,12 @@ normalize into it unchanged):
                                   # pts or k x ATR(off_tf)
       ("breakeven", off_pts)      # entry +/- offset; literature-adverse
                                   # caution registered (register 42d)
-    target: ("fixed_pts", v) | ("atr", k, tf) | None
+    target: ("fixed_pts", v) | ("atr", k, tf) | ("atr_haircut", k, tf, hc) | None
+      atr_haircut (register 94, the scalp arms): resting order at entry + d*k*ATR(tf);
+      FILL only when the favorable extreme EXCEEDS the level by hc points (the
+      register-65(d) queue-risk haircut; one home tick); exit at the level;
+      gap-opens past level+hc fill at the open (price improvement) — an
+      OPTIMISTIC-class fill, declared in every consuming header
     exit_on / tighten_to: narrative-condition primitives (signal_watch
       NARRATIVE_EXIT_PRIMITIVES — the one-home rule). The excursion cut
       and flip-cut gates reported 2026-08-19 (registers 42-43); the gate
@@ -74,7 +79,7 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.6"
+RECIPE_SET_VERSION = "recipe_set_v0.7"   # register 94
 RECIPE_SETS = {
     "recipe_set_v0.6": {
         # R-NEXIT-SENT (register 82; counted): EXITS ARE SENTENCES, NOT
@@ -235,6 +240,31 @@ RECIPE_SETS = {
 }
 
 
+# register 94 (operator-ratified 2026-08-27; register 92 chain): the scalp,
+# two counted arms. Target = resting order at entry+0.5xATR(15M)
+# with the 0.5pt one-tick haircut (config tick_size cited; per-
+# instrument tick at any away registration); stop = the registered
+# 2.5xATR reuse, DISASTER CAP ONLY (a tighter scalp stop is a v1
+# variant whose value must DERIVE from the forward non-reach EOD
+# distribution once accrued — derivation-required, no invented
+# numbers); EOD-flat on non-reach; OPTIMISTIC target fill declared
+# (register 65). The -REF arm enters via the founding refinement
+# micro-loop (R2 per-family verdict cited: refinement helps the
+# rejection family; the entry transform lives in the trade layer).
+_SCALP_STAGES = [{"stop": [("atr", 2.5, "15min")],
+                  "target": ("atr_haircut", 0.5, "15min", 0.5)}]
+RECIPE_SETS["recipe_set_v0.7"] = {
+    **RECIPE_SETS["recipe_set_v0.6"],
+    f"R-SCALP-H{6}": {"provenance": "operator-ratified 2026-08-27 "
+                                 "(register 94; Q-chain register 92)",
+                   "stages": _SCALP_STAGES},
+    f"R-SCALP-H{6}-REF": {"provenance": "operator-ratified 2026-08-27 "
+                                     "(register 94; refined-entry arm, "
+                                     "R2 verdict cited)",
+                       "stages": _SCALP_STAGES},
+}
+
+
 def _norm_component(c):
     kind = c[0]
     if kind == "fixed_pts":
@@ -311,6 +341,9 @@ def _target_level(spec, entry, d, env, t0):
     if spec[0] == "atr":
         a = env.atr_at(spec[2], t0)
         return None if a is None else entry + d * spec[1] * a
+    if spec[0] == "atr_haircut":                       # register 94
+        a = env.atr_at(spec[2], t0)
+        return None if a is None else entry + d * spec[1] * a
     raise ValueError(spec)
 
 
@@ -379,6 +412,9 @@ def simulate(fires, env, recipe, spread):
                 eff_stop = tight if eff_stop is None else (
                     max(eff_stop, tight) if d == 1 else min(eff_stop, tight))
             target = _target_level(st["target"], entry, d, env, t0)
+            tgt_hc = (st["target"][3]
+                      if st["target"] is not None
+                      and st["target"][0] == "atr_haircut" else 0.0)
             # narrative exits: settled events inside the PREVIOUS bar
             narr_hit = False
             for cond in st["exit_on"]:
@@ -403,14 +439,15 @@ def simulate(fires, env, recipe, spread):
                     exit_px, reason = o[j], "stop_gap"      # rule 2
                     break
             if target is not None:
-                if (d == 1 and o[j] >= target) or (d == -1
-                                                   and o[j] <= target):
+                if (d == 1 and o[j] >= target + tgt_hc) \
+                        or (d == -1 and o[j] <= target - tgt_hc):
                     exit_px, reason = o[j], "target_gap"    # rule 2
                     break
             stop_hit = eff_stop is not None and (
                 l[j] <= eff_stop if d == 1 else h[j] >= eff_stop)
             tgt_hit = target is not None and (
-                h[j] >= target if d == 1 else l[j] <= target)
+                h[j] >= target + tgt_hc if d == 1
+                else l[j] <= target - tgt_hc)
             if stop_hit:                                    # rule 1
                 exit_px, reason = eff_stop, "stop"
                 break

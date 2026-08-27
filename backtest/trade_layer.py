@@ -26,7 +26,7 @@ the scale that admits repeated sequels of one anchor episode;
 RATIFIED at the 2026-08-28 sitting, register 88). Honest-fills rule 5 (register 77)
 removes the instant-kill class at the fill-logic level.
 
-FILL MODEL: PESSIMISTIC (register 65; ladder family). Entries UNREFINED
+FILL MODEL: PESSIMISTIC (register 65; ladder family); the scalp arms (register 94) carry an OPTIMISTIC target fill beyond the 0.5pt haircut, declared in every header — never compared to the pessimistic rows without the class stated. Entries UNREFINED
 (register 70: refinement is per-family; this layer's choice, stated).
 CONTEXT-TAG ANALYSIS IS POST-HOC EXPLORATORY (register 76 clause 5):
 tags are reported with counts; no gates are minted from them without
@@ -64,6 +64,7 @@ from backtest.conditioning_matrix import _FeatRecorder, quadrant_of
 from engine.store_loader import in_lockbox_span, is_sealed
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
                               _spread_median, build_env, simulate)
+from backtest.r2_experiment import refine
 from backtest.scoreboard import (PROVISIONAL_INSTRS, _replay,
                                  event_derived_fires, make_cfg)
 from backtest.signal_points import (DRIFT_SKEW_SHARE, TREND_FAMILY,
@@ -78,7 +79,14 @@ TAGS = ("with_trend", "new_hh", "new_hl", "new_lh", "new_ll",
 VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL",
             "R-NEXIT-EARLY", "R-NEXIT-FULL",   # register 81 (atomic
                                                # controls, register 82)
-            "R-NEXIT-SENT")                    # register 82 (sentences)
+            "R-NEXIT-SENT",                    # register 82 (sentences)
+            f"R-SCALP-H{6}", f"R-SCALP-H{6}-REF")    # register 94 (the scalp
+                                               # arms)
+# register 94: the scalp arms run ONLY on their own sentence (the
+# Q-chain's signal); the -REF arm enters via the founding refinement
+# micro-loop (config execution.window / close_pos_trigger, cited)
+SCALP_VARIANTS = (f"R-SCALP-H{6}", f"R-SCALP-H{6}-REF")
+SCALP_SENTENCE = f"S0-H{6}"
 REFIRE_DEDUP_BARS = H17_SEQUEL_WINDOW   # derivation: the sequel window
 GRADES_CSV = os.path.join(ROOT, "reports", "management_grades.csv")
 
@@ -201,8 +209,16 @@ def run_instrument(instr):
     grade_pts = {}          # (variant, name) -> list of (pts, atr, week)
     for variant in VARIANTS:
         recipe = rset[variant]
-        for name in names:
+        v_names = ([SCALP_SENTENCE] if variant in SCALP_VARIANTS
+                   else names)
+        for name in v_names:
+            if name not in names:
+                continue
             nf = [f for f in fires if f["name"] == name]
+            if variant.endswith("-REF") and variant in SCALP_VARIANTS:
+                nf = [b for _a, b, _e in refine(
+                    nf, env, int(cfg.execution.window),
+                    float(cfg.execution.close_pos_trigger))]
             env.narr["opposing_signal_fire"] = [
                 (t, d) for t, d, n_ in all_fire_events if n_ != name]
             env.narr["opposing_sentence_fire"] = [
@@ -323,7 +339,10 @@ def emit(all_rows, all_grades):
     recon = (f"# EX-LOCKBOX (register 85): aggregates exclude "
              f"lockbox-span opens — {len(agg_rows)} of {len(all_rows)} "
              f"journal rows used, {n_excl} excluded; trades.csv is the "
-             f"complete journal (readers: comment='#')")
+             f"complete journal (readers: comment='#'). The scalp "
+             f"arms: OPTIMISTIC target fill beyond a 0.5pt haircut "
+             f"(register 65/94) — not comparable to the pessimistic "
+             f"rows")
     wk = {}
     for r in agg_rows:
         ts = pd.Timestamp(r["open_ts"])

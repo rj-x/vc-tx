@@ -267,11 +267,14 @@ def generate():
           "(promote/deprioritize numbers, ±2pp band, session scoping, "
           "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
           "history).",
-          "- Scalp chain: the DESIGN PROPOSAL IS PRODUCED (register "
-          "93 item 2) — awaiting operator ratification on its four "
-          "explicit gates (design shape · 0.5pt haircut · stop "
-          "choice · arm count); registration follows ratification, "
-          "counted and forward-graded.",
+          "- Scalp chain COMPLETE (register 94): R-SCALP-H"
+          f"{6} (v0) registered, two counted arms (plain + "
+          "refined-entry), all four gates ratified; runs in the "
+          "journal from the next Part C emission, forward-graded "
+          "under the row-level rule. Optimistic target fill "
+          "declared. The v1 tighter stop is deferred — "
+          "derivation-required from the forward non-reach EOD "
+          "distribution.",
           f"- The H{6}-not-in-London composite: HOLD (register 93 — "
           "at-chance weakens the rationale; re-proposes only if "
           "below-chance suppression reappears on fresh accrual). "
