@@ -12,7 +12,14 @@ events during the hold using the survey vocabulary (register 73):
   opposing-sentence — a MINTED COMPOSITE sentence firing opposite the
                       trade (register 82 amendment: composites only;
                       atoms stay in their own classes);
-  trend-flip        — 1M phase flip (either direction; continuity).
+  trend-flip        — 1M phase flip (either direction; continuity);
+  deceleration-against (register 95 item 1) — the third successive new
+                      extreme in the position's direction whose leg
+                      velocity declined strictly across three legs
+                      (registered swing convention; INDICATOR-FREE —
+                      the docketed source's RSI divergence is a proxy
+                      for this quantity, recorded verbatim in the
+                      trial log; three legs = the source's structure).
 First event of each class per trade recorded; a trade may carry
 several classes (classes are analysis splits, not a partition).
 
@@ -65,7 +72,77 @@ TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
 # COMPOSITES ONLY (atoms stay in their own classes) — the sentence-
 # warning's information content prints apart from the atomic noise
 EVENT_CLASSES = ("opposing-effort", "absorption-against",
-                 "opposing-sentence", "trend-flip")
+                 "opposing-sentence", "trend-flip",
+                 "deceleration-against")   # register 95 item 1
+
+
+class _SwingRecorder:
+    """Register 95 item 1: the engine's confirmed swing registry as a
+    confirmation-ordered log (confirm bar ts, type, idx, price) —
+    trailing-confirmed, no lookahead. Feeds the decelerating-thrust
+    class (indicator-free: per-leg velocity from the swing registry;
+    the source's oscillator is a proxy for this quantity)."""
+
+    def __init__(self):
+        self.log = []
+        self._seen = set()
+
+    def attach(self, engine):
+        orig = engine.exec_pipe.on_close
+        ctx = engine.exec_pipe.ctx
+
+        def observed(bar, ctx_tf=None, signal_ctx=None):
+            out = orig(bar, ctx_tf=ctx_tf, signal_ctx=signal_ctx)
+            if out is not None and not bar.is_stub:
+                for sw in ctx.swings:
+                    key = (sw["type"], sw["idx"])
+                    if key not in self._seen:
+                        self._seen.add(key)
+                        self.log.append({"conf_ts": bar.ts.value,
+                                         "type": sw["type"],
+                                         "idx": sw["idx"],
+                                         "price": float(sw["price"])})
+            return out
+        engine.exec_pipe.on_close = observed
+
+
+def deceleration_flags(log, ts):
+    """Per-bar flags: decel_up[j] / decel_dn[j] True at the confirmation
+    bar of the THIRD successive new extreme in that direction whose leg
+    velocity (|extreme - preceding opposite swing| / bars) declined
+    strictly across the three legs. Three legs = the source's own
+    structure, not a tuned number; legs = the registered swing
+    convention. Deterministic."""
+    n = len(ts)
+    up, dn = np.zeros(n, bool), np.zeros(n, bool)
+    hist = {"H": [], "L": []}          # all swings by type, in order
+    runs = {"H": [], "L": []}          # successive new-extreme legs
+    for sw in log:
+        t = sw["type"]
+        opp = [x for x in hist["L" if t == "H" else "H"]
+               if x["idx"] < sw["idx"]]
+        hist[t].append(sw)
+        if not opp:
+            continue
+        o = opp[-1]
+        bars = sw["idx"] - o["idx"]
+        if bars <= 0:
+            continue
+        vel = abs(sw["price"] - o["price"]) / bars
+        prev = hist[t][-2] if len(hist[t]) >= 2 else None
+        new_ext = prev is None or (
+            sw["price"] > prev["price"] if t == "H"
+            else sw["price"] < prev["price"])
+        if not new_ext:
+            runs[t] = [vel]
+            continue
+        runs[t].append(vel)
+        r = runs[t]
+        if len(r) >= 3 and r[-1] < r[-2] < r[-3]:
+            j = int(np.searchsorted(ts, sw["conf_ts"], side="right") - 1)
+            if 0 <= j < n:
+                (up if t == "H" else dn)[j] = True
+    return up, dn
 # arming split: the RATIFIED R-FLIPGUARD transition, cited (register 46)
 ARM_PROGRESS_ATR = 1.0
 ARM_AGE_MIN = 45
@@ -78,13 +155,16 @@ def build_arrays(instr):
                     "debug.structure": True})
     watch = SignalWatch()
     rec = _SurveyRecorder()
+    swr = _SwingRecorder()
 
     def _hook(engine):
         watch.attach(engine)
         rec.attach(engine)
+        swr.attach(engine)
     engine, bars, _ = _replay(cfg, instr, engine_hook=_hook)
     env = build_env(instr, cfg, bars)
     ts = env.ts
+    decel_up, decel_dn = deceleration_flags(swr.log, ts)
     n = len(ts)
     getm = rec.map.get
     quad = np.array([quadrant_of(*getm(t, (None,) * 4)[:2],
@@ -119,6 +199,7 @@ def build_arrays(instr):
     return {"env": env, "ts": ts, "quad": quad, "test": test_mask,
             "closedir": closedir, "flips": flips,
             "fires_by_bar": fire_dir_by_bar, "h3": h3_bars,
+            "decel_up": decel_up, "decel_dn": decel_dn,
             "spread": _spread_median(instr), "events": events,
             "atr_at": lambda t_ns: env.atr_at("15min", t_ns)}
 
@@ -151,6 +232,12 @@ def classify_hold(A, i_entry, i_exit, d, entry, atr0):
             firsts["opposing-sentence"] = j
         if "trend-flip" not in firsts and A["flips"][j]:
             firsts["trend-flip"] = j
+        # register 95 item 1: the thrust in the position's favor
+        # decelerating (third successive new extreme in d, velocities
+        # strictly declining) — the trader's exit rule, measured
+        if "deceleration-against" not in firsts and (
+                A["decel_up"][j] if d == 1 else A["decel_dn"][j]):
+            firsts["deceleration-against"] = j
     return firsts, arm_bar
 
 
@@ -293,7 +380,13 @@ def _emit(results, head):
          "Floors: B-RANDOM members under the INCUMBENT variant (v1 "
          "floor; per-variant floors flagged follow-up). The flip trade "
          "exists only if BOTH legs clear — reverse-leg medians print "
-         "beside their floor. FILL MODEL: PESSIMISTIC. ° = n<20.", ""]
+         "beside their floor. FILL MODEL: PESSIMISTIC. ° = n<20. "
+         "deceleration-against (register 95): the docketed "
+         "divergence exit measured indicator-free — third successive "
+         "new extreme in the position's direction with strictly "
+         "declining leg velocity (registered swing convention, no new "
+         "thresholds); measured here BEFORE any standalone hypothesis.",
+         ""]
     for res in results:
         inst = res["instrument"]
         L += [f"## {inst} ({res['status'].upper()})"]

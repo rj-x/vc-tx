@@ -111,6 +111,8 @@ AUTHORITY = {
     "underwater_census.py:NULL_SHUFFLES": "register 87: label-permutation null, 100 pinned seeds — the survey convention (register 73 clause 3 lineage)",
     "underwater_census.py:THESIS_SEEDS": "register 87: 20 random-thesis members, seeds range(60,80) — the B-RANDOM seed lineage, stated at prereg",
     "underwater_census.py:FAMILY_OF": "register 87: full-coverage signal-family map extending the registered cofire/trend groupings — implementer-proposed at prereg, FLAGGED for operator ratification",
+    "zone_census.py:UNMEASURABLE_N": "register 95 item 2: cells n<10 unmeasurable — the conditioning-matrix convention reused",
+    "zone_census.py:LOCATION_FAMILY": "register 95 item 2: the location family cross-reference (S0-H6 / S0-H11 / S1-H11 / S0-H13) — the zone census is its first higher-TF member",
     "capture_study.py:POLICIES": "register 88 item 4: the pre-registered protection ladder (4 BE rungs + 4 TRAIL arm x distance + 2 RATCHET schedules) — prereg_capture_study, counted",
     "capture_study.py:GAP_MIN_PTS": "register 88 item 4: tape-differentiation threshold 5 pts/trade — implementer-proposed at prereg, FLAGGED",
     "capture_study.py:NEVER_AGAIN_BOUND_ATR": "register 89 item 1: the operator's never-again bound (+1.0xATR MFE unprotected) — operator-stated in the order; a risk-rule pricing input, enactable by operator fiat once priced",

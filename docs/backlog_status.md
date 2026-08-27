@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 94 (freshness-checked by the weekly
+table.** Register-current-through: 95 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -50,6 +50,8 @@ authoritative.
 | scalp location census | awaiting-decision-cycle-slot (gated; location-split per amendment) |
 | T3b recipe-layer build | awaiting-decision-next-lab-cycle (H10's deprioritize label is an input) |
 | s9 scenario | awaiting-decision-ruling-cycle |
+| decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
+| H4 key-zone conditioner census | BUILT 2026-08-28 (register 95 item 2; weekly Part C; the location family's first higher-TF member; store depth reconciled ~3,100 H4 bars; mint-on-lift only) |
 
 ## Organs (register 16; one at a time)
 

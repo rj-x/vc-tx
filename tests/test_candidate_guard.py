@@ -33,6 +33,7 @@ IMPORT_ALLOWED = {os.path.join("backtest", "scoreboard.py"),
                   os.path.join("backtest", "journal_survey.py"),       # reg 80
                   os.path.join("backtest", "account_mode.py"),         # reg 83
                   os.path.join("backtest", "underwater_census.py"),    # reg 87
+                  os.path.join("backtest", "zone_census.py"),          # reg 95
                   os.path.join("engine", "paper.py"),
                   os.path.join("engine", "narrate.py")}
 
