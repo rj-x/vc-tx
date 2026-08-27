@@ -640,6 +640,37 @@ def _emit(art, head):
               "arm only on operator ratification; both derive from the same "
               "forward non-reach accrual (register 64 distinguished: no "
               "time-exit harvest)."]
+    cb_path = os.path.join(SB, "circuit_breaker.json")
+    if os.path.exists(cb_path):
+        cb = json.load(open(cb_path))
+        L += ["", "## Circuit-breaker counterfactual (register 102; "
+              "exposure control, not harvest timing — register 64 "
+              "distinguished; strict fill order within the native "
+              "trading day; baselines = B-RANDOM members under the same "
+              "recipe and rules; motivating anatomy: the week-32 "
+              "stop-cluster days)", "",
+              "| instrument | arm | window | rule | days | halt days | "
+              "stops dodged (pts) | targets forfeited (pts) | eod "
+              "forfeited (pts) | net vs no-halt | floor med (min..max) |",
+              "|---|---|---|---|---|---|---|---|---|---|---|"]
+        for key, per in cb["cells"].items():
+            instr, arm, w = key.split("|")
+            for rule, v in per.items():
+                fb = (cb.get("floors", {}).get(instr, {}).get(arm, {})
+                      .get(f"{w}|{rule}"))
+                fs = (f"{fb['median']} ({fb['min']}..{fb['max']})"
+                      if fb else "ABSENT")
+                L.append(f"| {instr} | {arm} | {w} | {rule} | {v['days']} "
+                         f"| {v['halt_days']} | {v['stops_dodged']} "
+                         f"({v['stops_dodged_pts']}) "
+                         f"| {v['targets_forfeited']} "
+                         f"({v['targets_forfeited_pts']}) "
+                         f"| {v['eod_forfeited']} ({v['eod_forfeited_pts']}) "
+                         f"| {v['net_delta']:+.1f} | {fs} |")
+        L += ["", "Halt dates per cell live in circuit_breaker.json. A "
+              "rule survives only if its net vs no-halt clears the member "
+              "band on >= 3 legs; survivors propose as a v1 arm COMPONENT "
+              "alongside the price-stop — one package, front door."]
     L.append("")
     with open(os.path.join(SB, "h6_refinement.md"), "w") as f:
         f.write("\n".join(L))

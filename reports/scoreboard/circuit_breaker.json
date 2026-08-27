@@ -1,0 +1,1392 @@
+{
+  "STAMP": "OBSERVATIONAL circuit-breaker counterfactual \u2014 exposure control measured, never adopted; surviving rules propose as v1 arm components via the front door; never validation",
+  "engine_commit": "f797acd9b0229220d329cc90d3bf00da6e4285d6",
+  "rules": [
+    "halt@1stops",
+    "halt@2stops",
+    "halt@3losers",
+    "halt@5losers"
+  ],
+  "arms": [
+    "R-SCALP-H6",
+    "R-SCALP-H6-REF"
+  ],
+  "day_convention": "native session-tz date",
+  "register_64_note": "exposure control, not harvest timing \u2014 no time-based exit; target untouched",
+  "cells": {
+    "ger40fut|R-SCALP-H6|backtest": {
+      "halt@1stops": {
+        "days": 6,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-07-29",
+          "2026-07-30",
+          "2026-07-31",
+          "2026-08-03"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 7,
+        "targets_forfeited_pts": 117.4,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 7,
+        "net_delta": -117.4
+      },
+      "halt@2stops": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "ger40fut|R-SCALP-H6|forward": {
+      "halt@1stops": {
+        "days": 9,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-08-17",
+          "2026-08-18",
+          "2026-08-20",
+          "2026-08-25"
+        ],
+        "stops_dodged": 4,
+        "stops_dodged_pts": 207.6,
+        "targets_forfeited": 16,
+        "targets_forfeited_pts": 181.0,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -41.7,
+        "rows_foregone": 21,
+        "net_delta": 68.4
+      },
+      "halt@2stops": {
+        "days": 9,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-18"
+        ],
+        "stops_dodged": 3,
+        "stops_dodged_pts": 173.8,
+        "targets_forfeited": 6,
+        "targets_forfeited_pts": 63.4,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 9,
+        "net_delta": 110.4
+      },
+      "halt@3losers": {
+        "days": 9,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 9,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "ger40fut|R-SCALP-H6-REF|backtest": {
+      "halt@1stops": {
+        "days": 6,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-07-29"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 3,
+        "targets_forfeited_pts": 59.5,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 3,
+        "net_delta": -59.5
+      },
+      "halt@2stops": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "ger40fut|R-SCALP-H6-REF|forward": {
+      "halt@1stops": {
+        "days": 9,
+        "halt_days": 5,
+        "halt_dates": [
+          "2026-08-17",
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-20",
+          "2026-08-26"
+        ],
+        "stops_dodged": 3,
+        "stops_dodged_pts": 176.6,
+        "targets_forfeited": 16,
+        "targets_forfeited_pts": 180.9,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -44.2,
+        "rows_foregone": 20,
+        "net_delta": 39.9
+      },
+      "halt@2stops": {
+        "days": 9,
+        "halt_days": 2,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-19"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 71.6,
+        "targets_forfeited": 6,
+        "targets_forfeited_pts": 77.5,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 7,
+        "net_delta": -5.9
+      },
+      "halt@3losers": {
+        "days": 9,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 9,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "nas100fut|R-SCALP-H6|backtest": {
+      "halt@1stops": {
+        "days": 6,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-07-27"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 1,
+        "targets_forfeited_pts": 44.6,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 1,
+        "net_delta": -44.6
+      },
+      "halt@2stops": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "nas100fut|R-SCALP-H6|forward": {
+      "halt@1stops": {
+        "days": 10,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-24",
+          "2026-08-27"
+        ],
+        "stops_dodged": 2,
+        "stops_dodged_pts": 215.4,
+        "targets_forfeited": 14,
+        "targets_forfeited_pts": 287.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 16,
+        "net_delta": -71.6
+      },
+      "halt@2stops": {
+        "days": 10,
+        "halt_days": 2,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-24"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 4,
+        "targets_forfeited_pts": 70.2,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 4,
+        "net_delta": -70.2
+      },
+      "halt@3losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "nas100fut|R-SCALP-H6-REF|backtest": {
+      "halt@1stops": {
+        "days": 6,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-07-27",
+          "2026-07-30",
+          "2026-07-31",
+          "2026-08-03"
+        ],
+        "stops_dodged": 2,
+        "stops_dodged_pts": 329.3,
+        "targets_forfeited": 3,
+        "targets_forfeited_pts": 107.4,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 5,
+        "net_delta": 221.9
+      },
+      "halt@2stops": {
+        "days": 6,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-07-30"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 152.3,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 1,
+        "net_delta": 152.3
+      },
+      "halt@3losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 6,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "nas100fut|R-SCALP-H6-REF|forward": {
+      "halt@1stops": {
+        "days": 10,
+        "halt_days": 3,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-19",
+          "2026-08-24"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 12,
+        "targets_forfeited_pts": 268.9,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 12,
+        "net_delta": -268.9
+      },
+      "halt@2stops": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "uk100fut|R-SCALP-H6|backtest": {
+      "halt@1stops": {
+        "days": 11,
+        "halt_days": 3,
+        "halt_dates": [
+          "2026-07-22",
+          "2026-07-27",
+          "2026-07-28"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 41.1,
+        "targets_forfeited": 11,
+        "targets_forfeited_pts": 66.5,
+        "eod_forfeited": 3,
+        "eod_forfeited_pts": -21.0,
+        "rows_foregone": 15,
+        "net_delta": -4.3
+      },
+      "halt@2stops": {
+        "days": 11,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-07-22"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 2,
+        "targets_forfeited_pts": 16.8,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": 1.7,
+        "rows_foregone": 3,
+        "net_delta": -18.4
+      },
+      "halt@3losers": {
+        "days": 11,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 11,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "uk100fut|R-SCALP-H6|forward": {
+      "halt@1stops": {
+        "days": 10,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-08-20",
+          "2026-08-21",
+          "2026-08-25",
+          "2026-08-27"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 16.2,
+        "targets_forfeited": 17,
+        "targets_forfeited_pts": 76.7,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 18,
+        "net_delta": -60.5
+      },
+      "halt@2stops": {
+        "days": 10,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-25"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 5,
+        "targets_forfeited_pts": 20.8,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 5,
+        "net_delta": -20.8
+      },
+      "halt@3losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "uk100fut|R-SCALP-H6-REF|backtest": {
+      "halt@1stops": {
+        "days": 11,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-07-20",
+          "2026-07-22",
+          "2026-07-27",
+          "2026-07-30"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 12,
+        "targets_forfeited_pts": 85.5,
+        "eod_forfeited": 3,
+        "eod_forfeited_pts": -7.1,
+        "rows_foregone": 15,
+        "net_delta": -78.4
+      },
+      "halt@2stops": {
+        "days": 11,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 11,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 11,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "uk100fut|R-SCALP-H6-REF|forward": {
+      "halt@1stops": {
+        "days": 10,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-20",
+          "2026-08-21",
+          "2026-08-27"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 30.8,
+        "targets_forfeited": 13,
+        "targets_forfeited_pts": 60.5,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 14,
+        "net_delta": -29.7
+      },
+      "halt@2stops": {
+        "days": 10,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-27"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 1,
+        "targets_forfeited_pts": 6.3,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 1,
+        "net_delta": -6.3
+      },
+      "halt@3losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 10,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "us30fut|R-SCALP-H6|backtest": {
+      "halt@1stops": {
+        "days": 8,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-07-28",
+          "2026-07-29",
+          "2026-07-31",
+          "2026-08-03"
+        ],
+        "stops_dodged": 4,
+        "stops_dodged_pts": 620.0,
+        "targets_forfeited": 11,
+        "targets_forfeited_pts": 452.8,
+        "eod_forfeited": 2,
+        "eod_forfeited_pts": -129.7,
+        "rows_foregone": 17,
+        "net_delta": 296.9
+      },
+      "halt@2stops": {
+        "days": 8,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-03"
+        ],
+        "stops_dodged": 2,
+        "stops_dodged_pts": 294.9,
+        "targets_forfeited": 1,
+        "targets_forfeited_pts": 28.2,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -88.1,
+        "rows_foregone": 4,
+        "net_delta": 354.8
+      },
+      "halt@3losers": {
+        "days": 8,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-03"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 177.5,
+        "targets_forfeited": 1,
+        "targets_forfeited_pts": 28.2,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -88.1,
+        "rows_foregone": 3,
+        "net_delta": 237.3
+      },
+      "halt@5losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "us30fut|R-SCALP-H6|forward": {
+      "halt@1stops": {
+        "days": 8,
+        "halt_days": 5,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-21",
+          "2026-08-24",
+          "2026-08-25",
+          "2026-08-27"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 16,
+        "targets_forfeited_pts": 334.9,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 16,
+        "net_delta": -334.9
+      },
+      "halt@2stops": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@3losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "us30fut|R-SCALP-H6-REF|backtest": {
+      "halt@1stops": {
+        "days": 8,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-07-28",
+          "2026-07-29",
+          "2026-07-31",
+          "2026-08-03"
+        ],
+        "stops_dodged": 5,
+        "stops_dodged_pts": 783.9,
+        "targets_forfeited": 10,
+        "targets_forfeited_pts": 410.5,
+        "eod_forfeited": 3,
+        "eod_forfeited_pts": -100.3,
+        "rows_foregone": 18,
+        "net_delta": 473.7
+      },
+      "halt@2stops": {
+        "days": 8,
+        "halt_days": 3,
+        "halt_dates": [
+          "2026-07-28",
+          "2026-07-29",
+          "2026-08-03"
+        ],
+        "stops_dodged": 2,
+        "stops_dodged_pts": 292.3,
+        "targets_forfeited": 5,
+        "targets_forfeited_pts": 250.2,
+        "eod_forfeited": 3,
+        "eod_forfeited_pts": -100.3,
+        "rows_foregone": 10,
+        "net_delta": 142.4
+      },
+      "halt@3losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    },
+    "us30fut|R-SCALP-H6-REF|forward": {
+      "halt@1stops": {
+        "days": 8,
+        "halt_days": 4,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-08-21",
+          "2026-08-25",
+          "2026-08-27"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 104.0,
+        "targets_forfeited": 18,
+        "targets_forfeited_pts": 368.3,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 19,
+        "net_delta": -264.3
+      },
+      "halt@2stops": {
+        "days": 8,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-08-18"
+        ],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 3,
+        "targets_forfeited_pts": 74.7,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 3,
+        "net_delta": -74.7
+      },
+      "halt@3losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      },
+      "halt@5losers": {
+        "days": 8,
+        "halt_days": 0,
+        "halt_dates": [],
+        "stops_dodged": 0,
+        "stops_dodged_pts": 0.0,
+        "targets_forfeited": 0,
+        "targets_forfeited_pts": 0.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 0,
+        "net_delta": 0.0
+      }
+    }
+  },
+  "floors": {
+    "uk100fut": {
+      "R-SCALP-H6": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 101.9,
+          "min": -177.1,
+          "max": 330.4
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -10.8,
+          "min": -144.4,
+          "max": 231.0
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -54.0,
+          "max": 148.0
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": 80.2,
+          "min": -57.3,
+          "max": 189.8
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": 51.1,
+          "min": -53.3,
+          "max": 105.1
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -10.0,
+          "max": 35.4
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "R-SCALP-H6-REF": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 101.9,
+          "min": -177.1,
+          "max": 330.4
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -10.8,
+          "min": -144.4,
+          "max": 231.0
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -54.0,
+          "max": 148.0
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": 80.2,
+          "min": -57.3,
+          "max": 189.8
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": 51.1,
+          "min": -53.3,
+          "max": 105.1
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -10.0,
+          "max": 35.4
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "ger40fut": {
+      "R-SCALP-H6": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 31.0,
+          "min": -577.8,
+          "max": 724.2
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -76.3,
+          "min": -501.3,
+          "max": 554.2
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -79.3,
+          "max": 233.8
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": 1.3,
+          "min": -528.9,
+          "max": 533.3
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -15.3,
+          "min": -204.2,
+          "max": 375.9
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -60.6,
+          "max": 47.5
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "R-SCALP-H6-REF": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 31.0,
+          "min": -577.8,
+          "max": 724.2
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -76.3,
+          "min": -501.3,
+          "max": 554.2
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -79.3,
+          "max": 233.8
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": 1.3,
+          "min": -528.9,
+          "max": 533.3
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -15.3,
+          "min": -204.2,
+          "max": 375.9
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -60.6,
+          "max": 47.5
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "nas100fut": {
+      "R-SCALP-H6": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 337.9,
+          "min": -764.9,
+          "max": 1119.6
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -5.1,
+          "min": -1007.5,
+          "max": 651.4
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -214.7,
+          "max": 81.2
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": -108.7,
+          "min": -673.0,
+          "max": 348.3
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -76.9,
+          "min": -305.6,
+          "max": 531.0
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -120.3,
+          "max": 80.0
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "R-SCALP-H6-REF": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 337.9,
+          "min": -764.9,
+          "max": 1119.6
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": -5.1,
+          "min": -1007.5,
+          "max": 651.4
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -214.7,
+          "max": 81.2
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": -108.7,
+          "min": -673.0,
+          "max": 348.3
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -76.9,
+          "min": -305.6,
+          "max": 531.0
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -120.3,
+          "max": 80.0
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "us30fut": {
+      "R-SCALP-H6": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 504.2,
+          "min": -415.2,
+          "max": 1724.0
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": 341.7,
+          "min": -359.8,
+          "max": 1151.9
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -84.7,
+          "max": 360.0
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": -157.9,
+          "min": -825.5,
+          "max": 554.5
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -25.1,
+          "min": -416.5,
+          "max": 326.4
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -134.6,
+          "max": 26.4
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "R-SCALP-H6-REF": {
+        "backtest|halt@1stops": {
+          "members": 20,
+          "median": 504.2,
+          "min": -415.2,
+          "max": 1724.0
+        },
+        "backtest|halt@2stops": {
+          "members": 20,
+          "median": 341.7,
+          "min": -359.8,
+          "max": 1151.9
+        },
+        "backtest|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -84.7,
+          "max": 360.0
+        },
+        "backtest|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "forward|halt@1stops": {
+          "members": 20,
+          "median": -157.9,
+          "min": -825.5,
+          "max": 554.5
+        },
+        "forward|halt@2stops": {
+          "members": 20,
+          "median": -25.1,
+          "min": -416.5,
+          "max": 326.4
+        },
+        "forward|halt@3losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": -134.6,
+          "max": 26.4
+        },
+        "forward|halt@5losers": {
+          "members": 20,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  }
+}

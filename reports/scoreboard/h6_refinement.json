@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL Scalp refinement program \u2014 a counted experiment family; v0 untouched; candidates through the front door only; never validation",
-  "engine_commit": "878fb1b132afa953fd8d3c8efc04717f5d0d7152",
+  "engine_commit": "f797acd9b0229220d329cc90d3bf00da6e4285d6",
   "n_fires": 454,
   "cell_budget": {
     "split_cells": 249,
