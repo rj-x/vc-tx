@@ -353,10 +353,10 @@ def generate():
           "with the B-RANDOM luck reference. Never evidence; runs on "
           "`--pot`.",
           "- `zone_census.md` — the H4 key-zone conditioner, v2 "
-          "strictness ladder (registers 95/96): density-vs-lift curve "
-          "across 8 rungs, freshness by age and touch measured; the "
-          "location family's first higher-TF member. Mint-on-lift "
-          "only.",
+          "strictness ladder (registers 95/96) — PARKED as the "
+          "standing null (register 97): flat-to-negative density-vs-"
+          "lift across 8 rungs, no freshness decay; accrues weekly, no "
+          "further rungs without new evidence.",
           "- `underwater_census.md` + `thesis_campaign.md` — "
           "loser-cutting and the operator's trading loop, measured "
           "(register 87): survival curves, cut/BE ladders with "

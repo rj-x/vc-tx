@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 96 (freshness-checked by the weekly
+table.** Register-current-through: 97 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -51,7 +51,7 @@ authoritative.
 | T3b recipe-layer build | awaiting-decision-next-lab-cycle (H10's deprioritize label is an input) |
 | s9 scenario | awaiting-decision-ruling-cycle |
 | decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
-| H4 key-zone conditioner census | v2 LADDER 2026-08-28 (register 96: reversal {1.5,3.0}xATR(H4) x significance {none,1,3,5}-session, v1 the null anchor; freshness by age/touch measured; density-vs-lift curve emitted; weekly Part C; mint-on-lift only) |
+| H4 key-zone conditioner census | PARKED 2026-08-28 (register 97): the v2 ladder stands as the STANDING NULL, accruing weekly under Part C; no further rungs (window-relative touch variant explicitly not taken); the source idea measured-and-unsupported at every reading of 'significant and recent'; revisitable only by re-registration on new evidence |
 
 ## Organs (register 16; one at a time)
 
