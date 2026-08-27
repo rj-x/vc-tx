@@ -124,6 +124,7 @@ first uses them, or the commit doesn't pass.
 - **co-fire** — two signals from different families firing in the same window.
 - **organ / sense organ** — a planned market-structure instrument (volume profile, velocity/efficiency) feeding future signals.
 - **backlog** — docs/backlog_status.md: one status line per idea so nothing silently stalls.
+- **ONBOARDING.md** — the collaborator handover file (repo root): stable method sections plus a marker-driven current-state section that points at generated artifacts and carries only the facts prose must (register 98).
 - **staleness** — the class of defect where a hand-maintained page lags the register (register 55); the weekly campaign warns on the backlog's marker (`BACKLOG STALENESS`) and, from register 98, on ONBOARDING.md's marker lagging by more than three entries (`ONBOARDING STALENESS`); tests pin both bounds.
 - **lockbox policy / zone fence** — the loader-enforced refusal to serve sealed or locked data to studies.
 - **one-home rule** — hypothesis identifiers and firing conditions live in exactly one module (engine/signal_watch.py); everywhere else they are banned literals.
