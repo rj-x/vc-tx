@@ -203,6 +203,17 @@ entry is a separate decision.
     reconciliation in the register entry; row file fires.csv. The
     suppression composite may now register — register-now-or-hold
     is the operator's open choice on the dashboard queue.
+    **AMENDED: YES → PARTIAL (2026-08-27, register 93; logged
+    correction, the enacted YES preserved above).** The prediction
+    claimed persisting BELOW-CHANCE suppression; the rows show
+    AT-CHANCE (7.5% vs 7.0% current conditioned base; the current
+    emission's backtest cell is also at-chance, 12.9% vs 12.9%).
+    The practical claim holds (no usable information in London);
+    the mechanism claim (active misleading) does not. Basis error
+    recorded; bases-confirm rule registered (conditioned bases from
+    the current emission at enactment, never memory). Composite
+    ruling: HOLD — re-proposes only if below-chance suppression
+    reappears on fresh accrual. Reviewer strike logged.
   - **Q2-H6** (registered 2026-08-23, register 64; the scalp thread's
     FIRST question, minted through the census entry's own gate):
     PREDICTION — S0-H6's net 0.5×ATR/5-bar reach (33.9% backtest,

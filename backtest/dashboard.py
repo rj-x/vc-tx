@@ -239,10 +239,10 @@ def generate():
          f"{_sess_fires('uk100fut', 'S0-H11', 'overlap')})"),
         (f"Q2-H{9}", "≥30 fwd NY-session fires on nas100 — VALIDATED "
          "2026-08-25: clock LIVE from the next sync"),
-        (f"Q1-H{6}", "**GRADED: YES** (2026-08-27, register 92, on "
-         "row-level review — fwd London initiation 3/40 at the class "
-         "chance, collapsed from founding 16%; suppression composite "
-         "now registerable, operator's register-now-or-hold below)"),
+        (f"Q1-H{6}", "**GRADED: PARTIAL** (YES 2026-08-27 amended "
+         "same day, register 93 — at-chance, not below-chance: the "
+         "practical claim holds, the mechanism claim does not; "
+         "composite ruling HOLD; bases-confirm rule registered)"),
         (f"Q2-H{6}", "**GRADED: YES** (2026-08-27, register 92, on "
          "row-level review — net reach 29.0% vs member range max "
          "12.8; the target-based recipe chain activates, first "
@@ -267,12 +267,16 @@ def generate():
           "(promote/deprioritize numbers, ±2pp band, session scoping, "
           "coil proxy, R-ARM15 N=1, 5-bar dedup; v0 recipes stand as "
           "history).",
-          "- Register 92 grades opened two operator choices: "
-          f"(a) the H{6}-not-in-London SUPPRESSION COMPOSITE — "
-          "register now or hold; (b) the scalp chain's first step — "
-          "the target-based recipe design proposal (then the 0.5pt "
-          "haircut ratification, then registration; each front-door, "
-          "nothing auto-built).",
+          "- Scalp chain: the DESIGN PROPOSAL IS PRODUCED (register "
+          "93 item 2) — awaiting operator ratification on its four "
+          "explicit gates (design shape · 0.5pt haircut · stop "
+          "choice · arm count); registration follows ratification, "
+          "counted and forward-graded.",
+          f"- The H{6}-not-in-London composite: HOLD (register 93 — "
+          "at-chance weakens the rationale; re-proposes only if "
+          "below-chance suppression reappears on fresh accrual). "
+          "August-vs-July regime texture routed to the "
+          "sealed-window docket.",
           "- Standing deferrals: never-again fiat (register 90, "
           "option c; revisit when capture cells measure); "
           "R-SCOPED-BE waits on its register-92 gate (ranging-entry "
