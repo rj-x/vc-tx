@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-28 (register 98 restructure). Sections
+**Core last revised:** 2026-08-28 (register 98 restructure; §4 refreshed at register 99). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 98** — the marker §7 maintains. The weekly
+**Register-current-through: 99** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -177,8 +177,10 @@ that moves):**
 8. **Grades enacted to date:** Q1-H19 NO (register 88 — the first
    grade); Q2-H6 YES (register 92; the scalp chain's gate); Q1-H6 YES,
    amended to PARTIAL the same day on statistic-shape review (register
-   93 — at-chance, not below-chance; the bases-confirm rule's origin).
-   Clocks and pending questions: the dashboard.
+   93 — at-chance, not below-chance; the bases-confirm rule's origin);
+   Q3-H6 YES × 3 (register 99 — the scalp reach clears its floor on
+   every away leg under per-instrument floors). Clocks and pending
+   questions: the dashboard.
 9. **R-SCALP-H6 is the first evidence-born recipe** (register 94): born
    from Q2-H6's YES through the registered chain (target-based design →
    0.5pt one-tick haircut → registration), two counted arms (plain +
@@ -186,6 +188,8 @@ that moves):**
    the journal beside the management ladder from the next Part C
    emission; optimistic fill declared; the v1 tighter stop is
    derivation-required from forward accrual, no invented numbers.
+   Evidence base FOUR-INSTRUMENT since register 99 — away rows carry
+   claim status on their own floors.
 10. **Measurement before machinery.** No cut, breakeven, re-entry,
     backoff, or zone rule registers without its own Q-number and forward
     grade; the flip-cut precedent governs (registers 44, 87, 88–90, 97).

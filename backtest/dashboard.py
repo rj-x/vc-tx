@@ -247,6 +247,11 @@ def generate():
          "row-level review — net reach 29.0% vs member range max "
          "12.8; the target-based recipe chain activates, first "
          "front-door step below)"),
+        (f"Q3-H{6}", "**GRADED: YES x3** (2026-08-28, register 99, "
+         "rows-confirm on the current emission — away net reach "
+         "ger40 35.8 / nas100 29.0 / us30 41.9 vs range maxes 18.7 / "
+         "19.2 / 16.7; the scalp's evidence base is now "
+         "four-instrument, away rows carry claim status)"),
         ("Q1-H19", "**GRADED: NO** (the sitting 2026-08-28, register "
          "88 — the register's first grade; fwd London pooled −16.84 "
          "median, n=38; row accrues unchanged)"),

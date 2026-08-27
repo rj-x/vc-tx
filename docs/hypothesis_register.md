@@ -240,6 +240,17 @@ entry is a separate decision.
     bar_persistence_fires.csv. THE CHAIN ACTIVATES: target-based
     recipe design → 0.5pt haircut ratification → scalp recipe
     registration, each its own front-door step, nothing auto-built.
+  - **Q3-H6** (minted and graded 2026-08-28, register 99;
+    prereg_Q3-H6 counted before reading): PREDICTION — S0-H6's net
+    0.5×ATR/5-bar reach clears its floor's full member range on each
+    away instrument in forward accrual; one grade per instrument,
+    ≥30 forward fires, rows-confirm on bar_persistence_fires.csv,
+    current-emission floors (bases-confirm). **GRADED: YES × 3** —
+    ger40fut 35.8% (n=81) vs range max 18.7; nas100fut 29.0% (n=69)
+    vs 19.2; us30fut 41.9% (n=62) vs 16.7; date tables in the
+    register entry. Consequence enacted: register 94's evidence base
+    amends to four-instrument; the R-SCALP-H6 arms' away rows carry
+    claim status.
 - **Latest review:** keep-watching (rows begin at the next run).
 - AUDIT: PASS (parameters ratified; the anatomy's confirm/refute/stop
   stay recipe layer in the candidate register).

@@ -58,7 +58,7 @@ def test_question_family_closure():
     assert qs.get(11) == ["Q1-H11", "Q2-H11"] \
         and qs.get(9) == ["Q2-H9"]        # Q2-H11 minted register 88
     assert qs.get(19) == ["Q1-H19"]
-    assert qs.get(6) == ["Q1-H6", "Q2-H6"]
+    assert qs.get(6) == ["Q1-H6", "Q2-H6", "Q3-H6"]   # Q3 register 99
     validate_question_ids()                    # current doc passes
     import backtest.scoreboard as sb
     orig = sb.parse_questions

@@ -251,6 +251,10 @@ RECIPE_SETS = {
 # (register 65). The -REF arm enters via the founding refinement
 # micro-loop (R2 per-family verdict cited: refinement helps the
 # rejection family; the entry transform lives in the trade layer).
+# EVIDENCE BASE: FOUR-INSTRUMENT since register 99 (the away-reach
+# question graded YES on every leg); away journal rows
+# carry claim status on their own instruments' floors; per-instrument
+# tick governs the haircut away from home.
 _SCALP_STAGES = [{"stop": [("atr", 2.5, "15min")],
                   "target": ("atr_haircut", 0.5, "15min", 0.5)}]
 RECIPE_SETS["recipe_set_v0.7"] = {
