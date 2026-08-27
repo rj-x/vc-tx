@@ -239,10 +239,13 @@ def generate():
          f"{_sess_fires('uk100fut', 'S0-H11', 'overlap')})"),
         (f"Q2-H{9}", "≥30 fwd NY-session fires on nas100 — VALIDATED "
          "2026-08-25: clock LIVE from the next sync"),
-        (f"Q1-H{6}", f"≥30 fwd London fires (home accrued: "
+        (f"Q1-H{6}", "CONDITIONS MET — WAITS on row-level review "
+         "(register 91: aggregates propose, rows confirm; "
+         "reports/fires.csv is the instrument; home accrued: "
          f"{_sess_fires('uk100fut', 'S0-H' + str(6), 'london')})"),
-        (f"Q2-H{6}", f"scalp thread: ≥30 fwd fires, census conventions "
-         f"(home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
+        (f"Q2-H{6}", "CONDITIONS MET — WAITS on row-level review "
+         "(register 91; bar_persistence_fires.csv is the instrument; "
+         f"home accrued: {_bp_fwd_fires('uk100fut', 'S0-H' + str(6))})"),
         ("Q1-H19", "**GRADED: NO** (the sitting 2026-08-28, register "
          "88 — the register's first grade; fwd London pooled −16.84 "
          "median, n=38; row accrues unchanged)"),

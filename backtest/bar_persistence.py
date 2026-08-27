@@ -36,7 +36,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 from engine.signal_watch import AGNOSTIC_ROWS, SignalWatch
-from engine.store_loader import is_sealed, lockbox_boundary, zones
+from engine.store_loader import (in_lockbox_span, is_sealed,
+                                 lockbox_boundary, zones)
 from backtest.recipes import _spread_median
 from backtest.sessions import session_of
 from backtest.scoreboard import (PROVISIONAL_INSTRS, PROVISIONAL_STAMP,
@@ -78,7 +79,7 @@ def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
                             for j in range(ei, hi_n)])
         fav_close = np.array([d * (c[j] - entry) > 0
                               for j in range(ei, hi_n)])
-        row = {"name": f["name"], "ts": f["ts"],
+        row = {"name": f["name"], "ts": f["ts"], "dir": d,
                "session": session_of(pd.Timestamp(ts[ei], tz="UTC")),
                "fav_frac": {}, "reach": {}, "touch_min": {},
                "cum": {}, "inc": {}}
@@ -218,6 +219,7 @@ def run_instrument(instr):
                                               bars, instr=instr)
     fires = [f for f in fires if not is_sealed(f["ts"])]
     home = instr == "uk100fut"
+    fire_rows = []
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     windows = (("backtest", lambda r: r["ts"] < boundary),
                ("forward", lambda r: r["ts"] >= gl))
@@ -234,6 +236,23 @@ def run_instrument(instr):
             continue
         rows = persistence([f for f in fires if f["name"] == name],
                            ts, op, hi, lo, cl, atr_at, spread, home=home)
+        # register 91: the row-level truth for the grading cells —
+        # aggregates propose, rows confirm (the scalp-thread question
+        # reviewed trade-by-trade per the first-grade precedent)
+        for r in rows:
+            rc = r["reach"].get("atr_0.5", {}).get(5, {})
+            tm = r["touch_min"].get("atr_0.5")
+            fire_rows.append({
+                "instrument": instr, "fire_ts": str(r["ts"]),
+                "signal": name, "direction": r["dir"],
+                "session": r["session"],
+                "zone": ("lockbox" if in_lockbox_span(r["ts"]) else
+                         "backtest" if r["ts"] < boundary
+                         else "forward"),
+                "touched_0p5atr_5b": rc.get("gross"),
+                "touched_0p5atr_5b_net_of_spread": rc.get("net"),
+                "bar_of_first_touch": tm,
+                "spread_pts": spread})
         cell = {}
         for win, sel in windows:
             wr = [r for r in rows if sel(r)]
@@ -343,7 +362,7 @@ def run_instrument(instr):
                                           - floor["net_median"], 1),
                     "floor_net_median": floor["net_median"],
                     "floor_net_range": floor["net_range"]}
-    return out
+    return out, fire_rows
 
 
 def _fmtcell(a, lab, N):
@@ -591,9 +610,24 @@ def main():
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
     results = []
+    ledger = []
     for instr in a.instr:
         print(f"# bar_persistence: {instr} ...", file=sys.stderr)
-        results.append(run_instrument(instr))
+        res, fr = run_instrument(instr)
+        results.append(res)
+        ledger.extend(fr)
+    import csv as _csv
+    cols = ["instrument", "fire_ts", "signal", "direction", "session",
+            "zone", "touched_0p5atr_5b",
+            "touched_0p5atr_5b_net_of_spread", "bar_of_first_touch",
+            "spread_pts"]
+    with open(os.path.join(OUT, "bar_persistence_fires.csv"), "w",
+              newline="") as f:
+        w = _csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows({k: r.get(k) for k in cols} for r in ledger)
+    print(f"per-fire ledger -> {OUT}/bar_persistence_fires.csv "
+          f"({len(ledger)} rows; register 91)")
     art = {"STAMP": ("OBSERVATIONAL bar-persistence census — "
                      "scalp-viability measurement, not a strategy; "
                      "never validation"),

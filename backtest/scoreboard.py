@@ -43,6 +43,7 @@ registration.
 """
 
 import argparse
+import csv
 import json
 import os
 import re
@@ -56,7 +57,8 @@ from engine.signal_watch import (AGNOSTIC_ROWS, CONDITIONED_ROWS,
                                  EVENT_DERIVED_ROWS, FIRING_CONDITIONS,
                                  H9_CHAIN_DEPTH_MIN, SignalWatch)
 from backtest.sessions import SESSIONS, session_of, sessions_of_index
-from engine.store_loader import is_sealed, lockbox_boundary, zones
+from engine.store_loader import (in_lockbox_span, is_sealed,
+                                 lockbox_boundary, zones)
 from backtest.forward_migration import _replay
 from backtest.campaign import make_cfg
 from backtest.horizons import STANDARD_HORIZONS as _STD_HORIZONS
@@ -604,7 +606,89 @@ def score(fires, qual, episodes, series, lo_ts, hi_ts, label,
     return rows
 
 
-def run(instr="uk100fut", provisional=False):
+FIRES_CSV = os.path.join(ROOT, "reports", "fires.csv")
+FIRE_COLS = ["instrument", "fire_ts", "signal", "grading", "direction",
+             "session", "zone", "conditioned_class", "in_class",
+             "initiation_hit", "matched_episode_start",
+             "points_remaining_at_fire", "participation_hit",
+             "participation_capture_pts"]
+
+
+def fire_ledger(instr, signal_fires, qual, episodes, series, init,
+                cmasks, boundary, gl):
+    """Register 91: the scoreboard's row-level truth — one row per
+    signal fire. Initiation/participation per the register-53
+    conventions; zone per the register-85 three-zone model; the
+    points-remaining column is the PER-FIRE view against the matched
+    initiation episode (the coverage table's earliness remains the
+    per-episode earliest-covering-fire view — both stated).
+    Deterministic; the JSON's aggregates reconcile to this CSV
+    (tests/test_fires_ledger.py pins spot cells)."""
+    ts, cl = series[0], series[1]
+    win_ns = 3_600_000_000_000
+    ep = {d: sorted([(e["start"].value, e) for e in episodes
+                     if e["dir"] == d]) for d in (1, -1)}
+    ep_keys = {d: np.array([k for k, _e in ep[d]]) for d in (1, -1)}
+    rows = []
+    for f in sorted(signal_fires, key=lambda x: (x["ts"].value,
+                                                 x["name"])):
+        i = np.searchsorted(ts, f["ts"].value, side="right") - 1
+        if i < 0:
+            continue
+        name = f["name"]
+        agnostic = name in AGNOSTIC_ROWS or name.endswith("(either-dir)")
+        d = int(f["dir"])
+        if agnostic:
+            ih = bool(init[1][i] or init[-1][i])
+            ph = bool(qual[1][i] or qual[-1][i])
+        else:
+            ih = bool(init[d][i])
+            ph = bool(qual[d][i])
+        m_start = m_rem = None
+        if ih:
+            cands = []
+            for dd in ((1, -1) if agnostic else (d,)):
+                j = np.searchsorted(ep_keys[dd], ts[i], side="right")
+                if j < len(ep_keys[dd]) \
+                        and ep_keys[dd][j] <= ts[i] + win_ns:
+                    cands.append(ep[dd][j][1])
+            if cands:
+                e = min(cands, key=lambda e_: e_["start"].value)
+                m_start = str(e["start"])
+                m_rem = round(float((e["peak"] - cl[i]) * e["dir"]), 1)
+        cap = None
+        if ph:
+            j = np.searchsorted(ts, ts[i] + win_ns, side="right")
+            if j > i + 1:
+                seg = cl[i + 1:j]
+                # UNROUNDED (register 91): the pin re-derives the
+                # JSON's capture median from these rows — emitting the
+                # raw float makes the reconciliation bit-exact (4dp
+                # left a binary-midpoint knife-edge)
+                cap = float((seg.max() - cl[i]) if d == 1
+                            else (cl[i] - seg.min()))
+        t = f["ts"]
+        zone = ("lockbox" if in_lockbox_span(t) else
+                "backtest" if t < boundary else "forward")
+        base = name.split(" ")[0]
+        cmask = cmasks.get(base)
+        rows.append({
+            "instrument": instr, "fire_ts": str(t), "signal": name,
+            "grading": ("either-direction" if agnostic
+                        else "directional"),
+            "direction": d, "session": session_of(t), "zone": zone,
+            "conditioned_class": (CONDITIONED_ROWS.get(base)
+                                  if cmask is not None else None),
+            "in_class": (bool(cmask[i]) if cmask is not None
+                         else None),
+            "initiation_hit": ih, "matched_episode_start": m_start,
+            "points_remaining_at_fire": m_rem,
+            "participation_hit": ph,
+            "participation_capture_pts": cap})
+    return rows
+
+
+def run(instr="uk100fut", provisional=False, ledger=None):
     validate_rows()
     cfg = make_cfg({"session_model.extended_hours": True,
                     "session_model.ladder": True})
@@ -683,6 +767,9 @@ def run(instr="uk100fut", provisional=False):
     cmasks = {row: CLASS_MASK_FNS[cls](live_hi, live_lo)
               for row, cls in CONDITIONED_ROWS.items()
               if cls in CLASS_MASK_FNS}
+    if ledger is not None:
+        ledger.extend(fire_ledger(instr, signal_fires, qual, episodes,
+                                  series, init, cmasks, boundary, gl))
     out = _RES
     fwd_lbl = "post_go_live_replay" if provisional else "forward_feed_replay"
     windows = {"backtest": (pd.Timestamp("1970-01-01", tz="UTC"), boundary,
@@ -1106,17 +1193,29 @@ def _emit_reading_guide():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--instr", nargs="+",
-                    default=[CANONICAL_INSTR, *PROVISIONAL_INSTRS],
+                    default=["uk100fut", "ger40fut", "nas100fut",
+                             "us30fut"],
                     help="instruments to run, canonical first (register 40 "
-                         "amendment: per-instrument sections, no pooling)")
+                         "amendment: per-instrument sections, no pooling; "
+                         "register 91 pin caught the default silently "
+                         "narrowing to home-only when PROVISIONAL_INSTRS "
+                         "emptied — all four canonical now explicit)")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
     results = {}
+    ledger = []
     for instr in a.instr:
-        provisional = instr != CANONICAL_INSTR
+        provisional = instr in PROVISIONAL_INSTRS
         print(f"\n#### {PAIR_OF.get(instr, instr)} ({instr}) — "
               + ("PROVISIONAL replay" if provisional else "canonical"))
-        results[instr] = run(instr, provisional=provisional)
+        results[instr] = run(instr, provisional=provisional,
+                             ledger=ledger)
+    with open(FIRES_CSV, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FIRE_COLS)
+        w.writeheader()
+        w.writerows({k: r.get(k) for k in FIRE_COLS} for r in ledger)
+    print(f"fire ledger -> {FIRES_CSV} ({len(ledger)} rows; register "
+          "91: aggregates propose, rows confirm)")
     path = os.path.join(OUT, "hypothesis_performance.json")
     doc = {"engine_commit": next(iter(results.values()))["engine_commit"],
            "REGISTER_40_AMENDMENT": (
