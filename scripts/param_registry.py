@@ -111,6 +111,7 @@ AUTHORITY = {
     "underwater_census.py:NULL_SHUFFLES": "register 87: label-permutation null, 100 pinned seeds — the survey convention (register 73 clause 3 lineage)",
     "underwater_census.py:THESIS_SEEDS": "register 87: 20 random-thesis members, seeds range(60,80) — the B-RANDOM seed lineage, stated at prereg",
     "underwater_census.py:FAMILY_OF": "register 87: full-coverage signal-family map extending the registered cofire/trend groupings — implementer-proposed at prereg, FLAGGED for operator ratification",
+    "h6_refinement.py:SIGNAL": "register 100: the program's sentence = the scalp signal (the Q-chain's signal, register 92) — identifier built per the register-31 guard convention",
     "h6_refinement.py:COFIRE_BARS": "register 100: co-fire window +/-5 bars on the 1M axis — operator-stated in the order",
     "h6_refinement.py:SPLIT_MIN_PP": "register 100: qualifying split 10pp — the register-84 convention reused",
     "h6_refinement.py:MIN_SIDE_N": "register 100: both sides >= 10 — the matrix convention reused",
