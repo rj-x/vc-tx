@@ -352,21 +352,24 @@ def _emit(art, head):
                      f"| {c['n']} | {100 * c['win_rate']:.0f}% "
                      f"| {c['median']:+.2f} | {c['sel_pct_win']} "
                      f"| {'YES' if c['beats_field_null_win'] else 'no'} |")
+    from backtest.scalp_tp_ladder import HANDOFF_HDR, handoff_row
     hand = art.get("ladder_handoffs", [])
     L += ["", "## Ladder hand-offs (register 106) — single-leg forward "
-          "optima from scalp_tp_ladder.md, selection-aware null = members' "
-          "best-over-rungs; listed, never rules", "",
-          "| instrument | arm | best target xATR | n | win | median "
-          "| +weeks/meas | sel-pct win / median | beats field null |",
-          "|---|---|---|---|---|---|---|---|---|"]
-    for h in hand:
-        L.append(f"| {h['instrument']} | {h['arm']} | {h['rung']:g}"
-                 f"{' (incumbent)' if h['is_incumbent'] else ''} | {h['n']} "
-                 f"| {100 * h['win_rate']:.0f}% | {h['median']:+.2f} "
-                 f"| {h['weeks']} | {h['sel_pct_win']} / {h['sel_pct_median']} "
-                 f"| {'YES' if h['beats_field_null'] else 'no'} |")
-    if not hand:
-        L.append("| (no ladder hand-off on this emission) | | | | | | | | |")
+          "optima from scalp_tp_ladder.md PER STATISTIC (no composite); "
+          "win rate / weekly count vs the members' best-over-rungs, median "
+          "vs members at the same rung; listed, never rules", "",
+          *HANDOFF_HDR]
+    L += [handoff_row(h) for h in hand] or [
+        "| (no ladder hand-off on this emission) | | | | | | | | | |"]
+    burden = art.get("spread_burden", [])
+    L += ["", "## Standing per-instrument facts — spread burden at the "
+          "scalp incumbent (register 106 follow-through (3); from "
+          "scalp_tp_ladder.md)", "",
+          "| instrument | arm | spread pts | n | spread / median winner's "
+          "gross |", "|---|---|---|---|---|"]
+    L += [f"| {b['instrument']} | {b['arm']} | {b['spread_pts']} | {b['n']} "
+          f"| {100 * b['spread_share_of_win']:.0f}% |" for b in burden] or [
+        "| (no ladder emission) | | | | |"]
     L.append("")
     with open(os.path.join(OUT, "per_market_watch.md"), "w") as f:
         f.write("\n".join(L))
@@ -385,8 +388,9 @@ def main():
     # register 106: the TP ladder's single-leg optima ride along (read
     # from its JSON when present; the ladder runs first under Part C)
     lad = os.path.join(OUT, "scalp_tp_ladder.json")
-    art["ladder_handoffs"] = (json.load(open(lad)).get("watch_handoff", [])
-                              if os.path.exists(lad) else [])
+    lj = json.load(open(lad)) if os.path.exists(lad) else {}
+    art["ladder_handoffs"] = lj.get("watch_handoff", [])
+    art["spread_burden"] = lj.get("spread_burden", [])
     with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)

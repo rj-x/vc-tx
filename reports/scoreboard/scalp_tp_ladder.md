@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `b0e6d3fbc` — OBSERVATIONAL, pre-registered (prereg_scalp_tp_ladder, register 106). Refinement-program extension; v0 UNTOUCHED; measurement only. The arms' own fires re-simulated under target {0.5 (incumbent), 0.75, 1, 1.5}xATR(15M) — same one-tick haircut (register 94), same disaster stop, same EOD-flat; the incumbent reconciles to the journal (printed per leg). FIELD HONESTY: 64 cells (rungs x legs x arms x windows). STATISTIC SHAPES (74-B): per cell the register-105 consistency statistics — median-per-trade, win rate, weekly consistency, the gross-profit tail-carry cap — against B-RANDOM member bands under the identical rungs; reach rate and net descriptive (net = context only); the reach-decay curve is descriptive. A leg clears a rung when win rate AND median exceed the member band's max, both >= the incumbent's, not tail-carried; a candidate needs >= 3 of 4 forward legs. Single-leg optima go to per_market_watch.md wearing a selection-aware null (members' best-over-rungs), never straight to rules. Survivors propose BESIDE the register-101 v1 stop derivation — one geometry package, one ratification. Fill model: OPTIMISTIC target fill with the declared haircut (register 94); spread charged = the instrument's median cash spread; spread-as-share-of-win = spread / the median winner's gross move (implementer-proposed, FLAGGED). Ex-lockbox.
+Engine `9eea78b48` — OBSERVATIONAL, pre-registered (prereg_scalp_tp_ladder, register 106). Refinement-program extension; v0 UNTOUCHED; measurement only. The arms' own fires re-simulated under target {0.5 (incumbent), 0.25, 0.75, 1, 1.5}xATR(15M); 0.25 = the lower bracket (register 106 follow-through: expected spread-negative, included so the curve answers 'why not tighter?' with a measured row) — same one-tick haircut (register 94), same disaster stop, same EOD-flat; the incumbent reconciles to the journal (printed per leg). FIELD HONESTY: 80 cells (rungs x legs x arms x windows). STATISTIC SHAPES (74-B): per cell the register-105 consistency statistics — median-per-trade, win rate, weekly consistency, the gross-profit tail-carry cap — against B-RANDOM member bands under the identical rungs; reach rate and net descriptive (net = context only); the reach-decay curve is descriptive. A leg clears a rung when win rate AND median exceed the member band's max, both >= the incumbent's, not tail-carried; a candidate needs >= 3 of 4 forward legs. Single-leg optima go to per_market_watch.md wearing a selection-aware null (members' best-over-rungs), never straight to rules. Survivors propose BESIDE the register-101 v1 stop derivation — one geometry package, one ratification. Fill model: OPTIMISTIC target fill with the declared haircut (register 94); spread charged = the instrument's median cash spread; spread-as-share-of-win = spread / the median winner's gross move (RATIFIED 2026-08-30). Ex-lockbox.
 
 ## ger40fut (spread charged 1.5 pts/trade)
 
@@ -12,6 +12,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 83/83 exact, ma
 
 | arm | window | target xATR | n | reach | win | median | +weeks/meas | spread/win | max-win share | net (context) | member max win / median |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 0.25 | 25 | 88% | 88% | +6.88 | 0/2 | 0.175 | 0.081 | -72.5 | 0.918 / 8.5 |
+| R-SCALP-H6 | forward | 0.25 | 58 | 90% | 90% | +3.14 | 1/2 | 0.279 | 0.039 | -41.1 | 0.922 / 5.25 |
 | R-SCALP-H6 | backtest | 0.5 | 25 | 84% | 84% | +14.90 | 0/2 | 0.089 | 0.083 | -16.4 | 0.852 / 17.43 |
 | R-SCALP-H6 | forward | 0.5 | 58 | 81% | 81% | +7.67 | 1/2 | 0.136 | 0.039 | -22.6 | 0.878 / 11.54 |
 | R-SCALP-H6 | backtest | 0.75 | 22 | 77% | 77% | +22.20 | 1/2 | 0.057 | 0.098 | -7.3 | 0.79 / 24.95 |
@@ -20,6 +22,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 83/83 exact, ma
 | R-SCALP-H6 | forward | 1 | 45 | 60% | 60% | +13.46 | 1/2 | 0.064 | 0.065 | -141.9 | 0.743 / 19.45 |
 | R-SCALP-H6 | backtest | 1.5 | 20 | 70% | 70% | +38.94 | 1/2 | 0.028 | 0.116 | 227.8 | 0.708 / 46.88 |
 | R-SCALP-H6 | forward | 1.5 | 43 | 44% | 49% | -0.80 | 0/2 | 0.057 | 0.086 | -386.9 | 0.673 / 28.06 |
+| R-SCALP-H6-REF | backtest | 0.25 | 24 | 96% | 96% | +6.79 | 2/2 | 0.179 | 0.079 | 55.5 | 0.918 / 8.5 |
+| R-SCALP-H6-REF | forward | 0.25 | 51 | 88% | 88% | +3.34 | 1/2 | 0.286 | 0.046 | -81.5 | 0.922 / 5.25 |
 | R-SCALP-H6-REF | backtest | 0.5 | 24 | 92% | 92% | +14.62 | 1/2 | 0.087 | 0.083 | 147.0 | 0.852 / 17.43 |
 | R-SCALP-H6-REF | forward | 0.5 | 51 | 78% | 78% | +7.61 | 1/2 | 0.143 | 0.047 | -143.7 | 0.878 / 11.54 |
 | R-SCALP-H6-REF | backtest | 0.75 | 19 | 90% | 90% | +21.72 | 1/2 | 0.06 | 0.101 | 209.7 | 0.79 / 24.95 |
@@ -31,12 +35,12 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 83/83 exact, ma
 
 ### Reach-decay curve — P(touch) by rung
 
-| arm | window | 0.5x | 0.75x | 1x | 1.5x |
-|---|---|---|---|---|---|
-| R-SCALP-H6 | backtest | 84% | 77% | 70% | 70% |
-| R-SCALP-H6 | forward | 81% | 71% | 60% | 44% |
-| R-SCALP-H6-REF | backtest | 92% | 90% | 84% | 71% |
-| R-SCALP-H6-REF | forward | 78% | 70% | 60% | 50% |
+| arm | window | 0.25x | 0.5x | 0.75x | 1x | 1.5x |
+|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 88% | 84% | 77% | 70% | 70% |
+| R-SCALP-H6 | forward | 90% | 81% | 71% | 60% | 44% |
+| R-SCALP-H6-REF | backtest | 96% | 92% | 90% | 84% | 71% |
+| R-SCALP-H6-REF | forward | 88% | 78% | 70% | 60% | 50% |
 
 ## nas100fut (spread charged 1.8 pts/trade)
 
@@ -46,6 +50,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 67/67 exact, ma
 
 | arm | window | target xATR | n | reach | win | median | +weeks/meas | spread/win | max-win share | net (context) | member max win / median |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 0.25 | 21 | 86% | 86% | +15.45 | 1/1 | 0.104 | 0.128 | -124.6 | 0.939 / 12.65 |
+| R-SCALP-H6 | forward | 0.25 | 46 | 89% | 89% | +7.76 | 0/2 | 0.185 | 0.059 | -92.5 | 0.929 / 7.82 |
 | R-SCALP-H6 | backtest | 0.5 | 21 | 86% | 86% | +32.70 | 1/1 | 0.052 | 0.124 | 219.1 | 0.866 / 26.09 |
 | R-SCALP-H6 | forward | 0.5 | 46 | 80% | 80% | +15.82 | 0/2 | 0.092 | 0.061 | -174.8 | 0.871 / 17.12 |
 | R-SCALP-H6 | backtest | 0.75 | 19 | 74% | 74% | +49.96 | 1/1 | 0.034 | 0.151 | 102.7 | 0.86 / 39.99 |
@@ -54,6 +60,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 67/67 exact, ma
 | R-SCALP-H6 | forward | 1 | 42 | 74% | 74% | +32.38 | 1/2 | 0.045 | 0.071 | 202.1 | 0.753 / 32.58 |
 | R-SCALP-H6 | backtest | 1.5 | 17 | 59% | 59% | +73.40 | 1/1 | 0.015 | 0.199 | 180.0 | 0.662 / 70.17 |
 | R-SCALP-H6 | forward | 1.5 | 38 | 58% | 58% | +41.94 | 1/2 | 0.029 | 0.068 | -99.1 | 0.7 / 47.99 |
+| R-SCALP-H6-REF | backtest | 0.25 | 18 | 89% | 89% | +14.34 | 1/1 | 0.104 | 0.145 | -34.1 | 0.939 / 12.65 |
+| R-SCALP-H6-REF | forward | 0.25 | 47 | 92% | 92% | +7.95 | 1/2 | 0.179 | 0.057 | -84.5 | 0.929 / 7.82 |
 | R-SCALP-H6-REF | backtest | 0.5 | 18 | 67% | 67% | +24.08 | 0/1 | 0.048 | 0.179 | -484.2 | 0.866 / 26.09 |
 | R-SCALP-H6-REF | forward | 0.5 | 47 | 92% | 92% | +17.70 | 2/2 | 0.089 | 0.054 | 356.1 | 0.871 / 17.12 |
 | R-SCALP-H6-REF | backtest | 0.75 | 18 | 67% | 67% | +37.02 | 0/1 | 0.032 | 0.178 | -247.0 | 0.86 / 39.99 |
@@ -65,12 +73,12 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 67/67 exact, ma
 
 ### Reach-decay curve — P(touch) by rung
 
-| arm | window | 0.5x | 0.75x | 1x | 1.5x |
-|---|---|---|---|---|---|
-| R-SCALP-H6 | backtest | 86% | 74% | 65% | 59% |
-| R-SCALP-H6 | forward | 80% | 78% | 74% | 58% |
-| R-SCALP-H6-REF | backtest | 67% | 67% | 61% | 56% |
-| R-SCALP-H6-REF | forward | 92% | 79% | 72% | 60% |
+| arm | window | 0.25x | 0.5x | 0.75x | 1x | 1.5x |
+|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 86% | 86% | 74% | 65% | 59% |
+| R-SCALP-H6 | forward | 89% | 80% | 78% | 74% | 58% |
+| R-SCALP-H6-REF | backtest | 89% | 67% | 67% | 61% | 56% |
+| R-SCALP-H6-REF | forward | 92% | 92% | 79% | 72% | 60% |
 
 ## uk100fut (spread charged 1.3 pts/trade)
 
@@ -80,6 +88,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 92/92 exact, ma
 
 | arm | window | target xATR | n | reach | win | median | +weeks/meas | spread/win | max-win share | net (context) | member max win / median |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 0.25 | 45 | 91% | 91% | +2.22 | 1/2 | 0.343 | 0.064 | -1.5 | 0.909 / 2.51 |
+| R-SCALP-H6 | forward | 0.25 | 47 | 94% | 87% | +1.07 | 1/2 | 0.508 | 0.061 | 0.5 | 0.864 / 1.17 |
 | R-SCALP-H6 | backtest | 0.5 | 45 | 82% | 84% | +4.55 | 1/2 | 0.183 | 0.064 | 31.8 | 0.845 / 6.0 |
 | R-SCALP-H6 | forward | 0.5 | 47 | 87% | 87% | +3.17 | 2/2 | 0.263 | 0.051 | 35.9 | 0.843 / 3.75 |
 | R-SCALP-H6 | backtest | 0.75 | 42 | 76% | 81% | +6.62 | 1/2 | 0.142 | 0.073 | 54.2 | 0.778 / 8.87 |
@@ -88,6 +98,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 92/92 exact, ma
 | R-SCALP-H6 | forward | 1 | 38 | 74% | 76% | +6.01 | 2/2 | 0.142 | 0.062 | 41.9 | 0.743 / 7.4 |
 | R-SCALP-H6 | backtest | 1.5 | 38 | 58% | 63% | +11.48 | 1/2 | 0.081 | 0.109 | -38.2 | 0.651 / 17.68 |
 | R-SCALP-H6 | forward | 1.5 | 34 | 71% | 76% | +9.46 | 2/2 | 0.108 | 0.071 | 147.7 | 0.755 / 10.83 |
+| R-SCALP-H6-REF | backtest | 0.25 | 43 | 86% | 86% | +1.87 | 0/2 | 0.344 | 0.071 | -15.6 | 0.909 / 2.51 |
+| R-SCALP-H6-REF | forward | 0.25 | 47 | 94% | 87% | +0.99 | 1/2 | 0.524 | 0.061 | -12.5 | 0.864 / 1.17 |
 | R-SCALP-H6-REF | backtest | 0.5 | 43 | 81% | 84% | +4.48 | 2/2 | 0.198 | 0.069 | 42.7 | 0.845 / 6.0 |
 | R-SCALP-H6-REF | forward | 0.5 | 47 | 85% | 85% | +2.90 | 1/2 | 0.287 | 0.053 | -10.2 | 0.843 / 3.75 |
 | R-SCALP-H6-REF | backtest | 0.75 | 39 | 72% | 74% | +6.19 | 0/2 | 0.148 | 0.088 | -30.5 | 0.778 / 8.87 |
@@ -99,12 +111,12 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 92/92 exact, ma
 
 ### Reach-decay curve — P(touch) by rung
 
-| arm | window | 0.5x | 0.75x | 1x | 1.5x |
-|---|---|---|---|---|---|
-| R-SCALP-H6 | backtest | 82% | 76% | 71% | 58% |
-| R-SCALP-H6 | forward | 87% | 78% | 74% | 71% |
-| R-SCALP-H6-REF | backtest | 81% | 72% | 69% | 51% |
-| R-SCALP-H6-REF | forward | 85% | 77% | 71% | 61% |
+| arm | window | 0.25x | 0.5x | 0.75x | 1x | 1.5x |
+|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 91% | 82% | 76% | 71% | 58% |
+| R-SCALP-H6 | forward | 94% | 87% | 78% | 74% | 71% |
+| R-SCALP-H6-REF | backtest | 86% | 81% | 72% | 69% | 51% |
+| R-SCALP-H6-REF | forward | 94% | 85% | 77% | 71% | 61% |
 
 ## us30fut (spread charged 2.6 pts/trade)
 
@@ -114,6 +126,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 69/69 exact, ma
 
 | arm | window | target xATR | n | reach | win | median | +weeks/meas | spread/win | max-win share | net (context) | member max win / median |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 0.25 | 31 | 87% | 87% | +12.83 | 0/2 | 0.166 | 0.094 | -156.7 | 0.916 / 9.6 |
+| R-SCALP-H6 | forward | 0.25 | 38 | 92% | 92% | +7.82 | 1/2 | 0.237 | 0.058 | 20.7 | 0.923 / 6.77 |
 | R-SCALP-H6 | backtest | 0.5 | 31 | 68% | 68% | +28.25 | 0/2 | 0.076 | 0.105 | -541.6 | 0.865 / 21.2 |
 | R-SCALP-H6 | forward | 0.5 | 38 | 87% | 87% | +18.24 | 1/2 | 0.117 | 0.056 | 231.9 | 0.874 / 16.97 |
 | R-SCALP-H6 | backtest | 0.75 | 27 | 63% | 63% | +31.36 | 0/2 | 0.05 | 0.127 | -490.3 | 0.807 / 33.09 |
@@ -122,6 +136,8 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 69/69 exact, ma
 | R-SCALP-H6 | forward | 1 | 34 | 68% | 68% | +33.27 | 1/2 | 0.055 | 0.075 | 46.3 | 0.792 / 30.76 |
 | R-SCALP-H6 | backtest | 1.5 | 26 | 50% | 54% | +44.17 | 0/2 | 0.026 | 0.158 | -229.0 | 0.693 / 66.29 |
 | R-SCALP-H6 | forward | 1.5 | 32 | 59% | 59% | +32.89 | 1/2 | 0.039 | 0.081 | -126.2 | 0.712 / 43.69 |
+| R-SCALP-H6-REF | backtest | 0.25 | 34 | 76% | 79% | +10.93 | 0/2 | 0.167 | 0.102 | -659.7 | 0.916 / 9.6 |
+| R-SCALP-H6-REF | forward | 0.25 | 39 | 90% | 90% | +8.38 | 1/2 | 0.211 | 0.053 | 49.7 | 0.923 / 6.77 |
 | R-SCALP-H6-REF | backtest | 0.5 | 34 | 65% | 68% | +17.82 | 0/2 | 0.083 | 0.114 | -712.0 | 0.865 / 21.2 |
 | R-SCALP-H6-REF | forward | 0.5 | 39 | 87% | 87% | +19.36 | 2/2 | 0.105 | 0.051 | 334.7 | 0.874 / 16.97 |
 | R-SCALP-H6-REF | backtest | 0.75 | 29 | 55% | 59% | +27.45 | 0/2 | 0.052 | 0.142 | -878.6 | 0.807 / 33.09 |
@@ -133,12 +149,12 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 69/69 exact, ma
 
 ### Reach-decay curve — P(touch) by rung
 
-| arm | window | 0.5x | 0.75x | 1x | 1.5x |
-|---|---|---|---|---|---|
-| R-SCALP-H6 | backtest | 68% | 63% | 58% | 50% |
-| R-SCALP-H6 | forward | 87% | 75% | 68% | 59% |
-| R-SCALP-H6-REF | backtest | 65% | 55% | 54% | 42% |
-| R-SCALP-H6-REF | forward | 87% | 78% | 77% | 61% |
+| arm | window | 0.25x | 0.5x | 0.75x | 1x | 1.5x |
+|---|---|---|---|---|---|---|
+| R-SCALP-H6 | backtest | 87% | 68% | 63% | 58% | 50% |
+| R-SCALP-H6 | forward | 92% | 87% | 75% | 68% | 59% |
+| R-SCALP-H6-REF | backtest | 76% | 65% | 55% | 54% | 42% |
+| R-SCALP-H6-REF | forward | 90% | 87% | 78% | 77% | 61% |
 
 ## Candidates (>= 3-of-4 forward legs clearing) and glints
 
@@ -146,15 +162,44 @@ Reconciliation (incumbent re-simulation vs journal): R-SCALP-H6: 69/69 exact, ma
 |---|---|---|---|
 | (no rung clears on any forward leg) | | | |
 
-## WATCH hand-off — single-leg forward optima (selection-aware null = members' best-over-rungs; printed again on per_market_watch.md; never rules)
+## WATCH hand-off — single-leg forward optima PER STATISTIC (no composite; win rate and weekly count vs the members' best-over-rungs, median vs members at the same rung; printed again on per_market_watch.md; never rules)
 
-| instrument | arm | best rung | n | win | median | +weeks/meas | sel-pct win / median | beats field null |
-|---|---|---|---|---|---|---|---|---|
-| uk100fut | R-SCALP-H6 | 0.5x (incumbent) | 47 | 87% | +3.17 | 2/2 | 100.0 / 0.0 | no |
-| uk100fut | R-SCALP-H6-REF | 0.5x (incumbent) | 47 | 85% | +2.90 | 1/2 | 100.0 / 0.0 | no |
-| ger40fut | R-SCALP-H6 | 0.5x (incumbent) | 58 | 81% | +7.67 | 1/2 | 60.0 / 0.0 | no |
-| ger40fut | R-SCALP-H6-REF | 0.5x (incumbent) | 51 | 78% | +7.61 | 1/2 | 35.0 / 0.0 | no |
-| nas100fut | R-SCALP-H6 | 0.5x (incumbent) | 46 | 80% | +15.82 | 0/2 | 25.0 / 0.0 | no |
-| nas100fut | R-SCALP-H6-REF | 0.5x (incumbent) | 47 | 92% | +17.70 | 2/2 | 100.0 / 0.0 | no |
-| us30fut | R-SCALP-H6 | 0.5x (incumbent) | 38 | 87% | +18.24 | 1/2 | 85.0 / 0.0 | no |
-| us30fut | R-SCALP-H6-REF | 0.5x (incumbent) | 39 | 87% | +19.36 | 2/2 | 90.0 / 5.0 | no |
+| instrument | arm | statistic | best rung | n | value | win / median / +weeks | null (n) | sel-pct | beats null |
+|---|---|---|---|---|---|---|---|---|---|
+| uk100fut | R-SCALP-H6 | win_rate | 0.25x | 47 | 87% | 87% / +1.07 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
+| uk100fut | R-SCALP-H6 | median | 1.5x | 34 | +9.46 | 76% / +9.46 / 2/2 | members at the same rung (20) | 85.0 | no |
+| uk100fut | R-SCALP-H6 | weeks_pos | 0.5x (incumbent) | 47 | 2 | 87% / +3.17 / 2/2 | members' best-over-rungs (20) | 45.0 | no |
+| uk100fut | R-SCALP-H6-REF | win_rate | 0.25x | 47 | 87% | 87% / +0.99 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
+| uk100fut | R-SCALP-H6-REF | median | 1.5x | 36 | +8.96 | 67% / +8.96 / 1/2 | members at the same rung (20) | 80.0 | no |
+| uk100fut | R-SCALP-H6-REF | weeks_pos | 1x | 41 | 2 | 76% / +6.12 / 2/2 | members' best-over-rungs (20) | 45.0 | no |
+| ger40fut | R-SCALP-H6 | win_rate | 0.25x | 58 | 90% | 90% / +3.14 / 1/2 | members' best-over-rungs (20) | 80.0 | no |
+| ger40fut | R-SCALP-H6 | median | 1x | 45 | +13.46 | 60% / +13.46 / 1/2 | members at the same rung (20) | 20.0 | no |
+| ger40fut | R-SCALP-H6 | weeks_pos | 0.25x | 58 | 1 | 90% / +3.14 / 1/2 | members' best-over-rungs (20) | 10.0 | no |
+| ger40fut | R-SCALP-H6-REF | win_rate | 0.25x | 51 | 88% | 88% / +3.34 / 1/2 | members' best-over-rungs (20) | 60.0 | no |
+| ger40fut | R-SCALP-H6-REF | median | 1x | 45 | +13.46 | 62% / +13.46 / 0/2 | members at the same rung (20) | 20.0 | no |
+| ger40fut | R-SCALP-H6-REF | weeks_pos | 0.25x | 51 | 1 | 88% / +3.34 / 1/2 | members' best-over-rungs (20) | 10.0 | no |
+| nas100fut | R-SCALP-H6 | win_rate | 0.25x | 46 | 89% | 89% / +7.76 / 0/2 | members' best-over-rungs (20) | 30.0 | no |
+| nas100fut | R-SCALP-H6 | median | 1.5x | 38 | +41.94 | 58% / +41.94 / 1/2 | members at the same rung (20) | 70.0 | no |
+| nas100fut | R-SCALP-H6 | weeks_pos | 0.75x | 45 | 2 | 78% / +24.59 / 2/2 | members' best-over-rungs (20) | 25.0 | no |
+| nas100fut | R-SCALP-H6-REF | win_rate | 0.25x | 47 | 92% | 92% / +7.95 / 1/2 | members' best-over-rungs (20) | 90.0 | no |
+| nas100fut | R-SCALP-H6-REF | median | 1.5x | 37 | +41.48 | 60% / +41.48 / 1/2 | members at the same rung (20) | 65.0 | no |
+| nas100fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 47 | 2 | 92% / +17.70 / 2/2 | members' best-over-rungs (20) | 25.0 | no |
+| us30fut | R-SCALP-H6 | win_rate | 0.25x | 38 | 92% | 92% / +7.82 / 1/2 | members' best-over-rungs (20) | 90.0 | no |
+| us30fut | R-SCALP-H6 | median | 1x | 34 | +33.27 | 68% / +33.27 / 1/2 | members at the same rung (20) | 100.0 | YES |
+| us30fut | R-SCALP-H6 | weeks_pos | 0.25x | 38 | 1 | 92% / +7.82 / 1/2 | members' best-over-rungs (20) | 0.0 | no |
+| us30fut | R-SCALP-H6-REF | win_rate | 0.25x | 39 | 90% | 90% / +8.38 / 1/2 | members' best-over-rungs (20) | 60.0 | no |
+| us30fut | R-SCALP-H6-REF | median | 1x | 35 | +37.08 | 77% / +37.08 / 2/2 | members at the same rung (20) | 100.0 | YES |
+| us30fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 39 | 2 | 87% / +19.36 / 2/2 | members' best-over-rungs (20) | 10.0 | no |
+
+## Spread burden at the incumbent (standing per-instrument fact; routed to per_market_watch.md)
+
+| instrument | arm | spread pts | n | spread / median winner's gross |
+|---|---|---|---|---|
+| ger40fut | R-SCALP-H6 | 1.5 | 58 | 14% |
+| ger40fut | R-SCALP-H6-REF | 1.5 | 51 | 14% |
+| nas100fut | R-SCALP-H6 | 1.8 | 46 | 9% |
+| nas100fut | R-SCALP-H6-REF | 1.8 | 47 | 9% |
+| uk100fut | R-SCALP-H6 | 1.3 | 47 | 26% |
+| uk100fut | R-SCALP-H6-REF | 1.3 | 47 | 29% |
+| us30fut | R-SCALP-H6 | 2.6 | 38 | 12% |
+| us30fut | R-SCALP-H6-REF | 2.6 | 39 | 10% |

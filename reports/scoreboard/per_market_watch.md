@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `b0e6d3fbc` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `9eea78b48` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -332,15 +332,44 @@ Engine `b0e6d3fbc` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | session | overlap | overlap | none | 14 | 100% | +27.82 | 100.0 | YES |
 | slot | none | overlap | none | 14 | 100% | +27.82 | 100.0 | YES |
 
-## Ladder hand-offs (register 106) — single-leg forward optima from scalp_tp_ladder.md, selection-aware null = members' best-over-rungs; listed, never rules
+## Ladder hand-offs (register 106) — single-leg forward optima from scalp_tp_ladder.md PER STATISTIC (no composite); win rate / weekly count vs the members' best-over-rungs, median vs members at the same rung; listed, never rules
 
-| instrument | arm | best target xATR | n | win | median | +weeks/meas | sel-pct win / median | beats field null |
-|---|---|---|---|---|---|---|---|---|
-| uk100fut | R-SCALP-H6 | 0.5 (incumbent) | 47 | 87% | +3.17 | 2/2 | 100.0 / 0.0 | no |
-| uk100fut | R-SCALP-H6-REF | 0.5 (incumbent) | 47 | 85% | +2.90 | 1/2 | 100.0 / 0.0 | no |
-| ger40fut | R-SCALP-H6 | 0.5 (incumbent) | 58 | 81% | +7.67 | 1/2 | 60.0 / 0.0 | no |
-| ger40fut | R-SCALP-H6-REF | 0.5 (incumbent) | 51 | 78% | +7.61 | 1/2 | 35.0 / 0.0 | no |
-| nas100fut | R-SCALP-H6 | 0.5 (incumbent) | 46 | 80% | +15.82 | 0/2 | 25.0 / 0.0 | no |
-| nas100fut | R-SCALP-H6-REF | 0.5 (incumbent) | 47 | 92% | +17.70 | 2/2 | 100.0 / 0.0 | no |
-| us30fut | R-SCALP-H6 | 0.5 (incumbent) | 38 | 87% | +18.24 | 1/2 | 85.0 / 0.0 | no |
-| us30fut | R-SCALP-H6-REF | 0.5 (incumbent) | 39 | 87% | +19.36 | 2/2 | 90.0 / 5.0 | no |
+| instrument | arm | statistic | best rung | n | value | win / median / +weeks | null (n) | sel-pct | beats null |
+|---|---|---|---|---|---|---|---|---|---|
+| uk100fut | R-SCALP-H6 | win_rate | 0.25x | 47 | 87% | 87% / +1.07 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
+| uk100fut | R-SCALP-H6 | median | 1.5x | 34 | +9.46 | 76% / +9.46 / 2/2 | members at the same rung (20) | 85.0 | no |
+| uk100fut | R-SCALP-H6 | weeks_pos | 0.5x (incumbent) | 47 | 2 | 87% / +3.17 / 2/2 | members' best-over-rungs (20) | 45.0 | no |
+| uk100fut | R-SCALP-H6-REF | win_rate | 0.25x | 47 | 87% | 87% / +0.99 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
+| uk100fut | R-SCALP-H6-REF | median | 1.5x | 36 | +8.96 | 67% / +8.96 / 1/2 | members at the same rung (20) | 80.0 | no |
+| uk100fut | R-SCALP-H6-REF | weeks_pos | 1x | 41 | 2 | 76% / +6.12 / 2/2 | members' best-over-rungs (20) | 45.0 | no |
+| ger40fut | R-SCALP-H6 | win_rate | 0.25x | 58 | 90% | 90% / +3.14 / 1/2 | members' best-over-rungs (20) | 80.0 | no |
+| ger40fut | R-SCALP-H6 | median | 1x | 45 | +13.46 | 60% / +13.46 / 1/2 | members at the same rung (20) | 20.0 | no |
+| ger40fut | R-SCALP-H6 | weeks_pos | 0.25x | 58 | 1 | 90% / +3.14 / 1/2 | members' best-over-rungs (20) | 10.0 | no |
+| ger40fut | R-SCALP-H6-REF | win_rate | 0.25x | 51 | 88% | 88% / +3.34 / 1/2 | members' best-over-rungs (20) | 60.0 | no |
+| ger40fut | R-SCALP-H6-REF | median | 1x | 45 | +13.46 | 62% / +13.46 / 0/2 | members at the same rung (20) | 20.0 | no |
+| ger40fut | R-SCALP-H6-REF | weeks_pos | 0.25x | 51 | 1 | 88% / +3.34 / 1/2 | members' best-over-rungs (20) | 10.0 | no |
+| nas100fut | R-SCALP-H6 | win_rate | 0.25x | 46 | 89% | 89% / +7.76 / 0/2 | members' best-over-rungs (20) | 30.0 | no |
+| nas100fut | R-SCALP-H6 | median | 1.5x | 38 | +41.94 | 58% / +41.94 / 1/2 | members at the same rung (20) | 70.0 | no |
+| nas100fut | R-SCALP-H6 | weeks_pos | 0.75x | 45 | 2 | 78% / +24.59 / 2/2 | members' best-over-rungs (20) | 25.0 | no |
+| nas100fut | R-SCALP-H6-REF | win_rate | 0.25x | 47 | 92% | 92% / +7.95 / 1/2 | members' best-over-rungs (20) | 90.0 | no |
+| nas100fut | R-SCALP-H6-REF | median | 1.5x | 37 | +41.48 | 60% / +41.48 / 1/2 | members at the same rung (20) | 65.0 | no |
+| nas100fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 47 | 2 | 92% / +17.70 / 2/2 | members' best-over-rungs (20) | 25.0 | no |
+| us30fut | R-SCALP-H6 | win_rate | 0.25x | 38 | 92% | 92% / +7.82 / 1/2 | members' best-over-rungs (20) | 90.0 | no |
+| us30fut | R-SCALP-H6 | median | 1x | 34 | +33.27 | 68% / +33.27 / 1/2 | members at the same rung (20) | 100.0 | YES |
+| us30fut | R-SCALP-H6 | weeks_pos | 0.25x | 38 | 1 | 92% / +7.82 / 1/2 | members' best-over-rungs (20) | 0.0 | no |
+| us30fut | R-SCALP-H6-REF | win_rate | 0.25x | 39 | 90% | 90% / +8.38 / 1/2 | members' best-over-rungs (20) | 60.0 | no |
+| us30fut | R-SCALP-H6-REF | median | 1x | 35 | +37.08 | 77% / +37.08 / 2/2 | members at the same rung (20) | 100.0 | YES |
+| us30fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 39 | 2 | 87% / +19.36 / 2/2 | members' best-over-rungs (20) | 10.0 | no |
+
+## Standing per-instrument facts — spread burden at the scalp incumbent (register 106 follow-through (3); from scalp_tp_ladder.md)
+
+| instrument | arm | spread pts | n | spread / median winner's gross |
+|---|---|---|---|---|
+| ger40fut | R-SCALP-H6 | 1.5 | 58 | 14% |
+| ger40fut | R-SCALP-H6-REF | 1.5 | 51 | 14% |
+| nas100fut | R-SCALP-H6 | 1.8 | 46 | 9% |
+| nas100fut | R-SCALP-H6-REF | 1.8 | 47 | 9% |
+| uk100fut | R-SCALP-H6 | 1.3 | 47 | 26% |
+| uk100fut | R-SCALP-H6-REF | 1.3 | 47 | 29% |
+| us30fut | R-SCALP-H6 | 2.6 | 38 | 12% |
+| us30fut | R-SCALP-H6-REF | 2.6 | 39 | 10% |

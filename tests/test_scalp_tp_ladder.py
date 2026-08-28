@@ -63,3 +63,31 @@ def test_leg_clears_and_candidates():
     assert one["R-SCALP-H" + "6|1"]["grade"] == "glint"
     assert json.dumps(cand, sort_keys=True) == json.dumps(candidates(results),
                                                           sort_keys=True)
+
+
+def test_handoff_per_statistic_with_own_nulls():
+    """Register 106 follow-through: three rows per leg x arm (no
+    composite); the median's null is the members at the SAME rung, the
+    win-rate / weekly nulls are the members' best-over-rungs."""
+    from backtest.scalp_tp_ladder import HANDOFF_STATS, watch_handoff
+    arm = "R-SCALP-H" + "6"
+
+    def cell(w, m, wk):
+        return {"n": 20, "win_rate": w, "median": m, "weeks_pos": wk,
+                "weeks_meas": 3, "tail_carried": False}
+    ladder = {f"{arm}|forward|0.25": cell(0.9, 1.0, 1),
+              f"{arm}|forward|0.5": cell(0.8, 2.0, 3),
+              f"{arm}|forward|1.5": cell(0.5, 9.0, 2)}
+    res = {"ladder": ladder,
+           "member_values": {f"{arm}|forward|1.5|median": [5.0, 6.0, 7.0],
+                             f"{arm}|forward|0.5|median": [9.0, 9.5]},
+           "member_best": {f"{arm}|forward|win_rate": [0.7, 0.85, 0.95],
+                           f"{arm}|forward|weeks_pos": [1, 2, 2]}}
+    rows = watch_handoff({"x": res})
+    by = {r["statistic"]: r for r in rows if r["arm"] == arm}
+    assert set(by) == set(HANDOFF_STATS) and len(rows) == 3
+    assert by["win_rate"]["rung"] == 0.25 and not by["win_rate"]["beats_field_null"]
+    assert by["median"]["rung"] == 1.5 and by["median"]["null_kind"].startswith("members at the same")
+    assert by["median"]["beats_field_null"] and by["median"]["sel_pct"] == 100.0
+    assert by["weeks_pos"]["rung"] == 0.5 and by["weeks_pos"]["is_incumbent"]
+    assert by["weeks_pos"]["beats_field_null"]
