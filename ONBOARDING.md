@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-28 (register 98 restructure; §4 refreshed at register 103). Sections
+**Core last revised:** 2026-08-29 (register 98 restructure; §4 refreshed at register 105). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 103** — the marker §7 maintains. The weekly
+**Register-current-through: 105** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -179,8 +179,9 @@ that moves):**
    amended to PARTIAL the same day on statistic-shape review (register
    93 — at-chance, not below-chance; the bases-confirm rule's origin);
    Q3-H6 YES × 3 (register 99 — the scalp reach clears its floor on
-   every away leg under per-instrument floors). Clocks and pending
-   questions: the dashboard.
+   every away leg under per-instrument floors). Five grades across four
+   questions as of 2026-08-29. Clocks and pending questions: the
+   dashboard.
 9. **R-SCALP-H6 is the first evidence-born recipe** (register 94): born
    from Q2-H6's YES through the registered chain (target-based design →
    0.5pt one-tick haircut → registration), two counted arms (plain +
@@ -194,10 +195,24 @@ that moves):**
     backoff, zone, cap, halt, or stop rule registers without its own
     Q-number and forward grade; the flip-cut precedent governs
     (registers 44, 87, 88–90, 97). The scalp refinement program
-    (registers 100–103: co-fire census, real-basis time-cap,
-    circuit-breaker, risk grid) is the standing example — every
-    survivor is a candidate v1 arm through the front door, and to date
-    none has survived its floor.
+    (registers 100–103: six studies — co-fire census, veto
+    counterfactuals, time-cap on its real basis, circuit-breaker, stop
+    ladder, cooldown ladder — ZERO survivors as of 2026-08-29;
+    `reports/scoreboard/h6_refinement.md`, `scalp_risk_grid.md`) is the
+    standing example — every survivor is a candidate v1 arm through the
+    front door.
+11. **The event clock and the per-market track (registers 104–105).**
+    `reports/scoreboard/event_clock.md`: journal outcomes in vs out of
+    scheduled-news and auction-slot windows, mechanisms separated; the
+    calendar's coverage rule (unverified gaps exclude, verified-empty
+    windows count, `data/macro_releases_log.md`). Register 105's
+    doctrine: markets are distinct populations — the register
+    specializes claims, never defaults; a single-market cell becomes a
+    question candidate only via the per-market track (operator's
+    mechanism sentence + selection-aware null + own forward clock at
+    ≥45 rows), graded on consistency statistics only.
+    `reports/scoreboard/per_market_watch.md` is the map, never a
+    settings page; its candidate pool carries empty mechanism slots.
 
 **Live processes:** two detached loops (narrate, paper) plus the
 operator's manual daily sync — the ~30-day 1M retention floor is the one
