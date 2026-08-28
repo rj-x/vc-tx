@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-28 (register 98 restructure; §4 refreshed at register 99). Sections
+**Core last revised:** 2026-08-28 (register 98 restructure; §4 refreshed at register 103). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 99** — the marker §7 maintains. The weekly
+**Register-current-through: 103** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -191,8 +191,13 @@ that moves):**
    Evidence base FOUR-INSTRUMENT since register 99 — away rows carry
    claim status on their own floors.
 10. **Measurement before machinery.** No cut, breakeven, re-entry,
-    backoff, or zone rule registers without its own Q-number and forward
-    grade; the flip-cut precedent governs (registers 44, 87, 88–90, 97).
+    backoff, zone, cap, halt, or stop rule registers without its own
+    Q-number and forward grade; the flip-cut precedent governs
+    (registers 44, 87, 88–90, 97). The scalp refinement program
+    (registers 100–103: co-fire census, real-basis time-cap,
+    circuit-breaker, risk grid) is the standing example — every
+    survivor is a candidate v1 arm through the front door, and to date
+    none has survived its floor.
 
 **Live processes:** two detached loops (narrate, paper) plus the
 operator's manual daily sync — the ~30-day 1M retention floor is the one

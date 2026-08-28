@@ -534,7 +534,8 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.zone_census",         # register 95 item 2
                 "backtest.circuit_breaker",     # register 102 (embedded
                                                 # by the refinement md)
-                "backtest.h6_refinement"):      # register 100
+                "backtest.h6_refinement",       # register 100
+                "backtest.scalp_risk_grid"):    # register 103
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # register 75 standing rule: not-campaign-regenerated +
