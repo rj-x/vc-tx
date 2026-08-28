@@ -191,6 +191,10 @@ first uses them, or the commit doesn't pass.
 - **config WATCH page** — reports/scoreboard/per_market_watch.md (register 105 item 5): per instrument × zone, the best window / management / session by consistency statistics, every cell wearing its selection-null percentile, n, and tail-carry check; explicitly a MAP of where specialization would go, never a settings page; cells graduate only via the per-market track.
 - **candidate pool (per-market)** — register 105 item 4: cells seeded from existing structure (glints, WATCH cells, the ISO-week-32 refutation cell) each with an empty mechanism-sentence slot; nothing advances without the operator's pen.
 - **W32 / W32-refutation cell** — reviewer conversation shorthand for ISO week 32 (2026-08-03..09) and the us30fut open-window cell discussed at the 2026-08-29 sitting; NOT a repo object (register 105 follow-through, resolved) — the nearest artifact is event_clock.md's us30fut open cells.
+- **TP ladder** — the scalp target ladder (register 106): the arms' own fires re-simulated under target {0.5 (incumbent), 0.75, 1.0, 1.5}×ATR(15M) with haircut, stop and EOD-flat unchanged; consistency-ranked per register 105 against member bands at the same rung.
+- **reach-decay curve** — P(touch) by target rung per leg per arm: how fast the touch rate falls as the target moves away — the TP ladder's descriptive read.
+- **geometry package** — the scalp v1 proposal shape (register 106): the stop derivation (register 101) and any surviving target rung proposed TOGETHER through the front door — one package, one ratification; never one side alone.
+- **ladder hand-off** — a single-leg forward optimum from a ladder study, carried to the per-market WATCH page wearing a selection-aware null (the members' best-over-rungs); listed, never a rule.
 - **PF** — profit factor: gross wins divided by gross losses (a tripwire input).
 - **AC** — mains power (the suspension/travel model: the machine sleeps when unplugged).
 - **DNS** — network name lookup (an executor-error incident's cause).

@@ -361,7 +361,11 @@ def generate():
           "100-103): co-fire census with a 3-of-4 discriminator, veto "
           "counterfactuals, the time-cap on its real basis, the "
           "circuit-breaker counterfactual, the risk grid "
-          "(`scalp_risk_grid.md`: stop + cooldown ladders), the event clock "
+          "(`scalp_risk_grid.md`: stop + cooldown ladders), the TP ladder "
+          "(`scalp_tp_ladder.md`, register 106: target rungs on the arms' "
+          "own fires, consistency-ranked, reach-decay curve; survivors "
+          "propose beside the v1 stop derivation as one geometry package), "
+          "the event clock "
           "(`event_clock.md`: news and auction windows); v0 untouched, "
           "survivors are candidate v1 arms via the front door.",
           "- `per_market_watch.md` — the per-market config WATCH page "

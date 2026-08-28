@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 105 (freshness-checked by the weekly
+table.** Register-current-through: 106 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -35,6 +35,7 @@ authoritative.
 | macro-calendar merge gate | LOUD 2026-08-29 (register 104 part 3: sync verify fails on no future-dated entry, warns UNMERGED BACKLOG; human gate unchanged; fetcher thisweek-only — manual verification is the only backfill) |
 | per-market config WATCH page | PRE-REGISTERED + BUILT 2026-08-29 (register 105 item 5: per instrument × zone, best variant / session / slot by consistency statistics only, selection-null percentile + tail-carry check on every cell; a map, never a settings page; weekly Part C) |
 | per-market candidate pool (R-NEXIT-EARLY × open-window ger40+nas100; us30fut × open-window; ger40fut S0-H19 reach) | awaiting-decision-mechanism-sentence (register 105 item 4: each slot EMPTY until the operator's pen; then the track's selection-aware null + own forward clock at ≥45 rows, proposed) |
+| scalp TP ladder (target rungs) | PRE-REGISTERED + BUILT 2026-08-30 (register 106: the arms' own fires re-simulated at 0.75/1.0/1.5xATR targets, same haircut/stop/EOD; consistency-ranked per register 105; reach-decay curve; member bands; single-leg optima to the WATCH page with selection-nulls; survivors join the v1 geometry package; first emission: no rung clears, two hand-off construction defects queued for ruling) |
 | per-market glints with HELD sentences (nas100fut R-NEXIT-FULL × overlap; us30fut R-ARM15 × dead) | awaiting-accrual (register 105 follow-through: sentences drafted and HELD; condition (b) unmet — selection-percentiles 82–93 vs > 95 required; activate for ruling only if a future emission clears the selection-null; nothing opens) |
 | R-SCOPED-BE (contingent variant) | pre-registered (register 92); builds ONLY on its gate — ranging-entry BE advantage beyond luck in the phase-at-entry capture cut |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |

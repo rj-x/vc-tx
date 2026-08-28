@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `18737cd65` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `b0e6d3fbc` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -331,3 +331,16 @@ Engine `18737cd65` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | variant | R-SCALP-H6-REF | overlap | none | 14 | 100% | +27.82 | 100.0 | YES |
 | session | overlap | overlap | none | 14 | 100% | +27.82 | 100.0 | YES |
 | slot | none | overlap | none | 14 | 100% | +27.82 | 100.0 | YES |
+
+## Ladder hand-offs (register 106) — single-leg forward optima from scalp_tp_ladder.md, selection-aware null = members' best-over-rungs; listed, never rules
+
+| instrument | arm | best target xATR | n | win | median | +weeks/meas | sel-pct win / median | beats field null |
+|---|---|---|---|---|---|---|---|---|
+| uk100fut | R-SCALP-H6 | 0.5 (incumbent) | 47 | 87% | +3.17 | 2/2 | 100.0 / 0.0 | no |
+| uk100fut | R-SCALP-H6-REF | 0.5 (incumbent) | 47 | 85% | +2.90 | 1/2 | 100.0 / 0.0 | no |
+| ger40fut | R-SCALP-H6 | 0.5 (incumbent) | 58 | 81% | +7.67 | 1/2 | 60.0 / 0.0 | no |
+| ger40fut | R-SCALP-H6-REF | 0.5 (incumbent) | 51 | 78% | +7.61 | 1/2 | 35.0 / 0.0 | no |
+| nas100fut | R-SCALP-H6 | 0.5 (incumbent) | 46 | 80% | +15.82 | 0/2 | 25.0 / 0.0 | no |
+| nas100fut | R-SCALP-H6-REF | 0.5 (incumbent) | 47 | 92% | +17.70 | 2/2 | 100.0 / 0.0 | no |
+| us30fut | R-SCALP-H6 | 0.5 (incumbent) | 38 | 87% | +18.24 | 1/2 | 85.0 / 0.0 | no |
+| us30fut | R-SCALP-H6-REF | 0.5 (incumbent) | 39 | 87% | +19.36 | 2/2 | 90.0 / 5.0 | no |

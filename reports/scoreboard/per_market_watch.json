@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL per-market config WATCH \u2014 a map of where specialization would go, never a settings page; cells graduate only via the register-105 track; never validation",
-  "engine_commit": "18737cd658826a0bc5c6519031f8d530469b216b",
+  "engine_commit": "b0e6d3fbce4d0e21be0d6ebf6d963d36262ec320",
   "journal_rows_ex_lockbox": 43645,
   "field_dims": "variant x session x slot (stop axis: the variant's registered stop; not re-simulated)",
   "track": {
@@ -10349,5 +10349,111 @@
         }
       ]
     }
-  }
+  },
+  "ladder_handoffs": [
+    {
+      "instrument": "uk100fut",
+      "arm": "R-SCALP-H6",
+      "rung": 0.5,
+      "n": 47,
+      "win_rate": 0.872,
+      "median": 3.17,
+      "weeks": "2/2",
+      "sel_pct_win": 100.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "uk100fut",
+      "arm": "R-SCALP-H6-REF",
+      "rung": 0.5,
+      "n": 47,
+      "win_rate": 0.851,
+      "median": 2.9,
+      "weeks": "1/2",
+      "sel_pct_win": 100.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "ger40fut",
+      "arm": "R-SCALP-H6",
+      "rung": 0.5,
+      "n": 58,
+      "win_rate": 0.81,
+      "median": 7.67,
+      "weeks": "1/2",
+      "sel_pct_win": 60.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "ger40fut",
+      "arm": "R-SCALP-H6-REF",
+      "rung": 0.5,
+      "n": 51,
+      "win_rate": 0.784,
+      "median": 7.61,
+      "weeks": "1/2",
+      "sel_pct_win": 35.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "nas100fut",
+      "arm": "R-SCALP-H6",
+      "rung": 0.5,
+      "n": 46,
+      "win_rate": 0.804,
+      "median": 15.82,
+      "weeks": "0/2",
+      "sel_pct_win": 25.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "nas100fut",
+      "arm": "R-SCALP-H6-REF",
+      "rung": 0.5,
+      "n": 47,
+      "win_rate": 0.915,
+      "median": 17.7,
+      "weeks": "2/2",
+      "sel_pct_win": 100.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "us30fut",
+      "arm": "R-SCALP-H6",
+      "rung": 0.5,
+      "n": 38,
+      "win_rate": 0.868,
+      "median": 18.24,
+      "weeks": "1/2",
+      "sel_pct_win": 85.0,
+      "sel_pct_median": 0.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    },
+    {
+      "instrument": "us30fut",
+      "arm": "R-SCALP-H6-REF",
+      "rung": 0.5,
+      "n": 39,
+      "win_rate": 0.872,
+      "median": 19.36,
+      "weeks": "2/2",
+      "sel_pct_win": 90.0,
+      "sel_pct_median": 5.0,
+      "beats_field_null": false,
+      "is_incumbent": true
+    }
+  ]
 }

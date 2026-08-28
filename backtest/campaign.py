@@ -536,6 +536,8 @@ def main(slugs=(SLUG, "uk100")):
                                                 # by the refinement md)
                 "backtest.h6_refinement",       # register 100
                 "backtest.scalp_risk_grid",     # register 103
+                "backtest.scalp_tp_ladder",     # register 106 (before the
+                                                # WATCH page: hand-offs)
                 "backtest.event_clock",         # register 104
                 "backtest.per_market_watch"):   # register 105 (after the
                                                 # event clock: reuses tags)

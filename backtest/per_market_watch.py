@@ -352,6 +352,21 @@ def _emit(art, head):
                      f"| {c['n']} | {100 * c['win_rate']:.0f}% "
                      f"| {c['median']:+.2f} | {c['sel_pct_win']} "
                      f"| {'YES' if c['beats_field_null_win'] else 'no'} |")
+    hand = art.get("ladder_handoffs", [])
+    L += ["", "## Ladder hand-offs (register 106) — single-leg forward "
+          "optima from scalp_tp_ladder.md, selection-aware null = members' "
+          "best-over-rungs; listed, never rules", "",
+          "| instrument | arm | best target xATR | n | win | median "
+          "| +weeks/meas | sel-pct win / median | beats field null |",
+          "|---|---|---|---|---|---|---|---|---|"]
+    for h in hand:
+        L.append(f"| {h['instrument']} | {h['arm']} | {h['rung']:g}"
+                 f"{' (incumbent)' if h['is_incumbent'] else ''} | {h['n']} "
+                 f"| {100 * h['win_rate']:.0f}% | {h['median']:+.2f} "
+                 f"| {h['weeks']} | {h['sel_pct_win']} / {h['sel_pct_median']} "
+                 f"| {'YES' if h['beats_field_null'] else 'no'} |")
+    if not hand:
+        L.append("| (no ladder hand-off on this emission) | | | | | | | | |")
     L.append("")
     with open(os.path.join(OUT, "per_market_watch.md"), "w") as f:
         f.write("\n".join(L))
@@ -367,6 +382,11 @@ def main():
                      "page; cells graduate only via the register-105 "
                      "track; never validation"),
            "engine_commit": head, **run()}
+    # register 106: the TP ladder's single-leg optima ride along (read
+    # from its JSON when present; the ladder runs first under Part C)
+    lad = os.path.join(OUT, "scalp_tp_ladder.json")
+    art["ladder_handoffs"] = (json.load(open(lad)).get("watch_handoff", [])
+                              if os.path.exists(lad) else [])
     with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)
