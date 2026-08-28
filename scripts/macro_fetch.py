@@ -54,7 +54,49 @@ def fetch_json(url):
     return data
 
 
+LIVE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                    "data", "macro_releases.csv")
+
+
+def calendar_gate(live_path=LIVE, staging_path=None, now=None):
+    """Register 104 part 3 — merge-gate visibility. Two loud checks on
+    the daily sync: (i) the live calendar must hold >= 1 FUTURE-dated
+    entry (a max date in the past FAILS); (ii) staging rows newer than
+    the live max print an UNMERGED BACKLOG warning with the count. The
+    human merge gate stays as designed; its lapse cannot pass silently.
+    Returns (rc, messages)."""
+    staging_path = staging_path or STAGING
+    now = pd.Timestamp(now) if now is not None else pd.Timestamp.now("UTC")
+    if now.tzinfo is None:
+        now = now.tz_localize("UTC")
+    msgs, rc = [], 0
+    live = pd.read_csv(live_path)
+    live_max = pd.to_datetime(live["utc_time"], utc=True).max()
+    if pd.isna(live_max) or live_max <= now:
+        rc = 1
+        msgs.append(f"!!! CALENDAR STALE: live max {live_max} is not in "
+                    f"the future (now {now:%Y-%m-%dT%H:%MZ}) — the human "
+                    "merge gate has lapsed; review staging and merge")
+    else:
+        msgs.append(f"calendar ok: live max {live_max:%Y-%m-%dT%H:%MZ} "
+                    "is future-dated")
+    if os.path.exists(staging_path):
+        st = pd.read_csv(staging_path)
+        newer = pd.to_datetime(st["utc_time"], utc=True) > live_max
+        n_new = int(newer.sum())
+        if n_new:
+            msgs.append(f"!! UNMERGED BACKLOG: {n_new} staging rows newer "
+                        f"than the live max ({live_max:%Y-%m-%d}) — "
+                        "review and merge by hand (live schema)")
+    return rc, msgs
+
+
 def main():
+    if "--gate" in sys.argv:
+        rc, msgs = calendar_gate()
+        for m in msgs:
+            print(m)
+        sys.exit(rc)
     data = None
     for url in (PRIMARY, MIRROR):           # one request + one mirror retry
         try:

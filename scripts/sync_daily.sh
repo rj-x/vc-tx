@@ -35,6 +35,11 @@ echo "and appending to $LOG"
   BUILD_RC=$?
   venv/bin/python scripts/store.py verify --instr all
   VERIFY_RC=$?
+  # register 104 part 3: the macro-calendar merge gate, loud — fails on
+  # no future-dated live entry; warns UNMERGED BACKLOG on newer staging
+  venv/bin/python scripts/macro_fetch.py --gate
+  GATE_RC=$?
+  if [ $GATE_RC -ne 0 ]; then VERIFY_RC=$GATE_RC; fi
 
   echo "=== done $(date -u +%FT%TZ) sync=$SYNC_RC validate=$VALIDATE_RC build=$BUILD_RC verify=$VERIFY_RC ==="
   if [ $SYNC_RC -ne 0 ] || [ $VALIDATE_RC -ne 0 ] || [ $BUILD_RC -ne 0 ] || [ $VERIFY_RC -ne 0 ]; then

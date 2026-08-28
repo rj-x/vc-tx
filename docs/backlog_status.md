@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 103 (freshness-checked by the weekly
+table.** Register-current-through: 104 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -31,6 +31,8 @@ authoritative.
 | H6 refinement program (counted family) | PRE-REGISTERED + BUILT 2026-08-28 (register 100: co-fire context census with 3-of-4 discriminator, veto counterfactuals, time-cap derivation; v0 untouched; survivors -> ratification -> v1 arms; weekly Part C) |
 | circuit-breaker counterfactual (scalp thread) | PRE-REGISTERED + BUILT 2026-08-28 (register 102: halt-after-k-stops / N-losers in strict fill order on the scalp arms' rows, member floors under identical rules; exposure control not harvest timing; survivors propose as v1 arm components) |
 | scalp risk-grid v1 (stop + cooldown ladders) | PRE-REGISTERED + BUILT 2026-08-29 (register 103: the arms' own fires re-simulated under tighter stops with the reacher-MAE curve; cooldown ladder with the mechanism cut; member floors under identical rules; survivors propose jointly with the register-101 derivation; weekly Part C) |
+| event-clock census (news + auction windows) | PRE-REGISTERED + BUILT 2026-08-29 (register 104: currency-tagged news windows with the coverage/verified-empty rule, auction-slot windows, mechanisms separated; ex-ante pause candidates via the front door; weekly Part C) |
+| macro-calendar merge gate | LOUD 2026-08-29 (register 104 part 3: sync verify fails on no future-dated entry, warns UNMERGED BACKLOG; human gate unchanged; fetcher thisweek-only — manual verification is the only backfill) |
 | R-SCOPED-BE (contingent variant) | pre-registered (register 92); builds ONLY on its gate — ranging-entry BE advantage beyond luck in the phase-at-entry capture cut |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 

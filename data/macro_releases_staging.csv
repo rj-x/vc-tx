@@ -1,0 +1,73 @@
+utc_time,currency,impact,name,forecast,previous
+2026-08-23T22:45:00Z,NZD,Low,Core Retail Sales q/q,0.3%,1.0%
+2026-08-23T22:45:00Z,NZD,Low,Retail Sales q/q,0.1%,0.9%
+2026-08-24T12:30:00Z,CAD,Low,Corporate Profits q/q,,-2.0%
+2026-08-24T17:00:00Z,USD,Medium,Treasury Sec Bessent Speaks,,
+2026-08-25T01:30:00Z,AUD,Low,Monetary Policy Meeting Minutes,,
+2026-08-25T05:00:00Z,JPY,Low,BOJ Core CPI y/y,1.4%,1.5%
+2026-08-25T06:00:00Z,EUR,Low,German Final GDP q/q,0.2%,0.2%
+2026-08-25T08:00:00Z,EUR,Low,German ifo Business Climate,87.2,86.6
+2026-08-25T12:15:00Z,USD,Low,ADP Weekly Employment Change,,9.5K
+2026-08-25T12:30:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-08-25T13:00:00Z,EUR,Low,Belgian NBB Business Climate,-11.0,-11.9
+2026-08-25T13:00:00Z,USD,Low,HPI m/m,0.2%,0.3%
+2026-08-25T13:00:00Z,USD,Low,S&P/CS Composite-20 HPI y/y,1.8%,1.6%
+2026-08-25T14:00:00Z,USD,Medium,CB Consumer Confidence,90.3,90.8
+2026-08-25T14:00:00Z,USD,Low,New Home Sales,620K,628K
+2026-08-25T14:00:00Z,USD,Low,Richmond Manufacturing Index,6,5
+2026-08-25T20:00:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-08-25T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-08-25T23:50:00Z,JPY,Low,SPPI y/y,3.2%,3.2%
+2026-08-26T00:30:00Z,AUD,Low,MI Leading Index m/m,,0.0%
+2026-08-26T01:30:00Z,AUD,High,CPI m/m,0.9%,-0.1%
+2026-08-26T01:30:00Z,AUD,High,CPI y/y,3.3%,3.8%
+2026-08-26T01:30:00Z,AUD,Low,Construction Work Done q/q,0.5%,3.4%
+2026-08-26T01:30:00Z,AUD,High,Trimmed Mean CPI m/m,0.4%,0.3%
+2026-08-26T08:00:00Z,CHF,Low,UBS Economic Expectations,,10.0
+2026-08-26T10:00:00Z,GBP,Low,CBI Realized Sales,-35,-26
+2026-08-26T12:30:00Z,USD,Low,Core Durable Goods Orders m/m,0.6%,0.6%
+2026-08-26T12:30:00Z,USD,High,Core PCE Price Index m/m,0.2%,0.1%
+2026-08-26T12:30:00Z,USD,Low,Durable Goods Orders m/m,0.4%,0.3%
+2026-08-26T12:30:00Z,USD,Low,Personal Income m/m,0.2%,0.2%
+2026-08-26T12:30:00Z,USD,Low,Personal Spending m/m,0.1%,0.3%
+2026-08-26T12:30:00Z,USD,Medium,Prelim GDP Price Index q/q,6.2%,6.2%
+2026-08-26T12:30:00Z,USD,High,Prelim GDP q/q,1.5%,1.5%
+2026-08-26T14:30:00Z,USD,Low,Crude Oil Inventories,1.6M,4.4M
+2026-08-26T15:45:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-08-26T16:15:00Z,CHF,Low,Gov Board Member Martin Speaks,,
+2026-08-27T01:30:00Z,AUD,Low,Household Spending m/m,0.3%,0.8%
+2026-08-27T01:30:00Z,AUD,Low,Private Capital Expenditure q/q,0.8%,6.5%
+2026-08-27T01:30:00Z,AUD,Low,RBA Bulletin,,
+2026-08-27T06:00:00Z,EUR,Low,German GfK Consumer Climate,-29.5,-29.6
+2026-08-27T08:00:00Z,EUR,Low,M3 Money Supply y/y,3.5%,3.3%
+2026-08-27T08:00:00Z,EUR,Low,Private Loans y/y,2.9%,3.0%
+2026-08-27T11:30:00Z,EUR,Low,ECB Monetary Policy Meeting Accounts,,
+2026-08-27T12:30:00Z,CAD,Low,Current Account,3.5B,-7.2B
+2026-08-27T12:30:00Z,USD,Low,Goods Trade Balance,-100.8B,-101.5B
+2026-08-27T12:30:00Z,USD,Low,Prelim Wholesale Inventories m/m,0.2%,0.2%
+2026-08-27T12:30:00Z,USD,Medium,Unemployment Claims,208K,206K
+2026-08-27T13:00:00Z,CNY,Low,CB Leading Index m/m,,0.1%
+2026-08-27T14:30:00Z,USD,Low,Natural Gas Storage,19B,16B
+2026-08-27T16:15:00Z,All,Medium,Jackson Hole Symposium,,
+2026-08-27T23:30:00Z,JPY,Medium,Tokyo Core CPI y/y,1.8%,1.9%
+2026-08-27T23:30:00Z,JPY,Low,Unemployment Rate,2.5%,2.5%
+2026-08-28T06:00:00Z,EUR,Low,German Import Prices m/m,0.3%,-0.7%
+2026-08-28T06:45:00Z,EUR,Low,French Consumer Spending m/m,0.1%,0.4%
+2026-08-28T06:45:00Z,EUR,Low,French Final Private Payrolls q/q,-0.1%,-0.1%
+2026-08-28T06:45:00Z,EUR,Low,French Prelim CPI m/m,0.7%,0.6%
+2026-08-28T06:45:00Z,EUR,Low,French Prelim GDP q/q,0.2%,0.2%
+2026-08-28T07:00:00Z,CHF,Low,KOF Economic Barometer,103.0,103.5
+2026-08-28T07:00:00Z,EUR,Low,Spanish Flash CPI y/y,4.2%,3.6%
+2026-08-28T07:55:00Z,EUR,Low,German Unemployment Change,4K,6K
+2026-08-28T09:09:00Z,EUR,Low,Italian 10-y Bond Auction,,4.00|1.7
+2026-08-28T12:30:00Z,CAD,High,GDP m/m,0.2%,0.3%
+2026-08-28T13:00:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-08-28T13:45:00Z,USD,Low,Chicago PMI,57.9,57.6
+2026-08-28T14:00:00Z,USD,High,Fed Chairman Warsh Speaks,,
+2026-08-28T14:00:00Z,USD,High,Prelim Benchmark Payrolls Revision,,-911K
+2026-08-28T14:00:00Z,USD,Medium,Revised UoM Consumer Sentiment,51.0,51.0
+2026-08-28T14:00:00Z,USD,Medium,Revised UoM Inflation Expectations,,4.3%
+2026-08-28T14:30:00Z,GBP,Low,MPC Member Mann Speaks,,
+2026-08-28T16:15:00Z,All,High,Jackson Hole Symposium,,
+2026-08-29T15:15:00Z,All,Low,G20 Meetings,,
+2026-08-29T16:15:00Z,All,Medium,Jackson Hole Symposium,,

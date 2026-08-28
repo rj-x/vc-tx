@@ -20,3 +20,7 @@ utc_time,currency,impact,name
 2026-08-18T06:00:00Z,GBP,High,UK Claimant Count Change
 2026-08-19T06:00:00Z,GBP,High,UK CPI y/y
 2026-08-19T18:00:00Z,USD,High,FOMC Meeting Minutes
+2026-08-26T12:30:00Z,USD,High,Core PCE Price Index m/m
+2026-08-26T12:30:00Z,USD,High,Prelim GDP q/q
+2026-08-28T14:00:00Z,USD,High,Fed Chairman Warsh Speaks
+2026-08-28T14:00:00Z,USD,High,Prelim Benchmark Payrolls Revision
