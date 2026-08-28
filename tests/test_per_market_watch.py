@@ -19,10 +19,15 @@ def _rows(pts, week="2026-W33", **kw):
 
 
 def test_tail_carry_cap_and_weekly_count():
-    s = cell_stats(_rows([1.0, 1.0, 1.0, 20.0]))   # 20/23 > 25% -> TAIL
-    assert s["tail_carried"] and s["max_trade_share"] > TAIL_CARRY_SHARE
+    s = cell_stats(_rows([1.0, 1.0, 1.0, 20.0]))   # 20/23 gross > 25%
+    assert s["tail_carried"] and s["max_win_share"] > TAIL_CARRY_SHARE
     s2 = cell_stats(_rows([2.0, 2.0, 2.0, 2.0, 2.0]))  # 2/10 = 20%
     assert not s2["tail_carried"] and s2["win_rate"] == 1.0
+    # the amendment's pin: a near-zero-NET cell is no longer tail-carried
+    # when its wins are spread (the |net| denominator was the defect)
+    s3 = cell_stats(_rows([2.0] * 5 + [-2.0] * 5))     # net 0, gross 10
+    assert not s3["tail_carried"] and s3["max_win_share"] == 0.2
+    assert cell_stats(_rows([-1.0, -2.0]))["tail_carried"]   # no gross
     rows = (_rows([1, 1, 1], week="2026-W31") + _rows([-1, -1, -1], week="2026-W32")
             + _rows([5], week="2026-W33"))            # W33 not measurable
     s3 = cell_stats(rows)

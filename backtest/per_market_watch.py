@@ -21,10 +21,14 @@ ladder's home — a stated coverage limitation, not a hidden default).
 CONSISTENCY RULING (register 105 item 3, operator: consistency over
 magnitude): cells rank and print on consistency statistics only —
 median-per-trade, win rate, weekly-consistency count (positive ISO weeks
-/ measurable weeks, a week measurable at >= WEEK_MIN_N rows) — with a
-TAIL-CARRY CAP: any cell whose single largest |trade| exceeds
-TAIL_CARRY_SHARE of |net| is tail-carried and non-candidate at any n
-(register 62's demotion extended). Net points print as context only.
+/ measurable weeks, a week measurable at >= WEEK_MIN_N rows — RATIFIED
+2026-08-29 with the slot precedence and the 45-row track floor) — with a
+TAIL-CARRY CAP (register 105 follow-through, amended 2026-08-29 —
+the drafted |net| denominator was degenerate near zero): any cell whose
+single largest WINNING trade exceeds TAIL_CARRY_SHARE of GROSS WINNING
+points is tail-carried and non-candidate at any n (register 62's
+demotion extended). A cell with no winning trade has no gross to carry
+and is tail-carried by convention. Net points print as context only.
 
 SELECTION-AWARE NULL (item 2b): the cell's competitor is the BEST FAKE
 its own market's field can manufacture — per instrument x zone, the
@@ -67,14 +71,14 @@ TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
 INSTRUMENTS = ("uk100fut", "ger40fut", "nas100fut", "us30fut")
 SLOT_ORDER = ("open15", "close15", "news15")   # precedence; else "none"
 MIN_CELL_N = 10                 # the matrix convention
-WEEK_MIN_N = 3                  # a week measurable at >= 3 rows (FLAGGED)
-TAIL_CARRY_SHARE = 0.25         # operator-stated: one trade > 25% of |net|
+WEEK_MIN_N = 3                  # a week measurable at >= 3 rows (RATIFIED 08-29)
+TAIL_CARRY_SHARE = 0.25         # one WIN > 25% of gross winning points
 NULL_SHUFFLES = 100
 NULL_SEEDS = tuple(range(NULL_SHUFFLES))
 TOP_K = 5                       # rows printed per statistic per market
 POOLED_Q_MIN_N = 30             # the pooled-question forward floor
 TRACK_N_MULT = 1.5              # item 2c: >= 1.5x the pooled minimum
-TRACK_MIN_N = int(POOLED_Q_MIN_N * TRACK_N_MULT)   # 45, proposed at mint
+TRACK_MIN_N = int(POOLED_Q_MIN_N * TRACK_N_MULT)   # 45, RATIFIED 08-29; proposed at any mint
 
 # item 4 — the seeded pool; mechanism slots EMPTY until the operator's pen
 CANDIDATE_POOL = (
@@ -138,14 +142,15 @@ def cell_stats(rows):
         weeks.setdefault(r["week"], []).append(r["pts"])
     meas = {w: v for w, v in weeks.items() if len(v) >= WEEK_MIN_N}
     pos = sum(1 for v in meas.values() if sum(v) > 0)
-    top = float(np.abs(pts).max()) if len(pts) else 0.0
-    share = (top / abs(net)) if net else None
+    wins = pts[pts > 0]
+    gross_win = float(wins.sum())
+    share = (float(wins.max()) / gross_win) if gross_win else None
     return {"n": int(len(pts)),
             "median": round(float(np.median(pts)), 2) if len(pts) else None,
             "win_rate": round(float((pts > 0).mean()), 3) if len(pts) else None,
             "weeks_pos": pos, "weeks_meas": len(meas),
             "net_pts": round(net, 1),
-            "max_trade_share": (round(share, 3) if share is not None
+            "max_win_share": (round(share, 3) if share is not None
                                 else None),
             "tail_carried": bool(share is None or share > TAIL_CARRY_SHARE)}
 
@@ -276,13 +281,13 @@ def _row(c):
             f"| {c['sel_pct_win']} / {c['sel_pct_median']} "
             f"| {'YES' if c['beats_field_null_win'] else 'no'} / "
             f"{'YES' if c['beats_field_null_median'] else 'no'} "
-            f"| {c['max_trade_share']:.2f}"
+            f"| {c['max_win_share']:.2f}"
             f"{' TAIL' if c['tail_carried'] else ''} | {c['net_pts']} |")
 
 
 HDR = ("| variant | session | slot | n | median | win | +weeks/meas "
        "| sel-pct win / median | beats field null win / median "
-       "| max-trade share | net (context) |",
+       "| max-win share of gross | net (context) |",
        "|---|---|---|---|---|---|---|---|---|---|---|")
 
 
@@ -302,7 +307,8 @@ def _emit(art, head):
          "RULING: ranked and printed on consistency statistics only — "
          "median-per-trade, win rate, weekly-consistency count (positive "
          f"ISO weeks / weeks with >= {tr['week_min_n']} rows); TAIL-CARRY "
-         f"CAP: one trade > {100 * tr['tail_carry_share']:.0f}% of |net| = "
+         f"CAP (amended, register 105 follow-through): one winning trade > "
+         f"{100 * tr['tail_carry_share']:.0f}% of gross winning points = "
          "tail-carried, non-candidate at any n (register 62 extended); net "
          "points context only. STATISTIC SHAPES (74-B): every cell wears "
          "its SELECTION-NULL percentile — the share of "
