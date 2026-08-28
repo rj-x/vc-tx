@@ -194,6 +194,7 @@ first uses them, or the commit doesn't pass.
 - **TP ladder** — the scalp target ladder (register 106): the arms' own fires re-simulated under target {0.5 (incumbent), 0.75, 1.0, 1.5}×ATR(15M) with haircut, stop and EOD-flat unchanged; consistency-ranked per register 105 against member bands at the same rung.
 - **reach-decay curve** — P(touch) by target rung per leg per arm: how fast the touch rate falls as the target moves away — the TP ladder's descriptive read.
 - **geometry package** — the scalp v1 proposal shape (register 106): the stop derivation (register 101) and any surviving target rung proposed TOGETHER through the front door — one package, one ratification; never one side alone.
+- **OPTIMA / single-leg optima** — plain English (plural of optimum): the best cell per leg on a ladder or field — a candidate for the WATCH page, never a rule on its own.
 - **ladder hand-off** — a single-leg forward optimum from a ladder study, carried to the per-market WATCH page wearing a selection-aware null (the members' best-over-rungs); listed, never a rule.
 - **PF** — profit factor: gross wins divided by gross losses (a tripwire input).
 - **AC** — mains power (the suspension/travel model: the machine sleeps when unplugged).
