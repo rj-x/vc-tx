@@ -536,7 +536,9 @@ def main(slugs=(SLUG, "uk100")):
                                                 # by the refinement md)
                 "backtest.h6_refinement",       # register 100
                 "backtest.scalp_risk_grid",     # register 103
-                "backtest.event_clock"):        # register 104
+                "backtest.event_clock",         # register 104
+                "backtest.per_market_watch"):   # register 105 (after the
+                                                # event clock: reuses tags)
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # register 75 standing rule: not-campaign-regenerated +

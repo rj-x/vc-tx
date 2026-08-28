@@ -22,7 +22,9 @@ PAIRS = [("hypothesis_performance.md", "hypothesis_performance.json"),
          ("narrative_survey.md", "narrative_survey.json"),
          ("intra_trade_census.md", "intra_trade_census.json"),
          ("journal_survey.md", "journal_survey.json"),
-         ("account_mode.md", "account_mode.json")]
+         ("account_mode.md", "account_mode.json"),
+         ("event_clock.md", "event_clock.json"),
+         ("per_market_watch.md", "per_market_watch.json")]
 
 
 def test_md_json_pairs_are_from_the_same_run():

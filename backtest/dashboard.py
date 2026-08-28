@@ -364,6 +364,13 @@ def generate():
           "(`scalp_risk_grid.md`: stop + cooldown ladders), the event clock "
           "(`event_clock.md`: news and auction windows); v0 untouched, "
           "survivors are candidate v1 arms via the front door.",
+          "- `per_market_watch.md` — the per-market config WATCH page "
+          "(register 105): per instrument, the best window / management / "
+          "session by consistency statistics only, every cell wearing its "
+          "selection-null percentile, n and tail-carry check; the seeded "
+          "candidate pool with EMPTY mechanism slots. A map of where "
+          "specialization would go, never a settings page; cells "
+          "graduate only via the per-market track.",
           "- `zone_census.md` — the H4 key-zone conditioner, v2 "
           "strictness ladder (registers 95/96) — PARKED as the "
           "standing null (register 97): flat-to-negative density-vs-"

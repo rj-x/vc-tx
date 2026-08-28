@@ -1,0 +1,375 @@
+"""Per-market config WATCH page (register 105 item 5; pre-registered
+prereg_per_market_watch, counted 2026-08-29). A MAP of where per-market
+specialization would go — NEVER a settings page: cells graduate only by
+walking the register-105 per-market track (mechanism sentence in the
+operator's pen; selection-aware luck budget; own forward clock at
+elevated n). Measurement only; nothing registers from this page.
+
+THE DOCTRINE (register 105): markets are distinct populations with
+distinct participant psychology; the register specializes claims, never
+defaults. The >= 3-of-4-leg replication bar stays the luck filter for
+FIELD screens; this page is the per-market complement, and it prices
+its own selection.
+
+THE IN-MARKET CONFIG FIELD, per instrument x zone: management variant x
+session x slot (slot = the event-clock tags open15 / close15 / news15,
+precedence in that order, else none — register 104's windows reused;
+the stop-rung axis is NOT re-simulated here: each variant carries its
+registered stop, and the risk grid (register 103) remains the stop
+ladder's home — a stated coverage limitation, not a hidden default).
+
+CONSISTENCY RULING (register 105 item 3, operator: consistency over
+magnitude): cells rank and print on consistency statistics only —
+median-per-trade, win rate, weekly-consistency count (positive ISO weeks
+/ measurable weeks, a week measurable at >= WEEK_MIN_N rows) — with a
+TAIL-CARRY CAP: any cell whose single largest |trade| exceeds
+TAIL_CARRY_SHARE of |net| is tail-carried and non-candidate at any n
+(register 62's demotion extended). Net points print as context only.
+
+SELECTION-AWARE NULL (item 2b): the cell's competitor is the BEST FAKE
+its own market's field can manufacture — per instrument x zone, the
+config labels are permuted across the market's rows (cell sizes kept),
+the best win rate and best median across all cells at n >= MIN_CELL_N
+are recorded per seed (NULL_SEEDS pinned), and every observed cell wears
+its percentile against that best-of-field distribution on the SAME
+statistic it is ranked by. "Most consistent in-market" must beat the
+most consistent fake the field produces. Caveat declared: the journal's
+variants share fires (rows are correlated across variants), so the
+permutation is a label shuffle over correlated rows — conservative for
+variant-axis cells only in the sense that it preserves cell sizes; the
+elevated forward floor (item 2c) is the second guard.
+
+CANDIDATE POOL (item 4): seeded from existing structure with EMPTY
+mechanism-sentence slots — nothing advances without the operator's pen.
+Ex-lockbox; sealed untouched; twin-run pinned
+(tests/test_per_market_watch.py); weekly under Part C.
+"""
+
+import argparse
+import csv
+import json
+import os
+import subprocess
+import sys
+
+import numpy as np
+import pandas as pd
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+
+from engine.store_loader import in_lockbox_span, lockbox_boundary, zones
+from backtest.event_clock import load_calendar, tag_row
+
+OUT = os.path.join(ROOT, "reports", "scoreboard")
+TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
+
+INSTRUMENTS = ("uk100fut", "ger40fut", "nas100fut", "us30fut")
+SLOT_ORDER = ("open15", "close15", "news15")   # precedence; else "none"
+MIN_CELL_N = 10                 # the matrix convention
+WEEK_MIN_N = 3                  # a week measurable at >= 3 rows (FLAGGED)
+TAIL_CARRY_SHARE = 0.25         # operator-stated: one trade > 25% of |net|
+NULL_SHUFFLES = 100
+NULL_SEEDS = tuple(range(NULL_SHUFFLES))
+TOP_K = 5                       # rows printed per statistic per market
+POOLED_Q_MIN_N = 30             # the pooled-question forward floor
+TRACK_N_MULT = 1.5              # item 2c: >= 1.5x the pooled minimum
+TRACK_MIN_N = int(POOLED_Q_MIN_N * TRACK_N_MULT)   # 45, proposed at mint
+
+# item 4 — the seeded pool; mechanism slots EMPTY until the operator's pen
+CANDIDATE_POOL = (
+    {"cell": "R-NEXIT-EARLY x open-window",
+     "legs": "ger40fut, nas100fut",
+     "source": "event_clock.md glint list (register 104 first emission: "
+               "open15 glint on ger40fut + nas100fut, recurring)",
+     "mechanism": ""},
+    {"cell": "us30fut x open-window strength",
+     "legs": "us30fut",
+     "source": "the ISO-week-32 refutation cell (operator + reviewer "
+               "sitting 2026-08-29, chat-side; NOT located in a repo "
+               "artifact under that name — nearest artifact: "
+               "event_clock.md us30fut open15/open30 cells)",
+     "mechanism": ""},
+    {"cell": "ger40fut S0-H" + str(19) + " reach",
+     "legs": "ger40fut",
+     "source": "register 99: forward net reach 21.4% vs floor max 18.7 "
+               "(n=126), the standing WATCH cell",
+     "mechanism": ""},
+)
+
+
+def journal_rows():
+    """Ex-lockbox journal rows with zone, session, and the event-clock
+    slot tag (register 104's tagger reused; news = native or cross)."""
+    boundary, gl = lockbox_boundary(), zones()["go_live"]
+    rel, span = load_calendar()
+    out = []
+    for r in csv.DictReader(open(TRADES_CSV)):
+        if in_lockbox_span(r["open_ts"]):
+            continue
+        t = pd.Timestamp(r["open_ts"])
+        w = "backtest" if t < boundary else "forward" if t >= gl else None
+        if w is None or r["instrument"] not in INSTRUMENTS:
+            continue
+        tags, _cov = tag_row(r, rel, span)
+        out.append({"instrument": r["instrument"], "variant": r["variant"],
+                    "session": r["session"], "window": w,
+                    "slot": slot_of(tags), "pts": float(r["points"]),
+                    "week": "%d-W%02d" % t.isocalendar()[:2]})
+    return out
+
+
+def slot_of(tags):
+    for s in SLOT_ORDER:
+        if s.startswith("news"):
+            if tags.get(s + ":native") or tags.get(s + ":cross"):
+                return s
+        elif tags.get(s):
+            return s
+    return "none"
+
+
+def cell_stats(rows):
+    """Consistency statistics + the tail-carry check for one cell."""
+    pts = np.array([r["pts"] for r in rows], dtype=float)
+    net = float(pts.sum())
+    weeks = {}
+    for r in rows:
+        weeks.setdefault(r["week"], []).append(r["pts"])
+    meas = {w: v for w, v in weeks.items() if len(v) >= WEEK_MIN_N}
+    pos = sum(1 for v in meas.values() if sum(v) > 0)
+    top = float(np.abs(pts).max()) if len(pts) else 0.0
+    share = (top / abs(net)) if net else None
+    return {"n": int(len(pts)),
+            "median": round(float(np.median(pts)), 2) if len(pts) else None,
+            "win_rate": round(float((pts > 0).mean()), 3) if len(pts) else None,
+            "weeks_pos": pos, "weeks_meas": len(meas),
+            "net_pts": round(net, 1),
+            "max_trade_share": (round(share, 3) if share is not None
+                                else None),
+            "tail_carried": bool(share is None or share > TAIL_CARRY_SHARE)}
+
+
+def build_field(rows):
+    """(instr, window) -> {(variant, session, slot): stats}."""
+    grouped = {}
+    for r in rows:
+        grouped.setdefault((r["instrument"], r["window"]), {}) \
+               .setdefault((r["variant"], r["session"], r["slot"]), []) \
+               .append(r)
+    return {k: {c: cell_stats(v) for c, v in cells.items()}
+            for k, cells in grouped.items()}
+
+
+def best_of_field(cells):
+    """The best win rate and best median across measurable, non-tail-
+    carried cells (the ranking population)."""
+    ok = [s for s in cells.values()
+          if s["n"] >= MIN_CELL_N and not s["tail_carried"]]
+    if not ok:
+        return None, None
+    return (max(s["win_rate"] for s in ok), max(s["median"] for s in ok))
+
+
+def selection_null(rows_market):
+    """Label permutation over one market x zone: the config label of
+    every row is shuffled (cell sizes kept, week stamps travel with the
+    row), the best-of-field win rate and median recorded per seed."""
+    labels = [(r["variant"], r["session"], r["slot"]) for r in rows_market]
+    best_wr, best_md = [], []
+    for seed in NULL_SEEDS:
+        rs = np.random.RandomState(seed)
+        perm = rs.permutation(len(labels))
+        cells = {}
+        for i, j in enumerate(perm):
+            cells.setdefault(labels[j], []).append(rows_market[i])
+        wr, md = best_of_field({c: cell_stats(v) for c, v in cells.items()})
+        # a seed with no rankable cell is MISSING, never a low value
+        best_wr.append(wr if wr is not None else np.nan)
+        best_md.append(md if md is not None else np.nan)
+    return np.array(best_wr, dtype=float), np.array(best_md, dtype=float)
+
+
+def percentile_vs(null, value):
+    """Share of the VALID best-of-field null strictly below the value
+    (None when no seed produced a rankable cell)."""
+    valid = null[~np.isnan(null)]
+    if not len(valid):
+        return None
+    return round(100 * float(np.mean(valid < value)), 1)
+
+
+def null_p95(null):
+    valid = null[~np.isnan(null)]
+    return float(np.percentile(valid, 95)) if len(valid) else np.inf
+
+
+def run():
+    rows = journal_rows()
+    field = build_field(rows)
+    by_market = {}
+    for r in rows:
+        by_market.setdefault((r["instrument"], r["window"]), []).append(r)
+    markets = {}
+    for key in sorted(field):
+        instr, w = key
+        cells = field[key]
+        nb_wr, nb_md = selection_null(by_market[key])
+        table = []
+        for (var, sess, slot), s in cells.items():
+            if s["n"] < MIN_CELL_N:
+                continue
+            table.append({"variant": var, "session": sess, "slot": slot,
+                          **s,
+                          "sel_pct_win": percentile_vs(nb_wr, s["win_rate"]),
+                          "sel_pct_median": percentile_vs(nb_md, s["median"]),
+                          "beats_field_null_win": bool(
+                              s["win_rate"] > null_p95(nb_wr)),
+                          "beats_field_null_median": bool(
+                              s["median"] > null_p95(nb_md))})
+        rankable = [c for c in table if not c["tail_carried"]]
+        axes = {}
+        for axis in ("variant", "session", "slot"):
+            best = {}
+            for c in rankable:
+                lv = c[axis]
+                if lv not in best or (c["win_rate"], c["median"]) > \
+                        (best[lv]["win_rate"], best[lv]["median"]):
+                    best[lv] = c
+            axes[axis] = (max(best.values(),
+                              key=lambda c: (c["win_rate"], c["median"]))
+                          if best else None)
+        markets["|".join(key)] = {
+            "rows": len(by_market[key]),
+            "field_cells": len(cells),
+            "measurable_cells": len(table),
+            "tail_carried_cells": sum(1 for c in table if c["tail_carried"]),
+            "null_valid_seeds": int((~np.isnan(nb_wr)).sum()),
+            "null_best_win_p95": round(null_p95(nb_wr), 3),
+            "null_best_median_p95": round(null_p95(nb_md), 2),
+            "top_by_win": sorted(rankable, key=lambda c: (-c["win_rate"],
+                                                          -c["median"]))
+            [:TOP_K],
+            "top_by_median": sorted(rankable, key=lambda c: (-c["median"],
+                                                             -c["win_rate"]))
+            [:TOP_K],
+            "top_by_weeks": sorted(rankable,
+                                   key=lambda c: (-c["weeks_pos"],
+                                                  -c["win_rate"]))[:TOP_K],
+            "best_by_axis": axes,
+            "cells": table}
+    return {"journal_rows_ex_lockbox": len(rows),
+            "field_dims": "variant x session x slot (stop axis: the "
+                          "variant's registered stop; not re-simulated)",
+            "track": {"min_forward_n": TRACK_MIN_N,
+                      "pooled_min": POOLED_Q_MIN_N, "mult": TRACK_N_MULT,
+                      "tail_carry_share": TAIL_CARRY_SHARE,
+                      "week_min_n": WEEK_MIN_N},
+            "candidate_pool": [dict(c) for c in CANDIDATE_POOL],
+            "markets": markets}
+
+
+def _row(c):
+    return (f"| {c['variant']} | {c['session']} | {c['slot']} | {c['n']} "
+            f"| {c['median']:+.2f} | {100 * c['win_rate']:.0f}% "
+            f"| {c['weeks_pos']}/{c['weeks_meas']} "
+            f"| {c['sel_pct_win']} / {c['sel_pct_median']} "
+            f"| {'YES' if c['beats_field_null_win'] else 'no'} / "
+            f"{'YES' if c['beats_field_null_median'] else 'no'} "
+            f"| {c['max_trade_share']:.2f}"
+            f"{' TAIL' if c['tail_carried'] else ''} | {c['net_pts']} |")
+
+
+HDR = ("| variant | session | slot | n | median | win | +weeks/meas "
+       "| sel-pct win / median | beats field null win / median "
+       "| max-trade share | net (context) |",
+       "|---|---|---|---|---|---|---|---|---|---|---|")
+
+
+def _emit(art, head):
+    tr = art["track"]
+    L = ["# Per-Market Config WATCH (GENERATED by backtest.per_market_watch)",
+         "", "Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).", "",
+         f"Engine `{head[:9]}` — OBSERVATIONAL, pre-registered "
+         "(prereg_per_market_watch, register 105). A MAP of where "
+         "per-market specialization would go — NEVER a settings page: "
+         "cells graduate only by walking the per-market track (register "
+         "105 item 2): (a) a written mechanism sentence, operator's pen; "
+         "(b) a selection-aware luck budget against the market's whole "
+         "config field; (c) its own forward clock at >= "
+         f"{tr['min_forward_n']} forward rows ({tr['mult']}x the pooled "
+         f"minimum {tr['pooled_min']}, proposed at mint). CONSISTENCY "
+         "RULING: ranked and printed on consistency statistics only — "
+         "median-per-trade, win rate, weekly-consistency count (positive "
+         f"ISO weeks / weeks with >= {tr['week_min_n']} rows); TAIL-CARRY "
+         f"CAP: one trade > {100 * tr['tail_carry_share']:.0f}% of |net| = "
+         "tail-carried, non-candidate at any n (register 62 extended); net "
+         "points context only. STATISTIC SHAPES (74-B): every cell wears "
+         "its SELECTION-NULL percentile — the share of "
+         f"{NULL_SHUFFLES} label-permutation best-of-field values (pinned "
+         "seeds) it beats, on the same statistic it is ranked by — and a "
+         "YES only above the field's null p95 (the most consistent fake "
+         f"the field manufactures). FIELD: {art['field_dims']}; measurable "
+         f"= n >= {MIN_CELL_N}. Fill model: the journal's PESSIMISTIC rows "
+         "(the scalp arms' optimistic target fill declared, register 94). "
+         "Ex-lockbox. Nothing registers from this page.", ""]
+    L += ["## Candidate pool (register 105 item 4) — mechanism slots "
+          "await the operator's pen; nothing advances without it", "",
+          "| cell | legs | source | mechanism sentence |",
+          "|---|---|---|---|"]
+    for c in art["candidate_pool"]:
+        L.append(f"| {c['cell']} | {c['legs']} | {c['source']} "
+                 f"| {c['mechanism'] or '(EMPTY — awaiting operator)'} |")
+    for key, m in art["markets"].items():
+        instr, w = key.split("|")
+        L += ["", f"## {instr} — {w} ({m['rows']} rows; {m['field_cells']} "
+              f"field cells, {m['measurable_cells']} measurable, "
+              f"{m['tail_carried_cells']} tail-carried; field null p95 over "
+              f"{m['null_valid_seeds']} valid seeds: best win "
+              f"{100 * m['null_best_win_p95']:.0f}%, best median "
+              f"{m['null_best_median_p95']:+.2f})", ""]
+        for title, lst in (("Top by win rate", m["top_by_win"]),
+                           ("Top by median-per-trade", m["top_by_median"]),
+                           ("Top by weekly consistency", m["top_by_weeks"])):
+            L += [f"### {title}", "", *HDR]
+            L += [_row(c) for c in lst] or [
+                "| (no measurable, non-tail-carried cell) | | | | | | | | | | |"]
+            L.append("")
+        L += ["### Best level per axis (by win rate, then median)", "",
+              "| axis | level | session | slot | n | win | median "
+              "| sel-pct win | beats field null |", "|---|---|---|---|---|---|---|---|---|"]
+        for axis, c in m["best_by_axis"].items():
+            if c is None:
+                L.append(f"| {axis} | (none) | | | | | | | |")
+                continue
+            L.append(f"| {axis} | {c[axis]} | {c['session']} | {c['slot']} "
+                     f"| {c['n']} | {100 * c['win_rate']:.0f}% "
+                     f"| {c['median']:+.2f} | {c['sel_pct_win']} "
+                     f"| {'YES' if c['beats_field_null_win'] else 'no'} |")
+    L.append("")
+    with open(os.path.join(OUT, "per_market_watch.md"), "w") as f:
+        f.write("\n".join(L))
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.parse_args()
+    head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
+                          capture_output=True, text=True).stdout.strip()
+    art = {"STAMP": ("OBSERVATIONAL per-market config WATCH — a map of "
+                     "where specialization would go, never a settings "
+                     "page; cells graduate only via the register-105 "
+                     "track; never validation"),
+           "engine_commit": head, **run()}
+    with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
+        json.dump(art, f, indent=2, default=str)
+    _emit(art, head)
+    beats = sum(1 for m in art["markets"].values() for c in m["cells"]
+                if c["beats_field_null_win"] and not c["tail_carried"])
+    print(f"OBSERVATIONAL per-market watch -> {OUT}/per_market_watch.md "
+          f"({beats} cells above their field's win-rate null p95; "
+          "mechanism slots empty)")
+
+
+if __name__ == "__main__":
+    main()
