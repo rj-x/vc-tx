@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 106 (freshness-checked by the weekly
+table.** Register-current-through: 112 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -37,7 +37,7 @@ authoritative.
 | per-market candidate pool (R-NEXIT-EARLY × open-window ger40+nas100; us30fut × open-window; ger40fut S0-H19 reach) | awaiting-decision-mechanism-sentence (register 105 item 4: each slot EMPTY until the operator's pen; then the track's selection-aware null + own forward clock at ≥45 rows, proposed) |
 | scalp TP ladder (target rungs) | PRE-REGISTERED + BUILT 2026-08-30 (register 106: the arms' own fires re-simulated at 0.75/1.0/1.5xATR targets, same haircut/stop/EOD; consistency-ranked per register 105; reach-decay curve; member bands; single-leg optima to the WATCH page per statistic with own nulls; survivors join the v1 geometry package; follow-through 2026-08-30: 0.25 rung added (spread-negative as expected), hand-off defects RULED (per-statistic optima, same-rung median nulls); no rung clears; 4 single-leg hand-offs listed) |
 | per-market glints with HELD sentences (nas100fut R-NEXIT-FULL × overlap; us30fut R-ARM15 × dead) | awaiting-accrual (register 105 follow-through: sentences drafted and HELD; condition (b) unmet — selection-percentiles 82–93 vs > 95 required; activate for ruling only if a future emission clears the selection-null; nothing opens) |
-| R-SCOPED-BE (contingent variant) | pre-registered (register 92); builds ONLY on its gate — ranging-entry BE advantage beyond luck in the phase-at-entry capture cut |
+| R-SCOPED-BE (contingent variant) | pre-registered (register 92); gate now a PRINTED READOUT (register 107: regime-gate floors + luck budget in capture_study.md) — NOT PASSED on any leg 2026-08-30 (ranging BE@0.25 inside its member band everywhere; gap inside luck, positive on 2 of 4 legs); re-reads weekly; expiry: re-read when the ex-lockbox R-NOTRAIL base doubles from 1,847 |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 
 ## Recipes
@@ -61,6 +61,8 @@ authoritative.
 | T3b recipe-layer build | awaiting-decision-next-lab-cycle (H10's deprioritize label is an input) |
 | s9 scenario | awaiting-decision-ruling-cycle |
 | decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
+| persistence-census matched blocks + census-clears routing | BUILT 2026-08-30 (register 108: n + member count + CLEARS RANGE flag in every matched block; clears measurable at n≥25 route to per_market_watch.md wearing a signal-label selection-null; ger40 forward n-check done — 4 of 7 measurable, only graded S0-H6 beats its field null; nas100 R-NOTRAIL×overlap +149.75 n=16 CONFIRMED with receipts — day-carried and path-duplicated, forward cell is the live read) |
+| zone census v3 (departure bases, D1/H4) | PRE-REGISTERED + BUILT 2026-08-30 (register 111: NEW definition + source, not a v2 rerun — base = ≥swing_k bars inside 1×ATR, impulsive departure {1.5,3}×ATR, zone = the base's range, full trade-through invalidation; scarcity check stated: D1 ~5–15 active/leg, hundreds = definition FAILED and the census says so; register-105 consistency statistics + selection-null on journal cells; mint-on-lift only; weekly Part C) |
 | H4 key-zone conditioner census | PARKED 2026-08-28 (register 97): the v2 ladder stands as the STANDING NULL, accruing weekly under Part C; no further rungs (window-relative touch variant explicitly not taken); the source idea measured-and-unsupported at every reading of 'significant and recent'; revisitable only by re-registration on new evidence |
 
 ## Organs (register 16; one at a time)
@@ -83,7 +85,7 @@ authoritative.
 | Part C weekly forward studies | ADOPTED (register 55); runs in the weekly campaign |
 | stop-width ladder + SIGNAL_POINTS page | BUILT 2026-08-22 (register 59; instrumentation) |
 | baseline pseudo-signals (B-TREND/B-RANDOM/B-ALWAYS-LONG) | BUILT 2026-08-22; ENSEMBLE-UPGRADED same day (register 60/61: 20 seeds / 20 phase-offsets, floor = distribution); cadence + skew rule awaiting-ratification |
-| GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 2) |
+| GLOSSARY + enforcement test | BUILT 2026-08-22 (register 60; reading-order item 3 since register 109 inserted INSIGHTS) |
 | bar-persistence census (scalp viability) | BUILT 2026-08-22; EXTENDED with expectancy curve + quadrant rows + bar+1 scalp screen (registers 63/64/68; weekly under Part C) |
 | quadrant dimension (effort×result 2×2) | BUILT 2026-08-23 (register 66; rides the weekly matrix; narrow-loud has no family — mint follows lift) |
 | seam & gap census | BUILT 2026-08-23 (register 67; weekly Part C; gap-fill folk strategy NOT registered — mint-on-lift) |
@@ -106,7 +108,8 @@ authoritative.
 | regime overlay (hold-to-EOD on trending days) | DOCKETED future pre-registration (register 77; not built) |
 | portfolio heat / sizing | OPEN DESIGN ITEM (register 77; no ad-hoc sizing) |
 | instrument exclusion (spread burden) | OPEN RECOMMENDATION to operator (register 77; home 0.111xATR flagged; never auto-applied) |
-| narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself) |
+| narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself); CLAUSE-3 STRESS NOTE dated 2026-08-30 (register 110: consistency not field-significant on any leg, home 13/20-at-100 → 9/31-at-89 dated from artifact history; composites at-floor; RECORDED NOT RULED — the September sealed window arbitrates; H17–H19 accrue unchanged) |
+| weekly INSIGHTS ledger | PRE-REGISTERED + BUILT 2026-08-30 (register 109: reports/INSIGHTS.md every Part C run — cells clearing any null, WATCH/glints with age-in-weeks, bench with gate status, parked standing-nulls, DELTA crossed/aged/died; index only, nothing gains status by appearing; reading order DASHBOARD → INSIGHTS → SIGNAL_POINTS → trades_enriched; state in lab/insights_ledger.jsonl) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |
 | Rust perimeter port | post-round-1 option (registered, dormant) |
