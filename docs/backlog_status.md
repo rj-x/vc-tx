@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 112 (freshness-checked by the weekly
+table.** Register-current-through: 115 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -36,7 +36,7 @@ authoritative.
 | per-market config WATCH page | PRE-REGISTERED + BUILT 2026-08-29 (register 105 item 5: per instrument × zone, best variant / session / slot by consistency statistics only, selection-null percentile + tail-carry check on every cell; a map, never a settings page; weekly Part C) |
 | per-market candidate pool (R-NEXIT-EARLY × open-window ger40+nas100; us30fut × open-window; ger40fut S0-H19 reach) | awaiting-decision-mechanism-sentence (register 105 item 4: each slot EMPTY until the operator's pen; then the track's selection-aware null + own forward clock at ≥45 rows, proposed) |
 | scalp TP ladder (target rungs) | PRE-REGISTERED + BUILT 2026-08-30 (register 106: the arms' own fires re-simulated at 0.75/1.0/1.5xATR targets, same haircut/stop/EOD; consistency-ranked per register 105; reach-decay curve; member bands; single-leg optima to the WATCH page per statistic with own nulls; survivors join the v1 geometry package; follow-through 2026-08-30: 0.25 rung added (spread-negative as expected), hand-off defects RULED (per-statistic optima, same-rung median nulls); no rung clears; 4 single-leg hand-offs listed) |
-| per-market glints with HELD sentences (nas100fut R-NEXIT-FULL × overlap; us30fut R-ARM15 × dead) | awaiting-accrual (register 105 follow-through: sentences drafted and HELD; condition (b) unmet — selection-percentiles 82–93 vs > 95 required; activate for ruling only if a future emission clears the selection-null; nothing opens) |
+| per-market glints with HELD sentences (nas100fut R-NEXIT-FULL × overlap; us30fut R-ARM15 × dead) | awaiting-accrual (register 105 follow-through: sentences drafted and HELD; condition (b) unmet — and further from met at register 113's distinct-path recompute: nas100 83/87, us30 COLLAPSED to 0/0 under accrual + dedup; activate for ruling only if a future emission clears the selection-null; nothing opens) |
 | R-SCOPED-BE (contingent variant) | pre-registered (register 92); gate now a PRINTED READOUT (register 107: regime-gate floors + luck budget in capture_study.md) — NOT PASSED on any leg 2026-08-30 (ranging BE@0.25 inside its member band everywhere; gap inside luck, positive on 2 of 4 legs); re-reads weekly; expiry: re-read when the ex-lockbox R-NOTRAIL base doubles from 1,847 |
 | H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
 
@@ -62,6 +62,8 @@ authoritative.
 | s9 scenario | awaiting-decision-ruling-cycle |
 | decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
 | persistence-census matched blocks + census-clears routing | BUILT 2026-08-30 (register 108: n + member count + CLEARS RANGE flag in every matched block; clears measurable at n≥25 route to per_market_watch.md wearing a signal-label selection-null; ger40 forward n-check done — 4 of 7 measurable, only graded S0-H6 beats its field null; nas100 R-NOTRAIL×overlap +149.75 n=16 CONFIRMED with receipts — day-carried and path-duplicated, forward cell is the live read) |
+| distinct-path counting (WATCH / INSIGHTS / v3 journal cells) | ACCEPTED + BUILT 2026-08-30 (register 113, resolving the register-108 proposal: co-fired identical paths count once for every consistency statistic; n prints as rows (distinct); selection-nulls recomputed — beats-null cells 39→35 win / 47→40 median; the nas100 founding case n 16 (14), median +136.25, still clears) |
+| arrival anatomy (v3-zone addendum) | PRE-REGISTERED + BUILT 2026-08-30 (register 114: in-zone vs session-standardized base — volume/loud, spread/quadrant mix, leg velocity, TEST/ND/NS/climax rates, phase flips; two-sided permutation nulls; ≥3-of-4-leg claims; first emission ZERO claims, 16 single-leg findings resting on 1–2 zones per leg — episodes, not zone law; zones/days honesty columns; weekly with v3) |
 | zone census v3 (departure bases, D1/H4) | PRE-REGISTERED + BUILT 2026-08-30 (register 111: NEW definition + source, not a v2 rerun — base = ≥swing_k bars inside 1×ATR, impulsive departure {1.5,3}×ATR, zone = the base's range, full trade-through invalidation; scarcity check stated: D1 ~5–15 active/leg, hundreds = definition FAILED and the census says so; register-105 consistency statistics + selection-null on journal cells; mint-on-lift only; weekly Part C) |
 | H4 key-zone conditioner census | PARKED 2026-08-28 (register 97): the v2 ladder stands as the STANDING NULL, accruing weekly under Part C; no further rungs (window-relative touch variant explicitly not taken); the source idea measured-and-unsupported at every reading of 'significant and recent'; revisitable only by re-registration on new evidence |
 
@@ -70,8 +72,8 @@ authoritative.
 | idea | status |
 |---|---|
 | #1 volume profile (re-ranked first) | BUILT 2026-08-20; proposals RATIFIED (register 46); engine field emission awaiting-decision-if-needed |
-| #2 velocity/efficiency | awaiting-build-slot (next organ after item 22 per one-at-a-time) |
-| #3 coil, #4 signed volume, #5 dwell-time | awaiting-build-slot (ranked; mapped to H8/H12/H3/H11/H6) |
+| #2 velocity/efficiency | half-built (register 115: the register-95 deceleration class is the built half; the regime/efficiency organ remains unbuilt); prioritization deferred until after the sealed window's first read |
+| #3 coil, #4 signed volume, #5 dwell-time | dispositions registered 2026-08-30 (register 115): #3 eventual with params ratified; #4/#5 the NAMED future instruments for H12's clauses (zero fires — vocabulary never built) and arrival-anatomy extensions; prioritization deferred until after the sealed window's first read; queue page archived (reports/archive/sense_organ_queue.md) |
 | #6 order-flow delta | unreachable (data ceiling, recorded) |
 
 ## Infrastructure & evenings

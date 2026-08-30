@@ -229,4 +229,4 @@ this run's warm_through, since a post-crash sync can erase downtime.
 - `docs/backlog_status.md` — one-status-per-idea glance table (register 45).
 - `backtest/campaign.py` — the weekly evidential pipeline → `reports/backtest_v1/` + `backtest_v1.md`.
 - `scripts/param_registry.py` — canonical parameter registry generator → `docs/parameter_registry.md` (regen rides the campaign; pinned vs HEAD).
-- `docs/hypothesis_register.md` — THE hypothesis list (H1–H12) · `docs/sense_organ_queue.md` — build queue · `docs/lockbox_policy.md` + `docs/hypothesis_lifecycle.md` — zone + stage doctrine · `docs/location_apparatus.md` — location mechanics.
+- `docs/hypothesis_register.md` — THE hypothesis list (H1–H12) · `docs/backlog_status.md` — build queue (the sense-organ queue page archived 2026-08-30, register 115) · `docs/lockbox_policy.md` + `docs/hypothesis_lifecycle.md` — zone + stage doctrine · `docs/location_apparatus.md` — location mechanics.
