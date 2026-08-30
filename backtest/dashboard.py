@@ -388,6 +388,12 @@ def generate():
           "standing null (register 97): flat-to-negative density-vs-"
           "lift across 8 rungs, no freshness decay; accrues weekly, no "
           "further rungs without new evidence.",
+          "- `zone_anatomy.md` — arrival anatomy (register 114): tape "
+          "character in-zone vs session-standardized bases at the v3 "
+          "zones (volume, spread, quadrant mix, leg velocity, VSA label "
+          "rates, phase flips); the zones' mechanism test, independent "
+          "of signal conditioning. n counts bars — the zone/day columns "
+          "carry the honesty. Read weekly with v3.",
           "- `zone_census_v3.md` — departure bases (register 111): "
           "consolidation-then-impulsive-departure zones on D1/H4, the "
           "base's range as the zone, scarcity check stated at "

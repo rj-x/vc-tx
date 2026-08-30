@@ -535,6 +535,11 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.zone_census_v3",      # register 111 (departure
                                                 # bases; v2 stays the
                                                 # standing null)
+                "backtest.zone_anatomy",        # register 114 (the v3
+                                                # addendum: tape character
+                                                # at the zones; single-leg
+                                                # findings graft onto the
+                                                # WATCH page)
                 "backtest.circuit_breaker",     # register 102 (embedded
                                                 # by the refinement md)
                 "backtest.h6_refinement",       # register 100

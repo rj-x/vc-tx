@@ -28,6 +28,7 @@ PAIRS = [("hypothesis_performance.md", "hypothesis_performance.json"),
          ("scalp_tp_ladder.md", "scalp_tp_ladder.json"),
          ("capture_study.md", "capture_study.json"),
          ("zone_census_v3.md", "zone_census_v3.json"),
+         ("zone_anatomy.md", "zone_anatomy.json"),
          (os.path.join("..", "INSIGHTS.md"), "insights.json")]
 
 

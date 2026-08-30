@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -12,325 +12,325 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | us30fut x open-window strength | us30fut | the ISO-week-32 refutation cell (operator + reviewer sitting 2026-08-29, chat-side; NOT located in a repo artifact under that name — nearest artifact: event_clock.md us30fut open15/open30 cells) | (EMPTY — awaiting operator) |
 | ger40fut S0-H19 reach | ger40fut | register 99: forward net reach 21.4% vs floor max 18.7 (n=126), the standing WATCH cell | (EMPTY — awaiting operator) |
 
-## ger40fut — backtest (3741 rows; 82 field cells, 44 measurable, 9 tail-carried; field null p95 over 100 valid seeds: best win 62%, best median +4.87)
+## ger40fut — backtest (3741 rows; 82 field cells, 42 measurable, 13 tail-carried; field null p95 over 100 valid seeds: best win 62%, best median +4.88)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6-REF | london | none | 10 | +18.21 | 90% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 78.0 |
-| R-ARM15 | dead | none | 35 | +21.74 | 63% | 2/2 | 96.0 / 100.0 | YES / YES | 0.22 | 612.5 |
-| R-ARM15 | london | none | 55 | +3.86 | 55% | 1/2 | 74.0 / 91.0 | no / no | 0.11 | 473.3 |
-| R-NEXIT-SENT | dead | close15 | 15 | +0.89 | 53% | 0/1 | 64.0 / 62.0 | no / no | 0.23 | -39.9 |
-| R-NEXIT-FULL | overlap | none | 62 | +0.80 | 53% | 1/2 | 63.0 / 60.0 | no / no | 0.14 | 23.9 |
+| R-SCALP-H6-REF | london | none | 10 (10) | +18.21 | 90% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 78.0 |
+| R-NEXIT-FULL | overlap | none | 62 (52) | +0.80 | 54% | 1/2 | 71.0 / 64.0 | no / no | 0.17 | -9.0 |
+| R-ARM15 | london | none | 55 (49) | +2.63 | 53% | 1/2 | 67.0 / 83.0 | no / no | 0.13 | 431.0 |
+| R-NEXIT-SENT | london | none | 58 (51) | +1.80 | 53% | 1/2 | 65.0 / 80.0 | no / no | 0.12 | 823.0 |
+| R-ARM15 | asia | none | 77 (71) | +0.03 | 51% | 2/2 | 49.0 / 45.0 | no / no | 0.09 | 1063.6 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | dead | none | 35 | +21.74 | 63% | 2/2 | 96.0 / 100.0 | YES / YES | 0.22 | 612.5 |
-| R-SCALP-H6-REF | london | none | 10 | +18.21 | 90% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 78.0 |
-| R-ARM15 | london | none | 55 | +3.86 | 55% | 1/2 | 74.0 / 91.0 | no / no | 0.11 | 473.3 |
-| R-NEXIT-EARLY | ny_only | news15 | 17 | +2.80 | 53% | 0/1 | 61.0 / 83.0 | no / no | 0.20 | -5.5 |
-| R-NEXIT-FULL | ny_only | news15 | 17 | +2.80 | 53% | 0/1 | 61.0 / 83.0 | no / no | 0.20 | -5.5 |
+| R-SCALP-H6-REF | london | none | 10 (10) | +18.21 | 90% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 78.0 |
+| R-ARM15 | london | none | 55 (49) | +2.63 | 53% | 1/2 | 67.0 / 83.0 | no / no | 0.13 | 431.0 |
+| R-NEXIT-SENT | london | none | 58 (51) | +1.80 | 53% | 1/2 | 65.0 / 80.0 | no / no | 0.12 | 823.0 |
+| R-NEXIT-FULL | overlap | none | 62 (52) | +0.80 | 54% | 1/2 | 71.0 / 64.0 | no / no | 0.17 | -9.0 |
+| R-ARM15 | asia | none | 77 (71) | +0.03 | 51% | 2/2 | 49.0 / 45.0 | no / no | 0.09 | 1063.6 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | dead | none | 35 | +21.74 | 63% | 2/2 | 96.0 / 100.0 | YES / YES | 0.22 | 612.5 |
-| R-ARM15 | asia | none | 77 | +0.03 | 51% | 2/2 | 43.0 / 40.0 | no / no | 0.08 | 1110.8 |
-| R-NOTRAIL | asia | none | 43 | -54.39 | 44% | 2/2 | 0.0 / 0.0 | no / no | 0.10 | 375.4 |
-| R-NEXIT-EARLY | dead | none | 144 | -0.70 | 40% | 2/3 | 0.0 / 13.0 | no / no | 0.10 | -9.4 |
-| R-NEXIT-FULL | dead | none | 152 | -0.90 | 38% | 2/3 | 0.0 / 7.0 | no / no | 0.11 | -12.1 |
+| R-ARM15 | asia | none | 77 (71) | +0.03 | 51% | 2/2 | 49.0 / 45.0 | no / no | 0.09 | 1063.6 |
+| R-NOTRAIL | asia | none | 43 (41) | -54.39 | 44% | 2/2 | 0.0 / 0.0 | no / no | 0.12 | 200.2 |
+| R-OP2 | overlap | none | 69 (58) | -7.34 | 34% | 2/3 | 0.0 / 0.0 | no / no | 0.20 | -99.4 |
+| R-SCALP-H6-REF | london | none | 10 (10) | +18.21 | 90% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 78.0 |
+| R-NEXIT-FULL | overlap | none | 62 (52) | +0.80 | 54% | 1/2 | 71.0 / 64.0 | no / no | 0.17 | -9.0 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6-REF | london | none | 10 | 90% | +18.21 | 100.0 | YES |
-| session | london | london | none | 10 | 90% | +18.21 | 100.0 | YES |
-| slot | none | london | none | 10 | 90% | +18.21 | 100.0 | YES |
+| variant | R-SCALP-H6-REF | london | none | 10 (10) | 90% | +18.21 | 100.0 | YES |
+| session | london | london | none | 10 (10) | 90% | +18.21 | 100.0 | YES |
+| slot | none | london | none | 10 (10) | 90% | +18.21 | 100.0 | YES |
 
-## ger40fut — forward (6101 rows; 94 field cells, 58 measurable, 22 tail-carried; field null p95 over 100 valid seeds: best win 61%, best median +2.94)
+## ger40fut — forward (6101 rows; 94 field cells, 55 measurable, 21 tail-carried; field null p95 over 100 valid seeds: best win 61%, best median +2.94)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 21 | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
-| R-SCALP-H6-REF | london | none | 17 | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
-| R-SCALP-H6 | asia | none | 18 | +5.84 | 72% | 0/2 | 100.0 / 98.0 | YES / YES | 0.10 | -94.2 |
-| R-SCALP-H6-REF | asia | none | 16 | +5.23 | 69% | 0/2 | 98.0 / 96.0 | YES / YES | 0.12 | -126.4 |
-| R-ARM15 | overlap | none | 44 | +4.45 | 57% | 2/2 | 84.0 / 96.0 | no / YES | 0.14 | 443.5 |
+| R-SCALP-H6 | london | none | 21 (21) | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
+| R-SCALP-H6 | asia | none | 18 (18) | +5.84 | 72% | 0/2 | 100.0 / 98.0 | YES / YES | 0.10 | -94.2 |
+| R-SCALP-H6-REF | asia | none | 16 (16) | +5.23 | 69% | 0/2 | 99.0 / 97.0 | YES / YES | 0.12 | -126.4 |
+| R-NEXIT-SENT | overlap | none | 56 (50) | +7.25 | 58% | 2/2 | 89.0 / 99.0 | no / YES | 0.15 | 399.8 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 21 | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
-| R-SCALP-H6-REF | london | none | 17 | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
-| R-SCALP-H6 | asia | none | 18 | +5.84 | 72% | 0/2 | 100.0 / 98.0 | YES / YES | 0.10 | -94.2 |
-| R-SCALP-H6-REF | asia | none | 16 | +5.23 | 69% | 0/2 | 98.0 / 96.0 | YES / YES | 0.12 | -126.4 |
-| R-NEXIT-SENT | overlap | none | 56 | +4.95 | 55% | 2/2 | 80.0 / 96.0 | no / YES | 0.13 | 438.8 |
+| R-SCALP-H6 | london | none | 21 (21) | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
+| R-NEXIT-SENT | overlap | none | 56 (50) | +7.25 | 58% | 2/2 | 89.0 / 99.0 | no / YES | 0.15 | 399.8 |
+| R-SCALP-H6 | asia | none | 18 (18) | +5.84 | 72% | 0/2 | 100.0 / 98.0 | YES / YES | 0.10 | -94.2 |
+| R-SCALP-H6-REF | asia | none | 16 (16) | +5.23 | 69% | 0/2 | 99.0 / 97.0 | YES / YES | 0.12 | -126.4 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | overlap | none | 44 | +4.45 | 57% | 2/2 | 84.0 / 96.0 | no / YES | 0.14 | 443.5 |
-| R-NEXIT-SENT | overlap | none | 56 | +4.95 | 55% | 2/2 | 80.0 / 96.0 | no / YES | 0.13 | 438.8 |
-| R-NOTRAIL | ny_only | none | 82 | -12.50 | 50% | 2/3 | 51.0 / 0.0 | no / no | 0.05 | 1945.7 |
-| R-SCALP-H6 | london | none | 21 | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
-| R-SCALP-H6-REF | london | none | 17 | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
+| R-NEXIT-SENT | overlap | none | 56 (50) | +7.25 | 58% | 2/2 | 89.0 / 99.0 | no / YES | 0.15 | 399.8 |
+| R-ARM15 | overlap | none | 44 (43) | +3.00 | 56% | 2/2 | 83.0 / 95.0 | no / YES | 0.16 | 343.4 |
+| R-NOTRAIL | ny_only | none | 82 (72) | -12.50 | 50% | 2/3 | 52.0 / 0.0 | no / no | 0.06 | 1693.7 |
+| R-SCALP-H6 | london | none | 21 (21) | +12.46 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.08 | 67.5 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +11.39 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 10.3 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6 | london | none | 21 | 86% | +12.46 | 100.0 | YES |
-| session | london | london | none | 21 | 86% | +12.46 | 100.0 | YES |
-| slot | none | london | none | 21 | 86% | +12.46 | 100.0 | YES |
+| variant | R-SCALP-H6 | london | none | 21 (21) | 86% | +12.46 | 100.0 | YES |
+| session | london | london | none | 21 (21) | 86% | +12.46 | 100.0 | YES |
+| slot | none | london | none | 21 (21) | 86% | +12.46 | 100.0 | YES |
 
-## nas100fut — backtest (4369 rows; 85 field cells, 53 measurable, 19 tail-carried; field null p95 over 100 valid seeds: best win 68%, best median +13.29)
+## nas100fut — backtest (4369 rows; 85 field cells, 49 measurable, 21 tail-carried; field null p95 over 100 valid seeds: best win 68%, best median +13.01)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | overlap | none | 12 | +32.97 | 92% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 248.4 |
-| R-NOTRAIL | overlap | none | 16 | +149.75 | 75% | 2/2 | 99.0 / 100.0 | YES / YES | 0.13 | 1846.2 |
-| R-ARM15 | asia | none | 57 | +21.52 | 61% | 1/1 | 88.0 / 97.0 | no / YES | 0.15 | 1425.7 |
-| R-NEXIT-SENT | overlap | none | 62 | +27.50 | 61% | 2/2 | 88.0 / 98.0 | no / YES | 0.07 | 415.4 |
-| R-NEXIT-EARLY | dead | close15 | 17 | +1.10 | 59% | 0/1 | 77.0 / 38.0 | no / no | 0.23 | -31.7 |
+| R-SCALP-H6 | overlap | none | 12 (12) | +32.97 | 92% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 248.4 |
+| R-NOTRAIL | overlap | none | 16 (14) | +136.25 | 71% | 2/2 | 98.0 / 100.0 | YES / YES | 0.18 | 1240.8 |
+| R-ARM15 | asia | none | 57 (51) | +24.32 | 63% | 1/1 | 92.0 / 97.0 | no / YES | 0.18 | 1388.8 |
+| R-NEXIT-SENT | overlap | none | 62 (50) | +26.30 | 60% | 1/2 | 87.0 / 98.0 | no / YES | 0.09 | 225.1 |
+| R-NEXIT-FULL | ny_only | none | 187 (150) | +2.90 | 55% | 3/3 | 67.0 / 58.0 | no / no | 0.07 | 379.6 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NOTRAIL | overlap | none | 16 | +149.75 | 75% | 2/2 | 99.0 / 100.0 | YES / YES | 0.13 | 1846.2 |
-| R-ARM15 | dead | none | 46 | +33.06 | 52% | 2/3 | 45.0 / 100.0 | no / YES | 0.12 | 1509.6 |
-| R-SCALP-H6 | overlap | none | 12 | +32.97 | 92% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 248.4 |
-| R-NEXIT-SENT | overlap | none | 62 | +27.50 | 61% | 2/2 | 88.0 / 98.0 | no / YES | 0.07 | 415.4 |
-| R-ARM15 | asia | none | 57 | +21.52 | 61% | 1/1 | 88.0 / 97.0 | no / YES | 0.15 | 1425.7 |
+| R-NOTRAIL | overlap | none | 16 (14) | +136.25 | 71% | 2/2 | 98.0 / 100.0 | YES / YES | 0.18 | 1240.8 |
+| R-SCALP-H6 | overlap | none | 12 (12) | +32.97 | 92% | 1/1 | 100.0 / 100.0 | YES / YES | 0.13 | 248.4 |
+| R-NEXIT-SENT | overlap | none | 62 (50) | +26.30 | 60% | 1/2 | 87.0 / 98.0 | no / YES | 0.09 | 225.1 |
+| R-ARM15 | asia | none | 57 (51) | +24.32 | 63% | 1/1 | 92.0 / 97.0 | no / YES | 0.18 | 1388.8 |
+| R-NEXIT-FULL | ny_only | none | 187 (150) | +2.90 | 55% | 3/3 | 67.0 / 58.0 | no / no | 0.07 | 379.6 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NEXIT-SENT | dead | none | 113 | +7.90 | 57% | 3/3 | 74.0 / 87.0 | no / no | 0.16 | 1169.3 |
-| R-NEXIT-FULL | ny_only | none | 187 | +2.20 | 55% | 3/3 | 65.0 / 52.0 | no / no | 0.06 | 141.5 |
-| R-NEXIT-EARLY | ny_only | none | 179 | +2.10 | 55% | 3/3 | 60.0 / 51.0 | no / no | 0.07 | 166.3 |
-| R-NOTRAIL | overlap | none | 16 | +149.75 | 75% | 2/2 | 99.0 / 100.0 | YES / YES | 0.13 | 1846.2 |
-| R-NEXIT-SENT | overlap | none | 62 | +27.50 | 61% | 2/2 | 88.0 / 98.0 | no / YES | 0.07 | 415.4 |
+| R-NEXIT-FULL | ny_only | none | 187 (150) | +2.90 | 55% | 3/3 | 67.0 / 58.0 | no / no | 0.07 | 379.6 |
+| R-NEXIT-EARLY | ny_only | none | 179 (142) | +2.55 | 55% | 3/3 | 63.0 / 57.0 | no / no | 0.07 | 404.4 |
+| R-NOTRAIL | overlap | none | 16 (14) | +136.25 | 71% | 2/2 | 98.0 / 100.0 | YES / YES | 0.18 | 1240.8 |
+| R-NEXIT-SENT | ny_only | none | 101 (82) | +2.05 | 54% | 2/2 | 57.0 / 51.0 | no / no | 0.14 | 526.0 |
+| R-ARM15 | ny_only | none | 45 (40) | -2.00 | 50% | 2/2 | 28.0 / 0.0 | no / no | 0.18 | 832.6 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6 | overlap | none | 12 | 92% | +32.97 | 100.0 | YES |
-| session | overlap | overlap | none | 12 | 92% | +32.97 | 100.0 | YES |
-| slot | none | overlap | none | 12 | 92% | +32.97 | 100.0 | YES |
+| variant | R-SCALP-H6 | overlap | none | 12 (12) | 92% | +32.97 | 100.0 | YES |
+| session | overlap | overlap | none | 12 (12) | 92% | +32.97 | 100.0 | YES |
+| slot | none | overlap | none | 12 (12) | 92% | +32.97 | 100.0 | YES |
 
-## nas100fut — forward (6510 rows; 105 field cells, 65 measurable, 23 tail-carried; field null p95 over 100 valid seeds: best win 65%, best median +10.35)
+## nas100fut — forward (6510 rows; 105 field cells, 62 measurable, 22 tail-carried; field null p95 over 100 valid seeds: best win 65%, best median +10.35)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6-REF | overlap | none | 13 | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
-| R-SCALP-H6-REF | london | none | 13 | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
-| R-SCALP-H6 | london | none | 13 | +17.54 | 92% | 2/2 | 100.0 / 98.0 | YES / YES | 0.13 | 106.8 |
-| R-SCALP-H6 | overlap | none | 11 | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
-| R-SCALP-H6-REF | asia | none | 11 | +14.57 | 91% | 1/2 | 100.0 / 98.0 | YES / YES | 0.14 | 68.9 |
+| R-SCALP-H6-REF | overlap | none | 13 (13) | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
+| R-SCALP-H6-REF | london | none | 13 (13) | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
+| R-SCALP-H6 | london | none | 13 (13) | +17.54 | 92% | 2/2 | 100.0 / 98.0 | YES / YES | 0.13 | 106.8 |
+| R-SCALP-H6 | overlap | none | 11 (11) | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +14.57 | 91% | 1/2 | 100.0 / 98.0 | YES / YES | 0.14 | 68.9 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6-REF | overlap | none | 13 | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
-| R-SCALP-H6 | overlap | none | 11 | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
-| R-NEXIT-SENT | overlap | none | 62 | +20.10 | 63% | 1/2 | 90.0 / 98.0 | no / YES | 0.08 | 604.8 |
-| R-NOTRAIL | overlap | none | 18 | +19.70 | 61% | 1/3 | 85.0 / 98.0 | no / YES | 0.21 | 169.7 |
-| R-SCALP-H6-REF | london | none | 13 | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
+| R-SCALP-H6-REF | overlap | none | 13 (13) | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
+| R-SCALP-H6 | overlap | none | 11 (11) | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
+| R-NOTRAIL | overlap | none | 18 (18) | +19.70 | 61% | 1/3 | 86.0 / 98.0 | no / YES | 0.21 | 169.7 |
+| R-NEXIT-SENT | overlap | none | 62 (57) | +19.00 | 60% | 1/2 | 83.0 / 98.0 | no / YES | 0.09 | 386.9 |
+| R-SCALP-H6-REF | london | none | 13 (13) | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NEXIT-FULL | overlap | none | 107 | +6.20 | 59% | 3/3 | 83.0 / 88.0 | no / no | 0.07 | 1286.0 |
-| R-SCALP-H6-REF | london | none | 13 | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
-| R-SCALP-H6-REF | overlap | none | 13 | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
-| R-SCALP-H6 | london | none | 13 | +17.54 | 92% | 2/2 | 100.0 / 98.0 | YES / YES | 0.13 | 106.8 |
-| R-SCALP-H6 | overlap | none | 11 | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
+| R-NEXIT-FULL | overlap | none | 107 (97) | +5.50 | 58% | 3/3 | 83.0 / 87.0 | no / no | 0.07 | 1191.9 |
+| R-SCALP-H6-REF | london | none | 13 (13) | +17.70 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.12 | 226.2 |
+| R-SCALP-H6-REF | overlap | none | 13 (13) | +21.58 | 100% | 2/2 | 100.0 / 98.0 | YES / YES | 0.14 | 315.9 |
+| R-SCALP-H6 | london | none | 13 (13) | +17.54 | 92% | 2/2 | 100.0 / 98.0 | YES / YES | 0.13 | 106.8 |
+| R-SCALP-H6 | overlap | none | 11 (11) | +21.58 | 91% | 2/2 | 100.0 / 98.0 | YES / YES | 0.17 | 136.1 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6-REF | overlap | none | 13 | 100% | +21.58 | 100.0 | YES |
-| session | overlap | overlap | none | 13 | 100% | +21.58 | 100.0 | YES |
-| slot | none | overlap | none | 13 | 100% | +21.58 | 100.0 | YES |
+| variant | R-SCALP-H6-REF | overlap | none | 13 (13) | 100% | +21.58 | 100.0 | YES |
+| session | overlap | overlap | none | 13 (13) | 100% | +21.58 | 100.0 | YES |
+| slot | none | overlap | none | 13 (13) | 100% | +21.58 | 100.0 | YES |
 
-## uk100fut — backtest (6290 rows; 83 field cells, 61 measurable, 22 tail-carried; field null p95 over 100 valid seeds: best win 57%, best median +1.59)
+## uk100fut — backtest (6290 rows; 83 field cells, 61 measurable, 25 tail-carried; field null p95 over 100 valid seeds: best win 57%, best median +1.45)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 14 | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
-| R-SCALP-H6-REF | london | none | 17 | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
-| R-SCALP-H6 | asia | none | 13 | +3.02 | 85% | 0/2 | 100.0 / 97.0 | YES / YES | 0.14 | -3.3 |
-| R-SCALP-H6-REF | asia | none | 11 | +3.01 | 82% | 0/2 | 100.0 / 97.0 | YES / YES | 0.16 | -14.1 |
-| R-NEXIT-FULL | london | open15 | 28 | +1.45 | 57% | 1/2 | 92.0 / 93.0 | no / no | 0.20 | 104.0 |
+| R-SCALP-H6 | london | none | 14 (14) | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
+| R-SCALP-H6 | asia | none | 13 (13) | +3.02 | 85% | 0/2 | 100.0 / 98.0 | YES / YES | 0.14 | -3.3 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +3.01 | 82% | 0/2 | 100.0 / 98.0 | YES / YES | 0.16 | -14.1 |
+| R-NEXIT-FULL | london | open15 | 28 (26) | +1.45 | 54% | 1/2 | 90.0 / 94.0 | no / no | 0.20 | 100.6 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 14 | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
-| R-SCALP-H6-REF | london | none | 17 | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
-| R-SCALP-H6 | asia | none | 13 | +3.02 | 85% | 0/2 | 100.0 / 97.0 | YES / YES | 0.14 | -3.3 |
-| R-SCALP-H6-REF | asia | none | 11 | +3.01 | 82% | 0/2 | 100.0 / 97.0 | YES / YES | 0.16 | -14.1 |
-| R-NEXIT-FULL | london | open15 | 28 | +1.45 | 57% | 1/2 | 92.0 / 93.0 | no / no | 0.20 | 104.0 |
+| R-SCALP-H6 | london | none | 14 (14) | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
+| R-SCALP-H6 | asia | none | 13 (13) | +3.02 | 85% | 0/2 | 100.0 / 98.0 | YES / YES | 0.14 | -3.3 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +3.01 | 82% | 0/2 | 100.0 / 98.0 | YES / YES | 0.16 | -14.1 |
+| R-NEXIT-FULL | london | open15 | 28 (26) | +1.45 | 54% | 1/2 | 90.0 / 94.0 | no / no | 0.20 | 100.6 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 14 | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
-| R-SCALP-H6-REF | london | none | 17 | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
-| R-NOTRAIL | london | none | 79 | -2.80 | 49% | 2/2 | 73.0 / 0.0 | no / no | 0.07 | 513.1 |
-| R-ARM15 | london | none | 137 | -2.80 | 46% | 2/3 | 56.0 / 0.0 | no / no | 0.05 | 194.6 |
-| R-NEXIT-SENT | london | none | 226 | -2.20 | 44% | 2/3 | 37.0 / 0.0 | no / no | 0.04 | -282.7 |
+| R-BE | london | none | 122 (110) | -1.30 | 37% | 3/3 | 0.0 / 2.0 | no / no | 0.07 | 556.3 |
+| R-SCALP-H6 | london | none | 14 (14) | +6.58 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.15 | 95.2 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +6.05 | 88% | 2/2 | 100.0 / 100.0 | YES / YES | 0.14 | 16.7 |
+| R-NOTRAIL | london | none | 79 (72) | -3.05 | 49% | 2/2 | 72.0 / 0.0 | no / no | 0.08 | 455.9 |
+| R-ARM15 | london | none | 137 (124) | -3.22 | 44% | 2/3 | 44.0 / 0.0 | no / no | 0.06 | 86.5 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6 | london | none | 14 | 100% | +6.58 | 100.0 | YES |
-| session | london | london | none | 14 | 100% | +6.58 | 100.0 | YES |
-| slot | none | london | none | 14 | 100% | +6.58 | 100.0 | YES |
+| variant | R-SCALP-H6 | london | none | 14 (14) | 100% | +6.58 | 100.0 | YES |
+| session | london | london | none | 14 (14) | 100% | +6.58 | 100.0 | YES |
+| slot | none | london | none | 14 (14) | 100% | +6.58 | 100.0 | YES |
 
-## uk100fut — forward (5957 rows; 91 field cells, 59 measurable, 20 tail-carried; field null p95 over 100 valid seeds: best win 50%, best median +0.35)
+## uk100fut — forward (5957 rows; 91 field cells, 57 measurable, 22 tail-carried; field null p95 over 100 valid seeds: best win 50%, best median +0.35)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | asia | none | 12 | +1.80 | 92% | 2/2 | 100.0 / 99.0 | YES / YES | 0.12 | 5.5 |
-| R-SCALP-H6-REF | asia | none | 11 | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
-| R-SCALP-H6-REF | london | none | 20 | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
-| R-SCALP-H6 | london | none | 21 | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
-| R-NEXIT-SENT | asia | news15 | 11 | +3.40 | 73% | 0/1 | 100.0 / 100.0 | YES / YES | 0.18 | -1.7 |
+| R-SCALP-H6 | asia | none | 12 (12) | +1.80 | 92% | 2/2 | 100.0 / 99.0 | YES / YES | 0.12 | 5.5 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
+| R-SCALP-H6-REF | london | none | 20 (20) | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
+| R-SCALP-H6 | london | none | 21 (21) | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
+| R-NEXIT-SENT | asia | news15 | 11 (10) | +2.80 | 70% | 0/1 | 100.0 / 100.0 | YES / YES | 0.22 | -8.7 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | london | none | 21 | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
-| R-SCALP-H6-REF | london | none | 20 | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
-| R-NEXIT-SENT | asia | news15 | 11 | +3.40 | 73% | 0/1 | 100.0 / 100.0 | YES / YES | 0.18 | -1.7 |
-| R-ARM15 | ny_only | close15 | 14 | +2.85 | 57% | 0/2 | 99.0 / 100.0 | YES / YES | 0.24 | -113.8 |
-| R-NOTRAIL | overlap | none | 31 | +2.20 | 58% | 2/2 | 100.0 / 100.0 | YES / YES | 0.12 | 48.6 |
+| R-SCALP-H6 | london | none | 21 (21) | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
+| R-SCALP-H6-REF | london | none | 20 (20) | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
+| R-NEXIT-SENT | asia | news15 | 11 (10) | +2.80 | 70% | 0/1 | 100.0 / 100.0 | YES / YES | 0.22 | -8.7 |
+| R-SCALP-H6 | asia | none | 12 (12) | +1.80 | 92% | 2/2 | 100.0 / 99.0 | YES / YES | 0.12 | 5.5 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | asia | none | 12 | +1.80 | 92% | 2/2 | 100.0 / 99.0 | YES / YES | 0.12 | 5.5 |
-| R-NOTRAIL | overlap | none | 31 | +2.20 | 58% | 2/2 | 100.0 / 100.0 | YES / YES | 0.12 | 48.6 |
-| R-ARM15 | overlap | none | 50 | +0.00 | 50% | 2/2 | 94.0 / 94.0 | no / no | 0.13 | 7.1 |
-| R-OP2 | overlap | none | 100 | -3.04 | 36% | 2/3 | 18.0 / 0.0 | no / no | 0.12 | 14.0 |
-| R-SCALP-H6-REF | asia | none | 11 | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
+| R-SCALP-H6 | asia | none | 12 (12) | +1.80 | 92% | 2/2 | 100.0 / 99.0 | YES / YES | 0.12 | 5.5 |
+| R-SCALP-H6-REF | asia | none | 11 (11) | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
+| R-SCALP-H6-REF | london | none | 20 (20) | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
+| R-SCALP-H6 | london | none | 21 (21) | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
+| R-NOTRAIL | overlap | none | 31 (27) | +1.70 | 56% | 1/2 | 98.0 / 99.0 | YES / YES | 0.16 | 13.4 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6 | asia | none | 12 | 92% | +1.80 | 100.0 | YES |
-| session | asia | asia | none | 12 | 92% | +1.80 | 100.0 | YES |
-| slot | none | asia | none | 12 | 92% | +1.80 | 100.0 | YES |
+| variant | R-SCALP-H6 | asia | none | 12 (12) | 92% | +1.80 | 100.0 | YES |
+| session | asia | asia | none | 12 (12) | 92% | +1.80 | 100.0 | YES |
+| slot | none | asia | none | 12 (12) | 92% | +1.80 | 100.0 | YES |
 
-## us30fut — backtest (4672 rows; 98 field cells, 55 measurable, 16 tail-carried; field null p95 over 100 valid seeds: best win 57%, best median +3.16)
+## us30fut — backtest (4672 rows; 98 field cells, 50 measurable, 18 tail-carried; field null p95 over 100 valid seeds: best win 57%, best median +3.16)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-OP2 | ny_only | news15 | 17 | +49.38 | 65% | 1/1 | 99.0 / 100.0 | YES / YES | 0.22 | 1180.0 |
-| R-NEXIT-EARLY | ny_only | news15 | 31 | +12.40 | 64% | 0/1 | 99.0 / 100.0 | YES / YES | 0.15 | -52.2 |
-| R-NEXIT-FULL | ny_only | news15 | 31 | +12.40 | 64% | 0/1 | 99.0 / 100.0 | YES / YES | 0.15 | -52.2 |
-| R-NEXIT-SENT | ny_only | news15 | 21 | +18.90 | 62% | 0/1 | 98.0 / 100.0 | YES / YES | 0.14 | -57.5 |
-| R-SCALP-H6-REF | london | none | 15 | +14.45 | 60% | 0/2 | 97.0 / 100.0 | YES / YES | 0.18 | -567.7 |
+| R-ARM15 | dead | none | 40 (35) | +10.07 | 63% | 1/3 | 98.0 / 99.0 | YES / YES | 0.13 | -622.0 |
+| R-NEXIT-SENT | ny_only | news15 | 21 (15) | +18.90 | 60% | 0/1 | 97.0 / 100.0 | YES / YES | 0.18 | -105.9 |
+| R-SCALP-H6-REF | london | none | 15 (15) | +14.45 | 60% | 0/2 | 97.0 / 100.0 | YES / YES | 0.18 | -567.7 |
+| R-NEXIT-EARLY | ny_only | news15 | 31 (20) | +10.65 | 60% | 1/1 | 97.0 / 99.0 | YES / YES | 0.22 | 20.9 |
+| R-NEXIT-FULL | ny_only | news15 | 31 (20) | +10.65 | 60% | 1/1 | 97.0 / 99.0 | YES / YES | 0.22 | 20.9 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-OP2 | ny_only | news15 | 17 | +49.38 | 65% | 1/1 | 99.0 / 100.0 | YES / YES | 0.22 | 1180.0 |
-| R-NEXIT-SENT | ny_only | news15 | 21 | +18.90 | 62% | 0/1 | 98.0 / 100.0 | YES / YES | 0.14 | -57.5 |
-| R-SCALP-H6-REF | london | none | 15 | +14.45 | 60% | 0/2 | 97.0 / 100.0 | YES / YES | 0.18 | -567.7 |
-| R-SCALP-H6 | london | none | 12 | +14.37 | 58% | 0/2 | 96.0 / 100.0 | YES / YES | 0.20 | -387.0 |
-| R-NEXIT-EARLY | ny_only | news15 | 31 | +12.40 | 64% | 0/1 | 99.0 / 100.0 | YES / YES | 0.15 | -52.2 |
+| R-NEXIT-SENT | ny_only | news15 | 21 (15) | +18.90 | 60% | 0/1 | 97.0 / 100.0 | YES / YES | 0.18 | -105.9 |
+| R-SCALP-H6-REF | london | none | 15 (15) | +14.45 | 60% | 0/2 | 97.0 / 100.0 | YES / YES | 0.18 | -567.7 |
+| R-SCALP-H6 | london | none | 12 (12) | +14.37 | 58% | 0/2 | 96.0 / 100.0 | YES / YES | 0.20 | -387.0 |
+| R-NEXIT-EARLY | ny_only | news15 | 31 (20) | +10.65 | 60% | 1/1 | 97.0 / 99.0 | YES / YES | 0.22 | 20.9 |
+| R-NEXIT-FULL | ny_only | news15 | 31 (20) | +10.65 | 60% | 1/1 | 97.0 / 99.0 | YES / YES | 0.22 | 20.9 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NEXIT-SENT | ny_only | none | 108 | +3.65 | 55% | 2/3 | 91.0 / 96.0 | no / YES | 0.09 | 731.2 |
-| R-ARM15 | london | none | 91 | +8.64 | 54% | 2/2 | 88.0 / 99.0 | no / YES | 0.07 | 7968.5 |
-| R-NEXIT-EARLY | ny_only | none | 163 | -0.60 | 49% | 2/3 | 61.0 / 52.0 | no / no | 0.07 | 211.7 |
-| R-NEXIT-FULL | ny_only | none | 165 | -0.60 | 49% | 2/3 | 61.0 / 52.0 | no / no | 0.06 | 56.5 |
-| R-NEXIT-SENT | london | none | 174 | -2.10 | 47% | 2/2 | 43.0 / 22.0 | no / no | 0.07 | 3245.7 |
+| R-NEXIT-SENT | ny_only | none | 108 (91) | +2.90 | 54% | 2/3 | 89.0 / 92.0 | no / no | 0.11 | 368.9 |
+| R-ARM15 | london | none | 91 (84) | +4.30 | 52% | 2/2 | 82.0 / 96.0 | no / YES | 0.08 | 6697.2 |
+| R-NEXIT-FULL | ny_only | none | 165 (140) | -1.35 | 48% | 2/3 | 55.0 / 46.0 | no / no | 0.07 | -199.5 |
+| R-NEXIT-EARLY | ny_only | none | 163 (138) | -1.35 | 48% | 2/3 | 55.0 / 46.0 | no / no | 0.09 | -87.8 |
+| R-NEXIT-SENT | london | none | 174 (148) | -2.60 | 47% | 2/2 | 44.0 / 7.0 | no / no | 0.07 | 2828.5 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-OP2 | ny_only | news15 | 17 | 65% | +49.38 | 99.0 | YES |
-| session | ny_only | ny_only | news15 | 17 | 65% | +49.38 | 99.0 | YES |
-| slot | news15 | ny_only | news15 | 17 | 65% | +49.38 | 99.0 | YES |
+| variant | R-ARM15 | dead | none | 40 (35) | 63% | +10.07 | 98.0 | YES |
+| session | dead | dead | none | 40 (35) | 63% | +10.07 | 98.0 | YES |
+| slot | none | dead | none | 40 (35) | 63% | +10.07 | 98.0 | YES |
 
-## us30fut — forward (7483 rows; 96 field cells, 65 measurable, 30 tail-carried; field null p95 over 100 valid seeds: best win 54%, best median +1.56)
+## us30fut — forward (7483 rows; 96 field cells, 54 measurable, 20 tail-carried; field null p95 over 100 valid seeds: best win 53%, best median +0.93)
 
 ### Top by win rate
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6-REF | overlap | none | 15 | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
-| R-SCALP-H6 | overlap | none | 13 | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
-| R-SCALP-H6-REF | london | none | 17 | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
-| R-SCALP-H6 | london | none | 16 | +11.07 | 81% | 1/2 | 100.0 / 100.0 | YES / YES | 0.12 | -62.6 |
-| R-BE | ny_only | none | 61 | +4.90 | 51% | 1/3 | 91.0 / 100.0 | no / YES | 0.10 | -180.6 |
+| R-SCALP-H6-REF | overlap | none | 15 (15) | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
+| R-SCALP-H6 | overlap | none | 13 (13) | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
+| R-SCALP-H6 | london | none | 16 (16) | +11.07 | 81% | 1/2 | 100.0 / 100.0 | YES / YES | 0.12 | -62.6 |
+| R-NEXIT-SENT | ny_only | none | 167 (138) | +0.90 | 51% | 2/3 | 92.0 / 93.0 | no / no | 0.05 | -47.7 |
 
 ### Top by median-per-trade
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6-REF | overlap | none | 15 | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
-| R-SCALP-H6 | overlap | none | 13 | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
-| R-SCALP-H6-REF | london | none | 17 | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
-| R-SCALP-H6 | london | none | 16 | +11.07 | 81% | 1/2 | 100.0 / 100.0 | YES / YES | 0.12 | -62.6 |
-| R-BE | ny_only | none | 61 | +4.90 | 51% | 1/3 | 91.0 / 100.0 | no / YES | 0.10 | -180.6 |
+| R-SCALP-H6-REF | overlap | none | 15 (15) | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
+| R-SCALP-H6 | overlap | none | 13 (13) | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
+| R-SCALP-H6 | london | none | 16 (16) | +11.07 | 81% | 1/2 | 100.0 / 100.0 | YES / YES | 0.12 | -62.6 |
+| R-NEXIT-SENT | ny_only | none | 167 (138) | +0.90 | 51% | 2/3 | 92.0 / 93.0 | no / no | 0.05 | -47.7 |
 
 ### Top by weekly consistency
 
-| variant | session | slot | n | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
+| variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | dead | none | 65 | +1.24 | 51% | 3/3 | 91.0 / 94.0 | no / no | 0.09 | 2545.2 |
-| R-SCALP-H6 | overlap | none | 13 | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
-| R-SCALP-H6-REF | overlap | none | 15 | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
-| R-SCALP-H6-REF | london | none | 17 | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
-| R-SCALP-H6 | london | none | 16 | +11.07 | 81% | 1/2 | 100.0 / 100.0 | YES / YES | 0.12 | -62.6 |
+| R-SCALP-H6 | overlap | none | 13 (13) | +26.94 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.10 | 356.6 |
+| R-SCALP-H6-REF | overlap | none | 15 (15) | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 411.1 |
+| R-NEXIT-SENT | ny_only | none | 167 (138) | +0.90 | 51% | 2/3 | 92.0 / 93.0 | no / no | 0.05 | -47.7 |
+| R-ARM15 | dead | none | 65 (55) | -8.19 | 46% | 2/2 | 73.0 / 0.0 | no / no | 0.11 | 1942.0 |
+| R-SCALP-H6-REF | london | none | 17 (17) | +14.03 | 82% | 1/2 | 100.0 / 100.0 | YES / YES | 0.11 | 0.2 |
 
 ### Best level per axis (by win rate, then median)
 
 | axis | level | session | slot | n | win | median | sel-pct win | beats field null |
 |---|---|---|---|---|---|---|---|---|
-| variant | R-SCALP-H6-REF | overlap | none | 15 | 100% | +27.79 | 100.0 | YES |
-| session | overlap | overlap | none | 15 | 100% | +27.79 | 100.0 | YES |
-| slot | none | overlap | none | 15 | 100% | +27.79 | 100.0 | YES |
+| variant | R-SCALP-H6-REF | overlap | none | 15 (15) | 100% | +27.79 | 100.0 | YES |
+| session | overlap | overlap | none | 15 (15) | 100% | +27.79 | 100.0 | YES |
+| slot | none | overlap | none | 15 (15) | 100% | +27.79 | 100.0 | YES |
 
 ## Ladder hand-offs (register 106) — single-leg forward optima from scalp_tp_ladder.md PER STATISTIC (no composite); win rate / weekly count vs the members' best-over-rungs, median vs members at the same rung; listed, never rules
 
@@ -414,6 +414,27 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | us30fut | S0-H7 | backtest | 41 | 17.1 | B-RANDOM [9.8…17.0] (20) | +0.1pp | 7.0 | 27.0 | no | WATCH |
 | us30fut | S1-H1 | backtest | 2 | 100.0 | B-RANDOM [9.8…17.0] (20) | +83.0pp | — | — | no | unmeasurable (n<25; 23 to go) |
 | us30fut | S1-H11 | backtest | 189 | 18.0 | B-RANDOM [9.8…17.0] (20) | +1.0pp | 15.0 | 27.0 | no | WATCH |
+
+## Arrival-anatomy findings (register 114) — single-leg significant anatomy shifts from zone_anatomy.md, wearing the leg's whole-field selection-null (best fake |shift|/p95 per seed); listed, never rules
+
+| instrument | tf | side | window | metric | in n (zones/days) | in | base | shift | pct vs null | sel-pct | beats selection |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| uk100fut | 4h | D | backtest | loud_rate | 1944 (2z/8d) | 15.535 | 19.545 | -4.01 | 100.0 | 100.0 | YES |
+| uk100fut | 4h | D | backtest | spread_pctile_median | 1690 (2z/8d) | 57.143 | 62.297 | -5.154 | 99.0 | 92.0 | no |
+| ger40fut | 4h | D | backtest | rel_volume_median | 332 (1z/1d) | 0.499 | 1.133 | -0.635 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | loud_rate | 332 (1z/1d) | 0.0 | 27.467 | -27.467 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | spread_pctile_median | 230 (1z/1d) | 25.0 | 62.783 | -37.783 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | narrow_loud_share | 332 (1z/1d) | 0.0 | 6.575 | -6.575 | 100.0 | 98.0 | YES |
+| ger40fut | 4h | D | backtest | nd_rate | 332 (1z/1d) | 30.12 | 5.176 | +24.945 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | ns_rate | 332 (1z/1d) | 23.795 | 4.58 | +19.215 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | rel_volume_median | 3441 (1z/7d) | 1.203 | 0.977 | +0.226 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | loud_rate | 3441 (1z/7d) | 34.118 | 19.037 | +15.081 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | spread_pctile_median | 3185 (1z/7d) | 62.5 | 55.492 | +7.008 | 100.0 | 92.0 | no |
+| ger40fut | 4h | D | forward | narrow_loud_share | 3441 (1z/7d) | 18.599 | 9.353 | +9.246 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | test_rate | 3441 (1z/7d) | 1.192 | 0.673 | +0.518 | 100.0 | 92.0 | no |
+| ger40fut | 4h | D | forward | nd_rate | 3441 (1z/7d) | 3.4 | 6.695 | -3.295 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | ns_rate | 3441 (1z/7d) | 4.01 | 6.862 | -2.852 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | climax_rate | 3441 (1z/7d) | 1.25 | 0.477 | +0.772 | 100.0 | 98.0 | YES |
 
 ## Standing per-instrument facts — spread burden at the scalp incumbent (register 106 follow-through (3); from scalp_tp_ladder.md)
 

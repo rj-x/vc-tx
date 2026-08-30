@@ -2,37 +2,32 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `78bd8f52b` — emission 2026-08-30; previous none (founding emission). AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `e51412472` — emission 2026-08-30; previous none (founding emission). AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
-## A. Cells clearing a null on this emission (131)
+## A. Cells clearing a null on this emission (120)
 
 | source | instrument | window | cell | statistic | value | n | percentile | null | age (w) |
 |---|---|---|---|---|---|---|---|---|---|
-| per_market_watch.md | ger40fut | backtest | R-ARM15 x dead x none | win_rate | 0.629 | 35 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | backtest | R-ARM15 x dead x none | median | 21.74 | 35 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.9 | 10 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | median | 18.21 | 10 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-ARM15 x overlap x none | median | 4.45 | 44 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-NEXIT-SENT x overlap x none | median | 4.95 | 56 | 96.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | ger40fut | forward | R-ARM15 x overlap x none | median | 3.0 | 44 (43) | 95.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | ger40fut | forward | R-NEXIT-SENT x overlap x none | median | 7.25 | 56 (50) | 99.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.722 | 18 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | median | 5.84 | 18 | 98.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | win_rate | 0.857 | 21 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | median | 12.46 | 21 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.688 | 16 | 98.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | median | 5.23 | 16 | 96.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.688 | 16 | 99.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | median | 5.23 | 16 | 97.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.824 | 17 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | median | 11.39 | 17 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-ARM15 x asia x none | median | 21.52 | 57 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-ARM15 x dead x none | median | 33.06 | 46 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-NEXIT-SENT x overlap x none | median | 27.5 | 62 | 98.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-NEXIT-SENT x dead x close15 | median | 17.2 | 14 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | win_rate | 0.75 | 16 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | median | 149.75 | 16 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | backtest | R-ARM15 x asia x none | median | 24.32 | 57 (51) | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | backtest | R-NEXIT-SENT x overlap x none | median | 26.3 | 62 (50) | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | win_rate | 0.714 | 16 (14) | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | median | 136.25 | 16 (14) | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | win_rate | 0.917 | 12 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | median | 32.97 | 12 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-NEXIT-EARLY x ny_only x news15 | win_rate | 0.667 | 12 | 95.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-NEXIT-FULL x ny_only x news15 | win_rate | 0.667 | 12 | 95.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-NEXIT-SENT x overlap x none | median | 20.1 | 62 | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-NEXIT-SENT x overlap x none | median | 19.0 | 62 (57) | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-NOTRAIL x ny_only x none | win_rate | 0.658 | 41 (38) | 95.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | nas100fut | forward | R-NOTRAIL x overlap x none | median | 19.7 | 18 | 98.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.923 | 13 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | median | 17.54 | 13 | 98.0 | field best-of selection null p95 | 0 |
@@ -49,18 +44,16 @@ Engine `78bd8f52b` — emission 2026-08-30; previous none (founding emission). A
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | win_rate | 1.0 | 14 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | median | 6.58 | 14 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | win_rate | 0.846 | 13 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | median | 3.02 | 13 | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | median | 3.02 | 13 | 98.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.882 | 17 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | median | 6.05 | 17 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | win_rate | 0.818 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | median | 3.01 | 11 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-ARM15 x ny_only x close15 | win_rate | 0.571 | 14 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-ARM15 x ny_only x close15 | median | 2.85 | 14 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x london x none | win_rate | 0.502 | 217 | 95.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x asia x news15 | win_rate | 0.727 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x asia x news15 | median | 3.4 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-NOTRAIL x overlap x none | win_rate | 0.581 | 31 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-NOTRAIL x overlap x none | median | 2.2 | 31 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | median | 3.01 | 11 | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x london x none | win_rate | 0.503 | 217 (183) | 95.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x asia x news15 | win_rate | 0.7 | 11 (10) | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x asia x news15 | median | 2.8 | 11 (10) | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | forward | R-NOTRAIL x overlap x none | win_rate | 0.556 | 31 (27) | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | uk100fut | forward | R-NOTRAIL x overlap x none | median | 1.7 | 31 (27) | 99.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.857 | 21 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | median | 3.65 | 21 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.917 | 12 | 100.0 | field best-of selection null p95 | 0 |
@@ -69,23 +62,19 @@ Engine `78bd8f52b` — emission 2026-08-30; previous none (founding emission). A
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x none | median | 3.55 | 20 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.909 | 11 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | median | 1.79 | 11 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-ARM15 x london x none | median | 8.64 | 91 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | win_rate | 0.6 | 40 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | median | 8.61 | 40 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | win_rate | 0.645 | 31 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | median | 12.4 | 31 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | win_rate | 0.645 | 31 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | median | 12.4 | 31 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x none | median | 3.65 | 108 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | win_rate | 0.619 | 21 | 98.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | median | 18.9 | 21 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-OP2 x ny_only x news15 | win_rate | 0.647 | 17 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-OP2 x ny_only x news15 | median | 49.38 | 17 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-ARM15 x london x none | median | 4.3 | 91 (84) | 96.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | win_rate | 0.629 | 40 (35) | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | median | 10.07 | 40 (35) | 99.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | win_rate | 0.6 | 31 (20) | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | median | 10.65 | 31 (20) | 99.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | win_rate | 0.6 | 31 (20) | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | median | 10.65 | 31 (20) | 99.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | win_rate | 0.6 | 21 (15) | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | median | 18.9 | 21 (15) | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | backtest | R-SCALP-H6 x london x none | win_rate | 0.583 | 12 | 96.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | backtest | R-SCALP-H6 x london x none | median | 14.37 | 12 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.6 | 15 | 97.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | backtest | R-SCALP-H6-REF x london x none | median | 14.45 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-BE x ny_only x none | median | 4.9 | 61 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | win_rate | 0.812 | 16 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | median | 11.07 | 16 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x none | win_rate | 1.0 | 13 | 100.0 | field best-of selection null p95 | 0 |
@@ -140,15 +129,31 @@ Engine `78bd8f52b` — emission 2026-08-30; previous none (founding emission). A
 | h6_refinement.md | scalp | forward | field count of qualifying splits | field count | 48 | 83 | 96.0 | label permutation p95 | 0 |
 | event_clock.md | all | both | field count of qualifying window splits | field count | 153 | 324 | 100.0 | label permutation p95 | 0 |
 
-## B. WATCH / glint entries (102) — listed, never rules; age = weeks since first appearance here
+## B. WATCH / glint entries (118) — listed, never rules; age = weeks since first appearance here
 
 | kind | source | entry | legs | status | age (w) |
 |---|---|---|---|---|---|
+| anatomy finding | zone_anatomy.md | uk100fut loud_rate in-zone (4h/D, backtest) | uk100fut | shift -4.01 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | uk100fut spread_pctile_median in-zone (4h/D, backtest) | uk100fut | shift -5.154 (pct 99.0); sel-pct 92.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut rel_volume_median in-zone (4h/D, backtest) | ger40fut | shift -0.635 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut loud_rate in-zone (4h/D, backtest) | ger40fut | shift -27.467 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut spread_pctile_median in-zone (4h/D, backtest) | ger40fut | shift -37.783 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut narrow_loud_share in-zone (4h/D, backtest) | ger40fut | shift -6.575 (pct 100.0); sel-pct 98.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut nd_rate in-zone (4h/D, backtest) | ger40fut | shift +24.945 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut ns_rate in-zone (4h/D, backtest) | ger40fut | shift +19.215 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut rel_volume_median in-zone (4h/D, forward) | ger40fut | shift +0.226 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut loud_rate in-zone (4h/D, forward) | ger40fut | shift +15.081 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut spread_pctile_median in-zone (4h/D, forward) | ger40fut | shift +7.008 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut narrow_loud_share in-zone (4h/D, forward) | ger40fut | shift +9.246 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut test_rate in-zone (4h/D, forward) | ger40fut | shift +0.518 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut nd_rate in-zone (4h/D, forward) | ger40fut | shift -3.295 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut ns_rate in-zone (4h/D, forward) | ger40fut | shift -2.852 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut climax_rate in-zone (4h/D, forward) | ger40fut | shift +0.772 (pct 100.0); sel-pct 98.0 — beats the field's best fake | 0 |
 | candidate pool | per_market_watch.md | R-NEXIT-EARLY x open-window | ger40fut, nas100fut | mechanism EMPTY | 0 |
 | candidate pool | per_market_watch.md | us30fut x open-window strength | us30fut | mechanism EMPTY | 0 |
 | candidate pool | per_market_watch.md | ger40fut S0-H19 reach | ger40fut | mechanism EMPTY | 0 |
-| HELD sentence | per_market_watch.md | nas100fut R-NEXIT-FULL x overlap | nas100fut | n=107 sel-pct win 83.0 / median 88.0; condition (b) unmet | 0 |
-| HELD sentence | per_market_watch.md | us30fut R-ARM15 x dead | us30fut | n=65 sel-pct win 91.0 / median 94.0; condition (b) unmet | 0 |
+| HELD sentence | per_market_watch.md | nas100fut R-NEXIT-FULL x overlap | nas100fut | n=107 (97 distinct) sel-pct win 83.0 / median 87.0; condition (b) unmet | 0 |
+| HELD sentence | per_market_watch.md | us30fut R-ARM15 x dead | us30fut | n=65 (55 distinct) sel-pct win 73.0 / median 0.0; condition (b) unmet | 0 |
 | ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best win_rate @ 0.25x | uk100fut | n=47 sel-pct 100.0 beats null | 0 |
 | ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best median @ 1.5x | uk100fut | n=34 sel-pct 90.0 inside null | 0 |
 | ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best weeks_pos @ 0.5x | uk100fut | n=47 sel-pct 75.0 inside null | 0 |
@@ -262,7 +267,7 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 | v1 scalp geometry package (stop derivation + target rung) | 101 / 106 | a target rung clearing on >= 3 of 4 forward legs beside the register-101 stop derivation; one ratification | 0 target rung(s) clearing >= 3 of 4 legs |
 | H6-not-in-London suppression composite | 93 | HOLD — re-proposes only if below-chance suppression reappears on fresh accrual | gated (no live artifact) |
 | per-market candidate pool (3 seeded cells) | 105 item 4 | operator's mechanism sentence, then the track's selection-null and a >= 45-row forward clock | 3 of 3 slots EMPTY |
-| HELD sentences: nas100fut R-NEXIT-FULL x overlap; us30fut R-ARM15 x dead | 105 follow-through | condition (b): selection-percentile > 95 on a future emission | n=107 sel-pct win 83.0 / median 88.0; condition (b) unmet; n=65 sel-pct win 91.0 / median 94.0; condition (b) unmet |
+| HELD sentences: nas100fut R-NEXIT-FULL x overlap; us30fut R-ARM15 x dead | 105 follow-through | condition (b): selection-percentile > 95 on a future emission | n=107 (97 distinct) sel-pct win 83.0 / median 87.0; condition (b) unmet; n=65 (55 distinct) sel-pct win 73.0 / median 0.0; condition (b) unmet |
 | pyramiding counterfactual | 79 | build slot behind the census reads (measurement, no grammar) | gated (no live artifact) |
 | H15 sweep-zone entry variant | 79 | PARKED until H15's record justifies | gated (no live artifact) |
 | zone census v3 (departure bases, D1/H4) | 111 | mint-on-lift only; scarcity check first (D1 5-15 active zones per leg expected) | uk100fut ?; ger40fut ?; nas100fut ?; us30fut ? |
@@ -283,9 +288,9 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
 ## E. DELTA since the founding emission
 
-- CROSSED (clearing now, not last emission): 131 — founding emission: every key is CROSSED by construction (keys in insights.json)
+- CROSSED (clearing now, not last emission): 120 — founding emission: every key is CROSSED by construction (keys in insights.json)
 - AGED (clearing both emissions): 0
 - DIED (cleared last emission, not now): 0
-- WATCH entries new / gone: 102 / 0
+- WATCH entries new / gone: 118 / 0
 
 Founding example (register 110): the narrative survey's home consistency count read 13 of 20 pairs at percentile 100 on the 2026-08-23 emission and 9 of 31 at percentile 89 on the 2026-08-30 emission — a field-level DIED that predates this ledger; field-level readings are therefore ledger entries (survey-field keys), so the next such death is dated here.
