@@ -28,7 +28,7 @@ venv/bin/python -m backtest.campaign
 ```
 
 - **Expected wall time:** roughly 60–90 minutes at the current Part C
-  module count (12 study modules, several of which replay all four
+  module count (27 modules at register 112, several of which replay all four
   instruments; the trade layer alone simulates six management variants
   plus the baseline ensembles).
 - **What regenerates:** `reports/backtest_v1/` + `backtest_v1.md`
@@ -58,19 +58,22 @@ venv/bin/python -m backtest.campaign
 
 1. `reports/DASHBOARD.md` — state, the doctrine-ordered board,
    question clocks, decisions awaiting you, the artifact map.
-2. `docs/GLOSSARY.md` — whenever a term is opaque.
-3. `reports/SIGNAL_POINTS.md` — the assessment page (ladder,
+2. `reports/INSIGHTS.md` — the weekly index (register 109): what
+   clears any null, what is watched (with age), what is benched or
+   parked, and the DELTA since last week. An index, never evidence.
+3. `docs/GLOSSARY.md` — whenever a term is opaque.
+4. `reports/SIGNAL_POINTS.md` — the assessment page (ladder,
    baselines, Δ vs floor).
-4. **`reports/trades.csv` + `reports/weekly_summary.csv`** — your
+5. **`reports/trades.csv` + `reports/weekly_summary.csv`** — your
    working files for operator cuts (`management_grades.csv` is the
    quotability gate: no variant's net without its floor line;
    `journal_survey.md` prices the cuts' luck).
-5. **`reports/forensics/`** (+ `reports/trades_enriched.csv`) — the
+6. **`reports/forensics/`** (+ `reports/trades_enriched.csv`) — the
    trade-forensics deliverable (register 84): per-market
    winner/loser separators with their luck budgets, exit-efficiency,
    winner-MAE, the WATCH list, cross-market synthesis. Candidates
    only — reserved for the operator+reviewer sitting.
-6. Drill-downs on warrant: the conditioning matrix, the narrative
+7. Drill-downs on warrant: the conditioning matrix, the narrative
    survey, the in-trade census, gap census, bar persistence.
 
 ## Step 4 — freshness checks (30 seconds)

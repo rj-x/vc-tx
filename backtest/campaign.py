@@ -532,6 +532,9 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.underwater_census",   # register 87
                 "backtest.capture_study",       # register 88 item 4
                 "backtest.zone_census",         # register 95 item 2
+                "backtest.zone_census_v3",      # register 111 (departure
+                                                # bases; v2 stays the
+                                                # standing null)
                 "backtest.circuit_breaker",     # register 102 (embedded
                                                 # by the refinement md)
                 "backtest.h6_refinement",       # register 100
@@ -539,8 +542,12 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.scalp_tp_ladder",     # register 106 (before the
                                                 # WATCH page: hand-offs)
                 "backtest.event_clock",         # register 104
-                "backtest.per_market_watch"):   # register 105 (after the
-                                                # event clock: reuses tags)
+                "backtest.per_market_watch",    # register 105 (after the
+                                                # event clock: reuses tags;
+                                                # register 108: reads the
+                                                # census clears)
+                "backtest.insights"):           # register 109 (the index;
+                                                # last, reads everything)
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # register 75 standing rule: not-campaign-regenerated +
