@@ -295,6 +295,8 @@ def run_instrument(instr, journal):
         if i < len(ts) and ts[i] == t.value:
             jrows.append((r, i, w,
                           "%d-W%02d" % t.isocalendar()[:2]))
+            r["_path"] = (f"{r['open_ts']}|{r['direction']}"
+                          f"|{r['points']}")   # register 113
     frames = {tf: source_frame(instr, tf) for tf in SOURCE_TFS}
     ladder = {}
     for tf in SOURCE_TFS:
@@ -345,7 +347,8 @@ def run_instrument(instr, journal):
             for r, i, w, week in jrows:
                 jw.setdefault(w, []).append(
                     {"variant": r["variant"], "pts": float(r["points"]),
-                     "week": week, "st": "in" if state[i] else "out"})
+                     "week": week, "st": "in" if state[i] else "out",
+                     "path": r["_path"]})   # register 113: co-fires once
             jcells = {}
             for w, rows in sorted(jw.items()):
                 labels = [r["st"] for r in rows]
@@ -357,7 +360,7 @@ def run_instrument(instr, journal):
                 for (var, st), rr in sorted(per_var.items()):
                     s = cell_stats(rr)
                     entry = {**s, "window": w, "variant": var, "zone": st}
-                    if st == "in" and s["n"] >= MIN_CELL_N:
+                    if st == "in" and s["n_distinct"] >= MIN_CELL_N:
                         entry["sel_pct_median"] = percentile_vs(
                             nb_md, s["median"])
                         entry["sel_pct_win"] = percentile_vs(
@@ -442,13 +445,13 @@ def _emit(results, head):
         L += ["", "### Journal in-zone cells (register-105 consistency "
               "statistics; selection-null in-zone only; measurable "
               f"n>={MIN_CELL_N})", "",
-              "| rung | variant | window | zone | n | median | win | "
+              "| rung | variant | window | zone | n (distinct) | median | win | "
               "+weeks/meas | sel-pct win / median | beats null win / "
               "median | tail |", "|---|---|---|---|---|---|---|---|---|---|---|"]
         printed = 0
         for rn, r in res["ladder"].items():
             for key, s in r["journal_cells"].items():
-                if s["zone"] != "in" or s["n"] < MIN_CELL_N:
+                if s["zone"] != "in" or s["n_distinct"] < MIN_CELL_N:
                     continue
                 printed += 1
                 sp = (f"{s.get('sel_pct_win')} / {s.get('sel_pct_median')}"
@@ -457,7 +460,8 @@ def _emit(results, head):
                       f"{'YES' if s.get('beats_field_null_median') else 'no'}"
                       if "beats_field_null_win" in s else "— / —")
                 L.append(f"| {rn} | {s['variant']} | {s['window']} | in "
-                         f"| {s['n']} | {s['median']:+.2f} "
+                         f"| {s['n']} ({s['n_distinct']}) "
+                         f"| {s['median']:+.2f} "
                          f"| {100 * s['win_rate']:.0f}% "
                          f"| {s['weeks_pos']}/{s['weeks_meas']} | {sp} "
                          f"| {bn} "

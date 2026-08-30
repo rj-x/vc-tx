@@ -18,6 +18,14 @@ the stop-rung axis is NOT re-simulated here: each variant carries its
 registered stop, and the risk grid (register 103) remains the stop
 ladder's home — a stated coverage limitation, not a hidden default).
 
+DISTINCT PATHS (register 113): co-fired identical price paths — the
+same open timestamp, direction and points reached through different
+sentences — count ONCE for evidence purposes: every cell statistic
+(median, win rate, weekly counts, tail-carry, net) computes on
+distinct paths; n prints as rows (distinct); measurability and the
+track floor read on the distinct count; the selection-null is
+unchanged in method and recomputes on the corrected counts.
+
 CONSISTENCY RULING (register 105 item 3, operator: consistency over
 magnitude): cells rank and print on consistency statistics only —
 median-per-trade, win rate, weekly-consistency count (positive ISO weeks
@@ -135,7 +143,10 @@ def journal_rows():
         out.append({"instrument": r["instrument"], "variant": r["variant"],
                     "session": r["session"], "window": w,
                     "slot": slot_of(tags), "pts": float(r["points"]),
-                    "week": "%d-W%02d" % t.isocalendar()[:2]})
+                    "week": "%d-W%02d" % t.isocalendar()[:2],
+                    # register 113: co-fired identical price paths count
+                    # once for evidence — the path key
+                    "path": f"{r['open_ts']}|{r['direction']}|{r['points']}"})
     return out
 
 
@@ -149,19 +160,40 @@ def slot_of(tags):
     return "none"
 
 
+def distinct_paths(rows):
+    """Register 113: co-fired identical price paths count once for
+    evidence purposes — first occurrence kept per path key; rows
+    without a path key (per-fire simulations, e.g. the TP ladder's)
+    are all distinct by construction."""
+    seen = set()
+    out = []
+    for r in rows:
+        p = r.get("path")
+        if p is not None:
+            if p in seen:
+                continue
+            seen.add(p)
+        out.append(r)
+    return out
+
+
 def cell_stats(rows):
-    """Consistency statistics + the tail-carry check for one cell."""
-    pts = np.array([r["pts"] for r in rows], dtype=float)
+    """Consistency statistics + the tail-carry check for one cell.
+    Register 113: ALL statistics compute on distinct price paths
+    (median, win rate, weekly counts, tail-carry, net); n keeps the
+    raw row count, n_distinct the evidence count."""
+    ded = distinct_paths(rows)
+    pts = np.array([r["pts"] for r in ded], dtype=float)
     net = float(pts.sum())
     weeks = {}
-    for r in rows:
+    for r in ded:
         weeks.setdefault(r["week"], []).append(r["pts"])
     meas = {w: v for w, v in weeks.items() if len(v) >= WEEK_MIN_N}
     pos = sum(1 for v in meas.values() if sum(v) > 0)
     wins = pts[pts > 0]
     gross_win = float(wins.sum())
     share = (float(wins.max()) / gross_win) if gross_win else None
-    return {"n": int(len(pts)),
+    return {"n": int(len(rows)), "n_distinct": int(len(ded)),
             "median": round(float(np.median(pts)), 2) if len(pts) else None,
             "win_rate": round(float((pts > 0).mean()), 3) if len(pts) else None,
             "weeks_pos": pos, "weeks_meas": len(meas),
@@ -186,7 +218,7 @@ def best_of_field(cells):
     """The best win rate and best median across measurable, non-tail-
     carried cells (the ranking population)."""
     ok = [s for s in cells.values()
-          if s["n"] >= MIN_CELL_N and not s["tail_carried"]]
+          if s["n_distinct"] >= MIN_CELL_N and not s["tail_carried"]]
     if not ok:
         return None, None
     return (max(s["win_rate"] for s in ok), max(s["median"] for s in ok))
@@ -238,7 +270,7 @@ def run():
         nb_wr, nb_md = selection_null(by_market[key])
         table = []
         for (var, sess, slot), s in cells.items():
-            if s["n"] < MIN_CELL_N:
+            if s["n_distinct"] < MIN_CELL_N:
                 continue
             table.append({"variant": var, "session": sess, "slot": slot,
                           **s,
@@ -379,7 +411,8 @@ def census_row(c):
 
 
 def _row(c):
-    return (f"| {c['variant']} | {c['session']} | {c['slot']} | {c['n']} "
+    return (f"| {c['variant']} | {c['session']} | {c['slot']} "
+            f"| {c['n']} ({c['n_distinct']}) "
             f"| {c['median']:+.2f} | {100 * c['win_rate']:.0f}% "
             f"| {c['weeks_pos']}/{c['weeks_meas']} "
             f"| {c['sel_pct_win']} / {c['sel_pct_median']} "
@@ -389,7 +422,7 @@ def _row(c):
             f"{' TAIL' if c['tail_carried'] else ''} | {c['net_pts']} |")
 
 
-HDR = ("| variant | session | slot | n | median | win | +weeks/meas "
+HDR = ("| variant | session | slot | n (distinct) | median | win | +weeks/meas "
        "| sel-pct win / median | beats field null win / median "
        "| max-win share of gross | net (context) |",
        "|---|---|---|---|---|---|---|---|---|---|---|")
@@ -453,7 +486,8 @@ def _emit(art, head):
                 L.append(f"| {axis} | (none) | | | | | | | |")
                 continue
             L.append(f"| {axis} | {c[axis]} | {c['session']} | {c['slot']} "
-                     f"| {c['n']} | {100 * c['win_rate']:.0f}% "
+                     f"| {c['n']} ({c['n_distinct']}) "
+                     f"| {100 * c['win_rate']:.0f}% "
                      f"| {c['median']:+.2f} | {c['sel_pct_win']} "
                      f"| {'YES' if c['beats_field_null_win'] else 'no'} |")
     from backtest.scalp_tp_ladder import HANDOFF_HDR, handoff_row
@@ -475,6 +509,22 @@ def _emit(art, head):
           "operator's pen", "", *CENSUS_HDR]
     L += [census_row(c) for c in cw] or [
         "| (no census cell clears its full floor range) | | | | | | | | | | |"]
+    aw = art.get("anatomy_watch", [])
+    L += ["", "## Arrival-anatomy findings (register 114) — single-leg "
+          "significant anatomy shifts from zone_anatomy.md, wearing the "
+          "leg's whole-field selection-null (best fake |shift|/p95 per "
+          "seed); listed, never rules", "",
+          "| instrument | tf | side | window | metric | in n (zones/days) "
+          "| in | base | shift | pct vs null | sel-pct | beats selection |",
+          "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    L += [f"| {r['instrument']} | {r['tf']} | {r['side']} | {r['window']} "
+          f"| {r['metric']} "
+          f"| {r['in_n']} ({r.get('in_zones', '?')}z/{r.get('in_days', '?')}d) "
+          f"| {r['in_value']} "
+          f"| {r['base_value']} | {r['shift']:+g} | {r['pct_vs_null']} "
+          f"| {r['sel_pct']} | {'YES' if r['beats_selection'] else 'no'} |"
+          for r in aw] or [
+        "| (no single-leg anatomy finding this emission) | | | | | | | | | | | |"]
     burden = art.get("spread_burden", [])
     L += ["", "## Standing per-instrument facts — spread burden at the "
           "scalp incumbent (register 106 follow-through (3); from "
@@ -507,6 +557,11 @@ def main():
     art["spread_burden"] = lj.get("spread_burden", [])
     # register 108: census clears route here with their selection-null
     art["census_watch"] = census_watch()
+    # register 114: single-leg anatomy findings ride along (the anatomy
+    # runs with v3, before this page)
+    an = os.path.join(OUT, "zone_anatomy.json")
+    art["anatomy_watch"] = (json.load(open(an)).get("watch_rows", [])
+                            if os.path.exists(an) else [])
     with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)

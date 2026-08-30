@@ -94,9 +94,21 @@ def _load(name, base=SB):
     return json.load(open(p)) if os.path.exists(p) else {}
 
 
-def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture):
+def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture,
+                   anatomy=None):
     """(A) every cell clearing a null on the current emission."""
     out = []
+    for c in (anatomy or {}).get("claims", []):
+        out.append({"key": f"anatomy:{c['tf']}|{c['side']}|{c['window']}"
+                           f"|{c['metric']}",
+                    "source": "zone_anatomy.md",
+                    "instrument": ", ".join(c["legs"]),
+                    "window": c["window"],
+                    "cell": f"{c['metric']} in-zone ({c['tf']}/{c['side']})",
+                    "statistic": "anatomy shift (>=3-of-4 legs)",
+                    "value": "; ".join(f"{s:+g}" for s in c["shifts"]),
+                    "n": len(c["legs"]), "percentile": None,
+                    "null": "two-sided in/out permutation p95, per leg"})
     for mkey, m in (pmw.get("markets") or {}).items():
         instr, win = mkey.split("|")
         for c in m.get("cells", []):
@@ -114,6 +126,7 @@ def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture):
                         "source": "per_market_watch.md",
                         "instrument": instr, "window": win, "cell": cell,
                         "statistic": stat, "value": c[stat], "n": c["n"],
+                        "n_distinct": c.get("n_distinct"),
                         "percentile": c[pct],
                         "null": "field best-of selection null p95"})
     for h in pmw.get("ladder_handoffs", []):
@@ -243,9 +256,21 @@ def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture):
     return out
 
 
-def watch_entries(pmw, events, srg, h6, forensics):
+def watch_entries(pmw, events, srg, h6, forensics, anatomy=None):
     """(B) WATCH / glint entries — listed, never rules."""
     out = []
+    for r in (anatomy or {}).get("watch_rows", []):
+        out.append({"key": f"anatomy-watch:{r['instrument']}|{r['tf']}"
+                           f"|{r['side']}|{r['window']}|{r['metric']}",
+                    "kind": "anatomy finding",
+                    "source": "zone_anatomy.md",
+                    "entry": f"{r['instrument']} {r['metric']} in-zone "
+                             f"({r['tf']}/{r['side']}, {r['window']})",
+                    "legs": r["instrument"],
+                    "status": f"shift {r['shift']:+g} (pct {r['pct_vs_null']}); "
+                              f"sel-pct {r['sel_pct']} — "
+                              f"{'beats' if r['beats_selection'] else 'inside'} "
+                              "the field's best fake"})
     for c in pmw.get("candidate_pool", []):
         out.append({"key": f"pool:{c['cell']}", "kind": "candidate pool",
                     "source": "per_market_watch.md", "entry": c["cell"],
@@ -260,7 +285,8 @@ def watch_entries(pmw, events, srg, h6, forensics):
     for hk in HELD:
         c = cells.get(hk)
         st = ("not on the page this emission" if not c else
-              f"n={c['n']} sel-pct win {c['sel_pct_win']} / median "
+              f"n={c['n']} ({c.get('n_distinct', c['n'])} distinct) "
+              f"sel-pct win {c['sel_pct_win']} / median "
               f"{c['sel_pct_median']}; condition (b) "
               f"{'MET' if (c['beats_field_null_win'] or c['beats_field_null_median']) and not c['tail_carried'] else 'unmet'}")
         out.append({"key": "held:" + "|".join(hk), "kind": "HELD sentence",
@@ -411,12 +437,14 @@ def build(today, prev=None):
     capture = _load("capture_study.json")
     zone = _load("zone_census.json")
     zone3 = _load("zone_census_v3.json")
+    anatomy = _load("zone_anatomy.json")
     cofr = _load("cofire_reread_2026-08-28.json")
     forensics = _load("forensics.json",
                       os.path.join(ROOT, "reports", "forensics"))
     clearing = clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6,
-                              capture)
-    watch, fwatch = watch_entries(pmw, events, srg, h6, forensics)
+                              capture, anatomy)
+    watch, fwatch = watch_entries(pmw, events, srg, h6, forensics,
+                                  anatomy)
     pmw["_held"] = [w["status"] for w in watch if w["kind"] == "HELD sentence"]
     bench = bench_status(capture, tp, pmw, zone3)
     parked = parked_state(zone, cofr)
@@ -450,8 +478,11 @@ def _emit(art, head):
           "| percentile | null | age (w) |",
           "|---|---|---|---|---|---|---|---|---|---|"]
     for c in art["clearing"]:
+        nd = c.get("n_distinct")
+        ncell = (f"{c['n']} ({nd})" if nd is not None and nd != c["n"]
+                 else c["n"])
         L.append(f"| {c['source']} | {c['instrument']} | {c['window']} "
-                 f"| {c['cell']} | {c['statistic']} | {c['value']} | {c['n']} "
+                 f"| {c['cell']} | {c['statistic']} | {c['value']} | {ncell} "
                  f"| {c['percentile'] if c['percentile'] is not None else '—'} "
                  f"| {c['null']} | {c['age_weeks']} |")
     if not art["clearing"]:

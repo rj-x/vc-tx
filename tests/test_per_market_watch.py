@@ -64,6 +64,33 @@ def test_selection_null_twin_run_and_direction():
     assert best_of_field(cells) == (1.0, 1.0)
 
 
+def test_distinct_paths_count_once_register_113():
+    # co-fired identical price paths count ONCE for evidence: all
+    # statistics compute on distinct paths; n keeps rows, n_distinct
+    # the evidence count; rows without a path key never dedup
+    rows = _rows([1.0, -1.0])
+    rows += [dict(rows[0]), dict(rows[0])]
+    assert cell_stats(rows)["n_distinct"] == 4        # no path key
+    for i, r in enumerate(rows):
+        r["path"] = f"p{i}"
+    rows[2]["path"] = rows[3]["path"] = rows[0]["path"]
+    s = cell_stats(rows)
+    assert (s["n"], s["n_distinct"]) == (4, 2)
+    assert s["win_rate"] == 0.5 and s["median"] == 0.0
+    assert s["net_pts"] == 0.0
+    # tail-carry recomputes on distinct gross: one path duplicated 11x
+    # diluted the raw share below the cap; the distinct share trips it
+    pts = [3.0] + [1.0] * 11 + [-1.0]
+    rows2 = _rows(pts)
+    for i, r in enumerate(rows2):
+        r["path"] = "dup" if 0 < i < 12 else f"p{i}"
+    s2 = cell_stats(rows2)
+    assert (s2["n"], s2["n_distinct"]) == (13, 3)
+    assert s2["max_win_share"] == 0.75 and s2["tail_carried"]
+    raw = cell_stats(_rows(pts))                      # no dedup
+    assert raw["max_win_share"] < TAIL_CARRY_SHARE and not raw["tail_carried"]
+
+
 def test_census_selection_null_twin_run_and_direction():
     # register 108: signal labels permuted across census fires, n kept;
     # a chance-level signal cannot beat the field's best fake

@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, register 111). A NEW DEFINITION AND SOURCE — not a rerun of the parked v2 (register 97 stands; extreme-based ≠ departure-based). Zones = DEPARTURE BASES: a consolidation of >= swing_k source-TF bars (range <= 1xATR — the unit multiple, FLAGGED) that breaks impulsively (close >= {1.5, 3}xATR beyond the edge within swing_k bars); the zone IS the base's range; active from the next bar's open; dead on a close through the far edge. Source TF: D1 primary / H4 secondary. EXPECTED SCARCITY (stated at registration): D1 ~5-15 active zones per leg; hundreds = the definition FAILED, and this page says so. STATISTIC SHAPES (74-B): pooled in-zone initiation vs the zone-conditioned directional base (conditioned lift); journal in-zone cells on the register-105 CONSISTENCY statistics with a SELECTION-NULL (in/out labels permuted, best-of-variants per seed, 100 pinned seeds). Cells n<10 unmeasurable; journal measurable at n>=10. MINT-ON-LIFT ONLY, front door; no pooling across instruments; ex-lockbox.
+Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, register 111). A NEW DEFINITION AND SOURCE — not a rerun of the parked v2 (register 97 stands; extreme-based ≠ departure-based). Zones = DEPARTURE BASES: a consolidation of >= swing_k source-TF bars (range <= 1xATR — the unit multiple, FLAGGED) that breaks impulsively (close >= {1.5, 3}xATR beyond the edge within swing_k bars); the zone IS the base's range; active from the next bar's open; dead on a close through the far edge. Source TF: D1 primary / H4 secondary. EXPECTED SCARCITY (stated at registration): D1 ~5-15 active zones per leg; hundreds = the definition FAILED, and this page says so. STATISTIC SHAPES (74-B): pooled in-zone initiation vs the zone-conditioned directional base (conditioned lift); journal in-zone cells on the register-105 CONSISTENCY statistics with a SELECTION-NULL (in/out labels permuted, best-of-variants per seed, 100 pinned seeds). Cells n<10 unmeasurable; journal measurable at n>=10. MINT-ON-LIFT ONLY, front door; no pooling across instruments; ex-lockbox.
 
 ## uk100fut — D1 1300 bars, H4 3203 bars
 
@@ -31,15 +31,15 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
-| rung | variant | window | zone | n | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
+| rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h/x1.5 | R-ARM15 | backtest | in | 43 | -2.76 | 35% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-BE | backtest | in | 40 | -1.30 | 22% | 1/2 | 0.0 / 13.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 147 | -1.60 | 27% | 0/2 | 0.0 / 3.0 | no / no | TAIL |
-| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 169 | -1.30 | 32% | 0/2 | 0.0 / 13.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 88 | -1.93 | 36% | 0/2 | 4.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NOTRAIL | backtest | in | 30 | -16.55 | 37% | 2/2 | 4.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-OP2 | backtest | in | 164 | -2.87 | 28% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-ARM15 | backtest | in | 43 (35) | -3.11 | 34% | 1/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-BE | backtest | in | 40 (32) | -1.30 | 22% | 1/2 | 0.0 / 18.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 147 (120) | -1.60 | 28% | 0/2 | 0.0 / 3.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 169 (141) | -1.30 | 33% | 0/2 | 0.0 / 18.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 88 (72) | -2.35 | 35% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NOTRAIL | backtest | in | 30 (26) | -14.41 | 38% | 2/2 | 7.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-OP2 | backtest | in | 164 (141) | -2.79 | 28% | 0/2 | 0.0 / 0.0 | no / no |  |
 
 ## ger40fut — D1 2769 bars, H4 3081 bars
 
@@ -69,19 +69,19 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
-| rung | variant | window | zone | n | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
+| rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 10 | +0.35 | 60% | 0/1 | 80.0 / 60.0 | no / no | TAIL |
-| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 11 | +0.40 | 64% | 1/1 | 80.0 / 60.0 | no / no | TAIL |
-| 4h/x1.5 | R-OP2 | backtest | in | 20 | -4.21 | 40% | 1/1 | 0.0 / 0.0 | no / no | TAIL |
-| 4h/x1.5 | R-ARM15 | forward | in | 130 | -2.93 | 46% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-BE | forward | in | 110 | -1.50 | 16% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 456 | -1.50 | 37% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-FULL | forward | in | 484 | -1.50 | 38% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-SENT | forward | in | 268 | -2.05 | 44% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NOTRAIL | forward | in | 78 | -31.36 | 32% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-OP2 | forward | in | 414 | -4.00 | 28% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-SCALP-H6 | forward | in | 12 | +12.15 | 100% | 1/1 | 98.0 / 100.0 | YES / YES |  |
+| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 10 (10) | +0.35 | 60% | 0/1 | 80.0 / 60.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 11 (11) | +0.40 | 64% | 1/1 | 80.0 / 60.0 | no / no | TAIL |
+| 4h/x1.5 | R-OP2 | backtest | in | 20 (19) | -4.25 | 37% | 1/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-ARM15 | forward | in | 130 (117) | -6.56 | 44% | 1/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-BE | forward | in | 110 (98) | -1.50 | 16% | 1/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 456 (353) | -1.50 | 36% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-FULL | forward | in | 484 (378) | -1.50 | 37% | 1/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-SENT | forward | in | 268 (221) | -2.40 | 42% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NOTRAIL | forward | in | 78 (70) | -31.36 | 33% | 1/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-OP2 | forward | in | 414 (331) | -3.91 | 27% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-SCALP-H6 | forward | in | 12 (12) | +12.15 | 100% | 1/1 | 98.0 / 100.0 | YES / YES |  |
 
 ## nas100fut — D1 1180 bars, H4 3129 bars
 
@@ -109,7 +109,7 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
-| rung | variant | window | zone | n | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
+| rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
 | (no measurable in-zone journal cell) | | | | | | | | | | |
 
@@ -139,6 +139,6 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
-| rung | variant | window | zone | n | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
+| rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
 | (no measurable in-zone journal cell) | | | | | | | | | | |
