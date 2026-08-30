@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-29 (register 98 restructure; §4 refreshed at register 105). Sections
+**Core last revised:** 2026-08-30 (register 98 restructure; §4 refreshed at register 112). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 105** — the marker §7 maintains. The weekly
+**Register-current-through: 112** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -103,12 +103,17 @@ request discipline still governs what you ask for.
 1. **`reports/DASHBOARD.md`** — the board, question clocks, decisions
    awaiting the operator, the artifact map. Regenerated every Part C run;
    contains no number that is not in a stamped artifact.
-2. **`reports/SIGNAL_POINTS.md`** — the assessment page: stop-width
+2. **`reports/INSIGHTS.md`** — the weekly index (register 109): every
+   cell clearing any null, WATCH/glint entries with age-in-weeks, the
+   bench with gate status, parked threads' standing nulls, and the
+   DELTA since last emission. An index only — nothing gains evidential
+   status by appearing.
+3. **`reports/SIGNAL_POINTS.md`** — the assessment page: stop-width
    ladder, baselines, clearance.
-3. **`reports/trades_enriched.csv`** (+ `reports/fires.csv`) — the
+4. **`reports/trades_enriched.csv`** (+ `reports/fires.csv`) — the
    row-level truth: every journal trade with its mechanical context, and
    every signal fire with its graded outcome. Rows confirm.
-4. **Drill-downs on warrant**, per `reports/scoreboard/READING_GUIDE.md`
+5. **Drill-downs on warrant**, per `reports/scoreboard/READING_GUIDE.md`
    (how to read a cell, the base-rate logic, the dimming rule): the
    conditioning matrix, the journal survey, forensics
    (`reports/forensics/`), the censuses.
@@ -185,12 +190,16 @@ that moves):**
 9. **R-SCALP-H6 is the first evidence-born recipe** (register 94): born
    from Q2-H6's YES through the registered chain (target-based design →
    0.5pt one-tick haircut → registration), two counted arms (plain +
-   refined-entry per the R2 per-family verdict, register 70), running in
-   the journal beside the management ladder from the next Part C
-   emission; optimistic fill declared; the v1 tighter stop is
-   derivation-required from forward accrual, no invented numbers.
-   Evidence base FOUR-INSTRUMENT since register 99 — away rows carry
-   claim status on their own floors.
+   refined-entry per the R2 per-family verdict, register 70); optimistic
+   fill declared; the v1 tighter stop is derivation-required from
+   forward accrual, no invented numbers. Evidence base FOUR-INSTRUMENT
+   since register 99. STATUS AT 2026-08-30: the scalp arms are the only
+   family whose forward cells clear selection-nulls on multiple legs
+   (registers 106/108); ISO week 35 is the best forward week (+564 net
+   vs W34's +211, trades.csv); the GEOMETRY IS FULLY SWEPT — six
+   refinement studies, the stop/cooldown risk grid and the TP ladder
+   (0.25–1.5×ATR) all read ZERO survivors, THE INCUMBENT STANDS
+   (registers 100–103, 106).
 10. **Measurement before machinery.** No cut, breakeven, re-entry,
     backoff, zone, cap, halt, or stop rule registers without its own
     Q-number and forward grade; the flip-cut precedent governs
@@ -213,6 +222,25 @@ that moves):**
     ≥45 rows), graded on consistency statistics only.
     `reports/scoreboard/per_market_watch.md` is the map, never a
     settings page; its candidate pool carries empty mechanism slots.
+    TRACK STATE AT 2026-08-30: the scalp's per-market session cells
+    accrue toward the 45-row track floor (ger40fut London n=21 forward
+    the nearest); census clears route to the page programmatically with
+    selection-nulls (register 108); the R-SCOPED-BE regime gate is a
+    printed readout — NOT PASSED on any leg (register 107); the two
+    HELD sentences' condition (b) stays unmet.
+12. **The 2026-08-30 sweep and the INSIGHTS ledger.** All 29 current
+    scoreboard/forensics pages were human-read by operator + reviewer
+    (register 112; findings entered only through their gates). The
+    weekly index is now generated: `reports/INSIGHTS.md` (register
+    109) — reading order DASHBOARD → INSIGHTS → SIGNAL_POINTS →
+    trades_enriched; an index, never evidence.
+13. **Narrative-doctrine stress, recorded not ruled (register 110).**
+    The survey's consistency structure is not field-significant on any
+    leg (home trajectory 13/20 at percentile 100 on 2026-08-23 →
+    9/31 at 89 current, dated from artifact history) and the H17–H19
+    composites sit at-floor in the journal grades; register 69
+    clause 3 is under live stress; the September sealed window
+    (2026-09-01→14) is the named arbiter; H17–H19 accrue unchanged.
 
 **Live processes:** two detached loops (narrate, paper) plus the
 operator's manual daily sync — the ~30-day 1M retention floor is the one
