@@ -33,6 +33,23 @@ Ex-lockbox (register 85); sealed counted; twin-run pinned
 (tests/test_capture_study.py); FRONT-DOOR-ONLY OUTCOMES — a scoped
 policy becomes a registered variant only via its own Q-number and
 forward grade. Weekly under Part C after first emission.
+
+REGIME-GATE FLOORS (register 107; AMENDMENT_capture_study_regime_gate_
+floors, counted 2026-08-30): the phase-at-entry cut gains the SAME
+member machinery as the base cells — per regime x session (and regime
+whole), every policy's per-trade net delta reads against the B-RANDOM
+members' per-trade net deltas in the IDENTICAL regime x session scope
+(the members' own fire bars classified by the same 1M phase at the
+fire bar). Per-trade, not total: the arm's and the members' regime
+shares differ, so totals are not like-for-like (stated). LUCK BUDGET
+for the gate: the ranging-minus-trending per-trade delta of the gate
+policy (REGIME_GATE_POLICY = the R-SCOPED-BE rung, register 92) vs a
+null of regime labels permuted within session strata (NULL_SEEDS).
+THE REGISTER-92 GATE, formally readable: PASS only when the ranging
+cell is measurable on both regimes, its gate-policy per-trade delta
+CLEARS the matched member band max, AND the gap sits beyond the luck
+budget (percentile > GATE_PCTL). Nothing registers on PASS — the gate
+passing makes R-SCOPED-BE buildable through the front door, no more.
 """
 
 import argparse
@@ -71,6 +88,25 @@ GAP_MIN_PTS = 5.0        # differentiation threshold — implementer-
 NEVER_AGAIN_BOUND_ATR = 1.0   # register 89 item 1: the operator's
                               # never-again bound (no trade exceeds
                               # +1.0xATR MFE unprotected)
+REGIME_GATE_POLICY = "BE@0.25"   # register 92: R-SCOPED-BE's rung
+GATE_PCTL = 95.0                 # beyond-luck bar (the survey convention)
+REGIMES = ("ranging-at-entry", "trending-at-entry")
+
+
+def regime_of(ei, t1):
+    """Register 90 item 1: PHASE-AT-ENTRY — the 1M phase tracker at the
+    FIRE BAR (ei - 1); trending if nonzero."""
+    fi = max(int(ei) - 1, 0)
+    return "trending-at-entry" if t1[fi] != 0 else "ranging-at-entry"
+
+
+def trade_deltas(t, spread):
+    """Per-policy net delta (counterfactual - actual) for one trade,
+    computed once and cached on the trade dict."""
+    if "_deltas" not in t:
+        t["_deltas"] = {p[0]: protect_outcome(t, spread, p) - t["pts"]
+                        for p in POLICIES}
+    return t["_deltas"]
 
 
 def day_regimes(A):
@@ -125,11 +161,134 @@ def phase_regime_split(base, spread, A):
     scope by tape-character rather than by geography?"""
     out = {}
     for t in base:
-        fi = max(t["ei"] - 1, 0)
-        reg = ("trending-at-entry" if A["t1"][fi] != 0
-               else "ranging-at-entry")
-        out.setdefault(reg, []).append(t)
+        out.setdefault(regime_of(t["ei"], A["t1"]), []).append(t)
     return _policy_agg(out, spread)
+
+
+def _band(vals, nd=2):
+    return {"members": len(vals),
+            "median": round(float(np.median(vals)), nd),
+            "min": round(float(min(vals)), nd),
+            "max": round(float(max(vals)), nd)}
+
+
+def regime_floors(members, spread):
+    """Register 107: B-RANDOM member per-trade net-delta bands per
+    regime x session scope ('whole' = the regime pooled over sessions),
+    per policy — the same members, the same policies, the same
+    phase-at-entry classification as the arm's cut. Member scopes with
+    zero trades contribute nothing (members counted per scope)."""
+    scopes = {}
+    for mt in members:
+        groups = {}
+        for t in mt:
+            groups.setdefault((t["regime"], "whole"), []).append(t)
+            groups.setdefault((t["regime"], t["session"]), []).append(t)
+        for key, ts_ in groups.items():
+            sc = scopes.setdefault(key, {"ns": [], "deltas": {}})
+            sc["ns"].append(len(ts_))
+            for p in POLICIES:
+                sc["deltas"].setdefault(p[0], []).append(
+                    float(np.mean([trade_deltas(t, spread)[p[0]]
+                                   for t in ts_])))
+    out = {}
+    for key, sc in sorted(scopes.items()):
+        out["|".join(key)] = {
+            "member_n_median": float(np.median(sc["ns"])),
+            "policies": {pn: _band(v) for pn, v in sc["deltas"].items()}}
+    return out
+
+
+def regime_gate(base, spread, A, floors):
+    """Register 107: the register-92 gate made formally readable.
+    Cells = regime x session (+ regime whole); per policy the arm's
+    per-trade net delta vs the matched member band; the gate readout
+    on REGIME_GATE_POLICY with its own luck budget (regime labels
+    permuted within session strata, pinned seeds)."""
+    regs = [regime_of(t["ei"], A["t1"]) for t in base]
+    cells = {}
+    for t, reg in zip(base, regs):
+        cells.setdefault((reg, "whole"), []).append(t)
+        cells.setdefault((reg, t["r"]["session"]), []).append(t)
+    out_cells = {}
+    for key, ts_ in sorted(cells.items()):
+        fl = floors.get("|".join(key), {}).get("policies", {})
+        pols = {}
+        for p in POLICIES:
+            ptd = float(np.mean([trade_deltas(t, spread)[p[0]]
+                                 for t in ts_]))
+            band = fl.get(p[0])
+            pols[p[0]] = {
+                "n": len(ts_),
+                "net_delta": round(float(sum(
+                    trade_deltas(t, spread)[p[0]] for t in ts_)), 1),
+                "per_trade_delta": round(ptd, 2),
+                "floor": band,
+                "clears_floor": bool(band is not None
+                                     and ptd > band["max"]),
+                "measurable": len(ts_) >= MIN_CELL_N}
+        best = max(pols, key=lambda k: pols[k]["per_trade_delta"])
+        out_cells["|".join(key)] = {"n": len(ts_), "policies": pols,
+                                    "best_policy": best}
+    # the gate's luck budget: ranging - trending gap on the gate policy
+    gd = [trade_deltas(t, spread)[REGIME_GATE_POLICY] for t in base]
+    strata = {}
+    for i, t in enumerate(base):
+        strata.setdefault(t["r"]["session"], []).append(i)
+
+    def gap(labels):
+        r_ = [gd[i] for i in range(len(base)) if labels[i] == REGIMES[0]]
+        t_ = [gd[i] for i in range(len(base)) if labels[i] == REGIMES[1]]
+        if len(r_) < MIN_CELL_N or len(t_) < MIN_CELL_N:
+            return None
+        return float(np.mean(r_) - np.mean(t_))
+    obs = gap(regs)
+    null = []
+    for seed in NULL_SEEDS:
+        rs = np.random.RandomState(seed)
+        lab = list(regs)
+        for idxs in strata.values():
+            perm = rs.permutation(len(idxs))
+            vals = [regs[idxs[j]] for j in perm]
+            for j, i in enumerate(idxs):
+                lab[i] = vals[j]
+        g = gap(lab)
+        null.append(np.nan if g is None else g)
+    null = np.array(null, dtype=float)
+    valid = null[~np.isnan(null)]
+    pct = (round(100 * float(np.mean(valid < obs)), 1)
+           if obs is not None and len(valid) else None)
+    rng = out_cells.get(f"{REGIMES[0]}|whole", {}).get("policies", {}) \
+        .get(REGIME_GATE_POLICY, {})
+    trn = out_cells.get(f"{REGIMES[1]}|whole", {}).get("policies", {}) \
+        .get(REGIME_GATE_POLICY, {})
+    sess_clear = sorted(
+        key.split("|")[1] for key, c in out_cells.items()
+        if key.startswith(REGIMES[0]) and key.split("|")[1] != "whole"
+        and c["policies"][REGIME_GATE_POLICY]["measurable"]
+        and c["policies"][REGIME_GATE_POLICY]["clears_floor"])
+    beyond = bool(pct is not None and pct > GATE_PCTL)
+    return {"cells": out_cells,
+            "gate": {"policy": REGIME_GATE_POLICY,
+                     "ranging_n": rng.get("n", 0),
+                     "trending_n": trn.get("n", 0),
+                     "ranging_per_trade_delta": rng.get("per_trade_delta"),
+                     "ranging_floor_max": (rng.get("floor") or {}).get("max"),
+                     "ranging_clears_floor": bool(rng.get("clears_floor")),
+                     "trending_per_trade_delta": trn.get("per_trade_delta"),
+                     "gap_per_trade": (round(obs, 2) if obs is not None
+                                       else None),
+                     "null_valid_seeds": int(len(valid)),
+                     "null_median": (round(float(np.median(valid)), 2)
+                                     if len(valid) else None),
+                     "null_p95": (round(float(np.percentile(valid, 95)), 2)
+                                  if len(valid) else None),
+                     "percentile_vs_null": pct,
+                     "beyond_luck": beyond,
+                     "sessions_ranging_clear": sess_clear,
+                     "PASS": bool(rng.get("measurable")
+                                  and trn.get("measurable")
+                                  and rng.get("clears_floor") and beyond)}}
 
 
 def never_again_pricing(base, spread):
@@ -263,13 +422,14 @@ def diff_statistic(base, spread):
                 100 * float(np.mean([obs > m for m in null])), 1)}
 
 
-def policy_floors(A):
-    """B-RANDOM members under BASE_VARIANT + each identical policy:
-    member net-delta bands."""
+def member_trades(A):
+    """B-RANDOM members under BASE_VARIANT, ex-lockbox: one trade list
+    per member, each trade carrying its session and its phase-at-entry
+    regime (the same classification the arm's cut uses)."""
     recipe = RECIPE_SETS[RECIPE_SET_VERSION][BASE_VARIANT]
     members = baseline_fires(A["env"], A["engine_events"])["B-RANDOM"]
     ts = A["ts"]
-    nets = {p[0]: [] for p in POLICIES}
+    out = []
     for mf in members:
         trades = []
         for t in simulate(mf, A["env"], recipe, A["spread"]):
@@ -286,16 +446,22 @@ def policy_floors(A):
             fav = ((A["h"][ei:xi + 1] - t["entry"]) if d == 1
                    else (t["entry"] - A["l"][ei:xi + 1]))
             trades.append({"pts": t["pts"], "traj": traj,
-                           "atr0": atr0, "mfe_path": fav})
+                           "atr0": atr0, "mfe_path": fav, "ei": ei,
+                           "session": t["session"],
+                           "regime": regime_of(ei, A["t1"])})
+        out.append(trades)
+    return out
+
+
+def policy_floors(members, spread):
+    """B-RANDOM members under BASE_VARIANT + each identical policy:
+    member net-delta bands (totals — the base-cell floor pattern)."""
+    nets = {p[0]: [] for p in POLICIES}
+    for trades in members:
         for p in POLICIES:
             nets[p[0]].append(round(float(sum(
-                protect_outcome(t, A["spread"], p) - t["pts"]
-                for t in trades)), 1))
-    return {k: {"members": len(v),
-                "median": round(float(np.median(v)), 1),
-                "min": round(float(min(v)), 1),
-                "max": round(float(max(v)), 1)}
-            for k, v in nets.items()}
+                trade_deltas(t, spread)[p[0]] for t in trades)), 1))
+    return {k: _band(v, 1) for k, v in nets.items()}
 
 
 def main():
@@ -321,6 +487,8 @@ def main():
         rows = [r for r in kept_rows if r["instrument"] == instr]
         base = [t for t in join_trades(rows, A)
                 if t["r"]["variant"] == BASE_VARIANT]
+        members = member_trades(A)
+        rfloors = regime_floors(members, A["spread"])
         art["per_instrument"][instr] = {
             "n_base": len(base), "spread": A["spread"],
             "cells": cell_grid(base, A["spread"]),
@@ -328,10 +496,12 @@ def main():
                 p[0]: round(float(sum(
                     protect_outcome(t, A["spread"], p) - t["pts"]
                     for t in base)), 1) for p in POLICIES},
-            "floors": policy_floors(A),
+            "floors": policy_floors(members, A["spread"]),
             "luck_budget": diff_statistic(base, A["spread"]),
             "phase_regime_split": phase_regime_split(base, A["spread"],
                                                      A),
+            "regime_floors": rfloors,
+            "regime_gate": regime_gate(base, A["spread"], A, rfloors),
             "day_regime_split_first_attempt": regime_split(
                 base, A["spread"], day_regimes(A), A),
             "never_again": never_again_pricing(base, A["spread"])}
@@ -394,6 +564,60 @@ def _emit(art, head):
             L.append(f"| {reg} | {dim}{n_} | {best} "
                      f"| {per[best]['net_delta']} "
                      f"| {per['BE@0.25']['net_delta']} |")
+        rg = res["regime_gate"]
+        g = rg["gate"]
+        verdict = ("GATE PASS — R-SCOPED-BE is buildable through the "
+                   "front door (nothing registers here)" if g["PASS"]
+                   else "GATE NOT PASSED")
+        L += ["", "### Regime-gate floors (register 107: the "
+              "phase-at-entry cut with the base cells' member "
+              "machinery — per regime x session, every policy's "
+              "PER-TRADE net delta vs the B-RANDOM members' per-trade "
+              "net deltas in the identical scope; per-trade because "
+              "the arm's and the members' regime shares differ). THE "
+              f"REGISTER-92 GATE on {g['policy']}: ranging cell "
+              "measurable on both regimes AND clears its member band "
+              "max AND the ranging-minus-trending gap sits beyond the "
+              "luck budget (regime labels permuted within session "
+              f"strata, {NULL_SHUFFLES} pinned seeds, percentile > "
+              f"{GATE_PCTL:g}).", "",
+              f"**Gate readout ({g['policy']}):** ranging n={g['ranging_n']} "
+              f"per-trade Δ {g['ranging_per_trade_delta']} vs member band "
+              f"max {g['ranging_floor_max']} — "
+              f"{'CLEARS' if g['ranging_clears_floor'] else 'inside the band'}; "
+              f"trending n={g['trending_n']} per-trade Δ "
+              f"{g['trending_per_trade_delta']}; gap "
+              f"{g['gap_per_trade']} vs null median {g['null_median']} / "
+              f"p95 {g['null_p95']} (percentile {g['percentile_vs_null']}, "
+              f"{g['null_valid_seeds']} valid seeds) — "
+              f"{'BEYOND LUCK' if g['beyond_luck'] else 'inside the luck budget'}; "
+              "sessions where the ranging cell clears at n>="
+              f"{MIN_CELL_N}: {', '.join(g['sessions_ranging_clear']) or 'none'}. "
+              f"**{verdict}.**", "",
+              f"| regime | session | n | {g['policy']} Δ/trade | member "
+              "band med [min..max] (members; med member n) | clears | "
+              "best policy | best Δ/trade | best band max | clears |",
+              "|---|---|---|---|---|---|---|---|---|---|"]
+        for key, c in rg["cells"].items():
+            reg, sess = key.split("|")
+            gp = c["policies"][g["policy"]]
+            bp = c["policies"][c["best_policy"]]
+            dim = "°" if not gp["measurable"] else ""
+
+            def _fb(pc):
+                fb = pc["floor"]
+                if not fb:
+                    return "—", "—"
+                mn = res["regime_floors"][key]["member_n_median"]
+                return (f"{fb['median']} [{fb['min']}..{fb['max']}] "
+                        f"({fb['members']}; {mn:g})",
+                        "YES" if pc["clears_floor"] else "no")
+            gb, gc = _fb(gp)
+            _bb, bc = _fb(bp)
+            L.append(f"| {reg} | {sess} | {dim}{c['n']} "
+                     f"| {gp['per_trade_delta']} | {gb} | {gc} "
+                     f"| {c['best_policy']} | {bp['per_trade_delta']} "
+                     f"| {(bp['floor'] or {}).get('max', '—')} | {bc} |")
         L += ["", "### Day-level regime cut — the RECORDED FIRST "
               "ATTEMPT (register 89/90: saturation finding — 98% of "
               "days classified trending on three legs, no contrast "
