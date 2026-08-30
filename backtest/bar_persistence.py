@@ -54,7 +54,9 @@ PTS_LADDER = (2.0, 5.0, 10.0)          # HOME-REFERENCE ONLY
 ATR_LADDER = (0.25, 0.5, 1.0)          # cross-instrument
 SESSIONS = ("asia", "london", "overlap", "ny_only", "dead")
 QUADRANTS = ("wide-loud", "wide-quiet", "narrow-loud", "narrow-quiet")
-QUAD_KS = (1, 3, 5)      # register 68: quadrant rows report k in {1,3,5}
+QUAD_KS = (1, 3, 5)
+CENSUS_MIN_N = 25        # register 108: a census clear is measurable at
+                         # n >= 25 (the underwater/capture convention)      # register 68: quadrant rows report k in {1,3,5}
 
 
 def persistence(fires, ts, o, h, l, c, atr_at, spread, home=False):
@@ -362,13 +364,45 @@ def run_instrument(instr):
                      else "B-RANDOM")
             floor = _ens(member_aggs[bname][win], "atr_0.5", 5)
             if floor:
+                # register 108: n travels with the matched block — the
+                # signal's n and the floor's member count — and the
+                # full-range clear is a stated flag, not a reader's
+                # subtraction
                 out["matched"].setdefault(name, {})[win] = {
                     "name": bname,
+                    "n": sig["n"],
+                    "net": sig["net"],
                     "delta_net_pp": round(sig["net"]
                                           - floor["net_median"], 1),
                     "floor_net_median": floor["net_median"],
-                    "floor_net_range": floor["net_range"]}
+                    "floor_net_range": floor["net_range"],
+                    "floor_members": floor["members_measured"],
+                    "clears_range": bool(sig["net"]
+                                         > floor["net_range"][1]),
+                    "measurable": sig["n"] >= CENSUS_MIN_N}
+    out["census_clears"] = census_clears(out)
     return out, fire_rows
+
+
+def census_clears(res):
+    """Register 108: the headline cells (net reach 0.5xATR@5) clearing
+    their matched floor's FULL member range, with n; measurable at
+    n >= CENSUS_MIN_N. Survivors route to the per-market WATCH page
+    wearing a selection-null (per_market_watch.census_watch); listed,
+    never rules."""
+    out = []
+    for name, wins in sorted(res.get("matched", {}).items()):
+        for win, m in sorted(wins.items()):
+            if m.get("clears_range"):
+                out.append({"signal": name, "window": win, "n": m["n"],
+                            "net_reach_pct": m["net"],
+                            "floor": m["name"],
+                            "floor_range": m["floor_net_range"],
+                            "floor_members": m["floor_members"],
+                            "delta_vs_range_max_pp": round(
+                                m["net"] - m["floor_net_range"][1], 1),
+                            "measurable": m["measurable"]})
+    return out
 
 
 def _fmtcell(a, lab, N):
@@ -469,8 +503,13 @@ def _emit(results, head):
                 m = res["matched"].get(name, {}).get(win)
                 if m:
                     lo, hi = m["floor_net_range"]
+                    flag = (" CLEARS RANGE" if m.get("clears_range")
+                            else "")
                     row.append(f"{m['delta_net_pp']:+.1f}pp vs "
-                               f"{m['name']} [{lo}…{hi}]")
+                               f"{m['name']} [{lo}…{hi}] "
+                               f"(n{m.get('n', a['n_fires'])}; "
+                               f"m{m.get('floor_members', '?')})"
+                               f"{flag}")
                 else:
                     row.append("—")
                 L.append("| " + " | ".join(row) + " |")
@@ -582,6 +621,24 @@ def _emit(results, head):
                         cells.append(f"{e['net_median']:+.2f}{rng}")
                 L.append(f"| {bname} | {win} | " + " | ".join(cells)
                          + " |")
+        L.append("")
+        L += [f"### {inst} — CENSUS CLEARS (register 108: headline "
+              "cells above their matched floor's FULL member range; "
+              f"measurable at n>={CENSUS_MIN_N}; survivors route to "
+              "per_market_watch.md wearing a selection-null — listed, "
+              "never rules)", "",
+              "| signal | window | n | net reach % | floor [range] "
+              "(members) | Δ vs range max | measurable |",
+              "|---|---|---|---|---|---|---|"]
+        for c in res.get("census_clears", []):
+            lo, hi = c["floor_range"]
+            L.append(f"| {c['signal']} | {c['window']} | {c['n']} "
+                     f"| {c['net_reach_pct']} | {c['floor']} [{lo}…{hi}] "
+                     f"({c['floor_members']}) "
+                     f"| {c['delta_vs_range_max_pp']:+.1f}pp "
+                     f"| {'YES' if c['measurable'] else 'no (n<' + str(CENSUS_MIN_N) + ')'} |")
+        if not res.get("census_clears"):
+            L.append("| (no cell clears its full floor range) | | | | | | |")
         L.append("")
         L += [f"### {inst} — BASELINE FLOORS (ensembles; net reach %, "
               "median [range])", "",

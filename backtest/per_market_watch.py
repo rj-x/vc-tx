@@ -47,6 +47,17 @@ CANDIDATE POOL (item 4): seeded from existing structure with EMPTY
 mechanism-sentence slots — nothing advances without the operator's pen.
 Ex-lockbox; sealed untouched; twin-run pinned
 (tests/test_per_market_watch.py); weekly under Part C.
+
+CENSUS CLEARS (register 108): the bar-persistence census's headline
+cells (net reach 0.5xATR@5) that clear their matched floor's FULL
+member range at n >= CENSUS_MIN_N route here programmatically (the
+register-99 ger40fut S0-H19 cell was hand-seeded; this is the general
+route), each wearing a SELECTION-NULL of the same shape as the config
+field's: per instrument x window, the signal labels are permuted across
+the census fires (n per signal kept), the best net reach among
+measurable signals recorded per seed, and every clearing cell wears its
+percentile against that best-of-field distribution. Listed, never
+rules; a mechanism sentence is still the operator's pen.
 """
 
 import argparse
@@ -67,6 +78,11 @@ from backtest.event_clock import load_calendar, tag_row
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 TRADES_CSV = os.path.join(ROOT, "reports", "trades.csv")
+CENSUS_FIRES_CSV = os.path.join(OUT, "bar_persistence_fires.csv")
+CENSUS_JSON = os.path.join(OUT, "bar_persistence.json")
+CENSUS_MIN_N = 25               # register 108: a census clear is
+                                # measurable at n >= 25 (the census's
+                                # own CENSUS_MIN_N, mirrored)
 
 INSTRUMENTS = ("uk100fut", "ger40fut", "nas100fut", "us30fut")
 SLOT_ORDER = ("open15", "close15", "news15")   # precedence; else "none"
@@ -274,6 +290,94 @@ def run():
             "markets": markets}
 
 
+def census_fires(path=CENSUS_FIRES_CSV):
+    """(instrument, window) -> list of (signal, net_touch) from the
+    census's row-level ledger (register 91); lockbox rows excluded by
+    their zone tag."""
+    out = {}
+    if not os.path.exists(path):
+        return out
+    for r in csv.DictReader(open(path)):
+        if r["zone"] not in ("backtest", "forward"):
+            continue
+        v = r["touched_0p5atr_5b_net_of_spread"]
+        if v in ("", "None"):
+            continue
+        out.setdefault((r["instrument"], r["zone"]), []).append(
+            (r["signal"], 1.0 if v in ("True", "1", "1.0") else 0.0))
+    return out
+
+
+def census_selection_null(fires, min_n=CENSUS_MIN_N):
+    """Best-of-field net reach % per seed under signal-label
+    permutation across one instrument x window's census fires (n per
+    signal kept). NaN = no measurable signal that seed."""
+    labels = [f[0] for f in fires]
+    vals = np.array([f[1] for f in fires], dtype=float)
+    out = []
+    for seed in NULL_SEEDS:
+        rs = np.random.RandomState(seed)
+        perm = rs.permutation(len(labels))
+        cells = {}
+        for i, j in enumerate(perm):
+            cells.setdefault(labels[j], []).append(vals[i])
+        best = [100 * float(np.mean(v)) for v in cells.values()
+                if len(v) >= min_n]
+        out.append(max(best) if best else np.nan)
+    return np.array(out, dtype=float)
+
+
+def census_watch(census_json=CENSUS_JSON, fires_csv=CENSUS_FIRES_CSV):
+    """Register 108: every census clear (full floor range) at n >=
+    CENSUS_MIN_N, wearing its selection-null percentile; unmeasurable
+    clears listed with their n-to-measurable and no null."""
+    if not os.path.exists(census_json):
+        return []
+    bp = json.load(open(census_json))
+    fires = census_fires(fires_csv)
+    nulls = {}
+    out = []
+    for res in bp.get("results", []):
+        instr = res["instrument"]
+        for c in res.get("census_clears", []):
+            key = (instr, c["window"])
+            row = {"instrument": instr, **c,
+                   "sel_pct": None, "null_p95": None,
+                   "beats_field_null": False,
+                   "null_valid_seeds": 0,
+                   "n_to_measurable": max(0, CENSUS_MIN_N - c["n"])}
+            if c["measurable"] and key in fires:
+                if key not in nulls:
+                    nulls[key] = census_selection_null(fires[key])
+                nb = nulls[key]
+                row["sel_pct"] = percentile_vs(nb, c["net_reach_pct"])
+                p95 = null_p95(nb)
+                row["null_p95"] = (round(p95, 1) if np.isfinite(p95)
+                                   else None)
+                row["beats_field_null"] = bool(c["net_reach_pct"] > p95)
+                row["null_valid_seeds"] = int((~np.isnan(nb)).sum())
+            out.append(row)
+    return out
+
+
+CENSUS_HDR = ("| instrument | signal | window | n | net reach % | floor "
+              "[range] (members) | Δ vs range max | sel-pct | field null "
+              "p95 | beats field null | status |",
+              "|---|---|---|---|---|---|---|---|---|---|---|")
+
+
+def census_row(c):
+    lo, hi = c["floor_range"]
+    st = ("WATCH" if c["measurable"] else
+          f"unmeasurable (n<{CENSUS_MIN_N}; {c['n_to_measurable']} to go)")
+    return (f"| {c['instrument']} | {c['signal']} | {c['window']} | {c['n']} "
+            f"| {c['net_reach_pct']} | {c['floor']} [{lo}…{hi}] "
+            f"({c['floor_members']}) | {c['delta_vs_range_max_pp']:+.1f}pp "
+            f"| {c['sel_pct'] if c['sel_pct'] is not None else '—'} "
+            f"| {c['null_p95'] if c['null_p95'] is not None else '—'} "
+            f"| {'YES' if c['beats_field_null'] else 'no'} | {st} |")
+
+
 def _row(c):
     return (f"| {c['variant']} | {c['session']} | {c['slot']} | {c['n']} "
             f"| {c['median']:+.2f} | {100 * c['win_rate']:.0f}% "
@@ -361,6 +465,16 @@ def _emit(art, head):
           *HANDOFF_HDR]
     L += [handoff_row(h) for h in hand] or [
         "| (no ladder hand-off on this emission) | | | | | | | | | |"]
+    cw = art.get("census_watch", [])
+    L += ["", "## Census clears (register 108) — bar-persistence headline "
+          "cells (net reach 0.5xATR@5) above their matched floor's FULL "
+          f"member range; measurable at n >= {CENSUS_MIN_N}; selection-null "
+          "= the best net reach among measurable signals under signal-label "
+          f"permutation across the leg's census fires ({NULL_SHUFFLES} pinned "
+          "seeds); listed, never rules — the mechanism sentence is the "
+          "operator's pen", "", *CENSUS_HDR]
+    L += [census_row(c) for c in cw] or [
+        "| (no census cell clears its full floor range) | | | | | | | | | | |"]
     burden = art.get("spread_burden", [])
     L += ["", "## Standing per-instrument facts — spread burden at the "
           "scalp incumbent (register 106 follow-through (3); from "
@@ -391,6 +505,8 @@ def main():
     lj = json.load(open(lad)) if os.path.exists(lad) else {}
     art["ladder_handoffs"] = lj.get("watch_handoff", [])
     art["spread_burden"] = lj.get("spread_burden", [])
+    # register 108: census clears route here with their selection-null
+    art["census_watch"] = census_watch()
     with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)

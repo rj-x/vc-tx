@@ -7,8 +7,41 @@ import json
 import numpy as np
 import pandas as pd
 
-from backtest.bar_persistence import (ATR_LADDER, HORIZONS, PTS_LADDER,
+from backtest.bar_persistence import (ATR_LADDER, CENSUS_MIN_N, HORIZONS,
+                                      PTS_LADDER, census_clears,
                                       persistence)
+
+
+def test_census_clears_full_range_with_n():
+    # register 108: a clear = net reach above the floor's range MAX (not
+    # its median); n and the member count travel with the block;
+    # measurable at CENSUS_MIN_N
+    res = {"matched": {
+        "S0-H7": {"forward": {"name": "B-RANDOM", "n": 61, "net": 18.0,
+                              "delta_net_pp": 4.8,
+                              "floor_net_median": 13.2,
+                              "floor_net_range": [9.4, 17.5],
+                              "floor_members": 20, "clears_range": True,
+                              "measurable": True}},
+        "S0-H3": {"forward": {"name": "B-RANDOM", "n": 20, "net": 20.0,
+                              "delta_net_pp": 6.8,
+                              "floor_net_median": 13.2,
+                              "floor_net_range": [9.4, 17.5],
+                              "floor_members": 20, "clears_range": True,
+                              "measurable": False}},
+        "S0-H1": {"forward": {"name": "B-RANDOM", "n": 90, "net": 13.3,
+                              "delta_net_pp": 0.1,
+                              "floor_net_median": 13.2,
+                              "floor_net_range": [9.4, 17.5],
+                              "floor_members": 20, "clears_range": False,
+                              "measurable": True}}}}
+    cc = census_clears(res)
+    assert [c["signal"] for c in cc] == ["S0-H3", "S0-H7"]
+    h7 = next(c for c in cc if c["signal"] == "S0-H7")
+    assert h7["measurable"] and h7["delta_vs_range_max_pp"] == 0.5
+    assert h7["floor_members"] == 20 and h7["n"] == 61
+    assert not next(c for c in cc if c["signal"] == "S0-H3")["measurable"]
+    assert CENSUS_MIN_N == 25
 
 T0 = pd.Timestamp("2026-08-17 09:00", tz="UTC")
 

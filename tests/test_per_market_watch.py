@@ -64,6 +64,24 @@ def test_selection_null_twin_run_and_direction():
     assert best_of_field(cells) == (1.0, 1.0)
 
 
+def test_census_selection_null_twin_run_and_direction():
+    # register 108: signal labels permuted across census fires, n kept;
+    # a chance-level signal cannot beat the field's best fake
+    from backtest.per_market_watch import (census_selection_null,
+                                           null_p95)
+    rs = np.random.RandomState(3)
+    fires = [(s, float(rs.rand() < 0.2)) for s in ("A", "B", "C", "D")
+             for _ in range(40)]
+    n1, n2 = census_selection_null(fires), census_selection_null(fires)
+    assert json.dumps(n1.tolist()) == json.dumps(n2.tolist())
+    assert not np.isnan(n1).any()
+    assert percentile_vs(n1, 20.0) < 50.0
+    assert percentile_vs(n1, 100.0) == 100.0
+    assert null_p95(n1) > 20.0
+    # nothing measurable -> every seed missing, never a low value
+    assert np.isnan(census_selection_null(fires[:10])).all()
+
+
 def test_candidate_pool_mechanism_slots_empty():
     assert len(CANDIDATE_POOL) == 3
     assert all(c["mechanism"] == "" for c in CANDIDATE_POOL)
