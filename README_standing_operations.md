@@ -116,6 +116,10 @@ not covered by any validation this system will ever produce.
   ever, through walk-forward as candidate hypotheses.
 - **Do not hand-edit generated reports or the macro live file** (staging → review → merge
   only).
+- **Every working session ends with a CLOSURE block** (register 118): each idea raised is
+  tagged SENT / BACKLOGGED (named row) / PARKED (reason) / DROPPED (stated); the reviewer
+  drafts, the operator's send enacts; the backlog gains chat-origin rows; a missing idea
+  is the reviewer's logged miss.
 
 ## Checkpoints (what ends accumulation mode)
 
