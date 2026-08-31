@@ -38,6 +38,22 @@ def _fire(i=0, d=1):
     return [{"ts": T0 + pd.Timedelta(minutes=i), "dir": d, "name": "X"}]
 
 
+def test_timestamp_convention_close_stamped_fill_anchor():
+    # register 131: entry_ts is the ENTRY BAR'S CLOSE STAMP and the
+    # fill is that bar's OPEN — the ts axis is close-stamped
+    # (Env.trail_ref derives a bar's open as ts - 1M)
+    closes = [100.0 + i for i in range(30)]
+    env = _env(closes)
+    t = simulate(_fire(0), env,
+                 {"stages": [{"stop": [("atr", 2.5, "15min")],
+                              "target": None}]}, 0.0)[0]
+    ei = 1                                       # fire bar 0, entry bar 1
+    assert pd.Timestamp(t["entry_ts"]).value == env.ts[ei]
+    assert t["entry"] == env.o[ei]               # the fill = that bar's OPEN
+    # the open the trail logic derives for the entry bar is ts - 1M
+    assert env.ts[ei] - 60_000_000_000 == env.ts[ei - 1]
+
+
 def test_entry_offset_defers_the_entry():
     closes = [100.0 + i for i in range(30)]
     env = _env(closes)
