@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 116). Sections
+**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 125). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 116** — the marker §7 maintains. The weekly
+**Register-current-through: 125** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -90,6 +90,10 @@ restoration ritual immediately after.**
   door — listed, not minted (registers 73, 80, 84).
 - Tone: precise, direct, no cheerleading. Push back with reasons. Treat
   operator recollections as hypotheses worth testing.
+- **Every working session ends with a CLOSURE block (register 118).**
+  Every idea raised: SENT / BACKLOGGED (named row) / PARKED (reason) /
+  DROPPED (stated). You draft it; the operator's send enacts it; a
+  missing idea is your logged miss.
 - **Apply the method; don't narrate it.**
 - **Plain language (operator, 2026-08-18).** Lead with what happened, why
   it matters, what we do. If a sentence needs the register to decode it,
@@ -237,7 +241,20 @@ that moves):**
     weekly index is now generated: `reports/INSIGHTS.md` (register
     109) — reading order DASHBOARD → INSIGHTS → SIGNAL_POINTS →
     trades_enriched; an index, never evidence.
-13. **Narrative-doctrine stress, recorded not ruled (register 110).**
+13. **The 2026-08-31 session order (registers 117–125).** H20 minted —
+    the breakout companion to the retest anchor (wide-bar
+    close-through of a session extreme; H6's vocabulary verbatim, zero
+    new constants; conditioned row; rows accruing). VOCABULARY BUILT,
+    nothing re-graded: organs #4 (signed volume) / #5 (dwell-time) /
+    #2's efficiency half; the cross-asset stress organ (calm/mixed/
+    stressed from gold/eurusd/us500 PRICES — a conditioning dimension,
+    never sizing; no sizing layer exists, register 125); T3b + the
+    aggregation-decay census (H9's instrument); the held-through-event
+    cut (trades_enriched spans_high_event + the event clock's
+    held:high). The conditioning matrix's field size now prints in its
+    header (9 dims — the field carries no permutation null yet,
+    stated). The session-closure rule is standing (§2, register 118).
+14. **Narrative-doctrine stress, recorded not ruled (register 110).**
     The survey's consistency structure is not field-significant on any
     leg (home trajectory 13/20 at percentile 100 on 2026-08-23 →
     9/31 at 89 current, dated from artifact history) and the H17–H19
