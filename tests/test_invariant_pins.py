@@ -70,6 +70,42 @@ def test_p3_s0h6_rejection_fires_and_narrow_does_not():
     assert cond(b2, None, sctx, _feats(0.1), {}, None, None, None) is None
 
 
+def test_p3_s0h20_close_through_fires_and_inside_close_does_not():
+    # register 117: the breakout companion — same wide-bar class, the
+    # resolution is the CLOSE beyond the pre-bar extreme
+    from engine.signal_watch import FIRING_CONDITIONS
+    cond = FIRING_CONDITIONS["S0-H20"]()
+    sctx = types.SimpleNamespace(atr=10.0)
+    t0 = pd.Timestamp("2026-08-17 08:00", tz="UTC")
+    for i in range(120):                    # narrow baseline, session hi 100.6
+        d = cond(_bar(t0 + pd.Timedelta(minutes=i), 100, 100.6, 99.9,
+                      100.2, sid=1), None, sctx, _feats(0.5), {}, None,
+                 None, None)
+    assert d is None
+    # H6's rejection bar (wide, pokes above, closes back inside): NOT H20
+    b_rej = _bar(t0 + pd.Timedelta(minutes=121), 100, 106, 99.5, 100.2,
+                 sid=1)
+    assert cond(b_rej, None, sctx, _feats(0.1), {}, None, None, None) \
+        is None
+    # wide bar CLOSING through the pre-bar extreme (now 106): fires long
+    b_brk = _bar(t0 + pd.Timedelta(minutes=122), 100.2, 107.5, 100.0,
+                 107.2, sid=1)
+    assert cond(b_brk, None, sctx, _feats(0.95), {}, None, None,
+                None) == 1
+    # a narrow close through a level stays silent (the wide gate holds)
+    b_nar = _bar(t0 + pd.Timedelta(minutes=123), 107.2, 107.9, 107.3,
+                 107.8, sid=1)
+    assert cond(b_nar, None, sctx, _feats(0.9), {}, None, None,
+                None) is None
+    # downside mirror in a fresh session: close through the prior
+    # session's low
+    d = None
+    b_dn = _bar(t0 + pd.Timedelta(minutes=124), 100, 100.5, 93.0, 93.2,
+                sid=2)
+    assert cond(b_dn, None, sctx, _feats(0.05), {}, None, None,
+                None) == -1
+
+
 def test_p3_s0h11_gap_entry_fires_in_travel_direction():
     from engine.signal_watch import FIRING_CONDITIONS, H11_BUCKET_PTS
     cond = FIRING_CONDITIONS["S0-H11"]()

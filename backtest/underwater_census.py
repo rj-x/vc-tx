@@ -118,7 +118,9 @@ FAMILY_OF = {"S0-H1": "event", "S0-H2": "event", "S1-H1": "event",
              "S1-H11": "map", "S0-H13": "map", f"S0-H{6}": "retest",
              "S0-H5": "event-derived", "S0-H16": "event-derived",
              "S0-H17": "composite", "S0-H18": "composite",
-             "S0-H19": "composite"}
+             "S0-H19": "composite",
+             "S0-H20": "retest"}   # register 117: the breakout companion
+                                   # shares the location anchor's family
 
 
 # ----------------------------------------------------------- instrument

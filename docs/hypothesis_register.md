@@ -708,3 +708,43 @@ for walk-forward.
   consistency of a NEGATIVE, field-priced; suppression grading reads
   negative anchor-claim lift as the sentence winning).
 - **Latest review:** rows begin at the next run.
+
+## H20
+- **Claim:** A wide-bar close-through of a session extreme (the same
+  conditioned wide-bar class the retest anchor fires on; resolution =
+  the close beyond the level, not a rejection back inside) initiates
+  continuation in the break direction.
+- **Origin:** operator gap-analysis 2026-08-31 (the extreme-interaction
+  vocabulary graded only the rejection outcome; the close-through
+  outcome was unnamed) + an external practitioner block recorded
+  verbatim as PRIOR in the mint ticket (close-above confirmation;
+  level-validity via prior sellers at the level; stop at the broken
+  level). PRIORS DISTINGUISHED: the parked ORB (register 51) is
+  time-anchored opening ranges — H20's level is the session extreme,
+  not a clock box; the H2-family probe-failure shape (a push through
+  that fails back inside) is the OPPOSITE resolution — H20 requires the
+  close to hold beyond. Front door: mint_H20, counted (register 117).
+- **Signals:**
+  - **S0-H20** (registered 2026-08-31): the wide-bar class verbatim —
+    day-relative spread ≥ p90 over the trailing 480-bar window (H6's
+    constants, reused; no new thresholds); levels = the running session
+    extreme BEFORE the bar and the prior session's extreme; fire at the
+    bar's close when it clears the outermost tracked extreme (a close
+    inside the current session's range is not a break — derived from
+    the claim's wording, no new number); direction = the break;
+    volume-agnostic. CONDITIONED ROW (register 47): graded against the
+    wide-bar class's own chance rate, never unconditioned.
+- **Status:** **signal-live** (statistic shape at mint: conditioned
+  initiation lift per the register-47 convention; the wide-bar class's
+  own base is the floor).
+- **Latest review:** rows begin at the next run.
+- **Parked S-variant note (register 117; NO BUILD until H20's own
+  record justifies variants):** the practitioner's level-quality clause
+  — the level carries ≥2 prior same-session rejections before the break
+  ("the range is real") — is a future S1-H20 configuration, registered
+  then via the front door, not now.
+- **Recipe-geometry note (register 117; noted, NOT enacted):** any
+  future H20 recipe's natural stop is the BROKEN LEVEL
+  (retest-invalidation), not the generic 2.5×ATR disaster cap — the
+  practitioner's stop, recorded for the recipe-layer discussion; no
+  recipe exists and none registers without its own front-door chain.

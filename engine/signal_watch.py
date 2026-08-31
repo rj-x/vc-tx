@@ -88,7 +88,9 @@ COMPOSITE_SENTENCES = ("S0-H17", "S0-H18", "S0-H19")
 # on a conditioned signal is a known confound class and is refused as
 # headline lift. Class-mask implementations live in the scoreboard,
 # keyed by these names.
-CONDITIONED_ROWS = {"S0-H6": "wide_bar_p90_trailing_day"}
+CONDITIONED_ROWS = {"S0-H6": "wide_bar_p90_trailing_day",
+                    "S0-H20": "wide_bar_p90_trailing_day"}  # register 117:
+                                        # H6's class, reused verbatim
 # exhaustion-family rows for the location-conditioned census (register 48)
 EXHAUSTION_FAMILY = ("S0-H3", "S0-H4", "S0-H12")
 # co-fire census family partition (register 45, operator-set; the one-home
@@ -224,6 +226,56 @@ class _SH6:
         if (feats.close_pos >= 1 - H6_CLOSE_POS and dn_wick >= H6_WICK_FRAC
                 and any(bar.low <= lx + tol for lx in lows)):
             return 1
+        return None
+
+
+class _SH20:
+    """H20 (minted 2026-08-31, register 117; the breakout companion to
+    H6): a wide-bar CLOSE-THROUGH of a session extreme initiates
+    continuation in the break direction. H6's wide-bar class and
+    session-extreme vocabulary VERBATIM (same constants — no new
+    thresholds); resolution = the CLOSE beyond the level, not a
+    rejection back inside (that shape is H6's). Levels = the extremes
+    BEFORE this bar — the running session extreme prior to the bar and
+    the prior session's extreme; a bar cannot close through a level its
+    own high set. The break must clear the OUTERMOST tracked extreme
+    (a close inside the current session's range is not a break —
+    derived from the claim's own wording, no new number)."""
+
+    def __init__(self):
+        from collections import deque
+        self._ranges = deque(maxlen=H6_DAY_WINDOW)
+        self._sess = None
+
+    def __call__(self, bar, ectx, sctx, feats, cores, structural, qualified,
+                 prev):
+        st = self._sess
+        if st is None or st["sid"] != bar.session_id:
+            self._sess = {"sid": bar.session_id, "hi": bar.high,
+                          "lo": bar.low,
+                          "prior_hi": st["hi"] if st else None,
+                          "prior_lo": st["lo"] if st else None}
+            st = self._sess
+            pre_hi = pre_lo = None      # session's first bar: no running
+                                        # level exists before it
+        else:
+            pre_hi, pre_lo = st["hi"], st["lo"]
+            st["hi"] = max(st["hi"], bar.high)
+            st["lo"] = min(st["lo"], bar.low)
+        rng = bar.high - bar.low
+        self._ranges.append(rng)
+        if (sctx is None or sctx.atr is None or rng <= 0
+                or len(self._ranges) < 100 or feats.close_pos is None):
+            return None
+        srt = sorted(self._ranges)
+        if rng < srt[int(H6_SPREAD_PCTILE * (len(srt) - 1))]:
+            return None
+        highs = [x for x in (pre_hi, st["prior_hi"]) if x is not None]
+        lows = [x for x in (pre_lo, st["prior_lo"]) if x is not None]
+        if highs and bar.close > max(highs):
+            return 1
+        if lows and bar.close < min(lows):
+            return -1
         return None
 
 
@@ -636,6 +688,8 @@ FIRING_CONDITIONS = {
     "S0-H17": _SH17,              # register 76 (composite sentence)
     "S0-H18": _SH18,              # register 76 (composite sentence)
     "S0-H19": _SH19,              # register 76 (suppression/fade)
+    "S0-H20": _SH20,              # register 117 (breakout companion to
+                                  # the retest family's anchor)
 }
 
 
