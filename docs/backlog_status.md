@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 125 (freshness-checked by the weekly
+table.** Register-current-through: 129 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -20,7 +20,7 @@ authoritative.
 | H20 breakout companion (wide-bar close-through of a session extreme) | MINTED 2026-08-31 (register 117: H6's vocabulary verbatim, zero new constants; conditioned row on the wide-bar class; rows open next run; S1-H20 level-quality clause parked with the mint; recipe-geometry note — stop at the broken level — noted, not enacted) |
 | S1-H11 node-stall (SUPPRESSION grading) | testable-now (negative lift = the claim winning) |
 | R2 refinement experiment | VERDICT READ 2026-08-23 (register 70): refinement = PER-FAMILY design choice — worsens climax/trend, improves rejection/absorption; future recipes cite refined/unrefined |
-| composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
+| composites (H14+) | SUPERSEDED (register 126 reconciliation): H17–H19 were minted via the narrative survey (register 76); the co-fire route to composites is retired — the weekly cofire artifact remains the pair-lift instrument, mint-on-lift |
 | candidate docket | **CLEARED at the 2026-08-22 sitting (register 56)**: H14/H15/H16 minted; S1-H11 suppression ratified; R2 design commissioned (run on approval); modifier-reframe + ND/NS-recall routed; rung-consensus + 1M-H5 + drift-inversion parked with reasons; gated items unchanged; new ideas queue for the next sitting |
 | ORB, EMA levels | examined-and-PARKED (register 51, reasons recorded; revisitable by re-registration) |
 | Q1-H1 (GEN), Q1-H7 (GEO) | testable-now (accruing; graded at ≥30 post-validation forward episodes per instrument) |
@@ -39,28 +39,28 @@ authoritative.
 | scalp TP ladder (target rungs) | PRE-REGISTERED + BUILT 2026-08-30 (register 106: the arms' own fires re-simulated at 0.75/1.0/1.5xATR targets, same haircut/stop/EOD; consistency-ranked per register 105; reach-decay curve; member bands; single-leg optima to the WATCH page per statistic with own nulls; survivors join the v1 geometry package; follow-through 2026-08-30: 0.25 rung added (spread-negative as expected), hand-off defects RULED (per-statistic optima, same-rung median nulls); no rung clears; 4 single-leg hand-offs listed) |
 | per-market glints with HELD sentences (nas100fut R-NEXIT-FULL × overlap; us30fut R-ARM15 × dead) | awaiting-accrual (register 105 follow-through: sentences drafted and HELD; condition (b) unmet — and further from met at register 113's distinct-path recompute: nas100 83/87, us30 COLLAPSED to 0/0 under accrual + dedup; activate for ruling only if a future emission clears the selection-null; nothing opens) |
 | R-SCOPED-BE (contingent variant) | pre-registered (register 92); gate now a PRINTED READOUT (register 107: regime-gate floors + luck budget in capture_study.md) — NOT PASSED on any leg 2026-08-30 (ranging BE@0.25 inside its member band everywhere; gap inside luck, positive on 2 of 4 legs); re-reads weekly; expiry: re-read when the ex-lockbox R-NOTRAIL base doubles from 1,847 |
-| H1 harvest program | nas100 arm ARMED 2026-08-25 (register 40 amendment); confirm arm dropped (R2); delay arm sequel-contingent → awaiting-build-harvest-harness |
+| H1 harvest program | BUILT AS VARIANTS 2026-08-31 (register 128: the register-60 tickets restated — R-H1-DELAY3/DELAY10/CONFIRM/OWNCURVE/KNIFE, scoped to the founding sentence, counted, rows open at the first sealed-window campaign; the session-read ticket satisfied by standing machinery; time-exit DROPPED per register 64 unless distinguished; the harness framing retired) |
 
 ## Recipes
 
 | idea | status |
 |---|---|
 | v0 four (illustrative) | testable-now (weekly, provenance-stamped) + awaiting-ratification-of-values (excursion tables = the input) |
-| R-OP1 | testable-now + awaiting-ratification-of-ATR-TF (15M assumed) |
-| R-FLIPGUARD | testable-now (forward accrual) + awaiting-ratification-of-arming-values |
+| R-OP1 | testable-now (ATR TF 15M CONFIRMED 2026-08-20, register 46 — row trued at the register-126 reconciliation, a sweep-found extra) |
+| R-FLIPGUARD | testable-now (forward accrual; arming values RATIFIED 2026-08-20, register 46 — row trued at the register-126 reconciliation, a sweep-found extra) |
 | narrative-exit rules beyond R-FLIPGUARD | blocked by register 44 ruling (gate not passed; cherry-pick forbidden) |
 
 ## Censuses & studies
 
 | idea | status |
 |---|---|
-| co-fire census | RE-READ EXECUTED 2026-08-28 (register 88 item 7: zero qualifying pairs — the with-stacks are the thin leg, 3 cells at n≥15; the sitting's 248 reconciled to total-n; accrual decides; dated artifact archive-bound after the next sitting) |
+| co-fire census | RE-READ EXECUTED 2026-08-28 (register 88 item 7: zero qualifying pairs; accrual decides); the dated artifact ARCHIVED 2026-08-31 per its binding (register 126; reports/archive/) |
 | excursion profiles | testable-now (weekly; the v1 values input) |
 | flip cut | archived standing reference (register 44) |
 | aggregation-decay census | BUILT 2026-08-31 (register 121; weekly Part C; see the Organs table) |
-| scalp location census | awaiting-decision-cycle-slot (gated; location-split per amendment) |
+| scalp location census | parked-until-next-sitting-prioritization (register 127 sweep; location-split per amendment stands) |
 | T3b recipe-layer build | BUILT 2026-08-31 (register 121: T1d-exact gate + signature fallbacks; H10's enacted deprioritize on record as the input; exploratory run behind the boundary check, reports/lab/) |
-| s9 scenario | awaiting-decision-ruling-cycle |
+| s9 scenario | parked-until-operator-ruling (register 127 sweep: one-line ruling owed) |
 | decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
 | persistence-census matched blocks + census-clears routing | BUILT 2026-08-30 (register 108: n + member count + CLEARS RANGE flag in every matched block; clears measurable at n≥25 route to per_market_watch.md wearing a signal-label selection-null; ger40 forward n-check done — 4 of 7 measurable, only graded S0-H6 beats its field null; nas100 R-NOTRAIL×overlap +149.75 n=16 CONFIRMED with receipts — day-carried and path-duplicated, forward cell is the live read) |
 | VARIANTS reference (docs/VARIANTS.md) | BUILT 2026-08-31 (register 116 item 2: generated each Part C run from the recipe one-home, no hand-written numbers; enforcement pin — a journal variant without a section fails the suite; linked from dashboard, glossary R- entry, the journal's header line, reading order after the glossary) |
@@ -87,7 +87,7 @@ authoritative.
 
 | idea | status |
 |---|---|
-| item 22 session-JSONL | awaiting-build (the active slot immediately behind the organ start) |
+| item 22 session-JSONL | parked-until-operator-restart-window (register 126/127: plain awaiting-build reworded — the behind-the-organ-start framing was stale; a live-loop restart is operator-supervised) |
 | scoreboard live attachment + calendar/suspension fixes | DEPLOYED 2026-08-19 12:38Z restart (attachment itself rides item 22's restart) |
 | thin-tape probe | awaiting-decision-evening (standalone ~50 min; runbook ready) |
 | validation evenings | ALL DONE (register 40 amendments: nas100 08-25, ger40 08-26, us30 08-26 — EXPANSION COMPLETE, every pair canonical; provisional set empty) |
@@ -110,8 +110,8 @@ authoritative.
 | account mode (bankroll lens) | Restructured 2026-08-27 (register 86: per-strategy isolated accounts, reports/account_curves/ + _LEADERBOARD.csv, blended stream retired/archived; curves born ex-lockbox per register 85; NEVER evidence; leverage/maintenance/minis still flagged operator-unverified) |
 | weekly runbook | WRITTEN 2026-08-25 (register 81; docs/runbook_weekly.md) |
 | in-trade narrative census | BUILT 2026-08-24 (register 78; measurement before machinery; flip trade needs both legs) |
-| exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned; gated on the census report) |
-| pyramiding counterfactual | PRE-REGISTERED 2026-08-24 (register 79; measurement, no grammar; build slot queued behind census reads) |
+| exit-and-reverse grammar capability | CAPABILITY ONLY (register 78; pinned); parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 127 sweep) |
+| pyramiding counterfactual | PRE-REGISTERED 2026-08-24 (register 79); parked-until-next-sitting-prioritization (register 127 sweep: its stated gate — the in-trade census reads — is MET; the park is a priority choice, dated) |
 | H15 sweep-zone entry variant | PARKED (register 79; mechanism quote in the register doc; no build until H15's record justifies) |
 | MTF pullback question (fade family, H14 first) | testable-now (register 79; rides the weekly matrix; front door on lift) |
 | regime overlay (hold-to-EOD on trending days) | DOCKETED future pre-registration (register 77; not built) |
@@ -132,25 +132,28 @@ authoritative.
 | verdict | registered | expiry condition |
 |---|---|---|
 | VWAP: nothing survives the re-cut (−0.9pp) | register 51 | re-read when forward fires double from the verdict date, or at the first monthly review |
-| H8: at/below base rate (collapse) | register 36; re-verified under initiation (register 74) | re-read at ≥30 forward initiation episodes |
+| H8: at/below base rate (collapse) | register 36; re-verified under initiation (register 74) | **EXPIRY CROSSED 2026-08-31** (register 126: forward n=339 vs the ≥30 condition — crossed long ago and silently; re-read queued at the next sitting; the INSIGHTS expiry sweep now prints this class weekly) |
 | quadrant persistence: class doesn't predict next close | register 68; survives consistency lens (74-A4) | re-read when forward quadrant n doubles (~1400 bars/quadrant) |
 | quadrant base rates: "flat" — AMENDED (74-A3: sign-consistent structure found) | register 66/74 | watched weekly under the consistency lens; sitting item queued |
 | co-fire: starved/UNMEASURABLE — STALE (74-A5) | register 45/74 | RE-READ ORDERED: next weekly sitting |
 | drift census: no base-rate change | register 51 | re-read on change only (self-expiring by design) |
 | flip-gate: NOT PASSED | register 44 | no expiry — procedural gate, re-openable only by re-registration |
-| R2: refinement worsens climax family | register 70 | TAINTED-RERUNNABLE post rule-5 (register 77): family-split direction is an expiring claim until the re-emit verifies it |
+| R2: refinement worsens climax family | register 70 | RESOLVED RE-AFFIRMED (register 89(2): the post-rule-5 re-emit verified the family split, clean penalty sharpened to −90.0; register-126 reconciliation trued this row) |
 
 ## Next-sitting docket (register 74-C.4)
 
 - 74-A3 quadrant base-rate structure under the consistency lens (wide-loud 7/8 negative ≈−4pp; narrow-quiet 7/8 positive ≈+1pp) — read, no mint implied.
 - 74-A5 co-fire re-read: 248 cells at n≥15 (max n 347) — the starved verdict is three weeks stale.
 
-## Standing ratifications (one sitting clears them)
+## Standing ratifications — CLEARED (trued to register 88(5) at the
+## 2026-08-31 reconciliation, register 126)
 
-promote/deprioritize criteria — REDRAFTED on the register-62 doctrine axes
-(initiation lift / median ≤3×ATR / baseline clearance beyond the ensemble
-range); the doctrine fixes the shape, the sitting ratifies the numbers ·
-±2pp marker band · session scoping (label-bearing sessions proposal) · v0
-recipe values · baseline cadence + drift-skew match rule. (Part-1 sitting
-2026-08-20 cleared: H5 draft, H6/H11/H12 parameters, R-OP1 ATR TF,
-R-FLIPGUARD arming.)
+All items ratified: promote/deprioritize numbers, the ±2pp marker band,
+session scoping, coil proxy, R-ARM15 N=1, the 5-bar dedup and the v0
+recipe values at the 2026-08-28 sitting (register 88(5), where this
+block should have been trued); baseline cadence + drift-skew match rule
+RATIFIED AS FLAGGED 2026-08-31 (register 126 — the implementer-proposed
+values stand: 60-bar cadence, 0.8 long-share). Earlier: the Part-1
+sitting 2026-08-20 (H5 draft, H6/H11/H12 parameters, R-OP1 ATR TF,
+R-FLIPGUARD arming). Nothing awaits a sitting; new ratifiables open new
+rows.

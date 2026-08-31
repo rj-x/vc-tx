@@ -569,9 +569,9 @@ def main(slugs=(SLUG, "uk100")):
     # not-dashboard-linked -> archived at the weekly run (warn-only;
     # moves are logged by hand in reports/archive/ARCHIVE_LOG.md)
     _sb = os.path.join(ROOT, "reports", "scoreboard")
-    _keep = {"r2_experiment", "location_census",   # dashboard-linked
-             "cofire_reread_2026-08-28"}   # register 88(7): stays
-                                           # until its sitting read
+    _keep = {"r2_experiment", "location_census"}   # dashboard-linked
+    # (the dated co-fire re-read moved to reports/archive/ at register
+    # 126 — its 88(7) binding discharged)
     _stale = [f for f in sorted(os.listdir(_sb))
               if f.endswith((".md", ".json"))
               and os.path.getmtime(os.path.join(_sb, f)) < _partc_start

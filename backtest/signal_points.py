@@ -57,8 +57,8 @@ SESSIONS = ("asia", "london", "overlap", "ny_only", "dead")
 # B-ALWAYS-LONG is deterministic (single member, degenerate range).
 BASELINE_SEEDS = tuple(range(60, 80))   # 20 seeds; pinned
 TREND_OFFSETS = tuple(range(0, 60, 3))  # 20 phase-offsets; pinned
-BASELINE_INTERVAL_BARS = 60   # implementer-proposed cadence, FLAGGED
-DRIFT_SKEW_SHARE = 0.8        # implementer-proposed match rule, FLAGGED
+BASELINE_INTERVAL_BARS = 60   # RATIFIED as flagged 2026-08-31 (register 126)
+DRIFT_SKEW_SHARE = 0.8        # RATIFIED as flagged 2026-08-31 (register 126)
 # trend family by DERIVATION: the signals whose firing condition
 # requires an established 1M trend (ectx.trend_age gate) — S0-H10,
 # S0-H14 (constructed, not literals: the one-home rule)
