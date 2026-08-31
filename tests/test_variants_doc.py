@@ -33,3 +33,15 @@ def test_regeneration_clean_against_tree():
     assert generate() == open(DOC).read(), (
         "docs/VARIANTS.md is stale against the recipe structures — "
         "regenerate: python -m backtest.variants_doc")
+
+
+def test_dashboard_generates_with_commented_journal():
+    # the register-116 incident pin: the journal's '#' header line
+    # crashed the dashboard's Q2-H11 clock reader at the post-commit
+    # regeneration (an eleventh call site the sweep missed — it opened
+    # the path through a local variable); every journal reader must
+    # survive the header line
+    assert open(TRADES_CSV).readline().startswith("#"), \
+        "the journal header line is the fixture — it must exist"
+    from backtest.dashboard import generate as dash_generate
+    assert "DASHBOARD" in dash_generate()

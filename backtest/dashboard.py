@@ -216,7 +216,9 @@ def generate():
         import pandas as _pd
         mint = _pd.Timestamp("2026-08-28T00:00:00Z")   # Q2-H11 mint
         n_ = 0
-        for r in _csv.DictReader(open(p_)):
+        # register 116: the journal carries a '#' header line
+        for r in _csv.DictReader(l for l in open(p_)
+                                 if not l.startswith("#")):
             if (r["instrument"] == "ger40fut"
                     and r["sentence_id"] == "S0-H11"
                     and r["variant"] == "R-NEXIT-EARLY"
