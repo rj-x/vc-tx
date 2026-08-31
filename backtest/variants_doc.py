@@ -34,7 +34,8 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 
 from backtest.recipes import (RECIPE_SET_VERSION, RECIPE_SETS,
                               normalize)
-from backtest.trade_layer import (SCALP_SENTENCE, SCALP_VARIANTS,
+from backtest.trade_layer import (H1_SENTENCE, H1_VARIANTS,
+                                  SCALP_SENTENCE, SCALP_VARIANTS,
                                   VARIANTS as JOURNAL_VARIANTS)
 from param_registry import AUTHORITY
 
@@ -63,6 +64,18 @@ STATUS = {
                           "survivors — the incumbent stands)",
     "R-SCALP-H" + str(6) + "-REF": "counted-arm + INCUMBENT scalp "
                                    "geometry (refined-entry arm)",
+    "R-H1-DELAY3": "counted-arm — H1 harvest program (register 128; "
+                   "the register-60 entry-delay ticket)",
+    "R-H1-DELAY10": "counted-arm — H1 harvest program (register 128; "
+                    "the register-60 entry-delay ticket)",
+    "R-H1-CONFIRM": "counted-arm — H1 harvest program (register 128; "
+                    "the founding-sequence confirming print; NOT the "
+                    "R2 refinement micro-loop)",
+    "R-H1-OWNCURVE": "counted-arm — H1 harvest program (register 128; "
+                     "own-curve stop, derivation frozen at build; the "
+                     "ticket's time-exit half dropped per register 64)",
+    "R-H1-KNIFE": "counted-arm — H1 harvest program (register 128; "
+                  "the falling-knife guard, flip-guard family)",
     "R-OP1": "experiment — registered recipe, forward-graded outside "
              "the journal ladder",
     "R-FLIPGUARD": "experiment — the one staged narrative candidate, "
@@ -110,6 +123,12 @@ def _off_en(c):
 
 
 def _stop_en(c):
+    if c["kind"] == "atr_by_instr":
+        per = "; ".join(f"{k} {v:g}" for k, v in sorted(c["map"].items()))
+        return (f"k×ATR({c['tf']}) protective stop with k PER INSTRUMENT "
+                f"— {per} (derived and frozen at build, register 128: "
+                "the signal's own backtest mae60 p90 from "
+                "excursion_geometry.json; never re-tuned)")
     if c["kind"] == "fixed_pts":
         return f"fixed stop {c['v']:g} pts from entry"
     if c["kind"] == "atr":
@@ -162,10 +181,26 @@ def _fill_class(stages):
             "journal/ladder family")
 
 
-def _entry_en(name, cfg_yaml):
+def _entry_en(name, cfg_yaml, recipe=None):
     base = ("entry at the next 1M open after the fire (register 93 "
             "design shape); entries UNREFINED (register 70: refinement "
             "is per-family — the layer's choice, stated)")
+    off = (recipe or {}).get("entry_offset_bars", 0)
+    if off:
+        return (f"entry DEFERRED {off} settled 1M bars past the fire — "
+                f"the open of bar fire+{off + 1} (the register-128 "
+                "entry-offset grammar component; 0 = the standard "
+                "next-open entry)")
+    if name == "R-H1-CONFIRM":
+        ex = cfg_yaml["execution"]
+        return ("entry on the FIRST CONFIRMING PRINT within "
+                f"window={ex['window']:g} exec bars after the fire — a "
+                "qualified TEST, or a structural no-supply-class print "
+                "matching the fire direction (the founding two-chapter "
+                "sequence, registry-cited); NO-ENTRY if the window "
+                "expires (the -REF precedent; the transform lives in "
+                "the trade layer). NOT the R2 refinement micro-loop — "
+                "that verdict stands (register 70)")
     if name.endswith("-REF") and name in SCALP_VARIANTS:
         ex = cfg_yaml["execution"]
         return ("entry via the founding refinement micro-loop (config "
@@ -178,6 +213,10 @@ def _entry_en(name, cfg_yaml):
 
 
 def _scope_en(name):
+    if name in H1_VARIANTS:
+        return (f"the founding climax sentence only ({H1_SENTENCE} — "
+                "register 128, the scalp scoping precedent); all four "
+                "canonical instruments; re-fires deduped")
     if name in SCALP_VARIANTS:
         return (f"the scalp's own sentence only ({SCALP_SENTENCE}, the "
                 "Q-chain's signal — register 94); all four canonical "
@@ -196,7 +235,7 @@ def _section(name, recipe, cfg_yaml):
          f"- **Status:** {STATUS.get(name, 'registered variant')}",
          f"- **Provenance:** {recipe.get('provenance', '(none stated)')} "
          f"— rendered from `RECIPE_SETS['{RECIPE_SET_VERSION}']`",
-         f"- **Entry:** {_entry_en(name, cfg_yaml)}",
+         f"- **Entry:** {_entry_en(name, cfg_yaml, recipe)}",
          f"- **Scope:** {_scope_en(name)}",
          f"- **Fill model:** {_fill_class(stages)}"]
     multi = len(stages) > 1

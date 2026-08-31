@@ -45,7 +45,8 @@ def test_nonreach_is_eod_flat():
 
 
 def test_v07_registered_and_scoped():
-    assert RECIPE_SET_VERSION == "recipe_set_v0.7"
+    # register 128: v0.8 supersets v0.7 — the scalp arms carry through
+    assert RECIPE_SET_VERSION == "recipe_set_v0.8"
     for v in ("R-SCALP-H6", "R-SCALP-H6-REF"):
         assert v in RECIPE_SETS[RECIPE_SET_VERSION]
         assert v in VARIANTS and v in SCALP_VARIANTS

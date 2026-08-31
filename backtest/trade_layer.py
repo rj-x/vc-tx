@@ -80,15 +80,52 @@ VARIANTS = ("R-OP2", "R-BE", "R-ARM15", "R-NOTRAIL",
             "R-NEXIT-EARLY", "R-NEXIT-FULL",   # register 81 (atomic
                                                # controls, register 82)
             "R-NEXIT-SENT",                    # register 82 (sentences)
-            f"R-SCALP-H{6}", f"R-SCALP-H{6}-REF")    # register 94 (the scalp
+            f"R-SCALP-H{6}", f"R-SCALP-H{6}-REF",    # register 94 (the scalp
                                                # arms)
+            "R-H1-DELAY3", "R-H1-DELAY10",     # register 128 (the H1
+            "R-H1-CONFIRM", "R-H1-OWNCURVE",   # harvest arms — scoped
+            "R-H1-KNIFE")                      # to the founding sentence)
 # register 94: the scalp arms run ONLY on their own sentence (the
 # Q-chain's signal); the -REF arm enters via the founding refinement
 # micro-loop (config execution.window / close_pos_trigger, cited)
 SCALP_VARIANTS = (f"R-SCALP-H{6}", f"R-SCALP-H{6}-REF")
 SCALP_SENTENCE = f"S0-H{6}"
+# register 128: the H1 harvest arms run ONLY on the founding climax
+# sentence's fires (the scalp scoping precedent); R-H1-CONFIRM's entry
+# transform (the -REF precedent) lives in confirm_transform below
+H1_VARIANTS = ("R-H1-DELAY3", "R-H1-DELAY10", "R-H1-CONFIRM",
+               "R-H1-OWNCURVE", "R-H1-KNIFE")
+H1_SENTENCE = "S0-H1"
 REFIRE_DEDUP_BARS = H17_SEQUEL_WINDOW   # derivation: the sequel window
 GRADES_CSV = os.path.join(ROOT, "reports", "management_grades.csv")
+
+
+def confirm_transform(fires, label_events, window_bars):
+    """Register 128 (R-H1-CONFIRM; the founding two-chapter sequence):
+    for each fire, the entry moves to the FIRST confirming print within
+    window_bars 1M bars after the fire — a qualified TEST, or a
+    structural no-supply-class print matching the fire direction
+    (NO_SUPPLY for longs, NO_DEMAND for shorts); NO-ENTRY if the window
+    expires (the fire is dropped — the -REF precedent). label_events =
+    sorted [(bar_ts_ns, structural, qualified)] for 1M bars. NOT the R2
+    refinement micro-loop (register 70's verdict stands)."""
+    keys = [e[0] for e in label_events]
+    out = []
+    w = window_bars * 60_000_000_000
+    for f in fires:
+        t0 = f["ts"].value
+        a = np.searchsorted(keys, t0, side="right")
+        for ts_ns, structural, qualified in label_events[a:]:
+            if ts_ns > t0 + w:
+                break
+            ok = (qualified == "TEST"
+                  or {"NO_SUPPLY": 1, "NO_DEMAND": -1}.get(structural)
+                  == f["dir"])
+            if ok:
+                out.append({"ts": pd.Timestamp(ts_ns, tz="UTC"),
+                            "dir": f["dir"], "name": f["name"]})
+                break
+    return out
 
 
 def dedup_fires(fires):
@@ -181,6 +218,22 @@ def run_instrument(instr):
             narr["opposing_effort"].append((close_ns, cd))
         if q == "narrow-loud" or x.ts.value in _h3_ts:
             narr["absorption_event"].append((close_ns, 0))
+    # register 128: the trend-flip stream for R-H1-KNIFE's early-exit
+    # stage — the recipes module's own convention, mirrored
+    flips, prev = [], 0
+    for e in engine.narrative.events:
+        if e["type"] == "PHASE_EVAL" and e.get("tf") == "1min":
+            t = e.get("trend", 0)
+            if t != prev and t != 0:
+                flips.append((pd.Timestamp(e["ts"]).value, t))
+            prev = t
+    narr["trend_flip"] = sorted(flips)
+    # register 128: 1M label events for R-H1-CONFIRM's entry transform
+    label_events = sorted(
+        (pd.Timestamp(e["ts"]).value, e.get("structural"),
+         e.get("label"))
+        for e in engine.narrative.events
+        if e["type"] == "LABEL" and e.get("tf") == "1min")
     env.narr = narr
     fires = watch.fires + event_derived_fires(engine.narrative.events,
                                               cfg, bars, instr=instr)
@@ -208,8 +261,10 @@ def run_instrument(instr):
                        if n_ in COMPOSITE_SENTENCES]
     grade_pts = {}          # (variant, name) -> list of (pts, atr, week)
     for variant in VARIANTS:
-        recipe = rset[variant]
+        from backtest.recipes import specialize
+        recipe = specialize(rset[variant], instr)   # register 128
         v_names = ([SCALP_SENTENCE] if variant in SCALP_VARIANTS
+                   else [H1_SENTENCE] if variant in H1_VARIANTS
                    else names)
         for name in v_names:
             if name not in names:
@@ -219,6 +274,9 @@ def run_instrument(instr):
                 nf = [b for _a, b, _e in refine(
                     nf, env, int(cfg.execution.window),
                     float(cfg.execution.close_pos_trigger))]
+            if variant == "R-H1-CONFIRM":           # register 128
+                nf = confirm_transform(nf, label_events,
+                                       int(cfg.execution.window))
             env.narr["opposing_signal_fire"] = [
                 (t, d) for t, d, n_ in all_fire_events if n_ != name]
             env.narr["opposing_sentence_fire"] = [

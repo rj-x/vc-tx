@@ -79,7 +79,7 @@ from engine.signal_watch import SignalWatch
 
 OUT = os.path.join(ROOT, "reports", "scoreboard")
 
-RECIPE_SET_VERSION = "recipe_set_v0.7"   # register 94
+RECIPE_SET_VERSION = "recipe_set_v0.8"   # register 128 (prior: 94)
 RECIPE_SETS = {
     "recipe_set_v0.6": {
         # R-NEXIT-SENT (register 82; counted): EXITS ARE SENTENCES, NOT
@@ -268,9 +268,98 @@ RECIPE_SETS["recipe_set_v0.7"] = {
                        "stages": _SCALP_STAGES},
 }
 
+# register 128 (the register-60 H1 harvest tickets, restated against the
+# grammar built since; operator disposition (a), 2026-08-31): the arms
+# run on the founding climax sentence's fires only (the scalp scoping
+# precedent) as counted journal variants. The ladder incumbent's
+# mechanics (R-ARM15's stages) are the shared base where stated.
+# S0-H1's own adverse curve, resolved from the excursion artifact AT
+# BUILD and frozen (the register-60 ticket's own words: "values
+# resolved from the excursion artifacts at build and cited, never
+# re-tuned"): backtest-window whole-scope mae60 p90 in ATR(15M) units
+# (excursion_geometry.json, engine 78bd8f52b emission; backtest =
+# design input, forward accrual decides).
+H1_MAE60_P90_ATR = {"uk100fut": 2.06, "ger40fut": 2.96,
+                    "nas100fut": 3.13, "us30fut": 2.23}
+_ARM15_STAGES = RECIPE_SETS["recipe_set_v0.7"]["R-ARM15"]["stages"]
+RECIPE_SETS["recipe_set_v0.8"] = {
+    **RECIPE_SETS["recipe_set_v0.7"],
+    "R-H1-DELAY3": {
+        "provenance": "register 128 (register-60 harvest ticket "
+                      "restated): entry deferred 3 settled 1M bars, "
+                      "then the ladder incumbent's mechanics",
+        "entry_offset_bars": 3, "stages": _ARM15_STAGES},
+    "R-H1-DELAY10": {
+        "provenance": "register 128 (register-60 harvest ticket "
+                      "restated): entry deferred 10 settled 1M bars, "
+                      "then the ladder incumbent's mechanics",
+        "entry_offset_bars": 10, "stages": _ARM15_STAGES},
+    "R-H1-CONFIRM": {
+        "provenance": "register 128 (register-60 harvest ticket "
+                      "restated): entry on the FIRST CONFIRMING PRINT "
+                      "— the founding sequence's TEST / direction-"
+                      "matched no-supply-class vocabulary — within "
+                      "config execution.window exec bars (the -REF "
+                      "transform precedent); NO-ENTRY on expiry; the "
+                      "fire transform lives in the trade layer; NOT "
+                      "the R2 refinement micro-loop (that verdict "
+                      "stands, register 70)",
+        "stages": _ARM15_STAGES},
+    "R-H1-OWNCURVE": {
+        "provenance": "register 128 (register-60 harvest ticket "
+                      "restated): initial stop = S0-H1's OWN measured "
+                      "adverse curve — mae60 p90 per instrument, ATR "
+                      "units, frozen from the excursion artifact at "
+                      "build (H1_MAE60_P90_ATR; derivation printed in "
+                      "VARIANTS.md); plain hold to EOD (the ticket's "
+                      "time-exit half DROPPED per register 64's "
+                      "expectancy ruling — stated, register 128)",
+        "stages": [{"stop": [("atr_by_instr", H1_MAE60_P90_ATR,
+                              "15min")], "target": None}]},
+    "R-H1-KNIFE": {
+        "provenance": "register 128 (register-60 falling-knife ticket "
+                      "restated): the flip-guard family's early-exit "
+                      "stage — trend-flip exit ACTIVE ONLY PRE-ARMING "
+                      "(R-FLIPGUARD's ratified arming, register 46: "
+                      "1.0xATR(15M) progress OR 45 min) — composed "
+                      "onto the ladder incumbent's mechanics",
+        "stages": [{"stop": [("atr", 2.5, "15min")], "target": None,
+                    "exit_on": [("trend_flip",)],
+                    "until": ("progress_or_age", 1.0, "15min", 45)},
+                   {"stop": [("atr", 2.5, "15min"),
+                             ("trail_nth", 1, ("atr", 1.0, "15min"),
+                              "15min")], "target": None}]},
+}
+
+
+def specialize(recipe, instr):
+    """Register 128: materialize per-instrument derived components —
+    ('atr_by_instr', {slug: k}, tf) becomes ('atr', k, tf) for the
+    instrument at hand. Everything else passes through unchanged; a
+    recipe with no such component returns itself."""
+    if not any(c[0] == "atr_by_instr" for st in recipe["stages"]
+               for c in st.get("stop", [])):
+        return recipe
+    out = dict(recipe)
+    out["stages"] = []
+    for st in recipe["stages"]:
+        st2 = dict(st)
+        st2["stop"] = [("atr", c[1][instr], c[2])
+                       if c[0] == "atr_by_instr" else c
+                       for c in st.get("stop", [])]
+        out["stages"].append(st2)
+    return out
+
 
 def _norm_component(c):
     kind = c[0]
+    if kind == "atr_by_instr":
+        # register 128: per-instrument derived value — must be
+        # specialize()d before simulation; normalized here so the
+        # VARIANTS renderer can read the un-specialized structure
+        if len(c) < 3:
+            raise ValueError("atr_by_instr requires (map, tf)")
+        return {"kind": "atr_by_instr", "map": dict(c[1]), "tf": c[2]}
     if kind == "fixed_pts":
         return {"kind": "fixed_pts", "v": float(c[1])}
     if kind == "atr":
@@ -292,6 +381,10 @@ def _norm_component(c):
 
 
 def normalize(recipe):
+    off = recipe.get("entry_offset_bars", 0)
+    if not isinstance(off, int) or off < 0:
+        raise ValueError("entry_offset_bars must be a non-negative int "
+                         "(register 128 grammar component)")
     stages = []
     for st in recipe["stages"]:
         for cond in st.get("exit_on", []) + st.get("tighten_to", []):
@@ -358,10 +451,14 @@ def simulate(fires, env, recipe, spread):
     n = len(ts)
     trades = []
     open_until = -1
+    # register 128: entry-offset grammar component — entry at the open
+    # AFTER entry_offset_bars further settled 1M bars (0 = the standard
+    # next-open entry)
+    entry_off = int(recipe.get("entry_offset_bars", 0))
     fires_iter = sorted(fires, key=lambda x: x["ts"].value)
     for f in fires_iter:
         fi = np.searchsorted(ts, f["ts"].value, side="right") - 1
-        ei = fi + 1
+        ei = fi + 1 + entry_off
         if fi < 0 or ei >= n or ei <= open_until:
             continue
         d = f["dir"]
@@ -394,6 +491,11 @@ def simulate(fires, env, recipe, spread):
             # compose candidate stop = tightest of components (settled)
             cands = []
             for comp in st["stop"]:
+                if comp["kind"] == "atr_by_instr":
+                    raise ValueError(
+                        "atr_by_instr reached simulate() un-specialized "
+                        "— call recipes.specialize(recipe, instr) first "
+                        "(register 128)")
                 if comp["kind"] == "fixed_pts":
                     cands.append(entry - d * comp["v"])
                 elif comp["kind"] == "atr":
