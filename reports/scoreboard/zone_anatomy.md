@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, register 114; the zone-census-v3 addendum, same weekly slot). PURPOSE: tests the zones' mechanism independently of signal conditioning — if anatomy is flat in-zone, v3's conditioning nulls are pre-explained; if anatomy shifts, the shifts are hypothesis material through the front door. Zones = the v3 anchor rung (x1.5; a x3 departure is an anchor departure at the same base). D1 included with the register-111 starvation verdict standing (cells print unmeasurable). BASE (register-47 method): out-of-zone bars session-standardized to the in-zone session mix; rel_volume and spread percentile are tod-matched by the engine baseline already. STATISTIC SHAPES (74-B): per-cell shift vs a two-sided in/out permutation null (100 pinned seeds, within-session); claims need >= 3-of-4 legs same-signed significant; single-leg findings route to per_market_watch.md wearing a selection-null. Measurable at >= 100 in-zone bars / 25 legs (implementer-proposed, FLAGGED). **HONESTY — the 1M label-study autocorrelation caveat: n counts BARS, and bars cluster within zone visits (the distinct zone/day counts print beside n); the permutation null treats bars as exchangeable, so per-cell significance is OVERSTATED by construction — a cell fed by one or two zones describes those days, not zones in general. The 3-of-4-leg rule is the real guard.** Ex-lockbox; sealed bars excluded. MINT-ON-LIFT ONLY.
+Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, register 114; the zone-census-v3 addendum, same weekly slot). PURPOSE: tests the zones' mechanism independently of signal conditioning — if anatomy is flat in-zone, v3's conditioning nulls are pre-explained; if anatomy shifts, the shifts are hypothesis material through the front door. Zones = the v3 anchor rung (x1.5; a x3 departure is an anchor departure at the same base). D1 included with the register-111 starvation verdict standing (cells print unmeasurable). BASE (register-47 method): out-of-zone bars session-standardized to the in-zone session mix; rel_volume and spread percentile are tod-matched by the engine baseline already. STATISTIC SHAPES (74-B): per-cell shift vs a two-sided in/out permutation null (100 pinned seeds, within-session); claims need >= 3-of-4 legs same-signed significant; single-leg findings route to per_market_watch.md wearing a selection-null. Measurable at >= 100 in-zone bars / 25 legs (implementer-proposed, FLAGGED). **HONESTY — the 1M label-study autocorrelation caveat: n counts BARS, and bars cluster within zone visits (the distinct zone/day counts print beside n); the permutation null treats bars as exchangeable, so per-cell significance is OVERSTATED by construction — a cell fed by one or two zones describes those days, not zones in general. The 3-of-4-leg rule is the real guard.** Ex-lockbox; sealed bars excluded. MINT-ON-LIFT ONLY.
 
 ## uk100fut
 
@@ -17,10 +17,12 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, regis
 | 4h | D | backtest | ns_rate (per 100 bars) | 1944 (2z/8d) | 7.87 | 8.151 | -0.28 | 1.229 | 27.0 | no |
 | 4h | D | backtest | climax_rate (per 100 bars) | 1944 (2z/8d) | 0.412 | 0.516 | -0.104 | 0.377 | 42.0 | no |
 | 4h | D | backtest | phase_flip_rate (per 100 bars) | 2434 (2z/8d) | 3.903 | 3.756 | +0.147 | 0.78 | 25.0 | no |
+| 4h | D | backtest | svol15_median (signed vol) | 2434 (2z/8d) | 18.0 | 4.657 | +13.343 | 9.328 | 100.0 | YES |
+| 4h | D | backtest | svol_sess_median (signed vol) | 2434 (2z/8d) | 818.5 | 422.371 | +396.129 | 90.548 | 100.0 | YES |
 | 4h | D | backtest | velocity_arriving (pts/bar) | 27 | 1.821 | 1.991 | -0.169 | 0.642 | 35.0 | no |
 | 4h | D | backtest | velocity_departing (pts/bar) | 27 | 1.905 | 1.971 | -0.066 | 0.726 | 12.0 | no |
 
-(unmeasurable cells this leg: 77 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 91 — thin in-zone populations print in the JSON with their counts)
 
 ## ger40fut
 
@@ -35,6 +37,8 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, regis
 | 4h | D | backtest | ns_rate (per 100 bars) | 332 (1z/1d) | 23.795 | 4.58 | +19.215 | 3.379 | 100.0 | YES |
 | 4h | D | backtest | climax_rate (per 100 bars) | 332 (1z/1d) | 0.0 | 0.664 | -0.664 | 0.714 | 74.0 | no |
 | 4h | D | backtest | phase_flip_rate (per 100 bars) | 332 (1z/1d) | 4.217 | 4.392 | -0.175 | 2.424 | 11.0 | no |
+| 4h | D | backtest | svol15_median (signed vol) | 332 (1z/1d) | 24.0 | 105.608 | -81.608 | 126.045 | 24.0 | no |
+| 4h | D | backtest | svol_sess_median (signed vol) | 332 (1z/1d) | 22745.5 | 5811.19 | +16934.3 | 1379.966 | 100.0 | YES |
 | 4h | D | forward | rel_volume_median (x tod-normal) | 3441 (1z/7d) | 1.203 | 0.977 | +0.226 | 0.024 | 100.0 | YES |
 | 4h | D | forward | loud_rate (% bars) | 3441 (1z/7d) | 34.118 | 19.037 | +15.081 | 1.847 | 100.0 | YES |
 | 4h | D | forward | spread_pctile_median (pctile) | 3185 (1z/7d) | 62.5 | 55.492 | +7.008 | 4.435 | 100.0 | YES |
@@ -44,22 +48,24 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, regis
 | 4h | D | forward | ns_rate (per 100 bars) | 3441 (1z/7d) | 4.01 | 6.862 | -2.852 | 0.828 | 100.0 | YES |
 | 4h | D | forward | climax_rate (per 100 bars) | 3441 (1z/7d) | 1.25 | 0.477 | +0.772 | 0.328 | 100.0 | YES |
 | 4h | D | forward | phase_flip_rate (per 100 bars) | 3441 (1z/7d) | 4.417 | 4.183 | +0.234 | 0.642 | 40.0 | no |
+| 4h | D | forward | svol15_median (signed vol) | 3441 (1z/7d) | 3.0 | -8.051 | +11.051 | 14.744 | 84.0 | no |
+| 4h | D | forward | svol_sess_median (signed vol) | 3441 (1z/7d) | 488.0 | 420.961 | +67.039 | 402.178 | 0.0 | no |
 
-(unmeasurable cells this leg: 70 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 82 — thin in-zone populations print in the JSON with their counts)
 
 ## nas100fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
 
-(unmeasurable cells this leg: 88 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 104 — thin in-zone populations print in the JSON with their counts)
 
 ## us30fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
 
-(unmeasurable cells this leg: 88 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 104 — thin in-zone populations print in the JSON with their counts)
 
 ## Claims (>= 3-of-4 legs, same-signed significant)
 
@@ -72,13 +78,16 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, regis
 | instrument | tf | side | window | metric | shift | pct vs null | sel-pct | beats selection |
 |---|---|---|---|---|---|---|---|---|
 | uk100fut | 4h | D | backtest | loud_rate | -4.01 | 100.0 | 100.0 | YES |
-| uk100fut | 4h | D | backtest | spread_pctile_median | -5.154 | 99.0 | 92.0 | no |
+| uk100fut | 4h | D | backtest | spread_pctile_median | -5.154 | 99.0 | 91.0 | no |
+| uk100fut | 4h | D | backtest | svol15_median | +13.343 | 100.0 | 94.0 | no |
+| uk100fut | 4h | D | backtest | svol_sess_median | +396.129 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | rel_volume_median | -0.635 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | loud_rate | -27.467 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | spread_pctile_median | -37.783 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | narrow_loud_share | -6.575 | 100.0 | 98.0 | YES |
 | ger40fut | 4h | D | backtest | nd_rate | +24.945 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | ns_rate | +19.215 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | svol_sess_median | +16934.3 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | rel_volume_median | +0.226 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | loud_rate | +15.081 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | spread_pctile_median | +7.008 | 100.0 | 92.0 | no |

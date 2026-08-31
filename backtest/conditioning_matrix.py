@@ -210,8 +210,25 @@ def run_instrument(instr):
                                  cfg.labels.wide_spread_pctile,
                                  cfg.labels.high_volume_mult)
                      for t in ts], dtype=object)
+    # organ #4 (register 119): session signed-volume sign — the
+    # "absorber's direction" vocabulary, from the same bars
+    from backtest.signed_volume import sv_session
+    vol_arr = np.array([x.volume for x in b1m], dtype=float)
+    svs = sv_session(op_arr, np.asarray(cl, dtype=float), vol_arr, ts)
+    sv = np.where(svs > 0, "positive",
+                  np.where(svs < 0, "negative", "flat")).astype(object)
+    # cross-asset stress state (register 123): per-UTC-day conditioning
+    # dimension from the stress organ; uncovered days stay their own
+    # state value (excluded from nothing, conflated with nothing)
+    from backtest.stress_organ import day_state
+    st_map = day_state()
+    daystr = pd.DatetimeIndex(pd.to_datetime(ts, utc=True)) \
+        .strftime("%Y-%m-%d")
+    stress = np.array([st_map.get(d, "uncovered") for d in daystr],
+                      dtype=object)
     DIMS = {"mtf": mtf_proxy, "quadrant": quad, "h11": h11,
-            "coil": coil, "va": va, "phase": phase, "session": sess}
+            "coil": coil, "va": va, "phase": phase, "session": sess,
+            "sv": sv, "stress": stress}
     fires = watch.fires + event_derived_fires(engine.narrative.events, cfg,
                                               bars)
     fires = [f for f in fires
@@ -230,6 +247,12 @@ def run_instrument(instr):
            "coil_proxy_flag": ("trailing 30-bar range-sum <= p20 of "
                                "trailing day — RATIFIED as flagged, "
                                "register 88; organ #3 eventual"),
+           # registers 119/123: the field size is STATED wherever cells
+           # are read — this field carries no permutation null yet
+           # (recorded), so the size is the reader's only price tag
+           "field": {"dims": len(DIMS),
+                     "dim_values": {d: sorted(set(map(str, a)))
+                                    for d, a in DIMS.items()}},
            "cells": {}}
     for w_lo, w_hi, w in ((pd.Timestamp.min.tz_localize("UTC"), boundary,
                            "backtest"),
@@ -313,10 +336,19 @@ def _emit(results, head):
          "reads against its OWN state-conditioned base. Coil dimension is "
          "a proxy RATIFIED as flagged (register 88). Cells n<10 UNMEASURABLE "
          "(omitted here; full grid in the JSON). Surviving lift -> "
-         "composite proposal via front door only.", ""]
+         "composite proposal via front door only. FIELD SIZE STATED "
+         "(registers 119/123): the sv (organ #4 signed-volume sign) and "
+         "stress (cross-asset state) dimensions joined 2026-08-31; the "
+         "matrix field carries NO permutation null yet — the printed "
+         "dim/value counts are the reader's price tag; any surviving "
+         "lift is best-of-a-stated-field.", ""]
     for res in results:
         inst = res["instrument"]
-        L += [f"## {inst} ({res['status'].upper()})"]
+        fld = res.get("field", {})
+        nvals = sum(len(v) for v in fld.get("dim_values", {}).values())
+        L += [f"## {inst} ({res['status'].upper()}; field "
+              f"{fld.get('dims', '?')} dims / {nvals} state values / "
+              f"{len(res['cells'])} cells emitted)"]
         if res["status"] == "provisional":
             L += [f"> {PROVISIONAL_STAMP}"]
         L += ["", f"### {inst} — quadrant base rates (register 66; "

@@ -92,6 +92,11 @@ BAR_METRICS = (
     ("ns_rate", "share", "per 100 bars"),
     ("climax_rate", "share", "per 100 bars"),
     ("phase_flip_rate", "share", "per 100 bars"),
+    # register 119 (organ #4 — the anatomy (a)/(b) customer): raw
+    # signed-volume medians; the axis (tf x side x window) keeps sign
+    # semantics consistent within any claim
+    ("svol15_median", "median", "signed vol"),
+    ("svol_sess_median", "median", "signed vol"),
 )
 LEG_METRICS = (("velocity_arriving", "pts/bar"),
                ("velocity_departing", "pts/bar"))
@@ -211,6 +216,8 @@ def prepare_instrument(instr):
     b1m = [x for x in bars[cfg.mtf.execution_tf] if not x.is_stub]
     ts = np.array([x.ts.value for x in b1m])
     cl = np.array([x.close for x in b1m])
+    op = np.array([x.open for x in b1m])
+    vol = np.array([x.volume for x in b1m], dtype=float)
     n = len(ts)
     getm = rec.map.get
     measured = np.array([t in rec.map for t in ts])
@@ -248,10 +255,13 @@ def prepare_instrument(instr):
     wmask = {"backtest": (ts < boundary.value) & unsealed,
              "forward": (ts >= gl.value) & unsealed}
     legs = legs_from_log(swr.log)
+    from backtest.signed_volume import sv15 as _sv15, sv_session
     return {"instr": instr, "cfg": cfg, "ts": ts, "cl": cl,
             "measured": measured, "rs": rs_, "rv": rv, "quad": quad,
             "structural": structural, "qualified": qualified,
-            "flips": flips, "sess": sess, "wmask": wmask, "legs": legs}
+            "flips": flips, "sess": sess, "wmask": wmask, "legs": legs,
+            "sv15": _sv15(op, cl, vol),
+            "sv_sess": sv_session(op, cl, vol, ts)}
 
 
 def bar_metric_arrays(P):
@@ -273,6 +283,10 @@ def bar_metric_arrays(P):
                         .astype(float), m),
         "phase_flip_rate": (P["flips"].astype(float),
                             np.ones(len(P["ts"]), dtype=bool)),
+        "svol15_median": (P["sv15"],
+                          np.ones(len(P["ts"]), dtype=bool)),
+        "svol_sess_median": (P["sv_sess"],
+                             np.ones(len(P["ts"]), dtype=bool)),
     }
 
 

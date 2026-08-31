@@ -523,6 +523,13 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.signal_points", "backtest.bar_persistence",
                 "backtest.forward_migration", "backtest.cofire",
                 "backtest.conditioning_matrix", "backtest.gap_census",
+                "backtest.signed_volume",       # register 119 (organ #4)
+                "backtest.dwell_census",        # register 120 (organ #5)
+                "backtest.efficiency",          # register 122 (organ #2
+                                                # regime/efficiency half)
+                "backtest.stress_organ",        # register 123 (before the
+                                                # matrix: the stress dim)
+                "backtest.aggregation_decay",   # register 121 (census)
                 "backtest.narrative_survey", "backtest.trade_layer",
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",
