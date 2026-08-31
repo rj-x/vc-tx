@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `a00f42382` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `f6af1ba68` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
 ## A. Cells clearing a null on this emission (131)
 
@@ -312,12 +312,12 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
 | item | register | age (registers / days) | tag |
 |---|---|---|---|
-| item-22 session-JSONL persistence | 22 | 109 / 14 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
-| s9 scenario | 27 | 104 / 14 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
-| scalp location census | 64 | 67 / 8 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
-| exit-and-reverse grammar (capability) | 78 | 53 / 7 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
-| pyramiding counterfactual | 79 | 52 / 7 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
-| R-SCOPED-BE (contingent variant) | 92 | 39 / 4 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
+| item-22 session-JSONL persistence | 22 | 110 / 14 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
+| s9 scenario | 27 | 105 / 14 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
+| scalp location census | 64 | 68 / 8 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
+| exit-and-reverse grammar (capability) | 78 | 54 / 7 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
+| pyramiding counterfactual | 79 | 53 / 7 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
+| R-SCOPED-BE (contingent variant) | 92 | 40 / 4 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
 
 ### Expiry sweep (register 126 — negative-verdict expiries vs current n; a crossed expiry emits its re-read at the next sitting and can never age silently)
 

@@ -1,6 +1,6 @@
 {
   "STAMP": "INSIGHTS ledger \u2014 an index of what clears, what is watched, what is benched, what is parked, and what changed; never evidence",
-  "engine_commit": "a00f423820548f3862f9328b23ccf58ea1010837",
+  "engine_commit": "f6af1ba68608b4d93d88b002cbdda78cff0212d4",
   "date": "2026-08-31",
   "clearing": [
     {
@@ -3019,7 +3019,7 @@
       "register": 22,
       "prereg_date": "2026-08-17",
       "tag": "parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127)",
-      "age_registers": 109,
+      "age_registers": 110,
       "age_days": 14,
       "loud": false
     },
@@ -3028,7 +3028,7 @@
       "register": 27,
       "prereg_date": "2026-08-17",
       "tag": "parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31)",
-      "age_registers": 104,
+      "age_registers": 105,
       "age_days": 14,
       "loud": false
     },
@@ -3037,7 +3037,7 @@
       "register": 64,
       "prereg_date": "2026-08-23",
       "tag": "parked-until-next-sitting-prioritization (tagged 2026-08-31)",
-      "age_registers": 67,
+      "age_registers": 68,
       "age_days": 8,
       "loud": false
     },
@@ -3046,7 +3046,7 @@
       "register": 78,
       "prereg_date": "2026-08-24",
       "tag": "parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31)",
-      "age_registers": 53,
+      "age_registers": 54,
       "age_days": 7,
       "loud": false
     },
@@ -3055,7 +3055,7 @@
       "register": 79,
       "prereg_date": "2026-08-24",
       "tag": "parked-until-next-sitting-prioritization (its stated gate \u2014 in-trade census reads \u2014 is MET; the park is a priority choice, dated 2026-08-31)",
-      "age_registers": 52,
+      "age_registers": 53,
       "age_days": 7,
       "loud": false
     },
@@ -3064,7 +3064,7 @@
       "register": 92,
       "prereg_date": "2026-08-27",
       "tag": "parked-until-gate (the register-107 readout, re-read weekly \u2014 NOT PASSED on any leg)",
-      "age_registers": 39,
+      "age_registers": 40,
       "age_days": 4,
       "loud": false
     }
@@ -3474,29 +3474,29 @@
       "census:ger40fut|forward|S1-H1": "2026-08-30",
       "h6-glint:session:overlap": "2026-08-30",
       "anatomy-watch:ger40fut|4h|D|backtest|narrow_loud_share": "2026-08-30",
-      "anatomy-watch:ger40fut|4h|D|backtest|svol_sess_median": "2026-08-31",
-      "event:R-NEXIT-SENT|open30|uk100fut": "2026-08-31",
-      "vol:R-NEXIT-FULL|vol>=95|uk100fut": "2026-08-31",
-      "event:R-OP2|news30:native|uk100fut": "2026-08-31",
-      "vol:R-NEXIT-EARLY|vol>=95|uk100fut": "2026-08-31",
-      "vol:R-OP2|vol>=95|us30fut": "2026-08-31",
-      "event:R-BE|held:high|ger40fut": "2026-08-31",
-      "event-glint:R-BE|held:high": "2026-08-31",
-      "vol:R-OP2|vol>=95|nas100fut": "2026-08-31",
-      "vol:R-OP2|vol>=95|uk100fut": "2026-08-31",
-      "vol:R-NEXIT-SENT|vol>=95|uk100fut": "2026-08-31",
-      "vol:R-NEXIT-SENT|vol>=95|ger40fut": "2026-08-31",
-      "event-glint:R-NEXIT-SENT|open30": "2026-08-31",
-      "event:R-OP2|open30|nas100fut": "2026-08-31",
-      "vol:R-OP2|vol>=95|ger40fut": "2026-08-31",
-      "anatomy-watch:uk100fut|4h|D|backtest|svol15_median": "2026-08-31",
-      "stress:ger40fut|R-SCALP-H6|forward": "2026-08-31",
-      "anatomy-watch:uk100fut|4h|D|backtest|svol_sess_median": "2026-08-31",
-      "event-glint:R-OP2|news30:native": "2026-08-31",
       "stress:ger40fut|R-SCALP-H6-REF|forward": "2026-08-31",
+      "event-glint:R-BE|held:high": "2026-08-31",
+      "event-glint:R-OP2|news30:native": "2026-08-31",
+      "event:R-OP2|news30:native|uk100fut": "2026-08-31",
+      "vol:R-NOTRAIL|vol>=95|us30fut": "2026-08-31",
+      "vol:R-OP2|vol>=95|us30fut": "2026-08-31",
+      "vol:R-OP2|vol>=95|ger40fut": "2026-08-31",
+      "vol:R-NEXIT-EARLY|vol>=95|uk100fut": "2026-08-31",
+      "anatomy-watch:ger40fut|4h|D|backtest|svol_sess_median": "2026-08-31",
+      "anatomy-watch:uk100fut|4h|D|backtest|svol_sess_median": "2026-08-31",
       "vol:R-BE|vol>=95|uk100fut": "2026-08-31",
+      "vol:R-OP2|vol>=95|uk100fut": "2026-08-31",
       "event:R-BE|held:high|nas100fut": "2026-08-31",
-      "vol:R-NOTRAIL|vol>=95|us30fut": "2026-08-31"
+      "event:R-NEXIT-SENT|open30|uk100fut": "2026-08-31",
+      "vol:R-NEXIT-SENT|vol>=95|ger40fut": "2026-08-31",
+      "event:R-BE|held:high|ger40fut": "2026-08-31",
+      "vol:R-NEXIT-FULL|vol>=95|uk100fut": "2026-08-31",
+      "anatomy-watch:uk100fut|4h|D|backtest|svol15_median": "2026-08-31",
+      "vol:R-OP2|vol>=95|nas100fut": "2026-08-31",
+      "event:R-OP2|open30|nas100fut": "2026-08-31",
+      "event-glint:R-NEXIT-SENT|open30": "2026-08-31",
+      "stress:ger40fut|R-SCALP-H6|forward": "2026-08-31",
+      "vol:R-NEXIT-SENT|vol>=95|uk100fut": "2026-08-31"
     },
     "previous_date": "2026-08-30"
   }

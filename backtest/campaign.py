@@ -532,6 +532,9 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.aggregation_decay",   # register 121 (census)
                 "backtest.vol_regime",          # register 130 (before the
                                                 # WATCH page: clears graft)
+                "backtest.vol_pause",           # register 132 (the pause
+                                                # counterfactual; weekly
+                                                # retest on new tape)
                 "backtest.narrative_survey", "backtest.trade_layer",
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",

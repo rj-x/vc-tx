@@ -170,6 +170,8 @@ AUTHORITY = {
     "stress_organ.py:STRESS_PCTILE": "register 123: the alarm bar on each field's own store percentile (p80) — implementer-proposed at prereg, FLAGGED",
     "stress_organ.py:WARMUP_DAYS": "register 123: minimum prior days before an expanding percentile reads (60) — warmup floor, implementer-proposed, FLAGGED",
     "stress_organ.py:SCALP_ARMS": "register 123: the two counted scalp arms (register 94), mirrored for the day-state split — a name list, not a parameter",
+    "vol_pause.py:PAUSE_X": "register 132: the pause thresholds {80, 95} — the register-130 bucket edges reused, no new numbers",
+    "vol_pause.py:WORST_N": "register 132: the operator's forensic set size (27) — the order's own count",
     "vol_regime.py:TRAIL_SESSIONS": "register 130: the trailing ATR-distribution window (20 native sessions) — the order's own value",
     "vol_regime.py:VOL_BUCKETS": "register 130: percentile bucket edges {50, 80, 95} — the order's own edges",
     "vol_regime.py:MIN_TOP_N": "register 130: top-bucket measurability (n_distinct >= 10) — the matrix convention reused",
