@@ -530,6 +530,8 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.stress_organ",        # register 123 (before the
                                                 # matrix: the stress dim)
                 "backtest.aggregation_decay",   # register 121 (census)
+                "backtest.vol_regime",          # register 130 (before the
+                                                # WATCH page: clears graft)
                 "backtest.narrative_survey", "backtest.trade_layer",
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",

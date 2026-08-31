@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `a00f42382` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -438,6 +438,21 @@ Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | ger40fut | 4h | D | forward | nd_rate | 3441 (1z/7d) | 3.4 | 6.695 | -3.295 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | ns_rate | 3441 (1z/7d) | 4.01 | 6.862 | -2.852 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | climax_rate | 3441 (1z/7d) | 1.25 | 0.477 | +0.772 | 100.0 | 98.0 | YES |
+
+## Volatility-regime findings (register 130) — forward strata whose top-bucket (atr_pctl >= 95) degradation clears its within-stratum permutation null; listed, never rules — the entry-pause proposal needs >= 3 legs and the front door
+
+| instrument | variant | median gap (rest − top) | stop-rate gap | top n (distinct) | pct vs null |
+|---|---|---|---|---|---|
+| uk100fut | R-BE | +3.50 | -0.364 | 33 | 98.0 |
+| uk100fut | R-NEXIT-EARLY | +0.40 | -0.055 | 81 | 97.0 |
+| uk100fut | R-NEXIT-FULL | +0.50 | -0.011 | 84 | 97.0 |
+| ger40fut | R-NEXIT-SENT | +7.25 | -0.136 | 32 | 97.0 |
+| uk100fut | R-NEXIT-SENT | +4.13 | -0.213 | 47 | 100.0 |
+| us30fut | R-NOTRAIL | +34.65 | -0.428 | 11 | 100.0 |
+| ger40fut | R-OP2 | +3.75 | +0.006 | 57 | 100.0 |
+| nas100fut | R-OP2 | +8.22 | +0.005 | 61 | 100.0 |
+| uk100fut | R-OP2 | +1.20 | -0.039 | 71 | 100.0 |
+| us30fut | R-OP2 | +8.44 | +0.004 | 93 | 100.0 |
 
 ## Standing per-instrument facts — spread burden at the scalp incumbent (register 106 follow-through (3); from scalp_tp_ladder.md)
 

@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `9bf46c7c6` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `a00f42382` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
-## A. Cells clearing a null on this emission (121)
+## A. Cells clearing a null on this emission (131)
 
 | source | instrument | window | cell | statistic | value | n | percentile | null | age (w) |
 |---|---|---|---|---|---|---|---|---|---|
@@ -127,6 +127,16 @@ Engine `9bf46c7c6` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER
 | event_clock.md | uk100fut | forward | R-OP2|open30 | glint | 17.2 | None | — | per-leg null p95 / member band | 0 |
 | scalp_risk_grid.md | ger40fut | forward | cooldown|R-SCALP-H6-REF|forward|30 | glint | -72.9 | None | — | per-leg null p95 / member band | 0 |
 | scalp_risk_grid.md | nas100fut | forward | cooldown|R-SCALP-H6|forward|15 | glint | -99.5 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | uk100fut | forward | R-BE|vol>=95 | glint | 3.5 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | uk100fut | forward | R-NEXIT-EARLY|vol>=95 | glint | 0.4 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | uk100fut | forward | R-NEXIT-FULL|vol>=95 | glint | 0.5 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | ger40fut | forward | R-NEXIT-SENT|vol>=95 | glint | 7.25 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | uk100fut | forward | R-NEXIT-SENT|vol>=95 | glint | 4.13 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | us30fut | forward | R-NOTRAIL|vol>=95 | glint | 34.65 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | ger40fut | forward | R-OP2|vol>=95 | candidate | 3.75 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | nas100fut | forward | R-OP2|vol>=95 | candidate | 8.22 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | uk100fut | forward | R-OP2|vol>=95 | candidate | 1.2 | None | — | per-leg null p95 / member band | 0 |
+| vol_regime.md | us30fut | forward | R-OP2|vol>=95 | candidate | 8.44 | None | — | per-leg null p95 / member band | 0 |
 | h6_refinement.md | scalp | forward | field count of qualifying splits | field count | 48 | 83 | 96.0 | label permutation p95 | 0 |
 | event_clock.md | all | both | field count of qualifying window splits | field count | 175 | 358 | 100.0 | label permutation p95 | 0 |
 
@@ -292,7 +302,7 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
 ## E. DELTA since 2026-08-30
 
-- CROSSED (clearing now, not last emission): 7 — event:R-BE|held:high|ger40fut; event:R-BE|held:high|nas100fut; event:R-NEXIT-SENT|open30|uk100fut; event:R-OP2|news30:native|uk100fut; event:R-OP2|open30|nas100fut; stress:ger40fut|R-SCALP-H6-REF|forward; stress:ger40fut|R-SCALP-H6|forward
+- CROSSED (clearing now, not last emission): 17 — event:R-BE|held:high|ger40fut; event:R-BE|held:high|nas100fut; event:R-NEXIT-SENT|open30|uk100fut; event:R-OP2|news30:native|uk100fut; event:R-OP2|open30|nas100fut; stress:ger40fut|R-SCALP-H6-REF|forward; stress:ger40fut|R-SCALP-H6|forward; vol:R-BE|vol>=95|uk100fut; vol:R-NEXIT-EARLY|vol>=95|uk100fut; vol:R-NEXIT-FULL|vol>=95|uk100fut; vol:R-NEXIT-SENT|vol>=95|ger40fut; vol:R-NEXIT-SENT|vol>=95|uk100fut; vol:R-NOTRAIL|vol>=95|us30fut; vol:R-OP2|vol>=95|ger40fut; vol:R-OP2|vol>=95|nas100fut; vol:R-OP2|vol>=95|uk100fut; vol:R-OP2|vol>=95|us30fut
 - AGED (clearing both emissions): 114 — census:ger40fut|backtest|S0-H11; census:ger40fut|backtest|S0-H6; census:ger40fut|forward|S0-H6; census:nas100fut|backtest|S0-H6; census:nas100fut|forward|S0-H6; census:uk100fut|backtest|S0-H6; census:uk100fut|forward|S0-H6; census:us30fut|backtest|S0-H1; census:us30fut|forward|S0-H6; event:R-ARM15|open15|us30fut; event:R-ARM15|open30|nas100fut; event:R-BE|close30|uk100fut; event:R-BE|open15|ger40fut; event:R-BE|open30|ger40fut; event:R-NEXIT-EARLY|close30|uk100fut; event:R-NEXIT-EARLY|news30:native|us30fut; event:R-NEXIT-EARLY|open15|ger40fut; event:R-NEXIT-EARLY|open15|nas100fut; event:R-NEXIT-EARLY|open30|nas100fut; event:R-NEXIT-EARLY|open30|uk100fut; event:R-NEXIT-FULL|close30|uk100fut; event:R-NEXIT-FULL|news30:native|us30fut; event:R-NEXIT-FULL|open15|ger40fut; event:R-NEXIT-FULL|open15|nas100fut; event:R-NEXIT-FULL|open30|uk100fut; … (+89 more, in insights.json)
 - DIED (cleared last emission, not now): 6 — event:R-ARM15|open15|nas100fut; event:R-NEXIT-EARLY|open15|uk100fut; event:R-NEXIT-SENT|news15:native|nas100fut; event:R-NEXIT-SENT|news30:cross|nas100fut; event:R-NEXIT-SENT|open15|us30fut; event:R-OP2|open15|uk100fut
 - WATCH entries new / gone: 6 / 3 — gone:event-glint:R-NEXIT-SENT|news30:cross; event-glint:R-NEXIT-SENT|open15; event-glint:R-OP2|open15
@@ -302,12 +312,12 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
 | item | register | age (registers / days) | tag |
 |---|---|---|---|
-| item-22 session-JSONL persistence | 22 | 107 / 14 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
-| s9 scenario | 27 | 102 / 14 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
-| scalp location census | 64 | 65 / 8 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
-| exit-and-reverse grammar (capability) | 78 | 51 / 7 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
-| pyramiding counterfactual | 79 | 50 / 7 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
-| R-SCOPED-BE (contingent variant) | 92 | 37 / 4 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
+| item-22 session-JSONL persistence | 22 | 109 / 14 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
+| s9 scenario | 27 | 104 / 14 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
+| scalp location census | 64 | 67 / 8 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
+| exit-and-reverse grammar (capability) | 78 | 53 / 7 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
+| pyramiding counterfactual | 79 | 52 / 7 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
+| R-SCOPED-BE (contingent variant) | 92 | 39 / 4 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
 
 ### Expiry sweep (register 126 — negative-verdict expiries vs current n; a crossed expiry emits its re-read at the next sitting and can never age silently)
 

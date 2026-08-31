@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL per-market config WATCH \u2014 a map of where specialization would go, never a settings page; cells graduate only via the register-105 track; never validation",
-  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "engine_commit": "a00f423820548f3862f9328b23ccf58ea1010837",
   "journal_rows_ex_lockbox": 45123,
   "field_dims": "variant x session x slot (stop axis: the variant's registered stop; not re-simulated)",
   "track": {
@@ -12246,6 +12246,98 @@
       "pct_vs_null": 100.0,
       "sel_pct": 98.0,
       "beats_selection": true
+    }
+  ],
+  "vol_watch": [
+    {
+      "instrument": "uk100fut",
+      "variant": "R-BE",
+      "window": "forward",
+      "median_gap": 3.5,
+      "stop_rate_gap": -0.364,
+      "top_n_distinct": 33,
+      "pct_vs_null": 98.0
+    },
+    {
+      "instrument": "uk100fut",
+      "variant": "R-NEXIT-EARLY",
+      "window": "forward",
+      "median_gap": 0.4,
+      "stop_rate_gap": -0.055,
+      "top_n_distinct": 81,
+      "pct_vs_null": 97.0
+    },
+    {
+      "instrument": "uk100fut",
+      "variant": "R-NEXIT-FULL",
+      "window": "forward",
+      "median_gap": 0.5,
+      "stop_rate_gap": -0.011,
+      "top_n_distinct": 84,
+      "pct_vs_null": 97.0
+    },
+    {
+      "instrument": "ger40fut",
+      "variant": "R-NEXIT-SENT",
+      "window": "forward",
+      "median_gap": 7.25,
+      "stop_rate_gap": -0.136,
+      "top_n_distinct": 32,
+      "pct_vs_null": 97.0
+    },
+    {
+      "instrument": "uk100fut",
+      "variant": "R-NEXIT-SENT",
+      "window": "forward",
+      "median_gap": 4.13,
+      "stop_rate_gap": -0.213,
+      "top_n_distinct": 47,
+      "pct_vs_null": 100.0
+    },
+    {
+      "instrument": "us30fut",
+      "variant": "R-NOTRAIL",
+      "window": "forward",
+      "median_gap": 34.65,
+      "stop_rate_gap": -0.428,
+      "top_n_distinct": 11,
+      "pct_vs_null": 100.0
+    },
+    {
+      "instrument": "ger40fut",
+      "variant": "R-OP2",
+      "window": "forward",
+      "median_gap": 3.75,
+      "stop_rate_gap": 0.006,
+      "top_n_distinct": 57,
+      "pct_vs_null": 100.0
+    },
+    {
+      "instrument": "nas100fut",
+      "variant": "R-OP2",
+      "window": "forward",
+      "median_gap": 8.22,
+      "stop_rate_gap": 0.005,
+      "top_n_distinct": 61,
+      "pct_vs_null": 100.0
+    },
+    {
+      "instrument": "uk100fut",
+      "variant": "R-OP2",
+      "window": "forward",
+      "median_gap": 1.2,
+      "stop_rate_gap": -0.039,
+      "top_n_distinct": 71,
+      "pct_vs_null": 100.0
+    },
+    {
+      "instrument": "us30fut",
+      "variant": "R-OP2",
+      "window": "forward",
+      "median_gap": 8.44,
+      "stop_rate_gap": 0.004,
+      "top_n_distinct": 93,
+      "pct_vs_null": 100.0
     }
   ]
 }

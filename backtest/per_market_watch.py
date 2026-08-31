@@ -525,6 +525,19 @@ def _emit(art, head):
           f"| {r['sel_pct']} | {'YES' if r['beats_selection'] else 'no'} |"
           for r in aw] or [
         "| (no single-leg anatomy finding this emission) | | | | | | | | | | | |"]
+    vw = art.get("vol_watch", [])
+    L += ["", "## Volatility-regime findings (register 130) — forward "
+          "strata whose top-bucket (atr_pctl >= 95) degradation clears "
+          "its within-stratum permutation null; listed, never rules — "
+          "the entry-pause proposal needs >= 3 legs and the front door",
+          "",
+          "| instrument | variant | median gap (rest − top) | stop-rate "
+          "gap | top n (distinct) | pct vs null |",
+          "|---|---|---|---|---|---|"]
+    L += [f"| {r['instrument']} | {r['variant']} | {r['median_gap']:+.2f} "
+          f"| {r['stop_rate_gap']:+.3f} | {r['top_n_distinct']} "
+          f"| {r['pct_vs_null']} |" for r in vw] or [
+        "| (no forward stratum clears this emission) | | | | | |"]
     burden = art.get("spread_burden", [])
     L += ["", "## Standing per-instrument facts — spread burden at the "
           "scalp incumbent (register 106 follow-through (3); from "
@@ -562,6 +575,10 @@ def main():
     an = os.path.join(OUT, "zone_anatomy.json")
     art["anatomy_watch"] = (json.load(open(an)).get("watch_rows", [])
                             if os.path.exists(an) else [])
+    # register 130: single-leg volatility-regime clears ride along
+    vr = os.path.join(OUT, "vol_regime.json")
+    art["vol_watch"] = (json.load(open(vr)).get("watch_rows", [])
+                        if os.path.exists(vr) else [])
     with open(os.path.join(OUT, "per_market_watch.json"), "w") as f:
         json.dump(art, f, indent=2, default=str)
     _emit(art, head)

@@ -199,7 +199,7 @@ def _load(name, base=SB):
 
 
 def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture,
-                   anatomy=None, stress=None):
+                   anatomy=None, stress=None, vol=None):
     """(A) every cell clearing a null on the current emission."""
     out = []
     for key, c in (stress or {}).get("scalp_split", {}).items():
@@ -313,7 +313,8 @@ def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture,
                     "null": "session floors + concentration"})
     for src, art, label in (("event", events, "event_clock.md"),
                             ("srg", srg, "scalp_risk_grid.md"),
-                            ("tp", tp, "scalp_tp_ladder.md")):
+                            ("tp", tp, "scalp_tp_ladder.md"),
+                            ("vol", vol or {}, "vol_regime.md")):
         for cell, c in (art.get("candidates") or {}).items():
             for leg in c.get("clearing", []):
                 lg = (c.get("legs") or {}).get(leg, {})
@@ -555,12 +556,13 @@ def build(today, prev=None):
     zone3 = _load("zone_census_v3.json")
     anatomy = _load("zone_anatomy.json")
     stress = _load("stress_state.json")
+    vol = _load("vol_regime.json")
     cofr = _load("cofire_reread_2026-08-28.json",
                  os.path.join(ROOT, "reports", "archive"))   # reg 126
     forensics = _load("forensics.json",
                       os.path.join(ROOT, "reports", "forensics"))
     clearing = clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6,
-                              capture, anatomy, stress)
+                              capture, anatomy, stress, vol)
     watch, fwatch = watch_entries(pmw, events, srg, h6, forensics,
                                   anatomy)
     pmw["_held"] = [w["status"] for w in watch if w["kind"] == "HELD sentence"]
