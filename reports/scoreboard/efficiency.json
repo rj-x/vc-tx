@@ -1,0 +1,395 @@
+{
+  "STAMP": "OBSERVATIONAL organ #2 regime/efficiency half \u2014 vocabulary; a second lens beside the phase tracker; never validation",
+  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "window_bars": 15,
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "n_bars": 47114,
+      "cells": {
+        "backtest|asia": {
+          "eff15": {
+            "n": 14632,
+            "median": 0.236,
+            "p10": 0.044,
+            "p90": 0.557
+          },
+          "eff_sess": {
+            "n": 14632,
+            "median": 0.006,
+            "p10": 0.004,
+            "p90": 0.012
+          }
+        },
+        "backtest|dead": {
+          "eff15": {
+            "n": 5171,
+            "median": 0.241,
+            "p10": 0.043,
+            "p90": 0.575
+          },
+          "eff_sess": {
+            "n": 5185,
+            "median": 0.006,
+            "p10": 0.004,
+            "p90": 0.011
+          }
+        },
+        "backtest|london": {
+          "eff15": {
+            "n": 13650,
+            "median": 0.22,
+            "p10": 0.041,
+            "p90": 0.534
+          },
+          "eff_sess": {
+            "n": 13650,
+            "median": 0.006,
+            "p10": 0.004,
+            "p90": 0.012
+          }
+        },
+        "backtest|ny_only": {
+          "eff15": {
+            "n": 9446,
+            "median": 0.214,
+            "p10": 0.037,
+            "p90": 0.522
+          },
+          "eff_sess": {
+            "n": 9446,
+            "median": 0.006,
+            "p10": 0.004,
+            "p90": 0.012
+          }
+        },
+        "backtest|overlap": {
+          "eff15": {
+            "n": 4200,
+            "median": 0.233,
+            "p10": 0.045,
+            "p90": 0.533
+          },
+          "eff_sess": {
+            "n": 4200,
+            "median": 0.006,
+            "p10": 0.003,
+            "p90": 0.012
+          }
+        },
+        "forward|asia": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|dead": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|london": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|ny_only": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|overlap": {
+          "eff15": null,
+          "eff_sess": null
+        }
+      },
+      "eff15_store_median": 0.227
+    },
+    {
+      "instrument": "ger40fut",
+      "n_bars": 39820,
+      "cells": {
+        "backtest|asia": {
+          "eff15": {
+            "n": 12072,
+            "median": 0.233,
+            "p10": 0.044,
+            "p90": 0.543
+          },
+          "eff_sess": {
+            "n": 12072,
+            "median": 0.015,
+            "p10": 0.009,
+            "p90": 0.018
+          }
+        },
+        "backtest|dead": {
+          "eff15": {
+            "n": 4334,
+            "median": 0.269,
+            "p10": 0.049,
+            "p90": 0.64
+          },
+          "eff_sess": {
+            "n": 4348,
+            "median": 0.015,
+            "p10": 0.01,
+            "p90": 0.018
+          }
+        },
+        "backtest|london": {
+          "eff15": {
+            "n": 11700,
+            "median": 0.221,
+            "p10": 0.042,
+            "p90": 0.508
+          },
+          "eff_sess": {
+            "n": 11700,
+            "median": 0.014,
+            "p10": 0.009,
+            "p90": 0.018
+          }
+        },
+        "backtest|ny_only": {
+          "eff15": {
+            "n": 8099,
+            "median": 0.22,
+            "p10": 0.041,
+            "p90": 0.518
+          },
+          "eff_sess": {
+            "n": 8099,
+            "median": 0.014,
+            "p10": 0.009,
+            "p90": 0.017
+          }
+        },
+        "backtest|overlap": {
+          "eff15": {
+            "n": 3600,
+            "median": 0.214,
+            "p10": 0.039,
+            "p90": 0.514
+          },
+          "eff_sess": {
+            "n": 3600,
+            "median": 0.013,
+            "p10": 0.007,
+            "p90": 0.018
+          }
+        },
+        "forward|asia": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|dead": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|london": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|ny_only": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|overlap": {
+          "eff15": null,
+          "eff_sess": null
+        }
+      },
+      "eff15_store_median": 0.229
+    },
+    {
+      "instrument": "nas100fut",
+      "n_bars": 41213,
+      "cells": {
+        "backtest|asia": {
+          "eff15": {
+            "n": 12600,
+            "median": 0.229,
+            "p10": 0.041,
+            "p90": 0.538
+          },
+          "eff_sess": {
+            "n": 12600,
+            "median": 0.005,
+            "p10": 0.002,
+            "p90": 0.014
+          }
+        },
+        "backtest|dead": {
+          "eff15": {
+            "n": 5198,
+            "median": 0.245,
+            "p10": 0.049,
+            "p90": 0.565
+          },
+          "eff_sess": {
+            "n": 5212,
+            "median": 0.005,
+            "p10": 0.002,
+            "p90": 0.014
+          }
+        },
+        "backtest|london": {
+          "eff15": {
+            "n": 11700,
+            "median": 0.239,
+            "p10": 0.045,
+            "p90": 0.539
+          },
+          "eff_sess": {
+            "n": 11700,
+            "median": 0.005,
+            "p10": 0.002,
+            "p90": 0.013
+          }
+        },
+        "backtest|ny_only": {
+          "eff15": {
+            "n": 8100,
+            "median": 0.226,
+            "p10": 0.041,
+            "p90": 0.518
+          },
+          "eff_sess": {
+            "n": 8100,
+            "median": 0.006,
+            "p10": 0.002,
+            "p90": 0.014
+          }
+        },
+        "backtest|overlap": {
+          "eff15": {
+            "n": 3600,
+            "median": 0.239,
+            "p10": 0.047,
+            "p90": 0.541
+          },
+          "eff_sess": {
+            "n": 3600,
+            "median": 0.006,
+            "p10": 0.002,
+            "p90": 0.016
+          }
+        },
+        "forward|asia": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|dead": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|london": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|ny_only": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|overlap": {
+          "eff15": null,
+          "eff_sess": null
+        }
+      },
+      "eff15_store_median": 0.235
+    },
+    {
+      "instrument": "us30fut",
+      "n_bars": 41185,
+      "cells": {
+        "backtest|asia": {
+          "eff15": {
+            "n": 12592,
+            "median": 0.219,
+            "p10": 0.041,
+            "p90": 0.527
+          },
+          "eff_sess": {
+            "n": 12592,
+            "median": 0.006,
+            "p10": 0.003,
+            "p90": 0.016
+          }
+        },
+        "backtest|dead": {
+          "eff15": {
+            "n": 5178,
+            "median": 0.205,
+            "p10": 0.037,
+            "p90": 0.522
+          },
+          "eff_sess": {
+            "n": 5192,
+            "median": 0.007,
+            "p10": 0.003,
+            "p90": 0.017
+          }
+        },
+        "backtest|london": {
+          "eff15": {
+            "n": 11700,
+            "median": 0.222,
+            "p10": 0.041,
+            "p90": 0.523
+          },
+          "eff_sess": {
+            "n": 11700,
+            "median": 0.006,
+            "p10": 0.003,
+            "p90": 0.015
+          }
+        },
+        "backtest|ny_only": {
+          "eff15": {
+            "n": 8100,
+            "median": 0.207,
+            "p10": 0.039,
+            "p90": 0.505
+          },
+          "eff_sess": {
+            "n": 8100,
+            "median": 0.007,
+            "p10": 0.003,
+            "p90": 0.014
+          }
+        },
+        "backtest|overlap": {
+          "eff15": {
+            "n": 3600,
+            "median": 0.218,
+            "p10": 0.039,
+            "p90": 0.516
+          },
+          "eff_sess": {
+            "n": 3600,
+            "median": 0.007,
+            "p10": 0.003,
+            "p90": 0.014
+          }
+        },
+        "forward|asia": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|dead": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|london": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|ny_only": {
+          "eff15": null,
+          "eff_sess": null
+        },
+        "forward|overlap": {
+          "eff15": null,
+          "eff_sess": null
+        }
+      },
+      "eff15_store_median": 0.216
+    }
+  ]
+}

@@ -291,6 +291,30 @@ def regime_gate(base, spread, A, floors):
                                   and rng.get("clears_floor") and beyond)}}
 
 
+def efficiency_split(base, spread, A):
+    """Register 122 (organ #2's regime/efficiency half): the SECOND
+    regime lens — trades split by eff15 at the fire bar, cut at the
+    store's own median (parameter-free). Context beside the
+    phase-at-entry cut, never a replacement; no gate reads on it."""
+    from backtest.efficiency import eff15
+    e = eff15(A["c"])
+    med = float(np.nanmedian(e))
+    groups = {}
+    n_unm = 0
+    for t in base:
+        fi = max(t["ei"] - 1, 0)
+        v = e[fi]
+        if np.isnan(v):
+            n_unm += 1
+            continue
+        lab = ("high-efficiency-at-entry" if v >= med
+               else "low-efficiency-at-entry")
+        groups.setdefault(lab, []).append(t)
+    return {"store_median_eff15": round(med, 3),
+            "n_unmeasured": n_unm,
+            "cells": _policy_agg(groups, spread)}
+
+
 def never_again_pricing(base, spread):
     """Register 89 item 1: per BE rung, the amputation cost (forfeited
     points on would-be winners) per 100 base trades of guaranteeing no
@@ -502,6 +526,7 @@ def main():
                                                      A),
             "regime_floors": rfloors,
             "regime_gate": regime_gate(base, A["spread"], A, rfloors),
+            "efficiency_split": efficiency_split(base, A["spread"], A),
             "day_regime_split_first_attempt": regime_split(
                 base, A["spread"], day_regimes(A), A),
             "never_again": never_again_pricing(base, A["spread"])}
@@ -618,6 +643,24 @@ def _emit(art, head):
                      f"| {gp['per_trade_delta']} | {gb} | {gc} "
                      f"| {c['best_policy']} | {bp['per_trade_delta']} "
                      f"| {(bp['floor'] or {}).get('max', '—')} | {bc} |")
+        ef = res["efficiency_split"]
+        L += ["", "### Efficiency-at-entry split — the SECOND regime "
+              "lens (register 122, organ #2's efficiency half: eff15 = "
+              "|net move|/path over the trailing 15 x 1M bars at the "
+              "fire bar, cut at the store median "
+              f"{ef['store_median_eff15']}; parameter-free). CONTEXT "
+              "beside the phase lens, never a replacement; no gate "
+              f"reads on it. Unmeasured (warmup) trades: "
+              f"{ef['n_unmeasured']}.", "",
+              "| entry efficiency | n | best policy | best net delta "
+              "| BE@0.25 net delta |", "|---|---|---|---|---|"]
+        for reg, per in sorted(ef["cells"].items()):
+            best = max(per, key=lambda k: per[k]["net_delta"])
+            n_ = per[best]["n"]
+            dim = "°" if n_ < MIN_CELL_N else ""
+            L.append(f"| {reg} | {dim}{n_} | {best} "
+                     f"| {per[best]['net_delta']} "
+                     f"| {per['BE@0.25']['net_delta']} |")
         L += ["", "### Day-level regime cut — the RECORDED FIRST "
               "ATTEMPT (register 89/90: saturation finding — 98% of "
               "days classified trending on three legs, no contrast "

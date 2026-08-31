@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (1847 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
+Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (1847 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
 
 ## ger40fut (410 base trades)
 
@@ -48,6 +48,13 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 | trending-at-entry | ny_only | 86 | -0.68 | -6.57 [-86.92..52.47] (20; 13) | no | BE@0.5 | 1.57 | 38.79 | no |
 | trending-at-entry | overlap | 29 | 7.02 | 36.7 [-68.7..68.46] (16; 2) | no | BE@0.25 | 7.02 | 68.46 | no |
 | trending-at-entry | whole | 294 | 2.22 | -0.02 [-72.07..38.75] (20; 25.5) | no | TRAIL-1-0.5 | 4.44 | 39.68 | no |
+
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.229; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+
+| entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| high-efficiency-at-entry | 255 | TRAIL-1-0.5 | 219.0 | -478.6 |
+| low-efficiency-at-entry | 155 | TRAIL-1-1 | 2906.5 | 1351.5 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
@@ -115,6 +122,13 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 | trending-at-entry | overlap | 28 | -34.41 | 61.29 [-119.25..128.16] (20; 4) | no | BE@1.5 | 11.25 | 86.09 | no |
 | trending-at-entry | whole | 274 | -16.52 | -8.67 [-78.11..61.04] (20; 31) | no | BE@1.5 | 7.13 | 39.56 | no |
 
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.235; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+
+| entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| high-efficiency-at-entry | 268 | BE@1.5 | -1173.3 | -8740.8 |
+| low-efficiency-at-entry | 138 | TRAIL-0.5-1 | 6213.1 | 5141.3 |
+
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
@@ -180,6 +194,13 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 | trending-at-entry | ny_only | 121 | 6.69 | 6.67 [-14.47..27.21] (20; 16.5) | no | TRAIL-1-0.5 | 9.01 | 36.52 | no |
 | trending-at-entry | overlap | 41 | -2.34 | 0.0 [-48.0..23.5] (19; 2) | no | BE@1 | 0.0 | 6.1 | no |
 | trending-at-entry | whole | 369 | 5.16 | 2.08 [-9.23..16.37] (20; 30.5) | no | TRAIL-0.5-0.5 | 6.13 | 20.44 | no |
+
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.227; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+
+| entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| high-efficiency-at-entry | 359 | TRAIL-0.5-0.5 | 1837.8 | 1291.2 |
+| low-efficiency-at-entry | 197 | TRAIL-1-0.5 | 1172.4 | 809.7 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
@@ -247,6 +268,13 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 | trending-at-entry | ny_only | 56 | 3.88 | 0.08 [-153.0..135.01] (20; 2.5) | no | BE@0.25 | 3.88 | 135.01 | no |
 | trending-at-entry | overlap | °23 | -16.55 | -9.99 [-252.83..232.17] (20; 4) | no | BE@1 | 64.94 | 125.17 | no |
 | trending-at-entry | whole | 310 | -21.23 | -18.84 [-73.72..57.93] (20; 28.5) | no | BE@1.5 | -6.05 | 34.7 | no |
+
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.216; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+
+| entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
+|---|---|---|---|---|
+| high-efficiency-at-entry | 290 | BE@1 | 1608.1 | -1370.1 |
+| low-efficiency-at-entry | 185 | BE@1 | -2735.4 | -6168.3 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
