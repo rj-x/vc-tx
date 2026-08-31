@@ -930,7 +930,7 @@ uk100fut,2026-07-23 18:41:00+00:00,S1-H11,directional,1,ny_only,backtest,,,True,
 uk100fut,2026-07-23 18:43:00+00:00,S1-H11,directional,1,ny_only,backtest,,,True,2026-07-23 19:01:00+00:00,22.5,False,
 uk100fut,2026-07-23 18:47:00+00:00,S1-H11,directional,-1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-23 18:49:00+00:00,S1-H11,directional,-1,ny_only,backtest,,,False,,,False,
-uk100fut,2026-07-23 19:03:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False,,,True,18.299999999999272
+uk100fut,2026-07-23 19:03:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-23 19:08:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False,,,True,20.80000000000109
 uk100fut,2026-07-23 19:10:00+00:00,S0-H7,directional,1,ny_only,backtest,,,False,,,True,24.30000000000109
 uk100fut,2026-07-23 19:10:00+00:00,S0-H7 (either-dir),either-direction,1,ny_only,backtest,,,False,,,True,24.30000000000109
@@ -2549,13 +2549,13 @@ uk100fut,2026-07-31 17:46:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False
 uk100fut,2026-07-31 18:03:00+00:00,S0-H14,directional,-1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-31 18:04:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-31 18:17:00+00:00,S1-H11,directional,1,ny_only,backtest,,,True,2026-07-31 18:56:00+00:00,9.7,False,
-uk100fut,2026-07-31 18:54:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,8.2,False,
-uk100fut,2026-07-31 18:56:00+00:00,S0-H14,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,4.5,False,
-uk100fut,2026-07-31 19:06:00+00:00,S0-H7,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,4.5,False,
-uk100fut,2026-07-31 19:06:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,4.5,True,2.5
-uk100fut,2026-07-31 19:07:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,5.2,False,
-uk100fut,2026-07-31 19:11:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,11.0,False,
-uk100fut,2026-07-31 19:15:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:21:00+00:00,12.2,False,
+uk100fut,2026-07-31 18:54:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,8.2,False,
+uk100fut,2026-07-31 18:56:00+00:00,S0-H14,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,4.5,False,
+uk100fut,2026-07-31 19:06:00+00:00,S0-H7,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,4.5,False,
+uk100fut,2026-07-31 19:06:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,4.5,True,2.5
+uk100fut,2026-07-31 19:07:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,5.2,False,
+uk100fut,2026-07-31 19:11:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,11.0,False,
+uk100fut,2026-07-31 19:15:00+00:00,S0-H10,directional,-1,ny_only,backtest,,,True,2026-07-31 19:20:00+00:00,12.2,False,
 uk100fut,2026-07-31 19:18:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-31 19:50:00+00:00,S1-H11,directional,1,ny_only,backtest,,,False,,,False,
 uk100fut,2026-07-31 19:57:00+00:00,S0-H7,directional,1,ny_only,backtest,,,False,,,False,
@@ -4580,7 +4580,7 @@ uk100fut,2026-08-14 17:21:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2
 uk100fut,2026-08-14 17:21:00+00:00,S0-H18,directional,1,ny_only,forward,,,True,2026-08-14 17:36:00+00:00,13.0,False,
 uk100fut,2026-08-14 17:22:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-14 17:36:00+00:00,12.0,False,
 uk100fut,2026-08-14 17:33:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2026-08-14 17:36:00+00:00,13.3,False,
-uk100fut,2026-08-14 17:48:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,True,12.5
+uk100fut,2026-08-14 17:48:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
 uk100fut,2026-08-14 17:53:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,True,13.5
 uk100fut,2026-08-14 18:04:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,True,13.199999999998909
 uk100fut,2026-08-14 18:06:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,True,13.5
@@ -6790,9 +6790,121 @@ uk100fut,2026-08-28 09:47:00+00:00,S1-H11,directional,1,london,forward,,,False,,
 uk100fut,2026-08-28 10:00:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
 uk100fut,2026-08-28 10:02:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
 uk100fut,2026-08-28 10:06:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,True,16.5
-uk100fut,2026-08-28 12:09:00+00:00,S0-H16,directional,1,london,forward,,,True,2026-08-28 12:12:00+00:00,8.8,False,
-uk100fut,2026-08-28 12:12:00+00:00,S0-H7,directional,1,london,forward,,,False,,,True,12.0
-uk100fut,2026-08-28 12:12:00+00:00,S0-H7 (either-dir),either-direction,1,london,forward,,,False,,,True,12.0
+uk100fut,2026-08-28 12:12:00+00:00,S0-H7,directional,1,london,forward,,,False,,,True,19.19999999999891
+uk100fut,2026-08-28 12:12:00+00:00,S0-H7 (either-dir),either-direction,1,london,forward,,,False,,,True,19.19999999999891
+uk100fut,2026-08-28 13:06:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
+uk100fut,2026-08-28 13:15:00+00:00,S0-H7,directional,1,london,forward,,,False,,,True,20.0
+uk100fut,2026-08-28 13:15:00+00:00,S0-H7 (either-dir),either-direction,1,london,forward,,,False,,,True,20.0
+uk100fut,2026-08-28 13:26:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
+uk100fut,2026-08-28 13:30:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 13:42:00+00:00,S0-H11,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 13:59:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:01:00+00:00,S0-H1,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:01:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:03:00+00:00,S0-H17,directional,-1,overlap,forward,,,False,,,True,16.5
+uk100fut,2026-08-28 14:09:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:12:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:16:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:23:00+00:00,S0-H13,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:23:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:31:00+00:00,S0-H7,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:31:00+00:00,S0-H7 (either-dir),either-direction,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:31:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:32:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:32:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:32:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:46:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:53:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 14:59:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 15:00:00+00:00,S0-H16,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 15:18:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 15:27:00+00:00,S0-H13,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 15:27:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
+uk100fut,2026-08-28 15:35:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:37:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,25.5
+uk100fut,2026-08-28 15:37:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,25.5
+uk100fut,2026-08-28 15:37:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,True,25.5
+uk100fut,2026-08-28 15:40:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:46:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:49:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:49:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:49:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:49:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:50:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 15:55:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:04:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:08:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:08:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:08:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:16:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:16:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:16:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:18:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:21:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:28:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:28:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:28:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:29:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:32:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:32:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:32:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:36:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:55:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:55:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 16:55:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:04:00+00:00,S0-H1,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:05:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:05:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:05:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:07:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:08:00+00:00,S0-H17,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:10:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:10:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:10:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:15:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:15:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:16:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:16:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:16:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:18:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:18:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:18:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:19:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:20:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:29:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:29:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:29:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:44:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:44:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:44:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:57:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 17:57:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-28 18:57:00+00:00,18.5,False,
+uk100fut,2026-08-28 18:06:00+00:00,S0-H1,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 18:10:00+00:00,S0-H17,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 18:25:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 18:35:00+00:00,S0-H7,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 18:35:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,True,2026-08-28 18:57:00+00:00,15.2,False,
+uk100fut,2026-08-28 18:58:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 18:58:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,-1.0
+uk100fut,2026-08-28 18:58:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:02:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:02:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:03:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,True,13.5
+uk100fut,2026-08-28 19:17:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:17:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:24:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:24:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:24:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:28:00+00:00,S0-H14,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:28:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:30:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:33:00+00:00,S0-H14,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:40:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:40:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:51:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:57:00+00:00,S0-H1,directional,-1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:57:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+uk100fut,2026-08-28 19:58:00+00:00,S0-H17,directional,-1,ny_only,forward,,,False,,,False,
 ger40fut,2026-07-21 15:00:00+00:00,S0-H16,directional,-1,overlap,backtest,,,False,,,False,
 ger40fut,2026-07-22 15:00:00+00:00,S0-H16,directional,1,overlap,backtest,,,False,,,False,
 ger40fut,2026-07-23 15:00:00+00:00,S0-H16,directional,-1,overlap,backtest,,,False,,,False,
@@ -8936,7 +9048,7 @@ ger40fut,2026-08-05 07:38:00+00:00,S0-H10,directional,-1,london,lockbox,,,False,
 ger40fut,2026-08-05 07:39:00+00:00,S0-H11,directional,1,london,lockbox,,,False,,,False,
 ger40fut,2026-08-05 07:47:00+00:00,S0-H11,directional,1,london,lockbox,,,False,,,False,
 ger40fut,2026-08-05 07:58:00+00:00,S0-H11,directional,1,london,lockbox,,,False,,,False,
-ger40fut,2026-08-05 08:02:00+00:00,S0-H11,directional,-1,london,lockbox,,,False,,,False,
+ger40fut,2026-08-05 08:02:00+00:00,S0-H11,directional,-1,london,lockbox,,,False,,,True,49.900000000001455
 ger40fut,2026-08-05 08:04:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 ger40fut,2026-08-05 08:06:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 ger40fut,2026-08-05 08:11:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
@@ -11716,7 +11828,7 @@ ger40fut,2026-08-21 13:28:00+00:00,S1-H11,directional,-1,london,forward,,,True,2
 ger40fut,2026-08-21 13:31:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,37.79999999999927
 ger40fut,2026-08-21 13:33:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,36.39999999999782
 ger40fut,2026-08-21 13:34:00+00:00,S0-H6,directional,-1,overlap,forward,wide_bar_p90_trailing_day,True,True,2026-08-21 14:05:00+00:00,16.2,False,
-ger40fut,2026-08-21 13:35:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,36.29999999999927
+ger40fut,2026-08-21 13:35:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,False,
 ger40fut,2026-08-21 13:38:00+00:00,S0-H14,directional,1,overlap,forward,,,False,,,False,
 ger40fut,2026-08-21 13:44:00+00:00,S0-H10,directional,1,overlap,forward,,,False,,,True,47.70000000000073
 ger40fut,2026-08-21 13:47:00+00:00,S1-H11,directional,-1,overlap,forward,,,True,2026-08-21 14:05:00+00:00,4.5,False,
@@ -12892,13 +13004,137 @@ ger40fut,2026-08-28 07:04:00+00:00,S0-H11,directional,-1,london,forward,,,False,
 ger40fut,2026-08-28 08:08:00+00:00,S0-H6,directional,-1,london,forward,wide_bar_p90_trailing_day,True,False,,,False,
 ger40fut,2026-08-28 08:20:00+00:00,S0-H6,directional,-1,london,forward,wide_bar_p90_trailing_day,True,False,,,False,
 ger40fut,2026-08-28 09:14:00+00:00,S0-H6,directional,-1,london,forward,wide_bar_p90_trailing_day,True,True,2026-08-28 09:50:00+00:00,45.0,False,
-ger40fut,2026-08-28 11:49:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
-ger40fut,2026-08-28 11:55:00+00:00,S0-H7,directional,-1,london,forward,,,False,,,False,
-ger40fut,2026-08-28 11:55:00+00:00,S0-H7 (either-dir),either-direction,-1,london,forward,,,False,,,True,8.5
-ger40fut,2026-08-28 12:10:00+00:00,S0-H16,directional,1,london,forward,,,False,,,False,
+ger40fut,2026-08-28 11:49:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,15.6,False,
+ger40fut,2026-08-28 11:55:00+00:00,S0-H7,directional,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,15.0,False,
+ger40fut,2026-08-28 11:55:00+00:00,S0-H7 (either-dir),either-direction,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,15.0,True,8.5
 ger40fut,2026-08-28 12:34:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-ger40fut,2026-08-28 12:38:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-ger40fut,2026-08-28 12:39:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
+ger40fut,2026-08-28 12:38:00+00:00,S0-H14,directional,1,london,forward,,,True,2026-08-28 13:35:00+00:00,80.3,False,
+ger40fut,2026-08-28 12:39:00+00:00,S0-H14,directional,1,london,forward,,,True,2026-08-28 13:35:00+00:00,78.3,False,
+ger40fut,2026-08-28 12:42:00+00:00,S0-H10,directional,1,london,forward,,,True,2026-08-28 13:35:00+00:00,98.8,False,
+ger40fut,2026-08-28 12:44:00+00:00,S0-H14,directional,1,london,forward,,,True,2026-08-28 13:35:00+00:00,92.2,False,
+ger40fut,2026-08-28 14:08:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,126.90000000000146
+ger40fut,2026-08-28 14:08:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,126.90000000000146
+ger40fut,2026-08-28 14:08:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,126.90000000000146
+ger40fut,2026-08-28 14:12:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 14:13:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,117.70000000000073
+ger40fut,2026-08-28 14:13:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,117.70000000000073
+ger40fut,2026-08-28 14:13:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,117.70000000000073
+ger40fut,2026-08-28 14:58:00+00:00,S0-H7,directional,-1,overlap,forward,,,False,,,True,76.29999999999927
+ger40fut,2026-08-28 14:58:00+00:00,S0-H7 (either-dir),either-direction,-1,overlap,forward,,,False,,,True,76.29999999999927
+ger40fut,2026-08-28 15:00:00+00:00,S0-H16,directional,1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 15:08:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 15:08:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,5.5
+ger40fut,2026-08-28 15:08:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 15:13:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 15:13:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,5.299999999999272
+ger40fut,2026-08-28 15:13:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+ger40fut,2026-08-28 15:23:00+00:00,S0-H2,directional,-1,overlap,forward,,,False,,,True,62.20000000000073
+ger40fut,2026-08-28 15:23:00+00:00,S0-H8,either-direction,-1,overlap,forward,,,False,,,True,62.20000000000073
+ger40fut,2026-08-28 15:40:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,48.29999999999927
+ger40fut,2026-08-28 15:40:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,48.29999999999927
+ger40fut,2026-08-28 15:40:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,True,48.29999999999927
+ger40fut,2026-08-28 15:41:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:55:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:55:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:55:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:58:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:58:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:58:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 15:58:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:08:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:08:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:08:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:09:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:09:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:12:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:21:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:21:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:22:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:22:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:22:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:25:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:25:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:25:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:25:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:26:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:27:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:28:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:28:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:28:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:30:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:39:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:39:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:40:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:40:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:41:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:43:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:43:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:43:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:44:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:49:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:49:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:52:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:52:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:52:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:52:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:55:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:55:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:55:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 16:57:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:02:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:02:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:02:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:05:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:11:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:11:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:11:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:14:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:14:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:14:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:14:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:15:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:15:00+00:00,S0-H9,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:15:00+00:00,S1-H9,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:20:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:20:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:20:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:23:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:33:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:33:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:33:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:34:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:57:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 17:57:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,35.1,False,
+ger40fut,2026-08-28 17:57:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:04:00+00:00,S0-H2,directional,1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,29.2,False,
+ger40fut,2026-08-28 18:04:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,29.2,False,
+ger40fut,2026-08-28 18:04:00+00:00,S1-H2,directional,1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,29.2,False,
+ger40fut,2026-08-28 18:28:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:28:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,38.5,False,
+ger40fut,2026-08-28 18:28:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:36:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:36:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,35.5,False,
+ger40fut,2026-08-28 18:36:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:38:00+00:00,S0-H19,directional,1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,37.3,False,
+ger40fut,2026-08-28 18:38:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:38:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,37.3,False,
+ger40fut,2026-08-28 18:38:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:45:00+00:00,S0-H7,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:45:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,True,2026-08-28 18:52:00+00:00,35.8,False,
+ger40fut,2026-08-28 18:53:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,True,31.700000000000728
+ger40fut,2026-08-28 18:56:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,True,33.099999999998545
+ger40fut,2026-08-28 18:57:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,True,33.70000000000073
+ger40fut,2026-08-28 18:57:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,33.70000000000073
+ger40fut,2026-08-28 18:57:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,True,33.70000000000073
+ger40fut,2026-08-28 18:59:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 18:59:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,True,30.900000000001455
+ger40fut,2026-08-28 18:59:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,30.900000000001455
+ger40fut,2026-08-28 19:00:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 19:14:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 19:14:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 19:16:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 19:31:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+ger40fut,2026-08-28 19:31:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
 nas100fut,2026-07-21 19:30:00+00:00,S0-H16,directional,1,ny_only,backtest,,,False,,,True,50.400000000001455
 nas100fut,2026-07-22 19:30:00+00:00,S0-H16,directional,-1,ny_only,backtest,,,False,,,True,124.0
 nas100fut,2026-07-23 19:30:00+00:00,S0-H16,directional,-1,ny_only,backtest,,,False,,,False,
@@ -12972,7 +13208,7 @@ nas100fut,2026-07-27 10:03:00+00:00,S0-H14,directional,1,london,backtest,,,False
 nas100fut,2026-07-27 10:04:00+00:00,S0-H14,directional,1,london,backtest,,,False,,,False,
 nas100fut,2026-07-27 10:06:00+00:00,S0-H14,directional,1,london,backtest,,,False,,,False,
 nas100fut,2026-07-27 10:07:00+00:00,S0-H10,directional,1,london,backtest,,,False,,,False,
-nas100fut,2026-07-27 11:06:00+00:00,S0-H10,directional,1,london,backtest,,,False,,,False,
+nas100fut,2026-07-27 11:06:00+00:00,S0-H10,directional,1,london,backtest,,,True,2026-07-27 11:30:00+00:00,-20.6,False,
 nas100fut,2026-07-27 11:36:00+00:00,S0-H14,directional,-1,london,backtest,,,False,,,False,
 nas100fut,2026-07-27 11:38:00+00:00,S0-H14,directional,-1,london,backtest,,,False,,,True,41.80000000000291
 nas100fut,2026-07-27 11:41:00+00:00,S0-H10,directional,-1,london,backtest,,,False,,,True,45.0
@@ -15011,7 +15247,7 @@ nas100fut,2026-08-03 17:36:00+00:00,S0-H14,directional,1,ny_only,backtest,,,Fals
 nas100fut,2026-08-03 17:37:00+00:00,S0-H10,directional,1,ny_only,backtest,,,False,,,False,
 nas100fut,2026-08-03 17:38:00+00:00,S0-H10,directional,1,ny_only,backtest,,,False,,,False,
 nas100fut,2026-08-03 17:39:00+00:00,S0-H14,directional,1,ny_only,backtest,,,False,,,False,
-nas100fut,2026-08-03 17:40:00+00:00,S0-H10,directional,1,ny_only,backtest,,,False,,,False,
+nas100fut,2026-08-03 17:40:00+00:00,S0-H10,directional,1,ny_only,backtest,,,False,,,True,83.30000000000291
 nas100fut,2026-08-03 17:41:00+00:00,S0-H14,directional,1,ny_only,backtest,,,False,,,False,
 nas100fut,2026-08-03 17:42:00+00:00,S0-H14,directional,1,ny_only,backtest,,,False,,,False,
 nas100fut,2026-08-03 17:43:00+00:00,S0-H14,directional,1,ny_only,backtest,,,False,,,False,
@@ -16377,7 +16613,7 @@ nas100fut,2026-08-10 12:48:00+00:00,S0-H10,directional,-1,london,lockbox,,,False
 nas100fut,2026-08-10 12:53:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 nas100fut,2026-08-10 12:53:00+00:00,S1-H11,directional,-1,london,lockbox,,,False,,,False,
 nas100fut,2026-08-10 12:56:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,True,35.400000000001455
-nas100fut,2026-08-10 12:57:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,True,35.20000000000073
+nas100fut,2026-08-10 12:57:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 nas100fut,2026-08-10 13:00:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 nas100fut,2026-08-10 13:00:00+00:00,S1-H11,directional,-1,london,lockbox,,,False,,,False,
 nas100fut,2026-08-10 13:02:00+00:00,S0-H6,directional,1,london,lockbox,wide_bar_p90_trailing_day,True,False,,,False,
@@ -16888,8 +17124,8 @@ nas100fut,2026-08-11 18:12:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,Fals
 nas100fut,2026-08-11 18:13:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,True,63.89999999999782
 nas100fut,2026-08-11 18:15:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,True,63.599999999998545
 nas100fut,2026-08-11 18:16:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,True,62.099999999998545
-nas100fut,2026-08-11 18:17:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,True,58.89999999999782
-nas100fut,2026-08-11 18:18:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,True,58.89999999999782
+nas100fut,2026-08-11 18:17:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,False,
+nas100fut,2026-08-11 18:18:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-11 18:19:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,True,63.69999999999709
 nas100fut,2026-08-11 18:29:00+00:00,S1-H11,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-11 18:31:00+00:00,S1-H11,directional,1,ny_only,lockbox,,,False,,,True,79.20000000000073
@@ -17170,7 +17406,7 @@ nas100fut,2026-08-12 19:30:00+00:00,S0-H16,directional,1,ny_only,lockbox,,,False
 nas100fut,2026-08-12 19:32:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-12 19:33:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-12 19:35:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
-nas100fut,2026-08-12 19:36:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,True,48.599999999998545
+nas100fut,2026-08-12 19:36:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-12 19:37:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-12 19:38:00+00:00,S0-H14,directional,-1,ny_only,lockbox,,,False,,,False,
 nas100fut,2026-08-12 19:39:00+00:00,S0-H10,directional,-1,ny_only,lockbox,,,False,,,False,
@@ -19102,12 +19338,12 @@ nas100fut,2026-08-20 16:14:00+00:00,S0-H7 (either-dir),either-direction,1,ny_onl
 nas100fut,2026-08-20 16:58:00+00:00,S0-H2,directional,-1,ny_only,forward,,,True,2026-08-20 17:12:00+00:00,167.7,False,
 nas100fut,2026-08-20 16:58:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-20 17:12:00+00:00,167.7,False,
 nas100fut,2026-08-20 16:58:00+00:00,S1-H2,directional,-1,ny_only,forward,,,True,2026-08-20 17:12:00+00:00,167.7,False,
-nas100fut,2026-08-20 17:21:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-20 17:21:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-20 17:21:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-20 17:21:00+00:00,S0-H2,directional,1,ny_only,forward,,,True,2026-08-20 18:17:00+00:00,21.2,False,
+nas100fut,2026-08-20 17:21:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,True,2026-08-20 18:17:00+00:00,21.2,False,
+nas100fut,2026-08-20 17:21:00+00:00,S1-H2,directional,1,ny_only,forward,,,True,2026-08-20 18:17:00+00:00,21.2,False,
 nas100fut,2026-08-20 18:13:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-20 18:13:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-20 18:34:00+00:00,109.0,False,
-nas100fut,2026-08-20 18:17:00+00:00,S0-H19,directional,1,ny_only,forward,,,True,2026-08-20 18:34:00+00:00,128.5,False,
+nas100fut,2026-08-20 18:13:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,True,2026-08-20 18:17:00+00:00,109.0,False,
+nas100fut,2026-08-20 18:17:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,True,85.5
 nas100fut,2026-08-20 19:06:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-20 19:06:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-20 19:07:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
@@ -19224,18 +19460,18 @@ nas100fut,2026-08-21 09:41:00+00:00,S1-H11,directional,1,london,forward,,,False,
 nas100fut,2026-08-21 09:49:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 10:21:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 10:24:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
-nas100fut,2026-08-21 10:37:00+00:00,S1-H11,directional,-1,london,forward,,,True,2026-08-21 11:36:00+00:00,253.4,False,
+nas100fut,2026-08-21 10:37:00+00:00,S1-H11,directional,-1,london,forward,,,True,2026-08-21 11:37:00+00:00,253.4,False,
 nas100fut,2026-08-21 11:16:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,57.20000000000073
 nas100fut,2026-08-21 11:26:00+00:00,S0-H2,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-21 11:26:00+00:00,S0-H8,either-direction,1,london,forward,,,True,2026-08-21 11:36:00+00:00,303.6,False,
+nas100fut,2026-08-21 11:26:00+00:00,S0-H8,either-direction,1,london,forward,,,True,2026-08-21 11:37:00+00:00,303.6,False,
 nas100fut,2026-08-21 11:26:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 11:26:00+00:00,S1-H2,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-21 11:28:00+00:00,S0-H2,directional,-1,london,forward,,,True,2026-08-21 11:36:00+00:00,288.7,False,
-nas100fut,2026-08-21 11:28:00+00:00,S0-H8,either-direction,-1,london,forward,,,True,2026-08-21 11:36:00+00:00,288.7,False,
-nas100fut,2026-08-21 11:28:00+00:00,S1-H2,directional,-1,london,forward,,,True,2026-08-21 11:36:00+00:00,288.7,False,
-nas100fut,2026-08-21 11:30:00+00:00,S0-H19,directional,-1,london,forward,,,True,2026-08-21 11:36:00+00:00,297.2,False,
+nas100fut,2026-08-21 11:28:00+00:00,S0-H2,directional,-1,london,forward,,,True,2026-08-21 11:37:00+00:00,288.7,False,
+nas100fut,2026-08-21 11:28:00+00:00,S0-H8,either-direction,-1,london,forward,,,True,2026-08-21 11:37:00+00:00,288.7,False,
+nas100fut,2026-08-21 11:28:00+00:00,S1-H2,directional,-1,london,forward,,,True,2026-08-21 11:37:00+00:00,288.7,False,
+nas100fut,2026-08-21 11:30:00+00:00,S0-H19,directional,-1,london,forward,,,True,2026-08-21 11:37:00+00:00,297.2,False,
 nas100fut,2026-08-21 11:30:00+00:00,S0-H2,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-21 11:30:00+00:00,S0-H8,either-direction,1,london,forward,,,True,2026-08-21 11:36:00+00:00,297.2,False,
+nas100fut,2026-08-21 11:30:00+00:00,S0-H8,either-direction,1,london,forward,,,True,2026-08-21 11:37:00+00:00,297.2,False,
 nas100fut,2026-08-21 11:32:00+00:00,S1-H11,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 11:33:00+00:00,S0-H19,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 11:37:00+00:00,S0-H2,directional,-1,london,forward,,,False,,,True,47.900000000001455
@@ -19249,7 +19485,7 @@ nas100fut,2026-08-21 12:08:00+00:00,S0-H10,directional,-1,london,forward,,,False
 nas100fut,2026-08-21 12:11:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 12:14:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 12:15:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
-nas100fut,2026-08-21 12:15:00+00:00,S0-H9,directional,1,london,forward,,,False,,,False,
+nas100fut,2026-08-21 12:15:00+00:00,S0-H9,directional,1,london,forward,,,False,,,True,43.79999999999927
 nas100fut,2026-08-21 12:16:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 12:17:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-21 12:32:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-21 13:26:00+00:00,-34.0,False,
@@ -19285,7 +19521,7 @@ nas100fut,2026-08-21 18:25:00+00:00,S0-H14,directional,-1,ny_only,forward,,,Fals
 nas100fut,2026-08-21 18:28:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-21 18:41:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-21 18:43:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-21 19:30:00+00:00,S0-H16,directional,-1,ny_only,forward,,,True,2026-08-21 19:47:00+00:00,25.6,False,
+nas100fut,2026-08-21 19:30:00+00:00,S0-H16,directional,-1,ny_only,forward,,,True,2026-08-21 19:48:00+00:00,25.6,False,
 nas100fut,2026-08-21 20:24:00+00:00,S1-H11,directional,-1,dead,forward,,,False,,,False,
 nas100fut,2026-08-23 22:02:00+00:00,S0-H1,directional,1,dead,forward,,,False,,,True,68.29999999999927
 nas100fut,2026-08-23 22:02:00+00:00,S1-H11,directional,-1,dead,forward,,,False,,,False,
@@ -19638,7 +19874,7 @@ nas100fut,2026-08-24 18:00:00+00:00,S0-H10,directional,-1,ny_only,forward,,,True
 nas100fut,2026-08-24 18:02:00+00:00,S0-H7,directional,-1,ny_only,forward,,,True,2026-08-24 18:29:00+00:00,67.4,False,
 nas100fut,2026-08-24 18:02:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,True,2026-08-24 18:29:00+00:00,67.4,True,3.0
 nas100fut,2026-08-24 19:00:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-24 19:22:00+00:00,S0-H10,directional,-1,ny_only,forward,,,False,,,True,65.5
+nas100fut,2026-08-24 19:22:00+00:00,S0-H10,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-24 19:30:00+00:00,S0-H16,directional,-1,ny_only,forward,,,False,,,True,76.09999999999854
 nas100fut,2026-08-24 19:36:00+00:00,S0-H7,directional,1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-24 19:36:00+00:00,S0-H7 (either-dir),either-direction,1,ny_only,forward,,,False,,,False,
@@ -20010,38 +20246,38 @@ nas100fut,2026-08-26 15:12:00+00:00,S0-H10,directional,1,overlap,forward,,,False
 nas100fut,2026-08-26 15:15:00+00:00,S0-H14,directional,1,overlap,forward,,,False,,,False,
 nas100fut,2026-08-26 15:43:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 16:40:00+00:00,15.5,False,
 nas100fut,2026-08-26 15:46:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 15:48:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,True,104.5
+nas100fut,2026-08-26 15:48:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-26 15:59:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-26 16:58:00+00:00,S0-H7,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-26 16:58:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:01:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:04:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,210.9,False,
+nas100fut,2026-08-26 17:01:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,208.3,False,
+nas100fut,2026-08-26 17:04:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,210.9,False,
 nas100fut,2026-08-26 17:06:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:14:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,195.8,False,
-nas100fut,2026-08-26 17:15:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,195.3,False,
+nas100fut,2026-08-26 17:14:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,195.8,False,
+nas100fut,2026-08-26 17:15:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,195.3,False,
 nas100fut,2026-08-26 17:15:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:20:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,179.5,False,
-nas100fut,2026-08-26 17:22:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,175.5,False,
-nas100fut,2026-08-26 17:23:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,173.8,False,
-nas100fut,2026-08-26 17:25:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,164.5,False,
-nas100fut,2026-08-26 17:27:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,170.8,False,
-nas100fut,2026-08-26 17:29:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,165.3,False,
-nas100fut,2026-08-26 17:30:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,165.8,False,
-nas100fut,2026-08-26 17:31:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,162.0,False,
-nas100fut,2026-08-26 17:31:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,162.0,False,
-nas100fut,2026-08-26 17:32:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,168.3,False,
-nas100fut,2026-08-26 17:34:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,162.2,False,
-nas100fut,2026-08-26 17:34:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,162.2,False,
-nas100fut,2026-08-26 17:38:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,154.7,False,
-nas100fut,2026-08-26 17:38:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,154.7,False,
-nas100fut,2026-08-26 17:40:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,152.8,False,
+nas100fut,2026-08-26 17:20:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,179.5,False,
+nas100fut,2026-08-26 17:22:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,175.5,False,
+nas100fut,2026-08-26 17:23:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,173.8,False,
+nas100fut,2026-08-26 17:25:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,164.5,False,
+nas100fut,2026-08-26 17:27:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,170.8,False,
+nas100fut,2026-08-26 17:29:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,165.3,False,
+nas100fut,2026-08-26 17:30:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,165.8,False,
+nas100fut,2026-08-26 17:31:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,162.0,False,
+nas100fut,2026-08-26 17:31:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,162.0,False,
+nas100fut,2026-08-26 17:32:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,168.3,False,
+nas100fut,2026-08-26 17:34:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,162.2,False,
+nas100fut,2026-08-26 17:34:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,162.2,False,
+nas100fut,2026-08-26 17:38:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,154.7,False,
+nas100fut,2026-08-26 17:38:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,154.7,False,
+nas100fut,2026-08-26 17:40:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,152.8,False,
 nas100fut,2026-08-26 17:40:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:41:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,146.9,False,
-nas100fut,2026-08-26 17:42:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,142.9,False,
+nas100fut,2026-08-26 17:41:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,146.9,False,
+nas100fut,2026-08-26 17:42:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,142.9,False,
 nas100fut,2026-08-26 17:45:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:47:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,157.3,False,
+nas100fut,2026-08-26 17:47:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,157.3,False,
 nas100fut,2026-08-26 17:49:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
-nas100fut,2026-08-26 17:51:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:02:00+00:00,151.8,False,
+nas100fut,2026-08-26 17:51:00+00:00,S1-H11,directional,1,ny_only,forward,,,True,2026-08-26 18:01:00+00:00,151.8,False,
 nas100fut,2026-08-26 17:53:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
 nas100fut,2026-08-26 18:01:00+00:00,S1-H11,directional,-1,ny_only,forward,,,True,2026-08-26 19:01:00+00:00,-1.2,False,
 nas100fut,2026-08-26 18:03:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,True,72.59999999999854
@@ -20488,13 +20724,13 @@ nas100fut,2026-08-28 08:30:00+00:00,S0-H9,directional,-1,london,forward,,,False,
 nas100fut,2026-08-28 08:30:00+00:00,S0-H9,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 08:35:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 08:39:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 10:53:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,4.3,False,
-nas100fut,2026-08-28 10:54:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,5.0,False,
-nas100fut,2026-08-28 10:56:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,9.8,False,
-nas100fut,2026-08-28 11:01:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,18.0,False,
+nas100fut,2026-08-28 10:53:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,164.8,False,
+nas100fut,2026-08-28 10:54:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,165.5,False,
+nas100fut,2026-08-28 10:56:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,170.3,False,
+nas100fut,2026-08-28 11:01:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-28 11:25:00+00:00,178.5,False,
 nas100fut,2026-08-28 11:29:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 11:59:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:00:00+00:00,S0-H9,directional,1,london,forward,,,False,,,True,59.0
+nas100fut,2026-08-28 12:00:00+00:00,S0-H9,directional,1,london,forward,,,False,,,True,59.80000000000291
 nas100fut,2026-08-28 12:01:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 12:02:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 12:04:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
@@ -20506,11 +20742,195 @@ nas100fut,2026-08-28 12:24:00+00:00,S0-H11,directional,1,london,forward,,,False,
 nas100fut,2026-08-28 12:27:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 12:28:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
 nas100fut,2026-08-28 12:29:00+00:00,S0-H11,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:32:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:34:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:38:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:39:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-nas100fut,2026-08-28 12:40:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
+nas100fut,2026-08-28 12:32:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,41.5
+nas100fut,2026-08-28 12:34:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,42.80000000000291
+nas100fut,2026-08-28 12:38:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,51.30000000000291
+nas100fut,2026-08-28 12:39:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,41.80000000000291
+nas100fut,2026-08-28 12:40:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,45.80000000000291
+nas100fut,2026-08-28 12:41:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,61.80000000000291
+nas100fut,2026-08-28 12:43:00+00:00,S0-H11,directional,1,london,forward,,,False,,,True,40.20000000000073
+nas100fut,2026-08-28 12:44:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,42.70000000000073
+nas100fut,2026-08-28 12:45:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,40.29999999999927
+nas100fut,2026-08-28 12:46:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,41.20000000000073
+nas100fut,2026-08-28 12:47:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,43.0
+nas100fut,2026-08-28 12:48:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,47.39999999999782
+nas100fut,2026-08-28 12:49:00+00:00,S0-H11,directional,1,london,forward,,,False,,,True,42.39999999999782
+nas100fut,2026-08-28 12:52:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,36.79999999999927
+nas100fut,2026-08-28 12:53:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,38.29999999999927
+nas100fut,2026-08-28 12:54:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,41.39999999999782
+nas100fut,2026-08-28 12:55:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,38.5
+nas100fut,2026-08-28 12:57:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,42.20000000000073
+nas100fut,2026-08-28 12:58:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,42.20000000000073
+nas100fut,2026-08-28 13:00:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,39.70000000000073
+nas100fut,2026-08-28 13:04:00+00:00,S0-H11,directional,-1,london,forward,,,False,,,True,96.0
+nas100fut,2026-08-28 13:08:00+00:00,S0-H11,directional,1,london,forward,,,False,,,True,33.89999999999782
+nas100fut,2026-08-28 13:13:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,41.20000000000073
+nas100fut,2026-08-28 13:14:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,42.89999999999782
+nas100fut,2026-08-28 13:16:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,41.0
+nas100fut,2026-08-28 13:17:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,37.20000000000073
+nas100fut,2026-08-28 13:18:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,43.20000000000073
+nas100fut,2026-08-28 13:40:00+00:00,S0-H10,directional,-1,overlap,forward,,,False,,,True,130.59999999999854
+nas100fut,2026-08-28 13:42:00+00:00,S0-H10,directional,-1,overlap,forward,,,False,,,True,177.29999999999927
+nas100fut,2026-08-28 13:42:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,False,
+nas100fut,2026-08-28 13:43:00+00:00,S0-H14,directional,-1,overlap,forward,,,False,,,True,174.09999999999854
+nas100fut,2026-08-28 13:44:00+00:00,S0-H14,directional,-1,overlap,forward,,,False,,,True,173.09999999999854
+nas100fut,2026-08-28 13:45:00+00:00,S0-H14,directional,-1,overlap,forward,,,False,,,True,166.09999999999854
+nas100fut,2026-08-28 13:47:00+00:00,S0-H11,directional,-1,overlap,forward,,,False,,,True,151.79999999999927
+nas100fut,2026-08-28 13:50:00+00:00,S0-H11,directional,-1,overlap,forward,,,False,,,True,137.09999999999854
+nas100fut,2026-08-28 13:59:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,True,139.5
+nas100fut,2026-08-28 14:01:00+00:00,S0-H18,directional,1,overlap,forward,,,False,,,True,120.5
+nas100fut,2026-08-28 14:07:00+00:00,S0-H6,directional,1,overlap,forward,wide_bar_p90_trailing_day,True,False,,,True,219.5
+nas100fut,2026-08-28 14:13:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,250.29999999999927
+nas100fut,2026-08-28 14:13:00+00:00,S0-H6,directional,1,overlap,forward,wide_bar_p90_trailing_day,True,False,,,True,250.29999999999927
+nas100fut,2026-08-28 14:13:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,250.29999999999927
+nas100fut,2026-08-28 14:13:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,250.29999999999927
+nas100fut,2026-08-28 14:23:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,True,137.79999999999927
+nas100fut,2026-08-28 14:27:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,165.09999999999854
+nas100fut,2026-08-28 14:27:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,165.09999999999854
+nas100fut,2026-08-28 14:27:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,165.09999999999854
+nas100fut,2026-08-28 14:30:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,False,
+nas100fut,2026-08-28 14:34:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,True,140.29999999999927
+nas100fut,2026-08-28 14:39:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,True,106.59999999999854
+nas100fut,2026-08-28 14:41:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,True,106.59999999999854
+nas100fut,2026-08-28 14:41:00+00:00,S0-H18,directional,1,overlap,forward,,,False,,,True,106.59999999999854
+nas100fut,2026-08-28 15:15:00+00:00,S0-H2,directional,-1,overlap,forward,,,False,,,True,219.60000000000218
+nas100fut,2026-08-28 15:15:00+00:00,S0-H8,either-direction,-1,overlap,forward,,,False,,,True,219.60000000000218
+nas100fut,2026-08-28 15:41:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,True,199.39999999999782
+nas100fut,2026-08-28 15:42:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 15:42:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,-8.299999999999272
+nas100fut,2026-08-28 15:42:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 15:43:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,True,206.39999999999782
+nas100fut,2026-08-28 15:44:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,True,212.59999999999854
+nas100fut,2026-08-28 15:45:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,True,194.1999999999971
+nas100fut,2026-08-28 15:48:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,175.1999999999971
+nas100fut,2026-08-28 15:48:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,175.1999999999971
+nas100fut,2026-08-28 15:48:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,True,175.1999999999971
+nas100fut,2026-08-28 15:49:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 15:54:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,117.39999999999782
+nas100fut,2026-08-28 15:54:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,117.39999999999782
+nas100fut,2026-08-28 15:55:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:00:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:00:00+00:00,S1-H9,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:03:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:03:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:03:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:04:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:07:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:07:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:07:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:08:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:09:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:09:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,12.400000000001455
+nas100fut,2026-08-28 16:09:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:10:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,True,143.79999999999927
+nas100fut,2026-08-28 16:10:00+00:00,S0-H9,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:10:00+00:00,S1-H9,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:11:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:11:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,-22.099999999998545
+nas100fut,2026-08-28 16:11:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:13:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:15:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:15:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:15:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:16:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:21:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:21:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:22:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:22:00+00:00,S0-H6,directional,1,ny_only,forward,wide_bar_p90_trailing_day,True,False,,,False,
+nas100fut,2026-08-28 16:22:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:22:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:23:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:25:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:25:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:25:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:26:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:26:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:26:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:26:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:27:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:27:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:27:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:29:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:29:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:29:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:30:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:30:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:30:00+00:00,S1-H9,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:34:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:38:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:38:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:38:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:43:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:47:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:47:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:47:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:50:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:53:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:53:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:53:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:55:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:55:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:55:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 16:57:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:01:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:02:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:03:00+00:00,S0-H1,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:05:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:05:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:05:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:06:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:11:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:11:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:11:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:12:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:14:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:14:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:14:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S0-H9,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:15:00+00:00,S1-H9,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:18:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:20:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:20:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:20:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:21:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:21:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:21:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:22:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:24:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:24:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:25:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:26:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:31:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:31:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:31:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:32:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:32:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:32:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:32:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:33:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:33:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:33:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:34:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:46:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:46:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:47:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:53:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:53:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:53:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 17:56:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 18:57:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 18:57:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 18:57:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:02:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:04:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:04:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:04:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:06:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+nas100fut,2026-08-28 19:30:00+00:00,S0-H16,directional,-1,ny_only,forward,,,False,,,False,
 us30fut,2026-07-21 19:30:00+00:00,S0-H16,directional,1,ny_only,backtest,,,False,,,False,
 us30fut,2026-07-22 19:30:00+00:00,S0-H16,directional,1,ny_only,backtest,,,False,,,True,101.5
 us30fut,2026-07-23 19:30:00+00:00,S0-H16,directional,-1,ny_only,backtest,,,False,,,True,100.0
@@ -20656,8 +21076,8 @@ us30fut,2026-07-27 15:54:00+00:00,S0-H2,directional,1,ny_only,backtest,,,False,,
 us30fut,2026-07-27 15:54:00+00:00,S0-H8,either-direction,1,ny_only,backtest,,,False,,,True,147.5
 us30fut,2026-07-27 15:54:00+00:00,S1-H2,directional,1,ny_only,backtest,,,False,,,True,147.5
 us30fut,2026-07-27 15:56:00+00:00,S0-H19,directional,-1,ny_only,backtest,,,False,,,False,
-us30fut,2026-07-27 15:56:00+00:00,S0-H2,directional,1,ny_only,backtest,,,False,,,False,
-us30fut,2026-07-27 15:56:00+00:00,S0-H8,either-direction,1,ny_only,backtest,,,False,,,False,
+us30fut,2026-07-27 15:56:00+00:00,S0-H2,directional,1,ny_only,backtest,,,False,,,True,143.5
+us30fut,2026-07-27 15:56:00+00:00,S0-H8,either-direction,1,ny_only,backtest,,,False,,,True,143.5
 us30fut,2026-07-27 15:58:00+00:00,S0-H19,directional,1,ny_only,backtest,,,False,,,True,160.5
 us30fut,2026-07-27 16:03:00+00:00,S0-H2,directional,-1,ny_only,backtest,,,False,,,False,
 us30fut,2026-07-27 16:03:00+00:00,S0-H8,either-direction,-1,ny_only,backtest,,,False,,,True,11.0
@@ -20974,7 +21394,7 @@ us30fut,2026-07-28 08:40:00+00:00,S0-H11,directional,-1,london,backtest,,,False,
 us30fut,2026-07-28 08:42:00+00:00,S0-H2,directional,-1,london,backtest,,,False,,,False,
 us30fut,2026-07-28 08:42:00+00:00,S0-H8,either-direction,-1,london,backtest,,,False,,,False,
 us30fut,2026-07-28 08:42:00+00:00,S1-H2,directional,-1,london,backtest,,,False,,,False,
-us30fut,2026-07-28 08:44:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,False,
+us30fut,2026-07-28 08:44:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,True,66.5
 us30fut,2026-07-28 08:48:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,False,
 us30fut,2026-07-28 08:59:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,True,79.5
 us30fut,2026-07-28 09:01:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,True,73.5
@@ -22580,7 +23000,7 @@ us30fut,2026-08-03 11:04:00+00:00,S0-H11,directional,-1,london,backtest,,,False,
 us30fut,2026-08-03 11:08:00+00:00,S0-H11,directional,1,london,backtest,,,False,,,True,122.0
 us30fut,2026-08-03 11:12:00+00:00,S0-H18,directional,1,london,backtest,,,False,,,True,87.0
 us30fut,2026-08-03 11:19:00+00:00,S0-H14,directional,1,london,backtest,,,False,,,True,72.5
-us30fut,2026-08-03 11:20:00+00:00,S0-H14,directional,1,london,backtest,,,False,,,False,
+us30fut,2026-08-03 11:20:00+00:00,S0-H14,directional,1,london,backtest,,,False,,,True,67.0
 us30fut,2026-08-03 11:22:00+00:00,S0-H6,directional,-1,london,backtest,wide_bar_p90_trailing_day,True,False,,,False,
 us30fut,2026-08-03 11:23:00+00:00,S0-H7,directional,1,london,backtest,,,False,,,True,92.0
 us30fut,2026-08-03 11:23:00+00:00,S0-H7 (either-dir),either-direction,1,london,backtest,,,False,,,True,92.0
@@ -24762,7 +25182,7 @@ us30fut,2026-08-13 09:00:00+00:00,S0-H9,directional,-1,london,lockbox,,,True,202
 us30fut,2026-08-13 09:26:00+00:00,S0-H6,directional,-1,london,lockbox,wide_bar_p90_trailing_day,True,False,,,True,35.0
 us30fut,2026-08-13 09:27:00+00:00,S0-H6,directional,-1,london,lockbox,wide_bar_p90_trailing_day,True,False,,,False,
 us30fut,2026-08-13 09:45:00+00:00,S0-H9,directional,-1,london,lockbox,,,False,,,False,
-us30fut,2026-08-13 10:00:00+00:00,S0-H9,directional,1,london,lockbox,,,True,2026-08-13 10:37:00+00:00,161.0,False,
+us30fut,2026-08-13 10:00:00+00:00,S0-H9,directional,1,london,lockbox,,,True,2026-08-13 10:36:00+00:00,161.0,False,
 us30fut,2026-08-13 11:00:00+00:00,S0-H9,directional,-1,london,lockbox,,,True,2026-08-13 11:33:00+00:00,273.5,False,
 us30fut,2026-08-13 11:16:00+00:00,S0-H10,directional,1,london,lockbox,,,False,,,True,48.0
 us30fut,2026-08-13 11:17:00+00:00,S0-H10,directional,1,london,lockbox,,,False,,,True,51.5
@@ -24830,16 +25250,16 @@ us30fut,2026-08-13 17:16:00+00:00,S0-H11,directional,1,ny_only,lockbox,,,False,,
 us30fut,2026-08-13 17:22:00+00:00,S0-H14,directional,1,ny_only,lockbox,,,False,,,False,
 us30fut,2026-08-13 17:24:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,False,,,False,
 us30fut,2026-08-13 17:25:00+00:00,S0-H14,directional,1,ny_only,lockbox,,,False,,,False,
-us30fut,2026-08-13 17:26:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,False,,,False,
+us30fut,2026-08-13 17:26:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,92.0,False,
 us30fut,2026-08-13 17:27:00+00:00,S0-H11,directional,-1,ny_only,lockbox,,,False,,,False,
-us30fut,2026-08-13 17:30:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,False,,,False,
-us30fut,2026-08-13 17:31:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,110.0,False,
+us30fut,2026-08-13 17:30:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,108.0,False,
+us30fut,2026-08-13 17:31:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,110.0,False,
 us30fut,2026-08-13 17:32:00+00:00,S0-H18,directional,-1,ny_only,lockbox,,,False,,,False,
-us30fut,2026-08-13 17:36:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,132.0,False,
-us30fut,2026-08-13 17:53:00+00:00,S0-H11,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,104.0,False,
-us30fut,2026-08-13 17:58:00+00:00,S0-H11,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,106.0,False,
-us30fut,2026-08-13 17:58:00+00:00,S0-H18,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,106.0,False,
-us30fut,2026-08-13 18:23:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:31:00+00:00,87.5,False,
+us30fut,2026-08-13 17:36:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,132.0,False,
+us30fut,2026-08-13 17:53:00+00:00,S0-H11,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,104.0,False,
+us30fut,2026-08-13 17:58:00+00:00,S0-H11,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,106.0,False,
+us30fut,2026-08-13 17:58:00+00:00,S0-H18,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,106.0,False,
+us30fut,2026-08-13 18:23:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,True,2026-08-13 18:26:00+00:00,87.5,False,
 us30fut,2026-08-13 18:42:00+00:00,S0-H13,directional,1,ny_only,lockbox,,,False,,,False,
 us30fut,2026-08-13 18:54:00+00:00,S0-H14,directional,1,ny_only,lockbox,,,False,,,False,
 us30fut,2026-08-13 19:29:00+00:00,S0-H10,directional,1,ny_only,lockbox,,,False,,,False,
@@ -25042,7 +25462,7 @@ us30fut,2026-08-14 11:10:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,
 us30fut,2026-08-14 11:16:00+00:00,S0-H6,directional,1,london,lockbox,wide_bar_p90_trailing_day,True,False,,,True,69.0
 us30fut,2026-08-14 11:18:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 us30fut,2026-08-14 11:23:00+00:00,S0-H10,directional,-1,london,lockbox,,,False,,,False,
-us30fut,2026-08-14 11:26:00+00:00,S0-H10,directional,-1,london,lockbox,,,False,,,True,13.0
+us30fut,2026-08-14 11:26:00+00:00,S0-H10,directional,-1,london,lockbox,,,False,,,False,
 us30fut,2026-08-14 11:27:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 us30fut,2026-08-14 11:28:00+00:00,S0-H14,directional,-1,london,lockbox,,,False,,,False,
 us30fut,2026-08-14 11:44:00+00:00,S0-H14,directional,1,london,lockbox,,,False,,,False,
@@ -25288,12 +25708,12 @@ us30fut,2026-08-17 08:18:00+00:00,S0-H6,directional,1,london,forward,wide_bar_p9
 us30fut,2026-08-17 08:20:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
 us30fut,2026-08-17 08:21:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
 us30fut,2026-08-17 08:22:00+00:00,S0-H14,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-17 08:24:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,-1.5,False,
-us30fut,2026-08-17 08:26:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,-12.5,False,
-us30fut,2026-08-17 08:27:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,-11.0,False,
-us30fut,2026-08-17 08:28:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,-11.0,False,
-us30fut,2026-08-17 08:33:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,1.5,False,
-us30fut,2026-08-17 08:37:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,1.0,False,
+us30fut,2026-08-17 08:24:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
+us30fut,2026-08-17 08:26:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,-12.5,False,
+us30fut,2026-08-17 08:27:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,-11.0,False,
+us30fut,2026-08-17 08:28:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,-11.0,False,
+us30fut,2026-08-17 08:33:00+00:00,S0-H14,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,1.5,False,
+us30fut,2026-08-17 08:37:00+00:00,S0-H10,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,1.0,False,
 us30fut,2026-08-17 08:42:00+00:00,S0-H11,directional,1,london,forward,,,False,,,True,39.0
 us30fut,2026-08-17 08:57:00+00:00,S0-H11,directional,1,london,forward,,,False,,,False,
 us30fut,2026-08-17 09:04:00+00:00,S0-H11,directional,1,london,forward,,,False,,,False,
@@ -25302,7 +25722,7 @@ us30fut,2026-08-17 09:14:00+00:00,S0-H14,directional,1,london,forward,,,False,,,
 us30fut,2026-08-17 09:16:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
 us30fut,2026-08-17 09:17:00+00:00,S0-H11,directional,1,london,forward,,,False,,,False,
 us30fut,2026-08-17 09:18:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-us30fut,2026-08-17 09:19:00+00:00,S0-H11,directional,-1,london,forward,,,True,2026-08-17 09:24:00+00:00,35.5,False,
+us30fut,2026-08-17 09:19:00+00:00,S0-H11,directional,-1,london,forward,,,True,2026-08-17 09:25:00+00:00,35.5,False,
 us30fut,2026-08-17 09:21:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
 us30fut,2026-08-17 09:22:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
 us30fut,2026-08-17 09:24:00+00:00,S0-H11,directional,1,london,forward,,,False,,,False,
@@ -25859,10 +26279,10 @@ us30fut,2026-08-18 16:28:00+00:00,S0-H7 (either-dir),either-direction,1,ny_only,
 us30fut,2026-08-18 16:32:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-18 16:33:00+00:00,S0-H14,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-18 16:34:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
-us30fut,2026-08-18 18:14:00+00:00,S0-H7,directional,-1,ny_only,forward,,,True,2026-08-18 19:09:00+00:00,56.5,False,
-us30fut,2026-08-18 18:14:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,True,2026-08-18 19:09:00+00:00,56.5,False,
+us30fut,2026-08-18 18:14:00+00:00,S0-H7,directional,-1,ny_only,forward,,,True,2026-08-18 19:11:00+00:00,56.5,False,
+us30fut,2026-08-18 18:14:00+00:00,S0-H7 (either-dir),either-direction,-1,ny_only,forward,,,True,2026-08-18 19:11:00+00:00,56.5,False,
 us30fut,2026-08-18 18:36:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
-us30fut,2026-08-18 18:40:00+00:00,S0-H11,directional,-1,ny_only,forward,,,True,2026-08-18 19:09:00+00:00,84.0,False,
+us30fut,2026-08-18 18:40:00+00:00,S0-H11,directional,-1,ny_only,forward,,,True,2026-08-18 19:11:00+00:00,84.0,False,
 us30fut,2026-08-18 18:43:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-18 19:24:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,True,76.0
 us30fut,2026-08-18 19:28:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
@@ -27446,20 +27866,20 @@ us30fut,2026-08-25 18:04:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,
 us30fut,2026-08-25 18:06:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-25 18:09:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-25 18:10:00+00:00,S0-H10,directional,1,ny_only,forward,,,False,,,False,
-us30fut,2026-08-25 18:11:00+00:00,S0-H14,directional,1,ny_only,forward,,,False,,,False,
-us30fut,2026-08-25 18:12:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,78.0,False,
-us30fut,2026-08-25 18:13:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,77.0,False,
-us30fut,2026-08-25 18:16:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,82.0,False,
-us30fut,2026-08-25 18:17:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,84.0,False,
-us30fut,2026-08-25 18:18:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,77.0,False,
-us30fut,2026-08-25 18:21:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,76.0,False,
+us30fut,2026-08-25 18:11:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,80.0,False,
+us30fut,2026-08-25 18:12:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,78.0,False,
+us30fut,2026-08-25 18:13:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,77.0,False,
+us30fut,2026-08-25 18:16:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,82.0,False,
+us30fut,2026-08-25 18:17:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,84.0,False,
+us30fut,2026-08-25 18:18:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,77.0,False,
+us30fut,2026-08-25 18:21:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,76.0,False,
 us30fut,2026-08-25 18:30:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
-us30fut,2026-08-25 18:34:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,60.0,False,
-us30fut,2026-08-25 18:42:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,60.0,False,
-us30fut,2026-08-25 18:46:00+00:00,S0-H18,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,37.0,False,
-us30fut,2026-08-25 18:54:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,30.0,False,
-us30fut,2026-08-25 18:57:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,41.0,False,
-us30fut,2026-08-25 19:00:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:12:00+00:00,32.0,False,
+us30fut,2026-08-25 18:34:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,60.0,False,
+us30fut,2026-08-25 18:42:00+00:00,S0-H11,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,60.0,False,
+us30fut,2026-08-25 18:46:00+00:00,S0-H18,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,37.0,False,
+us30fut,2026-08-25 18:54:00+00:00,S0-H14,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,30.0,False,
+us30fut,2026-08-25 18:57:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,41.0,False,
+us30fut,2026-08-25 19:00:00+00:00,S0-H10,directional,1,ny_only,forward,,,True,2026-08-25 19:11:00+00:00,32.0,False,
 us30fut,2026-08-25 19:10:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-25 19:25:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
 us30fut,2026-08-25 19:30:00+00:00,S0-H16,directional,1,ny_only,forward,,,False,,,False,
@@ -28044,28 +28464,292 @@ us30fut,2026-08-28 09:42:00+00:00,S1-H11,directional,-1,london,forward,,,False,,
 us30fut,2026-08-28 09:56:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
 us30fut,2026-08-28 10:01:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,True,50.0
 us30fut,2026-08-28 10:16:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,True,48.5
-us30fut,2026-08-28 10:24:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,54.0,False,
+us30fut,2026-08-28 10:24:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,191.5,False,
 us30fut,2026-08-28 10:26:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,True,47.0
-us30fut,2026-08-28 10:29:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,55.5,False,
-us30fut,2026-08-28 10:31:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,56.5,False,
-us30fut,2026-08-28 10:38:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,56.5,False,
+us30fut,2026-08-28 10:29:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,193.0,False,
+us30fut,2026-08-28 10:31:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,194.0,False,
+us30fut,2026-08-28 10:38:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,194.0,False,
 us30fut,2026-08-28 10:41:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,True,51.0
 us30fut,2026-08-28 10:44:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
 us30fut,2026-08-28 10:53:00+00:00,S0-H10,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-28 10:59:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,87.5,False,
+us30fut,2026-08-28 10:59:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,225.0,False,
 us30fut,2026-08-28 11:03:00+00:00,S0-H7,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-28 11:03:00+00:00,S0-H7 (either-dir),either-direction,-1,london,forward,,,True,2026-08-28 11:12:00+00:00,85.0,False,
-us30fut,2026-08-28 11:03:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,85.0,False,
+us30fut,2026-08-28 11:03:00+00:00,S0-H7 (either-dir),either-direction,-1,london,forward,,,True,2026-08-28 11:12:00+00:00,222.5,False,
+us30fut,2026-08-28 11:03:00+00:00,S1-H11,directional,1,london,forward,,,True,2026-08-28 11:12:00+00:00,222.5,False,
 us30fut,2026-08-28 11:14:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,48.0
 us30fut,2026-08-28 11:23:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,85.0
 us30fut,2026-08-28 11:31:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,77.5
 us30fut,2026-08-28 11:47:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,79.0
-us30fut,2026-08-28 11:56:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:01:00+00:00,S1-H11,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:04:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,54.5
-us30fut,2026-08-28 12:10:00+00:00,S0-H9,directional,-1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:12:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,54.5
-us30fut,2026-08-28 12:21:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:32:00+00:00,S0-H14,directional,1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:35:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
-us30fut,2026-08-28 12:38:00+00:00,S0-H10,directional,1,london,forward,,,False,,,False,
+us30fut,2026-08-28 11:56:00+00:00,S1-H11,directional,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,136.5,False,
+us30fut,2026-08-28 12:01:00+00:00,S1-H11,directional,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,136.0,False,
+us30fut,2026-08-28 12:04:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,81.5
+us30fut,2026-08-28 12:10:00+00:00,S0-H9,directional,-1,london,forward,,,True,2026-08-28 12:39:00+00:00,159.5,False,
+us30fut,2026-08-28 12:12:00+00:00,S1-H11,directional,1,london,forward,,,False,,,True,81.5
+us30fut,2026-08-28 12:21:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,45.5
+us30fut,2026-08-28 12:32:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,64.5
+us30fut,2026-08-28 12:35:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,80.5
+us30fut,2026-08-28 12:38:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,76.0
+us30fut,2026-08-28 12:42:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,68.5
+us30fut,2026-08-28 12:44:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,57.0
+us30fut,2026-08-28 12:52:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,40.5
+us30fut,2026-08-28 12:55:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,48.5
+us30fut,2026-08-28 12:57:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,49.5
+us30fut,2026-08-28 12:59:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,49.0
+us30fut,2026-08-28 13:00:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,54.0
+us30fut,2026-08-28 13:06:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,34.0
+us30fut,2026-08-28 13:08:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,30.0
+us30fut,2026-08-28 13:17:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,72.5
+us30fut,2026-08-28 13:18:00+00:00,S0-H10,directional,1,london,forward,,,False,,,True,75.0
+us30fut,2026-08-28 13:19:00+00:00,S0-H14,directional,1,london,forward,,,False,,,True,73.5
+us30fut,2026-08-28 13:32:00+00:00,S0-H6,directional,-1,overlap,forward,wide_bar_p90_trailing_day,True,False,,,True,217.5
+us30fut,2026-08-28 13:35:00+00:00,S0-H13,directional,-1,overlap,forward,,,False,,,True,177.5
+us30fut,2026-08-28 13:39:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,True,112.5
+us30fut,2026-08-28 13:41:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,True,132.0
+us30fut,2026-08-28 13:43:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,True,132.5
+us30fut,2026-08-28 14:05:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,151.0
+us30fut,2026-08-28 14:05:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,151.0
+us30fut,2026-08-28 14:05:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,151.0
+us30fut,2026-08-28 14:06:00+00:00,S0-H2,directional,-1,overlap,forward,,,False,,,True,130.0
+us30fut,2026-08-28 14:06:00+00:00,S0-H8,either-direction,-1,overlap,forward,,,False,,,True,130.0
+us30fut,2026-08-28 14:06:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,True,130.0
+us30fut,2026-08-28 14:06:00+00:00,S1-H2,directional,-1,overlap,forward,,,False,,,True,130.0
+us30fut,2026-08-28 14:07:00+00:00,S0-H19,directional,1,overlap,forward,,,False,,,True,191.5
+us30fut,2026-08-28 14:08:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,121.5
+us30fut,2026-08-28 14:08:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,176.0
+us30fut,2026-08-28 14:08:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,176.0
+us30fut,2026-08-28 14:08:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,176.0
+us30fut,2026-08-28 14:09:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,155.0
+us30fut,2026-08-28 14:10:00+00:00,S0-H2,directional,-1,overlap,forward,,,False,,,True,137.0
+us30fut,2026-08-28 14:10:00+00:00,S0-H8,either-direction,-1,overlap,forward,,,False,,,True,137.0
+us30fut,2026-08-28 14:10:00+00:00,S1-H2,directional,-1,overlap,forward,,,False,,,True,137.0
+us30fut,2026-08-28 14:11:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,True,110.0
+us30fut,2026-08-28 14:12:00+00:00,S0-H19,directional,1,overlap,forward,,,False,,,True,202.5
+us30fut,2026-08-28 14:13:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,191.0
+us30fut,2026-08-28 14:16:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,199.5
+us30fut,2026-08-28 14:22:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,171.5
+us30fut,2026-08-28 14:25:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,225.5
+us30fut,2026-08-28 14:25:00+00:00,S0-H6,directional,1,overlap,forward,wide_bar_p90_trailing_day,True,False,,,True,225.5
+us30fut,2026-08-28 14:25:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,225.5
+us30fut,2026-08-28 14:25:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,True,225.5
+us30fut,2026-08-28 14:26:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:28:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:30:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:31:00+00:00,S1-H11,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:35:00+00:00,S1-H11,directional,1,overlap,forward,,,False,,,True,207.0
+us30fut,2026-08-28 14:36:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,True,186.5
+us30fut,2026-08-28 14:36:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,186.5
+us30fut,2026-08-28 14:37:00+00:00,S0-H2,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:37:00+00:00,S0-H8,either-direction,-1,overlap,forward,,,False,,,True,-5.0
+us30fut,2026-08-28 14:37:00+00:00,S1-H2,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:39:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:40:00+00:00,S0-H19,directional,1,overlap,forward,,,False,,,True,191.5
+us30fut,2026-08-28 14:54:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:54:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:54:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:59:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 14:59:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,139.0
+us30fut,2026-08-28 15:04:00+00:00,S0-H11,directional,-1,overlap,forward,,,False,,,True,139.5
+us30fut,2026-08-28 15:12:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:12:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,75.0
+us30fut,2026-08-28 15:12:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:13:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,122.5
+us30fut,2026-08-28 15:13:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:13:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,70.5
+us30fut,2026-08-28 15:13:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:15:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,134.0
+us30fut,2026-08-28 15:15:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:15:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,68.5
+us30fut,2026-08-28 15:15:00+00:00,S1-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:17:00+00:00,S0-H11,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:17:00+00:00,S0-H19,directional,-1,overlap,forward,,,False,,,True,186.5
+us30fut,2026-08-28 15:19:00+00:00,S0-H11,directional,-1,overlap,forward,,,False,,,True,218.0
+us30fut,2026-08-28 15:22:00+00:00,S0-H2,directional,1,overlap,forward,,,False,,,False,
+us30fut,2026-08-28 15:22:00+00:00,S0-H8,either-direction,1,overlap,forward,,,False,,,True,17.0
+us30fut,2026-08-28 15:33:00+00:00,S0-H11,directional,-1,ny_only,forward,,,False,,,True,254.0
+us30fut,2026-08-28 15:36:00+00:00,S0-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:40:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,184.5
+us30fut,2026-08-28 15:40:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,184.5
+us30fut,2026-08-28 15:40:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,True,184.5
+us30fut,2026-08-28 15:41:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:41:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:42:00+00:00,S0-H1,directional,-1,ny_only,forward,,,False,,,True,143.5
+us30fut,2026-08-28 15:43:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:46:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:46:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,14.0
+us30fut,2026-08-28 15:46:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:47:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,True,153.5
+us30fut,2026-08-28 15:47:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:47:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,7.5
+us30fut,2026-08-28 15:47:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:48:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,True,143.5
+us30fut,2026-08-28 15:48:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,True,143.5
+us30fut,2026-08-28 15:50:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:52:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:52:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:52:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:53:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:53:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:58:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:58:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:58:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 15:59:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:00:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:00:00+00:00,S1-H9,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:01:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:07:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:07:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,True,7.0
+us30fut,2026-08-28 16:07:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:13:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:15:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:16:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:16:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:17:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:19:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:21:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:22:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:22:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:22:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:24:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:25:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:26:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:26:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:26:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:27:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:30:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:30:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:30:00+00:00,S0-H9,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:30:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:30:00+00:00,S1-H9,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:31:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:32:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:32:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:32:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:33:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:33:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:33:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:33:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:34:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:36:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:39:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:43:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:43:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:43:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:44:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:44:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:49:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:49:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:52:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:52:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:52:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:53:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:53:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:53:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:53:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:53:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:55:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:55:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:55:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:57:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 16:58:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:01:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:01:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:02:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:03:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:03:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:03:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:04:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:04:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:04:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:04:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:06:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:06:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:06:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:06:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:07:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:11:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:14:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:14:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:14:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S0-H9,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:15:00+00:00,S1-H9,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:18:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:21:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:22:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:22:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:24:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:24:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:24:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:24:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:25:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:26:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:33:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:33:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:34:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:39:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:39:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:39:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:40:00+00:00,S0-H1,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:40:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:40:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:42:00+00:00,S0-H17,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:45:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:45:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:45:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 17:47:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:09:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:09:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:09:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:10:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:18:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:18:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:18:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:21:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:21:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:21:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:21:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:23:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:24:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:28:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:28:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:28:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:31:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:33:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:33:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:39:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:39:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:42:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:44:00+00:00,S0-H3,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:49:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:52:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:56:00+00:00,S1-H11,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:59:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:59:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 18:59:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:02:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:02:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:02:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:02:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:04:00+00:00,S0-H19,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:11:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:11:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:11:00+00:00,S1-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:12:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:30:00+00:00,S0-H16,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:31:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:42:00+00:00,S0-H2,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:42:00+00:00,S0-H8,either-direction,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:47:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:47:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:47:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:48:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:48:00+00:00,S0-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:48:00+00:00,S0-H8,either-direction,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:48:00+00:00,S1-H2,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:52:00+00:00,S0-H19,directional,1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 19:52:00+00:00,S1-H11,directional,-1,ny_only,forward,,,False,,,False,
+us30fut,2026-08-28 20:07:00+00:00,S1-H11,directional,-1,dead,forward,,,False,,,False,
+us30fut,2026-08-28 20:21:00+00:00,S1-H11,directional,-1,dead,forward,,,False,,,False,

@@ -2,426 +2,426 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_intra_trade_census, register 78). MEASUREMENT BEFORE MACHINERY (the flip-gate precedent): no narrative-management recipe registers until this reports. Event classes are ANALYSIS SPLITS, not a partition. Arming split cites the ratified R-FLIPGUARD transition (+1.0×ATR(15M) OR 45 min). Floors: B-RANDOM members under the INCUMBENT variant (v1 floor; per-variant floors flagged follow-up). The flip trade exists only if BOTH legs clear — reverse-leg medians print beside their floor. FILL MODEL: PESSIMISTIC. ° = n<20. deceleration-against (register 95): the docketed divergence exit measured indicator-free — third successive new extreme in the position's direction with strictly declining leg velocity (registered swing convention, no new thresholds); measured here BEFORE any standalone hypothesis.
+Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_intra_trade_census, register 78). MEASUREMENT BEFORE MACHINERY (the flip-gate precedent): no narrative-management recipe registers until this reports. Event classes are ANALYSIS SPLITS, not a partition. Arming split cites the ratified R-FLIPGUARD transition (+1.0×ATR(15M) OR 45 min). Floors: B-RANDOM members under the INCUMBENT variant (v1 floor; per-variant floors flagged follow-up). The flip trade exists only if BOTH legs clear — reverse-leg medians print beside their floor. FILL MODEL: PESSIMISTIC. ° = n<20. deceleration-against (register 95): the docketed divergence exit measured indicator-free — third successive new extreme in the position's direction with strictly declining leg velocity (registered swing convention, no new thresholds); measured here BEFORE any standalone hypothesis.
 
 ## uk100fut (CANONICAL)
 
 | variant | window | event | n w/ | n w/o | remaining med (pts) | w/o-hold med | floor rem med | early rem | post-arm rem | actual−exit med |
 |---|---|---|---|---|---|---|---|---|---|---|
 | R-ARM15 | backtest | absorption-against | 402 | 62 | -2.8 | -14.43 | -1.0 | -2.0 | -4.8 | -4.61 |
-| R-ARM15 | backtest | deceleration-against | 204 | 260 | -8.0 | -9.68 | 0.0 | 0.25 | -12.3 | -11.12 |
+| R-ARM15 | backtest | deceleration-against | 204 | 260 | -8.0 | -9.68 | -0.3 | 0.25 | -12.3 | -11.12 |
 | R-ARM15 | backtest | opposing-effort | 375 | 89 | -2.6 | -9.7 | 0.0 | -1.0 | -7.6 | -4.48 |
-| R-ARM15 | backtest | opposing-sentence | 267 | 197 | -4.0 | -10.77 | -1.2 | -0.8 | -4.9 | -5.21 |
-| R-ARM15 | backtest | trend-flip | 420 | 44 | -3.8 | -22.37 | -0.8 | -2.7 | -7.5 | -5.87 |
-| R-ARM15 | forward | absorption-against | 373 | 33 | -1.8 | -7.42 | -1.0 | -1.3 | -5.05 | -2.9 |
-| R-ARM15 | forward | deceleration-against | 188 | 218 | -5.2 | -4.8 | 0.0 | -3.7 | -5.4 | -6.76 |
-| R-ARM15 | forward | opposing-effort | 348 | 58 | -2.5 | -4.65 | 0.0 | 0.0 | -6.3 | -3.76 |
-| R-ARM15 | forward | opposing-sentence | 247 | 159 | -2.5 | -7.42 | -1.2 | 0.3 | -4.0 | -2.5 |
-| R-ARM15 | forward | trend-flip | 392 | 14 | -1.8 | -15.11 | -0.8 | -1.5 | -3.65 | -3.1 |
+| R-ARM15 | backtest | opposing-sentence | 267 | 197 | -4.0 | -10.77 | -1.35 | -0.8 | -4.9 | -5.21 |
+| R-ARM15 | backtest | trend-flip | 420 | 44 | -3.8 | -22.37 | -1.0 | -2.7 | -7.5 | -5.87 |
+| R-ARM15 | forward | absorption-against | 390 | 32 | -2.2 | -10.33 | -1.0 | -1.6 | -4.8 | -3.43 |
+| R-ARM15 | forward | deceleration-against | 191 | 231 | -5.5 | -4.8 | -0.3 | -4.4 | -5.5 | -7.41 |
+| R-ARM15 | forward | opposing-effort | 369 | 53 | -1.8 | -4.3 | 0.0 | 0.0 | -5.2 | -3.04 |
+| R-ARM15 | forward | opposing-sentence | 262 | 160 | -3.4 | -7.46 | -1.35 | 0.2 | -5.0 | -2.67 |
+| R-ARM15 | forward | trend-flip | 408 | 14 | -1.8 | -15.11 | -1.0 | -1.5 | -5.0 | -3.1 |
 | R-BE | backtest | absorption-against | 327 | 56 | -3.5 | -1.3 | -1.0 | -1.7 | -9.5 | -5.0 |
-| R-BE | backtest | deceleration-against | 204 | 179 | -10.3 | -9.2 | 0.0 | -4.3 | -14.95 | -11.97 |
+| R-BE | backtest | deceleration-against | 204 | 179 | -10.3 | -9.2 | -0.3 | -4.3 | -14.95 | -11.97 |
 | R-BE | backtest | opposing-effort | 311 | 72 | -4.1 | -12.46 | 0.0 | -2.4 | -5.35 | -5.3 |
-| R-BE | backtest | opposing-sentence | 237 | 146 | -5.7 | -1.3 | -1.2 | -5.15 | -8.6 | -6.6 |
-| R-BE | backtest | trend-flip | 350 | 33 | -5.6 | -25.44 | -0.8 | -2.75 | -10.15 | -5.8 |
-| R-BE | forward | absorption-against | 324 | 35 | -3.5 | -1.3 | -1.0 | -2.5 | -7.2 | -3.7 |
-| R-BE | forward | deceleration-against | 183 | 176 | -10.4 | -1.3 | 0.0 | -9.95 | -10.4 | -10.7 |
-| R-BE | forward | opposing-effort | 308 | 51 | -7.0 | -1.3 | 0.0 | -3.0 | -9.5 | -6.4 |
-| R-BE | forward | opposing-sentence | 226 | 133 | -6.85 | -1.3 | -1.2 | -4.5 | -9.2 | -7.3 |
-| R-BE | forward | trend-flip | 345 | 14 | -4.0 | -9.21 | -0.8 | -3.3 | -8.3 | -4.6 |
+| R-BE | backtest | opposing-sentence | 237 | 146 | -5.7 | -1.3 | -1.35 | -5.15 | -8.6 | -6.6 |
+| R-BE | backtest | trend-flip | 350 | 33 | -5.6 | -25.44 | -1.0 | -2.75 | -10.15 | -5.8 |
+| R-BE | forward | absorption-against | 342 | 35 | -3.3 | -1.3 | -1.0 | -2.5 | -6.8 | -3.8 |
+| R-BE | forward | deceleration-against | 186 | 191 | -11.1 | -1.3 | -0.3 | -11.5 | -10.9 | -11.95 |
+| R-BE | forward | opposing-effort | 329 | 48 | -6.0 | -1.3 | 0.0 | -2.3 | -9.15 | -5.3 |
+| R-BE | forward | opposing-sentence | 240 | 137 | -6.85 | -1.3 | -1.35 | -4.5 | -9.25 | -7.3 |
+| R-BE | forward | trend-flip | 362 | 15 | -4.25 | -5.0 | -1.0 | -3.3 | -8.25 | -4.8 |
 | R-NEXIT-EARLY | backtest | absorption-against | 376 | 993 | 0.0 | -1.8 | -1.0 | 0.0 | -6.0 | -1.3 |
-| R-NEXIT-EARLY | backtest | deceleration-against | 77 | 1292 | -4.3 | -1.7 | 0.0 | -0.8 | -7.75 | -5.6 |
+| R-NEXIT-EARLY | backtest | deceleration-against | 77 | 1292 | -4.3 | -1.7 | -0.3 | -0.8 | -7.75 | -5.6 |
 | R-NEXIT-EARLY | backtest | opposing-effort | 318 | 1051 | 0.0 | -1.3 | 0.0 | 0.0 | -7.4 | -1.3 |
-| R-NEXIT-EARLY | backtest | opposing-sentence | 137 | 1232 | 0.0 | -1.8 | -1.2 | 0.0 | -2.55 | -1.3 |
-| R-NEXIT-EARLY | backtest | trend-flip | 345 | 1024 | -0.3 | -1.5 | -0.8 | 0.0 | -11.0 | -1.6 |
-| R-NEXIT-EARLY | forward | absorption-against | 430 | 838 | 0.0 | -1.5 | -1.0 | 0.0 | -0.5 | -1.3 |
-| R-NEXIT-EARLY | forward | deceleration-against | 49 | 1219 | -0.3 | -1.4 | 0.0 | 0.0 | -1.3 | -1.6 |
-| R-NEXIT-EARLY | forward | opposing-effort | 227 | 1041 | 0.0 | -1.3 | 0.0 | 0.0 | -3.1 | -1.3 |
-| R-NEXIT-EARLY | forward | opposing-sentence | 110 | 1158 | 0.0 | -1.4 | -1.2 | 0.0 | -6.5 | -1.3 |
-| R-NEXIT-EARLY | forward | trend-flip | 239 | 1029 | 0.0 | -1.3 | -0.8 | 0.0 | -2.0 | -1.3 |
+| R-NEXIT-EARLY | backtest | opposing-sentence | 137 | 1232 | 0.0 | -1.8 | -1.35 | 0.0 | -2.55 | -1.3 |
+| R-NEXIT-EARLY | backtest | trend-flip | 345 | 1024 | -0.3 | -1.5 | -1.0 | 0.0 | -11.0 | -1.6 |
+| R-NEXIT-EARLY | forward | absorption-against | 451 | 888 | 0.0 | -1.5 | -1.0 | 0.0 | -0.65 | -1.3 |
+| R-NEXIT-EARLY | forward | deceleration-against | 49 | 1290 | -0.3 | -1.5 | -0.3 | 0.0 | -1.3 | -1.6 |
+| R-NEXIT-EARLY | forward | opposing-effort | 240 | 1099 | 0.0 | -1.3 | 0.0 | 0.0 | -2.7 | -1.3 |
+| R-NEXIT-EARLY | forward | opposing-sentence | 115 | 1224 | 0.0 | -1.5 | -1.35 | 0.0 | -6.9 | -1.3 |
+| R-NEXIT-EARLY | forward | trend-flip | 248 | 1091 | 0.0 | -1.4 | -1.0 | 0.0 | -2.0 | -1.3 |
 | R-NEXIT-FULL | backtest | absorption-against | 373 | 1096 | 0.0 | -1.6 | -1.0 | 0.0 | -0.2 | -1.3 |
-| R-NEXIT-FULL | backtest | deceleration-against | 59 | 1410 | -0.8 | -1.5 | 0.0 | -0.8 | 0.25 | -2.1 |
+| R-NEXIT-FULL | backtest | deceleration-against | 59 | 1410 | -0.8 | -1.5 | -0.3 | -0.8 | 0.25 | -2.1 |
 | R-NEXIT-FULL | backtest | opposing-effort | 292 | 1177 | 0.0 | -1.0 | 0.0 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-FULL | backtest | opposing-sentence | 105 | 1364 | 0.0 | -1.6 | -1.2 | 0.0 | -2.2 | -1.3 |
-| R-NEXIT-FULL | backtest | trend-flip | 356 | 1113 | 0.0 | -1.4 | -0.8 | 0.0 | -4.1 | -1.3 |
-| R-NEXIT-FULL | forward | absorption-against | 439 | 897 | 0.0 | -1.5 | -1.0 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-FULL | forward | deceleration-against | 34 | 1302 | 0.0 | -1.3 | 0.0 | -0.3 | 0.7 | -1.3 |
-| R-NEXIT-FULL | forward | opposing-effort | 209 | 1127 | 0.0 | -1.2 | 0.0 | 0.0 | 0.1 | -1.3 |
-| R-NEXIT-FULL | forward | opposing-sentence | 93 | 1243 | 0.0 | -1.3 | -1.2 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-FULL | forward | trend-flip | 237 | 1099 | 0.0 | -1.3 | -0.8 | 0.0 | 0.35 | -1.3 |
+| R-NEXIT-FULL | backtest | opposing-sentence | 105 | 1364 | 0.0 | -1.6 | -1.35 | 0.0 | -2.2 | -1.3 |
+| R-NEXIT-FULL | backtest | trend-flip | 356 | 1113 | 0.0 | -1.4 | -1.0 | 0.0 | -4.1 | -1.3 |
+| R-NEXIT-FULL | forward | absorption-against | 459 | 949 | 0.0 | -1.5 | -1.0 | 0.0 | 0.0 | -1.3 |
+| R-NEXIT-FULL | forward | deceleration-against | 34 | 1374 | 0.0 | -1.4 | -0.3 | -0.3 | 0.7 | -1.3 |
+| R-NEXIT-FULL | forward | opposing-effort | 221 | 1187 | 0.0 | -1.3 | 0.0 | 0.0 | 0.1 | -1.3 |
+| R-NEXIT-FULL | forward | opposing-sentence | 97 | 1311 | 0.0 | -1.4 | -1.35 | 0.0 | 0.0 | -1.3 |
+| R-NEXIT-FULL | forward | trend-flip | 246 | 1162 | 0.0 | -1.3 | -1.0 | 0.0 | -0.15 | -1.3 |
 | R-NEXIT-SENT | backtest | absorption-against | 569 | 289 | 0.0 | -2.3 | -1.0 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-SENT | backtest | deceleration-against | 160 | 698 | -4.0 | -1.8 | 0.0 | 1.0 | -6.4 | -2.89 |
+| R-NEXIT-SENT | backtest | deceleration-against | 160 | 698 | -4.0 | -1.8 | -0.3 | 1.0 | -6.4 | -2.89 |
 | R-NEXIT-SENT | backtest | opposing-effort | 586 | 272 | 0.0 | -1.1 | 0.0 | 0.3 | -2.7 | -1.3 |
-| R-NEXIT-SENT | backtest | opposing-sentence | 505 | 353 | 0.0 | -3.5 | -1.2 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-SENT | backtest | trend-flip | 513 | 345 | 0.0 | -1.3 | -0.8 | 0.2 | -3.8 | -1.3 |
-| R-NEXIT-SENT | forward | absorption-against | 596 | 167 | 0.0 | -1.0 | -1.0 | 0.0 | 1.85 | -1.3 |
-| R-NEXIT-SENT | forward | deceleration-against | 136 | 627 | -1.35 | -1.1 | 0.0 | 0.7 | -1.5 | -2.8 |
-| R-NEXIT-SENT | forward | opposing-effort | 540 | 223 | 0.0 | -0.3 | 0.0 | 0.0 | -1.5 | -1.3 |
-| R-NEXIT-SENT | forward | opposing-sentence | 452 | 311 | 0.0 | -3.3 | -1.2 | 0.0 | 0.0 | -1.3 |
-| R-NEXIT-SENT | forward | trend-flip | 543 | 220 | -0.1 | -0.6 | -0.8 | 0.0 | -2.95 | -1.4 |
+| R-NEXIT-SENT | backtest | opposing-sentence | 505 | 353 | 0.0 | -3.5 | -1.35 | 0.0 | 0.0 | -1.3 |
+| R-NEXIT-SENT | backtest | trend-flip | 513 | 345 | 0.0 | -1.3 | -1.0 | 0.2 | -3.8 | -1.3 |
+| R-NEXIT-SENT | forward | absorption-against | 631 | 171 | 0.0 | -1.2 | -1.0 | 0.0 | 2.0 | -1.3 |
+| R-NEXIT-SENT | forward | deceleration-against | 138 | 664 | -1.35 | -1.2 | -0.3 | -0.3 | -1.5 | -2.8 |
+| R-NEXIT-SENT | forward | opposing-effort | 581 | 221 | 0.0 | -0.3 | 0.0 | 0.0 | -1.1 | -1.3 |
+| R-NEXIT-SENT | forward | opposing-sentence | 482 | 320 | 0.0 | -3.41 | -1.35 | 0.0 | -0.2 | -1.3 |
+| R-NEXIT-SENT | forward | trend-flip | 569 | 233 | -0.2 | -0.6 | -1.0 | 0.0 | -3.1 | -1.6 |
 | R-NOTRAIL | backtest | absorption-against | 261 | 28 | -19.1 | -26.27 | -1.0 | -21.0 | -11.45 | -20.33 |
-| R-NOTRAIL | backtest | deceleration-against | 185 | 104 | -22.0 | -29.16 | 0.0 | -27.5 | -21.8 | -23.3 |
+| R-NOTRAIL | backtest | deceleration-against | 185 | 104 | -22.0 | -29.16 | -0.3 | -27.5 | -21.8 | -23.3 |
 | R-NOTRAIL | backtest | opposing-effort | 249 | 40 | -20.5 | -24.24 | 0.0 | -22.3 | -16.55 | -23.21 |
-| R-NOTRAIL | backtest | opposing-sentence | 206 | 83 | -18.1 | -26.0 | -1.2 | -22.3 | -12.5 | -17.81 |
-| R-NOTRAIL | backtest | trend-flip | 275 | 14 | -18.7 | -28.7 | -0.8 | -20.6 | -16.0 | -19.3 |
-| R-NOTRAIL | forward | absorption-against | 232 | 20 | -14.4 | -8.3 | -1.0 | -14.5 | -10.5 | -15.46 |
-| R-NOTRAIL | forward | deceleration-against | 161 | 91 | -17.0 | -15.01 | 0.0 | -18.0 | -17.0 | -18.43 |
-| R-NOTRAIL | forward | opposing-effort | 221 | 31 | -15.7 | 1.7 | 0.0 | -13.4 | -23.3 | -17.07 |
-| R-NOTRAIL | forward | opposing-sentence | 174 | 78 | -17.6 | -14.14 | -1.2 | -15.55 | -19.25 | -19.09 |
-| R-NOTRAIL | forward | trend-flip | 244 | 8 | -12.9 | -16.36 | -0.8 | -12.2 | -17.0 | -14.38 |
+| R-NOTRAIL | backtest | opposing-sentence | 206 | 83 | -18.1 | -26.0 | -1.35 | -22.3 | -12.5 | -17.81 |
+| R-NOTRAIL | backtest | trend-flip | 275 | 14 | -18.7 | -28.7 | -1.0 | -20.6 | -16.0 | -19.3 |
+| R-NOTRAIL | forward | absorption-against | 247 | 20 | -13.1 | -12.52 | -1.0 | -13.15 | -10.5 | -14.39 |
+| R-NOTRAIL | forward | deceleration-against | 164 | 103 | -16.9 | -14.46 | -0.3 | -15.9 | -16.9 | -18.28 |
+| R-NOTRAIL | forward | opposing-effort | 239 | 28 | -14.5 | 0.95 | 0.0 | -12.3 | -21.6 | -16.32 |
+| R-NOTRAIL | forward | opposing-sentence | 188 | 79 | -16.6 | -14.14 | -1.35 | -11.35 | -18.95 | -17.58 |
+| R-NOTRAIL | forward | trend-flip | 259 | 8 | -12.3 | -16.36 | -1.0 | -11.85 | -15.9 | -14.02 |
 | R-OP2 | backtest | absorption-against | 452 | 918 | -1.05 | -3.75 | -1.0 | -1.3 | -0.5 | -2.79 |
-| R-OP2 | backtest | deceleration-against | 63 | 1307 | -0.4 | -3.25 | 0.0 | 0.0 | -3.3 | -2.66 |
+| R-OP2 | backtest | deceleration-against | 63 | 1307 | -0.4 | -3.25 | -0.3 | 0.0 | -3.3 | -2.66 |
 | R-OP2 | backtest | opposing-effort | 502 | 868 | -0.5 | -3.29 | 0.0 | -0.5 | 0.0 | -2.69 |
-| R-OP2 | backtest | opposing-sentence | 209 | 1161 | -1.8 | -3.27 | -1.2 | -1.7 | -4.0 | -3.94 |
-| R-OP2 | backtest | trend-flip | 345 | 1025 | -1.0 | -3.7 | -0.8 | -1.0 | 0.0 | -2.64 |
-| R-OP2 | forward | absorption-against | 580 | 610 | -0.8 | -2.79 | -1.0 | -0.8 | -0.5 | -2.41 |
-| R-OP2 | forward | deceleration-against | 55 | 1135 | 0.0 | -2.52 | 0.0 | 0.0 | -1.6 | -1.94 |
-| R-OP2 | forward | opposing-effort | 457 | 733 | 0.0 | -2.69 | 0.0 | 0.0 | -0.2 | -1.69 |
-| R-OP2 | forward | opposing-sentence | 167 | 1023 | -0.9 | -2.59 | -1.2 | -0.7 | -1.2 | -2.36 |
-| R-OP2 | forward | trend-flip | 349 | 841 | -0.8 | -2.74 | -0.8 | -0.8 | -0.65 | -2.26 |
+| R-OP2 | backtest | opposing-sentence | 209 | 1161 | -1.8 | -3.27 | -1.35 | -1.7 | -4.0 | -3.94 |
+| R-OP2 | backtest | trend-flip | 345 | 1025 | -1.0 | -3.7 | -1.0 | -1.0 | 0.0 | -2.64 |
+| R-OP2 | forward | absorption-against | 616 | 632 | -0.8 | -2.84 | -1.0 | -0.8 | -0.5 | -2.42 |
+| R-OP2 | forward | deceleration-against | 56 | 1192 | 0.0 | -2.54 | -0.3 | 0.0 | -1.6 | -1.89 |
+| R-OP2 | forward | opposing-effort | 489 | 759 | 0.0 | -2.72 | 0.0 | 0.0 | -0.2 | -1.72 |
+| R-OP2 | forward | opposing-sentence | 177 | 1071 | -0.7 | -2.63 | -1.35 | -0.7 | -1.2 | -2.21 |
+| R-OP2 | forward | trend-flip | 370 | 878 | -0.85 | -2.76 | -1.0 | -0.9 | -0.65 | -2.32 |
 | R-SCALP-H6-REF | backtest | absorption-against | 23 | 20 | 9.3 | 4.36 | -1.0 | 10.25 | 0.0 | 6.79 |
-| R-SCALP-H6-REF | backtest | deceleration-against | °3 | 40 | 9.9 | 4.36 | 0.0 | 18.0 | 5.2 | 9.39 |
+| R-SCALP-H6-REF | backtest | deceleration-against | °3 | 40 | 9.9 | 4.36 | -0.3 | 18.0 | 5.2 | 9.39 |
 | R-SCALP-H6-REF | backtest | opposing-effort | °19 | 24 | 10.5 | 4.36 | 0.0 | 12.5 | 0.2 | 9.1 |
-| R-SCALP-H6-REF | backtest | opposing-sentence | °12 | 31 | 12.0 | 4.23 | -1.2 | 15.0 | 2.2 | 9.57 |
-| R-SCALP-H6-REF | backtest | trend-flip | 20 | 23 | 11.1 | 4.23 | -0.8 | 11.1 | 17.8 | 9.79 |
+| R-SCALP-H6-REF | backtest | opposing-sentence | °12 | 31 | 12.0 | 4.23 | -1.35 | 15.0 | 2.2 | 9.57 |
+| R-SCALP-H6-REF | backtest | trend-flip | 20 | 23 | 11.1 | 4.23 | -1.0 | 11.1 | 17.8 | 9.79 |
 | R-SCALP-H6-REF | forward | absorption-against | 25 | 22 | 3.5 | 2.62 | -1.0 | 3.5 | 6.9 | 1.11 |
-| R-SCALP-H6-REF | forward | deceleration-against | °2 | 45 | -12.65 | 2.98 | 0.0 | -12.65 | None | -13.6 |
+| R-SCALP-H6-REF | forward | deceleration-against | °2 | 45 | -12.65 | 2.98 | -0.3 | -12.65 | None | -13.6 |
 | R-SCALP-H6-REF | forward | opposing-effort | °8 | 39 | 5.95 | 2.98 | 0.0 | 4.5 | 7.4 | 4.42 |
-| R-SCALP-H6-REF | forward | opposing-sentence | °9 | 38 | 5.0 | 2.5 | -1.2 | 8.3 | -4.0 | 4.27 |
-| R-SCALP-H6-REF | forward | trend-flip | 20 | 27 | 5.35 | 2.66 | -0.8 | 5.7 | 0.0 | 2.21 |
+| R-SCALP-H6-REF | forward | opposing-sentence | °9 | 38 | 5.0 | 2.5 | -1.35 | 8.3 | -4.0 | 4.27 |
+| R-SCALP-H6-REF | forward | trend-flip | 20 | 27 | 5.35 | 2.66 | -1.0 | 5.7 | 0.0 | 2.21 |
 | R-SCALP-H6 | backtest | absorption-against | 21 | 24 | 6.0 | 4.23 | -1.0 | 6.8 | 0.0 | 3.95 |
-| R-SCALP-H6 | backtest | deceleration-against | °2 | 43 | 8.75 | 4.55 | 0.0 | 17.0 | 0.5 | 7.29 |
+| R-SCALP-H6 | backtest | deceleration-against | °2 | 43 | 8.75 | 4.55 | -0.3 | 17.0 | 0.5 | 7.29 |
 | R-SCALP-H6 | backtest | opposing-effort | °19 | 26 | 9.4 | 4.56 | 0.0 | 9.3 | 21.7 | 8.05 |
-| R-SCALP-H6 | backtest | opposing-sentence | °13 | 32 | 9.3 | 3.98 | -1.2 | 9.3 | None | 7.25 |
-| R-SCALP-H6 | backtest | trend-flip | °19 | 26 | 8.0 | 4.23 | -0.8 | 6.3 | 31.9 | 8.08 |
+| R-SCALP-H6 | backtest | opposing-sentence | °13 | 32 | 9.3 | 3.98 | -1.35 | 9.3 | None | 7.25 |
+| R-SCALP-H6 | backtest | trend-flip | °19 | 26 | 8.0 | 4.23 | -1.0 | 6.3 | 31.9 | 8.08 |
 | R-SCALP-H6 | forward | absorption-against | 23 | 24 | 5.7 | 2.84 | -1.0 | 5.5 | 6.9 | 3.09 |
-| R-SCALP-H6 | forward | deceleration-against | °2 | 45 | -12.65 | 3.28 | 0.0 | -12.65 | None | -18.64 |
+| R-SCALP-H6 | forward | deceleration-against | °2 | 45 | -12.65 | 3.28 | -0.3 | -12.65 | None | -18.64 |
 | R-SCALP-H6 | forward | opposing-effort | °13 | 34 | 7.5 | 3.08 | 0.0 | 7.65 | 7.4 | 4.49 |
-| R-SCALP-H6 | forward | opposing-sentence | °13 | 34 | 5.3 | 2.35 | -1.2 | 6.05 | 0.0 | 2.98 |
-| R-SCALP-H6 | forward | trend-flip | 22 | 25 | 6.4 | 2.3 | -0.8 | 6.4 | None | 3.69 |
+| R-SCALP-H6 | forward | opposing-sentence | °13 | 34 | 5.3 | 2.35 | -1.35 | 6.05 | 0.0 | 2.98 |
+| R-SCALP-H6 | forward | trend-flip | 22 | 25 | 6.4 | 2.3 | -1.0 | 6.4 | None | 3.69 |
 
 | window | event | reverse n | reverse med pts | floor med pts |
 |---|---|---|---|---|
-| backtest | absorption-against | 207 | -3.11 | -2.57 |
-| backtest | deceleration-against | 35 | -2.26 | -2.57 |
-| backtest | opposing-effort | 193 | -3.04 | -2.57 |
-| backtest | opposing-sentence | 85 | -2.24 | -2.57 |
-| backtest | trend-flip | 190 | -2.87 | -2.57 |
-| forward | absorption-against | 260 | -2.51 | -2.57 |
-| forward | deceleration-against | 34 | -2.21 | -2.57 |
-| forward | opposing-effort | 199 | -2.38 | -2.57 |
-| forward | opposing-sentence | 64 | -2.19 | -2.57 |
-| forward | trend-flip | 175 | -2.41 | -2.57 |
+| backtest | absorption-against | 207 | -3.11 | -2.53 |
+| backtest | deceleration-against | 35 | -2.26 | -2.53 |
+| backtest | opposing-effort | 193 | -3.04 | -2.53 |
+| backtest | opposing-sentence | 85 | -2.24 | -2.53 |
+| backtest | trend-flip | 190 | -2.87 | -2.53 |
+| forward | absorption-against | 278 | -2.51 | -2.53 |
+| forward | deceleration-against | 35 | -2.34 | -2.53 |
+| forward | opposing-effort | 210 | -2.38 | -2.53 |
+| forward | opposing-sentence | 70 | -2.19 | -2.53 |
+| forward | trend-flip | 187 | -2.49 | -2.53 |
 
 ## ger40fut (CANONICAL)
 
 | variant | window | event | n w/ | n w/o | remaining med (pts) | w/o-hold med | floor rem med | early rem | post-arm rem | actual−exit med |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | backtest | absorption-against | 227 | 37 | -0.7 | -4.1 | -2.1 | 10.5 | -12.95 | -1.22 |
+| R-ARM15 | backtest | absorption-against | 227 | 37 | -0.7 | -4.1 | -1.8 | 10.5 | -12.95 | -1.22 |
 | R-ARM15 | backtest | deceleration-against | 107 | 157 | -12.9 | -6.55 | -1.9 | -24.65 | -12.9 | -24.44 |
 | R-ARM15 | backtest | opposing-effort | 216 | 48 | 0.0 | -2.96 | 0.0 | 2.4 | -7.5 | -1.7 |
-| R-ARM15 | backtest | opposing-sentence | 171 | 93 | -8.2 | -5.74 | -3.3 | 1.55 | -15.3 | -10.28 |
-| R-ARM15 | backtest | trend-flip | 251 | 13 | 6.2 | -18.5 | -1.9 | 6.2 | 1.05 | -1.8 |
-| R-ARM15 | forward | absorption-against | 375 | 57 | -9.0 | -12.79 | -2.1 | -8.75 | -9.1 | -9.97 |
-| R-ARM15 | forward | deceleration-against | 192 | 240 | -12.0 | -18.46 | -1.9 | -7.6 | -14.1 | -12.83 |
-| R-ARM15 | forward | opposing-effort | 361 | 71 | -8.0 | -15.8 | 0.0 | -8.95 | -6.0 | -9.24 |
-| R-ARM15 | forward | opposing-sentence | 266 | 166 | -9.7 | -15.86 | -3.3 | -8.5 | -9.7 | -9.5 |
-| R-ARM15 | forward | trend-flip | 407 | 25 | -10.0 | -26.01 | -1.9 | -8.4 | -12.0 | -10.21 |
-| R-BE | backtest | absorption-against | 187 | 25 | -9.2 | -1.5 | -2.1 | -5.9 | -28.2 | -10.8 |
+| R-ARM15 | backtest | opposing-sentence | 171 | 93 | -8.2 | -5.74 | -2.6 | 1.55 | -15.3 | -10.28 |
+| R-ARM15 | backtest | trend-flip | 251 | 13 | 6.2 | -18.5 | -1.8 | 6.2 | 1.05 | -1.8 |
+| R-ARM15 | forward | absorption-against | 391 | 54 | -8.3 | -11.95 | -1.8 | -7.9 | -9.25 | -9.7 |
+| R-ARM15 | forward | deceleration-against | 198 | 247 | -12.0 | -18.6 | -1.9 | -5.9 | -12.0 | -11.19 |
+| R-ARM15 | forward | opposing-effort | 376 | 69 | -6.55 | -15.8 | 0.0 | -6.45 | -7.0 | -8.38 |
+| R-ARM15 | forward | opposing-sentence | 276 | 169 | -9.6 | -16.91 | -2.6 | -6.8 | -9.8 | -9.39 |
+| R-ARM15 | forward | trend-flip | 420 | 25 | -10.0 | -26.01 | -1.8 | -8.3 | -12.0 | -10.02 |
+| R-BE | backtest | absorption-against | 187 | 25 | -9.2 | -1.5 | -1.8 | -5.9 | -28.2 | -10.8 |
 | R-BE | backtest | deceleration-against | 91 | 121 | -36.4 | -1.5 | -1.9 | -33.8 | -44.1 | -37.3 |
 | R-BE | backtest | opposing-effort | 175 | 37 | -6.3 | -1.5 | 0.0 | -6.0 | -19.7 | -10.6 |
-| R-BE | backtest | opposing-sentence | 150 | 62 | -18.3 | -1.5 | -3.3 | -11.4 | -31.25 | -19.8 |
-| R-BE | backtest | trend-flip | 201 | 11 | -8.8 | -88.11 | -1.9 | -7.6 | -34.2 | -12.2 |
-| R-BE | forward | absorption-against | 301 | 39 | -5.6 | -11.1 | -2.1 | -5.5 | -10.05 | -6.3 |
-| R-BE | forward | deceleration-against | 175 | 165 | -11.2 | -19.9 | -1.9 | -8.65 | -15.1 | -13.4 |
-| R-BE | forward | opposing-effort | 295 | 45 | -9.0 | -11.1 | 0.0 | -4.45 | -12.8 | -10.7 |
-| R-BE | forward | opposing-sentence | 227 | 113 | -8.5 | -19.9 | -3.3 | -3.25 | -14.0 | -10.0 |
-| R-BE | forward | trend-flip | 325 | 15 | -6.1 | -27.91 | -1.9 | -3.0 | -19.4 | -7.3 |
-| R-NEXIT-EARLY | backtest | absorption-against | 224 | 626 | 0.0 | -2.4 | -2.1 | 0.0 | -7.7 | -1.5 |
+| R-BE | backtest | opposing-sentence | 150 | 62 | -18.3 | -1.5 | -2.6 | -11.4 | -31.25 | -19.8 |
+| R-BE | backtest | trend-flip | 201 | 11 | -8.8 | -88.11 | -1.8 | -7.6 | -34.2 | -12.2 |
+| R-BE | forward | absorption-against | 313 | 38 | -5.6 | -13.45 | -1.8 | -4.6 | -10.05 | -6.3 |
+| R-BE | forward | deceleration-against | 181 | 170 | -10.8 | -20.05 | -1.9 | -6.3 | -14.5 | -13.3 |
+| R-BE | forward | opposing-effort | 308 | 43 | -6.4 | -11.1 | 0.0 | -4.15 | -12.8 | -8.5 |
+| R-BE | forward | opposing-sentence | 239 | 112 | -8.0 | -23.8 | -2.6 | -1.4 | -14.0 | -7.3 |
+| R-BE | forward | trend-flip | 336 | 15 | -6.05 | -27.91 | -1.8 | -2.5 | -18.6 | -7.05 |
+| R-NEXIT-EARLY | backtest | absorption-against | 224 | 626 | 0.0 | -2.4 | -1.8 | 0.0 | -7.7 | -1.5 |
 | R-NEXIT-EARLY | backtest | deceleration-against | 27 | 823 | -12.9 | -2.1 | -1.9 | -5.5 | -12.9 | -13.36 |
 | R-NEXIT-EARLY | backtest | opposing-effort | 197 | 653 | 0.0 | -1.5 | 0.0 | 0.0 | -1.2 | -1.5 |
-| R-NEXIT-EARLY | backtest | opposing-sentence | 95 | 755 | 0.0 | -2.3 | -3.3 | 0.0 | -15.3 | -1.5 |
-| R-NEXIT-EARLY | backtest | trend-flip | 195 | 655 | -0.1 | -2.0 | -1.9 | 0.0 | -10.9 | -1.6 |
-| R-NEXIT-EARLY | forward | absorption-against | 418 | 878 | 0.0 | -1.9 | -2.1 | 0.0 | -11.7 | -1.5 |
-| R-NEXIT-EARLY | forward | deceleration-against | 53 | 1243 | -9.0 | -1.7 | -1.9 | -2.25 | -21.4 | -10.5 |
-| R-NEXIT-EARLY | forward | opposing-effort | 243 | 1053 | 0.0 | -1.4 | 0.0 | 0.0 | -4.45 | -1.5 |
-| R-NEXIT-EARLY | forward | opposing-sentence | 113 | 1183 | 0.0 | -1.8 | -3.3 | 0.0 | -7.8 | -1.5 |
-| R-NEXIT-EARLY | forward | trend-flip | 210 | 1086 | -1.05 | -1.5 | -1.9 | 0.0 | -10.5 | -2.6 |
-| R-NEXIT-FULL | backtest | absorption-against | 220 | 708 | 0.0 | -1.7 | -2.1 | 0.0 | 0.0 | -1.5 |
+| R-NEXIT-EARLY | backtest | opposing-sentence | 95 | 755 | 0.0 | -2.3 | -2.6 | 0.0 | -15.3 | -1.5 |
+| R-NEXIT-EARLY | backtest | trend-flip | 195 | 655 | -0.1 | -2.0 | -1.8 | 0.0 | -10.9 | -1.6 |
+| R-NEXIT-EARLY | forward | absorption-against | 438 | 923 | 0.0 | -1.8 | -1.8 | 0.0 | -11.7 | -1.5 |
+| R-NEXIT-EARLY | forward | deceleration-against | 51 | 1310 | -9.0 | -1.65 | -1.9 | -2.25 | -21.4 | -10.5 |
+| R-NEXIT-EARLY | forward | opposing-effort | 256 | 1105 | 0.0 | -1.2 | 0.0 | 0.0 | -4.45 | -1.5 |
+| R-NEXIT-EARLY | forward | opposing-sentence | 124 | 1237 | 0.0 | -1.8 | -2.6 | 0.0 | -7.8 | -1.5 |
+| R-NEXIT-EARLY | forward | trend-flip | 213 | 1148 | 0.0 | -1.5 | -1.8 | 0.0 | -10.5 | -2.5 |
+| R-NEXIT-FULL | backtest | absorption-against | 220 | 708 | 0.0 | -1.7 | -1.8 | 0.0 | 0.0 | -1.5 |
 | R-NEXIT-FULL | backtest | deceleration-against | 22 | 906 | -2.85 | -1.5 | -1.9 | -0.2 | -8.0 | -4.35 |
 | R-NEXIT-FULL | backtest | opposing-effort | 194 | 734 | 0.0 | -0.8 | 0.0 | 0.0 | 1.5 | -1.5 |
-| R-NEXIT-FULL | backtest | opposing-sentence | 88 | 840 | 0.0 | -1.7 | -3.3 | 0.0 | 0.0 | -1.5 |
-| R-NEXIT-FULL | backtest | trend-flip | 200 | 728 | 0.0 | -1.5 | -1.9 | 0.0 | 15.1 | -1.5 |
-| R-NEXIT-FULL | forward | absorption-against | 424 | 958 | 0.0 | -1.8 | -2.1 | 0.0 | 0.4 | -1.5 |
-| R-NEXIT-FULL | forward | deceleration-against | 29 | 1353 | -4.3 | -1.5 | -1.9 | -3.8 | -7.65 | -5.8 |
-| R-NEXIT-FULL | forward | opposing-effort | 223 | 1159 | 0.0 | -1.0 | 0.0 | 0.0 | 0.0 | -1.5 |
-| R-NEXIT-FULL | forward | opposing-sentence | 89 | 1293 | 0.0 | -1.5 | -3.3 | 0.0 | 0.0 | -1.5 |
-| R-NEXIT-FULL | forward | trend-flip | 220 | 1162 | 0.0 | -1.5 | -1.9 | 0.0 | -3.2 | -1.5 |
-| R-NEXIT-SENT | backtest | absorption-against | 303 | 193 | 2.6 | -3.0 | -2.1 | 5.1 | -9.05 | 0.7 |
+| R-NEXIT-FULL | backtest | opposing-sentence | 88 | 840 | 0.0 | -1.7 | -2.6 | 0.0 | 0.0 | -1.5 |
+| R-NEXIT-FULL | backtest | trend-flip | 200 | 728 | 0.0 | -1.5 | -1.8 | 0.0 | 15.1 | -1.5 |
+| R-NEXIT-FULL | forward | absorption-against | 444 | 1003 | 0.0 | -1.7 | -1.8 | 0.0 | 0.4 | -1.5 |
+| R-NEXIT-FULL | forward | deceleration-against | 27 | 1420 | -4.3 | -1.5 | -1.9 | -3.8 | -7.65 | -5.8 |
+| R-NEXIT-FULL | forward | opposing-effort | 236 | 1211 | 0.0 | -1.0 | 0.0 | 0.0 | 0.0 | -1.5 |
+| R-NEXIT-FULL | forward | opposing-sentence | 100 | 1347 | 0.0 | -1.5 | -2.6 | 0.0 | 0.0 | -1.5 |
+| R-NEXIT-FULL | forward | trend-flip | 223 | 1224 | 0.0 | -1.5 | -1.8 | 0.0 | -3.2 | -1.5 |
+| R-NEXIT-SENT | backtest | absorption-against | 303 | 193 | 2.6 | -3.0 | -1.8 | 5.1 | -9.05 | 0.7 |
 | R-NEXIT-SENT | backtest | deceleration-against | 80 | 416 | -10.8 | -0.75 | -1.9 | -7.8 | -12.9 | -13.1 |
 | R-NEXIT-SENT | backtest | opposing-effort | 350 | 146 | 0.0 | 0.04 | 0.0 | 0.0 | -1.5 | -1.5 |
-| R-NEXIT-SENT | backtest | opposing-sentence | 311 | 185 | 0.9 | -2.8 | -3.3 | 0.0 | 1.8 | -0.4 |
-| R-NEXIT-SENT | backtest | trend-flip | 301 | 195 | 0.0 | 0.0 | -1.9 | 0.0 | -1.3 | -1.5 |
-| R-NEXIT-SENT | forward | absorption-against | 595 | 175 | -1.9 | -2.5 | -2.1 | -2.0 | 1.4 | -3.4 |
-| R-NEXIT-SENT | forward | deceleration-against | 148 | 622 | -11.25 | -3.55 | -1.9 | -12.35 | -8.55 | -10.99 |
-| R-NEXIT-SENT | forward | opposing-effort | 522 | 248 | -0.35 | -0.35 | 0.0 | 0.0 | -3.2 | -2.0 |
-| R-NEXIT-SENT | forward | opposing-sentence | 481 | 289 | 0.4 | -9.42 | -3.3 | 0.4 | 0.0 | -1.1 |
-| R-NEXIT-SENT | forward | trend-flip | 517 | 253 | -5.2 | 0.3 | -1.9 | -4.8 | -11.7 | -6.5 |
-| R-NOTRAIL | backtest | absorption-against | 134 | 17 | -41.3 | -60.27 | -2.1 | -34.1 | -55.3 | -44.95 |
+| R-NEXIT-SENT | backtest | opposing-sentence | 311 | 185 | 0.9 | -2.8 | -2.6 | 0.0 | 1.8 | -0.4 |
+| R-NEXIT-SENT | backtest | trend-flip | 301 | 195 | 0.0 | 0.0 | -1.8 | 0.0 | -1.3 | -1.5 |
+| R-NEXIT-SENT | forward | absorption-against | 636 | 184 | -1.5 | -2.25 | -1.8 | -1.7 | 0.5 | -3.0 |
+| R-NEXIT-SENT | forward | deceleration-against | 149 | 671 | -10.5 | -2.9 | -1.9 | -12.0 | -8.55 | -10.99 |
+| R-NEXIT-SENT | forward | opposing-effort | 559 | 261 | 0.0 | 0.4 | 0.0 | 0.0 | -3.2 | -1.8 |
+| R-NEXIT-SENT | forward | opposing-sentence | 517 | 303 | 0.4 | -9.3 | -2.6 | 0.4 | 0.0 | -1.1 |
+| R-NEXIT-SENT | forward | trend-flip | 533 | 287 | -5.0 | 0.4 | -1.8 | -4.1 | -11.7 | -6.3 |
+| R-NOTRAIL | backtest | absorption-against | 134 | 17 | -41.3 | -60.27 | -1.8 | -34.1 | -55.3 | -44.95 |
 | R-NOTRAIL | backtest | deceleration-against | 79 | 72 | -33.7 | -67.62 | -1.9 | -51.5 | -12.8 | -35.2 |
 | R-NOTRAIL | backtest | opposing-effort | 131 | 20 | -51.1 | -44.57 | 0.0 | -63.7 | -34.9 | -49.62 |
-| R-NOTRAIL | backtest | opposing-sentence | 112 | 39 | -38.0 | -60.27 | -3.3 | -50.55 | -30.4 | -41.55 |
-| R-NOTRAIL | backtest | trend-flip | 145 | 6 | -62.3 | -95.19 | -1.9 | -52.6 | -73.15 | -57.65 |
-| R-NOTRAIL | forward | absorption-against | 225 | 24 | -23.9 | -29.08 | -2.1 | -27.4 | -9.9 | -28.08 |
-| R-NOTRAIL | forward | deceleration-against | 153 | 96 | -5.7 | -37.58 | -1.9 | 2.65 | -5.7 | -7.2 |
-| R-NOTRAIL | forward | opposing-effort | 223 | 26 | -23.5 | -20.3 | 0.0 | -26.8 | -16.85 | -27.1 |
-| R-NOTRAIL | forward | opposing-sentence | 184 | 65 | -20.65 | -34.09 | -3.3 | -23.4 | -20.2 | -20.16 |
-| R-NOTRAIL | forward | trend-flip | 239 | 10 | -23.6 | -27.91 | -1.9 | -21.4 | -35.8 | -26.45 |
-| R-OP2 | backtest | absorption-against | 279 | 512 | -1.0 | -7.92 | -2.1 | -1.0 | 1.25 | -3.84 |
+| R-NOTRAIL | backtest | opposing-sentence | 112 | 39 | -38.0 | -60.27 | -2.6 | -50.55 | -30.4 | -41.55 |
+| R-NOTRAIL | backtest | trend-flip | 145 | 6 | -62.3 | -95.19 | -1.8 | -52.6 | -73.15 | -57.65 |
+| R-NOTRAIL | forward | absorption-against | 237 | 22 | -20.2 | -29.08 | -1.8 | -25.9 | -9.9 | -25.1 |
+| R-NOTRAIL | forward | deceleration-against | 159 | 100 | -4.8 | -37.58 | -1.9 | -0.45 | -5.7 | -6.3 |
+| R-NOTRAIL | forward | opposing-effort | 236 | 23 | -22.2 | -19.9 | 0.0 | -23.6 | -17.2 | -26.99 |
+| R-NOTRAIL | forward | opposing-sentence | 192 | 67 | -20.05 | -34.2 | -2.6 | -11.8 | -21.1 | -19.39 |
+| R-NOTRAIL | forward | trend-flip | 249 | 10 | -22.8 | -27.91 | -1.8 | -21.2 | -29.0 | -25.75 |
+| R-OP2 | backtest | absorption-against | 279 | 512 | -1.0 | -7.92 | -1.8 | -1.0 | 1.25 | -3.84 |
 | R-OP2 | backtest | deceleration-against | 47 | 744 | 0.0 | -6.87 | -1.9 | -2.9 | 0.55 | -4.04 |
 | R-OP2 | backtest | opposing-effort | 320 | 471 | 0.0 | -7.37 | 0.0 | 0.0 | 0.0 | -3.5 |
-| R-OP2 | backtest | opposing-sentence | 153 | 638 | -4.3 | -7.24 | -3.3 | -3.9 | -11.2 | -7.16 |
-| R-OP2 | backtest | trend-flip | 256 | 535 | -0.6 | -8.18 | -1.9 | -0.3 | -7.6 | -4.87 |
-| R-OP2 | forward | absorption-against | 590 | 674 | -2.5 | -5.19 | -2.1 | -2.5 | -3.2 | -4.28 |
-| R-OP2 | forward | deceleration-against | 58 | 1206 | -2.1 | -4.28 | -1.9 | -2.6 | -0.5 | -3.25 |
-| R-OP2 | forward | opposing-effort | 476 | 788 | 0.0 | -4.45 | 0.0 | 0.0 | -2.85 | -2.56 |
-| R-OP2 | forward | opposing-sentence | 179 | 1085 | -1.7 | -4.38 | -3.3 | -1.7 | 0.3 | -3.62 |
-| R-OP2 | forward | trend-flip | 355 | 909 | -1.4 | -4.96 | -1.9 | -1.4 | -1.6 | -3.8 |
-| R-SCALP-H6-REF | backtest | absorption-against | °6 | 18 | 23.4 | 15.01 | -2.1 | 22.5 | 105.2 | 24.79 |
+| R-OP2 | backtest | opposing-sentence | 153 | 638 | -4.3 | -7.24 | -2.6 | -3.9 | -11.2 | -7.16 |
+| R-OP2 | backtest | trend-flip | 256 | 535 | -0.6 | -8.18 | -1.8 | -0.3 | -7.6 | -4.87 |
+| R-OP2 | forward | absorption-against | 624 | 685 | -2.5 | -5.17 | -1.8 | -2.5 | -3.2 | -4.34 |
+| R-OP2 | forward | deceleration-against | 67 | 1242 | -2.0 | -4.37 | -1.9 | -2.2 | -0.35 | -3.56 |
+| R-OP2 | forward | opposing-effort | 509 | 800 | 0.0 | -4.48 | 0.0 | 0.0 | -2.85 | -2.65 |
+| R-OP2 | forward | opposing-sentence | 203 | 1106 | -2.2 | -4.46 | -2.6 | -2.6 | 0.3 | -4.11 |
+| R-OP2 | forward | trend-flip | 372 | 937 | -1.5 | -5.02 | -1.8 | -1.4 | -2.0 | -4.0 |
+| R-SCALP-H6-REF | backtest | absorption-against | °6 | 18 | 23.4 | 15.01 | -1.8 | 22.5 | 105.2 | 24.79 |
 | R-SCALP-H6-REF | backtest | deceleration-against | °1 | 23 | -58.7 | 15.25 | -1.9 | None | -58.7 | -57.6 |
 | R-SCALP-H6-REF | backtest | opposing-effort | °7 | 17 | 24.9 | 13.98 | 0.0 | 19.6 | 112.0 | 26.76 |
-| R-SCALP-H6-REF | backtest | opposing-sentence | °6 | 18 | 37.8 | 13.85 | -3.3 | 37.8 | 30.55 | 29.27 |
-| R-SCALP-H6-REF | backtest | trend-flip | °10 | 14 | 18.65 | 14.62 | -1.9 | 18.65 | None | 15.34 |
-| R-SCALP-H6-REF | forward | absorption-against | 21 | 30 | 9.7 | 7.96 | -2.1 | 9.9 | -28.0 | 7.84 |
+| R-SCALP-H6-REF | backtest | opposing-sentence | °6 | 18 | 37.8 | 13.85 | -2.6 | 37.8 | 30.55 | 29.27 |
+| R-SCALP-H6-REF | backtest | trend-flip | °10 | 14 | 18.65 | 14.62 | -1.8 | 18.65 | None | 15.34 |
+| R-SCALP-H6-REF | forward | absorption-against | 21 | 30 | 9.7 | 7.96 | -1.8 | 9.9 | -28.0 | 7.84 |
 | R-SCALP-H6-REF | forward | deceleration-against | °4 | 47 | 9.1 | 7.61 | -1.9 | 9.1 | -12.85 | 10.03 |
 | R-SCALP-H6-REF | forward | opposing-effort | °17 | 34 | 9.4 | 7.27 | 0.0 | 9.4 | -9.1 | 7.81 |
-| R-SCALP-H6-REF | forward | opposing-sentence | °10 | 41 | -3.35 | 7.71 | -3.3 | -3.35 | None | -4.03 |
-| R-SCALP-H6-REF | forward | trend-flip | 27 | 24 | 5.4 | 8.35 | -1.9 | 5.7 | -23.6 | 4.2 |
-| R-SCALP-H6 | backtest | absorption-against | °8 | 17 | 20.9 | 14.9 | -2.1 | 20.9 | None | 22.19 |
+| R-SCALP-H6-REF | forward | opposing-sentence | °10 | 41 | -3.35 | 7.71 | -2.6 | -3.35 | None | -4.03 |
+| R-SCALP-H6-REF | forward | trend-flip | 27 | 24 | 5.4 | 8.35 | -1.8 | 5.7 | -23.6 | 4.2 |
+| R-SCALP-H6 | backtest | absorption-against | °8 | 17 | 20.9 | 14.9 | -1.8 | 20.9 | None | 22.19 |
 | R-SCALP-H6 | backtest | deceleration-against | °1 | 24 | 30.1 | 14.3 | -1.9 | None | 30.1 | 33.29 |
 | R-SCALP-H6 | backtest | opposing-effort | °6 | 19 | 7.4 | 14.9 | 0.0 | 7.4 | None | 16.6 |
-| R-SCALP-H6 | backtest | opposing-sentence | °5 | 20 | 20.2 | 14.3 | -3.3 | 21.7 | -38.1 | 21.84 |
-| R-SCALP-H6 | backtest | trend-flip | °10 | 15 | 4.1 | 14.9 | -1.9 | 4.1 | None | 4.55 |
-| R-SCALP-H6 | forward | absorption-against | 23 | 35 | 4.1 | 7.44 | -2.1 | 4.1 | None | 3.14 |
+| R-SCALP-H6 | backtest | opposing-sentence | °5 | 20 | 20.2 | 14.3 | -2.6 | 21.7 | -38.1 | 21.84 |
+| R-SCALP-H6 | backtest | trend-flip | °10 | 15 | 4.1 | 14.9 | -1.8 | 4.1 | None | 4.55 |
+| R-SCALP-H6 | forward | absorption-against | 23 | 35 | 4.1 | 7.44 | -1.8 | 4.1 | None | 3.14 |
 | R-SCALP-H6 | forward | deceleration-against | °2 | 56 | 21.55 | 7.53 | -1.9 | 16.6 | 26.5 | 19.56 |
 | R-SCALP-H6 | forward | opposing-effort | 21 | 37 | 2.5 | 7.44 | 0.0 | 1.25 | 46.0 | 8.69 |
-| R-SCALP-H6 | forward | opposing-sentence | °10 | 48 | 6.0 | 7.58 | -3.3 | 1.9 | 20.2 | 8.12 |
-| R-SCALP-H6 | forward | trend-flip | 26 | 32 | 6.75 | 7.54 | -1.9 | 7.0 | -25.6 | 8.1 |
+| R-SCALP-H6 | forward | opposing-sentence | °10 | 48 | 6.0 | 7.58 | -2.6 | 1.9 | 20.2 | 8.12 |
+| R-SCALP-H6 | forward | trend-flip | 26 | 32 | 6.75 | 7.54 | -1.8 | 7.0 | -25.6 | 8.1 |
 
 | window | event | reverse n | reverse med pts | floor med pts |
 |---|---|---|---|---|
-| backtest | absorption-against | 120 | -9.09 | -4.79 |
-| backtest | deceleration-against | 20 | -7.13 | -4.79 |
-| backtest | opposing-effort | 124 | -7.85 | -4.79 |
-| backtest | opposing-sentence | 64 | -6.6 | -4.79 |
-| backtest | trend-flip | 132 | -6.74 | -4.79 |
-| forward | absorption-against | 249 | -3.79 | -4.79 |
-| forward | deceleration-against | 33 | -4.6 | -4.79 |
-| forward | opposing-effort | 202 | -3.85 | -4.79 |
-| forward | opposing-sentence | 85 | -4.31 | -4.79 |
-| forward | trend-flip | 187 | -4.4 | -4.79 |
+| backtest | absorption-against | 120 | -9.09 | -4.91 |
+| backtest | deceleration-against | 20 | -7.13 | -4.91 |
+| backtest | opposing-effort | 124 | -7.85 | -4.91 |
+| backtest | opposing-sentence | 64 | -6.6 | -4.91 |
+| backtest | trend-flip | 132 | -6.74 | -4.91 |
+| forward | absorption-against | 262 | -3.83 | -4.91 |
+| forward | deceleration-against | 37 | -4.39 | -4.91 |
+| forward | opposing-effort | 213 | -4.15 | -4.91 |
+| forward | opposing-sentence | 93 | -4.34 | -4.91 |
+| forward | trend-flip | 192 | -4.54 | -4.91 |
 
 ## nas100fut (CANONICAL)
 
 | variant | window | event | n w/ | n w/o | remaining med (pts) | w/o-hold med | floor rem med | early rem | post-arm rem | actual−exit med |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | backtest | absorption-against | 225 | 54 | -4.9 | -24.76 | -4.5 | 2.0 | -49.0 | -2.04 |
-| R-ARM15 | backtest | deceleration-against | 142 | 137 | -12.9 | -47.6 | -2.5 | 25.1 | -23.3 | -14.68 |
+| R-ARM15 | backtest | absorption-against | 225 | 54 | -4.9 | -24.76 | -4.2 | 2.0 | -49.0 | -2.04 |
+| R-ARM15 | backtest | deceleration-against | 142 | 137 | -12.9 | -47.6 | -1.9 | 25.1 | -23.3 | -14.68 |
 | R-ARM15 | backtest | opposing-effort | 224 | 55 | -9.35 | -18.1 | 0.0 | -0.8 | -56.4 | -11.62 |
-| R-ARM15 | backtest | opposing-sentence | 199 | 80 | -24.7 | -22.5 | -1.9 | -7.55 | -28.8 | -22.33 |
-| R-ARM15 | backtest | trend-flip | 266 | 13 | -2.85 | -105.29 | -4.0 | 4.15 | -31.05 | -10.64 |
-| R-ARM15 | forward | absorption-against | 319 | 125 | -8.6 | -19.1 | -4.5 | -7.0 | -12.3 | -11.83 |
-| R-ARM15 | forward | deceleration-against | 209 | 235 | -23.1 | -28.79 | -2.5 | -21.4 | -27.9 | -23.63 |
-| R-ARM15 | forward | opposing-effort | 326 | 118 | -7.4 | -18.95 | 0.0 | -3.0 | -14.0 | -9.15 |
-| R-ARM15 | forward | opposing-sentence | 257 | 187 | -10.6 | -15.14 | -1.9 | -7.4 | -17.35 | -12.28 |
-| R-ARM15 | forward | trend-flip | 418 | 26 | -10.35 | -46.99 | -4.0 | -5.5 | -27.8 | -8.93 |
-| R-BE | backtest | absorption-against | 168 | 29 | -2.85 | -5.4 | -4.5 | 2.0 | -68.4 | -9.55 |
-| R-BE | backtest | deceleration-against | 114 | 83 | -25.4 | -17.5 | -2.5 | -6.2 | -36.0 | -27.95 |
+| R-ARM15 | backtest | opposing-sentence | 199 | 80 | -24.7 | -22.5 | -1.2 | -7.55 | -28.8 | -22.33 |
+| R-ARM15 | backtest | trend-flip | 266 | 13 | -2.85 | -105.29 | -3.9 | 4.15 | -31.05 | -10.64 |
+| R-ARM15 | forward | absorption-against | 338 | 129 | -9.0 | -22.03 | -4.2 | -4.8 | -19.4 | -11.52 |
+| R-ARM15 | forward | deceleration-against | 220 | 247 | -23.1 | -28.47 | -1.9 | -20.25 | -32.4 | -25.07 |
+| R-ARM15 | forward | opposing-effort | 348 | 119 | -5.2 | -20.23 | 0.0 | -2.3 | -14.0 | -8.72 |
+| R-ARM15 | forward | opposing-sentence | 275 | 192 | -10.0 | -15.8 | -1.2 | -4.3 | -13.9 | -12.03 |
+| R-ARM15 | forward | trend-flip | 439 | 28 | -9.6 | -67.28 | -3.9 | -5.5 | -26.5 | -8.96 |
+| R-BE | backtest | absorption-against | 168 | 29 | -2.85 | -5.4 | -4.2 | 2.0 | -68.4 | -9.55 |
+| R-BE | backtest | deceleration-against | 114 | 83 | -25.4 | -17.5 | -1.9 | -6.2 | -36.0 | -27.95 |
 | R-BE | backtest | opposing-effort | 166 | 31 | -11.4 | -5.4 | 0.0 | 2.4 | -69.95 | -16.95 |
-| R-BE | backtest | opposing-sentence | 153 | 44 | -28.8 | -1.8 | -1.9 | -6.0 | -45.75 | -28.7 |
-| R-BE | backtest | trend-flip | 190 | 7 | -8.1 | -1.8 | -4.0 | 5.6 | -73.4 | -14.1 |
-| R-BE | forward | absorption-against | 269 | 75 | -13.5 | -10.6 | -4.5 | -12.4 | -13.6 | -12.72 |
-| R-BE | forward | deceleration-against | 176 | 168 | -24.3 | -54.85 | -2.5 | -9.4 | -30.2 | -27.7 |
-| R-BE | forward | opposing-effort | 272 | 72 | -14.65 | -3.65 | 0.0 | -7.2 | -36.9 | -11.9 |
-| R-BE | forward | opposing-sentence | 235 | 109 | -20.5 | -5.5 | -1.9 | -11.7 | -31.2 | -24.22 |
-| R-BE | forward | trend-flip | 325 | 19 | -10.2 | -65.96 | -4.0 | -6.0 | -38.6 | -9.8 |
-| R-NEXIT-EARLY | backtest | absorption-against | 237 | 801 | 0.0 | -2.3 | -4.5 | 0.0 | -4.0 | -1.8 |
-| R-NEXIT-EARLY | backtest | deceleration-against | 42 | 996 | -0.6 | -2.6 | -2.5 | 0.0 | -41.3 | -2.4 |
+| R-BE | backtest | opposing-sentence | 153 | 44 | -28.8 | -1.8 | -1.2 | -6.0 | -45.75 | -28.7 |
+| R-BE | backtest | trend-flip | 190 | 7 | -8.1 | -1.8 | -3.9 | 5.6 | -73.4 | -14.1 |
+| R-BE | forward | absorption-against | 284 | 80 | -13.5 | -13.2 | -4.2 | -8.5 | -33.6 | -12.81 |
+| R-BE | forward | deceleration-against | 188 | 176 | -24.9 | -52.16 | -1.9 | -9.4 | -36.9 | -28.3 |
+| R-BE | forward | opposing-effort | 289 | 75 | -13.3 | -5.5 | 0.0 | -6.2 | -41.3 | -9.8 |
+| R-BE | forward | opposing-sentence | 250 | 114 | -19.7 | -4.1 | -1.2 | -10.7 | -31.5 | -23.7 |
+| R-BE | forward | trend-flip | 342 | 22 | -9.65 | -67.28 | -3.9 | -5.95 | -39.45 | -9.1 |
+| R-NEXIT-EARLY | backtest | absorption-against | 237 | 801 | 0.0 | -2.3 | -4.2 | 0.0 | -4.0 | -1.8 |
+| R-NEXIT-EARLY | backtest | deceleration-against | 42 | 996 | -0.6 | -2.6 | -1.9 | 0.0 | -41.3 | -2.4 |
 | R-NEXIT-EARLY | backtest | opposing-effort | 229 | 809 | 0.0 | -0.5 | 0.0 | 0.0 | -55.9 | -1.8 |
-| R-NEXIT-EARLY | backtest | opposing-sentence | 112 | 926 | 0.0 | -3.7 | -1.9 | 0.0 | -45.0 | -1.8 |
-| R-NEXIT-EARLY | backtest | trend-flip | 172 | 866 | 0.0 | -2.4 | -4.0 | 0.0 | -7.3 | -1.8 |
-| R-NEXIT-EARLY | forward | absorption-against | 280 | 1072 | 0.0 | -2.4 | -4.5 | 0.0 | -7.3 | -1.8 |
-| R-NEXIT-EARLY | forward | deceleration-against | 89 | 1263 | -8.2 | -2.3 | -2.5 | -1.2 | -16.35 | -9.8 |
-| R-NEXIT-EARLY | forward | opposing-effort | 261 | 1091 | 0.0 | -1.2 | 0.0 | 0.0 | -16.5 | -1.8 |
-| R-NEXIT-EARLY | forward | opposing-sentence | 159 | 1193 | 0.0 | -2.8 | -1.9 | 0.0 | -11.6 | -1.8 |
-| R-NEXIT-EARLY | forward | trend-flip | 305 | 1047 | -0.9 | -1.7 | -4.0 | 0.0 | -13.5 | -2.8 |
-| R-NEXIT-FULL | backtest | absorption-against | 242 | 858 | 0.0 | -1.5 | -4.5 | 0.0 | -4.0 | -1.8 |
-| R-NEXIT-FULL | backtest | deceleration-against | 39 | 1061 | 0.0 | -1.8 | -2.5 | 0.0 | 15.7 | -1.8 |
+| R-NEXIT-EARLY | backtest | opposing-sentence | 112 | 926 | 0.0 | -3.7 | -1.2 | 0.0 | -45.0 | -1.8 |
+| R-NEXIT-EARLY | backtest | trend-flip | 172 | 866 | 0.0 | -2.4 | -3.9 | 0.0 | -7.3 | -1.8 |
+| R-NEXIT-EARLY | forward | absorption-against | 300 | 1138 | 0.0 | -2.4 | -4.2 | 0.0 | -12.0 | -1.8 |
+| R-NEXIT-EARLY | forward | deceleration-against | 92 | 1346 | -8.85 | -2.25 | -1.9 | -6.2 | -20.4 | -11.4 |
+| R-NEXIT-EARLY | forward | opposing-effort | 279 | 1159 | 0.0 | -1.2 | 0.0 | 0.0 | -18.05 | -1.8 |
+| R-NEXIT-EARLY | forward | opposing-sentence | 171 | 1267 | 0.0 | -2.8 | -1.2 | 0.0 | -12.65 | -1.8 |
+| R-NEXIT-EARLY | forward | trend-flip | 311 | 1127 | -1.3 | -1.7 | -3.9 | 0.0 | -15.15 | -3.3 |
+| R-NEXIT-FULL | backtest | absorption-against | 242 | 858 | 0.0 | -1.5 | -4.2 | 0.0 | -4.0 | -1.8 |
+| R-NEXIT-FULL | backtest | deceleration-against | 39 | 1061 | 0.0 | -1.8 | -1.9 | 0.0 | 15.7 | -1.8 |
 | R-NEXIT-FULL | backtest | opposing-effort | 229 | 871 | 0.0 | 0.2 | 0.0 | 0.0 | -2.0 | -1.8 |
-| R-NEXIT-FULL | backtest | opposing-sentence | 107 | 993 | 0.0 | -2.4 | -1.9 | 0.0 | 6.1 | -1.8 |
-| R-NEXIT-FULL | backtest | trend-flip | 182 | 918 | 0.0 | -2.05 | -4.0 | 0.0 | 2.7 | -1.8 |
-| R-NEXIT-FULL | forward | absorption-against | 276 | 1170 | 0.0 | -1.7 | -4.5 | 0.0 | 0.0 | -1.8 |
-| R-NEXIT-FULL | forward | deceleration-against | 79 | 1367 | -2.9 | -1.5 | -2.5 | -1.2 | -8.7 | -4.7 |
-| R-NEXIT-FULL | forward | opposing-effort | 243 | 1203 | 0.0 | -0.5 | 0.0 | 0.0 | -1.2 | -1.8 |
-| R-NEXIT-FULL | forward | opposing-sentence | 141 | 1305 | 0.0 | -2.4 | -1.9 | 0.0 | 4.5 | -1.8 |
-| R-NEXIT-FULL | forward | trend-flip | 315 | 1131 | 0.0 | -1.3 | -4.0 | 0.0 | 8.1 | -1.8 |
-| R-NEXIT-SENT | backtest | absorption-against | 393 | 250 | 0.0 | 1.2 | -4.5 | 0.2 | -50.2 | -1.8 |
-| R-NEXIT-SENT | backtest | deceleration-against | 82 | 561 | -0.8 | -1.0 | -2.5 | 22.3 | -36.05 | -2.6 |
+| R-NEXIT-FULL | backtest | opposing-sentence | 107 | 993 | 0.0 | -2.4 | -1.2 | 0.0 | 6.1 | -1.8 |
+| R-NEXIT-FULL | backtest | trend-flip | 182 | 918 | 0.0 | -2.05 | -3.9 | 0.0 | 2.7 | -1.8 |
+| R-NEXIT-FULL | forward | absorption-against | 293 | 1242 | 0.0 | -1.5 | -4.2 | 0.0 | 0.0 | -1.8 |
+| R-NEXIT-FULL | forward | deceleration-against | 82 | 1453 | -8.0 | -1.5 | -1.9 | -3.5 | -11.65 | -9.8 |
+| R-NEXIT-FULL | forward | opposing-effort | 259 | 1276 | 0.0 | -0.5 | 0.0 | 0.0 | -0.65 | -1.8 |
+| R-NEXIT-FULL | forward | opposing-sentence | 152 | 1383 | 0.0 | -2.4 | -1.2 | 0.0 | 6.4 | -1.8 |
+| R-NEXIT-FULL | forward | trend-flip | 321 | 1214 | 0.0 | -1.2 | -3.9 | 0.0 | 8.1 | -1.8 |
+| R-NEXIT-SENT | backtest | absorption-against | 393 | 250 | 0.0 | 1.2 | -4.2 | 0.2 | -50.2 | -1.8 |
+| R-NEXIT-SENT | backtest | deceleration-against | 82 | 561 | -0.8 | -1.0 | -1.9 | 22.3 | -36.05 | -2.6 |
 | R-NEXIT-SENT | backtest | opposing-effort | 424 | 219 | 0.0 | 5.8 | 0.0 | 0.6 | -24.7 | -1.8 |
-| R-NEXIT-SENT | backtest | opposing-sentence | 451 | 192 | -0.7 | -5.0 | -1.9 | -1.8 | -0.2 | -2.8 |
-| R-NEXIT-SENT | backtest | trend-flip | 333 | 310 | -6.7 | 3.35 | -4.0 | 0.0 | -35.0 | -8.7 |
-| R-NEXIT-SENT | forward | absorption-against | 486 | 370 | -0.4 | -0.85 | -4.5 | 0.0 | -7.3 | -1.8 |
-| R-NEXIT-SENT | forward | deceleration-against | 140 | 716 | -14.1 | -2.65 | -2.5 | -16.65 | -13.6 | -14.58 |
-| R-NEXIT-SENT | forward | opposing-effort | 512 | 344 | -0.75 | 2.0 | 0.0 | 0.0 | -10.95 | -1.8 |
-| R-NEXIT-SENT | forward | opposing-sentence | 517 | 339 | 0.3 | -6.06 | -1.9 | 0.5 | 0.15 | -1.5 |
-| R-NEXIT-SENT | forward | trend-flip | 512 | 344 | -1.45 | 0.65 | -4.0 | -1.8 | 5.1 | -3.45 |
-| R-NOTRAIL | backtest | absorption-against | 127 | 18 | -119.2 | -17.8 | -4.5 | -127.7 | -68.75 | -122.8 |
-| R-NOTRAIL | backtest | deceleration-against | 92 | 53 | -67.35 | -145.6 | -2.5 | -172.5 | -58.8 | -77.56 |
+| R-NEXIT-SENT | backtest | opposing-sentence | 451 | 192 | -0.7 | -5.0 | -1.2 | -1.8 | -0.2 | -2.8 |
+| R-NEXIT-SENT | backtest | trend-flip | 333 | 310 | -6.7 | 3.35 | -3.9 | 0.0 | -35.0 | -8.7 |
+| R-NEXIT-SENT | forward | absorption-against | 525 | 393 | 0.0 | -0.8 | -4.2 | 0.0 | -15.3 | -1.8 |
+| R-NEXIT-SENT | forward | deceleration-against | 149 | 769 | -14.6 | -2.2 | -1.9 | -14.15 | -14.6 | -14.97 |
+| R-NEXIT-SENT | forward | opposing-effort | 553 | 365 | -0.3 | 2.8 | 0.0 | 0.0 | -6.85 | -1.8 |
+| R-NEXIT-SENT | forward | opposing-sentence | 563 | 355 | 0.1 | -5.8 | -1.2 | 0.1 | 0.15 | -1.7 |
+| R-NEXIT-SENT | forward | trend-flip | 535 | 383 | -1.1 | 0.8 | -3.9 | -1.8 | 0.0 | -3.2 |
+| R-NOTRAIL | backtest | absorption-against | 127 | 18 | -119.2 | -17.8 | -4.2 | -127.7 | -68.75 | -122.8 |
+| R-NOTRAIL | backtest | deceleration-against | 92 | 53 | -67.35 | -145.6 | -1.9 | -172.5 | -58.8 | -77.56 |
 | R-NOTRAIL | backtest | opposing-effort | 123 | 22 | -132.8 | -30.5 | 0.0 | -117.65 | -151.9 | -130.06 |
-| R-NOTRAIL | backtest | opposing-sentence | 120 | 25 | -108.1 | -18.1 | -1.9 | -112.4 | -99.1 | -108.85 |
-| R-NOTRAIL | backtest | trend-flip | 143 | 2 | -101.9 | 121.85 | -4.0 | -101.9 | -101.25 | -103.3 |
-| R-NOTRAIL | forward | absorption-against | 204 | 43 | -44.6 | -31.3 | -4.5 | -63.15 | -9.45 | -55.39 |
-| R-NOTRAIL | forward | deceleration-against | 161 | 86 | -49.5 | -80.1 | -2.5 | -9.4 | -58.1 | -42.4 |
-| R-NOTRAIL | forward | opposing-effort | 210 | 37 | -53.6 | -15.8 | 0.0 | -60.05 | -17.2 | -62.19 |
-| R-NOTRAIL | forward | opposing-sentence | 181 | 66 | -40.5 | -61.55 | -1.9 | -40.5 | -45.9 | -46.69 |
-| R-NOTRAIL | forward | trend-flip | 238 | 9 | -50.85 | -68.92 | -4.0 | -55.9 | -4.2 | -54.14 |
-| R-OP2 | backtest | absorption-against | 383 | 545 | -6.0 | -13.37 | -4.5 | -8.0 | 0.0 | -11.93 |
-| R-OP2 | backtest | deceleration-against | 55 | 873 | 0.0 | -12.4 | -2.5 | -1.5 | 0.0 | -5.27 |
+| R-NOTRAIL | backtest | opposing-sentence | 120 | 25 | -108.1 | -18.1 | -1.2 | -112.4 | -99.1 | -108.85 |
+| R-NOTRAIL | backtest | trend-flip | 143 | 2 | -101.9 | 121.85 | -3.9 | -101.9 | -101.25 | -103.3 |
+| R-NOTRAIL | forward | absorption-against | 217 | 44 | -54.0 | -28.05 | -4.2 | -62.6 | -25.0 | -60.31 |
+| R-NOTRAIL | forward | deceleration-against | 167 | 94 | -61.5 | -79.85 | -1.9 | -61.6 | -61.5 | -62.13 |
+| R-NOTRAIL | forward | opposing-effort | 225 | 36 | -57.4 | -18.4 | 0.0 | -62.5 | -34.1 | -65.03 |
+| R-NOTRAIL | forward | opposing-sentence | 194 | 67 | -40.5 | -66.82 | -1.2 | -35.9 | -61.5 | -46.69 |
+| R-NOTRAIL | forward | trend-flip | 251 | 10 | -53.1 | -79.34 | -3.9 | -55.9 | -10.35 | -57.85 |
+| R-OP2 | backtest | absorption-against | 383 | 545 | -6.0 | -13.37 | -4.2 | -8.0 | 0.0 | -11.93 |
+| R-OP2 | backtest | deceleration-against | 55 | 873 | 0.0 | -12.4 | -1.9 | -1.5 | 0.0 | -5.27 |
 | R-OP2 | backtest | opposing-effort | 447 | 481 | -3.0 | -12.33 | 0.0 | -3.0 | -1.5 | -7.66 |
-| R-OP2 | backtest | opposing-sentence | 222 | 706 | -9.45 | -13.36 | -1.9 | -8.3 | -27.0 | -13.13 |
-| R-OP2 | backtest | trend-flip | 269 | 659 | -9.1 | -14.16 | -4.0 | -8.2 | -15.7 | -11.13 |
-| R-OP2 | forward | absorption-against | 441 | 915 | -4.9 | -8.88 | -4.5 | -5.1 | -1.15 | -7.63 |
-| R-OP2 | forward | deceleration-against | 79 | 1277 | -1.9 | -7.26 | -2.5 | -2.4 | -1.6 | -7.86 |
-| R-OP2 | forward | opposing-effort | 508 | 848 | 0.0 | -7.96 | 0.0 | 0.0 | 0.0 | -3.61 |
-| R-OP2 | forward | opposing-sentence | 245 | 1111 | -4.8 | -7.95 | -1.9 | -5.1 | 0.0 | -7.72 |
-| R-OP2 | forward | trend-flip | 418 | 938 | -3.5 | -8.96 | -4.0 | -3.5 | -2.8 | -5.89 |
-| R-SCALP-H6-REF | backtest | absorption-against | °8 | 10 | -37.55 | 24.08 | -4.5 | -37.55 | None | -30.55 |
-| R-SCALP-H6-REF | backtest | deceleration-against | °1 | 17 | -112.0 | 24.89 | -2.5 | None | -112.0 | -118.06 |
+| R-OP2 | backtest | opposing-sentence | 222 | 706 | -9.45 | -13.36 | -1.2 | -8.3 | -27.0 | -13.13 |
+| R-OP2 | backtest | trend-flip | 269 | 659 | -9.1 | -14.16 | -3.9 | -8.2 | -15.7 | -11.13 |
+| R-OP2 | forward | absorption-against | 471 | 958 | -4.8 | -9.09 | -4.2 | -5.1 | -1.15 | -7.63 |
+| R-OP2 | forward | deceleration-against | 89 | 1340 | -3.8 | -7.64 | -1.9 | -3.8 | -7.0 | -8.47 |
+| R-OP2 | forward | opposing-effort | 550 | 879 | 0.0 | -8.12 | 0.0 | 0.0 | 0.0 | -3.98 |
+| R-OP2 | forward | opposing-sentence | 270 | 1159 | -4.2 | -8.25 | -1.2 | -4.95 | 0.0 | -8.64 |
+| R-OP2 | forward | trend-flip | 436 | 993 | -3.5 | -9.19 | -3.9 | -3.5 | -0.6 | -5.86 |
+| R-SCALP-H6-REF | backtest | absorption-against | °8 | 10 | -37.55 | 24.08 | -4.2 | -37.55 | None | -30.55 |
+| R-SCALP-H6-REF | backtest | deceleration-against | °1 | 17 | -112.0 | 24.89 | -1.9 | None | -112.0 | -118.06 |
 | R-SCALP-H6-REF | backtest | opposing-effort | °6 | 12 | -31.25 | 24.08 | 0.0 | -31.25 | None | -34.05 |
-| R-SCALP-H6-REF | backtest | opposing-sentence | °3 | 15 | 25.1 | 23.27 | -1.9 | 25.1 | None | 22.54 |
-| R-SCALP-H6-REF | backtest | trend-flip | °11 | 7 | -67.5 | 24.89 | -4.0 | -67.5 | None | -76.39 |
-| R-SCALP-H6-REF | forward | absorption-against | °16 | 31 | 18.7 | 18.87 | -4.5 | 20.0 | -67.4 | 16.02 |
-| R-SCALP-H6-REF | forward | deceleration-against | °1 | 46 | 21.2 | 17.62 | -2.5 | 21.2 | None | 18.55 |
-| R-SCALP-H6-REF | forward | opposing-effort | °16 | 31 | 28.05 | 19.75 | 0.0 | 28.05 | None | 24.93 |
-| R-SCALP-H6-REF | forward | opposing-sentence | °9 | 38 | 12.5 | 17.85 | -1.9 | 12.5 | 33.25 | 11.84 |
-| R-SCALP-H6-REF | forward | trend-flip | 23 | 24 | 20.4 | 19.78 | -4.0 | 19.5 | 41.2 | 17.66 |
-| R-SCALP-H6 | backtest | absorption-against | °7 | 14 | 13.9 | 32.88 | -4.5 | 13.9 | None | 22.12 |
-| R-SCALP-H6 | backtest | deceleration-against | °1 | 20 | -97.5 | 32.7 | -2.5 | None | -97.5 | -99.66 |
+| R-SCALP-H6-REF | backtest | opposing-sentence | °3 | 15 | 25.1 | 23.27 | -1.2 | 25.1 | None | 22.54 |
+| R-SCALP-H6-REF | backtest | trend-flip | °11 | 7 | -67.5 | 24.89 | -3.9 | -67.5 | None | -76.39 |
+| R-SCALP-H6-REF | forward | absorption-against | °18 | 31 | 20.65 | 18.87 | -4.2 | 21.3 | -67.4 | 20.95 |
+| R-SCALP-H6-REF | forward | deceleration-against | °2 | 47 | 36.0 | 17.7 | -1.9 | 36.0 | None | 35.62 |
+| R-SCALP-H6-REF | forward | opposing-effort | °18 | 31 | 29.15 | 19.75 | 0.0 | 29.15 | None | 25.85 |
+| R-SCALP-H6-REF | forward | opposing-sentence | °10 | 39 | 16.5 | 18.34 | -1.2 | 16.5 | 33.25 | 17.31 |
+| R-SCALP-H6-REF | forward | trend-flip | 25 | 24 | 21.1 | 19.78 | -3.9 | 20.75 | 41.2 | 20.64 |
+| R-SCALP-H6 | backtest | absorption-against | °7 | 14 | 13.9 | 32.88 | -4.2 | 13.9 | None | 22.12 |
+| R-SCALP-H6 | backtest | deceleration-against | °1 | 20 | -97.5 | 32.7 | -1.9 | None | -97.5 | -99.66 |
 | R-SCALP-H6 | backtest | opposing-effort | °7 | 14 | 46.1 | 32.7 | 0.0 | 46.1 | None | 47.66 |
-| R-SCALP-H6 | backtest | opposing-sentence | °4 | 17 | 18.9 | 32.7 | -1.9 | 18.9 | None | 27.99 |
-| R-SCALP-H6 | backtest | trend-flip | °7 | 14 | 0.0 | 32.7 | -4.0 | 0.0 | None | -1.21 |
-| R-SCALP-H6 | forward | absorption-against | °14 | 32 | 19.05 | 16.34 | -4.5 | 21.2 | -58.9 | 13.99 |
-| R-SCALP-H6 | forward | deceleration-against | °1 | 45 | 13.7 | 15.79 | -2.5 | 13.7 | None | 9.6 |
-| R-SCALP-H6 | forward | opposing-effort | °14 | 32 | 15.7 | 17.1 | 0.0 | 15.7 | None | 13.36 |
-| R-SCALP-H6 | forward | opposing-sentence | °10 | 36 | -2.4 | 16.34 | -1.9 | -3.6 | -1.2 | -24.86 |
-| R-SCALP-H6 | forward | trend-flip | 23 | 23 | 19.7 | 18.87 | -4.0 | 19.15 | 49.0 | 13.79 |
+| R-SCALP-H6 | backtest | opposing-sentence | °4 | 17 | 18.9 | 32.7 | -1.2 | 18.9 | None | 27.99 |
+| R-SCALP-H6 | backtest | trend-flip | °7 | 14 | 0.0 | 32.7 | -3.9 | 0.0 | None | -1.21 |
+| R-SCALP-H6 | forward | absorption-against | °16 | 33 | 19.05 | 16.84 | -4.2 | 21.2 | -58.9 | 13.99 |
+| R-SCALP-H6 | forward | deceleration-against | °2 | 47 | 13.35 | 15.85 | -1.9 | 13.35 | None | 10.4 |
+| R-SCALP-H6 | forward | opposing-effort | °16 | 33 | 13.85 | 17.36 | 0.0 | 13.85 | None | 13.36 |
+| R-SCALP-H6 | forward | opposing-sentence | °11 | 38 | -1.2 | 17.1 | -1.2 | 0.65 | -1.2 | -5.4 |
+| R-SCALP-H6 | forward | trend-flip | 24 | 25 | 19.15 | 18.72 | -3.9 | 18.6 | 49.0 | 13.74 |
 
 | window | event | reverse n | reverse med pts | floor med pts |
 |---|---|---|---|---|
-| backtest | absorption-against | 163 | -14.81 | -7.9 |
-| backtest | deceleration-against | 25 | -14.64 | -7.9 |
-| backtest | opposing-effort | 166 | -12.62 | -7.9 |
-| backtest | opposing-sentence | 96 | -16.62 | -7.9 |
-| backtest | trend-flip | 140 | -9.23 | -7.9 |
-| forward | absorption-against | 188 | -9.57 | -7.9 |
-| forward | deceleration-against | 46 | -10.99 | -7.9 |
-| forward | opposing-effort | 214 | -10.05 | -7.9 |
-| forward | opposing-sentence | 103 | -7.29 | -7.9 |
-| forward | trend-flip | 226 | -8.22 | -7.9 |
+| backtest | absorption-against | 163 | -14.81 | -7.91 |
+| backtest | deceleration-against | 25 | -14.64 | -7.91 |
+| backtest | opposing-effort | 166 | -12.62 | -7.91 |
+| backtest | opposing-sentence | 96 | -16.62 | -7.91 |
+| backtest | trend-flip | 140 | -9.23 | -7.91 |
+| forward | absorption-against | 199 | -9.71 | -7.91 |
+| forward | deceleration-against | 51 | -9.47 | -7.91 |
+| forward | opposing-effort | 228 | -10.33 | -7.91 |
+| forward | opposing-sentence | 110 | -7.54 | -7.91 |
+| forward | trend-flip | 233 | -8.13 | -7.91 |
 
 ## us30fut (CANONICAL)
 
 | variant | window | event | n w/ | n w/o | remaining med (pts) | w/o-hold med | floor rem med | early rem | post-arm rem | actual−exit med |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-ARM15 | backtest | absorption-against | 207 | 73 | -4.5 | -7.1 | -3.5 | -4.5 | -3.0 | -2.63 |
+| R-ARM15 | backtest | absorption-against | 207 | 73 | -4.5 | -7.1 | -4.0 | -4.5 | -3.0 | -2.63 |
 | R-ARM15 | backtest | deceleration-against | 131 | 149 | -11.0 | -45.96 | -2.5 | 25.0 | -14.5 | -11.1 |
 | R-ARM15 | backtest | opposing-effort | 223 | 57 | 0.0 | -33.2 | 0.0 | -4.0 | 0.0 | -0.38 |
-| R-ARM15 | backtest | opposing-sentence | 191 | 89 | 8.5 | -16.7 | -3.5 | 10.5 | -32.0 | 6.9 |
-| R-ARM15 | backtest | trend-flip | 269 | 11 | -2.0 | -142.26 | -3.5 | -11.5 | 28.0 | -4.6 |
-| R-ARM15 | forward | absorption-against | 411 | 65 | -18.5 | -28.81 | -3.5 | -16.0 | -21.0 | -20.35 |
-| R-ARM15 | forward | deceleration-against | 177 | 299 | -17.0 | -36.71 | -2.5 | -11.0 | -19.1 | -17.41 |
-| R-ARM15 | forward | opposing-effort | 386 | 90 | -17.5 | -23.26 | 0.0 | -17.0 | -20.0 | -20.35 |
-| R-ARM15 | forward | opposing-sentence | 284 | 192 | -17.0 | -34.87 | -3.5 | -17.0 | -16.5 | -17.23 |
-| R-ARM15 | forward | trend-flip | 448 | 28 | -14.0 | -75.46 | -3.5 | -12.5 | -23.5 | -20.87 |
-| R-BE | backtest | absorption-against | 166 | 48 | -46.25 | -2.6 | -3.5 | -39.75 | -57.0 | -34.93 |
+| R-ARM15 | backtest | opposing-sentence | 191 | 89 | 8.5 | -16.7 | -5.0 | 10.5 | -32.0 | 6.9 |
+| R-ARM15 | backtest | trend-flip | 269 | 11 | -2.0 | -142.26 | -4.5 | -11.5 | 28.0 | -4.6 |
+| R-ARM15 | forward | absorption-against | 432 | 68 | -19.0 | -32.87 | -4.0 | -17.5 | -21.0 | -20.64 |
+| R-ARM15 | forward | deceleration-against | 189 | 311 | -14.0 | -37.21 | -2.5 | -8.75 | -17.0 | -15.15 |
+| R-ARM15 | forward | opposing-effort | 410 | 90 | -17.25 | -21.85 | 0.0 | -17.0 | -19.0 | -20.05 |
+| R-ARM15 | forward | opposing-sentence | 303 | 197 | -17.0 | -35.21 | -5.0 | -17.0 | -17.0 | -17.86 |
+| R-ARM15 | forward | trend-flip | 472 | 28 | -17.25 | -76.06 | -4.5 | -13.0 | -22.5 | -21.28 |
+| R-BE | backtest | absorption-against | 166 | 48 | -46.25 | -2.6 | -4.0 | -39.75 | -57.0 | -34.93 |
 | R-BE | backtest | deceleration-against | 101 | 113 | -23.5 | -80.55 | -2.5 | -8.5 | -36.5 | -33.1 |
 | R-BE | backtest | opposing-effort | 171 | 43 | -21.5 | -11.1 | 0.0 | -16.4 | -45.75 | -26.1 |
-| R-BE | backtest | opposing-sentence | 155 | 59 | -50.5 | -2.6 | -3.5 | -5.75 | -65.0 | -41.1 |
-| R-BE | backtest | trend-flip | 206 | 8 | -24.0 | -78.93 | -3.5 | -25.0 | -5.0 | -26.6 |
-| R-BE | forward | absorption-against | 339 | 47 | -13.5 | -2.6 | -3.5 | -9.5 | -21.75 | -12.6 |
-| R-BE | forward | deceleration-against | 164 | 222 | -24.0 | -7.85 | -2.5 | -17.0 | -26.1 | -26.1 |
-| R-BE | forward | opposing-effort | 329 | 57 | -16.0 | -2.6 | 0.0 | -7.5 | -22.5 | -17.1 |
-| R-BE | forward | opposing-sentence | 250 | 136 | -18.5 | -12.85 | -3.5 | -11.0 | -25.5 | -17.35 |
-| R-BE | forward | trend-flip | 362 | 24 | -11.5 | -75.46 | -3.5 | -10.75 | -22.25 | -12.1 |
-| R-NEXIT-EARLY | backtest | absorption-against | 243 | 866 | 0.0 | -3.1 | -3.5 | 0.0 | -1.0 | -2.6 |
+| R-BE | backtest | opposing-sentence | 155 | 59 | -50.5 | -2.6 | -5.0 | -5.75 | -65.0 | -41.1 |
+| R-BE | backtest | trend-flip | 206 | 8 | -24.0 | -78.93 | -4.5 | -25.0 | -5.0 | -26.6 |
+| R-BE | forward | absorption-against | 357 | 51 | -11.0 | -2.6 | -4.0 | -8.0 | -21.5 | -12.1 |
+| R-BE | forward | deceleration-against | 178 | 230 | -26.1 | -2.6 | -2.5 | -16.25 | -27.25 | -26.1 |
+| R-BE | forward | opposing-effort | 350 | 58 | -14.5 | -2.6 | 0.0 | -6.5 | -22.5 | -14.62 |
+| R-BE | forward | opposing-sentence | 266 | 142 | -18.5 | -10.6 | -5.0 | -5.0 | -31.0 | -17.35 |
+| R-BE | forward | trend-flip | 383 | 25 | -11.5 | -75.46 | -4.5 | -10.75 | -21.5 | -12.1 |
+| R-NEXIT-EARLY | backtest | absorption-against | 243 | 866 | 0.0 | -3.1 | -4.0 | 0.0 | -1.0 | -2.6 |
 | R-NEXIT-EARLY | backtest | deceleration-against | 35 | 1074 | -8.5 | -3.1 | -2.5 | -7.5 | -8.5 | -2.6 |
 | R-NEXIT-EARLY | backtest | opposing-effort | 225 | 884 | 0.0 | -2.1 | 0.0 | 0.0 | -1.0 | -2.6 |
-| R-NEXIT-EARLY | backtest | opposing-sentence | 109 | 1000 | 0.0 | -3.6 | -3.5 | 0.0 | -46.0 | -2.6 |
-| R-NEXIT-EARLY | backtest | trend-flip | 206 | 903 | 0.0 | -3.1 | -3.5 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-EARLY | forward | absorption-against | 446 | 1133 | 0.0 | -4.1 | -3.5 | 0.0 | -10.0 | -2.6 |
-| R-NEXIT-EARLY | forward | deceleration-against | 42 | 1537 | -3.25 | -3.6 | -2.5 | 2.0 | -26.0 | -5.85 |
-| R-NEXIT-EARLY | forward | opposing-effort | 293 | 1286 | 0.0 | -3.1 | 0.0 | 0.0 | -10.4 | -2.6 |
-| R-NEXIT-EARLY | forward | opposing-sentence | 148 | 1431 | 0.0 | -4.1 | -3.5 | 0.0 | -17.9 | -2.6 |
-| R-NEXIT-EARLY | forward | trend-flip | 256 | 1323 | 0.0 | -3.6 | -3.5 | 0.0 | -8.0 | -2.6 |
-| R-NEXIT-FULL | backtest | absorption-against | 242 | 922 | 0.0 | -3.1 | -3.5 | 0.0 | 2.0 | -2.6 |
+| R-NEXIT-EARLY | backtest | opposing-sentence | 109 | 1000 | 0.0 | -3.6 | -5.0 | 0.0 | -46.0 | -2.6 |
+| R-NEXIT-EARLY | backtest | trend-flip | 206 | 903 | 0.0 | -3.1 | -4.5 | 0.0 | 0.0 | -2.6 |
+| R-NEXIT-EARLY | forward | absorption-against | 479 | 1246 | 0.0 | -4.1 | -4.0 | 0.0 | -10.0 | -2.6 |
+| R-NEXIT-EARLY | forward | deceleration-against | 46 | 1679 | -5.75 | -3.6 | -2.5 | 2.0 | -29.0 | -8.35 |
+| R-NEXIT-EARLY | forward | opposing-effort | 328 | 1397 | 0.0 | -3.1 | 0.0 | 0.0 | -10.4 | -2.6 |
+| R-NEXIT-EARLY | forward | opposing-sentence | 156 | 1569 | 0.0 | -4.1 | -5.0 | 0.0 | -17.9 | -2.6 |
+| R-NEXIT-EARLY | forward | trend-flip | 264 | 1461 | 0.0 | -3.6 | -4.5 | 0.0 | -17.0 | -2.6 |
+| R-NEXIT-FULL | backtest | absorption-against | 242 | 922 | 0.0 | -3.1 | -4.0 | 0.0 | 2.0 | -2.6 |
 | R-NEXIT-FULL | backtest | deceleration-against | 32 | 1132 | -3.25 | -3.1 | -2.5 | -6.5 | 26.5 | -2.6 |
 | R-NEXIT-FULL | backtest | opposing-effort | 224 | 940 | 0.0 | -2.1 | 0.0 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-FULL | backtest | opposing-sentence | 95 | 1069 | 0.0 | -3.1 | -3.5 | 0.0 | -34.0 | -2.6 |
-| R-NEXIT-FULL | backtest | trend-flip | 217 | 947 | 0.0 | -3.1 | -3.5 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-FULL | forward | absorption-against | 452 | 1222 | 0.0 | -4.1 | -3.5 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-FULL | forward | deceleration-against | 32 | 1642 | 1.5 | -3.6 | -2.5 | 2.0 | -14.5 | -1.1 |
-| R-NEXIT-FULL | forward | opposing-effort | 286 | 1388 | 0.0 | -2.6 | 0.0 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-FULL | forward | opposing-sentence | 131 | 1543 | 0.0 | -3.6 | -3.5 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-FULL | forward | trend-flip | 259 | 1415 | 0.0 | -3.6 | -3.5 | 0.0 | -12.5 | -2.6 |
-| R-NEXIT-SENT | backtest | absorption-against | 383 | 284 | 0.0 | -1.35 | -3.5 | 0.0 | 33.5 | -2.6 |
+| R-NEXIT-FULL | backtest | opposing-sentence | 95 | 1069 | 0.0 | -3.1 | -5.0 | 0.0 | -34.0 | -2.6 |
+| R-NEXIT-FULL | backtest | trend-flip | 217 | 947 | 0.0 | -3.1 | -4.5 | 0.0 | 0.0 | -2.6 |
+| R-NEXIT-FULL | forward | absorption-against | 485 | 1335 | 0.0 | -3.6 | -4.0 | 0.0 | 0.0 | -2.6 |
+| R-NEXIT-FULL | forward | deceleration-against | 36 | 1784 | 2.0 | -3.6 | -2.5 | 2.0 | 1.0 | -0.6 |
+| R-NEXIT-FULL | forward | opposing-effort | 321 | 1499 | 0.0 | -2.6 | 0.0 | 0.0 | 0.0 | -2.6 |
+| R-NEXIT-FULL | forward | opposing-sentence | 139 | 1681 | 0.0 | -3.6 | -5.0 | 0.0 | 0.0 | -2.6 |
+| R-NEXIT-FULL | forward | trend-flip | 267 | 1553 | 0.0 | -3.6 | -4.5 | 0.0 | -8.0 | -2.6 |
+| R-NEXIT-SENT | backtest | absorption-against | 383 | 284 | 0.0 | -1.35 | -4.0 | 0.0 | 33.5 | -2.6 |
 | R-NEXIT-SENT | backtest | deceleration-against | 107 | 560 | 0.0 | -4.1 | -2.5 | 0.5 | 0.0 | -2.1 |
 | R-NEXIT-SENT | backtest | opposing-effort | 428 | 239 | 0.0 | -0.1 | 0.0 | 0.0 | 0.0 | -2.6 |
-| R-NEXIT-SENT | backtest | opposing-sentence | 471 | 196 | 0.0 | -2.1 | -3.5 | 0.5 | -2.0 | -2.6 |
-| R-NEXIT-SENT | backtest | trend-flip | 365 | 302 | 2.5 | -2.1 | -3.5 | 0.5 | 18.5 | -2.1 |
-| R-NEXIT-SENT | forward | absorption-against | 712 | 287 | 0.0 | -4.1 | -3.5 | 0.0 | -8.0 | -2.6 |
-| R-NEXIT-SENT | forward | deceleration-against | 147 | 852 | -1.0 | -4.1 | -2.5 | 2.5 | -14.0 | -2.6 |
-| R-NEXIT-SENT | forward | opposing-effort | 670 | 329 | 0.0 | 2.4 | 0.0 | 0.0 | -8.0 | -2.6 |
-| R-NEXIT-SENT | forward | opposing-sentence | 654 | 345 | 0.5 | -12.1 | -3.5 | 0.0 | 1.0 | -2.1 |
-| R-NEXIT-SENT | forward | trend-flip | 591 | 408 | -1.5 | -0.6 | -3.5 | -0.5 | -7.55 | -5.1 |
-| R-NOTRAIL | backtest | absorption-against | 136 | 41 | -108.5 | -46.1 | -3.5 | -113.0 | -75.5 | -108.49 |
+| R-NEXIT-SENT | backtest | opposing-sentence | 471 | 196 | 0.0 | -2.1 | -5.0 | 0.5 | -2.0 | -2.6 |
+| R-NEXIT-SENT | backtest | trend-flip | 365 | 302 | 2.5 | -2.1 | -4.5 | 0.5 | 18.5 | -2.1 |
+| R-NEXIT-SENT | forward | absorption-against | 770 | 326 | 0.0 | -4.6 | -4.0 | 0.0 | -8.0 | -2.6 |
+| R-NEXIT-SENT | forward | deceleration-against | 153 | 943 | -1.0 | -4.1 | -2.5 | 3.0 | -14.0 | -2.6 |
+| R-NEXIT-SENT | forward | opposing-effort | 748 | 348 | 0.0 | 2.4 | 0.0 | 0.0 | -8.0 | -2.6 |
+| R-NEXIT-SENT | forward | opposing-sentence | 723 | 373 | 0.5 | -10.1 | -5.0 | 0.0 | 1.0 | -2.1 |
+| R-NEXIT-SENT | forward | trend-flip | 620 | 476 | -1.0 | -0.6 | -4.5 | 0.0 | -8.0 | -4.1 |
+| R-NOTRAIL | backtest | absorption-against | 136 | 41 | -108.5 | -46.1 | -4.0 | -113.0 | -75.5 | -108.49 |
 | R-NOTRAIL | backtest | deceleration-against | 95 | 82 | -42.5 | -106.08 | -2.5 | -8.5 | -67.5 | -73.67 |
 | R-NOTRAIL | backtest | opposing-effort | 143 | 34 | -100.5 | -63.45 | 0.0 | -99.25 | -105.0 | -101.56 |
-| R-NOTRAIL | backtest | opposing-sentence | 130 | 47 | -88.75 | -91.26 | -3.5 | -52.5 | -102.0 | -94.72 |
-| R-NOTRAIL | backtest | trend-flip | 167 | 10 | -94.0 | -81.18 | -3.5 | -94.0 | -53.5 | -98.06 |
-| R-NOTRAIL | forward | absorption-against | 255 | 29 | -47.5 | -43.6 | -3.5 | -52.25 | -24.5 | -52.67 |
-| R-NOTRAIL | forward | deceleration-against | 151 | 133 | -28.5 | -68.85 | -2.5 | -36.0 | -28.5 | -31.1 |
-| R-NOTRAIL | forward | opposing-effort | 252 | 32 | -51.0 | -40.08 | 0.0 | -55.0 | -35.5 | -56.4 |
-| R-NOTRAIL | forward | opposing-sentence | 202 | 82 | -58.0 | -51.31 | -3.5 | -61.5 | -50.5 | -57.42 |
-| R-NOTRAIL | forward | trend-flip | 271 | 13 | -50.5 | -76.06 | -3.5 | -49.0 | -54.25 | -52.01 |
-| R-OP2 | backtest | absorption-against | 358 | 638 | -6.0 | -11.88 | -3.5 | -5.5 | -11.45 | -9.51 |
+| R-NOTRAIL | backtest | opposing-sentence | 130 | 47 | -88.75 | -91.26 | -5.0 | -52.5 | -102.0 | -94.72 |
+| R-NOTRAIL | backtest | trend-flip | 167 | 10 | -94.0 | -81.18 | -4.5 | -94.0 | -53.5 | -98.06 |
+| R-NOTRAIL | forward | absorption-against | 268 | 30 | -52.25 | -48.38 | -4.0 | -56.0 | -37.0 | -54.8 |
+| R-NOTRAIL | forward | deceleration-against | 160 | 138 | -34.0 | -69.56 | -2.5 | -19.0 | -39.75 | -35.89 |
+| R-NOTRAIL | forward | opposing-effort | 268 | 30 | -55.5 | -43.33 | 0.0 | -57.0 | -44.0 | -58.62 |
+| R-NOTRAIL | forward | opposing-sentence | 214 | 84 | -70.5 | -53.04 | -5.0 | -61.5 | -82.5 | -63.42 |
+| R-NOTRAIL | forward | trend-flip | 284 | 14 | -53.5 | -76.06 | -4.5 | -53.5 | -56.0 | -53.33 |
+| R-OP2 | backtest | absorption-against | 358 | 638 | -6.0 | -11.88 | -4.0 | -5.5 | -11.45 | -9.51 |
 | R-OP2 | backtest | deceleration-against | 55 | 941 | -3.5 | -10.12 | -2.5 | -1.5 | -8.0 | -4.22 |
 | R-OP2 | backtest | opposing-effort | 437 | 559 | 0.0 | -11.24 | 0.0 | 0.0 | -4.0 | -3.66 |
-| R-OP2 | backtest | opposing-sentence | 210 | 786 | -3.0 | -11.82 | -3.5 | -3.0 | -9.0 | -8.8 |
-| R-OP2 | backtest | trend-flip | 318 | 678 | -3.0 | -12.63 | -3.5 | -3.0 | 0.0 | -8.21 |
-| R-OP2 | forward | absorption-against | 653 | 797 | -3.0 | -8.97 | -3.5 | -3.0 | -11.0 | -6.96 |
-| R-OP2 | forward | deceleration-against | 66 | 1384 | 0.0 | -7.27 | -2.5 | 0.0 | -1.75 | -5.79 |
-| R-OP2 | forward | opposing-effort | 625 | 825 | 0.0 | -7.78 | 0.0 | 0.0 | -1.75 | -4.86 |
-| R-OP2 | forward | opposing-sentence | 293 | 1157 | -4.0 | -7.86 | -3.5 | -4.0 | 0.0 | -7.2 |
-| R-OP2 | forward | trend-flip | 395 | 1055 | -2.0 | -8.47 | -3.5 | -2.0 | -5.75 | -5.69 |
-| R-SCALP-H6-REF | backtest | absorption-against | °13 | 21 | 34.0 | 17.44 | -3.5 | 25.0 | 67.5 | 31.4 |
+| R-OP2 | backtest | opposing-sentence | 210 | 786 | -3.0 | -11.82 | -5.0 | -3.0 | -9.0 | -8.8 |
+| R-OP2 | backtest | trend-flip | 318 | 678 | -3.0 | -12.63 | -4.5 | -3.0 | 0.0 | -8.21 |
+| R-OP2 | forward | absorption-against | 725 | 830 | -3.5 | -9.35 | -4.0 | -3.5 | -11.0 | -7.35 |
+| R-OP2 | forward | deceleration-against | 71 | 1484 | 0.0 | -7.49 | -2.5 | 0.0 | 0.0 | -5.16 |
+| R-OP2 | forward | opposing-effort | 709 | 846 | 0.0 | -7.97 | 0.0 | 0.0 | -1.0 | -4.96 |
+| R-OP2 | forward | opposing-sentence | 339 | 1216 | -4.5 | -8.21 | -5.0 | -4.5 | 0.0 | -8.04 |
+| R-OP2 | forward | trend-flip | 425 | 1130 | -3.0 | -8.69 | -4.5 | -2.5 | -5.75 | -6.12 |
+| R-SCALP-H6-REF | backtest | absorption-against | °13 | 21 | 34.0 | 17.44 | -4.0 | 25.0 | 67.5 | 31.4 |
 | R-SCALP-H6-REF | backtest | deceleration-against | °2 | 32 | 84.45 | 17.82 | -2.5 | 106.9 | 62.0 | 81.42 |
 | R-SCALP-H6-REF | backtest | opposing-effort | °15 | 19 | 43.5 | 15.13 | 0.0 | 40.0 | 106.0 | 37.4 |
-| R-SCALP-H6-REF | backtest | opposing-sentence | °11 | 23 | 27.0 | 15.88 | -3.5 | 26.0 | 173.0 | 27.7 |
-| R-SCALP-H6-REF | backtest | trend-flip | 20 | 14 | 8.25 | 26.73 | -3.5 | 8.25 | None | 7.41 |
-| R-SCALP-H6-REF | forward | absorption-against | °13 | 26 | 13.5 | 22.42 | -3.5 | 13.5 | None | 13.88 |
-| R-SCALP-H6-REF | forward | deceleration-against | °2 | 37 | 65.5 | 19.05 | -2.5 | 65.5 | None | 63.07 |
-| R-SCALP-H6-REF | forward | opposing-effort | °14 | 25 | 17.75 | 22.61 | 0.0 | 17.75 | None | 23.14 |
-| R-SCALP-H6-REF | forward | opposing-sentence | °8 | 31 | 4.75 | 20.01 | -3.5 | 3.0 | 41.5 | 8.29 |
-| R-SCALP-H6-REF | forward | trend-flip | °15 | 24 | 21.5 | 17.23 | -3.5 | 21.5 | None | 28.86 |
-| R-SCALP-H6 | backtest | absorption-against | °14 | 17 | 39.05 | 20.04 | -3.5 | 34.55 | 58.0 | 33.9 |
+| R-SCALP-H6-REF | backtest | opposing-sentence | °11 | 23 | 27.0 | 15.88 | -5.0 | 26.0 | 173.0 | 27.7 |
+| R-SCALP-H6-REF | backtest | trend-flip | 20 | 14 | 8.25 | 26.73 | -4.5 | 8.25 | None | 7.41 |
+| R-SCALP-H6-REF | forward | absorption-against | °14 | 27 | 13.75 | 22.23 | -4.0 | 13.75 | None | 14.71 |
+| R-SCALP-H6-REF | forward | deceleration-against | °2 | 39 | 65.5 | 19.05 | -2.5 | 65.5 | None | 63.07 |
+| R-SCALP-H6-REF | forward | opposing-effort | °14 | 27 | 17.75 | 22.61 | 0.0 | 17.75 | None | 23.14 |
+| R-SCALP-H6-REF | forward | opposing-sentence | °9 | 32 | 6.5 | 19.69 | -5.0 | 4.75 | 41.5 | 11.53 |
+| R-SCALP-H6-REF | forward | trend-flip | °15 | 26 | 21.5 | 17.23 | -4.5 | 21.5 | None | 28.86 |
+| R-SCALP-H6 | backtest | absorption-against | °14 | 17 | 39.05 | 20.04 | -4.0 | 34.55 | 58.0 | 33.9 |
 | R-SCALP-H6 | backtest | deceleration-against | °1 | 30 | 87.4 | 26.73 | -2.5 | 87.4 | None | 79.85 |
 | R-SCALP-H6 | backtest | opposing-effort | °14 | 17 | 45.7 | 20.04 | 0.0 | 47.9 | 43.5 | 38.42 |
-| R-SCALP-H6 | backtest | opposing-sentence | °12 | 19 | 34.95 | 20.04 | -3.5 | 27.0 | 154.0 | 29.8 |
-| R-SCALP-H6 | backtest | trend-flip | °18 | 13 | 2.25 | 28.25 | -3.5 | 2.25 | None | 16.02 |
-| R-SCALP-H6 | forward | absorption-against | °14 | 24 | 16.5 | 22.23 | -3.5 | 16.5 | None | 13.46 |
-| R-SCALP-H6 | forward | deceleration-against | °2 | 36 | 62.0 | 17.91 | -2.5 | 54.0 | 70.0 | 65.93 |
-| R-SCALP-H6 | forward | opposing-effort | °12 | 26 | 20.75 | 22.23 | 0.0 | 20.75 | None | 17.31 |
-| R-SCALP-H6 | forward | opposing-sentence | °9 | 29 | 16.0 | 19.36 | -3.5 | 10.5 | 41.5 | 13.88 |
-| R-SCALP-H6 | forward | trend-flip | °16 | 22 | 25.75 | 17.46 | -3.5 | 25.75 | None | 28.96 |
+| R-SCALP-H6 | backtest | opposing-sentence | °12 | 19 | 34.95 | 20.04 | -5.0 | 27.0 | 154.0 | 29.8 |
+| R-SCALP-H6 | backtest | trend-flip | °18 | 13 | 2.25 | 28.25 | -4.5 | 2.25 | None | 16.02 |
+| R-SCALP-H6 | forward | absorption-against | °15 | 25 | 17.0 | 22.23 | -4.0 | 17.0 | None | 13.88 |
+| R-SCALP-H6 | forward | deceleration-against | °2 | 38 | 62.0 | 17.91 | -2.5 | 54.0 | 70.0 | 65.93 |
+| R-SCALP-H6 | forward | opposing-effort | °13 | 27 | 21.0 | 22.23 | 0.0 | 21.0 | None | 17.54 |
+| R-SCALP-H6 | forward | opposing-sentence | °10 | 30 | 20.0 | 18.85 | -5.0 | 16.0 | 41.5 | 17.71 |
+| R-SCALP-H6 | forward | trend-flip | °17 | 23 | 27.5 | 17.68 | -4.5 | 27.5 | None | 19.64 |
 
 | window | event | reverse n | reverse med pts | floor med pts |
 |---|---|---|---|---|
@@ -430,8 +430,8 @@ Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_intra_trade_census,
 | backtest | opposing-effort | 167 | -12.62 | -7.64 |
 | backtest | opposing-sentence | 84 | -12.59 | -7.64 |
 | backtest | trend-flip | 156 | -10.73 | -7.64 |
-| forward | absorption-against | 289 | -6.97 | -7.64 |
-| forward | deceleration-against | 36 | -9.14 | -7.64 |
-| forward | opposing-effort | 241 | -7.6 | -7.64 |
-| forward | opposing-sentence | 116 | -4.52 | -7.64 |
-| forward | trend-flip | 208 | -8.61 | -7.64 |
+| forward | absorption-against | 308 | -6.9 | -7.64 |
+| forward | deceleration-against | 39 | -9.22 | -7.64 |
+| forward | opposing-effort | 262 | -8.14 | -7.64 |
+| forward | opposing-sentence | 130 | -5.42 | -7.64 |
+| forward | trend-flip | 218 | -8.61 | -7.64 |

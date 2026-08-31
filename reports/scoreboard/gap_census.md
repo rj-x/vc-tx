@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
+Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
 
 ## uk100fut (CANONICAL; spread 1.3 pts)
 
@@ -41,8 +41,8 @@ Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 85 | 1.82 | 0.122 | asia 37.6, dead 5.9, london 38.8, ny_only 11.8, overlap 5.9 | -1.7/-2.3/-3.3/-3.0 |
-| forward | 34 | 0.73 | 0.328 | asia 64.7, london 11.8, ny_only 20.6, overlap 2.9 | -0.2/-1.8/-1.8/-0.1 |
+| backtest | 85 | 1.8 | 0.122 | asia 37.6, dead 5.9, london 38.8, ny_only 11.8, overlap 5.9 | -1.7/-2.3/-3.3/-3.0 |
+| forward | 35 | 0.74 | 0.315 | asia 62.9, london 11.4, ny_only 20.0, overlap 5.7 | -0.8/-1.7/-1.7/+0.0 |
 
 ## ger40fut (CANONICAL; spread 1.5 pts)
 
@@ -79,8 +79,8 @@ Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 257 | 6.53 | 0.079 | asia 93.0, dead 2.3, london 3.9, ny_only 0.8 | -1.5/-1.2/-1.1/-0.9 |
-| forward | 70 | 1.78 | 0.142 | asia 85.7, dead 4.3, london 7.1, ny_only 2.9 | -0.6/+0.9/+0.3/+2.0 |
+| backtest | 257 | 6.45 | 0.079 | asia 93.0, dead 2.3, london 3.9, ny_only 0.8 | -1.5/-1.2/-1.1/-0.9 |
+| forward | 70 | 1.76 | 0.142 | asia 85.7, dead 4.3, london 7.1, ny_only 2.9 | -0.6/+0.9/+0.3/+2.0 |
 
 ## nas100fut (CANONICAL; spread 1.8 pts)
 
@@ -112,14 +112,14 @@ Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | window | n | med abs seam/ATR | up % | continuation mean/med (pts) |
 |---|---|---|---|---|
 | backtest | °10 | 5.723 | 40.0 | 8.29/-20.9 |
-| forward | °9 | 4.161 | 55.6 | -36.29/-2.2 |
+| forward | °10 | 3.527 | 50.0 | -31.53/0.9 |
 
 ### nas100fut — intrasession 1M micro-gaps (beyond measured spread)
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | °10 | 0.25 | 0.053 | dead 40.0, london 30.0, ny_only 10.0, overlap 20.0 | -1.0/+17.4/+10.6/+15.5 |
-| forward | °8 | 0.2 | 0.095 | dead 25.0, london 37.5, ny_only 37.5 | -0.9/-26.2/-23.3/-36.2 |
+| backtest | °10 | 0.24 | 0.053 | dead 40.0, london 30.0, ny_only 10.0, overlap 20.0 | -1.0/+17.4/+10.6/+15.5 |
+| forward | °8 | 0.19 | 0.095 | dead 25.0, london 37.5, ny_only 37.5 | -0.9/-26.2/-23.3/-36.2 |
 
 ## us30fut (CANONICAL; spread 2.6 pts)
 
@@ -148,11 +148,11 @@ Engine `facb7d553` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | window | n | med abs seam/ATR | up % | continuation mean/med (pts) |
 |---|---|---|---|---|
 | backtest | °10 | 5.704 | 70.0 | -76.06/-86.0 |
-| forward | °9 | 4.515 | 33.3 | -67.23/-35.5 |
+| forward | °10 | 3.948 | 40.0 | -65.22/-41.3 |
 
 ### us30fut — intrasession 1M micro-gaps (beyond measured spread)
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 41 | 1.01 | 0.065 | asia 7.3, dead 43.9, london 22.0, ny_only 7.3, overlap 19.5 | +5.6/+2.1/+4.0/+6.1 |
+| backtest | 41 | 1.0 | 0.065 | asia 7.3, dead 43.9, london 22.0, ny_only 7.3, overlap 19.5 | +5.6/+2.1/+4.0/+6.1 |
 | forward | °16 | 0.39 | 0.106 | asia 12.5, dead 43.8, london 25.0, overlap 18.8 | -0.7/+1.3/-13.7/-10.0 |

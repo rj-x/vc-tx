@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL drift census \u2014 descriptive; grading-fairness first; never validation",
-  "engine_commit": "facb7d553ce6fef59453bfabd5d2886b62292e9d",
+  "engine_commit": "78bd8f52b9328353232c8011fe8c3092efd92018",
   "results": [
     {
       "instrument": "uk100fut",
@@ -26,7 +26,7 @@
           },
           "intraday": {
             "n": 10,
-            "mean_bps": -5.27,
+            "mean_bps": -4.85,
             "median_bps": -5.36
           }
         }
@@ -61,17 +61,17 @@
         },
         "forward": {
           "london": {
-            "n": 3849,
-            "mean_bps": -0.04,
+            "n": 3900,
+            "mean_bps": -0.03,
             "median_bps": 0.0
           },
           "overlap": {
-            "n": 1105,
-            "mean_bps": 0.07,
+            "n": 1225,
+            "mean_bps": 0.06,
             "median_bps": 0.0
           },
           "ny_only": {
-            "n": 2698,
+            "n": 2967,
             "mean_bps": -0.01,
             "median_bps": 0.0
           },
@@ -112,8 +112,8 @@
           },
           "intraday": {
             "n": 10,
-            "mean_bps": -6.71,
-            "median_bps": 1.6
+            "mean_bps": -4.7,
+            "median_bps": 1.78
           }
         }
       },
@@ -147,17 +147,17 @@
         },
         "forward": {
           "london": {
-            "n": 3850,
+            "n": 3900,
             "mean_bps": -0.01,
-            "median_bps": 0.02
+            "median_bps": 0.0
           },
           "overlap": {
-            "n": 1105,
-            "mean_bps": -0.02,
+            "n": 1225,
+            "mean_bps": 0.0,
             "median_bps": -0.04
           },
           "ny_only": {
-            "n": 2700,
+            "n": 2969,
             "mean_bps": -0.02,
             "median_bps": 0.0
           },
@@ -192,14 +192,14 @@
         },
         "forward": {
           "overnight": {
-            "n": 9,
-            "mean_bps": -1.8,
-            "median_bps": 24.65
+            "n": 10,
+            "mean_bps": -3.75,
+            "median_bps": 1.65
           },
           "intraday": {
-            "n": 9,
-            "mean_bps": -14.72,
-            "median_bps": -25.08
+            "n": 10,
+            "mean_bps": -17.7,
+            "median_bps": -30.14
           }
         }
       },
@@ -233,22 +233,22 @@
         },
         "forward": {
           "london": {
-            "n": 3850,
+            "n": 3900,
             "mean_bps": -0.03,
-            "median_bps": 0.0
+            "median_bps": -0.03
           },
           "overlap": {
-            "n": 1105,
-            "mean_bps": -0.08,
+            "n": 1225,
+            "mean_bps": -0.03,
             "median_bps": 0.1
           },
           "ny_only": {
-            "n": 2700,
-            "mean_bps": -0.01,
-            "median_bps": 0.0
+            "n": 2970,
+            "mean_bps": -0.04,
+            "median_bps": -0.03
           },
           "dead": {
-            "n": 1738,
+            "n": 1767,
             "mean_bps": 0.07,
             "median_bps": 0.0
           },
@@ -278,14 +278,14 @@
         },
         "forward": {
           "overnight": {
-            "n": 9,
-            "mean_bps": -1.14,
-            "median_bps": -7.59
+            "n": 10,
+            "mean_bps": 1.2,
+            "median_bps": -2.97
           },
           "intraday": {
-            "n": 9,
-            "mean_bps": -2.72,
-            "median_bps": -8.4
+            "n": 10,
+            "mean_bps": -5.39,
+            "median_bps": -13.65
           }
         }
       },
@@ -319,23 +319,23 @@
         },
         "forward": {
           "london": {
-            "n": 3851,
+            "n": 3900,
             "mean_bps": -0.02,
             "median_bps": 0.0
           },
           "overlap": {
-            "n": 1105,
-            "mean_bps": 0.03,
+            "n": 1225,
+            "mean_bps": 0.04,
             "median_bps": 0.09
           },
           "ny_only": {
-            "n": 2700,
-            "mean_bps": -0.02,
+            "n": 2970,
+            "mean_bps": -0.04,
             "median_bps": 0.0
           },
           "dead": {
-            "n": 1733,
-            "mean_bps": 0.03,
+            "n": 1762,
+            "mean_bps": 0.02,
             "median_bps": 0.0
           },
           "asia": {
