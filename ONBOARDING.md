@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 125). Sections
+**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 129). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 125** — the marker §7 maintains. The weekly
+**Register-current-through: 129** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -90,6 +90,13 @@ restoration ritual immediately after.**
   door — listed, not minted (registers 73, 80, 84).
 - Tone: precise, direct, no cheerleading. Push back with reasons. Treat
   operator recollections as hypotheses worth testing.
+- **Pipeline latency rules (register 127).** A new hypothesis on
+  existing vocabulary is signal-live in the NEXT session's order (the
+  H20 SLA); anything needing new machinery gets a build slot or an
+  explicit parked-until-<condition> tag AT PRE-REGISTRATION — a bare
+  "pre-registered" is not a legal state; the INSIGHTS DELTA prints
+  unbuilt pre-registrations weekly (loud past 10 registers) and the
+  expiry sweep (register 126) — nothing ages invisibly.
 - **Every working session ends with a CLOSURE block (register 118).**
   Every idea raised: SENT / BACKLOGGED (named row) / PARKED (reason) /
   DROPPED (stated). You draft it; the operator's send enacts it; a
