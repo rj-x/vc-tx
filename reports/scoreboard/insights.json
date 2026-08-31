@@ -1,6 +1,6 @@
 {
   "STAMP": "INSIGHTS ledger \u2014 an index of what clears, what is watched, what is benched, what is parked, and what changed; never evidence",
-  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "engine_commit": "9bf46c7c6fb17e452fe9b7f5121351e5c53f38d1",
   "date": "2026-08-31",
   "clearing": [
     {
@@ -2810,8 +2810,8 @@
     },
     {
       "candidate": "pyramiding counterfactual",
-      "register": "79",
-      "gate": "build slot behind the census reads (measurement, no grammar)",
+      "register": "79 / 127",
+      "gate": "parked-until-next-sitting-prioritization (register 127 sweep: its stated gate is met; the park is a priority choice)",
       "status": "gated (no live artifact)"
     },
     {
@@ -2881,6 +2881,85 @@
       "register": "44",
       "standing_null": "NOT PASSED (procedural)",
       "expiry": "re-openable only by re-registration"
+    }
+  ],
+  "unbuilt_prereg": [
+    {
+      "item": "item-22 session-JSONL persistence",
+      "register": 22,
+      "prereg_date": "2026-08-17",
+      "tag": "parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127)",
+      "age_registers": 107,
+      "age_days": 14,
+      "loud": false
+    },
+    {
+      "item": "s9 scenario",
+      "register": 27,
+      "prereg_date": "2026-08-17",
+      "tag": "parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31)",
+      "age_registers": 102,
+      "age_days": 14,
+      "loud": false
+    },
+    {
+      "item": "scalp location census",
+      "register": 64,
+      "prereg_date": "2026-08-23",
+      "tag": "parked-until-next-sitting-prioritization (tagged 2026-08-31)",
+      "age_registers": 65,
+      "age_days": 8,
+      "loud": false
+    },
+    {
+      "item": "exit-and-reverse grammar (capability)",
+      "register": 78,
+      "prereg_date": "2026-08-24",
+      "tag": "parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31)",
+      "age_registers": 51,
+      "age_days": 7,
+      "loud": false
+    },
+    {
+      "item": "pyramiding counterfactual",
+      "register": 79,
+      "prereg_date": "2026-08-24",
+      "tag": "parked-until-next-sitting-prioritization (its stated gate \u2014 in-trade census reads \u2014 is MET; the park is a priority choice, dated 2026-08-31)",
+      "age_registers": 50,
+      "age_days": 7,
+      "loud": false
+    },
+    {
+      "item": "R-SCOPED-BE (contingent variant)",
+      "register": 92,
+      "prereg_date": "2026-08-27",
+      "tag": "parked-until-gate (the register-107 readout, re-read weekly \u2014 NOT PASSED on any leg)",
+      "age_registers": 37,
+      "age_days": 4,
+      "loud": false
+    }
+  ],
+  "expiry_crossed": [
+    {
+      "verdict": "H8 at/below base rate",
+      "register": "36/74",
+      "condition": ">= 30 forward initiation episodes",
+      "crossed": true,
+      "current": "n=339"
+    },
+    {
+      "verdict": "VWAP: nothing survives the re-cut",
+      "register": "51",
+      "condition": "forward fires double from the verdict date, or the first monthly review (~2026-09-22)",
+      "crossed": null,
+      "current": "not machine-checkable as written (hand row stands)"
+    },
+    {
+      "verdict": "quadrant persistence: class doesn't predict next close",
+      "register": "68/74",
+      "condition": "forward quadrant n doubles (~1400 bars/quadrant)",
+      "crossed": null,
+      "current": "not machine-checkable as written (hand row stands)"
     }
   ],
   "delta": {
@@ -3255,19 +3334,19 @@
       "census:ger40fut|forward|S1-H1": "2026-08-30",
       "h6-glint:session:overlap": "2026-08-30",
       "anatomy-watch:ger40fut|4h|D|backtest|narrow_loud_share": "2026-08-30",
-      "anatomy-watch:ger40fut|4h|D|backtest|svol_sess_median": "2026-08-31",
-      "event:R-BE|held:high|ger40fut": "2026-08-31",
-      "event:R-OP2|news30:native|uk100fut": "2026-08-31",
-      "stress:ger40fut|R-SCALP-H6-REF|forward": "2026-08-31",
+      "event-glint:R-BE|held:high": "2026-08-31",
       "event-glint:R-NEXIT-SENT|open30": "2026-08-31",
       "event:R-BE|held:high|nas100fut": "2026-08-31",
-      "event-glint:R-BE|held:high": "2026-08-31",
-      "anatomy-watch:uk100fut|4h|D|backtest|svol_sess_median": "2026-08-31",
-      "event:R-NEXIT-SENT|open30|uk100fut": "2026-08-31",
       "stress:ger40fut|R-SCALP-H6|forward": "2026-08-31",
-      "anatomy-watch:uk100fut|4h|D|backtest|svol15_median": "2026-08-31",
       "event:R-OP2|open30|nas100fut": "2026-08-31",
-      "event-glint:R-OP2|news30:native": "2026-08-31"
+      "event:R-BE|held:high|ger40fut": "2026-08-31",
+      "event:R-NEXIT-SENT|open30|uk100fut": "2026-08-31",
+      "stress:ger40fut|R-SCALP-H6-REF|forward": "2026-08-31",
+      "anatomy-watch:uk100fut|4h|D|backtest|svol_sess_median": "2026-08-31",
+      "event-glint:R-OP2|news30:native": "2026-08-31",
+      "event:R-OP2|news30:native|uk100fut": "2026-08-31",
+      "anatomy-watch:uk100fut|4h|D|backtest|svol15_median": "2026-08-31",
+      "anatomy-watch:ger40fut|4h|D|backtest|svol_sess_median": "2026-08-31"
     },
     "previous_date": "2026-08-30"
   }

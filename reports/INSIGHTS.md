@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `729f4cc79` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `9bf46c7c6` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
 ## A. Cells clearing a null on this emission (121)
 
@@ -272,7 +272,7 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 | H6-not-in-London suppression composite | 93 | HOLD — re-proposes only if below-chance suppression reappears on fresh accrual | gated (no live artifact) |
 | per-market candidate pool (3 seeded cells) | 105 item 4 | operator's mechanism sentence, then the track's selection-null and a >= 45-row forward clock | 3 of 3 slots EMPTY |
 | HELD sentences: nas100fut R-NEXIT-FULL x overlap; us30fut R-ARM15 x dead | 105 follow-through | condition (b): selection-percentile > 95 on a future emission | n=107 (97 distinct) sel-pct win 83.0 / median 87.0; condition (b) unmet; n=65 (55 distinct) sel-pct win 73.0 / median 0.0; condition (b) unmet |
-| pyramiding counterfactual | 79 | build slot behind the census reads (measurement, no grammar) | gated (no live artifact) |
+| pyramiding counterfactual | 79 / 127 | parked-until-next-sitting-prioritization (register 127 sweep: its stated gate is met; the park is a priority choice) | gated (no live artifact) |
 | H15 sweep-zone entry variant | 79 | PARKED until H15's record justifies | gated (no live artifact) |
 | zone census v3 (departure bases, D1/H4) | 111 | mint-on-lift only; scarcity check first (D1 5-15 active zones per leg expected) | uk100fut ?; ger40fut ?; nas100fut ?; us30fut ? |
 
@@ -296,5 +296,23 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 - AGED (clearing both emissions): 114 — census:ger40fut|backtest|S0-H11; census:ger40fut|backtest|S0-H6; census:ger40fut|forward|S0-H6; census:nas100fut|backtest|S0-H6; census:nas100fut|forward|S0-H6; census:uk100fut|backtest|S0-H6; census:uk100fut|forward|S0-H6; census:us30fut|backtest|S0-H1; census:us30fut|forward|S0-H6; event:R-ARM15|open15|us30fut; event:R-ARM15|open30|nas100fut; event:R-BE|close30|uk100fut; event:R-BE|open15|ger40fut; event:R-BE|open30|ger40fut; event:R-NEXIT-EARLY|close30|uk100fut; event:R-NEXIT-EARLY|news30:native|us30fut; event:R-NEXIT-EARLY|open15|ger40fut; event:R-NEXIT-EARLY|open15|nas100fut; event:R-NEXIT-EARLY|open30|nas100fut; event:R-NEXIT-EARLY|open30|uk100fut; event:R-NEXIT-FULL|close30|uk100fut; event:R-NEXIT-FULL|news30:native|us30fut; event:R-NEXIT-FULL|open15|ger40fut; event:R-NEXIT-FULL|open15|nas100fut; event:R-NEXIT-FULL|open30|uk100fut; … (+89 more, in insights.json)
 - DIED (cleared last emission, not now): 6 — event:R-ARM15|open15|nas100fut; event:R-NEXIT-EARLY|open15|uk100fut; event:R-NEXIT-SENT|news15:native|nas100fut; event:R-NEXIT-SENT|news30:cross|nas100fut; event:R-NEXIT-SENT|open15|us30fut; event:R-OP2|open15|uk100fut
 - WATCH entries new / gone: 6 / 3 — gone:event-glint:R-NEXIT-SENT|news30:cross; event-glint:R-NEXIT-SENT|open15; event-glint:R-OP2|open15
+
+
+### Unbuilt pre-registrations (register 127 — the idea-to-data alarm; oldest first; 'pre-registered' without a build slot or a parked-until tag is not a legal state; an UNPARKED entry older than 10 registers is LOUD every week until built or re-parked with a dated reason)
+
+| item | register | age (registers / days) | tag |
+|---|---|---|---|
+| item-22 session-JSONL persistence | 22 | 107 / 14 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
+| s9 scenario | 27 | 102 / 14 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
+| scalp location census | 64 | 65 / 8 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
+| exit-and-reverse grammar (capability) | 78 | 51 / 7 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
+| pyramiding counterfactual | 79 | 50 / 7 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
+| R-SCOPED-BE (contingent variant) | 92 | 37 / 4 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
+
+### Expiry sweep (register 126 — negative-verdict expiries vs current n; a crossed expiry emits its re-read at the next sitting and can never age silently)
+
+- **EXPIRY-CROSSED**: H8 at/below base rate (register 36/74; condition: >= 30 forward initiation episodes; current: n=339)
+- hand-checked: VWAP: nothing survives the re-cut (register 51; condition: forward fires double from the verdict date, or the first monthly review (~2026-09-22); current: not machine-checkable as written (hand row stands))
+- hand-checked: quadrant persistence: class doesn't predict next close (register 68/74; condition: forward quadrant n doubles (~1400 bars/quadrant); current: not machine-checkable as written (hand row stands))
 
 Founding example (register 110): the narrative survey's home consistency count read 13 of 20 pairs at percentile 100 on the 2026-08-23 emission and 9 of 31 at percentile 89 on the 2026-08-30 emission — a field-level DIED that predates this ledger; field-level readings are therefore ledger entries (survey-field keys), so the next such death is dated here.

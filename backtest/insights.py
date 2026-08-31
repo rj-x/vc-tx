@@ -59,9 +59,10 @@ BENCH = (
                   "us30fut R-ARM15 x dead", "register": "105 follow-through",
      "gate": "condition (b): selection-percentile > 95 on a future emission",
      "live": "held"},
-    {"candidate": "pyramiding counterfactual", "register": "79",
-     "gate": "build slot behind the census reads (measurement, no grammar)",
-     "live": None},
+    {"candidate": "pyramiding counterfactual", "register": "79 / 127",
+     "gate": "parked-until-next-sitting-prioritization (register 127 "
+             "sweep: its stated gate is met; the park is a priority "
+             "choice)", "live": None},
     {"candidate": "H15 sweep-zone entry variant", "register": "79",
      "gate": "PARKED until H15's record justifies", "live": None},
     {"candidate": "zone census v3 (departure bases, D1/H4)", "register": "111",
@@ -71,6 +72,109 @@ BENCH = (
 
 HELD = (("nas100fut", "forward", "R-NEXIT-FULL", "overlap", "none"),
         ("us30fut", "forward", "R-ARM15", "dead", "none"))
+
+# register 127 (the idea-to-data alarm): every pre-registered-but-
+# unbuilt item, with its registration date and its 2b tag (build-now or
+# parked-until-<condition>); "pre-registered" WITHOUT a tag is no
+# longer a legal state. The DELTA prints this block every week, oldest
+# first; any UNPARKED entry older than 10 registers is a LOUD line
+# until built or re-parked with a dated reason. Maintained with the
+# backlog (hand-curated, register-cited).
+UNBUILT_PREREGS = (
+    {"item": "item-22 session-JSONL persistence", "register": 22,
+     "prereg_date": "2026-08-17",
+     "tag": "parked-until-operator-restart-window (a live-loop restart "
+            "is operator-supervised; tagged 2026-08-31, register 127)"},
+    {"item": "s9 scenario", "register": 27,
+     "prereg_date": "2026-08-17",
+     "tag": "parked-until-operator-ruling (one-line ruling owed; "
+            "tagged 2026-08-31)"},
+    {"item": "scalp location census", "register": 64,
+     "prereg_date": "2026-08-23",
+     "tag": "parked-until-next-sitting-prioritization (tagged "
+            "2026-08-31)"},
+    {"item": "exit-and-reverse grammar (capability)", "register": 78,
+     "prereg_date": "2026-08-24",
+     "tag": "parked-until-in-trade-census-flip-legs-read-at-a-sitting "
+            "(register 78's own gate; tagged 2026-08-31)"},
+    {"item": "pyramiding counterfactual", "register": 79,
+     "prereg_date": "2026-08-24",
+     "tag": "parked-until-next-sitting-prioritization (its stated gate "
+            "— in-trade census reads — is MET; the park is a priority "
+            "choice, dated 2026-08-31)"},
+    {"item": "R-SCOPED-BE (contingent variant)", "register": 92,
+     "prereg_date": "2026-08-27",
+     "tag": "parked-until-gate (the register-107 readout, re-read "
+            "weekly — NOT PASSED on any leg)"},
+)
+
+# register 126 (the expiry sweep): machine checks for the backlog's
+# negative-verdict expiries; None = not machine-checkable as written
+# (the hand row stands; listed so the class is visible)
+
+
+def _h8_forward_n():
+    d = _load("hypothesis_performance.json")
+    try:
+        r = d["instruments"]["uk100fut"]["signals"]["forward"]
+        row = (r.get("S0-H" + str(8) + " (either-dir)")
+               or r.get("S0-H" + str(8)) or {})
+        return int((row.get("initiation") or {}).get("of") or 0)
+    except Exception:
+        return 0
+
+
+EXPIRY_CHECKS = (
+    {"verdict": "H" + str(8) + " at/below base rate",
+     "register": "36/74",
+     "condition": ">= 30 forward initiation episodes",
+     "check": lambda: (lambda n: (n >= 30, f"n={n}"))(_h8_forward_n())},
+    {"verdict": "VWAP: nothing survives the re-cut", "register": "51",
+     "condition": "forward fires double from the verdict date, or the "
+                  "first monthly review (~2026-09-22)",
+     "check": None},
+    {"verdict": "quadrant persistence: class doesn't predict next close",
+     "register": "68/74",
+     "condition": "forward quadrant n doubles (~1400 bars/quadrant)",
+     "check": None},
+)
+
+
+def unbuilt_block(latest_register):
+    rows = []
+    for u in sorted(UNBUILT_PREREGS, key=lambda x: x["register"]):
+        age_r = latest_register - u["register"]
+        age_d = (dt.date.today() - dt.date.fromisoformat(
+            u["prereg_date"])).days
+        rows.append({**u, "age_registers": age_r, "age_days": age_d,
+                     "loud": bool(age_r > 10 and not
+                                  u["tag"].startswith("parked"))})
+    return rows
+
+
+def expiry_crossed():
+    out = []
+    for e in EXPIRY_CHECKS:
+        if e["check"] is None:
+            out.append({**{k: e[k] for k in ("verdict", "register",
+                                             "condition")},
+                        "crossed": None, "current": "not machine-"
+                        "checkable as written (hand row stands)"})
+        else:
+            crossed, cur = e["check"]()
+            out.append({**{k: e[k] for k in ("verdict", "register",
+                                             "condition")},
+                        "crossed": bool(crossed), "current": cur})
+    return out
+
+
+def latest_register():
+    txt = open(os.path.join(ROOT, "audit",
+                            "strategy_findings_and_risks.md")).read()
+    import re
+    return max(int(x) for x in re.findall(r"^(\d+)\.\s\*\*", txt,
+                                          re.M))
+
 
 # (D) parked threads whose standing null lives in prose (no live JSON)
 PARKED_STATIC = (
@@ -451,7 +555,8 @@ def build(today, prev=None):
     zone3 = _load("zone_census_v3.json")
     anatomy = _load("zone_anatomy.json")
     stress = _load("stress_state.json")
-    cofr = _load("cofire_reread_2026-08-28.json")
+    cofr = _load("cofire_reread_2026-08-28.json",
+                 os.path.join(ROOT, "reports", "archive"))   # reg 126
     forensics = _load("forensics.json",
                       os.path.join(ROOT, "reports", "forensics"))
     clearing = clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6,
@@ -469,6 +574,8 @@ def build(today, prev=None):
         w["age_weeks"] = age_weeks(d["first_seen"], w["key"], today)
     return {"date": today, "clearing": clearing, "watch": watch,
             "forensics_watch": fwatch, "bench": bench, "parked": parked,
+            "unbuilt_prereg": unbuilt_block(latest_register()),
+            "expiry_crossed": expiry_crossed(),
             "delta": d}
 
 
@@ -546,6 +653,27 @@ def _emit(art, head):
           + ((" — gone:" + _keys(d["watch_died"])[3:]) if d["watch_died"]
              and not founding else ""),
           "",
+          "", "### Unbuilt pre-registrations (register 127 — the "
+          "idea-to-data alarm; oldest first; 'pre-registered' without a "
+          "build slot or a parked-until tag is not a legal state; an "
+          "UNPARKED entry older than 10 registers is LOUD every week "
+          "until built or re-parked with a dated reason)", "",
+          "| item | register | age (registers / days) | tag |",
+          "|---|---|---|---|"]
+    for u in art.get("unbuilt_prereg", []):
+        loud = "**LOUD: build or re-park** — " if u["loud"] else ""
+        L.append(f"| {u['item']} | {u['register']} "
+                 f"| {u['age_registers']} / {u['age_days']} "
+                 f"| {loud}{u['tag']} |")
+    L += ["", "### Expiry sweep (register 126 — negative-verdict "
+          "expiries vs current n; a crossed expiry emits its re-read "
+          "at the next sitting and can never age silently)", ""]
+    for e in art.get("expiry_crossed", []):
+        st = ("**EXPIRY-CROSSED**" if e["crossed"] else
+              "not crossed" if e["crossed"] is False else "hand-checked")
+        L.append(f"- {st}: {e['verdict']} (register {e['register']}; "
+                 f"condition: {e['condition']}; current: {e['current']})")
+    L += ["",
           "Founding example (register 110): the narrative survey's home "
           "consistency count read 13 of 20 pairs at percentile 100 on the "
           "2026-08-23 emission and 9 of 31 at percentile 89 on the "
