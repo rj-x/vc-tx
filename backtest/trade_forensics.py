@@ -172,9 +172,12 @@ def outcome_of(points, spread):
     return "win" if points > 0 else "loss"
 
 
-def enrich_rows(rows, A, spread, boundary, go_live):
+def enrich_rows(rows, A, spread, boundary, go_live, calendar=None):
     """Mechanical enrichment of one instrument's journal rows against
-    its per-bar context arrays. Pure given (rows, A, spread, zones)."""
+    its per-bar context arrays. Pure given (rows, A, spread, zones,
+    calendar); calendar = (rel, span) from event_clock.load_calendar
+    for the register-124 spans_high_event flag (None -> flag None)."""
+    from backtest.event_clock import spans_high
     ts = A["ts"]
     n = len(ts)
     out = []
@@ -182,6 +185,9 @@ def enrich_rows(rows, A, spread, boundary, go_live):
         e = dict(r)
         open_ts = pd.Timestamp(r["open_ts"])
         close_ts = pd.Timestamp(r["close_ts"])
+        e["spans_high_event"] = (
+            spans_high(r["open_ts"], r["close_ts"], *calendar)
+            if calendar else None)
         d = int(r["direction"])
         pts = float(r["points"])
         entry = float(r["open_price"])
@@ -265,7 +271,10 @@ ENRICH_COLS = ("dow", "hour_utc", "quadrant", "mtf", "h11", "phase",
                "mfe_pts", "mae_atr", "mfe_atr", "time_to_mfe_min",
                "bars_to_resolution", "cont_30m_pts", "cont_60m_pts",
                "postexit_mfe_60m_pts", "r_multiple", "outcome",
-               "in_lockbox_span")
+               "in_lockbox_span",
+               "spans_high_event")   # register 124: the hold window
+                                     # contains a High release (None =
+                                     # outside calendar coverage)
 
 
 # ---------------------------------------------------------------- report
@@ -859,13 +868,15 @@ def main():
                           capture_output=True, text=True).stdout.strip()
     journal = list(csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")))
     boundary, gl = lockbox_boundary(), zones()["go_live"]
+    from backtest.event_clock import load_calendar
+    calendar = load_calendar()          # register 124: spans_high_event
     enriched = []
     for instr in a.instr:
         print(f"# trade_forensics: {instr} ...", file=sys.stderr)
         rows = [r for r in journal if r["instrument"] == instr]
         A = _context_arrays(instr)
         enriched.extend(enrich_rows(rows, A, _spread_median(instr),
-                                    boundary, gl))
+                                    boundary, gl, calendar))
     cols = (list(journal[0].keys()) + list(ENRICH_COLS)
             if journal else [])
     with open(ENRICHED_CSV, "w", newline="") as f:

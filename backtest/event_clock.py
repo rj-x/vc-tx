@@ -139,6 +139,28 @@ def tag_row(r, rel, span):
     return tags, covered
 
 
+def spans_high(open_ts, close_ts, rel, span):
+    """Register 124 (held-through-event): the hold window
+    [open_ts, close_ts] contains a High release. The live calendar is
+    High-USD/GBP-only by the merge gate; the impact field is filtered
+    explicitly here as the belt over that convention. None when any
+    day the hold touches is outside coverage (excluded, never
+    no-event) — the register-104 coverage rule extended to spans."""
+    t0 = pd.Timestamp(open_ts)
+    t1 = pd.Timestamp(close_ts)
+    d = t0.normalize()
+    while d <= t1.normalize():
+        if not in_coverage(str(d.date()), span):
+            return None
+        d += pd.Timedelta(days=1)
+    for rt, _ccy, imp, _name in rel:
+        if rt > t1.value:
+            break
+        if imp == "High" and t0.value <= rt <= t1.value:
+            return True
+    return False
+
+
 def journal_rows():
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     out = []
@@ -150,7 +172,8 @@ def journal_rows():
         if w is None:
             continue
         out.append({"instrument": r["instrument"], "variant": r["variant"],
-                    "open_ts": r["open_ts"], "window": w,
+                    "open_ts": r["open_ts"], "close_ts": r["close_ts"],
+                    "window": w,
                     "pts": float(r["points"]), "reason": r["exit_reason"]})
     return out
 
@@ -270,7 +293,9 @@ def candidates(res):
                  else "glint" if cl else "none")
         out[f"{var}|{tag}"] = {"legs": legs, "clearing": sorted(cl),
                                "grade": grade,
-                               "mechanism": ("scheduled avoidance"
+                               "mechanism": ("held-through exposure"
+                                             if tag.startswith("held")
+                                             else "scheduled avoidance"
                                              if tag.startswith("news")
                                              else "auction avoidance")}
     return out
@@ -282,6 +307,11 @@ def run():
     tagged = [tag_row(r, rel, span) for r in rows]
     tags = [t for t, _c in tagged]
     excluded_news = sum(1 for _t, c in tagged if not c)
+    # register 124: the held-through cut — a SPAN flag, not a window
+    # tag; rides the same cells/luck/candidates machinery
+    for r, t in zip(rows, tags):
+        t["held:high"] = spans_high(r["open_ts"], r["close_ts"], rel,
+                                    span)
     res = cells(rows, tags)
     budget = luck(rows, tags, res)
     cand = candidates(res)
@@ -322,7 +352,14 @@ def _emit(art, head):
          "94). Ex-lockbox. Rule candidates on survival are mechanism-"
          "matched and separate (news-window pause / open-window pause), "
          "distinguished from register 103's failed reactive cooldowns by "
-         "their EX-ANTE mechanism; front door, ratification required.", "",
+         "their EX-ANTE mechanism; front door, ratification required. "
+         "HELD-THROUGH CUT (register 124): held:high = the HOLD WINDOW "
+         "[open, close] contains a High release (a span flag, not an "
+         "entry-window tag; impact filtered explicitly as the belt over "
+         "the High-only merge convention; holds touching any uncovered "
+         "day are EXCLUDED per the coverage rule) — outcomes for trades "
+         "holding across releases vs not, per variant x leg, the same "
+         "permutation luck budget.", "",
          f"**Luck budget:** {lb['observed_qualifying']} of "
          f"{lb['measurable_cells']} measurable cells reach |gap| >= "
          f"{SPLIT_MIN_PP:g}pp vs null median {lb['null_median']} / p95 "
