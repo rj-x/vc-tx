@@ -2,12 +2,14 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `e51412472` — emission 2026-08-30; previous none (founding emission). AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `729f4cc79` — emission 2026-08-31; previous 2026-08-30. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
-## A. Cells clearing a null on this emission (120)
+## A. Cells clearing a null on this emission (121)
 
 | source | instrument | window | cell | statistic | value | n | percentile | null | age (w) |
 |---|---|---|---|---|---|---|---|---|---|
+| stress_state.md | ger40fut | forward | R-SCALP-H6 by stress state | best-worst state median gap | 4.53 (mixed) | 58 | — | day-state permutation p95 | 0 |
+| stress_state.md | ger40fut | forward | R-SCALP-H6-REF by stress state | best-worst state median gap | 1.97 (calm) | 51 | — | day-state permutation p95 | 0 |
 | per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.9 | 10 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | median | 18.21 | 10 | 100.0 | field best-of selection null p95 | 0 |
 | per_market_watch.md | ger40fut | forward | R-ARM15 x overlap x none | median | 3.0 | 44 (43) | 95.0 | field best-of selection null p95 | 0 |
@@ -98,17 +100,17 @@ Engine `e51412472` — emission 2026-08-30; previous none (founding emission). A
 | bar_persistence.md (via WATCH census clears) | us30fut | backtest | S0-H1 net reach 0.5xATR@5 | net_reach_pct | 28.6 | 49 | 96.0 | census signal-label selection null p95 | 0 |
 | bar_persistence.md (via WATCH census clears) | us30fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 41.5 | 65 | 100.0 | census signal-label selection null p95 | 0 |
 | journal_survey.md | pooled | both | max positive cells in one variant | concentration | 11 | None | 100.0 | variant-label permutation p95 | 0 |
-| event_clock.md | nas100fut | forward | R-ARM15|open15 | glint | -24.9 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | us30fut | forward | R-ARM15|open15 | glint | -24.4 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-ARM15|open30 | glint | -19.0 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-BE|close30 | glint | -15.2 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | ger40fut | forward | R-BE|held:high | glint | 18.5 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | nas100fut | forward | R-BE|held:high | glint | 15.0 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | ger40fut | forward | R-BE|open15 | glint | -22.2 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | ger40fut | forward | R-BE|open30 | glint | -22.9 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-NEXIT-EARLY|close30 | glint | -12.8 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | us30fut | forward | R-NEXIT-EARLY|news30:native | glint | -18.2 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | ger40fut | forward | R-NEXIT-EARLY|open15 | glint | -20.4 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-NEXIT-EARLY|open15 | glint | -28.6 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|open15 | glint | 15.2 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-NEXIT-EARLY|open30 | glint | -18.5 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-NEXIT-EARLY|open30 | glint | 14.6 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-NEXIT-FULL|close30 | glint | -13.5 | None | — | per-leg null p95 / member band | 0 |
@@ -116,31 +118,33 @@ Engine `e51412472` — emission 2026-08-30; previous none (founding emission). A
 | event_clock.md | ger40fut | forward | R-NEXIT-FULL|open15 | glint | -17.7 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-NEXIT-FULL|open15 | glint | -25.9 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-NEXIT-FULL|open30 | glint | 15.2 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NEXIT-SENT|news15:native | glint | 23.0 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-NEXIT-SENT|news15:native | glint | 33.0 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NEXIT-SENT|news30:cross | glint | -27.9 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-NEXIT-SENT|news30:native | glint | 22.4 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-NEXIT-SENT|open15 | glint | -20.6 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | uk100fut | forward | R-NEXIT-SENT|open30 | glint | 13.8 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | nas100fut | forward | R-NOTRAIL|close15 | glint | -30.6 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-OP2|open15 | glint | 12.3 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | uk100fut | forward | R-OP2|news30:native | glint | -19.6 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | nas100fut | forward | R-OP2|open30 | glint | -11.2 | None | — | per-leg null p95 / member band | 0 |
 | event_clock.md | uk100fut | forward | R-OP2|open30 | glint | 17.2 | None | — | per-leg null p95 / member band | 0 |
 | scalp_risk_grid.md | ger40fut | forward | cooldown|R-SCALP-H6-REF|forward|30 | glint | -72.9 | None | — | per-leg null p95 / member band | 0 |
 | scalp_risk_grid.md | nas100fut | forward | cooldown|R-SCALP-H6|forward|15 | glint | -99.5 | None | — | per-leg null p95 / member band | 0 |
 | h6_refinement.md | scalp | forward | field count of qualifying splits | field count | 48 | 83 | 96.0 | label permutation p95 | 0 |
-| event_clock.md | all | both | field count of qualifying window splits | field count | 153 | 324 | 100.0 | label permutation p95 | 0 |
+| event_clock.md | all | both | field count of qualifying window splits | field count | 175 | 358 | 100.0 | label permutation p95 | 0 |
 
-## B. WATCH / glint entries (118) — listed, never rules; age = weeks since first appearance here
+## B. WATCH / glint entries (121) — listed, never rules; age = weeks since first appearance here
 
 | kind | source | entry | legs | status | age (w) |
 |---|---|---|---|---|---|
 | anatomy finding | zone_anatomy.md | uk100fut loud_rate in-zone (4h/D, backtest) | uk100fut | shift -4.01 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | uk100fut spread_pctile_median in-zone (4h/D, backtest) | uk100fut | shift -5.154 (pct 99.0); sel-pct 92.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | uk100fut spread_pctile_median in-zone (4h/D, backtest) | uk100fut | shift -5.154 (pct 99.0); sel-pct 91.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | uk100fut svol15_median in-zone (4h/D, backtest) | uk100fut | shift +13.343 (pct 100.0); sel-pct 94.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | uk100fut svol_sess_median in-zone (4h/D, backtest) | uk100fut | shift +396.129 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut rel_volume_median in-zone (4h/D, backtest) | ger40fut | shift -0.635 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut loud_rate in-zone (4h/D, backtest) | ger40fut | shift -27.467 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut spread_pctile_median in-zone (4h/D, backtest) | ger40fut | shift -37.783 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut narrow_loud_share in-zone (4h/D, backtest) | ger40fut | shift -6.575 (pct 100.0); sel-pct 98.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut nd_rate in-zone (4h/D, backtest) | ger40fut | shift +24.945 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut ns_rate in-zone (4h/D, backtest) | ger40fut | shift +19.215 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut svol_sess_median in-zone (4h/D, backtest) | ger40fut | shift +16934.3 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut rel_volume_median in-zone (4h/D, forward) | ger40fut | shift +0.226 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut loud_rate in-zone (4h/D, forward) | ger40fut | shift +15.081 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
 | anatomy finding | zone_anatomy.md | ger40fut spread_pctile_median in-zone (4h/D, forward) | ger40fut | shift +7.008 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 0 |
@@ -227,26 +231,26 @@ Engine `e51412472` — emission 2026-08-30; previous none (founding emission). A
 | census clear | bar_persistence.md | us30fut S0-H7 backtest net reach 0.5xATR@5 | us30fut | n=41 sel-pct 7.0 inside null | 0 |
 | census clear | bar_persistence.md | us30fut S1-H1 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=2 (23 to go) | 0 |
 | census clear | bar_persistence.md | us30fut S1-H11 backtest net reach 0.5xATR@5 | us30fut | n=189 sel-pct 15.0 inside null | 0 |
-| glint | event_clock.md | R-ARM15|open15 | nas100fut, us30fut | glint (2 of 4 legs) | 0 |
+| glint | event_clock.md | R-ARM15|open15 | us30fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-ARM15|open30 | nas100fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-BE|close30 | uk100fut | glint (1 of 3 legs) | 0 |
+| glint | event_clock.md | R-BE|held:high | ger40fut, nas100fut | glint (2 of 4 legs) | 0 |
 | glint | event_clock.md | R-BE|open15 | ger40fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-BE|open30 | ger40fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-EARLY|close30 | uk100fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-EARLY|news30:native | us30fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-EARLY|open15 | ger40fut, nas100fut, uk100fut | glint (3 of 4 legs) | 0 |
+| glint | event_clock.md | R-NEXIT-EARLY|open15 | ger40fut, nas100fut | glint (2 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-EARLY|open30 | nas100fut, uk100fut | glint (2 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-FULL|close30 | uk100fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-FULL|news30:native | us30fut | glint (1 of 3 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-FULL|open15 | ger40fut, nas100fut | glint (2 of 4 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-FULL|open30 | uk100fut | glint (1 of 4 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-SENT|news15:native | nas100fut, uk100fut | glint (2 of 3 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-SENT|news30:cross | nas100fut | glint (1 of 4 legs) | 0 |
+| glint | event_clock.md | R-NEXIT-SENT|news15:native | uk100fut | glint (1 of 3 legs) | 0 |
 | glint | event_clock.md | R-NEXIT-SENT|news30:native | nas100fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-SENT|open15 | us30fut | glint (1 of 4 legs) | 0 |
+| glint | event_clock.md | R-NEXIT-SENT|open30 | uk100fut | glint (1 of 4 legs) | 0 |
 | glint | event_clock.md | R-NOTRAIL|close15 | nas100fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-OP2|open15 | uk100fut | glint (1 of 4 legs) | 0 |
-| glint | event_clock.md | R-OP2|open30 | uk100fut | glint (1 of 4 legs) | 0 |
+| glint | event_clock.md | R-OP2|news30:native | uk100fut | glint (1 of 3 legs) | 0 |
+| glint | event_clock.md | R-OP2|open30 | nas100fut, uk100fut | glint (2 of 4 legs) | 0 |
 | glint | scalp_risk_grid.md | cooldown|R-SCALP-H6-REF|forward|30 | ger40fut | glint (1 of 4 legs) | 0 |
 | glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|15 | nas100fut | glint (1 of 4 legs) | 0 |
 | glint | h6_refinement.md | quadrant:narrow-quiet | scalp | glint | 0 |
@@ -286,11 +290,11 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 | drift census | 51 | no base-rate change | self-expiring on change |
 | flip gate | 44 | NOT PASSED (procedural) | re-openable only by re-registration |
 
-## E. DELTA since the founding emission
+## E. DELTA since 2026-08-30
 
-- CROSSED (clearing now, not last emission): 120 — founding emission: every key is CROSSED by construction (keys in insights.json)
-- AGED (clearing both emissions): 0
-- DIED (cleared last emission, not now): 0
-- WATCH entries new / gone: 118 / 0
+- CROSSED (clearing now, not last emission): 7 — event:R-BE|held:high|ger40fut; event:R-BE|held:high|nas100fut; event:R-NEXIT-SENT|open30|uk100fut; event:R-OP2|news30:native|uk100fut; event:R-OP2|open30|nas100fut; stress:ger40fut|R-SCALP-H6-REF|forward; stress:ger40fut|R-SCALP-H6|forward
+- AGED (clearing both emissions): 114 — census:ger40fut|backtest|S0-H11; census:ger40fut|backtest|S0-H6; census:ger40fut|forward|S0-H6; census:nas100fut|backtest|S0-H6; census:nas100fut|forward|S0-H6; census:uk100fut|backtest|S0-H6; census:uk100fut|forward|S0-H6; census:us30fut|backtest|S0-H1; census:us30fut|forward|S0-H6; event:R-ARM15|open15|us30fut; event:R-ARM15|open30|nas100fut; event:R-BE|close30|uk100fut; event:R-BE|open15|ger40fut; event:R-BE|open30|ger40fut; event:R-NEXIT-EARLY|close30|uk100fut; event:R-NEXIT-EARLY|news30:native|us30fut; event:R-NEXIT-EARLY|open15|ger40fut; event:R-NEXIT-EARLY|open15|nas100fut; event:R-NEXIT-EARLY|open30|nas100fut; event:R-NEXIT-EARLY|open30|uk100fut; event:R-NEXIT-FULL|close30|uk100fut; event:R-NEXIT-FULL|news30:native|us30fut; event:R-NEXIT-FULL|open15|ger40fut; event:R-NEXIT-FULL|open15|nas100fut; event:R-NEXIT-FULL|open30|uk100fut; … (+89 more, in insights.json)
+- DIED (cleared last emission, not now): 6 — event:R-ARM15|open15|nas100fut; event:R-NEXIT-EARLY|open15|uk100fut; event:R-NEXIT-SENT|news15:native|nas100fut; event:R-NEXIT-SENT|news30:cross|nas100fut; event:R-NEXIT-SENT|open15|us30fut; event:R-OP2|open15|uk100fut
+- WATCH entries new / gone: 6 / 3 — gone:event-glint:R-NEXIT-SENT|news30:cross; event-glint:R-NEXIT-SENT|open15; event-glint:R-OP2|open15
 
 Founding example (register 110): the narrative survey's home consistency count read 13 of 20 pairs at percentile 100 on the 2026-08-23 emission and 9 of 31 at percentile 89 on the 2026-08-30 emission — a field-level DIED that predates this ledger; field-level readings are therefore ledger entries (survey-field keys), so the next such death is dated here.

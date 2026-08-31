@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 116 (freshness-checked by the weekly
+table.** Register-current-through: 125 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -17,6 +17,7 @@ authoritative.
 | H11 node-stall clause | awaiting-decision-grading-mode (register 46 sub-question) |
 | H13 value-area reclaim | testable-now (S0-H13 live 08-20; expected-rare, accruing) |
 | H14 counter-trend absorption, H15 sweep-reclaim (params flagged), H16 intraday momentum | testable-now (minted 08-22; rows open next run) |
+| H20 breakout companion (wide-bar close-through of a session extreme) | MINTED 2026-08-31 (register 117: H6's vocabulary verbatim, zero new constants; conditioned row on the wide-bar class; rows open next run; S1-H20 level-quality clause parked with the mint; recipe-geometry note — stop at the broken level — noted, not enacted) |
 | S1-H11 node-stall (SUPPRESSION grading) | testable-now (negative lift = the claim winning) |
 | R2 refinement experiment | VERDICT READ 2026-08-23 (register 70): refinement = PER-FAMILY design choice — worsens climax/trend, improves rejection/absorption; future recipes cite refined/unrefined |
 | composites (H14+) | awaiting the co-fire census read → front-door per pair with real lift |
@@ -56,9 +57,9 @@ authoritative.
 | co-fire census | RE-READ EXECUTED 2026-08-28 (register 88 item 7: zero qualifying pairs — the with-stacks are the thin leg, 3 cells at n≥15; the sitting's 248 reconciled to total-n; accrual decides; dated artifact archive-bound after the next sitting) |
 | excursion profiles | testable-now (weekly; the v1 values input) |
 | flip cut | archived standing reference (register 44) |
-| aggregation-decay census | awaiting-build-T3b (gated behind it in the lab queue) |
+| aggregation-decay census | BUILT 2026-08-31 (register 121; weekly Part C; see the Organs table) |
 | scalp location census | awaiting-decision-cycle-slot (gated; location-split per amendment) |
-| T3b recipe-layer build | awaiting-decision-next-lab-cycle (H10's deprioritize label is an input) |
+| T3b recipe-layer build | BUILT 2026-08-31 (register 121: T1d-exact gate + signature fallbacks; H10's enacted deprioritize on record as the input; exploratory run behind the boundary check, reports/lab/) |
 | s9 scenario | awaiting-decision-ruling-cycle |
 | decelerating-thrust divergence (docketed external) | MEASURED FIRST as the in-trade census class deceleration-against (register 95 item 1; indicator-free, registered swing legs, no new thresholds); standalone hypothesis only via front door on a census read |
 | persistence-census matched blocks + census-clears routing | BUILT 2026-08-30 (register 108: n + member count + CLEARS RANGE flag in every matched block; clears measurable at n≥25 route to per_market_watch.md wearing a signal-label selection-null; ger40 forward n-check done — 4 of 7 measurable, only graded S0-H6 beats its field null; nas100 R-NOTRAIL×overlap +149.75 n=16 CONFIRMED with receipts — day-carried and path-duplicated, forward cell is the live read) |
@@ -68,11 +69,16 @@ authoritative.
 | zone census v3 (departure bases, D1/H4) | PRE-REGISTERED + BUILT 2026-08-30 (register 111: NEW definition + source, not a v2 rerun — base = ≥swing_k bars inside 1×ATR, impulsive departure {1.5,3}×ATR, zone = the base's range, full trade-through invalidation; scarcity check stated: D1 ~5–15 active/leg, hundreds = definition FAILED and the census says so; register-105 consistency statistics + selection-null on journal cells; mint-on-lift only; weekly Part C) |
 | H4 key-zone conditioner census | PARKED 2026-08-28 (register 97): the v2 ladder stands as the STANDING NULL, accruing weekly under Part C; no further rungs (window-relative touch variant explicitly not taken); the source idea measured-and-unsupported at every reading of 'significant and recent'; revisitable only by re-registration on new evidence |
 
-## Organs (register 16; one at a time)
+## Organs (register 16; one at a time — the one-at-a-time rule spent by the 2026-08-31 session order, which built three in one dated order)
 
 | idea | status |
 |---|---|
 | #1 volume profile (re-ranked first) | BUILT 2026-08-20; proposals RATIFIED (register 46); engine field emission awaiting-decision-if-needed |
+| #4 cumulative signed volume | BUILT 2026-08-31 (register 119: sv15 + sv_sess fields; matrix sv dim; anatomy (a)/(b) metrics; H12's named sign source — its re-registration stays a future operator proposal) |
+| #5 dwell-time at levels | BUILT 2026-08-31 (register 120: per level-touch episode over session extremes / h11 nodes / v3 zones; H12's visit definition + anatomy (e) + location family) |
+| #2 regime/efficiency half | BUILT 2026-08-31 (register 122: eff15 + eff_sess; the capture study's efficiency-at-entry second lens; the deceleration class remains the built half) |
+| cross-asset stress organ (NEW) | PRE-REGISTERED + BUILT 2026-08-31 (register 123: calm/mixed/stressed per day from gold/eurusd/us500 PRICES — register-40 park acknowledged, volume untouched; matrix dim + scalp split with day-state permutation luck; conditioning only, never sizing) |
+| T3b + aggregation-decay census | BUILT 2026-08-31 (register 121: T3b as pre-sketched — T1d-exact gate, signature fallbacks specified at prereg, runs post-commit behind the boundary check; the decay census weekly under Part C — cascade arrival vs the k-lag floor, per-event rv survival from the rung FeatureEngines; H9's instrument) |
 | #2 velocity/efficiency | half-built (register 115: the register-95 deceleration class is the built half; the regime/efficiency organ remains unbuilt); prioritization deferred until after the sealed window's first read |
 | #3 coil, #4 signed volume, #5 dwell-time | dispositions registered 2026-08-30 (register 115): #3 eventual with params ratified; #4/#5 the NAMED future instruments for H12's clauses (zero fires — vocabulary never built) and arrival-anatomy extensions; prioritization deferred until after the sealed window's first read; queue page archived (reports/archive/sense_organ_queue.md) |
 | #6 order-flow delta | unreachable (data ceiling, recorded) |
@@ -112,6 +118,10 @@ authoritative.
 | portfolio heat / sizing | OPEN DESIGN ITEM (register 77; no ad-hoc sizing) |
 | instrument exclusion (spread burden) | OPEN RECOMMENDATION to operator (register 77; home 0.111xATR flagged; never auto-applied) |
 | narrative doctrine | REGISTERED 2026-08-23 (register 69; cuts both ways — sentences at-floor would falsify the thesis itself); CLAUSE-3 STRESS NOTE dated 2026-08-30 (register 110: consistency not field-significant on any leg, home 13/20-at-100 → 9/31-at-89 dated from artifact history; composites at-floor; RECORDED NOT RULED — the September sealed window arbitrates; H17–H19 accrue unchanged) |
+| held-through-event enrichment | BUILT 2026-08-31 (register 124: spans_high_event in trades_enriched + the event clock's held:high cut; span coverage rule; luck-priced) |
+| COT positioning source | PARKED 2026-08-31 (register 125: weekly CFTC as a future fetcher on the calendar-fetcher precedent; weekly cadence + 3-day lag + index proxies limit relevance; revisit post-window) |
+| dealer gamma / prime-broker data | DROPPED 2026-08-31 (register 125: unobtainable; stated so nobody rediscovers it) |
+| sizing layer | PARKED 2026-08-31 (register 125, FIRST RECORDED: no sizing machinery exists — the stress organ's de-risking response and every position-size idea wait on a designed layer; register 77's portfolio-heat item is the open design slot) |
 | weekly INSIGHTS ledger | PRE-REGISTERED + BUILT 2026-08-30 (register 109: reports/INSIGHTS.md every Part C run — cells clearing any null, WATCH/glints with age-in-weeks, bench with gate status, parked standing-nulls, DELTA crossed/aged/died; index only, nothing gains status by appearing; reading order DASHBOARD → INSIGHTS → SIGNAL_POINTS → trades_enriched; state in lab/insights_ledger.jsonl) |
 | scalp thread | OPENED 2026-08-23 (register 64): candidate list = census cells clearing spread + floor range + forward accrual only; first question Q2-H6; no recipe without a YES; IF YES the recipe is TARGET-BASED (64 amendment — time-exit ruled out by the expectancy curve) |
 | Observer Cockpit | free-to-interleave (no queue position) |

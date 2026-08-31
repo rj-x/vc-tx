@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL per-market config WATCH \u2014 a map of where specialization would go, never a settings page; cells graduate only via the register-105 track; never validation",
-  "engine_commit": "e5141247279a787e1d9cd2c1e978328daae00f1b",
+  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
   "journal_rows_ex_lockbox": 45123,
   "field_dims": "variant x session x slot (stop axis: the variant's registered stop; not re-simulated)",
   "track": {
@@ -11972,8 +11972,40 @@
       "base_value": 62.297,
       "shift": -5.154,
       "pct_vs_null": 99.0,
-      "sel_pct": 92.0,
+      "sel_pct": 91.0,
       "beats_selection": false
+    },
+    {
+      "instrument": "uk100fut",
+      "tf": "4h",
+      "side": "D",
+      "window": "backtest",
+      "metric": "svol15_median",
+      "in_zones": 2,
+      "in_days": 8,
+      "in_n": 2434,
+      "in_value": 18.0,
+      "base_value": 4.657,
+      "shift": 13.343,
+      "pct_vs_null": 100.0,
+      "sel_pct": 94.0,
+      "beats_selection": false
+    },
+    {
+      "instrument": "uk100fut",
+      "tf": "4h",
+      "side": "D",
+      "window": "backtest",
+      "metric": "svol_sess_median",
+      "in_zones": 2,
+      "in_days": 8,
+      "in_n": 2434,
+      "in_value": 818.5,
+      "base_value": 422.371,
+      "shift": 396.129,
+      "pct_vs_null": 100.0,
+      "sel_pct": 100.0,
+      "beats_selection": true
     },
     {
       "instrument": "ger40fut",
@@ -12067,6 +12099,22 @@
       "in_value": 23.795,
       "base_value": 4.58,
       "shift": 19.215,
+      "pct_vs_null": 100.0,
+      "sel_pct": 100.0,
+      "beats_selection": true
+    },
+    {
+      "instrument": "ger40fut",
+      "tf": "4h",
+      "side": "D",
+      "window": "backtest",
+      "metric": "svol_sess_median",
+      "in_zones": 1,
+      "in_days": 1,
+      "in_n": 332,
+      "in_value": 22745.5,
+      "base_value": 5811.19,
+      "shift": 16934.31,
       "pct_vs_null": 100.0,
       "sel_pct": 100.0,
       "beats_selection": true

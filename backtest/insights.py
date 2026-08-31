@@ -95,9 +95,21 @@ def _load(name, base=SB):
 
 
 def clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6, capture,
-                   anatomy=None):
+                   anatomy=None, stress=None):
     """(A) every cell clearing a null on the current emission."""
     out = []
+    for key, c in (stress or {}).get("scalp_split", {}).items():
+        if c.get("clears"):
+            instr, arm, w = key.split("|")
+            out.append({"key": f"stress:{key}",
+                        "source": "stress_state.md",
+                        "instrument": instr, "window": w,
+                        "cell": f"{arm} by stress state",
+                        "statistic": "best-worst state median gap",
+                        "value": f"{c['gap']} ({c['best_state']})",
+                        "n": sum(v["n"] for v in c["states"].values()),
+                        "percentile": None,
+                        "null": "day-state permutation p95"})
     for c in (anatomy or {}).get("claims", []):
         out.append({"key": f"anatomy:{c['tf']}|{c['side']}|{c['window']}"
                            f"|{c['metric']}",
@@ -438,11 +450,12 @@ def build(today, prev=None):
     zone = _load("zone_census.json")
     zone3 = _load("zone_census_v3.json")
     anatomy = _load("zone_anatomy.json")
+    stress = _load("stress_state.json")
     cofr = _load("cofire_reread_2026-08-28.json")
     forensics = _load("forensics.json",
                       os.path.join(ROOT, "reports", "forensics"))
     clearing = clearing_cells(pmw, survey, jsurvey, events, srg, tp, h6,
-                              capture, anatomy)
+                              capture, anatomy, stress)
     watch, fwatch = watch_entries(pmw, events, srg, h6, forensics,
                                   anatomy)
     pmw["_held"] = [w["status"] for w in watch if w["kind"] == "HELD sentence"]

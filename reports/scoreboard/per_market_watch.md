@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -420,13 +420,16 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | instrument | tf | side | window | metric | in n (zones/days) | in | base | shift | pct vs null | sel-pct | beats selection |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | uk100fut | 4h | D | backtest | loud_rate | 1944 (2z/8d) | 15.535 | 19.545 | -4.01 | 100.0 | 100.0 | YES |
-| uk100fut | 4h | D | backtest | spread_pctile_median | 1690 (2z/8d) | 57.143 | 62.297 | -5.154 | 99.0 | 92.0 | no |
+| uk100fut | 4h | D | backtest | spread_pctile_median | 1690 (2z/8d) | 57.143 | 62.297 | -5.154 | 99.0 | 91.0 | no |
+| uk100fut | 4h | D | backtest | svol15_median | 2434 (2z/8d) | 18.0 | 4.657 | +13.343 | 100.0 | 94.0 | no |
+| uk100fut | 4h | D | backtest | svol_sess_median | 2434 (2z/8d) | 818.5 | 422.371 | +396.129 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | rel_volume_median | 332 (1z/1d) | 0.499 | 1.133 | -0.635 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | loud_rate | 332 (1z/1d) | 0.0 | 27.467 | -27.467 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | spread_pctile_median | 230 (1z/1d) | 25.0 | 62.783 | -37.783 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | narrow_loud_share | 332 (1z/1d) | 0.0 | 6.575 | -6.575 | 100.0 | 98.0 | YES |
 | ger40fut | 4h | D | backtest | nd_rate | 332 (1z/1d) | 30.12 | 5.176 | +24.945 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | backtest | ns_rate | 332 (1z/1d) | 23.795 | 4.58 | +19.215 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | backtest | svol_sess_median | 332 (1z/1d) | 22745.5 | 5811.19 | +16934.3 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | rel_volume_median | 3441 (1z/7d) | 1.203 | 0.977 | +0.226 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | loud_rate | 3441 (1z/7d) | 34.118 | 19.037 | +15.081 | 100.0 | 100.0 | YES |
 | ger40fut | 4h | D | forward | spread_pctile_median | 3185 (1z/7d) | 62.5 | 55.492 | +7.008 | 100.0 | 92.0 | no |

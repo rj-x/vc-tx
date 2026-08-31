@@ -392,6 +392,19 @@ def generate():
           "standing null (register 97): flat-to-negative density-vs-"
           "lift across 8 rungs, no freshness decay; accrues weekly, no "
           "further rungs without new evidence.",
+          "- `signed_volume.md` / `dwell_census.md` / `efficiency.md` — "
+          "the register-16 organs built 2026-08-31 (registers "
+          "119/120/122): signed-volume, dwell-time and efficiency "
+          "VOCABULARY — per-bar fields for H12's future clauses, the "
+          "matrix and the anatomy; no nulls here, consumers price "
+          "their own fields. Read at organ-consumer design time.",
+          "- `stress_state.md` — the cross-asset stress organ (register "
+          "123): calm/mixed/stressed per day from gold/eurusd/us500 "
+          "prices; a conditioning dimension (matrix + scalp split), "
+          "never sizing. Read weekly.",
+          "- `aggregation_decay.md` — cascade arrival + per-event rv "
+          "survival across the six rungs (register 121; k-lag floor = "
+          "the null control); the chain hypothesis's instrument. Read weekly.",
           "- `zone_anatomy.md` — arrival anatomy (register 114): tape "
           "character in-zone vs session-standardized bases at the v3 "
           "zones (volume, spread, quadrant mix, leg velocity, VSA label "
