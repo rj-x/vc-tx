@@ -360,7 +360,7 @@ def run_campaign(camp, fires, A, rung, reentry=True, backoff=None):
 # ---------------------------------------------------------------- main
 
 def load_journal():
-    rows = list(csv.DictReader(open(TRADES_CSV)))
+    rows = list(csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")))
     keep = [r for r in rows if not in_lockbox_span(r["open_ts"])
             and not is_sealed(pd.Timestamp(r["open_ts"]))]
     return rows, keep

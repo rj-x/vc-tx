@@ -142,7 +142,7 @@ def tag_row(r, rel, span):
 def journal_rows():
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     out = []
-    for r in csv.DictReader(open(TRADES_CSV)):
+    for r in csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")):
         if in_lockbox_span(r["open_ts"]):
             continue
         t = pd.Timestamp(r["open_ts"])

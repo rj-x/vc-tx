@@ -544,7 +544,7 @@ def main():
         _emit(art["results"], art["engine_commit"])
         print(f"zone census md re-emitted from JSON -> {OUT}")
         return
-    journal = list(csv.DictReader(open(TRADES_CSV)))
+    journal = list(csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")))
     results = []
     for instr in a.instr:
         print(f"# zone_census: {instr} ...", file=sys.stderr)

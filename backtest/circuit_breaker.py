@@ -121,7 +121,7 @@ def replay(rows, tz):
 def journal_cells(tz_of):
     boundary, gl = lockbox_boundary(), zones()["go_live"]
     rows = {}
-    for r in csv.DictReader(open(TRADES_CSV)):
+    for r in csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")):
         if r["variant"] not in ARMS or in_lockbox_span(r["open_ts"]):
             continue
         t = pd.Timestamp(r["open_ts"])

@@ -432,7 +432,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
-    journal = list(csv.DictReader(open(TRADES_CSV)))
+    journal = list(csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")))
     results = []
     for instr in a.instr:
         print(f"# intra_trade_census: {instr} ...", file=sys.stderr)

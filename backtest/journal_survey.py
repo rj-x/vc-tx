@@ -108,7 +108,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
                           capture_output=True, text=True).stdout.strip()
-    all_rows = list(csv.DictReader(open(TRADES_CSV)))
+    all_rows = list(csv.DictReader(l for l in open(TRADES_CSV) if not l.startswith("#")))
     rows = [r for r in all_rows
             if not in_lockbox_span(r["open_ts"])]   # register 85
     n_excl = len(all_rows) - len(rows)

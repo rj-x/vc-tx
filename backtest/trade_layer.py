@@ -329,6 +329,14 @@ def emit(all_rows, all_grades):
             "exit_reason", "duration_min", "atr_entry",
             "spread_x_atr"] + list(TAGS)
     with open(TRADES_CSV, "w", newline="") as f:
+        # register 116: the journal names its own reference — readers
+        # skip '#' lines (every consumer filters comments)
+        f.write("# THE JOURNAL — complete, all zones (lockbox rows "
+                "excluded from every aggregate downstream, register "
+                "85). Variant mechanics: docs/VARIANTS.md (register "
+                "116; GENERATED each Part C run — every variant in "
+                "this file has a rendered section, test-enforced). "
+                "Readers: comment='#'.\n")
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows({k: r[k] for k in cols} for r in all_rows)

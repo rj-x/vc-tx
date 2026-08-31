@@ -551,8 +551,11 @@ def main(slugs=(SLUG, "uk100")):
                                                 # event clock: reuses tags;
                                                 # register 108: reads the
                                                 # census clears)
-                "backtest.insights"):           # register 109 (the index;
-                                                # last, reads everything)
+                "backtest.insights",            # register 109 (the index;
+                                                # reads everything above)
+                "backtest.variants_doc"):       # register 116 (the
+                                                # VARIANTS reference —
+                                                # from the recipe one-home)
         print(f"\n==== Part C: {mod} ====")
         _c_sp.run([_c_sys.executable, "-m", mod], check=True)
     # register 75 standing rule: not-campaign-regenerated +

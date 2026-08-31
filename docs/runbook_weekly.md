@@ -62,18 +62,21 @@ venv/bin/python -m backtest.campaign
    clears any null, what is watched (with age), what is benched or
    parked, and the DELTA since last week. An index, never evidence.
 3. `docs/GLOSSARY.md` — whenever a term is opaque.
-4. `reports/SIGNAL_POINTS.md` — the assessment page (ladder,
+4. `docs/VARIANTS.md` — whenever a variant name is opaque: every
+   registered recipe's mechanics, rendered from the structures the
+   trade layer executes (register 116; enforcement-tested).
+5. `reports/SIGNAL_POINTS.md` — the assessment page (ladder,
    baselines, Δ vs floor).
-5. **`reports/trades.csv` + `reports/weekly_summary.csv`** — your
+6. **`reports/trades.csv` + `reports/weekly_summary.csv`** — your
    working files for operator cuts (`management_grades.csv` is the
    quotability gate: no variant's net without its floor line;
    `journal_survey.md` prices the cuts' luck).
-6. **`reports/forensics/`** (+ `reports/trades_enriched.csv`) — the
+7. **`reports/forensics/`** (+ `reports/trades_enriched.csv`) — the
    trade-forensics deliverable (register 84): per-market
    winner/loser separators with their luck budgets, exit-efficiency,
    winner-MAE, the WATCH list, cross-market synthesis. Candidates
    only — reserved for the operator+reviewer sitting.
-7. Drill-downs on warrant: the conditioning matrix, the narrative
+8. Drill-downs on warrant: the conditioning matrix, the narrative
    survey, the in-trade census, gap census, bar persistence.
 
 ## Step 4 — freshness checks (30 seconds)

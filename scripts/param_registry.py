@@ -159,6 +159,7 @@ AUTHORITY = {
     "zone_census.py:LOCATION_FAMILY": "register 95 item 2: the location family cross-reference (S0-H6 / S0-H11 / S1-H11 / S0-H13) — the zone census is its first higher-TF member",
     "capture_study.py:POLICIES": "register 88 item 4: the pre-registered protection ladder (4 BE rungs + 4 TRAIL arm x distance + 2 RATCHET schedules) — prereg_capture_study, counted",
     "capture_study.py:GAP_MIN_PTS": "register 88 item 4: tape-differentiation threshold 5 pts/trade — implementer-proposed at prereg, FLAGGED",
+    "variants_doc.py:STATUS": "register 116: curated status labels for the VARIANTS reference — prose vocabulary (incumbent / experiment / counted-arm), never parameters; every number on the page renders from the recipe structures",
     "zone_anatomy.py:ANATOMY_MIN_BARS": "register 114: bar-cell measurability (>= 100 in-zone 1M bars) — implementer-proposed at prereg, FLAGGED",
     "zone_anatomy.py:ANATOMY_MIN_LEGS": "register 114: leg-cell measurability (>= 25 legs) — the trade convention's count reused, FLAGGED",
     "zone_anatomy.py:CLAIM_MIN_LEGS": "register 114: the standing >= 3-of-4-leg replication bar for any claim",
