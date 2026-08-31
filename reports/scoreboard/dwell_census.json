@@ -1,0 +1,253 @@
+{
+  "STAMP": "OBSERVATIONAL organ #5 \u2014 dwell-time vocabulary; consumers price their own fields; never validation",
+  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "n_bars": 47114,
+      "classes": {
+        "session-extreme|backtest": {
+          "episodes": 785,
+          "dwell_median": 3.0,
+          "dwell_p75": 6.0,
+          "dwell_p90": 12.0,
+          "dwell_max": 57,
+          "bars_in_band": 3948,
+          "in_band_bar_share": 0.182
+        },
+        "session-extreme|forward": {
+          "episodes": 499,
+          "dwell_median": 2.0,
+          "dwell_p75": 5.0,
+          "dwell_p90": 11.0,
+          "dwell_max": 74,
+          "bars_in_band": 2379,
+          "in_band_bar_share": 0.1733
+        },
+        "h11-node|backtest": {
+          "episodes": 241,
+          "dwell_median": 3.0,
+          "dwell_p75": 7.0,
+          "dwell_p90": 18.0,
+          "dwell_max": 199,
+          "bars_in_band": 2103,
+          "in_band_bar_share": 0.0969
+        },
+        "h11-node|forward": {
+          "episodes": 182,
+          "dwell_median": 3.0,
+          "dwell_p75": 6.0,
+          "dwell_p90": 15.0,
+          "dwell_max": 106,
+          "bars_in_band": 1257,
+          "in_band_bar_share": 0.0916
+        },
+        "v3-zone-1d|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-1d|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|backtest": {
+          "episodes": 72,
+          "dwell_median": 4.0,
+          "dwell_p75": 19.2,
+          "dwell_p90": 49.8,
+          "dwell_max": 438,
+          "bars_in_band": 2434,
+          "in_band_bar_share": 0.1122
+        },
+        "v3-zone-4h|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        }
+      }
+    },
+    {
+      "instrument": "ger40fut",
+      "n_bars": 39820,
+      "classes": {
+        "session-extreme|backtest": {
+          "episodes": 582,
+          "dwell_median": 2.0,
+          "dwell_p75": 5.0,
+          "dwell_p90": 9.0,
+          "dwell_max": 71,
+          "bars_in_band": 2574,
+          "in_band_bar_share": 0.1746
+        },
+        "session-extreme|forward": {
+          "episodes": 508,
+          "dwell_median": 2.0,
+          "dwell_p75": 4.0,
+          "dwell_p90": 8.3,
+          "dwell_max": 32,
+          "bars_in_band": 1929,
+          "in_band_bar_share": 0.1425
+        },
+        "h11-node|backtest": {
+          "episodes": 348,
+          "dwell_median": 2.0,
+          "dwell_p75": 4.0,
+          "dwell_p90": 7.0,
+          "dwell_max": 50,
+          "bars_in_band": 1254,
+          "in_band_bar_share": 0.085
+        },
+        "h11-node|forward": {
+          "episodes": 195,
+          "dwell_median": 2.0,
+          "dwell_p75": 6.0,
+          "dwell_p90": 16.6,
+          "dwell_max": 428,
+          "bars_in_band": 1920,
+          "in_band_bar_share": 0.1418
+        },
+        "v3-zone-1d|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-1d|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|backtest": {
+          "episodes": 5,
+          "dwell_median": 16.0,
+          "dwell_p75": 39.0,
+          "dwell_p90": 180.6,
+          "dwell_max": 275,
+          "bars_in_band": 332,
+          "in_band_bar_share": 0.0225
+        },
+        "v3-zone-4h|forward": {
+          "episodes": 99,
+          "dwell_median": 4.0,
+          "dwell_p75": 28.0,
+          "dwell_p90": 77.6,
+          "dwell_max": 442,
+          "bars_in_band": 3441,
+          "in_band_bar_share": 0.2542
+        }
+      }
+    },
+    {
+      "instrument": "nas100fut",
+      "n_bars": 41213,
+      "classes": {
+        "session-extreme|backtest": {
+          "episodes": 610,
+          "dwell_median": 2.0,
+          "dwell_p75": 6.0,
+          "dwell_p90": 12.0,
+          "dwell_max": 49,
+          "bars_in_band": 2913,
+          "in_band_bar_share": 0.1912
+        },
+        "session-extreme|forward": {
+          "episodes": 557,
+          "dwell_median": 2.0,
+          "dwell_p75": 4.0,
+          "dwell_p90": 9.0,
+          "dwell_max": 45,
+          "bars_in_band": 2064,
+          "in_band_bar_share": 0.1468
+        },
+        "h11-node|backtest": {
+          "episodes": 266,
+          "dwell_median": 1.0,
+          "dwell_p75": 2.0,
+          "dwell_p90": 4.0,
+          "dwell_max": 23,
+          "bars_in_band": 518,
+          "in_band_bar_share": 0.034
+        },
+        "h11-node|forward": {
+          "episodes": 360,
+          "dwell_median": 1.0,
+          "dwell_p75": 2.0,
+          "dwell_p90": 3.0,
+          "dwell_max": 34,
+          "bars_in_band": 764,
+          "in_band_bar_share": 0.0543
+        },
+        "v3-zone-1d|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-1d|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        }
+      }
+    },
+    {
+      "instrument": "us30fut",
+      "n_bars": 41185,
+      "classes": {
+        "session-extreme|backtest": {
+          "episodes": 633,
+          "dwell_median": 2.0,
+          "dwell_p75": 4.0,
+          "dwell_p90": 8.0,
+          "dwell_max": 52,
+          "bars_in_band": 2524,
+          "in_band_bar_share": 0.1657
+        },
+        "session-extreme|forward": {
+          "episodes": 555,
+          "dwell_median": 2.0,
+          "dwell_p75": 5.0,
+          "dwell_p90": 9.6,
+          "dwell_max": 36,
+          "bars_in_band": 2314,
+          "in_band_bar_share": 0.1646
+        },
+        "h11-node|backtest": {
+          "episodes": 592,
+          "dwell_median": 1.0,
+          "dwell_p75": 2.0,
+          "dwell_p90": 5.0,
+          "dwell_max": 32,
+          "bars_in_band": 1330,
+          "in_band_bar_share": 0.0873
+        },
+        "h11-node|forward": {
+          "episodes": 307,
+          "dwell_median": 2.0,
+          "dwell_p75": 4.0,
+          "dwell_p90": 11.0,
+          "dwell_max": 160,
+          "bars_in_band": 1856,
+          "in_band_bar_share": 0.132
+        },
+        "v3-zone-1d|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-1d|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|backtest": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        },
+        "v3-zone-4h|forward": {
+          "episodes": 0,
+          "in_band_bar_share": 0.0
+        }
+      }
+    }
+  ]
+}

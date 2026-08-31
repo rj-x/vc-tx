@@ -35,6 +35,7 @@ IMPORT_ALLOWED = {os.path.join("backtest", "scoreboard.py"),
                   os.path.join("backtest", "underwater_census.py"),    # reg 87
                   os.path.join("backtest", "zone_census.py"),          # reg 95
                   os.path.join("backtest", "zone_census_v3.py"),       # reg 111
+                  os.path.join("backtest", "dwell_census.py"),         # reg 120
                   os.path.join("engine", "paper.py"),
                   os.path.join("engine", "narrate.py")}
 
