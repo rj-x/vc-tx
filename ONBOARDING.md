@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-30 (register 98 restructure; §4 refreshed at register 112). Sections
+**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 116). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 112** — the marker §7 maintains. The weekly
+**Register-current-through: 116** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -140,6 +140,9 @@ that moves):**
 - `docs/hypothesis_register.md` — claims, signals, questions, grades.
 - `docs/runbook_weekly.md` — sync → campaign → reading order.
 - `docs/parameter_registry.md` — every constant with its authority trail.
+- `docs/VARIANTS.md` — every registered variant's mechanics, rendered
+  from the recipe structures the trade layer executes (register 116;
+  a journal variant without a section fails the suite).
 - `reports/lab/trial_log.jsonl` — the counted record of every
   pre-registration, mint and amendment.
 
