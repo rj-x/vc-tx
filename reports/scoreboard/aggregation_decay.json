@@ -1,0 +1,1839 @@
+{
+  "STAMP": "OBSERVATIONAL aggregation-decay census \u2014 cascade arrival + per-event rv survival; counts and distributions; never validation",
+  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "ladder": [
+    "1min",
+    "3min",
+    "5min",
+    "15min",
+    "30min",
+    "1h"
+  ],
+  "rv_cut": 1.5,
+  "window_min": 60,
+  "results": [
+    {
+      "instrument": "uk100fut",
+      "onsets": 1824,
+      "events_unmeasured_rv": 0,
+      "arrival": {
+        "backtest|false-lead|15min": {
+          "n": 648,
+          "arrived": 180,
+          "arrival_min": {
+            "n": 180,
+            "median": 21.5,
+            "p90": 51.0
+          },
+          "klag_floor_min": {
+            "n": 648,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|false-lead|1h": {
+          "n": 648,
+          "arrived": 41,
+          "arrival_min": {
+            "n": 41,
+            "median": 24.0,
+            "p90": 50.0
+          },
+          "klag_floor_min": {
+            "n": 648,
+            "median": 32.0,
+            "p90": 55.0
+          }
+        },
+        "backtest|false-lead|30min": {
+          "n": 648,
+          "arrived": 97,
+          "arrival_min": {
+            "n": 97,
+            "median": 26.0,
+            "p90": 49.4
+          },
+          "klag_floor_min": {
+            "n": 648,
+            "median": 15.0,
+            "p90": 27.0
+          }
+        },
+        "backtest|false-lead|3min": {
+          "n": 648,
+          "arrived": 415,
+          "arrival_min": {
+            "n": 415,
+            "median": 11.0,
+            "p90": 37.0
+          },
+          "klag_floor_min": {
+            "n": 648,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|false-lead|5min": {
+          "n": 648,
+          "arrived": 354,
+          "arrival_min": {
+            "n": 354,
+            "median": 16.5,
+            "p90": 47.0
+          },
+          "klag_floor_min": {
+            "n": 648,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "backtest|true-lead|15min": {
+          "n": 181,
+          "arrived": 40,
+          "arrival_min": {
+            "n": 40,
+            "median": 31.0,
+            "p90": 52.2
+          },
+          "klag_floor_min": {
+            "n": 181,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|true-lead|1h": {
+          "n": 181,
+          "arrived": 13,
+          "arrival_min": {
+            "n": 13,
+            "median": 31.0,
+            "p90": 52.8
+          },
+          "klag_floor_min": {
+            "n": 181,
+            "median": 28.0,
+            "p90": 54.0
+          }
+        },
+        "backtest|true-lead|30min": {
+          "n": 181,
+          "arrived": 12,
+          "arrival_min": {
+            "n": 12,
+            "median": 33.5,
+            "p90": 50.7
+          },
+          "klag_floor_min": {
+            "n": 181,
+            "median": 16.0,
+            "p90": 26.0
+          }
+        },
+        "backtest|true-lead|3min": {
+          "n": 181,
+          "arrived": 127,
+          "arrival_min": {
+            "n": 127,
+            "median": 14.0,
+            "p90": 41.0
+          },
+          "klag_floor_min": {
+            "n": 181,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|true-lead|5min": {
+          "n": 181,
+          "arrived": 104,
+          "arrival_min": {
+            "n": 104,
+            "median": 19.5,
+            "p90": 45.7
+          },
+          "klag_floor_min": {
+            "n": 181,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|false-lead|15min": {
+          "n": 442,
+          "arrived": 149,
+          "arrival_min": {
+            "n": 149,
+            "median": 26.0,
+            "p90": 52.2
+          },
+          "klag_floor_min": {
+            "n": 442,
+            "median": 7.0,
+            "p90": 14.0
+          }
+        },
+        "forward|false-lead|1h": {
+          "n": 442,
+          "arrived": 49,
+          "arrival_min": {
+            "n": 49,
+            "median": 32.0,
+            "p90": 54.2
+          },
+          "klag_floor_min": {
+            "n": 442,
+            "median": 28.0,
+            "p90": 54.0
+          }
+        },
+        "forward|false-lead|30min": {
+          "n": 442,
+          "arrived": 88,
+          "arrival_min": {
+            "n": 88,
+            "median": 26.0,
+            "p90": 54.0
+          },
+          "klag_floor_min": {
+            "n": 442,
+            "median": 16.0,
+            "p90": 26.9
+          }
+        },
+        "forward|false-lead|3min": {
+          "n": 442,
+          "arrived": 394,
+          "arrival_min": {
+            "n": 394,
+            "median": 16.0,
+            "p90": 43.0
+          },
+          "klag_floor_min": {
+            "n": 442,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|false-lead|5min": {
+          "n": 442,
+          "arrived": 315,
+          "arrival_min": {
+            "n": 315,
+            "median": 21.0,
+            "p90": 49.0
+          },
+          "klag_floor_min": {
+            "n": 442,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|true-lead|15min": {
+          "n": 104,
+          "arrived": 33,
+          "arrival_min": {
+            "n": 33,
+            "median": 35.0,
+            "p90": 53.0
+          },
+          "klag_floor_min": {
+            "n": 104,
+            "median": 7.0,
+            "p90": 12.0
+          }
+        },
+        "forward|true-lead|1h": {
+          "n": 104,
+          "arrived": 8,
+          "arrival_min": {
+            "n": 8,
+            "median": 27.5,
+            "p90": 48.2
+          },
+          "klag_floor_min": {
+            "n": 104,
+            "median": 28.0,
+            "p90": 49.7
+          }
+        },
+        "forward|true-lead|30min": {
+          "n": 104,
+          "arrived": 15,
+          "arrival_min": {
+            "n": 15,
+            "median": 37.0,
+            "p90": 52.6
+          },
+          "klag_floor_min": {
+            "n": 104,
+            "median": 17.0,
+            "p90": 26.0
+          }
+        },
+        "forward|true-lead|3min": {
+          "n": 104,
+          "arrived": 91,
+          "arrival_min": {
+            "n": 91,
+            "median": 17.0,
+            "p90": 49.0
+          },
+          "klag_floor_min": {
+            "n": 104,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|true-lead|5min": {
+          "n": 104,
+          "arrived": 82,
+          "arrival_min": {
+            "n": 82,
+            "median": 25.0,
+            "p90": 49.0
+          },
+          "klag_floor_min": {
+            "n": 104,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        }
+      },
+      "effort_decay": {
+        "backtest|climax|false-lead": {
+          "survival_depths": {
+            "1": 11,
+            "2": 14,
+            "3": 6,
+            "4": 4,
+            "5": 13
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 23,
+              "median": 7.8,
+              "p90": 54.7
+            },
+            "shallow": {
+              "n": 25,
+              "median": 2.5,
+              "p90": 30.1
+            }
+          }
+        },
+        "backtest|climax|true-lead": {
+          "survival_depths": {
+            "1": 11,
+            "2": 7,
+            "4": 1,
+            "5": 2
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 3,
+              "median": 3.5,
+              "p90": 5.4
+            },
+            "shallow": {
+              "n": 18,
+              "median": 1.0,
+              "p90": 11.7
+            }
+          }
+        },
+        "backtest|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 723,
+            "2": 210,
+            "3": 325,
+            "4": 173,
+            "5": 347
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 845,
+              "median": 1.5,
+              "p90": 33.0
+            },
+            "shallow": {
+              "n": 933,
+              "median": 0.9,
+              "p90": 27.2
+            }
+          }
+        },
+        "backtest|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 196,
+            "2": 90,
+            "3": 67,
+            "4": 41,
+            "5": 95
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 203,
+              "median": -3.7,
+              "p90": 14.7
+            },
+            "shallow": {
+              "n": 286,
+              "median": -4.2,
+              "p90": 10.0
+            }
+          }
+        },
+        "forward|climax|false-lead": {
+          "survival_depths": {
+            "1": 32,
+            "2": 14,
+            "3": 9,
+            "4": 1,
+            "5": 11
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 21,
+              "median": 1.1,
+              "p90": 14.3
+            },
+            "shallow": {
+              "n": 46,
+              "median": 0.3,
+              "p90": 12.8
+            }
+          }
+        },
+        "forward|climax|true-lead": {
+          "survival_depths": {
+            "1": 9,
+            "2": 7,
+            "3": 5,
+            "4": 1,
+            "5": 3
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 9,
+              "median": -1.1,
+              "p90": 4.1
+            },
+            "shallow": {
+              "n": 16,
+              "median": -2.0,
+              "p90": 10.7
+            }
+          }
+        },
+        "forward|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 1029,
+            "2": 271,
+            "3": 326,
+            "4": 177,
+            "5": 380
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 883,
+              "median": 1.0,
+              "p90": 13.0
+            },
+            "shallow": {
+              "n": 1300,
+              "median": 0.0,
+              "p90": 13.8
+            }
+          }
+        },
+        "forward|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 243,
+            "2": 71,
+            "3": 63,
+            "4": 35,
+            "5": 87
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 185,
+              "median": -3.0,
+              "p90": 3.9
+            },
+            "shallow": {
+              "n": 314,
+              "median": -1.9,
+              "p90": 5.2
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "ger40fut",
+      "onsets": 1707,
+      "events_unmeasured_rv": 0,
+      "arrival": {
+        "backtest|false-lead|15min": {
+          "n": 522,
+          "arrived": 127,
+          "arrival_min": {
+            "n": 127,
+            "median": 27.0,
+            "p90": 52.0
+          },
+          "klag_floor_min": {
+            "n": 522,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|false-lead|1h": {
+          "n": 522,
+          "arrived": 37,
+          "arrival_min": {
+            "n": 37,
+            "median": 24.0,
+            "p90": 57.4
+          },
+          "klag_floor_min": {
+            "n": 522,
+            "median": 30.0,
+            "p90": 55.0
+          }
+        },
+        "backtest|false-lead|30min": {
+          "n": 522,
+          "arrived": 75,
+          "arrival_min": {
+            "n": 75,
+            "median": 26.0,
+            "p90": 55.0
+          },
+          "klag_floor_min": {
+            "n": 522,
+            "median": 16.0,
+            "p90": 27.0
+          }
+        },
+        "backtest|false-lead|3min": {
+          "n": 522,
+          "arrived": 256,
+          "arrival_min": {
+            "n": 256,
+            "median": 12.0,
+            "p90": 37.5
+          },
+          "klag_floor_min": {
+            "n": 522,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|false-lead|5min": {
+          "n": 522,
+          "arrived": 220,
+          "arrival_min": {
+            "n": 220,
+            "median": 15.0,
+            "p90": 45.0
+          },
+          "klag_floor_min": {
+            "n": 522,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "backtest|true-lead|15min": {
+          "n": 119,
+          "arrived": 25,
+          "arrival_min": {
+            "n": 25,
+            "median": 20.0,
+            "p90": 49.4
+          },
+          "klag_floor_min": {
+            "n": 119,
+            "median": 9.0,
+            "p90": 15.0
+          }
+        },
+        "backtest|true-lead|1h": {
+          "n": 119,
+          "arrived": 6,
+          "arrival_min": {
+            "n": 6,
+            "median": 23.0,
+            "p90": 46.0
+          },
+          "klag_floor_min": {
+            "n": 119,
+            "median": 31.0,
+            "p90": 52.2
+          }
+        },
+        "backtest|true-lead|30min": {
+          "n": 119,
+          "arrived": 12,
+          "arrival_min": {
+            "n": 12,
+            "median": 39.5,
+            "p90": 53.6
+          },
+          "klag_floor_min": {
+            "n": 119,
+            "median": 13.0,
+            "p90": 27.0
+          }
+        },
+        "backtest|true-lead|3min": {
+          "n": 119,
+          "arrived": 62,
+          "arrival_min": {
+            "n": 62,
+            "median": 14.0,
+            "p90": 46.0
+          },
+          "klag_floor_min": {
+            "n": 119,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|true-lead|5min": {
+          "n": 119,
+          "arrived": 54,
+          "arrival_min": {
+            "n": 54,
+            "median": 17.0,
+            "p90": 49.1
+          },
+          "klag_floor_min": {
+            "n": 119,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|false-lead|15min": {
+          "n": 460,
+          "arrived": 144,
+          "arrival_min": {
+            "n": 144,
+            "median": 21.5,
+            "p90": 51.0
+          },
+          "klag_floor_min": {
+            "n": 460,
+            "median": 7.0,
+            "p90": 14.0
+          }
+        },
+        "forward|false-lead|1h": {
+          "n": 460,
+          "arrived": 35,
+          "arrival_min": {
+            "n": 35,
+            "median": 35.0,
+            "p90": 55.2
+          },
+          "klag_floor_min": {
+            "n": 460,
+            "median": 29.0,
+            "p90": 52.0
+          }
+        },
+        "forward|false-lead|30min": {
+          "n": 460,
+          "arrived": 78,
+          "arrival_min": {
+            "n": 78,
+            "median": 20.0,
+            "p90": 53.3
+          },
+          "klag_floor_min": {
+            "n": 460,
+            "median": 15.0,
+            "p90": 26.0
+          }
+        },
+        "forward|false-lead|3min": {
+          "n": 460,
+          "arrived": 411,
+          "arrival_min": {
+            "n": 411,
+            "median": 15.0,
+            "p90": 44.0
+          },
+          "klag_floor_min": {
+            "n": 460,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|false-lead|5min": {
+          "n": 460,
+          "arrived": 326,
+          "arrival_min": {
+            "n": 326,
+            "median": 19.5,
+            "p90": 46.0
+          },
+          "klag_floor_min": {
+            "n": 460,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|true-lead|15min": {
+          "n": 121,
+          "arrived": 33,
+          "arrival_min": {
+            "n": 33,
+            "median": 30.0,
+            "p90": 55.0
+          },
+          "klag_floor_min": {
+            "n": 121,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "forward|true-lead|1h": {
+          "n": 121,
+          "arrived": 5,
+          "arrival_min": {
+            "n": 5,
+            "median": 8.0,
+            "p90": 34.2
+          },
+          "klag_floor_min": {
+            "n": 121,
+            "median": 27.0,
+            "p90": 54.0
+          }
+        },
+        "forward|true-lead|30min": {
+          "n": 121,
+          "arrived": 17,
+          "arrival_min": {
+            "n": 17,
+            "median": 34.0,
+            "p90": 54.2
+          },
+          "klag_floor_min": {
+            "n": 121,
+            "median": 17.0,
+            "p90": 26.0
+          }
+        },
+        "forward|true-lead|3min": {
+          "n": 121,
+          "arrived": 104,
+          "arrival_min": {
+            "n": 104,
+            "median": 17.5,
+            "p90": 46.7
+          },
+          "klag_floor_min": {
+            "n": 121,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|true-lead|5min": {
+          "n": 121,
+          "arrived": 80,
+          "arrival_min": {
+            "n": 80,
+            "median": 25.0,
+            "p90": 50.1
+          },
+          "klag_floor_min": {
+            "n": 121,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        }
+      },
+      "effort_decay": {
+        "backtest|climax|false-lead": {
+          "survival_depths": {
+            "1": 6,
+            "2": 11,
+            "3": 2,
+            "4": 6,
+            "5": 11
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 19,
+              "median": 52.2,
+              "p90": 106.1
+            },
+            "shallow": {
+              "n": 17,
+              "median": -21.1,
+              "p90": 37.4
+            }
+          }
+        },
+        "backtest|climax|true-lead": {
+          "survival_depths": {
+            "1": 3,
+            "3": 3,
+            "4": 1,
+            "5": 6
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 10,
+              "median": -25.2,
+              "p90": 13.9
+            },
+            "shallow": {
+              "n": 3,
+              "median": -52.3,
+              "p90": 13.9
+            }
+          }
+        },
+        "backtest|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 446,
+            "2": 159,
+            "3": 188,
+            "4": 158,
+            "5": 268
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 614,
+              "median": 5.5,
+              "p90": 91.2
+            },
+            "shallow": {
+              "n": 605,
+              "median": 4.7,
+              "p90": 71.9
+            }
+          }
+        },
+        "backtest|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 94,
+            "2": 34,
+            "3": 42,
+            "4": 23,
+            "5": 61
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 126,
+              "median": -13.3,
+              "p90": 21.6
+            },
+            "shallow": {
+              "n": 128,
+              "median": -18.7,
+              "p90": 28.1
+            }
+          }
+        },
+        "forward|climax|false-lead": {
+          "survival_depths": {
+            "1": 30,
+            "2": 9,
+            "3": 17,
+            "4": 5,
+            "5": 8
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 30,
+              "median": -0.2,
+              "p90": 39.4
+            },
+            "shallow": {
+              "n": 39,
+              "median": 12.6,
+              "p90": 31.7
+            }
+          }
+        },
+        "forward|climax|true-lead": {
+          "survival_depths": {
+            "1": 7,
+            "2": 7,
+            "3": 4,
+            "5": 3
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 7,
+              "median": -3.8,
+              "p90": 10.4
+            },
+            "shallow": {
+              "n": 14,
+              "median": -0.7,
+              "p90": 24.2
+            }
+          }
+        },
+        "forward|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 871,
+            "2": 301,
+            "3": 372,
+            "4": 237,
+            "5": 601
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 1210,
+              "median": 0.5,
+              "p90": 28.4
+            },
+            "shallow": {
+              "n": 1172,
+              "median": 0.9,
+              "p90": 32.1
+            }
+          }
+        },
+        "forward|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 218,
+            "2": 70,
+            "3": 82,
+            "4": 52,
+            "5": 110
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 244,
+              "median": -6.1,
+              "p90": 14.8
+            },
+            "shallow": {
+              "n": 288,
+              "median": -5.5,
+              "p90": 18.9
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "nas100fut",
+      "onsets": 1862,
+      "events_unmeasured_rv": 0,
+      "arrival": {
+        "backtest|false-lead|15min": {
+          "n": 547,
+          "arrived": 139,
+          "arrival_min": {
+            "n": 139,
+            "median": 21.0,
+            "p90": 50.2
+          },
+          "klag_floor_min": {
+            "n": 547,
+            "median": 9.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|false-lead|1h": {
+          "n": 547,
+          "arrived": 54,
+          "arrival_min": {
+            "n": 54,
+            "median": 30.5,
+            "p90": 51.7
+          },
+          "klag_floor_min": {
+            "n": 547,
+            "median": 31.0,
+            "p90": 56.0
+          }
+        },
+        "backtest|false-lead|30min": {
+          "n": 547,
+          "arrived": 98,
+          "arrival_min": {
+            "n": 98,
+            "median": 25.0,
+            "p90": 50.3
+          },
+          "klag_floor_min": {
+            "n": 547,
+            "median": 15.0,
+            "p90": 27.0
+          }
+        },
+        "backtest|false-lead|3min": {
+          "n": 547,
+          "arrived": 278,
+          "arrival_min": {
+            "n": 278,
+            "median": 12.0,
+            "p90": 37.0
+          },
+          "klag_floor_min": {
+            "n": 547,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|false-lead|5min": {
+          "n": 547,
+          "arrived": 248,
+          "arrival_min": {
+            "n": 248,
+            "median": 14.0,
+            "p90": 44.0
+          },
+          "klag_floor_min": {
+            "n": 547,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "backtest|true-lead|15min": {
+          "n": 123,
+          "arrived": 26,
+          "arrival_min": {
+            "n": 26,
+            "median": 24.0,
+            "p90": 47.0
+          },
+          "klag_floor_min": {
+            "n": 123,
+            "median": 7.0,
+            "p90": 13.0
+          }
+        },
+        "backtest|true-lead|1h": {
+          "n": 123,
+          "arrived": 8,
+          "arrival_min": {
+            "n": 8,
+            "median": 27.5,
+            "p90": 53.9
+          },
+          "klag_floor_min": {
+            "n": 123,
+            "median": 32.0,
+            "p90": 55.0
+          }
+        },
+        "backtest|true-lead|30min": {
+          "n": 123,
+          "arrived": 18,
+          "arrival_min": {
+            "n": 18,
+            "median": 35.0,
+            "p90": 56.6
+          },
+          "klag_floor_min": {
+            "n": 123,
+            "median": 13.0,
+            "p90": 25.0
+          }
+        },
+        "backtest|true-lead|3min": {
+          "n": 123,
+          "arrived": 55,
+          "arrival_min": {
+            "n": 55,
+            "median": 17.0,
+            "p90": 35.0
+          },
+          "klag_floor_min": {
+            "n": 123,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|true-lead|5min": {
+          "n": 123,
+          "arrived": 50,
+          "arrival_min": {
+            "n": 50,
+            "median": 22.5,
+            "p90": 49.1
+          },
+          "klag_floor_min": {
+            "n": 123,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|false-lead|15min": {
+          "n": 503,
+          "arrived": 193,
+          "arrival_min": {
+            "n": 193,
+            "median": 23.0,
+            "p90": 49.0
+          },
+          "klag_floor_min": {
+            "n": 503,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "forward|false-lead|1h": {
+          "n": 503,
+          "arrived": 73,
+          "arrival_min": {
+            "n": 73,
+            "median": 28.0,
+            "p90": 54.0
+          },
+          "klag_floor_min": {
+            "n": 503,
+            "median": 31.0,
+            "p90": 53.8
+          }
+        },
+        "forward|false-lead|30min": {
+          "n": 503,
+          "arrived": 157,
+          "arrival_min": {
+            "n": 157,
+            "median": 26.0,
+            "p90": 52.8
+          },
+          "klag_floor_min": {
+            "n": 503,
+            "median": 15.0,
+            "p90": 26.0
+          }
+        },
+        "forward|false-lead|3min": {
+          "n": 503,
+          "arrived": 453,
+          "arrival_min": {
+            "n": 453,
+            "median": 10.0,
+            "p90": 39.8
+          },
+          "klag_floor_min": {
+            "n": 503,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|false-lead|5min": {
+          "n": 503,
+          "arrived": 406,
+          "arrival_min": {
+            "n": 406,
+            "median": 13.0,
+            "p90": 42.0
+          },
+          "klag_floor_min": {
+            "n": 503,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|true-lead|15min": {
+          "n": 132,
+          "arrived": 52,
+          "arrival_min": {
+            "n": 52,
+            "median": 31.0,
+            "p90": 50.8
+          },
+          "klag_floor_min": {
+            "n": 132,
+            "median": 8.0,
+            "p90": 13.0
+          }
+        },
+        "forward|true-lead|1h": {
+          "n": 132,
+          "arrived": 10,
+          "arrival_min": {
+            "n": 10,
+            "median": 14.5,
+            "p90": 40.7
+          },
+          "klag_floor_min": {
+            "n": 132,
+            "median": 30.0,
+            "p90": 54.0
+          }
+        },
+        "forward|true-lead|30min": {
+          "n": 132,
+          "arrived": 30,
+          "arrival_min": {
+            "n": 30,
+            "median": 22.5,
+            "p90": 54.1
+          },
+          "klag_floor_min": {
+            "n": 132,
+            "median": 16.0,
+            "p90": 26.0
+          }
+        },
+        "forward|true-lead|3min": {
+          "n": 132,
+          "arrived": 125,
+          "arrival_min": {
+            "n": 125,
+            "median": 13.0,
+            "p90": 43.8
+          },
+          "klag_floor_min": {
+            "n": 132,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|true-lead|5min": {
+          "n": 132,
+          "arrived": 101,
+          "arrival_min": {
+            "n": 101,
+            "median": 22.0,
+            "p90": 47.0
+          },
+          "klag_floor_min": {
+            "n": 132,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        }
+      },
+      "effort_decay": {
+        "backtest|climax|false-lead": {
+          "survival_depths": {
+            "1": 4,
+            "2": 5,
+            "3": 6,
+            "4": 1,
+            "5": 11
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 18,
+              "median": 134.6,
+              "p90": 426.6
+            },
+            "shallow": {
+              "n": 9,
+              "median": -45.7,
+              "p90": 66.3
+            }
+          }
+        },
+        "backtest|climax|true-lead": {
+          "survival_depths": {
+            "1": 3,
+            "2": 1,
+            "5": 3
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 3,
+              "median": -55.7,
+              "p90": -12.3
+            },
+            "shallow": {
+              "n": 4,
+              "median": -67.9,
+              "p90": -24.0
+            }
+          }
+        },
+        "backtest|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 484,
+            "2": 183,
+            "3": 222,
+            "4": 180,
+            "5": 509
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 911,
+              "median": 3.1,
+              "p90": 155.0
+            },
+            "shallow": {
+              "n": 667,
+              "median": 5.6,
+              "p90": 122.8
+            }
+          }
+        },
+        "backtest|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 90,
+            "2": 24,
+            "3": 21,
+            "4": 37,
+            "5": 154
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 212,
+              "median": -15.5,
+              "p90": 67.4
+            },
+            "shallow": {
+              "n": 114,
+              "median": -25.8,
+              "p90": 59.5
+            }
+          }
+        },
+        "forward|climax|false-lead": {
+          "survival_depths": {
+            "1": 11,
+            "2": 12,
+            "3": 9,
+            "4": 1,
+            "5": 11
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 21,
+              "median": 18.4,
+              "p90": 90.2
+            },
+            "shallow": {
+              "n": 23,
+              "median": 48.0,
+              "p90": 125.7
+            }
+          }
+        },
+        "forward|climax|true-lead": {
+          "survival_depths": {
+            "1": 2,
+            "2": 4,
+            "3": 4,
+            "4": 2,
+            "5": 7
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 13,
+              "median": 11.0,
+              "p90": 46.8
+            },
+            "shallow": {
+              "n": 6,
+              "median": -7.0,
+              "p90": 16.5
+            }
+          }
+        },
+        "forward|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 620,
+            "2": 221,
+            "3": 307,
+            "4": 112,
+            "5": 810
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 1229,
+              "median": 4.0,
+              "p90": 80.7
+            },
+            "shallow": {
+              "n": 841,
+              "median": 4.5,
+              "p90": 78.7
+            }
+          }
+        },
+        "forward|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 183,
+            "2": 48,
+            "3": 65,
+            "4": 40,
+            "5": 146
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 251,
+              "median": -15.5,
+              "p90": 29.8
+            },
+            "shallow": {
+              "n": 231,
+              "median": -19.2,
+              "p90": 29.4
+            }
+          }
+        }
+      }
+    },
+    {
+      "instrument": "us30fut",
+      "onsets": 1709,
+      "events_unmeasured_rv": 0,
+      "arrival": {
+        "backtest|false-lead|15min": {
+          "n": 524,
+          "arrived": 138,
+          "arrival_min": {
+            "n": 138,
+            "median": 21.0,
+            "p90": 49.0
+          },
+          "klag_floor_min": {
+            "n": 524,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|false-lead|1h": {
+          "n": 524,
+          "arrived": 47,
+          "arrival_min": {
+            "n": 47,
+            "median": 28.0,
+            "p90": 58.4
+          },
+          "klag_floor_min": {
+            "n": 524,
+            "median": 31.0,
+            "p90": 54.0
+          }
+        },
+        "backtest|false-lead|30min": {
+          "n": 524,
+          "arrived": 99,
+          "arrival_min": {
+            "n": 99,
+            "median": 29.0,
+            "p90": 50.4
+          },
+          "klag_floor_min": {
+            "n": 524,
+            "median": 15.5,
+            "p90": 27.0
+          }
+        },
+        "backtest|false-lead|3min": {
+          "n": 524,
+          "arrived": 273,
+          "arrival_min": {
+            "n": 273,
+            "median": 10.0,
+            "p90": 36.8
+          },
+          "klag_floor_min": {
+            "n": 524,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|false-lead|5min": {
+          "n": 524,
+          "arrived": 240,
+          "arrival_min": {
+            "n": 240,
+            "median": 13.5,
+            "p90": 42.0
+          },
+          "klag_floor_min": {
+            "n": 524,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "backtest|true-lead|15min": {
+          "n": 118,
+          "arrived": 28,
+          "arrival_min": {
+            "n": 28,
+            "median": 28.0,
+            "p90": 58.3
+          },
+          "klag_floor_min": {
+            "n": 118,
+            "median": 8.0,
+            "p90": 14.0
+          }
+        },
+        "backtest|true-lead|1h": {
+          "n": 118,
+          "arrived": 6,
+          "arrival_min": {
+            "n": 6,
+            "median": 29.0,
+            "p90": 42.5
+          },
+          "klag_floor_min": {
+            "n": 118,
+            "median": 34.5,
+            "p90": 56.0
+          }
+        },
+        "backtest|true-lead|30min": {
+          "n": 118,
+          "arrived": 14,
+          "arrival_min": {
+            "n": 14,
+            "median": 27.0,
+            "p90": 58.1
+          },
+          "klag_floor_min": {
+            "n": 118,
+            "median": 16.0,
+            "p90": 28.3
+          }
+        },
+        "backtest|true-lead|3min": {
+          "n": 118,
+          "arrived": 51,
+          "arrival_min": {
+            "n": 51,
+            "median": 14.0,
+            "p90": 47.0
+          },
+          "klag_floor_min": {
+            "n": 118,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "backtest|true-lead|5min": {
+          "n": 118,
+          "arrived": 40,
+          "arrival_min": {
+            "n": 40,
+            "median": 22.5,
+            "p90": 49.1
+          },
+          "klag_floor_min": {
+            "n": 118,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|false-lead|15min": {
+          "n": 466,
+          "arrived": 188,
+          "arrival_min": {
+            "n": 188,
+            "median": 27.0,
+            "p90": 50.0
+          },
+          "klag_floor_min": {
+            "n": 466,
+            "median": 9.0,
+            "p90": 14.0
+          }
+        },
+        "forward|false-lead|1h": {
+          "n": 466,
+          "arrived": 48,
+          "arrival_min": {
+            "n": 48,
+            "median": 30.0,
+            "p90": 55.3
+          },
+          "klag_floor_min": {
+            "n": 466,
+            "median": 29.0,
+            "p90": 55.0
+          }
+        },
+        "forward|false-lead|30min": {
+          "n": 466,
+          "arrived": 116,
+          "arrival_min": {
+            "n": 116,
+            "median": 26.0,
+            "p90": 53.0
+          },
+          "klag_floor_min": {
+            "n": 466,
+            "median": 15.0,
+            "p90": 27.5
+          }
+        },
+        "forward|false-lead|3min": {
+          "n": 466,
+          "arrived": 425,
+          "arrival_min": {
+            "n": 425,
+            "median": 13.0,
+            "p90": 40.0
+          },
+          "klag_floor_min": {
+            "n": 466,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|false-lead|5min": {
+          "n": 466,
+          "arrived": 355,
+          "arrival_min": {
+            "n": 355,
+            "median": 18.0,
+            "p90": 43.6
+          },
+          "klag_floor_min": {
+            "n": 466,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        },
+        "forward|true-lead|15min": {
+          "n": 106,
+          "arrived": 35,
+          "arrival_min": {
+            "n": 35,
+            "median": 42.0,
+            "p90": 55.6
+          },
+          "klag_floor_min": {
+            "n": 106,
+            "median": 9.0,
+            "p90": 15.0
+          }
+        },
+        "forward|true-lead|1h": {
+          "n": 106,
+          "arrived": 8,
+          "arrival_min": {
+            "n": 8,
+            "median": 14.0,
+            "p90": 27.3
+          },
+          "klag_floor_min": {
+            "n": 106,
+            "median": 30.0,
+            "p90": 54.0
+          }
+        },
+        "forward|true-lead|30min": {
+          "n": 106,
+          "arrived": 11,
+          "arrival_min": {
+            "n": 11,
+            "median": 42.0,
+            "p90": 56.0
+          },
+          "klag_floor_min": {
+            "n": 106,
+            "median": 17.5,
+            "p90": 27.5
+          }
+        },
+        "forward|true-lead|3min": {
+          "n": 106,
+          "arrived": 93,
+          "arrival_min": {
+            "n": 93,
+            "median": 21.0,
+            "p90": 44.0
+          },
+          "klag_floor_min": {
+            "n": 106,
+            "median": 2.0,
+            "p90": 3.0
+          }
+        },
+        "forward|true-lead|5min": {
+          "n": 106,
+          "arrived": 72,
+          "arrival_min": {
+            "n": 72,
+            "median": 27.5,
+            "p90": 49.9
+          },
+          "klag_floor_min": {
+            "n": 106,
+            "median": 3.0,
+            "p90": 5.0
+          }
+        }
+      },
+      "effort_decay": {
+        "backtest|climax|false-lead": {
+          "survival_depths": {
+            "1": 7,
+            "2": 7,
+            "3": 1,
+            "4": 3,
+            "5": 19
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 23,
+              "median": -0.5,
+              "p90": 90.6
+            },
+            "shallow": {
+              "n": 14,
+              "median": -14.8,
+              "p90": 96.6
+            }
+          }
+        },
+        "backtest|climax|true-lead": {
+          "survival_depths": {
+            "1": 3,
+            "2": 1,
+            "3": 1,
+            "4": 2,
+            "5": 5
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 8,
+              "median": -59.5,
+              "p90": 49.7
+            },
+            "shallow": {
+              "n": 4,
+              "median": -12.8,
+              "p90": 74.6
+            }
+          }
+        },
+        "backtest|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 373,
+            "2": 138,
+            "3": 227,
+            "4": 169,
+            "5": 791
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 1187,
+              "median": 2.5,
+              "p90": 107.2
+            },
+            "shallow": {
+              "n": 511,
+              "median": 1.5,
+              "p90": 109.0
+            }
+          }
+        },
+        "backtest|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 78,
+            "2": 32,
+            "3": 32,
+            "4": 2,
+            "5": 153
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 187,
+              "median": -20.5,
+              "p90": 41.5
+            },
+            "shallow": {
+              "n": 110,
+              "median": -0.8,
+              "p90": 67.5
+            }
+          }
+        },
+        "forward|climax|false-lead": {
+          "survival_depths": {
+            "1": 24,
+            "2": 13,
+            "3": 18,
+            "4": 12,
+            "5": 25
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 55,
+              "median": 1.5,
+              "p90": 60.3
+            },
+            "shallow": {
+              "n": 37,
+              "median": 0.0,
+              "p90": 67.4
+            }
+          }
+        },
+        "forward|climax|true-lead": {
+          "survival_depths": {
+            "1": 10,
+            "2": 7,
+            "3": 5,
+            "4": 2,
+            "5": 9
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 16,
+              "median": 1.5,
+              "p90": 30.8
+            },
+            "shallow": {
+              "n": 17,
+              "median": -11.0,
+              "p90": 24.7
+            }
+          }
+        },
+        "forward|rv-anomaly|false-lead": {
+          "survival_depths": {
+            "1": 850,
+            "2": 277,
+            "3": 363,
+            "4": 228,
+            "5": 968
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 1559,
+              "median": 1.5,
+              "p90": 64.2
+            },
+            "shallow": {
+              "n": 1127,
+              "median": 1.0,
+              "p90": 61.5
+            }
+          }
+        },
+        "forward|rv-anomaly|true-lead": {
+          "survival_depths": {
+            "1": 253,
+            "2": 82,
+            "3": 81,
+            "4": 35,
+            "5": 133
+          },
+          "outcome_by_depth": {
+            "deep": {
+              "n": 249,
+              "median": -8.5,
+              "p90": 21.6
+            },
+            "shallow": {
+              "n": 335,
+              "median": -6.0,
+              "p90": 25.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}
