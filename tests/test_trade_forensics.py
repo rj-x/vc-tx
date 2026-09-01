@@ -8,8 +8,17 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from backtest.trade_forensics import (FEATURES, net_ledger, outcome_of,
-                                      report, usable, zone_of)
+from backtest.trade_forensics import (ENRICH_COLS, FEATURES, net_ledger,
+                                      outcome_of, report, usable,
+                                      zone_of)
+
+
+def test_registered_columns_are_emitted():
+    # the register-column inventory pin (operator column check,
+    # 2026-09-01): every per-trade column the register orders must be
+    # in ENRICH_COLS — atr_pctl (register 130) was ordered and not
+    # emitted until this pin existed
+    assert {"spans_high_event", "atr_pctl"} <= set(ENRICH_COLS)
 
 
 def _rows():
