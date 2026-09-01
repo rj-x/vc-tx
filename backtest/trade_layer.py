@@ -325,7 +325,9 @@ def run_instrument(instr):
         (t, d) for t, d, _n in all_fire_events]
     env.narr["opposing_sentence_fire"] = list(sentence_events)
     for variant in VARIANTS:
-        recipe = rset[variant]
+        from backtest.recipes import specialize
+        recipe = specialize(rset[variant], instr)   # register 128
+                                                    # follow-through
         for bname, members in base_members.items():
             meds = []
             for mf in members:

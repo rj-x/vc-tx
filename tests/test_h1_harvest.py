@@ -68,6 +68,24 @@ def test_entry_offset_defers_the_entry():
         normalize({**base, "entry_offset_bars": -1})
 
 
+def test_every_set_variant_simulates_specialized():
+    # register 128 follow-through (the incident is the pin): the
+    # campaign crashed because a consumer iterated the raw set — EVERY
+    # variant in the CURRENT set must simulate cleanly after
+    # specialize(), so any future per-instrument component fails here
+    # before it fails in a consumer
+    closes = [100.0 + 0.1 * i for i in range(60)]
+    env = _env(closes)
+    env.narr = {k: [] for k in ("opposing_effort", "absorption_event",
+                                "opposing_signal_fire",
+                                "opposing_sentence_fire", "trend_flip",
+                                "opposing_structural_core",
+                                "phase_transition")}
+    for name, recipe in RECIPE_SETS[RECIPE_SET_VERSION].items():
+        r = specialize(recipe, "uk100fut")
+        simulate(_fire(0), env, r, 0.0)       # must not raise
+
+
 def test_specialize_and_unspecialized_refusal():
     r = RECIPE_SETS[RECIPE_SET_VERSION]["R-H1-OWNCURVE"]
     s = specialize(r, "uk100fut")

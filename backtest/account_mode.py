@@ -256,7 +256,8 @@ def collect_trades(instr, tf, variants, spread_markup):
                 "stop_pts": INITIAL_STOP_ATR * a0, "mae_pts": mae}
 
     for variant in variants:
-        recipe = transform_recipe(rset[variant], tf)
+        from backtest.recipes import specialize
+        recipe = transform_recipe(specialize(rset[variant], instr), tf)
         for name in names:
             nf = [f for f in fires if f["name"] == name]
             tl = []

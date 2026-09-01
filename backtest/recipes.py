@@ -675,6 +675,9 @@ def run_instrument(instr):
            "spread_charged_pts": spread, "recipes": {}}
     names = sorted({f["name"] for f in fires})
     for rname, recipe in rset.items():
+        recipe = specialize(recipe, instr)      # register 128 follow-
+                                                # through: per-instrument
+                                                # derived components
         rows = {"_provenance": recipe["provenance"]}
         for hname in names:
             hf = [f for f in fires if f["name"] == hname]
