@@ -173,7 +173,7 @@ def outcome_of(points, spread):
 
 
 def enrich_rows(rows, A, spread, boundary, go_live, calendar=None,
-                pctl=None):
+                pctl=None, pctl_tod=None):
     """Mechanical enrichment of one instrument's journal rows against
     its per-bar context arrays. Pure given (rows, A, spread, zones,
     calendar, pctl); calendar = (rel, span) from
@@ -195,6 +195,8 @@ def enrich_rows(rows, A, spread, boundary, go_live, calendar=None,
               if r["atr_entry"] not in (None, "", "None") else None)
         e["atr_pctl"] = (pctl(open_ts.value, _a)
                          if pctl and _a is not None else None)
+        e["atr_pctl_tod"] = (pctl_tod(open_ts.value, _a)
+                             if pctl_tod and _a is not None else None)
         d = int(r["direction"])
         pts = float(r["points"])
         entry = float(r["open_price"])
@@ -282,11 +284,14 @@ ENRICH_COLS = ("dow", "hour_utc", "quadrant", "mtf", "h11", "phase",
                "spans_high_event",   # register 124: the hold window
                                      # contains a High release (None =
                                      # outside calendar coverage)
-               "atr_pctl")           # register 130: ATR-at-entry as a
+               "atr_pctl",           # register 130: ATR-at-entry as a
                                      # percentile of the instrument's
                                      # trailing-20-session distribution
                                      # (the vol_regime field, verbatim;
                                      # None = warmup)
+               "atr_pctl_tod")       # register 134: same, vs the SAME
+                                     # 30-min time-of-day slot only
+                                     # (None = warmup or thin slot)
 
 
 # ---------------------------------------------------------------- report
@@ -883,14 +888,15 @@ def main():
     from backtest.event_clock import load_calendar
     calendar = load_calendar()          # register 124: spans_high_event
     enriched = []
-    from backtest.vol_regime import atr_pctl_fn
+    from backtest.vol_regime import atr_pctl_fn, atr_pctl_tod_fn
     for instr in a.instr:
         print(f"# trade_forensics: {instr} ...", file=sys.stderr)
         rows = [r for r in journal if r["instrument"] == instr]
         A = _context_arrays(instr)
         enriched.extend(enrich_rows(rows, A, _spread_median(instr),
                                     boundary, gl, calendar,
-                                    atr_pctl_fn(instr)))
+                                    atr_pctl_fn(instr),
+                                    atr_pctl_tod_fn(instr)))
     cols = (list(journal[0].keys()) + list(ENRICH_COLS)
             if journal else [])
     with open(ENRICHED_CSV, "w", newline="") as f:

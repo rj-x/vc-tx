@@ -148,7 +148,7 @@ def build_zones(df, k, period, mult, sig_sessions=None):
     active_sess (session ordinal at activation). Deterministic."""
     h, l, c = df["high"].to_numpy(), df["low"].to_numpy(), \
         df["close"].to_numpy()
-    ts = df["time"].astype("int64").to_numpy()
+    ts = df["time"].dt.as_unit("ns").astype("int64").to_numpy()
     sess = session_ordinals(df["ldate"].astype(str).tolist())
     atr = atr_series(h, l, c, period)
     sw = fractal_swings(h, l, k)
@@ -295,7 +295,7 @@ def run_instrument(instr, journal):
     df4 = h4_frame(instr)
     k = int(cfg.context.swing_k)
     period = int(cfg.context.atr_period)
-    h4_ts = df4["time"].astype("int64").to_numpy()
+    h4_ts = df4["time"].dt.as_unit("ns").astype("int64").to_numpy()
     h4_sess = session_ordinals(df4["ldate"].astype(str).tolist())
     bar_sess = h4_sess[np.clip(np.searchsorted(h4_ts, ts, side="right")
                                - 1, 0, len(h4_sess) - 1)]

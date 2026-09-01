@@ -106,6 +106,13 @@ UNBUILT_PREREGS = (
      "prereg_date": "2026-08-27",
      "tag": "parked-until-gate (the register-107 readout, re-read "
             "weekly — NOT PASSED on any leg)"},
+    {"item": "time-of-day-bucket variants of the register-130 cut and "
+             "the 132/133 counterfactuals (second field, same "
+             "machinery, same fences)", "register": 134,
+     "prereg_date": "2026-09-01",
+     "tag": "standard-path (due at those modules' next campaign "
+            "emission; the register-127 latency clock runs from the "
+            "prereg date)"},
 )
 
 # register 126 (the expiry sweep): machine checks for the backlog's

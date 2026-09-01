@@ -62,6 +62,16 @@ SCALP_ARMS = ("R-SCALP-H" + str(6), "R-SCALP-H" + str(6) + "-REF")
 TRAIL_SESSIONS = 20      # the order's trailing window (native sessions)
 VOL_BUCKETS = (50, 80, 95)   # the order's bucket edges: <50/50-80/80-95/>=95
 MIN_TOP_N = 10           # top-bucket measurability (the matrix convention)
+TOD_SLOT_MIN = 30        # register 134: time-of-day slot width (minutes)
+MIN_TOD_N = 20           # register 134: minimum same-slot prior values
+                         # (a slot holds two 15M bars/session -> 40 max
+                         # in the trailing window, so the pooled
+                         # 50-value floor is unreachable; 20 = ten full
+                         # sessions of the slot)
+
+
+def _slot_of(ns):
+    return int((ns // 60_000_000_000) % 1440) // TOD_SLOT_MIN
 
 
 def bucket_of(pct):
@@ -88,7 +98,8 @@ def atr_pctl_fn(instr):
     atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
                      df["close"].to_numpy(), 14)
     # close stamps: the store is open-stamped; a 15M bar closes 15 min on
-    close_ns = df["time"].astype("int64").to_numpy() + 15 * 60_000_000_000
+    close_ns = df["time"].dt.as_unit("ns").astype("int64").to_numpy() \
+        + 15 * 60_000_000_000
     sess = session_ordinals(df["ldate"].astype(str).tolist())
 
     def f(entry_ns, atr_entry):
@@ -100,6 +111,39 @@ def atr_pctl_fn(instr):
         vals = atr[sel]
         vals = vals[~np.isnan(vals)]
         if len(vals) < 50:
+            return None
+        return round(100 * float(np.mean(vals <= atr_entry)), 1)
+    return f
+
+
+def atr_pctl_tod_fn(instr):
+    """entry_ts_ns, atr_entry -> percentile vs the SAME time-of-day
+    slot's strictly-prior 15M ATR values within the trailing
+    TRAIL_SESSIONS native sessions (register 134: the register-73
+    time-matched-base method applied to volatility). Slot membership by
+    close stamp on both sides — the atr_pctl anchor, verbatim. None =
+    warmup or fewer than MIN_TOD_N prior same-slot values."""
+    df = pd.read_csv(os.path.join(ROOT, "clean_finsa",
+                                  f"{instr}_15min.csv"),
+                     usecols=["time", "high", "low", "close", "ldate"],
+                     parse_dates=["time"])
+    atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
+                     df["close"].to_numpy(), 14)
+    close_ns = df["time"].dt.as_unit("ns").astype("int64").to_numpy() \
+        + 15 * 60_000_000_000
+    sess = session_ordinals(df["ldate"].astype(str).tolist())
+    slot = (close_ns // 60_000_000_000) % 1440 // TOD_SLOT_MIN
+
+    def f(entry_ns, atr_entry):
+        j = int(np.searchsorted(close_ns, entry_ns, side="right"))
+        if j == 0 or atr_entry is None:
+            return None
+        lo_ord = sess[j - 1] - TRAIL_SESSIONS + 1
+        sel = ((np.arange(len(atr)) < j) & (sess >= lo_ord)
+               & (slot == _slot_of(entry_ns)))
+        vals = atr[sel]
+        vals = vals[~np.isnan(vals)]
+        if len(vals) < MIN_TOD_N:
             return None
         return round(100 * float(np.mean(vals <= atr_entry)), 1)
     return f

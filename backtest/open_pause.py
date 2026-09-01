@@ -90,7 +90,7 @@ def day_open_pctl(instr):
                      parse_dates=["time"])
     atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
                      df["close"].to_numpy(), 14)
-    close_ns = df["time"].astype("int64").to_numpy() \
+    close_ns = df["time"].dt.as_unit("ns").astype("int64").to_numpy() \
         + 15 * 60_000_000_000
     sess = session_ordinals(df["ldate"].astype(str).tolist())
     hh, mm = map(int, AUCTION_UTC[instr][0].split(":"))

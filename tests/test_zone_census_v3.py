@@ -40,7 +40,7 @@ def test_departure_base_builder_and_invalidation():
     z = zs[0]
     assert z["type"] == "D" and z["base_bars"] >= 3
     assert abs(z["lo"] - 98.9) < 1e-9 and abs(z["hi"] - 101.2) < 1e-9
-    ts = df["time"].astype("int64").to_numpy()
+    ts = df["time"].dt.as_unit("ns").astype("int64").to_numpy()
     assert z["active_from"] == ts[z["depart_idx"] + 1]   # next bar's open
     # dead at the first CLOSE below the base low (98.0 at index 28)
     assert z["invalidated_at"] == int(ts[28])

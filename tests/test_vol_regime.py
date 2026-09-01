@@ -6,9 +6,21 @@ import json
 
 import numpy as np
 
-from backtest.vol_regime import (MIN_TOP_N, TRAIL_SESSIONS, VOL_BUCKETS,
+from backtest.vol_regime import (MIN_TOD_N, MIN_TOP_N, TOD_SLOT_MIN,
+                                 TRAIL_SESSIONS, VOL_BUCKETS, _slot_of,
                                  bucket_of, cell, degradation,
                                  stratum_null)
+
+
+def test_tod_slot_arithmetic():
+    # register 134: 30-min clock buckets on close stamps; 13:56 sits in
+    # the 13:30-14:00 slot, and a close at exactly 13:30 joins it
+    m = 60_000_000_000
+    assert (TOD_SLOT_MIN, MIN_TOD_N) == (30, 20)
+    assert _slot_of((13 * 60 + 56) * m) == 27
+    assert _slot_of((13 * 60 + 30) * m) == 27
+    assert _slot_of((13 * 60 + 29) * m) == 26
+    assert _slot_of(0) == 0
 
 
 def _rows(spec, seed=0):

@@ -179,6 +179,8 @@ AUTHORITY = {
     "vol_regime.py:TRAIL_SESSIONS": "register 130: the trailing ATR-distribution window (20 native sessions) — the order's own value",
     "vol_regime.py:VOL_BUCKETS": "register 130: percentile bucket edges {50, 80, 95} — the order's own edges",
     "vol_regime.py:MIN_TOP_N": "register 130: top-bucket measurability (n_distinct >= 10) — the matrix convention reused",
+    "vol_regime.py:TOD_SLOT_MIN": "register 134: the time-of-day slot width (30 min) — the order's own value",
+    "vol_regime.py:MIN_TOD_N": "register 134: minimum same-slot prior values (20 = ten full sessions of a two-bar slot; the pooled 50-floor is unreachable in a 40-value-max slot) — pre-declared in the entry before computing",
     "vol_regime.py:SCALP_ARMS": "register 130: the headlined arms (register 94's two, mirrored) — a name list, not a parameter",
     "insights.py:BENCH": "register 109: the INSIGHTS bench — curated candidate/gate prose, register-cited; never parameters",
     "insights.py:UNBUILT_PREREGS": "register 127: the idea-to-data alarm's curated table — every pre-registered-but-unbuilt item with its registration and its 2b tag; maintained with the backlog, never parameters",

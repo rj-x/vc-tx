@@ -87,7 +87,7 @@ def run_instrument(instr, boundary_ns, golive_ns):
     df = pd.read_csv(os.path.join(ROOT, "clean_finsa",
                                   f"{instr}_1min.csv"),
                      usecols=["time", "close"], parse_dates=["time"])
-    ts = df["time"].astype("int64").to_numpy()
+    ts = df["time"].dt.as_unit("ns").astype("int64").to_numpy()
     e15 = eff15(df["close"].to_numpy())
     esess = eff_session(df["close"].to_numpy(), ts)
     sess = np.array(sessions_of_index(

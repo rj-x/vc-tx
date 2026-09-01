@@ -225,3 +225,4 @@ first uses them, or the commit doesn't pass.
 - **MIS** — the MIS- prefix of MIS-SCALE: a home-derived value knowingly wrong-sized off-home.
 - **RULES / RULES.md** — the founding per-hypothesis specification document.
 - **CFTC / COT** — the US futures regulator and its weekly Commitments-of-Traders positioning report (a parked future data source, register 125).
+- **atr_pctl_tod (TOD_SLOT_MIN, MIN_TOD_N)** — register 134 companion enrichment column: ATR-at-entry's percentile against the SAME 30-minute time-of-day slot (TOD_SLOT_MIN) across the trailing 20 sessions, close-stamp anchored like atr_pctl; a slot holds at most 40 trailing values, so its own floor MIN_TOD_N=20 replaces the pooled 50. Read the pair together: pooled-high + tod-normal = the open being the open; tod-high = a genuinely abnormal hour.

@@ -17,8 +17,10 @@ def test_registered_columns_are_emitted():
     # the register-column inventory pin (operator column check,
     # 2026-09-01): every per-trade column the register orders must be
     # in ENRICH_COLS — atr_pctl (register 130) was ordered and not
-    # emitted until this pin existed
-    assert {"spans_high_event", "atr_pctl"} <= set(ENRICH_COLS)
+    # emitted until this pin existed; atr_pctl_tod (register 134) is
+    # covered per that entry's follow-through rule
+    assert {"spans_high_event", "atr_pctl",
+            "atr_pctl_tod"} <= set(ENRICH_COLS)
 
 
 def _rows():

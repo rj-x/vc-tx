@@ -99,7 +99,7 @@ def run_instrument(instr, boundary_ns, golive_ns):
                                   f"{instr}_1min.csv"),
                      usecols=["time", "open", "close", "volume"],
                      parse_dates=["time"])
-    ts = df["time"].astype("int64").to_numpy()
+    ts = df["time"].dt.as_unit("ns").astype("int64").to_numpy()
     a15 = sv15(df["open"].to_numpy(), df["close"].to_numpy(),
                df["volume"].to_numpy())
     asess = sv_session(df["open"].to_numpy(), df["close"].to_numpy(),
