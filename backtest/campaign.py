@@ -620,7 +620,7 @@ def main(slugs=(SLUG, "uk100")):
     import sys as _sys
     _sp.run([_sys.executable, os.path.join(ROOT, "scripts",
                                            "param_registry.py")], check=True)
-    print(f"\nWrote {OUT}/ and reports/backtest_v1.md (generated)")
+    print(f"\nWrote (generated):\n  {OUT}/\n  reports/backtest_v1.md")
     return summary
 
 
