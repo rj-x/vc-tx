@@ -77,17 +77,16 @@ def stratum_of(pct):
     return ">=95"
 
 
-def day_open_pctl(instr):
+def day_open_pctl(instr, frame=None, days=None):
     """UTC-date -> the atr_pctl at the open window's FIRST bar (the
     auction open − 30 min): the ATR of the last 15M bar CLOSED at or
     before that moment, as a percentile of the instrument's own
     strictly-prior 15M ATR values within the trailing TRAIL_SESSIONS
     native sessions (the register-130 machinery, re-anchored to the
-    window's first bar; no lookahead)."""
-    df = pd.read_csv(os.path.join(ROOT, "clean_finsa",
-                                  f"{instr}_15min.csv"),
-                     usecols=["time", "high", "low", "close", "ldate"],
-                     parse_dates=["time"])
+    window's first bar; no lookahead). frame: injected (possibly
+    truncated) 15M store for the register-136 behavioral pin."""
+    from backtest.vol_regime import frame15
+    df = frame if frame is not None else frame15(instr)
     atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
                      df["close"].to_numpy(), 14)
     close_ns = df["time"].dt.as_unit("ns").astype("int64").to_numpy() \
@@ -95,7 +94,9 @@ def day_open_pctl(instr):
     sess = session_ordinals(df["ldate"].astype(str).tolist())
     hh, mm = map(int, AUCTION_UTC[instr][0].split(":"))
     out = {}
-    for d in sorted(set(df["time"].dt.strftime("%Y-%m-%d"))):
+    if days is None:
+        days = sorted(set(df["time"].dt.strftime("%Y-%m-%d")))
+    for d in days:
         t0 = (pd.Timestamp(d, tz="UTC")
               + pd.Timedelta(hours=hh, minutes=mm)
               - pd.Timedelta(minutes=OPEN_W_MIN))

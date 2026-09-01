@@ -86,15 +86,23 @@ def bucket_of(pct):
     return ">=95"
 
 
-def atr_pctl_fn(instr):
+def frame15(instr):
+    """The 15M store frame both percentile fns and the truncation
+    harness (register 136) share."""
+    return pd.read_csv(os.path.join(ROOT, "clean_finsa",
+                                    f"{instr}_15min.csv"),
+                       usecols=["time", "high", "low", "close",
+                                "ldate"],
+                       parse_dates=["time"])
+
+
+def atr_pctl_fn(instr, frame=None):
     """entry_ts_ns, atr_entry -> percentile vs the instrument's own
     strictly-prior 15M ATR values within the trailing TRAIL_SESSIONS
     native sessions (the store's ldate). No lookahead: only bars whose
-    CLOSE precedes the entry count."""
-    df = pd.read_csv(os.path.join(ROOT, "clean_finsa",
-                                  f"{instr}_15min.csv"),
-                     usecols=["time", "high", "low", "close", "ldate"],
-                     parse_dates=["time"])
+    CLOSE precedes the entry count. frame: injected (possibly
+    truncated) 15M store for the register-136 behavioral pin."""
+    df = frame if frame is not None else frame15(instr)
     atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
                      df["close"].to_numpy(), 14)
     # close stamps: the store is open-stamped; a 15M bar closes 15 min on
@@ -116,17 +124,15 @@ def atr_pctl_fn(instr):
     return f
 
 
-def atr_pctl_tod_fn(instr):
+def atr_pctl_tod_fn(instr, frame=None):
     """entry_ts_ns, atr_entry -> percentile vs the SAME time-of-day
     slot's strictly-prior 15M ATR values within the trailing
     TRAIL_SESSIONS native sessions (register 134: the register-73
     time-matched-base method applied to volatility). Slot membership by
     close stamp on both sides — the atr_pctl anchor, verbatim. None =
-    warmup or fewer than MIN_TOD_N prior same-slot values."""
-    df = pd.read_csv(os.path.join(ROOT, "clean_finsa",
-                                  f"{instr}_15min.csv"),
-                     usecols=["time", "high", "low", "close", "ldate"],
-                     parse_dates=["time"])
+    warmup or fewer than MIN_TOD_N prior same-slot values. frame: see
+    atr_pctl_fn."""
+    df = frame if frame is not None else frame15(instr)
     atr = atr_series(df["high"].to_numpy(), df["low"].to_numpy(),
                      df["close"].to_numpy(), 14)
     close_ns = df["time"].dt.as_unit("ns").astype("int64").to_numpy() \
