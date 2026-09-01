@@ -2,97 +2,167 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `729f4cc79` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, register 114; the zone-census-v3 addendum, same weekly slot). PURPOSE: tests the zones' mechanism independently of signal conditioning — if anatomy is flat in-zone, v3's conditioning nulls are pre-explained; if anatomy shifts, the shifts are hypothesis material through the front door. Zones = the v3 anchor rung (x1.5; a x3 departure is an anchor departure at the same base). D1 included with the register-111 starvation verdict standing (cells print unmeasurable). BASE (register-47 method): out-of-zone bars session-standardized to the in-zone session mix; rel_volume and spread percentile are tod-matched by the engine baseline already. STATISTIC SHAPES (74-B): per-cell shift vs a two-sided in/out permutation null (100 pinned seeds, within-session); claims need >= 3-of-4 legs same-signed significant; single-leg findings route to per_market_watch.md wearing a selection-null. Measurable at >= 100 in-zone bars / 25 legs (implementer-proposed, FLAGGED). **HONESTY — the 1M label-study autocorrelation caveat: n counts BARS, and bars cluster within zone visits (the distinct zone/day counts print beside n); the permutation null treats bars as exchangeable, so per-cell significance is OVERSTATED by construction — a cell fed by one or two zones describes those days, not zones in general. The 3-of-4-leg rule is the real guard.** Ex-lockbox; sealed bars excluded. MINT-ON-LIFT ONLY.
+Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_anatomy, register 114; the zone-census-v3 addendum, same weekly slot). PURPOSE: tests the zones' mechanism independently of signal conditioning — if anatomy is flat in-zone, v3's conditioning nulls are pre-explained; if anatomy shifts, the shifts are hypothesis material through the front door. Zones = the v3 anchor rung (x1.5; a x3 departure is an anchor departure at the same base). D1 included with the register-111 starvation verdict standing (cells print unmeasurable). BASE (register-47 method): out-of-zone bars session-standardized to the in-zone session mix; rel_volume and spread percentile are tod-matched by the engine baseline already. STATISTIC SHAPES (74-B): per-cell shift vs a two-sided in/out permutation null (100 pinned seeds, within-session); claims need >= 3-of-4 legs same-signed significant; single-leg findings route to per_market_watch.md wearing a selection-null. Measurable at >= 100 in-zone bars / 25 legs (implementer-proposed, FLAGGED). **HONESTY — the 1M label-study autocorrelation caveat: n counts BARS, and bars cluster within zone visits (the distinct zone/day counts print beside n); the permutation null treats bars as exchangeable, so per-cell significance is OVERSTATED by construction — a cell fed by one or two zones describes those days, not zones in general. The 3-of-4-leg rule is the real guard.** Ex-lockbox; sealed bars excluded. MINT-ON-LIFT ONLY.
 
 ## uk100fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h | D | backtest | rel_volume_median (x tod-normal) | 1944 (2z/8d) | 0.909 | 0.939 | -0.03 | 0.038 | 85.0 | no |
-| 4h | D | backtest | loud_rate (% bars) | 1944 (2z/8d) | 15.535 | 19.545 | -4.01 | 1.833 | 100.0 | YES |
-| 4h | D | backtest | spread_pctile_median (pctile) | 1690 (2z/8d) | 57.143 | 62.297 | -5.154 | 3.838 | 99.0 | YES |
-| 4h | D | backtest | narrow_loud_share (% classified) | 1944 (2z/8d) | 6.224 | 6.33 | -0.105 | 1.06 | 13.0 | no |
-| 4h | D | backtest | test_rate (per 100 bars) | 1944 (2z/8d) | 0.36 | 0.463 | -0.102 | 0.254 | 42.0 | no |
-| 4h | D | backtest | nd_rate (per 100 bars) | 1944 (2z/8d) | 8.951 | 8.301 | +0.649 | 1.292 | 64.0 | no |
-| 4h | D | backtest | ns_rate (per 100 bars) | 1944 (2z/8d) | 7.87 | 8.151 | -0.28 | 1.229 | 27.0 | no |
-| 4h | D | backtest | climax_rate (per 100 bars) | 1944 (2z/8d) | 0.412 | 0.516 | -0.104 | 0.377 | 42.0 | no |
-| 4h | D | backtest | phase_flip_rate (per 100 bars) | 2434 (2z/8d) | 3.903 | 3.756 | +0.147 | 0.78 | 25.0 | no |
-| 4h | D | backtest | svol15_median (signed vol) | 2434 (2z/8d) | 18.0 | 4.657 | +13.343 | 9.328 | 100.0 | YES |
-| 4h | D | backtest | svol_sess_median (signed vol) | 2434 (2z/8d) | 818.5 | 422.371 | +396.129 | 90.548 | 100.0 | YES |
-| 4h | D | backtest | velocity_arriving (pts/bar) | 27 | 1.821 | 1.991 | -0.169 | 0.642 | 35.0 | no |
-| 4h | D | backtest | velocity_departing (pts/bar) | 27 | 1.905 | 1.971 | -0.066 | 0.726 | 12.0 | no |
+| 4h | D | backtest | rel_volume_median (x tod-normal) | 778 (1z/2d) | 1.135 | 0.907 | +0.228 | 0.051 | 100.0 | YES |
+| 4h | D | backtest | loud_rate (% bars) | 778 (1z/2d) | 22.365 | 18.625 | +3.74 | 2.48 | 100.0 | YES |
+| 4h | D | backtest | spread_pctile_median (pctile) | 755 (1z/2d) | 62.5 | 60.215 | +2.285 | 3.925 | 41.0 | no |
+| 4h | D | backtest | narrow_loud_share (% classified) | 778 (1z/2d) | 10.54 | 6.04 | +4.5 | 1.742 | 100.0 | YES |
+| 4h | D | backtest | test_rate (per 100 bars) | 778 (1z/2d) | 0.386 | 0.456 | -0.07 | 0.488 | 15.0 | no |
+| 4h | D | backtest | nd_rate (per 100 bars) | 778 (1z/2d) | 1.799 | 9.151 | -7.351 | 1.604 | 100.0 | YES |
+| 4h | D | backtest | ns_rate (per 100 bars) | 778 (1z/2d) | 2.314 | 8.748 | -6.435 | 1.845 | 100.0 | YES |
+| 4h | D | backtest | climax_rate (per 100 bars) | 778 (1z/2d) | 0.643 | 0.467 | +0.176 | 0.478 | 41.0 | no |
+| 4h | D | backtest | phase_flip_rate (per 100 bars) | 778 (1z/2d) | 4.627 | 3.724 | +0.904 | 1.312 | 78.0 | no |
+| 4h | D | backtest | svol15_median (signed vol) | 778 (1z/2d) | -12.0 | 3.869 | -15.869 | 13.245 | 98.0 | YES |
+| 4h | D | backtest | svol_sess_median (signed vol) | 778 (1z/2d) | 111.5 | 396.24 | -284.74 | 108.781 | 100.0 | YES |
 
-(unmeasurable cells this leg: 91 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 93 — thin in-zone populations print in the JSON with their counts)
 
 ## ger40fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h | D | backtest | rel_volume_median (x tod-normal) | 332 (1z/1d) | 0.499 | 1.133 | -0.635 | 0.084 | 100.0 | YES |
-| 4h | D | backtest | loud_rate (% bars) | 332 (1z/1d) | 0.0 | 27.467 | -27.467 | 5.547 | 100.0 | YES |
-| 4h | D | backtest | spread_pctile_median (pctile) | 230 (1z/1d) | 25.0 | 62.783 | -37.783 | 4.918 | 100.0 | YES |
-| 4h | D | backtest | narrow_loud_share (% classified) | 332 (1z/1d) | 0.0 | 6.575 | -6.575 | 2.827 | 100.0 | YES |
-| 4h | D | backtest | test_rate (per 100 bars) | 332 (1z/1d) | 0.0 | 0.254 | -0.254 | 0.471 | 42.0 | no |
-| 4h | D | backtest | nd_rate (per 100 bars) | 332 (1z/1d) | 30.12 | 5.176 | +24.945 | 2.885 | 100.0 | YES |
-| 4h | D | backtest | ns_rate (per 100 bars) | 332 (1z/1d) | 23.795 | 4.58 | +19.215 | 3.379 | 100.0 | YES |
-| 4h | D | backtest | climax_rate (per 100 bars) | 332 (1z/1d) | 0.0 | 0.664 | -0.664 | 0.714 | 74.0 | no |
-| 4h | D | backtest | phase_flip_rate (per 100 bars) | 332 (1z/1d) | 4.217 | 4.392 | -0.175 | 2.424 | 11.0 | no |
-| 4h | D | backtest | svol15_median (signed vol) | 332 (1z/1d) | 24.0 | 105.608 | -81.608 | 126.045 | 24.0 | no |
-| 4h | D | backtest | svol_sess_median (signed vol) | 332 (1z/1d) | 22745.5 | 5811.19 | +16934.3 | 1379.966 | 100.0 | YES |
-| 4h | D | forward | rel_volume_median (x tod-normal) | 3441 (1z/7d) | 1.203 | 0.977 | +0.226 | 0.024 | 100.0 | YES |
-| 4h | D | forward | loud_rate (% bars) | 3441 (1z/7d) | 34.118 | 19.037 | +15.081 | 1.847 | 100.0 | YES |
-| 4h | D | forward | spread_pctile_median (pctile) | 3185 (1z/7d) | 62.5 | 55.492 | +7.008 | 4.435 | 100.0 | YES |
-| 4h | D | forward | narrow_loud_share (% classified) | 3441 (1z/7d) | 18.599 | 9.353 | +9.246 | 1.19 | 100.0 | YES |
-| 4h | D | forward | test_rate (per 100 bars) | 3441 (1z/7d) | 1.192 | 0.673 | +0.518 | 0.323 | 100.0 | YES |
-| 4h | D | forward | nd_rate (per 100 bars) | 3441 (1z/7d) | 3.4 | 6.695 | -3.295 | 0.762 | 100.0 | YES |
-| 4h | D | forward | ns_rate (per 100 bars) | 3441 (1z/7d) | 4.01 | 6.862 | -2.852 | 0.828 | 100.0 | YES |
-| 4h | D | forward | climax_rate (per 100 bars) | 3441 (1z/7d) | 1.25 | 0.477 | +0.772 | 0.328 | 100.0 | YES |
-| 4h | D | forward | phase_flip_rate (per 100 bars) | 3441 (1z/7d) | 4.417 | 4.183 | +0.234 | 0.642 | 40.0 | no |
-| 4h | D | forward | svol15_median (signed vol) | 3441 (1z/7d) | 3.0 | -8.051 | +11.051 | 14.744 | 84.0 | no |
-| 4h | D | forward | svol_sess_median (signed vol) | 3441 (1z/7d) | 488.0 | 420.961 | +67.039 | 402.178 | 0.0 | no |
+| 4h | D | forward | rel_volume_median (x tod-normal) | 518 (1z/1d) | 1.086 | 0.988 | +0.099 | 0.053 | 98.0 | YES |
+| 4h | D | forward | loud_rate (% bars) | 518 (1z/1d) | 17.181 | 20.212 | -3.031 | 3.14 | 93.0 | no |
+| 4h | D | forward | spread_pctile_median (pctile) | 480 (1z/1d) | 50.0 | 57.812 | -7.812 | 8.516 | 80.0 | no |
+| 4h | D | forward | narrow_loud_share (% classified) | 518 (1z/1d) | 9.846 | 8.823 | +1.023 | 2.258 | 58.0 | no |
+| 4h | D | forward | test_rate (per 100 bars) | 518 (1z/1d) | 0.386 | 0.502 | -0.116 | 0.535 | 36.0 | no |
+| 4h | D | forward | nd_rate (per 100 bars) | 518 (1z/1d) | 4.247 | 5.597 | -1.35 | 1.72 | 85.0 | no |
+| 4h | D | forward | ns_rate (per 100 bars) | 518 (1z/1d) | 5.212 | 6.121 | -0.908 | 1.984 | 54.0 | no |
+| 4h | D | forward | climax_rate (per 100 bars) | 518 (1z/1d) | 0.579 | 0.652 | -0.073 | 0.696 | 16.0 | no |
+| 4h | D | forward | phase_flip_rate (per 100 bars) | 518 (1z/1d) | 3.475 | 4.099 | -0.624 | 1.624 | 52.0 | no |
+| 4h | D | forward | svol15_median (signed vol) | 518 (1z/1d) | -57.0 | -13.403 | -43.597 | 39.19 | 98.0 | YES |
+| 4h | D | forward | svol_sess_median (signed vol) | 518 (1z/1d) | -14988.5 | 1017.233 | -16005.7 | 543.869 | 100.0 | YES |
 
-(unmeasurable cells this leg: 82 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 93 — thin in-zone populations print in the JSON with their counts)
 
 ## nas100fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 4h | D | forward | rel_volume_median (x tod-normal) | 135 (1z/1d) | 1.51 | 1.077 | +0.433 | 0.137 | 100.0 | YES |
+| 4h | D | forward | loud_rate (% bars) | 135 (1z/1d) | 51.111 | 25.151 | +25.961 | 8.376 | 100.0 | YES |
+| 4h | D | forward | spread_pctile_median (pctile) | 135 (1z/1d) | 75.0 | 62.5 | +12.5 | 12.5 | 84.0 | no |
+| 4h | D | forward | narrow_loud_share (% classified) | 135 (1z/1d) | 19.259 | 10.234 | +9.025 | 4.447 | 100.0 | YES |
+| 4h | D | forward | test_rate (per 100 bars) | 135 (1z/1d) | 0.0 | 0.089 | -0.089 | 0.674 | 0.0 | no |
+| 4h | D | forward | nd_rate (per 100 bars) | 135 (1z/1d) | 0.741 | 8.027 | -7.286 | 4.198 | 100.0 | YES |
+| 4h | D | forward | ns_rate (per 100 bars) | 135 (1z/1d) | 0.0 | 7.871 | -7.871 | 4.055 | 100.0 | YES |
+| 4h | D | forward | climax_rate (per 100 bars) | 135 (1z/1d) | 0.0 | 0.223 | -0.223 | 0.54 | 0.0 | no |
+| 4h | D | forward | phase_flip_rate (per 100 bars) | 135 (1z/1d) | 4.444 | 4.214 | +0.23 | 3.283 | 0.0 | no |
+| 4h | D | forward | svol15_median (signed vol) | 135 (1z/1d) | -519.0 | -22.0 | -497 | 263.15 | 100.0 | YES |
+| 4h | D | forward | svol_sess_median (signed vol) | 135 (1z/1d) | -9556.0 | -466.0 | -9090 | 1145.15 | 100.0 | YES |
+| 4h | S | backtest | rel_volume_median (x tod-normal) | 1199 (1z/3d) | 0.793 | 1.218 | -0.425 | 0.038 | 100.0 | YES |
+| 4h | S | backtest | loud_rate (% bars) | 1199 (1z/3d) | 5.922 | 27.688 | -21.766 | 2.561 | 100.0 | YES |
+| 4h | S | backtest | spread_pctile_median (pctile) | 1003 (1z/3d) | 50.0 | 68.654 | -18.654 | 4.086 | 100.0 | YES |
+| 4h | S | backtest | narrow_loud_share (% classified) | 1199 (1z/3d) | 2.419 | 9.998 | -7.579 | 1.998 | 100.0 | YES |
+| 4h | S | backtest | test_rate (per 100 bars) | 1199 (1z/3d) | 0.5 | 0.109 | +0.391 | 0.208 | 100.0 | YES |
+| 4h | S | backtest | nd_rate (per 100 bars) | 1199 (1z/3d) | 13.094 | 3.317 | +9.777 | 1.186 | 100.0 | YES |
+| 4h | S | backtest | ns_rate (per 100 bars) | 1199 (1z/3d) | 13.928 | 3.075 | +10.853 | 1.527 | 100.0 | YES |
+| 4h | S | backtest | climax_rate (per 100 bars) | 1199 (1z/3d) | 0.0 | 0.428 | -0.428 | 0.415 | 96.0 | YES |
+| 4h | S | backtest | phase_flip_rate (per 100 bars) | 1199 (1z/3d) | 4.587 | 4.367 | +0.22 | 1.278 | 23.0 | no |
+| 4h | S | backtest | svol15_median (signed vol) | 1199 (1z/3d) | 56.0 | -88.335 | +144.335 | 183.429 | 93.0 | no |
+| 4h | S | backtest | svol_sess_median (signed vol) | 1199 (1z/3d) | 8457.0 | -2822.756 | +11279.8 | 1023.759 | 100.0 | YES |
 
-(unmeasurable cells this leg: 104 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 82 — thin in-zone populations print in the JSON with their counts)
 
 ## us30fut
 
 | tf | side | window | metric | in n (zones/days) | in | matched base | shift | null p95 (abs) | pct vs null | significant |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 4h | D | forward | rel_volume_median (x tod-normal) | 1751 (1z/4d) | 1.265 | 0.99 | +0.275 | 0.036 | 100.0 | YES |
+| 4h | D | forward | loud_rate (% bars) | 1751 (1z/4d) | 37.636 | 22.885 | +14.751 | 1.769 | 100.0 | YES |
+| 4h | D | forward | spread_pctile_median (pctile) | 1678 (1z/4d) | 68.75 | 59.706 | +9.044 | 2.276 | 100.0 | YES |
+| 4h | D | forward | narrow_loud_share (% classified) | 1751 (1z/4d) | 17.419 | 9.195 | +8.224 | 1.318 | 100.0 | YES |
+| 4h | D | forward | test_rate (per 100 bars) | 1751 (1z/4d) | 1.428 | 0.837 | +0.591 | 0.396 | 99.0 | YES |
+| 4h | D | forward | nd_rate (per 100 bars) | 1751 (1z/4d) | 2.627 | 6.525 | -3.898 | 1.157 | 100.0 | YES |
+| 4h | D | forward | ns_rate (per 100 bars) | 1751 (1z/4d) | 2.227 | 5.773 | -3.546 | 1.159 | 100.0 | YES |
+| 4h | D | forward | climax_rate (per 100 bars) | 1751 (1z/4d) | 1.485 | 0.87 | +0.615 | 0.439 | 99.0 | YES |
+| 4h | D | forward | phase_flip_rate (per 100 bars) | 1751 (1z/4d) | 4.626 | 3.995 | +0.631 | 1.025 | 76.0 | no |
+| 4h | D | forward | svol15_median (signed vol) | 1751 (1z/4d) | -7.0 | 6.982 | -13.982 | 16.386 | 87.0 | no |
+| 4h | D | forward | svol_sess_median (signed vol) | 1751 (1z/4d) | -516.0 | 88.007 | -604.007 | 217.269 | 100.0 | YES |
+| 4h | S | backtest | rel_volume_median (x tod-normal) | 613 (1z/2d) | 0.413 | 1.127 | -0.715 | 0.078 | 100.0 | YES |
+| 4h | S | backtest | loud_rate (% bars) | 613 (1z/2d) | 2.121 | 31.226 | -29.106 | 3.548 | 100.0 | YES |
+| 4h | S | backtest | spread_pctile_median (pctile) | 465 (1z/2d) | 37.5 | 63.09 | -25.59 | 4.841 | 100.0 | YES |
+| 4h | S | backtest | narrow_loud_share (% classified) | 613 (1z/2d) | 0.653 | 13.072 | -12.419 | 2.191 | 100.0 | YES |
+| 4h | S | backtest | test_rate (per 100 bars) | 613 (1z/2d) | 0.163 | 0.754 | -0.591 | 0.574 | 95.0 | YES |
+| 4h | S | backtest | nd_rate (per 100 bars) | 613 (1z/2d) | 25.285 | 5.346 | +19.939 | 1.943 | 100.0 | YES |
+| 4h | S | backtest | ns_rate (per 100 bars) | 613 (1z/2d) | 21.697 | 5.617 | +16.079 | 2.341 | 100.0 | YES |
+| 4h | S | backtest | climax_rate (per 100 bars) | 613 (1z/2d) | 0.0 | 0.62 | -0.62 | 0.512 | 95.0 | YES |
+| 4h | S | backtest | phase_flip_rate (per 100 bars) | 613 (1z/2d) | 5.22 | 3.995 | +1.226 | 1.6 | 85.0 | no |
+| 4h | S | backtest | svol15_median (signed vol) | 613 (1z/2d) | 49.0 | 4.127 | +44.873 | 27.176 | 100.0 | YES |
+| 4h | S | backtest | svol_sess_median (signed vol) | 613 (1z/2d) | 2024.0 | -78.033 | +2102.03 | 283.988 | 100.0 | YES |
+| 4h | S | forward | rel_volume_median (x tod-normal) | 534 (1z/2d) | 0.807 | 0.979 | -0.172 | 0.057 | 100.0 | YES |
+| 4h | S | forward | loud_rate (% bars) | 534 (1z/2d) | 9.738 | 24.294 | -14.556 | 3.411 | 100.0 | YES |
+| 4h | S | forward | spread_pctile_median (pctile) | 481 (1z/2d) | 50.0 | 61.798 | -11.798 | 4.47 | 100.0 | YES |
+| 4h | S | forward | narrow_loud_share (% classified) | 534 (1z/2d) | 3.745 | 9.462 | -5.717 | 2.584 | 100.0 | YES |
+| 4h | S | forward | test_rate (per 100 bars) | 534 (1z/2d) | 0.936 | 1.102 | -0.166 | 0.758 | 43.0 | no |
+| 4h | S | forward | nd_rate (per 100 bars) | 534 (1z/2d) | 10.674 | 7.074 | +3.601 | 2.166 | 100.0 | YES |
+| 4h | S | forward | ns_rate (per 100 bars) | 534 (1z/2d) | 8.427 | 6.452 | +1.975 | 1.996 | 93.0 | no |
+| 4h | S | forward | climax_rate (per 100 bars) | 534 (1z/2d) | 0.936 | 0.855 | +0.082 | 0.713 | 4.0 | no |
+| 4h | S | forward | phase_flip_rate (per 100 bars) | 534 (1z/2d) | 3.933 | 4.2 | -0.268 | 1.898 | 19.0 | no |
+| 4h | S | forward | svol15_median (signed vol) | 534 (1z/2d) | 55.5 | 9.077 | +46.423 | 33.46 | 99.0 | YES |
+| 4h | S | forward | svol_sess_median (signed vol) | 534 (1z/2d) | 18118.5 | -507.755 | +18626.3 | 210.321 | 100.0 | YES |
 
-(unmeasurable cells this leg: 104 — thin in-zone populations print in the JSON with their counts)
+(unmeasurable cells this leg: 71 — thin in-zone populations print in the JSON with their counts)
 
 ## Claims (>= 3-of-4 legs, same-signed significant)
 
 | tf | side | window | metric | legs | shifts |
 |---|---|---|---|---|---|
-| (no metric clears on 3 of 4 legs) | | | | | |
+| 4h | D | forward | rel_volume_median | ger40fut, nas100fut, us30fut | +0.099, +0.433, +0.275 |
+| 4h | D | forward | svol_sess_median | ger40fut, nas100fut, us30fut | -16005.7, -9090, -604.007 |
 
 ## Single-leg findings (routed to per_market_watch.md with selection-nulls; listed, never rules)
 
 | instrument | tf | side | window | metric | shift | pct vs null | sel-pct | beats selection |
 |---|---|---|---|---|---|---|---|---|
-| uk100fut | 4h | D | backtest | loud_rate | -4.01 | 100.0 | 100.0 | YES |
-| uk100fut | 4h | D | backtest | spread_pctile_median | -5.154 | 99.0 | 91.0 | no |
-| uk100fut | 4h | D | backtest | svol15_median | +13.343 | 100.0 | 94.0 | no |
-| uk100fut | 4h | D | backtest | svol_sess_median | +396.129 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | rel_volume_median | -0.635 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | loud_rate | -27.467 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | spread_pctile_median | -37.783 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | narrow_loud_share | -6.575 | 100.0 | 98.0 | YES |
-| ger40fut | 4h | D | backtest | nd_rate | +24.945 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | ns_rate | +19.215 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | backtest | svol_sess_median | +16934.3 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | rel_volume_median | +0.226 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | loud_rate | +15.081 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | spread_pctile_median | +7.008 | 100.0 | 92.0 | no |
-| ger40fut | 4h | D | forward | narrow_loud_share | +9.246 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | test_rate | +0.518 | 100.0 | 92.0 | no |
-| ger40fut | 4h | D | forward | nd_rate | -3.295 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | ns_rate | -2.852 | 100.0 | 100.0 | YES |
-| ger40fut | 4h | D | forward | climax_rate | +0.772 | 100.0 | 98.0 | YES |
+| uk100fut | 4h | D | backtest | rel_volume_median | +0.228 | 100.0 | 100.0 | YES |
+| uk100fut | 4h | D | backtest | loud_rate | +3.74 | 100.0 | 93.0 | no |
+| uk100fut | 4h | D | backtest | narrow_loud_share | +4.5 | 100.0 | 100.0 | YES |
+| uk100fut | 4h | D | backtest | nd_rate | -7.351 | 100.0 | 100.0 | YES |
+| uk100fut | 4h | D | backtest | ns_rate | -6.435 | 100.0 | 100.0 | YES |
+| uk100fut | 4h | D | backtest | svol15_median | -15.869 | 98.0 | 81.0 | no |
+| uk100fut | 4h | D | backtest | svol_sess_median | -284.74 | 100.0 | 100.0 | YES |
+| ger40fut | 4h | D | forward | svol15_median | -43.597 | 98.0 | 78.0 | no |
+| nas100fut | 4h | D | forward | loud_rate | +25.961 | 100.0 | 99.0 | YES |
+| nas100fut | 4h | D | forward | narrow_loud_share | +9.025 | 100.0 | 95.0 | YES |
+| nas100fut | 4h | D | forward | nd_rate | -7.286 | 100.0 | 94.0 | no |
+| nas100fut | 4h | D | forward | ns_rate | -7.871 | 100.0 | 94.0 | no |
+| nas100fut | 4h | D | forward | svol15_median | -497 | 100.0 | 94.0 | no |
+| nas100fut | 4h | S | backtest | rel_volume_median | -0.425 | 100.0 | 100.0 | YES |
+| nas100fut | 4h | S | backtest | loud_rate | -21.766 | 100.0 | 100.0 | YES |
+| nas100fut | 4h | S | backtest | spread_pctile_median | -18.654 | 100.0 | 100.0 | YES |
+| nas100fut | 4h | S | backtest | narrow_loud_share | -7.579 | 100.0 | 99.0 | YES |
+| nas100fut | 4h | S | backtest | test_rate | +0.391 | 100.0 | 94.0 | no |
+| nas100fut | 4h | S | backtest | nd_rate | +9.777 | 100.0 | 100.0 | YES |
+| nas100fut | 4h | S | backtest | ns_rate | +10.853 | 100.0 | 100.0 | YES |
+| nas100fut | 4h | S | backtest | climax_rate | -0.428 | 96.0 | 48.0 | no |
+| nas100fut | 4h | S | backtest | svol_sess_median | +11279.8 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | loud_rate | +14.751 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | spread_pctile_median | +9.044 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | narrow_loud_share | +8.224 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | test_rate | +0.591 | 99.0 | 81.0 | no |
+| us30fut | 4h | D | forward | nd_rate | -3.898 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | ns_rate | -3.546 | 100.0 | 100.0 | YES |
+| us30fut | 4h | D | forward | climax_rate | +0.615 | 99.0 | 77.0 | no |
+| us30fut | 4h | S | backtest | rel_volume_median | -0.715 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | loud_rate | -29.106 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | spread_pctile_median | -25.59 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | narrow_loud_share | -12.419 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | test_rate | -0.591 | 95.0 | 20.0 | no |
+| us30fut | 4h | S | backtest | nd_rate | +19.939 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | ns_rate | +16.079 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | backtest | climax_rate | -0.62 | 95.0 | 51.0 | no |
+| us30fut | 4h | S | backtest | svol15_median | +44.873 | 100.0 | 91.0 | no |
+| us30fut | 4h | S | backtest | svol_sess_median | +2102.03 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | forward | rel_volume_median | -0.172 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | forward | loud_rate | -14.556 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | forward | spread_pctile_median | -11.798 | 100.0 | 100.0 | YES |
+| us30fut | 4h | S | forward | narrow_loud_share | -5.717 | 100.0 | 99.0 | YES |
+| us30fut | 4h | S | forward | nd_rate | +3.601 | 100.0 | 91.0 | no |
+| us30fut | 4h | S | forward | svol15_median | +46.423 | 99.0 | 77.0 | no |
+| us30fut | 4h | S | forward | svol_sess_median | +18626.3 | 100.0 | 100.0 | YES |

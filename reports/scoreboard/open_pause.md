@@ -2,24 +2,24 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `0946f25c1` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
+Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
 
 ## (a) Open-window strata — scalp arms headlined (gap = <80 median minus >=95 median; positive = degradation concentrates in stretched ATR)
 
 | arm | leg | window | <80 med (n) | 80-95 med (n) | >=95 med (n) | gap | null p95 | pct | clears |
 |---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | ger40fut | backtest | None (0) | 12.01 (6) | None (0) | — | — | — | no |
-| R-SCALP-H6 | ger40fut | forward | None (0) | 6.63 (17) | None (0) | — | — | — | no |
-| R-SCALP-H6-REF | ger40fut | backtest | None (0) | 13.85 (6) | None (0) | — | — | — | no |
-| R-SCALP-H6-REF | ger40fut | forward | None (0) | 6.94 (14) | None (0) | — | — | — | no |
+| R-SCALP-H6 | ger40fut | backtest | 12.01 (6) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6 | ger40fut | forward | 6.63 (17) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | ger40fut | backtest | 13.85 (6) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | ger40fut | forward | 6.94 (14) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | nas100fut | backtest | 32.7 (9) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | nas100fut | forward | 16.31 (16) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | nas100fut | backtest | 23.08 (7) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | nas100fut | forward | 17.59 (16) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6 | uk100fut | backtest | None (0) | — (0) | 7.27 (6) | — | — | — | no |
-| R-SCALP-H6 | uk100fut | forward | None (0) | — (0) | 3.85 (11) | — | — | — | no |
-| R-SCALP-H6-REF | uk100fut | backtest | None (0) | — (0) | 6.95 (4) | — | — | — | no |
-| R-SCALP-H6-REF | uk100fut | forward | None (0) | — (0) | 3.85 (13) | — | — | — | no |
+| R-SCALP-H6 | uk100fut | backtest | 7.27 (6) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6 | uk100fut | forward | 3.85 (11) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | uk100fut | backtest | 6.95 (4) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | uk100fut | forward | 3.85 (13) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | us30fut | backtest | 28.25 (7) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | us30fut | forward | 22.23 (18) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | us30fut | backtest | 20.04 (7) | — (0) | None (0) | — | — | — | no |
@@ -29,77 +29,30 @@ Engine `0946f25c1` — OBSERVATIONAL, pre-registered (prereg_open_pause, registe
 
 | leg | variant | window | gap | pct vs null | clears |
 |---|---|---|---|---|---|
+| uk100fut | R-NEXIT-EARLY | backtest | -5.14 | 0.0 | no |
+| uk100fut | R-NEXIT-FULL | backtest | -6.45 | 0.0 | no |
+| uk100fut | R-OP2 | backtest | -0.26 | 50.0 | YES |
 
 ## (b) The conditional counterfactual — scalp arms vs the member band (positive Δ = the rule helped)
 
 | arm | leg | window | X | skipped (of distinct) | net Δ | stops dodged (pts) | member band med [min..max] | beats band max |
 |---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | ger40fut | backtest | 80 | 6 (of 25) | -0.3 | 1 (-65.9) | 51.4 [-92.2..237.2] | no |
-| R-SCALP-H6 | ger40fut | forward | 80 | 17 (of 59) | +233.9 | 6 (-324.2) | 3.1 [-87.6..198.2] | YES |
-| R-SCALP-H6-REF | ger40fut | backtest | 80 | 6 (of 24) | -81.3 | 0 (0.0) | 51.4 [-92.2..237.2] | no |
-| R-SCALP-H6-REF | ger40fut | forward | 80 | 14 (of 52) | +129.9 | 4 (-209.8) | 3.1 [-87.6..198.2] | no |
-| R-SCALP-H6 | uk100fut | backtest | 80 | 6 (of 45) | +5.2 | 1 (-41.1) | 14.2 [-83.4..137.7] | no |
-| R-SCALP-H6 | uk100fut | backtest | 95 | 6 (of 45) | +5.2 | 1 (-41.1) | 14.2 [-83.4..137.7] | no |
-| R-SCALP-H6 | uk100fut | forward | 80 | 11 (of 47) | -8.4 | 1 (-29.2) | -16.9 [-43.4..43.3] | no |
-| R-SCALP-H6 | uk100fut | forward | 95 | 11 (of 47) | -8.4 | 1 (-29.2) | -16.9 [-43.4..43.3] | no |
-| R-SCALP-H6-REF | uk100fut | backtest | 80 | 4 (of 43) | -27.5 | 0 (0.0) | 14.2 [-83.4..137.7] | no |
-| R-SCALP-H6-REF | uk100fut | backtest | 95 | 4 (of 43) | -27.5 | 0 (0.0) | 14.2 [-83.4..137.7] | no |
-| R-SCALP-H6-REF | uk100fut | forward | 80 | 13 (of 47) | -13.7 | 1 (-32.1) | -16.9 [-43.4..43.3] | no |
-| R-SCALP-H6-REF | uk100fut | forward | 95 | 13 (of 47) | -13.7 | 1 (-32.1) | -16.9 [-43.4..43.3] | no |
 
 ## (b) Context ladder counterfactual (no floors — stated; full grid in the JSON)
 
 | leg | variant | window | X | skipped | net Δ |
 |---|---|---|---|---|---|
-| ger40fut | R-ARM15 | backtest | 80 | 17 | -617.1 |
-| ger40fut | R-ARM15 | forward | 80 | 36 | +347.7 |
-| ger40fut | R-BE | backtest | 80 | 11 | -17.6 |
-| ger40fut | R-BE | forward | 80 | 31 | +317.9 |
-| ger40fut | R-H1-DELAY10 | forward | 80 | 2 | -101.1 |
-| ger40fut | R-H1-DELAY3 | forward | 80 | 1 | +48.2 |
-| ger40fut | R-H1-KNIFE | forward | 80 | 1 | -35.9 |
-| ger40fut | R-H1-OWNCURVE | forward | 80 | 1 | -45.3 |
-| ger40fut | R-NEXIT-EARLY | backtest | 80 | 30 | -262.2 |
-| ger40fut | R-NEXIT-EARLY | forward | 80 | 74 | -171.4 |
-| ger40fut | R-NEXIT-FULL | backtest | 80 | 37 | -365.0 |
-| ger40fut | R-NEXIT-FULL | forward | 80 | 80 | +127.4 |
-| ger40fut | R-NEXIT-SENT | backtest | 80 | 18 | -615.2 |
-| ger40fut | R-NEXIT-SENT | forward | 80 | 44 | +393.9 |
-| ger40fut | R-NOTRAIL | backtest | 80 | 8 | +87.8 |
-| ger40fut | R-NOTRAIL | forward | 80 | 20 | -247.3 |
-| ger40fut | R-OP2 | backtest | 80 | 38 | +67.3 |
-| ger40fut | R-OP2 | forward | 80 | 85 | +295.8 |
-| uk100fut | R-ARM15 | backtest | 80 | 21 | +409.9 |
-| uk100fut | R-ARM15 | backtest | 95 | 21 | +409.9 |
-| uk100fut | R-ARM15 | forward | 80 | 33 | +99.4 |
-| uk100fut | R-ARM15 | forward | 95 | 33 | +99.4 |
-| uk100fut | R-BE | backtest | 80 | 25 | +391.3 |
-| uk100fut | R-BE | backtest | 95 | 25 | +391.3 |
-| uk100fut | R-BE | forward | 80 | 32 | +236.9 |
-| uk100fut | R-BE | forward | 95 | 32 | +236.9 |
-| uk100fut | R-H1-DELAY10 | forward | 80 | 1 | -4.2 |
-| uk100fut | R-H1-DELAY10 | forward | 95 | 1 | -4.2 |
-| uk100fut | R-H1-DELAY3 | forward | 80 | 2 | +6.0 |
-| uk100fut | R-H1-DELAY3 | forward | 95 | 2 | +6.0 |
-| uk100fut | R-H1-KNIFE | forward | 80 | 2 | +5.4 |
-| uk100fut | R-H1-KNIFE | forward | 95 | 2 | +5.4 |
-| uk100fut | R-NEXIT-EARLY | backtest | 80 | 43 | +119.1 |
-| uk100fut | R-NEXIT-EARLY | backtest | 95 | 43 | +119.1 |
-| uk100fut | R-NEXIT-EARLY | forward | 80 | 57 | +58.4 |
-| uk100fut | R-NEXIT-EARLY | forward | 95 | 57 | +58.4 |
-| uk100fut | R-NEXIT-FULL | backtest | 80 | 49 | +77.1 |
-| uk100fut | R-NEXIT-FULL | backtest | 95 | 49 | +77.1 |
-| uk100fut | R-NEXIT-FULL | forward | 80 | 67 | +46.4 |
-| uk100fut | R-NEXIT-FULL | forward | 95 | 67 | +46.4 |
-| uk100fut | R-NEXIT-SENT | backtest | 80 | 28 | +179.5 |
-| uk100fut | R-NEXIT-SENT | backtest | 95 | 28 | +179.5 |
-| uk100fut | R-NEXIT-SENT | forward | 80 | 45 | +30.5 |
-| uk100fut | R-NEXIT-SENT | forward | 95 | 45 | +30.5 |
-| uk100fut | R-NOTRAIL | backtest | 80 | 15 | +153.4 |
-| uk100fut | R-NOTRAIL | backtest | 95 | 15 | +153.4 |
-| uk100fut | R-NOTRAIL | forward | 80 | 13 | +114.0 |
-| uk100fut | R-NOTRAIL | forward | 95 | 13 | +114.0 |
-| uk100fut | R-OP2 | backtest | 80 | 57 | -70.0 |
-| uk100fut | R-OP2 | backtest | 95 | 57 | -70.0 |
-| uk100fut | R-OP2 | forward | 80 | 66 | +76.6 |
-| uk100fut | R-OP2 | forward | 95 | 66 | +76.6 |
+| uk100fut | R-ARM15 | backtest | 80 | 4 | +47.6 |
+| uk100fut | R-ARM15 | backtest | 95 | 4 | +47.6 |
+| uk100fut | R-BE | backtest | 80 | 6 | +137.6 |
+| uk100fut | R-BE | backtest | 95 | 6 | +137.6 |
+| uk100fut | R-NEXIT-EARLY | backtest | 80 | 11 | -16.5 |
+| uk100fut | R-NEXIT-EARLY | backtest | 95 | 11 | -16.5 |
+| uk100fut | R-NEXIT-FULL | backtest | 80 | 12 | -51.2 |
+| uk100fut | R-NEXIT-FULL | backtest | 95 | 12 | -51.2 |
+| uk100fut | R-NEXIT-SENT | backtest | 80 | 6 | -198.1 |
+| uk100fut | R-NEXIT-SENT | backtest | 95 | 6 | -198.1 |
+| uk100fut | R-NOTRAIL | backtest | 80 | 4 | +103.2 |
+| uk100fut | R-NOTRAIL | backtest | 95 | 4 | +103.2 |
+| uk100fut | R-OP2 | backtest | 80 | 12 | -26.8 |
+| uk100fut | R-OP2 | backtest | 95 | 12 | -26.8 |

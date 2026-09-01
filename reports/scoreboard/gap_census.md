@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
+Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_gap_census, register 67). **MEASUREMENT: the gap-fill folk strategy is explicitly NOT being registered (ORB-adjacent family, parked precedent register 51) — mint-on-lift only, front door.** Native calendars; fill = trade back to the prior close, capped at the next pause; persistence = sign(gap) × (close@+h − open), pts, at the standard horizons {5/10/20/30} min (null 0); each bucketed row reads against the ALL base row of its own open-context. Abs-gap/ATR buckets (0.25, 1.0) are IMPLEMENTER-PROPOSED, flagged for ratification. Micro-gaps: consecutive-bar gaps beyond the measured spread — INTERPRETATION CLAUSE: liquidity-vacuum fingerprint, the bar-scale cousin of H11's gap-traversal. ° = n<20.
 
 ## uk100fut (CANONICAL; spread 1.3 pts)
 
@@ -41,8 +41,8 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 85 | 1.8 | 0.122 | asia 37.6, dead 5.9, london 38.8, ny_only 11.8, overlap 5.9 | -1.7/-2.3/-3.3/-3.0 |
-| forward | 35 | 0.74 | 0.315 | asia 62.9, london 11.4, ny_only 20.0, overlap 5.7 | -0.8/-1.7/-1.7/+0.0 |
+| backtest | 85 | 1.78 | 0.122 | asia 37.6, dead 5.9, london 38.8, ny_only 11.8, overlap 5.9 | -1.7/-2.3/-3.3/-3.0 |
+| forward | 35 | 0.73 | 0.315 | asia 62.9, london 11.4, ny_only 20.0, overlap 5.7 | -0.8/-1.7/-1.7/+0.0 |
 
 ## ger40fut (CANONICAL; spread 1.5 pts)
 
@@ -52,8 +52,8 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 |---|---|---|---|---|---|---|---|
 | backtest | ALL (base row) | °2 | 6.661 | 100.0 | 0.0 | None | -7.2/-2.2/-10.9/-6.8 |
 | backtest | >=1 | °2 | 6.661 | 100.0 | 0.0 | None | -7.2/-2.2/-10.9/-6.8 |
-| forward | ALL (base row) | °2 | 1.46 | 50.0 | 50.0 | 3.0 | -3.4/-4.0/-4.0/-5.3 |
-| forward | >=1 | °2 | 1.46 | 50.0 | 50.0 | 3.0 | -3.4/-4.0/-4.0/-5.3 |
+| forward | ALL (base row) | °3 | 1.833 | 33.3 | 33.3 | 3.0 | -1.5/-2.1/-0.6/+0.4 |
+| forward | >=1 | °3 | 1.833 | 33.3 | 33.3 | 3.0 | -1.5/-2.1/-0.6/+0.4 |
 
 ### ger40fut — daily-pause gaps (register-40 measured pauses)
 
@@ -63,9 +63,9 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | backtest | 0.25-1 | °17 | 0.443 | 41.2 | 52.9 | 4.0 | +2.4/+2.7/-1.6/-5.8 |
 | backtest | <0.25 | °13 | 0.097 | 30.8 | 92.3 | 0.0 | -0.9/+0.6/+4.6/+9.4 |
 | backtest | >=1 | °6 | 1.816 | 16.7 | 66.7 | 189.0 | +8.4/+6.7/+16.4/+28.6 |
-| forward | ALL (base row) | 31 | 0.641 | 54.8 | 67.7 | 15.0 | -0.3/-0.3/-4.2/-0.3 |
-| forward | 0.25-1 | °10 | 0.665 | 50.0 | 60.0 | 17.5 | -0.1/-1.1/-6.8/-3.8 |
-| forward | <0.25 | °11 | 0.142 | 63.6 | 72.7 | 0.0 | +1.8/+1.5/+1.5/-0.3 |
+| forward | ALL (base row) | 34 | 0.546 | 58.8 | 70.6 | 13.5 | -0.5/-0.2/-2.5/-0.6 |
+| forward | 0.25-1 | °11 | 0.69 | 54.5 | 63.6 | 20.0 | +0.0/-0.9/-4.2/-2.1 |
+| forward | <0.25 | °13 | 0.131 | 69.2 | 76.9 | 0.0 | -0.3/+1.5/-2.4/-0.9 |
 | forward | >=1 | °10 | 1.908 | 50.0 | 70.0 | 21.0 | -3.0/-3.0/+0.7/+5.1 |
 
 ### ger40fut — cash-open seam (H16's 30-min window construction, shared)
@@ -73,14 +73,14 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | window | n | med abs seam/ATR | up % | continuation mean/med (pts) |
 |---|---|---|---|---|
 | backtest | °10 | 2.117 | 60.0 | 40.46/43.95 |
-| forward | °10 | 2.352 | 70.0 | -21.2/-26.0 |
+| forward | °11 | 2.372 | 63.6 | -11.15/-22.0 |
 
 ### ger40fut — intrasession 1M micro-gaps (beyond measured spread)
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 257 | 6.45 | 0.079 | asia 93.0, dead 2.3, london 3.9, ny_only 0.8 | -1.5/-1.2/-1.1/-0.9 |
-| forward | 70 | 1.76 | 0.142 | asia 85.7, dead 4.3, london 7.1, ny_only 2.9 | -0.6/+0.9/+0.3/+2.0 |
+| backtest | 257 | 6.12 | 0.079 | asia 93.0, dead 2.3, london 3.9, ny_only 0.8 | -1.5/-1.2/-1.1/-0.9 |
+| forward | 75 | 1.79 | 0.142 | asia 85.3, dead 5.3, london 6.7, ny_only 2.7 | -0.6/-0.2/-0.2/+1.9 |
 
 ## nas100fut (CANONICAL; spread 1.8 pts)
 
@@ -90,8 +90,8 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 |---|---|---|---|---|---|---|---|
 | backtest | ALL (base row) | °2 | 4.298 | 100.0 | 100.0 | 945.0 | -11.0/-20.8/+4.2/-1.6 |
 | backtest | >=1 | °2 | 4.298 | 100.0 | 100.0 | 945.0 | -11.0/-20.8/+4.2/-1.6 |
-| forward | ALL (base row) | °2 | 0.973 | 100.0 | 100.0 | 576.5 | -18.2/-18.2/-11.1/-8.1 |
-| forward | 0.25-1 | °1 | 0.27 | 100.0 | 100.0 | 0.0 | -60.0/-56.5/-41.5/-34.7 |
+| forward | ALL (base row) | °3 | 0.291 | 100.0 | 100.0 | 2.0 | -36.0/-52.3/-14.7/-30.1 |
+| forward | 0.25-1 | °2 | 0.28 | 100.0 | 100.0 | 1.0 | -48.0/-54.4/-28.1/-32.4 |
 | forward | >=1 | °1 | 1.675 | 100.0 | 100.0 | 1153.0 | +23.6/+20.0/+19.4/+18.6 |
 
 ### nas100fut — daily-pause gaps (register-40 measured pauses)
@@ -102,9 +102,9 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | backtest | 0.25-1 | °3 | 0.561 | 33.3 | 66.7 | 1.5 | -18.9/-20.1/-4.9/-42.1 |
 | backtest | <0.25 | °5 | 0.145 | 60.0 | 100.0 | 0.0 | -19.4/-34.3/-52.9/-34.6 |
 | backtest | >=1 | °1 | 1.129 | 0.0 | 100.0 | 136.0 | +41.1/+40.8/+23.5/+31.3 |
-| forward | ALL (base row) | °8 | 0.257 | 87.5 | 100.0 | 3.5 | +3.0/+4.4/+1.4/-5.2 |
+| forward | ALL (base row) | °9 | 0.181 | 77.8 | 100.0 | 3.0 | +5.1/+4.5/+2.6/-2.2 |
 | forward | 0.25-1 | °3 | 0.346 | 100.0 | 100.0 | 1.0 | -13.1/-18.5/-18.3/-21.7 |
-| forward | <0.25 | °4 | 0.114 | 75.0 | 100.0 | 12.0 | +9.7/+9.2/+1.4/-1.8 |
+| forward | <0.25 | °5 | 0.106 | 60.0 | 100.0 | 3.0 | +7.8/+10.8/+2.6/-1.3 |
 | forward | >=1 | °1 | 1.592 | 100.0 | 100.0 | 476.0 | +58.5/+61.3/+82.8/+79.2 |
 
 ### nas100fut — cash-open seam (H16's 30-min window construction, shared)
@@ -112,14 +112,14 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | window | n | med abs seam/ATR | up % | continuation mean/med (pts) |
 |---|---|---|---|---|
 | backtest | °10 | 5.723 | 40.0 | 8.29/-20.9 |
-| forward | °10 | 3.527 | 50.0 | -31.53/0.9 |
+| forward | °11 | 2.893 | 45.5 | -28.82/-1.7 |
 
 ### nas100fut — intrasession 1M micro-gaps (beyond measured spread)
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | °10 | 0.24 | 0.053 | dead 40.0, london 30.0, ny_only 10.0, overlap 20.0 | -1.0/+17.4/+10.6/+15.5 |
-| forward | °8 | 0.19 | 0.095 | dead 25.0, london 37.5, ny_only 37.5 | -0.9/-26.2/-23.3/-36.2 |
+| backtest | °10 | 0.23 | 0.053 | dead 40.0, london 30.0, ny_only 10.0, overlap 20.0 | -1.0/+17.4/+10.6/+15.5 |
+| forward | °8 | 0.18 | 0.095 | dead 25.0, london 37.5, ny_only 37.5 | -0.9/-26.2/-23.3/-36.2 |
 
 ## us30fut (CANONICAL; spread 2.6 pts)
 
@@ -129,8 +129,9 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 |---|---|---|---|---|---|---|---|
 | backtest | ALL (base row) | °2 | 4.627 | 100.0 | 0.0 | None | -31.8/-35.0/-35.2/-44.2 |
 | backtest | >=1 | °2 | 4.627 | 100.0 | 0.0 | None | -31.8/-35.0/-35.2/-44.2 |
-| forward | ALL (base row) | °2 | 0.489 | 100.0 | 100.0 | 73.0 | -9.0/+1.0/-1.1/-3.1 |
+| forward | ALL (base row) | °3 | 0.522 | 66.7 | 66.7 | 73.0 | +16.5/+4.6/-22.0/-17.5 |
 | forward | 0.25-1 | °2 | 0.489 | 100.0 | 100.0 | 73.0 | -9.0/+1.0/-1.1/-3.1 |
+| forward | >=1 | °1 | 1.328 | 0.0 | 0.0 | None | +26.6/+4.6/-22.0/-17.5 |
 
 ### us30fut — daily-pause gaps (register-40 measured pauses)
 
@@ -139,8 +140,8 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | backtest | ALL (base row) | °9 | 0.242 | 33.3 | 100.0 | 0.0 | +0.0/+0.0/+0.0/+1.4 |
 | backtest | 0.25-1 | °4 | 0.482 | 0.0 | 100.0 | 1.5 | -5.2/+3.2/+7.7/+5.4 |
 | backtest | <0.25 | °5 | 0.131 | 60.0 | 100.0 | 0.0 | +0.0/+0.0/+0.0/+0.0 |
-| forward | ALL (base row) | °8 | 0.112 | 75.0 | 100.0 | 0.5 | -5.3/-9.5/+0.6/-2.6 |
-| forward | 0.25-1 | °1 | 0.381 | 100.0 | 100.0 | 0.0 | -17.5/-19.5/-20.5/-21.4 |
+| forward | ALL (base row) | °9 | 0.119 | 66.7 | 100.0 | 1.0 | -5.6/-13.1/-2.4/-3.4 |
+| forward | 0.25-1 | °2 | 0.421 | 50.0 | 100.0 | 0.5 | -23.3/-25.1/-26.1/-27.8 |
 | forward | <0.25 | °7 | 0.105 | 71.4 | 100.0 | 1.0 | -5.0/-5.9/+3.6/-1.9 |
 
 ### us30fut — cash-open seam (H16's 30-min window construction, shared)
@@ -148,11 +149,11 @@ Engine `78bd8f52b` — OBSERVATIONAL, pre-registered (prereg_gap_census, registe
 | window | n | med abs seam/ATR | up % | continuation mean/med (pts) |
 |---|---|---|---|---|
 | backtest | °10 | 5.704 | 70.0 | -76.06/-86.0 |
-| forward | °10 | 3.948 | 40.0 | -65.22/-41.3 |
+| forward | °11 | 3.381 | 36.4 | -38.8/-35.5 |
 
 ### us30fut — intrasession 1M micro-gaps (beyond measured spread)
 
 | window | n | per-1000 bars | med abs gap/ATR | session share % | persist @5/10/20/30 (med pts) |
 |---|---|---|---|---|---|
-| backtest | 41 | 1.0 | 0.065 | asia 7.3, dead 43.9, london 22.0, ny_only 7.3, overlap 19.5 | +5.6/+2.1/+4.0/+6.1 |
-| forward | °16 | 0.39 | 0.106 | asia 12.5, dead 43.8, london 25.0, overlap 18.8 | -0.7/+1.3/-13.7/-10.0 |
+| backtest | 41 | 0.94 | 0.065 | asia 7.3, dead 43.9, london 22.0, ny_only 7.3, overlap 19.5 | +5.6/+2.1/+4.0/+6.1 |
+| forward | °17 | 0.39 | 0.101 | asia 11.8, dead 47.1, london 23.5, overlap 17.6 | -2.4/-0.9/-14.4/-10.1 |

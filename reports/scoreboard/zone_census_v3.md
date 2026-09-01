@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, register 111). A NEW DEFINITION AND SOURCE — not a rerun of the parked v2 (register 97 stands; extreme-based ≠ departure-based). Zones = DEPARTURE BASES: a consolidation of >= swing_k source-TF bars (range <= 1xATR — the unit multiple, FLAGGED) that breaks impulsively (close >= {1.5, 3}xATR beyond the edge within swing_k bars); the zone IS the base's range; active from the next bar's open; dead on a close through the far edge. Source TF: D1 primary / H4 secondary. EXPECTED SCARCITY (stated at registration): D1 ~5-15 active zones per leg; hundreds = the definition FAILED, and this page says so. STATISTIC SHAPES (74-B): pooled in-zone initiation vs the zone-conditioned directional base (conditioned lift); journal in-zone cells on the register-105 CONSISTENCY statistics with a SELECTION-NULL (in/out labels permuted, best-of-variants per seed, 100 pinned seeds). Cells n<10 unmeasurable; journal measurable at n>=10. MINT-ON-LIFT ONLY, front door; no pooling across instruments; ex-lockbox.
+Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, register 111). A NEW DEFINITION AND SOURCE — not a rerun of the parked v2 (register 97 stands; extreme-based ≠ departure-based). Zones = DEPARTURE BASES: a consolidation of >= swing_k source-TF bars (range <= 1xATR — the unit multiple, FLAGGED) that breaks impulsively (close >= {1.5, 3}xATR beyond the edge within swing_k bars); the zone IS the base's range; active from the next bar's open; dead on a close through the far edge. Source TF: D1 primary / H4 secondary. EXPECTED SCARCITY (stated at registration): D1 ~5-15 active zones per leg; hundreds = the definition FAILED, and this page says so. STATISTIC SHAPES (74-B): pooled in-zone initiation vs the zone-conditioned directional base (conditioned lift); journal in-zone cells on the register-105 CONSISTENCY statistics with a SELECTION-NULL (in/out labels permuted, best-of-variants per seed, 100 pinned seeds). Cells n<10 unmeasurable; journal measurable at n>=10. MINT-ON-LIFT ONLY, front door; no pooling across instruments; ex-lockbox.
 
-## uk100fut — D1 1300 bars, H4 3203 bars
+## uk100fut — D1 1301 bars, H4 3208 bars
 
 ### Scarcity and density (the stated check)
 
@@ -12,36 +12,33 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 |---|---|---|---|---|---|
 | 1d/x1.5 | 1 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
 | 1d/x3 | 0 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
-| 4h/x1.5 | 25 | 5 | 5 | (H4 secondary — no stated band; 5 at once) | 5.2 |
+| 4h/x1.5 | 25 | 5 | 5 | (H4 secondary — no stated band; 5 at once) | 1.6 |
 | 4h/x3 | 4 | 0 | 0 | (H4 secondary — no stated band; 0 at once) | 0.0 |
 
 ### Pooled in-zone initiation vs the zone-conditioned base
 
 | rung | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| 1d/x1.5 | backtest | out | 2315 | 21.0 | 23.7 | -2.7pp |
-| 1d/x1.5 | forward | out | 1919 | 19.5 | 21.1 | -1.6pp |
-| 1d/x3 | backtest | out | 2315 | 21.0 | 23.7 | -2.7pp |
-| 1d/x3 | forward | out | 1919 | 19.5 | 21.1 | -1.6pp |
-| 4h/x1.5 | backtest | in | 304 | 30.3 | 24.4 | +5.9pp |
-| 4h/x1.5 | backtest | out | 2011 | 19.6 | 23.7 | -4.1pp |
-| 4h/x1.5 | forward | out | 1919 | 19.5 | 21.1 | -1.6pp |
-| 4h/x3 | backtest | out | 2315 | 21.0 | 23.7 | -2.7pp |
-| 4h/x3 | forward | out | 1919 | 19.5 | 21.1 | -1.6pp |
+| 1d/x1.5 | backtest | out | 2365 | 20.8 | 23.7 | -2.9pp |
+| 1d/x1.5 | forward | out | 1964 | 19.7 | 20.5 | -0.8pp |
+| 1d/x3 | backtest | out | 2365 | 20.8 | 23.7 | -2.9pp |
+| 1d/x3 | forward | out | 1964 | 19.7 | 20.5 | -0.8pp |
+| 4h/x1.5 | backtest | in | 97 | 23.7 | 20.4 | +3.3pp |
+| 4h/x1.5 | backtest | out | 2268 | 20.6 | 23.9 | -3.3pp |
+| 4h/x1.5 | forward | out | 1964 | 19.7 | 20.5 | -0.8pp |
+| 4h/x3 | backtest | out | 2365 | 20.8 | 23.7 | -2.9pp |
+| 4h/x3 | forward | out | 1964 | 19.7 | 20.5 | -0.8pp |
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
 | rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h/x1.5 | R-ARM15 | backtest | in | 43 (35) | -3.11 | 34% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-BE | backtest | in | 40 (32) | -1.30 | 22% | 1/2 | 0.0 / 18.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 147 (120) | -1.60 | 28% | 0/2 | 0.0 / 3.0 | no / no | TAIL |
-| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 169 (141) | -1.30 | 33% | 0/2 | 0.0 / 18.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 88 (72) | -2.35 | 35% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NOTRAIL | backtest | in | 30 (26) | -14.41 | 38% | 2/2 | 7.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-OP2 | backtest | in | 164 (141) | -2.79 | 28% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 71 (59) | -1.60 | 30% | 0/1 | 6.0 / 32.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 77 (65) | -1.30 | 35% | 1/1 | 23.0 / 40.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 37 (30) | -2.35 | 40% | 1/1 | 37.0 / 8.0 | no / no | TAIL |
+| 4h/x1.5 | R-OP2 | backtest | in | 68 (57) | -2.79 | 32% | 0/1 | 9.0 / 5.0 | no / no |  |
 
-## ger40fut — D1 2769 bars, H4 3081 bars
+## ger40fut — D1 2771 bars, H4 3091 bars
 
 ### Scarcity and density (the stated check)
 
@@ -49,41 +46,36 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 |---|---|---|---|---|---|
 | 1d/x1.5 | 6 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
 | 1d/x3 | 1 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
-| 4h/x1.5 | 24 | 2 | 2 | (H4 secondary — no stated band; 2 at once) | 10.5 |
+| 4h/x1.5 | 24 | 3 | 2 | (H4 secondary — no stated band; 2 at once) | 1.4 |
 | 4h/x3 | 3 | 0 | 0 | (H4 secondary — no stated band; 0 at once) | 0.0 |
 
 ### Pooled in-zone initiation vs the zone-conditioned base
 
 | rung | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| 1d/x1.5 | backtest | out | 1495 | 18.1 | 21.0 | -2.9pp |
-| 1d/x1.5 | forward | out | 2048 | 22.8 | 22.9 | -0.1pp |
-| 1d/x3 | backtest | out | 1495 | 18.1 | 21.0 | -2.9pp |
-| 1d/x3 | forward | out | 2048 | 22.8 | 22.9 | -0.1pp |
-| 4h/x1.5 | backtest | in | 45 | 13.3 | 26.7 | -13.4pp |
-| 4h/x1.5 | backtest | out | 1450 | 18.2 | 20.9 | -2.7pp |
-| 4h/x1.5 | forward | in | 621 | 25.0 | 25.2 | -0.2pp |
-| 4h/x1.5 | forward | out | 1427 | 21.8 | 22.2 | -0.4pp |
-| 4h/x3 | backtest | out | 1495 | 18.1 | 21.0 | -2.9pp |
-| 4h/x3 | forward | out | 2048 | 22.8 | 22.9 | -0.1pp |
+| 1d/x1.5 | backtest | out | 1530 | 18.0 | 21.4 | -3.4pp |
+| 1d/x1.5 | forward | out | 2349 | 21.0 | 20.8 | +0.2pp |
+| 1d/x3 | backtest | out | 1530 | 18.0 | 21.4 | -3.4pp |
+| 1d/x3 | forward | out | 2349 | 21.0 | 20.8 | +0.2pp |
+| 4h/x1.5 | backtest | out | 1530 | 18.0 | 21.4 | -3.4pp |
+| 4h/x1.5 | forward | in | 61 | 9.8 | 13.3 | -3.5pp |
+| 4h/x1.5 | forward | out | 2288 | 21.3 | 21.1 | +0.2pp |
+| 4h/x3 | backtest | out | 1530 | 18.0 | 21.4 | -3.4pp |
+| 4h/x3 | forward | out | 2349 | 21.0 | 20.8 | +0.2pp |
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
 | rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 10 (10) | +0.35 | 60% | 0/1 | 80.0 / 60.0 | no / no | TAIL |
-| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 11 (11) | +0.40 | 64% | 1/1 | 80.0 / 60.0 | no / no | TAIL |
-| 4h/x1.5 | R-OP2 | backtest | in | 20 (19) | -4.25 | 37% | 1/1 | 0.0 / 0.0 | no / no | TAIL |
-| 4h/x1.5 | R-ARM15 | forward | in | 130 (117) | -6.56 | 44% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-BE | forward | in | 110 (98) | -1.50 | 16% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 456 (353) | -1.50 | 36% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-FULL | forward | in | 484 (378) | -1.50 | 37% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NEXIT-SENT | forward | in | 268 (221) | -2.40 | 42% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-NOTRAIL | forward | in | 78 (70) | -31.36 | 33% | 1/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-OP2 | forward | in | 414 (331) | -3.91 | 27% | 0/2 | 0.0 / 0.0 | no / no |  |
-| 4h/x1.5 | R-SCALP-H6 | forward | in | 12 (12) | +12.15 | 100% | 1/1 | 98.0 / 100.0 | YES / YES |  |
+| 4h/x1.5 | R-ARM15 | forward | in | 15 (14) | -24.11 | 29% | 0/1 | 3.3 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-BE | forward | in | 15 (14) | -17.40 | 14% | 0/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 40 (34) | -1.25 | 41% | 1/1 | 40.2 / 37.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-FULL | forward | in | 43 (37) | -1.50 | 40% | 1/1 | 37.0 / 28.3 | no / no |  |
+| 4h/x1.5 | R-NEXIT-SENT | forward | in | 19 (17) | -32.00 | 24% | 0/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-NOTRAIL | forward | in | 15 (14) | -35.65 | 21% | 0/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-OP2 | forward | in | 38 (34) | -2.08 | 35% | 1/1 | 18.5 / 20.7 | no / no |  |
 
-## nas100fut — D1 1180 bars, H4 3129 bars
+## nas100fut — D1 1182 bars, H4 3139 bars
 
 ### Scarcity and density (the stated check)
 
@@ -91,29 +83,41 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 |---|---|---|---|---|---|
 | 1d/x1.5 | 2 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
 | 1d/x3 | 0 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
-| 4h/x1.5 | 46 | 5 | 5 | (H4 secondary — no stated band; 5 at once) | 0.0 |
+| 4h/x1.5 | 46 | 8 | 7 | (H4 secondary — no stated band; 7 at once) | 8.9 |
 | 4h/x3 | 6 | 0 | 0 | (H4 secondary — no stated band; 0 at once) | 0.0 |
 
 ### Pooled in-zone initiation vs the zone-conditioned base
 
 | rung | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| 1d/x1.5 | backtest | out | 1839 | 18.1 | 21.5 | -3.4pp |
-| 1d/x1.5 | forward | out | 2588 | 19.6 | 22.7 | -3.1pp |
-| 1d/x3 | backtest | out | 1839 | 18.1 | 21.5 | -3.4pp |
-| 1d/x3 | forward | out | 2588 | 19.6 | 22.7 | -3.1pp |
-| 4h/x1.5 | backtest | out | 1839 | 18.1 | 21.5 | -3.4pp |
-| 4h/x1.5 | forward | out | 2588 | 19.6 | 22.7 | -3.1pp |
-| 4h/x3 | backtest | out | 1839 | 18.1 | 21.5 | -3.4pp |
-| 4h/x3 | forward | out | 2588 | 19.6 | 22.7 | -3.1pp |
+| 1d/x1.5 | backtest | out | 1885 | 18.0 | 21.5 | -3.5pp |
+| 1d/x1.5 | forward | out | 2864 | 19.4 | 21.6 | -2.2pp |
+| 1d/x3 | backtest | out | 1885 | 18.0 | 21.5 | -3.5pp |
+| 1d/x3 | forward | out | 2864 | 19.4 | 21.6 | -2.2pp |
+| 4h/x1.5 | backtest | in | 254 | 30.7 | 23.6 | +7.1pp |
+| 4h/x1.5 | backtest | out | 1631 | 16.1 | 21.3 | -5.2pp |
+| 4h/x1.5 | forward | in | 57 | 29.8 | 39.6 | -9.8pp |
+| 4h/x1.5 | forward | out | 2807 | 19.2 | 21.5 | -2.3pp |
+| 4h/x3 | backtest | out | 1885 | 18.0 | 21.5 | -3.5pp |
+| 4h/x3 | forward | out | 2864 | 19.4 | 21.6 | -2.2pp |
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
 | rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| (no measurable in-zone journal cell) | | | | | | | | | | |
+| 4h/x1.5 | R-ARM15 | backtest | in | 28 (28) | -23.88 | 39% | 1/2 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-BE | backtest | in | 13 (13) | -1.80 | 8% | 1/2 | 0.0 / 10.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 85 (80) | -4.15 | 41% | 1/2 | 0.0 / 2.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 94 (89) | -1.80 | 48% | 2/2 | 17.0 / 10.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 44 (42) | -3.05 | 38% | 1/2 | 0.0 / 4.0 | no / no | TAIL |
+| 4h/x1.5 | R-NOTRAIL | backtest | in | 13 (13) | -130.10 | 15% | 0/2 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-OP2 | backtest | in | 104 (102) | -8.50 | 31% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 39 (28) | -1.80 | 32% | 0/1 | 3.6 / 33.7 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | forward | in | 44 (31) | -2.00 | 29% | 0/1 | 1.2 / 32.5 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-SENT | forward | in | 23 (15) | +1.70 | 60% | 0/1 | 86.7 / 78.3 | no / no |  |
+| 4h/x1.5 | R-OP2 | forward | in | 31 (25) | -11.07 | 28% | 0/1 | 1.2 / 0.0 | no / no | TAIL |
 
-## us30fut — D1 1331 bars, H4 3129 bars
+## us30fut — D1 1333 bars, H4 3139 bars
 
 ### Scarcity and density (the stated check)
 
@@ -121,24 +125,50 @@ Engine `e51412472` — OBSERVATIONAL, pre-registered (prereg_zone_census_v3, reg
 |---|---|---|---|---|---|
 | 1d/x1.5 | 3 | 2 | 2 | BELOW the stated band [5-15] | 0.0 |
 | 1d/x3 | 0 | 0 | 0 | BELOW the stated band [5-15] | 0.0 |
-| 4h/x1.5 | 63 | 2 | 2 | (H4 secondary — no stated band; 2 at once) | 2.9 |
-| 4h/x3 | 12 | 0 | 0 | (H4 secondary — no stated band; 0 at once) | 0.0 |
+| 4h/x1.5 | 64 | 7 | 3 | (H4 secondary — no stated band; 3 at once) | 6.7 |
+| 4h/x3 | 12 | 1 | 1 | (H4 secondary — no stated band; 1 at once) | 4.0 |
 
 ### Pooled in-zone initiation vs the zone-conditioned base
 
 | rung | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| 1d/x1.5 | backtest | out | 1892 | 18.7 | 21.2 | -2.5pp |
-| 1d/x1.5 | forward | out | 2756 | 18.1 | 21.9 | -3.8pp |
-| 1d/x3 | backtest | out | 1892 | 18.7 | 21.2 | -2.5pp |
-| 1d/x3 | forward | out | 2756 | 18.1 | 21.9 | -3.8pp |
-| 4h/x1.5 | backtest | out | 1892 | 18.7 | 21.2 | -2.5pp |
-| 4h/x1.5 | forward | out | 2756 | 18.1 | 21.9 | -3.8pp |
-| 4h/x3 | backtest | out | 1892 | 18.7 | 21.2 | -2.5pp |
-| 4h/x3 | forward | out | 2756 | 18.1 | 21.9 | -3.8pp |
+| 1d/x1.5 | backtest | out | 1950 | 18.4 | 21.2 | -2.8pp |
+| 1d/x1.5 | forward | out | 3200 | 18.4 | 20.9 | -2.5pp |
+| 1d/x3 | backtest | out | 1950 | 18.4 | 21.2 | -2.8pp |
+| 1d/x3 | forward | out | 3200 | 18.4 | 20.9 | -2.5pp |
+| 4h/x1.5 | backtest | in | 132 | 23.5 | 14.7 | +8.8pp |
+| 4h/x1.5 | backtest | out | 1818 | 18.0 | 21.4 | -3.4pp |
+| 4h/x1.5 | forward | in | 479 | 15.2 | 18.0 | -2.8pp |
+| 4h/x1.5 | forward | out | 2721 | 19.0 | 21.4 | -2.4pp |
+| 4h/x3 | backtest | out | 1950 | 18.4 | 21.2 | -2.8pp |
+| 4h/x3 | forward | in | 400 | 15.0 | 17.6 | -2.6pp |
+| 4h/x3 | forward | out | 2800 | 18.9 | 21.3 | -2.4pp |
 
 ### Journal in-zone cells (register-105 consistency statistics; selection-null in-zone only; measurable n>=10)
 
 | rung | variant | window | zone | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats null win / median | tail |
 |---|---|---|---|---|---|---|---|---|---|---|
-| (no measurable in-zone journal cell) | | | | | | | | | | |
+| 4h/x1.5 | R-ARM15 | backtest | in | 14 (12) | +28.62 | 58% | 1/2 | 93.4 / 98.9 | no / YES | TAIL |
+| 4h/x1.5 | R-BE | backtest | in | 12 (10) | +227.10 | 50% | 2/2 | 75.8 / 100.0 | no / YES |  |
+| 4h/x1.5 | R-NEXIT-EARLY | backtest | in | 54 (50) | -2.35 | 40% | 2/2 | 18.7 / 47.3 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-FULL | backtest | in | 61 (57) | -3.10 | 39% | 1/2 | 15.4 / 28.6 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-SENT | backtest | in | 28 (25) | -19.50 | 36% | 1/2 | 7.7 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-NOTRAIL | backtest | in | 12 (10) | +227.10 | 50% | 2/2 | 75.8 / 100.0 | no / YES |  |
+| 4h/x1.5 | R-OP2 | backtest | in | 68 (64) | -5.99 | 38% | 1/2 | 13.2 / 12.1 | no / no |  |
+| 4h/x1.5 | R-ARM15 | forward | in | 90 (77) | -15.89 | 35% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-BE | forward | in | 82 (72) | -2.60 | 11% | 0/2 | 0.0 / 12.0 | no / no | TAIL |
+| 4h/x1.5 | R-H1-DELAY10 | forward | in | 10 (10) | -19.84 | 30% | 0/2 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-H1-KNIFE | forward | in | 17 (17) | -4.65 | 24% | 0/2 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-NEXIT-EARLY | forward | in | 320 (254) | -3.35 | 33% | 0/2 | 0.0 / 8.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-FULL | forward | in | 334 (266) | -2.85 | 36% | 0/2 | 0.0 / 11.0 | no / no |  |
+| 4h/x1.5 | R-NEXIT-SENT | forward | in | 204 (163) | -6.10 | 36% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x1.5 | R-NOTRAIL | forward | in | 49 (41) | -61.98 | 24% | 0/2 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x1.5 | R-OP2 | forward | in | 290 (237) | -5.75 | 23% | 0/2 | 0.0 / 0.0 | no / no |  |
+| 4h/x3 | R-ARM15 | forward | in | 72 (61) | -24.36 | 33% | 0/1 | 0.0 / 0.0 | no / no |  |
+| 4h/x3 | R-BE | forward | in | 67 (59) | -2.60 | 10% | 0/1 | 0.0 / 25.0 | no / no | TAIL |
+| 4h/x3 | R-H1-KNIFE | forward | in | 13 (13) | -4.65 | 23% | 0/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x3 | R-NEXIT-EARLY | forward | in | 282 (220) | -3.10 | 34% | 0/1 | 0.0 / 14.0 | no / no |  |
+| 4h/x3 | R-NEXIT-FULL | forward | in | 293 (229) | -2.60 | 35% | 0/1 | 0.0 / 25.0 | no / no |  |
+| 4h/x3 | R-NEXIT-SENT | forward | in | 180 (142) | -6.10 | 36% | 0/1 | 0.0 / 0.0 | no / no |  |
+| 4h/x3 | R-NOTRAIL | forward | in | 37 (31) | -64.12 | 19% | 0/1 | 0.0 / 0.0 | no / no | TAIL |
+| 4h/x3 | R-OP2 | forward | in | 247 (197) | -5.62 | 22% | 0/1 | 0.0 / 0.0 | no / no |  |

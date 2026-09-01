@@ -2,16 +2,14 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `729f4cc79` — OBSERVATIONAL ORGAN (register 123; prereg_stress_organ). CONDITIONING DIMENSION ONLY — no sizing machinery (parked, register 125). PRICES ONLY from the register-40-parked feeds (the park concerned volume semantics — untouched, stated). State per UTC day: alarms = {rvol pctile >= 0.8, |corr| pctile >= 0.8, safe-haven co-fire} (both bars FLAGGED); stressed >= 2, mixed = 1, calm = 0; uncovered days excluded, never calm. Origin: the practitioner's stacking claim (uncorrelated alarms co-firing = regime shift), recorded. The matrix's stress dimension reads day_state(); the scalp split below wears a day-state permutation luck budget. MINT-ON-LIFT ONLY.
+Engine `961443605` — OBSERVATIONAL ORGAN (register 123; prereg_stress_organ). CONDITIONING DIMENSION ONLY — no sizing machinery (parked, register 125). PRICES ONLY from the register-40-parked feeds (the park concerned volume semantics — untouched, stated). State per UTC day: alarms = {rvol pctile >= 0.8, |corr| pctile >= 0.8, safe-haven co-fire} (both bars FLAGGED); stressed >= 2, mixed = 1, calm = 0; uncovered days excluded, never calm. Origin: the practitioner's stacking claim (uncorrelated alarms co-firing = regime shift), recorded. The matrix's stress dimension reads day_state(); the scalp split below wears a day-state permutation luck budget. MINT-ON-LIFT ONLY.
 
-State days: {'calm': 230, 'mixed': 195, 'stressed': 49} (of 474 covered).
+State days: {'calm': 231, 'mixed': 196, 'stressed': 49} (of 476 covered).
 
 ## Recent days (tail of the field table; full series in the JSON)
 
 | day | state | alarms | gold mom | dollar up | rvol pctile | corr pctile |
 |---|---|---|---|---|---|---|
-| 2026-08-10 | calm | 0 | +1 | n | 0.241 | 0.474 |
-| 2026-08-11 | mixed | 1 | +1 | Y | 0.285 | 0.517 |
 | 2026-08-12 | calm | 0 | +1 | n | 0.31 | 0.797 |
 | 2026-08-13 | mixed | 1 | +1 | Y | 0.404 | 0.423 |
 | 2026-08-14 | calm | 0 | +1 | n | 0.244 | 0.296 |
@@ -24,25 +22,27 @@ State days: {'calm': 230, 'mixed': 195, 'stressed': 49} (of 474 covered).
 | 2026-08-25 | calm | 0 | +1 | n | 0.351 | 0.155 |
 | 2026-08-26 | mixed | 1 | +1 | Y | 0.385 | 0.638 |
 | 2026-08-27 | calm | 0 | -1 | Y | 0.424 | 0.331 |
-| 2026-08-28 | calm | 0 | -1 | Y | 0.652 | 0.788 |
+| 2026-08-28 | calm | 0 | -1 | Y | 0.636 | 0.786 |
+| 2026-08-31 | calm | 0 | -1 | Y | 0.301 | 0.461 |
+| 2026-09-01 | mixed | 1 | -1 | Y | 0.454 | 0.802 |
 
 ## Scalp cells by stress state (register-105 consistency statistics, distinct paths; gap = best-minus-worst state median among states measurable at n_distinct >= 10; luck = day-state permutation p95)
 
 | leg | arm | window | calm n(d)/med | mixed n(d)/med | stressed n(d)/med | gap (best) | null p95 | clears |
 |---|---|---|---|---|---|---|---|---|
 | ger40fut | R-SCALP-H6 | backtest | 6(6)/+11.98 | 14(14)/+13.18 | 5(5)/+17.08 | — | 5.73 | no |
-| ger40fut | R-SCALP-H6 | forward | 45(45)/+7.25 | 13(13)/+11.78 | — | +4.53 (mixed) | 4.53 | YES |
+| ger40fut | R-SCALP-H6 | forward | 46(46)/+7.09 | 13(13)/+11.78 | — | +4.69 (mixed) | 4.53 | YES |
 | ger40fut | R-SCALP-H6-REF | backtest | 5(5)/+10.45 | 15(15)/+17.17 | 4(4)/+16.16 | — | 7.24 | no |
-| ger40fut | R-SCALP-H6-REF | forward | 40(40)/+7.66 | 11(11)/+5.69 | — | +1.97 (calm) | 1.89 | YES |
+| ger40fut | R-SCALP-H6-REF | forward | 41(41)/+7.71 | 11(11)/+5.69 | — | +2.02 (calm) | 1.73 | YES |
 | nas100fut | R-SCALP-H6 | backtest | 4(4)/-54.21 | 14(14)/+32.70 | 3(3)/+50.38 | — | 2.25 | no |
-| nas100fut | R-SCALP-H6 | forward | 38(38)/+16.31 | 10(10)/+16.70 | — | +0.39 (mixed) | 6.37 | no |
+| nas100fut | R-SCALP-H6 | forward | 46(46)/+16.31 | 10(10)/+16.70 | — | +0.39 (mixed) | 5.15 | no |
 | nas100fut | R-SCALP-H6-REF | backtest | 5(5)/+23.08 | 10(10)/+23.27 | 3(3)/+50.38 | — | — | no |
-| nas100fut | R-SCALP-H6-REF | forward | 38(38)/+18.53 | 10(10)/+16.92 | — | +1.61 (calm) | 3.39 | no |
+| nas100fut | R-SCALP-H6-REF | forward | 47(47)/+18.09 | 10(10)/+16.92 | — | +1.17 (calm) | 3.04 | no |
 | uk100fut | R-SCALP-H6 | backtest | 10(10)/+4.99 | 27(27)/+4.09 | 8(8)/+6.49 | +0.90 (calm) | 3.0 | no |
 | uk100fut | R-SCALP-H6 | forward | 36(36)/+3.65 | 11(11)/+2.12 | — | +1.53 (calm) | 1.7 | no |
 | uk100fut | R-SCALP-H6-REF | backtest | 10(10)/+4.85 | 26(26)/+4.32 | 7(7)/+6.67 | +0.53 (calm) | 2.31 | no |
 | uk100fut | R-SCALP-H6-REF | forward | 36(36)/+3.12 | 11(11)/+2.12 | — | +1.00 (calm) | 1.0 | no |
 | us30fut | R-SCALP-H6 | backtest | 9(9)/-61.80 | 13(13)/+30.15 | 8(8)/+36.88 | — | 93.7 | no |
-| us30fut | R-SCALP-H6 | forward | 37(37)/+17.68 | 3(3)/+29.54 | — | — | — | no |
+| us30fut | R-SCALP-H6 | forward | 45(45)/+16.13 | 3(3)/+29.54 | — | — | — | no |
 | us30fut | R-SCALP-H6-REF | backtest | 11(11)/+11.42 | 14(14)/+17.82 | 8(8)/+34.78 | +6.40 (mixed) | 42.57 | no |
-| us30fut | R-SCALP-H6-REF | forward | 38(38)/+18.70 | 3(3)/+29.54 | — | — | — | no |
+| us30fut | R-SCALP-H6-REF | forward | 46(46)/+17.79 | 3(3)/+29.54 | — | — | — | no |

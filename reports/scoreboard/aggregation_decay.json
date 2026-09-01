@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL aggregation-decay census \u2014 cascade arrival + per-event rv survival; counts and distributions; never validation",
-  "engine_commit": "729f4cc79bf323b757bc12de3cd72ec6dbe0bc85",
+  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
   "ladder": [
     "1min",
     "3min",
@@ -14,11 +14,11 @@
   "results": [
     {
       "instrument": "uk100fut",
-      "onsets": 1824,
+      "onsets": 1853,
       "events_unmeasured_rv": 0,
       "arrival": {
         "backtest|false-lead|15min": {
-          "n": 648,
+          "n": 647,
           "arrived": 180,
           "arrival_min": {
             "n": 180,
@@ -26,13 +26,13 @@
             "p90": 51.0
           },
           "klag_floor_min": {
-            "n": 648,
+            "n": 647,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "backtest|false-lead|1h": {
-          "n": 648,
+          "n": 647,
           "arrived": 41,
           "arrival_min": {
             "n": 41,
@@ -40,13 +40,13 @@
             "p90": 50.0
           },
           "klag_floor_min": {
-            "n": 648,
+            "n": 647,
             "median": 32.0,
             "p90": 55.0
           }
         },
         "backtest|false-lead|30min": {
-          "n": 648,
+          "n": 647,
           "arrived": 97,
           "arrival_min": {
             "n": 97,
@@ -54,13 +54,13 @@
             "p90": 49.4
           },
           "klag_floor_min": {
-            "n": 648,
+            "n": 647,
             "median": 15.0,
             "p90": 27.0
           }
         },
         "backtest|false-lead|3min": {
-          "n": 648,
+          "n": 647,
           "arrived": 415,
           "arrival_min": {
             "n": 415,
@@ -68,13 +68,13 @@
             "p90": 37.0
           },
           "klag_floor_min": {
-            "n": 648,
+            "n": 647,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|false-lead|5min": {
-          "n": 648,
+          "n": 647,
           "arrived": 354,
           "arrival_min": {
             "n": 354,
@@ -82,13 +82,13 @@
             "p90": 47.0
           },
           "klag_floor_min": {
-            "n": 648,
+            "n": 647,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "backtest|true-lead|15min": {
-          "n": 181,
+          "n": 182,
           "arrived": 40,
           "arrival_min": {
             "n": 40,
@@ -96,13 +96,13 @@
             "p90": 52.2
           },
           "klag_floor_min": {
-            "n": 181,
+            "n": 182,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "backtest|true-lead|1h": {
-          "n": 181,
+          "n": 182,
           "arrived": 13,
           "arrival_min": {
             "n": 13,
@@ -110,13 +110,13 @@
             "p90": 52.8
           },
           "klag_floor_min": {
-            "n": 181,
-            "median": 28.0,
+            "n": 182,
+            "median": 27.5,
             "p90": 54.0
           }
         },
         "backtest|true-lead|30min": {
-          "n": 181,
+          "n": 182,
           "arrived": 12,
           "arrival_min": {
             "n": 12,
@@ -124,13 +124,13 @@
             "p90": 50.7
           },
           "klag_floor_min": {
-            "n": 181,
+            "n": 182,
             "median": 16.0,
             "p90": 26.0
           }
         },
         "backtest|true-lead|3min": {
-          "n": 181,
+          "n": 182,
           "arrived": 127,
           "arrival_min": {
             "n": 127,
@@ -138,13 +138,13 @@
             "p90": 41.0
           },
           "klag_floor_min": {
-            "n": 181,
+            "n": 182,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|true-lead|5min": {
-          "n": 181,
+          "n": 182,
           "arrived": 104,
           "arrival_min": {
             "n": 104,
@@ -152,27 +152,27 @@
             "p90": 45.7
           },
           "klag_floor_min": {
-            "n": 181,
+            "n": 182,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|false-lead|15min": {
-          "n": 442,
-          "arrived": 149,
+          "n": 440,
+          "arrived": 148,
           "arrival_min": {
-            "n": 149,
+            "n": 148,
             "median": 26.0,
-            "p90": 52.2
+            "p90": 53.3
           },
           "klag_floor_min": {
-            "n": 442,
+            "n": 440,
             "median": 7.0,
             "p90": 14.0
           }
         },
         "forward|false-lead|1h": {
-          "n": 442,
+          "n": 440,
           "arrived": 49,
           "arrival_min": {
             "n": 49,
@@ -180,69 +180,69 @@
             "p90": 54.2
           },
           "klag_floor_min": {
-            "n": 442,
+            "n": 440,
             "median": 28.0,
             "p90": 54.0
           }
         },
         "forward|false-lead|30min": {
-          "n": 442,
-          "arrived": 88,
+          "n": 440,
+          "arrived": 86,
           "arrival_min": {
-            "n": 88,
-            "median": 26.0,
+            "n": 86,
+            "median": 25.5,
             "p90": 54.0
           },
           "klag_floor_min": {
-            "n": 442,
+            "n": 440,
             "median": 16.0,
-            "p90": 26.9
+            "p90": 26.1
           }
         },
         "forward|false-lead|3min": {
-          "n": 442,
-          "arrived": 394,
+          "n": 440,
+          "arrived": 392,
           "arrival_min": {
-            "n": 394,
-            "median": 16.0,
+            "n": 392,
+            "median": 17.0,
             "p90": 43.0
           },
           "klag_floor_min": {
-            "n": 442,
+            "n": 440,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|false-lead|5min": {
-          "n": 442,
-          "arrived": 315,
+          "n": 440,
+          "arrived": 314,
           "arrival_min": {
-            "n": 315,
+            "n": 314,
             "median": 21.0,
-            "p90": 49.0
+            "p90": 48.7
           },
           "klag_floor_min": {
-            "n": 442,
+            "n": 440,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|true-lead|15min": {
-          "n": 104,
-          "arrived": 33,
+          "n": 106,
+          "arrived": 34,
           "arrival_min": {
-            "n": 33,
-            "median": 35.0,
-            "p90": 53.0
+            "n": 34,
+            "median": 34.5,
+            "p90": 48.7
           },
           "klag_floor_min": {
-            "n": 104,
+            "n": 106,
             "median": 7.0,
             "p90": 12.0
           }
         },
         "forward|true-lead|1h": {
-          "n": 104,
+          "n": 106,
           "arrived": 8,
           "arrival_min": {
             "n": 8,
@@ -250,49 +250,49 @@
             "p90": 48.2
           },
           "klag_floor_min": {
-            "n": 104,
-            "median": 28.0,
-            "p90": 49.7
+            "n": 106,
+            "median": 28.5,
+            "p90": 50.0
           }
         },
         "forward|true-lead|30min": {
-          "n": 104,
-          "arrived": 15,
+          "n": 106,
+          "arrived": 17,
           "arrival_min": {
-            "n": 15,
+            "n": 17,
             "median": 37.0,
-            "p90": 52.6
+            "p90": 51.4
           },
           "klag_floor_min": {
-            "n": 104,
+            "n": 106,
             "median": 17.0,
             "p90": 26.0
           }
         },
         "forward|true-lead|3min": {
-          "n": 104,
-          "arrived": 91,
+          "n": 106,
+          "arrived": 93,
           "arrival_min": {
-            "n": 91,
-            "median": 17.0,
+            "n": 93,
+            "median": 16.0,
             "p90": 49.0
           },
           "klag_floor_min": {
-            "n": 104,
+            "n": 106,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|true-lead|5min": {
-          "n": 104,
-          "arrived": 82,
+          "n": 106,
+          "arrived": 83,
           "arrival_min": {
-            "n": 82,
-            "median": 25.0,
+            "n": 83,
+            "median": 26.0,
             "p90": 49.0
           },
           "klag_floor_min": {
-            "n": 104,
+            "n": 106,
             "median": 3.0,
             "p90": 5.0
           }
@@ -301,7 +301,7 @@
       "effort_decay": {
         "backtest|climax|false-lead": {
           "survival_depths": {
-            "1": 11,
+            "1": 10,
             "2": 14,
             "3": 6,
             "4": 4,
@@ -314,15 +314,15 @@
               "p90": 54.7
             },
             "shallow": {
-              "n": 25,
-              "median": 2.5,
-              "p90": 30.1
+              "n": 24,
+              "median": -0.5,
+              "p90": 30.6
             }
           }
         },
         "backtest|climax|true-lead": {
           "survival_depths": {
-            "1": 11,
+            "1": 12,
             "2": 7,
             "4": 1,
             "5": 2
@@ -334,58 +334,58 @@
               "p90": 5.4
             },
             "shallow": {
-              "n": 18,
-              "median": 1.0,
-              "p90": 11.7
+              "n": 19,
+              "median": 1.1,
+              "p90": 15.5
             }
           }
         },
         "backtest|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 723,
+            "1": 721,
             "2": 210,
-            "3": 325,
+            "3": 326,
             "4": 173,
             "5": 347
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 845,
-              "median": 1.5,
+              "n": 846,
+              "median": 1.4,
               "p90": 33.0
             },
             "shallow": {
-              "n": 933,
+              "n": 931,
               "median": 0.9,
-              "p90": 27.2
+              "p90": 27.3
             }
           }
         },
         "backtest|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 196,
+            "1": 198,
             "2": 90,
-            "3": 67,
+            "3": 66,
             "4": 41,
             "5": 95
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 203,
-              "median": -3.7,
+              "n": 202,
+              "median": -3.6,
               "p90": 14.7
             },
             "shallow": {
-              "n": 286,
+              "n": 288,
               "median": -4.2,
-              "p90": 10.0
+              "p90": 10.1
             }
           }
         },
         "forward|climax|false-lead": {
           "survival_depths": {
-            "1": 32,
-            "2": 14,
+            "1": 33,
+            "2": 13,
             "3": 9,
             "4": 1,
             "5": 11
@@ -398,15 +398,15 @@
             },
             "shallow": {
               "n": 46,
-              "median": 0.3,
-              "p90": 12.8
+              "median": 1.8,
+              "p90": 15.8
             }
           }
         },
         "forward|climax|true-lead": {
           "survival_depths": {
-            "1": 9,
-            "2": 7,
+            "1": 8,
+            "2": 8,
             "3": 5,
             "4": 1,
             "5": 3
@@ -420,49 +420,49 @@
             "shallow": {
               "n": 16,
               "median": -2.0,
-              "p90": 10.7
+              "p90": 9.2
             }
           }
         },
         "forward|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 1029,
-            "2": 271,
-            "3": 326,
+            "1": 1022,
+            "2": 266,
+            "3": 321,
             "4": 177,
-            "5": 380
+            "5": 373
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 883,
+              "n": 871,
               "median": 1.0,
-              "p90": 13.0
+              "p90": 13.3
             },
             "shallow": {
-              "n": 1300,
+              "n": 1288,
               "median": 0.0,
-              "p90": 13.8
+              "p90": 14.2
             }
           }
         },
         "forward|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 243,
-            "2": 71,
-            "3": 63,
+            "1": 250,
+            "2": 76,
+            "3": 69,
             "4": 35,
-            "5": 87
+            "5": 94
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 185,
+              "n": 198,
               "median": -3.0,
-              "p90": 3.9
+              "p90": 3.8
             },
             "shallow": {
-              "n": 314,
+              "n": 326,
               "median": -1.9,
-              "p90": 5.2
+              "p90": 5.0
             }
           }
         }
@@ -470,11 +470,11 @@
     },
     {
       "instrument": "ger40fut",
-      "onsets": 1707,
+      "onsets": 1805,
       "events_unmeasured_rv": 0,
       "arrival": {
         "backtest|false-lead|15min": {
-          "n": 522,
+          "n": 519,
           "arrived": 127,
           "arrival_min": {
             "n": 127,
@@ -482,13 +482,13 @@
             "p90": 52.0
           },
           "klag_floor_min": {
-            "n": 522,
+            "n": 519,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "backtest|false-lead|1h": {
-          "n": 522,
+          "n": 519,
           "arrived": 37,
           "arrival_min": {
             "n": 37,
@@ -496,13 +496,13 @@
             "p90": 57.4
           },
           "klag_floor_min": {
-            "n": 522,
+            "n": 519,
             "median": 30.0,
             "p90": 55.0
           }
         },
         "backtest|false-lead|30min": {
-          "n": 522,
+          "n": 519,
           "arrived": 75,
           "arrival_min": {
             "n": 75,
@@ -510,41 +510,41 @@
             "p90": 55.0
           },
           "klag_floor_min": {
-            "n": 522,
+            "n": 519,
             "median": 16.0,
             "p90": 27.0
           }
         },
         "backtest|false-lead|3min": {
-          "n": 522,
-          "arrived": 256,
+          "n": 519,
+          "arrived": 254,
           "arrival_min": {
-            "n": 256,
+            "n": 254,
             "median": 12.0,
-            "p90": 37.5
+            "p90": 37.7
           },
           "klag_floor_min": {
-            "n": 522,
+            "n": 519,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|false-lead|5min": {
-          "n": 522,
-          "arrived": 220,
+          "n": 519,
+          "arrived": 219,
           "arrival_min": {
-            "n": 220,
+            "n": 219,
             "median": 15.0,
             "p90": 45.0
           },
           "klag_floor_min": {
-            "n": 522,
+            "n": 519,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "backtest|true-lead|15min": {
-          "n": 119,
+          "n": 122,
           "arrived": 25,
           "arrival_min": {
             "n": 25,
@@ -552,13 +552,13 @@
             "p90": 49.4
           },
           "klag_floor_min": {
-            "n": 119,
+            "n": 122,
             "median": 9.0,
             "p90": 15.0
           }
         },
         "backtest|true-lead|1h": {
-          "n": 119,
+          "n": 122,
           "arrived": 6,
           "arrival_min": {
             "n": 6,
@@ -566,13 +566,13 @@
             "p90": 46.0
           },
           "klag_floor_min": {
-            "n": 119,
+            "n": 122,
             "median": 31.0,
-            "p90": 52.2
+            "p90": 51.9
           }
         },
         "backtest|true-lead|30min": {
-          "n": 119,
+          "n": 122,
           "arrived": 12,
           "arrival_min": {
             "n": 12,
@@ -580,125 +580,125 @@
             "p90": 53.6
           },
           "klag_floor_min": {
-            "n": 119,
-            "median": 13.0,
+            "n": 122,
+            "median": 14.0,
             "p90": 27.0
           }
         },
         "backtest|true-lead|3min": {
-          "n": 119,
-          "arrived": 62,
+          "n": 122,
+          "arrived": 64,
           "arrival_min": {
-            "n": 62,
-            "median": 14.0,
+            "n": 64,
+            "median": 13.0,
             "p90": 46.0
           },
           "klag_floor_min": {
-            "n": 119,
+            "n": 122,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|true-lead|5min": {
-          "n": 119,
-          "arrived": 54,
+          "n": 122,
+          "arrived": 55,
           "arrival_min": {
-            "n": 54,
-            "median": 17.0,
-            "p90": 49.1
+            "n": 55,
+            "median": 18.0,
+            "p90": 48.8
           },
           "klag_floor_min": {
-            "n": 119,
+            "n": 122,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|false-lead|15min": {
-          "n": 460,
-          "arrived": 144,
+          "n": 515,
+          "arrived": 170,
           "arrival_min": {
-            "n": 144,
-            "median": 21.5,
-            "p90": 51.0
+            "n": 170,
+            "median": 21.0,
+            "p90": 50.0
           },
           "klag_floor_min": {
-            "n": 460,
-            "median": 7.0,
+            "n": 515,
+            "median": 8.0,
             "p90": 14.0
           }
         },
         "forward|false-lead|1h": {
-          "n": 460,
-          "arrived": 35,
+          "n": 515,
+          "arrived": 41,
           "arrival_min": {
-            "n": 35,
-            "median": 35.0,
-            "p90": 55.2
+            "n": 41,
+            "median": 33.0,
+            "p90": 54.0
           },
           "klag_floor_min": {
-            "n": 460,
+            "n": 515,
             "median": 29.0,
-            "p90": 52.0
+            "p90": 53.0
           }
         },
         "forward|false-lead|30min": {
-          "n": 460,
-          "arrived": 78,
+          "n": 515,
+          "arrived": 98,
           "arrival_min": {
-            "n": 78,
+            "n": 98,
             "median": 20.0,
             "p90": 53.3
           },
           "klag_floor_min": {
-            "n": 460,
+            "n": 515,
             "median": 15.0,
             "p90": 26.0
           }
         },
         "forward|false-lead|3min": {
-          "n": 460,
-          "arrived": 411,
+          "n": 515,
+          "arrived": 459,
           "arrival_min": {
-            "n": 411,
+            "n": 459,
             "median": 15.0,
             "p90": 44.0
           },
           "klag_floor_min": {
-            "n": 460,
+            "n": 515,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|false-lead|5min": {
-          "n": 460,
-          "arrived": 326,
+          "n": 515,
+          "arrived": 368,
           "arrival_min": {
-            "n": 326,
-            "median": 19.5,
+            "n": 368,
+            "median": 19.0,
             "p90": 46.0
           },
           "klag_floor_min": {
-            "n": 460,
+            "n": 515,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|true-lead|15min": {
-          "n": 121,
-          "arrived": 33,
+          "n": 133,
+          "arrived": 36,
           "arrival_min": {
-            "n": 33,
-            "median": 30.0,
+            "n": 36,
+            "median": 32.5,
             "p90": 55.0
           },
           "klag_floor_min": {
-            "n": 121,
+            "n": 133,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "forward|true-lead|1h": {
-          "n": 121,
+          "n": 133,
           "arrived": 5,
           "arrival_min": {
             "n": 5,
@@ -706,49 +706,49 @@
             "p90": 34.2
           },
           "klag_floor_min": {
-            "n": 121,
-            "median": 27.0,
+            "n": 133,
+            "median": 26.0,
             "p90": 54.0
           }
         },
         "forward|true-lead|30min": {
-          "n": 121,
-          "arrived": 17,
+          "n": 133,
+          "arrived": 14,
           "arrival_min": {
-            "n": 17,
-            "median": 34.0,
-            "p90": 54.2
+            "n": 14,
+            "median": 42.0,
+            "p90": 55.1
           },
           "klag_floor_min": {
-            "n": 121,
+            "n": 133,
             "median": 17.0,
             "p90": 26.0
           }
         },
         "forward|true-lead|3min": {
-          "n": 121,
-          "arrived": 104,
+          "n": 133,
+          "arrived": 117,
           "arrival_min": {
-            "n": 104,
-            "median": 17.5,
-            "p90": 46.7
+            "n": 117,
+            "median": 18.0,
+            "p90": 47.8
           },
           "klag_floor_min": {
-            "n": 121,
+            "n": 133,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|true-lead|5min": {
-          "n": 121,
-          "arrived": 80,
+          "n": 133,
+          "arrived": 94,
           "arrival_min": {
-            "n": 80,
-            "median": 25.0,
-            "p90": 50.1
+            "n": 94,
+            "median": 24.0,
+            "p90": 51.7
           },
           "klag_floor_min": {
-            "n": 121,
+            "n": 133,
             "median": 3.0,
             "p90": 5.0
           }
@@ -760,14 +760,14 @@
             "1": 6,
             "2": 11,
             "3": 2,
-            "4": 6,
+            "4": 7,
             "5": 11
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 19,
-              "median": 52.2,
-              "p90": 106.1
+              "n": 20,
+              "median": 55.0,
+              "p90": 105.9
             },
             "shallow": {
               "n": 17,
@@ -780,14 +780,13 @@
           "survival_depths": {
             "1": 3,
             "3": 3,
-            "4": 1,
             "5": 6
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 10,
-              "median": -25.2,
-              "p90": 13.9
+              "n": 9,
+              "median": -34.2,
+              "p90": 6.3
             },
             "shallow": {
               "n": 3,
@@ -798,11 +797,11 @@
         },
         "backtest|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 446,
+            "1": 442,
             "2": 159,
-            "3": 188,
+            "3": 186,
             "4": 158,
-            "5": 268
+            "5": 270
           },
           "outcome_by_depth": {
             "deep": {
@@ -811,113 +810,113 @@
               "p90": 91.2
             },
             "shallow": {
-              "n": 605,
-              "median": 4.7,
-              "p90": 71.9
+              "n": 601,
+              "median": 5.7,
+              "p90": 72.2
             }
           }
         },
         "backtest|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 94,
+            "1": 98,
             "2": 34,
-            "3": 42,
+            "3": 44,
             "4": 23,
-            "5": 61
+            "5": 59
           },
           "outcome_by_depth": {
             "deep": {
               "n": 126,
-              "median": -13.3,
+              "median": -14.6,
               "p90": 21.6
             },
             "shallow": {
-              "n": 128,
-              "median": -18.7,
-              "p90": 28.1
+              "n": 132,
+              "median": -19.9,
+              "p90": 27.0
             }
           }
         },
         "forward|climax|false-lead": {
           "survival_depths": {
-            "1": 30,
+            "1": 29,
             "2": 9,
             "3": 17,
-            "4": 5,
-            "5": 8
+            "4": 7,
+            "5": 10
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 30,
-              "median": -0.2,
-              "p90": 39.4
+              "n": 34,
+              "median": 1.7,
+              "p90": 37.5
             },
             "shallow": {
-              "n": 39,
-              "median": 12.6,
+              "n": 38,
+              "median": 12.1,
               "p90": 31.7
             }
           }
         },
         "forward|climax|true-lead": {
           "survival_depths": {
-            "1": 7,
-            "2": 7,
+            "1": 10,
+            "2": 8,
             "3": 4,
-            "5": 3
+            "5": 4
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 7,
+              "n": 8,
               "median": -3.8,
-              "p90": 10.4
+              "p90": 9.1
             },
             "shallow": {
-              "n": 14,
-              "median": -0.7,
-              "p90": 24.2
+              "n": 18,
+              "median": -3.5,
+              "p90": 23.4
             }
           }
         },
         "forward|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 871,
-            "2": 301,
-            "3": 372,
-            "4": 237,
-            "5": 601
+            "1": 945,
+            "2": 334,
+            "3": 378,
+            "4": 262,
+            "5": 640
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 1210,
-              "median": 0.5,
-              "p90": 28.4
+              "n": 1280,
+              "median": 0.0,
+              "p90": 28.0
             },
             "shallow": {
-              "n": 1172,
-              "median": 0.9,
-              "p90": 32.1
+              "n": 1279,
+              "median": 1.5,
+              "p90": 33.4
             }
           }
         },
         "forward|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 218,
+            "1": 217,
             "2": 70,
-            "3": 82,
-            "4": 52,
-            "5": 110
+            "3": 85,
+            "4": 45,
+            "5": 117
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 244,
-              "median": -6.1,
-              "p90": 14.8
+              "n": 247,
+              "median": -5.1,
+              "p90": 14.7
             },
             "shallow": {
-              "n": 288,
-              "median": -5.5,
-              "p90": 18.9
+              "n": 287,
+              "median": -6.3,
+              "p90": 16.0
             }
           }
         }
@@ -925,11 +924,11 @@
     },
     {
       "instrument": "nas100fut",
-      "onsets": 1862,
+      "onsets": 1964,
       "events_unmeasured_rv": 0,
       "arrival": {
         "backtest|false-lead|15min": {
-          "n": 547,
+          "n": 549,
           "arrived": 139,
           "arrival_min": {
             "n": 139,
@@ -937,13 +936,13 @@
             "p90": 50.2
           },
           "klag_floor_min": {
-            "n": 547,
+            "n": 549,
             "median": 9.0,
             "p90": 14.0
           }
         },
         "backtest|false-lead|1h": {
-          "n": 547,
+          "n": 549,
           "arrived": 54,
           "arrival_min": {
             "n": 54,
@@ -951,13 +950,13 @@
             "p90": 51.7
           },
           "klag_floor_min": {
-            "n": 547,
+            "n": 549,
             "median": 31.0,
             "p90": 56.0
           }
         },
         "backtest|false-lead|30min": {
-          "n": 547,
+          "n": 549,
           "arrived": 98,
           "arrival_min": {
             "n": 98,
@@ -965,41 +964,41 @@
             "p90": 50.3
           },
           "klag_floor_min": {
-            "n": 547,
+            "n": 549,
             "median": 15.0,
             "p90": 27.0
           }
         },
         "backtest|false-lead|3min": {
-          "n": 547,
-          "arrived": 278,
+          "n": 549,
+          "arrived": 277,
           "arrival_min": {
-            "n": 278,
+            "n": 277,
             "median": 12.0,
             "p90": 37.0
           },
           "klag_floor_min": {
-            "n": 547,
+            "n": 549,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|false-lead|5min": {
-          "n": 547,
-          "arrived": 248,
+          "n": 549,
+          "arrived": 247,
           "arrival_min": {
-            "n": 248,
+            "n": 247,
             "median": 14.0,
             "p90": 44.0
           },
           "klag_floor_min": {
-            "n": 547,
+            "n": 549,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "backtest|true-lead|15min": {
-          "n": 123,
+          "n": 121,
           "arrived": 26,
           "arrival_min": {
             "n": 26,
@@ -1007,13 +1006,13 @@
             "p90": 47.0
           },
           "klag_floor_min": {
-            "n": 123,
+            "n": 121,
             "median": 7.0,
-            "p90": 13.0
+            "p90": 14.0
           }
         },
         "backtest|true-lead|1h": {
-          "n": 123,
+          "n": 121,
           "arrived": 8,
           "arrival_min": {
             "n": 8,
@@ -1021,13 +1020,13 @@
             "p90": 53.9
           },
           "klag_floor_min": {
-            "n": 123,
-            "median": 32.0,
+            "n": 121,
+            "median": 33.0,
             "p90": 55.0
           }
         },
         "backtest|true-lead|30min": {
-          "n": 123,
+          "n": 121,
           "arrived": 18,
           "arrival_min": {
             "n": 18,
@@ -1035,175 +1034,175 @@
             "p90": 56.6
           },
           "klag_floor_min": {
-            "n": 123,
-            "median": 13.0,
-            "p90": 25.0
+            "n": 121,
+            "median": 14.0,
+            "p90": 26.0
           }
         },
         "backtest|true-lead|3min": {
-          "n": 123,
-          "arrived": 55,
+          "n": 121,
+          "arrived": 56,
           "arrival_min": {
-            "n": 55,
-            "median": 17.0,
+            "n": 56,
+            "median": 17.5,
             "p90": 35.0
           },
           "klag_floor_min": {
-            "n": 123,
+            "n": 121,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|true-lead|5min": {
-          "n": 123,
-          "arrived": 50,
+          "n": 121,
+          "arrived": 51,
           "arrival_min": {
-            "n": 50,
-            "median": 22.5,
-            "p90": 49.1
+            "n": 51,
+            "median": 24.0,
+            "p90": 49.0
           },
           "klag_floor_min": {
-            "n": 123,
+            "n": 121,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|false-lead|15min": {
-          "n": 503,
-          "arrived": 193,
+          "n": 558,
+          "arrived": 226,
           "arrival_min": {
-            "n": 193,
-            "median": 23.0,
-            "p90": 49.0
+            "n": 226,
+            "median": 22.0,
+            "p90": 48.0
           },
           "klag_floor_min": {
-            "n": 503,
+            "n": 558,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "forward|false-lead|1h": {
-          "n": 503,
-          "arrived": 73,
+          "n": 558,
+          "arrived": 85,
           "arrival_min": {
-            "n": 73,
+            "n": 85,
             "median": 28.0,
-            "p90": 54.0
+            "p90": 53.6
           },
           "klag_floor_min": {
-            "n": 503,
+            "n": 558,
             "median": 31.0,
-            "p90": 53.8
+            "p90": 53.0
           }
         },
         "forward|false-lead|30min": {
-          "n": 503,
-          "arrived": 157,
+          "n": 558,
+          "arrived": 179,
           "arrival_min": {
-            "n": 157,
+            "n": 179,
             "median": 26.0,
-            "p90": 52.8
+            "p90": 51.2
           },
           "klag_floor_min": {
-            "n": 503,
+            "n": 558,
             "median": 15.0,
             "p90": 26.0
           }
         },
         "forward|false-lead|3min": {
-          "n": 503,
-          "arrived": 453,
+          "n": 558,
+          "arrived": 507,
           "arrival_min": {
-            "n": 453,
+            "n": 507,
             "median": 10.0,
-            "p90": 39.8
+            "p90": 38.0
           },
           "klag_floor_min": {
-            "n": 503,
+            "n": 558,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|false-lead|5min": {
-          "n": 503,
-          "arrived": 406,
+          "n": 558,
+          "arrived": 453,
           "arrival_min": {
-            "n": 406,
+            "n": 453,
             "median": 13.0,
-            "p90": 42.0
+            "p90": 41.8
           },
           "klag_floor_min": {
-            "n": 503,
+            "n": 558,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|true-lead|15min": {
-          "n": 132,
-          "arrived": 52,
+          "n": 149,
+          "arrived": 61,
           "arrival_min": {
-            "n": 52,
+            "n": 61,
             "median": 31.0,
-            "p90": 50.8
+            "p90": 51.0
           },
           "klag_floor_min": {
-            "n": 132,
+            "n": 149,
             "median": 8.0,
             "p90": 13.0
           }
         },
         "forward|true-lead|1h": {
-          "n": 132,
-          "arrived": 10,
+          "n": 149,
+          "arrived": 12,
           "arrival_min": {
-            "n": 10,
-            "median": 14.5,
-            "p90": 40.7
+            "n": 12,
+            "median": 24.0,
+            "p90": 46.3
           },
           "klag_floor_min": {
-            "n": 132,
-            "median": 30.0,
-            "p90": 54.0
+            "n": 149,
+            "median": 31.0,
+            "p90": 55.0
           }
         },
         "forward|true-lead|30min": {
-          "n": 132,
-          "arrived": 30,
+          "n": 149,
+          "arrived": 32,
           "arrival_min": {
-            "n": 30,
-            "median": 22.5,
-            "p90": 54.1
+            "n": 32,
+            "median": 24.5,
+            "p90": 54.9
           },
           "klag_floor_min": {
-            "n": 132,
-            "median": 16.0,
+            "n": 149,
+            "median": 15.0,
             "p90": 26.0
           }
         },
         "forward|true-lead|3min": {
-          "n": 132,
-          "arrived": 125,
+          "n": 149,
+          "arrived": 142,
           "arrival_min": {
-            "n": 125,
-            "median": 13.0,
-            "p90": 43.8
+            "n": 142,
+            "median": 12.5,
+            "p90": 42.0
           },
           "klag_floor_min": {
-            "n": 132,
+            "n": 149,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|true-lead|5min": {
-          "n": 132,
-          "arrived": 101,
+          "n": 149,
+          "arrived": 118,
           "arrival_min": {
-            "n": 101,
-            "median": 22.0,
+            "n": 118,
+            "median": 22.5,
             "p90": 47.0
           },
           "klag_floor_min": {
-            "n": 132,
+            "n": 149,
             "median": 3.0,
             "p90": 5.0
           }
@@ -1252,64 +1251,64 @@
         },
         "backtest|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 484,
-            "2": 183,
-            "3": 222,
+            "1": 482,
+            "2": 180,
+            "3": 220,
             "4": 180,
             "5": 509
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 911,
-              "median": 3.1,
-              "p90": 155.0
+              "n": 909,
+              "median": 3.2,
+              "p90": 155.2
             },
             "shallow": {
-              "n": 667,
+              "n": 662,
               "median": 5.6,
-              "p90": 122.8
+              "p90": 123.0
             }
           }
         },
         "backtest|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 90,
-            "2": 24,
-            "3": 21,
+            "1": 92,
+            "2": 27,
+            "3": 23,
             "4": 37,
             "5": 154
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 212,
-              "median": -15.5,
-              "p90": 67.4
+              "n": 214,
+              "median": -16.3,
+              "p90": 67.3
             },
             "shallow": {
-              "n": 114,
-              "median": -25.8,
-              "p90": 59.5
+              "n": 119,
+              "median": -21.2,
+              "p90": 59.6
             }
           }
         },
         "forward|climax|false-lead": {
           "survival_depths": {
-            "1": 11,
-            "2": 12,
+            "1": 13,
+            "2": 13,
             "3": 9,
             "4": 1,
-            "5": 11
+            "5": 12
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 21,
-              "median": 18.4,
-              "p90": 90.2
+              "n": 22,
+              "median": 28.1,
+              "p90": 89.0
             },
             "shallow": {
-              "n": 23,
-              "median": 48.0,
-              "p90": 125.7
+              "n": 26,
+              "median": 40.6,
+              "p90": 118.1
             }
           }
         },
@@ -1319,13 +1318,13 @@
             "2": 4,
             "3": 4,
             "4": 2,
-            "5": 7
+            "5": 9
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 13,
+              "n": 15,
               "median": 11.0,
-              "p90": 46.8
+              "p90": 46.4
             },
             "shallow": {
               "n": 6,
@@ -1336,43 +1335,43 @@
         },
         "forward|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 620,
-            "2": 221,
-            "3": 307,
+            "1": 654,
+            "2": 232,
+            "3": 311,
             "4": 112,
-            "5": 810
+            "5": 827
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 1229,
-              "median": 4.0,
-              "p90": 80.7
+              "n": 1250,
+              "median": 3.8,
+              "p90": 80.6
             },
             "shallow": {
-              "n": 841,
-              "median": 4.5,
-              "p90": 78.7
+              "n": 886,
+              "median": 4.0,
+              "p90": 79.0
             }
           }
         },
         "forward|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 183,
-            "2": 48,
-            "3": 65,
-            "4": 40,
-            "5": 146
+            "1": 195,
+            "2": 49,
+            "3": 69,
+            "4": 42,
+            "5": 155
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 251,
-              "median": -15.5,
-              "p90": 29.8
+              "n": 266,
+              "median": -14.3,
+              "p90": 31.1
             },
             "shallow": {
-              "n": 231,
-              "median": -19.2,
-              "p90": 29.4
+              "n": 244,
+              "median": -17.2,
+              "p90": 30.2
             }
           }
         }
@@ -1380,25 +1379,25 @@
     },
     {
       "instrument": "us30fut",
-      "onsets": 1709,
+      "onsets": 1804,
       "events_unmeasured_rv": 0,
       "arrival": {
         "backtest|false-lead|15min": {
-          "n": 524,
-          "arrived": 138,
+          "n": 519,
+          "arrived": 134,
           "arrival_min": {
-            "n": 138,
-            "median": 21.0,
+            "n": 134,
+            "median": 20.5,
             "p90": 49.0
           },
           "klag_floor_min": {
-            "n": 524,
+            "n": 519,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "backtest|false-lead|1h": {
-          "n": 524,
+          "n": 519,
           "arrived": 47,
           "arrival_min": {
             "n": 47,
@@ -1406,69 +1405,69 @@
             "p90": 58.4
           },
           "klag_floor_min": {
-            "n": 524,
+            "n": 519,
             "median": 31.0,
             "p90": 54.0
           }
         },
         "backtest|false-lead|30min": {
-          "n": 524,
-          "arrived": 99,
+          "n": 519,
+          "arrived": 98,
           "arrival_min": {
-            "n": 99,
-            "median": 29.0,
-            "p90": 50.4
+            "n": 98,
+            "median": 29.5,
+            "p90": 50.6
           },
           "klag_floor_min": {
-            "n": 524,
-            "median": 15.5,
+            "n": 519,
+            "median": 16.0,
             "p90": 27.0
           }
         },
         "backtest|false-lead|3min": {
-          "n": 524,
-          "arrived": 273,
+          "n": 519,
+          "arrived": 267,
           "arrival_min": {
-            "n": 273,
+            "n": 267,
             "median": 10.0,
-            "p90": 36.8
+            "p90": 34.2
           },
           "klag_floor_min": {
-            "n": 524,
+            "n": 519,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|false-lead|5min": {
-          "n": 524,
-          "arrived": 240,
+          "n": 519,
+          "arrived": 233,
           "arrival_min": {
-            "n": 240,
-            "median": 13.5,
-            "p90": 42.0
+            "n": 233,
+            "median": 13.0,
+            "p90": 41.8
           },
           "klag_floor_min": {
-            "n": 524,
+            "n": 519,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "backtest|true-lead|15min": {
-          "n": 118,
-          "arrived": 28,
+          "n": 123,
+          "arrived": 32,
           "arrival_min": {
-            "n": 28,
-            "median": 28.0,
-            "p90": 58.3
+            "n": 32,
+            "median": 26.0,
+            "p90": 57.8
           },
           "klag_floor_min": {
-            "n": 118,
+            "n": 123,
             "median": 8.0,
             "p90": 14.0
           }
         },
         "backtest|true-lead|1h": {
-          "n": 118,
+          "n": 123,
           "arrived": 6,
           "arrival_min": {
             "n": 6,
@@ -1476,189 +1475,189 @@
             "p90": 42.5
           },
           "klag_floor_min": {
-            "n": 118,
-            "median": 34.5,
+            "n": 123,
+            "median": 35.0,
             "p90": 56.0
           }
         },
         "backtest|true-lead|30min": {
-          "n": 118,
-          "arrived": 14,
+          "n": 123,
+          "arrived": 15,
           "arrival_min": {
-            "n": 14,
-            "median": 27.0,
-            "p90": 58.1
+            "n": 15,
+            "median": 26.0,
+            "p90": 57.8
           },
           "klag_floor_min": {
-            "n": 118,
+            "n": 123,
             "median": 16.0,
-            "p90": 28.3
+            "p90": 27.8
           }
         },
         "backtest|true-lead|3min": {
-          "n": 118,
-          "arrived": 51,
+          "n": 123,
+          "arrived": 57,
           "arrival_min": {
-            "n": 51,
-            "median": 14.0,
-            "p90": 47.0
+            "n": 57,
+            "median": 15.0,
+            "p90": 47.8
           },
           "klag_floor_min": {
-            "n": 118,
+            "n": 123,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "backtest|true-lead|5min": {
-          "n": 118,
-          "arrived": 40,
+          "n": 123,
+          "arrived": 47,
           "arrival_min": {
-            "n": 40,
-            "median": 22.5,
-            "p90": 49.1
+            "n": 47,
+            "median": 24.0,
+            "p90": 49.4
           },
           "klag_floor_min": {
-            "n": 118,
+            "n": 123,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|false-lead|15min": {
-          "n": 466,
-          "arrived": 188,
+          "n": 515,
+          "arrived": 216,
           "arrival_min": {
-            "n": 188,
-            "median": 27.0,
+            "n": 216,
+            "median": 25.5,
             "p90": 50.0
           },
           "klag_floor_min": {
-            "n": 466,
-            "median": 9.0,
+            "n": 515,
+            "median": 8.0,
             "p90": 14.0
           }
         },
         "forward|false-lead|1h": {
-          "n": 466,
-          "arrived": 48,
+          "n": 515,
+          "arrived": 55,
           "arrival_min": {
-            "n": 48,
+            "n": 55,
             "median": 30.0,
-            "p90": 55.3
+            "p90": 54.6
           },
           "klag_floor_min": {
-            "n": 466,
+            "n": 515,
             "median": 29.0,
             "p90": 55.0
           }
         },
         "forward|false-lead|30min": {
-          "n": 466,
-          "arrived": 116,
+          "n": 515,
+          "arrived": 130,
           "arrival_min": {
-            "n": 116,
+            "n": 130,
             "median": 26.0,
             "p90": 53.0
           },
           "klag_floor_min": {
-            "n": 466,
+            "n": 515,
             "median": 15.0,
-            "p90": 27.5
+            "p90": 27.0
           }
         },
         "forward|false-lead|3min": {
-          "n": 466,
-          "arrived": 425,
+          "n": 515,
+          "arrived": 470,
           "arrival_min": {
-            "n": 425,
+            "n": 470,
             "median": 13.0,
             "p90": 40.0
           },
           "klag_floor_min": {
-            "n": 466,
+            "n": 515,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|false-lead|5min": {
-          "n": 466,
-          "arrived": 355,
+          "n": 515,
+          "arrived": 398,
           "arrival_min": {
-            "n": 355,
+            "n": 398,
             "median": 18.0,
-            "p90": 43.6
+            "p90": 45.0
           },
           "klag_floor_min": {
-            "n": 466,
+            "n": 515,
             "median": 3.0,
             "p90": 5.0
           }
         },
         "forward|true-lead|15min": {
-          "n": 106,
-          "arrived": 35,
+          "n": 127,
+          "arrived": 41,
           "arrival_min": {
-            "n": 35,
-            "median": 42.0,
-            "p90": 55.6
-          },
-          "klag_floor_min": {
-            "n": 106,
-            "median": 9.0,
-            "p90": 15.0
-          }
-        },
-        "forward|true-lead|1h": {
-          "n": 106,
-          "arrived": 8,
-          "arrival_min": {
-            "n": 8,
-            "median": 14.0,
-            "p90": 27.3
-          },
-          "klag_floor_min": {
-            "n": 106,
-            "median": 30.0,
-            "p90": 54.0
-          }
-        },
-        "forward|true-lead|30min": {
-          "n": 106,
-          "arrived": 11,
-          "arrival_min": {
-            "n": 11,
+            "n": 41,
             "median": 42.0,
             "p90": 56.0
           },
           "klag_floor_min": {
-            "n": 106,
-            "median": 17.5,
-            "p90": 27.5
+            "n": 127,
+            "median": 9.0,
+            "p90": 14.4
+          }
+        },
+        "forward|true-lead|1h": {
+          "n": 127,
+          "arrived": 9,
+          "arrival_min": {
+            "n": 9,
+            "median": 15.0,
+            "p90": 43.2
+          },
+          "klag_floor_min": {
+            "n": 127,
+            "median": 33.0,
+            "p90": 55.0
+          }
+        },
+        "forward|true-lead|30min": {
+          "n": 127,
+          "arrived": 17,
+          "arrival_min": {
+            "n": 17,
+            "median": 39.0,
+            "p90": 54.8
+          },
+          "klag_floor_min": {
+            "n": 127,
+            "median": 18.0,
+            "p90": 27.4
           }
         },
         "forward|true-lead|3min": {
-          "n": 106,
-          "arrived": 93,
+          "n": 127,
+          "arrived": 113,
           "arrival_min": {
-            "n": 93,
-            "median": 21.0,
-            "p90": 44.0
+            "n": 113,
+            "median": 20.0,
+            "p90": 43.8
           },
           "klag_floor_min": {
-            "n": 106,
+            "n": 127,
             "median": 2.0,
             "p90": 3.0
           }
         },
         "forward|true-lead|5min": {
-          "n": 106,
-          "arrived": 72,
+          "n": 127,
+          "arrived": 87,
           "arrival_min": {
-            "n": 72,
-            "median": 27.5,
-            "p90": 49.9
+            "n": 87,
+            "median": 28.0,
+            "p90": 51.0
           },
           "klag_floor_min": {
-            "n": 106,
+            "n": 127,
             "median": 3.0,
             "p90": 5.0
           }
@@ -1671,13 +1670,13 @@
             "2": 7,
             "3": 1,
             "4": 3,
-            "5": 19
+            "5": 20
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 23,
-              "median": -0.5,
-              "p90": 90.6
+              "n": 24,
+              "median": 5.5,
+              "p90": 88.9
             },
             "shallow": {
               "n": 14,
@@ -1692,13 +1691,13 @@
             "2": 1,
             "3": 1,
             "4": 2,
-            "5": 5
+            "5": 4
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 8,
-              "median": -59.5,
-              "p90": 49.7
+              "n": 7,
+              "median": -62.5,
+              "p90": 51.9
             },
             "shallow": {
               "n": 4,
@@ -1709,64 +1708,64 @@
         },
         "backtest|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 373,
-            "2": 138,
+            "1": 368,
+            "2": 146,
             "3": 227,
             "4": 169,
-            "5": 791
+            "5": 786
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 1187,
-              "median": 2.5,
-              "p90": 107.2
+              "n": 1182,
+              "median": 4.2,
+              "p90": 107.5
             },
             "shallow": {
-              "n": 511,
-              "median": 1.5,
-              "p90": 109.0
+              "n": 514,
+              "median": 2.5,
+              "p90": 108.8
             }
           }
         },
         "backtest|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 78,
-            "2": 32,
+            "1": 83,
+            "2": 24,
             "3": 32,
             "4": 2,
-            "5": 153
+            "5": 158
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 187,
-              "median": -20.5,
-              "p90": 41.5
+              "n": 192,
+              "median": -24.2,
+              "p90": 34.0
             },
             "shallow": {
-              "n": 110,
-              "median": -0.8,
-              "p90": 67.5
+              "n": 107,
+              "median": -2.0,
+              "p90": 48.1
             }
           }
         },
         "forward|climax|false-lead": {
           "survival_depths": {
-            "1": 24,
-            "2": 13,
-            "3": 18,
-            "4": 12,
-            "5": 25
+            "1": 27,
+            "2": 15,
+            "3": 20,
+            "4": 13,
+            "5": 29
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 55,
-              "median": 1.5,
-              "p90": 60.3
+              "n": 62,
+              "median": 1.8,
+              "p90": 61.9
             },
             "shallow": {
-              "n": 37,
-              "median": 0.0,
-              "p90": 67.4
+              "n": 42,
+              "median": 0.8,
+              "p90": 70.5
             }
           }
         },
@@ -1774,62 +1773,62 @@
           "survival_depths": {
             "1": 10,
             "2": 7,
-            "3": 5,
-            "4": 2,
-            "5": 9
+            "3": 4,
+            "4": 1,
+            "5": 14
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 16,
-              "median": 1.5,
-              "p90": 30.8
+              "n": 19,
+              "median": 1.0,
+              "p90": 25.9
             },
             "shallow": {
               "n": 17,
-              "median": -11.0,
-              "p90": 24.7
+              "median": -9.5,
+              "p90": 37.4
             }
           }
         },
         "forward|rv-anomaly|false-lead": {
           "survival_depths": {
-            "1": 850,
-            "2": 277,
-            "3": 363,
-            "4": 228,
-            "5": 968
+            "1": 918,
+            "2": 306,
+            "3": 399,
+            "4": 250,
+            "5": 1026
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 1559,
+              "n": 1675,
               "median": 1.5,
-              "p90": 64.2
+              "p90": 62.5
             },
             "shallow": {
-              "n": 1127,
-              "median": 1.0,
+              "n": 1224,
+              "median": 0.0,
               "p90": 61.5
             }
           }
         },
         "forward|rv-anomaly|true-lead": {
           "survival_depths": {
-            "1": 253,
-            "2": 82,
-            "3": 81,
-            "4": 35,
-            "5": 133
+            "1": 266,
+            "2": 87,
+            "3": 79,
+            "4": 41,
+            "5": 178
           },
           "outcome_by_depth": {
             "deep": {
-              "n": 249,
-              "median": -8.5,
-              "p90": 21.6
+              "n": 298,
+              "median": -6.8,
+              "p90": 22.0
             },
             "shallow": {
-              "n": 335,
+              "n": 353,
               "median": -6.0,
-              "p90": 25.0
+              "p90": 27.0
             }
           }
         }

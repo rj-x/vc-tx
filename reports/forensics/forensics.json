@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL trade forensics \u2014 luck priced; candidate-generation only, read at an operator+reviewer sitting; questions through the front door; never validation",
-  "engine_commit": "7729a232fd7efd1ccadcc2561f27ae33108641c6",
+  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
   "min_cell_n": 25,
   "min_side_n": 10,
   "split_min_pp": 10.0,

@@ -2,44 +2,64 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `729f4cc79` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficiency; register-16 family; the built half is the register-95 deceleration class). VOCABULARY, not a signal: efficiency ratio = |net move| / path length over the trailing 15 x 1M bars (eff15) and the UTC trading day to date (eff_sess, day convention FLAGGED). A SECOND LENS beside the 1M phase tracker, never a replacement. Customers: the capture study's efficiency-at-entry split (cut at the store's own median — parameter-free), the per-market track (future). Consumers price their own fields.
+Engine `961443605` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficiency; register-16 family; the built half is the register-95 deceleration class). VOCABULARY, not a signal: efficiency ratio = |net move| / path length over the trailing 15 x 1M bars (eff15) and the UTC trading day to date (eff_sess, day convention FLAGGED). A SECOND LENS beside the 1M phase tracker, never a replacement. Customers: the capture study's efficiency-at-entry split (cut at the store's own median — parameter-free), the per-market track (future). Consumers price their own fields.
 
-## uk100fut (47114 1M bars; eff15 store median 0.227)
-
-| window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
-|---|---|---|---|---|
-| backtest | asia | 0.236 [0.044..0.557] | 0.006 [0.004..0.012] | 14632 |
-| backtest | dead | 0.241 [0.043..0.575] | 0.006 [0.004..0.011] | 5171 |
-| backtest | london | 0.22 [0.041..0.534] | 0.006 [0.004..0.012] | 13650 |
-| backtest | ny_only | 0.214 [0.037..0.522] | 0.006 [0.004..0.012] | 9446 |
-| backtest | overlap | 0.233 [0.045..0.533] | 0.006 [0.003..0.012] | 4200 |
-
-## ger40fut (39820 1M bars; eff15 store median 0.229)
+## uk100fut (47856 1M bars; eff15 store median 0.227)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
-| backtest | asia | 0.233 [0.044..0.543] | 0.015 [0.009..0.018] | 12072 |
-| backtest | dead | 0.269 [0.049..0.64] | 0.015 [0.01..0.018] | 4334 |
-| backtest | london | 0.221 [0.042..0.508] | 0.014 [0.009..0.018] | 11700 |
-| backtest | ny_only | 0.22 [0.041..0.518] | 0.014 [0.009..0.017] | 8099 |
-| backtest | overlap | 0.214 [0.039..0.514] | 0.013 [0.007..0.018] | 3600 |
+| backtest | asia | 0.253 [0.049..0.565] | 0.068 [0.013..0.197] | 6717 |
+| backtest | dead | 0.234 [0.041..0.566] | 0.034 [0.005..0.066] | 2485 |
+| backtest | london | 0.232 [0.043..0.559] | 0.023 [0.004..0.077] | 6240 |
+| backtest | ny_only | 0.227 [0.039..0.554] | 0.029 [0.004..0.067] | 4320 |
+| backtest | overlap | 0.237 [0.048..0.533] | 0.025 [0.007..0.061] | 1920 |
+| forward | asia | 0.234 [0.045..0.593] | 0.066 [0.01..0.207] | 4582 |
+| forward | dead | 0.238 [0.048..0.593] | 0.024 [0.004..0.059] | 1469 |
+| forward | london | 0.214 [0.043..0.518] | 0.025 [0.004..0.073] | 4222 |
+| forward | ny_only | 0.207 [0.037..0.494] | 0.025 [0.005..0.058] | 2968 |
+| forward | overlap | 0.247 [0.042..0.59] | 0.024 [0.006..0.074] | 1225 |
 
-## nas100fut (41213 1M bars; eff15 store median 0.235)
-
-| window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
-|---|---|---|---|---|
-| backtest | asia | 0.229 [0.041..0.538] | 0.005 [0.002..0.014] | 12600 |
-| backtest | dead | 0.245 [0.049..0.565] | 0.005 [0.002..0.014] | 5198 |
-| backtest | london | 0.239 [0.045..0.539] | 0.005 [0.002..0.013] | 11700 |
-| backtest | ny_only | 0.226 [0.041..0.518] | 0.006 [0.002..0.014] | 8100 |
-| backtest | overlap | 0.239 [0.047..0.541] | 0.006 [0.002..0.016] | 3600 |
-
-## us30fut (41185 1M bars; eff15 store median 0.216)
+## ger40fut (41964 1M bars; eff15 store median 0.229)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
-| backtest | asia | 0.219 [0.041..0.527] | 0.006 [0.003..0.016] | 12592 |
-| backtest | dead | 0.205 [0.037..0.522] | 0.007 [0.003..0.017] | 5178 |
-| backtest | london | 0.222 [0.041..0.523] | 0.006 [0.003..0.015] | 11700 |
-| backtest | ny_only | 0.207 [0.039..0.505] | 0.007 [0.003..0.014] | 8100 |
-| backtest | overlap | 0.218 [0.039..0.516] | 0.007 [0.003..0.014] | 3600 |
+| backtest | asia | 0.237 [0.042..0.563] | 0.053 [0.009..0.193] | 4440 |
+| backtest | dead | 0.268 [0.046..0.666] | 0.037 [0.009..0.111] | 1711 |
+| backtest | london | 0.226 [0.042..0.515] | 0.046 [0.006..0.091] | 4290 |
+| backtest | ny_only | 0.226 [0.039..0.516] | 0.028 [0.004..0.075] | 2970 |
+| backtest | overlap | 0.21 [0.041..0.487] | 0.031 [0.006..0.069] | 1320 |
+| forward | asia | 0.222 [0.042..0.553] | 0.058 [0.009..0.238] | 4832 |
+| forward | dead | 0.246 [0.044..0.589] | 0.042 [0.004..0.118] | 1650 |
+| forward | london | 0.226 [0.045..0.519] | 0.044 [0.006..0.102] | 4612 |
+| forward | ny_only | 0.234 [0.047..0.537] | 0.038 [0.002..0.061] | 3240 |
+| forward | overlap | 0.227 [0.04..0.531] | 0.044 [0.006..0.066] | 1345 |
+
+## nas100fut (43456 1M bars; eff15 store median 0.234)
+
+| window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
+|---|---|---|---|---|
+| backtest | asia | 0.23 [0.041..0.529] | 0.07 [0.013..0.2] | 4620 |
+| backtest | dead | 0.25 [0.05..0.589] | 0.043 [0.009..0.075] | 2022 |
+| backtest | london | 0.241 [0.046..0.523] | 0.03 [0.007..0.091] | 4290 |
+| backtest | ny_only | 0.224 [0.039..0.534] | 0.039 [0.004..0.086] | 2970 |
+| backtest | overlap | 0.263 [0.06..0.594] | 0.051 [0.013..0.089] | 1320 |
+| forward | asia | 0.233 [0.041..0.551] | 0.066 [0.01..0.191] | 5040 |
+| forward | dead | 0.251 [0.051..0.565] | 0.034 [0.004..0.285] | 2067 |
+| forward | london | 0.23 [0.044..0.535] | 0.052 [0.004..0.1] | 4613 |
+| forward | ny_only | 0.233 [0.045..0.52] | 0.023 [0.004..0.05] | 3240 |
+| forward | overlap | 0.22 [0.043..0.479] | 0.025 [0.004..0.085] | 1345 |
+
+## us30fut (43427 1M bars; eff15 store median 0.216)
+
+| window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
+|---|---|---|---|---|
+| backtest | asia | 0.215 [0.043..0.526] | 0.069 [0.01..0.179] | 4620 |
+| backtest | dead | 0.206 [0.035..0.547] | 0.048 [0.005..0.093] | 2021 |
+| backtest | london | 0.227 [0.04..0.541] | 0.054 [0.01..0.095] | 4290 |
+| backtest | ny_only | 0.208 [0.041..0.501] | 0.041 [0.013..0.08] | 2970 |
+| backtest | overlap | 0.229 [0.041..0.526] | 0.04 [0.01..0.104] | 1320 |
+| forward | asia | 0.231 [0.042..0.533] | 0.053 [0.007..0.244] | 5040 |
+| forward | dead | 0.194 [0.035..0.5] | 0.024 [0.016..0.124] | 2061 |
+| forward | london | 0.213 [0.04..0.531] | 0.045 [0.01..0.108] | 4613 |
+| forward | ny_only | 0.223 [0.04..0.518] | 0.023 [0.007..0.078] | 3240 |
+| forward | overlap | 0.218 [0.038..0.497] | 0.04 [0.007..0.079] | 1345 |
