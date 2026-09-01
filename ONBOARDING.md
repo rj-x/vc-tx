@@ -1,13 +1,13 @@
 # vc-tx Collaborator Onboarding — Claude (chat) instance
 
-**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 129). Sections
+**Core last revised:** 2026-08-31 (register 98 restructure; §4 refreshed at register 133). Sections
 1–3 and 5–7 change slowly but DO change. §4 is the CURRENT-STATE
 section: 80% pointers to generated artifacts, plus the few facts only
 prose can carry, each citing its register entry. **On any conflict
 between this file and a repo doc or artifact, the repo wins — and the
 divergence is itself a finding: flag it and propose the edit.**
 
-**Register-current-through: 129** — the marker §7 maintains. The weekly
+**Register-current-through: 133** — the marker §7 maintains. The weekly
 campaign warns (`!! ONBOARDING STALENESS`) when this lags the register
 by more than 3 entries.
 
@@ -261,6 +261,13 @@ that moves):**
     held:high). The conditioning matrix's field size now prints in its
     header (9 dims — the field carries no permutation null yet,
     stated). The session-closure rule is standing (§2, register 118).
+    THE VOLATILITY THREAD (registers 130–133): atr_pctl per trade; the
+    R-OP2 vol candidate awaits its mechanism sentence; the pause
+    counterfactual read AGAINST the pause (forward negative, no cell
+    beats its random-book floor); the conditional open-pause cut
+    carries a stated post-hoc fence — enactment reads forward/sealed
+    at measurable n, per-market scoped; vol_gate composes, never
+    clones (register 132).
 14. **Narrative-doctrine stress, recorded not ruled (register 110).**
     The survey's consistency structure is not field-significant on any
     leg (home trajectory 13/20 at percentile 100 on 2026-08-23 →
