@@ -535,6 +535,9 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.vol_pause",           # register 132 (the pause
                                                 # counterfactual; weekly
                                                 # retest on new tape)
+                "backtest.open_pause",          # register 133 (the
+                                                # conditional open cut;
+                                                # post-hoc fence stated)
                 "backtest.narrative_survey", "backtest.trade_layer",
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",
