@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL seam & gap census \u2014 measurement, never validation; gap-fill folk strategy NOT registered (mint-on-lift only)",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "buckets_atr_FLAGGED": [
     0.25,
     1.0
@@ -10,7 +10,7 @@
       "instrument": "uk100fut",
       "spread_pts": 1.3,
       "status": "canonical",
-      "n_live_bars": 47856,
+      "n_live_bars": 52376,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -432,7 +432,7 @@
       "micro": {
         "backtest": {
           "n": 85,
-          "per_1000_bars": 1.78,
+          "per_1000_bars": 1.62,
           "median_abs_atr": 0.122,
           "session_share": {
             "asia": 37.6,
@@ -466,7 +466,7 @@
         },
         "forward": {
           "n": 35,
-          "per_1000_bars": 0.73,
+          "per_1000_bars": 0.67,
           "median_abs_atr": 0.315,
           "session_share": {
             "asia": 62.9,
@@ -521,7 +521,7 @@
       "instrument": "ger40fut",
       "spread_pts": 1.5,
       "status": "canonical",
-      "n_live_bars": 41964,
+      "n_live_bars": 46439,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -885,7 +885,7 @@
       "micro": {
         "backtest": {
           "n": 257,
-          "per_1000_bars": 6.12,
+          "per_1000_bars": 5.53,
           "median_abs_atr": 0.079,
           "session_share": {
             "asia": 93.0,
@@ -918,7 +918,7 @@
         },
         "forward": {
           "n": 75,
-          "per_1000_bars": 1.79,
+          "per_1000_bars": 1.62,
           "median_abs_atr": 0.142,
           "session_share": {
             "asia": 85.3,
@@ -973,7 +973,7 @@
       "instrument": "nas100fut",
       "spread_pts": 1.8,
       "status": "canonical",
-      "n_live_bars": 43456,
+      "n_live_bars": 48082,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -1366,7 +1366,7 @@
       "micro": {
         "backtest": {
           "n": 10,
-          "per_1000_bars": 0.23,
+          "per_1000_bars": 0.21,
           "median_abs_atr": 0.053,
           "session_share": {
             "dead": 40.0,
@@ -1399,7 +1399,7 @@
         },
         "forward": {
           "n": 8,
-          "per_1000_bars": 0.18,
+          "per_1000_bars": 0.17,
           "median_abs_atr": 0.095,
           "session_share": {
             "dead": 25.0,
@@ -1453,7 +1453,7 @@
       "instrument": "us30fut",
       "spread_pts": 2.6,
       "status": "canonical",
-      "n_live_bars": 43427,
+      "n_live_bars": 48048,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -1788,7 +1788,7 @@
       "micro": {
         "backtest": {
           "n": 41,
-          "per_1000_bars": 0.94,
+          "per_1000_bars": 0.85,
           "median_abs_atr": 0.065,
           "session_share": {
             "asia": 7.3,
@@ -1822,7 +1822,7 @@
         },
         "forward": {
           "n": 17,
-          "per_1000_bars": 0.39,
+          "per_1000_bars": 0.35,
           "median_abs_atr": 0.101,
           "session_share": {
             "asia": 11.8,

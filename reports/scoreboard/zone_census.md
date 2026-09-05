@@ -2,108 +2,108 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_census + AMENDMENT_zone_census_v2_ladder, registers 95/96). The operator's instinct — significant reversals, relatively recent, 'not last year' — gets its mechanical values FROM THE TABLE: every rung is an existing convention or the source's own structure (reversal multiple in ['1.5', '3']xATR(H4) — the registered multiple and its double; extreme = the [1, 3, 5]-session high/low when formed; freshness bins from the same session ladder). v1 (x1.5, any) is the loosest rung and the NULL ANCHOR. STATISTIC SHAPE (74-B): per-rung pooled in-zone initiation vs the ZONE-CONDITIONED base (density-vs-lift curve); freshness = the same lift by age bin and touch number, signals pooled per instrument (a zone property, not a signal claim); per-signal cells per rung in the JSON. Cells n<10 unmeasurable. Band = the ratified retest band (0.25xATR15). MINT-ON-LIFT ONLY, front door; no pooling across instruments.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_zone_census + AMENDMENT_zone_census_v2_ladder, registers 95/96). The operator's instinct — significant reversals, relatively recent, 'not last year' — gets its mechanical values FROM THE TABLE: every rung is an existing convention or the source's own structure (reversal multiple in ['1.5', '3']xATR(H4) — the registered multiple and its double; extreme = the [1, 3, 5]-session high/low when formed; freshness bins from the same session ladder). v1 (x1.5, any) is the loosest rung and the NULL ANCHOR. STATISTIC SHAPE (74-B): per-rung pooled in-zone initiation vs the ZONE-CONDITIONED base (density-vs-lift curve); freshness = the same lift by age bin and touch number, signals pooled per instrument (a zone property, not a signal claim); per-signal cells per rung in the JSON. Cells n<10 unmeasurable. Band = the ratified retest band (0.25xATR15). MINT-ON-LIFT ONLY, front door; no pooling across instruments.
 
-## uk100fut — H4 store 3208 bars (2024-08-11 → 2026-09-01)
+## uk100fut — H4 store 3227 bars (2024-08-11 → 2026-09-04)
 
 ### Density vs lift (the ladder; pooled in-zone initiation vs zone-conditioned base, per window)
 
 | rung | zones | active-at-once | in-zone bars % | bt in n | bt in % | bt base % | bt lift | fwd in n | fwd in % | fwd base % | fwd lift |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| x1.5/any | 591 | 131 | 21.1 | 424 | 21.7 | 25.1 | -3.4pp | 336 | 19.9 | 18.2 | +1.7pp |
-| x1.5/1s | 587 | 131 | 21.1 | 424 | 21.7 | 25.1 | -3.4pp | 336 | 19.9 | 18.2 | +1.7pp |
-| x1.5/3s | 307 | 59 | 9.3 | 222 | 13.1 | 22.1 | -9.0pp | 119 | 26.1 | 17.8 | +8.3pp |
-| x1.5/5s | 203 | 38 | 7.7 | 220 | 13.2 | 21.8 | -8.6pp | 112 | 27.7 | 18.9 | +8.8pp |
-| x3/any | 244 | 77 | 6.6 | 214 | 22.9 | 24.3 | -1.4pp | 110 | 10.9 | 16.4 | -5.5pp |
-| x3/1s | 242 | 77 | 6.6 | 214 | 22.9 | 24.3 | -1.4pp | 110 | 10.9 | 16.4 | -5.5pp |
-| x3/3s | 128 | 41 | 4.6 | 206 | 21.8 | 23.0 | -1.2pp | 12 | 0.0 | 11.4 | -11.4pp |
-| x3/5s | 90 | 28 | 4.5 | 204 | 22.1 | 22.7 | -0.6pp | 12 | 0.0 | 11.4 | -11.4pp |
+| x1.5/any | 597 | 134 | 21.1 | 424 | 22.9 | 25.4 | -2.5pp | 336 | 19.9 | 13.8 | +6.1pp |
+| x1.5/1s | 593 | 134 | 21.1 | 424 | 22.9 | 25.4 | -2.5pp | 336 | 19.9 | 13.8 | +6.1pp |
+| x1.5/3s | 308 | 60 | 9.0 | 222 | 13.1 | 22.2 | -9.1pp | 119 | 26.1 | 14.9 | +11.2pp |
+| x1.5/5s | 204 | 39 | 7.5 | 220 | 13.2 | 22.0 | -8.8pp | 112 | 27.7 | 15.4 | +12.3pp |
+| x3/any | 246 | 77 | 6.5 | 214 | 22.9 | 24.6 | -1.7pp | 110 | 10.9 | 12.7 | -1.8pp |
+| x3/1s | 244 | 77 | 6.5 | 214 | 22.9 | 24.6 | -1.7pp | 110 | 10.9 | 12.7 | -1.8pp |
+| x3/3s | 128 | 41 | 4.2 | 206 | 21.8 | 23.2 | -1.4pp | 12 | 0.0 | 11.4 | -11.4pp |
+| x3/5s | 90 | 28 | 4.1 | 204 | 22.1 | 22.9 | -0.8pp | 12 | 0.0 | 11.4 | -11.4pp |
 
 ### Freshness at rung x1.5/any (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | <=1 | 55 | 29.1 | 25.1 | +4.0pp |
-| age (sessions) | backtest | <=3 | 66 | 18.2 | 25.1 | -6.9pp |
-| age (sessions) | backtest | <=5 | 46 | 23.9 | 25.1 | -1.2pp |
-| age (sessions) | backtest | >5 | 257 | 20.6 | 25.1 | -4.5pp |
-| age (sessions) | forward | <=1 | 78 | 19.2 | 18.2 | +1.0pp |
-| age (sessions) | forward | <=3 | 53 | 37.7 | 18.2 | +19.5pp |
-| age (sessions) | forward | >5 | 205 | 15.6 | 18.2 | -2.6pp |
-| touch # | backtest | <=1 | °7 | 14.3 | 25.1 | -10.8pp |
-| touch # | backtest | <=2 | 17 | 23.5 | 25.1 | -1.6pp |
-| touch # | backtest | <=3 | 13 | 0.0 | 25.1 | -25.1pp |
-| touch # | backtest | >3 | 387 | 22.5 | 25.1 | -2.6pp |
-| touch # | forward | <=1 | 13 | 23.1 | 18.2 | +4.9pp |
-| touch # | forward | <=2 | °8 | 0.0 | 18.2 | -18.2pp |
-| touch # | forward | <=3 | °8 | 25.0 | 18.2 | +6.8pp |
-| touch # | forward | >3 | 307 | 20.2 | 18.2 | +2.0pp |
+| age (sessions) | backtest | <=1 | 55 | 29.1 | 25.4 | +3.7pp |
+| age (sessions) | backtest | <=3 | 66 | 18.2 | 25.4 | -7.2pp |
+| age (sessions) | backtest | <=5 | 46 | 21.7 | 25.4 | -3.7pp |
+| age (sessions) | backtest | >5 | 257 | 23.0 | 25.4 | -2.4pp |
+| age (sessions) | forward | <=1 | 78 | 19.2 | 13.8 | +5.4pp |
+| age (sessions) | forward | <=3 | 53 | 37.7 | 13.8 | +23.9pp |
+| age (sessions) | forward | >5 | 205 | 15.6 | 13.8 | +1.8pp |
+| touch # | backtest | <=1 | °7 | 14.3 | 25.4 | -11.1pp |
+| touch # | backtest | <=2 | 17 | 23.5 | 25.4 | -1.9pp |
+| touch # | backtest | <=3 | 13 | 0.0 | 25.4 | -25.4pp |
+| touch # | backtest | >3 | 387 | 23.8 | 25.4 | -1.6pp |
+| touch # | forward | <=1 | 13 | 23.1 | 13.8 | +9.3pp |
+| touch # | forward | <=2 | °8 | 0.0 | 13.8 | -13.8pp |
+| touch # | forward | <=3 | °8 | 25.0 | 13.8 | +11.2pp |
+| touch # | forward | >3 | 307 | 20.2 | 13.8 | +6.4pp |
 
 ### Freshness at rung x3/5s (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | <=1 | °3 | 0.0 | 22.7 | -22.7pp |
-| age (sessions) | backtest | <=3 | 45 | 13.3 | 22.7 | -9.4pp |
-| age (sessions) | backtest | >5 | 156 | 25.0 | 22.7 | +2.3pp |
+| age (sessions) | backtest | <=1 | °3 | 0.0 | 22.9 | -22.9pp |
+| age (sessions) | backtest | <=3 | 45 | 13.3 | 22.9 | -9.6pp |
+| age (sessions) | backtest | >5 | 156 | 25.0 | 22.9 | +2.1pp |
 | age (sessions) | forward | >5 | 12 | 0.0 | 11.4 | -11.4pp |
-| touch # | backtest | <=1 | °6 | 33.3 | 22.7 | +10.6pp |
-| touch # | backtest | <=2 | °4 | 25.0 | 22.7 | +2.3pp |
-| touch # | backtest | <=3 | °4 | 50.0 | 22.7 | +27.3pp |
-| touch # | backtest | >3 | 190 | 21.1 | 22.7 | -1.6pp |
+| touch # | backtest | <=1 | °6 | 33.3 | 22.9 | +10.4pp |
+| touch # | backtest | <=2 | °4 | 25.0 | 22.9 | +2.1pp |
+| touch # | backtest | <=3 | °4 | 50.0 | 22.9 | +27.1pp |
+| touch # | backtest | >3 | 190 | 21.1 | 22.9 | -1.8pp |
 | touch # | forward | >3 | 12 | 0.0 | 11.4 | -11.4pp |
 
 ### Location family at the null anchor x1.5/any (measurable cells; all rungs in the JSON)
 
 | signal | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| S0-H11 | backtest | in | 58 | 19.0 | 25.1 | -6.1pp |
-| S0-H11 | backtest | out | 258 | 24.4 | 23.4 | +1.0pp |
-| S0-H11 | forward | in | 39 | 20.5 | 18.2 | +2.3pp |
-| S0-H11 | forward | out | 148 | 13.5 | 21.1 | -7.6pp |
-| S0-H6 | backtest | in | 15 | 0.0 | 25.1 | -25.1pp |
-| S0-H6 | backtest | out | 44 | 20.5 | 23.4 | -2.9pp |
-| S0-H6 | forward | in | 12 | 8.3 | 18.2 | -9.9pp |
-| S0-H6 | forward | out | 54 | 11.1 | 21.1 | -10.0pp |
-| S1-H11 | backtest | in | 12 | 0.0 | 25.1 | -25.1pp |
-| S1-H11 | backtest | out | 143 | 19.6 | 23.4 | -3.8pp |
-| S1-H11 | forward | in | 44 | 20.5 | 18.2 | +2.3pp |
-| S1-H11 | forward | out | 136 | 16.2 | 21.1 | -4.9pp |
+| S0-H11 | backtest | in | 58 | 27.6 | 25.4 | +2.2pp |
+| S0-H11 | backtest | out | 258 | 24.4 | 23.8 | +0.6pp |
+| S0-H11 | forward | in | 39 | 20.5 | 13.8 | +6.7pp |
+| S0-H11 | forward | out | 148 | 14.2 | 15.9 | -1.7pp |
+| S0-H6 | backtest | in | 15 | 0.0 | 25.4 | -25.4pp |
+| S0-H6 | backtest | out | 44 | 15.9 | 23.8 | -7.9pp |
+| S0-H6 | forward | in | 12 | 8.3 | 13.8 | -5.5pp |
+| S0-H6 | forward | out | 54 | 11.1 | 15.9 | -4.8pp |
+| S1-H11 | backtest | in | 12 | 0.0 | 25.4 | -25.4pp |
+| S1-H11 | backtest | out | 143 | 19.6 | 23.8 | -4.2pp |
+| S1-H11 | forward | in | 44 | 20.5 | 13.8 | +6.7pp |
+| S1-H11 | forward | out | 136 | 16.2 | 15.9 | +0.3pp |
 
-## ger40fut — H4 store 3091 bars (2024-08-19 → 2026-09-01)
+## ger40fut — H4 store 3111 bars (2024-08-19 → 2026-09-04)
 
 ### Density vs lift (the ladder; pooled in-zone initiation vs zone-conditioned base, per window)
 
 | rung | zones | active-at-once | in-zone bars % | bt in n | bt in % | bt base % | bt lift | fwd in n | fwd in % | fwd base % | fwd lift |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| x1.5/any | 551 | 79 | 13.3 | 104 | 11.5 | 20.5 | -9.0pp | 461 | 15.8 | 17.6 | -1.8pp |
-| x1.5/1s | 544 | 79 | 13.3 | 104 | 11.5 | 20.5 | -9.0pp | 461 | 15.8 | 17.6 | -1.8pp |
-| x1.5/3s | 278 | 37 | 6.1 | 89 | 11.2 | 18.9 | -7.7pp | 258 | 14.7 | 17.6 | -2.9pp |
-| x1.5/5s | 209 | 31 | 5.2 | 88 | 11.4 | 19.3 | -7.9pp | 212 | 16.0 | 18.7 | -2.7pp |
-| x3/any | 243 | 53 | 2.5 | 28 | 21.4 | 23.4 | -2.0pp | 38 | 7.9 | 8.8 | -0.9pp |
-| x3/1s | 240 | 53 | 2.5 | 28 | 21.4 | 23.4 | -2.0pp | 38 | 7.9 | 8.8 | -0.9pp |
-| x3/3s | 116 | 20 | 0.2 | 14 | 28.6 | 53.6 | -25.0pp | °2 | 0.0 | 0.0 | +0.0pp |
-| x3/5s | 87 | 15 | 0.2 | 14 | 28.6 | 53.6 | -25.0pp | °2 | 0.0 | 0.0 | +0.0pp |
+| x1.5/any | 552 | 79 | 12.2 | 104 | 11.5 | 20.4 | -8.9pp | 461 | 15.8 | 17.1 | -1.3pp |
+| x1.5/1s | 545 | 79 | 12.2 | 104 | 11.5 | 20.4 | -8.9pp | 461 | 15.8 | 17.1 | -1.3pp |
+| x1.5/3s | 279 | 37 | 5.7 | 89 | 11.2 | 18.9 | -7.7pp | 258 | 14.7 | 16.4 | -1.7pp |
+| x1.5/5s | 210 | 31 | 4.9 | 88 | 11.4 | 19.3 | -7.9pp | 212 | 16.0 | 17.2 | -1.2pp |
+| x3/any | 244 | 53 | 2.2 | 28 | 21.4 | 23.3 | -1.9pp | 38 | 7.9 | 8.1 | -0.2pp |
+| x3/1s | 241 | 53 | 2.2 | 28 | 21.4 | 23.3 | -1.9pp | 38 | 7.9 | 8.1 | -0.2pp |
+| x3/3s | 117 | 21 | 0.2 | 14 | 28.6 | 53.6 | -25.0pp | °2 | 0.0 | 0.0 | +0.0pp |
+| x3/5s | 88 | 16 | 0.2 | 14 | 28.6 | 53.6 | -25.0pp | °2 | 0.0 | 0.0 | +0.0pp |
 
 ### Freshness at rung x1.5/any (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | <=1 | 74 | 13.5 | 20.5 | -7.0pp |
-| age (sessions) | backtest | <=3 | 14 | 14.3 | 20.5 | -6.2pp |
-| age (sessions) | backtest | >5 | 16 | 0.0 | 20.5 | -20.5pp |
-| age (sessions) | forward | <=1 | 117 | 19.7 | 17.6 | +2.1pp |
-| age (sessions) | forward | <=3 | 26 | 3.8 | 17.6 | -13.8pp |
-| age (sessions) | forward | <=5 | 74 | 5.4 | 17.6 | -12.2pp |
-| age (sessions) | forward | >5 | 244 | 18.4 | 17.6 | +0.8pp |
-| touch # | backtest | <=1 | °3 | 33.3 | 20.5 | +12.8pp |
-| touch # | backtest | <=2 | 10 | 0.0 | 20.5 | -20.5pp |
-| touch # | backtest | <=3 | °7 | 57.1 | 20.5 | +36.6pp |
-| touch # | backtest | >3 | 84 | 8.3 | 20.5 | -12.2pp |
-| touch # | forward | <=1 | 13 | 7.7 | 17.6 | -9.9pp |
-| touch # | forward | <=2 | 10 | 0.0 | 17.6 | -17.6pp |
-| touch # | forward | <=3 | °5 | 20.0 | 17.6 | +2.4pp |
-| touch # | forward | >3 | 433 | 16.4 | 17.6 | -1.2pp |
+| age (sessions) | backtest | <=1 | 74 | 13.5 | 20.4 | -6.9pp |
+| age (sessions) | backtest | <=3 | 14 | 14.3 | 20.4 | -6.1pp |
+| age (sessions) | backtest | >5 | 16 | 0.0 | 20.4 | -20.4pp |
+| age (sessions) | forward | <=1 | 117 | 19.7 | 17.1 | +2.6pp |
+| age (sessions) | forward | <=3 | 26 | 3.8 | 17.1 | -13.3pp |
+| age (sessions) | forward | <=5 | 74 | 5.4 | 17.1 | -11.7pp |
+| age (sessions) | forward | >5 | 244 | 18.4 | 17.1 | +1.3pp |
+| touch # | backtest | <=1 | °3 | 33.3 | 20.4 | +12.9pp |
+| touch # | backtest | <=2 | 10 | 0.0 | 20.4 | -20.4pp |
+| touch # | backtest | <=3 | °7 | 57.1 | 20.4 | +36.7pp |
+| touch # | backtest | >3 | 84 | 8.3 | 20.4 | -12.1pp |
+| touch # | forward | <=1 | 13 | 7.7 | 17.1 | -9.4pp |
+| touch # | forward | <=2 | 10 | 0.0 | 17.1 | -17.1pp |
+| touch # | forward | <=3 | °5 | 20.0 | 17.1 | +2.9pp |
+| touch # | forward | >3 | 433 | 16.4 | 17.1 | -0.7pp |
 
 ### Freshness at rung x3/5s (in-zone fires; signals pooled; lift vs the in-zone base)
 
@@ -121,61 +121,61 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_census + AMEND
 
 | signal | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| S0-H11 | backtest | in | 24 | 16.7 | 20.5 | -3.8pp |
+| S0-H11 | backtest | in | 24 | 16.7 | 20.4 | -3.7pp |
 | S0-H11 | backtest | out | 50 | 22.0 | 21.6 | +0.4pp |
-| S0-H11 | forward | in | 114 | 21.1 | 17.6 | +3.5pp |
-| S0-H11 | forward | out | 296 | 19.9 | 21.4 | -1.5pp |
-| S0-H13 | forward | out | 10 | 10.0 | 21.4 | -11.4pp |
+| S0-H11 | forward | in | 114 | 21.1 | 17.1 | +4.0pp |
+| S0-H11 | forward | out | 296 | 19.9 | 16.3 | +3.6pp |
+| S0-H13 | forward | out | 10 | 10.0 | 16.3 | -6.3pp |
 | S0-H6 | backtest | out | 35 | 2.9 | 21.6 | -18.7pp |
-| S0-H6 | forward | in | 11 | 9.1 | 17.6 | -8.5pp |
-| S0-H6 | forward | out | 86 | 29.1 | 21.4 | +7.7pp |
-| S1-H11 | backtest | out | 301 | 21.9 | 21.6 | +0.3pp |
-| S1-H11 | forward | in | 54 | 11.1 | 17.6 | -6.5pp |
-| S1-H11 | forward | out | 165 | 23.0 | 21.4 | +1.6pp |
+| S0-H6 | forward | in | 11 | 9.1 | 17.1 | -8.0pp |
+| S0-H6 | forward | out | 86 | 29.1 | 16.3 | +12.8pp |
+| S1-H11 | backtest | out | 301 | 20.9 | 21.6 | -0.7pp |
+| S1-H11 | forward | in | 54 | 11.1 | 17.1 | -6.0pp |
+| S1-H11 | forward | out | 165 | 23.0 | 16.3 | +6.7pp |
 
-## nas100fut — H4 store 3139 bars (2024-08-19 → 2026-09-01)
+## nas100fut — H4 store 3159 bars (2024-08-19 → 2026-09-04)
 
 ### Density vs lift (the ladder; pooled in-zone initiation vs zone-conditioned base, per window)
 
 | rung | zones | active-at-once | in-zone bars % | bt in n | bt in % | bt base % | bt lift | fwd in n | fwd in % | fwd base % | fwd lift |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| x1.5/any | 577 | 95 | 13.2 | 150 | 26.0 | 18.4 | +7.6pp | 498 | 21.3 | 23.4 | -2.1pp |
-| x1.5/1s | 572 | 95 | 13.2 | 150 | 26.0 | 18.4 | +7.6pp | 498 | 21.3 | 23.4 | -2.1pp |
-| x1.5/3s | 286 | 46 | 6.6 | 54 | 18.5 | 16.8 | +1.7pp | 327 | 25.7 | 24.5 | +1.2pp |
-| x1.5/5s | 210 | 36 | 4.1 | 35 | 28.6 | 19.2 | +9.4pp | 91 | 17.6 | 20.1 | -2.5pp |
-| x3/any | 301 | 68 | 11.1 | 109 | 5.5 | 21.0 | -15.5pp | 127 | 16.5 | 22.2 | -5.7pp |
-| x3/1s | 297 | 68 | 11.1 | 109 | 5.5 | 21.0 | -15.5pp | 127 | 16.5 | 22.2 | -5.7pp |
-| x3/3s | 153 | 32 | 5.1 | 32 | 0.0 | 20.1 | -20.1pp | 66 | 19.7 | 15.0 | +4.7pp |
-| x3/5s | 113 | 23 | 2.2 | °5 | 0.0 | 20.5 | -20.5pp | 13 | 7.7 | 6.2 | +1.5pp |
+| x1.5/any | 579 | 96 | 13.9 | 150 | 26.0 | 18.6 | +7.4pp | 498 | 22.7 | 17.4 | +5.3pp |
+| x1.5/1s | 574 | 96 | 13.9 | 150 | 26.0 | 18.6 | +7.4pp | 498 | 22.7 | 17.4 | +5.3pp |
+| x1.5/3s | 288 | 47 | 6.8 | 54 | 18.5 | 17.3 | +1.2pp | 327 | 25.1 | 19.1 | +6.0pp |
+| x1.5/5s | 210 | 36 | 4.1 | 35 | 28.6 | 19.8 | +8.8pp | 91 | 17.6 | 14.6 | +3.0pp |
+| x3/any | 302 | 68 | 10.9 | 109 | 5.5 | 21.3 | -15.8pp | 127 | 23.6 | 16.8 | +6.8pp |
+| x3/1s | 298 | 68 | 10.9 | 109 | 5.5 | 21.3 | -15.8pp | 127 | 23.6 | 16.8 | +6.8pp |
+| x3/3s | 154 | 33 | 5.0 | 32 | 0.0 | 20.7 | -20.7pp | 66 | 19.7 | 11.5 | +8.2pp |
+| x3/5s | 113 | 23 | 2.0 | °5 | 0.0 | 21.2 | -21.2pp | 13 | 7.7 | 6.2 | +1.5pp |
 
 ### Freshness at rung x1.5/any (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | <=1 | 49 | 24.5 | 18.4 | +6.1pp |
-| age (sessions) | backtest | <=3 | °1 | 0.0 | 18.4 | -18.4pp |
-| age (sessions) | backtest | <=5 | 23 | 4.3 | 18.4 | -14.1pp |
-| age (sessions) | backtest | >5 | 77 | 33.8 | 18.4 | +15.4pp |
-| age (sessions) | forward | <=1 | 64 | 18.8 | 23.4 | -4.6pp |
-| age (sessions) | forward | <=3 | 58 | 15.5 | 23.4 | -7.9pp |
-| age (sessions) | forward | <=5 | 228 | 27.2 | 23.4 | +3.8pp |
-| age (sessions) | forward | >5 | 148 | 15.5 | 23.4 | -7.9pp |
-| touch # | backtest | <=1 | °5 | 0.0 | 18.4 | -18.4pp |
-| touch # | backtest | <=2 | °2 | 0.0 | 18.4 | -18.4pp |
-| touch # | backtest | <=3 | °2 | 0.0 | 18.4 | -18.4pp |
-| touch # | backtest | >3 | 141 | 27.7 | 18.4 | +9.3pp |
-| touch # | forward | <=1 | 12 | 8.3 | 23.4 | -15.1pp |
-| touch # | forward | <=2 | 15 | 6.7 | 23.4 | -16.7pp |
-| touch # | forward | <=3 | 12 | 0.0 | 23.4 | -23.4pp |
-| touch # | forward | >3 | 459 | 22.7 | 23.4 | -0.7pp |
+| age (sessions) | backtest | <=1 | 49 | 24.5 | 18.6 | +5.9pp |
+| age (sessions) | backtest | <=3 | °1 | 0.0 | 18.6 | -18.6pp |
+| age (sessions) | backtest | <=5 | 23 | 4.3 | 18.6 | -14.3pp |
+| age (sessions) | backtest | >5 | 77 | 33.8 | 18.6 | +15.2pp |
+| age (sessions) | forward | <=1 | 64 | 18.8 | 17.4 | +1.4pp |
+| age (sessions) | forward | <=3 | 58 | 15.5 | 17.4 | -1.9pp |
+| age (sessions) | forward | <=5 | 228 | 27.2 | 17.4 | +9.8pp |
+| age (sessions) | forward | >5 | 148 | 20.3 | 17.4 | +2.9pp |
+| touch # | backtest | <=1 | °5 | 0.0 | 18.6 | -18.6pp |
+| touch # | backtest | <=2 | °2 | 0.0 | 18.6 | -18.6pp |
+| touch # | backtest | <=3 | °2 | 0.0 | 18.6 | -18.6pp |
+| touch # | backtest | >3 | 141 | 27.7 | 18.6 | +9.1pp |
+| touch # | forward | <=1 | 12 | 8.3 | 17.4 | -9.1pp |
+| touch # | forward | <=2 | 15 | 6.7 | 17.4 | -10.7pp |
+| touch # | forward | <=3 | 12 | 0.0 | 17.4 | -17.4pp |
+| touch # | forward | >3 | 459 | 24.2 | 17.4 | +6.8pp |
 
 ### Freshness at rung x3/5s (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | >5 | °5 | 0.0 | 20.5 | -20.5pp |
+| age (sessions) | backtest | >5 | °5 | 0.0 | 21.2 | -21.2pp |
 | age (sessions) | forward | >5 | 13 | 7.7 | 6.2 | +1.5pp |
-| touch # | backtest | >3 | °5 | 0.0 | 20.5 | -20.5pp |
+| touch # | backtest | >3 | °5 | 0.0 | 21.2 | -21.2pp |
 | touch # | forward | <=1 | °1 | 0.0 | 6.2 | -6.2pp |
 | touch # | forward | >3 | 12 | 8.3 | 6.2 | +2.1pp |
 
@@ -184,49 +184,49 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_census + AMEND
 | signal | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
 | S0-H11 | backtest | out | 254 | 18.1 | 22.0 | -3.9pp |
-| S0-H11 | forward | in | 153 | 24.2 | 23.4 | +0.8pp |
-| S0-H11 | forward | out | 235 | 14.0 | 21.2 | -7.2pp |
+| S0-H11 | forward | in | 153 | 24.2 | 17.4 | +6.8pp |
+| S0-H11 | forward | out | 235 | 14.0 | 16.9 | -2.9pp |
 | S0-H6 | backtest | out | 27 | 18.5 | 22.0 | -3.5pp |
-| S0-H6 | forward | out | 75 | 22.7 | 21.2 | +1.5pp |
+| S0-H6 | forward | out | 75 | 22.7 | 16.9 | +5.8pp |
 | S1-H11 | backtest | out | 171 | 13.5 | 22.0 | -8.5pp |
-| S1-H11 | forward | in | 10 | 10.0 | 23.4 | -13.4pp |
-| S1-H11 | forward | out | 387 | 23.3 | 21.2 | +2.1pp |
+| S1-H11 | forward | in | 10 | 20.0 | 17.4 | +2.6pp |
+| S1-H11 | forward | out | 387 | 23.5 | 16.9 | +6.6pp |
 
-## us30fut — H4 store 3139 bars (2024-08-19 → 2026-09-01)
+## us30fut — H4 store 3159 bars (2024-08-19 → 2026-09-04)
 
 ### Density vs lift (the ladder; pooled in-zone initiation vs zone-conditioned base, per window)
 
 | rung | zones | active-at-once | in-zone bars % | bt in n | bt in % | bt base % | bt lift | fwd in n | fwd in % | fwd base % | fwd lift |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| x1.5/any | 609 | 99 | 11.2 | 339 | 15.0 | 22.3 | -7.3pp | 225 | 16.9 | 19.8 | -2.9pp |
-| x1.5/1s | 605 | 98 | 11.2 | 339 | 15.0 | 22.3 | -7.3pp | 225 | 16.9 | 19.8 | -2.9pp |
-| x1.5/3s | 306 | 43 | 4.6 | 142 | 9.2 | 21.8 | -12.6pp | 34 | 0.0 | 0.7 | -0.7pp |
-| x1.5/5s | 218 | 27 | 3.3 | 125 | 8.0 | 21.9 | -13.9pp | 32 | 0.0 | 0.0 | +0.0pp |
-| x3/any | 291 | 65 | 6.3 | 388 | 12.1 | 16.8 | -4.7pp | 129 | 26.4 | 23.0 | +3.4pp |
-| x3/1s | 290 | 64 | 6.3 | 388 | 12.1 | 16.8 | -4.7pp | 129 | 26.4 | 23.0 | +3.4pp |
-| x3/3s | 149 | 31 | 0.6 | 77 | 10.4 | 13.7 | -3.3pp | °3 | 0.0 | 50.0 | -50.0pp |
-| x3/5s | 110 | 21 | 0.3 | 44 | 6.8 | 9.7 | -2.9pp | °3 | 0.0 | 50.0 | -50.0pp |
+| x1.5/any | 611 | 99 | 11.3 | 339 | 13.6 | 21.2 | -7.6pp | 225 | 17.3 | 11.9 | +5.4pp |
+| x1.5/1s | 607 | 98 | 11.3 | 339 | 13.6 | 21.2 | -7.6pp | 225 | 17.3 | 11.9 | +5.4pp |
+| x1.5/3s | 308 | 44 | 4.8 | 142 | 9.2 | 21.3 | -12.1pp | 34 | 0.0 | 0.1 | -0.1pp |
+| x1.5/5s | 220 | 29 | 3.5 | 125 | 8.0 | 21.4 | -13.4pp | 32 | 0.0 | 0.0 | +0.0pp |
+| x3/any | 292 | 66 | 6.8 | 388 | 9.8 | 15.0 | -5.2pp | 129 | 27.9 | 12.0 | +15.9pp |
+| x3/1s | 291 | 65 | 6.8 | 388 | 9.8 | 15.0 | -5.2pp | 129 | 27.9 | 12.0 | +15.9pp |
+| x3/3s | 150 | 31 | 1.0 | 77 | 10.4 | 13.7 | -3.3pp | °3 | 0.0 | 0.9 | -0.9pp |
+| x3/5s | 111 | 22 | 0.8 | 44 | 6.8 | 9.7 | -2.9pp | °3 | 0.0 | 0.9 | -0.9pp |
 
 ### Freshness at rung x1.5/any (in-zone fires; signals pooled; lift vs the in-zone base)
 
 | split | window | bin | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| age (sessions) | backtest | <=1 | 65 | 3.1 | 22.3 | -19.2pp |
-| age (sessions) | backtest | <=3 | 49 | 18.4 | 22.3 | -3.9pp |
-| age (sessions) | backtest | <=5 | °1 | 0.0 | 22.3 | -22.3pp |
-| age (sessions) | backtest | >5 | 224 | 17.9 | 22.3 | -4.4pp |
-| age (sessions) | forward | <=1 | 28 | 3.6 | 19.8 | -16.2pp |
-| age (sessions) | forward | <=3 | 47 | 31.9 | 19.8 | +12.1pp |
-| age (sessions) | forward | <=5 | 57 | 26.3 | 19.8 | +6.5pp |
-| age (sessions) | forward | >5 | 93 | 7.5 | 19.8 | -12.3pp |
-| touch # | backtest | <=1 | 28 | 7.1 | 22.3 | -15.2pp |
-| touch # | backtest | <=2 | °4 | 0.0 | 22.3 | -22.3pp |
-| touch # | backtest | <=3 | °7 | 0.0 | 22.3 | -22.3pp |
-| touch # | backtest | >3 | 300 | 16.3 | 22.3 | -6.0pp |
-| touch # | forward | <=1 | 12 | 25.0 | 19.8 | +5.2pp |
-| touch # | forward | <=2 | 17 | 35.3 | 19.8 | +15.5pp |
-| touch # | forward | <=3 | °5 | 0.0 | 19.8 | -19.8pp |
-| touch # | forward | >3 | 191 | 15.2 | 19.8 | -4.6pp |
+| age (sessions) | backtest | <=1 | 65 | 3.1 | 21.2 | -18.1pp |
+| age (sessions) | backtest | <=3 | 49 | 16.3 | 21.2 | -4.9pp |
+| age (sessions) | backtest | <=5 | °1 | 0.0 | 21.2 | -21.2pp |
+| age (sessions) | backtest | >5 | 224 | 16.1 | 21.2 | -5.1pp |
+| age (sessions) | forward | <=1 | 28 | 3.6 | 11.9 | -8.3pp |
+| age (sessions) | forward | <=3 | 47 | 31.9 | 11.9 | +20.0pp |
+| age (sessions) | forward | <=5 | 57 | 28.1 | 11.9 | +16.2pp |
+| age (sessions) | forward | >5 | 93 | 7.5 | 11.9 | -4.4pp |
+| touch # | backtest | <=1 | 28 | 7.1 | 21.2 | -14.1pp |
+| touch # | backtest | <=2 | °4 | 0.0 | 21.2 | -21.2pp |
+| touch # | backtest | <=3 | °7 | 0.0 | 21.2 | -21.2pp |
+| touch # | backtest | >3 | 300 | 14.7 | 21.2 | -6.5pp |
+| touch # | forward | <=1 | 12 | 25.0 | 11.9 | +13.1pp |
+| touch # | forward | <=2 | 17 | 35.3 | 11.9 | +23.4pp |
+| touch # | forward | <=3 | °5 | 0.0 | 11.9 | -11.9pp |
+| touch # | forward | >3 | 191 | 15.7 | 11.9 | +3.8pp |
 
 ### Freshness at rung x3/5s (in-zone fires; signals pooled; lift vs the in-zone base)
 
@@ -235,24 +235,24 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_zone_census + AMEND
 | age (sessions) | backtest | <=1 | 30 | 0.0 | 9.7 | -9.7pp |
 | age (sessions) | backtest | <=3 | °4 | 0.0 | 9.7 | -9.7pp |
 | age (sessions) | backtest | >5 | 10 | 30.0 | 9.7 | +20.3pp |
-| age (sessions) | forward | <=1 | °3 | 0.0 | 50.0 | -50.0pp |
+| age (sessions) | forward | <=1 | °3 | 0.0 | 0.9 | -0.9pp |
 | touch # | backtest | <=1 | 10 | 0.0 | 9.7 | -9.7pp |
 | touch # | backtest | <=2 | °1 | 0.0 | 9.7 | -9.7pp |
 | touch # | backtest | <=3 | °1 | 0.0 | 9.7 | -9.7pp |
 | touch # | backtest | >3 | 32 | 9.4 | 9.7 | -0.3pp |
-| touch # | forward | <=1 | °2 | 0.0 | 50.0 | -50.0pp |
-| touch # | forward | <=2 | °1 | 0.0 | 50.0 | -50.0pp |
+| touch # | forward | <=1 | °2 | 0.0 | 0.9 | -0.9pp |
+| touch # | forward | <=2 | °1 | 0.0 | 0.9 | -0.9pp |
 
 ### Location family at the null anchor x1.5/any (measurable cells; all rungs in the JSON)
 
 | signal | window | zone | n | init % | base % | lift |
 |---|---|---|---|---|---|---|
-| S0-H11 | backtest | in | 46 | 19.6 | 22.3 | -2.7pp |
-| S0-H11 | backtest | out | 367 | 21.0 | 20.9 | +0.1pp |
-| S0-H11 | forward | in | 27 | 14.8 | 19.8 | -5.0pp |
-| S0-H11 | forward | out | 492 | 22.4 | 21.0 | +1.4pp |
-| S0-H6 | backtest | out | 48 | 6.2 | 20.9 | -14.7pp |
-| S0-H6 | forward | out | 77 | 23.4 | 21.0 | +2.4pp |
-| S1-H11 | backtest | out | 188 | 28.2 | 20.9 | +7.3pp |
-| S1-H11 | forward | in | 10 | 0.0 | 19.8 | -19.8pp |
-| S1-H11 | forward | out | 357 | 17.9 | 21.0 | -3.1pp |
+| S0-H11 | backtest | in | 46 | 19.6 | 21.2 | -1.6pp |
+| S0-H11 | backtest | out | 367 | 21.5 | 21.1 | +0.4pp |
+| S0-H11 | forward | in | 27 | 14.8 | 11.9 | +2.9pp |
+| S0-H11 | forward | out | 492 | 22.8 | 17.2 | +5.6pp |
+| S0-H6 | backtest | out | 48 | 10.4 | 21.1 | -10.7pp |
+| S0-H6 | forward | out | 77 | 31.2 | 17.2 | +14.0pp |
+| S1-H11 | backtest | out | 188 | 25.0 | 21.1 | +3.9pp |
+| S1-H11 | forward | in | 10 | 0.0 | 11.9 | -11.9pp |
+| S1-H11 | forward | out | 357 | 18.2 | 17.2 | +1.0pp |

@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL circuit-breaker counterfactual \u2014 exposure control measured, never adopted; surviving rules propose as v1 arm components via the front door; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "rules": [
     "halt@1stops",
     "halt@2stops",
@@ -993,21 +993,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 88.8,
-          "min": -425.1,
-          "max": 432.0
+          "median": 84.7,
+          "min": -134.3,
+          "max": 304.4
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 15.3,
-          "min": -287.4,
-          "max": 186.4
+          "median": 2.3,
+          "min": -194.3,
+          "max": 211.6
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -85.3,
-          "max": 69.2
+          "min": -58.9,
+          "max": 50.1
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1017,21 +1017,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": 73.3,
-          "min": -63.0,
-          "max": 193.5
+          "median": 80.7,
+          "min": -17.4,
+          "max": 227.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 12.9,
-          "min": -52.6,
-          "max": 151.7
+          "median": 29.3,
+          "min": -26.3,
+          "max": 115.8
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -20.2,
-          "max": 100.9
+          "min": -36.4,
+          "max": 42.1
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1043,21 +1043,21 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 88.8,
-          "min": -425.1,
-          "max": 432.0
+          "median": 84.7,
+          "min": -134.3,
+          "max": 304.4
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 15.3,
-          "min": -287.4,
-          "max": 186.4
+          "median": 2.3,
+          "min": -194.3,
+          "max": 211.6
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -85.3,
-          "max": 69.2
+          "min": -58.9,
+          "max": 50.1
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1067,21 +1067,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": 73.3,
-          "min": -63.0,
-          "max": 193.5
+          "median": 80.7,
+          "min": -17.4,
+          "max": 227.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 12.9,
-          "min": -52.6,
-          "max": 151.7
+          "median": 29.3,
+          "min": -26.3,
+          "max": 115.8
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -20.2,
-          "max": 100.9
+          "min": -36.4,
+          "max": 42.1
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1095,45 +1095,45 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 77.2,
-          "min": -243.6,
-          "max": 1161.2
+          "median": 216.5,
+          "min": -470.1,
+          "max": 1159.5
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 124.4,
-          "min": -546.4,
-          "max": 860.7
+          "median": 158.1,
+          "min": -291.8,
+          "max": 870.5
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -36.3,
-          "max": 139.7
+          "min": -86.7,
+          "max": 479.1
         },
         "backtest|halt@5losers": {
           "members": 20,
           "median": 0.0,
-          "min": -95.0,
+          "min": 0.0,
           "max": 0.0
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -27.2,
-          "min": -265.7,
-          "max": 274.3
+          "median": -104.5,
+          "min": -450.2,
+          "max": 186.6
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 11.2,
-          "min": -248.8,
-          "max": 401.0
+          "median": -37.4,
+          "min": -184.7,
+          "max": 273.2
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -58.0,
-          "max": 82.9
+          "min": -112.8,
+          "max": 64.1
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1145,45 +1145,45 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 77.2,
-          "min": -243.6,
-          "max": 1161.2
+          "median": 216.5,
+          "min": -470.1,
+          "max": 1159.5
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 124.4,
-          "min": -546.4,
-          "max": 860.7
+          "median": 158.1,
+          "min": -291.8,
+          "max": 870.5
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -36.3,
-          "max": 139.7
+          "min": -86.7,
+          "max": 479.1
         },
         "backtest|halt@5losers": {
           "members": 20,
           "median": 0.0,
-          "min": -95.0,
+          "min": 0.0,
           "max": 0.0
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -27.2,
-          "min": -265.7,
-          "max": 274.3
+          "median": -104.5,
+          "min": -450.2,
+          "max": 186.6
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 11.2,
-          "min": -248.8,
-          "max": 401.0
+          "median": -37.4,
+          "min": -184.7,
+          "max": 273.2
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -58.0,
-          "max": 82.9
+          "min": -112.8,
+          "max": 64.1
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1197,21 +1197,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 178.1,
-          "min": -1226.0,
-          "max": 1839.5
+          "median": 187.6,
+          "min": -1019.8,
+          "max": 768.9
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 76.7,
-          "min": -339.7,
-          "max": 1398.6
+          "median": -52.5,
+          "min": -819.2,
+          "max": 419.3
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -190.6,
-          "max": 122.3
+          "min": -161.8,
+          "max": 225.6
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1221,21 +1221,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -146.9,
-          "min": -521.8,
-          "max": 803.2
+          "median": -150.1,
+          "min": -597.0,
+          "max": 902.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 25.4,
-          "min": -426.7,
-          "max": 278.0
+          "median": -28.4,
+          "min": -233.2,
+          "max": 570.0
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -177.4,
-          "max": 242.1
+          "min": -108.7,
+          "max": 113.3
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1247,21 +1247,21 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 178.1,
-          "min": -1226.0,
-          "max": 1839.5
+          "median": 187.6,
+          "min": -1019.8,
+          "max": 768.9
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 76.7,
-          "min": -339.7,
-          "max": 1398.6
+          "median": -52.5,
+          "min": -819.2,
+          "max": 419.3
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -190.6,
-          "max": 122.3
+          "min": -161.8,
+          "max": 225.6
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1271,21 +1271,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -146.9,
-          "min": -521.8,
-          "max": 803.2
+          "median": -150.1,
+          "min": -597.0,
+          "max": 902.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 25.4,
-          "min": -426.7,
-          "max": 278.0
+          "median": -28.4,
+          "min": -233.2,
+          "max": 570.0
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -177.4,
-          "max": 242.1
+          "min": -108.7,
+          "max": 113.3
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1299,21 +1299,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 396.0,
-          "min": -334.7,
-          "max": 1881.3
+          "median": 158.1,
+          "min": -861.5,
+          "max": 1407.4
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 76.5,
-          "min": -718.2,
-          "max": 1081.0
+          "median": 48.4,
+          "min": -901.2,
+          "max": 1140.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -28.4,
-          "max": 417.9
+          "min": -258.3,
+          "max": 449.4
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1323,20 +1323,20 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -118.3,
-          "min": -630.5,
-          "max": 797.1
+          "median": -22.2,
+          "min": -453.6,
+          "max": 682.7
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -35.3,
-          "min": -625.5,
-          "max": 618.7
+          "median": 3.4,
+          "min": -274.3,
+          "max": 202.5
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -63.3,
+          "min": -256.4,
           "max": 0.0
         },
         "forward|halt@5losers": {
@@ -1349,21 +1349,21 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 396.0,
-          "min": -334.7,
-          "max": 1881.3
+          "median": 158.1,
+          "min": -861.5,
+          "max": 1407.4
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 76.5,
-          "min": -718.2,
-          "max": 1081.0
+          "median": 48.4,
+          "min": -901.2,
+          "max": 1140.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -28.4,
-          "max": 417.9
+          "min": -258.3,
+          "max": 449.4
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1373,20 +1373,20 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -118.3,
-          "min": -630.5,
-          "max": 797.1
+          "median": -22.2,
+          "min": -453.6,
+          "max": 682.7
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -35.3,
-          "min": -625.5,
-          "max": 618.7
+          "median": 3.4,
+          "min": -274.3,
+          "max": 202.5
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -63.3,
+          "min": -256.4,
           "max": 0.0
         },
         "forward|halt@5losers": {

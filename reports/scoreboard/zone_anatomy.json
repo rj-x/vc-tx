@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL arrival anatomy \u2014 the v3 zones' mechanism test, independent of signal conditioning; mint-on-lift only; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "anchor_mult": 1.5,
   "min_bars_FLAGGED": 100,
   "min_legs_FLAGGED": 25,

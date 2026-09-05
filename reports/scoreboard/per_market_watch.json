@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL per-market config WATCH \u2014 a map of where specialization would go, never a settings page; cells graduate only via the register-105 track; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "journal_rows_ex_lockbox": 49344,
   "field_dims": "variant x session x slot (stop axis: the variant's registered stop; not re-simulated)",
   "track": {
@@ -1387,8 +1387,8 @@
           "win_rate": 0.488,
           "weeks_pos": 4,
           "weeks_meas": 4,
-          "net_pts": 3050.6,
-          "max_win_share": 0.046,
+          "net_pts": 3456.8,
+          "max_win_share": 0.05,
           "tail_carried": false,
           "sel_pct_win": 58.0,
           "sel_pct_median": 0.0,
@@ -1647,7 +1647,7 @@
           "max_win_share": 0.084,
           "tail_carried": false,
           "sel_pct_win": 0.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -1661,11 +1661,11 @@
           "win_rate": 0.244,
           "weeks_pos": 2,
           "weeks_meas": 4,
-          "net_pts": 1662.1,
-          "max_win_share": 0.072,
+          "net_pts": 1932.9,
+          "max_win_share": 0.079,
           "tail_carried": false,
           "sel_pct_win": 0.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -1683,7 +1683,7 @@
           "max_win_share": 0.241,
           "tail_carried": false,
           "sel_pct_win": 0.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -1719,7 +1719,7 @@
           "max_win_share": 1.0,
           "tail_carried": true,
           "sel_pct_win": 0.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -1737,7 +1737,7 @@
           "max_win_share": 0.308,
           "tail_carried": true,
           "sel_pct_win": 0.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -1862,7 +1862,7 @@
           "net_pts": -99.9,
           "max_win_share": 0.095,
           "tail_carried": false,
-          "sel_pct_win": 46.0,
+          "sel_pct_win": 47.0,
           "sel_pct_median": 44.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -1952,8 +1952,8 @@
           "net_pts": 25.9,
           "max_win_share": 0.192,
           "tail_carried": false,
-          "sel_pct_win": 38.0,
-          "sel_pct_median": 0.0,
+          "sel_pct_win": 39.0,
+          "sel_pct_median": 1.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -2024,7 +2024,7 @@
           "net_pts": -234.6,
           "max_win_share": 0.038,
           "tail_carried": false,
-          "sel_pct_win": 50.0,
+          "sel_pct_win": 51.0,
           "sel_pct_median": 45.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -2114,7 +2114,7 @@
           "net_pts": 23.2,
           "max_win_share": 0.164,
           "tail_carried": false,
-          "sel_pct_win": 50.0,
+          "sel_pct_win": 51.0,
           "sel_pct_median": 44.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -2295,7 +2295,7 @@
           "max_win_share": 0.184,
           "tail_carried": false,
           "sel_pct_win": 22.0,
-          "sel_pct_median": 23.0,
+          "sel_pct_median": 24.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -2330,7 +2330,7 @@
           "net_pts": -510.1,
           "max_win_share": 0.097,
           "tail_carried": false,
-          "sel_pct_win": 47.0,
+          "sel_pct_win": 48.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -2345,8 +2345,8 @@
           "win_rate": 0.488,
           "weeks_pos": 4,
           "weeks_meas": 4,
-          "net_pts": 3050.6,
-          "max_win_share": 0.046,
+          "net_pts": 3456.8,
+          "max_win_share": 0.05,
           "tail_carried": false,
           "sel_pct_win": 58.0,
           "sel_pct_median": 0.0,
@@ -5083,8 +5083,8 @@
           "win_rate": 0.274,
           "weeks_pos": 2,
           "weeks_meas": 3,
-          "net_pts": 626.3,
-          "max_win_share": 0.094,
+          "net_pts": 697.3,
+          "max_win_share": 0.093,
           "tail_carried": false,
           "sel_pct_win": 0.0,
           "sel_pct_median": 0.0,
@@ -5137,8 +5137,8 @@
           "win_rate": 0.143,
           "weeks_pos": 0,
           "weeks_meas": 3,
-          "net_pts": -393.6,
-          "max_win_share": 0.502,
+          "net_pts": -358.1,
+          "max_win_share": 0.522,
           "tail_carried": true,
           "sel_pct_win": 0.0,
           "sel_pct_median": 0.0,
@@ -6919,7 +6919,7 @@
       "tail_carried_cells": 25,
       "null_valid_seeds": 100,
       "null_best_win_p95": 0.556,
-      "null_best_median_p95": 0.81,
+      "null_best_median_p95": 1.0,
       "top_by_win": [
         {
           "variant": "R-SCALP-H6",
@@ -7190,7 +7190,7 @@
           "net_pts": 9.5,
           "max_win_share": 0.157,
           "tail_carried": false,
-          "sel_pct_win": 94.0,
+          "sel_pct_win": 93.0,
           "sel_pct_median": 99.0,
           "beats_field_null_win": false,
           "beats_field_null_median": true
@@ -7284,7 +7284,7 @@
           "net_pts": -371.4,
           "max_win_share": 0.111,
           "tail_carried": false,
-          "sel_pct_win": 72.0,
+          "sel_pct_win": 71.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7302,7 +7302,7 @@
           "net_pts": -30.9,
           "max_win_share": 0.141,
           "tail_carried": false,
-          "sel_pct_win": 84.0,
+          "sel_pct_win": 83.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7320,7 +7320,7 @@
           "net_pts": -48.2,
           "max_win_share": 0.223,
           "tail_carried": false,
-          "sel_pct_win": 73.0,
+          "sel_pct_win": 72.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7404,11 +7404,11 @@
           "n": 81,
           "n_distinct": 74,
           "median": -1.3,
-          "win_rate": 0.081,
-          "weeks_pos": 1,
+          "win_rate": 0.054,
+          "weeks_pos": 0,
           "weeks_meas": 3,
-          "net_pts": -557.2,
-          "max_win_share": 0.251,
+          "net_pts": -709.9,
+          "max_win_share": 0.417,
           "tail_carried": true,
           "sel_pct_win": 0.0,
           "sel_pct_median": 0.0,
@@ -7428,7 +7428,7 @@
           "net_pts": -116.8,
           "max_win_share": 0.206,
           "tail_carried": false,
-          "sel_pct_win": 55.0,
+          "sel_pct_win": 54.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7572,7 +7572,7 @@
           "net_pts": -255.4,
           "max_win_share": 0.062,
           "tail_carried": false,
-          "sel_pct_win": 4.0,
+          "sel_pct_win": 5.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7626,7 +7626,7 @@
           "net_pts": -18.2,
           "max_win_share": 0.402,
           "tail_carried": true,
-          "sel_pct_win": 55.0,
+          "sel_pct_win": 54.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7644,8 +7644,8 @@
           "net_pts": -90.9,
           "max_win_share": 0.151,
           "tail_carried": false,
-          "sel_pct_win": 73.0,
-          "sel_pct_median": 49.0,
+          "sel_pct_win": 72.0,
+          "sel_pct_median": 47.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -7716,7 +7716,7 @@
           "net_pts": -36.4,
           "max_win_share": 0.437,
           "tail_carried": true,
-          "sel_pct_win": 49.0,
+          "sel_pct_win": 48.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7734,7 +7734,7 @@
           "net_pts": -312.3,
           "max_win_share": 0.061,
           "tail_carried": false,
-          "sel_pct_win": 11.0,
+          "sel_pct_win": 9.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7788,7 +7788,7 @@
           "net_pts": -18.2,
           "max_win_share": 0.402,
           "tail_carried": true,
-          "sel_pct_win": 55.0,
+          "sel_pct_win": 54.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7806,7 +7806,7 @@
           "net_pts": -151.8,
           "max_win_share": 0.174,
           "tail_carried": false,
-          "sel_pct_win": 64.0,
+          "sel_pct_win": 63.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -7896,8 +7896,8 @@
           "net_pts": 40.1,
           "max_win_share": 0.055,
           "tail_carried": false,
-          "sel_pct_win": 92.0,
-          "sel_pct_median": 91.0,
+          "sel_pct_win": 91.0,
+          "sel_pct_median": 90.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
         },
@@ -7968,7 +7968,7 @@
           "net_pts": -49.4,
           "max_win_share": 0.123,
           "tail_carried": false,
-          "sel_pct_win": 72.0,
+          "sel_pct_win": 71.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -8053,10 +8053,10 @@
           "n_distinct": 74,
           "median": -21.5,
           "win_rate": 0.311,
-          "weeks_pos": 1,
+          "weeks_pos": 0,
           "weeks_meas": 3,
-          "net_pts": -497.1,
-          "max_win_share": 0.098,
+          "net_pts": -643.6,
+          "max_win_share": 0.116,
           "tail_carried": false,
           "sel_pct_win": 0.0,
           "sel_pct_median": 0.0,
@@ -8076,7 +8076,7 @@
           "net_pts": 9.5,
           "max_win_share": 0.157,
           "tail_carried": false,
-          "sel_pct_win": 94.0,
+          "sel_pct_win": 93.0,
           "sel_pct_median": 99.0,
           "beats_field_null_win": false,
           "beats_field_null_median": true
@@ -8127,8 +8127,8 @@
           "win_rate": 0.333,
           "weeks_pos": 0,
           "weeks_meas": 2,
-          "net_pts": -125.2,
-          "max_win_share": 0.334,
+          "net_pts": -154.5,
+          "max_win_share": 0.435,
           "tail_carried": true,
           "sel_pct_win": 1.0,
           "sel_pct_median": 0.0,
@@ -9705,8 +9705,8 @@
           "win_rate": 0.636,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 1437.5,
-          "max_win_share": 0.193,
+          "net_pts": 1644.5,
+          "max_win_share": 0.224,
           "tail_carried": false,
           "sel_pct_win": 93.0,
           "sel_pct_median": 100.0,
@@ -9725,8 +9725,8 @@
           "win_rate": 0.636,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 1437.5,
-          "max_win_share": 0.193,
+          "net_pts": 1644.5,
+          "max_win_share": 0.224,
           "tail_carried": false,
           "sel_pct_win": 93.0,
           "sel_pct_median": 100.0,
@@ -9871,8 +9871,8 @@
           "win_rate": 0.636,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 1437.5,
-          "max_win_share": 0.193,
+          "net_pts": 1644.5,
+          "max_win_share": 0.224,
           "tail_carried": false,
           "sel_pct_win": 93.0,
           "sel_pct_median": 100.0,
@@ -10145,8 +10145,8 @@
           "win_rate": 0.185,
           "weeks_pos": 1,
           "weeks_meas": 2,
-          "net_pts": 3604.7,
-          "max_win_share": 0.129,
+          "net_pts": 3708.2,
+          "max_win_share": 0.126,
           "tail_carried": false,
           "sel_pct_win": 0.0,
           "sel_pct_median": 25.0,
@@ -10178,11 +10178,11 @@
           "n": 14,
           "n_distinct": 11,
           "median": -2.6,
-          "win_rate": 0.364,
+          "win_rate": 0.273,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 902.2,
-          "max_win_share": 0.29,
+          "net_pts": 681.2,
+          "max_win_share": 0.453,
           "tail_carried": true,
           "sel_pct_win": 0.0,
           "sel_pct_median": 25.0,
@@ -10490,7 +10490,7 @@
           "net_pts": -7.2,
           "max_win_share": 0.327,
           "tail_carried": true,
-          "sel_pct_win": 26.0,
+          "sel_pct_win": 27.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -10670,7 +10670,7 @@
           "net_pts": -7.2,
           "max_win_share": 0.327,
           "tail_carried": true,
-          "sel_pct_win": 26.0,
+          "sel_pct_win": 27.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -10742,7 +10742,7 @@
           "net_pts": -1966.2,
           "max_win_share": 0.037,
           "tail_carried": false,
-          "sel_pct_win": 28.0,
+          "sel_pct_win": 29.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -10760,7 +10760,7 @@
           "net_pts": -1547.9,
           "max_win_share": 0.032,
           "tail_carried": false,
-          "sel_pct_win": 28.0,
+          "sel_pct_win": 29.0,
           "sel_pct_median": 0.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -10796,7 +10796,7 @@
           "net_pts": 41.5,
           "max_win_share": 0.227,
           "tail_carried": false,
-          "sel_pct_win": 31.0,
+          "sel_pct_win": 32.0,
           "sel_pct_median": 25.0,
           "beats_field_null_win": false,
           "beats_field_null_median": false
@@ -10901,8 +10901,8 @@
           "win_rate": 0.385,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 4462.5,
-          "max_win_share": 0.086,
+          "net_pts": 4566.0,
+          "max_win_share": 0.085,
           "tail_carried": false,
           "sel_pct_win": 1.0,
           "sel_pct_median": 0.0,
@@ -10937,8 +10937,8 @@
           "win_rate": 0.636,
           "weeks_pos": 2,
           "weeks_meas": 2,
-          "net_pts": 1437.5,
-          "max_win_share": 0.193,
+          "net_pts": 1644.5,
+          "max_win_share": 0.224,
           "tail_carried": false,
           "sel_pct_win": 93.0,
           "sel_pct_median": 100.0,
@@ -11283,8 +11283,8 @@
       "weeks": "2/2",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 95.0,
-      "beats_field_null": true,
+      "sel_pct": 85.0,
+      "beats_field_null": false,
       "is_incumbent": false
     },
     {
@@ -11299,7 +11299,7 @@
       "weeks": "2/2",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 65.0,
+      "sel_pct": 70.0,
       "beats_field_null": false,
       "is_incumbent": true
     },
@@ -11331,7 +11331,7 @@
       "weeks": "1/2",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 80.0,
+      "sel_pct": 85.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11347,7 +11347,7 @@
       "weeks": "2/2",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 65.0,
+      "sel_pct": 70.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11363,7 +11363,7 @@
       "weeks": "1/2",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 65.0,
+      "sel_pct": 55.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11379,7 +11379,7 @@
       "weeks": "1/2",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 0.0,
+      "sel_pct": 5.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11411,7 +11411,7 @@
       "weeks": "1/2",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 35.0,
+      "sel_pct": 30.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11427,7 +11427,7 @@
       "weeks": "0/2",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 0.0,
+      "sel_pct": 5.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11459,7 +11459,7 @@
       "weeks": "1/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 90.0,
+      "sel_pct": 80.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11475,7 +11475,7 @@
       "weeks": "2/3",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 80.0,
+      "sel_pct": 90.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11491,7 +11491,7 @@
       "weeks": "3/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 30.0,
+      "sel_pct": 40.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11507,7 +11507,7 @@
       "weeks": "1/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 90.0,
+      "sel_pct": 80.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11523,7 +11523,7 @@
       "weeks": "2/3",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 65.0,
+      "sel_pct": 75.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11539,7 +11539,7 @@
       "weeks": "3/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 30.0,
+      "sel_pct": 40.0,
       "beats_field_null": false,
       "is_incumbent": true
     },
@@ -11555,8 +11555,8 @@
       "weeks": "1/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 90.0,
-      "beats_field_null": false,
+      "sel_pct": 100.0,
+      "beats_field_null": true,
       "is_incumbent": false
     },
     {
@@ -11571,7 +11571,7 @@
       "weeks": "1/3",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 50.0,
+      "sel_pct": 60.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11587,7 +11587,7 @@
       "weeks": "2/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 0.0,
+      "sel_pct": 5.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11603,7 +11603,7 @@
       "weeks": "1/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 70.0,
+      "sel_pct": 60.0,
       "beats_field_null": false,
       "is_incumbent": false
     },
@@ -11619,8 +11619,8 @@
       "weeks": "1/3",
       "null_kind": "members at the same rung",
       "null_n": 20,
-      "sel_pct": 80.0,
-      "beats_field_null": false,
+      "sel_pct": 95.0,
+      "beats_field_null": true,
       "is_incumbent": false
     },
     {
@@ -11635,7 +11635,7 @@
       "weeks": "3/3",
       "null_kind": "members' best-over-rungs",
       "null_n": 20,
-      "sel_pct": 50.0,
+      "sel_pct": 40.0,
       "beats_field_null": false,
       "is_incumbent": true
     }
@@ -11707,11 +11707,11 @@
       "net_reach_pct": 15.9,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.7,
+      "delta_vs_range_max_pp": 3.0,
       "measurable": true,
       "sel_pct": 14.0,
       "null_p95": 24.7,
@@ -11727,11 +11727,11 @@
       "net_reach_pct": 16.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        6.7,
+        13.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 3.8,
+      "delta_vs_range_max_pp": 2.4,
       "measurable": true,
       "sel_pct": 23.0,
       "null_p95": 24.4,
@@ -11747,11 +11747,11 @@
       "net_reach_pct": 15.5,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.3,
+      "delta_vs_range_max_pp": 2.6,
       "measurable": true,
       "sel_pct": 11.0,
       "null_p95": 24.7,
@@ -11767,11 +11767,11 @@
       "net_reach_pct": 16.6,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        6.7,
+        13.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 4.1,
+      "delta_vs_range_max_pp": 2.7,
       "measurable": true,
       "sel_pct": 26.0,
       "null_p95": 24.4,
@@ -11781,20 +11781,40 @@
     },
     {
       "instrument": "uk100fut",
-      "signal": "S0-H17",
-      "window": "forward",
-      "n": 59,
-      "net_reach_pct": 13.6,
+      "signal": "S0-H16",
+      "window": "backtest",
+      "n": 15,
+      "net_reach_pct": 13.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.1,
+      "delta_vs_range_max_pp": 0.4,
+      "measurable": false,
+      "sel_pct": null,
+      "null_p95": null,
+      "beats_field_null": false,
+      "null_valid_seeds": 0,
+      "n_to_measurable": 10
+    },
+    {
+      "instrument": "uk100fut",
+      "signal": "S0-H17",
+      "window": "backtest",
+      "n": 41,
+      "net_reach_pct": 14.6,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        8.9,
+        12.9
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 1.7,
       "measurable": true,
-      "sel_pct": 0.0,
-      "null_p95": 24.4,
+      "sel_pct": 2.0,
+      "null_p95": 24.7,
       "beats_field_null": false,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
@@ -11807,11 +11827,11 @@
       "net_reach_pct": 16.4,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.2,
+      "delta_vs_range_max_pp": 3.5,
       "measurable": true,
       "sel_pct": 28.0,
       "null_p95": 24.7,
@@ -11827,11 +11847,11 @@
       "net_reach_pct": 16.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.8,
+      "delta_vs_range_max_pp": 3.1,
       "measurable": true,
       "sel_pct": 18.0,
       "null_p95": 24.7,
@@ -11847,11 +11867,11 @@
       "net_reach_pct": 28.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 12.8,
+      "delta_vs_range_max_pp": 15.1,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 24.7,
@@ -11867,11 +11887,11 @@
       "net_reach_pct": 26.7,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        6.7,
+        13.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 14.2,
+      "delta_vs_range_max_pp": 12.8,
       "measurable": true,
       "sel_pct": 96.0,
       "null_p95": 24.4,
@@ -11887,11 +11907,11 @@
       "net_reach_pct": 33.9,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 18.7,
+      "delta_vs_range_max_pp": 21.0,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 24.7,
@@ -11907,11 +11927,11 @@
       "net_reach_pct": 30.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        6.7,
+        13.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 17.8,
+      "delta_vs_range_max_pp": 16.4,
       "measurable": true,
       "sel_pct": 99.0,
       "null_p95": 24.4,
@@ -11927,34 +11947,14 @@
       "net_reach_pct": 16.1,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.9,
+      "delta_vs_range_max_pp": 3.2,
       "measurable": true,
       "sel_pct": 21.0,
       "null_p95": 24.7,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "uk100fut",
-      "signal": "S0-H7",
-      "window": "forward",
-      "n": 89,
-      "net_reach_pct": 13.5,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        5.1,
-        12.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 1.0,
-      "measurable": true,
-      "sel_pct": 0.0,
-      "null_p95": 24.4,
       "beats_field_null": false,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
@@ -11967,11 +11967,11 @@
       "net_reach_pct": 16.4,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.2,
+      "delta_vs_range_max_pp": 3.5,
       "measurable": true,
       "sel_pct": 28.0,
       "null_p95": 24.7,
@@ -11987,11 +11987,11 @@
       "net_reach_pct": 40.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 24.8,
+      "delta_vs_range_max_pp": 27.1,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12007,11 +12007,11 @@
       "net_reach_pct": 16.7,
       "floor": "B-RANDOM",
       "floor_range": [
-        5.1,
-        12.5
+        6.7,
+        13.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 4.2,
+      "delta_vs_range_max_pp": 2.8,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12021,57 +12021,17 @@
     },
     {
       "instrument": "uk100fut",
-      "signal": "S1-H11",
-      "window": "forward",
-      "n": 180,
-      "net_reach_pct": 12.8,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        5.1,
-        12.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 0.3,
-      "measurable": true,
-      "sel_pct": 0.0,
-      "null_p95": 24.4,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "uk100fut",
-      "signal": "S1-H2",
-      "window": "forward",
-      "n": 272,
-      "net_reach_pct": 12.9,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        5.1,
-        12.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 0.4,
-      "measurable": true,
-      "sel_pct": 0.0,
-      "null_p95": 24.4,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "uk100fut",
       "signal": "S1-H9",
       "window": "backtest",
       "n": 19,
       "net_reach_pct": 21.1,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.2,
-        15.2
+        8.9,
+        12.9
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 5.9,
+      "delta_vs_range_max_pp": 8.2,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12088,10 +12048,10 @@
       "floor": "B-RANDOM",
       "floor_range": [
         10.8,
-        19.1
+        20.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 10.6,
+      "delta_vs_range_max_pp": 9.4,
       "measurable": true,
       "sel_pct": 99.0,
       "null_p95": 25.7,
@@ -12108,16 +12068,56 @@
       "floor": "B-RANDOM",
       "floor_range": [
         10.8,
-        19.1
+        20.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 30.9,
+      "delta_vs_range_max_pp": 29.7,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
       "beats_field_null": false,
       "null_valid_seeds": 0,
       "n_to_measurable": 19
+    },
+    {
+      "instrument": "ger40fut",
+      "signal": "S0-H17",
+      "window": "forward",
+      "n": 63,
+      "net_reach_pct": 17.5,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        9.2,
+        16.3
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 1.2,
+      "measurable": true,
+      "sel_pct": 0.0,
+      "null_p95": 30.2,
+      "beats_field_null": false,
+      "null_valid_seeds": 100,
+      "n_to_measurable": 0
+    },
+    {
+      "instrument": "ger40fut",
+      "signal": "S0-H19",
+      "window": "forward",
+      "n": 166,
+      "net_reach_pct": 16.9,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        9.2,
+        16.3
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 0.6,
+      "measurable": true,
+      "sel_pct": 0.0,
+      "null_p95": 30.2,
+      "beats_field_null": false,
+      "null_valid_seeds": 100,
+      "n_to_measurable": 0
     },
     {
       "instrument": "ger40fut",
@@ -12128,10 +12128,10 @@
       "floor": "B-RANDOM",
       "floor_range": [
         10.8,
-        19.1
+        20.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 9.5,
+      "delta_vs_range_max_pp": 8.3,
       "measurable": true,
       "sel_pct": 97.0,
       "null_p95": 25.7,
@@ -12147,11 +12147,11 @@
       "net_reach_pct": 35.5,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 16.9,
+      "delta_vs_range_max_pp": 19.2,
       "measurable": true,
       "sel_pct": 99.0,
       "null_p95": 30.2,
@@ -12167,11 +12167,11 @@
       "net_reach_pct": 20.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.4,
+      "delta_vs_range_max_pp": 3.7,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12188,10 +12188,10 @@
       "floor": "B-RANDOM",
       "floor_range": [
         10.8,
-        19.1
+        20.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 8.7,
+      "delta_vs_range_max_pp": 7.5,
       "measurable": true,
       "sel_pct": 96.0,
       "null_p95": 25.7,
@@ -12207,11 +12207,11 @@
       "net_reach_pct": 32.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 13.4,
+      "delta_vs_range_max_pp": 15.7,
       "measurable": true,
       "sel_pct": 98.0,
       "null_p95": 30.2,
@@ -12227,11 +12227,11 @@
       "net_reach_pct": 18.8,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.2,
+      "delta_vs_range_max_pp": 2.5,
       "measurable": true,
       "sel_pct": 1.0,
       "null_p95": 30.2,
@@ -12247,11 +12247,11 @@
       "net_reach_pct": 25.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 6.4,
+      "delta_vs_range_max_pp": 8.7,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12267,11 +12267,11 @@
       "net_reach_pct": 20.5,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.9,
+      "delta_vs_range_max_pp": 4.2,
       "measurable": true,
       "sel_pct": 14.0,
       "null_p95": 30.2,
@@ -12288,10 +12288,10 @@
       "floor": "B-RANDOM",
       "floor_range": [
         10.8,
-        19.1
+        20.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 5.9,
+      "delta_vs_range_max_pp": 4.7,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12307,11 +12307,11 @@
       "net_reach_pct": 19.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        8.1,
-        18.6
+        9.2,
+        16.3
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.4,
+      "delta_vs_range_max_pp": 2.7,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12322,38 +12322,38 @@
     {
       "instrument": "nas100fut",
       "signal": "S0-H1",
-      "window": "forward",
-      "n": 69,
-      "net_reach_pct": 20.3,
+      "window": "backtest",
+      "n": 34,
+      "net_reach_pct": 20.6,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 3.0,
+      "delta_vs_range_max_pp": 3.9,
       "measurable": true,
-      "sel_pct": 12.0,
-      "null_p95": 29.1,
+      "sel_pct": 13.0,
+      "null_p95": 34.6,
       "beats_field_null": false,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
     },
     {
       "instrument": "nas100fut",
-      "signal": "S0-H11",
+      "signal": "S0-H1",
       "window": "forward",
-      "n": 388,
-      "net_reach_pct": 17.5,
+      "n": 69,
+      "net_reach_pct": 20.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        10.1,
+        17.5
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.2,
+      "delta_vs_range_max_pp": 2.8,
       "measurable": true,
-      "sel_pct": 0.0,
+      "sel_pct": 12.0,
       "null_p95": 29.1,
       "beats_field_null": false,
       "null_valid_seeds": 100,
@@ -12367,11 +12367,11 @@
       "net_reach_pct": 100.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 79.3,
+      "delta_vs_range_max_pp": 83.3,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12387,11 +12387,11 @@
       "net_reach_pct": 30.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 9.3,
+      "delta_vs_range_max_pp": 13.3,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12407,11 +12407,11 @@
       "net_reach_pct": 26.7,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 6.0,
+      "delta_vs_range_max_pp": 10.0,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12421,17 +12421,57 @@
     },
     {
       "instrument": "nas100fut",
+      "signal": "S0-H18",
+      "window": "backtest",
+      "n": 58,
+      "net_reach_pct": 17.2,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        8.2,
+        16.7
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 0.5,
+      "measurable": true,
+      "sel_pct": 0.0,
+      "null_p95": 34.6,
+      "beats_field_null": false,
+      "null_valid_seeds": 100,
+      "n_to_measurable": 0
+    },
+    {
+      "instrument": "nas100fut",
+      "signal": "S0-H19",
+      "window": "backtest",
+      "n": 204,
+      "net_reach_pct": 20.1,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        8.2,
+        16.7
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 3.4,
+      "measurable": true,
+      "sel_pct": 8.0,
+      "null_p95": 34.6,
+      "beats_field_null": false,
+      "null_valid_seeds": 100,
+      "n_to_measurable": 0
+    },
+    {
+      "instrument": "nas100fut",
       "signal": "S0-H20",
       "window": "backtest",
       "n": 46,
       "net_reach_pct": 52.2,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 31.5,
+      "delta_vs_range_max_pp": 35.5,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 34.6,
@@ -12447,11 +12487,11 @@
       "net_reach_pct": 36.5,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        10.1,
+        17.5
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 19.2,
+      "delta_vs_range_max_pp": 19.0,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 29.1,
@@ -12467,11 +12507,11 @@
       "net_reach_pct": 44.8,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 24.1,
+      "delta_vs_range_max_pp": 28.1,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 34.6,
@@ -12487,15 +12527,35 @@
       "net_reach_pct": 31.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        10.1,
+        17.5
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 14.0,
+      "delta_vs_range_max_pp": 13.8,
       "measurable": true,
       "sel_pct": 99.0,
       "null_p95": 29.1,
       "beats_field_null": true,
+      "null_valid_seeds": 100,
+      "n_to_measurable": 0
+    },
+    {
+      "instrument": "nas100fut",
+      "signal": "S0-H9",
+      "window": "backtest",
+      "n": 88,
+      "net_reach_pct": 18.2,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        8.2,
+        16.7
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 1.5,
+      "measurable": true,
+      "sel_pct": 0.0,
+      "null_p95": 34.6,
+      "beats_field_null": false,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
     },
@@ -12507,11 +12567,11 @@
       "net_reach_pct": 33.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.5,
-        20.7
+        8.2,
+        16.7
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 12.6,
+      "delta_vs_range_max_pp": 16.6,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12527,11 +12587,11 @@
       "net_reach_pct": 50.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        10.1,
+        17.5
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 32.7,
+      "delta_vs_range_max_pp": 32.5,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12541,37 +12601,17 @@
     },
     {
       "instrument": "nas100fut",
-      "signal": "S1-H2",
-      "window": "forward",
-      "n": 292,
-      "net_reach_pct": 17.5,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        11.6,
-        17.3
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 0.2,
-      "measurable": true,
-      "sel_pct": 0.0,
-      "null_p95": 29.1,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "nas100fut",
       "signal": "S1-H9",
       "window": "forward",
       "n": 17,
       "net_reach_pct": 23.5,
       "floor": "B-RANDOM",
       "floor_range": [
-        11.6,
-        17.3
+        10.1,
+        17.5
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 6.2,
+      "delta_vs_range_max_pp": 6.0,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12587,11 +12627,11 @@
       "net_reach_pct": 28.6,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.6,
-        16.5
+        10.4,
+        18.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 12.1,
+      "delta_vs_range_max_pp": 10.2,
       "measurable": true,
       "sel_pct": 96.0,
       "null_p95": 27.0,
@@ -12607,11 +12647,11 @@
       "net_reach_pct": 33.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 16.1,
+      "delta_vs_range_max_pp": 16.9,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12627,11 +12667,11 @@
       "net_reach_pct": 40.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.6,
-        16.5
+        10.4,
+        18.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 23.5,
+      "delta_vs_range_max_pp": 21.6,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12647,11 +12687,11 @@
       "net_reach_pct": 33.3,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 16.1,
+      "delta_vs_range_max_pp": 16.9,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12667,11 +12707,11 @@
       "net_reach_pct": 17.4,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 0.2,
+      "delta_vs_range_max_pp": 1.0,
       "measurable": true,
       "sel_pct": 3.0,
       "null_p95": 26.2,
@@ -12687,33 +12727,13 @@
       "net_reach_pct": 19.2,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.6,
-        16.5
+        10.4,
+        18.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 2.7,
+      "delta_vs_range_max_pp": 0.8,
       "measurable": true,
       "sel_pct": 31.0,
-      "null_p95": 27.0,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "us30fut",
-      "signal": "S0-H20",
-      "window": "backtest",
-      "n": 58,
-      "net_reach_pct": 17.2,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        10.6,
-        16.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 0.7,
-      "measurable": true,
-      "sel_pct": 6.0,
       "null_p95": 27.0,
       "beats_field_null": false,
       "null_valid_seeds": 100,
@@ -12727,17 +12747,37 @@
       "net_reach_pct": 34.9,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 17.7,
+      "delta_vs_range_max_pp": 18.5,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 26.2,
       "beats_field_null": true,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
+    },
+    {
+      "instrument": "us30fut",
+      "signal": "S0-H3",
+      "window": "forward",
+      "n": 6,
+      "net_reach_pct": 16.7,
+      "floor": "B-RANDOM",
+      "floor_range": [
+        8.4,
+        16.4
+      ],
+      "floor_members": 20,
+      "delta_vs_range_max_pp": 0.3,
+      "measurable": false,
+      "sel_pct": null,
+      "null_p95": null,
+      "beats_field_null": false,
+      "null_valid_seeds": 0,
+      "n_to_measurable": 19
     },
     {
       "instrument": "us30fut",
@@ -12767,11 +12807,11 @@
       "net_reach_pct": 100.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.6,
-        16.5
+        10.4,
+        18.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 83.5,
+      "delta_vs_range_max_pp": 81.6,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12787,11 +12827,11 @@
       "net_reach_pct": 100.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 82.8,
+      "delta_vs_range_max_pp": 83.6,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
@@ -12807,35 +12847,15 @@
       "net_reach_pct": 41.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 23.8,
+      "delta_vs_range_max_pp": 24.6,
       "measurable": true,
       "sel_pct": 100.0,
       "null_p95": 26.2,
       "beats_field_null": true,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
-    },
-    {
-      "instrument": "us30fut",
-      "signal": "S0-H7",
-      "window": "backtest",
-      "n": 41,
-      "net_reach_pct": 17.1,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        10.6,
-        16.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 0.6,
-      "measurable": true,
-      "sel_pct": 6.0,
-      "null_p95": 27.0,
-      "beats_field_null": false,
       "null_valid_seeds": 100,
       "n_to_measurable": 0
     },
@@ -12847,11 +12867,11 @@
       "net_reach_pct": 19.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        7.5,
-        17.2
+        8.4,
+        16.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 1.8,
+      "delta_vs_range_max_pp": 2.6,
       "measurable": true,
       "sel_pct": 22.0,
       "null_p95": 26.2,
@@ -12867,37 +12887,17 @@
       "net_reach_pct": 100.0,
       "floor": "B-RANDOM",
       "floor_range": [
-        10.6,
-        16.5
+        10.4,
+        18.4
       ],
       "floor_members": 20,
-      "delta_vs_range_max_pp": 83.5,
+      "delta_vs_range_max_pp": 81.6,
       "measurable": false,
       "sel_pct": null,
       "null_p95": null,
       "beats_field_null": false,
       "null_valid_seeds": 0,
       "n_to_measurable": 23
-    },
-    {
-      "instrument": "us30fut",
-      "signal": "S1-H11",
-      "window": "backtest",
-      "n": 189,
-      "net_reach_pct": 18.0,
-      "floor": "B-RANDOM",
-      "floor_range": [
-        10.6,
-        16.5
-      ],
-      "floor_members": 20,
-      "delta_vs_range_max_pp": 1.5,
-      "measurable": true,
-      "sel_pct": 14.0,
-      "null_p95": 27.0,
-      "beats_field_null": false,
-      "null_valid_seeds": 100,
-      "n_to_measurable": 0
     }
   ],
   "anatomy_watch": [

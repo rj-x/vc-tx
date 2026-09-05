@@ -1,12 +1,12 @@
 {
   "STAMP": "OBSERVATIONAL conditional open-pause cut \u2014 post-hoc-selected cell, backtest motivating not evidential; enactment reads forward/sealed at measurable n, per-market scoped; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "rows_ex_lockbox": 49344,
   "open_days_covered": {
-    "uk100fut": 318,
-    "ger40fut": 313,
-    "nas100fut": 324,
-    "us30fut": 324
+    "uk100fut": 321,
+    "ger40fut": 316,
+    "nas100fut": 327,
+    "us30fut": 327
   },
   "strata_cells": {
     "ger40fut|R-ARM15|backtest|<80": {
@@ -2382,9 +2382,9 @@
         "net": 16.5
       },
       "measurable": true,
-      "null_p95": -3.63,
-      "null_valid_seeds": 2,
-      "pct_vs_null": 0.0,
+      "null_p95": -5.14,
+      "null_valid_seeds": 6,
+      "pct_vs_null": 33.3,
       "clears": false
     },
     "uk100fut|R-NEXIT-EARLY|forward": {
@@ -2430,9 +2430,9 @@
         "net": 51.2
       },
       "measurable": true,
-      "null_p95": -4.12,
-      "null_valid_seeds": 2,
-      "pct_vs_null": 0.0,
+      "null_p95": -6.45,
+      "null_valid_seeds": 6,
+      "pct_vs_null": 33.3,
       "clears": false
     },
     "uk100fut|R-NEXIT-FULL|forward": {
@@ -2574,10 +2574,10 @@
         "net": 26.8
       },
       "measurable": true,
-      "null_p95": -0.68,
-      "null_valid_seeds": 2,
-      "pct_vs_null": 50.0,
-      "clears": true
+      "null_p95": -0.09,
+      "null_valid_seeds": 7,
+      "pct_vs_null": 28.6,
+      "clears": false
     },
     "uk100fut|R-OP2|forward": {
       "gap": null,
@@ -6043,15 +6043,15 @@
       "R-SCALP-H6": {
         "backtest|80": {
           "members": 20,
-          "median": -14.1,
-          "min": -41.6,
-          "max": 110.5
+          "median": -17.2,
+          "min": -37.5,
+          "max": 22.8
         },
         "backtest|95": {
           "members": 20,
-          "median": -5.2,
-          "min": -24.5,
-          "max": 133.8
+          "median": -10.5,
+          "min": -22.4,
+          "max": 0.0
         },
         "forward|80": {
           "members": 20,
@@ -6069,15 +6069,15 @@
       "R-SCALP-H6-REF": {
         "backtest|80": {
           "members": 20,
-          "median": -14.1,
-          "min": -41.6,
-          "max": 110.5
+          "median": -17.2,
+          "min": -37.5,
+          "max": 22.8
         },
         "backtest|95": {
           "members": 20,
-          "median": -5.2,
-          "min": -24.5,
-          "max": 133.8
+          "median": -10.5,
+          "min": -22.4,
+          "max": 0.0
         },
         "forward|80": {
           "members": 20,

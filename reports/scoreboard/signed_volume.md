@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_volume; register-16 family). VOCABULARY, not a signal: per-bar close-direction signed volume — sv15 (trailing 15 x 1M bars, the signal-TF window) and sv_sess (session-to-date, UTC-day reset — FLAGGED vs the native ldate session). Customers: H12's clauses (future operator proposal), the conditioning matrix (sv_sess sign dimension — field size restated there), arrival-anatomy (a)/(b). No luck budget here: consumers price their own fields. Distributions below are the vocabulary's range, not findings.
+Engine `78fd6e12c` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_volume; register-16 family). VOCABULARY, not a signal: per-bar close-direction signed volume — sv15 (trailing 15 x 1M bars, the signal-TF window) and sv_sess (session-to-date, UTC-day reset — FLAGGED vs the native ldate session). Customers: H12's clauses (future operator proposal), the conditioning matrix (sv_sess sign dimension — field size restated there), arrival-anatomy (a)/(b). No luck budget here: consumers price their own fields. Distributions below are the vocabulary's range, not findings.
 
-## uk100fut (47856 1M bars)
+## uk100fut (52376 1M bars)
 
 | window | session | sv15 med [p10..p90] | sv15 +share | sv_sess med [p10..p90] | sv_sess +share | n |
 |---|---|---|---|---|---|---|
@@ -13,13 +13,13 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_vo
 | backtest | london | 19 [-366.1..424] | 53% | 630 [-1148.1..3126.1] | 68% | 6240 |
 | backtest | ny_only | 4 [-201.1..236] | 51% | 768 [-225..5019] | 84% | 4320 |
 | backtest | overlap | 54 [-469..579.1] | 56% | 880.5 [-806.7..3627.1] | 73% | 1920 |
-| forward | asia | 6 [-127.9..153] | 52% | 85 [-753..804.9] | 59% | 4582 |
-| forward | dead | -1 [-76..103] | 49% | -486 [-1914.4..2078.4] | 44% | 1469 |
-| forward | london | -1 [-269..222] | 49% | -444 [-1855.9..1134] | 41% | 4222 |
-| forward | ny_only | 11 [-95..114] | 57% | 277.5 [-1842..2295.9] | 54% | 2968 |
-| forward | overlap | 3 [-357..446] | 51% | -348 [-1481.2..1923.2] | 42% | 1225 |
+| forward | asia | 9 [-125..145] | 54% | 94 [-705.4..797] | 62% | 5837 |
+| forward | dead | 1 [-68..103] | 50% | -54 [-1814..2209] | 49% | 1937 |
+| forward | london | 1 [-272..251] | 50% | 66.5 [-1740..1600.2] | 52% | 5460 |
+| forward | ny_only | 10 [-104..120] | 56% | 281 [-1722.4..3673] | 58% | 4047 |
+| forward | overlap | 14 [-358.8..450.2] | 52% | 38 [-1262..3288] | 51% | 1705 |
 
-## ger40fut (41964 1M bars)
+## ger40fut (46439 1M bars)
 
 | window | session | sv15 med [p10..p90] | sv15 +share | sv_sess med [p10..p90] | sv_sess +share | n |
 |---|---|---|---|---|---|---|
@@ -28,13 +28,13 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_vo
 | backtest | london | 69.5 [-1693..2076.1] | 52% | 4040 [-3286.8..10261.5] | 77% | 4290 |
 | backtest | ny_only | 71 [-1090..1239.1] | 53% | 8999 [-914.9..19146.1] | 88% | 2970 |
 | backtest | overlap | 486 [-3038.8..4077.6] | 56% | 4857 [-2978.4..15720.2] | 82% | 1320 |
-| forward | asia | 3 [-329..350] | 50% | -20 [-977.9..1041.8] | 48% | 4832 |
-| forward | dead | -1 [-85..120] | 49% | 174 [-15669..5044.1] | 59% | 1650 |
-| forward | london | 26 [-1375.8..1173.9] | 51% | -589 [-6521.9..5039.8] | 45% | 4612 |
-| forward | ny_only | 2 [-733..737.2] | 50% | 1582 [-15017.6..5581.7] | 60% | 3240 |
-| forward | overlap | -231 [-2306.6..1963.4] | 45% | -89 [-7471.2..6993] | 49% | 1345 |
+| forward | asia | 10 [-326..360] | 52% | 141.5 [-867..1244.5] | 57% | 6046 |
+| forward | dead | 1 [-79.7..118] | 50% | 82 [-16474.7..7707] | 53% | 2114 |
+| forward | london | 41 [-1522.3..1307.2] | 52% | -385 [-6195.1..4979.1] | 46% | 5850 |
+| forward | ny_only | 13 [-806.2..756] | 51% | 1446 [-15871..6255] | 58% | 4319 |
+| forward | overlap | -255 [-2307.6..1961] | 44% | -143 [-11837.4..6620.4] | 49% | 1825 |
 
-## nas100fut (43456 1M bars)
+## nas100fut (48082 1M bars)
 
 | window | session | sv15 med [p10..p90] | sv15 +share | sv_sess med [p10..p90] | sv_sess +share | n |
 |---|---|---|---|---|---|---|
@@ -43,13 +43,13 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_vo
 | backtest | london | -2 [-2622.5..2606.6] | 50% | -1582.5 [-20241.4..13403.6] | 47% | 4290 |
 | backtest | ny_only | -106.5 [-6628.1..6951.8] | 50% | -16870.5 [-75194.1..62042.8] | 44% | 2970 |
 | backtest | overlap | -930 [-21455.5..17710.8] | 48% | -14921.5 [-77303..47295.4] | 42% | 1320 |
-| forward | asia | -9 [-1998.3..1874] | 50% | -234.5 [-13622..9610] | 49% | 5040 |
-| forward | dead | -26 [-1232.4..976.8] | 48% | -3924 [-43914.2..20538.8] | 32% | 2067 |
-| forward | london | -118 [-2040.2..1693] | 47% | -1868 [-23459.2..12730.6] | 44% | 4613 |
-| forward | ny_only | -130 [-3186.2..2754.3] | 48% | -11160.5 [-36521.2..22062.4] | 35% | 3240 |
-| forward | overlap | 85 [-9041.8..8733.4] | 50% | -7789 [-32842..19577.2] | 33% | 1345 |
+| forward | asia | -36.5 [-1907.1..1782.2] | 49% | -741.5 [-12339.6..8801.1] | 43% | 6300 |
+| forward | dead | -9 [-1117.5..968] | 49% | -3086.5 [-43361..18798.5] | 38% | 2636 |
+| forward | london | -77.5 [-1994.1..1743] | 48% | -1861 [-20603.2..11785.7] | 43% | 5850 |
+| forward | ny_only | -154.5 [-3230.3..2841.2] | 48% | -9672 [-34966.6..20940.2] | 37% | 4320 |
+| forward | overlap | 181 [-8405.8..8844.4] | 51% | -6574 [-30076.4..17008.2] | 32% | 1825 |
 
-## us30fut (43427 1M bars)
+## us30fut (48048 1M bars)
 
 | window | session | sv15 med [p10..p90] | sv15 +share | sv_sess med [p10..p90] | sv_sess +share | n |
 |---|---|---|---|---|---|---|
@@ -58,8 +58,8 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 119; prereg_organ_signed_vo
 | backtest | london | 25.5 [-827.1..962.4] | 52% | 1216.5 [-2571.2..5673.1] | 63% | 4290 |
 | backtest | ny_only | 142.5 [-2116.2..2140.3] | 54% | 1069 [-20827.9..19143.1] | 54% | 2970 |
 | backtest | overlap | -436.5 [-6395.2..5055.5] | 46% | -520.5 [-19424..7671.2] | 46% | 1320 |
-| forward | asia | 10 [-252..275.1] | 52% | 111.5 [-988.4..1314] | 55% | 5040 |
-| forward | dead | -11 [-288..200] | 46% | -561 [-9830..10374] | 36% | 2061 |
-| forward | london | -18 [-580..566.8] | 48% | 661 [-3915.4..3275.8] | 63% | 4613 |
-| forward | ny_only | 15 [-1260.2..1126] | 51% | -1516.5 [-9198..11769.6] | 45% | 3240 |
-| forward | overlap | 132 [-3569.2..3704.6] | 53% | 2131 [-9682..11265.8] | 56% | 1345 |
+| forward | asia | 4 [-251..266] | 51% | -11 [-922..1165.4] | 49% | 6299 |
+| forward | dead | -3 [-229..215.5] | 49% | -253.5 [-9749..18738] | 42% | 2626 |
+| forward | london | -16 [-608.2..647.1] | 48% | 443 [-3709.1..3176.1] | 58% | 5850 |
+| forward | ny_only | 20.5 [-1253.1..1145.1] | 51% | -702 [-9154.7..16911.8] | 48% | 4320 |
+| forward | overlap | 219 [-3485.4..4112.2] | 54% | 1592 [-8606.6..12419.2] | 55% | 1825 |

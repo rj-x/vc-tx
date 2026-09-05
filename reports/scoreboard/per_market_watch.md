@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, register 105). A MAP of where per-market specialization would go — NEVER a settings page: cells graduate only by walking the per-market track (register 105 item 2): (a) a written mechanism sentence, operator's pen; (b) a selection-aware luck budget against the market's whole config field; (c) its own forward clock at >= 45 forward rows (1.5x the pooled minimum 30, proposed at mint). CONSISTENCY RULING: ranked and printed on consistency statistics only — median-per-trade, win rate, weekly-consistency count (positive ISO weeks / weeks with >= 3 rows); TAIL-CARRY CAP (amended, register 105 follow-through): one winning trade > 25% of gross winning points = tail-carried, non-candidate at any n (register 62 extended); net points context only. STATISTIC SHAPES (74-B): every cell wears its SELECTION-NULL percentile — the share of 100 label-permutation best-of-field values (pinned seeds) it beats, on the same statistic it is ranked by — and a YES only above the field's null p95 (the most consistent fake the field manufactures). FIELD: variant x session x slot (stop axis: the variant's registered stop; not re-simulated); measurable = n >= 10. Fill model: the journal's PESSIMISTIC rows (the scalp arms' optimistic target fill declared, register 94). Ex-lockbox. Nothing registers from this page.
 
 ## Candidate pool (register 105 item 4) — mechanism slots await the operator's pen; nothing advances without it
 
@@ -78,7 +78,7 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 
 | variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NOTRAIL | ny_only | none | 93 (82) | -28.46 | 49% | 4/4 | 58.0 / 0.0 | no / no | 0.05 | 3050.6 |
+| R-NOTRAIL | ny_only | none | 93 (82) | -28.46 | 49% | 4/4 | 58.0 / 0.0 | no / no | 0.05 | 3456.8 |
 | R-NEXIT-SENT | overlap | none | 65 (59) | +7.20 | 58% | 3/3 | 86.0 / 99.0 | no / YES | 0.14 | 371.9 |
 | R-NEXIT-SENT | ny_only | none | 168 (141) | +1.00 | 52% | 2/4 | 78.0 / 78.0 | no / no | 0.09 | 1105.8 |
 | R-ARM15 | ny_only | none | 95 (84) | -0.90 | 50% | 2/4 | 62.0 / 40.0 | no / no | 0.08 | 798.6 |
@@ -212,7 +212,7 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | session | london | london | none | 14 (14) | 100% | +6.58 | 100.0 | YES |
 | slot | none | london | none | 14 (14) | 100% | +6.58 | 100.0 | YES |
 
-## uk100fut — forward (6241 rows; 134 field cells, 60 measurable, 25 tail-carried; field null p95 over 100 valid seeds: best win 56%, best median +0.81)
+## uk100fut — forward (6241 rows; 134 field cells, 60 measurable, 25 tail-carried; field null p95 over 100 valid seeds: best win 56%, best median +1.00)
 
 ### Top by win rate
 
@@ -242,7 +242,7 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | R-SCALP-H6-REF | asia | none | 11 (11) | +1.79 | 91% | 1/2 | 100.0 / 99.0 | YES / YES | 0.13 | 5.6 |
 | R-SCALP-H6-REF | london | none | 20 (20) | +3.55 | 90% | 1/2 | 100.0 / 100.0 | YES / YES | 0.10 | 30.2 |
 | R-SCALP-H6 | london | none | 21 (21) | +3.65 | 86% | 1/2 | 100.0 / 100.0 | YES / YES | 0.09 | 15.7 |
-| R-NOTRAIL | overlap | none | 33 (29) | +1.70 | 55% | 1/2 | 94.0 / 99.0 | no / YES | 0.16 | 9.5 |
+| R-NOTRAIL | overlap | none | 33 (29) | +1.70 | 55% | 1/2 | 93.0 / 99.0 | no / YES | 0.16 | 9.5 |
 
 ### Best level per axis (by win rate, then median)
 
@@ -302,13 +302,13 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | R-SCALP-H6 | overlap | none | 14 (14) | +27.07 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 383.8 |
 | R-SCALP-H6-REF | london | none | 21 (21) | +13.69 | 81% | 1/3 | 100.0 / 100.0 | YES / YES | 0.09 | -41.6 |
 | R-SCALP-H6 | london | none | 20 (20) | +11.93 | 80% | 1/3 | 100.0 / 100.0 | YES / YES | 0.10 | -92.5 |
-| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.19 | 1437.5 |
+| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.22 | 1644.5 |
 
 ### Top by median-per-trade
 
 | variant | session | slot | n (distinct) | median | win | +weeks/meas | sel-pct win / median | beats field null win / median | max-win share of gross | net (context) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.19 | 1437.5 |
+| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.22 | 1644.5 |
 | R-SCALP-H6-REF | overlap | none | 17 (17) | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.08 | 469.0 |
 | R-SCALP-H6 | overlap | none | 14 (14) | +27.07 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 383.8 |
 | R-SCALP-H6-REF | london | none | 21 (21) | +13.69 | 81% | 1/3 | 100.0 / 100.0 | YES / YES | 0.09 | -41.6 |
@@ -321,7 +321,7 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | R-NEXIT-SENT | ny_only | none | 179 (149) | +0.90 | 52% | 3/4 | 83.0 / 81.0 | no / no | 0.05 | -30.3 |
 | R-SCALP-H6 | overlap | none | 14 (14) | +27.07 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.09 | 383.8 |
 | R-SCALP-H6-REF | overlap | none | 17 (17) | +27.79 | 100% | 2/2 | 100.0 / 100.0 | YES / YES | 0.08 | 469.0 |
-| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.19 | 1437.5 |
+| R-NOTRAIL | dead | close15 | 14 (11) | +219.90 | 64% | 2/2 | 93.0 / 100.0 | no / YES | 0.22 | 1644.5 |
 | R-ARM15 | dead | none | 80 (68) | +0.39 | 50% | 2/2 | 80.0 / 81.0 | no / no | 0.10 | 2233.2 |
 
 ### Best level per axis (by win rate, then median)
@@ -337,94 +337,94 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_per_market_watch, r
 | instrument | arm | statistic | best rung | n | value | win / median / +weeks | null (n) | sel-pct | beats null |
 |---|---|---|---|---|---|---|---|---|---|
 | uk100fut | R-SCALP-H6 | win_rate | 0.25x | 47 | 87% | 87% / +1.07 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
-| uk100fut | R-SCALP-H6 | median | 1.5x | 34 | +9.46 | 76% / +9.46 / 2/2 | members at the same rung (20) | 95.0 | YES |
-| uk100fut | R-SCALP-H6 | weeks_pos | 0.5x (incumbent) | 47 | 2 | 87% / +3.17 / 2/2 | members' best-over-rungs (20) | 65.0 | no |
+| uk100fut | R-SCALP-H6 | median | 1.5x | 34 | +9.46 | 76% / +9.46 / 2/2 | members at the same rung (20) | 85.0 | no |
+| uk100fut | R-SCALP-H6 | weeks_pos | 0.5x (incumbent) | 47 | 2 | 87% / +3.17 / 2/2 | members' best-over-rungs (20) | 70.0 | no |
 | uk100fut | R-SCALP-H6-REF | win_rate | 0.25x | 47 | 87% | 87% / +0.99 / 1/2 | members' best-over-rungs (20) | 100.0 | YES |
-| uk100fut | R-SCALP-H6-REF | median | 1.5x | 36 | +8.96 | 67% / +8.96 / 1/2 | members at the same rung (20) | 80.0 | no |
-| uk100fut | R-SCALP-H6-REF | weeks_pos | 1x | 41 | 2 | 76% / +6.12 / 2/2 | members' best-over-rungs (20) | 65.0 | no |
-| ger40fut | R-SCALP-H6 | win_rate | 0.25x | 59 | 90% | 90% / +3.17 / 1/2 | members' best-over-rungs (20) | 65.0 | no |
-| ger40fut | R-SCALP-H6 | median | 1x | 46 | +13.17 | 59% / +13.17 / 1/2 | members at the same rung (20) | 0.0 | no |
+| uk100fut | R-SCALP-H6-REF | median | 1.5x | 36 | +8.96 | 67% / +8.96 / 1/2 | members at the same rung (20) | 85.0 | no |
+| uk100fut | R-SCALP-H6-REF | weeks_pos | 1x | 41 | 2 | 76% / +6.12 / 2/2 | members' best-over-rungs (20) | 70.0 | no |
+| ger40fut | R-SCALP-H6 | win_rate | 0.25x | 59 | 90% | 90% / +3.17 / 1/2 | members' best-over-rungs (20) | 55.0 | no |
+| ger40fut | R-SCALP-H6 | median | 1x | 46 | +13.17 | 59% / +13.17 / 1/2 | members at the same rung (20) | 5.0 | no |
 | ger40fut | R-SCALP-H6 | weeks_pos | 0.25x | 59 | 1 | 90% / +3.17 / 1/2 | members' best-over-rungs (20) | 0.0 | no |
-| ger40fut | R-SCALP-H6-REF | win_rate | 0.25x | 52 | 88% | 88% / +3.29 / 1/2 | members' best-over-rungs (20) | 35.0 | no |
-| ger40fut | R-SCALP-H6-REF | median | 1x | 46 | +13.17 | 61% / +13.17 / 0/2 | members at the same rung (20) | 0.0 | no |
+| ger40fut | R-SCALP-H6-REF | win_rate | 0.25x | 52 | 88% | 88% / +3.29 / 1/2 | members' best-over-rungs (20) | 30.0 | no |
+| ger40fut | R-SCALP-H6-REF | median | 1x | 46 | +13.17 | 61% / +13.17 / 0/2 | members at the same rung (20) | 5.0 | no |
 | ger40fut | R-SCALP-H6-REF | weeks_pos | 0.25x | 52 | 1 | 88% / +3.29 / 1/2 | members' best-over-rungs (20) | 0.0 | no |
-| nas100fut | R-SCALP-H6 | win_rate | 0.25x | 57 | 91% | 91% / +7.87 / 1/3 | members' best-over-rungs (20) | 90.0 | no |
-| nas100fut | R-SCALP-H6 | median | 1.5x | 46 | +44.75 | 63% / +44.75 / 2/3 | members at the same rung (20) | 80.0 | no |
-| nas100fut | R-SCALP-H6 | weeks_pos | 0.75x | 53 | 3 | 79% / +24.59 / 3/3 | members' best-over-rungs (20) | 30.0 | no |
-| nas100fut | R-SCALP-H6-REF | win_rate | 0.25x | 58 | 91% | 91% / +8.03 / 1/3 | members' best-over-rungs (20) | 90.0 | no |
-| nas100fut | R-SCALP-H6-REF | median | 1.5x | 45 | +42.41 | 64% / +42.41 / 2/3 | members at the same rung (20) | 65.0 | no |
-| nas100fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 58 | 3 | 91% / +17.85 / 3/3 | members' best-over-rungs (20) | 30.0 | no |
-| us30fut | R-SCALP-H6 | win_rate | 0.25x | 48 | 92% | 92% / +7.43 / 1/3 | members' best-over-rungs (20) | 90.0 | no |
-| us30fut | R-SCALP-H6 | median | 1.5x | 39 | +32.65 | 56% / +32.65 / 1/3 | members at the same rung (20) | 50.0 | no |
-| us30fut | R-SCALP-H6 | weeks_pos | 0.75x | 46 | 2 | 74% / +25.20 / 2/3 | members' best-over-rungs (20) | 0.0 | no |
-| us30fut | R-SCALP-H6-REF | win_rate | 0.25x | 49 | 90% | 90% / +8.22 / 1/3 | members' best-over-rungs (20) | 70.0 | no |
-| us30fut | R-SCALP-H6-REF | median | 1.5x | 38 | +40.20 | 60% / +40.20 / 1/3 | members at the same rung (20) | 80.0 | no |
-| us30fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 49 | 3 | 88% / +19.05 / 3/3 | members' best-over-rungs (20) | 50.0 | no |
+| nas100fut | R-SCALP-H6 | win_rate | 0.25x | 57 | 91% | 91% / +7.87 / 1/3 | members' best-over-rungs (20) | 80.0 | no |
+| nas100fut | R-SCALP-H6 | median | 1.5x | 46 | +44.75 | 63% / +44.75 / 2/3 | members at the same rung (20) | 90.0 | no |
+| nas100fut | R-SCALP-H6 | weeks_pos | 0.75x | 53 | 3 | 79% / +24.59 / 3/3 | members' best-over-rungs (20) | 40.0 | no |
+| nas100fut | R-SCALP-H6-REF | win_rate | 0.25x | 58 | 91% | 91% / +8.03 / 1/3 | members' best-over-rungs (20) | 80.0 | no |
+| nas100fut | R-SCALP-H6-REF | median | 1.5x | 45 | +42.41 | 64% / +42.41 / 2/3 | members at the same rung (20) | 75.0 | no |
+| nas100fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 58 | 3 | 91% / +17.85 / 3/3 | members' best-over-rungs (20) | 40.0 | no |
+| us30fut | R-SCALP-H6 | win_rate | 0.25x | 48 | 92% | 92% / +7.43 / 1/3 | members' best-over-rungs (20) | 100.0 | YES |
+| us30fut | R-SCALP-H6 | median | 1.5x | 39 | +32.65 | 56% / +32.65 / 1/3 | members at the same rung (20) | 60.0 | no |
+| us30fut | R-SCALP-H6 | weeks_pos | 0.75x | 46 | 2 | 74% / +25.20 / 2/3 | members' best-over-rungs (20) | 5.0 | no |
+| us30fut | R-SCALP-H6-REF | win_rate | 0.25x | 49 | 90% | 90% / +8.22 / 1/3 | members' best-over-rungs (20) | 60.0 | no |
+| us30fut | R-SCALP-H6-REF | median | 1.5x | 38 | +40.20 | 60% / +40.20 / 1/3 | members at the same rung (20) | 95.0 | YES |
+| us30fut | R-SCALP-H6-REF | weeks_pos | 0.5x (incumbent) | 49 | 3 | 88% / +19.05 / 3/3 | members' best-over-rungs (20) | 40.0 | no |
 
 ## Census clears (register 108) — bar-persistence headline cells (net reach 0.5xATR@5) above their matched floor's FULL member range; measurable at n >= 25; selection-null = the best net reach among measurable signals under signal-label permutation across the leg's census fires (100 pinned seeds); listed, never rules — the mechanism sentence is the operator's pen
 
 | instrument | signal | window | n | net reach % | floor [range] (members) | Δ vs range max | sel-pct | field null p95 | beats field null | status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| uk100fut | S0-H1 | backtest | 69 | 15.9 | B-RANDOM [8.2…15.2] (20) | +0.7pp | 14.0 | 24.7 | no | WATCH |
-| uk100fut | S0-H1 | forward | 92 | 16.3 | B-RANDOM [5.1…12.5] (20) | +3.8pp | 23.0 | 24.4 | no | WATCH |
-| uk100fut | S0-H11 | backtest | 316 | 15.5 | B-RANDOM [8.2…15.2] (20) | +0.3pp | 11.0 | 24.7 | no | WATCH |
-| uk100fut | S0-H11 | forward | 187 | 16.6 | B-RANDOM [5.1…12.5] (20) | +4.1pp | 26.0 | 24.4 | no | WATCH |
-| uk100fut | S0-H17 | forward | 59 | 13.6 | B-RANDOM [5.1…12.5] (20) | +1.1pp | 0.0 | 24.4 | no | WATCH |
-| uk100fut | S0-H18 | backtest | 61 | 16.4 | B-RANDOM [8.2…15.2] (20) | +1.2pp | 28.0 | 24.7 | no | WATCH |
-| uk100fut | S0-H19 | backtest | 213 | 16.0 | B-RANDOM [8.2…15.2] (20) | +0.8pp | 18.0 | 24.7 | no | WATCH |
-| uk100fut | S0-H20 | backtest | 50 | 28.0 | B-RANDOM [8.2…15.2] (20) | +12.8pp | 100.0 | 24.7 | YES | WATCH |
-| uk100fut | S0-H20 | forward | 45 | 26.7 | B-RANDOM [5.1…12.5] (20) | +14.2pp | 96.0 | 24.4 | YES | WATCH |
-| uk100fut | S0-H6 | backtest | 59 | 33.9 | B-RANDOM [8.2…15.2] (20) | +18.7pp | 100.0 | 24.7 | YES | WATCH |
-| uk100fut | S0-H6 | forward | 66 | 30.3 | B-RANDOM [5.1…12.5] (20) | +17.8pp | 99.0 | 24.4 | YES | WATCH |
-| uk100fut | S0-H7 | backtest | 112 | 16.1 | B-RANDOM [8.2…15.2] (20) | +0.9pp | 21.0 | 24.7 | no | WATCH |
-| uk100fut | S0-H7 | forward | 89 | 13.5 | B-RANDOM [5.1…12.5] (20) | +1.0pp | 0.0 | 24.4 | no | WATCH |
-| uk100fut | S0-H9 | backtest | 55 | 16.4 | B-RANDOM [8.2…15.2] (20) | +1.2pp | 28.0 | 24.7 | no | WATCH |
-| uk100fut | S1-H1 | backtest | 5 | 40.0 | B-RANDOM [8.2…15.2] (20) | +24.8pp | — | — | no | unmeasurable (n<25; 20 to go) |
-| uk100fut | S1-H1 | forward | 6 | 16.7 | B-RANDOM [5.1…12.5] (20) | +4.2pp | — | — | no | unmeasurable (n<25; 19 to go) |
-| uk100fut | S1-H11 | forward | 180 | 12.8 | B-RANDOM [5.1…12.5] (20) | +0.3pp | 0.0 | 24.4 | no | WATCH |
-| uk100fut | S1-H2 | forward | 272 | 12.9 | B-RANDOM [5.1…12.5] (20) | +0.4pp | 0.0 | 24.4 | no | WATCH |
-| uk100fut | S1-H9 | backtest | 19 | 21.1 | B-RANDOM [8.2…15.2] (20) | +5.9pp | — | — | no | unmeasurable (n<25; 6 to go) |
-| ger40fut | S0-H11 | backtest | 74 | 29.7 | B-RANDOM [10.8…19.1] (20) | +10.6pp | 99.0 | 25.7 | YES | WATCH |
-| ger40fut | S0-H13 | backtest | 6 | 50.0 | B-RANDOM [10.8…19.1] (20) | +30.9pp | — | — | no | unmeasurable (n<25; 19 to go) |
-| ger40fut | S0-H20 | backtest | 35 | 28.6 | B-RANDOM [10.8…19.1] (20) | +9.5pp | 97.0 | 25.7 | YES | WATCH |
-| ger40fut | S0-H20 | forward | 76 | 35.5 | B-RANDOM [8.1…18.6] (20) | +16.9pp | 99.0 | 30.2 | YES | WATCH |
-| ger40fut | S0-H3 | forward | 20 | 20.0 | B-RANDOM [8.1…18.6] (20) | +1.4pp | — | — | no | unmeasurable (n<25; 5 to go) |
-| ger40fut | S0-H6 | backtest | 36 | 27.8 | B-RANDOM [10.8…19.1] (20) | +8.7pp | 96.0 | 25.7 | YES | WATCH |
-| ger40fut | S0-H6 | forward | 97 | 32.0 | B-RANDOM [8.1…18.6] (20) | +13.4pp | 98.0 | 30.2 | YES | WATCH |
-| ger40fut | S0-H7 | forward | 69 | 18.8 | B-RANDOM [8.1…18.6] (20) | +0.2pp | 1.0 | 30.2 | no | WATCH |
-| ger40fut | S1-H1 | forward | 4 | 25.0 | B-RANDOM [8.1…18.6] (20) | +6.4pp | — | — | no | unmeasurable (n<25; 21 to go) |
-| ger40fut | S1-H11 | forward | 219 | 20.5 | B-RANDOM [8.1…18.6] (20) | +1.9pp | 14.0 | 30.2 | no | WATCH |
-| ger40fut | S1-H9 | backtest | 8 | 25.0 | B-RANDOM [10.8…19.1] (20) | +5.9pp | — | — | no | unmeasurable (n<25; 17 to go) |
-| ger40fut | S1-H9 | forward | 21 | 19.0 | B-RANDOM [8.1…18.6] (20) | +0.4pp | — | — | no | unmeasurable (n<25; 4 to go) |
-| nas100fut | S0-H1 | forward | 69 | 20.3 | B-RANDOM [11.6…17.3] (20) | +3.0pp | 12.0 | 29.1 | no | WATCH |
-| nas100fut | S0-H11 | forward | 388 | 17.5 | B-RANDOM [11.6…17.3] (20) | +0.2pp | 0.0 | 29.1 | no | WATCH |
-| nas100fut | S0-H13 | backtest | 1 | 100.0 | B-RANDOM [10.5…20.7] (20) | +79.3pp | — | — | no | unmeasurable (n<25; 24 to go) |
-| nas100fut | S0-H16 | backtest | 10 | 30.0 | B-RANDOM [10.5…20.7] (20) | +9.3pp | — | — | no | unmeasurable (n<25; 15 to go) |
-| nas100fut | S0-H17 | backtest | 15 | 26.7 | B-RANDOM [10.5…20.7] (20) | +6.0pp | — | — | no | unmeasurable (n<25; 10 to go) |
-| nas100fut | S0-H20 | backtest | 46 | 52.2 | B-RANDOM [10.5…20.7] (20) | +31.5pp | 100.0 | 34.6 | YES | WATCH |
-| nas100fut | S0-H20 | forward | 52 | 36.5 | B-RANDOM [11.6…17.3] (20) | +19.2pp | 100.0 | 29.1 | YES | WATCH |
-| nas100fut | S0-H6 | backtest | 29 | 44.8 | B-RANDOM [10.5…20.7] (20) | +24.1pp | 100.0 | 34.6 | YES | WATCH |
-| nas100fut | S0-H6 | forward | 83 | 31.3 | B-RANDOM [11.6…17.3] (20) | +14.0pp | 99.0 | 29.1 | YES | WATCH |
-| nas100fut | S1-H1 | backtest | 3 | 33.3 | B-RANDOM [10.5…20.7] (20) | +12.6pp | — | — | no | unmeasurable (n<25; 22 to go) |
-| nas100fut | S1-H1 | forward | 2 | 50.0 | B-RANDOM [11.6…17.3] (20) | +32.7pp | — | — | no | unmeasurable (n<25; 23 to go) |
-| nas100fut | S1-H2 | forward | 292 | 17.5 | B-RANDOM [11.6…17.3] (20) | +0.2pp | 0.0 | 29.1 | no | WATCH |
-| nas100fut | S1-H9 | forward | 17 | 23.5 | B-RANDOM [11.6…17.3] (20) | +6.2pp | — | — | no | unmeasurable (n<25; 8 to go) |
-| us30fut | S0-H1 | backtest | 49 | 28.6 | B-RANDOM [10.6…16.5] (20) | +12.1pp | 96.0 | 27.0 | YES | WATCH |
-| us30fut | S0-H13 | forward | 3 | 33.3 | B-RANDOM [7.5…17.2] (20) | +16.1pp | — | — | no | unmeasurable (n<25; 22 to go) |
-| us30fut | S0-H16 | backtest | 10 | 40.0 | B-RANDOM [10.6…16.5] (20) | +23.5pp | — | — | no | unmeasurable (n<25; 15 to go) |
-| us30fut | S0-H16 | forward | 12 | 33.3 | B-RANDOM [7.5…17.2] (20) | +16.1pp | — | — | no | unmeasurable (n<25; 13 to go) |
-| us30fut | S0-H17 | forward | 86 | 17.4 | B-RANDOM [7.5…17.2] (20) | +0.2pp | 3.0 | 26.2 | no | WATCH |
-| us30fut | S0-H19 | backtest | 172 | 19.2 | B-RANDOM [10.6…16.5] (20) | +2.7pp | 31.0 | 27.0 | no | WATCH |
-| us30fut | S0-H20 | backtest | 58 | 17.2 | B-RANDOM [10.6…16.5] (20) | +0.7pp | 6.0 | 27.0 | no | WATCH |
-| us30fut | S0-H20 | forward | 63 | 34.9 | B-RANDOM [7.5…17.2] (20) | +17.7pp | 100.0 | 26.2 | YES | WATCH |
+| uk100fut | S0-H1 | backtest | 69 | 15.9 | B-RANDOM [8.9…12.9] (20) | +3.0pp | 14.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H1 | forward | 92 | 16.3 | B-RANDOM [6.7…13.9] (20) | +2.4pp | 23.0 | 24.4 | no | WATCH |
+| uk100fut | S0-H11 | backtest | 316 | 15.5 | B-RANDOM [8.9…12.9] (20) | +2.6pp | 11.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H11 | forward | 187 | 16.6 | B-RANDOM [6.7…13.9] (20) | +2.7pp | 26.0 | 24.4 | no | WATCH |
+| uk100fut | S0-H16 | backtest | 15 | 13.3 | B-RANDOM [8.9…12.9] (20) | +0.4pp | — | — | no | unmeasurable (n<25; 10 to go) |
+| uk100fut | S0-H17 | backtest | 41 | 14.6 | B-RANDOM [8.9…12.9] (20) | +1.7pp | 2.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H18 | backtest | 61 | 16.4 | B-RANDOM [8.9…12.9] (20) | +3.5pp | 28.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H19 | backtest | 213 | 16.0 | B-RANDOM [8.9…12.9] (20) | +3.1pp | 18.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H20 | backtest | 50 | 28.0 | B-RANDOM [8.9…12.9] (20) | +15.1pp | 100.0 | 24.7 | YES | WATCH |
+| uk100fut | S0-H20 | forward | 45 | 26.7 | B-RANDOM [6.7…13.9] (20) | +12.8pp | 96.0 | 24.4 | YES | WATCH |
+| uk100fut | S0-H6 | backtest | 59 | 33.9 | B-RANDOM [8.9…12.9] (20) | +21.0pp | 100.0 | 24.7 | YES | WATCH |
+| uk100fut | S0-H6 | forward | 66 | 30.3 | B-RANDOM [6.7…13.9] (20) | +16.4pp | 99.0 | 24.4 | YES | WATCH |
+| uk100fut | S0-H7 | backtest | 112 | 16.1 | B-RANDOM [8.9…12.9] (20) | +3.2pp | 21.0 | 24.7 | no | WATCH |
+| uk100fut | S0-H9 | backtest | 55 | 16.4 | B-RANDOM [8.9…12.9] (20) | +3.5pp | 28.0 | 24.7 | no | WATCH |
+| uk100fut | S1-H1 | backtest | 5 | 40.0 | B-RANDOM [8.9…12.9] (20) | +27.1pp | — | — | no | unmeasurable (n<25; 20 to go) |
+| uk100fut | S1-H1 | forward | 6 | 16.7 | B-RANDOM [6.7…13.9] (20) | +2.8pp | — | — | no | unmeasurable (n<25; 19 to go) |
+| uk100fut | S1-H9 | backtest | 19 | 21.1 | B-RANDOM [8.9…12.9] (20) | +8.2pp | — | — | no | unmeasurable (n<25; 6 to go) |
+| ger40fut | S0-H11 | backtest | 74 | 29.7 | B-RANDOM [10.8…20.3] (20) | +9.4pp | 99.0 | 25.7 | YES | WATCH |
+| ger40fut | S0-H13 | backtest | 6 | 50.0 | B-RANDOM [10.8…20.3] (20) | +29.7pp | — | — | no | unmeasurable (n<25; 19 to go) |
+| ger40fut | S0-H17 | forward | 63 | 17.5 | B-RANDOM [9.2…16.3] (20) | +1.2pp | 0.0 | 30.2 | no | WATCH |
+| ger40fut | S0-H19 | forward | 166 | 16.9 | B-RANDOM [9.2…16.3] (20) | +0.6pp | 0.0 | 30.2 | no | WATCH |
+| ger40fut | S0-H20 | backtest | 35 | 28.6 | B-RANDOM [10.8…20.3] (20) | +8.3pp | 97.0 | 25.7 | YES | WATCH |
+| ger40fut | S0-H20 | forward | 76 | 35.5 | B-RANDOM [9.2…16.3] (20) | +19.2pp | 99.0 | 30.2 | YES | WATCH |
+| ger40fut | S0-H3 | forward | 20 | 20.0 | B-RANDOM [9.2…16.3] (20) | +3.7pp | — | — | no | unmeasurable (n<25; 5 to go) |
+| ger40fut | S0-H6 | backtest | 36 | 27.8 | B-RANDOM [10.8…20.3] (20) | +7.5pp | 96.0 | 25.7 | YES | WATCH |
+| ger40fut | S0-H6 | forward | 97 | 32.0 | B-RANDOM [9.2…16.3] (20) | +15.7pp | 98.0 | 30.2 | YES | WATCH |
+| ger40fut | S0-H7 | forward | 69 | 18.8 | B-RANDOM [9.2…16.3] (20) | +2.5pp | 1.0 | 30.2 | no | WATCH |
+| ger40fut | S1-H1 | forward | 4 | 25.0 | B-RANDOM [9.2…16.3] (20) | +8.7pp | — | — | no | unmeasurable (n<25; 21 to go) |
+| ger40fut | S1-H11 | forward | 219 | 20.5 | B-RANDOM [9.2…16.3] (20) | +4.2pp | 14.0 | 30.2 | no | WATCH |
+| ger40fut | S1-H9 | backtest | 8 | 25.0 | B-RANDOM [10.8…20.3] (20) | +4.7pp | — | — | no | unmeasurable (n<25; 17 to go) |
+| ger40fut | S1-H9 | forward | 21 | 19.0 | B-RANDOM [9.2…16.3] (20) | +2.7pp | — | — | no | unmeasurable (n<25; 4 to go) |
+| nas100fut | S0-H1 | backtest | 34 | 20.6 | B-RANDOM [8.2…16.7] (20) | +3.9pp | 13.0 | 34.6 | no | WATCH |
+| nas100fut | S0-H1 | forward | 69 | 20.3 | B-RANDOM [10.1…17.5] (20) | +2.8pp | 12.0 | 29.1 | no | WATCH |
+| nas100fut | S0-H13 | backtest | 1 | 100.0 | B-RANDOM [8.2…16.7] (20) | +83.3pp | — | — | no | unmeasurable (n<25; 24 to go) |
+| nas100fut | S0-H16 | backtest | 10 | 30.0 | B-RANDOM [8.2…16.7] (20) | +13.3pp | — | — | no | unmeasurable (n<25; 15 to go) |
+| nas100fut | S0-H17 | backtest | 15 | 26.7 | B-RANDOM [8.2…16.7] (20) | +10.0pp | — | — | no | unmeasurable (n<25; 10 to go) |
+| nas100fut | S0-H18 | backtest | 58 | 17.2 | B-RANDOM [8.2…16.7] (20) | +0.5pp | 0.0 | 34.6 | no | WATCH |
+| nas100fut | S0-H19 | backtest | 204 | 20.1 | B-RANDOM [8.2…16.7] (20) | +3.4pp | 8.0 | 34.6 | no | WATCH |
+| nas100fut | S0-H20 | backtest | 46 | 52.2 | B-RANDOM [8.2…16.7] (20) | +35.5pp | 100.0 | 34.6 | YES | WATCH |
+| nas100fut | S0-H20 | forward | 52 | 36.5 | B-RANDOM [10.1…17.5] (20) | +19.0pp | 100.0 | 29.1 | YES | WATCH |
+| nas100fut | S0-H6 | backtest | 29 | 44.8 | B-RANDOM [8.2…16.7] (20) | +28.1pp | 100.0 | 34.6 | YES | WATCH |
+| nas100fut | S0-H6 | forward | 83 | 31.3 | B-RANDOM [10.1…17.5] (20) | +13.8pp | 99.0 | 29.1 | YES | WATCH |
+| nas100fut | S0-H9 | backtest | 88 | 18.2 | B-RANDOM [8.2…16.7] (20) | +1.5pp | 0.0 | 34.6 | no | WATCH |
+| nas100fut | S1-H1 | backtest | 3 | 33.3 | B-RANDOM [8.2…16.7] (20) | +16.6pp | — | — | no | unmeasurable (n<25; 22 to go) |
+| nas100fut | S1-H1 | forward | 2 | 50.0 | B-RANDOM [10.1…17.5] (20) | +32.5pp | — | — | no | unmeasurable (n<25; 23 to go) |
+| nas100fut | S1-H9 | forward | 17 | 23.5 | B-RANDOM [10.1…17.5] (20) | +6.0pp | — | — | no | unmeasurable (n<25; 8 to go) |
+| us30fut | S0-H1 | backtest | 49 | 28.6 | B-RANDOM [10.4…18.4] (20) | +10.2pp | 96.0 | 27.0 | YES | WATCH |
+| us30fut | S0-H13 | forward | 3 | 33.3 | B-RANDOM [8.4…16.4] (20) | +16.9pp | — | — | no | unmeasurable (n<25; 22 to go) |
+| us30fut | S0-H16 | backtest | 10 | 40.0 | B-RANDOM [10.4…18.4] (20) | +21.6pp | — | — | no | unmeasurable (n<25; 15 to go) |
+| us30fut | S0-H16 | forward | 12 | 33.3 | B-RANDOM [8.4…16.4] (20) | +16.9pp | — | — | no | unmeasurable (n<25; 13 to go) |
+| us30fut | S0-H17 | forward | 86 | 17.4 | B-RANDOM [8.4…16.4] (20) | +1.0pp | 3.0 | 26.2 | no | WATCH |
+| us30fut | S0-H19 | backtest | 172 | 19.2 | B-RANDOM [10.4…18.4] (20) | +0.8pp | 31.0 | 27.0 | no | WATCH |
+| us30fut | S0-H20 | forward | 63 | 34.9 | B-RANDOM [8.4…16.4] (20) | +18.5pp | 100.0 | 26.2 | YES | WATCH |
+| us30fut | S0-H3 | forward | 6 | 16.7 | B-RANDOM [8.4…16.4] (20) | +0.3pp | — | — | no | unmeasurable (n<25; 19 to go) |
 | us30fut | S0-H4 | backtest | 13 | 23.1 | B-ALWAYS-LONG [15.6…15.6] (1) | +7.5pp | — | — | no | unmeasurable (n<25; 12 to go) |
-| us30fut | S0-H5 | backtest | 1 | 100.0 | B-RANDOM [10.6…16.5] (20) | +83.5pp | — | — | no | unmeasurable (n<25; 24 to go) |
-| us30fut | S0-H5 | forward | 1 | 100.0 | B-RANDOM [7.5…17.2] (20) | +82.8pp | — | — | no | unmeasurable (n<25; 24 to go) |
-| us30fut | S0-H6 | forward | 83 | 41.0 | B-RANDOM [7.5…17.2] (20) | +23.8pp | 100.0 | 26.2 | YES | WATCH |
-| us30fut | S0-H7 | backtest | 41 | 17.1 | B-RANDOM [10.6…16.5] (20) | +0.6pp | 6.0 | 27.0 | no | WATCH |
-| us30fut | S0-H7 | forward | 79 | 19.0 | B-RANDOM [7.5…17.2] (20) | +1.8pp | 22.0 | 26.2 | no | WATCH |
-| us30fut | S1-H1 | backtest | 2 | 100.0 | B-RANDOM [10.6…16.5] (20) | +83.5pp | — | — | no | unmeasurable (n<25; 23 to go) |
-| us30fut | S1-H11 | backtest | 189 | 18.0 | B-RANDOM [10.6…16.5] (20) | +1.5pp | 14.0 | 27.0 | no | WATCH |
+| us30fut | S0-H5 | backtest | 1 | 100.0 | B-RANDOM [10.4…18.4] (20) | +81.6pp | — | — | no | unmeasurable (n<25; 24 to go) |
+| us30fut | S0-H5 | forward | 1 | 100.0 | B-RANDOM [8.4…16.4] (20) | +83.6pp | — | — | no | unmeasurable (n<25; 24 to go) |
+| us30fut | S0-H6 | forward | 83 | 41.0 | B-RANDOM [8.4…16.4] (20) | +24.6pp | 100.0 | 26.2 | YES | WATCH |
+| us30fut | S0-H7 | forward | 79 | 19.0 | B-RANDOM [8.4…16.4] (20) | +2.6pp | 22.0 | 26.2 | no | WATCH |
+| us30fut | S1-H1 | backtest | 2 | 100.0 | B-RANDOM [10.4…18.4] (20) | +81.6pp | — | — | no | unmeasurable (n<25; 23 to go) |
 
 ## Arrival-anatomy findings (register 114) — single-leg significant anatomy shifts from zone_anatomy.md, wearing the leg's whole-field selection-null (best fake |shift|/p95 per seed); listed, never rules
 

@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
 
 STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. NET LEDGER = per-cell pooled net with MANDATORY zone decomposition (descriptive, no null; ranking is best-of-field by construction): pooled INCLUDES the lockbox span under the dated operator order of 2026-08-27 — the one sanctioned decomposition display; register 85 stands for every evidential aggregate, and the decomposition columns are why the pooled number is candidate-generation only. NO CELL IS QUOTABLE FROM THE LEDGER WITHOUT ITS FORWARD COLUMN. EXCLUDED FROM AGGREGATES: 3517 lockbox-span rows, 0 sealed rows (of 14507 journal rows; 10990 used).
 
@@ -72,19 +72,19 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 
 | sentence | variant | session | pooled net | working net / med (n) | lockbox net / med (n) | forward net / med (n) | fwd wks +/tot | floor (base) | clears | verdict |
 |---|---|---|---|---|---|---|---|---|---|---|
+| S0-H14 | R-BE | ny_only | 661.7 | 235.1 / -1.5 (4) | -111.8 / -1.5 (8) | 538.4 / -1.5 (7) | 2/4 | B-TREND | no | forward-thin |
 | S0-H2 | R-ARM15 | ny_only | 612.8 | -46.2 / 35.65 (5) | 156.9 / 4.56 (4) | 502.1 / 16.88 (10) | 2/3 | B-RANDOM | YES | forward-thin |
 | S0-H10 | R-ARM15 | ny_only | 612.2 | 60.8 / -1.65 (4) | 93.2 / 11.51 (9) | 458.2 / 48.1 (9) | 4/4 | B-TREND | no | forward-thin |
-| S0-H14 | R-BE | ny_only | 594.0 | 235.1 / -1.5 (4) | -111.8 / -1.5 (8) | 470.7 / -1.5 (7) | 2/4 | B-TREND | no | forward-thin |
+| S0-H11 | R-NOTRAIL | ny_only | 570.9 | 371.4 / 185.7 (2) | 7.2 / 7.2 (1) | 192.3 / -88.55 (5) | 2/3 | B-RANDOM | no | forward-thin |
 | S0-H10 | R-BE | ny_only | 545.8 | 263.8 / -1.5 (4) | -147.4 / -1.5 (9) | 429.4 / -1.5 (9) | 2/4 | B-TREND | no | forward-thin |
 | S0-H11 | R-NEXIT-EARLY | london | 530.8 | 155.5 / 78.73 (3) | 275.9 / -0.5 (23) | 99.4 / 0.45 (66) | 3/3 | B-RANDOM | YES | forward-positive |
-| S0-H11 | R-NOTRAIL | ny_only | 503.2 | 371.4 / 185.7 (2) | 7.2 / 7.2 (1) | 124.6 / -88.55 (5) | 2/3 | B-RANDOM | YES | forward-thin |
+| S0-H20 | R-BE | ny_only | 519.2 | 0.0 / None (0) | 0.0 / None (0) | 519.2 / 259.6 (2) | 2/2 | B-RANDOM | YES | forward-thin |
+| S0-H20 | R-NOTRAIL | ny_only | 519.2 | 0.0 / None (0) | 0.0 / None (0) | 519.2 / 259.6 (2) | 2/2 | B-RANDOM | YES | forward-thin |
+| S0-H2 | R-NOTRAIL | ny_only | 510.8 | -366.4 / -121.0 (4) | 92.1 / 0.07 (4) | 785.2 / 90.5 (10) | 3/3 | B-RANDOM | no | forward-thin |
+| S1-H2 | R-NOTRAIL | ny_only | 474.6 | -358.9 / -117.22 (4) | 160.3 / 7.6 (4) | 673.2 / 95.4 (9) | 3/3 | B-RANDOM | no | forward-thin |
+| S1-H11 | R-BE | ny_only | 465.0 | -248.0 / -113.5 (3) | 266.5 / 89.7 (3) | 446.4 / 197.4 (3) | 2/2 | B-RANDOM | no | forward-thin |
+| S0-H2 | R-BE | ny_only | 464.4 | -134.4 / -1.5 (5) | 45.7 / -23.12 (4) | 553.1 / -1.5 (10) | 2/3 | B-RANDOM | no | forward-thin |
 | S1-H11 | R-NEXIT-SENT | ny_only | 451.6 | -8.9 / -6.95 (6) | 360.5 / 61.62 (3) | 100.0 / 11.9 (4) | 2/2 | B-RANDOM | no | forward-thin |
-| S0-H20 | R-BE | ny_only | 451.5 | 0.0 / None (0) | 0.0 / None (0) | 451.5 / 225.75 (2) | 2/2 | B-RANDOM | YES | forward-thin |
-| S0-H20 | R-NOTRAIL | ny_only | 451.5 | 0.0 / None (0) | 0.0 / None (0) | 451.5 / 225.75 (2) | 2/2 | B-RANDOM | YES | forward-thin |
-| S0-H2 | R-NOTRAIL | ny_only | 443.1 | -366.4 / -121.0 (4) | 92.1 / 0.07 (4) | 717.5 / 90.5 (10) | 3/3 | B-RANDOM | no | forward-thin |
-| S1-H2 | R-NOTRAIL | ny_only | 406.9 | -358.9 / -117.22 (4) | 160.3 / 7.6 (4) | 605.5 / 95.4 (9) | 3/3 | B-RANDOM | no | forward-thin |
-| S1-H11 | R-BE | ny_only | 397.2 | -248.0 / -113.5 (3) | 266.5 / 89.7 (3) | 378.7 / 197.4 (3) | 2/2 | B-RANDOM | no | forward-thin |
-| S0-H2 | R-BE | ny_only | 396.7 | -134.4 / -1.5 (5) | 45.7 / -23.12 (4) | 485.4 / -1.5 (10) | 2/3 | B-RANDOM | no | forward-thin |
 | S0-H19 | R-ARM15 | london | 389.9 | 277.8 / 74.91 (4) | 193.1 / 20.7 (3) | -81.1 / -6.06 (11) | 1/2 | B-RANDOM | YES | forward-thin |
 | S0-H6 | R-NEXIT-EARLY | london | 386.9 | 245.1 / 3.61 (10) | 227.8 / 3.9 (15) | -86.0 / -0.1 (29) | 1/3 | B-RANDOM | YES | forward-negative |
 | S0-H2 | R-NEXIT-SENT | ny_only | 385.9 | -44.4 / -2.0 (25) | 234.7 / 26.9 (4) | 195.7 / 1.0 (37) | 2/3 | B-RANDOM | no | forward-positive |
@@ -95,8 +95,8 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 | S0-H10 | R-NEXIT-SENT | ny_only | 333.2 | 55.6 / -4.45 (4) | 89.6 / 4.23 (10) | 188.0 / 1.1 (11) | 3/4 | B-TREND | no | forward-thin |
 | S0-H11 | R-NEXIT-SENT | ny_only | 329.8 | 158.7 / 79.35 (2) | -3.3 / -8.41 (3) | 174.4 / -3.9 (8) | 2/3 | B-RANDOM | no | forward-thin |
 | S0-H19 | R-NEXIT-SENT | london | 329.6 | 324.1 / 73.69 (5) | 10.7 / 13.0 (3) | -5.2 / -5.35 (14) | 1/2 | B-RANDOM | no | forward-thin |
-| S0-H13 | R-ARM15 | asia | 304.8 | 342.9 / 104.09 (3) | -38.0 / -38.04 (1) | 0.0 / None (0) | 0/0 | B-RANDOM | YES | forward-thin |
-| S0-H14 | R-ARM15 | london | 300.3 | -34.1 / -1.81 (5) | 238.4 / -19.85 (17) | 96.0 / -1.05 (11) | 2/3 | B-TREND | no | forward-thin |
+| S1-H11 | R-NOTRAIL | ny_only | 327.0 | -349.0 / -113.5 (3) | 229.6 / 89.7 (3) | 446.4 / 197.4 (3) | 2/2 | B-RANDOM | no | forward-thin |
+| S0-H10 | R-NOTRAIL | ny_only | 307.6 | 213.3 / -21.52 (4) | -538.1 / -79.42 (8) | 632.4 / 77.4 (9) | 3/4 | B-TREND | no | forward-thin |
 | … | | | (641 more cells in the JSON) | | | | | | | |
 
 ## Winner/loser separators clearing their null
@@ -238,15 +238,15 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 | S0-H1 | eod | 47 | 26.9 | 50.9 | 27.7 | -7.9 |
 | S0-H1 | narrative | 374 | -1.7 | 21.95 | 22.2 | 1.8 |
 | S0-H1 | stop | 346 | -5.56 | 16.9 | 29.84 | 0.55 |
-| S0-H10 | eod | 44 | 57.7 | 111.7 | 31.1 | 12.7 |
+| S0-H10 | eod | 44 | 57.7 | 112.4 | 35.0 | 12.7 |
 | S0-H10 | narrative | 327 | -1.2 | 17.8 | 18.3 | 1.4 |
 | S0-H10 | stop | 320 | -5.74 | 14.92 | 23.94 | 0.96 |
-| S0-H11 | eod | 41 | 7.3 | 35.85 | 28.6 | 21.8 |
+| S0-H11 | eod | 41 | 7.3 | 40.2 | 28.6 | 21.8 |
 | S0-H11 | narrative | 487 | -1.5 | 17.8 | 17.5 | -2.4 |
 | S0-H11 | stop | 379 | -5.82 | 19.5 | 24.89 | 0.15 |
 | S0-H13 | narrative | 41 | 0.6 | 37.7 | 30.6 | 19.6 |
 | S0-H13 | stop | 44 | -1.5 | 32.5 | 28.75 | 3.7 |
-| S0-H14 | eod | 35 | 64.8 | 108.2 | 31.0 | -6.0 |
+| S0-H14 | eod | 35 | 64.8 | 108.5 | 31.1 | -6.0 |
 | S0-H14 | narrative | 280 | -2.1 | 16.2 | 18.9 | 1.95 |
 | S0-H14 | stop | 275 | -5.53 | 15.05 | 24.05 | 0.75 |
 | S0-H16 | eod | 96 | -1.0 | 26.85 | 25.7 | -6.7 |
@@ -259,11 +259,11 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 | S0-H19 | eod | 29 | 39.8 | 79.2 | 31.1 | -7.4 |
 | S0-H19 | narrative | 599 | -1.5 | 17.8 | 18.1 | -0.9 |
 | S0-H19 | stop | 301 | -6.1 | 16.1 | 27.23 | 2.52 |
-| S0-H2 | eod | 48 | 42.6 | 73.7 | 29.8 | 0.0 |
+| S0-H2 | eod | 48 | 42.6 | 78.4 | 31.0 | 7.45 |
 | S0-H2 | narrative | 1143 | -1.3 | 19.1 | 19.5 | -0.2 |
 | S0-H2 | stop | 477 | -5.17 | 17.3 | 22.26 | -1.17 |
 | S0-H2 | stop_gap | 30 | -5.45 | 18.35 | 23.85 | 1.35 |
-| S0-H20 | eod | 35 | 5.6 | 44.5 | 31.0 | -6.0 |
+| S0-H20 | eod | 35 | 5.6 | 44.5 | 31.1 | -6.0 |
 | S0-H20 | narrative | 142 | -4.1 | 26.65 | 25.4 | 4.75 |
 | S0-H20 | stop | 123 | -8.17 | 27.0 | 28.25 | -3.71 |
 | S0-H3 | narrative | 57 | -1.5 | 13.3 | 15.3 | -2.2 |
@@ -283,7 +283,7 @@ STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = fi
 | S1-H11 | narrative | 427 | -1.5 | 27.2 | 24.0 | 6.7 |
 | S1-H11 | stop | 340 | -6.33 | 23.7 | 24.18 | -3.01 |
 | S1-H11 | stop_gap | 26 | -12.85 | 12.25 | 18.05 | -11.25 |
-| S1-H2 | eod | 38 | 56.3 | 86.55 | 31.05 | 7.7 |
+| S1-H2 | eod | 38 | 56.3 | 87.4 | 31.1 | 7.9 |
 | S1-H2 | narrative | 892 | -1.2 | 19.1 | 19.5 | -0.5 |
 | S1-H2 | stop | 419 | -5.26 | 18.5 | 23.28 | -0.5 |
 | S1-H2 | stop_gap | 28 | -6.65 | 13.85 | 28.8 | 7.6 |

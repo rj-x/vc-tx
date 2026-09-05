@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_excursion_geometry). BOTH HALVES ARE RECIPE-DESIGN INPUTS, NOT STRATEGIES. MAE in ATR(15M) units. **WARNING: the high-win-rate shapes the TP ladder produces are tail-risk purchases — each -6xATR loss ≈ 12-24 small wins; spread ≈ a quarter of a 0.5xATR win at home. The points ladder is uk100 HOME-SCALE ONLY, non-comparable across instruments.** FILL MODELS (register 65): this page renders BOTH families — the TP ladder counts target touches as fills (OPTIMISTIC, stop-wins-ties) while the MAE/stop side prices stops pessimistically; the two column families are NOT COMPARABLE and recipes cite which they live on.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_excursion_geometry). BOTH HALVES ARE RECIPE-DESIGN INPUTS, NOT STRATEGIES. MAE in ATR(15M) units. **WARNING: the high-win-rate shapes the TP ladder produces are tail-risk purchases — each -6xATR loss ≈ 12-24 small wins; spread ≈ a quarter of a 0.5xATR win at home. The points ladder is uk100 HOME-SCALE ONLY, non-comparable across instruments.** FILL MODELS (register 65): this page renders BOTH families — the TP ladder counts target touches as fills (OPTIMISTIC, stop-wins-ties) while the MAE/stop side prices stops pessimistically; the two column families are NOT COMPARABLE and recipes cite which they live on.
 
 ## uk100fut (CANONICAL)
 
@@ -164,8 +164,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_excursion_geometry)
 | S0-H20 | 76 | 1.26 · 2.82 · 3.43 | 1.45 · 3.64 · 4.76 | 2.01 · 4.34 · 4.71 |
 | S0-H3 | 20 | 0.8 · 2.13 · 2.63 | 1.1 · 2.61 · 3.33 | 2.89 · 14.87 · 18.17 |
 | S0-H6 | 97 | 1.57 · 4.88 · 5.56 | 2.03 · 5.94 · 6.92 | 3.82 · 10.42 · 11.64 |
-| S0-H7 | 69 | 0.8 · 2.18 · 2.62 | 1.05 · 3.5 · 3.81 | 2.31 · 8.51 · 14.76 |
-| S0-H9 | 32 | 0.88 · 2.45 · 2.63 | 1.07 · 3.49 · 5.44 | 3.76 · 10.33 · 12.9 |
+| S0-H7 | 69 | 0.8 · 2.18 · 2.62 | 1.05 · 3.5 · 3.81 | 2.31 · 8.55 · 14.76 |
+| S0-H9 | 32 | 0.88 · 2.45 · 2.63 | 1.07 · 3.49 · 5.44 | 3.76 · 10.48 · 12.9 |
 | S1-H1 | 4 | 0.81 · 1.39 · 1.47 | 0.99 · 1.97 · 2.18 | 4.98 · 10.63 · 11.58 |
 | S1-H11 | 219 | 0.77 · 2.38 · 3.6 | 0.95 · 3.3 · 4.31 | 1.91 · 14.59 · 15.62 |
 | S1-H2 | 267 | 0.77 · 2.14 · 3.1 | 1.06 · 3.48 · 4.08 | 3.75 · 12.57 · 14.78 |
@@ -247,10 +247,10 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_excursion_geometry)
 | signal | n | 60min | 120min | to-EOD |
 |---|---|---|---|---|
 | S0-H1 | 69 | 1.08 · 2.75 · 3.43 | 1.31 · 3.9 · 3.98 | 2.45 · 8.41 · 12.76 |
-| S0-H10 | 284 | 1.28 · 2.75 · 3.54 | 1.68 · 5.35 · 5.82 | 4.21 · 10.49 · 14.99 |
+| S0-H10 | 284 | 1.28 · 2.75 · 3.54 | 1.68 · 5.35 · 5.82 | 4.21 · 13.17 · 14.99 |
 | S0-H11 | 388 | 0.78 · 2.57 · 3.12 | 1.03 · 3.31 · 4.04 | 2.7 · 7.43 · 9.25 |
 | S0-H13 | 1 | 1.57 · 1.57 · 1.57 | 1.57 · 1.57 · 1.57 | 1.57 · 1.57 · 1.57 |
-| S0-H14 | 283 | 1.12 · 2.42 · 3.12 | 1.49 · 3.61 · 5.21 | 4.12 · 10.53 · 14.99 |
+| S0-H14 | 283 | 1.12 · 2.42 · 3.12 | 1.49 · 3.61 · 5.21 | 4.12 · 14.05 · 14.99 |
 | S0-H17 | 36 | 0.91 · 3.09 · 3.57 | 1.2 · 3.67 · 4.07 | 2.76 · 8.72 · 12.44 |
 | S0-H18 | 75 | 0.85 · 2.47 · 4.04 | 1.04 · 3.7 · 4.15 | 2.54 · 5.69 · 7.79 |
 | S0-H19 | 260 | 0.79 · 2.45 · 3.18 | 1.13 · 3.51 · 4.87 | 2.83 · 8.8 · 10.38 |
@@ -262,7 +262,7 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_excursion_geometry)
 | S0-H7 | 82 | 1.11 · 2.8 · 3.41 | 1.28 · 4.13 · 5.72 | 3.07 · 6.81 · 9.9 |
 | S0-H9 | 110 | 0.8 · 1.85 · 2.18 | 1.14 · 2.39 · 4.76 | 3.04 · 7.79 · 9.03 |
 | S1-H1 | 2 | 0.71 · 1.05 · 1.09 | 0.71 · 1.05 · 1.09 | 3.69 · 5.73 · 5.98 |
-| S1-H11 | 397 | 0.9 · 2.69 · 3.49 | 1.26 · 4.25 · 5.05 | 3.23 · 9.81 · 11.5 |
+| S1-H11 | 397 | 0.9 · 2.69 · 3.49 | 1.26 · 4.25 · 5.05 | 3.23 · 9.81 · 12.09 |
 | S1-H2 | 292 | 0.7 · 2.37 · 3.08 | 1.0 · 3.33 · 4.34 | 3.16 · 9.68 · 11.21 |
 | S1-H9 | 17 | 0.97 · 4.22 · 7.1 | 0.97 · 4.49 · 7.78 | 1.64 · 8.0 · 9.06 |
 

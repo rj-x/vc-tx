@@ -2,34 +2,34 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_aggregation_decay, register 121; the register-27/35 pre-sketch as scoped; prerequisite register 28 cited). VOCABULARY: CASCADE (label arrival at successive rungs), never migration chains — different objects (register 27). NESTING CAVEAT: higher-TF labels are compositions of lower-TF bars, not independent confirmations; NEVER pool across TFs. (a) onset time-to-arrival per rung vs the k-lag ARITHMETIC FLOOR (the registered null control — no permutation null; arrival tracking the floor = the expected null, the reviewer's split prior on record); (b) per-event rv survival across rungs (cut = 1.5x the rung's OWN tod baseline; rv from every rung pipe's FeatureEngine, independent of label qualification — the line-44 mandate), by lead and outcome. Six-rung ladder (registered; the dense-rung idea stays unbuilt, stated). Counts and distributions; the census decides, not the priors. The chain hypothesis is the customer.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_aggregation_decay, register 121; the register-27/35 pre-sketch as scoped; prerequisite register 28 cited). VOCABULARY: CASCADE (label arrival at successive rungs), never migration chains — different objects (register 27). NESTING CAVEAT: higher-TF labels are compositions of lower-TF bars, not independent confirmations; NEVER pool across TFs. (a) onset time-to-arrival per rung vs the k-lag ARITHMETIC FLOOR (the registered null control — no permutation null; arrival tracking the floor = the expected null, the reviewer's split prior on record); (b) per-event rv survival across rungs (cut = 1.5x the rung's OWN tod baseline; rv from every rung pipe's FeatureEngine, independent of label qualification — the line-44 mandate), by lead and outcome. Six-rung ladder (registered; the dense-rung idea stays unbuilt, stated). Counts and distributions; the census decides, not the priors. The chain hypothesis is the customer.
 
-## uk100fut (1853 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
+## uk100fut (2031 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
 
 ### (a) Time-to-arrival per rung (same-direction structural label within 60 min; floor = the rung's first close)
 
 | window | lead | rung | n | arrived | arrival med/p90 (min) | k-lag floor med/p90 |
 |---|---|---|---|---|---|---|
-| backtest | false-lead | 15min | 647 | 180 | 21.5/51.0 | 8.0/14.0 |
-| backtest | false-lead | 1h | 647 | 41 | 24.0/50.0 | 32.0/55.0 |
-| backtest | false-lead | 30min | 647 | 97 | 26.0/49.4 | 15.0/27.0 |
-| backtest | false-lead | 3min | 647 | 415 | 11.0/37.0 | 2.0/3.0 |
-| backtest | false-lead | 5min | 647 | 354 | 16.5/47.0 | 3.0/5.0 |
-| backtest | true-lead | 15min | 182 | 40 | 31.0/52.2 | 8.0/14.0 |
-| backtest | true-lead | 1h | 182 | 13 | 31.0/52.8 | 27.5/54.0 |
-| backtest | true-lead | 30min | 182 | 12 | 33.5/50.7 | 16.0/26.0 |
-| backtest | true-lead | 3min | 182 | 127 | 14.0/41.0 | 2.0/3.0 |
-| backtest | true-lead | 5min | 182 | 104 | 19.5/45.7 | 3.0/5.0 |
-| forward | false-lead | 15min | 440 | 148 | 26.0/53.3 | 7.0/14.0 |
-| forward | false-lead | 1h | 440 | 49 | 32.0/54.2 | 28.0/54.0 |
-| forward | false-lead | 30min | 440 | 86 | 25.5/54.0 | 16.0/26.1 |
-| forward | false-lead | 3min | 440 | 392 | 17.0/43.0 | 2.0/3.0 |
-| forward | false-lead | 5min | 440 | 314 | 21.0/48.7 | 3.0/5.0 |
-| forward | true-lead | 15min | 106 | 34 | 34.5/48.7 | 7.0/12.0 |
-| forward | true-lead | 1h | 106 | 8 | 27.5/48.2 | 28.5/50.0 |
-| forward | true-lead | 30min | 106 | 17 | 37.0/51.4 | 17.0/26.0 |
-| forward | true-lead | 3min | 106 | 93 | 16.0/49.0 | 2.0/3.0 |
-| forward | true-lead | 5min | 106 | 83 | 26.0/49.0 | 3.0/5.0 |
+| backtest | false-lead | 15min | 643 | 179 | 21.0/51.0 | 8.0/13.8 |
+| backtest | false-lead | 1h | 643 | 41 | 24.0/50.0 | 31.0/55.0 |
+| backtest | false-lead | 30min | 643 | 96 | 26.0/49.5 | 15.0/27.0 |
+| backtest | false-lead | 3min | 643 | 411 | 11.0/37.0 | 2.0/3.0 |
+| backtest | false-lead | 5min | 643 | 352 | 16.0/47.0 | 3.0/5.0 |
+| backtest | true-lead | 15min | 186 | 41 | 31.0/52.0 | 8.0/14.0 |
+| backtest | true-lead | 1h | 186 | 13 | 31.0/52.8 | 28.0/54.0 |
+| backtest | true-lead | 30min | 186 | 13 | 32.0/50.4 | 16.0/26.0 |
+| backtest | true-lead | 3min | 186 | 131 | 14.0/43.0 | 2.0/3.0 |
+| backtest | true-lead | 5min | 186 | 106 | 19.5/45.0 | 3.0/5.0 |
+| forward | false-lead | 15min | 443 | 151 | 26.0/53.0 | 7.0/14.0 |
+| forward | false-lead | 1h | 443 | 49 | 32.0/54.2 | 28.0/54.0 |
+| forward | false-lead | 30min | 443 | 88 | 26.0/54.0 | 16.0/26.8 |
+| forward | false-lead | 3min | 443 | 395 | 16.0/43.0 | 2.0/3.0 |
+| forward | false-lead | 5min | 443 | 316 | 21.0/49.0 | 3.0/5.0 |
+| forward | true-lead | 15min | 103 | 31 | 35.0/49.0 | 7.0/12.0 |
+| forward | true-lead | 1h | 103 | 8 | 27.5/48.2 | 28.0/50.0 |
+| forward | true-lead | 30min | 103 | 15 | 37.0/52.6 | 17.0/26.0 |
+| forward | true-lead | 3min | 103 | 90 | 17.0/49.0 | 2.0/3.0 |
+| forward | true-lead | 5min | 103 | 81 | 26.0/49.0 | 3.0/5.0 |
 
 ### (b) Per-event effort decay (consecutive rungs carrying rv >= the cut; outcome = 60-min drift in the event direction)
 
@@ -37,79 +37,79 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_aggregation_decay, 
 |---|---|---|---|---|---|
 | backtest | climax | false-lead | {1: 10, 2: 14, 3: 6, 4: 4, 5: 13} | med -0.5 (n24) | med 7.8 (n23) |
 | backtest | climax | true-lead | {1: 12, 2: 7, 4: 1, 5: 2} | med 1.1 (n19) | med 3.5 (n3) |
-| backtest | rv-anomaly | false-lead | {1: 721, 2: 210, 3: 326, 4: 173, 5: 347} | med 0.9 (n931) | med 1.4 (n846) |
-| backtest | rv-anomaly | true-lead | {1: 198, 2: 90, 3: 66, 4: 41, 5: 95} | med -4.2 (n288) | med -3.6 (n202) |
-| forward | climax | false-lead | {1: 33, 2: 13, 3: 9, 4: 1, 5: 11} | med 1.8 (n46) | med 1.1 (n21) |
-| forward | climax | true-lead | {1: 8, 2: 8, 3: 5, 4: 1, 5: 3} | med -2.0 (n16) | med -1.1 (n9) |
-| forward | rv-anomaly | false-lead | {1: 1022, 2: 266, 3: 321, 4: 177, 5: 373} | med 0.0 (n1288) | med 1.0 (n871) |
-| forward | rv-anomaly | true-lead | {1: 250, 2: 76, 3: 69, 4: 35, 5: 94} | med -1.9 (n326) | med -3.0 (n198) |
+| backtest | rv-anomaly | false-lead | {1: 720, 2: 210, 3: 323, 4: 173, 5: 345} | med 0.9 (n930) | med 1.4 (n841) |
+| backtest | rv-anomaly | true-lead | {1: 199, 2: 90, 3: 69, 4: 41, 5: 97} | med -4.3 (n289) | med -3.5 (n207) |
+| forward | climax | false-lead | {1: 32, 2: 13, 3: 9, 4: 1, 5: 11} | med 1.0 (n45) | med 1.1 (n21) |
+| forward | climax | true-lead | {1: 9, 2: 8, 3: 5, 4: 1, 5: 3} | med -1.5 (n17) | med -1.1 (n9) |
+| forward | rv-anomaly | false-lead | {1: 1023, 2: 265, 3: 321, 4: 177, 5: 373} | med 0.0 (n1288) | med 1.0 (n871) |
+| forward | rv-anomaly | true-lead | {1: 249, 2: 77, 3: 69, 4: 35, 5: 94} | med -1.8 (n326) | med -3.0 (n198) |
 
-## ger40fut (1805 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
+## ger40fut (2004 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
 
 ### (a) Time-to-arrival per rung (same-direction structural label within 60 min; floor = the rung's first close)
 
 | window | lead | rung | n | arrived | arrival med/p90 (min) | k-lag floor med/p90 |
 |---|---|---|---|---|---|---|
-| backtest | false-lead | 15min | 519 | 127 | 27.0/52.0 | 8.0/14.0 |
-| backtest | false-lead | 1h | 519 | 37 | 24.0/57.4 | 30.0/55.0 |
-| backtest | false-lead | 30min | 519 | 75 | 26.0/55.0 | 16.0/27.0 |
-| backtest | false-lead | 3min | 519 | 254 | 12.0/37.7 | 2.0/3.0 |
-| backtest | false-lead | 5min | 519 | 219 | 15.0/45.0 | 3.0/5.0 |
-| backtest | true-lead | 15min | 122 | 25 | 20.0/49.4 | 9.0/15.0 |
-| backtest | true-lead | 1h | 122 | 6 | 23.0/46.0 | 31.0/51.9 |
-| backtest | true-lead | 30min | 122 | 12 | 39.5/53.6 | 14.0/27.0 |
-| backtest | true-lead | 3min | 122 | 64 | 13.0/46.0 | 2.0/3.0 |
-| backtest | true-lead | 5min | 122 | 55 | 18.0/48.8 | 3.0/5.0 |
-| forward | false-lead | 15min | 515 | 170 | 21.0/50.0 | 8.0/14.0 |
-| forward | false-lead | 1h | 515 | 41 | 33.0/54.0 | 29.0/53.0 |
-| forward | false-lead | 30min | 515 | 98 | 20.0/53.3 | 15.0/26.0 |
-| forward | false-lead | 3min | 515 | 459 | 15.0/44.0 | 2.0/3.0 |
-| forward | false-lead | 5min | 515 | 368 | 19.0/46.0 | 3.0/5.0 |
-| forward | true-lead | 15min | 133 | 36 | 32.5/55.0 | 8.0/14.0 |
-| forward | true-lead | 1h | 133 | 5 | 8.0/34.2 | 26.0/54.0 |
-| forward | true-lead | 30min | 133 | 14 | 42.0/55.1 | 17.0/26.0 |
-| forward | true-lead | 3min | 133 | 117 | 18.0/47.8 | 2.0/3.0 |
-| forward | true-lead | 5min | 133 | 94 | 24.0/51.7 | 3.0/5.0 |
+| backtest | false-lead | 15min | 520 | 127 | 27.0/52.0 | 8.0/14.0 |
+| backtest | false-lead | 1h | 520 | 37 | 24.0/57.4 | 30.0/55.0 |
+| backtest | false-lead | 30min | 520 | 75 | 26.0/55.0 | 16.0/27.0 |
+| backtest | false-lead | 3min | 520 | 255 | 12.0/37.6 | 2.0/3.0 |
+| backtest | false-lead | 5min | 520 | 220 | 15.0/45.0 | 3.0/5.0 |
+| backtest | true-lead | 15min | 121 | 25 | 20.0/49.4 | 9.0/15.0 |
+| backtest | true-lead | 1h | 121 | 6 | 23.0/46.0 | 31.0/52.0 |
+| backtest | true-lead | 30min | 121 | 12 | 39.5/53.6 | 14.0/27.0 |
+| backtest | true-lead | 3min | 121 | 63 | 13.0/46.0 | 2.0/3.0 |
+| backtest | true-lead | 5min | 121 | 54 | 17.0/49.1 | 3.0/5.0 |
+| forward | false-lead | 15min | 511 | 169 | 21.0/50.0 | 8.0/14.0 |
+| forward | false-lead | 1h | 511 | 41 | 33.0/54.0 | 29.0/53.0 |
+| forward | false-lead | 30min | 511 | 98 | 20.0/53.3 | 15.0/26.0 |
+| forward | false-lead | 3min | 511 | 455 | 16.0/44.0 | 2.0/3.0 |
+| forward | false-lead | 5min | 511 | 365 | 19.0/46.0 | 3.0/5.0 |
+| forward | true-lead | 15min | 137 | 37 | 32.0/55.0 | 8.0/14.0 |
+| forward | true-lead | 1h | 137 | 5 | 8.0/34.2 | 26.0/54.0 |
+| forward | true-lead | 30min | 137 | 14 | 42.0/55.1 | 17.0/26.0 |
+| forward | true-lead | 3min | 137 | 121 | 17.0/47.0 | 2.0/3.0 |
+| forward | true-lead | 5min | 137 | 97 | 23.0/51.4 | 3.0/5.0 |
 
 ### (b) Per-event effort decay (consecutive rungs carrying rv >= the cut; outcome = 60-min drift in the event direction)
 
 | window | class | lead | survival depths {rungs: n} | shallow (<3) outcome | deep (>=3) outcome |
 |---|---|---|---|---|---|
-| backtest | climax | false-lead | {1: 6, 2: 11, 3: 2, 4: 7, 5: 11} | med -21.1 (n17) | med 55.0 (n20) |
-| backtest | climax | true-lead | {1: 3, 3: 3, 5: 6} | med -52.3 (n3) | med -34.2 (n9) |
-| backtest | rv-anomaly | false-lead | {1: 442, 2: 159, 3: 186, 4: 158, 5: 270} | med 5.7 (n601) | med 5.5 (n614) |
-| backtest | rv-anomaly | true-lead | {1: 98, 2: 34, 3: 44, 4: 23, 5: 59} | med -19.9 (n132) | med -14.6 (n126) |
+| backtest | climax | false-lead | {1: 6, 2: 11, 3: 2, 4: 6, 5: 11} | med -21.1 (n17) | med 52.2 (n19) |
+| backtest | climax | true-lead | {1: 3, 3: 3, 4: 1, 5: 6} | med -52.3 (n3) | med -25.2 (n10) |
+| backtest | rv-anomaly | false-lead | {1: 442, 2: 159, 3: 188, 4: 158, 5: 268} | med 5.7 (n601) | med 5.5 (n614) |
+| backtest | rv-anomaly | true-lead | {1: 98, 2: 34, 3: 42, 4: 23, 5: 61} | med -19.9 (n132) | med -13.3 (n126) |
 | forward | climax | false-lead | {1: 29, 2: 9, 3: 17, 4: 7, 5: 10} | med 12.1 (n38) | med 1.7 (n34) |
 | forward | climax | true-lead | {1: 10, 2: 8, 3: 4, 5: 4} | med -3.5 (n18) | med -3.8 (n8) |
-| forward | rv-anomaly | false-lead | {1: 945, 2: 334, 3: 378, 4: 262, 5: 640} | med 1.5 (n1279) | med 0.0 (n1280) |
-| forward | rv-anomaly | true-lead | {1: 217, 2: 70, 3: 85, 4: 45, 5: 117} | med -6.3 (n287) | med -5.1 (n247) |
+| forward | rv-anomaly | false-lead | {1: 941, 2: 328, 3: 374, 4: 262, 5: 639} | med 1.5 (n1269) | med 0.0 (n1275) |
+| forward | rv-anomaly | true-lead | {1: 221, 2: 76, 3: 89, 4: 45, 5: 118} | med -6.3 (n297) | med -5.2 (n252) |
 
-## nas100fut (1964 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
+## nas100fut (2170 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
 
 ### (a) Time-to-arrival per rung (same-direction structural label within 60 min; floor = the rung's first close)
 
 | window | lead | rung | n | arrived | arrival med/p90 (min) | k-lag floor med/p90 |
 |---|---|---|---|---|---|---|
-| backtest | false-lead | 15min | 549 | 139 | 21.0/50.2 | 9.0/14.0 |
-| backtest | false-lead | 1h | 549 | 54 | 30.5/51.7 | 31.0/56.0 |
-| backtest | false-lead | 30min | 549 | 98 | 25.0/50.3 | 15.0/27.0 |
-| backtest | false-lead | 3min | 549 | 277 | 12.0/37.0 | 2.0/3.0 |
-| backtest | false-lead | 5min | 549 | 247 | 14.0/44.0 | 3.0/5.0 |
-| backtest | true-lead | 15min | 121 | 26 | 24.0/47.0 | 7.0/14.0 |
-| backtest | true-lead | 1h | 121 | 8 | 27.5/53.9 | 33.0/55.0 |
-| backtest | true-lead | 30min | 121 | 18 | 35.0/56.6 | 14.0/26.0 |
-| backtest | true-lead | 3min | 121 | 56 | 17.5/35.0 | 2.0/3.0 |
-| backtest | true-lead | 5min | 121 | 51 | 24.0/49.0 | 3.0/5.0 |
-| forward | false-lead | 15min | 558 | 226 | 22.0/48.0 | 8.0/14.0 |
-| forward | false-lead | 1h | 558 | 85 | 28.0/53.6 | 31.0/53.0 |
-| forward | false-lead | 30min | 558 | 179 | 26.0/51.2 | 15.0/26.0 |
-| forward | false-lead | 3min | 558 | 507 | 10.0/38.0 | 2.0/3.0 |
-| forward | false-lead | 5min | 558 | 453 | 13.0/41.8 | 3.0/5.0 |
-| forward | true-lead | 15min | 149 | 61 | 31.0/51.0 | 8.0/13.0 |
-| forward | true-lead | 1h | 149 | 12 | 24.0/46.3 | 31.0/55.0 |
-| forward | true-lead | 30min | 149 | 32 | 24.5/54.9 | 15.0/26.0 |
-| forward | true-lead | 3min | 149 | 142 | 12.5/42.0 | 2.0/3.0 |
-| forward | true-lead | 5min | 149 | 118 | 22.5/47.0 | 3.0/5.0 |
+| backtest | false-lead | 15min | 546 | 139 | 21.0/50.2 | 9.0/14.0 |
+| backtest | false-lead | 1h | 546 | 54 | 30.5/51.7 | 31.0/56.0 |
+| backtest | false-lead | 30min | 546 | 98 | 25.0/50.3 | 15.0/27.0 |
+| backtest | false-lead | 3min | 546 | 277 | 12.0/37.0 | 2.0/3.0 |
+| backtest | false-lead | 5min | 546 | 247 | 14.0/44.0 | 3.0/5.0 |
+| backtest | true-lead | 15min | 124 | 26 | 24.0/47.0 | 7.0/13.7 |
+| backtest | true-lead | 1h | 124 | 8 | 27.5/53.9 | 32.5/55.0 |
+| backtest | true-lead | 30min | 124 | 18 | 35.0/56.6 | 13.5/25.7 |
+| backtest | true-lead | 3min | 124 | 56 | 17.5/35.0 | 2.0/3.0 |
+| backtest | true-lead | 5min | 124 | 51 | 24.0/49.0 | 3.0/5.0 |
+| forward | false-lead | 15min | 559 | 226 | 22.0/48.0 | 8.0/14.0 |
+| forward | false-lead | 1h | 559 | 85 | 28.0/53.6 | 31.0/53.0 |
+| forward | false-lead | 30min | 559 | 178 | 26.0/51.3 | 15.0/26.0 |
+| forward | false-lead | 3min | 559 | 508 | 10.0/38.0 | 2.0/3.0 |
+| forward | false-lead | 5min | 559 | 454 | 13.0/41.7 | 3.0/5.0 |
+| forward | true-lead | 15min | 148 | 61 | 31.0/51.0 | 8.0/13.0 |
+| forward | true-lead | 1h | 148 | 12 | 24.0/46.3 | 30.5/54.0 |
+| forward | true-lead | 30min | 148 | 33 | 24.0/54.8 | 15.0/26.0 |
+| forward | true-lead | 3min | 148 | 141 | 12.0/45.0 | 2.0/3.0 |
+| forward | true-lead | 5min | 148 | 117 | 23.0/47.0 | 3.0/5.0 |
 
 ### (b) Per-event effort decay (consecutive rungs carrying rv >= the cut; outcome = 60-min drift in the event direction)
 
@@ -121,45 +121,45 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_aggregation_decay, 
 | backtest | rv-anomaly | true-lead | {1: 92, 2: 27, 3: 23, 4: 37, 5: 154} | med -21.2 (n119) | med -16.3 (n214) |
 | forward | climax | false-lead | {1: 13, 2: 13, 3: 9, 4: 1, 5: 12} | med 40.6 (n26) | med 28.1 (n22) |
 | forward | climax | true-lead | {1: 2, 2: 4, 3: 4, 4: 2, 5: 9} | med -7.0 (n6) | med 11.0 (n15) |
-| forward | rv-anomaly | false-lead | {1: 654, 2: 232, 3: 311, 4: 112, 5: 827} | med 4.0 (n886) | med 3.8 (n1250) |
-| forward | rv-anomaly | true-lead | {1: 195, 2: 49, 3: 69, 4: 42, 5: 155} | med -17.2 (n244) | med -14.3 (n266) |
+| forward | rv-anomaly | false-lead | {1: 652, 2: 232, 3: 308, 4: 112, 5: 811} | med 4.3 (n884) | med 4.3 (n1231) |
+| forward | rv-anomaly | true-lead | {1: 197, 2: 49, 3: 72, 4: 42, 5: 171} | med -17.4 (n246) | med -13.8 (n285) |
 
-## us30fut (1804 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
+## us30fut (1984 1M trend onsets; 0 events with unmeasured 1M rv excluded — counted, per register 44's conflation lesson)
 
 ### (a) Time-to-arrival per rung (same-direction structural label within 60 min; floor = the rung's first close)
 
 | window | lead | rung | n | arrived | arrival med/p90 (min) | k-lag floor med/p90 |
 |---|---|---|---|---|---|---|
-| backtest | false-lead | 15min | 519 | 134 | 20.5/49.0 | 8.0/14.0 |
-| backtest | false-lead | 1h | 519 | 47 | 28.0/58.4 | 31.0/54.0 |
-| backtest | false-lead | 30min | 519 | 98 | 29.5/50.6 | 16.0/27.0 |
-| backtest | false-lead | 3min | 519 | 267 | 10.0/34.2 | 2.0/3.0 |
-| backtest | false-lead | 5min | 519 | 233 | 13.0/41.8 | 3.0/5.0 |
-| backtest | true-lead | 15min | 123 | 32 | 26.0/57.8 | 8.0/14.0 |
-| backtest | true-lead | 1h | 123 | 6 | 29.0/42.5 | 35.0/56.0 |
-| backtest | true-lead | 30min | 123 | 15 | 26.0/57.8 | 16.0/27.8 |
-| backtest | true-lead | 3min | 123 | 57 | 15.0/47.8 | 2.0/3.0 |
-| backtest | true-lead | 5min | 123 | 47 | 24.0/49.4 | 3.0/5.0 |
-| forward | false-lead | 15min | 515 | 216 | 25.5/50.0 | 8.0/14.0 |
-| forward | false-lead | 1h | 515 | 55 | 30.0/54.6 | 29.0/55.0 |
-| forward | false-lead | 30min | 515 | 130 | 26.0/53.0 | 15.0/27.0 |
-| forward | false-lead | 3min | 515 | 470 | 13.0/40.0 | 2.0/3.0 |
-| forward | false-lead | 5min | 515 | 398 | 18.0/45.0 | 3.0/5.0 |
-| forward | true-lead | 15min | 127 | 41 | 42.0/56.0 | 9.0/14.4 |
-| forward | true-lead | 1h | 127 | 9 | 15.0/43.2 | 33.0/55.0 |
-| forward | true-lead | 30min | 127 | 17 | 39.0/54.8 | 18.0/27.4 |
-| forward | true-lead | 3min | 127 | 113 | 20.0/43.8 | 2.0/3.0 |
-| forward | true-lead | 5min | 127 | 87 | 28.0/51.0 | 3.0/5.0 |
+| backtest | false-lead | 15min | 525 | 139 | 21.0/49.0 | 8.0/14.0 |
+| backtest | false-lead | 1h | 525 | 47 | 28.0/58.4 | 31.0/54.0 |
+| backtest | false-lead | 30min | 525 | 99 | 29.0/50.4 | 15.0/27.0 |
+| backtest | false-lead | 3min | 525 | 274 | 10.5/36.7 | 2.0/3.0 |
+| backtest | false-lead | 5min | 525 | 242 | 14.0/42.0 | 3.0/5.0 |
+| backtest | true-lead | 15min | 117 | 27 | 26.0/58.4 | 8.0/14.0 |
+| backtest | true-lead | 1h | 117 | 6 | 29.0/42.5 | 34.0/56.0 |
+| backtest | true-lead | 30min | 117 | 14 | 27.0/58.1 | 16.0/28.0 |
+| backtest | true-lead | 3min | 117 | 50 | 13.5/47.2 | 2.0/3.0 |
+| backtest | true-lead | 5min | 117 | 38 | 22.5/49.3 | 3.0/5.0 |
+| forward | false-lead | 15min | 514 | 215 | 25.0/50.0 | 9.0/14.0 |
+| forward | false-lead | 1h | 514 | 54 | 30.0/54.7 | 29.0/55.0 |
+| forward | false-lead | 30min | 514 | 129 | 26.0/53.0 | 15.0/27.0 |
+| forward | false-lead | 3min | 514 | 469 | 13.0/40.0 | 2.0/3.0 |
+| forward | false-lead | 5min | 514 | 396 | 18.0/45.0 | 3.0/5.0 |
+| forward | true-lead | 15min | 128 | 42 | 41.5/55.9 | 9.0/14.3 |
+| forward | true-lead | 1h | 128 | 10 | 14.0/37.5 | 32.5/54.3 |
+| forward | true-lead | 30min | 128 | 18 | 38.5/54.6 | 18.0/28.0 |
+| forward | true-lead | 3min | 128 | 114 | 21.0/44.0 | 2.0/3.0 |
+| forward | true-lead | 5min | 128 | 89 | 28.0/51.0 | 3.0/5.0 |
 
 ### (b) Per-event effort decay (consecutive rungs carrying rv >= the cut; outcome = 60-min drift in the event direction)
 
 | window | class | lead | survival depths {rungs: n} | shallow (<3) outcome | deep (>=3) outcome |
 |---|---|---|---|---|---|
-| backtest | climax | false-lead | {1: 7, 2: 7, 3: 1, 4: 3, 5: 20} | med -14.8 (n14) | med 5.5 (n24) |
-| backtest | climax | true-lead | {1: 3, 2: 1, 3: 1, 4: 2, 5: 4} | med -12.8 (n4) | med -62.5 (n7) |
-| backtest | rv-anomaly | false-lead | {1: 368, 2: 146, 3: 227, 4: 169, 5: 786} | med 2.5 (n514) | med 4.2 (n1182) |
-| backtest | rv-anomaly | true-lead | {1: 83, 2: 24, 3: 32, 4: 2, 5: 158} | med -2.0 (n107) | med -24.2 (n192) |
-| forward | climax | false-lead | {1: 27, 2: 15, 3: 20, 4: 13, 5: 29} | med 0.8 (n42) | med 1.8 (n62) |
-| forward | climax | true-lead | {1: 10, 2: 7, 3: 4, 4: 1, 5: 14} | med -9.5 (n17) | med 1.0 (n19) |
-| forward | rv-anomaly | false-lead | {1: 918, 2: 306, 3: 399, 4: 250, 5: 1026} | med 0.0 (n1224) | med 1.5 (n1675) |
-| forward | rv-anomaly | true-lead | {1: 266, 2: 87, 3: 79, 4: 41, 5: 178} | med -6.0 (n353) | med -6.8 (n298) |
+| backtest | climax | false-lead | {1: 7, 2: 7, 3: 1, 4: 3, 5: 19} | med -14.8 (n14) | med -0.5 (n23) |
+| backtest | climax | true-lead | {1: 3, 2: 1, 3: 1, 4: 2, 5: 5} | med -12.8 (n4) | med -59.5 (n8) |
+| backtest | rv-anomaly | false-lead | {1: 369, 2: 140, 3: 228, 4: 169, 5: 798} | med 2.0 (n509) | med 2.0 (n1195) |
+| backtest | rv-anomaly | true-lead | {1: 82, 2: 30, 3: 31, 4: 2, 5: 146} | med -1.0 (n112) | med -14.0 (n179) |
+| forward | climax | false-lead | {1: 26, 2: 15, 3: 18, 4: 12, 5: 29} | med 1.5 (n41) | med 1.5 (n59) |
+| forward | climax | true-lead | {1: 11, 2: 7, 3: 6, 4: 2, 5: 14} | med -10.2 (n18) | med 1.5 (n22) |
+| forward | rv-anomaly | false-lead | {1: 914, 2: 304, 3: 386, 4: 246, 5: 1011} | med 0.5 (n1218) | med 1.9 (n1643) |
+| forward | rv-anomaly | true-lead | {1: 270, 2: 89, 3: 92, 4: 45, 5: 193} | med -7.0 (n359) | med -8.5 (n330) |

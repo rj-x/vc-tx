@@ -1,13 +1,13 @@
 {
   "STAMP": "OBSERVATIONAL - forward-zone exhibit/evidence, NEVER validation; small-n forward observation. The walk-forward and the lockbox remain the only verdict machinery.",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "zone_statement": "warm = full-store live-equivalent visibility (narrative_scope load, logged); every emitted row/aggregate strictly >= go_live",
   "readout_span": [
     "2026-08-14 15:04:09.240421+00:00",
-    "2026-09-01 12:22:00+00:00"
+    "2026-09-01 20:59:00+00:00"
   ],
-  "forward_sessions_total": 36,
-  "sealed_windows_skipped_events": 53,
+  "forward_sessions_total": 37,
+  "sealed_windows_skipped_events": 77,
   "n_chain_events_forward": 316,
   "graded_1146Z_expectation": {
     "window_events": 2,

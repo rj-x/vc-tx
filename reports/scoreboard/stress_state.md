@@ -2,17 +2,14 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL ORGAN (register 123; prereg_stress_organ). CONDITIONING DIMENSION ONLY — no sizing machinery (parked, register 125). PRICES ONLY from the register-40-parked feeds (the park concerned volume semantics — untouched, stated). State per UTC day: alarms = {rvol pctile >= 0.8, |corr| pctile >= 0.8, safe-haven co-fire} (both bars FLAGGED); stressed >= 2, mixed = 1, calm = 0; uncovered days excluded, never calm. Origin: the practitioner's stacking claim (uncorrelated alarms co-firing = regime shift), recorded. The matrix's stress dimension reads day_state(); the scalp split below wears a day-state permutation luck budget. MINT-ON-LIFT ONLY.
+Engine `78fd6e12c` — OBSERVATIONAL ORGAN (register 123; prereg_stress_organ). CONDITIONING DIMENSION ONLY — no sizing machinery (parked, register 125). PRICES ONLY from the register-40-parked feeds (the park concerned volume semantics — untouched, stated). State per UTC day: alarms = {rvol pctile >= 0.8, |corr| pctile >= 0.8, safe-haven co-fire} (both bars FLAGGED); stressed >= 2, mixed = 1, calm = 0; uncovered days excluded, never calm. Origin: the practitioner's stacking claim (uncorrelated alarms co-firing = regime shift), recorded. The matrix's stress dimension reads day_state(); the scalp split below wears a day-state permutation luck budget. MINT-ON-LIFT ONLY.
 
-State days: {'calm': 231, 'mixed': 196, 'stressed': 49} (of 476 covered).
+State days: {'calm': 233, 'mixed': 197, 'stressed': 49} (of 479 covered).
 
 ## Recent days (tail of the field table; full series in the JSON)
 
 | day | state | alarms | gold mom | dollar up | rvol pctile | corr pctile |
 |---|---|---|---|---|---|---|
-| 2026-08-12 | calm | 0 | +1 | n | 0.31 | 0.797 |
-| 2026-08-13 | mixed | 1 | +1 | Y | 0.404 | 0.423 |
-| 2026-08-14 | calm | 0 | +1 | n | 0.244 | 0.296 |
 | 2026-08-17 | calm | 0 | +1 | n | 0.289 | 0.307 |
 | 2026-08-18 | calm | 0 | -1 | n | 0.208 | 0.284 |
 | 2026-08-19 | mixed | 1 | +1 | n | 0.615 | 0.916 |
@@ -24,7 +21,10 @@ State days: {'calm': 231, 'mixed': 196, 'stressed': 49} (of 476 covered).
 | 2026-08-27 | calm | 0 | -1 | Y | 0.424 | 0.331 |
 | 2026-08-28 | calm | 0 | -1 | Y | 0.636 | 0.786 |
 | 2026-08-31 | calm | 0 | -1 | Y | 0.301 | 0.461 |
-| 2026-09-01 | mixed | 1 | -1 | Y | 0.454 | 0.802 |
+| 2026-09-01 | calm | 0 | -1 | Y | 0.429 | 0.697 |
+| 2026-09-02 | mixed | 1 | -1 | Y | 0.542 | 0.868 |
+| 2026-09-03 | calm | 0 | +1 | n | 0.509 | 0.523 |
+| 2026-09-04 | mixed | 1 | -1 | n | 0.535 | 0.913 |
 
 ## Scalp cells by stress state (register-105 consistency statistics, distinct paths; gap = best-minus-worst state median among states measurable at n_distinct >= 10; luck = day-state permutation p95)
 

@@ -1,10 +1,10 @@
 {
   "STAMP": "OBSERVATIONAL organ #5 \u2014 dwell-time vocabulary; consumers price their own fields; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "results": [
     {
       "instrument": "uk100fut",
-      "n_bars": 47856,
+      "n_bars": 52376,
       "classes": {
         "session-extreme|backtest": {
           "episodes": 785,
@@ -67,7 +67,7 @@
     },
     {
       "instrument": "ger40fut",
-      "n_bars": 41964,
+      "n_bars": 46439,
       "classes": {
         "session-extreme|backtest": {
           "episodes": 582,
@@ -130,7 +130,7 @@
     },
     {
       "instrument": "nas100fut",
-      "n_bars": 43456,
+      "n_bars": 48082,
       "classes": {
         "session-extreme|backtest": {
           "episodes": 610,
@@ -198,7 +198,7 @@
     },
     {
       "instrument": "us30fut",
-      "n_bars": 43427,
+      "n_bars": 48048,
       "classes": {
         "session-extreme|backtest": {
           "episodes": 633,

@@ -2,44 +2,44 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register 132; extends register 130). SEEING vs BELIEVING (the operator's ruling, the standing expectation for measurement builds): the change is VISIBLE here on all data at the next campaign; ENACTMENT BARS READ FORWARD — any pause still requires the register-130 forward/top-bucket evidence (unmeasurable at n=1-2 this emission; the sealed window accrues it). The counterfactual: journal rows replayed in strict fill order, entries SKIPPED at atr_pctl > X, X in [80, 95] (the register-130 field verbatim; row-level per registers 102/103 — skipped = foregone, no resurrection of unblocked trades, stated). DISTINCT PATHS throughout (register 113). FLOORS: B-RANDOM members under the identical pause, SCALP ARMS ONLY (the evidence rows; the context ladder prints without floors — implementer-scoped, FLAGGED). NOTHING changes in any live recipe; a surviving cell proposes vol_gate(X) — a COMPOSABLE ENTRY-GATE component ratified onto specific variant x market combinations, NEVER cloned variants (the scoping ruling, register 132). Ex-lockbox; weekly under Part C.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register 132; extends register 130). SEEING vs BELIEVING (the operator's ruling, the standing expectation for measurement builds): the change is VISIBLE here on all data at the next campaign; ENACTMENT BARS READ FORWARD — any pause still requires the register-130 forward/top-bucket evidence (unmeasurable at n=1-2 this emission; the sealed window accrues it). The counterfactual: journal rows replayed in strict fill order, entries SKIPPED at atr_pctl > X, X in [80, 95] (the register-130 field verbatim; row-level per registers 102/103 — skipped = foregone, no resurrection of unblocked trades, stated). DISTINCT PATHS throughout (register 113). FLOORS: B-RANDOM members under the identical pause, SCALP ARMS ONLY (the evidence rows; the context ladder prints without floors — implementer-scoped, FLAGGED). NOTHING changes in any live recipe; a surviving cell proposes vol_gate(X) — a COMPOSABLE ENTRY-GATE component ratified onto specific variant x market combinations, NEVER cloned variants (the scoping ruling, register 132). Ex-lockbox; weekly under Part C.
 
 ## Scalp arms — the evidence rows (net delta vs the member band; positive delta = the pause helped)
 
 | arm | leg | window | X | n (distinct) | skipped (share) | foregone wins | avoided losses | net Δ | member band med [min..max] (skip share) | beats band max | stops dodged (pts; worst) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | ger40fut | backtest | 80 | 25 (25) | 1 (0.04) | 26.0 | -0.0 | -26.0 | 112.5 [-614.1..1087.2] (0.268) | no | 0 (0.0; None) |
-| R-SCALP-H6 | ger40fut | backtest | 95 | 25 (25) | 0 (0.0) | 0.0 | 0.0 | +0.0 | 50.9 [-150.1..146.3] (0.032) | no | 0 (0.0; None) |
-| R-SCALP-H6 | ger40fut | forward | 80 | 59 (59) | 4 (0.068) | 67.6 | -0.0 | -67.6 | -130.1 [-365.2..328.1] (0.187) | no | 0 (0.0; None) |
-| R-SCALP-H6 | ger40fut | forward | 95 | 59 (59) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -36.0 [-56.2..141.1] (0.017) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | ger40fut | backtest | 80 | 24 (24) | 1 (0.042) | 27.2 | -0.0 | -27.2 | 112.5 [-614.1..1087.2] (0.268) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | ger40fut | backtest | 95 | 24 (24) | 0 (0.0) | 0.0 | 0.0 | +0.0 | 50.9 [-150.1..146.3] (0.032) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | ger40fut | forward | 80 | 52 (52) | 5 (0.096) | 83.9 | -0.0 | -83.9 | -130.1 [-365.2..328.1] (0.187) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | ger40fut | forward | 95 | 52 (52) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -36.0 [-56.2..141.1] (0.017) | no | 0 (0.0; None) |
-| R-SCALP-H6 | nas100fut | backtest | 80 | 21 (21) | 6 (0.286) | 298.3 | -0.0 | -298.3 | 69.3 [-1067.9..1277.0] (0.232) | no | 0 (0.0; None) |
-| R-SCALP-H6 | nas100fut | backtest | 95 | 21 (21) | 1 (0.048) | 81.2 | -0.0 | -81.2 | -51.2 [-663.7..877.1] (0.102) | no | 0 (0.0; None) |
-| R-SCALP-H6 | nas100fut | forward | 80 | 57 (57) | 3 (0.053) | 69.1 | 7.1 | -62.0 | -181.8 [-701.8..705.2] (0.145) | no | 0 (0.0; None) |
-| R-SCALP-H6 | nas100fut | forward | 95 | 57 (57) | 1 (0.018) | 0.0 | 7.1 | +7.1 | -2.0 [-177.9..209.8] (0.013) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | nas100fut | backtest | 80 | 18 (18) | 6 (0.333) | 298.3 | -0.0 | -298.3 | 69.3 [-1067.9..1277.0] (0.232) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | nas100fut | backtest | 95 | 18 (18) | 1 (0.056) | 81.2 | -0.0 | -81.2 | -51.2 [-663.7..877.1] (0.102) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | nas100fut | forward | 80 | 58 (58) | 4 (0.069) | 146.3 | -0.0 | -146.3 | -181.8 [-701.8..705.2] (0.145) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | nas100fut | forward | 95 | 58 (58) | 1 (0.017) | 44.8 | -0.0 | -44.8 | -2.0 [-177.9..209.8] (0.013) | no | 0 (0.0; None) |
-| R-SCALP-H6 | uk100fut | backtest | 80 | 45 (45) | 10 (0.222) | 84.7 | -0.0 | -84.7 | 9.0 [-462.7..362.5] (0.36) | no | 0 (0.0; None) |
-| R-SCALP-H6 | uk100fut | backtest | 95 | 45 (45) | 2 (0.044) | 24.9 | -0.0 | -24.9 | 14.2 [-274.0..291.3] (0.117) | no | 0 (0.0; None) |
-| R-SCALP-H6 | uk100fut | forward | 80 | 47 (47) | 4 (0.085) | 25.5 | -0.0 | -25.5 | -11.2 [-88.3..85.8] (0.165) | no | 0 (0.0; None) |
-| R-SCALP-H6 | uk100fut | forward | 95 | 47 (47) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -17.9 [-51.5..43.0] (0.035) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | uk100fut | backtest | 80 | 43 (43) | 10 (0.233) | 67.2 | 56.4 | -10.7 | 9.0 [-462.7..362.5] (0.36) | no | 1 (-55.4; -55.4) |
-| R-SCALP-H6-REF | uk100fut | backtest | 95 | 43 (43) | 2 (0.047) | 24.9 | -0.0 | -24.9 | 14.2 [-274.0..291.3] (0.117) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | uk100fut | forward | 80 | 47 (47) | 3 (0.064) | 20.0 | -0.0 | -20.0 | -11.2 [-88.3..85.8] (0.165) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | uk100fut | forward | 95 | 47 (47) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -17.9 [-51.5..43.0] (0.035) | no | 0 (0.0; None) |
-| R-SCALP-H6 | us30fut | backtest | 80 | 31 (31) | 10 (0.323) | 383.2 | 279.3 | -103.9 | 316.9 [-753.7..1297.4] (0.208) | no | 1 (-237.7; -237.7) |
-| R-SCALP-H6 | us30fut | backtest | 95 | 31 (31) | 2 (0.065) | 75.8 | 41.6 | -34.2 | 101.5 [-320.9..826.4] (0.077) | no | 0 (0.0; None) |
-| R-SCALP-H6 | us30fut | forward | 80 | 48 (48) | 7 (0.146) | 210.4 | -0.0 | -210.4 | -44.0 [-684.3..469.7] (0.159) | no | 0 (0.0; None) |
-| R-SCALP-H6 | us30fut | forward | 95 | 48 (48) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -36.1 [-256.6..297.2] (0.024) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | us30fut | backtest | 80 | 34 (34) | 10 (0.294) | 360.4 | 231.9 | -128.6 | 316.9 [-753.7..1297.4] (0.208) | no | 1 (-220.3; -220.3) |
-| R-SCALP-H6-REF | us30fut | backtest | 95 | 34 (34) | 3 (0.088) | 138.4 | -0.0 | -138.4 | 101.5 [-320.9..826.4] (0.077) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | us30fut | forward | 80 | 49 (49) | 8 (0.163) | 243.1 | -0.0 | -243.1 | -44.0 [-684.3..469.7] (0.159) | no | 0 (0.0; None) |
-| R-SCALP-H6-REF | us30fut | forward | 95 | 49 (49) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -36.1 [-256.6..297.2] (0.024) | no | 0 (0.0; None) |
+| R-SCALP-H6 | ger40fut | backtest | 80 | 25 (25) | 1 (0.04) | 26.0 | -0.0 | -26.0 | 258.7 [-296.4..615.0] (0.248) | no | 0 (0.0; None) |
+| R-SCALP-H6 | ger40fut | backtest | 95 | 25 (25) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -24.0 [-164.0..229.3] (0.046) | no | 0 (0.0; None) |
+| R-SCALP-H6 | ger40fut | forward | 80 | 59 (59) | 4 (0.068) | 67.6 | -0.0 | -67.6 | -61.8 [-266.9..315.5] (0.176) | no | 0 (0.0; None) |
+| R-SCALP-H6 | ger40fut | forward | 95 | 59 (59) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -6.5 [-93.1..132.4] (0.019) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | ger40fut | backtest | 80 | 24 (24) | 1 (0.042) | 27.2 | -0.0 | -27.2 | 258.7 [-296.4..615.0] (0.248) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | ger40fut | backtest | 95 | 24 (24) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -24.0 [-164.0..229.3] (0.046) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | ger40fut | forward | 80 | 52 (52) | 5 (0.096) | 83.9 | -0.0 | -83.9 | -61.8 [-266.9..315.5] (0.176) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | ger40fut | forward | 95 | 52 (52) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -6.5 [-93.1..132.4] (0.019) | no | 0 (0.0; None) |
+| R-SCALP-H6 | nas100fut | backtest | 80 | 21 (21) | 6 (0.286) | 298.3 | -0.0 | -298.3 | -61.0 [-826.5..613.5] (0.237) | no | 0 (0.0; None) |
+| R-SCALP-H6 | nas100fut | backtest | 95 | 21 (21) | 1 (0.048) | 81.2 | -0.0 | -81.2 | 77.6 [-387.8..839.8] (0.099) | no | 0 (0.0; None) |
+| R-SCALP-H6 | nas100fut | forward | 80 | 57 (57) | 3 (0.053) | 69.1 | 7.1 | -62.0 | -282.6 [-712.8..408.3] (0.154) | no | 0 (0.0; None) |
+| R-SCALP-H6 | nas100fut | forward | 95 | 57 (57) | 1 (0.018) | 0.0 | 7.1 | +7.1 | 4.0 [-129.8..221.3] (0.017) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | nas100fut | backtest | 80 | 18 (18) | 6 (0.333) | 298.3 | -0.0 | -298.3 | -61.0 [-826.5..613.5] (0.237) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | nas100fut | backtest | 95 | 18 (18) | 1 (0.056) | 81.2 | -0.0 | -81.2 | 77.6 [-387.8..839.8] (0.099) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | nas100fut | forward | 80 | 58 (58) | 4 (0.069) | 146.3 | -0.0 | -146.3 | -282.6 [-712.8..408.3] (0.154) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | nas100fut | forward | 95 | 58 (58) | 1 (0.017) | 44.8 | -0.0 | -44.8 | 4.0 [-129.8..221.3] (0.017) | no | 0 (0.0; None) |
+| R-SCALP-H6 | uk100fut | backtest | 80 | 45 (45) | 10 (0.222) | 84.7 | -0.0 | -84.7 | -6.8 [-197.7..228.3] (0.369) | no | 0 (0.0; None) |
+| R-SCALP-H6 | uk100fut | backtest | 95 | 45 (45) | 2 (0.044) | 24.9 | -0.0 | -24.9 | -33.6 [-137.4..89.9] (0.119) | no | 0 (0.0; None) |
+| R-SCALP-H6 | uk100fut | forward | 80 | 47 (47) | 4 (0.085) | 25.5 | -0.0 | -25.5 | 23.5 [-70.3..85.5] (0.158) | no | 0 (0.0; None) |
+| R-SCALP-H6 | uk100fut | forward | 95 | 47 (47) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -9.3 [-50.8..70.3] (0.034) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | uk100fut | backtest | 80 | 43 (43) | 10 (0.233) | 67.2 | 56.4 | -10.7 | -6.8 [-197.7..228.3] (0.369) | no | 1 (-55.4; -55.4) |
+| R-SCALP-H6-REF | uk100fut | backtest | 95 | 43 (43) | 2 (0.047) | 24.9 | -0.0 | -24.9 | -33.6 [-137.4..89.9] (0.119) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | uk100fut | forward | 80 | 47 (47) | 3 (0.064) | 20.0 | -0.0 | -20.0 | 23.5 [-70.3..85.5] (0.158) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | uk100fut | forward | 95 | 47 (47) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -9.3 [-50.8..70.3] (0.034) | no | 0 (0.0; None) |
+| R-SCALP-H6 | us30fut | backtest | 80 | 31 (31) | 10 (0.323) | 383.2 | 279.3 | -103.9 | -23.1 [-914.5..1187.9] (0.216) | no | 1 (-237.7; -237.7) |
+| R-SCALP-H6 | us30fut | backtest | 95 | 31 (31) | 2 (0.065) | 75.8 | 41.6 | -34.2 | 189.9 [-467.0..1124.7] (0.081) | no | 0 (0.0; None) |
+| R-SCALP-H6 | us30fut | forward | 80 | 48 (48) | 7 (0.146) | 210.4 | -0.0 | -210.4 | -81.8 [-561.1..564.9] (0.168) | no | 0 (0.0; None) |
+| R-SCALP-H6 | us30fut | forward | 95 | 48 (48) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -38.8 [-204.8..182.5] (0.024) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | us30fut | backtest | 80 | 34 (34) | 10 (0.294) | 360.4 | 231.9 | -128.6 | -23.1 [-914.5..1187.9] (0.216) | no | 1 (-220.3; -220.3) |
+| R-SCALP-H6-REF | us30fut | backtest | 95 | 34 (34) | 3 (0.088) | 138.4 | -0.0 | -138.4 | 189.9 [-467.0..1124.7] (0.081) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | us30fut | forward | 80 | 49 (49) | 8 (0.163) | 243.1 | -0.0 | -243.1 | -81.8 [-561.1..564.9] (0.168) | no | 0 (0.0; None) |
+| R-SCALP-H6-REF | us30fut | forward | 95 | 49 (49) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -38.8 [-204.8..182.5] (0.024) | no | 0 (0.0; None) |
 
 ## Context ladder (all arms; characterization — no floors here, stated; full grid in the JSON)
 
@@ -51,8 +51,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register
 | ger40fut | R-ARM15 | forward | 95 | 506 (456) | 6 (0.013) | -128.3 | 4 (68.5) |
 | ger40fut | R-BE | backtest | 80 | 222 (200) | 40 (0.2) | +351.9 | 25 (-1489.0) |
 | ger40fut | R-BE | backtest | 95 | 222 (200) | 5 (0.025) | -10.9 | 3 (-160.9) |
-| ger40fut | R-BE | forward | 80 | 404 (363) | 66 (0.182) | -749.1 | 35 (-1494.5) |
-| ger40fut | R-BE | forward | 95 | 404 (363) | 4 (0.011) | -502.0 | 2 (-3.0) |
+| ger40fut | R-BE | forward | 80 | 404 (363) | 66 (0.182) | -952.2 | 35 (-1494.5) |
+| ger40fut | R-BE | forward | 95 | 404 (363) | 4 (0.011) | -637.4 | 2 (-3.0) |
 | ger40fut | R-H1-CONFIRM | backtest | 80 | 6 (6) | 2 (0.333) | +37.2 | 2 (-37.2) |
 | ger40fut | R-H1-CONFIRM | forward | 80 | 10 (10) | 1 (0.1) | -73.7 | 1 (73.7) |
 | ger40fut | R-H1-DELAY10 | backtest | 80 | 12 (12) | 5 (0.417) | +74.2 | 5 (-74.2) |
@@ -81,8 +81,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register
 | ger40fut | R-NEXIT-SENT | forward | 95 | 934 (790) | 11 (0.014) | -234.9 | 0 (0.0) |
 | ger40fut | R-NOTRAIL | backtest | 80 | 159 (145) | 27 (0.186) | +210.1 | 12 (-1586.5) |
 | ger40fut | R-NOTRAIL | backtest | 95 | 159 (145) | 1 (0.007) | -87.6 | 0 (0.0) |
-| ger40fut | R-NOTRAIL | forward | 80 | 301 (273) | 56 (0.205) | -1291.1 | 15 (-1380.3) |
-| ger40fut | R-NOTRAIL | forward | 95 | 301 (273) | 3 (0.011) | -540.8 | 0 (0.0) |
+| ger40fut | R-NOTRAIL | forward | 80 | 301 (273) | 56 (0.205) | -1494.2 | 15 (-1380.3) |
+| ger40fut | R-NOTRAIL | forward | 95 | 301 (273) | 3 (0.011) | -676.2 | 0 (0.0) |
 | ger40fut | R-OP2 | backtest | 80 | 812 (692) | 132 (0.191) | +126.4 | 130 (-221.3) |
 | ger40fut | R-OP2 | backtest | 95 | 812 (692) | 9 (0.013) | -79.8 | 8 (-7.9) |
 | ger40fut | R-OP2 | forward | 80 | 1487 (1265) | 199 (0.157) | +375.4 | 194 (-379.2) |
@@ -138,8 +138,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register
 | uk100fut | R-ARM15 | forward | 95 | 436 (378) | 14 (0.037) | -10.5 | 11 (-2.4) |
 | uk100fut | R-BE | backtest | 80 | 397 (357) | 132 (0.37) | +402.8 | 83 (-1797.1) |
 | uk100fut | R-BE | backtest | 95 | 397 (357) | 33 (0.092) | -256.6 | 15 (-299.9) |
-| uk100fut | R-BE | forward | 80 | 391 (340) | 62 (0.182) | +444.1 | 32 (-611.2) |
-| uk100fut | R-BE | forward | 95 | 391 (340) | 11 (0.032) | +92.3 | 7 (-178.4) |
+| uk100fut | R-BE | forward | 80 | 391 (340) | 62 (0.182) | +502.7 | 32 (-611.2) |
+| uk100fut | R-BE | forward | 95 | 391 (340) | 11 (0.032) | +150.9 | 7 (-178.4) |
 | uk100fut | R-H1-CONFIRM | backtest | 80 | 8 (8) | 2 (0.25) | +50.3 | 2 (-50.3) |
 | uk100fut | R-H1-DELAY10 | backtest | 80 | 28 (28) | 12 (0.429) | -201.9 | 8 (68.1) |
 | uk100fut | R-H1-DELAY10 | backtest | 95 | 28 (28) | 5 (0.179) | -121.0 | 4 (83.8) |
@@ -154,8 +154,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register
 | uk100fut | R-H1-KNIFE | forward | 95 | 63 (63) | 1 (0.016) | +1.8 | 0 (0.0) |
 | uk100fut | R-H1-OWNCURVE | backtest | 80 | 19 (19) | 9 (0.474) | -205.9 | 3 (-124.3) |
 | uk100fut | R-H1-OWNCURVE | backtest | 95 | 19 (19) | 3 (0.158) | -184.6 | 0 (0.0) |
-| uk100fut | R-H1-OWNCURVE | forward | 80 | 26 (26) | 3 (0.115) | -79.1 | 0 (0.0) |
-| uk100fut | R-H1-OWNCURVE | forward | 95 | 26 (26) | 1 (0.038) | -49.2 | 0 (0.0) |
+| uk100fut | R-H1-OWNCURVE | forward | 80 | 26 (26) | 3 (0.115) | -49.8 | 0 (0.0) |
+| uk100fut | R-H1-OWNCURVE | forward | 95 | 26 (26) | 1 (0.038) | -19.9 | 0 (0.0) |
 | uk100fut | R-NEXIT-EARLY | backtest | 80 | 1399 (1171) | 381 (0.325) | +380.0 | 13 (262.6) |
 | uk100fut | R-NEXIT-EARLY | backtest | 95 | 1399 (1171) | 146 (0.125) | +116.2 | 2 (-11.5) |
 | uk100fut | R-NEXIT-EARLY | forward | 80 | 1359 (1093) | 147 (0.134) | +260.0 | 0 (0.0) |
@@ -170,8 +170,8 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_vol_pause, register
 | uk100fut | R-NEXIT-SENT | forward | 95 | 816 (668) | 24 (0.036) | +120.5 | 3 (-50.6) |
 | uk100fut | R-NOTRAIL | backtest | 80 | 302 (274) | 116 (0.423) | +548.6 | 48 (-2456.3) |
 | uk100fut | R-NOTRAIL | backtest | 95 | 302 (274) | 24 (0.088) | -327.1 | 3 (-201.1) |
-| uk100fut | R-NOTRAIL | forward | 80 | 279 (252) | 49 (0.194) | +487.5 | 19 (-771.0) |
-| uk100fut | R-NOTRAIL | forward | 95 | 279 (252) | 11 (0.044) | -28.6 | 4 (-174.5) |
+| uk100fut | R-NOTRAIL | forward | 80 | 279 (252) | 49 (0.194) | +604.7 | 19 (-771.0) |
+| uk100fut | R-NOTRAIL | forward | 95 | 279 (252) | 11 (0.044) | +88.6 | 4 (-174.5) |
 | uk100fut | R-OP2 | backtest | 80 | 1396 (1205) | 362 (0.3) | +344.7 | 352 (-502.0) |
 | uk100fut | R-OP2 | backtest | 95 | 1396 (1205) | 124 (0.103) | +82.3 | 122 (-82.5) |
 | uk100fut | R-OP2 | forward | 80 | 1271 (1049) | 138 (0.132) | +189.9 | 135 (-200.8) |

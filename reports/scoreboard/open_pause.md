@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
 
 ## (a) Open-window strata — scalp arms headlined (gap = <80 median minus >=95 median; positive = degradation concentrates in stretched ATR)
 
@@ -29,9 +29,9 @@ Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_open_pause, registe
 
 | leg | variant | window | gap | pct vs null | clears |
 |---|---|---|---|---|---|
-| uk100fut | R-NEXIT-EARLY | backtest | -5.14 | 0.0 | no |
-| uk100fut | R-NEXIT-FULL | backtest | -6.45 | 0.0 | no |
-| uk100fut | R-OP2 | backtest | -0.26 | 50.0 | YES |
+| uk100fut | R-NEXIT-EARLY | backtest | -5.14 | 33.3 | no |
+| uk100fut | R-NEXIT-FULL | backtest | -6.45 | 33.3 | no |
+| uk100fut | R-OP2 | backtest | -0.26 | 28.6 | no |
 
 ## (b) The conditional counterfactual — scalp arms vs the member band (positive Δ = the rule helped)
 

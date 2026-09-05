@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL underwater census \u2014 measurement before machinery (flip-cut precedent, register 44); no cut/BE/re-entry/backoff rule registers without its own Q-number and forward grade; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "conventions": {
     "base_variant": "R-NOTRAIL",
     "stop_atr": 2.5,
@@ -477,8 +477,8 @@
             "cut-loud": {
               "n_trig": 42,
               "saved_on_losers": 785.7,
-              "amputated_from_winners": -642.6,
-              "net": 143.1
+              "amputated_from_winners": -584.0,
+              "net": 201.7
             },
             "cut-mae0.5": {
               "n_trig": 28,
@@ -1419,26 +1419,26 @@
             "cut@2": {
               "n_trig": 22,
               "saved_on_losers": 282.3,
-              "amputated_from_winners": -238.0,
-              "net": 44.3
+              "amputated_from_winners": -208.7,
+              "net": 73.6
             },
             "cut@3": {
               "n_trig": 17,
               "saved_on_losers": 268.9,
-              "amputated_from_winners": -147.4,
-              "net": 121.5
+              "amputated_from_winners": -118.1,
+              "net": 150.8
             },
             "cut@5": {
               "n_trig": 17,
               "saved_on_losers": 227.7,
-              "amputated_from_winners": -147.0,
-              "net": 80.7
+              "amputated_from_winners": -117.7,
+              "net": 110.0
             },
             "cut-loud": {
               "n_trig": 20,
               "saved_on_losers": 373.6,
-              "amputated_from_winners": -86.5,
-              "net": 287.1
+              "amputated_from_winners": -57.2,
+              "net": 316.4
             },
             "cut-mae0.5": {
               "n_trig": 21,
@@ -1937,42 +1937,42 @@
       },
       "be_ladder": {
         "0.25": {
-          "scratches_created": 487,
-          "winners_amputated": 151,
-          "amputated_pts": 7031.2,
+          "scratches_created": 488,
+          "winners_amputated": 152,
+          "amputated_pts": 6871.1,
           "losses_capped": 336,
           "capped_pts_saved": 9282.7,
-          "net_delta": 2251.5,
+          "net_delta": 2411.6,
           "max_mfe_of_losers_atr": 0.226,
           "max_mfe_of_losers_pts": 3.3
         },
         "0.5": {
-          "scratches_created": 420,
-          "winners_amputated": 127,
-          "amputated_pts": 6136.6,
+          "scratches_created": 422,
+          "winners_amputated": 129,
+          "amputated_pts": 6084.1,
           "losses_capped": 293,
           "capped_pts_saved": 7984.8,
-          "net_delta": 1848.2,
+          "net_delta": 1900.7,
           "max_mfe_of_losers_atr": 0.498,
           "max_mfe_of_losers_pts": 9.0
         },
         "1": {
-          "scratches_created": 306,
-          "winners_amputated": 94,
-          "amputated_pts": 4517.9,
+          "scratches_created": 308,
+          "winners_amputated": 96,
+          "amputated_pts": 4465.4,
           "losses_capped": 212,
           "capped_pts_saved": 5523.4,
-          "net_delta": 1005.5,
+          "net_delta": 1058.0,
           "max_mfe_of_losers_atr": 0.998,
           "max_mfe_of_losers_pts": 12.3
         },
         "1.5": {
-          "scratches_created": 252,
-          "winners_amputated": 75,
-          "amputated_pts": 3422.7,
+          "scratches_created": 254,
+          "winners_amputated": 77,
+          "amputated_pts": 3370.2,
           "losses_capped": 177,
           "capped_pts_saved": 4493.3,
-          "net_delta": 1070.6,
+          "net_delta": 1123.1,
           "max_mfe_of_losers_atr": 1.496,
           "max_mfe_of_losers_pts": 25.5
         }
@@ -1980,87 +1980,87 @@
       "reentry": {
         "windows": {
           "15": {
-            "n_scratched": 487,
+            "n_scratched": 488,
             "n_refire": 54,
             "refire_rate": 0.111
           },
           "30": {
-            "n_scratched": 487,
+            "n_scratched": 488,
             "n_refire": 87,
-            "refire_rate": 0.179
+            "refire_rate": 0.178
           },
           "60": {
-            "n_scratched": 487,
+            "n_scratched": 488,
             "n_refire": 152,
-            "refire_rate": 0.312
+            "refire_rate": 0.311
           }
         },
         "policy": {}
       },
-      "n_scratched_loop_rung": 487,
+      "n_scratched_loop_rung": 488,
       "ladder_floors": {
         "rules": {
           "cut-loud": {
             "members": 20,
-            "median": 24.1,
-            "min": -190.1,
-            "max": 268.4
+            "median": -17.9,
+            "min": -235.4,
+            "max": 263.7
           },
           "cut-mae0.5": {
             "members": 20,
-            "median": 102.6,
-            "min": -193.9,
-            "max": 359.8
+            "median": 49.1,
+            "min": -242.6,
+            "max": 321.3
           },
           "cut-mae1": {
-            "members": 20,
-            "median": 12.2,
-            "min": -178.5,
-            "max": 95.8
+            "members": 18,
+            "median": 16.1,
+            "min": -84.4,
+            "max": 116.7
           },
           "cut@2": {
             "members": 20,
-            "median": 168.4,
-            "min": -190.8,
-            "max": 608.3
+            "median": 47.2,
+            "min": -207.2,
+            "max": 497.2
           },
           "cut@3": {
             "members": 20,
-            "median": 148.0,
-            "min": -95.1,
-            "max": 532.9
+            "median": 49.0,
+            "min": -284.6,
+            "max": 367.7
           },
           "cut@5": {
             "members": 20,
-            "median": 101.4,
-            "min": -46.3,
-            "max": 399.1
+            "median": 41.5,
+            "min": -349.9,
+            "max": 317.4
           }
         },
         "rungs": {
           "0.25": {
             "members": 20,
-            "median": 412.2,
-            "min": -90.9,
-            "max": 801.0
+            "median": 147.6,
+            "min": -187.2,
+            "max": 543.5
           },
           "0.5": {
             "members": 20,
-            "median": 322.7,
-            "min": -13.3,
-            "max": 840.7
+            "median": 132.9,
+            "min": -187.2,
+            "max": 558.9
           },
           "1": {
             "members": 20,
-            "median": 207.1,
-            "min": -123.5,
-            "max": 632.9
+            "median": 142.6,
+            "min": -195.6,
+            "max": 318.7
           },
           "1.5": {
             "members": 20,
-            "median": 188.0,
-            "min": -64.2,
-            "max": 368.0
+            "median": 99.8,
+            "min": -252.0,
+            "max": 342.4
           }
         }
       },
@@ -3993,8 +3993,8 @@
             "cut-mae0.5": {
               "n_trig": 10,
               "saved_on_losers": 329.1,
-              "amputated_from_winners": -621.0,
-              "net": -291.9
+              "amputated_from_winners": -688.7,
+              "net": -359.6
             },
             "cut-mae1": {
               "n_trig": 4,
@@ -4009,40 +4009,40 @@
         "0.25": {
           "scratches_created": 392,
           "winners_amputated": 146,
-          "amputated_pts": 15791.5,
+          "amputated_pts": 16265.4,
           "losses_capped": 246,
           "capped_pts_saved": 14981.6,
-          "net_delta": -809.9,
+          "net_delta": -1283.8,
           "max_mfe_of_losers_atr": 0.248,
           "max_mfe_of_losers_pts": 5.4
         },
         "0.5": {
           "scratches_created": 340,
           "winners_amputated": 127,
-          "amputated_pts": 12790.9,
+          "amputated_pts": 13129.4,
           "losses_capped": 213,
           "capped_pts_saved": 12987.9,
-          "net_delta": 197.0,
+          "net_delta": -141.5,
           "max_mfe_of_losers_atr": 0.482,
           "max_mfe_of_losers_pts": 21.7
         },
         "1": {
           "scratches_created": 273,
           "winners_amputated": 109,
-          "amputated_pts": 10411.3,
+          "amputated_pts": 10614.4,
           "losses_capped": 164,
           "capped_pts_saved": 9864.3,
-          "net_delta": -547.0,
+          "net_delta": -750.1,
           "max_mfe_of_losers_atr": 0.973,
           "max_mfe_of_losers_pts": 43.6
         },
         "1.5": {
           "scratches_created": 204,
           "winners_amputated": 82,
-          "amputated_pts": 8166.8,
+          "amputated_pts": 8302.2,
           "losses_capped": 122,
           "capped_pts_saved": 7212.5,
-          "net_delta": -954.3,
+          "net_delta": -1089.7,
           "max_mfe_of_losers_atr": 1.483,
           "max_mfe_of_losers_pts": 35.8
         }
@@ -4072,65 +4072,65 @@
         "rules": {
           "cut-loud": {
             "members": 20,
-            "median": 121.8,
-            "min": -360.4,
-            "max": 488.0
+            "median": 108.6,
+            "min": -1179.7,
+            "max": 658.0
           },
           "cut-mae0.5": {
             "members": 20,
-            "median": 101.7,
-            "min": -523.8,
-            "max": 620.0
+            "median": 46.9,
+            "min": -560.1,
+            "max": 1083.6
           },
           "cut-mae1": {
-            "members": 19,
-            "median": 29.0,
-            "min": -406.4,
-            "max": 185.1
+            "members": 18,
+            "median": 51.0,
+            "min": -155.8,
+            "max": 181.5
           },
           "cut@2": {
             "members": 20,
-            "median": -85.3,
-            "min": -757.2,
-            "max": 743.7
+            "median": 44.2,
+            "min": -1771.9,
+            "max": 828.5
           },
           "cut@3": {
             "members": 20,
-            "median": 126.7,
-            "min": -907.8,
-            "max": 658.1
+            "median": 14.6,
+            "min": -1259.6,
+            "max": 964.2
           },
           "cut@5": {
             "members": 20,
-            "median": 131.6,
-            "min": -727.6,
-            "max": 612.6
+            "median": -9.3,
+            "min": -1208.2,
+            "max": 659.9
           }
         },
         "rungs": {
           "0.25": {
             "members": 20,
-            "median": -234.1,
-            "min": -1357.3,
-            "max": 1103.1
+            "median": -467.9,
+            "min": -1601.2,
+            "max": 1129.9
           },
           "0.5": {
             "members": 20,
-            "median": -132.4,
-            "min": -1651.6,
-            "max": 780.0
+            "median": -648.3,
+            "min": -1883.4,
+            "max": 1299.1
           },
           "1": {
             "members": 20,
-            "median": -337.4,
-            "min": -1497.0,
-            "max": 956.0
+            "median": -307.8,
+            "min": -1270.5,
+            "max": 785.5
           },
           "1.5": {
             "members": 20,
-            "median": -88.2,
-            "min": -966.7,
-            "max": 459.9
+            "median": -151.7,
+            "min": -990.7,
+            "max": 695.5
           }
         }
       },
@@ -4599,32 +4599,32 @@
             "cut@2": {
               "n_trig": 39,
               "saved_on_losers": 2160.0,
-              "amputated_from_winners": -3987.9,
-              "net": -1827.9
+              "amputated_from_winners": -4058.9,
+              "net": -1898.9
             },
             "cut@3": {
               "n_trig": 38,
               "saved_on_losers": 2141.5,
-              "amputated_from_winners": -3649.1,
-              "net": -1507.6
+              "amputated_from_winners": -3720.1,
+              "net": -1578.6
             },
             "cut@5": {
               "n_trig": 27,
               "saved_on_losers": 1370.2,
-              "amputated_from_winners": -2954.3,
-              "net": -1584.1
+              "amputated_from_winners": -3025.3,
+              "net": -1655.1
             },
             "cut-loud": {
               "n_trig": 47,
               "saved_on_losers": 2667.8,
-              "amputated_from_winners": -5041.4,
-              "net": -2373.6
+              "amputated_from_winners": -5112.4,
+              "net": -2444.6
             },
             "cut-mae0.5": {
               "n_trig": 33,
               "saved_on_losers": 2196.7,
-              "amputated_from_winners": -2585.0,
-              "net": -388.3
+              "amputated_from_winners": -2656.0,
+              "net": -459.3
             },
             "cut-mae1": {
               "n_trig": 12,
@@ -5079,14 +5079,14 @@
             "cut@2": {
               "n_trig": 22,
               "saved_on_losers": 1299.8,
-              "amputated_from_winners": -1032.6,
-              "net": 267.2
+              "amputated_from_winners": -1068.1,
+              "net": 231.7
             },
             "cut@3": {
               "n_trig": 20,
               "saved_on_losers": 1127.4,
-              "amputated_from_winners": -1063.8,
-              "net": 63.6
+              "amputated_from_winners": -1099.3,
+              "net": 28.1
             },
             "cut@5": {
               "n_trig": 13,
@@ -5319,32 +5319,32 @@
             "cut@2": {
               "n_trig": 26,
               "saved_on_losers": 1893.8,
-              "amputated_from_winners": -1988.1,
-              "net": -94.3
+              "amputated_from_winners": -2023.6,
+              "net": -129.8
             },
             "cut@3": {
               "n_trig": 24,
               "saved_on_losers": 1773.3,
-              "amputated_from_winners": -1220.3,
-              "net": 553.0
+              "amputated_from_winners": -1255.8,
+              "net": 517.5
             },
             "cut@5": {
               "n_trig": 22,
               "saved_on_losers": 1437.5,
-              "amputated_from_winners": -1183.6,
-              "net": 253.9
+              "amputated_from_winners": -1219.1,
+              "net": 218.4
             },
             "cut-loud": {
               "n_trig": 17,
               "saved_on_losers": 1357.3,
-              "amputated_from_winners": -1064.6,
-              "net": 292.7
+              "amputated_from_winners": -1100.1,
+              "net": 257.2
             },
             "cut-mae0.5": {
               "n_trig": 31,
               "saved_on_losers": 2058.6,
-              "amputated_from_winners": -1997.6,
-              "net": 61.0
+              "amputated_from_winners": -2033.1,
+              "net": 25.5
             },
             "cut-mae1": {
               "n_trig": 18,
@@ -6079,40 +6079,40 @@
         "0.25": {
           "scratches_created": 404,
           "winners_amputated": 142,
-          "amputated_pts": 33468.7,
+          "amputated_pts": 33646.2,
           "losses_capped": 262,
           "capped_pts_saved": 28919.4,
-          "net_delta": -4549.3,
+          "net_delta": -4726.8,
           "max_mfe_of_losers_atr": 0.229,
           "max_mfe_of_losers_pts": 9.2
         },
         "0.5": {
           "scratches_created": 355,
           "winners_amputated": 126,
-          "amputated_pts": 31574.8,
+          "amputated_pts": 31752.3,
           "losses_capped": 229,
           "capped_pts_saved": 25885.8,
-          "net_delta": -5688.9,
+          "net_delta": -5866.4,
           "max_mfe_of_losers_atr": 0.485,
           "max_mfe_of_losers_pts": 19.2
         },
         "1": {
           "scratches_created": 274,
           "winners_amputated": 96,
-          "amputated_pts": 23109.6,
+          "amputated_pts": 23287.1,
           "losses_capped": 178,
           "capped_pts_saved": 19995.3,
-          "net_delta": -3114.3,
+          "net_delta": -3291.8,
           "max_mfe_of_losers_atr": 0.994,
           "max_mfe_of_losers_pts": 33.6
         },
         "1.5": {
           "scratches_created": 215,
           "winners_amputated": 76,
-          "amputated_pts": 15807.6,
+          "amputated_pts": 15985.1,
           "losses_capped": 139,
           "capped_pts_saved": 15509.9,
-          "net_delta": -297.7,
+          "net_delta": -475.2,
           "max_mfe_of_losers_atr": 1.496,
           "max_mfe_of_losers_pts": 74.7
         }
@@ -6142,65 +6142,65 @@
         "rules": {
           "cut-loud": {
             "members": 20,
-            "median": 237.3,
-            "min": -866.7,
-            "max": 960.5
+            "median": 252.8,
+            "min": -1171.4,
+            "max": 1329.8
           },
           "cut-mae0.5": {
             "members": 20,
-            "median": -179.3,
-            "min": -1846.8,
-            "max": 1273.5
+            "median": 198.9,
+            "min": -1039.1,
+            "max": 1805.4
           },
           "cut-mae1": {
             "members": 20,
-            "median": 54.2,
-            "min": -765.5,
-            "max": 691.9
+            "median": 89.9,
+            "min": -491.0,
+            "max": 367.5
           },
           "cut@2": {
             "members": 20,
-            "median": -10.1,
-            "min": -2103.3,
-            "max": 1520.5
+            "median": 430.2,
+            "min": -1981.9,
+            "max": 2448.7
           },
           "cut@3": {
             "members": 20,
-            "median": 10.5,
-            "min": -1522.0,
-            "max": 1698.3
+            "median": 408.3,
+            "min": -1888.4,
+            "max": 2257.0
           },
           "cut@5": {
             "members": 20,
-            "median": 62.8,
-            "min": -1557.9,
-            "max": 1706.0
+            "median": 230.6,
+            "min": -1932.1,
+            "max": 1815.3
           }
         },
         "rungs": {
           "0.25": {
             "members": 20,
-            "median": 335.4,
-            "min": -2613.0,
-            "max": 2206.6
+            "median": 484.0,
+            "min": -3117.4,
+            "max": 5075.7
           },
           "0.5": {
             "members": 20,
-            "median": 42.8,
-            "min": -2809.6,
-            "max": 1973.0
+            "median": 186.3,
+            "min": -3656.2,
+            "max": 4905.0
           },
           "1": {
             "members": 20,
-            "median": -200.2,
-            "min": -3107.7,
-            "max": 1201.9
+            "median": 37.2,
+            "min": -2522.8,
+            "max": 3122.3
           },
           "1.5": {
             "members": 20,
-            "median": 326.5,
-            "min": -1824.0,
-            "max": 1193.0
+            "median": 9.8,
+            "min": -2840.4,
+            "max": 2180.8
           }
         }
       },
@@ -6669,38 +6669,38 @@
             "cut@2": {
               "n_trig": 47,
               "saved_on_losers": 2932.2,
-              "amputated_from_winners": -4709.7,
-              "net": -1777.5
+              "amputated_from_winners": -4916.7,
+              "net": -1984.5
             },
             "cut@3": {
               "n_trig": 44,
               "saved_on_losers": 2663.6,
-              "amputated_from_winners": -4831.7,
-              "net": -2168.1
+              "amputated_from_winners": -5038.7,
+              "net": -2375.1
             },
             "cut@5": {
               "n_trig": 36,
               "saved_on_losers": 2018.6,
-              "amputated_from_winners": -4292.2,
-              "net": -2273.6
+              "amputated_from_winners": -4499.2,
+              "net": -2480.6
             },
             "cut-loud": {
               "n_trig": 50,
               "saved_on_losers": 3349.3,
-              "amputated_from_winners": -4628.7,
-              "net": -1279.4
+              "amputated_from_winners": -4835.7,
+              "net": -1486.4
             },
             "cut-mae0.5": {
               "n_trig": 44,
               "saved_on_losers": 2134.5,
-              "amputated_from_winners": -4835.4,
-              "net": -2701.0
+              "amputated_from_winners": -5042.4,
+              "net": -2908.0
             },
             "cut-mae1": {
               "n_trig": 22,
               "saved_on_losers": 781.6,
-              "amputated_from_winners": -3886.9,
-              "net": -3105.2
+              "amputated_from_winners": -4093.9,
+              "net": -3312.2
             }
           }
         },
@@ -8109,26 +8109,26 @@
             "cut@2": {
               "n_trig": 29,
               "saved_on_losers": 1737.1,
-              "amputated_from_winners": -4325.4,
-              "net": -2588.3
+              "amputated_from_winners": -4428.9,
+              "net": -2691.8
             },
             "cut@3": {
               "n_trig": 22,
               "saved_on_losers": 1598.0,
-              "amputated_from_winners": -1779.0,
-              "net": -181.0
+              "amputated_from_winners": -1882.5,
+              "net": -284.5
             },
             "cut@5": {
               "n_trig": 21,
               "saved_on_losers": 1569.6,
-              "amputated_from_winners": -1823.1,
-              "net": -253.5
+              "amputated_from_winners": -1926.6,
+              "net": -357.0
             },
             "cut-loud": {
               "n_trig": 14,
               "saved_on_losers": 947.8,
-              "amputated_from_winners": -1867.5,
-              "net": -919.7
+              "amputated_from_winners": -1971.0,
+              "net": -1023.2
             },
             "cut-mae0.5": {
               "n_trig": 16,
@@ -8147,42 +8147,42 @@
       },
       "be_ladder": {
         "0.25": {
-          "scratches_created": 440,
-          "winners_amputated": 132,
-          "amputated_pts": 38632.2,
+          "scratches_created": 442,
+          "winners_amputated": 134,
+          "amputated_pts": 39695.2,
           "losses_capped": 308,
           "capped_pts_saved": 29264.1,
-          "net_delta": -9368.1,
+          "net_delta": -10431.1,
           "max_mfe_of_losers_atr": 0.239,
           "max_mfe_of_losers_pts": 12.0
         },
         "0.5": {
-          "scratches_created": 366,
-          "winners_amputated": 109,
-          "amputated_pts": 32633.9,
+          "scratches_created": 368,
+          "winners_amputated": 111,
+          "amputated_pts": 33696.9,
           "losses_capped": 257,
           "capped_pts_saved": 24080.8,
-          "net_delta": -8553.1,
+          "net_delta": -9616.1,
           "max_mfe_of_losers_atr": 0.499,
           "max_mfe_of_losers_pts": 15.0
         },
         "1": {
-          "scratches_created": 265,
-          "winners_amputated": 71,
-          "amputated_pts": 20683.3,
+          "scratches_created": 267,
+          "winners_amputated": 73,
+          "amputated_pts": 21539.3,
           "losses_capped": 194,
           "capped_pts_saved": 18297.2,
-          "net_delta": -2386.1,
+          "net_delta": -3242.1,
           "max_mfe_of_losers_atr": 0.999,
           "max_mfe_of_losers_pts": 91.6
         },
         "1.5": {
-          "scratches_created": 209,
-          "winners_amputated": 58,
-          "amputated_pts": 18075.5,
+          "scratches_created": 211,
+          "winners_amputated": 60,
+          "amputated_pts": 18931.5,
           "losses_capped": 151,
           "capped_pts_saved": 13808.2,
-          "net_delta": -4267.3,
+          "net_delta": -5123.3,
           "max_mfe_of_losers_atr": 2.533,
           "max_mfe_of_losers_pts": 123.6
         }
@@ -8190,87 +8190,87 @@
       "reentry": {
         "windows": {
           "15": {
-            "n_scratched": 440,
+            "n_scratched": 442,
             "n_refire": 69,
-            "refire_rate": 0.157
+            "refire_rate": 0.156
           },
           "30": {
-            "n_scratched": 440,
+            "n_scratched": 442,
             "n_refire": 99,
-            "refire_rate": 0.225
+            "refire_rate": 0.224
           },
           "60": {
-            "n_scratched": 440,
+            "n_scratched": 442,
             "n_refire": 132,
-            "refire_rate": 0.3
+            "refire_rate": 0.299
           }
         },
         "policy": {}
       },
-      "n_scratched_loop_rung": 440,
+      "n_scratched_loop_rung": 442,
       "ladder_floors": {
         "rules": {
           "cut-loud": {
             "members": 20,
-            "median": -243.2,
-            "min": -2165.9,
-            "max": 658.4
+            "median": 123.8,
+            "min": -2400.0,
+            "max": 1029.8
           },
           "cut-mae0.5": {
             "members": 20,
-            "median": -165.2,
-            "min": -1993.8,
-            "max": 1067.7
+            "median": 87.8,
+            "min": -2623.3,
+            "max": 1030.8
           },
           "cut-mae1": {
             "members": 20,
-            "median": 109.0,
-            "min": -1503.9,
-            "max": 288.3
+            "median": 128.6,
+            "min": -996.5,
+            "max": 379.3
           },
           "cut@2": {
             "members": 20,
-            "median": -998.1,
-            "min": -3770.4,
-            "max": 1479.2
+            "median": 309.9,
+            "min": -2893.4,
+            "max": 2131.0
           },
           "cut@3": {
             "members": 20,
-            "median": -856.2,
-            "min": -2579.5,
-            "max": 1045.3
+            "median": 215.6,
+            "min": -2244.0,
+            "max": 1636.9
           },
           "cut@5": {
             "members": 20,
-            "median": -35.8,
-            "min": -2531.8,
-            "max": 973.8
+            "median": 333.0,
+            "min": -1951.0,
+            "max": 1333.7
           }
         },
         "rungs": {
           "0.25": {
             "members": 20,
-            "median": -2036.5,
-            "min": -4403.7,
-            "max": 1921.1
+            "median": -1222.9,
+            "min": -3621.4,
+            "max": 320.7
           },
           "0.5": {
             "members": 20,
-            "median": -2023.7,
-            "min": -4529.6,
-            "max": 1538.4
+            "median": -1089.2,
+            "min": -4170.1,
+            "max": -87.6
           },
           "1": {
             "members": 20,
-            "median": -961.3,
-            "min": -3038.2,
-            "max": 1970.3
+            "median": -600.8,
+            "min": -2349.8,
+            "max": 1253.4
           },
           "1.5": {
             "members": 20,
-            "median": -536.1,
-            "min": -2383.2,
-            "max": 1822.8
+            "median": -589.1,
+            "min": -1945.8,
+            "max": 1552.6
           }
         }
       },

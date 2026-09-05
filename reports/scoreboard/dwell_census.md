@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; register-16 family). VOCABULARY, not a signal: auction acceptance vs touch — dwell = consecutive in-band 1M closes per level-touch episode (day-broken). Level classes from existing conventions only: the pre-bar session extremes in the ratified retest band (0.25xATR15 — the retest-anchor object), the matrix's h11-node state, and the v3 anchor zones (register 111). Customers: H12's visit definition (future operator proposal), arrival-anatomy (e), the location family. Consumers price their own fields; distributions are the vocabulary's range, not findings.
+Engine `78fd6e12c` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; register-16 family). VOCABULARY, not a signal: auction acceptance vs touch — dwell = consecutive in-band 1M closes per level-touch episode (day-broken). Level classes from existing conventions only: the pre-bar session extremes in the ratified retest band (0.25xATR15 — the retest-anchor object), the matrix's h11-node state, and the v3 anchor zones (register 111). Customers: H12's visit definition (future operator proposal), arrival-anatomy (e), the location family. Consumers price their own fields; distributions are the vocabulary's range, not findings.
 
-## uk100fut (47856 1M bars)
+## uk100fut (52376 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
@@ -17,7 +17,7 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; re
 | v3-zone-4h | backtest | 13 | 8 | 24 | 184.6 | 366 | 3.6% |
 | v3-zone-4h | forward | 0 | — | — | — | — | 0 |
 
-## ger40fut (41964 1M bars)
+## ger40fut (46439 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
@@ -30,7 +30,7 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; re
 | v3-zone-4h | backtest | 0 | — | — | — | — | 0 |
 | v3-zone-4h | forward | 25 | 2 | 9 | 30.6 | 344 | 3.5% |
 
-## nas100fut (43456 1M bars)
+## nas100fut (48082 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
@@ -43,7 +43,7 @@ Engine `961443605` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; re
 | v3-zone-4h | backtest | 17 | 7 | 118 | 135 | 499 | 7.9% |
 | v3-zone-4h | forward | 2 | 67.5 | 99.8 | 119.1 | 132 | 0.9% |
 
-## us30fut (43427 1M bars)
+## us30fut (48048 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|

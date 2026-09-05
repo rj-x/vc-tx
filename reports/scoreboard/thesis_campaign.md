@@ -2,11 +2,11 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 49344 of 64393 journal rows used, 15049 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 49344 of 64393 journal rows used, 15049 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
 
 STATISTIC SHAPES (74-B): per-campaign accounting distributions vs the RANDOM-THESIS member band (20 pinned members on the SAME campaign windows — sticky random theses in a trending month are the stated confound); the attribution ladder one-shot -> +BE -> +re-entry is a POLICY LADDER, not a causal claim; backoff rows carry the abstained counterfactual (backoff's price) MANDATORY. PER-CAMPAIGN RISK ACCOUNTING IN EVERY TABLE — the per-trade view is the known flattery. Thesis v1 = the 15M phase-tracker trend state; v2 candidate states (sentence-family states) RECORDED, NOT BUILT. Campaigns intersecting the lockbox span are DROPPED and counted. Consecutive scratches are recorded as a candidate narrative event ('repeated refusal') — if resume-on-print dominates the timers, that routes to the front door as its own question.
 
-## ger40fut — 104 campaigns used (33 lockbox-intersecting dropped of 137)
+## ger40fut — 123 campaigns used (33 lockbox-intersecting dropped of 156)
 
 Random-thesis net band (20 members, loop BE@0.25): median 118.6 / min -473.8 / max 285.4.
 
@@ -27,7 +27,7 @@ Random-thesis net band (20 members, loop BE@0.25): median 118.6 / min -473.8 / m
 | backoff_k3_w30 | 78 | -137.8 | 49 | 4 | 14 (408.7) | 124.7 | 2 | 3.0 | 0.0 |
 | backoff_k3_w5 | 80 | -140.8 | 51 | 4 | 14 (408.7) | 124.7 | 0 | 0.0 | 0.0 |
 
-## nas100fut — 103 campaigns used (36 lockbox-intersecting dropped of 139)
+## nas100fut — 120 campaigns used (36 lockbox-intersecting dropped of 156)
 
 Random-thesis net band (20 members, loop BE@0.25): median 580.5 / min -261.4 / max 1039.6.
 
@@ -48,7 +48,7 @@ Random-thesis net band (20 members, loop BE@0.25): median 580.5 / min -261.4 / m
 | backoff_k3_w30 | 75 | 879.4 | 56 | 2 | 9 (804.0) | 66.3 | 3 | 3.6 | 25.1 |
 | backoff_k3_w5 | 77 | 875.8 | 58 | 2 | 9 (804.0) | 66.3 | 1 | 0.0 | 25.1 |
 
-## uk100fut — 122 campaigns used (40 lockbox-intersecting dropped of 162)
+## uk100fut — 143 campaigns used (40 lockbox-intersecting dropped of 183)
 
 Random-thesis net band (20 members, loop BE@0.25): median -32.5 / min -213.5 / max 181.4.
 
@@ -69,7 +69,7 @@ Random-thesis net band (20 members, loop BE@0.25): median -32.5 / min -213.5 / m
 | backoff_k3_w30 | 88 | -77.4 | 55 | 6 | 13 (199.7) | 27.6 | 3 | 71.1 | 0.0 |
 | backoff_k3_w5 | 90 | -129.7 | 56 | 7 | 13 (199.7) | 53.6 | 1 | 18.8 | 0.0 |
 
-## us30fut — 87 campaigns used (35 lockbox-intersecting dropped of 122)
+## us30fut — 101 campaigns used (35 lockbox-intersecting dropped of 136)
 
 Random-thesis net band (20 members, loop BE@0.25): median -127.2 / min -1209.4 / max 706.4.
 

@@ -1,17 +1,17 @@
 {
   "STAMP": "OBSERVATIONAL thesis-campaign study \u2014 the operator's loop measured, never adopted; random-thesis controls mandatory; per-campaign risk accounting mandatory; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "loop_rung_atr": 0.25,
   "thesis_v1": "15M phase-tracker trend state",
   "v2_candidates_recorded_not_built": "sentence-family states",
   "per_instrument": {
     "uk100fut": {
-      "n_campaigns_total": 162,
+      "n_campaigns_total": 183,
       "n_campaigns_lockbox_dropped": 40,
-      "n_campaigns_used": 122,
+      "n_campaigns_used": 143,
       "policies": {
         "loop_be0.25": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 90,
           "net": -147.2,
           "scratches": 55,
@@ -24,7 +24,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be0.5": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 81,
           "net": -71.9,
           "scratches": 36,
@@ -37,7 +37,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 71,
           "net": -37.7,
           "scratches": 14,
@@ -50,7 +50,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1.5": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 70,
           "net": -19.0,
           "scratches": 7,
@@ -63,7 +63,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_nobe": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 55,
           "net": 53.4,
           "scratches": 0,
@@ -76,7 +76,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_be": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 55,
           "net": -4.6,
           "scratches": 33,
@@ -89,7 +89,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w5": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 90,
           "net": -138.6,
           "scratches": 56,
@@ -102,7 +102,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w15": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 88,
           "net": -135.9,
           "scratches": 55,
@@ -115,7 +115,7 @@
           "supp_winners_missed": 36.7
         },
         "backoff_k2_w30": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 86,
           "net": -147.6,
           "scratches": 55,
@@ -128,7 +128,7 @@
           "supp_winners_missed": 67.2
         },
         "backoff_k2_print": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 86,
           "net": -127.1,
           "scratches": 53,
@@ -141,7 +141,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w5": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 90,
           "net": -129.7,
           "scratches": 56,
@@ -154,7 +154,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w15": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 89,
           "net": -128.4,
           "scratches": 55,
@@ -167,7 +167,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w30": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 88,
           "net": -77.4,
           "scratches": 55,
@@ -180,7 +180,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_print": {
-          "campaigns": 122,
+          "campaigns": 143,
           "probes": 88,
           "net": -77.4,
           "scratches": 55,
@@ -201,12 +201,12 @@
       }
     },
     "ger40fut": {
-      "n_campaigns_total": 137,
+      "n_campaigns_total": 156,
       "n_campaigns_lockbox_dropped": 33,
-      "n_campaigns_used": 104,
+      "n_campaigns_used": 123,
       "policies": {
         "loop_be0.25": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 80,
           "net": -140.8,
           "scratches": 51,
@@ -219,7 +219,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be0.5": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 72,
           "net": -85.2,
           "scratches": 32,
@@ -232,7 +232,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 61,
           "net": 145.2,
           "scratches": 10,
@@ -245,7 +245,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1.5": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 58,
           "net": 54.8,
           "scratches": 3,
@@ -258,7 +258,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_nobe": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 47,
           "net": -148.1,
           "scratches": 0,
@@ -271,7 +271,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_be": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 47,
           "net": -29.0,
           "scratches": 30,
@@ -284,7 +284,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w5": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 78,
           "net": -81.1,
           "scratches": 50,
@@ -297,7 +297,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w15": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 77,
           "net": -79.6,
           "scratches": 49,
@@ -310,7 +310,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w30": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 76,
           "net": -78.1,
           "scratches": 48,
@@ -323,7 +323,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_print": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 74,
           "net": -117.5,
           "scratches": 47,
@@ -336,7 +336,7 @@
           "supp_winners_missed": 40.9
         },
         "backoff_k3_w5": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 80,
           "net": -140.8,
           "scratches": 51,
@@ -349,7 +349,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w15": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 79,
           "net": -139.3,
           "scratches": 50,
@@ -362,7 +362,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w30": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 78,
           "net": -137.8,
           "scratches": 49,
@@ -375,7 +375,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_print": {
-          "campaigns": 104,
+          "campaigns": 123,
           "probes": 77,
           "net": -178.7,
           "scratches": 49,
@@ -396,12 +396,12 @@
       }
     },
     "nas100fut": {
-      "n_campaigns_total": 139,
+      "n_campaigns_total": 156,
       "n_campaigns_lockbox_dropped": 36,
-      "n_campaigns_used": 103,
+      "n_campaigns_used": 120,
       "policies": {
         "loop_be0.25": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 78,
           "net": 900.9,
           "scratches": 58,
@@ -414,7 +414,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be0.5": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 69,
           "net": 1201.0,
           "scratches": 43,
@@ -427,7 +427,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 57,
           "net": 1381.9,
           "scratches": 21,
@@ -440,7 +440,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1.5": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 52,
           "net": 1237.5,
           "scratches": 10,
@@ -453,7 +453,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_nobe": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 42,
           "net": 619.3,
           "scratches": 0,
@@ -466,7 +466,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_be": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 42,
           "net": 580.9,
           "scratches": 30,
@@ -479,7 +479,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w5": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 77,
           "net": 902.6,
           "scratches": 57,
@@ -492,7 +492,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w15": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 75,
           "net": 879.4,
           "scratches": 56,
@@ -505,7 +505,7 @@
           "supp_winners_missed": 25.1
         },
         "backoff_k2_w30": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 74,
           "net": 881.1,
           "scratches": 55,
@@ -518,7 +518,7 @@
           "supp_winners_missed": 25.1
         },
         "backoff_k2_print": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 72,
           "net": 457.1,
           "scratches": 54,
@@ -531,7 +531,7 @@
           "supp_winners_missed": 484.8
         },
         "backoff_k3_w5": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 77,
           "net": 875.8,
           "scratches": 58,
@@ -544,7 +544,7 @@
           "supp_winners_missed": 25.1
         },
         "backoff_k3_w15": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 76,
           "net": 877.5,
           "scratches": 57,
@@ -557,7 +557,7 @@
           "supp_winners_missed": 25.1
         },
         "backoff_k3_w30": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 75,
           "net": 879.4,
           "scratches": 56,
@@ -570,7 +570,7 @@
           "supp_winners_missed": 25.1
         },
         "backoff_k3_print": {
-          "campaigns": 103,
+          "campaigns": 120,
           "probes": 76,
           "net": 505.9,
           "scratches": 58,
@@ -591,12 +591,12 @@
       }
     },
     "us30fut": {
-      "n_campaigns_total": 122,
+      "n_campaigns_total": 136,
       "n_campaigns_lockbox_dropped": 35,
-      "n_campaigns_used": 87,
+      "n_campaigns_used": 101,
       "policies": {
         "loop_be0.25": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 76,
           "net": -765.1,
           "scratches": 49,
@@ -609,7 +609,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be0.5": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 62,
           "net": -642.4,
           "scratches": 26,
@@ -622,7 +622,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 53,
           "net": -638.4,
           "scratches": 11,
@@ -635,7 +635,7 @@
           "supp_winners_missed": 0.0
         },
         "loop_be1.5": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 52,
           "net": -980.6,
           "scratches": 6,
@@ -648,7 +648,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_nobe": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 39,
           "net": -394.9,
           "scratches": 0,
@@ -661,7 +661,7 @@
           "supp_winners_missed": 0.0
         },
         "oneshot_be": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 39,
           "net": -543.5,
           "scratches": 25,
@@ -674,7 +674,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k2_w5": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 77,
           "net": -824.8,
           "scratches": 51,
@@ -687,7 +687,7 @@
           "supp_winners_missed": 54.4
         },
         "backoff_k2_w15": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 76,
           "net": -779.1,
           "scratches": 51,
@@ -700,7 +700,7 @@
           "supp_winners_missed": 54.4
         },
         "backoff_k2_w30": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 74,
           "net": -682.9,
           "scratches": 51,
@@ -713,7 +713,7 @@
           "supp_winners_missed": 54.4
         },
         "backoff_k2_print": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 76,
           "net": -822.1,
           "scratches": 50,
@@ -726,7 +726,7 @@
           "supp_winners_missed": 54.4
         },
         "backoff_k3_w5": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 75,
           "net": -762.5,
           "scratches": 48,
@@ -739,7 +739,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w15": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 74,
           "net": -749.4,
           "scratches": 48,
@@ -752,7 +752,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_w30": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 74,
           "net": -749.4,
           "scratches": 48,
@@ -765,7 +765,7 @@
           "supp_winners_missed": 0.0
         },
         "backoff_k3_print": {
-          "campaigns": 87,
+          "campaigns": 101,
           "probes": 74,
           "net": -760.0,
           "scratches": 47,

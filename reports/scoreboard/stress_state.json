@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL cross-asset stress organ \u2014 a conditioning dimension, never sizing; prices only; mint-on-lift; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "feeds": [
     "gold",
     "eurusd",
@@ -9,10 +9,10 @@
   "mom_sessions_FLAGGED": 5,
   "stress_pctile_FLAGGED": 0.8,
   "warmup_days": 60,
-  "days_covered": 476,
+  "days_covered": 479,
   "state_counts": {
-    "calm": 231,
-    "mixed": 196,
+    "calm": 233,
+    "mixed": 197,
     "stressed": 49
   },
   "fields": {
@@ -3817,12 +3817,36 @@
       "corr_pctile": 0.461
     },
     "2026-09-01": {
+      "state": "calm",
+      "alarms": 0,
+      "gold_mom": -1,
+      "dollar_up": true,
+      "rvol_pctile": 0.429,
+      "corr_pctile": 0.697
+    },
+    "2026-09-02": {
       "state": "mixed",
       "alarms": 1,
       "gold_mom": -1,
       "dollar_up": true,
-      "rvol_pctile": 0.454,
-      "corr_pctile": 0.802
+      "rvol_pctile": 0.542,
+      "corr_pctile": 0.868
+    },
+    "2026-09-03": {
+      "state": "calm",
+      "alarms": 0,
+      "gold_mom": 1,
+      "dollar_up": false,
+      "rvol_pctile": 0.509,
+      "corr_pctile": 0.523
+    },
+    "2026-09-04": {
+      "state": "mixed",
+      "alarms": 1,
+      "gold_mom": -1,
+      "dollar_up": false,
+      "rvol_pctile": 0.535,
+      "corr_pctile": 0.913
     }
   },
   "scalp_split": {
@@ -4413,39 +4437,6 @@
   },
   "fields_tail": [
     [
-      "2026-08-12",
-      {
-        "state": "calm",
-        "alarms": 0,
-        "gold_mom": 1,
-        "dollar_up": false,
-        "rvol_pctile": 0.31,
-        "corr_pctile": 0.797
-      }
-    ],
-    [
-      "2026-08-13",
-      {
-        "state": "mixed",
-        "alarms": 1,
-        "gold_mom": 1,
-        "dollar_up": true,
-        "rvol_pctile": 0.404,
-        "corr_pctile": 0.423
-      }
-    ],
-    [
-      "2026-08-14",
-      {
-        "state": "calm",
-        "alarms": 0,
-        "gold_mom": 1,
-        "dollar_up": false,
-        "rvol_pctile": 0.244,
-        "corr_pctile": 0.296
-      }
-    ],
-    [
       "2026-08-17",
       {
         "state": "calm",
@@ -4569,12 +4560,45 @@
     [
       "2026-09-01",
       {
+        "state": "calm",
+        "alarms": 0,
+        "gold_mom": -1,
+        "dollar_up": true,
+        "rvol_pctile": 0.429,
+        "corr_pctile": 0.697
+      }
+    ],
+    [
+      "2026-09-02",
+      {
         "state": "mixed",
         "alarms": 1,
         "gold_mom": -1,
         "dollar_up": true,
-        "rvol_pctile": 0.454,
-        "corr_pctile": 0.802
+        "rvol_pctile": 0.542,
+        "corr_pctile": 0.868
+      }
+    ],
+    [
+      "2026-09-03",
+      {
+        "state": "calm",
+        "alarms": 0,
+        "gold_mom": 1,
+        "dollar_up": false,
+        "rvol_pctile": 0.509,
+        "corr_pctile": 0.523
+      }
+    ],
+    [
+      "2026-09-04",
+      {
+        "state": "mixed",
+        "alarms": 1,
+        "gold_mom": -1,
+        "dollar_up": false,
+        "rvol_pctile": 0.535,
+        "corr_pctile": 0.913
       }
     ]
   ]

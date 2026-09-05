@@ -2,7 +2,7 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `961443605` — OBSERVATIONAL, pre-registered (prereg_h6_refinement_program, register 100). A COUNTED EXPERIMENT FAMILY on the scalp thread; v0 (R-SCALP-the scalp signal) UNTOUCHED; every output is a CANDIDATE ARM through the front door — surviving candidates -> ratification -> v1 arms, forward-graded; the September sealed window examines whatever registers. SCOPE FENCE — CELL BUDGET: 39 features x 4 instruments x 2 windows = 260 split cells, 92 measurable (both sides >= 10). STATISTIC SHAPES (74-B): co-fire/enrichment splits = single-cell extremity vs a label-permutation null (100 pinned seeds) with the field count vs null as the luck budget; the discriminator = cross-instrument consistency (>= 3 of 4 legs, same sign); veto counterfactuals and the time-cap curve = descriptive re-pricing on identical fires. Outcome = net 0.5xATR/5-bar reach (registers 63/64). Time-cap: register 64's time-exit ruling CITED and DISTINGUISHED — the target is retained, only the non-reach tail is capped; the 10-bar hold is a PROXY for EOD-flat (true comparison from the scalp arms' journal rows); any cap proposes JOINTLY with the v1 price-stop. Fires: 505 (both windows, four instruments, no pooling).
+Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_h6_refinement_program, register 100). A COUNTED EXPERIMENT FAMILY on the scalp thread; v0 (R-SCALP-the scalp signal) UNTOUCHED; every output is a CANDIDATE ARM through the front door — surviving candidates -> ratification -> v1 arms, forward-graded; the September sealed window examines whatever registers. SCOPE FENCE — CELL BUDGET: 39 features x 4 instruments x 2 windows = 260 split cells, 92 measurable (both sides >= 10). STATISTIC SHAPES (74-B): co-fire/enrichment splits = single-cell extremity vs a label-permutation null (100 pinned seeds) with the field count vs null as the luck budget; the discriminator = cross-instrument consistency (>= 3 of 4 legs, same sign); veto counterfactuals and the time-cap curve = descriptive re-pricing on identical fires. Outcome = net 0.5xATR/5-bar reach (registers 63/64). Time-cap: register 64's time-exit ruling CITED and DISTINGUISHED — the target is retained, only the non-reach tail is capped; the 10-bar hold is a PROXY for EOD-flat (true comparison from the scalp arms' journal rows); any cap proposes JOINTLY with the v1 price-stop. Fires: 505 (both windows, four instruments, no pooling).
 
 **Luck budget:** 55 of 92 measurable cells reach |split| >= 10pp vs null median 40.0 / p95 52.0; percentile 99.0.
 
@@ -52,69 +52,69 @@ Trigger: cap@3 holds forward on ['ger40fut'] → NOT TRIGGERED — no package.
 
 | instrument | arm | window | rule | days | halt days | stops dodged (pts) | targets forfeited (pts) | eod forfeited (pts) | net vs no-halt | floor med (min..max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ger40fut | R-SCALP-H6 | backtest | halt@1stops | 6 | 4 | 0 (0.0) | 7 (117.4) | 0 (0.0) | -117.4 | 77.2 (-243.6..1161.2) |
-| ger40fut | R-SCALP-H6 | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 124.4 (-546.4..860.7) |
-| ger40fut | R-SCALP-H6 | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-36.3..139.7) |
-| ger40fut | R-SCALP-H6 | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-95.0..0.0) |
-| ger40fut | R-SCALP-H6 | forward | halt@1stops | 11 | 5 | 5 (250.1) | 18 (198.4) | 1 (-41.7) | +93.4 | -27.2 (-265.7..274.3) |
-| ger40fut | R-SCALP-H6 | forward | halt@2stops | 11 | 2 | 3 (173.8) | 7 (74.8) | 0 (0.0) | +99.0 | 11.2 (-248.8..401.0) |
-| ger40fut | R-SCALP-H6 | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-58.0..82.9) |
+| ger40fut | R-SCALP-H6 | backtest | halt@1stops | 6 | 4 | 0 (0.0) | 7 (117.4) | 0 (0.0) | -117.4 | 216.5 (-470.1..1159.5) |
+| ger40fut | R-SCALP-H6 | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 158.1 (-291.8..870.5) |
+| ger40fut | R-SCALP-H6 | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-86.7..479.1) |
+| ger40fut | R-SCALP-H6 | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
+| ger40fut | R-SCALP-H6 | forward | halt@1stops | 11 | 5 | 5 (250.1) | 18 (198.4) | 1 (-41.7) | +93.4 | -104.5 (-450.2..186.6) |
+| ger40fut | R-SCALP-H6 | forward | halt@2stops | 11 | 2 | 3 (173.8) | 7 (74.8) | 0 (0.0) | +99.0 | -37.4 (-184.7..273.2) |
+| ger40fut | R-SCALP-H6 | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-112.8..64.1) |
 | ger40fut | R-SCALP-H6 | forward | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| ger40fut | R-SCALP-H6-REF | backtest | halt@1stops | 6 | 1 | 0 (0.0) | 3 (59.5) | 0 (0.0) | -59.5 | 77.2 (-243.6..1161.2) |
-| ger40fut | R-SCALP-H6-REF | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 124.4 (-546.4..860.7) |
-| ger40fut | R-SCALP-H6-REF | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-36.3..139.7) |
-| ger40fut | R-SCALP-H6-REF | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-95.0..0.0) |
-| ger40fut | R-SCALP-H6-REF | forward | halt@1stops | 11 | 6 | 4 (215.2) | 21 (219.4) | 1 (-44.2) | +40.0 | -27.2 (-265.7..274.3) |
-| ger40fut | R-SCALP-H6-REF | forward | halt@2stops | 11 | 3 | 1 (71.6) | 8 (96.5) | 0 (0.0) | -24.9 | 11.2 (-248.8..401.0) |
-| ger40fut | R-SCALP-H6-REF | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-58.0..82.9) |
+| ger40fut | R-SCALP-H6-REF | backtest | halt@1stops | 6 | 1 | 0 (0.0) | 3 (59.5) | 0 (0.0) | -59.5 | 216.5 (-470.1..1159.5) |
+| ger40fut | R-SCALP-H6-REF | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 158.1 (-291.8..870.5) |
+| ger40fut | R-SCALP-H6-REF | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-86.7..479.1) |
+| ger40fut | R-SCALP-H6-REF | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
+| ger40fut | R-SCALP-H6-REF | forward | halt@1stops | 11 | 6 | 4 (215.2) | 21 (219.4) | 1 (-44.2) | +40.0 | -104.5 (-450.2..186.6) |
+| ger40fut | R-SCALP-H6-REF | forward | halt@2stops | 11 | 3 | 1 (71.6) | 8 (96.5) | 0 (0.0) | -24.9 | -37.4 (-184.7..273.2) |
+| ger40fut | R-SCALP-H6-REF | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-112.8..64.1) |
 | ger40fut | R-SCALP-H6-REF | forward | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| nas100fut | R-SCALP-H6 | backtest | halt@1stops | 6 | 1 | 0 (0.0) | 1 (44.6) | 0 (0.0) | -44.6 | 178.1 (-1226.0..1839.5) |
-| nas100fut | R-SCALP-H6 | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 76.7 (-339.7..1398.6) |
-| nas100fut | R-SCALP-H6 | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-190.6..122.3) |
+| nas100fut | R-SCALP-H6 | backtest | halt@1stops | 6 | 1 | 0 (0.0) | 1 (44.6) | 0 (0.0) | -44.6 | 187.6 (-1019.8..768.9) |
+| nas100fut | R-SCALP-H6 | backtest | halt@2stops | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | -52.5 (-819.2..419.3) |
+| nas100fut | R-SCALP-H6 | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-161.8..225.6) |
 | nas100fut | R-SCALP-H6 | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| nas100fut | R-SCALP-H6 | forward | halt@1stops | 13 | 4 | 2 (215.4) | 14 (287.0) | 0 (0.0) | -71.6 | -146.9 (-521.8..803.2) |
-| nas100fut | R-SCALP-H6 | forward | halt@2stops | 13 | 2 | 0 (0.0) | 4 (70.2) | 0 (0.0) | -70.2 | 25.4 (-426.7..278.0) |
-| nas100fut | R-SCALP-H6 | forward | halt@3losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-177.4..242.1) |
+| nas100fut | R-SCALP-H6 | forward | halt@1stops | 13 | 4 | 2 (215.4) | 14 (287.0) | 0 (0.0) | -71.6 | -150.1 (-597.0..902.0) |
+| nas100fut | R-SCALP-H6 | forward | halt@2stops | 13 | 2 | 0 (0.0) | 4 (70.2) | 0 (0.0) | -70.2 | -28.4 (-233.2..570.0) |
+| nas100fut | R-SCALP-H6 | forward | halt@3losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-108.7..113.3) |
 | nas100fut | R-SCALP-H6 | forward | halt@5losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| nas100fut | R-SCALP-H6-REF | backtest | halt@1stops | 6 | 4 | 2 (329.3) | 3 (107.4) | 0 (0.0) | +221.9 | 178.1 (-1226.0..1839.5) |
-| nas100fut | R-SCALP-H6-REF | backtest | halt@2stops | 6 | 1 | 1 (152.3) | 0 (0.0) | 0 (0.0) | +152.3 | 76.7 (-339.7..1398.6) |
-| nas100fut | R-SCALP-H6-REF | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-190.6..122.3) |
+| nas100fut | R-SCALP-H6-REF | backtest | halt@1stops | 6 | 4 | 2 (329.3) | 3 (107.4) | 0 (0.0) | +221.9 | 187.6 (-1019.8..768.9) |
+| nas100fut | R-SCALP-H6-REF | backtest | halt@2stops | 6 | 1 | 1 (152.3) | 0 (0.0) | 0 (0.0) | +152.3 | -52.5 (-819.2..419.3) |
+| nas100fut | R-SCALP-H6-REF | backtest | halt@3losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-161.8..225.6) |
 | nas100fut | R-SCALP-H6-REF | backtest | halt@5losers | 6 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| nas100fut | R-SCALP-H6-REF | forward | halt@1stops | 13 | 4 | 0 (0.0) | 13 (287.0) | 0 (0.0) | -287.0 | -146.9 (-521.8..803.2) |
-| nas100fut | R-SCALP-H6-REF | forward | halt@2stops | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 25.4 (-426.7..278.0) |
-| nas100fut | R-SCALP-H6-REF | forward | halt@3losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-177.4..242.1) |
+| nas100fut | R-SCALP-H6-REF | forward | halt@1stops | 13 | 4 | 0 (0.0) | 13 (287.0) | 0 (0.0) | -287.0 | -150.1 (-597.0..902.0) |
+| nas100fut | R-SCALP-H6-REF | forward | halt@2stops | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | -28.4 (-233.2..570.0) |
+| nas100fut | R-SCALP-H6-REF | forward | halt@3losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-108.7..113.3) |
 | nas100fut | R-SCALP-H6-REF | forward | halt@5losers | 13 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| uk100fut | R-SCALP-H6 | backtest | halt@1stops | 11 | 3 | 1 (41.1) | 11 (66.5) | 3 (-21.0) | -4.3 | 88.8 (-425.1..432.0) |
-| uk100fut | R-SCALP-H6 | backtest | halt@2stops | 11 | 1 | 0 (0.0) | 2 (16.8) | 1 (1.7) | -18.4 | 15.3 (-287.4..186.4) |
-| uk100fut | R-SCALP-H6 | backtest | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-85.3..69.2) |
+| uk100fut | R-SCALP-H6 | backtest | halt@1stops | 11 | 3 | 1 (41.1) | 11 (66.5) | 3 (-21.0) | -4.3 | 84.7 (-134.3..304.4) |
+| uk100fut | R-SCALP-H6 | backtest | halt@2stops | 11 | 1 | 0 (0.0) | 2 (16.8) | 1 (1.7) | -18.4 | 2.3 (-194.3..211.6) |
+| uk100fut | R-SCALP-H6 | backtest | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-58.9..50.1) |
 | uk100fut | R-SCALP-H6 | backtest | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| uk100fut | R-SCALP-H6 | forward | halt@1stops | 10 | 4 | 1 (16.2) | 17 (76.7) | 0 (0.0) | -60.5 | 73.3 (-63.0..193.5) |
-| uk100fut | R-SCALP-H6 | forward | halt@2stops | 10 | 1 | 0 (0.0) | 5 (20.8) | 0 (0.0) | -20.8 | 12.9 (-52.6..151.7) |
-| uk100fut | R-SCALP-H6 | forward | halt@3losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-20.2..100.9) |
+| uk100fut | R-SCALP-H6 | forward | halt@1stops | 10 | 4 | 1 (16.2) | 17 (76.7) | 0 (0.0) | -60.5 | 80.7 (-17.4..227.0) |
+| uk100fut | R-SCALP-H6 | forward | halt@2stops | 10 | 1 | 0 (0.0) | 5 (20.8) | 0 (0.0) | -20.8 | 29.3 (-26.3..115.8) |
+| uk100fut | R-SCALP-H6 | forward | halt@3losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-36.4..42.1) |
 | uk100fut | R-SCALP-H6 | forward | halt@5losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| uk100fut | R-SCALP-H6-REF | backtest | halt@1stops | 11 | 4 | 0 (0.0) | 12 (85.5) | 3 (-7.1) | -78.4 | 88.8 (-425.1..432.0) |
-| uk100fut | R-SCALP-H6-REF | backtest | halt@2stops | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 15.3 (-287.4..186.4) |
-| uk100fut | R-SCALP-H6-REF | backtest | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-85.3..69.2) |
+| uk100fut | R-SCALP-H6-REF | backtest | halt@1stops | 11 | 4 | 0 (0.0) | 12 (85.5) | 3 (-7.1) | -78.4 | 84.7 (-134.3..304.4) |
+| uk100fut | R-SCALP-H6-REF | backtest | halt@2stops | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 2.3 (-194.3..211.6) |
+| uk100fut | R-SCALP-H6-REF | backtest | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-58.9..50.1) |
 | uk100fut | R-SCALP-H6-REF | backtest | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| uk100fut | R-SCALP-H6-REF | forward | halt@1stops | 10 | 4 | 1 (30.8) | 13 (60.5) | 0 (0.0) | -29.7 | 73.3 (-63.0..193.5) |
-| uk100fut | R-SCALP-H6-REF | forward | halt@2stops | 10 | 1 | 0 (0.0) | 1 (6.3) | 0 (0.0) | -6.3 | 12.9 (-52.6..151.7) |
-| uk100fut | R-SCALP-H6-REF | forward | halt@3losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-20.2..100.9) |
+| uk100fut | R-SCALP-H6-REF | forward | halt@1stops | 10 | 4 | 1 (30.8) | 13 (60.5) | 0 (0.0) | -29.7 | 80.7 (-17.4..227.0) |
+| uk100fut | R-SCALP-H6-REF | forward | halt@2stops | 10 | 1 | 0 (0.0) | 1 (6.3) | 0 (0.0) | -6.3 | 29.3 (-26.3..115.8) |
+| uk100fut | R-SCALP-H6-REF | forward | halt@3losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-36.4..42.1) |
 | uk100fut | R-SCALP-H6-REF | forward | halt@5losers | 10 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| us30fut | R-SCALP-H6 | backtest | halt@1stops | 8 | 4 | 4 (620.0) | 11 (452.8) | 2 (-129.7) | +296.9 | 396.0 (-334.7..1881.3) |
-| us30fut | R-SCALP-H6 | backtest | halt@2stops | 8 | 1 | 2 (294.9) | 1 (28.2) | 1 (-88.1) | +354.8 | 76.5 (-718.2..1081.0) |
-| us30fut | R-SCALP-H6 | backtest | halt@3losers | 8 | 1 | 1 (177.5) | 1 (28.2) | 1 (-88.1) | +237.3 | 0.0 (-28.4..417.9) |
+| us30fut | R-SCALP-H6 | backtest | halt@1stops | 8 | 4 | 4 (620.0) | 11 (452.8) | 2 (-129.7) | +296.9 | 158.1 (-861.5..1407.4) |
+| us30fut | R-SCALP-H6 | backtest | halt@2stops | 8 | 1 | 2 (294.9) | 1 (28.2) | 1 (-88.1) | +354.8 | 48.4 (-901.2..1140.8) |
+| us30fut | R-SCALP-H6 | backtest | halt@3losers | 8 | 1 | 1 (177.5) | 1 (28.2) | 1 (-88.1) | +237.3 | 0.0 (-258.3..449.4) |
 | us30fut | R-SCALP-H6 | backtest | halt@5losers | 8 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| us30fut | R-SCALP-H6 | forward | halt@1stops | 11 | 6 | 1 (121.1) | 19 (399.4) | 0 (0.0) | -278.2 | -118.3 (-630.5..797.1) |
-| us30fut | R-SCALP-H6 | forward | halt@2stops | 11 | 1 | 0 (0.0) | 2 (48.3) | 0 (0.0) | -48.3 | -35.3 (-625.5..618.7) |
-| us30fut | R-SCALP-H6 | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-63.3..0.0) |
+| us30fut | R-SCALP-H6 | forward | halt@1stops | 11 | 6 | 1 (121.1) | 19 (399.4) | 0 (0.0) | -278.2 | -22.2 (-453.6..682.7) |
+| us30fut | R-SCALP-H6 | forward | halt@2stops | 11 | 1 | 0 (0.0) | 2 (48.3) | 0 (0.0) | -48.3 | 3.4 (-274.3..202.5) |
+| us30fut | R-SCALP-H6 | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-256.4..0.0) |
 | us30fut | R-SCALP-H6 | forward | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| us30fut | R-SCALP-H6-REF | backtest | halt@1stops | 8 | 4 | 5 (783.9) | 10 (410.5) | 3 (-100.3) | +473.7 | 396.0 (-334.7..1881.3) |
-| us30fut | R-SCALP-H6-REF | backtest | halt@2stops | 8 | 3 | 2 (292.3) | 5 (250.2) | 3 (-100.3) | +142.4 | 76.5 (-718.2..1081.0) |
-| us30fut | R-SCALP-H6-REF | backtest | halt@3losers | 8 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-28.4..417.9) |
+| us30fut | R-SCALP-H6-REF | backtest | halt@1stops | 8 | 4 | 5 (783.9) | 10 (410.5) | 3 (-100.3) | +473.7 | 158.1 (-861.5..1407.4) |
+| us30fut | R-SCALP-H6-REF | backtest | halt@2stops | 8 | 3 | 2 (292.3) | 5 (250.2) | 3 (-100.3) | +142.4 | 48.4 (-901.2..1140.8) |
+| us30fut | R-SCALP-H6-REF | backtest | halt@3losers | 8 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-258.3..449.4) |
 | us30fut | R-SCALP-H6-REF | backtest | halt@5losers | 8 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
-| us30fut | R-SCALP-H6-REF | forward | halt@1stops | 11 | 5 | 1 (104.0) | 22 (463.4) | 0 (0.0) | -359.4 | -118.3 (-630.5..797.1) |
-| us30fut | R-SCALP-H6-REF | forward | halt@2stops | 11 | 1 | 0 (0.0) | 3 (74.7) | 0 (0.0) | -74.7 | -35.3 (-625.5..618.7) |
-| us30fut | R-SCALP-H6-REF | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-63.3..0.0) |
+| us30fut | R-SCALP-H6-REF | forward | halt@1stops | 11 | 5 | 1 (104.0) | 22 (463.4) | 0 (0.0) | -359.4 | -22.2 (-453.6..682.7) |
+| us30fut | R-SCALP-H6-REF | forward | halt@2stops | 11 | 1 | 0 (0.0) | 3 (74.7) | 0 (0.0) | -74.7 | 3.4 (-274.3..202.5) |
+| us30fut | R-SCALP-H6-REF | forward | halt@3losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (-256.4..0.0) |
 | us30fut | R-SCALP-H6-REF | forward | halt@5losers | 11 | 0 | 0 (0.0) | 0 (0.0) | 0 (0.0) | +0.0 | 0.0 (0.0..0.0) |
 
 Halt dates per cell live in circuit_breaker.json. A rule survives only if its net vs no-halt clears the member band on >= 3 legs; survivors propose as a v1 arm COMPONENT alongside the price-stop — one package, front door.

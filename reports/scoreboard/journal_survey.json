@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL journal field survey \u2014 luck priced; survivors are QUESTION CANDIDATES, listed not minted; never validation",
-  "engine_commit": "9614436059e931aec4afbb79ee5aa19349f87d13",
+  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
   "min_cell_n": 25,
   "null_shuffles": 100,
   "ex_lockbox": {
@@ -47,8 +47,8 @@
       "n": 39,
       "median_pts": 10.62,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -8.52,
-      "floor_max": 22.46,
+      "floor_median": -9.1,
+      "floor_max": 30.48,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -76,8 +76,8 @@
       "n": 112,
       "median_pts": 0.21,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -3.2,
-      "floor_max": 12.3,
+      "floor_median": -3.27,
+      "floor_max": 6.33,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -134,8 +134,8 @@
       "n": 51,
       "median_pts": 3.16,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -8.35,
-      "floor_max": 27.7,
+      "floor_median": -9.87,
+      "floor_max": 19.48,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -163,8 +163,8 @@
       "n": 34,
       "median_pts": 9.27,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -6.9,
-      "floor_max": 37.6,
+      "floor_median": -5.68,
+      "floor_max": 26.4,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -192,8 +192,8 @@
       "n": 75,
       "median_pts": 1.2,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.85,
-      "floor_max": 14.9,
+      "floor_median": -2.12,
+      "floor_max": 16.65,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -279,8 +279,8 @@
       "n": 44,
       "median_pts": 0.55,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.9,
-      "floor_max": 2.9,
+      "floor_median": -1.85,
+      "floor_max": 4.6,
       "clears_floor_range": false,
       "per_instrument": {
         "nas100fut": {
@@ -300,8 +300,8 @@
       "n": 46,
       "median_pts": 0.05,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -2.9,
-      "floor_max": 11.4,
+      "floor_median": -3.5,
+      "floor_max": 10.4,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -321,8 +321,8 @@
       "n": 44,
       "median_pts": 0.55,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.75,
-      "floor_max": 3.9,
+      "floor_median": -1.62,
+      "floor_max": 2.9,
       "clears_floor_range": false,
       "per_instrument": {
         "nas100fut": {
@@ -342,8 +342,8 @@
       "n": 46,
       "median_pts": 0.05,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.55,
-      "floor_max": 13.3,
+      "floor_median": -2.17,
+      "floor_max": 19.9,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -363,8 +363,8 @@
       "n": 125,
       "median_pts": 1.7,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.85,
-      "floor_max": 14.9,
+      "floor_median": -2.12,
+      "floor_max": 16.65,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -392,8 +392,8 @@
       "n": 37,
       "median_pts": 12.7,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -4.39,
-      "floor_max": 59.1,
+      "floor_median": -6.35,
+      "floor_max": 35.82,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -421,8 +421,8 @@
       "n": 52,
       "median_pts": 0.79,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -7.57,
-      "floor_max": 22.28,
+      "floor_median": -10.46,
+      "floor_max": 32.1,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -450,8 +450,8 @@
       "n": 59,
       "median_pts": 2.71,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -6.9,
-      "floor_max": 37.6,
+      "floor_median": -5.68,
+      "floor_max": 26.4,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -479,8 +479,8 @@
       "n": 237,
       "median_pts": 0.2,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.85,
-      "floor_max": 14.9,
+      "floor_median": -2.12,
+      "floor_max": 16.65,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -508,8 +508,8 @@
       "n": 78,
       "median_pts": 4.1,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -4.39,
-      "floor_max": 59.1,
+      "floor_median": -6.35,
+      "floor_max": 35.82,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -537,8 +537,8 @@
       "n": 77,
       "median_pts": 5.44,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 7.92,
-      "floor_max": 18.92,
+      "floor_median": 7.64,
+      "floor_max": 18.88,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -566,8 +566,8 @@
       "n": 141,
       "median_pts": 9.15,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 15.23,
-      "floor_max": 18.95,
+      "floor_median": 15.11,
+      "floor_max": 19.25,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -595,7 +595,7 @@
       "n": 87,
       "median_pts": 21.1,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 19.93,
+      "floor_median": 19.77,
       "floor_max": 35.47,
       "clears_floor_range": false,
       "per_instrument": {
@@ -624,8 +624,8 @@
       "n": 70,
       "median_pts": 5.53,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 7.92,
-      "floor_max": 18.92,
+      "floor_median": 7.64,
+      "floor_max": 18.88,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -653,8 +653,8 @@
       "n": 144,
       "median_pts": 8.98,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 15.23,
-      "floor_max": 18.95,
+      "floor_median": 15.11,
+      "floor_max": 19.25,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -682,7 +682,7 @@
       "n": 83,
       "median_pts": 21.58,
       "floor_baseline": "B-RANDOM",
-      "floor_median": 19.93,
+      "floor_median": 19.77,
       "floor_max": 35.47,
       "clears_floor_range": false,
       "per_instrument": {
@@ -711,8 +711,8 @@
       "n": 50,
       "median_pts": 1.09,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -6.9,
-      "floor_max": 37.6,
+      "floor_median": -5.68,
+      "floor_max": 26.4,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -740,8 +740,8 @@
       "n": 59,
       "median_pts": 2.9,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -1.85,
-      "floor_max": 14.9,
+      "floor_median": -2.12,
+      "floor_max": 16.65,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -769,8 +769,8 @@
       "n": 26,
       "median_pts": 4.07,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -7.57,
-      "floor_max": 22.28,
+      "floor_median": -10.46,
+      "floor_max": 32.1,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -798,8 +798,8 @@
       "n": 31,
       "median_pts": 7.4,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -2.65,
-      "floor_max": 22.94,
+      "floor_median": -2.47,
+      "floor_max": 12.36,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -827,8 +827,8 @@
       "n": 89,
       "median_pts": 0.94,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -9.14,
-      "floor_max": 15.29,
+      "floor_median": -9.6,
+      "floor_max": 8.69,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -856,8 +856,8 @@
       "n": 57,
       "median_pts": 4.26,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -6.9,
-      "floor_max": 37.6,
+      "floor_median": -5.68,
+      "floor_max": 26.4,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -885,8 +885,8 @@
       "n": 30,
       "median_pts": 0.1,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -8.57,
-      "floor_max": 85.86,
+      "floor_median": -15.3,
+      "floor_max": 57.3,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
@@ -914,8 +914,8 @@
       "n": 69,
       "median_pts": 4.0,
       "floor_baseline": "B-RANDOM",
-      "floor_median": -4.39,
-      "floor_max": 59.1,
+      "floor_median": -6.35,
+      "floor_max": 35.82,
       "clears_floor_range": false,
       "per_instrument": {
         "ger40fut": {
