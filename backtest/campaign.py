@@ -620,6 +620,24 @@ def main(slugs=(SLUG, "uk100")):
     import sys as _sys
     _sp.run([_sys.executable, os.path.join(ROOT, "scripts",
                                            "param_registry.py")], check=True)
+    # sealed-span notice (register 30): the journal's silence during
+    # the first two weeks of Sep/Dec/Mar/Jun is by design — say so, so
+    # a current store beside an old-looking journal reads as policy,
+    # not rot
+    from engine.store_loader import SEALED_DAYS, is_sealed
+    _now = pd.Timestamp.now(tz="UTC")
+    if is_sealed(_now):
+        _t = pd.read_csv(os.path.join(ROOT, "clean_finsa",
+                                      "us30fut_1d.csv"),
+                         usecols=["time"], parse_dates=["time"])["time"]
+        _t = (_t.dt.tz_localize("UTC") if _t.dt.tz is None
+              else _t.dt.tz_convert("UTC"))
+        _n = int(((_t.dt.year == _now.year) & (_t.dt.month == _now.month)
+                  & (_t.dt.day <= SEALED_DAYS)).sum())
+        print(f"!! SEALED SPAN {_now.strftime('%b')} 1-{SEALED_DAYS} "
+              f"withheld by policy (register 30): {_n} store day(s) "
+              f"pending unseal on "
+              f"{_now.strftime('%Y-%m')}-{SEALED_DAYS + 1:02d}")
     print(f"\nWrote (generated):\n  {OUT}/\n  reports/backtest_v1.md")
     return summary
 
