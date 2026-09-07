@@ -191,7 +191,7 @@ def _emit(art, head):
          "| arm | leg | window | form | X | n (distinct) | skipped "
          "(share) | foregone wins | avoided losses | net Δ | member "
          "band med [min..max] (skip share) | beats band max |",
-         "|---|---|---|---|---|---|---|---|---|---|---|"]
+         "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     n_beats = 0
     for key, c in art["cells"].items():
         instr, var, w, form, x = key.split("|")
