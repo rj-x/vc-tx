@@ -538,6 +538,9 @@ def main(slugs=(SLUG, "uk100")):
                 "backtest.open_pause",          # register 133 (the
                                                 # conditional open cut;
                                                 # post-hoc fence stated)
+                "backtest.vol_floor",           # register 137 (minimum-
+                                                # volatility gate; pivot-
+                                                # cut origin recorded)
                 "backtest.narrative_survey", "backtest.trade_layer",
                 "backtest.intra_trade_census", "backtest.journal_survey",
                 "backtest.vwap_census",

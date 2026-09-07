@@ -37,6 +37,7 @@ PAIRS = [("hypothesis_performance.md", "hypothesis_performance.json"),
          ("vol_regime.md", "vol_regime.json"),
          ("vol_pause.md", "vol_pause.json"),
          ("open_pause.md", "open_pause.json"),
+         ("vol_floor.md", "vol_floor.json"),
          (os.path.join("..", "INSIGHTS.md"), "insights.json")]
 
 

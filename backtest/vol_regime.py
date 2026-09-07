@@ -169,13 +169,17 @@ def journal_rows():
         if w is None or r["atr_entry"] in ("", "None"):
             continue
         if r["instrument"] not in fns:
-            fns[r["instrument"]] = atr_pctl_fn(r["instrument"])
-        pct = fns[r["instrument"]](t.value, float(r["atr_entry"]))
+            fns[r["instrument"]] = (atr_pctl_fn(r["instrument"]),
+                                    atr_pctl_tod_fn(r["instrument"]))
+        f_p, f_t = fns[r["instrument"]]
+        pct = f_p(t.value, float(r["atr_entry"]))
+        pct_tod = f_t(t.value, float(r["atr_entry"]))
         out.append({"instrument": r["instrument"],
                     "variant": r["variant"], "window": w,
                     "pts": float(r["points"]),
                     "stopped": r["exit_reason"].startswith("stop"),
-                    "atr_pctl": pct, "bucket": bucket_of(pct),
+                    "atr_pctl": pct, "atr_pctl_tod": pct_tod,
+                    "bucket": bucket_of(pct),
                     "path": f"{r['open_ts']}|{r['direction']}"
                             f"|{r['points']}"})
     return out

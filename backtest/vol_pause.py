@@ -68,11 +68,12 @@ PAUSE_X = (80, 95)       # the register-130 bucket edges reused; no new
 WORST_N = 27             # the operator's forensic set size (the order's)
 
 
-def pause_cell(rows, x):
-    """One cell's counterfactual on distinct paths: skip atr_pctl > x."""
+def skip_accounting(rows, pred):
+    """Counterfactual accounting on distinct paths for an arbitrary
+    skip predicate (register 137 factored this out of pause_cell;
+    behavior identical — tests/test_vol_pause.py pins the cell)."""
     ded = distinct_paths(rows)
-    skip = [r for r in ded
-            if r["atr_pctl"] is not None and r["atr_pctl"] > x]
+    skip = [r for r in ded if pred(r)]
     sk_pts = np.array([r["pts"] for r in skip], float)
     stops = [r for r in skip if r["stopped"]]
     return {"n": len(rows), "n_distinct": len(ded),
@@ -90,6 +91,12 @@ def pause_cell(rows, x):
                                                 for r in stops)), 1),
             "worst_stop_dodged": (round(min(r["pts"] for r in stops), 1)
                                   if stops else None)}
+
+
+def pause_cell(rows, x):
+    """One cell's counterfactual on distinct paths: skip atr_pctl > x."""
+    return skip_accounting(rows, lambda r: r["atr_pctl"] is not None
+                           and r["atr_pctl"] > x)
 
 
 def scalp_floor_bands(instr):
