@@ -1,7 +1,7 @@
 # Backlog Status — every idea, exactly one status
 
 **Register 45 (2026-08-20): "is everything moving?" is a glance at this
-table.** Register-current-through: 137 (freshness-checked by the weekly
+table.** Register-current-through: 138 (freshness-checked by the weekly
 campaign, register 55). Statuses: `testable-now` (a weekly artifact measures it) ·
 `awaiting-ratification-of-X` (operator word unblocks) · `awaiting-build-Y`
 (a named build unblocks) · `awaiting-decision-Z` (operator decision, not a
@@ -71,6 +71,7 @@ authoritative.
 | timebase incident (microsecond axes; registers 111/119/122/130/132/133) | FOUND + FIXED + PINNED 2026-09-01 (register 135: six modules converted to explicit nanosecond axes; Evidence Regression open — re-emissions and re-reads land as follow-through notes under 135) |
 | repo-wide lookahead audit (truncation test + rotating behavioral pin) | PRE-REGISTERED 2026-09-01 (register 136: anchors and sample sizes fixed seed 136 before computing; standing pin tests/test_lookahead_truncation.py rotates weekly; findings land as the follow-through note) |
 | minimum-volatility gate counterfactual (pooled/tod/joint, inverted predicate) | PRE-REGISTERED + BUILT 2026-09-07 (register 137: operator pivot discovery 2026-09-05; motivating-not-evidential fence; B-RANDOM floors decisive; vol_gate(min=X) composes per the register-132 ruling; weekly under Part C) |
+| September window spend (unseal-by-ruling; sitting read package) | RULED + MECHANIZED 2026-09-19 (register 138: policy-not-defect stated, notice language corrected, SPENT_SEALED ledger live, docket pre-stated; package lands as follow-through under rows-confirm) |
 | R-OP2 × vol>=95 mechanism sentence | awaiting-decision-mechanism-sentence (register 130: the candidate stands as measured; median-only degradation, stop-rate flat — a trail variant's violence sentence is the operator's pen before any rule proposes) |
 | distinct-path counting (WATCH / INSIGHTS / v3 journal cells) | ACCEPTED + BUILT 2026-08-30; interpretation RATIFIED AS IMPLEMENTED 2026-08-30 (register 116 item 1: dedup governs all statistics, raw-row alternative declined) (register 113, resolving the register-108 proposal: co-fired identical paths count once for every consistency statistic; n prints as rows (distinct); selection-nulls recomputed — beats-null cells 39→35 win / 47→40 median; the nas100 founding case n 16 (14), median +136.25, still clears) |
 | arrival anatomy (v3-zone addendum) | PRE-REGISTERED + BUILT 2026-08-30 (register 114: in-zone vs session-standardized base — volume/loud, spread/quadrant mix, leg velocity, TEST/ND/NS/climax rates, phase flips; two-sided permutation nulls; ≥3-of-4-leg claims; first emission ZERO claims, 16 single-leg findings resting on 1–2 zones per leg — episodes, not zone law; zones/days honesty columns; weekly with v3) |

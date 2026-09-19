@@ -639,8 +639,9 @@ def main(slugs=(SLUG, "uk100")):
                   & (_t.dt.day <= SEALED_DAYS)).sum())
         print(f"!! SEALED SPAN {_now.strftime('%b')} 1-{SEALED_DAYS} "
               f"withheld by policy (register 30): {_n} store day(s) "
-              f"pending unseal on "
-              f"{_now.strftime('%Y-%m')}-{SEALED_DAYS + 1:02d}")
+              f"held; spendable only by a registered walk-forward "
+              f"ruling (docs/lockbox_policy.md — no automatic unseal; "
+              f"register 138)")
     print(f"\nWrote (generated):\n  {OUT}/\n  reports/backtest_v1.md")
     return summary
 

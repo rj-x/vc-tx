@@ -87,12 +87,20 @@ def stamp_go_live(ts, root=None):
 SEALED_SCHEDULE_START = pd.Timestamp("2026-09-01", tz="UTC")
 SEALED_MONTHS = (3, 6, 9, 12)
 SEALED_DAYS = 14
+# register 138 (operator ruling, 2026-09-19): windows spent by their one
+# walk-forward evaluation. Spent is spent — the read is done, the data
+# joins the ordinary record, and no second sealed-grade verdict can be
+# bought from it. Entries are the window's "YYYY-MM".
+SPENT_SEALED = ("2026-09",)
 
 
 def is_sealed(ts):
-    """True iff ts falls inside a standing sealed window."""
+    """True iff ts falls inside a standing sealed window that has not
+    been spent (register 138: spending is a registered ruling)."""
     t = pd.Timestamp(ts)
     t = t.tz_localize("UTC") if t.tzinfo is None else t.tz_convert("UTC")
+    if f"{t.year}-{t.month:02d}" in SPENT_SEALED:
+        return False
     return bool(t >= SEALED_SCHEDULE_START and t.month in SEALED_MONTHS
                 and t.day <= SEALED_DAYS)
 

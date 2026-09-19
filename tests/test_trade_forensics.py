@@ -58,7 +58,9 @@ def test_scratch_win_loss():
 def test_lockbox_and_sealed_excluded():
     rows = [{"open_ts": "2026-08-20 10:00:00+00:00"},   # forward: kept
             {"open_ts": "2026-08-05 10:00:00+00:00"},   # lockbox span
-            {"open_ts": "2026-09-03 10:00:00+00:00"},   # sealed
+            {"open_ts": "2026-12-03 10:00:00+00:00"},   # sealed (Dec;
+                                                        # 2026-09 spent,
+                                                        # register 138)
             {"open_ts": "2026-07-20 10:00:00+00:00"}]   # working set
     keep, n_lock, n_seal = usable(rows)
     assert (len(keep), n_lock, n_seal) == (2, 1, 1)

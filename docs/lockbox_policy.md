@@ -53,3 +53,11 @@ crowns a champion.
   window is spent.
 - Walk-forward training may consume neither sealed windows nor the
   forward zone.
+
+## Spent ledger
+
+- **2026-09 window** (Sep 1–14): spent **2026-09-19** by operator ruling,
+  register 138. The one evaluation: the sealed-fortnight sitting package
+  (per-variant rows + the five docketed pre-registered questions). Spent
+  is spent — the fortnight is ordinary record now; no second sealed-grade
+  read exists. Ledger is code: `engine/store_loader.py: SPENT_SEALED`.
