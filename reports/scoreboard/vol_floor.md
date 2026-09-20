@@ -2,92 +2,92 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `99f8140a0` — OBSERVATIONAL, pre-registered (register 137; the register-132 machinery, predicate INVERTED). ORIGIN: an operator pivot cut, post-hoc-selected BY RESULTS — the backtest half is MOTIVATING, NOT EVIDENTIAL; evidence reads forward/sealed only. MECHANISM EX-ANTE, scalp-specific: sub-median volatility cannot travel the 0.5xATR target before costs — entries there are spread donations; the bracket STARVES at the bottom of the distribution (the mirror of register 130's violence at the top). Entries SKIPPED under pooled-only (atr_pctl < X), tod-only (atr_pctl_tod < X, register 134), and the joint form (both < 50); X in [30, 50]; a None percentile never gates; row-level per registers 102/103 (skipped = foregone, no resurrection, stated). DISTINCT PATHS throughout (register 113). FLOORS: B-RANDOM members under the identical gate, SCALP ARMS ONLY (the mechanism's subject; the context ladder prints without floors — implementer-scoped, FLAGGED). A surviving forward/sealed cell composes as vol_gate(min=X) — gate-not-clones (register 132); NOTHING changes in any live recipe. Ex-lockbox; weekly under Part C.
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (register 137; the register-132 machinery, predicate INVERTED). ORIGIN: an operator pivot cut, post-hoc-selected BY RESULTS — the backtest half is MOTIVATING, NOT EVIDENTIAL; evidence reads forward/sealed only. MECHANISM EX-ANTE, scalp-specific: sub-median volatility cannot travel the 0.5xATR target before costs — entries there are spread donations; the bracket STARVES at the bottom of the distribution (the mirror of register 130's violence at the top). Entries SKIPPED under pooled-only (atr_pctl < X), tod-only (atr_pctl_tod < X, register 134), and the joint form (both < 50); X in [30, 50]; a None percentile never gates; row-level per registers 102/103 (skipped = foregone, no resurrection, stated). DISTINCT PATHS throughout (register 113). FLOORS: B-RANDOM members under the identical gate, SCALP ARMS ONLY (the mechanism's subject; the context ladder prints without floors — implementer-scoped, FLAGGED). A surviving forward/sealed cell composes as vol_gate(min=X) — gate-not-clones (register 132); NOTHING changes in any live recipe. Ex-lockbox; weekly under Part C.
 
 ## Scalp arms — the evidence rows (net delta vs the member band; positive delta = the gate helped)
 
 | arm | leg | window | form | X | n (distinct) | skipped (share) | foregone wins | avoided losses | net Δ | member band med [min..max] (skip share) | beats band max |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | ger40fut | backtest | pooled | 30 | 25 (25) | 9 (0.36) | 66.0 | 120.1 | +54.0 | 33.7 [-206.2..209.9] (0.173) | no |
-| R-SCALP-H6 | ger40fut | backtest | pooled | 50 | 25 (25) | 13 (0.52) | 125.2 | 120.1 | -5.1 | 228.9 [-133.1..557.0] (0.35) | no |
-| R-SCALP-H6 | ger40fut | backtest | tod | 30 | 25 (25) | 12 (0.48) | 133.5 | 120.1 | -13.4 | 12.2 [-334.3..229.0] (0.173) | no |
-| R-SCALP-H6 | ger40fut | backtest | tod | 50 | 25 (25) | 16 (0.64) | 194.2 | 120.1 | -74.1 | 94.1 [-497.7..462.7] (0.402) | no |
-| R-SCALP-H6 | ger40fut | backtest | joint | 50 | 25 (25) | 11 (0.44) | 100.9 | 120.1 | +19.2 | 32.1 [-275.7..228.4] (0.197) | no |
-| R-SCALP-H6 | ger40fut | forward | pooled | 30 | 59 (59) | 22 (0.373) | 102.7 | 226.3 | +123.5 | -37.8 [-248.0..116.8] (0.29) | YES |
-| R-SCALP-H6 | ger40fut | forward | pooled | 50 | 59 (59) | 37 (0.627) | 194.5 | 432.9 | +238.4 | 42.7 [-138.5..439.1] (0.466) | no |
-| R-SCALP-H6 | ger40fut | forward | tod | 30 | 59 (59) | 13 (0.22) | 94.9 | 107.9 | +13.0 | 24.2 [-166.7..350.0] (0.186) | no |
-| R-SCALP-H6 | ger40fut | forward | tod | 50 | 59 (59) | 39 (0.661) | 315.4 | 286.2 | -29.2 | -29.6 [-292.1..493.2] (0.531) | no |
-| R-SCALP-H6 | ger40fut | forward | joint | 50 | 59 (59) | 26 (0.441) | 153.5 | 244.5 | +91.1 | 10.3 [-127.9..230.2] (0.254) | no |
-| R-SCALP-H6-REF | ger40fut | backtest | pooled | 30 | 24 (24) | 8 (0.333) | 76.4 | -0.0 | -76.4 | 33.7 [-206.2..209.9] (0.173) | no |
-| R-SCALP-H6-REF | ger40fut | backtest | pooled | 50 | 24 (24) | 12 (0.5) | 119.3 | 83.5 | -35.8 | 228.9 [-133.1..557.0] (0.35) | no |
-| R-SCALP-H6-REF | ger40fut | backtest | tod | 30 | 24 (24) | 12 (0.5) | 148.0 | 83.5 | -64.5 | 12.2 [-334.3..229.0] (0.173) | no |
-| R-SCALP-H6-REF | ger40fut | backtest | tod | 50 | 24 (24) | 16 (0.667) | 206.8 | 83.5 | -123.3 | 94.1 [-497.7..462.7] (0.402) | no |
-| R-SCALP-H6-REF | ger40fut | backtest | joint | 50 | 24 (24) | 10 (0.417) | 95.0 | 83.5 | -11.5 | 32.1 [-275.7..228.4] (0.197) | no |
-| R-SCALP-H6-REF | ger40fut | forward | pooled | 30 | 52 (52) | 20 (0.385) | 86.0 | 239.7 | +153.7 | -37.8 [-248.0..116.8] (0.29) | YES |
-| R-SCALP-H6-REF | ger40fut | forward | pooled | 50 | 52 (52) | 35 (0.673) | 198.0 | 355.1 | +157.1 | 42.7 [-138.5..439.1] (0.466) | no |
-| R-SCALP-H6-REF | ger40fut | forward | tod | 30 | 52 (52) | 14 (0.269) | 96.6 | 145.5 | +48.9 | 24.2 [-166.7..350.0] (0.186) | no |
-| R-SCALP-H6-REF | ger40fut | forward | tod | 50 | 52 (52) | 34 (0.654) | 239.1 | 405.9 | +166.8 | -29.6 [-292.1..493.2] (0.531) | no |
-| R-SCALP-H6-REF | ger40fut | forward | joint | 50 | 52 (52) | 24 (0.462) | 144.2 | 224.6 | +80.4 | 10.3 [-127.9..230.2] (0.254) | no |
-| R-SCALP-H6 | nas100fut | backtest | pooled | 30 | 21 (21) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -46.5 [-351.0..358.5] (0.203) | no |
-| R-SCALP-H6 | nas100fut | backtest | pooled | 50 | 21 (21) | 4 (0.19) | 69.6 | 131.5 | +61.9 | 22.2 [-809.0..570.7] (0.395) | no |
-| R-SCALP-H6 | nas100fut | backtest | tod | 30 | 21 (21) | 1 (0.048) | 0.0 | 152.1 | +152.1 | 1.0 [-517.3..336.6] (0.207) | no |
-| R-SCALP-H6 | nas100fut | backtest | tod | 50 | 21 (21) | 5 (0.238) | 69.6 | 304.4 | +234.7 | -119.2 [-791.0..760.4] (0.348) | no |
-| R-SCALP-H6 | nas100fut | backtest | joint | 50 | 21 (21) | 3 (0.143) | 69.6 | -0.0 | -69.6 | -13.7 [-497.1..305.8] (0.273) | no |
-| R-SCALP-H6 | nas100fut | forward | pooled | 30 | 57 (57) | 11 (0.193) | 111.9 | 74.7 | -37.2 | 101.3 [-194.2..494.9] (0.287) | no |
-| R-SCALP-H6 | nas100fut | forward | pooled | 50 | 57 (57) | 32 (0.561) | 359.2 | 599.2 | +240.0 | 109.5 [-314.2..554.6] (0.583) | no |
-| R-SCALP-H6 | nas100fut | forward | tod | 30 | 57 (57) | 20 (0.351) | 243.1 | 209.3 | -33.8 | 66.3 [-258.4..480.6] (0.257) | no |
-| R-SCALP-H6 | nas100fut | forward | tod | 50 | 57 (57) | 33 (0.579) | 409.6 | 525.5 | +116.0 | 106.3 [-462.6..924.1] (0.515) | no |
-| R-SCALP-H6 | nas100fut | forward | joint | 50 | 57 (57) | 27 (0.474) | 308.7 | 419.6 | +111.0 | 51.1 [-600.7..381.4] (0.402) | no |
-| R-SCALP-H6-REF | nas100fut | backtest | pooled | 30 | 18 (18) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -46.5 [-351.0..358.5] (0.203) | no |
-| R-SCALP-H6-REF | nas100fut | backtest | pooled | 50 | 18 (18) | 5 (0.278) | 94.5 | 131.5 | +37.0 | 22.2 [-809.0..570.7] (0.395) | no |
-| R-SCALP-H6-REF | nas100fut | backtest | tod | 30 | 18 (18) | 1 (0.056) | 0.0 | 152.1 | +152.1 | 1.0 [-517.3..336.6] (0.207) | no |
-| R-SCALP-H6-REF | nas100fut | backtest | tod | 50 | 18 (18) | 6 (0.333) | 94.5 | 304.4 | +209.8 | -119.2 [-791.0..760.4] (0.348) | no |
-| R-SCALP-H6-REF | nas100fut | backtest | joint | 50 | 18 (18) | 4 (0.222) | 94.5 | -0.0 | -94.5 | -13.7 [-497.1..305.8] (0.273) | no |
-| R-SCALP-H6-REF | nas100fut | forward | pooled | 30 | 58 (58) | 11 (0.19) | 124.7 | -0.0 | -124.7 | 101.3 [-194.2..494.9] (0.287) | no |
-| R-SCALP-H6-REF | nas100fut | forward | pooled | 50 | 58 (58) | 31 (0.534) | 433.4 | 179.2 | -254.2 | 109.5 [-314.2..554.6] (0.583) | no |
-| R-SCALP-H6-REF | nas100fut | forward | tod | 30 | 58 (58) | 19 (0.328) | 264.7 | 89.8 | -174.9 | 66.3 [-258.4..480.6] (0.257) | no |
-| R-SCALP-H6-REF | nas100fut | forward | tod | 50 | 58 (58) | 31 (0.534) | 444.8 | 195.7 | -249.1 | 106.3 [-462.6..924.1] (0.515) | no |
-| R-SCALP-H6-REF | nas100fut | forward | joint | 50 | 58 (58) | 26 (0.448) | 366.0 | 89.8 | -276.2 | 51.1 [-600.7..381.4] (0.402) | no |
-| R-SCALP-H6 | uk100fut | backtest | pooled | 30 | 45 (45) | 10 (0.222) | 25.9 | 14.9 | -11.0 | 25.5 [-28.9..106.5] (0.163) | no |
-| R-SCALP-H6 | uk100fut | backtest | pooled | 50 | 45 (45) | 19 (0.422) | 61.4 | 44.7 | -16.7 | 104.8 [-116.9..203.3] (0.355) | no |
-| R-SCALP-H6 | uk100fut | backtest | tod | 30 | 45 (45) | 5 (0.111) | 8.1 | 20.5 | +12.4 | 29.1 [-26.2..105.1] (0.112) | no |
-| R-SCALP-H6 | uk100fut | backtest | tod | 50 | 45 (45) | 18 (0.4) | 60.8 | 77.0 | +16.2 | 50.8 [-101.5..95.7] (0.262) | no |
-| R-SCALP-H6 | uk100fut | backtest | joint | 50 | 45 (45) | 12 (0.267) | 38.1 | 14.9 | -23.2 | 36.4 [-53.7..143.0] (0.15) | no |
-| R-SCALP-H6 | uk100fut | forward | pooled | 30 | 47 (47) | 6 (0.128) | 6.7 | 13.7 | +7.1 | 38.1 [-20.9..83.2] (0.268) | no |
-| R-SCALP-H6 | uk100fut | forward | pooled | 50 | 47 (47) | 24 (0.511) | 43.2 | 66.1 | +22.8 | 79.8 [-10.8..222.8] (0.475) | no |
-| R-SCALP-H6 | uk100fut | forward | tod | 30 | 47 (47) | 20 (0.426) | 57.1 | 52.3 | -4.8 | 82.2 [-53.0..164.0] (0.341) | no |
-| R-SCALP-H6 | uk100fut | forward | tod | 50 | 47 (47) | 30 (0.638) | 93.1 | 62.9 | -30.2 | 116.1 [-43.4..276.0] (0.554) | no |
-| R-SCALP-H6 | uk100fut | forward | joint | 50 | 47 (47) | 14 (0.298) | 25.9 | 52.3 | +26.5 | 52.4 [-1.7..93.7] (0.263) | no |
-| R-SCALP-H6-REF | uk100fut | backtest | pooled | 30 | 43 (43) | 9 (0.209) | 22.9 | 14.9 | -8.0 | 25.5 [-28.9..106.5] (0.163) | no |
-| R-SCALP-H6-REF | uk100fut | backtest | pooled | 50 | 43 (43) | 19 (0.442) | 57.4 | 73.0 | +15.6 | 104.8 [-116.9..203.3] (0.355) | no |
-| R-SCALP-H6-REF | uk100fut | backtest | tod | 30 | 43 (43) | 4 (0.093) | 5.0 | 23.0 | +18.0 | 29.1 [-26.2..105.1] (0.112) | no |
-| R-SCALP-H6-REF | uk100fut | backtest | tod | 50 | 43 (43) | 16 (0.372) | 63.0 | 23.0 | -40.0 | 50.8 [-101.5..95.7] (0.262) | no |
-| R-SCALP-H6-REF | uk100fut | backtest | joint | 50 | 43 (43) | 11 (0.256) | 33.4 | 14.9 | -18.4 | 36.4 [-53.7..143.0] (0.15) | no |
-| R-SCALP-H6-REF | uk100fut | forward | pooled | 30 | 47 (47) | 6 (0.128) | 7.6 | 12.1 | +4.5 | 38.1 [-20.9..83.2] (0.268) | no |
-| R-SCALP-H6-REF | uk100fut | forward | pooled | 50 | 47 (47) | 25 (0.532) | 51.1 | 48.2 | -2.8 | 79.8 [-10.8..222.8] (0.475) | no |
-| R-SCALP-H6-REF | uk100fut | forward | tod | 30 | 47 (47) | 20 (0.426) | 56.0 | 73.4 | +17.4 | 82.2 [-53.0..164.0] (0.341) | no |
-| R-SCALP-H6-REF | uk100fut | forward | tod | 50 | 47 (47) | 30 (0.638) | 85.0 | 114.8 | +29.8 | 116.1 [-43.4..276.0] (0.554) | no |
-| R-SCALP-H6-REF | uk100fut | forward | joint | 50 | 47 (47) | 15 (0.319) | 31.7 | 48.2 | +16.5 | 52.4 [-1.7..93.7] (0.263) | no |
-| R-SCALP-H6 | us30fut | backtest | pooled | 30 | 31 (31) | 3 (0.097) | 10.8 | 149.2 | +138.4 | 9.7 [-187.9..196.5] (0.192) | no |
-| R-SCALP-H6 | us30fut | backtest | pooled | 50 | 31 (31) | 7 (0.226) | 67.0 | 266.6 | +199.7 | 212.8 [-50.8..911.5] (0.372) | no |
-| R-SCALP-H6 | us30fut | backtest | tod | 30 | 31 (31) | 8 (0.258) | 67.0 | 354.7 | +287.8 | 115.7 [-384.4..596.1] (0.218) | no |
-| R-SCALP-H6 | us30fut | backtest | tod | 50 | 31 (31) | 12 (0.387) | 205.6 | 354.7 | +149.2 | 143.7 [-440.1..757.3] (0.356) | no |
-| R-SCALP-H6 | us30fut | backtest | joint | 50 | 31 (31) | 7 (0.226) | 67.0 | 266.6 | +199.7 | 139.8 [-144.4..600.1] (0.193) | no |
-| R-SCALP-H6 | us30fut | forward | pooled | 30 | 48 (48) | 9 (0.188) | 54.1 | 139.2 | +85.1 | 28.2 [-208.2..275.4] (0.258) | no |
-| R-SCALP-H6 | us30fut | forward | pooled | 50 | 48 (48) | 17 (0.354) | 120.2 | 369.7 | +249.5 | 82.2 [-487.3..682.1] (0.48) | no |
-| R-SCALP-H6 | us30fut | forward | tod | 30 | 48 (48) | 18 (0.375) | 250.1 | 268.7 | +18.7 | -93.3 [-284.4..504.3] (0.25) | no |
-| R-SCALP-H6 | us30fut | forward | tod | 50 | 48 (48) | 31 (0.646) | 476.7 | 467.3 | -9.4 | 43.2 [-662.1..605.1] (0.518) | no |
-| R-SCALP-H6 | us30fut | forward | joint | 50 | 48 (48) | 11 (0.229) | 74.5 | 230.5 | +156.0 | 151.1 [-309.4..642.1] (0.284) | no |
-| R-SCALP-H6-REF | us30fut | backtest | pooled | 30 | 34 (34) | 5 (0.147) | 56.9 | 78.0 | +21.2 | 9.7 [-187.9..196.5] (0.192) | no |
-| R-SCALP-H6-REF | us30fut | backtest | pooled | 50 | 34 (34) | 10 (0.294) | 112.6 | 301.6 | +189.0 | 212.8 [-50.8..911.5] (0.372) | no |
-| R-SCALP-H6-REF | us30fut | backtest | tod | 30 | 34 (34) | 9 (0.265) | 98.1 | 281.3 | +183.2 | 115.7 [-384.4..596.1] (0.218) | no |
-| R-SCALP-H6-REF | us30fut | backtest | tod | 50 | 34 (34) | 15 (0.441) | 229.1 | 407.8 | +178.6 | 143.7 [-440.1..757.3] (0.356) | no |
-| R-SCALP-H6-REF | us30fut | backtest | joint | 50 | 34 (34) | 9 (0.265) | 98.1 | 301.6 | +203.4 | 139.8 [-144.4..600.1] (0.193) | no |
-| R-SCALP-H6-REF | us30fut | forward | pooled | 30 | 49 (49) | 8 (0.163) | 42.1 | 189.9 | +147.8 | 28.2 [-208.2..275.4] (0.258) | no |
-| R-SCALP-H6-REF | us30fut | forward | pooled | 50 | 49 (49) | 17 (0.347) | 139.8 | 349.8 | +210.0 | 82.2 [-487.3..682.1] (0.48) | no |
-| R-SCALP-H6-REF | us30fut | forward | tod | 30 | 49 (49) | 16 (0.327) | 301.3 | 50.6 | -250.6 | -93.3 [-284.4..504.3] (0.25) | no |
-| R-SCALP-H6-REF | us30fut | forward | tod | 50 | 49 (49) | 30 (0.612) | 502.2 | 314.6 | -187.6 | 43.2 [-662.1..605.1] (0.518) | no |
-| R-SCALP-H6-REF | us30fut | forward | joint | 50 | 49 (49) | 11 (0.224) | 94.1 | 210.6 | +116.5 | 151.1 [-309.4..642.1] (0.284) | no |
+| R-SCALP-H6 | ger40fut | backtest | pooled | 30 | 25 (25) | 9 (0.36) | 66.0 | 120.1 | +54.0 | 23.2 [-138.4..304.0] (0.141) | no |
+| R-SCALP-H6 | ger40fut | backtest | pooled | 50 | 25 (25) | 13 (0.52) | 125.2 | 120.1 | -5.1 | 115.8 [-256.3..708.0] (0.322) | no |
+| R-SCALP-H6 | ger40fut | backtest | tod | 30 | 25 (25) | 12 (0.48) | 133.5 | 120.1 | -13.4 | -3.0 [-201.9..332.6] (0.164) | no |
+| R-SCALP-H6 | ger40fut | backtest | tod | 50 | 25 (25) | 16 (0.64) | 194.2 | 120.1 | -74.1 | -10.7 [-435.2..374.3] (0.363) | no |
+| R-SCALP-H6 | ger40fut | backtest | joint | 50 | 25 (25) | 11 (0.44) | 100.9 | 120.1 | +19.2 | 74.6 [-194.9..388.9] (0.155) | no |
+| R-SCALP-H6 | ger40fut | forward | pooled | 30 | 70 (70) | 23 (0.329) | 107.4 | 226.3 | +118.8 | 55.0 [-117.8..176.2] (0.21) | no |
+| R-SCALP-H6 | ger40fut | forward | pooled | 50 | 70 (70) | 40 (0.571) | 207.1 | 478.4 | +271.2 | 185.8 [-60.1..460.8] (0.427) | no |
+| R-SCALP-H6 | ger40fut | forward | tod | 30 | 70 (70) | 15 (0.214) | 122.1 | 107.9 | -14.2 | 111.0 [-216.4..309.2] (0.132) | no |
+| R-SCALP-H6 | ger40fut | forward | tod | 50 | 70 (70) | 43 (0.614) | 356.2 | 290.4 | -65.8 | 49.1 [-406.7..612.6] (0.357) | no |
+| R-SCALP-H6 | ger40fut | forward | joint | 50 | 70 (70) | 26 (0.371) | 153.5 | 244.5 | +91.1 | 81.2 [-15.6..313.4] (0.176) | no |
+| R-SCALP-H6-REF | ger40fut | backtest | pooled | 30 | 24 (24) | 8 (0.333) | 76.4 | -0.0 | -76.4 | 23.2 [-138.4..304.0] (0.141) | no |
+| R-SCALP-H6-REF | ger40fut | backtest | pooled | 50 | 24 (24) | 12 (0.5) | 119.3 | 83.5 | -35.8 | 115.8 [-256.3..708.0] (0.322) | no |
+| R-SCALP-H6-REF | ger40fut | backtest | tod | 30 | 24 (24) | 12 (0.5) | 148.0 | 83.5 | -64.5 | -3.0 [-201.9..332.6] (0.164) | no |
+| R-SCALP-H6-REF | ger40fut | backtest | tod | 50 | 24 (24) | 16 (0.667) | 206.8 | 83.5 | -123.3 | -10.7 [-435.2..374.3] (0.363) | no |
+| R-SCALP-H6-REF | ger40fut | backtest | joint | 50 | 24 (24) | 10 (0.417) | 95.0 | 83.5 | -11.5 | 74.6 [-194.9..388.9] (0.155) | no |
+| R-SCALP-H6-REF | ger40fut | forward | pooled | 30 | 62 (62) | 21 (0.339) | 90.7 | 239.7 | +149.0 | 55.0 [-117.8..176.2] (0.21) | no |
+| R-SCALP-H6-REF | ger40fut | forward | pooled | 50 | 62 (62) | 38 (0.613) | 210.7 | 400.6 | +189.9 | 185.8 [-60.1..460.8] (0.427) | no |
+| R-SCALP-H6-REF | ger40fut | forward | tod | 30 | 62 (62) | 16 (0.258) | 125.0 | 145.5 | +20.5 | 111.0 [-216.4..309.2] (0.132) | no |
+| R-SCALP-H6-REF | ger40fut | forward | tod | 50 | 62 (62) | 38 (0.613) | 287.5 | 405.9 | +118.3 | 49.1 [-406.7..612.6] (0.357) | no |
+| R-SCALP-H6-REF | ger40fut | forward | joint | 50 | 62 (62) | 24 (0.387) | 144.2 | 224.6 | +80.4 | 81.2 [-15.6..313.4] (0.176) | no |
+| R-SCALP-H6 | nas100fut | backtest | pooled | 30 | 21 (21) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -62.0 [-330.8..207.1] (0.203) | no |
+| R-SCALP-H6 | nas100fut | backtest | pooled | 50 | 21 (21) | 4 (0.19) | 69.6 | 131.5 | +61.9 | -0.6 [-263.4..452.2] (0.39) | no |
+| R-SCALP-H6 | nas100fut | backtest | tod | 30 | 21 (21) | 1 (0.048) | 0.0 | 152.1 | +152.1 | -77.1 [-413.2..437.1] (0.209) | no |
+| R-SCALP-H6 | nas100fut | backtest | tod | 50 | 21 (21) | 5 (0.238) | 69.6 | 304.4 | +234.7 | 35.2 [-509.6..597.4] (0.333) | no |
+| R-SCALP-H6 | nas100fut | backtest | joint | 50 | 21 (21) | 3 (0.143) | 69.6 | -0.0 | -69.6 | -28.4 [-411.0..261.4] (0.259) | no |
+| R-SCALP-H6 | nas100fut | forward | pooled | 30 | 62 (62) | 14 (0.226) | 136.3 | 74.7 | -61.6 | 112.0 [-288.0..1294.7] (0.345) | no |
+| R-SCALP-H6 | nas100fut | forward | pooled | 50 | 62 (62) | 35 (0.565) | 383.6 | 599.2 | +215.6 | 185.3 [-524.9..1625.9] (0.591) | no |
+| R-SCALP-H6 | nas100fut | forward | tod | 30 | 62 (62) | 24 (0.387) | 286.6 | 209.3 | -77.3 | 122.6 [-563.2..1069.1] (0.308) | no |
+| R-SCALP-H6 | nas100fut | forward | tod | 50 | 62 (62) | 37 (0.597) | 453.0 | 525.5 | +72.5 | 114.8 [-840.9..1161.9] (0.551) | no |
+| R-SCALP-H6 | nas100fut | forward | joint | 50 | 62 (62) | 30 (0.484) | 333.0 | 419.6 | +86.6 | 16.2 [-517.1..1202.4] (0.44) | no |
+| R-SCALP-H6-REF | nas100fut | backtest | pooled | 30 | 18 (18) | 0 (0.0) | 0.0 | 0.0 | +0.0 | -62.0 [-330.8..207.1] (0.203) | no |
+| R-SCALP-H6-REF | nas100fut | backtest | pooled | 50 | 18 (18) | 5 (0.278) | 94.5 | 131.5 | +37.0 | -0.6 [-263.4..452.2] (0.39) | no |
+| R-SCALP-H6-REF | nas100fut | backtest | tod | 30 | 18 (18) | 1 (0.056) | 0.0 | 152.1 | +152.1 | -77.1 [-413.2..437.1] (0.209) | no |
+| R-SCALP-H6-REF | nas100fut | backtest | tod | 50 | 18 (18) | 6 (0.333) | 94.5 | 304.4 | +209.8 | 35.2 [-509.6..597.4] (0.333) | no |
+| R-SCALP-H6-REF | nas100fut | backtest | joint | 50 | 18 (18) | 4 (0.222) | 94.5 | -0.0 | -94.5 | -28.4 [-411.0..261.4] (0.259) | no |
+| R-SCALP-H6-REF | nas100fut | forward | pooled | 30 | 63 (63) | 14 (0.222) | 150.5 | -0.0 | -150.5 | 112.0 [-288.0..1294.7] (0.345) | no |
+| R-SCALP-H6-REF | nas100fut | forward | pooled | 50 | 63 (63) | 34 (0.54) | 459.2 | 179.2 | -280.0 | 185.3 [-524.9..1625.9] (0.591) | no |
+| R-SCALP-H6-REF | nas100fut | forward | tod | 30 | 63 (63) | 22 (0.349) | 298.9 | 89.8 | -209.1 | 122.6 [-563.2..1069.1] (0.308) | no |
+| R-SCALP-H6-REF | nas100fut | forward | tod | 50 | 63 (63) | 35 (0.556) | 490.1 | 195.7 | -294.4 | 114.8 [-840.9..1161.9] (0.551) | no |
+| R-SCALP-H6-REF | nas100fut | forward | joint | 50 | 63 (63) | 29 (0.46) | 391.8 | 89.8 | -302.0 | 16.2 [-517.1..1202.4] (0.44) | no |
+| R-SCALP-H6 | uk100fut | backtest | pooled | 30 | 45 (45) | 10 (0.222) | 25.9 | 14.9 | -11.0 | 35.7 [-64.6..102.9] (0.153) | no |
+| R-SCALP-H6 | uk100fut | backtest | pooled | 50 | 45 (45) | 19 (0.422) | 61.4 | 44.7 | -16.7 | 65.1 [-64.8..288.5] (0.343) | no |
+| R-SCALP-H6 | uk100fut | backtest | tod | 30 | 45 (45) | 5 (0.111) | 8.1 | 20.5 | +12.4 | 5.4 [-55.0..123.2] (0.086) | no |
+| R-SCALP-H6 | uk100fut | backtest | tod | 50 | 45 (45) | 18 (0.4) | 60.8 | 77.0 | +16.2 | 29.0 [-102.6..198.8] (0.229) | no |
+| R-SCALP-H6 | uk100fut | backtest | joint | 50 | 45 (45) | 12 (0.267) | 38.1 | 14.9 | -23.2 | 22.8 [-22.9..110.3] (0.119) | no |
+| R-SCALP-H6 | uk100fut | forward | pooled | 30 | 55 (55) | 7 (0.127) | 8.0 | 13.7 | +5.7 | 83.3 [0.2..124.4] (0.181) | no |
+| R-SCALP-H6 | uk100fut | forward | pooled | 50 | 55 (55) | 27 (0.491) | 50.8 | 66.1 | +15.3 | 146.8 [15.6..280.3] (0.39) | no |
+| R-SCALP-H6 | uk100fut | forward | tod | 30 | 55 (55) | 23 (0.418) | 69.5 | 52.3 | -17.1 | 66.1 [-75.4..204.3] (0.203) | no |
+| R-SCALP-H6 | uk100fut | forward | tod | 50 | 55 (55) | 33 (0.6) | 105.4 | 62.9 | -42.5 | 138.2 [-61.1..341.5] (0.369) | no |
+| R-SCALP-H6 | uk100fut | forward | joint | 50 | 55 (55) | 14 (0.255) | 25.9 | 52.3 | +26.5 | 70.0 [-17.1..152.8] (0.163) | no |
+| R-SCALP-H6-REF | uk100fut | backtest | pooled | 30 | 43 (43) | 9 (0.209) | 22.9 | 14.9 | -8.0 | 35.7 [-64.6..102.9] (0.153) | no |
+| R-SCALP-H6-REF | uk100fut | backtest | pooled | 50 | 43 (43) | 19 (0.442) | 57.4 | 73.0 | +15.6 | 65.1 [-64.8..288.5] (0.343) | no |
+| R-SCALP-H6-REF | uk100fut | backtest | tod | 30 | 43 (43) | 4 (0.093) | 5.0 | 23.0 | +18.0 | 5.4 [-55.0..123.2] (0.086) | no |
+| R-SCALP-H6-REF | uk100fut | backtest | tod | 50 | 43 (43) | 16 (0.372) | 63.0 | 23.0 | -40.0 | 29.0 [-102.6..198.8] (0.229) | no |
+| R-SCALP-H6-REF | uk100fut | backtest | joint | 50 | 43 (43) | 11 (0.256) | 33.4 | 14.9 | -18.4 | 22.8 [-22.9..110.3] (0.119) | no |
+| R-SCALP-H6-REF | uk100fut | forward | pooled | 30 | 54 (54) | 7 (0.13) | 9.2 | 12.1 | +2.9 | 83.3 [0.2..124.4] (0.181) | no |
+| R-SCALP-H6-REF | uk100fut | forward | pooled | 50 | 54 (54) | 28 (0.519) | 56.1 | 70.4 | +14.3 | 146.8 [15.6..280.3] (0.39) | no |
+| R-SCALP-H6-REF | uk100fut | forward | tod | 30 | 54 (54) | 23 (0.426) | 68.4 | 73.4 | +5.1 | 66.1 [-75.4..204.3] (0.203) | no |
+| R-SCALP-H6-REF | uk100fut | forward | tod | 50 | 54 (54) | 33 (0.611) | 97.4 | 114.8 | +17.4 | 138.2 [-61.1..341.5] (0.369) | no |
+| R-SCALP-H6-REF | uk100fut | forward | joint | 50 | 54 (54) | 15 (0.278) | 31.7 | 48.2 | +16.5 | 70.0 [-17.1..152.8] (0.163) | no |
+| R-SCALP-H6 | us30fut | backtest | pooled | 30 | 31 (31) | 3 (0.097) | 10.8 | 149.2 | +138.4 | -44.0 [-404.9..295.8] (0.191) | no |
+| R-SCALP-H6 | us30fut | backtest | pooled | 50 | 31 (31) | 7 (0.226) | 67.0 | 266.6 | +199.7 | 168.6 [-557.4..744.9] (0.384) | no |
+| R-SCALP-H6 | us30fut | backtest | tod | 30 | 31 (31) | 8 (0.258) | 67.0 | 354.7 | +287.8 | 43.7 [-431.1..873.2] (0.204) | no |
+| R-SCALP-H6 | us30fut | backtest | tod | 50 | 31 (31) | 12 (0.387) | 205.6 | 354.7 | +149.2 | 174.9 [-641.9..1153.5] (0.353) | no |
+| R-SCALP-H6 | us30fut | backtest | joint | 50 | 31 (31) | 7 (0.226) | 67.0 | 266.6 | +199.7 | 72.0 [-351.7..482.1] (0.19) | no |
+| R-SCALP-H6 | us30fut | forward | pooled | 30 | 56 (56) | 11 (0.196) | 76.4 | 139.2 | +62.8 | 210.3 [-136.9..646.3] (0.223) | no |
+| R-SCALP-H6 | us30fut | forward | pooled | 50 | 56 (56) | 21 (0.375) | 155.9 | 461.2 | +305.3 | 384.4 [-143.1..943.8] (0.436) | no |
+| R-SCALP-H6 | us30fut | forward | tod | 30 | 56 (56) | 19 (0.339) | 261.1 | 268.7 | +7.7 | -14.7 [-387.3..502.0] (0.199) | no |
+| R-SCALP-H6 | us30fut | forward | tod | 50 | 56 (56) | 33 (0.589) | 522.0 | 467.3 | -54.8 | 16.0 [-397.1..735.6] (0.374) | no |
+| R-SCALP-H6 | us30fut | forward | joint | 50 | 56 (56) | 12 (0.214) | 85.5 | 230.5 | +145.0 | 248.8 [-40.9..534.3] (0.217) | no |
+| R-SCALP-H6-REF | us30fut | backtest | pooled | 30 | 34 (34) | 5 (0.147) | 56.9 | 78.0 | +21.2 | -44.0 [-404.9..295.8] (0.191) | no |
+| R-SCALP-H6-REF | us30fut | backtest | pooled | 50 | 34 (34) | 10 (0.294) | 112.6 | 301.6 | +189.0 | 168.6 [-557.4..744.9] (0.384) | no |
+| R-SCALP-H6-REF | us30fut | backtest | tod | 30 | 34 (34) | 9 (0.265) | 98.1 | 281.3 | +183.2 | 43.7 [-431.1..873.2] (0.204) | no |
+| R-SCALP-H6-REF | us30fut | backtest | tod | 50 | 34 (34) | 15 (0.441) | 229.1 | 407.8 | +178.6 | 174.9 [-641.9..1153.5] (0.353) | no |
+| R-SCALP-H6-REF | us30fut | backtest | joint | 50 | 34 (34) | 9 (0.265) | 98.1 | 301.6 | +203.4 | 72.0 [-351.7..482.1] (0.19) | no |
+| R-SCALP-H6-REF | us30fut | forward | pooled | 30 | 57 (57) | 10 (0.175) | 64.3 | 189.9 | +125.5 | 210.3 [-136.9..646.3] (0.223) | no |
+| R-SCALP-H6-REF | us30fut | forward | pooled | 50 | 57 (57) | 21 (0.368) | 162.1 | 524.1 | +362.0 | 384.4 [-143.1..943.8] (0.436) | no |
+| R-SCALP-H6-REF | us30fut | forward | tod | 30 | 57 (57) | 17 (0.298) | 312.2 | 50.6 | -261.6 | -14.7 [-387.3..502.0] (0.199) | no |
+| R-SCALP-H6-REF | us30fut | forward | tod | 50 | 57 (57) | 33 (0.579) | 547.5 | 482.7 | -64.8 | 16.0 [-397.1..735.6] (0.374) | no |
+| R-SCALP-H6-REF | us30fut | forward | joint | 50 | 57 (57) | 12 (0.211) | 105.1 | 210.6 | +105.5 | 248.8 [-40.9..534.3] (0.217) | no |
 
 ## Context ladder (all arms; characterization — no floors here, stated; full grid in the JSON)
 
@@ -98,446 +98,446 @@ Engine `99f8140a0` — OBSERVATIONAL, pre-registered (register 137; the register
 | ger40fut | R-ARM15 | backtest | tod | 30 | 275 (248) | 47 (0.19) | -146.5 |
 | ger40fut | R-ARM15 | backtest | tod | 50 | 275 (248) | 85 (0.343) | -459.7 |
 | ger40fut | R-ARM15 | backtest | joint | 50 | 275 (248) | 37 (0.149) | -332.4 |
-| ger40fut | R-ARM15 | forward | pooled | 30 | 506 (456) | 125 (0.274) | +1184.4 |
-| ger40fut | R-ARM15 | forward | pooled | 50 | 506 (456) | 237 (0.52) | +1559.7 |
-| ger40fut | R-ARM15 | forward | tod | 30 | 506 (456) | 98 (0.215) | +895.2 |
-| ger40fut | R-ARM15 | forward | tod | 50 | 506 (456) | 231 (0.507) | +1851.4 |
-| ger40fut | R-ARM15 | forward | joint | 50 | 506 (456) | 128 (0.281) | +923.8 |
+| ger40fut | R-ARM15 | forward | pooled | 30 | 600 (535) | 141 (0.264) | +1445.4 |
+| ger40fut | R-ARM15 | forward | pooled | 50 | 600 (535) | 268 (0.501) | +1726.2 |
+| ger40fut | R-ARM15 | forward | tod | 30 | 600 (535) | 111 (0.207) | +694.0 |
+| ger40fut | R-ARM15 | forward | tod | 50 | 600 (535) | 257 (0.48) | +1689.6 |
+| ger40fut | R-ARM15 | forward | joint | 50 | 600 (535) | 132 (0.247) | +1044.0 |
 | ger40fut | R-BE | backtest | pooled | 30 | 222 (200) | 33 (0.165) | -190.5 |
 | ger40fut | R-BE | backtest | pooled | 50 | 222 (200) | 60 (0.3) | -182.0 |
 | ger40fut | R-BE | backtest | tod | 30 | 222 (200) | 32 (0.16) | +664.9 |
 | ger40fut | R-BE | backtest | tod | 50 | 222 (200) | 60 (0.3) | +511.5 |
 | ger40fut | R-BE | backtest | joint | 50 | 222 (200) | 24 (0.12) | +29.0 |
-| ger40fut | R-BE | forward | pooled | 30 | 404 (363) | 96 (0.264) | +798.0 |
-| ger40fut | R-BE | forward | pooled | 50 | 404 (363) | 182 (0.501) | +971.0 |
-| ger40fut | R-BE | forward | tod | 30 | 404 (363) | 80 (0.22) | +584.3 |
-| ger40fut | R-BE | forward | tod | 50 | 404 (363) | 185 (0.51) | +1667.7 |
-| ger40fut | R-BE | forward | joint | 50 | 404 (363) | 100 (0.275) | +781.8 |
+| ger40fut | R-BE | forward | pooled | 30 | 487 (435) | 110 (0.253) | +1105.2 |
+| ger40fut | R-BE | forward | pooled | 50 | 487 (435) | 211 (0.485) | +1582.6 |
+| ger40fut | R-BE | forward | tod | 30 | 487 (435) | 92 (0.211) | +378.4 |
+| ger40fut | R-BE | forward | tod | 50 | 487 (435) | 205 (0.471) | +1282.8 |
+| ger40fut | R-BE | forward | joint | 50 | 487 (435) | 103 (0.237) | +858.1 |
 | ger40fut | R-H1-CONFIRM | backtest | pooled | 50 | 6 (6) | 2 (0.333) | +34.9 |
 | ger40fut | R-H1-CONFIRM | backtest | tod | 50 | 6 (6) | 1 (0.167) | +116.8 |
-| ger40fut | R-H1-CONFIRM | forward | pooled | 30 | 10 (10) | 6 (0.6) | +11.0 |
-| ger40fut | R-H1-CONFIRM | forward | pooled | 50 | 10 (10) | 7 (0.7) | +3.3 |
-| ger40fut | R-H1-CONFIRM | forward | tod | 30 | 10 (10) | 1 (0.1) | +26.5 |
-| ger40fut | R-H1-CONFIRM | forward | tod | 50 | 10 (10) | 7 (0.7) | +114.0 |
-| ger40fut | R-H1-CONFIRM | forward | joint | 50 | 10 (10) | 5 (0.5) | +99.8 |
+| ger40fut | R-H1-CONFIRM | forward | pooled | 30 | 14 (14) | 6 (0.429) | +11.0 |
+| ger40fut | R-H1-CONFIRM | forward | pooled | 50 | 14 (14) | 9 (0.643) | +9.0 |
+| ger40fut | R-H1-CONFIRM | forward | tod | 30 | 14 (14) | 2 (0.143) | +15.5 |
+| ger40fut | R-H1-CONFIRM | forward | tod | 50 | 14 (14) | 10 (0.714) | +67.4 |
+| ger40fut | R-H1-CONFIRM | forward | joint | 50 | 14 (14) | 6 (0.429) | +118.9 |
 | ger40fut | R-H1-DELAY10 | backtest | pooled | 30 | 12 (12) | 1 (0.083) | -264.6 |
 | ger40fut | R-H1-DELAY10 | backtest | pooled | 50 | 12 (12) | 1 (0.083) | -264.6 |
 | ger40fut | R-H1-DELAY10 | backtest | tod | 30 | 12 (12) | 1 (0.083) | +110.8 |
 | ger40fut | R-H1-DELAY10 | backtest | tod | 50 | 12 (12) | 1 (0.083) | +110.8 |
-| ger40fut | R-H1-DELAY10 | forward | pooled | 30 | 36 (36) | 10 (0.278) | +17.0 |
-| ger40fut | R-H1-DELAY10 | forward | pooled | 50 | 36 (36) | 18 (0.5) | -44.8 |
-| ger40fut | R-H1-DELAY10 | forward | tod | 30 | 36 (36) | 6 (0.167) | +208.8 |
-| ger40fut | R-H1-DELAY10 | forward | tod | 50 | 36 (36) | 21 (0.583) | +135.9 |
-| ger40fut | R-H1-DELAY10 | forward | joint | 50 | 36 (36) | 11 (0.306) | -43.4 |
+| ger40fut | R-H1-DELAY10 | forward | pooled | 30 | 45 (45) | 11 (0.244) | +53.7 |
+| ger40fut | R-H1-DELAY10 | forward | pooled | 50 | 45 (45) | 23 (0.511) | +108.5 |
+| ger40fut | R-H1-DELAY10 | forward | tod | 30 | 45 (45) | 7 (0.156) | +198.4 |
+| ger40fut | R-H1-DELAY10 | forward | tod | 50 | 45 (45) | 24 (0.533) | +115.1 |
+| ger40fut | R-H1-DELAY10 | forward | joint | 50 | 45 (45) | 12 (0.267) | -24.3 |
 | ger40fut | R-H1-DELAY3 | backtest | pooled | 30 | 14 (14) | 1 (0.071) | -251.0 |
 | ger40fut | R-H1-DELAY3 | backtest | pooled | 50 | 14 (14) | 1 (0.071) | -251.0 |
 | ger40fut | R-H1-DELAY3 | backtest | tod | 50 | 14 (14) | 2 (0.143) | +101.9 |
-| ger40fut | R-H1-DELAY3 | forward | pooled | 30 | 41 (41) | 14 (0.341) | +198.8 |
-| ger40fut | R-H1-DELAY3 | forward | pooled | 50 | 41 (41) | 23 (0.561) | +150.4 |
-| ger40fut | R-H1-DELAY3 | forward | tod | 30 | 41 (41) | 11 (0.268) | +245.0 |
-| ger40fut | R-H1-DELAY3 | forward | tod | 50 | 41 (41) | 25 (0.61) | +329.6 |
-| ger40fut | R-H1-DELAY3 | forward | joint | 50 | 41 (41) | 14 (0.341) | +165.2 |
+| ger40fut | R-H1-DELAY3 | forward | pooled | 30 | 50 (50) | 16 (0.32) | +276.7 |
+| ger40fut | R-H1-DELAY3 | forward | pooled | 50 | 50 (50) | 28 (0.56) | +316.1 |
+| ger40fut | R-H1-DELAY3 | forward | tod | 30 | 50 (50) | 12 (0.24) | +225.4 |
+| ger40fut | R-H1-DELAY3 | forward | tod | 50 | 50 (50) | 28 (0.56) | +353.7 |
+| ger40fut | R-H1-DELAY3 | forward | joint | 50 | 50 (50) | 15 (0.3) | +206.5 |
 | ger40fut | R-H1-KNIFE | backtest | pooled | 30 | 22 (22) | 3 (0.136) | -230.9 |
 | ger40fut | R-H1-KNIFE | backtest | pooled | 50 | 22 (22) | 5 (0.227) | -225.9 |
 | ger40fut | R-H1-KNIFE | backtest | tod | 50 | 22 (22) | 4 (0.182) | +62.0 |
 | ger40fut | R-H1-KNIFE | backtest | joint | 50 | 22 (22) | 2 (0.091) | -3.9 |
-| ger40fut | R-H1-KNIFE | forward | pooled | 30 | 58 (58) | 19 (0.328) | +96.5 |
-| ger40fut | R-H1-KNIFE | forward | pooled | 50 | 58 (58) | 31 (0.534) | +30.0 |
-| ger40fut | R-H1-KNIFE | forward | tod | 30 | 58 (58) | 13 (0.224) | +182.3 |
-| ger40fut | R-H1-KNIFE | forward | tod | 50 | 58 (58) | 33 (0.569) | +179.5 |
-| ger40fut | R-H1-KNIFE | forward | joint | 50 | 58 (58) | 19 (0.328) | -16.5 |
+| ger40fut | R-H1-KNIFE | forward | pooled | 30 | 71 (71) | 21 (0.296) | +139.1 |
+| ger40fut | R-H1-KNIFE | forward | pooled | 50 | 71 (71) | 36 (0.507) | +90.6 |
+| ger40fut | R-H1-KNIFE | forward | tod | 30 | 71 (71) | 14 (0.197) | +165.4 |
+| ger40fut | R-H1-KNIFE | forward | tod | 50 | 71 (71) | 37 (0.521) | +181.4 |
+| ger40fut | R-H1-KNIFE | forward | joint | 50 | 71 (71) | 20 (0.282) | +12.6 |
 | ger40fut | R-H1-OWNCURVE | backtest | tod | 50 | 6 (6) | 1 (0.167) | -93.3 |
-| ger40fut | R-H1-OWNCURVE | forward | pooled | 30 | 19 (19) | 5 (0.263) | -78.0 |
-| ger40fut | R-H1-OWNCURVE | forward | pooled | 50 | 19 (19) | 8 (0.421) | -192.7 |
-| ger40fut | R-H1-OWNCURVE | forward | tod | 30 | 19 (19) | 5 (0.263) | +251.9 |
-| ger40fut | R-H1-OWNCURVE | forward | tod | 50 | 19 (19) | 10 (0.526) | -87.1 |
-| ger40fut | R-H1-OWNCURVE | forward | joint | 50 | 19 (19) | 4 (0.211) | -181.8 |
+| ger40fut | R-H1-OWNCURVE | forward | pooled | 30 | 25 (25) | 6 (0.24) | -34.9 |
+| ger40fut | R-H1-OWNCURVE | forward | pooled | 50 | 25 (25) | 11 (0.44) | -41.9 |
+| ger40fut | R-H1-OWNCURVE | forward | tod | 30 | 25 (25) | 6 (0.24) | +213.7 |
+| ger40fut | R-H1-OWNCURVE | forward | tod | 50 | 25 (25) | 11 (0.44) | -125.3 |
+| ger40fut | R-H1-OWNCURVE | forward | joint | 50 | 25 (25) | 4 (0.16) | -181.8 |
 | ger40fut | R-NEXIT-EARLY | backtest | pooled | 30 | 870 (716) | 134 (0.187) | -125.9 |
 | ger40fut | R-NEXIT-EARLY | backtest | pooled | 50 | 870 (716) | 284 (0.397) | +553.9 |
 | ger40fut | R-NEXIT-EARLY | backtest | tod | 30 | 870 (716) | 105 (0.147) | -198.2 |
 | ger40fut | R-NEXIT-EARLY | backtest | tod | 50 | 870 (716) | 193 (0.27) | -510.9 |
 | ger40fut | R-NEXIT-EARLY | backtest | joint | 50 | 870 (716) | 114 (0.159) | +7.2 |
-| ger40fut | R-NEXIT-EARLY | forward | pooled | 30 | 1535 (1260) | 452 (0.359) | +884.6 |
-| ger40fut | R-NEXIT-EARLY | forward | pooled | 50 | 1535 (1260) | 764 (0.606) | +981.8 |
-| ger40fut | R-NEXIT-EARLY | forward | tod | 30 | 1535 (1260) | 188 (0.149) | +343.0 |
-| ger40fut | R-NEXIT-EARLY | forward | tod | 50 | 1535 (1260) | 581 (0.461) | +778.5 |
-| ger40fut | R-NEXIT-EARLY | forward | joint | 50 | 1535 (1260) | 370 (0.294) | +417.2 |
+| ger40fut | R-NEXIT-EARLY | forward | pooled | 30 | 1785 (1465) | 506 (0.345) | +1056.2 |
+| ger40fut | R-NEXIT-EARLY | forward | pooled | 50 | 1785 (1465) | 867 (0.592) | +1225.0 |
+| ger40fut | R-NEXIT-EARLY | forward | tod | 30 | 1785 (1465) | 207 (0.141) | +124.9 |
+| ger40fut | R-NEXIT-EARLY | forward | tod | 50 | 1785 (1465) | 633 (0.432) | +502.6 |
+| ger40fut | R-NEXIT-EARLY | forward | joint | 50 | 1785 (1465) | 383 (0.261) | +439.1 |
 | ger40fut | R-NEXIT-FULL | backtest | pooled | 30 | 951 (786) | 157 (0.2) | +139.9 |
 | ger40fut | R-NEXIT-FULL | backtest | pooled | 50 | 951 (786) | 320 (0.407) | +370.3 |
 | ger40fut | R-NEXIT-FULL | backtest | tod | 30 | 951 (786) | 112 (0.142) | +247.8 |
 | ger40fut | R-NEXIT-FULL | backtest | tod | 50 | 951 (786) | 226 (0.288) | +140.4 |
 | ger40fut | R-NEXIT-FULL | backtest | joint | 50 | 951 (786) | 138 (0.176) | +117.5 |
-| ger40fut | R-NEXIT-FULL | forward | pooled | 30 | 1641 (1358) | 470 (0.346) | +811.0 |
-| ger40fut | R-NEXIT-FULL | forward | pooled | 50 | 1641 (1358) | 796 (0.586) | +1227.2 |
-| ger40fut | R-NEXIT-FULL | forward | tod | 30 | 1641 (1358) | 212 (0.156) | +356.6 |
-| ger40fut | R-NEXIT-FULL | forward | tod | 50 | 1641 (1358) | 631 (0.465) | +1222.5 |
-| ger40fut | R-NEXIT-FULL | forward | joint | 50 | 1641 (1358) | 385 (0.284) | +602.4 |
+| ger40fut | R-NEXIT-FULL | forward | pooled | 30 | 1912 (1584) | 526 (0.332) | +942.5 |
+| ger40fut | R-NEXIT-FULL | forward | pooled | 50 | 1912 (1584) | 912 (0.576) | +1466.8 |
+| ger40fut | R-NEXIT-FULL | forward | tod | 30 | 1912 (1584) | 235 (0.148) | +80.9 |
+| ger40fut | R-NEXIT-FULL | forward | tod | 50 | 1912 (1584) | 687 (0.434) | +917.0 |
+| ger40fut | R-NEXIT-FULL | forward | joint | 50 | 1912 (1584) | 398 (0.251) | +636.8 |
 | ger40fut | R-NEXIT-SENT | backtest | pooled | 30 | 509 (418) | 86 (0.206) | +119.3 |
 | ger40fut | R-NEXIT-SENT | backtest | pooled | 50 | 509 (418) | 160 (0.383) | +659.2 |
 | ger40fut | R-NEXIT-SENT | backtest | tod | 30 | 509 (418) | 55 (0.132) | -20.7 |
 | ger40fut | R-NEXIT-SENT | backtest | tod | 50 | 509 (418) | 116 (0.278) | -91.6 |
 | ger40fut | R-NEXIT-SENT | backtest | joint | 50 | 509 (418) | 65 (0.156) | -10.5 |
-| ger40fut | R-NEXIT-SENT | forward | pooled | 30 | 934 (790) | 259 (0.328) | +649.1 |
-| ger40fut | R-NEXIT-SENT | forward | pooled | 50 | 934 (790) | 446 (0.565) | +1477.6 |
-| ger40fut | R-NEXIT-SENT | forward | tod | 30 | 934 (790) | 119 (0.151) | +1016.7 |
-| ger40fut | R-NEXIT-SENT | forward | tod | 50 | 934 (790) | 360 (0.456) | +2079.1 |
-| ger40fut | R-NEXIT-SENT | forward | joint | 50 | 934 (790) | 222 (0.281) | +920.8 |
+| ger40fut | R-NEXIT-SENT | forward | pooled | 30 | 1083 (914) | 290 (0.317) | +1072.7 |
+| ger40fut | R-NEXIT-SENT | forward | pooled | 50 | 1083 (914) | 514 (0.562) | +1986.9 |
+| ger40fut | R-NEXIT-SENT | forward | tod | 30 | 1083 (914) | 132 (0.144) | +815.5 |
+| ger40fut | R-NEXIT-SENT | forward | tod | 50 | 1083 (914) | 391 (0.428) | +1685.1 |
+| ger40fut | R-NEXIT-SENT | forward | joint | 50 | 1083 (914) | 231 (0.253) | +922.4 |
 | ger40fut | R-NOTRAIL | backtest | pooled | 30 | 159 (145) | 28 (0.193) | +291.2 |
 | ger40fut | R-NOTRAIL | backtest | pooled | 50 | 159 (145) | 51 (0.352) | -65.6 |
 | ger40fut | R-NOTRAIL | backtest | tod | 30 | 159 (145) | 27 (0.186) | +470.6 |
 | ger40fut | R-NOTRAIL | backtest | tod | 50 | 159 (145) | 48 (0.331) | +831.4 |
 | ger40fut | R-NOTRAIL | backtest | joint | 50 | 159 (145) | 23 (0.159) | +240.1 |
-| ger40fut | R-NOTRAIL | forward | pooled | 30 | 301 (273) | 73 (0.267) | +204.3 |
-| ger40fut | R-NOTRAIL | forward | pooled | 50 | 301 (273) | 136 (0.498) | -593.7 |
-| ger40fut | R-NOTRAIL | forward | tod | 30 | 301 (273) | 63 (0.231) | +223.7 |
-| ger40fut | R-NOTRAIL | forward | tod | 50 | 301 (273) | 136 (0.498) | +455.7 |
-| ger40fut | R-NOTRAIL | forward | joint | 50 | 301 (273) | 75 (0.275) | +71.7 |
+| ger40fut | R-NOTRAIL | forward | pooled | 30 | 366 (330) | 87 (0.264) | +515.5 |
+| ger40fut | R-NOTRAIL | forward | pooled | 50 | 366 (330) | 161 (0.488) | -11.3 |
+| ger40fut | R-NOTRAIL | forward | tod | 30 | 366 (330) | 72 (0.218) | +200.7 |
+| ger40fut | R-NOTRAIL | forward | tod | 50 | 366 (330) | 152 (0.461) | +168.1 |
+| ger40fut | R-NOTRAIL | forward | joint | 50 | 366 (330) | 78 (0.236) | +187.9 |
 | ger40fut | R-OP2 | backtest | pooled | 30 | 812 (692) | 153 (0.221) | -146.8 |
 | ger40fut | R-OP2 | backtest | pooled | 50 | 812 (692) | 298 (0.431) | -139.6 |
 | ger40fut | R-OP2 | backtest | tod | 30 | 812 (692) | 135 (0.195) | +128.9 |
 | ger40fut | R-OP2 | backtest | tod | 50 | 812 (692) | 255 (0.368) | +570.1 |
 | ger40fut | R-OP2 | backtest | joint | 50 | 812 (692) | 143 (0.207) | +238.9 |
-| ger40fut | R-OP2 | forward | pooled | 30 | 1487 (1265) | 411 (0.325) | +567.3 |
-| ger40fut | R-OP2 | forward | pooled | 50 | 1487 (1265) | 711 (0.562) | +997.3 |
-| ger40fut | R-OP2 | forward | tod | 30 | 1487 (1265) | 228 (0.18) | +161.2 |
-| ger40fut | R-OP2 | forward | tod | 50 | 1487 (1265) | 610 (0.482) | +1127.9 |
-| ger40fut | R-OP2 | forward | joint | 50 | 1487 (1265) | 354 (0.28) | +537.8 |
+| ger40fut | R-OP2 | forward | pooled | 30 | 1745 (1487) | 463 (0.311) | +716.1 |
+| ger40fut | R-OP2 | forward | pooled | 50 | 1745 (1487) | 814 (0.547) | +1194.3 |
+| ger40fut | R-OP2 | forward | tod | 30 | 1745 (1487) | 253 (0.17) | +49.1 |
+| ger40fut | R-OP2 | forward | tod | 50 | 1745 (1487) | 683 (0.459) | +1222.0 |
+| ger40fut | R-OP2 | forward | joint | 50 | 1745 (1487) | 367 (0.247) | +549.5 |
 | nas100fut | R-ARM15 | backtest | pooled | 30 | 290 (259) | 39 (0.151) | -1080.7 |
 | nas100fut | R-ARM15 | backtest | pooled | 50 | 290 (259) | 71 (0.274) | -855.6 |
 | nas100fut | R-ARM15 | backtest | tod | 30 | 290 (259) | 29 (0.112) | -1196.4 |
 | nas100fut | R-ARM15 | backtest | tod | 50 | 290 (259) | 68 (0.263) | -854.9 |
 | nas100fut | R-ARM15 | backtest | joint | 50 | 290 (259) | 48 (0.185) | -695.1 |
-| nas100fut | R-ARM15 | forward | pooled | 30 | 532 (475) | 137 (0.288) | -127.6 |
-| nas100fut | R-ARM15 | forward | pooled | 50 | 532 (475) | 277 (0.583) | +1267.0 |
-| nas100fut | R-ARM15 | forward | tod | 30 | 532 (475) | 119 (0.251) | +909.7 |
-| nas100fut | R-ARM15 | forward | tod | 50 | 532 (475) | 241 (0.507) | +2049.4 |
-| nas100fut | R-ARM15 | forward | joint | 50 | 532 (475) | 191 (0.402) | +1770.4 |
+| nas100fut | R-ARM15 | forward | pooled | 30 | 588 (527) | 154 (0.292) | +59.7 |
+| nas100fut | R-ARM15 | forward | pooled | 50 | 588 (527) | 304 (0.577) | +1667.2 |
+| nas100fut | R-ARM15 | forward | tod | 30 | 588 (527) | 153 (0.29) | +905.6 |
+| nas100fut | R-ARM15 | forward | tod | 50 | 588 (527) | 276 (0.524) | +2050.9 |
+| nas100fut | R-ARM15 | forward | joint | 50 | 588 (527) | 212 (0.402) | +1917.5 |
 | nas100fut | R-BE | backtest | pooled | 30 | 205 (180) | 23 (0.128) | -2268.8 |
 | nas100fut | R-BE | backtest | pooled | 50 | 205 (180) | 39 (0.217) | -2003.2 |
 | nas100fut | R-BE | backtest | tod | 30 | 205 (180) | 17 (0.094) | -2336.8 |
 | nas100fut | R-BE | backtest | tod | 50 | 205 (180) | 43 (0.239) | -1909.4 |
 | nas100fut | R-BE | backtest | joint | 50 | 205 (180) | 27 (0.15) | -2511.8 |
-| nas100fut | R-BE | forward | pooled | 30 | 414 (370) | 99 (0.268) | -1518.0 |
-| nas100fut | R-BE | forward | pooled | 50 | 414 (370) | 207 (0.559) | -170.1 |
-| nas100fut | R-BE | forward | tod | 30 | 414 (370) | 86 (0.232) | -631.3 |
-| nas100fut | R-BE | forward | tod | 50 | 414 (370) | 171 (0.462) | +100.2 |
-| nas100fut | R-BE | forward | joint | 50 | 414 (370) | 137 (0.37) | -112.2 |
-| nas100fut | R-H1-CONFIRM | forward | pooled | 30 | 5 (5) | 3 (0.6) | -39.9 |
-| nas100fut | R-H1-CONFIRM | forward | pooled | 50 | 5 (5) | 4 (0.8) | -104.0 |
-| nas100fut | R-H1-CONFIRM | forward | tod | 30 | 5 (5) | 1 (0.2) | +29.3 |
-| nas100fut | R-H1-CONFIRM | forward | tod | 50 | 5 (5) | 1 (0.2) | +29.3 |
-| nas100fut | R-H1-CONFIRM | forward | joint | 50 | 5 (5) | 1 (0.2) | +29.3 |
+| nas100fut | R-BE | forward | pooled | 30 | 459 (412) | 113 (0.274) | -2371.4 |
+| nas100fut | R-BE | forward | pooled | 50 | 459 (412) | 229 (0.556) | -898.0 |
+| nas100fut | R-BE | forward | tod | 30 | 459 (412) | 114 (0.277) | -1668.9 |
+| nas100fut | R-BE | forward | tod | 50 | 459 (412) | 199 (0.483) | -937.4 |
+| nas100fut | R-BE | forward | joint | 50 | 459 (412) | 155 (0.376) | -1066.8 |
+| nas100fut | R-H1-CONFIRM | forward | pooled | 30 | 6 (6) | 3 (0.5) | -39.9 |
+| nas100fut | R-H1-CONFIRM | forward | pooled | 50 | 6 (6) | 5 (0.833) | -170.6 |
+| nas100fut | R-H1-CONFIRM | forward | tod | 30 | 6 (6) | 2 (0.333) | -37.3 |
+| nas100fut | R-H1-CONFIRM | forward | tod | 50 | 6 (6) | 2 (0.333) | -37.3 |
+| nas100fut | R-H1-CONFIRM | forward | joint | 50 | 6 (6) | 2 (0.333) | -37.3 |
 | nas100fut | R-H1-DELAY10 | backtest | pooled | 50 | 15 (15) | 3 (0.2) | +212.4 |
 | nas100fut | R-H1-DELAY10 | backtest | tod | 50 | 15 (15) | 2 (0.133) | -27.6 |
 | nas100fut | R-H1-DELAY10 | backtest | joint | 50 | 15 (15) | 1 (0.067) | +118.8 |
-| nas100fut | R-H1-DELAY10 | forward | pooled | 30 | 29 (29) | 8 (0.276) | +119.1 |
-| nas100fut | R-H1-DELAY10 | forward | pooled | 50 | 29 (29) | 17 (0.586) | -20.9 |
-| nas100fut | R-H1-DELAY10 | forward | tod | 30 | 29 (29) | 4 (0.138) | +183.8 |
-| nas100fut | R-H1-DELAY10 | forward | tod | 50 | 29 (29) | 12 (0.414) | +481.5 |
-| nas100fut | R-H1-DELAY10 | forward | joint | 50 | 29 (29) | 9 (0.31) | +328.3 |
+| nas100fut | R-H1-DELAY10 | forward | pooled | 30 | 33 (33) | 8 (0.242) | +119.1 |
+| nas100fut | R-H1-DELAY10 | forward | pooled | 50 | 33 (33) | 18 (0.545) | +56.6 |
+| nas100fut | R-H1-DELAY10 | forward | tod | 30 | 33 (33) | 7 (0.212) | +194.7 |
+| nas100fut | R-H1-DELAY10 | forward | tod | 50 | 33 (33) | 15 (0.455) | +492.4 |
+| nas100fut | R-H1-DELAY10 | forward | joint | 50 | 33 (33) | 10 (0.303) | +405.7 |
 | nas100fut | R-H1-DELAY3 | backtest | pooled | 50 | 13 (13) | 3 (0.231) | +134.5 |
 | nas100fut | R-H1-DELAY3 | backtest | tod | 50 | 13 (13) | 2 (0.154) | -72.6 |
 | nas100fut | R-H1-DELAY3 | backtest | joint | 50 | 13 (13) | 1 (0.077) | +51.5 |
-| nas100fut | R-H1-DELAY3 | forward | pooled | 30 | 25 (25) | 7 (0.28) | +41.9 |
-| nas100fut | R-H1-DELAY3 | forward | pooled | 50 | 25 (25) | 14 (0.56) | -172.8 |
-| nas100fut | R-H1-DELAY3 | forward | tod | 30 | 25 (25) | 4 (0.16) | +191.8 |
-| nas100fut | R-H1-DELAY3 | forward | tod | 50 | 25 (25) | 8 (0.32) | +202.5 |
-| nas100fut | R-H1-DELAY3 | forward | joint | 50 | 25 (25) | 7 (0.28) | +196.9 |
+| nas100fut | R-H1-DELAY3 | forward | pooled | 30 | 30 (30) | 7 (0.233) | +41.9 |
+| nas100fut | R-H1-DELAY3 | forward | pooled | 50 | 30 (30) | 15 (0.5) | -95.4 |
+| nas100fut | R-H1-DELAY3 | forward | tod | 30 | 30 (30) | 7 (0.233) | +190.9 |
+| nas100fut | R-H1-DELAY3 | forward | tod | 50 | 30 (30) | 11 (0.367) | +201.7 |
+| nas100fut | R-H1-DELAY3 | forward | joint | 50 | 30 (30) | 8 (0.267) | +274.4 |
 | nas100fut | R-H1-KNIFE | backtest | pooled | 50 | 21 (21) | 3 (0.143) | +155.3 |
 | nas100fut | R-H1-KNIFE | backtest | tod | 50 | 21 (21) | 2 (0.095) | +94.1 |
 | nas100fut | R-H1-KNIFE | backtest | joint | 50 | 21 (21) | 1 (0.048) | +119.0 |
-| nas100fut | R-H1-KNIFE | forward | pooled | 30 | 43 (43) | 13 (0.302) | +100.4 |
-| nas100fut | R-H1-KNIFE | forward | pooled | 50 | 43 (43) | 25 (0.581) | -18.5 |
-| nas100fut | R-H1-KNIFE | forward | tod | 30 | 43 (43) | 6 (0.14) | +35.2 |
-| nas100fut | R-H1-KNIFE | forward | tod | 50 | 43 (43) | 15 (0.349) | +129.9 |
-| nas100fut | R-H1-KNIFE | forward | joint | 50 | 43 (43) | 13 (0.302) | +115.6 |
+| nas100fut | R-H1-KNIFE | forward | pooled | 30 | 48 (48) | 13 (0.271) | +100.4 |
+| nas100fut | R-H1-KNIFE | forward | pooled | 50 | 48 (48) | 26 (0.542) | -10.5 |
+| nas100fut | R-H1-KNIFE | forward | tod | 30 | 48 (48) | 9 (0.188) | +35.7 |
+| nas100fut | R-H1-KNIFE | forward | tod | 50 | 48 (48) | 18 (0.375) | +130.4 |
+| nas100fut | R-H1-KNIFE | forward | joint | 50 | 48 (48) | 14 (0.292) | +123.5 |
 | nas100fut | R-H1-OWNCURVE | backtest | tod | 50 | 7 (7) | 1 (0.143) | +190.2 |
-| nas100fut | R-H1-OWNCURVE | forward | pooled | 30 | 17 (17) | 7 (0.412) | +442.3 |
-| nas100fut | R-H1-OWNCURVE | forward | pooled | 50 | 17 (17) | 13 (0.765) | -160.4 |
-| nas100fut | R-H1-OWNCURVE | forward | tod | 30 | 17 (17) | 3 (0.176) | +253.9 |
-| nas100fut | R-H1-OWNCURVE | forward | tod | 50 | 17 (17) | 5 (0.294) | +69.0 |
-| nas100fut | R-H1-OWNCURVE | forward | joint | 50 | 17 (17) | 5 (0.294) | +69.0 |
+| nas100fut | R-H1-OWNCURVE | forward | pooled | 30 | 20 (20) | 7 (0.35) | +442.3 |
+| nas100fut | R-H1-OWNCURVE | forward | pooled | 50 | 20 (20) | 14 (0.7) | -63.9 |
+| nas100fut | R-H1-OWNCURVE | forward | tod | 30 | 20 (20) | 5 (0.25) | +304.7 |
+| nas100fut | R-H1-OWNCURVE | forward | tod | 50 | 20 (20) | 7 (0.35) | +119.8 |
+| nas100fut | R-H1-OWNCURVE | forward | joint | 50 | 20 (20) | 6 (0.3) | +165.5 |
 | nas100fut | R-NEXIT-EARLY | backtest | pooled | 30 | 1055 (851) | 86 (0.101) | -966.4 |
 | nas100fut | R-NEXIT-EARLY | backtest | pooled | 50 | 1055 (851) | 157 (0.184) | -1021.5 |
 | nas100fut | R-NEXIT-EARLY | backtest | tod | 30 | 1055 (851) | 67 (0.079) | -1144.9 |
 | nas100fut | R-NEXIT-EARLY | backtest | tod | 50 | 1055 (851) | 131 (0.154) | -1614.1 |
 | nas100fut | R-NEXIT-EARLY | backtest | joint | 50 | 1055 (851) | 92 (0.108) | -1521.5 |
-| nas100fut | R-NEXIT-EARLY | forward | pooled | 30 | 1580 (1292) | 286 (0.221) | +1061.6 |
-| nas100fut | R-NEXIT-EARLY | forward | pooled | 50 | 1580 (1292) | 695 (0.538) | +2668.1 |
-| nas100fut | R-NEXIT-EARLY | forward | tod | 30 | 1580 (1292) | 232 (0.18) | +870.0 |
-| nas100fut | R-NEXIT-EARLY | forward | tod | 50 | 1580 (1292) | 562 (0.435) | +2448.3 |
-| nas100fut | R-NEXIT-EARLY | forward | joint | 50 | 1580 (1292) | 458 (0.354) | +2493.7 |
+| nas100fut | R-NEXIT-EARLY | forward | pooled | 30 | 1699 (1393) | 312 (0.224) | +1424.1 |
+| nas100fut | R-NEXIT-EARLY | forward | pooled | 50 | 1699 (1393) | 745 (0.535) | +3084.4 |
+| nas100fut | R-NEXIT-EARLY | forward | tod | 30 | 1699 (1393) | 291 (0.209) | +1416.8 |
+| nas100fut | R-NEXIT-EARLY | forward | tod | 50 | 1699 (1393) | 625 (0.449) | +3017.4 |
+| nas100fut | R-NEXIT-EARLY | forward | joint | 50 | 1699 (1393) | 500 (0.359) | +2815.0 |
 | nas100fut | R-NEXIT-FULL | backtest | pooled | 30 | 1125 (912) | 99 (0.109) | -56.8 |
 | nas100fut | R-NEXIT-FULL | backtest | pooled | 50 | 1125 (912) | 182 (0.2) | -212.4 |
 | nas100fut | R-NEXIT-FULL | backtest | tod | 30 | 1125 (912) | 82 (0.09) | -249.1 |
 | nas100fut | R-NEXIT-FULL | backtest | tod | 50 | 1125 (912) | 156 (0.171) | -779.1 |
 | nas100fut | R-NEXIT-FULL | backtest | joint | 50 | 1125 (912) | 106 (0.116) | -692.5 |
-| nas100fut | R-NEXIT-FULL | forward | pooled | 30 | 1687 (1396) | 318 (0.228) | +1679.2 |
-| nas100fut | R-NEXIT-FULL | forward | pooled | 50 | 1687 (1396) | 757 (0.542) | +2823.5 |
-| nas100fut | R-NEXIT-FULL | forward | tod | 30 | 1687 (1396) | 270 (0.193) | +1234.6 |
-| nas100fut | R-NEXIT-FULL | forward | tod | 50 | 1687 (1396) | 631 (0.452) | +2144.3 |
-| nas100fut | R-NEXIT-FULL | forward | joint | 50 | 1687 (1396) | 508 (0.364) | +2635.4 |
+| nas100fut | R-NEXIT-FULL | forward | pooled | 30 | 1809 (1500) | 345 (0.23) | +1973.5 |
+| nas100fut | R-NEXIT-FULL | forward | pooled | 50 | 1809 (1500) | 809 (0.539) | +3162.3 |
+| nas100fut | R-NEXIT-FULL | forward | tod | 30 | 1809 (1500) | 332 (0.221) | +1655.2 |
+| nas100fut | R-NEXIT-FULL | forward | tod | 50 | 1809 (1500) | 697 (0.465) | +2544.9 |
+| nas100fut | R-NEXIT-FULL | forward | joint | 50 | 1809 (1500) | 552 (0.368) | +2879.2 |
 | nas100fut | R-NEXIT-SENT | backtest | pooled | 30 | 658 (534) | 45 (0.084) | -1288.5 |
 | nas100fut | R-NEXIT-SENT | backtest | pooled | 50 | 658 (534) | 95 (0.178) | -531.0 |
 | nas100fut | R-NEXIT-SENT | backtest | tod | 30 | 658 (534) | 30 (0.056) | -1513.4 |
 | nas100fut | R-NEXIT-SENT | backtest | tod | 50 | 658 (534) | 72 (0.135) | -782.6 |
 | nas100fut | R-NEXIT-SENT | backtest | joint | 50 | 658 (534) | 51 (0.096) | -1039.3 |
-| nas100fut | R-NEXIT-SENT | forward | pooled | 30 | 1011 (817) | 171 (0.209) | +258.5 |
-| nas100fut | R-NEXIT-SENT | forward | pooled | 50 | 1011 (817) | 432 (0.529) | +2378.0 |
-| nas100fut | R-NEXIT-SENT | forward | tod | 30 | 1011 (817) | 135 (0.165) | +534.6 |
-| nas100fut | R-NEXIT-SENT | forward | tod | 50 | 1011 (817) | 337 (0.412) | +1355.6 |
-| nas100fut | R-NEXIT-SENT | forward | joint | 50 | 1011 (817) | 274 (0.335) | +1618.5 |
+| nas100fut | R-NEXIT-SENT | forward | pooled | 30 | 1083 (882) | 188 (0.213) | +445.9 |
+| nas100fut | R-NEXIT-SENT | forward | pooled | 50 | 1083 (882) | 460 (0.522) | +2786.4 |
+| nas100fut | R-NEXIT-SENT | forward | tod | 30 | 1083 (882) | 170 (0.193) | +237.6 |
+| nas100fut | R-NEXIT-SENT | forward | tod | 50 | 1083 (882) | 373 (0.423) | +1064.2 |
+| nas100fut | R-NEXIT-SENT | forward | joint | 50 | 1083 (882) | 295 (0.334) | +1723.2 |
 | nas100fut | R-NOTRAIL | backtest | pooled | 30 | 153 (135) | 18 (0.133) | -1018.2 |
 | nas100fut | R-NOTRAIL | backtest | pooled | 50 | 153 (135) | 26 (0.193) | -645.2 |
 | nas100fut | R-NOTRAIL | backtest | tod | 30 | 153 (135) | 16 (0.119) | -1671.1 |
 | nas100fut | R-NOTRAIL | backtest | tod | 50 | 153 (135) | 36 (0.267) | -211.7 |
 | nas100fut | R-NOTRAIL | backtest | joint | 50 | 153 (135) | 19 (0.141) | -1192.2 |
-| nas100fut | R-NOTRAIL | forward | pooled | 30 | 301 (262) | 71 (0.271) | -1350.3 |
-| nas100fut | R-NOTRAIL | forward | pooled | 50 | 301 (262) | 157 (0.599) | -1365.9 |
-| nas100fut | R-NOTRAIL | forward | tod | 30 | 301 (262) | 63 (0.24) | -664.8 |
-| nas100fut | R-NOTRAIL | forward | tod | 50 | 301 (262) | 123 (0.469) | -178.3 |
-| nas100fut | R-NOTRAIL | forward | joint | 50 | 301 (262) | 102 (0.389) | -381.2 |
+| nas100fut | R-NOTRAIL | forward | pooled | 30 | 344 (302) | 84 (0.278) | -2289.7 |
+| nas100fut | R-NOTRAIL | forward | pooled | 50 | 344 (302) | 179 (0.593) | -1802.0 |
+| nas100fut | R-NOTRAIL | forward | tod | 30 | 344 (302) | 90 (0.298) | -1481.7 |
+| nas100fut | R-NOTRAIL | forward | tod | 50 | 344 (302) | 150 (0.497) | -995.1 |
+| nas100fut | R-NOTRAIL | forward | joint | 50 | 344 (302) | 120 (0.397) | -1122.5 |
 | nas100fut | R-OP2 | backtest | pooled | 30 | 950 (810) | 127 (0.157) | +358.4 |
 | nas100fut | R-OP2 | backtest | pooled | 50 | 950 (810) | 216 (0.267) | +828.9 |
 | nas100fut | R-OP2 | backtest | tod | 30 | 950 (810) | 106 (0.131) | +459.1 |
 | nas100fut | R-OP2 | backtest | tod | 50 | 950 (810) | 188 (0.232) | +247.3 |
 | nas100fut | R-OP2 | backtest | joint | 50 | 950 (810) | 138 (0.17) | +103.7 |
-| nas100fut | R-OP2 | forward | pooled | 30 | 1576 (1349) | 360 (0.267) | +465.7 |
-| nas100fut | R-OP2 | forward | pooled | 50 | 1576 (1349) | 763 (0.566) | +1548.1 |
-| nas100fut | R-OP2 | forward | tod | 30 | 1576 (1349) | 350 (0.259) | +739.6 |
-| nas100fut | R-OP2 | forward | tod | 50 | 1576 (1349) | 714 (0.529) | +1313.6 |
-| nas100fut | R-OP2 | forward | joint | 50 | 1576 (1349) | 560 (0.415) | +1278.3 |
+| nas100fut | R-OP2 | forward | pooled | 30 | 1702 (1460) | 394 (0.27) | +568.3 |
+| nas100fut | R-OP2 | forward | pooled | 50 | 1702 (1460) | 823 (0.564) | +1764.8 |
+| nas100fut | R-OP2 | forward | tod | 30 | 1702 (1460) | 418 (0.286) | +1021.0 |
+| nas100fut | R-OP2 | forward | tod | 50 | 1702 (1460) | 788 (0.54) | +1639.1 |
+| nas100fut | R-OP2 | forward | joint | 50 | 1702 (1460) | 610 (0.418) | +1426.6 |
 | uk100fut | R-ARM15 | backtest | pooled | 30 | 479 (428) | 64 (0.15) | +249.0 |
 | uk100fut | R-ARM15 | backtest | pooled | 50 | 479 (428) | 145 (0.339) | +92.1 |
 | uk100fut | R-ARM15 | backtest | tod | 30 | 479 (428) | 41 (0.096) | +206.4 |
 | uk100fut | R-ARM15 | backtest | tod | 50 | 479 (428) | 126 (0.294) | +402.6 |
 | uk100fut | R-ARM15 | backtest | joint | 50 | 479 (428) | 59 (0.138) | +249.2 |
-| uk100fut | R-ARM15 | forward | pooled | 30 | 436 (378) | 66 (0.175) | +340.5 |
-| uk100fut | R-ARM15 | forward | pooled | 50 | 436 (378) | 167 (0.442) | +703.0 |
-| uk100fut | R-ARM15 | forward | tod | 30 | 436 (378) | 129 (0.341) | +441.7 |
-| uk100fut | R-ARM15 | forward | tod | 50 | 436 (378) | 215 (0.569) | +946.3 |
-| uk100fut | R-ARM15 | forward | joint | 50 | 436 (378) | 89 (0.235) | +520.5 |
+| uk100fut | R-ARM15 | forward | pooled | 30 | 510 (446) | 84 (0.188) | +194.5 |
+| uk100fut | R-ARM15 | forward | pooled | 50 | 510 (446) | 194 (0.435) | +559.9 |
+| uk100fut | R-ARM15 | forward | tod | 30 | 510 (446) | 141 (0.316) | +424.5 |
+| uk100fut | R-ARM15 | forward | tod | 50 | 510 (446) | 237 (0.531) | +1016.2 |
+| uk100fut | R-ARM15 | forward | joint | 50 | 510 (446) | 93 (0.209) | +549.8 |
 | uk100fut | R-BE | backtest | pooled | 30 | 397 (357) | 47 (0.132) | +368.3 |
 | uk100fut | R-BE | backtest | pooled | 50 | 397 (357) | 106 (0.297) | +664.7 |
 | uk100fut | R-BE | backtest | tod | 30 | 397 (357) | 31 (0.087) | +126.2 |
 | uk100fut | R-BE | backtest | tod | 50 | 397 (357) | 100 (0.28) | +217.7 |
 | uk100fut | R-BE | backtest | joint | 50 | 397 (357) | 46 (0.129) | +395.1 |
-| uk100fut | R-BE | forward | pooled | 30 | 391 (340) | 59 (0.174) | +299.4 |
-| uk100fut | R-BE | forward | pooled | 50 | 391 (340) | 141 (0.415) | +806.0 |
-| uk100fut | R-BE | forward | tod | 30 | 391 (340) | 123 (0.362) | +495.9 |
-| uk100fut | R-BE | forward | tod | 50 | 391 (340) | 201 (0.591) | +1127.8 |
-| uk100fut | R-BE | forward | joint | 50 | 391 (340) | 81 (0.238) | +571.1 |
+| uk100fut | R-BE | forward | pooled | 30 | 447 (392) | 75 (0.191) | +308.0 |
+| uk100fut | R-BE | forward | pooled | 50 | 447 (392) | 164 (0.418) | +895.9 |
+| uk100fut | R-BE | forward | tod | 30 | 447 (392) | 131 (0.334) | +500.0 |
+| uk100fut | R-BE | forward | tod | 50 | 447 (392) | 218 (0.556) | +1191.7 |
+| uk100fut | R-BE | forward | joint | 50 | 447 (392) | 85 (0.217) | +591.0 |
 | uk100fut | R-H1-CONFIRM | backtest | pooled | 50 | 8 (8) | 4 (0.5) | +40.9 |
 | uk100fut | R-H1-CONFIRM | backtest | tod | 50 | 8 (8) | 3 (0.375) | +26.0 |
 | uk100fut | R-H1-CONFIRM | backtest | joint | 50 | 8 (8) | 1 (0.125) | -48.9 |
-| uk100fut | R-H1-CONFIRM | forward | pooled | 30 | 12 (12) | 2 (0.167) | +7.2 |
-| uk100fut | R-H1-CONFIRM | forward | pooled | 50 | 12 (12) | 7 (0.583) | +85.2 |
-| uk100fut | R-H1-CONFIRM | forward | tod | 30 | 12 (12) | 6 (0.5) | -8.2 |
-| uk100fut | R-H1-CONFIRM | forward | tod | 50 | 12 (12) | 9 (0.75) | -19.0 |
-| uk100fut | R-H1-CONFIRM | forward | joint | 50 | 12 (12) | 4 (0.333) | +38.5 |
+| uk100fut | R-H1-CONFIRM | forward | pooled | 30 | 14 (14) | 2 (0.143) | +7.2 |
+| uk100fut | R-H1-CONFIRM | forward | pooled | 50 | 14 (14) | 7 (0.5) | +85.2 |
+| uk100fut | R-H1-CONFIRM | forward | tod | 30 | 14 (14) | 6 (0.429) | -8.2 |
+| uk100fut | R-H1-CONFIRM | forward | tod | 50 | 14 (14) | 10 (0.714) | -13.7 |
+| uk100fut | R-H1-CONFIRM | forward | joint | 50 | 14 (14) | 4 (0.286) | +38.5 |
 | uk100fut | R-H1-DELAY10 | backtest | pooled | 30 | 28 (28) | 2 (0.071) | +5.5 |
 | uk100fut | R-H1-DELAY10 | backtest | pooled | 50 | 28 (28) | 7 (0.25) | -119.9 |
 | uk100fut | R-H1-DELAY10 | backtest | tod | 50 | 28 (28) | 6 (0.214) | +46.3 |
 | uk100fut | R-H1-DELAY10 | backtest | joint | 50 | 28 (28) | 2 (0.071) | -6.1 |
-| uk100fut | R-H1-DELAY10 | forward | pooled | 30 | 32 (32) | 8 (0.25) | +66.0 |
-| uk100fut | R-H1-DELAY10 | forward | pooled | 50 | 32 (32) | 17 (0.531) | +160.1 |
-| uk100fut | R-H1-DELAY10 | forward | tod | 30 | 32 (32) | 12 (0.375) | +36.3 |
-| uk100fut | R-H1-DELAY10 | forward | tod | 50 | 32 (32) | 18 (0.562) | +48.8 |
-| uk100fut | R-H1-DELAY10 | forward | joint | 50 | 32 (32) | 9 (0.281) | +111.9 |
+| uk100fut | R-H1-DELAY10 | forward | pooled | 30 | 36 (36) | 9 (0.25) | +4.0 |
+| uk100fut | R-H1-DELAY10 | forward | pooled | 50 | 36 (36) | 18 (0.5) | +98.1 |
+| uk100fut | R-H1-DELAY10 | forward | tod | 30 | 36 (36) | 12 (0.333) | +36.3 |
+| uk100fut | R-H1-DELAY10 | forward | tod | 50 | 36 (36) | 19 (0.528) | +51.9 |
+| uk100fut | R-H1-DELAY10 | forward | joint | 50 | 36 (36) | 9 (0.25) | +111.9 |
 | uk100fut | R-H1-DELAY3 | backtest | pooled | 30 | 29 (29) | 2 (0.069) | -9.4 |
 | uk100fut | R-H1-DELAY3 | backtest | pooled | 50 | 29 (29) | 7 (0.241) | -38.9 |
 | uk100fut | R-H1-DELAY3 | backtest | tod | 50 | 29 (29) | 7 (0.241) | +67.0 |
 | uk100fut | R-H1-DELAY3 | backtest | joint | 50 | 29 (29) | 3 (0.103) | -3.9 |
-| uk100fut | R-H1-DELAY3 | forward | pooled | 30 | 30 (30) | 4 (0.133) | +21.9 |
-| uk100fut | R-H1-DELAY3 | forward | pooled | 50 | 30 (30) | 15 (0.5) | +130.2 |
-| uk100fut | R-H1-DELAY3 | forward | tod | 30 | 30 (30) | 15 (0.5) | +27.7 |
-| uk100fut | R-H1-DELAY3 | forward | tod | 50 | 30 (30) | 20 (0.667) | -72.5 |
-| uk100fut | R-H1-DELAY3 | forward | joint | 50 | 30 (30) | 8 (0.267) | +85.6 |
+| uk100fut | R-H1-DELAY3 | forward | pooled | 30 | 34 (34) | 5 (0.147) | -39.4 |
+| uk100fut | R-H1-DELAY3 | forward | pooled | 50 | 34 (34) | 16 (0.471) | +69.0 |
+| uk100fut | R-H1-DELAY3 | forward | tod | 30 | 34 (34) | 15 (0.441) | +27.7 |
+| uk100fut | R-H1-DELAY3 | forward | tod | 50 | 34 (34) | 21 (0.618) | -66.7 |
+| uk100fut | R-H1-DELAY3 | forward | joint | 50 | 34 (34) | 8 (0.235) | +85.6 |
 | uk100fut | R-H1-KNIFE | backtest | pooled | 30 | 44 (44) | 3 (0.068) | +16.3 |
 | uk100fut | R-H1-KNIFE | backtest | pooled | 50 | 44 (44) | 14 (0.318) | -14.2 |
 | uk100fut | R-H1-KNIFE | backtest | tod | 50 | 44 (44) | 8 (0.182) | +34.4 |
 | uk100fut | R-H1-KNIFE | backtest | joint | 50 | 44 (44) | 3 (0.068) | +24.7 |
-| uk100fut | R-H1-KNIFE | forward | pooled | 30 | 63 (63) | 22 (0.349) | +59.8 |
-| uk100fut | R-H1-KNIFE | forward | pooled | 50 | 63 (63) | 43 (0.683) | +83.9 |
-| uk100fut | R-H1-KNIFE | forward | tod | 30 | 63 (63) | 22 (0.349) | +82.5 |
-| uk100fut | R-H1-KNIFE | forward | tod | 50 | 63 (63) | 36 (0.571) | +17.0 |
-| uk100fut | R-H1-KNIFE | forward | joint | 50 | 63 (63) | 22 (0.349) | +78.5 |
+| uk100fut | R-H1-KNIFE | forward | pooled | 30 | 68 (68) | 23 (0.338) | +65.6 |
+| uk100fut | R-H1-KNIFE | forward | pooled | 50 | 68 (68) | 44 (0.647) | +89.7 |
+| uk100fut | R-H1-KNIFE | forward | tod | 30 | 68 (68) | 22 (0.324) | +82.5 |
+| uk100fut | R-H1-KNIFE | forward | tod | 50 | 68 (68) | 37 (0.544) | +11.6 |
+| uk100fut | R-H1-KNIFE | forward | joint | 50 | 68 (68) | 22 (0.324) | +78.5 |
 | uk100fut | R-H1-OWNCURVE | backtest | pooled | 30 | 19 (19) | 1 (0.053) | +19.4 |
 | uk100fut | R-H1-OWNCURVE | backtest | pooled | 50 | 19 (19) | 3 (0.158) | +66.3 |
 | uk100fut | R-H1-OWNCURVE | backtest | tod | 50 | 19 (19) | 5 (0.263) | +9.7 |
 | uk100fut | R-H1-OWNCURVE | backtest | joint | 50 | 19 (19) | 2 (0.105) | +38.9 |
-| uk100fut | R-H1-OWNCURVE | forward | pooled | 30 | 26 (26) | 6 (0.231) | +73.2 |
-| uk100fut | R-H1-OWNCURVE | forward | pooled | 50 | 26 (26) | 14 (0.538) | +176.3 |
-| uk100fut | R-H1-OWNCURVE | forward | tod | 30 | 26 (26) | 13 (0.5) | +113.7 |
-| uk100fut | R-H1-OWNCURVE | forward | tod | 50 | 26 (26) | 17 (0.654) | +195.2 |
-| uk100fut | R-H1-OWNCURVE | forward | joint | 50 | 26 (26) | 9 (0.346) | +107.6 |
+| uk100fut | R-H1-OWNCURVE | forward | pooled | 30 | 29 (29) | 7 (0.241) | +57.7 |
+| uk100fut | R-H1-OWNCURVE | forward | pooled | 50 | 29 (29) | 15 (0.517) | +160.8 |
+| uk100fut | R-H1-OWNCURVE | forward | tod | 30 | 29 (29) | 13 (0.448) | +113.7 |
+| uk100fut | R-H1-OWNCURVE | forward | tod | 50 | 29 (29) | 18 (0.621) | +194.8 |
+| uk100fut | R-H1-OWNCURVE | forward | joint | 50 | 29 (29) | 9 (0.31) | +107.6 |
 | uk100fut | R-NEXIT-EARLY | backtest | pooled | 30 | 1399 (1171) | 158 (0.135) | +281.5 |
 | uk100fut | R-NEXIT-EARLY | backtest | pooled | 50 | 1399 (1171) | 422 (0.36) | +926.9 |
 | uk100fut | R-NEXIT-EARLY | backtest | tod | 30 | 1399 (1171) | 89 (0.076) | +354.7 |
 | uk100fut | R-NEXIT-EARLY | backtest | tod | 50 | 1399 (1171) | 256 (0.219) | +744.1 |
 | uk100fut | R-NEXIT-EARLY | backtest | joint | 50 | 1399 (1171) | 138 (0.118) | +346.6 |
-| uk100fut | R-NEXIT-EARLY | forward | pooled | 30 | 1359 (1093) | 309 (0.283) | +478.7 |
-| uk100fut | R-NEXIT-EARLY | forward | pooled | 50 | 1359 (1093) | 616 (0.564) | +840.5 |
-| uk100fut | R-NEXIT-EARLY | forward | tod | 30 | 1359 (1093) | 290 (0.265) | +300.7 |
-| uk100fut | R-NEXIT-EARLY | forward | tod | 50 | 1359 (1093) | 540 (0.494) | +780.2 |
-| uk100fut | R-NEXIT-EARLY | forward | joint | 50 | 1359 (1093) | 278 (0.254) | +384.3 |
+| uk100fut | R-NEXIT-EARLY | forward | pooled | 30 | 1502 (1218) | 345 (0.283) | +579.3 |
+| uk100fut | R-NEXIT-EARLY | forward | pooled | 50 | 1502 (1218) | 675 (0.554) | +959.7 |
+| uk100fut | R-NEXIT-EARLY | forward | tod | 30 | 1502 (1218) | 307 (0.252) | +355.1 |
+| uk100fut | R-NEXIT-EARLY | forward | tod | 50 | 1502 (1218) | 568 (0.466) | +857.0 |
+| uk100fut | R-NEXIT-EARLY | forward | joint | 50 | 1502 (1218) | 285 (0.234) | +434.4 |
 | uk100fut | R-NEXIT-FULL | backtest | pooled | 30 | 1500 (1262) | 190 (0.151) | +172.4 |
 | uk100fut | R-NEXIT-FULL | backtest | pooled | 50 | 1500 (1262) | 468 (0.371) | +839.9 |
 | uk100fut | R-NEXIT-FULL | backtest | tod | 30 | 1500 (1262) | 104 (0.082) | +362.6 |
 | uk100fut | R-NEXIT-FULL | backtest | tod | 50 | 1500 (1262) | 292 (0.231) | +697.9 |
 | uk100fut | R-NEXIT-FULL | backtest | joint | 50 | 1500 (1262) | 168 (0.133) | +289.7 |
-| uk100fut | R-NEXIT-FULL | forward | pooled | 30 | 1432 (1161) | 322 (0.277) | +495.2 |
-| uk100fut | R-NEXIT-FULL | forward | pooled | 50 | 1432 (1161) | 645 (0.556) | +900.0 |
-| uk100fut | R-NEXIT-FULL | forward | tod | 30 | 1432 (1161) | 313 (0.27) | +500.5 |
-| uk100fut | R-NEXIT-FULL | forward | tod | 50 | 1432 (1161) | 592 (0.51) | +969.2 |
-| uk100fut | R-NEXIT-FULL | forward | joint | 50 | 1432 (1161) | 300 (0.258) | +496.1 |
+| uk100fut | R-NEXIT-FULL | forward | pooled | 30 | 1599 (1308) | 359 (0.274) | +603.6 |
+| uk100fut | R-NEXIT-FULL | forward | pooled | 50 | 1599 (1308) | 707 (0.541) | +1085.9 |
+| uk100fut | R-NEXIT-FULL | forward | tod | 30 | 1599 (1308) | 335 (0.256) | +493.8 |
+| uk100fut | R-NEXIT-FULL | forward | tod | 50 | 1599 (1308) | 627 (0.479) | +1000.8 |
+| uk100fut | R-NEXIT-FULL | forward | joint | 50 | 1599 (1308) | 307 (0.235) | +538.9 |
 | uk100fut | R-NEXIT-SENT | backtest | pooled | 30 | 878 (735) | 93 (0.127) | +534.0 |
 | uk100fut | R-NEXIT-SENT | backtest | pooled | 50 | 878 (735) | 242 (0.329) | +1156.9 |
 | uk100fut | R-NEXIT-SENT | backtest | tod | 30 | 878 (735) | 44 (0.06) | +289.1 |
 | uk100fut | R-NEXIT-SENT | backtest | tod | 50 | 878 (735) | 152 (0.207) | +647.2 |
 | uk100fut | R-NEXIT-SENT | backtest | joint | 50 | 878 (735) | 74 (0.101) | +404.9 |
-| uk100fut | R-NEXIT-SENT | forward | pooled | 30 | 816 (668) | 168 (0.251) | +611.7 |
-| uk100fut | R-NEXIT-SENT | forward | pooled | 50 | 816 (668) | 357 (0.534) | +776.2 |
-| uk100fut | R-NEXIT-SENT | forward | tod | 30 | 816 (668) | 183 (0.274) | -138.5 |
-| uk100fut | R-NEXIT-SENT | forward | tod | 50 | 816 (668) | 348 (0.521) | +524.4 |
-| uk100fut | R-NEXIT-SENT | forward | joint | 50 | 816 (668) | 172 (0.257) | +466.8 |
+| uk100fut | R-NEXIT-SENT | forward | pooled | 30 | 899 (743) | 189 (0.254) | +519.0 |
+| uk100fut | R-NEXIT-SENT | forward | pooled | 50 | 899 (743) | 390 (0.525) | +701.5 |
+| uk100fut | R-NEXIT-SENT | forward | tod | 30 | 899 (743) | 195 (0.262) | -155.7 |
+| uk100fut | R-NEXIT-SENT | forward | tod | 50 | 899 (743) | 370 (0.498) | +618.0 |
+| uk100fut | R-NEXIT-SENT | forward | joint | 50 | 899 (743) | 176 (0.237) | +499.5 |
 | uk100fut | R-NOTRAIL | backtest | pooled | 30 | 302 (274) | 30 (0.109) | +408.4 |
 | uk100fut | R-NOTRAIL | backtest | pooled | 50 | 302 (274) | 75 (0.274) | +555.3 |
 | uk100fut | R-NOTRAIL | backtest | tod | 30 | 302 (274) | 16 (0.058) | +92.3 |
 | uk100fut | R-NOTRAIL | backtest | tod | 50 | 302 (274) | 69 (0.252) | -106.4 |
 | uk100fut | R-NOTRAIL | backtest | joint | 50 | 302 (274) | 29 (0.106) | +266.7 |
-| uk100fut | R-NOTRAIL | forward | pooled | 30 | 279 (252) | 46 (0.183) | +573.1 |
-| uk100fut | R-NOTRAIL | forward | pooled | 50 | 279 (252) | 104 (0.413) | +1137.7 |
-| uk100fut | R-NOTRAIL | forward | tod | 30 | 279 (252) | 95 (0.377) | +723.7 |
-| uk100fut | R-NOTRAIL | forward | tod | 50 | 279 (252) | 149 (0.591) | +1396.4 |
-| uk100fut | R-NOTRAIL | forward | joint | 50 | 279 (252) | 62 (0.246) | +878.3 |
+| uk100fut | R-NOTRAIL | forward | pooled | 30 | 323 (295) | 60 (0.203) | +561.4 |
+| uk100fut | R-NOTRAIL | forward | pooled | 50 | 323 (295) | 123 (0.417) | +1197.5 |
+| uk100fut | R-NOTRAIL | forward | tod | 30 | 323 (295) | 99 (0.336) | +777.3 |
+| uk100fut | R-NOTRAIL | forward | tod | 50 | 323 (295) | 162 (0.549) | +1509.7 |
+| uk100fut | R-NOTRAIL | forward | joint | 50 | 323 (295) | 66 (0.224) | +898.2 |
 | uk100fut | R-OP2 | backtest | pooled | 30 | 1396 (1205) | 219 (0.182) | +254.1 |
 | uk100fut | R-OP2 | backtest | pooled | 50 | 1396 (1205) | 474 (0.393) | +458.9 |
 | uk100fut | R-OP2 | backtest | tod | 30 | 1396 (1205) | 137 (0.114) | +218.6 |
 | uk100fut | R-OP2 | backtest | tod | 50 | 1396 (1205) | 351 (0.291) | +396.0 |
 | uk100fut | R-OP2 | backtest | joint | 50 | 1396 (1205) | 204 (0.169) | +233.0 |
-| uk100fut | R-OP2 | forward | pooled | 30 | 1271 (1049) | 292 (0.278) | +422.5 |
-| uk100fut | R-OP2 | forward | pooled | 50 | 1271 (1049) | 561 (0.535) | +724.5 |
-| uk100fut | R-OP2 | forward | tod | 30 | 1271 (1049) | 314 (0.299) | +487.8 |
-| uk100fut | R-OP2 | forward | tod | 50 | 1271 (1049) | 552 (0.526) | +927.9 |
-| uk100fut | R-OP2 | forward | joint | 50 | 1271 (1049) | 263 (0.251) | +383.9 |
+| uk100fut | R-OP2 | forward | pooled | 30 | 1456 (1218) | 334 (0.274) | +440.8 |
+| uk100fut | R-OP2 | forward | pooled | 50 | 1456 (1218) | 630 (0.517) | +785.4 |
+| uk100fut | R-OP2 | forward | tod | 30 | 1456 (1218) | 345 (0.283) | +469.5 |
+| uk100fut | R-OP2 | forward | tod | 50 | 1456 (1218) | 605 (0.497) | +961.6 |
+| uk100fut | R-OP2 | forward | joint | 50 | 1456 (1218) | 271 (0.222) | +405.3 |
 | us30fut | R-ARM15 | backtest | pooled | 30 | 291 (258) | 31 (0.12) | -345.0 |
 | us30fut | R-ARM15 | backtest | pooled | 50 | 291 (258) | 84 (0.326) | -743.4 |
 | us30fut | R-ARM15 | backtest | tod | 30 | 291 (258) | 57 (0.221) | +19.3 |
 | us30fut | R-ARM15 | backtest | tod | 50 | 291 (258) | 96 (0.372) | -2075.7 |
 | us30fut | R-ARM15 | backtest | joint | 50 | 291 (258) | 49 (0.19) | -794.3 |
-| us30fut | R-ARM15 | forward | pooled | 30 | 583 (515) | 116 (0.225) | +2206.4 |
-| us30fut | R-ARM15 | forward | pooled | 50 | 583 (515) | 249 (0.483) | +4056.4 |
-| us30fut | R-ARM15 | forward | tod | 30 | 583 (515) | 147 (0.285) | +2763.9 |
-| us30fut | R-ARM15 | forward | tod | 50 | 583 (515) | 251 (0.487) | +3722.8 |
-| us30fut | R-ARM15 | forward | joint | 50 | 583 (515) | 135 (0.262) | +2596.2 |
+| us30fut | R-ARM15 | forward | pooled | 30 | 680 (602) | 145 (0.241) | +2947.3 |
+| us30fut | R-ARM15 | forward | pooled | 50 | 680 (602) | 299 (0.497) | +3877.7 |
+| us30fut | R-ARM15 | forward | tod | 30 | 680 (602) | 167 (0.277) | +2535.5 |
+| us30fut | R-ARM15 | forward | tod | 50 | 680 (602) | 285 (0.473) | +2985.9 |
+| us30fut | R-ARM15 | forward | joint | 50 | 680 (602) | 158 (0.262) | +2204.3 |
 | us30fut | R-BE | backtest | pooled | 30 | 223 (201) | 22 (0.109) | +881.4 |
 | us30fut | R-BE | backtest | pooled | 50 | 223 (201) | 63 (0.313) | +1304.9 |
 | us30fut | R-BE | backtest | tod | 30 | 223 (201) | 30 (0.149) | +1100.4 |
 | us30fut | R-BE | backtest | tod | 50 | 223 (201) | 66 (0.328) | -1168.1 |
 | us30fut | R-BE | backtest | joint | 50 | 223 (201) | 32 (0.159) | -28.6 |
-| us30fut | R-BE | forward | pooled | 30 | 472 (421) | 93 (0.221) | +2110.3 |
-| us30fut | R-BE | forward | pooled | 50 | 472 (421) | 193 (0.458) | +2613.3 |
-| us30fut | R-BE | forward | tod | 30 | 472 (421) | 118 (0.28) | +1521.6 |
-| us30fut | R-BE | forward | tod | 50 | 472 (421) | 203 (0.482) | +1601.2 |
-| us30fut | R-BE | forward | joint | 50 | 472 (421) | 110 (0.261) | +1305.6 |
+| us30fut | R-BE | forward | pooled | 30 | 552 (494) | 116 (0.235) | +2968.2 |
+| us30fut | R-BE | forward | pooled | 50 | 552 (494) | 235 (0.476) | +3652.3 |
+| us30fut | R-BE | forward | tod | 30 | 552 (494) | 133 (0.269) | +1598.7 |
+| us30fut | R-BE | forward | tod | 50 | 552 (494) | 229 (0.464) | +967.3 |
+| us30fut | R-BE | forward | joint | 50 | 552 (494) | 128 (0.259) | +1238.2 |
 | us30fut | R-H1-CONFIRM | backtest | pooled | 50 | 2 (2) | 1 (0.5) | -12.7 |
 | us30fut | R-H1-CONFIRM | backtest | tod | 30 | 2 (2) | 1 (0.5) | -12.7 |
 | us30fut | R-H1-CONFIRM | backtest | tod | 50 | 2 (2) | 1 (0.5) | -12.7 |
 | us30fut | R-H1-CONFIRM | backtest | joint | 50 | 2 (2) | 1 (0.5) | -12.7 |
-| us30fut | R-H1-CONFIRM | forward | pooled | 30 | 12 (12) | 4 (0.333) | +53.9 |
-| us30fut | R-H1-CONFIRM | forward | pooled | 50 | 12 (12) | 8 (0.667) | +301.7 |
-| us30fut | R-H1-CONFIRM | forward | tod | 30 | 12 (12) | 1 (0.083) | -3.7 |
-| us30fut | R-H1-CONFIRM | forward | tod | 50 | 12 (12) | 4 (0.333) | +169.3 |
-| us30fut | R-H1-CONFIRM | forward | joint | 50 | 12 (12) | 3 (0.25) | +173.6 |
+| us30fut | R-H1-CONFIRM | forward | pooled | 30 | 14 (14) | 4 (0.286) | +53.9 |
+| us30fut | R-H1-CONFIRM | forward | pooled | 50 | 14 (14) | 9 (0.643) | +103.5 |
+| us30fut | R-H1-CONFIRM | forward | tod | 30 | 14 (14) | 1 (0.071) | -3.7 |
+| us30fut | R-H1-CONFIRM | forward | tod | 50 | 14 (14) | 5 (0.357) | -29.0 |
+| us30fut | R-H1-CONFIRM | forward | joint | 50 | 14 (14) | 4 (0.286) | -24.6 |
 | us30fut | R-H1-DELAY10 | backtest | pooled | 30 | 15 (15) | 1 (0.067) | +93.9 |
 | us30fut | R-H1-DELAY10 | backtest | pooled | 50 | 15 (15) | 6 (0.4) | +32.9 |
 | us30fut | R-H1-DELAY10 | backtest | tod | 30 | 15 (15) | 1 (0.067) | +104.6 |
 | us30fut | R-H1-DELAY10 | backtest | tod | 50 | 15 (15) | 6 (0.4) | -404.0 |
 | us30fut | R-H1-DELAY10 | backtest | joint | 50 | 15 (15) | 3 (0.2) | -200.3 |
-| us30fut | R-H1-DELAY10 | forward | pooled | 30 | 46 (46) | 12 (0.261) | +344.7 |
-| us30fut | R-H1-DELAY10 | forward | pooled | 50 | 46 (46) | 26 (0.565) | +453.5 |
-| us30fut | R-H1-DELAY10 | forward | tod | 30 | 46 (46) | 6 (0.13) | +220.4 |
-| us30fut | R-H1-DELAY10 | forward | tod | 50 | 46 (46) | 21 (0.457) | +341.3 |
-| us30fut | R-H1-DELAY10 | forward | joint | 50 | 46 (46) | 13 (0.283) | +320.1 |
+| us30fut | R-H1-DELAY10 | forward | pooled | 30 | 58 (58) | 15 (0.259) | +458.3 |
+| us30fut | R-H1-DELAY10 | forward | pooled | 50 | 58 (58) | 34 (0.586) | +461.4 |
+| us30fut | R-H1-DELAY10 | forward | tod | 30 | 58 (58) | 8 (0.138) | +247.3 |
+| us30fut | R-H1-DELAY10 | forward | tod | 50 | 58 (58) | 25 (0.431) | +171.1 |
+| us30fut | R-H1-DELAY10 | forward | joint | 50 | 58 (58) | 16 (0.276) | +148.7 |
 | us30fut | R-H1-DELAY3 | backtest | pooled | 30 | 15 (15) | 1 (0.067) | +47.8 |
 | us30fut | R-H1-DELAY3 | backtest | pooled | 50 | 15 (15) | 5 (0.333) | +367.4 |
 | us30fut | R-H1-DELAY3 | backtest | tod | 30 | 15 (15) | 2 (0.133) | +3.2 |
 | us30fut | R-H1-DELAY3 | backtest | tod | 50 | 15 (15) | 5 (0.333) | -427.1 |
 | us30fut | R-H1-DELAY3 | backtest | joint | 50 | 15 (15) | 2 (0.133) | +115.6 |
-| us30fut | R-H1-DELAY3 | forward | pooled | 30 | 46 (46) | 11 (0.239) | +185.7 |
-| us30fut | R-H1-DELAY3 | forward | pooled | 50 | 46 (46) | 25 (0.543) | +595.0 |
-| us30fut | R-H1-DELAY3 | forward | tod | 30 | 46 (46) | 9 (0.196) | +557.2 |
-| us30fut | R-H1-DELAY3 | forward | tod | 50 | 46 (46) | 20 (0.435) | +523.0 |
-| us30fut | R-H1-DELAY3 | forward | joint | 50 | 46 (46) | 12 (0.261) | +471.2 |
+| us30fut | R-H1-DELAY3 | forward | pooled | 30 | 56 (56) | 15 (0.268) | +370.3 |
+| us30fut | R-H1-DELAY3 | forward | pooled | 50 | 56 (56) | 32 (0.571) | +712.6 |
+| us30fut | R-H1-DELAY3 | forward | tod | 30 | 56 (56) | 11 (0.196) | +573.6 |
+| us30fut | R-H1-DELAY3 | forward | tod | 50 | 56 (56) | 24 (0.429) | +352.8 |
+| us30fut | R-H1-DELAY3 | forward | joint | 50 | 56 (56) | 15 (0.268) | +302.4 |
 | us30fut | R-H1-KNIFE | backtest | pooled | 30 | 28 (28) | 1 (0.036) | +6.6 |
 | us30fut | R-H1-KNIFE | backtest | pooled | 50 | 28 (28) | 12 (0.429) | +133.3 |
 | us30fut | R-H1-KNIFE | backtest | tod | 30 | 28 (28) | 2 (0.071) | -28.3 |
 | us30fut | R-H1-KNIFE | backtest | tod | 50 | 28 (28) | 5 (0.179) | -387.4 |
 | us30fut | R-H1-KNIFE | backtest | joint | 50 | 28 (28) | 2 (0.071) | -40.3 |
-| us30fut | R-H1-KNIFE | forward | pooled | 30 | 73 (73) | 23 (0.315) | +170.2 |
-| us30fut | R-H1-KNIFE | forward | pooled | 50 | 73 (73) | 41 (0.562) | +434.1 |
-| us30fut | R-H1-KNIFE | forward | tod | 30 | 73 (73) | 16 (0.219) | +192.1 |
-| us30fut | R-H1-KNIFE | forward | tod | 50 | 73 (73) | 33 (0.452) | -31.6 |
-| us30fut | R-H1-KNIFE | forward | joint | 50 | 73 (73) | 24 (0.329) | +390.8 |
+| us30fut | R-H1-KNIFE | forward | pooled | 30 | 89 (89) | 28 (0.315) | +308.9 |
+| us30fut | R-H1-KNIFE | forward | pooled | 50 | 89 (89) | 51 (0.573) | +566.4 |
+| us30fut | R-H1-KNIFE | forward | tod | 30 | 89 (89) | 18 (0.202) | +214.5 |
+| us30fut | R-H1-KNIFE | forward | tod | 50 | 89 (89) | 39 (0.438) | +145.6 |
+| us30fut | R-H1-KNIFE | forward | joint | 50 | 89 (89) | 28 (0.315) | +465.6 |
 | us30fut | R-H1-OWNCURVE | backtest | pooled | 30 | 10 (10) | 1 (0.1) | +84.4 |
 | us30fut | R-H1-OWNCURVE | backtest | pooled | 50 | 10 (10) | 4 (0.4) | +358.6 |
 | us30fut | R-H1-OWNCURVE | backtest | tod | 50 | 10 (10) | 3 (0.3) | -268.1 |
 | us30fut | R-H1-OWNCURVE | backtest | joint | 50 | 10 (10) | 1 (0.1) | +91.7 |
-| us30fut | R-H1-OWNCURVE | forward | pooled | 30 | 27 (27) | 6 (0.222) | +313.5 |
-| us30fut | R-H1-OWNCURVE | forward | pooled | 50 | 27 (27) | 14 (0.519) | +925.6 |
-| us30fut | R-H1-OWNCURVE | forward | tod | 30 | 27 (27) | 7 (0.259) | +121.4 |
-| us30fut | R-H1-OWNCURVE | forward | tod | 50 | 27 (27) | 12 (0.444) | +391.1 |
-| us30fut | R-H1-OWNCURVE | forward | joint | 50 | 27 (27) | 8 (0.296) | +538.6 |
+| us30fut | R-H1-OWNCURVE | forward | pooled | 30 | 35 (35) | 10 (0.286) | +545.6 |
+| us30fut | R-H1-OWNCURVE | forward | pooled | 50 | 35 (35) | 20 (0.571) | +1313.8 |
+| us30fut | R-H1-OWNCURVE | forward | tod | 30 | 35 (35) | 8 (0.229) | +174.6 |
+| us30fut | R-H1-OWNCURVE | forward | tod | 50 | 35 (35) | 14 (0.4) | +419.0 |
+| us30fut | R-H1-OWNCURVE | forward | joint | 50 | 35 (35) | 9 (0.257) | +591.7 |
 | us30fut | R-NEXIT-EARLY | backtest | pooled | 30 | 1139 (922) | 168 (0.182) | +272.8 |
 | us30fut | R-NEXIT-EARLY | backtest | pooled | 50 | 1139 (922) | 407 (0.441) | +600.2 |
 | us30fut | R-NEXIT-EARLY | backtest | tod | 30 | 1139 (922) | 124 (0.134) | +409.6 |
 | us30fut | R-NEXIT-EARLY | backtest | tod | 50 | 1139 (922) | 245 (0.266) | +827.5 |
 | us30fut | R-NEXIT-EARLY | backtest | joint | 50 | 1139 (922) | 166 (0.18) | -354.3 |
-| us30fut | R-NEXIT-EARLY | forward | pooled | 30 | 1976 (1612) | 475 (0.295) | +1517.0 |
-| us30fut | R-NEXIT-EARLY | forward | pooled | 50 | 1976 (1612) | 822 (0.51) | +2013.0 |
-| us30fut | R-NEXIT-EARLY | forward | tod | 30 | 1976 (1612) | 357 (0.221) | +2192.4 |
-| us30fut | R-NEXIT-EARLY | forward | tod | 50 | 1976 (1612) | 668 (0.414) | +3324.6 |
-| us30fut | R-NEXIT-EARLY | forward | joint | 50 | 1976 (1612) | 466 (0.289) | +1011.6 |
+| us30fut | R-NEXIT-EARLY | forward | pooled | 30 | 2244 (1835) | 551 (0.3) | +2055.9 |
+| us30fut | R-NEXIT-EARLY | forward | pooled | 50 | 2244 (1835) | 949 (0.517) | +2287.5 |
+| us30fut | R-NEXIT-EARLY | forward | tod | 30 | 2244 (1835) | 385 (0.21) | +1925.1 |
+| us30fut | R-NEXIT-EARLY | forward | tod | 50 | 2244 (1835) | 735 (0.401) | +3315.1 |
+| us30fut | R-NEXIT-EARLY | forward | joint | 50 | 2244 (1835) | 510 (0.278) | +939.5 |
 | us30fut | R-NEXIT-FULL | backtest | pooled | 30 | 1198 (980) | 188 (0.192) | +981.7 |
 | us30fut | R-NEXIT-FULL | backtest | pooled | 50 | 1198 (980) | 441 (0.45) | +1053.8 |
 | us30fut | R-NEXIT-FULL | backtest | tod | 30 | 1198 (980) | 145 (0.148) | +1105.5 |
 | us30fut | R-NEXIT-FULL | backtest | tod | 50 | 1198 (980) | 272 (0.278) | +1357.2 |
 | us30fut | R-NEXIT-FULL | backtest | joint | 50 | 1198 (980) | 191 (0.195) | +119.3 |
-| us30fut | R-NEXIT-FULL | forward | pooled | 30 | 2090 (1717) | 503 (0.293) | +1681.8 |
-| us30fut | R-NEXIT-FULL | forward | pooled | 50 | 2090 (1717) | 871 (0.507) | +1839.2 |
-| us30fut | R-NEXIT-FULL | forward | tod | 30 | 2090 (1717) | 393 (0.229) | +1502.4 |
-| us30fut | R-NEXIT-FULL | forward | tod | 50 | 2090 (1717) | 722 (0.421) | +3084.1 |
-| us30fut | R-NEXIT-FULL | forward | joint | 50 | 2090 (1717) | 496 (0.289) | +1012.8 |
+| us30fut | R-NEXIT-FULL | forward | pooled | 30 | 2361 (1943) | 579 (0.298) | +2196.8 |
+| us30fut | R-NEXIT-FULL | forward | pooled | 50 | 2361 (1943) | 998 (0.514) | +2195.0 |
+| us30fut | R-NEXIT-FULL | forward | tod | 30 | 2361 (1943) | 422 (0.217) | +1689.1 |
+| us30fut | R-NEXIT-FULL | forward | tod | 50 | 2361 (1943) | 792 (0.408) | +3453.4 |
+| us30fut | R-NEXIT-FULL | forward | joint | 50 | 2361 (1943) | 540 (0.278) | +1040.8 |
 | us30fut | R-NEXIT-SENT | backtest | pooled | 30 | 681 (547) | 70 (0.128) | -1066.6 |
 | us30fut | R-NEXIT-SENT | backtest | pooled | 50 | 681 (547) | 196 (0.358) | -975.0 |
 | us30fut | R-NEXIT-SENT | backtest | tod | 30 | 681 (547) | 72 (0.132) | -1276.1 |
 | us30fut | R-NEXIT-SENT | backtest | tod | 50 | 681 (547) | 140 (0.256) | -1333.5 |
 | us30fut | R-NEXIT-SENT | backtest | joint | 50 | 681 (547) | 81 (0.148) | -1542.1 |
-| us30fut | R-NEXIT-SENT | forward | pooled | 30 | 1252 (1029) | 266 (0.259) | +1475.3 |
-| us30fut | R-NEXIT-SENT | forward | pooled | 50 | 1252 (1029) | 491 (0.477) | +3232.4 |
-| us30fut | R-NEXIT-SENT | forward | tod | 30 | 1252 (1029) | 211 (0.205) | +1966.1 |
-| us30fut | R-NEXIT-SENT | forward | tod | 50 | 1252 (1029) | 400 (0.389) | +3707.2 |
-| us30fut | R-NEXIT-SENT | forward | joint | 50 | 1252 (1029) | 256 (0.249) | +2331.9 |
+| us30fut | R-NEXIT-SENT | forward | pooled | 30 | 1423 (1171) | 316 (0.27) | +1920.8 |
+| us30fut | R-NEXIT-SENT | forward | pooled | 50 | 1423 (1171) | 574 (0.49) | +2643.9 |
+| us30fut | R-NEXIT-SENT | forward | tod | 30 | 1423 (1171) | 231 (0.197) | +1719.8 |
+| us30fut | R-NEXIT-SENT | forward | tod | 50 | 1423 (1171) | 442 (0.377) | +3240.9 |
+| us30fut | R-NEXIT-SENT | forward | joint | 50 | 1423 (1171) | 282 (0.241) | +1900.2 |
 | us30fut | R-NOTRAIL | backtest | pooled | 30 | 185 (164) | 16 (0.098) | +1352.0 |
 | us30fut | R-NOTRAIL | backtest | pooled | 50 | 185 (164) | 48 (0.293) | +921.3 |
 | us30fut | R-NOTRAIL | backtest | tod | 30 | 185 (164) | 28 (0.171) | -236.1 |
 | us30fut | R-NOTRAIL | backtest | tod | 50 | 185 (164) | 59 (0.36) | -2242.2 |
 | us30fut | R-NOTRAIL | backtest | joint | 50 | 185 (164) | 30 (0.183) | +329.3 |
-| us30fut | R-NOTRAIL | forward | pooled | 30 | 341 (302) | 68 (0.225) | +2457.7 |
-| us30fut | R-NOTRAIL | forward | pooled | 50 | 341 (302) | 133 (0.44) | +2623.6 |
-| us30fut | R-NOTRAIL | forward | tod | 30 | 341 (302) | 93 (0.308) | +1777.9 |
-| us30fut | R-NOTRAIL | forward | tod | 50 | 341 (302) | 152 (0.503) | +2208.2 |
-| us30fut | R-NOTRAIL | forward | joint | 50 | 341 (302) | 89 (0.295) | +1281.5 |
+| us30fut | R-NOTRAIL | forward | pooled | 30 | 408 (362) | 90 (0.249) | +3522.2 |
+| us30fut | R-NOTRAIL | forward | pooled | 50 | 408 (362) | 163 (0.45) | +3982.3 |
+| us30fut | R-NOTRAIL | forward | tod | 30 | 408 (362) | 103 (0.285) | +2200.4 |
+| us30fut | R-NOTRAIL | forward | tod | 50 | 408 (362) | 173 (0.478) | +2565.4 |
+| us30fut | R-NOTRAIL | forward | joint | 50 | 408 (362) | 99 (0.273) | +1578.3 |
 | us30fut | R-OP2 | backtest | pooled | 30 | 1028 (862) | 186 (0.216) | +742.6 |
 | us30fut | R-OP2 | backtest | pooled | 50 | 1028 (862) | 408 (0.473) | +1252.1 |
 | us30fut | R-OP2 | backtest | tod | 30 | 1028 (862) | 181 (0.21) | +750.1 |
 | us30fut | R-OP2 | backtest | tod | 50 | 1028 (862) | 307 (0.356) | +1146.1 |
 | us30fut | R-OP2 | backtest | joint | 50 | 1028 (862) | 215 (0.249) | +591.7 |
-| us30fut | R-OP2 | forward | pooled | 30 | 1785 (1526) | 430 (0.282) | +1035.3 |
-| us30fut | R-OP2 | forward | pooled | 50 | 1785 (1526) | 787 (0.516) | +1607.4 |
-| us30fut | R-OP2 | forward | tod | 30 | 1785 (1526) | 405 (0.265) | +634.1 |
-| us30fut | R-OP2 | forward | tod | 50 | 1785 (1526) | 712 (0.467) | +954.6 |
-| us30fut | R-OP2 | forward | joint | 50 | 1785 (1526) | 463 (0.303) | +849.2 |
+| us30fut | R-OP2 | forward | pooled | 30 | 2008 (1717) | 491 (0.286) | +945.2 |
+| us30fut | R-OP2 | forward | pooled | 50 | 2008 (1717) | 887 (0.517) | +1451.6 |
+| us30fut | R-OP2 | forward | tod | 30 | 2008 (1717) | 437 (0.255) | +670.8 |
+| us30fut | R-OP2 | forward | tod | 50 | 2008 (1717) | 786 (0.458) | +1084.1 |
+| us30fut | R-OP2 | forward | joint | 50 | 2008 (1717) | 505 (0.294) | +894.8 |
 
-Evidence cells beating their band max: 2.
+Evidence cells beating their band max: 0.

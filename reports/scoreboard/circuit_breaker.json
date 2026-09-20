@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL circuit-breaker counterfactual \u2014 exposure control measured, never adopted; surviving rules propose as v1 arm components via the front door; never validation",
-  "engine_commit": "78fd6e12c14dae101236a75f884770215f900f73",
+  "engine_commit": "8effbb323f93fa697e2d1361d585401e107cb9d0",
   "rules": [
     "halt@1stops",
     "halt@2stops",
@@ -75,55 +75,66 @@
     },
     "ger40fut|R-SCALP-H6|forward": {
       "halt@1stops": {
-        "days": 11,
-        "halt_days": 5,
+        "days": 23,
+        "halt_days": 10,
         "halt_dates": [
           "2026-08-17",
           "2026-08-18",
           "2026-08-20",
           "2026-08-25",
-          "2026-08-28"
+          "2026-08-28",
+          "2026-09-01",
+          "2026-09-04",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-15"
         ],
-        "stops_dodged": 5,
-        "stops_dodged_pts": 250.1,
-        "targets_forfeited": 18,
-        "targets_forfeited_pts": 198.4,
-        "eod_forfeited": 1,
-        "eod_forfeited_pts": -41.7,
-        "rows_foregone": 24,
-        "net_delta": 93.4
+        "stops_dodged": 10,
+        "stops_dodged_pts": 680.6,
+        "targets_forfeited": 38,
+        "targets_forfeited_pts": 473.4,
+        "eod_forfeited": 2,
+        "eod_forfeited_pts": -99.0,
+        "rows_foregone": 50,
+        "net_delta": 306.2
       },
       "halt@2stops": {
-        "days": 11,
-        "halt_days": 2,
+        "days": 23,
+        "halt_days": 6,
         "halt_dates": [
           "2026-08-18",
-          "2026-08-28"
+          "2026-08-28",
+          "2026-09-04",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-15"
         ],
-        "stops_dodged": 3,
-        "stops_dodged_pts": 173.8,
-        "targets_forfeited": 7,
-        "targets_forfeited_pts": 74.8,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 10,
-        "net_delta": 99.0
+        "stops_dodged": 4,
+        "stops_dodged_pts": 286.5,
+        "targets_forfeited": 17,
+        "targets_forfeited_pts": 250.7,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -57.3,
+        "rows_foregone": 22,
+        "net_delta": 93.1
       },
       "halt@3losers": {
-        "days": 11,
-        "halt_days": 0,
-        "halt_dates": [],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
+        "days": 23,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-09-09"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 112.6,
         "targets_forfeited": 0,
         "targets_forfeited_pts": 0.0,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 0,
-        "net_delta": 0.0
+        "rows_foregone": 1,
+        "net_delta": 112.6
       },
       "halt@5losers": {
-        "days": 11,
+        "days": 23,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -194,44 +205,52 @@
     },
     "ger40fut|R-SCALP-H6-REF|forward": {
       "halt@1stops": {
-        "days": 11,
-        "halt_days": 6,
+        "days": 23,
+        "halt_days": 10,
         "halt_dates": [
           "2026-08-17",
           "2026-08-18",
           "2026-08-19",
           "2026-08-20",
           "2026-08-26",
-          "2026-08-28"
+          "2026-08-28",
+          "2026-09-01",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-15"
         ],
-        "stops_dodged": 4,
-        "stops_dodged_pts": 215.2,
-        "targets_forfeited": 21,
-        "targets_forfeited_pts": 219.4,
-        "eod_forfeited": 1,
-        "eod_forfeited_pts": -44.2,
-        "rows_foregone": 26,
-        "net_delta": 40.0
+        "stops_dodged": 9,
+        "stops_dodged_pts": 612.6,
+        "targets_forfeited": 33,
+        "targets_forfeited_pts": 412.9,
+        "eod_forfeited": 2,
+        "eod_forfeited_pts": -41.0,
+        "rows_foregone": 44,
+        "net_delta": 240.7
       },
       "halt@2stops": {
-        "days": 11,
-        "halt_days": 3,
+        "days": 23,
+        "halt_days": 7,
         "halt_dates": [
           "2026-08-18",
           "2026-08-19",
-          "2026-08-28"
+          "2026-08-28",
+          "2026-09-01",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-15"
         ],
-        "stops_dodged": 1,
-        "stops_dodged_pts": 71.6,
-        "targets_forfeited": 8,
-        "targets_forfeited_pts": 96.5,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 9,
-        "net_delta": -24.9
+        "stops_dodged": 2,
+        "stops_dodged_pts": 157.9,
+        "targets_forfeited": 18,
+        "targets_forfeited_pts": 267.4,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": 3.2,
+        "rows_foregone": 21,
+        "net_delta": -112.7
       },
       "halt@3losers": {
-        "days": 11,
+        "days": 23,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -244,7 +263,7 @@
         "net_delta": 0.0
       },
       "halt@5losers": {
-        "days": 11,
+        "days": 23,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -315,25 +334,29 @@
     },
     "nas100fut|R-SCALP-H6|forward": {
       "halt@1stops": {
-        "days": 13,
-        "halt_days": 4,
+        "days": 27,
+        "halt_days": 8,
         "halt_dates": [
           "2026-08-18",
           "2026-08-19",
           "2026-08-24",
-          "2026-08-27"
+          "2026-08-27",
+          "2026-09-01",
+          "2026-09-04",
+          "2026-09-09",
+          "2026-09-14"
         ],
         "stops_dodged": 2,
         "stops_dodged_pts": 215.4,
-        "targets_forfeited": 14,
-        "targets_forfeited_pts": 287.0,
+        "targets_forfeited": 26,
+        "targets_forfeited_pts": 508.0,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 16,
-        "net_delta": -71.6
+        "rows_foregone": 28,
+        "net_delta": -292.5
       },
       "halt@2stops": {
-        "days": 13,
+        "days": 27,
         "halt_days": 2,
         "halt_dates": [
           "2026-08-18",
@@ -349,7 +372,7 @@
         "net_delta": -70.2
       },
       "halt@3losers": {
-        "days": 13,
+        "days": 27,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -362,7 +385,7 @@
         "net_delta": 0.0
       },
       "halt@5losers": {
-        "days": 13,
+        "days": 27,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -438,38 +461,44 @@
     },
     "nas100fut|R-SCALP-H6-REF|forward": {
       "halt@1stops": {
-        "days": 13,
-        "halt_days": 4,
+        "days": 27,
+        "halt_days": 8,
         "halt_dates": [
           "2026-08-18",
           "2026-08-19",
           "2026-08-24",
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-09",
+          "2026-09-11",
+          "2026-09-14"
+        ],
+        "stops_dodged": 2,
+        "stops_dodged_pts": 178.5,
+        "targets_forfeited": 21,
+        "targets_forfeited_pts": 437.2,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 23,
+        "net_delta": -258.7
+      },
+      "halt@2stops": {
+        "days": 27,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-09-01"
         ],
         "stops_dodged": 0,
         "stops_dodged_pts": 0.0,
-        "targets_forfeited": 13,
-        "targets_forfeited_pts": 287.0,
+        "targets_forfeited": 1,
+        "targets_forfeited_pts": 23.3,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 13,
-        "net_delta": -287.0
-      },
-      "halt@2stops": {
-        "days": 13,
-        "halt_days": 0,
-        "halt_dates": [],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
-        "targets_forfeited": 0,
-        "targets_forfeited_pts": 0.0,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 0,
-        "net_delta": 0.0
+        "rows_foregone": 1,
+        "net_delta": -23.3
       },
       "halt@3losers": {
-        "days": 13,
+        "days": 27,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -482,7 +511,7 @@
         "net_delta": 0.0
       },
       "halt@5losers": {
-        "days": 13,
+        "days": 27,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -557,25 +586,28 @@
     },
     "uk100fut|R-SCALP-H6|forward": {
       "halt@1stops": {
-        "days": 10,
-        "halt_days": 4,
+        "days": 22,
+        "halt_days": 7,
         "halt_dates": [
           "2026-08-20",
           "2026-08-21",
           "2026-08-25",
-          "2026-08-27"
+          "2026-08-27",
+          "2026-09-01",
+          "2026-09-08",
+          "2026-09-09"
         ],
         "stops_dodged": 1,
         "stops_dodged_pts": 16.2,
-        "targets_forfeited": 17,
-        "targets_forfeited_pts": 76.7,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 18,
-        "net_delta": -60.5
+        "targets_forfeited": 28,
+        "targets_forfeited_pts": 141.7,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -35.1,
+        "rows_foregone": 30,
+        "net_delta": -90.4
       },
       "halt@2stops": {
-        "days": 10,
+        "days": 22,
         "halt_days": 1,
         "halt_dates": [
           "2026-08-25"
@@ -590,7 +622,7 @@
         "net_delta": -20.8
       },
       "halt@3losers": {
-        "days": 10,
+        "days": 22,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -603,7 +635,7 @@
         "net_delta": 0.0
       },
       "halt@5losers": {
-        "days": 10,
+        "days": 22,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -677,53 +709,62 @@
     },
     "uk100fut|R-SCALP-H6-REF|forward": {
       "halt@1stops": {
-        "days": 10,
-        "halt_days": 4,
+        "days": 22,
+        "halt_days": 9,
         "halt_dates": [
           "2026-08-18",
           "2026-08-20",
           "2026-08-21",
-          "2026-08-27"
+          "2026-08-27",
+          "2026-09-01",
+          "2026-09-04",
+          "2026-09-09",
+          "2026-09-10",
+          "2026-09-15"
         ],
-        "stops_dodged": 1,
-        "stops_dodged_pts": 30.8,
-        "targets_forfeited": 13,
-        "targets_forfeited_pts": 60.5,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 14,
-        "net_delta": -29.7
+        "stops_dodged": 4,
+        "stops_dodged_pts": 136.9,
+        "targets_forfeited": 20,
+        "targets_forfeited_pts": 103.5,
+        "eod_forfeited": 2,
+        "eod_forfeited_pts": -51.3,
+        "rows_foregone": 26,
+        "net_delta": 84.7
       },
       "halt@2stops": {
-        "days": 10,
+        "days": 22,
+        "halt_days": 3,
+        "halt_dates": [
+          "2026-08-27",
+          "2026-09-01",
+          "2026-09-04"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 51.3,
+        "targets_forfeited": 3,
+        "targets_forfeited_pts": 19.0,
+        "eod_forfeited": 0,
+        "eod_forfeited_pts": 0.0,
+        "rows_foregone": 4,
+        "net_delta": 32.3
+      },
+      "halt@3losers": {
+        "days": 22,
         "halt_days": 1,
         "halt_dates": [
-          "2026-08-27"
+          "2026-09-01"
         ],
         "stops_dodged": 0,
         "stops_dodged_pts": 0.0,
         "targets_forfeited": 1,
-        "targets_forfeited_pts": 6.3,
+        "targets_forfeited_pts": 7.2,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
         "rows_foregone": 1,
-        "net_delta": -6.3
-      },
-      "halt@3losers": {
-        "days": 10,
-        "halt_days": 0,
-        "halt_dates": [],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
-        "targets_forfeited": 0,
-        "targets_forfeited_pts": 0.0,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 0,
-        "net_delta": 0.0
+        "net_delta": -7.2
       },
       "halt@5losers": {
-        "days": 10,
+        "days": 22,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -801,55 +842,71 @@
     },
     "us30fut|R-SCALP-H6|forward": {
       "halt@1stops": {
-        "days": 11,
-        "halt_days": 6,
+        "days": 23,
+        "halt_days": 14,
         "halt_dates": [
           "2026-08-18",
           "2026-08-21",
           "2026-08-24",
           "2026-08-25",
           "2026-08-27",
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-02",
+          "2026-09-07",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-10",
+          "2026-09-11",
+          "2026-09-15"
         ],
-        "stops_dodged": 1,
-        "stops_dodged_pts": 121.1,
-        "targets_forfeited": 19,
-        "targets_forfeited_pts": 399.4,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 20,
-        "net_delta": -278.2
+        "stops_dodged": 11,
+        "stops_dodged_pts": 1451.3,
+        "targets_forfeited": 43,
+        "targets_forfeited_pts": 1133.3,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -27.1,
+        "rows_foregone": 55,
+        "net_delta": 345.1
       },
       "halt@2stops": {
-        "days": 11,
-        "halt_days": 1,
+        "days": 23,
+        "halt_days": 7,
         "halt_dates": [
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-07",
+          "2026-09-09",
+          "2026-09-10",
+          "2026-09-11",
+          "2026-09-15"
         ],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
-        "targets_forfeited": 2,
-        "targets_forfeited_pts": 48.3,
+        "stops_dodged": 4,
+        "stops_dodged_pts": 609.0,
+        "targets_forfeited": 14,
+        "targets_forfeited_pts": 469.1,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 2,
-        "net_delta": -48.3
+        "rows_foregone": 18,
+        "net_delta": 139.9
       },
       "halt@3losers": {
-        "days": 11,
-        "halt_days": 0,
-        "halt_dates": [],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
-        "targets_forfeited": 0,
-        "targets_forfeited_pts": 0.0,
+        "days": 23,
+        "halt_days": 1,
+        "halt_dates": [
+          "2026-09-10"
+        ],
+        "stops_dodged": 1,
+        "stops_dodged_pts": 197.8,
+        "targets_forfeited": 3,
+        "targets_forfeited_pts": 120.2,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 0,
-        "net_delta": 0.0
+        "rows_foregone": 4,
+        "net_delta": 77.6
       },
       "halt@5losers": {
-        "days": 11,
+        "days": 23,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -927,54 +984,68 @@
     },
     "us30fut|R-SCALP-H6-REF|forward": {
       "halt@1stops": {
-        "days": 11,
-        "halt_days": 5,
+        "days": 23,
+        "halt_days": 12,
         "halt_dates": [
           "2026-08-18",
           "2026-08-21",
           "2026-08-25",
           "2026-08-27",
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01",
+          "2026-09-07",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-10",
+          "2026-09-11",
+          "2026-09-15"
         ],
-        "stops_dodged": 1,
-        "stops_dodged_pts": 104.0,
-        "targets_forfeited": 22,
-        "targets_forfeited_pts": 463.4,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 23,
-        "net_delta": -359.4
+        "stops_dodged": 9,
+        "stops_dodged_pts": 1152.0,
+        "targets_forfeited": 45,
+        "targets_forfeited_pts": 1135.2,
+        "eod_forfeited": 2,
+        "eod_forfeited_pts": -150.7,
+        "rows_foregone": 56,
+        "net_delta": 167.5
       },
       "halt@2stops": {
-        "days": 11,
+        "days": 23,
+        "halt_days": 6,
+        "halt_dates": [
+          "2026-08-18",
+          "2026-09-07",
+          "2026-09-08",
+          "2026-09-09",
+          "2026-09-11",
+          "2026-09-15"
+        ],
+        "stops_dodged": 3,
+        "stops_dodged_pts": 431.9,
+        "targets_forfeited": 16,
+        "targets_forfeited_pts": 491.0,
+        "eod_forfeited": 1,
+        "eod_forfeited_pts": -30.1,
+        "rows_foregone": 20,
+        "net_delta": -29.0
+      },
+      "halt@3losers": {
+        "days": 23,
         "halt_days": 1,
         "halt_dates": [
-          "2026-08-18"
+          "2026-09-09"
         ],
         "stops_dodged": 0,
         "stops_dodged_pts": 0.0,
-        "targets_forfeited": 3,
-        "targets_forfeited_pts": 74.7,
+        "targets_forfeited": 4,
+        "targets_forfeited_pts": 136.3,
         "eod_forfeited": 0,
         "eod_forfeited_pts": 0.0,
-        "rows_foregone": 3,
-        "net_delta": -74.7
-      },
-      "halt@3losers": {
-        "days": 11,
-        "halt_days": 0,
-        "halt_dates": [],
-        "stops_dodged": 0,
-        "stops_dodged_pts": 0.0,
-        "targets_forfeited": 0,
-        "targets_forfeited_pts": 0.0,
-        "eod_forfeited": 0,
-        "eod_forfeited_pts": 0.0,
-        "rows_foregone": 0,
-        "net_delta": 0.0
+        "rows_foregone": 4,
+        "net_delta": -136.3
       },
       "halt@5losers": {
-        "days": 11,
+        "days": 23,
         "halt_days": 0,
         "halt_dates": [],
         "stops_dodged": 0,
@@ -993,21 +1064,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 84.7,
-          "min": -134.3,
-          "max": 304.4
+          "median": 22.9,
+          "min": -201.3,
+          "max": 269.3
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 2.3,
-          "min": -194.3,
-          "max": 211.6
+          "median": -34.2,
+          "min": -198.7,
+          "max": 134.7
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -58.9,
-          "max": 50.1
+          "min": -41.2,
+          "max": 29.1
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1017,21 +1088,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": 80.7,
-          "min": -17.4,
-          "max": 227.0
+          "median": 185.2,
+          "min": -60.6,
+          "max": 395.4
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 29.3,
-          "min": -26.3,
-          "max": 115.8
+          "median": 65.0,
+          "min": -187.7,
+          "max": 297.0
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -36.4,
-          "max": 42.1
+          "min": -25.2,
+          "max": 61.4
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1043,21 +1114,21 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 84.7,
-          "min": -134.3,
-          "max": 304.4
+          "median": 22.9,
+          "min": -201.3,
+          "max": 269.3
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 2.3,
-          "min": -194.3,
-          "max": 211.6
+          "median": -34.2,
+          "min": -198.7,
+          "max": 134.7
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -58.9,
-          "max": 50.1
+          "min": -41.2,
+          "max": 29.1
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1067,21 +1138,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": 80.7,
-          "min": -17.4,
-          "max": 227.0
+          "median": 185.2,
+          "min": -60.6,
+          "max": 395.4
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 29.3,
-          "min": -26.3,
-          "max": 115.8
+          "median": 65.0,
+          "min": -187.7,
+          "max": 297.0
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -36.4,
-          "max": 42.1
+          "min": -25.2,
+          "max": 61.4
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1095,101 +1166,101 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 216.5,
-          "min": -470.1,
-          "max": 1159.5
+          "median": 112.1,
+          "min": -799.0,
+          "max": 823.3
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 158.1,
-          "min": -291.8,
-          "max": 870.5
+          "median": -60.3,
+          "min": -465.3,
+          "max": 558.0
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -86.7,
-          "max": 479.1
+          "min": -246.7,
+          "max": 396.5
         },
         "backtest|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 104.7
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -104.5,
-          "min": -450.2,
-          "max": 186.6
+          "median": 197.4,
+          "min": -373.0,
+          "max": 718.9
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -37.4,
-          "min": -184.7,
-          "max": 273.2
+          "median": 64.6,
+          "min": -145.2,
+          "max": 590.7
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -112.8,
-          "max": 64.1
+          "min": -185.0,
+          "max": 231.8
         },
         "forward|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 54.1
         }
       },
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 216.5,
-          "min": -470.1,
-          "max": 1159.5
+          "median": 112.1,
+          "min": -799.0,
+          "max": 823.3
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 158.1,
-          "min": -291.8,
-          "max": 870.5
+          "median": -60.3,
+          "min": -465.3,
+          "max": 558.0
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -86.7,
-          "max": 479.1
+          "min": -246.7,
+          "max": 396.5
         },
         "backtest|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 104.7
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -104.5,
-          "min": -450.2,
-          "max": 186.6
+          "median": 197.4,
+          "min": -373.0,
+          "max": 718.9
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -37.4,
-          "min": -184.7,
-          "max": 273.2
+          "median": 64.6,
+          "min": -145.2,
+          "max": 590.7
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -112.8,
-          "max": 64.1
+          "min": -185.0,
+          "max": 231.8
         },
         "forward|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 54.1
         }
       }
     },
@@ -1197,21 +1268,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 187.6,
-          "min": -1019.8,
-          "max": 768.9
+          "median": 383.8,
+          "min": -669.4,
+          "max": 1640.5
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": -52.5,
-          "min": -819.2,
-          "max": 419.3
+          "median": 96.6,
+          "min": -657.1,
+          "max": 1086.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -161.8,
-          "max": 225.6
+          "min": -115.9,
+          "max": 493.7
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1221,21 +1292,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -150.1,
-          "min": -597.0,
-          "max": 902.0
+          "median": 1.1,
+          "min": -1458.5,
+          "max": 965.9
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -28.4,
-          "min": -233.2,
-          "max": 570.0
+          "median": 58.5,
+          "min": -1102.2,
+          "max": 744.5
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -108.7,
-          "max": 113.3
+          "min": -123.9,
+          "max": 503.9
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1247,21 +1318,21 @@
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 187.6,
-          "min": -1019.8,
-          "max": 768.9
+          "median": 383.8,
+          "min": -669.4,
+          "max": 1640.5
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": -52.5,
-          "min": -819.2,
-          "max": 419.3
+          "median": 96.6,
+          "min": -657.1,
+          "max": 1086.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -161.8,
-          "max": 225.6
+          "min": -115.9,
+          "max": 493.7
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1271,21 +1342,21 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -150.1,
-          "min": -597.0,
-          "max": 902.0
+          "median": 1.1,
+          "min": -1458.5,
+          "max": 965.9
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": -28.4,
-          "min": -233.2,
-          "max": 570.0
+          "median": 58.5,
+          "min": -1102.2,
+          "max": 744.5
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -108.7,
-          "max": 113.3
+          "min": -123.9,
+          "max": 503.9
         },
         "forward|halt@5losers": {
           "members": 20,
@@ -1299,21 +1370,21 @@
       "R-SCALP-H6": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 158.1,
-          "min": -861.5,
-          "max": 1407.4
+          "median": 482.6,
+          "min": -860.2,
+          "max": 1656.6
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 48.4,
-          "min": -901.2,
-          "max": 1140.8
+          "median": 105.2,
+          "min": -464.6,
+          "max": 1186.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -258.3,
-          "max": 449.4
+          "min": -383.0,
+          "max": 414.8
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1323,47 +1394,47 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -22.2,
-          "min": -453.6,
-          "max": 682.7
+          "median": 115.3,
+          "min": -1218.7,
+          "max": 1557.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 3.4,
-          "min": -274.3,
-          "max": 202.5
+          "median": -103.4,
+          "min": -580.6,
+          "max": 896.8
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -256.4,
-          "max": 0.0
+          "min": -325.2,
+          "max": 659.5
         },
         "forward|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 392.9
         }
       },
       "R-SCALP-H6-REF": {
         "backtest|halt@1stops": {
           "members": 20,
-          "median": 158.1,
-          "min": -861.5,
-          "max": 1407.4
+          "median": 482.6,
+          "min": -860.2,
+          "max": 1656.6
         },
         "backtest|halt@2stops": {
           "members": 20,
-          "median": 48.4,
-          "min": -901.2,
-          "max": 1140.8
+          "median": 105.2,
+          "min": -464.6,
+          "max": 1186.8
         },
         "backtest|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -258.3,
-          "max": 449.4
+          "min": -383.0,
+          "max": 414.8
         },
         "backtest|halt@5losers": {
           "members": 20,
@@ -1373,27 +1444,27 @@
         },
         "forward|halt@1stops": {
           "members": 20,
-          "median": -22.2,
-          "min": -453.6,
-          "max": 682.7
+          "median": 115.3,
+          "min": -1218.7,
+          "max": 1557.0
         },
         "forward|halt@2stops": {
           "members": 20,
-          "median": 3.4,
-          "min": -274.3,
-          "max": 202.5
+          "median": -103.4,
+          "min": -580.6,
+          "max": 896.8
         },
         "forward|halt@3losers": {
           "members": 20,
           "median": 0.0,
-          "min": -256.4,
-          "max": 0.0
+          "min": -325.2,
+          "max": 659.5
         },
         "forward|halt@5losers": {
           "members": 20,
           "median": 0.0,
           "min": 0.0,
-          "max": 0.0
+          "max": 392.9
         }
       }
     }

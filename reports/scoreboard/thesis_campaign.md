@@ -2,90 +2,90 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 49344 of 64393 journal rows used, 15049 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_underwater_census + prereg_thesis_campaign, register 87). MEASUREMENT BEFORE MACHINERY (flip-cut precedent, register 44): nothing here changes any live recipe, label, or signal; every candidate rule needs its own Q-number and forward grade. EX-LOCKBOX (register 85): 79152 of 94201 journal rows used, 15049 lockbox-span opens excluded; sealed rows 0. FILL MODEL: journal points PESSIMISTIC; counterfactuals on the census array-walk simulator (stop touch-fill, BE armed settled with entry-touch fill, EOD/flip close-fill; bar-count cuts close-fill; MAE cuts touch-fill — OPTIMISTIC, in-ladder comparisons only). ° = n<25. The operator's manual practice (fast BE, re-enter on the next setup) is the RECORDED MOTIVATING POLICY; R-BE's scratch-machine record and the register-42d literature caution stand as opposing evidence; this census arbitrates.
 
 STATISTIC SHAPES (74-B): per-campaign accounting distributions vs the RANDOM-THESIS member band (20 pinned members on the SAME campaign windows — sticky random theses in a trending month are the stated confound); the attribution ladder one-shot -> +BE -> +re-entry is a POLICY LADDER, not a causal claim; backoff rows carry the abstained counterfactual (backoff's price) MANDATORY. PER-CAMPAIGN RISK ACCOUNTING IN EVERY TABLE — the per-trade view is the known flattery. Thesis v1 = the 15M phase-tracker trend state; v2 candidate states (sentence-family states) RECORDED, NOT BUILT. Campaigns intersecting the lockbox span are DROPPED and counted. Consecutive scratches are recorded as a candidate narrative event ('repeated refusal') — if resume-on-print dominates the timers, that routes to the front door as its own question.
 
-## ger40fut — 123 campaigns used (33 lockbox-intersecting dropped of 156)
+## ger40fut — 152 campaigns used (33 lockbox-intersecting dropped of 185)
 
-Random-thesis net band (20 members, loop BE@0.25): median 118.6 / min -473.8 / max 285.4.
-
-| policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
-|---|---|---|---|---|---|---|---|---|---|
-| oneshot_nobe | 47 | -148.1 | 0 | 9 | 17 (687.8) | 0.0 | 0 | 0.0 | 0.0 |
-| oneshot_be | 47 | -29.0 | 30 | 2 | 7 (182.7) | 0.0 | 0 | 0.0 | 0.0 |
-| loop_be0.25 | 80 | -140.8 | 51 | 4 | 14 (408.7) | 124.7 | 0 | 0.0 | 0.0 |
-| loop_be0.5 | 72 | -85.2 | 32 | 7 | 18 (555.9) | 124.7 | 0 | 0.0 | 0.0 |
-| loop_be1 | 61 | 145.2 | 10 | 8 | 21 (912.8) | 114.5 | 0 | 0.0 | 0.0 |
-| loop_be1.5 | 58 | 54.8 | 3 | 9 | 21 (912.8) | 25.3 | 0 | 0.0 | 0.0 |
-| backoff_k2_print | 74 | -117.5 | 47 | 4 | 13 (367.8) | 123.2 | 6 | 64.2 | 40.9 |
-| backoff_k2_w15 | 77 | -79.6 | 49 | 4 | 14 (408.7) | 124.7 | 3 | 61.2 | 0.0 |
-| backoff_k2_w30 | 76 | -78.1 | 48 | 4 | 14 (408.7) | 123.2 | 4 | 62.7 | 0.0 |
-| backoff_k2_w5 | 78 | -81.1 | 50 | 4 | 14 (408.7) | 124.7 | 2 | 59.7 | 0.0 |
-| backoff_k3_print | 77 | -178.7 | 49 | 4 | 13 (367.8) | 124.7 | 3 | 3.0 | 40.9 |
-| backoff_k3_w15 | 79 | -139.3 | 50 | 4 | 14 (408.7) | 124.7 | 1 | 1.5 | 0.0 |
-| backoff_k3_w30 | 78 | -137.8 | 49 | 4 | 14 (408.7) | 124.7 | 2 | 3.0 | 0.0 |
-| backoff_k3_w5 | 80 | -140.8 | 51 | 4 | 14 (408.7) | 124.7 | 0 | 0.0 | 0.0 |
-
-## nas100fut — 120 campaigns used (36 lockbox-intersecting dropped of 156)
-
-Random-thesis net band (20 members, loop BE@0.25): median 580.5 / min -261.4 / max 1039.6.
+Random-thesis net band (20 members, loop BE@0.25): median 36.4 / min -611.6 / max 427.1.
 
 | policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
 |---|---|---|---|---|---|---|---|---|---|
-| oneshot_nobe | 42 | 619.3 | 0 | 8 | 18 (1845.8) | 0.0 | 0 | 0.0 | 0.0 |
-| oneshot_be | 42 | 580.9 | 30 | 2 | 6 (731.1) | 0.0 | 0 | 0.0 | 0.0 |
-| loop_be0.25 | 78 | 900.9 | 58 | 2 | 10 (829.1) | 66.3 | 0 | 0.0 | 0.0 |
-| loop_be0.5 | 69 | 1201.0 | 43 | 2 | 11 (1173.9) | 66.3 | 0 | 0.0 | 0.0 |
-| loop_be1 | 57 | 1381.9 | 21 | 5 | 16 (1822.0) | 66.3 | 0 | 0.0 | 0.0 |
-| loop_be1.5 | 52 | 1237.5 | 10 | 6 | 18 (1870.5) | 37.3 | 0 | 0.0 | 0.0 |
-| backoff_k2_print | 72 | 457.1 | 54 | 2 | 8 (751.2) | 66.3 | 14 | 18.0 | 484.8 |
-| backoff_k2_w15 | 75 | 879.4 | 56 | 2 | 9 (804.0) | 66.3 | 4 | 5.4 | 25.1 |
-| backoff_k2_w30 | 74 | 881.1 | 55 | 2 | 9 (804.0) | 66.3 | 5 | 7.2 | 25.1 |
-| backoff_k2_w5 | 77 | 902.6 | 57 | 2 | 10 (829.1) | 66.3 | 2 | 3.6 | 0.0 |
-| backoff_k3_print | 76 | 505.9 | 58 | 2 | 9 (804.0) | 66.3 | 3 | 0.0 | 432.0 |
-| backoff_k3_w15 | 76 | 877.5 | 57 | 2 | 9 (804.0) | 66.3 | 2 | 1.8 | 25.1 |
-| backoff_k3_w30 | 75 | 879.4 | 56 | 2 | 9 (804.0) | 66.3 | 3 | 3.6 | 25.1 |
-| backoff_k3_w5 | 77 | 875.8 | 58 | 2 | 9 (804.0) | 66.3 | 1 | 0.0 | 25.1 |
+| oneshot_nobe | 77 | 131.0 | 0 | 13 | 32 (1039.7) | 0.0 | 0 | 0.0 | 0.0 |
+| oneshot_be | 77 | 120.0 | 47 | 4 | 13 (342.0) | 0.0 | 0 | 0.0 | 0.0 |
+| loop_be0.25 | 127 | -16.1 | 78 | 6 | 25 (684.4) | 124.7 | 0 | 0.0 | 0.0 |
+| loop_be0.5 | 115 | 191.6 | 51 | 10 | 31 (885.1) | 124.7 | 0 | 0.0 | 0.0 |
+| loop_be1 | 102 | 318.4 | 23 | 12 | 34 (1242.0) | 114.5 | 0 | 0.0 | 0.0 |
+| loop_be1.5 | 99 | 177.6 | 11 | 14 | 36 (1248.1) | 86.7 | 0 | 0.0 | 0.0 |
+| backoff_k2_print | 120 | 74.5 | 74 | 6 | 24 (643.5) | 123.2 | 7 | 131.5 | 40.9 |
+| backoff_k2_w15 | 122 | 114.0 | 75 | 6 | 25 (684.4) | 124.7 | 5 | 130.0 | 0.0 |
+| backoff_k2_w30 | 121 | 115.5 | 74 | 6 | 25 (684.4) | 123.2 | 6 | 131.5 | 0.0 |
+| backoff_k2_w5 | 124 | 111.0 | 77 | 6 | 25 (684.4) | 124.7 | 3 | 127.0 | 0.0 |
+| backoff_k3_print | 124 | -54.0 | 76 | 6 | 24 (643.5) | 124.7 | 3 | 3.0 | 40.9 |
+| backoff_k3_w15 | 126 | -14.6 | 77 | 6 | 25 (684.4) | 124.7 | 1 | 1.5 | 0.0 |
+| backoff_k3_w30 | 125 | -13.1 | 76 | 6 | 25 (684.4) | 124.7 | 2 | 3.0 | 0.0 |
+| backoff_k3_w5 | 127 | -16.1 | 78 | 6 | 25 (684.4) | 124.7 | 0 | 0.0 | 0.0 |
 
-## uk100fut — 143 campaigns used (40 lockbox-intersecting dropped of 183)
+## nas100fut — 152 campaigns used (36 lockbox-intersecting dropped of 188)
 
-Random-thesis net band (20 members, loop BE@0.25): median -32.5 / min -213.5 / max 181.4.
-
-| policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
-|---|---|---|---|---|---|---|---|---|---|
-| oneshot_nobe | 55 | 53.4 | 0 | 10 | 23 (339.1) | 0.0 | 0 | 0.0 | 0.0 |
-| oneshot_be | 55 | -4.6 | 33 | 3 | 9 (134.4) | 0.0 | 0 | 0.0 | 0.0 |
-| loop_be0.25 | 90 | -147.2 | 55 | 7 | 13 (199.7) | 53.6 | 0 | 0.0 | 0.0 |
-| loop_be0.5 | 81 | -71.9 | 36 | 7 | 20 (249.8) | 53.6 | 0 | 0.0 | 0.0 |
-| loop_be1 | 71 | -37.7 | 14 | 9 | 25 (285.4) | 41.1 | 0 | 0.0 | 0.0 |
-| loop_be1.5 | 70 | -19.0 | 7 | 10 | 28 (339.7) | 41.1 | 0 | 0.0 | 0.0 |
-| backoff_k2_print | 86 | -127.1 | 53 | 7 | 13 (199.7) | 52.4 | 7 | 24.0 | 0.0 |
-| backoff_k2_w15 | 88 | -135.9 | 55 | 7 | 13 (193.5) | 53.6 | 5 | 20.1 | 36.7 |
-| backoff_k2_w30 | 86 | -147.6 | 55 | 7 | 12 (163.0) | 53.6 | 8 | 40.2 | 67.2 |
-| backoff_k2_w5 | 90 | -138.6 | 56 | 7 | 13 (199.7) | 53.6 | 2 | 11.2 | 0.0 |
-| backoff_k3_print | 88 | -77.4 | 55 | 6 | 13 (199.7) | 27.6 | 3 | 71.1 | 0.0 |
-| backoff_k3_w15 | 89 | -128.4 | 55 | 7 | 13 (199.7) | 53.6 | 2 | 20.1 | 0.0 |
-| backoff_k3_w30 | 88 | -77.4 | 55 | 6 | 13 (199.7) | 27.6 | 3 | 71.1 | 0.0 |
-| backoff_k3_w5 | 90 | -129.7 | 56 | 7 | 13 (199.7) | 53.6 | 1 | 18.8 | 0.0 |
-
-## us30fut — 101 campaigns used (35 lockbox-intersecting dropped of 136)
-
-Random-thesis net band (20 members, loop BE@0.25): median -127.2 / min -1209.4 / max 706.4.
+Random-thesis net band (20 members, loop BE@0.25): median 600.2 / min -282.3 / max 1102.1.
 
 | policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
 |---|---|---|---|---|---|---|---|---|---|
-| oneshot_nobe | 39 | -394.9 | 0 | 7 | 10 (933.0) | 0.0 | 0 | 0.0 | 0.0 |
-| oneshot_be | 39 | -543.5 | 25 | 0 | 2 (15.8) | 0.0 | 0 | 0.0 | 0.0 |
-| loop_be0.25 | 76 | -765.1 | 49 | 2 | 6 (320.4) | 217.2 | 0 | 0.0 | 0.0 |
-| loop_be0.5 | 62 | -642.4 | 26 | 4 | 10 (668.5) | 218.2 | 0 | 0.0 | 0.0 |
-| loop_be1 | 53 | -638.4 | 11 | 5 | 10 (835.0) | 218.2 | 0 | 0.0 | 0.0 |
-| loop_be1.5 | 52 | -980.6 | 6 | 8 | 11 (881.9) | 190.8 | 0 | 0.0 | 0.0 |
-| backoff_k2_print | 76 | -822.1 | 50 | 2 | 5 (266.0) | 217.2 | 2 | 2.6 | 54.4 |
-| backoff_k2_w15 | 76 | -779.1 | 51 | 2 | 5 (266.0) | 205.6 | 2 | 45.6 | 54.4 |
-| backoff_k2_w30 | 74 | -682.9 | 51 | 1 | 5 (266.0) | 205.6 | 6 | 151.6 | 54.4 |
-| backoff_k2_w5 | 77 | -824.8 | 51 | 2 | 5 (266.0) | 217.2 | 1 | 0.0 | 54.4 |
-| backoff_k3_print | 74 | -760.0 | 47 | 2 | 6 (320.4) | 214.7 | 3 | 7.8 | 0.0 |
-| backoff_k3_w15 | 74 | -749.4 | 48 | 2 | 6 (320.4) | 217.2 | 2 | 15.7 | 0.0 |
-| backoff_k3_w30 | 74 | -749.4 | 48 | 2 | 6 (320.4) | 217.2 | 2 | 15.7 | 0.0 |
-| backoff_k3_w5 | 75 | -762.5 | 48 | 2 | 6 (320.4) | 217.2 | 1 | 2.6 | 0.0 |
+| oneshot_nobe | 74 | 465.6 | 0 | 13 | 31 (2330.7) | 0.0 | 0 | 0.0 | 0.0 |
+| oneshot_be | 74 | 841.3 | 53 | 3 | 10 (1034.2) | 0.0 | 0 | 0.0 | 0.0 |
+| loop_be0.25 | 141 | 852.0 | 105 | 5 | 14 (1132.2) | 76.3 | 0 | 0.0 | 0.0 |
+| loop_be0.5 | 124 | 945.3 | 75 | 6 | 17 (1486.6) | 108.6 | 0 | 0.0 | 0.0 |
+| loop_be1 | 103 | 1254.0 | 38 | 8 | 26 (2223.2) | 108.6 | 0 | 0.0 | 0.0 |
+| loop_be1.5 | 93 | 1177.0 | 19 | 8 | 30 (2288.3) | 37.3 | 0 | 0.0 | 0.0 |
+| backoff_k2_print | 131 | 540.4 | 99 | 4 | 12 (1054.3) | 67.7 | 19 | 206.1 | 484.8 |
+| backoff_k2_w15 | 135 | 960.9 | 102 | 4 | 13 (1107.1) | 67.7 | 8 | 191.7 | 25.1 |
+| backoff_k2_w30 | 132 | 966.3 | 99 | 4 | 13 (1107.1) | 66.3 | 11 | 197.1 | 25.1 |
+| backoff_k2_w5 | 139 | 926.5 | 104 | 4 | 14 (1132.2) | 67.7 | 3 | 76.3 | 0.0 |
+| backoff_k3_print | 137 | 460.6 | 103 | 5 | 13 (1107.1) | 74.5 | 5 | 3.6 | 432.0 |
+| backoff_k3_w15 | 137 | 832.3 | 102 | 5 | 13 (1107.1) | 74.5 | 4 | 5.4 | 25.1 |
+| backoff_k3_w30 | 136 | 834.1 | 101 | 5 | 13 (1107.1) | 74.5 | 5 | 7.2 | 25.1 |
+| backoff_k3_w5 | 139 | 828.7 | 104 | 5 | 13 (1107.1) | 76.3 | 2 | 1.8 | 25.1 |
+
+## uk100fut — 180 campaigns used (40 lockbox-intersecting dropped of 220)
+
+Random-thesis net band (20 members, loop BE@0.25): median -85.5 / min -318.6 / max 122.8.
+
+| policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
+|---|---|---|---|---|---|---|---|---|---|
+| oneshot_nobe | 84 | -119.3 | 0 | 16 | 29 (414.9) | 0.0 | 0 | 0.0 | 0.0 |
+| oneshot_be | 84 | -78.5 | 54 | 4 | 11 (144.9) | 0.0 | 0 | 0.0 | 0.0 |
+| loop_be0.25 | 130 | -220.6 | 85 | 8 | 16 (224.7) | 53.6 | 0 | 0.0 | 0.0 |
+| loop_be0.5 | 117 | -171.6 | 55 | 10 | 25 (309.2) | 53.6 | 0 | 0.0 | 0.0 |
+| loop_be1 | 104 | -144.5 | 21 | 13 | 32 (380.4) | 41.1 | 0 | 0.0 | 0.0 |
+| loop_be1.5 | 103 | -126.0 | 13 | 14 | 35 (434.7) | 41.1 | 0 | 0.0 | 0.0 |
+| backoff_k2_print | 126 | -200.5 | 83 | 8 | 16 (224.7) | 52.4 | 7 | 24.0 | 0.0 |
+| backoff_k2_w15 | 128 | -209.3 | 85 | 8 | 16 (218.5) | 53.6 | 5 | 20.1 | 36.7 |
+| backoff_k2_w30 | 126 | -221.0 | 85 | 8 | 15 (188.0) | 53.6 | 8 | 40.2 | 67.2 |
+| backoff_k2_w5 | 130 | -212.0 | 86 | 8 | 16 (224.7) | 53.6 | 2 | 11.2 | 0.0 |
+| backoff_k3_print | 128 | -150.8 | 85 | 7 | 16 (224.7) | 27.6 | 3 | 71.1 | 0.0 |
+| backoff_k3_w15 | 129 | -201.8 | 85 | 8 | 16 (224.7) | 53.6 | 2 | 20.1 | 0.0 |
+| backoff_k3_w30 | 128 | -150.8 | 85 | 7 | 16 (224.7) | 27.6 | 3 | 71.1 | 0.0 |
+| backoff_k3_w5 | 130 | -203.1 | 86 | 8 | 16 (224.7) | 53.6 | 1 | 18.8 | 0.0 |
+
+## us30fut — 136 campaigns used (35 lockbox-intersecting dropped of 171)
+
+Random-thesis net band (20 members, loop BE@0.25): median -398.4 / min -1745.7 / max 758.4.
+
+| policy | probes | net | scratches | stops | caught (pts) | max campaign DD | suppressed | losses avoided | winners missed |
+|---|---|---|---|---|---|---|---|---|---|
+| oneshot_nobe | 72 | -310.8 | 0 | 14 | 24 (2099.5) | 0.0 | 0 | 0.0 | 0.0 |
+| oneshot_be | 72 | -1064.1 | 49 | 4 | 4 (27.1) | 0.0 | 0 | 0.0 | 0.0 |
+| loop_be0.25 | 140 | -962.3 | 88 | 7 | 14 (1154.5) | 217.2 | 0 | 0.0 | 0.0 |
+| loop_be0.5 | 118 | -995.1 | 52 | 11 | 19 (1477.5) | 218.2 | 0 | 0.0 | 0.0 |
+| loop_be1 | 104 | -875.9 | 26 | 12 | 25 (1862.4) | 218.2 | 0 | 0.0 | 0.0 |
+| loop_be1.5 | 98 | -1265.3 | 13 | 15 | 28 (1904.4) | 190.8 | 0 | 0.0 | 0.0 |
+| backoff_k2_print | 137 | -1009.5 | 87 | 7 | 13 (1100.1) | 217.2 | 7 | 19.6 | 54.4 |
+| backoff_k2_w15 | 140 | -976.3 | 90 | 7 | 13 (1100.1) | 205.6 | 2 | 45.6 | 54.4 |
+| backoff_k2_w30 | 135 | -870.2 | 88 | 6 | 13 (1100.1) | 205.6 | 11 | 168.6 | 54.4 |
+| backoff_k2_w5 | 141 | -1021.9 | 90 | 7 | 13 (1100.1) | 217.2 | 1 | 0.0 | 54.4 |
+| backoff_k3_print | 137 | -952.5 | 86 | 7 | 14 (1154.5) | 214.7 | 5 | 17.0 | 0.0 |
+| backoff_k3_w15 | 137 | -942.0 | 87 | 7 | 14 (1154.5) | 217.2 | 4 | 24.9 | 0.0 |
+| backoff_k3_w30 | 137 | -942.0 | 87 | 7 | 14 (1154.5) | 217.2 | 4 | 24.9 | 0.0 |
+| backoff_k3_w5 | 139 | -959.7 | 87 | 7 | 14 (1154.5) | 217.2 | 1 | 2.6 | 0.0 |

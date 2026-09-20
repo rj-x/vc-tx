@@ -2,45 +2,53 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_event_clock_census, register 104). Two dimensions, mechanisms SEPARATED: scheduled news (+/-15/30 min around macro_releases.csv timestamps, currency-tagged; cross-tagging reported never assumed) and auction slots (native cash open/close +/-15/30; UTC values valid for the August store). CALENDAR COVERAGE: 2026-07-14 → 2026-08-28 (25 High USD/GBP rows); VERIFIED-EMPTY (dated, attributed in data/macro_releases_log.md): [['2026-08-20', '2026-08-22']] counts as no-news; 2185 journal rows on uncovered days are EXCLUDED from news cells (never no-news); auction cells cover all days. STATISTIC SHAPES (74-B): in-window vs out-of-window hit-rate gap (reach for the scalp arms, win for the ladder variants) vs a label-permutation null (100 pinned seeds) — per-cell p95 and the field count vs null; stop-rate and net points descriptive; measurable = both sides >= 10; candidate = |gap| >= 10pp beyond its null on >= 3 of 4 forward legs, same sign. Fill models: the journal's PESSIMISTIC rows; the scalp arms' optimistic target fill declared (register 94). Ex-lockbox. Rule candidates on survival are mechanism-matched and separate (news-window pause / open-window pause), distinguished from register 103's failed reactive cooldowns by their EX-ANTE mechanism; front door, ratification required. HELD-THROUGH CUT (register 124): held:high = the HOLD WINDOW [open, close] contains a High release (a span flag, not an entry-window tag; impact filtered explicitly as the belt over the High-only merge convention; holds touching any uncovered day are EXCLUDED per the coverage rule) — outcomes for trades holding across releases vs not, per variant x leg, the same permutation luck budget.
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_event_clock_census, register 104). Two dimensions, mechanisms SEPARATED: scheduled news (+/-15/30 min around macro_releases.csv timestamps, currency-tagged; cross-tagging reported never assumed) and auction slots (native cash open/close +/-15/30; UTC values valid for the August store). CALENDAR COVERAGE: 2026-07-14 → 2026-09-18 (71 High USD/GBP rows); VERIFIED-EMPTY (dated, attributed in data/macro_releases_log.md): [['2026-08-20', '2026-08-22']] counts as no-news; 0 journal rows on uncovered days are EXCLUDED from news cells (never no-news); auction cells cover all days. STATISTIC SHAPES (74-B): in-window vs out-of-window hit-rate gap (reach for the scalp arms, win for the ladder variants) vs a label-permutation null (100 pinned seeds) — per-cell p95 and the field count vs null; stop-rate and net points descriptive; measurable = both sides >= 10; candidate = |gap| >= 10pp beyond its null on >= 3 of 4 forward legs, same sign. Fill models: the journal's PESSIMISTIC rows; the scalp arms' optimistic target fill declared (register 94). Ex-lockbox. Rule candidates on survival are mechanism-matched and separate (news-window pause / open-window pause), distinguished from register 103's failed reactive cooldowns by their EX-ANTE mechanism; front door, ratification required. HELD-THROUGH CUT (register 124): held:high = the HOLD WINDOW [open, close] contains a High release (a span flag, not an entry-window tag; impact filtered explicitly as the belt over the High-only merge convention; holds touching any uncovered day are EXCLUDED per the coverage rule) — outcomes for trades holding across releases vs not, per variant x leg, the same permutation luck budget.
 
-**Luck budget:** 162 of 363 measurable cells reach |gap| >= 10pp vs null median 106.0 / p95 119.05; percentile 100.0.
+**Luck budget:** 160 of 408 measurable cells reach |gap| >= 10pp vs null median 94.5 / p95 107.1; percentile 100.0.
 
 ## Scalp arms headline (in-window vs out; n in:out; forward and backtest)
 
 | arm | instrument | window | slot | n in:out | stop% in/out | hit% in/out | net in/out | hit gap | null p95 | clears |
 |---|---|---|---|---|---|---|---|---|---|---|
-| R-SCALP-H6 | ger40fut | forward | open15 | 10:49 | 30/16 | 70/82 | -101.7/30.3 | -11.6pp | 24.5 | no |
-| R-SCALP-H6 | ger40fut | forward | open30 | 17:42 | 35/12 | 65/86 | -233.9/162.4 | -21.0pp | 29.3 | no |
-| R-SCALP-H6-REF | ger40fut | forward | open15 | 11:41 | 18/20 | 82/78 | -34.9/-100.9 | +3.8pp | 26.8 | no |
-| R-SCALP-H6-REF | ger40fut | forward | open30 | 14:38 | 29/16 | 71/82 | -129.8/-5.9 | -10.2pp | 29.7 | no |
-| R-SCALP-H6 | nas100fut | forward | open30 | 16:41 | 25/10 | 75/85 | -222.9/208.0 | -10.4pp | 27.7 | no |
-| R-SCALP-H6-REF | nas100fut | forward | open30 | 16:42 | 25/2 | 75/98 | -220.3/665.2 | -22.6pp | 14.0 | YES |
-| R-SCALP-H6 | uk100fut | forward | open30 | 11:36 | 9/11 | 91/86 | 8.4/27.5 | +4.8pp | 18.9 | no |
-| R-SCALP-H6-REF | uk100fut | forward | open30 | 13:34 | 8/15 | 92/82 | 13.7/-23.9 | +9.9pp | 21.9 | no |
-| R-SCALP-H6 | us30fut | forward | open15 | 10:38 | 20/13 | 80/87 | -71.9/258.3 | -6.8pp | 19.5 | no |
-| R-SCALP-H6 | us30fut | forward | open30 | 18:30 | 11/17 | 89/83 | 139.9/46.5 | +5.6pp | 21.1 | no |
-| R-SCALP-H6-REF | us30fut | forward | open30 | 15:34 | 7/15 | 93/85 | 216.7/212.5 | +8.0pp | 17.8 | no |
+| R-SCALP-H6 | ger40fut | forward | open15 | 16:103 | 25/16 | 75/81 | -98.1/-105.6 | -5.6pp | 20.0 | no |
+| R-SCALP-H6 | ger40fut | forward | open30 | 29:90 | 31/13 | 69/83 | -298.9/95.2 | -14.3pp | 14.4 | no |
+| R-SCALP-H6-REF | ger40fut | forward | open15 | 16:97 | 19/16 | 81/79 | -57.5/-34.2 | +1.8pp | 20.0 | no |
+| R-SCALP-H6-REF | ger40fut | forward | open30 | 24:89 | 29/14 | 71/82 | -230.6/138.9 | -11.2pp | 20.6 | no |
+| R-SCALP-H6 | nas100fut | forward | open15 | 13:90 | 23/12 | 77/86 | -171.6/322.2 | -8.7pp | 17.8 | no |
+| R-SCALP-H6 | nas100fut | forward | open30 | 24:79 | 17/13 | 83/85 | -46.7/197.4 | -1.5pp | 14.8 | no |
+| R-SCALP-H6-REF | nas100fut | forward | open15 | 13:96 | 23/10 | 77/90 | -167.9/697.8 | -12.7pp | 13.5 | no |
+| R-SCALP-H6-REF | nas100fut | forward | open30 | 25:84 | 16/11 | 84/89 | -17.6/547.5 | -5.3pp | 15.5 | no |
+| R-SCALP-H6 | uk100fut | forward | open30 | 18:77 | 6/9 | 94/87 | 45.4/41.5 | +7.4pp | 14.3 | no |
+| R-SCALP-H6-REF | uk100fut | forward | open15 | 11:85 | 18/14 | 82/82 | -43.2/-90.0 | -0.6pp | 21.1 | no |
+| R-SCALP-H6-REF | uk100fut | forward | open30 | 20:76 | 10/16 | 90/80 | -6.2/-127.0 | +9.7pp | 16.3 | no |
+| R-SCALP-H6 | us30fut | forward | open15 | 20:95 | 35/21 | 65/78 | -615.2/-624.4 | -12.9pp | 19.2 | no |
+| R-SCALP-H6 | us30fut | forward | open30 | 31:84 | 29/21 | 71/77 | -730.5/-509.1 | -6.4pp | 19.7 | no |
+| R-SCALP-H6-REF | us30fut | forward | open15 | 17:100 | 18/19 | 82/79 | -33.8/-593.7 | +3.4pp | 24.2 | no |
+| R-SCALP-H6-REF | us30fut | forward | open30 | 29:88 | 17/19 | 83/78 | -78.8/-548.7 | +4.4pp | 18.1 | no |
 
 ## Candidates and glints (all variants; forward legs clearing their null, same sign)
 
 | variant | slot | mechanism | grade | clearing legs |
 |---|---|---|---|---|
-| R-BE | close30 | auction avoidance | glint | uk100fut |
-| R-BE | held:high | held-through exposure | glint | ger40fut, nas100fut |
-| R-NEXIT-EARLY | close30 | auction avoidance | glint | uk100fut |
-| R-NEXIT-EARLY | news30:native | scheduled avoidance | glint | us30fut |
-| R-NEXIT-EARLY | open15 | auction avoidance | glint | nas100fut, uk100fut |
-| R-NEXIT-EARLY | open30 | auction avoidance | glint | nas100fut, uk100fut |
-| R-NEXIT-FULL | close30 | auction avoidance | glint | uk100fut |
-| R-NEXIT-FULL | news30:native | scheduled avoidance | glint | us30fut |
-| R-NEXIT-FULL | open15 | auction avoidance | glint | nas100fut, uk100fut |
-| R-NEXIT-FULL | open30 | auction avoidance | glint | nas100fut, uk100fut |
-| R-NEXIT-SENT | close30 | auction avoidance | glint | us30fut |
+| R-BE | held:high | held-through exposure | candidate | ger40fut, nas100fut, uk100fut |
+| R-NOTRAIL | held:high | held-through exposure | candidate | ger40fut, nas100fut, uk100fut |
+| R-ARM15 | held:high | held-through exposure | glint | nas100fut, us30fut |
+| R-ARM15 | news30:native | scheduled avoidance | glint | us30fut |
+| R-ARM15 | open30 | auction avoidance | glint | nas100fut |
+| R-BE | close30 | auction avoidance | glint | nas100fut, us30fut |
+| R-BE | news30:cross | scheduled avoidance | glint | us30fut |
+| R-BE | open30 | auction avoidance | glint | ger40fut |
+| R-H1-DELAY3 | held:high | held-through exposure | glint | us30fut |
+| R-NEXIT-EARLY | held:high | held-through exposure | glint | nas100fut, uk100fut |
+| R-NEXIT-EARLY | open15 | auction avoidance | glint | nas100fut |
+| R-NEXIT-EARLY | open30 | auction avoidance | glint | nas100fut |
+| R-NEXIT-FULL | open15 | auction avoidance | glint | nas100fut |
+| R-NEXIT-SENT | held:high | held-through exposure | glint | uk100fut |
+| R-NEXIT-SENT | news15:cross | scheduled avoidance | glint | uk100fut |
 | R-NEXIT-SENT | news15:native | scheduled avoidance | glint | nas100fut, uk100fut |
-| R-NEXIT-SENT | news30:cross | scheduled avoidance | glint | us30fut |
-| R-NOTRAIL | held:high | held-through exposure | glint | uk100fut |
-| R-OP2 | news30:cross | scheduled avoidance | glint | us30fut |
-| R-OP2 | news30:native | scheduled avoidance | glint | uk100fut |
-| R-OP2 | open30 | auction avoidance | glint | uk100fut |
-| R-SCALP-H6-REF | open30 | auction avoidance | glint | nas100fut |
+| R-NEXIT-SENT | news30:native | scheduled avoidance | glint | nas100fut, uk100fut |
+| R-NOTRAIL | close15 | auction avoidance | glint | us30fut |
+| R-NOTRAIL | close30 | auction avoidance | glint | nas100fut, us30fut |
+| R-NOTRAIL | news30:cross | scheduled avoidance | glint | us30fut |
+| R-NOTRAIL | open30 | auction avoidance | glint | nas100fut |
+| R-OP2 | held:high | held-through exposure | glint | ger40fut, uk100fut |

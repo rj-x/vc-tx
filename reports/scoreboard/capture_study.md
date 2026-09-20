@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (2021 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_capture_study, register 88 item 4). THE QUESTION: when a trade has shown +X, what protection maximizes kept-points per family x session x tape-character? MOTIVATING OBSERVATION: the register-87 breakeven continent split (+2.9k EU / -15.8k US at rung 0.25). EXPECTED OUTCOME, stated at commissioning: SCOPED POLICIES, NOT UNIVERSAL RULES — and no policy registers without its own Q-number and forward grade. STATISTIC SHAPES (74-B): per-policy per-cell net-delta vs the B-RANDOM member band under the identical policy (floor pattern); tape differentiation = field count vs permutation null (100 pinned seeds; gap >= 5 pts per trade, threshold FLAGGED). Base = the R-NOTRAIL slice ex-lockbox (3324 trades). Settled arming, touch fills (register-87 conventions). ° = n<25.
 
-## ger40fut (460 base trades)
+## ger40fut (768 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -12,72 +12,75 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | -1283.8 | -467.9 (-1601.2..1129.9) |
-| BE@0.5 | -141.5 | -648.3 (-1883.4..1299.1) |
-| BE@1 | -750.1 | -307.8 (-1270.5..785.5) |
-| BE@1.5 | -1089.7 | -151.7 (-990.7..695.5) |
-| TRAIL-0.5-0.5 | -535.6 | -700.2 (-1590.5..1004.9) |
-| TRAIL-0.5-1 | -313.2 | -728.4 (-1723.2..935.0) |
-| TRAIL-1-0.5 | 674.7 | -626.3 (-1254.9..878.2) |
-| TRAIL-1-1 | -19.6 | -763.5 (-1499.5..641.4) |
-| RATCHET-1.0-1.0 | -19.6 | -763.5 (-1499.5..641.4) |
-| RATCHET-1.0-0.5 | 674.7 | -626.3 (-1254.9..878.2) |
+| BE@0.25 | -2507.8 | -390.5 (-2395.7..785.5) |
+| BE@0.5 | -875.5 | -384.2 (-1957.6..852.9) |
+| BE@1 | -1591.3 | -93.9 (-1574.3..1271.7) |
+| BE@1.5 | -2853.3 | -400.1 (-1694.2..740.6) |
+| TRAIL-0.5-0.5 | -2172.0 | 18.8 (-1667.9..997.2) |
+| TRAIL-0.5-1 | -2116.9 | -227.8 (-1595.7..715.0) |
+| TRAIL-1-0.5 | -939.1 | -172.4 (-1446.0..1082.3) |
+| TRAIL-1-1 | -1933.5 | -257.2 (-1635.3..916.4) |
+| RATCHET-1.0-1.0 | -1933.5 | -257.2 (-1635.3..916.4) |
+| RATCHET-1.0-0.5 | -939.1 | -172.4 (-1446.0..1082.3) |
 
 ### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-at-entry | 129 | TRAIL-1-0.5 | 1694.9 | 402.9 |
-| trending-at-entry | 331 | BE@0.5 | -768.2 | -1686.7 |
+| ranging-at-entry | 228 | BE@1 | 684.8 | 367.8 |
+| trending-at-entry | 540 | BE@0.5 | -1064.7 | -2875.6 |
 
 ### Regime-gate floors (register 107: the phase-at-entry cut with the base cells' member machinery — per regime x session, every policy's PER-TRADE net delta vs the B-RANDOM members' per-trade net deltas in the identical scope; per-trade because the arm's and the members' regime shares differ). THE REGISTER-92 GATE on BE@0.25: ranging cell measurable on both regimes AND clears its member band max AND the ranging-minus-trending gap sits beyond the luck budget (regime labels permuted within session strata, 100 pinned seeds, percentile > 95).
 
-**Gate readout (BE@0.25):** ranging n=129 per-trade Δ 3.12 vs member band max 36.49 — inside the band; trending n=331 per-trade Δ -5.1; gap 8.22 vs null median -0.19 / p95 16.33 (percentile 80.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
+**Gate readout (BE@0.25):** ranging n=228 per-trade Δ 1.61 vs member band max 35.12 — inside the band; trending n=540 per-trade Δ -5.33; gap 6.94 vs null median -0.39 / p95 11.04 (percentile 87.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
 
 | regime | session | n | BE@0.25 Δ/trade | member band med [min..max] (members; med member n) | clears | best policy | best Δ/trade | best band max | clears |
 |---|---|---|---|---|---|---|---|---|---|
-| ranging-at-entry | asia | 38 | 9.48 | -8.53 [-211.62..65.27] (18; 3) | no | TRAIL-1-1 | 15.77 | 67.76 | no |
-| ranging-at-entry | dead | °13 | 58.63 | 0.0 [-209.3..76.09] (16; 1) | no | TRAIL-1-0.5 | 72.58 | 133.4 | no |
-| ranging-at-entry | london | °24 | 10.04 | 1.42 [-132.8..66.96] (20; 4) | no | TRAIL-1-0.5 | 20.77 | 54.77 | no |
-| ranging-at-entry | ny_only | 42 | -24.7 | 6.49 [-63.28..62.31] (20; 11) | no | TRAIL-1-0.5 | 1.85 | 58.25 | no |
-| ranging-at-entry | overlap | °12 | 6.38 | 0.0 [-84.25..4.4] (9; 1) | YES | BE@0.25 | 6.38 | 4.4 | YES |
-| ranging-at-entry | whole | 129 | 3.12 | -10.41 [-68.44..36.49] (20; 19) | no | TRAIL-1-0.5 | 13.14 | 49.69 | no |
-| trending-at-entry | asia | 77 | 18.46 | 2.08 [-59.87..69.07] (19; 3) | no | BE@0.25 | 18.46 | 69.07 | no |
-| trending-at-entry | dead | 46 | -19.95 | -47.14 [-301.9..140.16] (18; 1.5) | no | TRAIL-1-0.5 | 1.08 | 207.53 | no |
-| trending-at-entry | london | 82 | -1.74 | 17.2 [-85.28..52.75] (20; 6) | no | TRAIL-1-0.5 | 12.3 | 61.44 | no |
-| trending-at-entry | ny_only | 96 | -23.45 | -12.3 [-91.29..58.25] (20; 13) | no | BE@0.5 | -8.98 | 47.98 | no |
-| trending-at-entry | overlap | 30 | 6.79 | 0.0 [-60.4..23.9] (15; 2) | no | BE@0.25 | 6.79 | 23.9 | no |
-| trending-at-entry | whole | 331 | -5.1 | -9.02 [-63.53..28.56] (20; 24) | no | BE@0.5 | -2.32 | 25.1 | no |
+| ranging-at-entry | asia | 51 | 6.62 | 0.0 [-204.2..67.67] (19; 3) | no | TRAIL-1-1 | 11.79 | 104.4 | no |
+| ranging-at-entry | dead | °20 | 50.29 | 29.9 [-195.0..97.24] (18; 2) | no | TRAIL-1-0.5 | 59.86 | 92.27 | no |
+| ranging-at-entry | london | 61 | 0.73 | 8.26 [-53.3..55.62] (20; 7) | no | TRAIL-1-0.5 | 6.5 | 50.27 | no |
+| ranging-at-entry | ny_only | 75 | -16.04 | -14.72 [-98.59..72.83] (20; 14) | no | BE@1 | -0.1 | 46.78 | no |
+| ranging-at-entry | overlap | °21 | 8.7 | 0.0 [-55.3..102.29] (15; 2) | no | BE@0.25 | 8.7 | 102.29 | no |
+| ranging-at-entry | whole | 228 | 1.61 | -7.19 [-70.28..35.12] (20; 28.5) | no | BE@1 | 3.0 | 32.75 | no |
+| trending-at-entry | asia | 125 | 12.76 | 18.37 [-94.88..59.35] (20; 5) | no | BE@0.25 | 12.76 | 59.35 | no |
+| trending-at-entry | dead | 56 | -13.02 | 15.52 [-333.9..95.43] (19; 2) | no | TRAIL-1-0.5 | 6.12 | 103.81 | no |
+| trending-at-entry | london | 157 | -3.58 | 10.28 [-55.36..47.61] (20; 12) | no | TRAIL-1-0.5 | 5.54 | 47.61 | no |
+| trending-at-entry | ny_only | 159 | -21.06 | -7.61 [-53.91..28.85] (20; 20.5) | no | BE@0.5 | -7.94 | 27.92 | no |
+| trending-at-entry | overlap | 43 | 3.94 | -17.52 [-86.95..16.76] (15; 3) | no | BE@0.25 | 3.94 | 16.76 | no |
+| trending-at-entry | whole | 540 | -5.33 | -3.28 [-31.7..25.11] (20; 42) | no | BE@0.5 | -1.97 | 21.65 | no |
 
 ### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.228; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
 
 | entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| high-efficiency-at-entry | 292 | TRAIL-1-0.5 | -1378.5 | -1753.1 |
-| low-efficiency-at-entry | 168 | TRAIL-0.5-1 | 2110.3 | 469.2 |
+| high-efficiency-at-entry | 493 | TRAIL-1-0.5 | -1215.1 | -2379.2 |
+| low-efficiency-at-entry | 275 | BE@1 | 1025.0 | -128.6 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-day | °5 | TRAIL-0.5-0.5 | 218.3 | 122.4 |
-| trending-day | 455 | TRAIL-1-0.5 | 456.3 | -1406.2 |
+| ranging-day | °6 | TRAIL-0.5-0.5 | 218.3 | 122.4 |
+| trending-day | 762 | BE@0.5 | -997.9 | -2630.2 |
 
 ### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 149 | 16267.6 | 3536.4 |
-| BE@0.5 | YES | 129 | 13130.9 | 2854.5 |
-| BE@1 | YES | 109 | 10614.4 | 2307.5 |
-| BE@1.5 | NO (above the bound) | 82 | 8302.2 | 1804.8 |
+| BE@0.25 | YES | 252 | 27125.0 | 3531.9 |
+| BE@0.5 | YES | 215 | 21212.7 | 2762.1 |
+| BE@1 | YES | 174 | 16339.2 | 2127.5 |
+| BE@1.5 | NO (above the bound) | 137 | 13588.9 | 1769.4 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
+| event | london | clean | 29 | TRAIL-0.5-1 | 983.4 | 10.39 |
+| event | ny_only | clean | 48 | BE@1 | -456.0 | -1.5 |
+| retest | london | clean | 25 | TRAIL-1-0.5 | 199.1 | 26.65 |
 
-## nas100fut (454 base trades)
+## nas100fut (776 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -85,73 +88,74 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | -4726.8 | 484.0 (-3117.4..5075.7) |
-| BE@0.5 | -5866.5 | 186.3 (-3656.2..4905.0) |
-| BE@1 | -3291.8 | 37.2 (-2522.8..3122.3) |
-| BE@1.5 | -475.2 | 9.8 (-2840.4..2180.8) |
-| TRAIL-0.5-0.5 | -783.5 | 407.7 (-3495.6..3754.6) |
-| TRAIL-0.5-1 | 564.2 | 390.6 (-3617.0..3777.5) |
-| TRAIL-1-0.5 | 296.5 | 167.6 (-3272.4..2964.8) |
-| TRAIL-1-1 | 186.6 | 342.5 (-3194.3..2953.8) |
-| RATCHET-1.0-1.0 | 186.6 | 342.5 (-3194.3..2953.8) |
-| RATCHET-1.0-0.5 | 296.5 | 167.6 (-3272.4..2964.8) |
+| BE@0.25 | -1466.8 | -47.9 (-3768.0..3305.0) |
+| BE@0.5 | -3500.8 | 78.5 (-3618.8..3480.4) |
+| BE@1 | -2200.1 | -183.8 (-3659.1..2402.7) |
+| BE@1.5 | -429.5 | -135.9 (-3422.8..1726.9) |
+| TRAIL-0.5-0.5 | 1533.6 | 151.9 (-2648.3..3464.8) |
+| TRAIL-0.5-1 | 2994.8 | 237.1 (-2607.5..3734.7) |
+| TRAIL-1-0.5 | 3147.1 | 212.8 (-2786.1..2787.5) |
+| TRAIL-1-1 | 2923.8 | 90.0 (-2425.1..2742.7) |
+| RATCHET-1.0-1.0 | 2923.8 | 90.0 (-2425.1..2742.7) |
+| RATCHET-1.0-0.5 | 3147.1 | 212.8 (-2786.1..2787.5) |
 
 ### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-at-entry | 144 | TRAIL-1-0.5 | 2839.5 | 684.0 |
-| trending-at-entry | 310 | BE@1.5 | 903.7 | -5410.8 |
+| ranging-at-entry | 236 | TRAIL-1-0.5 | 1520.0 | -617.1 |
+| trending-at-entry | 540 | TRAIL-0.5-1 | 2518.3 | -849.7 |
 
 ### Regime-gate floors (register 107: the phase-at-entry cut with the base cells' member machinery — per regime x session, every policy's PER-TRADE net delta vs the B-RANDOM members' per-trade net deltas in the identical scope; per-trade because the arm's and the members' regime shares differ). THE REGISTER-92 GATE on BE@0.25: ranging cell measurable on both regimes AND clears its member band max AND the ranging-minus-trending gap sits beyond the luck budget (regime labels permuted within session strata, 100 pinned seeds, percentile > 95).
 
-**Gate readout (BE@0.25):** ranging n=144 per-trade Δ 4.75 vs member band max 99.41 — inside the band; trending n=310 per-trade Δ -17.45; gap 22.2 vs null median -0.51 / p95 30.61 (percentile 90.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
+**Gate readout (BE@0.25):** ranging n=236 per-trade Δ -2.61 vs member band max 58.78 — inside the band; trending n=540 per-trade Δ -1.57; gap -1.04 vs null median -0.45 / p95 21.67 (percentile 49.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
 
 | regime | session | n | BE@0.25 Δ/trade | member band med [min..max] (members; med member n) | clears | best policy | best Δ/trade | best band max | clears |
 |---|---|---|---|---|---|---|---|---|---|
-| ranging-at-entry | asia | 40 | -3.52 | 43.74 [-355.4..142.25] (20; 3.5) | no | TRAIL-1-0.5 | 15.29 | 175.09 | no |
-| ranging-at-entry | dead | 48 | 15.24 | 28.13 [-194.36..135.91] (20; 10.5) | no | TRAIL-1-0.5 | 45.49 | 119.67 | no |
-| ranging-at-entry | london | 26 | 4.46 | 60.65 [-246.33..119.01] (19; 3) | no | TRAIL-0.5-0.5 | 28.13 | 120.46 | no |
-| ranging-at-entry | ny_only | °17 | 3.74 | -10.75 [-179.17..14.0] (18; 1) | no | TRAIL-1-0.5 | 14.5 | 141.22 | no |
-| ranging-at-entry | overlap | °13 | -6.67 | 35.05 [-81.92..263.66] (17; 2) | no | BE@0.25 | -6.67 | 263.66 | no |
-| ranging-at-entry | whole | 144 | 4.75 | 6.82 [-111.01..99.41] (20; 20) | no | TRAIL-1-0.5 | 19.72 | 82.99 | no |
-| trending-at-entry | asia | 66 | -12.21 | 0.46 [-254.2..101.27] (20; 8.5) | no | TRAIL-0.5-0.5 | 2.14 | 95.68 | no |
-| trending-at-entry | dead | 117 | -37.46 | -15.46 [-59.91..146.51] (20; 14) | no | BE@1.5 | 9.76 | 32.94 | no |
-| trending-at-entry | london | 43 | 20.52 | 34.34 [-80.19..134.32] (19; 4) | no | TRAIL-1-0.5 | 41.45 | 197.66 | no |
-| trending-at-entry | ny_only | 48 | -15.18 | 14.03 [-82.75..91.49] (19; 4) | no | BE@1.5 | -4.88 | 0.0 | no |
-| trending-at-entry | overlap | 36 | -10.44 | 32.18 [-169.07..132.6] (20; 5) | no | TRAIL-1-1 | 18.8 | 164.75 | no |
-| trending-at-entry | whole | 310 | -17.45 | -1.87 [-55.92..85.37] (20; 33.5) | no | BE@1.5 | 2.92 | 32.51 | no |
+| ranging-at-entry | asia | 61 | -19.8 | 11.25 [-173.8..92.63] (20; 8) | no | TRAIL-1-0.5 | -6.16 | 80.26 | no |
+| ranging-at-entry | dead | 66 | 4.95 | 30.02 [-118.36..84.82] (20; 15.5) | no | TRAIL-1-1 | 33.6 | 95.46 | no |
+| ranging-at-entry | london | 55 | 3.06 | 34.09 [-121.03..81.41] (20; 6) | no | TRAIL-0.5-0.5 | 5.27 | 94.15 | no |
+| ranging-at-entry | ny_only | 32 | -0.27 | 3.1 [-58.6..257.93] (19; 2) | no | TRAIL-1-0.5 | 12.06 | 327.44 | no |
+| ranging-at-entry | overlap | °22 | 4.77 | 34.45 [-173.3..198.21] (20; 2.5) | no | BE@0.25 | 4.77 | 198.21 | no |
+| ranging-at-entry | whole | 236 | -2.61 | 19.83 [-50.71..58.78] (20; 35) | no | TRAIL-1-0.5 | 6.44 | 51.16 | no |
+| trending-at-entry | asia | 122 | 2.73 | -26.97 [-190.78..64.77] (20; 13) | no | BE@0.5 | 7.74 | 56.46 | no |
+| trending-at-entry | dead | 167 | -11.68 | -7.42 [-179.24..89.48] (20; 18.5) | no | BE@1.5 | 11.47 | 54.62 | no |
+| trending-at-entry | london | 127 | 6.07 | 16.06 [-85.53..81.49] (20; 7.5) | no | TRAIL-1-0.5 | 21.55 | 86.46 | no |
+| trending-at-entry | ny_only | 73 | -6.56 | 2.35 [-26.4..87.11] (20; 4) | no | BE@1.5 | -3.21 | 42.99 | no |
+| trending-at-entry | overlap | 51 | 9.33 | 11.07 [-64.61..105.82] (20; 6) | no | TRAIL-1-0.5 | 28.94 | 119.53 | no |
+| trending-at-entry | whole | 540 | -1.57 | -9.69 [-60.63..32.4] (20; 49) | no | TRAIL-0.5-1 | 4.66 | 43.11 | no |
 
-### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.235; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.233; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
 
 | entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| high-efficiency-at-entry | 303 | BE@1.5 | -1045.9 | -8249.3 |
-| low-efficiency-at-entry | 151 | TRAIL-0.5-1 | 4511.0 | 3522.5 |
+| high-efficiency-at-entry | 515 | TRAIL-1-0.5 | 586.9 | -4743.0 |
+| low-efficiency-at-entry | 261 | BE@0.25 | 3276.2 | 3276.2 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
 | ranging-day | °6 | TRAIL-1-0.5 | 1358.4 | 1053.9 |
-| trending-day | 448 | TRAIL-0.5-1 | -518.5 | -5780.7 |
+| trending-day | 770 | TRAIL-0.5-1 | 1912.0 | -2520.7 |
 
 ### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 143 | 33647.4 | 7411.3 |
-| BE@0.5 | YES | 127 | 31753.5 | 6994.2 |
-| BE@1 | YES | 97 | 23288.3 | 5129.6 |
-| BE@1.5 | NO (above the bound) | 77 | 15986.3 | 3521.2 |
+| BE@0.25 | YES | 224 | 45311.5 | 5839.1 |
+| BE@0.5 | YES | 196 | 41149.2 | 5302.7 |
+| BE@1 | YES | 150 | 30964.7 | 3990.3 |
+| BE@1.5 | NO (above the bound) | 123 | 22498.5 | 2899.3 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
-| event | dead | loud-dip | 27 | BE@1.5 | -721.8 | -1.8 |
+| event | dead | clean | 28 | TRAIL-1-1 | 1743.7 | 29.52 |
+| event | dead | loud-dip | 35 | BE@1.5 | -404.7 | -1.8 |
 
-## uk100fut (581 base trades)
+## uk100fut (865 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -159,73 +163,77 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | 2411.6 | 147.6 (-187.2..543.6) |
-| BE@0.5 | 1900.7 | 132.9 (-187.2..558.9) |
-| BE@1 | 1058.0 | 142.6 (-195.6..318.7) |
-| BE@1.5 | 1123.1 | 99.8 (-252.0..342.4) |
-| TRAIL-0.5-0.5 | 3363.4 | 246.9 (13.2..811.8) |
-| TRAIL-0.5-1 | 2998.7 | 173.4 (-84.4..778.0) |
-| TRAIL-1-0.5 | 2883.6 | 323.9 (139.7..803.6) |
-| TRAIL-1-1 | 2712.9 | 298.4 (16.1..730.9) |
-| RATCHET-1.0-1.0 | 2712.9 | 298.4 (16.1..730.9) |
-| RATCHET-1.0-0.5 | 2883.6 | 323.9 (139.7..803.6) |
+| BE@0.25 | 2825.9 | 332.8 (-100.5..978.5) |
+| BE@0.5 | 2201.2 | 289.2 (-271.0..824.2) |
+| BE@1 | 972.9 | 208.9 (-441.4..563.0) |
+| BE@1.5 | 987.2 | 104.5 (-359.7..474.4) |
+| TRAIL-0.5-0.5 | 3885.1 | 430.2 (-106.5..1242.1) |
+| TRAIL-0.5-1 | 3576.0 | 416.0 (-179.7..1343.1) |
+| TRAIL-1-0.5 | 3364.5 | 464.7 (-12.9..1183.2) |
+| TRAIL-1-1 | 3271.2 | 482.1 (48.1..1252.6) |
+| RATCHET-1.0-1.0 | 3271.2 | 482.1 (48.1..1252.6) |
+| RATCHET-1.0-0.5 | 3364.5 | 464.7 (-12.9..1183.2) |
 
 ### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-at-entry | 190 | TRAIL-0.5-0.5 | 670.1 | 275.5 |
-| trending-at-entry | 391 | TRAIL-0.5-0.5 | 2693.2 | 2136.1 |
+| ranging-at-entry | 273 | TRAIL-0.5-0.5 | 991.6 | 411.0 |
+| trending-at-entry | 592 | TRAIL-0.5-1 | 2983.2 | 2414.9 |
 
 ### Regime-gate floors (register 107: the phase-at-entry cut with the base cells' member machinery — per regime x session, every policy's PER-TRADE net delta vs the B-RANDOM members' per-trade net deltas in the identical scope; per-trade because the arm's and the members' regime shares differ). THE REGISTER-92 GATE on BE@0.25: ranging cell measurable on both regimes AND clears its member band max AND the ranging-minus-trending gap sits beyond the luck budget (regime labels permuted within session strata, 100 pinned seeds, percentile > 95).
 
-**Gate readout (BE@0.25):** ranging n=190 per-trade Δ 1.45 vs member band max 13.05 — inside the band; trending n=391 per-trade Δ 5.46; gap -4.01 vs null median -0.08 / p95 5.24 (percentile 9.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
+**Gate readout (BE@0.25):** ranging n=273 per-trade Δ 1.51 vs member band max 15.64 — inside the band; trending n=592 per-trade Δ 4.08; gap -2.57 vs null median 0.17 / p95 4.32 (percentile 18.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
 
 | regime | session | n | BE@0.25 Δ/trade | member band med [min..max] (members; med member n) | clears | best policy | best Δ/trade | best band max | clears |
 |---|---|---|---|---|---|---|---|---|---|
-| ranging-at-entry | asia | 33 | 8.14 | 5.2 [-38.37..35.2] (17; 2) | no | TRAIL-1-0.5 | 11.18 | 54.68 | no |
-| ranging-at-entry | dead | °14 | -6.53 | 11.48 [-125.1..52.64] (16; 1) | no | TRAIL-0.5-0.5 | 2.49 | 54.01 | no |
-| ranging-at-entry | london | 67 | -2.51 | -0.0 [-57.13..30.83] (20; 5) | no | TRAIL-0.5-0.5 | -2.22 | 38.19 | no |
-| ranging-at-entry | ny_only | 59 | 4.94 | 8.99 [-14.31..27.41] (20; 12) | no | TRAIL-0.5-0.5 | 7.28 | 30.0 | no |
-| ranging-at-entry | overlap | °17 | -1.49 | -3.43 [-10.83..14.84] (12; 2.5) | no | TRAIL-1-0.5 | 2.43 | 2.56 | no |
-| ranging-at-entry | whole | 190 | 1.45 | 5.82 [-7.5..13.05] (20; 21) | no | TRAIL-0.5-0.5 | 3.53 | 17.77 | no |
-| trending-at-entry | asia | 74 | 9.25 | 2.71 [-45.91..47.12] (20; 4) | no | TRAIL-0.5-1 | 11.19 | 47.54 | no |
-| trending-at-entry | dead | 36 | 3.94 | 15.23 [-75.6..59.5] (15; 1) | no | TRAIL-0.5-0.5 | 7.08 | 63.3 | no |
-| trending-at-entry | london | 113 | 4.95 | -0.45 [-50.12..19.8] (20; 8) | no | TRAIL-0.5-1 | 6.56 | 24.31 | no |
-| trending-at-entry | ny_only | 124 | 6.86 | 6.65 [-34.87..17.88] (20; 15.5) | no | TRAIL-1-0.5 | 9.93 | 24.79 | no |
-| trending-at-entry | overlap | 44 | -2.3 | 0.75 [-8.25..19.65] (19; 2) | no | BE@1.5 | 0.0 | 0.0 | no |
-| trending-at-entry | whole | 391 | 5.46 | 1.85 [-16.3..12.99] (20; 31) | no | TRAIL-0.5-0.5 | 6.89 | 21.48 | no |
+| ranging-at-entry | asia | 50 | 4.99 | 3.5 [-52.4..29.43] (20; 3) | no | TRAIL-0.5-0.5 | 7.51 | 37.64 | no |
+| ranging-at-entry | dead | °15 | -5.0 | 0.0 [-43.48..12.52] (12; 1.5) | no | TRAIL-0.5-0.5 | 3.59 | 15.62 | no |
+| ranging-at-entry | london | 95 | -0.62 | 2.4 [-10.25..25.76] (20; 7.5) | no | TRAIL-0.5-0.5 | -0.11 | 35.81 | no |
+| ranging-at-entry | ny_only | 85 | 2.81 | 6.2 [-6.01..20.88] (20; 17) | no | TRAIL-0.5-0.5 | 5.67 | 25.07 | no |
+| ranging-at-entry | overlap | 28 | 2.03 | 0.0 [-28.2..15.04] (19; 2) | no | TRAIL-0.5-0.5 | 3.24 | 15.13 | no |
+| ranging-at-entry | whole | 273 | 1.51 | 4.09 [-0.9..15.64] (20; 32) | no | TRAIL-0.5-0.5 | 3.63 | 14.36 | no |
+| trending-at-entry | asia | 110 | 8.85 | 2.47 [-35.38..24.63] (20; 5) | no | TRAIL-0.5-1 | 11.3 | 35.51 | no |
+| trending-at-entry | dead | 54 | -0.52 | 4.82 [-30.6..34.54] (17; 2) | no | BE@0.5 | 2.83 | 34.54 | no |
+| trending-at-entry | london | 179 | 2.88 | 1.99 [-26.54..20.79] (20; 14.5) | no | TRAIL-0.5-1 | 3.65 | 19.07 | no |
+| trending-at-entry | ny_only | 192 | 5.74 | 5.09 [-12.61..17.67] (20; 23) | no | TRAIL-1-0.5 | 7.43 | 23.8 | no |
+| trending-at-entry | overlap | 57 | -2.59 | 0.0 [-15.0..28.51] (20; 3) | no | BE@1.5 | -0.41 | 0.0 | no |
+| trending-at-entry | whole | 592 | 4.08 | 3.62 [-6.55..14.44] (20; 48) | no | TRAIL-0.5-1 | 5.04 | 15.41 | no |
 
-### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.227; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.228; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
 
 | entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| high-efficiency-at-entry | 382 | TRAIL-0.5-0.5 | 2175.0 | 1631.6 |
-| low-efficiency-at-entry | 199 | TRAIL-1-0.5 | 1232.5 | 780.0 |
+| high-efficiency-at-entry | 576 | TRAIL-0.5-0.5 | 2372.1 | 1540.9 |
+| low-efficiency-at-entry | 289 | TRAIL-0.5-0.5 | 1512.9 | 1285.1 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-day | 57 | TRAIL-0.5-0.5 | 275.1 | 102.4 |
-| trending-day | 524 | TRAIL-0.5-0.5 | 3088.2 | 2309.2 |
+| ranging-day | 74 | TRAIL-0.5-0.5 | 342.6 | 234.4 |
+| trending-day | 791 | TRAIL-0.5-0.5 | 3542.5 | 2591.5 |
 
 ### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 154 | 6871.6 | 1182.7 |
-| BE@0.5 | YES | 131 | 6084.6 | 1047.3 |
-| BE@1 | YES | 97 | 4465.7 | 768.6 |
-| BE@1.5 | NO (above the bound) | 78 | 3370.5 | 580.1 |
+| BE@0.25 | YES | 239 | 10250.0 | 1185.0 |
+| BE@0.5 | YES | 203 | 8863.0 | 1024.6 |
+| BE@1 | YES | 154 | 6678.8 | 772.1 |
+| BE@1.5 | NO (above the bound) | 125 | 5146.8 | 595.0 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
-| event | ny_only | clean | 27 | TRAIL-1-0.5 | 171.4 | 9.91 |
+| composite | ny_only | clean | 29 | TRAIL-1-1 | 415.4 | 4.58 |
+| event | ny_only | clean | 41 | TRAIL-1-0.5 | 109.6 | 9.36 |
+| event | ny_only | loud-dip | 29 | TRAIL-1-0.5 | 699.1 | 12.29 |
+| retest | london | clean | 33 | BE@0.5 | 302.8 | -1.3 |
+| trend | ny_only | clean | 26 | TRAIL-0.5-1 | -49.0 | -3.5 |
 
-## us30fut (526 base trades)
+## us30fut (915 base trades)
 
 **Luck budget:** 0 measurable quiet/loud pairs differentiate at >= 5 pts/trade vs null median 0 / p95 0 (percentile 0.0).
 
@@ -233,67 +241,72 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_capture_study, regi
 
 | policy | net delta | floor med (min..max) |
 |---|---|---|
-| BE@0.25 | -10431.1 | -1222.9 (-3621.4..320.7) |
-| BE@0.5 | -9616.1 | -1089.2 (-4170.1..-87.6) |
-| BE@1 | -3242.1 | -600.8 (-2349.8..1253.4) |
-| BE@1.5 | -5123.3 | -589.1 (-1945.8..1552.6) |
-| TRAIL-0.5-0.5 | -9507.7 | -1714.0 (-4081.2..485.7) |
-| TRAIL-0.5-1 | -10459.4 | -1617.5 (-4106.9..379.0) |
-| TRAIL-1-0.5 | -9705.2 | -1655.2 (-3366.6..1051.1) |
-| TRAIL-1-1 | -10184.6 | -1903.2 (-3655.3..601.2) |
-| RATCHET-1.0-1.0 | -10184.6 | -1903.2 (-3655.3..601.2) |
-| RATCHET-1.0-0.5 | -9705.2 | -1655.2 (-3366.6..1051.1) |
+| BE@0.25 | -10565.7 | -2164.8 (-7299.8..1497.4) |
+| BE@0.5 | -10105.5 | -1845.3 (-6144.6..1451.3) |
+| BE@1 | -4082.0 | -1347.4 (-3557.7..3216.1) |
+| BE@1.5 | -6188.8 | -1306.0 (-2524.9..1772.0) |
+| TRAIL-0.5-0.5 | -9437.5 | -2463.0 (-7240.2..2717.3) |
+| TRAIL-0.5-1 | -10792.4 | -2506.6 (-7172.9..2069.4) |
+| TRAIL-1-0.5 | -10663.7 | -2638.6 (-6320.8..2342.6) |
+| TRAIL-1-1 | -10296.6 | -2645.5 (-6682.6..2101.1) |
+| RATCHET-1.0-1.0 | -10296.6 | -2645.5 (-6682.6..2101.1) |
+| RATCHET-1.0-0.5 | -10663.7 | -2638.6 (-6320.8..2342.6) |
 
 ### Regime split — PHASE-AT-ENTRY (register 90 item 1, re-registered by operator ruling: the enrichment convention, 1M phase at the fire bar; the generalize-vs-geography test — if trails clear on trending entries regardless of continent, the scope generalizes)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-at-entry | 180 | TRAIL-0.5-0.5 | -16.0 | -1167.0 |
-| trending-at-entry | 346 | BE@1 | -3058.5 | -9264.1 |
+| ranging-at-entry | 305 | TRAIL-0.5-0.5 | -1117.9 | -3395.3 |
+| trending-at-entry | 610 | BE@1 | -1940.8 | -7170.4 |
 
 ### Regime-gate floors (register 107: the phase-at-entry cut with the base cells' member machinery — per regime x session, every policy's PER-TRADE net delta vs the B-RANDOM members' per-trade net deltas in the identical scope; per-trade because the arm's and the members' regime shares differ). THE REGISTER-92 GATE on BE@0.25: ranging cell measurable on both regimes AND clears its member band max AND the ranging-minus-trending gap sits beyond the luck budget (regime labels permuted within session strata, 100 pinned seeds, percentile > 95).
 
-**Gate readout (BE@0.25):** ranging n=180 per-trade Δ -6.48 vs member band max 22.93 — inside the band; trending n=346 per-trade Δ -26.77; gap 20.29 vs null median -4.66 / p95 27.3 (percentile 88.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
+**Gate readout (BE@0.25):** ranging n=305 per-trade Δ -11.13 vs member band max 36.08 — inside the band; trending n=610 per-trade Δ -11.75; gap 0.62 vs null median -1.33 / p95 23.55 (percentile 54.0, 100 valid seeds) — inside the luck budget; sessions where the ranging cell clears at n>=25: none. **GATE NOT PASSED.**
 
 | regime | session | n | BE@0.25 Δ/trade | member band med [min..max] (members; med member n) | clears | best policy | best Δ/trade | best band max | clears |
 |---|---|---|---|---|---|---|---|---|---|
-| ranging-at-entry | asia | °21 | -23.63 | 57.41 [-1243.5..94.04] (19; 2) | no | TRAIL-0.5-0.5 | -15.35 | 122.73 | no |
-| ranging-at-entry | dead | 60 | 7.49 | -77.42 [-174.93..84.27] (20; 12) | no | TRAIL-0.5-0.5 | 19.93 | 89.39 | no |
-| ranging-at-entry | london | 44 | -22.31 | -1.08 [-181.08..96.34] (19; 5) | no | BE@1 | 13.79 | 96.34 | no |
-| ranging-at-entry | ny_only | 31 | -30.82 | 1.25 [-60.0..71.75] (19; 2) | no | TRAIL-0.5-0.5 | -12.07 | 76.79 | no |
-| ranging-at-entry | overlap | °24 | 34.04 | 36.74 [-115.33..129.01] (18; 3) | no | TRAIL-0.5-0.5 | 35.29 | 149.54 | no |
-| ranging-at-entry | whole | 180 | -6.48 | -37.53 [-98.61..22.93] (20; 21.5) | no | TRAIL-0.5-0.5 | -0.09 | 28.26 | no |
-| trending-at-entry | asia | 60 | 4.89 | 48.5 [-268.7..111.74] (19; 3) | no | TRAIL-1-0.5 | 17.82 | 156.89 | no |
-| trending-at-entry | dead | 81 | -119.92 | -20.97 [-309.28..93.06] (20; 12) | no | BE@1.5 | -51.16 | 47.26 | no |
-| trending-at-entry | london | 119 | 0.68 | 19.72 [-192.27..112.2] (20; 8) | no | BE@0.25 | 0.68 | 112.2 | no |
-| trending-at-entry | ny_only | 57 | 3.47 | 22.38 [-62.62..77.2] (19; 3) | no | BE@0.25 | 3.47 | 77.2 | no |
-| trending-at-entry | overlap | 29 | -4.25 | 17.34 [-65.5..132.09] (20; 4.5) | no | BE@1 | 56.54 | 99.62 | no |
-| trending-at-entry | whole | 346 | -26.77 | -11.74 [-105.33..51.77] (20; 30.5) | no | BE@1 | -8.84 | 44.29 | no |
+| ranging-at-entry | asia | 60 | -14.85 | 46.28 [-242.71..92.92] (20; 3.5) | no | TRAIL-0.5-1 | -8.1 | 112.53 | no |
+| ranging-at-entry | dead | 82 | -0.91 | -70.22 [-263.94..53.9] (20; 17) | no | TRAIL-0.5-0.5 | 9.51 | 50.95 | no |
+| ranging-at-entry | london | 78 | -33.38 | -49.56 [-299.37..115.69] (20; 6.5) | no | BE@1 | 3.31 | 82.38 | no |
+| ranging-at-entry | ny_only | 44 | -20.3 | 24.5 [-57.35..92.56] (17; 2) | no | TRAIL-1-0.5 | -10.27 | 159.95 | no |
+| ranging-at-entry | overlap | 41 | 26.02 | 54.12 [-100.67..119.25] (19; 4) | no | TRAIL-0.5-0.5 | 33.43 | 144.9 | no |
+| ranging-at-entry | whole | 305 | -11.13 | -16.65 [-170.48..36.08] (20; 32.5) | no | TRAIL-0.5-0.5 | -3.67 | 18.58 | no |
+| trending-at-entry | asia | 125 | 9.98 | 28.25 [-112.49..77.33] (20; 5) | no | TRAIL-1-1 | 20.86 | 132.15 | no |
+| trending-at-entry | dead | 139 | -78.52 | -54.95 [-176.25..30.13] (20; 17.5) | no | BE@1.5 | -38.01 | 44.88 | no |
+| trending-at-entry | london | 198 | 3.53 | -3.75 [-228.72..106.16] (20; 10.5) | no | BE@1 | 6.24 | 79.04 | no |
+| trending-at-entry | ny_only | 92 | 6.31 | -0.25 [-81.25..54.0] (20; 4) | no | BE@0.25 | 6.31 | 54.0 | no |
+| trending-at-entry | overlap | 56 | 21.77 | 28.94 [-86.21..95.19] (20; 7) | no | TRAIL-0.5-1 | 44.7 | 120.26 | no |
+| trending-at-entry | whole | 610 | -11.75 | -29.27 [-109.08..29.59] (20; 45) | no | BE@1 | -3.18 | 49.51 | no |
 
-### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.216; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
+### Efficiency-at-entry split — the SECOND regime lens (register 122, organ #2's efficiency half: eff15 = |net move|/path over the trailing 15 x 1M bars at the fire bar, cut at the store median 0.217; parameter-free). CONTEXT beside the phase lens, never a replacement; no gate reads on it. Unmeasured (warmup) trades: 0.
 
 | entry efficiency | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| high-efficiency-at-entry | 335 | BE@1 | -522.0 | -3347.3 |
-| low-efficiency-at-entry | 191 | BE@1 | -2720.0 | -7083.8 |
+| high-efficiency-at-entry | 586 | BE@1 | -610.7 | -3664.9 |
+| low-efficiency-at-entry | 329 | BE@1 | -3471.3 | -6900.8 |
 
 ### Day-level regime cut — the RECORDED FIRST ATTEMPT (register 89/90: saturation finding — 98% of days classified trending on three legs, no contrast available; stands as history, superseded as the regime lens)
 
 | regime | n | best policy | best net delta | BE@0.25 net delta |
 |---|---|---|---|---|
-| ranging-day | °9 | BE@1 | 0.0 | -1446.5 |
-| trending-day | 517 | BE@1 | -3242.1 | -8984.6 |
+| ranging-day | 48 | BE@1.5 | -193.1 | -1965.8 |
+| trending-day | 867 | BE@1 | -3279.5 | -8599.9 |
 
 ### NEVER-AGAIN pricing (register 89 item 1: the cost of guaranteeing no trade exceeds +1xATR MFE unprotected — a risk-rule pricing, separable from the edge question; guarantee holds up to the register-87 single-bar span exception). FIAT DEFERRED (register 90 item 2, operator ruling: option c) — NOT ENACTED at any scope; the per-cell grid may deliver the guarantee as a byproduct of scoped policies; this table stands as the decision's evidence base, revisit when cells measure; the +216 class remains possible in the interim — accepted, dated.
 
 | rung | qualifies | winners amputated | amputation pts | per 100 trades |
 |---|---|---|---|---|
-| BE@0.25 | YES | 138 | 39702.4 | 7548.0 |
-| BE@0.5 | YES | 115 | 33704.1 | 6407.6 |
-| BE@1 | YES | 76 | 21544.0 | 4095.8 |
-| BE@1.5 | NO (above the bound) | 63 | 18936.2 | 3600.0 |
+| BE@0.25 | YES | 231 | 60107.6 | 6569.1 |
+| BE@0.5 | YES | 196 | 51817.3 | 5663.1 |
+| BE@1 | YES | 133 | 34986.3 | 3823.6 |
+| BE@1.5 | NO (above the bound) | 107 | 30057.5 | 3285.0 |
 
 ### Best policy per cell (measurable cells; full grid in the JSON)
 
 | family | session | tape | n | best policy | best net delta | median kept |
 |---|---|---|---|---|---|---|
+| composite | london | clean | 25 | BE@0.25 | 2424.1 | -2.6 |
+| event | dead | clean | 37 | BE@1.5 | 1489.6 | -2.6 |
+| event | dead | loud-dip | 26 | TRAIL-1-1 | -1087.4 | 11.19 |
+| event | london | clean | 41 | BE@1 | -368.7 | -2.6 |
+| event | london | loud-dip | 25 | BE@0.5 | 265.3 | -2.6 |

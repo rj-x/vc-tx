@@ -92,7 +92,7 @@ Feeds no thresholds or rules before walk-forward; full table in `uk100fut_extend
 
 ## Macro tagging (±15 min; calendar validated on load)
 
-Calendar: 25 releases (validated).
+Calendar: 46 releases (validated).
 
 | Event type | outside | near_GBP |
 |---|---|---|
@@ -136,9 +136,9 @@ Reconciliation (live-vs-settled): 0 entries checked, **0 flagged** — check ARM
 
 Run in the same campaign command; every artifact carries its own stamps, conventions (dual-convention grading, register 53; conditioned baselines, register 47), and sealed-window skips. Index + headlines (artifacts in reports/scoreboard/ unless noted):
 
-- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `78fd6e12c`): 4 instruments; home forward union coverage 86.4% (89/103).
+- **Signal scoreboard** (`hypothesis_performance.md|.json`, engine `8effbb323`): 4 instruments; home forward union coverage 82.3% (181/220).
 - **Recipe performance** (`recipe_performance.md|.json`): set **recipe_set_v0.8**, 4 instruments; provenance printed per recipe.
-- **Forward migration** (`reports/forward/migration_forward_20260814_20260904.json`): 316 forward chains; 11:46Z grade matched=False.
+- **Forward migration** (`reports/forward/migration_forward_20260814_20260916.json`): 771 forward chains; 11:46Z grade matched=False.
 - **Co-fire census** (`cofire.md|.json`): cross-family pairs; composites go through the front door only.
 - **Conditioning matrix** (`conditioning_matrix.md|.json`): state-conditioned cells, episode-start hits; survivors are sitting material.
 - **VWAP census** (`vwap_census.md|.json`): re-cut conventions (episode-start hits, decile-matched + phase-conditioned bases); nothing survives at home as of the re-cut.

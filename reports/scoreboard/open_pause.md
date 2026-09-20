@@ -2,26 +2,26 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_open_pause, register 133). **THE HONESTY FENCE FIRST: this cell was SELECTED POST-HOC from the worst-27 forensic — all three conditions were read off the losses; the backtest result is MOTIVATING, NOT EVIDENTIAL. Enactment requires the forward / sealed-window cells clearing their floors at measurable n, PER-MARKET SCOPED (ger40/nas100's open weakness vs us30's open strength already diverge — a surviving rule likely wears two legs, not four).** (a) in-open outcomes split by the DAY'S open-window ATR percentile (the window's first bar, register-130 machinery; strata <80 / 80-95 / >=95); gap = median(<80) − median(>=95), one-sided, vs the day→bucket map permuted across days (100 pinned seeds); distinct paths (register 113). (b) the register-132 counterfactual with the CONDITIONAL predicate (skip only in-open, only at day open-pctl > X ∈ {80, 95}); B-RANDOM floors under the identical rule, scalp arms only (context floor-less, stated). Weekly under Part C beside register 132; ex-lockbox; nothing registers here.
 
 ## (a) Open-window strata — scalp arms headlined (gap = <80 median minus >=95 median; positive = degradation concentrates in stretched ATR)
 
 | arm | leg | window | <80 med (n) | 80-95 med (n) | >=95 med (n) | gap | null p95 | pct | clears |
 |---|---|---|---|---|---|---|---|---|---|
 | R-SCALP-H6 | ger40fut | backtest | 12.01 (6) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6 | ger40fut | forward | 6.63 (17) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6 | ger40fut | forward | 6.94 (18) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | ger40fut | backtest | 13.85 (6) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6-REF | ger40fut | forward | 6.94 (14) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | ger40fut | forward | 7.25 (15) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | nas100fut | backtest | 32.7 (9) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | nas100fut | forward | 16.31 (16) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | nas100fut | backtest | 23.08 (7) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | nas100fut | forward | 17.59 (16) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | uk100fut | backtest | 7.27 (6) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6 | uk100fut | forward | 3.85 (11) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6 | uk100fut | forward | 3.85 (13) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | uk100fut | backtest | 6.95 (4) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6-REF | uk100fut | forward | 3.85 (13) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6-REF | uk100fut | forward | 3.85 (15) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6 | us30fut | backtest | 28.25 (7) | — (0) | None (0) | — | — | — | no |
-| R-SCALP-H6 | us30fut | forward | 22.23 (18) | — (0) | None (0) | — | — | — | no |
+| R-SCALP-H6 | us30fut | forward | 22.23 (19) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | us30fut | backtest | 20.04 (7) | — (0) | None (0) | — | — | — | no |
 | R-SCALP-H6-REF | us30fut | forward | 22.23 (15) | — (0) | None (0) | — | — | — | no |
 
@@ -29,9 +29,9 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_open_pause, registe
 
 | leg | variant | window | gap | pct vs null | clears |
 |---|---|---|---|---|---|
-| uk100fut | R-NEXIT-EARLY | backtest | -5.14 | 33.3 | no |
-| uk100fut | R-NEXIT-FULL | backtest | -6.45 | 33.3 | no |
-| uk100fut | R-OP2 | backtest | -0.26 | 28.6 | no |
+| uk100fut | R-NEXIT-EARLY | backtest | -5.14 | 0.0 | no |
+| uk100fut | R-NEXIT-FULL | backtest | -6.45 | 0.0 | no |
+| uk100fut | R-OP2 | backtest | -0.26 | 50.0 | YES |
 
 ## (b) The conditional counterfactual — scalp arms vs the member band (positive Δ = the rule helped)
 

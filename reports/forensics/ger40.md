@@ -2,340 +2,506 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_trade_forensics, register 84). FENCE: forensics is CANDIDATE-GENERATION ONLY — no pattern becomes a gate, filter, or recipe change without its own Q-number and forward grade; candidates are read at an operator+reviewer sitting on these files; questions minted through the front door only (closed namespace, register 54; counted trial log).
 
-STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. NET LEDGER = per-cell pooled net with MANDATORY zone decomposition (descriptive, no null; ranking is best-of-field by construction): pooled INCLUDES the lockbox span under the dated operator order of 2026-08-27 — the one sanctioned decomposition display; register 85 stands for every evidential aggregate, and the decomposition columns are why the pooled number is candidate-generation only. NO CELL IS QUOTABLE FROM THE LEDGER WITHOUT ITS FORWARD COLUMN. EXCLUDED FROM AGGREGATES: 3517 lockbox-span rows, 0 sealed rows (of 14507 journal rows; 10990 used).
+STATISTIC SHAPES (74-B): grids = per-cell medians (descriptive); separators = field count vs permutation null (win/loss labels shuffled within sentence x variant strata, 100 pinned shuffles; cell set fixed at observed measurability) plus per-cell extremity vs that null's p95; exit-efficiency and winner-MAE = descriptive medians/quantiles, DESIGN INPUTS with no null. Measurable separator cell: wins+losses >= 25 and each side >= 10; scratch = |points| < instrument median spread, excluded from labels. Exit-efficiency pools variants — the same fire appears under each management, so rows are management-outcomes, not independent fires (stated). Prices are the FUTURES leg (the journal's basis). FILL MODEL: PESSIMISTIC (inherited). ° = dimmed (below measurability), excluded from the arithmetic. NET LEDGER = per-cell pooled net with MANDATORY zone decomposition (descriptive, no null; ranking is best-of-field by construction): pooled INCLUDES the lockbox span under the dated operator order of 2026-08-27 — the one sanctioned decomposition display; register 85 stands for every evidential aggregate, and the decomposition columns are why the pooled number is candidate-generation only. NO CELL IS QUOTABLE FROM THE LEDGER WITHOUT ITS FORWARD COLUMN. EXCLUDED FROM AGGREGATES: 3517 lockbox-span rows, 0 sealed rows (of 22352 journal rows; 18835 used).
 
-**Luck budget (ger40fut):** 1073 of 3538 measurable separator cells reach |split| >= 10pp vs null median 1111 / p95 1169.05; percentile 11.0. Survivors also clear their own cell's null p95.
+**Luck budget (ger40fut):** 2010 of 6891 measurable separator cells reach |split| >= 10pp vs null median 2072 / p95 2136.05; percentile 9.0. Survivors also clear their own cell's null p95.
 
 ## Session x variant x sentence grid (median pts; rows with a measurable session cell; full grid in the JSON)
 
 | sentence | variant | asia | london | overlap | ny_only | dead |
 |---|---|---|---|---|---|---|
-| S0-H1 | R-H1-KNIFE | -5.4 (29) | -6.0 (°19) | 8.1 (°2) | -3.2 (°20) | -0.6 (°10) |
-| S0-H1 | R-NEXIT-EARLY | -2.1 (55) | -0.8 (°23) | 5.5 (°3) | 0.3 (25) | -1.45 (°24) |
-| S0-H1 | R-NEXIT-FULL | -2.1 (55) | -0.8 (°23) | 5.5 (°3) | 0.3 (25) | -1.45 (°24) |
-| S0-H1 | R-NEXIT-SENT | 0.85 (34) | -12.1 (°17) | 17.25 (°2) | -2.85 (°18) | -0.35 (°14) |
-| S0-H1 | R-OP2 | -3.97 (38) | -6.34 (°13) | -6.72 (°2) | -3.8 (°16) | -2.0 (°12) |
-| S0-H10 | R-NEXIT-EARLY | -2.1 (63) | -1.7 (31) | -1.5 (°7) | 1.55 (32) | -4.4 (°19) |
-| S0-H10 | R-NEXIT-FULL | -1.2 (68) | -0.8 (35) | 1.5 (°8) | 1.55 (32) | -2.7 (°21) |
-| S0-H10 | R-NEXIT-SENT | -7.5 (35) | -13.5 (°18) | 0.29 (°6) | -2.4 (°15) | -14.09 (°7) |
-| S0-H10 | R-OP2 | -4.37 (73) | -7.17 (40) | -6.76 (°11) | -4.11 (35) | -4.74 (°23) |
-| S0-H11 | R-NEXIT-EARLY | -1.7 (90) | 0.7 (69) | -8.17 (°12) | -1.1 (°19) | -2.1 (°18) |
-| S0-H11 | R-NEXIT-FULL | -0.9 (109) | 0.75 (84) | -4.4 (°15) | -1.1 (°19) | -2.1 (°18) |
-| S0-H11 | R-NEXIT-SENT | -6.04 (36) | -3.55 (36) | -1.1 (°8) | -1.05 (°10) | -6.7 (°10) |
-| S0-H11 | R-OP2 | -3.51 (102) | -6.34 (111) | -6.2 (°22) | -8.24 (°15) | -3.96 (°15) |
-| S0-H14 | R-NEXIT-EARLY | -1.8 (53) | -4.05 (°24) | -10.9 (°6) | -3.78 (°21) | -4.1 (°18) |
-| S0-H14 | R-NEXIT-FULL | -1.8 (57) | 6.1 (31) | -7.2 (°9) | -1.5 (25) | -2.1 (°21) |
-| S0-H14 | R-NEXIT-SENT | -13.74 (30) | 4.09 (°18) | 28.9 (°3) | -9.7 (°15) | -9.07 (°8) |
-| S0-H14 | R-OP2 | -5.39 (63) | -5.86 (40) | -5.97 (°12) | -1.98 (25) | -3.87 (°21) |
-| S0-H17 | R-NEXIT-EARLY | -1.0 (38) | -0.8 (°16) | 2.8 (°2) | -1.7 (°13) | -2.1 (°14) |
-| S0-H17 | R-NEXIT-FULL | -1.0 (38) | -0.8 (°16) | 2.8 (°2) | -1.7 (°13) | -2.1 (°14) |
-| S0-H17 | R-NEXIT-SENT | -2.4 (29) | -8.3 (°13) | 21.35 (°2) | -2.7 (°11) | 0.4 (°9) |
-| S0-H17 | R-OP2 | -3.8 (37) | -2.12 (°15) | 5.72 (°2) | -3.68 (°13) | -5.4 (°13) |
-| S0-H18 | R-NEXIT-EARLY | -3.45 (°24) | -4.15 (34) | -1.65 (°8) | -2.55 (°2) | -5.1 (°3) |
-| S0-H18 | R-NEXIT-FULL | -3.45 (°24) | -5.2 (41) | 0.3 (°9) | -2.55 (°2) | -5.1 (°3) |
-| S0-H18 | R-OP2 | -6.36 (°23) | -9.61 (41) | -8.73 (°8) | 0.75 (°2) | 3.32 (°2) |
-| S0-H19 | R-NEXIT-EARLY | -2.7 (89) | -3.65 (26) | -2.7 (°10) | -1.2 (63) | -1.2 (61) |
-| S0-H19 | R-NEXIT-FULL | -2.5 (89) | -3.65 (26) | -2.7 (°10) | -1.2 (63) | -1.2 (61) |
-| S0-H19 | R-NEXIT-SENT | -3.7 (47) | -0.2 (°19) | -0.6 (°7) | 5.0 (31) | -5.15 (26) |
-| S0-H19 | R-OP2 | -4.83 (69) | -6.41 (°23) | -6.29 (°8) | -5.16 (38) | -3.67 (42) |
-| S0-H2 | R-ARM15 | -1.26 (25) | -0.99 (°20) | -11.1 (°7) | 35.65 (°15) | 12.62 (°8) |
-| S0-H2 | R-NEXIT-EARLY | -1.8 (171) | -0.5 (61) | -0.9 (26) | -1.5 (111) | -1.3 (86) |
-| S0-H2 | R-NEXIT-FULL | -1.6 (185) | -0.5 (61) | -0.9 (26) | -1.5 (111) | -1.05 (88) |
-| S0-H2 | R-NEXIT-SENT | -1.5 (93) | -2.0 (39) | -5.7 (°15) | -1.2 (62) | 0.15 (58) |
-| S0-H2 | R-OP2 | -4.1 (144) | -9.16 (52) | -5.93 (°23) | -5.86 (74) | -4.35 (50) |
-| S0-H20 | R-NEXIT-EARLY | -3.95 (26) | -6.2 (°20) | -5.8 (°11) | 3.9 (°3) | -6.35 (°2) |
-| S0-H20 | R-NEXIT-FULL | -3.65 (26) | -7.2 (25) | -5.15 (°12) | 3.9 (°3) | -6.35 (°2) |
-| S0-H20 | R-OP2 | -6.2 (25) | -10.59 (°22) | -6.86 (°13) | 14.47 (°3) | 30.9 (°1) |
-| S0-H6 | R-ARM15 | -11.39 (°21) | -25.32 (26) | 44.5 (°4) | — | -16.26 (°3) |
-| S0-H6 | R-NEXIT-EARLY | -2.0 (41) | 0.3 (39) | -5.04 (°7) | — | -8.8 (°3) |
-| S0-H6 | R-NEXIT-FULL | -1.7 (41) | -0.5 (46) | 4.7 (°9) | — | -8.8 (°3) |
-| S0-H6 | R-NEXIT-SENT | -2.5 (28) | -13.7 (27) | -1.5 (°6) | — | -8.8 (°3) |
-| S0-H6 | R-OP2 | -3.17 (39) | -8.15 (55) | -5.87 (°9) | — | -12.17 (°3) |
-| S0-H6 | R-SCALP-H6 | 6.88 (32) | 11.59 (42) | 14.14 (°7) | — | 9.03 (°3) |
-| S0-H6 | R-SCALP-H6-REF | 6.88 (28) | 11.39 (40) | 14.14 (°5) | — | 9.03 (°3) |
-| S0-H7 | R-NEXIT-EARLY | -0.4 (27) | 0.03 (32) | 5.2 (°15) | 0.15 (°18) | -9.5 (°6) |
-| S0-H7 | R-NEXIT-FULL | -0.4 (27) | 1.45 (36) | 5.2 (°15) | 0.15 (°18) | -4.4 (°6) |
-| S1-H11 | R-NEXIT-EARLY | -2.4 (68) | -4.45 (36) | 4.9 (°10) | 1.65 (32) | -2.25 (30) |
-| S1-H11 | R-NEXIT-FULL | -2.1 (81) | -1.55 (62) | 1.6 (°23) | 1.5 (36) | -2.4 (37) |
-| S1-H11 | R-OP2 | -3.45 (66) | -8.01 (91) | -4.23 (36) | -4.21 (33) | -3.25 (28) |
-| S1-H2 | R-ARM15 | -1.26 (27) | 11.67 (°18) | 56.62 (°5) | -4.2 (°14) | -5.74 (°7) |
-| S1-H2 | R-NEXIT-EARLY | -1.7 (143) | -0.55 (46) | 5.1 (°19) | -1.1 (84) | -1.65 (64) |
-| S1-H2 | R-NEXIT-FULL | -1.5 (149) | -0.55 (46) | 5.1 (°19) | -1.1 (84) | -1.5 (64) |
-| S1-H2 | R-NEXIT-SENT | -1.35 (80) | -2.8 (31) | -5.7 (°11) | -1.2 (54) | 0.0 (43) |
-| S1-H2 | R-OP2 | -3.54 (124) | -7.28 (41) | -8.2 (°19) | -4.78 (62) | -3.27 (41) |
+| S0-H1 | R-ARM15 | 1.9 (°20) | -15.59 (32) | 3.96 (°8) | -7.06 (°23) | 2.21 (°9) |
+| S0-H1 | R-BE | -1.5 (°13) | -1.5 (27) | 5.9 (°3) | -1.5 (°23) | -1.5 (°9) |
+| S0-H1 | R-H1-DELAY10 | 4.8 (°17) | -14.02 (31) | 2.7 (°7) | -13.62 (°22) | 3.61 (°9) |
+| S0-H1 | R-H1-DELAY3 | 0.91 (°21) | -20.38 (32) | -2.4 (°7) | -11.61 (°24) | 1.01 (°9) |
+| S0-H1 | R-H1-KNIFE | -5.3 (43) | -7.05 (50) | 10.5 (°9) | -4.7 (35) | -2.1 (°13) |
+| S0-H1 | R-NEXIT-EARLY | -1.5 (80) | -1.6 (61) | 2.7 (°13) | 0.4 (53) | -1.65 (30) |
+| S0-H1 | R-NEXIT-FULL | -1.5 (80) | -1.6 (61) | 2.7 (°13) | 0.4 (53) | -1.65 (30) |
+| S0-H1 | R-NEXIT-SENT | -1.2 (51) | 1.4 (45) | 7.6 (°9) | 0.0 (36) | -0.1 (°19) |
+| S0-H1 | R-OP2 | -3.21 (56) | -5.87 (36) | -5.42 (°8) | -2.95 (29) | -2.07 (°18) |
+| S0-H10 | R-ARM15 | -6.79 (28) | -12.79 (°23) | -1.5 (°7) | 16.61 (°22) | -13.38 (°6) |
+| S0-H10 | R-NEXIT-EARLY | -2.1 (104) | -1.25 (46) | -1.5 (°13) | -2.1 (48) | -4.4 (29) |
+| S0-H10 | R-NEXIT-FULL | -1.2 (121) | -0.45 (50) | -0.6 (°14) | -1.25 (48) | -2.7 (34) |
+| S0-H10 | R-NEXIT-SENT | -10.5 (55) | -5.1 (28) | -3.0 (°8) | -1.5 (25) | -14.09 (°11) |
+| S0-H10 | R-OP2 | -3.5 (124) | -7.17 (58) | -5.22 (°19) | -4.31 (50) | -4.46 (39) |
+| S0-H11 | R-ARM15 | -7.32 (°19) | -14.77 (28) | -9.55 (°8) | -4.89 (°10) | -9.76 (°5) |
+| S0-H11 | R-BE | -1.5 (°13) | -1.5 (27) | -9.55 (°4) | -1.5 (°9) | -1.5 (°5) |
+| S0-H11 | R-NEXIT-EARLY | -1.8 (134) | -0.8 (115) | -6.55 (°18) | -3.2 (34) | -2.25 (°20) |
+| S0-H11 | R-NEXIT-FULL | -1.5 (158) | -0.4 (139) | -2.75 (°24) | -2.6 (34) | -2.25 (°20) |
+| S0-H11 | R-NEXIT-SENT | -5.79 (50) | -3.5 (61) | -7.8 (°11) | -4.2 (°15) | -11.9 (°11) |
+| S0-H11 | R-OP2 | -4.07 (145) | -6.1 (168) | -9.21 (36) | -7.15 (32) | -4.28 (°16) |
+| S0-H14 | R-NEXIT-EARLY | -0.9 (84) | -6.05 (36) | -4.7 (°8) | -2.3 (36) | -4.75 (32) |
+| S0-H14 | R-NEXIT-FULL | -0.9 (105) | -0.65 (44) | -4.5 (°13) | -0.9 (40) | -3.6 (35) |
+| S0-H14 | R-NEXIT-SENT | -8.77 (42) | 10.4 (26) | 21.4 (°4) | -7.8 (°24) | -17.65 (°12) |
+| S0-H14 | R-OP2 | -3.76 (105) | -5.9 (60) | -7.74 (°18) | -3.51 (39) | -3.92 (36) |
+| S0-H16 | R-ARM15 | — | — | -8.0 (33) | — | — |
+| S0-H16 | R-BE | — | — | -8.0 (33) | — | — |
+| S0-H16 | R-NEXIT-EARLY | — | — | 1.8 (33) | — | — |
+| S0-H16 | R-NEXIT-FULL | — | — | 1.8 (33) | — | — |
+| S0-H16 | R-NEXIT-SENT | — | — | -8.0 (33) | — | — |
+| S0-H16 | R-NOTRAIL | — | — | -8.0 (33) | — | — |
+| S0-H16 | R-OP2 | — | — | -5.52 (33) | — | — |
+| S0-H17 | R-ARM15 | 3.73 (°22) | -7.59 (26) | -2.2 (°6) | -24.81 (°17) | 3.4 (°7) |
+| S0-H17 | R-BE | -1.5 (°16) | -1.5 (26) | -24.9 (°4) | -49.07 (°17) | -1.5 (°7) |
+| S0-H17 | R-NEXIT-EARLY | -0.7 (57) | -0.95 (46) | -3.0 (°9) | -0.75 (28) | -1.65 (°16) |
+| S0-H17 | R-NEXIT-FULL | -0.7 (57) | -0.95 (46) | -3.0 (°9) | -0.75 (28) | -1.65 (°16) |
+| S0-H17 | R-NEXIT-SENT | -2.35 (44) | 3.2 (35) | 16.2 (°7) | -2.7 (°23) | 0.4 (°11) |
+| S0-H17 | R-OP2 | -3.8 (56) | -4.31 (44) | -6.99 (°9) | -3.29 (26) | -4.17 (°15) |
+| S0-H18 | R-NEXIT-EARLY | -3.05 (32) | -5.55 (58) | -1.65 (°14) | -4.7 (°7) | -5.1 (°3) |
+| S0-H18 | R-NEXIT-FULL | -3.05 (32) | -5.2 (67) | 0.3 (°15) | -4.7 (°7) | -5.1 (°3) |
+| S0-H18 | R-NEXIT-SENT | -7.33 (°24) | -15.2 (37) | -16.1 (°6) | -32.1 (°4) | -36.0 (°3) |
+| S0-H18 | R-OP2 | -6.21 (31) | -10.18 (70) | -6.26 (°14) | -10.66 (°7) | 3.32 (°2) |
+| S0-H19 | R-ARM15 | -32.55 (31) | -4.4 (28) | -9.5 (°9) | 1.65 (°21) | -5.05 (°6) |
+| S0-H19 | R-NEXIT-EARLY | -2.5 (147) | -3.15 (92) | -1.9 (°20) | -1.5 (115) | -1.2 (68) |
+| S0-H19 | R-NEXIT-FULL | -2.3 (150) | -3.15 (92) | -1.9 (°20) | -1.5 (115) | -1.2 (68) |
+| S0-H19 | R-NEXIT-SENT | -3.5 (79) | -4.25 (56) | -0.6 (°13) | 4.8 (55) | -3.8 (30) |
+| S0-H19 | R-OP2 | -4.4 (119) | -6.34 (75) | -7.22 (°17) | -5.67 (70) | -3.81 (48) |
+| S0-H2 | R-ARM15 | -2.74 (38) | -20.9 (41) | -11.1 (°13) | -4.2 (26) | 4.05 (°12) |
+| S0-H2 | R-BE | -1.5 (°23) | -1.5 (27) | 9.75 (°6) | -1.5 (26) | -1.5 (°6) |
+| S0-H2 | R-NEXIT-EARLY | -1.8 (275) | -0.55 (182) | -3.6 (44) | -1.85 (188) | -1.5 (106) |
+| S0-H2 | R-NEXIT-FULL | -1.7 (289) | -0.55 (182) | -3.6 (44) | -1.85 (188) | -1.45 (108) |
+| S0-H2 | R-NEXIT-SENT | -2.5 (147) | -0.7 (109) | -5.2 (27) | -0.5 (115) | -0.3 (67) |
+| S0-H2 | R-NOTRAIL | -32.84 (°8) | -28.9 (°18) | -102.27 (°1) | -72.05 (25) | -42.16 (°6) |
+| S0-H2 | R-OP2 | -4.19 (232) | -8.42 (139) | -7.78 (39) | -4.87 (119) | -4.33 (63) |
+| S0-H20 | R-NEXIT-EARLY | -3.8 (35) | -0.2 (45) | -3.4 (°14) | -1.1 (°7) | -6.35 (°2) |
+| S0-H20 | R-NEXIT-FULL | -3.5 (35) | -0.2 (55) | -2.3 (°15) | -1.1 (°7) | -6.35 (°2) |
+| S0-H20 | R-NEXIT-SENT | -15.74 (°19) | 5.6 (29) | -23.3 (°9) | 18.65 (°6) | -32.25 (°2) |
+| S0-H20 | R-OP2 | -5.93 (33) | -4.08 (42) | -1.28 (°15) | -6.66 (°7) | 30.9 (°1) |
+| S0-H6 | R-ARM15 | -8.83 (41) | -6.78 (43) | 16.4 (°9) | -86.25 (°3) | -16.26 (°3) |
+| S0-H6 | R-BE | -1.5 (40) | -1.5 (39) | 31.45 (°6) | -86.25 (°3) | -1.5 (°3) |
+| S0-H6 | R-NEXIT-EARLY | -1.7 (69) | -1.45 (78) | 2.3 (°15) | -13.3 (°3) | -8.8 (°3) |
+| S0-H6 | R-NEXIT-FULL | -1.5 (70) | -1.15 (86) | 4.7 (°17) | -13.3 (°3) | -8.8 (°3) |
+| S0-H6 | R-NEXIT-SENT | 0.66 (51) | 2.5 (53) | -2.1 (°11) | -16.8 (°3) | -8.8 (°3) |
+| S0-H6 | R-NOTRAIL | -35.15 (28) | -16.0 (25) | 56.95 (°2) | -86.25 (°3) | -54.16 (°3) |
+| S0-H6 | R-OP2 | -3.65 (68) | -8.35 (96) | -2.9 (°17) | -13.82 (°3) | -12.17 (°3) |
+| S0-H6 | R-SCALP-H6 | 6.42 (56) | 12.71 (70) | 14.3 (°12) | -4.2 (°3) | 9.03 (°3) |
+| S0-H6 | R-SCALP-H6-REF | 5.97 (52) | 13.47 (68) | 14.14 (°11) | 6.4 (°3) | 9.03 (°3) |
+| S0-H7 | R-ARM15 | -22.62 (°18) | -19.58 (39) | 1.1 (°15) | -3.04 (°18) | 0.32 (°6) |
+| S0-H7 | R-BE | -16.58 (°14) | -1.5 (28) | -1.5 (°9) | -1.5 (°17) | -1.5 (°5) |
+| S0-H7 | R-NEXIT-EARLY | -2.65 (38) | -1.8 (65) | 6.2 (26) | -2.85 (28) | -4.5 (°7) |
+| S0-H7 | R-NEXIT-FULL | -2.65 (38) | -1.6 (69) | 7.2 (27) | -2.05 (28) | -4.3 (°7) |
+| S0-H7 | R-NEXIT-SENT | -8.16 (25) | -2.15 (48) | 1.1 (°15) | 6.7 (°21) | 10.5 (°6) |
+| S0-H7 | R-OP2 | -3.18 (°14) | -3.09 (42) | -3.21 (°17) | -5.18 (°23) | -3.91 (°7) |
+| S0-H9 | R-NEXIT-EARLY | -2.4 (31) | 0.2 (°14) | 10.25 (°2) | -3.7 (°23) | -3.0 (°12) |
+| S0-H9 | R-NEXIT-FULL | -1.6 (34) | 0.2 (°14) | -0.8 (°5) | -3.7 (°23) | -2.8 (°13) |
+| S0-H9 | R-OP2 | -4.16 (33) | 0.29 (°14) | -4.58 (°5) | -4.54 (°23) | -3.97 (°14) |
+| S1-H11 | R-ARM15 | -16.55 (°22) | -12.79 (33) | 18.5 (°9) | 11.73 (°14) | -18.6 (°7) |
+| S1-H11 | R-NEXIT-EARLY | -2.8 (145) | -3.5 (96) | 3.7 (°22) | 1.0 (61) | -2.1 (41) |
+| S1-H11 | R-NEXIT-FULL | -2.3 (190) | -1.95 (132) | 6.95 (42) | 1.0 (69) | -2.1 (51) |
+| S1-H11 | R-NEXIT-SENT | -7.94 (45) | -7.18 (45) | 18.5 (°9) | 5.15 (°24) | -1.65 (°22) |
+| S1-H11 | R-OP2 | -4.0 (189) | -8.97 (195) | -5.88 (72) | -6.33 (71) | -5.2 (41) |
+| S1-H2 | R-ARM15 | -1.26 (37) | -6.01 (37) | 16.75 (°10) | -6.51 (°24) | -2.27 (°10) |
+| S1-H2 | R-NEXIT-EARLY | -1.65 (224) | -0.7 (133) | -2.5 (31) | -1.5 (141) | -1.8 (79) |
+| S1-H2 | R-NEXIT-FULL | -1.55 (230) | -0.7 (133) | -2.5 (31) | -1.5 (141) | -1.8 (79) |
+| S1-H2 | R-NEXIT-SENT | -1.3 (129) | -1.15 (86) | -5.45 (°20) | -1.5 (94) | -0.7 (51) |
+| S1-H2 | R-OP2 | -4.18 (195) | -6.32 (109) | -8.2 (31) | -4.87 (105) | -3.59 (52) |
 
-## NET LEDGER — top 25 of 666 cells by pooled net points (the discovery lens; full ledger in the JSON)
+## NET LEDGER — top 25 of 682 cells by pooled net points (the discovery lens; full ledger in the JSON)
 
 > Pooled net is CANDIDATE-GENERATION ONLY — the decomposition columns are why. Verdict: forward-thin at forward n < 25, else the forward median's sign. Floor clearance = ex-lockbox cell median vs the session-scoped baseline floor max. No cell quotable without its forward column.
 
 | sentence | variant | session | pooled net | working net / med (n) | lockbox net / med (n) | forward net / med (n) | fwd wks +/tot | floor (base) | clears | verdict |
 |---|---|---|---|---|---|---|---|---|---|---|
-| S0-H14 | R-BE | ny_only | 661.7 | 235.1 / -1.5 (4) | -111.8 / -1.5 (8) | 538.4 / -1.5 (7) | 2/4 | B-TREND | no | forward-thin |
-| S0-H2 | R-ARM15 | ny_only | 612.8 | -46.2 / 35.65 (5) | 156.9 / 4.56 (4) | 502.1 / 16.88 (10) | 2/3 | B-RANDOM | YES | forward-thin |
-| S0-H10 | R-ARM15 | ny_only | 612.2 | 60.8 / -1.65 (4) | 93.2 / 11.51 (9) | 458.2 / 48.1 (9) | 4/4 | B-TREND | no | forward-thin |
-| S0-H11 | R-NOTRAIL | ny_only | 570.9 | 371.4 / 185.7 (2) | 7.2 / 7.2 (1) | 192.3 / -88.55 (5) | 2/3 | B-RANDOM | no | forward-thin |
-| S0-H10 | R-BE | ny_only | 545.8 | 263.8 / -1.5 (4) | -147.4 / -1.5 (9) | 429.4 / -1.5 (9) | 2/4 | B-TREND | no | forward-thin |
-| S0-H11 | R-NEXIT-EARLY | london | 530.8 | 155.5 / 78.73 (3) | 275.9 / -0.5 (23) | 99.4 / 0.45 (66) | 3/3 | B-RANDOM | YES | forward-positive |
-| S0-H20 | R-BE | ny_only | 519.2 | 0.0 / None (0) | 0.0 / None (0) | 519.2 / 259.6 (2) | 2/2 | B-RANDOM | YES | forward-thin |
-| S0-H20 | R-NOTRAIL | ny_only | 519.2 | 0.0 / None (0) | 0.0 / None (0) | 519.2 / 259.6 (2) | 2/2 | B-RANDOM | YES | forward-thin |
-| S0-H2 | R-NOTRAIL | ny_only | 510.8 | -366.4 / -121.0 (4) | 92.1 / 0.07 (4) | 785.2 / 90.5 (10) | 3/3 | B-RANDOM | no | forward-thin |
-| S1-H2 | R-NOTRAIL | ny_only | 474.6 | -358.9 / -117.22 (4) | 160.3 / 7.6 (4) | 673.2 / 95.4 (9) | 3/3 | B-RANDOM | no | forward-thin |
-| S1-H11 | R-BE | ny_only | 465.0 | -248.0 / -113.5 (3) | 266.5 / 89.7 (3) | 446.4 / 197.4 (3) | 2/2 | B-RANDOM | no | forward-thin |
-| S0-H2 | R-BE | ny_only | 464.4 | -134.4 / -1.5 (5) | 45.7 / -23.12 (4) | 553.1 / -1.5 (10) | 2/3 | B-RANDOM | no | forward-thin |
-| S1-H11 | R-NEXIT-SENT | ny_only | 451.6 | -8.9 / -6.95 (6) | 360.5 / 61.62 (3) | 100.0 / 11.9 (4) | 2/2 | B-RANDOM | no | forward-thin |
-| S0-H19 | R-ARM15 | london | 389.9 | 277.8 / 74.91 (4) | 193.1 / 20.7 (3) | -81.1 / -6.06 (11) | 1/2 | B-RANDOM | YES | forward-thin |
-| S0-H6 | R-NEXIT-EARLY | london | 386.9 | 245.1 / 3.61 (10) | 227.8 / 3.9 (15) | -86.0 / -0.1 (29) | 1/3 | B-RANDOM | YES | forward-negative |
-| S0-H2 | R-NEXIT-SENT | ny_only | 385.9 | -44.4 / -2.0 (25) | 234.7 / 26.9 (4) | 195.7 / 1.0 (37) | 2/3 | B-RANDOM | no | forward-positive |
-| S0-H14 | R-NEXIT-SENT | ny_only | 382.5 | 0.3 / -10.3 (5) | 165.4 / 11.78 (8) | 216.8 / 14.2 (10) | 2/4 | B-TREND | no | forward-thin |
-| S0-H6 | R-ARM15 | london | 377.1 | 222.6 / 9.7 (7) | 499.9 / 13.01 (12) | -345.4 / -31.14 (19) | 0/3 | B-RANDOM | no | forward-thin |
-| S0-H14 | R-NEXIT-SENT | london | 335.7 | -34.4 / -1.81 (5) | 309.0 / 2.72 (18) | 61.1 / 10.0 (13) | 2/3 | B-TREND | no | forward-thin |
-| S0-H7 | R-BE | london | 335.7 | 465.2 / 63.0 (5) | 9.9 / -1.5 (7) | -139.3 / -1.5 (7) | 0/3 | B-RANDOM | no | forward-thin |
-| S0-H10 | R-NEXIT-SENT | ny_only | 333.2 | 55.6 / -4.45 (4) | 89.6 / 4.23 (10) | 188.0 / 1.1 (11) | 3/4 | B-TREND | no | forward-thin |
-| S0-H11 | R-NEXIT-SENT | ny_only | 329.8 | 158.7 / 79.35 (2) | -3.3 / -8.41 (3) | 174.4 / -3.9 (8) | 2/3 | B-RANDOM | no | forward-thin |
-| S0-H19 | R-NEXIT-SENT | london | 329.6 | 324.1 / 73.69 (5) | 10.7 / 13.0 (3) | -5.2 / -5.35 (14) | 1/2 | B-RANDOM | no | forward-thin |
-| S1-H11 | R-NOTRAIL | ny_only | 327.0 | -349.0 / -113.5 (3) | 229.6 / 89.7 (3) | 446.4 / 197.4 (3) | 2/2 | B-RANDOM | no | forward-thin |
-| S0-H10 | R-NOTRAIL | ny_only | 307.6 | 213.3 / -21.52 (4) | -538.1 / -79.42 (8) | 632.4 / 77.4 (9) | 3/4 | B-TREND | no | forward-thin |
-| … | | | (641 more cells in the JSON) | | | | | | | |
+| S0-H14 | R-BE | ny_only | 1222.8 | 235.1 / -1.5 (4) | -111.8 / -1.5 (8) | 1099.4 / -1.5 (15) | 4/6 | B-TREND | no | forward-thin |
+| S0-H10 | R-BE | ny_only | 1030.1 | 263.8 / -1.5 (4) | -147.4 / -1.5 (9) | 913.8 / -1.5 (18) | 4/6 | B-TREND | no | forward-thin |
+| S1-H11 | R-BE | ny_only | 982.0 | -248.0 / -113.5 (3) | 266.5 / 89.7 (3) | 963.4 / 71.35 (10) | 3/4 | B-RANDOM | no | forward-thin |
+| S0-H10 | R-NOTRAIL | ny_only | 958.0 | 213.3 / -21.52 (4) | -538.1 / -79.42 (8) | 1282.8 / 42.65 (18) | 5/6 | B-TREND | no | forward-thin |
+| S0-H10 | R-ARM15 | ny_only | 930.4 | 60.8 / -1.65 (4) | 93.2 / 11.51 (9) | 776.4 / 34.54 (18) | 6/6 | B-TREND | no | forward-thin |
+| S1-H11 | R-NOTRAIL | ny_only | 777.2 | -349.0 / -113.5 (3) | 229.6 / 89.7 (3) | 896.6 / 70.0 (10) | 3/4 | B-RANDOM | no | forward-thin |
+| S0-H14 | R-NOTRAIL | ny_only | 773.4 | 42.2 / -90.09 (4) | -487.0 / -82.32 (8) | 1218.3 / 52.9 (15) | 5/6 | B-TREND | no | forward-thin |
+| S0-H11 | R-NOTRAIL | ny_only | 771.8 | 371.4 / 185.7 (2) | 7.2 / 7.2 (1) | 393.2 / 62.3 (7) | 2/3 | B-RANDOM | YES | forward-thin |
+| S1-H11 | R-NEXIT-SENT | ny_only | 721.9 | -8.9 / -6.95 (6) | 360.5 / 61.62 (3) | 370.3 / 5.3 (18) | 3/4 | B-RANDOM | YES | forward-thin |
+| S1-H2 | R-NOTRAIL | ny_only | 579.0 | -358.9 / -117.22 (4) | 160.3 / 7.6 (4) | 777.7 / 59.3 (19) | 5/5 | B-RANDOM | no | forward-thin |
+| S0-H20 | R-NOTRAIL | ny_only | 511.3 | 0.0 / None (0) | 0.0 / None (0) | 511.3 / 71.1 (5) | 2/3 | B-RANDOM | YES | forward-thin |
+| S0-H6 | R-NEXIT-SENT | london | 486.9 | 214.7 / 6.16 (8) | 52.0 / -4.0 (13) | 220.3 / 2.24 (45) | 3/5 | B-RANDOM | YES | forward-positive |
+| S0-H6 | R-ARM15 | london | 462.8 | 222.6 / 9.7 (7) | 499.9 / 13.01 (12) | -259.7 / -13.91 (36) | 1/5 | B-RANDOM | no | forward-negative |
+| S0-H14 | R-NEXIT-SENT | ny_only | 458.7 | 0.3 / -10.3 (5) | 165.4 / 11.78 (8) | 293.0 / 8.8 (19) | 4/6 | B-TREND | no | forward-thin |
+| S0-H7 | R-NOTRAIL | ny_only | 446.9 | 374.4 / 110.3 (3) | -118.4 / -39.64 (3) | 190.9 / -49.37 (14) | 2/5 | B-RANDOM | no | forward-thin |
+| S0-H1 | R-H1-DELAY10 | asia | 422.3 | 264.8 / 264.78 (1) | 16.9 / -6.14 (3) | 140.6 / 4.55 (16) | 4/5 | B-RANDOM | no | forward-thin |
+| S0-H10 | R-NEXIT-SENT | ny_only | 419.8 | 55.6 / -4.45 (4) | 89.6 / 4.23 (10) | 274.6 / 1.1 (21) | 4/6 | B-TREND | no | forward-thin |
+| S1-H11 | R-ARM15 | ny_only | 409.4 | -145.6 / -113.5 (3) | 315.2 / 61.62 (3) | 239.8 / 12.68 (11) | 3/4 | B-RANDOM | no | forward-thin |
+| S0-H14 | R-NEXIT-SENT | london | 408.5 | -34.4 / -1.81 (5) | 309.0 / 2.72 (18) | 133.9 / 10.8 (21) | 3/5 | B-TREND | YES | forward-thin |
+| S0-H11 | R-NEXIT-EARLY | london | 399.4 | 155.5 / 78.73 (3) | 275.9 / -0.5 (23) | -32.0 / -1.05 (112) | 3/5 | B-RANDOM | no | forward-negative |
+| S0-H20 | R-BE | ny_only | 397.7 | 0.0 / None (0) | 0.0 / None (0) | 397.7 / -1.5 (5) | 2/3 | B-RANDOM | no | forward-thin |
+| S0-H6 | R-NOTRAIL | london | 392.2 | 133.1 / -60.57 (5) | 283.1 / 17.0 (7) | -23.9 / -14.5 (20) | 3/5 | B-RANDOM | no | forward-thin |
+| S0-H7 | R-BE | ny_only | 370.2 | 394.1 / -1.5 (3) | -71.2 / -30.07 (3) | 47.3 / -37.58 (14) | 1/5 | B-RANDOM | no | forward-thin |
+| S0-H14 | R-ARM15 | ny_only | 368.3 | 36.6 / -0.1 (4) | 148.6 / 11.78 (8) | 183.2 / 8.0 (15) | 3/6 | B-TREND | no | forward-thin |
+| S0-H17 | R-ARM15 | asia | 366.6 | 406.1 / 95.03 (3) | -21.5 / -10.75 (2) | -18.0 / -0.28 (19) | 3/5 | B-RANDOM | YES | forward-thin |
+| … | | | (657 more cells in the JSON) | | | | | | | |
 
 ## Winner/loser separators clearing their null
 
 | sentence | variant | session | feature | value | win% | loss% | base% | split | null p95 | n w/l |
 |---|---|---|---|---|---|---|---|---|---|---|
-| S0-H18 | R-OP2 | london | vwap_band | 1s | 10.0 | 59.3 | 45.9 | -49.3pp | 37.2pp | 10/27 |
-| S1-H2 | R-NEXIT-SENT | london | vwap_band | 1s | 72.7 | 25.0 | 44.4 | +47.7pp | 35.3pp | 11/16 |
-| S0-H6 | R-NEXIT-SENT | asia | quadrant | wide-loud | 75.0 | 28.6 | 50.0 | +46.4pp | 39.4pp | 12/14 |
-| S0-H18 | R-NEXIT-EARLY | london | new_hl | False | 50.0 | 95.0 | 78.1 | -45.0pp | 31.4pp | 12/20 |
-| S0-H18 | R-NEXIT-EARLY | london | new_hl | True | 50.0 | 5.0 | 21.9 | +45.0pp | 31.4pp | 12/20 |
-| S0-H14 | R-NEXIT-FULL | ny_only | new_lh | False | 50.0 | 92.3 | 72.0 | -42.3pp | 36.7pp | 12/13 |
-| S0-H14 | R-NEXIT-FULL | ny_only | new_lh | True | 50.0 | 7.7 | 28.0 | +42.3pp | 36.7pp | 12/13 |
-| S0-H2 | R-NEXIT-EARLY | london | phase | ranging | 8.3 | 50.0 | 30.8 | -41.7pp | 24.1pp | 24/28 |
-| S0-H2 | R-NEXIT-EARLY | london | phase | trending | 91.7 | 50.0 | 69.2 | +41.7pp | 24.1pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | london | phase | ranging | 8.3 | 50.0 | 30.8 | -41.7pp | 26.5pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | london | phase | trending | 91.7 | 50.0 | 69.2 | +41.7pp | 26.5pp | 24/28 |
-| S0-H2 | R-OP2 | dead | h11 | neither | 35.7 | 75.9 | 62.8 | -40.1pp | 33.1pp | 14/29 |
-| S1-H11 | R-NEXIT-FULL | ny_only | dow | Wed | 63.2 | 23.1 | 46.9 | +40.1pp | 37.3pp | 19/13 |
-| S1-H11 | R-NEXIT-EARLY | ny_only | dow | Wed | 66.7 | 27.3 | 51.7 | +39.4pp | 34.0pp | 18/11 |
-| S0-H19 | R-NEXIT-FULL | asia | h11 | neither | 36.8 | 74.5 | 64.3 | -37.7pp | 25.7pp | 19/51 |
-| S1-H2 | R-NEXIT-EARLY | london | phase | ranging | 5.6 | 42.9 | 25.6 | -37.3pp | 29.0pp | 18/21 |
-| S1-H2 | R-NEXIT-EARLY | london | phase | trending | 94.4 | 57.1 | 74.4 | +37.3pp | 29.0pp | 18/21 |
-| S1-H2 | R-NEXIT-FULL | london | phase | ranging | 5.6 | 42.9 | 25.6 | -37.3pp | 28.9pp | 18/21 |
-| S1-H2 | R-NEXIT-FULL | london | phase | trending | 94.4 | 57.1 | 74.4 | +37.3pp | 28.9pp | 18/21 |
-| S1-H11 | R-NEXIT-EARLY | ny_only | h11 | neither | 0.0 | 36.4 | 13.8 | -36.4pp | 25.1pp | 18/11 |
-| S1-H11 | R-NEXIT-EARLY | ny_only | h11 | node | 100.0 | 63.6 | 86.2 | +36.4pp | 25.1pp | 18/11 |
-| S1-H11 | R-NEXIT-EARLY | ny_only | dow | Tue | 0.0 | 36.4 | 13.8 | -36.4pp | 25.1pp | 18/11 |
-| S0-H2 | R-OP2 | london | new_hl | False | 100.0 | 63.9 | 73.5 | +36.1pp | 29.1pp | 13/36 |
-| S0-H2 | R-OP2 | london | new_hl | True | 0.0 | 36.1 | 26.5 | -36.1pp | 29.1pp | 13/36 |
-| S0-H19 | R-NEXIT-SENT | asia | new_ll | False | 94.4 | 59.3 | 73.3 | +35.2pp | 28.0pp | 18/27 |
-| S0-H19 | R-NEXIT-SENT | asia | new_ll | True | 5.6 | 40.7 | 26.7 | -35.2pp | 28.0pp | 18/27 |
-| S1-H11 | R-OP2 | asia | mtf | no-15M-trend | 72.7 | 38.5 | 50.8 | +34.3pp | 23.1pp | 22/39 |
-| S0-H19 | R-NEXIT-EARLY | asia | h11 | neither | 38.9 | 73.1 | 64.3 | -34.2pp | 22.7pp | 18/52 |
-| S0-H19 | R-NEXIT-FULL | asia | phase | ranging | 68.4 | 35.3 | 44.3 | +33.1pp | 24.7pp | 19/51 |
-| S0-H19 | R-NEXIT-FULL | asia | phase | trending | 31.6 | 64.7 | 55.7 | -33.1pp | 24.7pp | 19/51 |
-| S1-H2 | R-NEXIT-EARLY | london | dow | Wed | 11.1 | 42.9 | 28.2 | -31.7pp | 30.0pp | 18/21 |
-| S1-H2 | R-NEXIT-FULL | london | dow | Wed | 11.1 | 42.9 | 28.2 | -31.7pp | 29.4pp | 18/21 |
-| S0-H2 | R-NEXIT-EARLY | overlap | with_trend | False | 100.0 | 69.2 | 84.0 | +30.8pp | 27.1pp | 12/13 |
-| S0-H2 | R-NEXIT-EARLY | overlap | with_trend | True | 0.0 | 30.8 | 16.0 | -30.8pp | 27.1pp | 12/13 |
-| S1-H11 | R-NEXIT-FULL | ny_only | h11 | neither | 0.0 | 30.8 | 12.5 | -30.8pp | 25.0pp | 19/13 |
-| S1-H11 | R-NEXIT-FULL | ny_only | h11 | node | 100.0 | 69.2 | 87.5 | +30.8pp | 25.0pp | 19/13 |
-| S1-H11 | R-NEXIT-FULL | ny_only | dow | Tue | 0.0 | 30.8 | 12.5 | -30.8pp | 25.0pp | 19/13 |
-| S0-H2 | R-NEXIT-SENT | london | new_hh | False | 85.7 | 55.0 | 67.6 | +30.7pp | 29.5pp | 14/20 |
-| S0-H2 | R-NEXIT-SENT | london | new_hh | True | 14.3 | 45.0 | 32.4 | -30.7pp | 29.5pp | 14/20 |
-| S0-H2 | R-NEXIT-SENT | ny_only | mtf | no-15M-trend | 26.1 | 56.7 | 43.4 | -30.6pp | 24.8pp | 23/30 |
-| S0-H19 | R-NEXIT-EARLY | asia | phase | ranging | 66.7 | 36.5 | 44.3 | +30.1pp | 27.8pp | 18/52 |
-| S0-H19 | R-NEXIT-EARLY | asia | phase | trending | 33.3 | 63.5 | 55.7 | -30.1pp | 27.8pp | 18/52 |
-| S0-H2 | R-NEXIT-EARLY | dead | new_ll | False | 58.3 | 88.1 | 77.3 | -29.8pp | 20.9pp | 24/42 |
-| S0-H2 | R-NEXIT-EARLY | dead | new_ll | True | 41.7 | 11.9 | 22.7 | +29.8pp | 20.9pp | 24/42 |
-| S1-H2 | R-NEXIT-EARLY | dead | dow | Sun | 35.7 | 5.9 | 14.6 | +29.8pp | 21.2pp | 14/34 |
-| S1-H2 | R-NEXIT-EARLY | london | dow | Tue | 38.9 | 9.5 | 23.1 | +29.4pp | 27.6pp | 18/21 |
-| S1-H11 | R-NEXIT-FULL | ny_only | new_lh | False | 63.2 | 92.3 | 75.0 | -29.1pp | 26.7pp | 19/13 |
-| S1-H11 | R-NEXIT-FULL | ny_only | new_lh | True | 36.8 | 7.7 | 25.0 | +29.1pp | 26.7pp | 19/13 |
-| S0-H1 | R-NEXIT-SENT | asia | dow | Thu | 0.0 | 28.6 | 12.9 | -28.6pp | 21.1pp | 17/14 |
-| S1-H11 | R-OP2 | london | new_hl | False | 57.6 | 85.7 | 75.3 | -28.1pp | 17.2pp | 33/56 |
-| S1-H11 | R-OP2 | london | new_hl | True | 42.4 | 14.3 | 24.7 | +28.1pp | 17.2pp | 33/56 |
-| S0-H6 | R-OP2 | london | new_ll | False | 93.3 | 65.8 | 73.6 | +27.5pp | 26.5pp | 15/38 |
-| S0-H6 | R-OP2 | london | new_ll | True | 6.7 | 34.2 | 26.4 | -27.5pp | 26.5pp | 15/38 |
-| S1-H2 | R-NEXIT-FULL | dead | dow | Sun | 33.3 | 6.1 | 14.6 | +27.3pp | 20.6pp | 15/33 |
-| S0-H19 | R-OP2 | asia | new_lh | False | 60.0 | 86.8 | 82.5 | -26.8pp | 22.0pp | 10/53 |
-| S0-H19 | R-OP2 | asia | new_lh | True | 40.0 | 13.2 | 17.5 | +26.8pp | 22.0pp | 10/53 |
-| S0-H2 | R-NEXIT-EARLY | london | dow | Tue | 37.5 | 10.7 | 23.1 | +26.8pp | 18.4pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | london | dow | Tue | 37.5 | 10.7 | 23.1 | +26.8pp | 20.8pp | 24/28 |
-| S0-H6 | R-ARM15 | london | h11 | neither | 100.0 | 73.3 | 84.6 | +26.7pp | 25.0pp | 11/15 |
-| S0-H2 | R-NEXIT-FULL | dead | new_ll | False | 61.5 | 88.1 | 77.9 | -26.6pp | 20.2pp | 26/42 |
-| S0-H2 | R-NEXIT-FULL | dead | new_ll | True | 38.5 | 11.9 | 22.1 | +26.6pp | 20.2pp | 26/42 |
-| S0-H11 | R-NEXIT-SENT | london | quadrant | wide-loud | 31.2 | 5.0 | 16.7 | +26.2pp | 24.2pp | 16/20 |
-| S0-H6 | R-OP2 | london | new_hl | False | 53.3 | 78.9 | 71.7 | -25.6pp | 23.2pp | 15/38 |
-| S0-H6 | R-OP2 | london | new_hl | True | 46.7 | 21.1 | 28.3 | +25.6pp | 23.2pp | 15/38 |
-| S1-H11 | R-NEXIT-FULL | ny_only | new_hl | False | 94.7 | 69.2 | 84.4 | +25.5pp | 21.8pp | 19/13 |
-| S1-H11 | R-NEXIT-FULL | ny_only | new_hl | True | 5.3 | 30.8 | 15.6 | -25.5pp | 21.8pp | 19/13 |
-| S1-H11 | R-NEXIT-FULL | london | phase | ranging | 41.4 | 16.1 | 28.3 | +25.3pp | 20.2pp | 29/31 |
-| S1-H11 | R-NEXIT-FULL | london | phase | trending | 58.6 | 83.9 | 71.7 | -25.3pp | 20.2pp | 29/31 |
-| S0-H2 | R-OP2 | dead | h11 | gap | 28.6 | 3.4 | 11.6 | +25.1pp | 23.1pp | 14/29 |
-| S1-H2 | R-NEXIT-EARLY | dead | dow | Thu | 0.0 | 23.5 | 16.7 | -23.5pp | 22.9pp | 14/34 |
-| S0-H11 | R-OP2 | asia | new_hh | False | 92.9 | 69.7 | 76.6 | +23.2pp | 22.4pp | 28/66 |
-| S0-H11 | R-OP2 | asia | new_hh | True | 7.1 | 30.3 | 23.4 | -23.2pp | 22.4pp | 28/66 |
-| S0-H2 | R-NEXIT-EARLY | dead | new_lh | False | 87.5 | 64.3 | 72.7 | +23.2pp | 18.6pp | 24/42 |
-| S0-H2 | R-NEXIT-EARLY | dead | new_lh | True | 12.5 | 35.7 | 27.3 | -23.2pp | 18.6pp | 24/42 |
-| S0-H2 | R-NEXIT-FULL | london | new_ll | False | 62.5 | 85.7 | 75.0 | -23.2pp | 22.9pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | london | new_ll | True | 37.5 | 14.3 | 25.0 | +23.2pp | 22.9pp | 24/28 |
-| S0-H10 | R-NEXIT-EARLY | ny_only | dow | Thu | 0.0 | 23.1 | 10.0 | -23.1pp | 20.1pp | 17/13 |
-| S0-H10 | R-NEXIT-FULL | ny_only | dow | Thu | 0.0 | 23.1 | 10.0 | -23.1pp | 20.1pp | 17/13 |
-| S0-H14 | R-OP2 | london | h11 | neither | 76.9 | 100.0 | 91.9 | -23.1pp | 18.7pp | 13/24 |
-| S0-H2 | R-NEXIT-FULL | london | vwap_band | at | 16.7 | 39.3 | 28.8 | -22.6pp | 21.6pp | 24/28 |
-| S1-H11 | R-OP2 | ny_only | dow | Mon | 27.3 | 5.0 | 12.9 | +22.3pp | 22.2pp | 11/20 |
-| S1-H2 | R-NEXIT-EARLY | london | h11 | gap | 22.2 | 0.0 | 10.3 | +22.2pp | 21.3pp | 18/21 |
-| S1-H2 | R-NEXIT-FULL | london | h11 | gap | 22.2 | 0.0 | 10.3 | +22.2pp | 19.1pp | 18/21 |
-| S1-H11 | R-NEXIT-FULL | london | new_lh | False | 93.1 | 71.0 | 81.7 | +22.1pp | 19.6pp | 29/31 |
-| S1-H11 | R-NEXIT-FULL | london | new_lh | True | 6.9 | 29.0 | 18.3 | -22.1pp | 19.6pp | 29/31 |
-| S0-H2 | R-NEXIT-EARLY | dead | dow | Sun | 29.2 | 7.1 | 15.2 | +22.0pp | 15.9pp | 24/42 |
-| S0-H11 | R-NEXIT-FULL | asia | with_trend | False | 58.8 | 80.8 | 72.1 | -21.9pp | 16.1pp | 34/52 |
-| S0-H11 | R-NEXIT-FULL | asia | with_trend | True | 41.2 | 19.2 | 27.9 | +21.9pp | 16.1pp | 34/52 |
-| S0-H2 | R-OP2 | ny_only | mtf | with-15M-flat-1M | 30.0 | 8.2 | 14.5 | +21.8pp | 17.4pp | 20/49 |
-| S1-H2 | R-NEXIT-EARLY | ny_only | dow | Thu | 4.0 | 25.6 | 17.2 | -21.6pp | 17.9pp | 25/39 |
-| S1-H2 | R-NEXIT-FULL | ny_only | dow | Thu | 4.0 | 25.6 | 17.2 | -21.6pp | 16.8pp | 25/39 |
-| S1-H11 | R-OP2 | london | new_lh | False | 90.9 | 69.6 | 77.5 | +21.3pp | 18.3pp | 33/56 |
-| S1-H11 | R-OP2 | london | new_lh | True | 9.1 | 30.4 | 22.5 | -21.3pp | 18.3pp | 33/56 |
-| S0-H2 | R-NEXIT-SENT | asia | mtf | with-15M-flat-1M | 2.6 | 23.4 | 14.0 | -20.8pp | 13.5pp | 39/47 |
-| S1-H11 | R-OP2 | asia | mtf | with-both | 0.0 | 20.5 | 13.1 | -20.5pp | 18.2pp | 22/39 |
-| S0-H2 | R-NEXIT-FULL | dead | dow | Sun | 26.9 | 7.1 | 14.7 | +19.8pp | 15.9pp | 26/42 |
-| S1-H11 | R-NEXIT-FULL | london | quadrant | wide-loud | 3.4 | 22.6 | 13.3 | -19.1pp | 17.6pp | 29/31 |
-| S1-H2 | R-NEXIT-SENT | asia | mtf | with-15M-flat-1M | 5.9 | 25.0 | 16.2 | -19.1pp | 17.6pp | 34/40 |
-| S1-H2 | R-NEXIT-SENT | asia | mtf | against-both | 23.5 | 5.0 | 13.5 | +18.5pp | 14.1pp | 34/40 |
-| S0-H19 | R-NEXIT-EARLY | asia | mtf | against-15M | 22.2 | 3.8 | 8.6 | +18.4pp | 12.5pp | 18/52 |
-| S0-H19 | R-NEXIT-EARLY | asia | h11 | gap | 22.2 | 3.8 | 8.6 | +18.4pp | 12.5pp | 18/52 |
-| S0-H11 | R-NEXIT-FULL | asia | new_hh | False | 85.3 | 67.3 | 74.4 | +18.0pp | 16.3pp | 34/52 |
-| S0-H11 | R-NEXIT-FULL | asia | new_hh | True | 14.7 | 32.7 | 25.6 | -18.0pp | 16.3pp | 34/52 |
-| S0-H18 | R-NEXIT-FULL | london | mtf | counter-15M | 21.4 | 4.0 | 10.3 | +17.4pp | 16.0pp | 14/25 |
-| S1-H2 | R-NEXIT-SENT | asia | dow | Mon | 32.4 | 15.0 | 23.0 | +17.4pp | 16.5pp | 34/40 |
-| S0-H19 | R-NEXIT-FULL | asia | mtf | against-15M | 21.1 | 3.9 | 8.6 | +17.1pp | 14.1pp | 19/51 |
-| S0-H19 | R-NEXIT-FULL | asia | h11 | gap | 21.1 | 3.9 | 8.6 | +17.1pp | 13.0pp | 19/51 |
-| S1-H2 | R-OP2 | asia | mtf | against-15M | 23.3 | 6.6 | 11.3 | +16.8pp | 12.1pp | 30/76 |
-| S0-H11 | R-NEXIT-EARLY | london | mtf | with-both | 0.0 | 16.7 | 7.9 | -16.7pp | 14.1pp | 33/30 |
-| S1-H2 | R-NEXIT-FULL | london | mtf | against-both | 16.7 | 0.0 | 7.7 | +16.7pp | 15.8pp | 18/21 |
-| S0-H19 | R-OP2 | asia | mtf | against-15M | 20.0 | 3.8 | 6.3 | +16.2pp | 14.3pp | 10/53 |
-| S0-H2 | R-NEXIT-EARLY | ny_only | dow | Thu | 3.3 | 19.3 | 13.8 | -16.0pp | 13.6pp | 30/57 |
-| S0-H2 | R-NEXIT-FULL | ny_only | dow | Thu | 3.3 | 19.3 | 13.8 | -16.0pp | 12.0pp | 30/57 |
-| S1-H2 | R-NEXIT-FULL | asia | dow | Wed | 14.0 | 29.9 | 23.6 | -15.9pp | 13.5pp | 50/77 |
-| S0-H2 | R-OP2 | asia | mtf | against-15M | 21.6 | 6.6 | 10.9 | +15.0pp | 10.7pp | 37/91 |
-| S0-H2 | R-NEXIT-EARLY | dead | dow | Tue | 4.2 | 19.0 | 13.6 | -14.9pp | 14.3pp | 24/42 |
-| S1-H2 | R-NEXIT-EARLY | asia | mtf | against-both | 20.5 | 6.5 | 11.6 | +14.0pp | 11.7pp | 44/77 |
-| S1-H11 | R-NEXIT-FULL | london | mtf | with-15M-flat-1M | 13.8 | 0.0 | 6.7 | +13.8pp | 12.1pp | 29/31 |
-| S0-H2 | R-NEXIT-EARLY | asia | mtf | with-15M-flat-1M | 2.0 | 15.6 | 11.0 | -13.6pp | 9.5pp | 50/96 |
-| S0-H6 | R-OP2 | london | quadrant | narrow-loud | 13.3 | 0.0 | 3.8 | +13.3pp | 11.8pp | 15/38 |
-| S0-H2 | R-NEXIT-SENT | ny_only | mtf | with-both | 13.0 | 0.0 | 5.7 | +13.0pp | 11.6pp | 23/30 |
-| S1-H2 | R-NEXIT-FULL | asia | dow | Tue | 26.0 | 13.0 | 18.1 | +13.0pp | 12.4pp | 50/77 |
-| S0-H2 | R-NEXIT-EARLY | london | mtf | against-both | 12.5 | 0.0 | 5.8 | +12.5pp | 10.6pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | london | mtf | against-both | 12.5 | 0.0 | 5.8 | +12.5pp | 10.4pp | 24/28 |
-| S0-H2 | R-NEXIT-FULL | asia | mtf | with-15M-flat-1M | 3.5 | 15.5 | 11.0 | -12.0pp | 10.4pp | 57/97 |
-| S0-H2 | R-NEXIT-EARLY | asia | mtf | against-both | 18.0 | 7.3 | 11.0 | +10.7pp | 9.1pp | 50/96 |
-| S1-H11 | R-OP2 | london | mtf | against-both | 0.0 | 10.7 | 6.7 | -10.7pp | 10.5pp | 33/56 |
+| S1-H2 | R-OP2 | overlap | new_lh | False | 30.0 | 90.5 | 71.0 | -60.5pp | 36.0pp | 10/21 |
+| S1-H2 | R-OP2 | overlap | new_lh | True | 70.0 | 9.5 | 29.0 | +60.5pp | 36.0pp | 10/21 |
+| S0-H11 | R-OP2 | overlap | vwap_signed | away | 27.3 | 72.7 | 57.6 | -45.5pp | 32.2pp | 11/22 |
+| S0-H11 | R-OP2 | overlap | vwap_signed | toward | 72.7 | 27.3 | 42.4 | +45.5pp | 32.2pp | 11/22 |
+| S0-H11 | R-NEXIT-EARLY | ny_only | quadrant | narrow-quiet | 20.0 | 63.2 | 48.3 | -43.2pp | 39.4pp | 10/19 |
+| S0-H7 | R-ARM15 | london | with_trend | False | 31.2 | 73.9 | 56.4 | -42.7pp | 27.5pp | 16/23 |
+| S0-H7 | R-ARM15 | london | with_trend | True | 68.8 | 26.1 | 43.6 | +42.7pp | 27.5pp | 16/23 |
+| S1-H2 | R-NEXIT-EARLY | overlap | new_lh | False | 46.2 | 88.2 | 70.0 | -42.1pp | 30.2pp | 13/17 |
+| S1-H2 | R-NEXIT-EARLY | overlap | new_lh | True | 53.8 | 11.8 | 30.0 | +42.1pp | 30.2pp | 13/17 |
+| S1-H2 | R-NEXIT-FULL | overlap | new_lh | False | 46.2 | 88.2 | 70.0 | -42.1pp | 36.1pp | 13/17 |
+| S1-H2 | R-NEXIT-FULL | overlap | new_lh | True | 53.8 | 11.8 | 30.0 | +42.1pp | 36.1pp | 13/17 |
+| S0-H2 | R-OP2 | overlap | new_lh | False | 40.0 | 81.5 | 70.3 | -41.5pp | 30.1pp | 10/27 |
+| S0-H2 | R-OP2 | overlap | new_lh | True | 60.0 | 18.5 | 29.7 | +41.5pp | 30.1pp | 10/27 |
+| S0-H1 | R-NEXIT-SENT | ny_only | h11 | neither | 100.0 | 58.8 | 78.8 | +41.2pp | 29.2pp | 16/17 |
+| S0-H1 | R-NEXIT-SENT | ny_only | h11 | node | 0.0 | 41.2 | 21.2 | -41.2pp | 29.2pp | 16/17 |
+| S0-H2 | R-ARM15 | ny_only | with_trend | False | 45.5 | 86.7 | 69.2 | -41.2pp | 37.6pp | 11/15 |
+| S0-H2 | R-ARM15 | ny_only | with_trend | True | 54.5 | 13.3 | 30.8 | +41.2pp | 37.6pp | 11/15 |
+| S0-H2 | R-NEXIT-SENT | overlap | mtf | with-15M-flat-1M | 60.0 | 18.8 | 34.6 | +41.2pp | 34.5pp | 10/16 |
+| S0-H2 | R-NOTRAIL | ny_only | dow | Thu | 40.0 | 0.0 | 16.0 | +40.0pp | 28.7pp | 10/15 |
+| S0-H7 | R-NEXIT-SENT | london | with_trend | False | 39.1 | 79.2 | 59.6 | -40.0pp | 26.6pp | 23/24 |
+| S0-H7 | R-NEXIT-SENT | london | with_trend | True | 60.9 | 20.8 | 40.4 | +40.0pp | 26.6pp | 23/24 |
+| S0-H11 | R-NEXIT-FULL | ny_only | new_hh | False | 54.5 | 94.4 | 79.3 | -39.9pp | 30.1pp | 11/18 |
+| S0-H11 | R-NEXIT-FULL | ny_only | new_hh | True | 45.5 | 5.6 | 20.7 | +39.9pp | 30.1pp | 11/18 |
+| S0-H18 | R-NEXIT-SENT | london | phase | ranging | 63.6 | 24.0 | 36.1 | +39.6pp | 34.5pp | 11/25 |
+| S0-H18 | R-NEXIT-SENT | london | phase | trending | 36.4 | 76.0 | 63.9 | -39.6pp | 34.5pp | 11/25 |
+| S1-H11 | R-NEXIT-FULL | dead | quadrant | wide-loud | 10.0 | 48.4 | 39.0 | -38.4pp | 33.0pp | 10/31 |
+| S1-H2 | R-OP2 | overlap | new_hh | False | 100.0 | 61.9 | 74.2 | +38.1pp | 35.1pp | 10/21 |
+| S1-H2 | R-OP2 | overlap | new_hh | True | 0.0 | 38.1 | 25.8 | -38.1pp | 35.1pp | 10/21 |
+| S0-H9 | R-NEXIT-FULL | asia | new_hh | False | 90.9 | 52.9 | 67.9 | +38.0pp | 36.9pp | 11/17 |
+| S0-H9 | R-NEXIT-FULL | asia | new_hh | True | 9.1 | 47.1 | 32.1 | -38.0pp | 36.9pp | 11/17 |
+| S0-H2 | R-ARM15 | ny_only | dow | Tue | 9.1 | 46.7 | 30.8 | -37.6pp | 31.5pp | 11/15 |
+| S0-H2 | R-NEXIT-SENT | overlap | with_trend | False | 100.0 | 62.5 | 76.9 | +37.5pp | 33.4pp | 10/16 |
+| S0-H2 | R-NEXIT-SENT | overlap | with_trend | True | 0.0 | 37.5 | 23.1 | -37.5pp | 33.4pp | 10/16 |
+| S1-H2 | R-ARM15 | asia | new_lh | False | 86.7 | 50.0 | 66.7 | +36.7pp | 33.8pp | 15/18 |
+| S1-H2 | R-ARM15 | asia | new_lh | True | 13.3 | 50.0 | 33.3 | -36.7pp | 33.8pp | 15/18 |
+| S0-H1 | R-ARM15 | london | new_hh | False | 58.3 | 94.4 | 80.0 | -36.1pp | 30.3pp | 12/18 |
+| S0-H1 | R-ARM15 | london | new_hh | True | 41.7 | 5.6 | 20.0 | +36.1pp | 30.3pp | 12/18 |
+| S0-H9 | R-NEXIT-FULL | asia | retest_level | False | 100.0 | 64.7 | 78.6 | +35.3pp | 33.9pp | 11/17 |
+| S0-H9 | R-NEXIT-FULL | asia | retest_level | True | 0.0 | 35.3 | 21.4 | -35.3pp | 33.9pp | 11/17 |
+| S0-H11 | R-NEXIT-EARLY | ny_only | dow | Thu | 40.0 | 5.3 | 17.2 | +34.7pp | 27.8pp | 10/19 |
+| S0-H2 | R-NEXIT-EARLY | overlap | with_trend | False | 100.0 | 65.4 | 78.0 | +34.6pp | 24.1pp | 15/26 |
+| S0-H2 | R-NEXIT-EARLY | overlap | with_trend | True | 0.0 | 34.6 | 22.0 | -34.6pp | 24.1pp | 15/26 |
+| S0-H2 | R-NEXIT-FULL | overlap | with_trend | False | 100.0 | 65.4 | 78.0 | +34.6pp | 27.9pp | 15/26 |
+| S0-H2 | R-NEXIT-FULL | overlap | with_trend | True | 0.0 | 34.6 | 22.0 | -34.6pp | 27.9pp | 15/26 |
+| S1-H2 | R-ARM15 | asia | new_hl | False | 60.0 | 94.4 | 78.8 | -34.4pp | 26.9pp | 15/18 |
+| S1-H2 | R-ARM15 | asia | new_hl | True | 40.0 | 5.6 | 21.2 | +34.4pp | 26.9pp | 15/18 |
+| S0-H11 | R-NEXIT-FULL | ny_only | mtf | no-15M-trend | 45.5 | 11.1 | 24.1 | +34.3pp | 30.0pp | 11/18 |
+| S0-H17 | R-OP2 | london | vwap_band | 1s | 61.5 | 27.6 | 38.1 | +34.0pp | 31.8pp | 13/29 |
+| S0-H16 | R-OP2 | overlap | dow | Tue | 0.0 | 33.3 | 22.6 | -33.3pp | 26.1pp | 10/21 |
+| S0-H17 | R-NEXIT-EARLY | london | retest_level | False | 83.3 | 50.0 | 65.8 | +33.3pp | 27.5pp | 18/20 |
+| S0-H17 | R-NEXIT-EARLY | london | retest_level | True | 16.7 | 50.0 | 34.2 | -33.3pp | 27.5pp | 18/20 |
+| S0-H17 | R-NEXIT-FULL | london | retest_level | False | 83.3 | 50.0 | 65.8 | +33.3pp | 30.0pp | 18/20 |
+| S0-H17 | R-NEXIT-FULL | london | retest_level | True | 16.7 | 50.0 | 34.2 | -33.3pp | 30.0pp | 18/20 |
+| S0-H2 | R-OP2 | overlap | with_trend | False | 100.0 | 66.7 | 75.7 | +33.3pp | 29.9pp | 10/27 |
+| S0-H2 | R-OP2 | overlap | with_trend | True | 0.0 | 33.3 | 24.3 | -33.3pp | 29.9pp | 10/27 |
+| S0-H2 | R-OP2 | overlap | new_hh | False | 100.0 | 66.7 | 75.7 | +33.3pp | 29.8pp | 10/27 |
+| S0-H2 | R-OP2 | overlap | new_hh | True | 0.0 | 33.3 | 24.3 | -33.3pp | 29.8pp | 10/27 |
+| S0-H7 | R-NEXIT-FULL | london | new_ll | False | 90.3 | 57.1 | 72.7 | +33.2pp | 19.0pp | 31/35 |
+| S0-H7 | R-NEXIT-FULL | london | new_ll | True | 9.7 | 42.9 | 27.3 | -33.2pp | 19.0pp | 31/35 |
+| S0-H7 | R-NEXIT-EARLY | london | new_ll | False | 92.9 | 60.0 | 74.6 | +32.9pp | 26.2pp | 28/35 |
+| S0-H7 | R-NEXIT-EARLY | london | new_ll | True | 7.1 | 40.0 | 25.4 | -32.9pp | 26.2pp | 28/35 |
+| S0-H7 | R-NEXIT-SENT | london | phase | ranging | 17.4 | 50.0 | 34.0 | -32.6pp | 29.8pp | 23/24 |
+| S0-H7 | R-NEXIT-SENT | london | phase | trending | 82.6 | 50.0 | 66.0 | +32.6pp | 29.8pp | 23/24 |
+| S1-H2 | R-ARM15 | asia | dow | Tue | 6.7 | 38.9 | 24.2 | -32.2pp | 25.8pp | 15/18 |
+| S0-H18 | R-OP2 | london | vwap_band | 1s | 25.0 | 57.1 | 49.2 | -32.1pp | 27.8pp | 16/49 |
+| S0-H11 | R-OP2 | overlap | mtf | no-15M-trend | 0.0 | 31.8 | 21.2 | -31.8pp | 26.0pp | 11/22 |
+| S1-H11 | R-NEXIT-EARLY | dead | with_trend | False | 90.0 | 58.3 | 67.6 | +31.7pp | 31.4pp | 10/24 |
+| S1-H11 | R-NEXIT-EARLY | dead | with_trend | True | 10.0 | 41.7 | 32.4 | -31.7pp | 31.4pp | 10/24 |
+| S0-H11 | R-ARM15 | london | phase | ranging | 72.7 | 41.2 | 53.6 | +31.6pp | 30.3pp | 11/17 |
+| S0-H11 | R-ARM15 | london | phase | trending | 27.3 | 58.8 | 46.4 | -31.6pp | 30.3pp | 11/17 |
+| S0-H14 | R-OP2 | ny_only | new_hh | False | 92.3 | 60.9 | 72.2 | +31.4pp | 30.9pp | 13/23 |
+| S0-H14 | R-OP2 | ny_only | new_hh | True | 7.7 | 39.1 | 27.8 | -31.4pp | 30.9pp | 13/23 |
+| S0-H1 | R-H1-DELAY3 | london | quadrant | narrow-loud | 45.5 | 14.3 | 25.0 | +31.2pp | 28.4pp | 11/21 |
+| S0-H1 | R-NEXIT-SENT | ny_only | dow | Thu | 31.2 | 0.0 | 15.2 | +31.2pp | 21.2pp | 16/17 |
+| S0-H14 | R-OP2 | london | mtf | counter-15M | 50.0 | 18.9 | 29.8 | +31.1pp | 29.5pp | 20/37 |
+| S0-H11 | R-NEXIT-FULL | ny_only | dow | Thu | 36.4 | 5.6 | 17.2 | +30.8pp | 27.8pp | 11/18 |
+| S0-H17 | R-ARM15 | london | dow | Tue | 7.7 | 38.5 | 23.1 | -30.8pp | 27.6pp | 13/13 |
+| S0-H19 | R-NEXIT-FULL | asia | h11 | neither | 50.0 | 80.7 | 73.0 | -30.7pp | 20.4pp | 28/83 |
+| S0-H1 | R-ARM15 | london | new_hl | False | 91.7 | 61.1 | 73.3 | +30.6pp | 29.7pp | 12/18 |
+| S0-H1 | R-ARM15 | london | new_hl | True | 8.3 | 38.9 | 26.7 | -30.6pp | 29.7pp | 12/18 |
+| S1-H11 | R-NEXIT-FULL | dead | quadrant | wide-quiet | 50.0 | 19.4 | 26.8 | +30.6pp | 26.3pp | 10/31 |
+| S1-H11 | R-NEXIT-SENT | london | mtf | no-15M-trend | 52.4 | 21.7 | 36.4 | +30.6pp | 28.7pp | 21/23 |
+| S0-H2 | R-OP2 | overlap | h11 | node | 30.0 | 0.0 | 8.1 | +30.0pp | 17.7pp | 10/27 |
+| S0-H7 | R-NEXIT-EARLY | ny_only | dow | Thu | 30.0 | 0.0 | 11.5 | +30.0pp | 21.5pp | 10/16 |
+| S1-H11 | R-NEXIT-EARLY | dead | h11 | neither | 30.0 | 0.0 | 8.8 | +30.0pp | 17.6pp | 10/24 |
+| S1-H11 | R-NEXIT-EARLY | dead | h11 | node | 70.0 | 100.0 | 91.2 | -30.0pp | 17.6pp | 10/24 |
+| S1-H11 | R-NEXIT-EARLY | dead | dow | Mon | 30.0 | 0.0 | 8.8 | +30.0pp | 17.6pp | 10/24 |
+| S1-H11 | R-NEXIT-FULL | dead | h11 | neither | 30.0 | 0.0 | 7.3 | +30.0pp | 15.8pp | 10/31 |
+| S1-H11 | R-NEXIT-FULL | dead | h11 | node | 70.0 | 100.0 | 92.7 | -30.0pp | 15.8pp | 10/31 |
+| S1-H11 | R-NEXIT-FULL | dead | dow | Mon | 30.0 | 0.0 | 7.3 | +30.0pp | 15.8pp | 10/31 |
+| S1-H2 | R-OP2 | overlap | h11 | node | 30.0 | 0.0 | 9.7 | +30.0pp | 25.1pp | 10/21 |
+| S1-H11 | R-NEXIT-EARLY | ny_only | dow | Wed | 46.4 | 16.7 | 32.7 | +29.8pp | 24.5pp | 28/24 |
+| S0-H6 | R-NEXIT-SENT | london | quadrant | wide-loud | 37.9 | 8.3 | 24.5 | +29.6pp | 18.0pp | 29/24 |
+| S0-H19 | R-NEXIT-EARLY | asia | h11 | neither | 50.0 | 79.5 | 72.5 | -29.5pp | 18.5pp | 26/83 |
+| S0-H2 | R-ARM15 | asia | new_hl | False | 60.0 | 89.5 | 76.5 | -29.5pp | 28.1pp | 15/19 |
+| S0-H2 | R-ARM15 | asia | new_hl | True | 40.0 | 10.5 | 23.5 | +29.5pp | 28.1pp | 15/19 |
+| S1-H2 | R-ARM15 | london | h11 | node | 29.4 | 0.0 | 13.5 | +29.4pp | 25.1pp | 17/20 |
+| S1-H2 | R-NEXIT-EARLY | overlap | with_trend | False | 100.0 | 70.6 | 83.3 | +29.4pp | 25.1pp | 13/17 |
+| S1-H2 | R-NEXIT-EARLY | overlap | with_trend | True | 0.0 | 29.4 | 16.7 | -29.4pp | 25.1pp | 13/17 |
+| S1-H2 | R-NEXIT-FULL | overlap | with_trend | False | 100.0 | 70.6 | 83.3 | +29.4pp | 27.8pp | 13/17 |
+| S1-H2 | R-NEXIT-FULL | overlap | with_trend | True | 0.0 | 29.4 | 16.7 | -29.4pp | 27.8pp | 13/17 |
+| S1-H2 | R-NEXIT-SENT | london | new_hh | False | 86.8 | 58.1 | 71.6 | +28.7pp | 17.2pp | 38/43 |
+| S1-H2 | R-NEXIT-SENT | london | new_hh | True | 13.2 | 41.9 | 28.4 | -28.7pp | 17.2pp | 38/43 |
+| S0-H14 | R-NEXIT-FULL | london | dow | Mon | 61.9 | 33.3 | 47.6 | +28.6pp | 28.4pp | 21/21 |
+| S0-H18 | R-NEXIT-SENT | london | mtf | against-15M | 36.4 | 8.0 | 16.7 | +28.4pp | 25.1pp | 11/25 |
+| S0-H17 | R-NEXIT-EARLY | london | mtf | against-both | 33.3 | 5.0 | 18.4 | +28.3pp | 22.8pp | 18/20 |
+| S0-H17 | R-NEXIT-FULL | london | mtf | against-both | 33.3 | 5.0 | 18.4 | +28.3pp | 21.0pp | 18/20 |
+| S0-H10 | R-NEXIT-SENT | asia | mtf | counter-15M | 50.0 | 21.9 | 33.3 | +28.1pp | 23.7pp | 22/32 |
+| S0-H19 | R-NEXIT-FULL | asia | phase | ranging | 64.3 | 36.1 | 43.2 | +28.1pp | 20.6pp | 28/83 |
+| S0-H19 | R-NEXIT-FULL | asia | phase | trending | 35.7 | 63.9 | 56.8 | -28.1pp | 20.6pp | 28/83 |
+| S0-H6 | R-SCALP-H6 | london | new_hl | False | 71.9 | 100.0 | 77.1 | -28.1pp | 26.3pp | 57/13 |
+| S0-H6 | R-SCALP-H6 | london | new_hl | True | 28.1 | 0.0 | 22.9 | +28.1pp | 26.3pp | 57/13 |
+| S0-H6 | R-NEXIT-SENT | london | quadrant | narrow-quiet | 34.5 | 62.5 | 47.2 | -28.0pp | 24.7pp | 29/24 |
+| S1-H11 | R-NEXIT-EARLY | ny_only | dow | Tue | 17.9 | 45.8 | 30.8 | -28.0pp | 22.8pp | 28/24 |
+| S0-H11 | R-NEXIT-FULL | ny_only | mtf | with-both | 0.0 | 27.8 | 17.2 | -27.8pp | 27.6pp | 11/18 |
+| S0-H6 | R-SCALP-H6 | london | mtf | pullback | 3.5 | 30.8 | 8.6 | -27.3pp | 12.0pp | 57/13 |
+| S0-H7 | R-NEXIT-FULL | ny_only | dow | Thu | 27.3 | 0.0 | 11.5 | +27.3pp | 25.0pp | 11/15 |
+| S1-H11 | R-OP2 | overlap | vwap_band | 1s | 30.4 | 57.4 | 48.6 | -27.0pp | 24.4pp | 23/47 |
+| S0-H14 | R-OP2 | ny_only | dow | Tue | 30.8 | 4.3 | 13.9 | +26.4pp | 23.4pp | 13/23 |
+| S0-H11 | R-NEXIT-EARLY | ny_only | mtf | with-both | 0.0 | 26.3 | 17.2 | -26.3pp | 24.6pp | 10/19 |
+| S0-H2 | R-NEXIT-EARLY | dead | new_lh | False | 89.3 | 63.0 | 72.0 | +26.3pp | 20.6pp | 28/54 |
+| S0-H2 | R-NEXIT-EARLY | dead | new_lh | True | 10.7 | 37.0 | 28.0 | -26.3pp | 20.6pp | 28/54 |
+| S0-H2 | R-NEXIT-EARLY | dead | new_ll | False | 60.7 | 87.0 | 78.0 | -26.3pp | 21.5pp | 28/54 |
+| S0-H2 | R-NEXIT-EARLY | dead | new_ll | True | 39.3 | 13.0 | 22.0 | +26.3pp | 21.5pp | 28/54 |
+| S0-H1 | R-NEXIT-FULL | asia | retest_level | False | 75.0 | 48.8 | 56.1 | +26.2pp | 23.5pp | 16/41 |
+| S0-H1 | R-NEXIT-FULL | asia | retest_level | True | 25.0 | 51.2 | 43.9 | -26.2pp | 23.5pp | 16/41 |
+| S0-H14 | R-OP2 | ny_only | dow | Thu | 0.0 | 26.1 | 16.7 | -26.1pp | 25.1pp | 13/23 |
+| S0-H7 | R-NEXIT-FULL | london | with_trend | False | 77.4 | 51.4 | 63.6 | +26.0pp | 22.8pp | 31/35 |
+| S0-H7 | R-NEXIT-FULL | london | with_trend | True | 22.6 | 48.6 | 36.4 | -26.0pp | 22.8pp | 31/35 |
+| S1-H11 | R-NEXIT-FULL | ny_only | dow | Wed | 40.6 | 14.8 | 28.8 | +25.8pp | 20.0pp | 32/27 |
+| S0-H6 | R-SCALP-H6-REF | asia | dow | Wed | 14.3 | 40.0 | 19.2 | -25.7pp | 24.1pp | 42/10 |
+| S0-H7 | R-NEXIT-EARLY | london | mtf | no-15M-trend | 57.1 | 31.4 | 42.9 | +25.7pp | 23.7pp | 28/35 |
+| S0-H19 | R-NEXIT-SENT | london | with_trend | False | 52.2 | 77.4 | 66.7 | -25.2pp | 24.8pp | 23/31 |
+| S0-H19 | R-NEXIT-SENT | london | with_trend | True | 47.8 | 22.6 | 33.3 | +25.2pp | 24.8pp | 23/31 |
+| S1-H2 | R-OP2 | overlap | mtf | against-15M | 30.0 | 4.8 | 12.9 | +25.2pp | 22.3pp | 10/21 |
+| S0-H19 | R-NEXIT-SENT | london | new_lh | False | 65.2 | 90.3 | 79.6 | -25.1pp | 24.5pp | 23/31 |
+| S0-H19 | R-NEXIT-SENT | london | new_lh | True | 34.8 | 9.7 | 20.4 | +25.1pp | 24.5pp | 23/31 |
+| S0-H2 | R-BE | london | mtf | with-15M-flat-1M | 0.0 | 25.0 | 14.8 | -25.0pp | 24.0pp | 11/16 |
+| S0-H6 | R-NEXIT-SENT | asia | quadrant | wide-loud | 58.3 | 33.3 | 45.8 | +25.0pp | 24.5pp | 24/24 |
+| S0-H6 | R-NEXIT-SENT | asia | dow | Wed | 37.5 | 12.5 | 25.0 | +25.0pp | 21.1pp | 24/24 |
+| S1-H2 | R-ARM15 | london | h11 | gap | 0.0 | 25.0 | 13.5 | -25.0pp | 20.4pp | 17/20 |
+| S0-H10 | R-NEXIT-EARLY | london | h11 | neither | 66.7 | 91.3 | 80.5 | -24.6pp | 23.1pp | 18/23 |
+| S0-H7 | R-NEXIT-EARLY | london | with_trend | False | 78.6 | 54.3 | 65.1 | +24.3pp | 22.2pp | 28/35 |
+| S0-H7 | R-NEXIT-EARLY | london | with_trend | True | 21.4 | 45.7 | 34.9 | -24.3pp | 22.2pp | 28/35 |
+| S0-H1 | R-NEXIT-SENT | london | vwap_band | at | 9.1 | 33.3 | 20.9 | -24.2pp | 22.3pp | 22/21 |
+| S0-H19 | R-NEXIT-EARLY | asia | phase | ranging | 61.5 | 37.3 | 43.1 | +24.2pp | 18.6pp | 26/83 |
+| S0-H19 | R-NEXIT-EARLY | asia | phase | trending | 38.5 | 62.7 | 56.9 | -24.2pp | 18.6pp | 26/83 |
+| S1-H11 | R-NEXIT-SENT | london | quadrant | wide-loud | 28.6 | 4.3 | 15.9 | +24.2pp | 18.8pp | 21/23 |
+| S0-H6 | R-SCALP-H6-REF | london | vwap_signed | away | 12.3 | 36.4 | 16.2 | -24.1pp | 21.0pp | 57/11 |
+| S0-H6 | R-SCALP-H6-REF | london | vwap_signed | toward | 87.7 | 63.6 | 83.8 | +24.1pp | 21.0pp | 57/11 |
+| S0-H17 | R-NEXIT-FULL | asia | mtf | with-15M-flat-1M | 0.0 | 23.8 | 15.6 | -23.8pp | 23.0pp | 11/21 |
+| S0-H2 | R-NEXIT-FULL | dead | new_lh | False | 86.7 | 63.0 | 71.4 | +23.7pp | 18.0pp | 30/54 |
+| S0-H2 | R-NEXIT-FULL | dead | new_lh | True | 13.3 | 37.0 | 28.6 | -23.7pp | 18.0pp | 30/54 |
+| S0-H2 | R-NEXIT-FULL | dead | new_ll | False | 63.3 | 87.0 | 78.6 | -23.7pp | 14.6pp | 30/54 |
+| S0-H2 | R-NEXIT-FULL | dead | new_ll | True | 36.7 | 13.0 | 21.4 | +23.7pp | 14.6pp | 30/54 |
+| S0-H2 | R-NEXIT-SENT | ny_only | mtf | no-15M-trend | 18.2 | 41.8 | 31.3 | -23.6pp | 17.3pp | 44/55 |
+| S0-H6 | R-ARM15 | asia | dow | Thu | 26.7 | 4.2 | 12.8 | +22.5pp | 20.9pp | 15/24 |
+| S0-H1 | R-NEXIT-EARLY | london | dow | Mon | 31.6 | 9.7 | 18.0 | +21.9pp | 17.3pp | 19/31 |
+| S0-H19 | R-NEXIT-FULL | asia | h11 | node | 35.7 | 14.5 | 19.8 | +21.3pp | 14.7pp | 28/83 |
+| S0-H20 | R-OP2 | london | dow | Fri | 21.1 | 0.0 | 9.5 | +21.1pp | 16.3pp | 19/23 |
+| S0-H2 | R-ARM15 | london | h11 | node | 25.0 | 4.0 | 12.2 | +21.0pp | 20.1pp | 16/25 |
+| S0-H2 | R-OP2 | dead | h11 | gap | 23.5 | 2.6 | 8.9 | +21.0pp | 14.7pp | 17/39 |
+| S0-H10 | R-NEXIT-FULL | ny_only | dow | Thu | 0.0 | 20.8 | 10.9 | -20.8pp | 16.2pp | 22/24 |
+| S0-H19 | R-NEXIT-SENT | asia | new_ll | False | 87.5 | 66.7 | 75.7 | +20.8pp | 19.1pp | 32/42 |
+| S0-H19 | R-NEXIT-SENT | asia | new_ll | True | 12.5 | 33.3 | 24.3 | -20.8pp | 19.1pp | 32/42 |
+| S0-H1 | R-H1-KNIFE | london | mtf | with-both | 23.1 | 3.1 | 8.9 | +20.0pp | 16.0pp | 13/32 |
+| S0-H16 | R-OP2 | overlap | mtf | with-both | 20.0 | 0.0 | 6.5 | +20.0pp | 10.0pp | 10/21 |
+| S0-H2 | R-ARM15 | asia | h11 | node | 20.0 | 0.0 | 8.8 | +20.0pp | 18.8pp | 15/19 |
+| S0-H2 | R-OP2 | overlap | mtf | against-both | 20.0 | 0.0 | 5.4 | +20.0pp | 15.4pp | 10/27 |
+| S1-H11 | R-NEXIT-EARLY | asia | dow | Wed | 18.4 | 38.2 | 32.3 | -19.8pp | 15.5pp | 38/89 |
+| S0-H10 | R-NEXIT-EARLY | ny_only | dow | Thu | 0.0 | 19.2 | 10.9 | -19.2pp | 16.7pp | 20/26 |
+| S0-H19 | R-NEXIT-EARLY | asia | h11 | node | 34.6 | 15.7 | 20.2 | +19.0pp | 16.7pp | 26/83 |
+| S0-H17 | R-NEXIT-SENT | london | with_trend | False | 100.0 | 81.2 | 91.4 | +18.8pp | 16.7pp | 19/16 |
+| S0-H17 | R-NEXIT-SENT | london | with_trend | True | 0.0 | 18.8 | 8.6 | -18.8pp | 16.7pp | 19/16 |
+| S0-H2 | R-ARM15 | london | mtf | pullback | 18.8 | 0.0 | 7.3 | +18.8pp | 15.0pp | 16/25 |
+| S0-H11 | R-OP2 | asia | new_hh | False | 92.9 | 74.2 | 80.0 | +18.7pp | 14.2pp | 42/93 |
+| S0-H11 | R-OP2 | asia | new_hh | True | 7.1 | 25.8 | 20.0 | -18.7pp | 14.2pp | 42/93 |
+| S0-H2 | R-OP2 | dead | mtf | against-15M | 23.5 | 5.1 | 10.7 | +18.4pp | 16.2pp | 17/39 |
+| S1-H11 | R-OP2 | london | vwap_signed | away | 63.9 | 45.6 | 51.6 | +18.3pp | 17.7pp | 61/125 |
+| S1-H2 | R-NEXIT-FULL | dead | dow | Thu | 5.6 | 23.8 | 18.3 | -18.3pp | 17.7pp | 18/42 |
+| S0-H10 | R-NEXIT-FULL | dead | h11 | gap | 18.2 | 0.0 | 6.5 | +18.2pp | 15.4pp | 11/20 |
+| S0-H18 | R-NEXIT-SENT | london | dow | Mon | 18.2 | 0.0 | 5.6 | +18.2pp | 16.7pp | 11/25 |
+| S0-H19 | R-NEXIT-SENT | dead | mtf | with-both | 18.2 | 0.0 | 7.1 | +18.2pp | 16.7pp | 11/17 |
+| S0-H19 | R-NEXIT-SENT | dead | dow | Thu | 18.2 | 0.0 | 7.1 | +18.2pp | 16.7pp | 11/17 |
+| S0-H2 | R-NEXIT-EARLY | london | vwap_band | 2s | 43.2 | 25.3 | 33.5 | +18.0pp | 12.3pp | 74/87 |
+| S0-H2 | R-NEXIT-FULL | london | vwap_band | 2s | 43.2 | 25.3 | 33.5 | +18.0pp | 16.5pp | 74/87 |
+| S0-H14 | R-NEXIT-EARLY | asia | h11 | neither | 67.6 | 85.4 | 77.3 | -17.7pp | 17.1pp | 34/41 |
+| S1-H2 | R-NEXIT-SENT | ny_only | dow | Tue | 5.6 | 22.9 | 15.5 | -17.4pp | 15.0pp | 36/48 |
+| S0-H2 | R-NEXIT-SENT | ny_only | new_hh | False | 68.2 | 85.5 | 77.8 | -17.3pp | 16.2pp | 44/55 |
+| S0-H2 | R-NEXIT-SENT | ny_only | new_hh | True | 31.8 | 14.5 | 22.2 | +17.3pp | 16.2pp | 44/55 |
+| S1-H2 | R-NEXIT-SENT | london | vwap_band | at | 13.2 | 30.2 | 22.2 | -17.1pp | 16.3pp | 38/43 |
+| S1-H2 | R-OP2 | ny_only | dow | Fri | 3.6 | 20.6 | 15.6 | -17.0pp | 16.1pp | 28/68 |
+| S0-H11 | R-OP2 | asia | with_trend | False | 59.5 | 76.3 | 71.1 | -16.8pp | 14.6pp | 42/93 |
+| S0-H11 | R-OP2 | asia | with_trend | True | 40.5 | 23.7 | 28.9 | +16.8pp | 14.6pp | 42/93 |
+| S1-H11 | R-NEXIT-FULL | dead | mtf | with-15M-flat-1M | 20.0 | 3.2 | 7.3 | +16.8pp | 15.8pp | 10/31 |
+| S1-H11 | R-NEXIT-EARLY | ny_only | h11 | neither | 0.0 | 16.7 | 7.7 | -16.7pp | 12.9pp | 28/24 |
+| S1-H11 | R-NEXIT-EARLY | ny_only | h11 | node | 100.0 | 83.3 | 92.3 | +16.7pp | 12.9pp | 28/24 |
+| S0-H11 | R-NEXIT-FULL | asia | with_trend | False | 57.1 | 73.8 | 67.4 | -16.6pp | 15.9pp | 49/80 |
+| S0-H11 | R-NEXIT-FULL | asia | with_trend | True | 42.9 | 26.2 | 32.6 | +16.6pp | 15.9pp | 49/80 |
+| S0-H2 | R-NEXIT-FULL | london | new_ll | False | 58.1 | 74.7 | 67.1 | -16.6pp | 15.5pp | 74/87 |
+| S0-H2 | R-NEXIT-FULL | london | new_ll | True | 41.9 | 25.3 | 32.9 | +16.6pp | 15.5pp | 74/87 |
+| S1-H2 | R-NEXIT-EARLY | ny_only | dow | Tue | 7.3 | 23.9 | 17.9 | -16.6pp | 14.1pp | 41/71 |
+| S1-H2 | R-NEXIT-FULL | ny_only | dow | Tue | 7.3 | 23.9 | 17.9 | -16.6pp | 11.8pp | 41/71 |
+| S0-H2 | R-NEXIT-SENT | asia | mtf | with-15M-flat-1M | 1.8 | 17.9 | 11.2 | -16.2pp | 10.3pp | 56/78 |
+| S0-H1 | R-NEXIT-EARLY | london | vwap_band | beyond | 0.0 | 16.1 | 10.0 | -16.1pp | 15.6pp | 19/31 |
+| S1-H11 | R-NEXIT-FULL | asia | dow | Wed | 17.2 | 33.0 | 27.5 | -15.8pp | 15.7pp | 58/109 |
+| S0-H2 | R-OP2 | london | new_hl | False | 85.4 | 69.7 | 74.6 | +15.7pp | 14.4pp | 41/89 |
+| S0-H2 | R-OP2 | london | new_hl | True | 14.6 | 30.3 | 25.4 | -15.7pp | 14.4pp | 41/89 |
+| S0-H2 | R-NEXIT-SENT | london | new_hh | False | 79.6 | 64.2 | 71.6 | +15.4pp | 14.2pp | 49/53 |
+| S0-H2 | R-NEXIT-SENT | london | new_hh | True | 20.4 | 35.8 | 28.4 | -15.4pp | 14.2pp | 49/53 |
+| S0-H1 | R-NEXIT-EARLY | ny_only | mtf | with-both | 15.0 | 0.0 | 7.5 | +15.0pp | 13.2pp | 20/20 |
+| S0-H1 | R-NEXIT-FULL | ny_only | mtf | with-both | 15.0 | 0.0 | 7.5 | +15.0pp | 14.8pp | 20/20 |
+| S1-H11 | R-NEXIT-FULL | ny_only | h11 | neither | 0.0 | 14.8 | 6.8 | -14.8pp | 12.5pp | 32/27 |
+| S1-H11 | R-NEXIT-FULL | ny_only | h11 | node | 100.0 | 85.2 | 93.2 | +14.8pp | 12.5pp | 32/27 |
+| S1-H2 | R-NEXIT-SENT | asia | mtf | with-15M-flat-1M | 3.9 | 18.8 | 12.2 | -14.8pp | 10.7pp | 51/64 |
+| S0-H19 | R-NEXIT-FULL | dead | mtf | counter-15M | 17.6 | 3.0 | 8.0 | +14.6pp | 12.5pp | 17/33 |
+| S1-H2 | R-NEXIT-FULL | asia | dow | Wed | 15.5 | 30.0 | 24.6 | -14.5pp | 12.8pp | 71/120 |
+| S0-H19 | R-NEXIT-EARLY | asia | mtf | against-15M | 19.2 | 4.8 | 8.3 | +14.4pp | 12.0pp | 26/83 |
+| S0-H19 | R-NEXIT-SENT | london | h11 | node | 17.4 | 3.2 | 9.3 | +14.2pp | 13.4pp | 23/31 |
+| S0-H11 | R-NEXIT-EARLY | london | quadrant | narrow-loud | 2.1 | 16.1 | 9.6 | -14.0pp | 11.6pp | 48/56 |
+| S0-H7 | R-NEXIT-FULL | london | mtf | counter-15M | 3.2 | 17.1 | 10.6 | -13.9pp | 13.4pp | 31/35 |
+| S0-H11 | R-NEXIT-FULL | london | quadrant | narrow-loud | 1.7 | 15.4 | 8.9 | -13.7pp | 10.5pp | 59/65 |
+| S0-H19 | R-OP2 | asia | mtf | against-15M | 20.0 | 6.3 | 8.2 | +13.7pp | 10.6pp | 15/95 |
+| S0-H2 | R-NEXIT-EARLY | london | new_hh | False | 83.8 | 70.1 | 76.4 | +13.7pp | 13.2pp | 74/87 |
+| S0-H2 | R-NEXIT-EARLY | london | new_hh | True | 16.2 | 29.9 | 23.6 | -13.7pp | 13.2pp | 74/87 |
+| S1-H11 | R-OP2 | london | new_hl | False | 67.2 | 80.8 | 76.3 | -13.6pp | 12.3pp | 61/125 |
+| S1-H11 | R-OP2 | london | new_hl | True | 32.8 | 19.2 | 23.7 | +13.6pp | 12.3pp | 61/125 |
+| S1-H2 | R-NEXIT-SENT | asia | mtf | against-both | 19.6 | 6.2 | 12.2 | +13.4pp | 10.6pp | 51/64 |
+| S1-H2 | R-NEXIT-EARLY | asia | dow | Wed | 16.9 | 30.0 | 25.4 | -13.1pp | 12.0pp | 65/120 |
+| S0-H19 | R-NEXIT-FULL | asia | mtf | against-15M | 17.9 | 4.8 | 8.1 | +13.0pp | 12.0pp | 28/83 |
+| S0-H19 | R-NEXIT-SENT | london | mtf | counter-15M | 13.0 | 0.0 | 5.6 | +13.0pp | 12.0pp | 23/31 |
+| S0-H19 | R-NEXIT-SENT | london | mtf | with-both | 13.0 | 0.0 | 5.6 | +13.0pp | 11.5pp | 23/31 |
+| S0-H11 | R-NEXIT-FULL | asia | new_hh | False | 87.8 | 75.0 | 79.8 | +12.8pp | 10.9pp | 49/80 |
+| S0-H11 | R-NEXIT-FULL | asia | new_hh | True | 12.2 | 25.0 | 20.2 | -12.8pp | 10.9pp | 49/80 |
+| S0-H11 | R-NEXIT-SENT | london | quadrant | narrow-loud | 0.0 | 12.5 | 6.6 | -12.5pp | 11.4pp | 29/32 |
+| S0-H11 | R-NEXIT-SENT | london | mtf | against-both | 0.0 | 12.5 | 6.6 | -12.5pp | 11.8pp | 29/32 |
+| S0-H2 | R-NEXIT-SENT | ny_only | mtf | counter-15M | 15.9 | 3.6 | 9.1 | +12.3pp | 11.5pp | 44/55 |
+| S0-H19 | R-NEXIT-FULL | asia | mtf | pullback | 0.0 | 12.0 | 9.0 | -12.0pp | 10.5pp | 28/83 |
+| S1-H2 | R-NEXIT-EARLY | asia | mtf | against-both | 16.9 | 5.0 | 9.2 | +11.9pp | 8.5pp | 65/120 |
+| S1-H11 | R-NEXIT-SENT | asia | mtf | against-both | 11.8 | 0.0 | 4.8 | +11.8pp | 10.6pp | 17/25 |
+| S0-H2 | R-NEXIT-FULL | asia | dow | Wed | 19.0 | 30.7 | 26.6 | -11.7pp | 11.4pp | 84/153 |
+| S1-H2 | R-NEXIT-EARLY | asia | new_ll | False | 69.2 | 80.8 | 76.8 | -11.6pp | 11.2pp | 65/120 |
+| S1-H2 | R-NEXIT-EARLY | asia | new_ll | True | 30.8 | 19.2 | 23.2 | +11.6pp | 11.2pp | 65/120 |
+| S0-H2 | R-NEXIT-FULL | ny_only | new_lh | False | 81.1 | 69.7 | 73.7 | +11.4pp | 11.1pp | 53/99 |
+| S0-H2 | R-NEXIT-FULL | ny_only | new_lh | True | 18.9 | 30.3 | 26.3 | -11.4pp | 11.1pp | 53/99 |
+| S1-H11 | R-NEXIT-FULL | asia | quadrant | narrow-loud | 5.2 | 16.5 | 12.6 | -11.3pp | 9.7pp | 58/109 |
+| S1-H11 | R-OP2 | london | mtf | with-15M-flat-1M | 19.7 | 8.8 | 12.4 | +10.9pp | 8.7pp | 61/125 |
+| S0-H18 | R-OP2 | london | vwap_band | beyond | 12.5 | 2.0 | 4.6 | +10.5pp | 9.0pp | 16/49 |
+| S1-H2 | R-NEXIT-FULL | asia | mtf | against-both | 15.5 | 5.0 | 8.9 | +10.5pp | 7.5pp | 71/120 |
+| S0-H14 | R-OP2 | london | h11 | gap | 10.0 | 0.0 | 3.5 | +10.0pp | 8.4pp | 20/37 |
+| S1-H11 | R-NEXIT-EARLY | dead | mtf | pullback | 10.0 | 0.0 | 2.9 | +10.0pp | 9.1pp | 10/24 |
+| S1-H11 | R-NEXIT-EARLY | dead | mtf | with-15M-flat-1M | 10.0 | 0.0 | 2.9 | +10.0pp | 9.1pp | 10/24 |
+| S1-H11 | R-NEXIT-FULL | dead | mtf | pullback | 10.0 | 0.0 | 2.4 | +10.0pp | 6.7pp | 10/31 |
 
 ## Exit efficiency (captured vs available per exit reason per sentence; variants pooled, caveat above; rows n >= 25)
 
 | sentence | exit | n | captured med | available med | left-on-table med | cont 60m med |
 |---|---|---|---|---|---|---|
-| S0-H1 | eod | 47 | 26.9 | 50.9 | 27.7 | -7.9 |
-| S0-H1 | narrative | 374 | -1.7 | 21.95 | 22.2 | 1.8 |
-| S0-H1 | stop | 346 | -5.56 | 16.9 | 29.84 | 0.55 |
-| S0-H10 | eod | 44 | 57.7 | 112.4 | 35.0 | 12.7 |
-| S0-H10 | narrative | 327 | -1.2 | 17.8 | 18.3 | 1.4 |
-| S0-H10 | stop | 320 | -5.74 | 14.92 | 23.94 | 0.96 |
-| S0-H11 | eod | 41 | 7.3 | 40.2 | 28.6 | 21.8 |
-| S0-H11 | narrative | 487 | -1.5 | 17.8 | 17.5 | -2.4 |
-| S0-H11 | stop | 379 | -5.82 | 19.5 | 24.89 | 0.15 |
-| S0-H13 | narrative | 41 | 0.6 | 37.7 | 30.6 | 19.6 |
-| S0-H13 | stop | 44 | -1.5 | 32.5 | 28.75 | 3.7 |
-| S0-H14 | eod | 35 | 64.8 | 108.5 | 31.1 | -6.0 |
-| S0-H14 | narrative | 280 | -2.1 | 16.2 | 18.9 | 1.95 |
-| S0-H14 | stop | 275 | -5.53 | 15.05 | 24.05 | 0.75 |
-| S0-H16 | eod | 96 | -1.0 | 26.85 | 25.7 | -6.7 |
-| S0-H16 | narrative | 31 | 1.8 | 24.8 | 30.5 | -15.8 |
-| S0-H17 | narrative | 213 | -1.4 | 21.1 | 21.4 | 4.0 |
-| S0-H17 | stop | 171 | -4.7 | 17.6 | 27.11 | -0.03 |
-| S0-H18 | eod | 26 | 30.0 | 91.5 | 31.1 | 7.5 |
-| S0-H18 | narrative | 174 | -4.3 | 20.2 | 25.2 | -0.65 |
-| S0-H18 | stop | 146 | -8.07 | 18.5 | 25.62 | -4.34 |
-| S0-H19 | eod | 29 | 39.8 | 79.2 | 31.1 | -7.4 |
-| S0-H19 | narrative | 599 | -1.5 | 17.8 | 18.1 | -0.9 |
-| S0-H19 | stop | 301 | -6.1 | 16.1 | 27.23 | 2.52 |
-| S0-H2 | eod | 48 | 42.6 | 78.4 | 31.0 | 7.45 |
-| S0-H2 | narrative | 1143 | -1.3 | 19.1 | 19.5 | -0.2 |
-| S0-H2 | stop | 477 | -5.17 | 17.3 | 22.26 | -1.17 |
-| S0-H2 | stop_gap | 30 | -5.45 | 18.35 | 23.85 | 1.35 |
-| S0-H20 | eod | 35 | 5.6 | 44.5 | 31.1 | -6.0 |
-| S0-H20 | narrative | 142 | -4.1 | 26.65 | 25.4 | 4.75 |
-| S0-H20 | stop | 123 | -8.17 | 27.0 | 28.25 | -3.71 |
-| S0-H3 | narrative | 57 | -1.5 | 13.3 | 15.3 | -2.2 |
-| S0-H3 | stop | 67 | -13.14 | 6.6 | 20.42 | 4.11 |
+| S0-H1 | eod | 115 | 26.9 | 66.1 | 27.7 | 1.8 |
+| S0-H1 | narrative | 685 | -1.3 | 22.3 | 23.2 | 1.2 |
+| S0-H1 | stop | 570 | -4.78 | 18.35 | 28.07 | 3.19 |
+| S0-H1 | stop_gap | 27 | -25.1 | 2.6 | 13.7 | -0.6 |
+| S0-H10 | eod | 65 | 57.7 | 113.1 | 37.0 | 1.8 |
+| S0-H10 | narrative | 523 | -1.7 | 15.7 | 16.5 | 1.9 |
+| S0-H10 | stop | 506 | -4.78 | 17.3 | 23.0 | 2.03 |
+| S0-H11 | eod | 60 | 25.4 | 56.55 | 25.2 | 14.7 |
+| S0-H11 | narrative | 752 | -1.7 | 18.45 | 18.1 | -1.75 |
+| S0-H11 | stop | 560 | -6.05 | 19.8 | 24.91 | 0.76 |
+| S0-H11 | stop_gap | 33 | -2.0 | 21.7 | 19.4 | -1.9 |
+| S0-H13 | narrative | 46 | 1.5 | 33.35 | 30.2 | 19.5 |
+| S0-H13 | stop | 53 | -1.5 | 31.8 | 29.71 | 4.46 |
+| S0-H14 | eod | 56 | 63.05 | 108.2 | 31.6 | -6.0 |
+| S0-H14 | narrative | 453 | -1.8 | 13.8 | 15.6 | 0.4 |
+| S0-H14 | stop | 425 | -5.02 | 12.55 | 21.75 | -0.34 |
+| S0-H14 | stop_gap | 30 | -4.95 | 17.25 | 19.5 | 4.8 |
+| S0-H16 | eod | 142 | -5.2 | 31.3 | 25.2 | -6.65 |
+| S0-H16 | narrative | 57 | 0.9 | 24.8 | 30.5 | -15.8 |
+| S0-H16 | stop | 31 | -5.52 | 20.0 | 24.63 | -24.38 |
+| S0-H17 | eod | 54 | 30.6 | 63.5 | 31.55 | 10.8 |
+| S0-H17 | narrative | 402 | -0.9 | 24.15 | 22.85 | 3.4 |
+| S0-H17 | stop | 309 | -5.62 | 17.4 | 27.11 | 5.99 |
+| S0-H18 | eod | 39 | 28.4 | 64.6 | 30.4 | 7.5 |
+| S0-H18 | narrative | 276 | -4.7 | 19.15 | 25.35 | -1.85 |
+| S0-H18 | stop | 238 | -9.48 | 15.0 | 25.27 | -4.34 |
+| S0-H19 | eod | 63 | 38.7 | 78.0 | 28.6 | -10.8 |
+| S0-H19 | narrative | 1070 | -1.8 | 20.2 | 21.8 | 0.0 |
+| S0-H19 | stop | 508 | -5.72 | 18.7 | 25.56 | 2.35 |
+| S0-H2 | eod | 85 | 30.6 | 55.9 | 28.6 | 3.9 |
+| S0-H2 | narrative | 1993 | -1.5 | 20.1 | 20.9 | -0.7 |
+| S0-H2 | stop | 808 | -5.81 | 16.7 | 22.4 | -1.07 |
+| S0-H2 | stop_gap | 53 | -4.6 | 17.6 | 29.9 | -0.5 |
+| S0-H20 | eod | 49 | 16.0 | 67.6 | 31.0 | -6.0 |
+| S0-H20 | narrative | 246 | -1.5 | 33.0 | 28.85 | 4.9 |
+| S0-H20 | stop | 188 | -7.9 | 26.95 | 29.2 | 0.81 |
+| S0-H3 | narrative | 72 | -1.25 | 13.5 | 16.2 | -3.3 |
+| S0-H3 | stop | 94 | -13.32 | 6.2 | 25.65 | 3.81 |
 | S0-H4 | narrative | 32 | 0.9 | 40.8 | 24.0 | 0.05 |
 | S0-H4 | stop | 40 | -4.1 | 40.4 | 34.42 | 4.38 |
-| S0-H6 | eod | 37 | 100.1 | 128.7 | 28.8 | 12.7 |
-| S0-H6 | narrative | 202 | -1.7 | 20.9 | 28.0 | -4.95 |
-| S0-H6 | stop | 275 | -13.51 | 15.7 | 29.3 | -8.29 |
-| S0-H6 | target | 130 | 10.45 | 37.8 | 29.08 | -5.68 |
-| S0-H7 | eod | 46 | 35.1 | 63.8 | 25.85 | -7.65 |
-| S0-H7 | narrative | 224 | 0.0 | 23.15 | 21.55 | -1.05 |
-| S0-H7 | stop | 186 | -5.17 | 19.8 | 28.57 | 3.92 |
-| S0-H9 | narrative | 119 | -2.1 | 16.0 | 15.0 | -6.5 |
-| S0-H9 | stop | 120 | -6.53 | 11.2 | 26.62 | -5.96 |
-| S1-H11 | eod | 47 | 50.4 | 89.8 | 38.9 | 12.7 |
-| S1-H11 | narrative | 427 | -1.5 | 27.2 | 24.0 | 6.7 |
-| S1-H11 | stop | 340 | -6.33 | 23.7 | 24.18 | -3.01 |
-| S1-H11 | stop_gap | 26 | -12.85 | 12.25 | 18.05 | -11.25 |
-| S1-H2 | eod | 38 | 56.3 | 87.4 | 31.1 | 7.9 |
-| S1-H2 | narrative | 892 | -1.2 | 19.1 | 19.5 | -0.5 |
-| S1-H2 | stop | 419 | -5.26 | 18.5 | 23.28 | -0.5 |
-| S1-H2 | stop_gap | 28 | -6.65 | 13.85 | 28.8 | 7.6 |
-| S1-H9 | narrative | 64 | -1.55 | 19.5 | 16.7 | -4.3 |
-| S1-H9 | stop | 57 | -11.61 | 5.7 | 25.45 | -4.86 |
+| S0-H6 | eod | 72 | 32.0 | 70.95 | 25.7 | -1.8 |
+| S0-H6 | narrative | 381 | -1.5 | 25.0 | 29.4 | -1.9 |
+| S0-H6 | stop | 476 | -10.86 | 17.1 | 28.39 | -5.96 |
+| S0-H6 | target | 227 | 11.01 | 42.3 | 31.95 | -2.57 |
+| S0-H7 | eod | 83 | 28.0 | 62.6 | 31.1 | -3.9 |
+| S0-H7 | narrative | 373 | -0.8 | 25.5 | 23.5 | -0.5 |
+| S0-H7 | stop | 316 | -5.33 | 15.45 | 28.19 | 3.31 |
+| S0-H9 | eod | 34 | 85.7 | 137.3 | 31.6 | 1.8 |
+| S0-H9 | narrative | 211 | -2.0 | 18.7 | 16.7 | -3.9 |
+| S0-H9 | stop | 207 | -7.07 | 14.6 | 26.5 | 1.6 |
+| S1-H1 | narrative | 43 | 0.4 | 21.5 | 12.8 | -9.2 |
+| S1-H1 | stop | 45 | -8.25 | 16.9 | 37.83 | 2.56 |
+| S1-H11 | eod | 84 | 26.9 | 51.5 | 31.0 | 5.6 |
+| S1-H11 | narrative | 868 | -1.8 | 24.85 | 23.9 | 4.8 |
+| S1-H11 | stop | 743 | -6.89 | 18.7 | 23.45 | -1.35 |
+| S1-H11 | stop_gap | 50 | -7.25 | 13.7 | 15.35 | -4.7 |
+| S1-H2 | eod | 77 | 30.6 | 65.6 | 28.8 | 3.9 |
+| S1-H2 | narrative | 1530 | -1.45 | 19.9 | 20.5 | -1.4 |
+| S1-H2 | stop | 691 | -5.74 | 17.2 | 22.76 | -0.94 |
+| S1-H2 | stop_gap | 49 | -6.3 | 16.4 | 30.3 | 0.9 |
+| S1-H9 | narrative | 118 | -0.8 | 22.75 | 19.9 | -2.3 |
+| S1-H9 | stop | 106 | -11.04 | 11.05 | 27.36 | 2.31 |
 
 ## MAE of eventual winners (R-NOTRAIL only — the unmanaged full-hold path; xATR at entry; stop-floor DESIGN INPUT, not a stop)
 
 | sentence | n | p50 | p75 | p90 |
 |---|---|---|---|---|
-| S0-H1 | °12 | 1.389 | 1.783 | 1.829 |
-| S0-H10 | °13 | 0.969 | 1.313 | 2.173 |
-| S0-H11 | °8 | 1.243 | 1.959 | 2.064 |
-| S0-H13 | °4 | 1.903 | 2.071 | 2.289 |
-| S0-H14 | °11 | 1.055 | 1.356 | 1.675 |
-| S0-H16 | °9 | 0.296 | 0.479 | 0.686 |
-| S0-H17 | °11 | 1.081 | 1.641 | 1.892 |
-| S0-H18 | °7 | 0.849 | 1.459 | 2.081 |
-| S0-H19 | °7 | 1.655 | 2.187 | 2.333 |
-| S0-H2 | °13 | 1.257 | 1.531 | 2.159 |
-| S0-H20 | °9 | 0.886 | 1.165 | 1.675 |
+| S0-H1 | °24 | 0.867 | 1.689 | 1.828 |
+| S0-H10 | °20 | 0.833 | 1.659 | 2.012 |
+| S0-H11 | °15 | 0.922 | 1.882 | 2.087 |
+| S0-H13 | °6 | 1.407 | 1.926 | 2.192 |
+| S0-H14 | °18 | 1.049 | 1.341 | 1.719 |
+| S0-H16 | °13 | 0.268 | 0.443 | 0.637 |
+| S0-H17 | °18 | 0.68 | 1.355 | 1.849 |
+| S0-H18 | °11 | 0.969 | 1.389 | 1.949 |
+| S0-H19 | °16 | 1.159 | 1.571 | 2.187 |
+| S0-H2 | °20 | 1.26 | 1.478 | 2.175 |
+| S0-H20 | °15 | 0.711 | 1.057 | 1.499 |
 | S0-H3 | °4 | 1.437 | 1.843 | 2.002 |
 | S0-H4 | °3 | 1.823 | 2.151 | 2.347 |
-| S0-H6 | °10 | 1.333 | 1.68 | 1.947 |
-| S0-H7 | °12 | 1.342 | 1.731 | 1.753 |
-| S0-H9 | °8 | 0.712 | 0.999 | 1.823 |
-| S1-H1 | °2 | 1.565 | 1.846 | 2.015 |
-| S1-H11 | °9 | 0.934 | 1.876 | 2.096 |
-| S1-H2 | °14 | 0.935 | 1.321 | 1.573 |
-| S1-H9 | °4 | 1.157 | 1.781 | 2.156 |
+| S0-H6 | °18 | 1.333 | 1.727 | 1.907 |
+| S0-H7 | °22 | 1.183 | 1.718 | 1.785 |
+| S0-H9 | °16 | 0.712 | 1.086 | 2.192 |
+| S1-H1 | °4 | 1.264 | 1.677 | 1.947 |
+| S1-H11 | °16 | 0.81 | 1.901 | 2.076 |
+| S1-H2 | °23 | 1.007 | 1.42 | 1.781 |
+| S1-H9 | °10 | 0.831 | 1.41 | 2.407 |
 
-## WATCH list (bright but sub-measurable: |split| >= 10pp, n >= 12, failing measurability; top 20 of 3284; n-to-measurable = rows still needed)
+## WATCH list (bright but sub-measurable: |split| >= 10pp, n >= 12, failing measurability; top 20 of 3335; n-to-measurable = rows still needed)
 
 | sentence | variant | session | feature | value | split | n w/l | n-to-measurable |
 |---|---|---|---|---|---|---|---|
-| S0-H1 | R-H1-DELAY10 | asia | new_lh | False | +100.0pp | 7/5 | 13 |
-| S0-H1 | R-H1-DELAY10 | asia | new_lh | True | -100.0pp | 7/5 | 13 |
-| S0-H11 | R-BE | london | dow | Mon | +100.0pp | 1/13 | 11 |
-| S0-H19 | R-BE | ny_only | h11 | node | +91.7pp | 1/12 | 12 |
-| S0-H19 | R-BE | ny_only | mtf | against-15M | +91.7pp | 1/12 | 12 |
-| S0-H19 | R-BE | ny_only | new_hh | False | -91.7pp | 1/12 | 12 |
-| S0-H19 | R-BE | ny_only | new_hh | True | +91.7pp | 1/12 | 12 |
-| S1-H2 | R-BE | ny_only | with_trend | False | -91.7pp | 2/12 | 11 |
-| S1-H2 | R-BE | ny_only | with_trend | True | +91.7pp | 2/12 | 11 |
-| S0-H17 | R-OP2 | dead | mtf | counter-15M | +90.9pp | 1/11 | 13 |
-| S0-H17 | R-OP2 | dead | new_ll | False | -90.9pp | 1/11 | 13 |
-| S0-H17 | R-OP2 | dead | new_ll | True | +90.9pp | 1/11 | 13 |
-| S0-H11 | R-NEXIT-EARLY | overlap | vwap_signed | away | -90.0pp | 2/10 | 13 |
-| S0-H11 | R-NEXIT-EARLY | overlap | vwap_signed | toward | +90.0pp | 2/10 | 13 |
-| S1-H2 | R-OP2 | overlap | new_lh | False | -84.6pp | 6/13 | 6 |
-| S1-H2 | R-OP2 | overlap | new_lh | True | +84.6pp | 6/13 | 6 |
-| S0-H7 | R-OP2 | london | dow | Fri | +84.2pp | 1/19 | 9 |
-| S0-H19 | R-BE | ny_only | dow | Mon | +83.3pp | 1/12 | 12 |
-| S0-H19 | R-BE | ny_only | h11 | neither | -83.3pp | 1/12 | 12 |
-| S0-H19 | R-BE | ny_only | phase | ranging | +83.3pp | 1/12 | 12 |
+| S0-H17 | R-BE | ny_only | dow | Thu | +93.8pp | 1/16 | 9 |
+| S0-H17 | R-BE | asia | dow | Mon | +93.3pp | 1/15 | 9 |
+| S0-H10 | R-BE | asia | h11 | gap | +91.7pp | 1/12 | 12 |
+| S0-H10 | R-BE | asia | h11 | neither | -91.7pp | 1/12 | 12 |
+| S0-H14 | R-BE | asia | dow | Mon | +91.7pp | 1/12 | 12 |
+| S0-H6 | R-SCALP-H6 | overlap | vwap_band | 1s | -90.9pp | 11/1 | 13 |
+| S0-H3 | R-NEXIT-SENT | asia | new_hh | False | -90.0pp | 4/10 | 11 |
+| S0-H3 | R-NEXIT-SENT | asia | new_hh | True | +90.0pp | 4/10 | 11 |
+| S0-H17 | R-BE | ny_only | mtf | counter-15M | +87.5pp | 1/16 | 9 |
+| S0-H1 | R-BE | asia | dow | Mon | +83.3pp | 1/12 | 12 |
+| S0-H1 | R-H1-DELAY10 | asia | new_lh | False | +83.3pp | 11/6 | 8 |
+| S0-H1 | R-H1-DELAY10 | asia | new_lh | True | -83.3pp | 11/6 | 8 |
+| S0-H10 | R-BE | asia | dow | Mon | +83.3pp | 1/12 | 12 |
+| S0-H10 | R-BE | asia | new_hh | False | -83.3pp | 1/12 | 12 |
+| S0-H10 | R-BE | asia | new_hh | True | +83.3pp | 1/12 | 12 |
+| S1-H11 | R-NOTRAIL | london | new_lh | False | +83.3pp | 6/6 | 13 |
+| S1-H11 | R-NOTRAIL | london | new_lh | True | -83.3pp | 6/6 | 13 |
+| S0-H2 | R-BE | asia | dow | Mon | +81.8pp | 1/22 | 9 |
+| S0-H17 | R-BE | ny_only | new_hh | False | -81.2pp | 1/16 | 9 |
+| S0-H17 | R-BE | ny_only | new_hh | True | +81.2pp | 1/16 | 9 |

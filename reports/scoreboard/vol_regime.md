@@ -2,34 +2,35 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_vol_regime, register 130). atr_pctl = ATR(15M)-at-entry vs the instrument's OWN trailing-20-session 15M ATR distribution (strictly prior, no lookahead); buckets <50 / 50-80 / 80-95 / >=95 (the order's edges). MOTIVATION CITED: the worst-27 scalp-REF forensic — every disaster at elevated ATR-at-entry; the event-clock inversion EXPLAINED as a volatility proxy (register 130). MECHANISM EX-ANTE: the asymmetric bracket x violence = outsized stops at elevated stop-rates. STATISTIC SHAPES (74-B): per-stratum TOP-BUCKET DEGRADATION (rest-median minus top-median, one-sided) vs bucket labels permuted within the stratum (100 pinned seeds); distinct paths throughout (register 113); top bucket measurable at n_distinct >= 10; CANDIDATE = >= 3 of 4 forward legs clearing; single-leg clears -> the WATCH page. A surviving candidate proposes an ENTRY-PAUSE rule through the front door — distinguished from the failed clock rule (register 104) and the failed reactive cooldowns (register 103). Ex-lockbox; nothing registers here. (0 rows carry no percentile — warmup; counted.)
+Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_vol_regime, register 130). atr_pctl = ATR(15M)-at-entry vs the instrument's OWN trailing-20-session 15M ATR distribution (strictly prior, no lookahead); buckets <50 / 50-80 / 80-95 / >=95 (the order's edges). MOTIVATION CITED: the worst-27 scalp-REF forensic — every disaster at elevated ATR-at-entry; the event-clock inversion EXPLAINED as a volatility proxy (register 130). MECHANISM EX-ANTE: the asymmetric bracket x violence = outsized stops at elevated stop-rates. STATISTIC SHAPES (74-B): per-stratum TOP-BUCKET DEGRADATION (rest-median minus top-median, one-sided) vs bucket labels permuted within the stratum (100 pinned seeds); distinct paths throughout (register 113); top bucket measurable at n_distinct >= 10; CANDIDATE = >= 3 of 4 forward legs clearing; single-leg clears -> the WATCH page. A surviving candidate proposes an ENTRY-PAUSE rule through the front door — distinguished from the failed clock rule (register 104) and the failed reactive cooldowns (register 103). Ex-lockbox; nothing registers here. (0 rows carry no percentile — warmup; counted.)
 
 ## Scalp arms — top-bucket degradation (headline)
 
 | arm | leg | window | rest med (n) | >=95 med (n) | median gap | stop-rate gap | null p95 | pct | clears |
 |---|---|---|---|---|---|---|---|---|---|
 | R-SCALP-H6 | ger40fut | backtest | — (25) | — (0) | — | — | — | — | no |
-| R-SCALP-H6 | ger40fut | forward | — (59) | — (0) | — | — | — | — | no |
+| R-SCALP-H6 | ger40fut | forward | — (69) | 22.46 (1) | — | — | — | — | no |
 | R-SCALP-H6 | nas100fut | backtest | — (20) | 81.23 (1) | — | — | — | — | no |
-| R-SCALP-H6 | nas100fut | forward | — (56) | -7.1 (1) | — | — | — | — | no |
+| R-SCALP-H6 | nas100fut | forward | — (61) | -7.1 (1) | — | — | — | — | no |
 | R-SCALP-H6 | uk100fut | backtest | — (43) | 12.46 (2) | — | — | — | — | no |
-| R-SCALP-H6 | uk100fut | forward | — (47) | — (0) | — | — | — | — | no |
+| R-SCALP-H6 | uk100fut | forward | — (55) | — (0) | — | — | — | — | no |
 | R-SCALP-H6 | us30fut | backtest | — (28) | 52.65 (3) | — | — | — | — | no |
-| R-SCALP-H6 | us30fut | forward | — (48) | — (0) | — | — | — | — | no |
+| R-SCALP-H6 | us30fut | forward | — (56) | — (0) | — | — | — | — | no |
 | R-SCALP-H6-REF | ger40fut | backtest | — (24) | — (0) | — | — | — | — | no |
-| R-SCALP-H6-REF | ger40fut | forward | — (52) | — (0) | — | — | — | — | no |
+| R-SCALP-H6-REF | ger40fut | forward | — (61) | 22.46 (1) | — | — | — | — | no |
 | R-SCALP-H6-REF | nas100fut | backtest | — (17) | 81.23 (1) | — | — | — | — | no |
-| R-SCALP-H6-REF | nas100fut | forward | — (57) | 44.78 (1) | — | — | — | — | no |
+| R-SCALP-H6-REF | nas100fut | forward | — (62) | 44.78 (1) | — | — | — | — | no |
 | R-SCALP-H6-REF | uk100fut | backtest | — (41) | 12.46 (2) | — | — | — | — | no |
-| R-SCALP-H6-REF | uk100fut | forward | — (47) | — (0) | — | — | — | — | no |
+| R-SCALP-H6-REF | uk100fut | forward | — (54) | — (0) | — | — | — | — | no |
 | R-SCALP-H6-REF | us30fut | backtest | — (30) | 52.34 (4) | — | — | — | — | no |
-| R-SCALP-H6-REF | us30fut | forward | — (49) | — (0) | — | — | — | — | no |
+| R-SCALP-H6-REF | us30fut | forward | — (57) | — (0) | — | — | — | — | no |
 
 ## Candidates and glints (forward legs clearing; candidate = >= 3 of 4, one mechanism)
 
 | variant | cut | mechanism | grade | clearing legs |
 |---|---|---|---|---|
 | R-OP2 | vol>=95 | volatility pause (ex-ante state — not clock, not reaction) | candidate | nas100fut, uk100fut, us30fut |
+| R-ARM15 | vol>=95 | volatility pause (ex-ante state — not clock, not reaction) | glint | us30fut |
 | R-NEXIT-SENT | vol>=95 | volatility pause (ex-ante state — not clock, not reaction) | glint | uk100fut |
 
 ## All buckets (every variant; full grid in the JSON; n as rows (distinct))
@@ -38,29 +39,30 @@ Engine `78fd6e12c` — OBSERVATIONAL, pre-registered (prereg_vol_regime, registe
 |---|---|---|---|---|---|---|---|---|
 | ger40fut | R-SCALP-H6 | backtest | <50 | 13 (13) | 15 | +10.25 | 85% | 5.1 |
 | ger40fut | R-SCALP-H6 | backtest | 50-80 | 11 (11) | 18 | +17.17 | 82% | -47.4 |
-| ger40fut | R-SCALP-H6 | forward | <50 | 37 (37) | 27 | +6.11 | 73% | -238.4 |
-| ger40fut | R-SCALP-H6 | forward | 50-80 | 17 (17) | 6 | +12.53 | 88% | 81.5 |
+| ger40fut | R-SCALP-H6 | forward | <50 | 40 (40) | 28 | +6.09 | 72% | -271.2 |
+| ger40fut | R-SCALP-H6 | forward | 50-80 | 24 (24) | 8 | +12.55 | 83% | 60.1 |
 | nas100fut | R-SCALP-H6 | backtest | 50-80 | 11 (11) | 18 | +32.70 | 82% | -17.3 |
-| nas100fut | R-SCALP-H6 | forward | <50 | 32 (32) | 19 | +13.25 | 78% | -240.0 |
-| nas100fut | R-SCALP-H6 | forward | 50-80 | 22 (22) | 9 | +19.45 | 91% | 163.0 |
+| nas100fut | R-SCALP-H6 | forward | <50 | 35 (35) | 17 | +12.62 | 80% | -215.6 |
+| nas100fut | R-SCALP-H6 | forward | 50-80 | 24 (24) | 8 | +19.16 | 92% | 199.5 |
 | uk100fut | R-SCALP-H6 | backtest | <50 | 19 (19) | 10 | +3.09 | 90% | 16.7 |
 | uk100fut | R-SCALP-H6 | backtest | 50-80 | 16 (16) | 19 | +6.17 | 69% | -69.5 |
-| uk100fut | R-SCALP-H6 | forward | <50 | 24 (24) | 17 | +1.83 | 83% | -22.8 |
-| uk100fut | R-SCALP-H6 | forward | 50-80 | 19 (19) | 5 | +4.20 | 90% | 33.3 |
+| uk100fut | R-SCALP-H6 | forward | <50 | 27 (27) | 15 | +1.86 | 85% | -15.3 |
+| uk100fut | R-SCALP-H6 | forward | 50-80 | 24 (24) | 4 | +4.29 | 92% | 55.6 |
 | us30fut | R-SCALP-H6 | backtest | 50-80 | 14 (14) | 29 | +28.41 | 64% | -445.9 |
-| us30fut | R-SCALP-H6 | forward | <50 | 17 (17) | 29 | +8.11 | 71% | -249.5 |
-| us30fut | R-SCALP-H6 | forward | 50-80 | 24 (24) | 8 | +20.35 | 92% | 225.5 |
+| us30fut | R-SCALP-H6 | forward | <50 | 21 (21) | 29 | +8.88 | 71% | -305.3 |
+| us30fut | R-SCALP-H6 | forward | 50-80 | 26 (26) | 8 | +21.09 | 92% | 268.2 |
 | ger40fut | R-SCALP-H6-REF | backtest | <50 | 12 (12) | 8 | +9.66 | 92% | 35.8 |
 | ger40fut | R-SCALP-H6-REF | backtest | 50-80 | 11 (11) | 9 | +18.15 | 91% | 84.0 |
-| ger40fut | R-SCALP-H6-REF | forward | <50 | 35 (35) | 23 | +6.63 | 77% | -157.1 |
-| ger40fut | R-SCALP-H6-REF | forward | 50-80 | 12 (12) | 17 | +11.59 | 75% | -62.6 |
-| nas100fut | R-SCALP-H6-REF | forward | <50 | 31 (31) | 6 | +14.57 | 94% | 254.2 |
-| nas100fut | R-SCALP-H6-REF | forward | 50-80 | 23 (23) | 13 | +19.94 | 87% | 44.3 |
+| ger40fut | R-SCALP-H6-REF | forward | <50 | 38 (38) | 24 | +6.55 | 76% | -189.9 |
+| ger40fut | R-SCALP-H6-REF | forward | 50-80 | 18 (18) | 17 | +12.18 | 78% | -88.1 |
+| nas100fut | R-SCALP-H6-REF | forward | <50 | 34 (34) | 6 | +14.18 | 94% | 280.0 |
+| nas100fut | R-SCALP-H6-REF | forward | 50-80 | 25 (25) | 12 | +19.81 | 88% | 81.1 |
 | uk100fut | R-SCALP-H6-REF | backtest | <50 | 19 (19) | 16 | +3.09 | 84% | -15.6 |
 | uk100fut | R-SCALP-H6-REF | backtest | 50-80 | 14 (14) | 0 | +6.47 | 86% | 47.7 |
-| uk100fut | R-SCALP-H6-REF | forward | <50 | 25 (25) | 12 | +2.11 | 88% | 2.8 |
-| uk100fut | R-SCALP-H6-REF | forward | 50-80 | 19 (19) | 16 | +4.20 | 79% | -33.1 |
+| uk100fut | R-SCALP-H6-REF | forward | <50 | 28 (28) | 14 | +2.09 | 86% | -14.3 |
+| uk100fut | R-SCALP-H6-REF | forward | 50-80 | 22 (22) | 14 | +4.20 | 82% | -20.7 |
 | us30fut | R-SCALP-H6-REF | backtest | <50 | 10 (10) | 30 | +14.79 | 70% | -189.0 |
 | us30fut | R-SCALP-H6-REF | backtest | 50-80 | 14 (14) | 36 | +24.77 | 57% | -651.5 |
-| us30fut | R-SCALP-H6-REF | forward | <50 | 17 (17) | 29 | +9.24 | 71% | -210.0 |
-| us30fut | R-SCALP-H6-REF | forward | 50-80 | 24 (24) | 4 | +22.12 | 96% | 396.1 |
+| us30fut | R-SCALP-H6-REF | forward | <50 | 21 (21) | 33 | +9.24 | 67% | -362.0 |
+| us30fut | R-SCALP-H6-REF | forward | 50-80 | 26 (26) | 4 | +21.73 | 96% | 438.8 |
+| us30fut | R-SCALP-H6-REF | forward | 80-95 | 10 (10) | 10 | +30.06 | 90% | 109.4 |
