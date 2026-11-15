@@ -2,9 +2,9 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `8effbb323` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficiency; register-16 family; the built half is the register-95 deceleration class). VOCABULARY, not a signal: efficiency ratio = |net move| / path length over the trailing 15 x 1M bars (eff15) and the UTC trading day to date (eff_sess, day convention FLAGGED). A SECOND LENS beside the 1M phase tracker, never a replacement. Customers: the capture study's efficiency-at-entry split (cut at the store's own median — parameter-free), the per-market track (future). Consumers price their own fields.
+Engine `66be26997` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficiency; register-16 family; the built half is the register-95 deceleration class). VOCABULARY, not a signal: efficiency ratio = |net move| / path length over the trailing 15 x 1M bars (eff15) and the UTC trading day to date (eff_sess, day convention FLAGGED). A SECOND LENS beside the 1M phase tracker, never a replacement. Customers: the capture study's efficiency-at-entry split (cut at the store's own median — parameter-free), the per-market track (future). Consumers price their own fields.
 
-## uk100fut (62648 1M bars; eff15 store median 0.228)
+## uk100fut (112921 1M bars; eff15 store median 0.225)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
@@ -13,13 +13,13 @@ Engine `8effbb323` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficienc
 | backtest | london | 0.232 [0.043..0.559] | 0.023 [0.004..0.077] | 6240 |
 | backtest | ny_only | 0.227 [0.039..0.554] | 0.029 [0.004..0.067] | 4320 |
 | backtest | overlap | 0.237 [0.048..0.533] | 0.025 [0.007..0.061] | 1920 |
-| forward | asia | 0.225 [0.042..0.57] | 0.057 [0.01..0.194] | 9188 |
-| forward | dead | 0.231 [0.048..0.581] | 0.025 [0.003..0.077] | 2936 |
-| forward | london | 0.224 [0.043..0.528] | 0.027 [0.004..0.084] | 8580 |
-| forward | ny_only | 0.224 [0.039..0.517] | 0.024 [0.004..0.057] | 5889 |
-| forward | overlap | 0.23 [0.039..0.564] | 0.023 [0.004..0.064] | 2665 |
+| forward | asia | 0.223 [0.041..0.549] | 0.065 [0.01..0.196] | 25287 |
+| forward | dead | 0.25 [0.048..0.6] | 0.028 [0.004..0.117] | 8327 |
+| forward | london | 0.219 [0.042..0.52] | 0.034 [0.005..0.101] | 22706 |
+| forward | ny_only | 0.217 [0.04..0.521] | 0.025 [0.005..0.069] | 15806 |
+| forward | overlap | 0.23 [0.042..0.543] | 0.026 [0.005..0.078] | 7405 |
 
-## ger40fut (56575 1M bars; eff15 store median 0.228)
+## ger40fut (106083 1M bars; eff15 store median 0.231)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
@@ -28,13 +28,13 @@ Engine `8effbb323` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficienc
 | backtest | london | 0.226 [0.042..0.515] | 0.046 [0.006..0.091] | 4290 |
 | backtest | ny_only | 0.226 [0.039..0.516] | 0.028 [0.004..0.075] | 2970 |
 | backtest | overlap | 0.21 [0.041..0.487] | 0.031 [0.006..0.069] | 1320 |
-| forward | asia | 0.223 [0.041..0.542] | 0.067 [0.011..0.205] | 9284 |
-| forward | dead | 0.241 [0.045..0.605] | 0.042 [0.005..0.086] | 3033 |
-| forward | london | 0.225 [0.044..0.54] | 0.037 [0.006..0.098] | 8970 |
-| forward | ny_only | 0.235 [0.046..0.547] | 0.035 [0.003..0.075] | 6218 |
-| forward | overlap | 0.226 [0.041..0.512] | 0.035 [0.006..0.07] | 2785 |
+| forward | asia | 0.232 [0.043..0.549] | 0.067 [0.013..0.199] | 24855 |
+| forward | dead | 0.262 [0.051..0.636] | 0.034 [0.005..0.086] | 8178 |
+| forward | london | 0.229 [0.043..0.537] | 0.042 [0.007..0.103] | 23100 |
+| forward | ny_only | 0.228 [0.045..0.535] | 0.036 [0.005..0.076] | 16140 |
+| forward | overlap | 0.224 [0.042..0.527] | 0.039 [0.006..0.081] | 7525 |
 
-## nas100fut (58558 1M bars; eff15 store median 0.233)
+## nas100fut (109659 1M bars; eff15 store median 0.233)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
@@ -43,13 +43,13 @@ Engine `8effbb323` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficienc
 | backtest | london | 0.241 [0.046..0.523] | 0.03 [0.007..0.091] | 4290 |
 | backtest | ny_only | 0.224 [0.039..0.534] | 0.039 [0.004..0.086] | 2970 |
 | backtest | overlap | 0.263 [0.06..0.594] | 0.051 [0.013..0.089] | 1320 |
-| forward | asia | 0.234 [0.043..0.543] | 0.062 [0.01..0.184] | 9660 |
-| forward | dead | 0.243 [0.046..0.563] | 0.032 [0.006..0.14] | 3925 |
-| forward | london | 0.231 [0.044..0.538] | 0.043 [0.005..0.097] | 8970 |
-| forward | ny_only | 0.229 [0.043..0.521] | 0.025 [0.003..0.062] | 6067 |
-| forward | overlap | 0.229 [0.045..0.508] | 0.025 [0.004..0.078] | 2785 |
+| forward | asia | 0.229 [0.044..0.535] | 0.069 [0.013..0.183] | 25800 |
+| forward | dead | 0.255 [0.048..0.591] | 0.034 [0.005..0.159] | 10097 |
+| forward | london | 0.23 [0.043..0.537] | 0.04 [0.006..0.095] | 23096 |
+| forward | ny_only | 0.229 [0.043..0.53] | 0.029 [0.004..0.073] | 15990 |
+| forward | overlap | 0.228 [0.042..0.548] | 0.029 [0.005..0.078] | 7525 |
 
-## us30fut (58510 1M bars; eff15 store median 0.217)
+## us30fut (109596 1M bars; eff15 store median 0.224)
 
 | window | session | eff15 med [p10..p90] | eff_sess med [p10..p90] | n |
 |---|---|---|---|---|
@@ -58,8 +58,8 @@ Engine `8effbb323` — OBSERVATIONAL ORGAN (register 122; prereg_organ_efficienc
 | backtest | london | 0.227 [0.04..0.541] | 0.054 [0.01..0.095] | 4290 |
 | backtest | ny_only | 0.208 [0.041..0.501] | 0.041 [0.013..0.08] | 2970 |
 | backtest | overlap | 0.229 [0.041..0.526] | 0.04 [0.01..0.104] | 1320 |
-| forward | asia | 0.226 [0.041..0.534] | 0.06 [0.009..0.231] | 9658 |
-| forward | dead | 0.193 [0.034..0.5] | 0.04 [0.016..0.093] | 3901 |
-| forward | london | 0.217 [0.042..0.536] | 0.039 [0.009..0.102] | 8970 |
-| forward | ny_only | 0.222 [0.041..0.514] | 0.041 [0.01..0.08] | 6068 |
-| forward | overlap | 0.237 [0.042..0.556] | 0.053 [0.01..0.089] | 2785 |
+| forward | asia | 0.231 [0.042..0.54] | 0.079 [0.013..0.205] | 25798 |
+| forward | dead | 0.216 [0.039..0.545] | 0.026 [0.007..0.128] | 10057 |
+| forward | london | 0.227 [0.043..0.536] | 0.043 [0.009..0.11] | 23098 |
+| forward | ny_only | 0.219 [0.041..0.521] | 0.032 [0.009..0.077] | 15990 |
+| forward | overlap | 0.237 [0.042..0.57] | 0.037 [0.007..0.087] | 7525 |

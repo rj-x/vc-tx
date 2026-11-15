@@ -71,3 +71,1114 @@ utc_time,currency,impact,name,forecast,previous
 2026-08-28T16:15:00Z,All,High,Jackson Hole Symposium,,
 2026-08-29T15:15:00Z,All,Low,G20 Meetings,,
 2026-08-29T16:15:00Z,All,Medium,Jackson Hole Symposium,,
+2026-08-30T23:50:00Z,JPY,Low,Prelim Industrial Production m/m,,
+2026-08-30T23:50:00Z,JPY,Low,Retail Sales y/y,,
+2026-08-31T01:00:00Z,AUD,Low,MI Inflation Gauge m/m,,
+2026-08-31T01:00:00Z,NZD,Low,ANZ Business Confidence,,
+2026-08-31T01:30:00Z,AUD,Low,Company Operating Profits q/q,,
+2026-08-31T01:30:00Z,AUD,Low,Private Sector Credit m/m,,
+2026-08-31T01:30:00Z,CNY,Low,Manufacturing PMI,,
+2026-08-31T01:30:00Z,CNY,Low,Non-Manufacturing PMI,,
+2026-08-31T05:00:00Z,JPY,Low,Housing Starts y/y,,
+2026-08-31T23:01:00Z,GBP,Low,BRC Shop Price Index y/y,,
+2026-08-31T23:50:00Z,JPY,Low,Capital Spending q/y,,
+2026-09-01T00:30:00Z,JPY,Low,Final Manufacturing PMI,,
+2026-09-01T01:30:00Z,AUD,Low,Building Approvals m/m,,
+2026-09-01T01:30:00Z,AUD,Low,Current Account,,
+2026-09-01T01:45:00Z,CNY,Low,RatingDog Manufacturing PMI,,
+2026-09-01T03:35:00Z,JPY,Low,10-y Bond Auction,,
+2026-09-01T05:00:00Z,JPY,Low,Consumer Confidence,,
+2026-09-01T06:00:00Z,EUR,Low,German Retail Sales m/m,,
+2026-09-01T06:00:00Z,GBP,Low,Nationwide HPI m/m,,
+2026-09-01T06:30:00Z,AUD,Low,Commodity Prices y/y,,
+2026-09-01T06:33:00Z,CHF,Low,Retail Sales y/y,,
+2026-09-01T07:15:00Z,EUR,Low,Spanish Manufacturing PMI,,
+2026-09-01T07:30:00Z,CHF,Low,Manufacturing PMI,,
+2026-09-01T07:45:00Z,EUR,Low,Italian Manufacturing PMI,,
+2026-09-01T07:50:00Z,EUR,Low,French Final Manufacturing PMI,,
+2026-09-01T07:55:00Z,EUR,Low,German Final Manufacturing PMI,,
+2026-09-01T08:00:00Z,EUR,Low,Final Manufacturing PMI,,
+2026-09-01T08:30:00Z,EUR,Low,Italian Monthly Unemployment Rate,,
+2026-09-01T08:30:00Z,GBP,Low,Final Manufacturing PMI,,
+2026-09-01T08:30:00Z,GBP,Low,M4 Money Supply m/m,,
+2026-09-01T08:30:00Z,GBP,Low,Mortgage Approvals,,
+2026-09-01T08:30:00Z,GBP,Low,Net Lending to Individuals m/m,,
+2026-09-01T09:00:00Z,EUR,Medium,CPI Flash Estimate y/y,,
+2026-09-01T09:00:00Z,EUR,Medium,Core CPI Flash Estimate y/y,,
+2026-09-01T09:00:00Z,EUR,Low,Italian Prelim CPI m/m,,
+2026-09-01T09:00:00Z,EUR,Low,Unemployment Rate,,
+2026-09-01T12:30:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-01T13:05:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-09-01T13:30:00Z,CAD,Low,Manufacturing PMI,,
+2026-09-01T13:45:00Z,USD,Low,Final Manufacturing PMI,,
+2026-09-01T14:00:00Z,USD,Low,Construction Spending m/m,,
+2026-09-01T14:00:00Z,USD,High,ISM Manufacturing PMI,,
+2026-09-01T14:00:00Z,USD,Medium,ISM Manufacturing Prices,,
+2026-09-01T14:00:00Z,USD,Medium,JOLTS Job Openings,,
+2026-09-01T14:04:00Z,USD,Low,RCM/TIPP Economic Optimism,,
+2026-09-01T15:25:00Z,NZD,Low,GDT Price Index,,
+2026-09-01T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-09-01T22:45:00Z,NZD,Low,Building Consents m/m,,
+2026-09-01T23:50:00Z,JPY,Low,Monetary Base y/y,,
+2026-09-02T01:30:00Z,AUD,High,GDP q/q,,
+2026-09-02T02:00:00Z,NZD,High,Official Cash Rate,,
+2026-09-02T02:00:00Z,NZD,High,RBNZ Monetary Policy Statement,,
+2026-09-02T02:00:00Z,NZD,High,RBNZ Rate Statement,,
+2026-09-02T03:00:00Z,NZD,High,RBNZ Press Conference,,
+2026-09-02T06:45:00Z,EUR,Low,French Gov Budget Balance,,
+2026-09-02T07:00:00Z,EUR,Low,Spanish Unemployment Change,,
+2026-09-02T13:45:00Z,CAD,High,BOC Rate Statement,,
+2026-09-02T13:45:00Z,CAD,High,Overnight Rate,,
+2026-09-02T14:00:00Z,USD,Low,Factory Orders m/m,,
+2026-09-02T14:30:00Z,CAD,High,BOC Press Conference,,
+2026-09-02T14:30:00Z,USD,Low,Crude Oil Inventories,,
+2026-09-02T18:00:00Z,USD,Low,Beige Book,,
+2026-09-02T20:10:00Z,NZD,Medium,RBNZ Gov Breman Speaks,,
+2026-09-02T22:45:00Z,NZD,Low,Overseas Trade Index q/q,,
+2026-09-03T01:00:00Z,NZD,Low,ANZ Commodity Prices m/m,,
+2026-09-03T01:15:00Z,AUD,Low,RBA Assist Gov Jones Speaks,,
+2026-09-03T01:30:00Z,AUD,Low,Goods Trade Balance,,
+2026-09-03T01:45:00Z,CNY,Low,RatingDog Services PMI,,
+2026-09-03T03:35:00Z,JPY,Low,30-y Bond Auction,,
+2026-09-03T05:15:00Z,AUD,Low,RBA Assist Gov Hunter Speaks,,
+2026-09-03T06:30:00Z,CHF,Medium,CPI m/m,,
+2026-09-03T07:00:00Z,CHF,Low,GDP q/q,,
+2026-09-03T07:15:00Z,EUR,Low,Spanish Services PMI,,
+2026-09-03T07:45:00Z,EUR,Low,Italian Services PMI,,
+2026-09-03T07:50:00Z,EUR,Low,French Final Services PMI,,
+2026-09-03T07:55:00Z,EUR,Low,German Final Services PMI,,
+2026-09-03T08:00:00Z,EUR,Low,Final Services PMI,,
+2026-09-03T08:30:00Z,GBP,Low,Final Services PMI,,
+2026-09-03T08:43:00Z,EUR,Low,Spanish 10-y Bond Auction,,
+2026-09-03T08:57:00Z,EUR,Low,French 10-y Bond Auction,,
+2026-09-03T09:00:00Z,EUR,Low,PPI m/m,,
+2026-09-03T09:30:00Z,USD,Low,Challenger Job Cuts y/y,,
+2026-09-03T12:30:00Z,CAD,Low,Labor Productivity q/q,,
+2026-09-03T12:30:00Z,USD,Low,FOMC Member Waller Speaks,,
+2026-09-03T12:30:00Z,USD,Low,Revised Nonfarm Productivity q/q,,
+2026-09-03T12:30:00Z,USD,Low,Revised Unit Labor Costs q/q,,
+2026-09-03T12:30:00Z,USD,Low,Trade Balance,,
+2026-09-03T12:30:00Z,USD,Medium,Unemployment Claims,,
+2026-09-03T13:45:00Z,USD,Low,Final Services PMI,,
+2026-09-03T14:00:00Z,USD,Medium,ISM Services PMI,,
+2026-09-03T14:30:00Z,USD,Low,Natural Gas Storage,,
+2026-09-03T15:00:00Z,GBP,Low,MPC Member Pill Speaks,,
+2026-09-03T19:00:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-09-03T19:55:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-09-03T23:30:00Z,JPY,Low,Household Spending y/y,,
+2026-09-04T06:00:00Z,EUR,Low,German Factory Orders m/m,,
+2026-09-04T08:00:00Z,EUR,Low,Italian Retail Sales m/m,,
+2026-09-04T08:30:00Z,GBP,Low,Construction PMI,,
+2026-09-04T08:50:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-09-04T09:00:00Z,EUR,Low,Retail Sales m/m,,
+2026-09-04T12:30:00Z,CAD,High,Employment Change,,
+2026-09-04T12:30:00Z,USD,High,Average Hourly Earnings m/m,,
+2026-09-04T12:30:00Z,USD,High,Non-Farm Employment Change,,
+2026-09-04T12:30:00Z,USD,High,Unemployment Rate,,
+2026-09-04T14:00:00Z,CAD,Medium,Ivey PMI,,
+2026-09-07T01:30:00Z,AUD,Low,ANZ Job Advertisements m/m,,
+2026-09-07T05:00:00Z,JPY,Low,Leading Indicators,,
+2026-09-07T06:00:00Z,EUR,Low,German Industrial Production m/m,,
+2026-09-07T06:00:00Z,GBP,Low,Lloyds HPI m/m,,
+2026-09-07T07:00:00Z,CHF,Low,Foreign Currency Reserves,,
+2026-09-07T07:00:00Z,CHF,Low,Unemployment Rate,,
+2026-09-07T08:30:00Z,EUR,Low,Sentix Investor Confidence,,
+2026-09-07T09:00:00Z,EUR,Low,Final Employment Change q/q,,
+2026-09-07T09:00:00Z,EUR,Low,Revised GDP q/q,,
+2026-09-07T22:45:00Z,NZD,Low,Manufacturing Sales q/q,,
+2026-09-07T23:01:00Z,GBP,Low,BRC Retail Sales Monitor y/y,,
+2026-09-07T23:30:00Z,JPY,Low,Average Cash Earnings y/y,,
+2026-09-07T23:50:00Z,JPY,Low,Bank Lending y/y,,
+2026-09-07T23:50:00Z,JPY,Low,Current Account,,
+2026-09-07T23:50:00Z,JPY,Low,Final GDP Price Index y/y,,
+2026-09-07T23:50:00Z,JPY,Low,Final GDP q/q,,
+2026-09-08T00:30:00Z,AUD,Low,Westpac Consumer Sentiment,,
+2026-09-08T01:30:00Z,AUD,Low,NAB Business Confidence,,
+2026-09-08T02:35:00Z,CNY,Low,Trade Balance,,
+2026-09-08T02:35:00Z,CNY,Low,USD-Denominated Trade Balance,,
+2026-09-08T03:20:00Z,AUD,Low,RBA Assist Gov Hunter Speaks,,
+2026-09-08T05:00:00Z,JPY,Low,Economy Watchers Sentiment,,
+2026-09-08T06:00:00Z,EUR,Low,German Trade Balance,,
+2026-09-08T06:45:00Z,EUR,Low,French Trade Balance,,
+2026-09-08T09:30:00Z,AUD,Low,RBA Deputy Gov Hauser Speaks,,
+2026-09-08T10:00:00Z,USD,Low,NFIB Small Business Index,,
+2026-09-08T13:15:00Z,GBP,Medium,Monetary Policy Report Hearings,,
+2026-09-08T19:00:00Z,USD,Low,Consumer Credit m/m,,
+2026-09-08T23:50:00Z,JPY,Low,M2 Money Stock y/y,,
+2026-09-09T01:30:00Z,CNY,Low,CPI y/y,,
+2026-09-09T01:30:00Z,CNY,Low,PPI y/y,,
+2026-09-09T06:00:00Z,JPY,Low,Prelim Machine Tool Orders y/y,,
+2026-09-09T06:45:00Z,EUR,Low,French Industrial Production m/m,,
+2026-09-09T09:33:00Z,EUR,Low,German 10-y Bond Auction,,
+2026-09-09T12:15:00Z,USD,Low,ADP Weekly Employment Change,,
+2026-09-09T17:00:00Z,EUR,Low,ECB President Lagarde Speaks,,
+2026-09-09T17:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-09T17:01:00Z,USD,Low,10-y Bond Auction,,
+2026-09-09T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-09-09T23:01:00Z,GBP,Low,RICS House Price Balance,,
+2026-09-10T01:00:00Z,AUD,Low,MI Inflation Expectations,,
+2026-09-10T01:15:00Z,USD,Medium,President Trump Speaks,,
+2026-09-10T06:00:00Z,EUR,Low,German Final CPI m/m,,
+2026-09-10T08:00:00Z,EUR,Low,Italian Industrial Production m/m,,
+2026-09-10T12:15:00Z,EUR,High,Main Refinancing Rate,,
+2026-09-10T12:15:00Z,EUR,High,Monetary Policy Statement,,
+2026-09-10T12:30:00Z,USD,High,Core PPI m/m,,
+2026-09-10T12:30:00Z,USD,High,PPI m/m,,
+2026-09-10T12:30:00Z,USD,Medium,Unemployment Claims,,
+2026-09-10T12:45:00Z,EUR,High,ECB Press Conference,,
+2026-09-10T14:00:00Z,USD,Low,Existing Home Sales,,
+2026-09-10T14:00:00Z,USD,Low,Final Wholesale Inventories m/m,,
+2026-09-10T14:30:00Z,USD,Low,Natural Gas Storage,,
+2026-09-10T16:00:00Z,USD,Low,Crude Oil Inventories,,
+2026-09-10T17:01:00Z,USD,Low,30-y Bond Auction,,
+2026-09-10T22:30:00Z,NZD,Low,BusinessNZ Manufacturing Index,,
+2026-09-10T23:50:00Z,JPY,Low,BSI Manufacturing Index,,
+2026-09-10T23:50:00Z,JPY,Low,PPI y/y,,
+2026-09-11T06:00:00Z,GBP,Low,Construction Output m/m,,
+2026-09-11T06:00:00Z,GBP,High,GDP m/m,,
+2026-09-11T06:00:00Z,GBP,Low,Goods Trade Balance,,
+2026-09-11T06:00:00Z,GBP,Low,Index of Services 3m/3m,,
+2026-09-11T06:00:00Z,GBP,Low,Industrial Production m/m,,
+2026-09-11T06:00:00Z,GBP,Low,Manufacturing Production m/m,,
+2026-09-11T07:00:00Z,CHF,Low,SECO Consumer Climate,,
+2026-09-11T08:00:00Z,EUR,Low,Italian Quarterly Unemployment Rate,,
+2026-09-11T08:30:00Z,GBP,Low,Consumer Inflation Expectations,,
+2026-09-11T09:15:00Z,CHF,Medium,SNB Chairman Schlegel Speaks,,
+2026-09-11T12:30:00Z,USD,High,CPI m/m,,
+2026-09-11T12:30:00Z,USD,High,CPI y/y,,
+2026-09-11T12:30:00Z,USD,High,Core CPI m/m,,
+2026-09-11T12:30:00Z,USD,High,Core CPI y/y,,
+2026-09-11T14:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-11T14:00:00Z,USD,Medium,Prelim UoM Consumer Sentiment,,
+2026-09-11T14:00:00Z,USD,Medium,Prelim UoM Inflation Expectations,,
+2026-09-11T17:58:00Z,USD,Low,Federal Budget Balance,,
+2026-09-12T08:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-13T08:15:00Z,All,Low,BRICS Summit,,
+2026-09-13T22:30:00Z,NZD,Low,BusinessNZ Services Index,,50.6
+2026-09-13T22:45:00Z,NZD,Low,Visitor Arrivals m/m,,-0.1%
+2026-09-14T02:30:00Z,AUD,Low,RBA Assist Gov Hunter Speaks,,
+2026-09-14T04:30:00Z,JPY,Low,Revised Industrial Production m/m,0.1%,0.1%
+2026-09-14T06:30:00Z,CHF,Low,PPI m/m,0.0%,-0.1%
+2026-09-14T09:01:00Z,CNY,Low,M2 Money Supply y/y,7.6%,7.7%
+2026-09-14T09:01:00Z,CNY,Low,New Loans,480B,-340B
+2026-09-14T12:30:00Z,CAD,High,CPI m/m,-0.1%,0.5%
+2026-09-14T12:30:00Z,CAD,Medium,Common CPI y/y,2.7%,2.7%
+2026-09-14T12:30:00Z,CAD,Low,Core CPI m/m,0.2%,0.2%
+2026-09-14T12:30:00Z,CAD,Low,Manufacturing Sales m/m,-0.2%,0.1%
+2026-09-14T12:30:00Z,CAD,High,Median CPI y/y,2.0%,2.0%
+2026-09-14T12:30:00Z,CAD,High,Trimmed CPI y/y,1.9%,1.9%
+2026-09-14T13:30:00Z,GBP,Low,CB Leading Index m/m,,-0.4%
+2026-09-14T15:15:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-15T01:30:00Z,CNY,Low,New Home Prices m/m,,-0.18%
+2026-09-15T02:00:00Z,CNY,Low,Fixed Asset Investment ytd/y,-7.1%,-6.7%
+2026-09-15T02:00:00Z,CNY,Low,Industrial Production y/y,4.8%,4.5%
+2026-09-15T02:00:00Z,CNY,Low,NBS Press Conference,,
+2026-09-15T02:00:00Z,CNY,Low,Retail Sales y/y,0.7%,0.6%
+2026-09-15T02:00:00Z,CNY,Low,Unemployment Rate,5.2%,5.2%
+2026-09-15T04:30:00Z,JPY,Low,Tertiary Industry Activity m/m,0.3%,-0.2%
+2026-09-15T06:00:00Z,EUR,Low,German WPI m/m,0.1%,0.2%
+2026-09-15T06:00:00Z,GBP,Medium,Average Earnings Index 3m/y,3.9%,4.1%
+2026-09-15T06:00:00Z,GBP,High,Claimant Count Change,8.3K,-11.0K
+2026-09-15T06:00:00Z,GBP,Low,Unemployment Rate,5.0%,4.9%
+2026-09-15T06:45:00Z,EUR,Low,French Final CPI m/m,0.7%,0.7%
+2026-09-15T08:00:00Z,EUR,Low,Italian Trade Balance,4.77B,4.23B
+2026-09-15T09:00:00Z,EUR,Low,German ZEW Economic Sentiment,39.8,34.2
+2026-09-15T09:00:00Z,EUR,Low,Trade Balance,3.7B,1.8B
+2026-09-15T09:00:00Z,EUR,Low,ZEW Economic Sentiment,39.2,31.4
+2026-09-15T12:15:00Z,USD,Low,ADP Weekly Employment Change,,12.0K
+2026-09-15T12:30:00Z,CAD,Low,Wholesale Sales m/m,-0.5%,2.8%
+2026-09-15T12:30:00Z,USD,Low,Empire State Manufacturing Index,14.8,20.6
+2026-09-15T14:00:00Z,USD,Medium,Treasury Sec Bessent Speaks,,
+2026-09-15T15:39:00Z,NZD,Low,GDT Price Index,,0.9%
+2026-09-15T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-09-15T21:04:00Z,NZD,Low,Westpac Consumer Sentiment,,80.4
+2026-09-15T22:45:00Z,NZD,Low,Current Account,-2.57B,-1.01B
+2026-09-15T23:50:00Z,JPY,Low,Core Machinery Orders m/m,-1.2%,9.7%
+2026-09-15T23:50:00Z,JPY,Low,Trade Balance,-1.00T,-0.69T
+2026-09-16T00:30:00Z,AUD,Low,MI Leading Index m/m,,0.0%
+2026-09-16T06:00:00Z,GBP,High,CPI y/y,3.1%,2.9%
+2026-09-16T06:00:00Z,GBP,Low,Core CPI y/y,2.6%,2.6%
+2026-09-16T06:00:00Z,GBP,Low,PPI Input m/m,0.6%,-1.7%
+2026-09-16T06:00:00Z,GBP,Low,PPI Output m/m,0.5%,0.2%
+2026-09-16T06:00:00Z,GBP,Low,RPI y/y,3.5%,3.2%
+2026-09-16T08:30:00Z,GBP,Low,HPI y/y,2.1%,2.0%
+2026-09-16T09:00:00Z,EUR,Low,Industrial Production m/m,-0.2%,0.0%
+2026-09-16T09:35:00Z,EUR,Low,German 30-y Bond Auction,,3.65|1.3
+2026-09-16T12:15:00Z,CAD,Low,Housing Starts,243K,229K
+2026-09-16T12:30:00Z,CAD,Low,Building Permits m/m,-4.7%,18.5%
+2026-09-16T12:30:00Z,USD,Medium,Core Retail Sales m/m,0.6%,-0.3%
+2026-09-16T12:30:00Z,USD,Low,Import Prices m/m,0.4%,-0.4%
+2026-09-16T12:30:00Z,USD,Medium,Retail Sales m/m,0.8%,-0.6%
+2026-09-16T14:00:00Z,USD,Low,Business Inventories m/m,0.6%,0.0%
+2026-09-16T14:00:00Z,USD,Low,NAHB Housing Market Index,34,35
+2026-09-16T14:30:00Z,USD,Low,Crude Oil Inventories,-1.6M,-0.4M
+2026-09-16T16:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-16T17:30:00Z,CAD,Low,BOC Summary of Deliberations,,
+2026-09-16T18:00:00Z,USD,High,FOMC Economic Projections,,
+2026-09-16T18:00:00Z,USD,High,FOMC Statement,,
+2026-09-16T18:00:00Z,USD,High,Federal Funds Rate,4.00%,3.75%
+2026-09-16T18:30:00Z,USD,High,FOMC Press Conference,,
+2026-09-16T20:00:00Z,USD,Low,TIC Long-Term Purchases,146.3B,172.7B
+2026-09-16T22:45:00Z,NZD,High,GDP q/q,0.1%,0.8%
+2026-09-17T06:02:00Z,CNY,Low,Foreign Direct Investment ytd/y,,-6.2%
+2026-09-17T07:00:00Z,CHF,Low,SECO Economic Forecasts,,
+2026-09-17T09:00:00Z,EUR,Low,Final CPI y/y,3.3%,3.3%
+2026-09-17T09:00:00Z,EUR,Low,Final Core CPI y/y,2.4%,2.4%
+2026-09-17T09:03:00Z,EUR,Low,Spanish 10-y Bond Auction,,3.74|2.3
+2026-09-17T11:00:00Z,GBP,High,MPC Official Bank Rate Votes,3-0-6,3-0-6
+2026-09-17T11:00:00Z,GBP,High,Monetary Policy Summary,,
+2026-09-17T11:00:00Z,GBP,High,Official Bank Rate,3.75%,3.75%
+2026-09-17T12:30:00Z,CAD,Low,Foreign Securities Purchases,28.64B,40.83B
+2026-09-17T12:30:00Z,CAD,Low,IPPI m/m,0.0%,0.6%
+2026-09-17T12:30:00Z,CAD,Low,RMPI m/m,0.7%,-2.2%
+2026-09-17T12:30:00Z,USD,Low,Building Permits,1.40M,1.44M
+2026-09-17T12:30:00Z,USD,Low,Housing Starts,1.32M,1.24M
+2026-09-17T12:30:00Z,USD,Medium,Philly Fed Manufacturing Index,31.3,47.4
+2026-09-17T12:30:00Z,USD,Medium,Unemployment Claims,207K,206K
+2026-09-17T14:00:00Z,USD,Low,Pending Home Sales m/m,-0.2%,-2.3%
+2026-09-17T14:30:00Z,AUD,Low,CB Leading Index m/m,,0.3%
+2026-09-17T14:30:00Z,USD,Low,Natural Gas Storage,49B,40B
+2026-09-17T22:45:00Z,NZD,Low,FPI m/m,,0.1%
+2026-09-17T22:45:00Z,NZD,Low,Trade Balance,-1775M,-1949M
+2026-09-17T23:01:00Z,GBP,Low,GfK Consumer Confidence,-16,-14
+2026-09-17T23:30:00Z,AUD,Medium,RBA Gov Bullock Speaks,,
+2026-09-17T23:30:00Z,JPY,Low,National Core CPI y/y,1.8%,1.8%
+2026-09-18T02:30:00Z,JPY,High,BOJ Policy Rate,<1.25%,<1.00%
+2026-09-18T02:30:00Z,JPY,High,Monetary Policy Statement,,
+2026-09-18T05:30:00Z,JPY,High,BOJ Press Conference,,
+2026-09-18T06:00:00Z,EUR,Low,German PPI m/m,0.6%,1.1%
+2026-09-18T06:00:00Z,GBP,Medium,Retail Sales m/m,-0.2%,-0.5%
+2026-09-18T08:00:00Z,EUR,Low,Current Account,30.7B,35.1B
+2026-09-18T10:15:00Z,EUR,Low,ECOFIN Meetings,,
+2026-09-18T10:15:00Z,EUR,Low,Eurogroup Meetings,,
+2026-09-18T10:30:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-18T13:15:00Z,USD,Low,Capacity Utilization Rate,76.4%,76.3%
+2026-09-18T13:15:00Z,USD,Low,Industrial Production m/m,0.3%,0.2%
+2026-09-18T13:30:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-09-18T14:00:00Z,USD,Low,CB Leading Index m/m,0.1%,0.2%
+2026-09-18T15:45:00Z,USD,Low,FOMC Member Schmid Speaks,,
+2026-09-19T10:15:00Z,EUR,Low,ECOFIN Meetings,,
+2026-09-20T23:00:00Z,JPY,Holiday,Bank Holiday,,
+2026-09-20T23:01:00Z,GBP,Low,Rightmove HPI m/m,,-2.0%
+2026-09-21T03:00:00Z,NZD,Low,Credit Card Spending y/y,,5.3%
+2026-09-21T10:00:00Z,EUR,Low,German Buba Monthly Report,,
+2026-09-21T10:30:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-09-21T15:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-21T15:05:00Z,CAD,Medium,BOC Gov Macklem Speaks,,
+2026-09-21T19:00:00Z,AUD,Low,RBA Assist Gov Hunter Speaks,,
+2026-09-21T23:00:00Z,JPY,Holiday,Bank Holiday,,
+2026-09-22T03:10:00Z,AUD,High,RBA Gov Bullock Speaks,,
+2026-09-22T06:00:00Z,GBP,Low,Public Sector Net Borrowing,15.4B,1.8B
+2026-09-22T08:30:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-22T10:00:00Z,GBP,Low,CBI Industrial Order Expectations,-34,-25
+2026-09-22T11:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-22T12:15:00Z,USD,Low,ADP Weekly Employment Change,,16.3K
+2026-09-22T14:00:00Z,EUR,Low,Consumer Confidence,-16,-16
+2026-09-22T14:00:00Z,USD,Low,Richmond Manufacturing Index,5,4
+2026-09-22T14:05:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-09-22T14:20:00Z,USD,Low,FOMC Member Jefferson Speaks,,
+2026-09-22T17:00:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-09-22T19:30:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-22T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-09-22T23:00:00Z,AUD,Low,Flash Manufacturing PMI,,52.0
+2026-09-22T23:00:00Z,AUD,Low,Flash Services PMI,,52.9
+2026-09-22T23:00:00Z,JPY,Holiday,Bank Holiday,,
+2026-09-23T07:15:00Z,EUR,Medium,French Flash Manufacturing PMI,50.9,51.5
+2026-09-23T07:15:00Z,EUR,Medium,French Flash Services PMI,48.4,48.4
+2026-09-23T07:30:00Z,EUR,Medium,German Flash Manufacturing PMI,54.0,54.1
+2026-09-23T07:30:00Z,EUR,Medium,German Flash Services PMI,49.9,48.5
+2026-09-23T08:00:00Z,EUR,Low,Flash Manufacturing PMI,52.6,52.8
+2026-09-23T08:00:00Z,EUR,Low,Flash Services PMI,51.4,51.7
+2026-09-23T08:30:00Z,GBP,Medium,Flash Manufacturing PMI,51.4,51.5
+2026-09-23T08:30:00Z,GBP,Medium,Flash Services PMI,52.0,52.8
+2026-09-23T09:34:00Z,EUR,Low,German 30-y Bond Auction,,3.90|2.4
+2026-09-23T13:45:00Z,USD,Low,Flash Manufacturing PMI,53.4,53.2
+2026-09-23T13:45:00Z,USD,Low,Flash Services PMI,56.0,56.8
+2026-09-23T14:05:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-09-23T14:30:00Z,USD,Low,Crude Oil Inventories,,-0.6M
+2026-09-24T00:30:00Z,JPY,Low,Flash Manufacturing PMI,55.0,55.1
+2026-09-24T00:35:00Z,AUD,Low,NAB Quarterly Business Confidence,,-19
+2026-09-24T01:30:00Z,AUD,High,Employment Change,20.9K,-15.8K
+2026-09-24T01:30:00Z,AUD,High,Unemployment Rate,4.5%,4.5%
+2026-09-24T07:30:00Z,CHF,High,SNB Monetary Policy Assessment,,
+2026-09-24T07:30:00Z,CHF,High,SNB Policy Rate,0.00%,0.00%
+2026-09-24T08:00:00Z,CHF,High,SNB Press Conference,,
+2026-09-24T08:00:00Z,EUR,Low,ECB Economic Bulletin,,
+2026-09-24T08:00:00Z,EUR,Low,German ifo Business Climate,89.0,88.8
+2026-09-24T08:10:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-09-24T09:30:00Z,GBP,Low,MPC Member Dhingra Speaks,,
+2026-09-24T10:00:00Z,GBP,Low,CBI Realized Sales,-50,-48
+2026-09-24T12:30:00Z,CAD,Medium,Core Retail Sales m/m,-0.5%,0.5%
+2026-09-24T12:30:00Z,CAD,Medium,Retail Sales m/m,-0.8%,0.6%
+2026-09-24T12:30:00Z,USD,Low,Current Account,-259B,-227B
+2026-09-24T12:30:00Z,USD,Medium,Unemployment Claims,201K,196K
+2026-09-24T12:50:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-09-24T13:00:00Z,CNY,Low,CB Leading Index m/m,,-0.3%
+2026-09-24T13:00:00Z,EUR,Low,Belgian NBB Business Climate,-13.5,-13.2
+2026-09-24T13:30:00Z,GBP,Low,MPC Member Breeden Speaks,,
+2026-09-24T14:00:00Z,GBP,Low,MPC Member Lombardelli Speaks,,
+2026-09-24T14:00:00Z,USD,Low,New Home Sales,619K,607K
+2026-09-24T14:10:00Z,USD,Low,FOMC Member Paulson Speaks,,
+2026-09-24T14:30:00Z,USD,Low,Natural Gas Storage,,44B
+2026-09-24T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-09-24T23:01:00Z,GBP,Low,GfK Consumer Confidence,-16,-14
+2026-09-25T05:00:00Z,JPY,Low,BOJ Core CPI y/y,,1.6%
+2026-09-25T06:00:00Z,EUR,Low,German GfK Consumer Climate,-27.1,-26.6
+2026-09-25T08:00:00Z,EUR,Low,M3 Money Supply y/y,3.5%,3.4%
+2026-09-25T08:00:00Z,EUR,Low,Private Loans y/y,3.2%,3.1%
+2026-09-25T09:15:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-09-25T09:15:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-09-25T12:30:00Z,USD,Low,Core Durable Goods Orders m/m,0.5%,0.4%
+2026-09-25T12:30:00Z,USD,Low,Durable Goods Orders m/m,-0.3%,1.1%
+2026-09-25T14:00:00Z,USD,Medium,Revised UoM Consumer Sentiment,47.5,47.8
+2026-09-25T14:00:00Z,USD,Medium,Revised UoM Inflation Expectations,,4.6%
+2026-09-25T18:00:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-09-26T14:00:00Z,NZD,Holiday,Daylight Saving Time Shift,,
+2026-09-27T23:50:00Z,JPY,Low,Monetary Policy Meeting Minutes,,
+2026-09-27T23:50:00Z,JPY,Low,SPPI y/y,3.6%,3.6%
+2026-09-28T10:00:00Z,GBP,Low,MPC Member Ramsden Speaks,,
+2026-09-28T12:15:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-09-28T13:30:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-28T17:25:00Z,USD,Low,FOMC Member Cook Speaks,,
+2026-09-28T17:30:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-09-28T23:01:00Z,GBP,Low,BRC Shop Price Index y/y,1.5%,1.5%
+2026-09-29T01:30:00Z,AUD,Low,Household Spending m/m,0.3%,1.1%
+2026-09-29T04:30:00Z,AUD,High,Cash Rate,4.60%,4.35%
+2026-09-29T04:30:00Z,AUD,High,RBA Rate Statement,,
+2026-09-29T05:30:00Z,AUD,Medium,RBA Press Conference,,
+2026-09-29T07:00:00Z,CHF,Low,KOF Economic Barometer,106.0,106.7
+2026-09-29T07:00:00Z,EUR,Low,Spanish Flash CPI y/y,4.6%,4.3%
+2026-09-29T08:30:00Z,GBP,Low,M4 Money Supply m/m,0.1%,-0.3%
+2026-09-29T08:30:00Z,GBP,Low,Mortgage Approvals,56K,56K
+2026-09-29T08:30:00Z,GBP,Low,Net Lending to Individuals m/m,6.2B,6.3B
+2026-09-29T09:02:00Z,GBP,Low,10-y Bond Auction,,5.16|3.6
+2026-09-29T09:04:00Z,EUR,Low,Italian 10-y Bond Auction,,4.10|1.6
+2026-09-29T10:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-09-29T11:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-09-29T12:30:00Z,CAD,Medium,GDP m/m,0.0%,0.3%
+2026-09-29T13:00:00Z,USD,Low,HPI m/m,0.1%,0.0%
+2026-09-29T13:00:00Z,USD,Low,S&P/CS Composite-20 HPI y/y,2.2%,2.1%
+2026-09-29T14:00:00Z,USD,Medium,CB Consumer Confidence,89.2,89.4
+2026-09-29T14:00:00Z,USD,Medium,JOLTS Job Openings,7.23M,7.27M
+2026-09-29T15:00:00Z,GBP,Low,MPC Member Mann Speaks,,
+2026-09-29T15:00:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-09-29T15:30:00Z,GBP,Low,MPC Member Taylor Speaks,,
+2026-09-29T16:40:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-09-29T17:00:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-09-29T17:20:00Z,CAD,Low,Gov Council Member Gravelle Speaks,,
+2026-09-29T17:30:00Z,USD,Low,FOMC Member Musalem Speaks,,
+2026-09-29T18:00:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-09-29T19:00:00Z,USD,Low,FOMC Member Waller Speaks,,
+2026-09-29T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-09-29T23:50:00Z,JPY,Low,Prelim Industrial Production m/m,1.4%,0.1%
+2026-09-29T23:50:00Z,JPY,Low,Retail Sales y/y,3.3%,4.0%
+2026-09-30T00:00:00Z,NZD,Low,ANZ Business Confidence,,53.7
+2026-09-30T01:30:00Z,AUD,Low,Building Approvals m/m,-1.6%,-3.6%
+2026-09-30T01:30:00Z,AUD,High,CPI m/m,0.5%,1.0%
+2026-09-30T01:30:00Z,AUD,High,CPI y/y,4.1%,3.5%
+2026-09-30T01:30:00Z,AUD,Low,Private Sector Credit m/m,0.5%,0.6%
+2026-09-30T01:30:00Z,AUD,High,Trimmed Mean CPI m/m,0.3%,0.5%
+2026-09-30T01:30:00Z,CNY,Low,Manufacturing PMI,50.1,49.8
+2026-09-30T01:30:00Z,CNY,Low,Non-Manufacturing PMI,49.2,49.0
+2026-09-30T01:45:00Z,CNY,Low,RatingDog Manufacturing PMI,51.7,51.5
+2026-09-30T01:45:00Z,CNY,Low,RatingDog Services PMI,51.3,51.4
+2026-09-30T05:00:00Z,JPY,Low,Housing Starts y/y,6.9%,8.2%
+2026-09-30T06:00:00Z,EUR,Low,German Import Prices m/m,0.6%,0.2%
+2026-09-30T06:00:00Z,EUR,Low,German Retail Sales m/m,1.6%,-3.4%
+2026-09-30T06:00:00Z,GBP,Low,Current Account,-25.6B,-22.1B
+2026-09-30T06:00:00Z,GBP,Low,Final GDP q/q,0.4%,0.4%
+2026-09-30T06:00:00Z,GBP,Low,Revised Business Investment q/q,1.7%,1.7%
+2026-09-30T06:29:00Z,EUR,Medium,German Prelim CPI m/m,0.5%,0.2%
+2026-09-30T06:45:00Z,EUR,Low,French Consumer Spending m/m,0.0%,0.5%
+2026-09-30T06:45:00Z,EUR,Low,French Prelim CPI m/m,-0.5%,0.7%
+2026-09-30T07:55:00Z,EUR,Low,German Unemployment Change,0K,4K
+2026-09-30T08:00:00Z,CHF,Low,UBS Economic Expectations,,12.1
+2026-09-30T09:00:00Z,EUR,Low,Italian Prelim CPI m/m,0.2%,0.5%
+2026-09-30T09:30:00Z,GBP,Low,FPC Meeting Minutes,,
+2026-09-30T09:30:00Z,GBP,Low,FPC Statement,,
+2026-09-30T09:42:00Z,EUR,Low,German 10-y Bond Auction,,3.39|1.5
+2026-09-30T12:00:00Z,CAD,Holiday,Bank Holiday,,
+2026-09-30T12:15:00Z,USD,Medium,ADP Non-Farm Employment Change,73K,38K
+2026-09-30T12:30:00Z,USD,High,Core PCE Price Index m/m,0.3%,0.2%
+2026-09-30T12:30:00Z,USD,Medium,Final GDP Price Index q/q,6.4%,6.4%
+2026-09-30T12:30:00Z,USD,High,Final GDP q/q,1.5%,1.5%
+2026-09-30T12:30:00Z,USD,Low,Goods Trade Balance,-116.3B,-118.8B
+2026-09-30T12:30:00Z,USD,Low,Personal Income m/m,0.5%,0.4%
+2026-09-30T12:30:00Z,USD,Low,Personal Spending m/m,0.8%,0.2%
+2026-09-30T12:30:00Z,USD,Low,Prelim Wholesale Inventories m/m,0.5%,1.3%
+2026-09-30T13:00:00Z,CHF,Low,SNB Quarterly Bulletin,,
+2026-09-30T13:45:00Z,USD,Low,Chicago PMI,51.2,47.1
+2026-09-30T14:30:00Z,CHF,Low,Gov Board Member Tschudin Speaks,,
+2026-09-30T14:30:00Z,USD,Low,Crude Oil Inventories,-1.9M,3.0M
+2026-09-30T17:30:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-09-30T19:25:00Z,USD,Low,FOMC Member Cook Speaks,,
+2026-09-30T21:10:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-09-30T21:45:00Z,NZD,Low,Building Consents m/m,,-4.3%
+2026-09-30T22:00:00Z,USD,Low,FOMC Member Kashkari Speaks,,
+2026-09-30T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-09-30T23:50:00Z,JPY,Low,BOJ Summary of Opinions,,
+2026-09-30T23:50:00Z,JPY,Low,Tankan Manufacturing Index,25,22
+2026-09-30T23:50:00Z,JPY,Low,Tankan Non-Manufacturing Index,36,37
+2026-10-01T00:30:00Z,JPY,Low,Final Manufacturing PMI,54.1,54.1
+2026-10-01T01:30:00Z,AUD,Low,Goods Trade Balance,2.00B,1.92B
+2026-10-01T01:30:00Z,AUD,Low,RBA Financial Stability Review,,
+2026-10-01T06:00:00Z,GBP,Low,Nationwide HPI m/m,0.0%,0.2%
+2026-10-01T06:30:00Z,AUD,Low,Commodity Prices y/y,,15.5%
+2026-10-01T06:30:00Z,CHF,Medium,CPI m/m,0.0%,0.4%
+2026-10-01T06:30:00Z,CHF,Low,Retail Sales y/y,2.1%,2.3%
+2026-10-01T07:15:00Z,EUR,Low,Spanish Manufacturing PMI,50.2,49.5
+2026-10-01T07:30:00Z,CHF,Low,Manufacturing PMI,56.4,57.1
+2026-10-01T07:45:00Z,EUR,Low,Italian Manufacturing PMI,50.1,49.6
+2026-10-01T07:50:00Z,EUR,Low,French Final Manufacturing PMI,50.3,50.3
+2026-10-01T07:55:00Z,EUR,Low,German Final Manufacturing PMI,53.8,53.8
+2026-10-01T08:00:00Z,EUR,Low,Final Manufacturing PMI,52.7,52.7
+2026-10-01T08:00:00Z,EUR,Low,Italian Monthly Unemployment Rate,5.8%,5.8%
+2026-10-01T08:00:00Z,GBP,Medium,BOE Gov Bailey Speaks,,
+2026-10-01T08:30:00Z,GBP,Low,Final Manufacturing PMI,52.0,52.0
+2026-10-01T09:00:00Z,EUR,Low,Unemployment Rate,6.4%,6.4%
+2026-10-01T09:03:00Z,EUR,Low,Spanish 10-y Bond Auction,,3.96|1.7
+2026-10-01T09:18:00Z,EUR,Low,French 10-y Bond Auction,,4.23|2.3
+2026-10-01T09:30:00Z,USD,Low,Challenger Job Cuts y/y,,-38.5%
+2026-10-01T10:35:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-01T12:00:00Z,GBP,Low,MPC Member Mann Speaks,,
+2026-10-01T12:30:00Z,USD,Medium,Unemployment Claims,201K,197K
+2026-10-01T13:05:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-10-01T13:05:00Z,USD,Low,FOMC Member Collins Speaks,,
+2026-10-01T13:05:00Z,USD,Low,FOMC Member Schmid Speaks,,
+2026-10-01T13:30:00Z,CAD,Low,Manufacturing PMI,,53.0
+2026-10-01T13:30:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-10-01T13:45:00Z,USD,Low,Final Manufacturing PMI,56.9,57.0
+2026-10-01T14:00:00Z,USD,Low,Construction Spending m/m,0.0%,-0.5%
+2026-10-01T14:00:00Z,USD,Medium,FOMC Member Waller Speaks,,
+2026-10-01T14:00:00Z,USD,Medium,ISM Manufacturing PMI,54.8,54.6
+2026-10-01T14:00:00Z,USD,Low,ISM Manufacturing Prices,72.9,71.1
+2026-10-01T14:15:00Z,USD,Low,Omdia Total Vehicle Sales,16.3M,16.8M
+2026-10-01T14:30:00Z,USD,Low,Natural Gas Storage,,53B
+2026-10-01T15:30:00Z,CHF,Medium,SNB Chairman Schlegel Speaks,,
+2026-10-01T17:30:00Z,USD,Low,FOMC Member Jefferson Speaks,,
+2026-10-01T19:00:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-10-01T19:05:00Z,CAD,Low,Gov Council Member Rogers Speaks,,
+2026-10-01T19:30:00Z,USD,Low,FOMC Member Cook Speaks,,
+2026-10-01T22:45:00Z,USD,Low,FOMC Member Logan Speaks,,
+2026-10-01T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-10-01T23:30:00Z,JPY,Medium,Tokyo Core CPI y/y,2.4%,1.8%
+2026-10-01T23:30:00Z,JPY,Low,Unemployment Rate,2.4%,2.4%
+2026-10-01T23:50:00Z,JPY,Low,Monetary Base y/y,-16.3%,-15.7%
+2026-10-02T07:00:00Z,EUR,Low,Spanish Unemployment Change,17.6K,44.4K
+2026-10-02T08:00:00Z,EUR,Low,Italian Retail Sales m/m,-0.1%,-0.4%
+2026-10-02T09:00:00Z,EUR,Medium,CPI Flash Estimate y/y,3.7%,3.3%
+2026-10-02T09:00:00Z,EUR,Medium,Core CPI Flash Estimate y/y,2.5%,2.4%
+2026-10-02T12:30:00Z,USD,High,Average Hourly Earnings m/m,0.3%,0.3%
+2026-10-02T12:30:00Z,USD,High,Non-Farm Employment Change,90K,162K
+2026-10-02T12:30:00Z,USD,High,Unemployment Rate,4.1%,4.1%
+2026-10-02T14:00:00Z,USD,Low,FOMC Member Logan Speaks,,
+2026-10-02T14:00:00Z,USD,Low,Factory Orders m/m,0.1%,0.9%
+2026-10-02T19:35:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-03T16:00:00Z,AUD,Holiday,Daylight Saving Time Shift,,
+2026-10-04T09:15:00Z,All,Medium,OPEC-JMMC Meetings,,
+2026-10-04T20:00:00Z,AUD,Holiday,Bank Holiday,,
+2026-10-04T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-10-05T00:00:00Z,AUD,Low,MI Inflation Gauge m/m,,0.5%
+2026-10-05T00:00:00Z,NZD,Low,ANZ Commodity Prices m/m,,-0.4%
+2026-10-05T05:00:00Z,JPY,Low,Consumer Confidence,35.3,35.5
+2026-10-05T07:15:00Z,EUR,Low,Spanish Services PMI,57.1,57.8
+2026-10-05T07:45:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-05T07:45:00Z,EUR,Low,Italian Services PMI,54.6,55.2
+2026-10-05T07:50:00Z,EUR,Low,French Final Services PMI,51.4,51.4
+2026-10-05T07:55:00Z,EUR,Low,German Final Services PMI,52.9,52.9
+2026-10-05T08:00:00Z,EUR,Low,Final Services PMI,53.0,53.0
+2026-10-05T08:30:00Z,EUR,Low,Sentix Investor Confidence,4.5,5.1
+2026-10-05T08:30:00Z,GBP,Low,Final Services PMI,51.7,51.7
+2026-10-05T09:00:00Z,EUR,Low,PPI m/m,1.9%,1.6%
+2026-10-05T13:45:00Z,USD,Low,Final Services PMI,58.7,58.7
+2026-10-05T14:00:00Z,USD,Medium,ISM Services PMI,55.1,55.4
+2026-10-05T21:00:00Z,NZD,Low,NZIER Business Confidence,,8
+2026-10-05T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-10-05T23:30:00Z,AUD,Low,Westpac Consumer Sentiment,,-5.2%
+2026-10-06T00:30:00Z,AUD,Low,ANZ Job Advertisements m/m,,2.5%
+2026-10-06T03:35:00Z,JPY,Low,10-y Bond Auction,,3.00|3.3
+2026-10-06T06:00:00Z,EUR,Low,German Factory Orders m/m,-0.9%,2.5%
+2026-10-06T06:35:00Z,JPY,High,BOJ Gov Ueda Speaks,,
+2026-10-06T06:45:00Z,EUR,Low,French Gov Budget Balance,,-145.9B
+2026-10-06T06:45:00Z,EUR,Low,French Industrial Production m/m,0.2%,-0.4%
+2026-10-06T07:00:00Z,CHF,Low,Unemployment Rate,3.1%,3.1%
+2026-10-06T08:30:00Z,GBP,Low,Construction PMI,45.0,44.3
+2026-10-06T08:30:00Z,GBP,Low,Housing Equity Withdrawal q/q,-11.9B,-12.6B
+2026-10-06T08:30:00Z,GBP,Low,MPC Member Mann Speaks,,
+2026-10-06T09:00:00Z,EUR,Low,Retail Sales m/m,0.2%,-0.6%
+2026-10-06T12:14:00Z,USD,Low,ADP Weekly Employment Change,,20.0K
+2026-10-06T12:15:00Z,USD,Low,ADP Weekly Employment Change,,22.5K
+2026-10-06T12:30:00Z,USD,Low,Trade Balance,-100.8B,-88.6B
+2026-10-06T14:00:00Z,CAD,Medium,Ivey PMI,65.2,64.3
+2026-10-06T14:01:00Z,USD,Low,RCM/TIPP Economic Optimism,44.5,45.6
+2026-10-06T14:45:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-10-06T15:46:00Z,NZD,Low,GDT Price Index,,-1.1%
+2026-10-06T17:15:00Z,USD,Low,FOMC Member Schmid Speaks,,
+2026-10-06T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-10-06T23:01:00Z,CNY,Holiday,Bank Holiday,,
+2026-10-06T23:30:00Z,JPY,Low,Average Cash Earnings y/y,3.7%,4.7%
+2026-10-07T05:00:00Z,JPY,Low,Leading Indicators,118.1%,117.9%
+2026-10-07T06:00:00Z,EUR,Low,German Industrial Production m/m,0.5%,-1.1%
+2026-10-07T06:00:00Z,GBP,Low,Lloyds HPI m/m,0.0%,-0.2%
+2026-10-07T06:45:00Z,EUR,Low,French Trade Balance,-6.5B,-6.7B
+2026-10-07T07:00:00Z,CHF,Low,Foreign Currency Reserves,,770B
+2026-10-07T14:30:00Z,USD,Low,Crude Oil Inventories,1.9M,0.9M
+2026-10-07T17:00:00Z,USD,Medium,President Trump Speaks,,
+2026-10-07T17:01:00Z,USD,Low,10-y Bond Auction,,4.83|2.7
+2026-10-07T18:00:00Z,USD,High,FOMC Meeting Minutes,,
+2026-10-07T19:00:00Z,USD,Low,Consumer Credit m/m,14.5B,18.1B
+2026-10-07T23:01:00Z,GBP,Low,RICS House Price Balance,-30%,-28%
+2026-10-07T23:50:00Z,JPY,Low,Current Account,2.14T,2.52T
+2026-10-08T00:00:00Z,AUD,Low,MI Inflation Expectations,,4.9%
+2026-10-08T03:35:00Z,JPY,Low,30-y Bond Auction,,4.08|3.8
+2026-10-08T05:00:00Z,JPY,Low,Economy Watchers Sentiment,46.7,46.4
+2026-10-08T06:00:00Z,EUR,Low,German Trade Balance,19.0B,21.3B
+2026-10-08T08:05:00Z,CHF,Low,Gov Board Member Martin Speaks,,
+2026-10-08T08:30:00Z,GBP,Low,BOE Credit Conditions Survey,,
+2026-10-08T08:30:00Z,USD,Medium,FOMC Member Waller Speaks,,
+2026-10-08T09:00:00Z,GBP,Low,MPC Member Pill Speaks,,
+2026-10-08T09:15:00Z,EUR,Low,Eurogroup Meetings,,
+2026-10-08T09:15:00Z,GBP,Low,MPC Member Greene Speaks,,
+2026-10-08T11:30:00Z,EUR,Low,ECB Monetary Policy Meeting Accounts,,
+2026-10-08T12:15:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-10-08T12:30:00Z,USD,Medium,Unemployment Claims,200K,197K
+2026-10-08T13:00:00Z,GBP,Low,MPC Member Lombardelli Speaks,,
+2026-10-08T14:00:00Z,USD,Low,Final Wholesale Inventories m/m,0.7%,0.7%
+2026-10-08T14:30:00Z,USD,Low,Natural Gas Storage,79B,64B
+2026-10-08T17:01:00Z,USD,Low,30-y Bond Auction,,5.31|2.6
+2026-10-08T17:40:00Z,USD,Low,FOMC Member Musalem Speaks,,
+2026-10-08T23:30:00Z,JPY,Low,Household Spending y/y,-3.5%,-3.6%
+2026-10-09T06:00:00Z,JPY,Low,Prelim Machine Tool Orders y/y,,64.7%
+2026-10-09T07:00:00Z,CHF,Low,SECO Consumer Climate,-32,-33
+2026-10-09T08:00:00Z,EUR,Low,Italian Industrial Production m/m,0.0%,0.7%
+2026-10-09T09:15:00Z,EUR,Low,ECOFIN Meetings,,
+2026-10-09T12:30:00Z,CAD,High,Employment Change,6.1K,-41.7K
+2026-10-09T12:30:00Z,CAD,High,Unemployment Rate,6.5%,6.4%
+2026-10-09T14:00:00Z,USD,Medium,Prelim UoM Consumer Sentiment,47.5,47.8
+2026-10-09T14:00:00Z,USD,Medium,Prelim UoM Inflation Expectations,,4.6%
+2026-10-09T20:00:00Z,USD,Low,FOMC Member Collins Speaks,,
+2026-10-11T23:00:00Z,JPY,Holiday,Bank Holiday,,
+2026-10-12T09:30:00Z,GBP,Low,MPC Member Breeden Speaks,,
+2026-10-12T11:00:00Z,USD,Holiday,Bank Holiday,,
+2026-10-12T12:00:00Z,CAD,Holiday,Bank Holiday,,
+2026-10-12T12:50:00Z,GBP,Low,MPC Member Mann Speaks,,
+2026-10-12T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-12T16:10:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-10-12T23:01:00Z,GBP,Low,BRC Retail Sales Monitor y/y,0.8%,0.5%
+2026-10-12T23:50:00Z,JPY,Low,Bank Lending y/y,5.5%,5.4%
+2026-10-12T23:50:00Z,JPY,Low,PPI y/y,7.6%,7.6%
+2026-10-13T00:30:00Z,AUD,Low,Monetary Policy Meeting Minutes,,
+2026-10-13T00:30:00Z,AUD,Low,NAB Business Confidence,,-8
+2026-10-13T03:00:00Z,GBP,Low,MPC Member Greene Speaks,,
+2026-10-13T06:00:00Z,EUR,Low,German Final CPI m/m,0.6%,0.6%
+2026-10-13T07:45:00Z,USD,Low,FOMC Member Waller Speaks,,
+2026-10-13T10:00:00Z,USD,Low,NFIB Small Business Index,98.1,98.7
+2026-10-13T12:15:00Z,USD,Low,ADP Weekly Employment Change,,23.8K
+2026-10-13T14:00:00Z,USD,Low,Existing Home Sales,3.95M,3.98M
+2026-10-13T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-13T14:30:00Z,AUD,Low,CB Leading Index m/m,,0.5%
+2026-10-13T17:00:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-10-13T20:00:00Z,USD,Low,FOMC Member Collins Speaks,,
+2026-10-13T21:45:00Z,NZD,Low,Visitor Arrivals m/m,,0.5%
+2026-10-13T23:30:00Z,AUD,Low,MI Leading Index m/m,,0.0%
+2026-10-13T23:50:00Z,JPY,Low,M2 Money Stock y/y,2.1%,2.0%
+2026-10-14T01:30:00Z,CNY,Low,CPI y/y,1.0%,0.8%
+2026-10-14T01:30:00Z,CNY,Low,PPI y/y,4.4%,3.8%
+2026-10-14T02:10:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-10-14T02:31:00Z,CNY,Low,Trade Balance,790B,809B
+2026-10-14T02:31:00Z,CNY,Low,USD-Denominated Trade Balance,116.8B,119.1B
+2026-10-14T03:30:00Z,GBP,Low,MPC Member Breeden Speaks,,
+2026-10-14T05:30:00Z,GBP,Medium,BOE Gov Bailey Speaks,,
+2026-10-14T06:00:00Z,EUR,Low,German WPI m/m,0.6%,0.9%
+2026-10-14T06:00:00Z,GBP,Low,MPC Member Pill Speaks,,
+2026-10-14T06:05:00Z,CAD,Medium,BOC Gov Macklem Speaks,,
+2026-10-14T08:30:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-10-14T09:00:00Z,CNY,Low,M2 Money Supply y/y,7.4%,7.5%
+2026-10-14T09:01:00Z,CNY,Low,New Loans,1025B,60B
+2026-10-14T09:38:00Z,EUR,Low,German 30-y Bond Auction,,3.80|1.6
+2026-10-14T09:40:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-10-14T10:15:00Z,EUR,Medium,EU Economic Summit,,
+2026-10-14T12:30:00Z,CAD,Low,Building Permits m/m,2.9%,-17.3%
+2026-10-14T12:30:00Z,USD,High,CPI m/m,0.6%,0.4%
+2026-10-14T12:30:00Z,USD,High,CPI y/y,3.6%,3.4%
+2026-10-14T12:30:00Z,USD,High,Core CPI m/m,0.2%,0.3%
+2026-10-14T12:30:00Z,USD,High,Core CPI y/y,2.5%,2.4%
+2026-10-14T13:30:00Z,GBP,Low,CB Leading Index m/m,,-0.1%
+2026-10-14T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-14T17:30:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-10-14T18:00:00Z,USD,Low,Beige Book,,
+2026-10-14T19:00:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-10-14T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-10-14T23:50:00Z,JPY,Low,Core Machinery Orders m/m,2.2%,-3.7%
+2026-10-15T00:30:00Z,AUD,High,Employment Change,19.6K,39.5K
+2026-10-15T00:30:00Z,AUD,High,Unemployment Rate,4.6%,4.6%
+2026-10-15T02:55:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-10-15T03:35:00Z,GBP,Low,MPC Member Pill Speaks,,
+2026-10-15T04:30:00Z,AUD,Low,RBA Annual Report,,
+2026-10-15T04:30:00Z,CHF,Medium,SNB Chairman Schlegel Speaks,,
+2026-10-15T04:30:00Z,JPY,Low,Revised Industrial Production m/m,-1.7%,-1.7%
+2026-10-15T06:00:00Z,GBP,Low,Construction Output m/m,0.0%,0.1%
+2026-10-15T06:00:00Z,GBP,High,GDP m/m,-0.1%,0.4%
+2026-10-15T06:00:00Z,GBP,Low,Goods Trade Balance,-21.9B,-21.0B
+2026-10-15T06:00:00Z,GBP,Low,Index of Services 3m/3m,0.8%,0.6%
+2026-10-15T06:00:00Z,GBP,Low,Industrial Production m/m,-0.1%,0.2%
+2026-10-15T06:00:00Z,GBP,Low,Manufacturing Production m/m,-0.1%,0.9%
+2026-10-15T06:30:00Z,CHF,Low,PPI m/m,0.6%,0.7%
+2026-10-15T06:45:00Z,EUR,Low,French Final CPI m/m,-0.3%,-0.3%
+2026-10-15T06:45:00Z,GBP,Low,MPC Member Greene Speaks,,
+2026-10-15T07:30:00Z,GBP,Medium,BOE Gov Bailey Speaks,,
+2026-10-15T08:45:00Z,GBP,Low,MPC Member Breeden Speaks,,
+2026-10-15T09:00:00Z,CAD,Low,Gov Council Member Rogers Speaks,,
+2026-10-15T09:00:00Z,EUR,Low,Industrial Production m/m,0.0%,-0.1%
+2026-10-15T10:15:00Z,EUR,Medium,EU Economic Summit,,
+2026-10-15T12:30:00Z,CAD,Low,Manufacturing Sales m/m,1.1%,-0.4%
+2026-10-15T12:30:00Z,CAD,Low,Wholesale Sales m/m,-1.5%,0.3%
+2026-10-15T12:30:00Z,USD,High,Core PPI m/m,0.3%,0.2%
+2026-10-15T12:30:00Z,USD,High,Core Retail Sales m/m,0.6%,1.4%
+2026-10-15T12:30:00Z,USD,Low,Empire State Manufacturing Index,12.1,7.6
+2026-10-15T12:30:00Z,USD,High,PPI m/m,0.6%,0.4%
+2026-10-15T12:30:00Z,USD,Medium,Philly Fed Manufacturing Index,28.2,37.8
+2026-10-15T12:30:00Z,USD,High,Retail Sales m/m,0.3%,1.2%
+2026-10-15T12:30:00Z,USD,Medium,Unemployment Claims,199K,197K
+2026-10-15T14:00:00Z,USD,Low,Business Inventories m/m,0.4%,0.8%
+2026-10-15T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-15T14:30:00Z,USD,Low,Natural Gas Storage,76B,85B
+2026-10-15T16:00:00Z,USD,Low,Crude Oil Inventories,0.2M,-3.2M
+2026-10-15T20:30:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-10-15T21:30:00Z,NZD,Low,BusinessNZ Manufacturing Index,,53.1
+2026-10-15T21:45:00Z,NZD,Low,FPI m/m,,0.3%
+2026-10-16T02:00:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-10-16T02:30:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-16T03:30:00Z,USD,High,Fed Chairman Warsh Speaks,,
+2026-10-16T04:15:00Z,CAD,Medium,BOC Gov Macklem Speaks,,
+2026-10-16T09:00:00Z,EUR,Low,Final CPI y/y,3.8%,3.8%
+2026-10-16T09:00:00Z,EUR,Low,Final Core CPI y/y,2.5%,2.5%
+2026-10-16T09:00:00Z,EUR,Low,Trade Balance,4.5B,5.0B
+2026-10-16T10:00:00Z,EUR,Low,Italian Trade Balance,7.50B,8.24B
+2026-10-16T12:00:00Z,CAD,Low,Gov Council Member Alexopoulos Speaks,,
+2026-10-16T12:15:00Z,CAD,Low,Housing Starts,234K,229K
+2026-10-16T12:30:00Z,CAD,Low,Foreign Securities Purchases,23.59B,20.65B
+2026-10-16T12:30:00Z,USD,Low,Import Prices m/m,0.9%,0.7%
+2026-10-16T13:15:00Z,USD,Low,Capacity Utilization Rate,76.5%,76.3%
+2026-10-16T13:15:00Z,USD,Low,Industrial Production m/m,0.4%,0.0%
+2026-10-16T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-16T18:00:00Z,USD,Low,Federal Budget Balance,-34.7B,-166.8B
+2026-10-16T20:00:00Z,USD,Low,TIC Long-Term Purchases,75.2B,-27.9B
+2026-10-17T04:45:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-17T06:45:00Z,GBP,Medium,BOE Gov Bailey Speaks,,
+2026-10-17T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-18T00:00:00Z,AUD,Low,RBA Assist Gov Kent Speaks,,
+2026-10-18T14:15:00Z,All,Low,IMF Meetings,,
+2026-10-18T21:30:00Z,NZD,Low,BusinessNZ Services Index,,51.2
+2026-10-18T21:45:00Z,NZD,Low,Trade Balance,-775M,-1349M
+2026-10-18T23:01:00Z,GBP,Low,Rightmove HPI m/m,,0.7%
+2026-10-18T23:05:00Z,AUD,Low,RBA Assist Gov Kent Speaks,,
+2026-10-19T01:30:00Z,CNY,Low,New Home Prices m/m,,-0.17%
+2026-10-19T02:00:00Z,CNY,Low,Fixed Asset Investment ytd/y,-7.3%,-7.2%
+2026-10-19T02:00:00Z,CNY,Low,GDP q/y,4.4%,4.3%
+2026-10-19T02:00:00Z,CNY,Low,Industrial Production y/y,5.4%,5.2%
+2026-10-19T02:00:00Z,CNY,Low,NBS Press Conference,,
+2026-10-19T02:00:00Z,CNY,Low,Retail Sales y/y,0.5%,0.4%
+2026-10-19T02:00:00Z,CNY,Low,Unemployment Rate,5.3%,5.3%
+2026-10-19T04:30:00Z,JPY,Low,Tertiary Industry Activity m/m,-0.3%,0.4%
+2026-10-19T12:30:00Z,CAD,High,CPI m/m,0.2%,-0.1%
+2026-10-19T12:30:00Z,CAD,Medium,Common CPI y/y,2.6%,2.6%
+2026-10-19T12:30:00Z,CAD,Low,Core CPI m/m,,0.1%
+2026-10-19T12:30:00Z,CAD,High,Median CPI y/y,2.0%,2.0%
+2026-10-19T12:30:00Z,CAD,High,Trimmed CPI y/y,1.9%,1.9%
+2026-10-19T14:00:00Z,USD,Low,NAHB Housing Market Index,31,32
+2026-10-19T15:30:00Z,CAD,Low,BOC Business Outlook Survey,,
+2026-10-20T01:00:00Z,CNY,Low,1-y Loan Prime Rate,3.00%,3.00%
+2026-10-20T01:00:00Z,CNY,Low,5-y Loan Prime Rate,3.50%,3.50%
+2026-10-20T06:00:00Z,EUR,Low,German PPI m/m,1.5%,1.1%
+2026-10-20T06:00:00Z,GBP,Medium,Average Earnings Index 3m/y,3.8%,3.9%
+2026-10-20T06:00:00Z,GBP,Low,Claimant Count Change,19.4K,27.8K
+2026-10-20T06:00:00Z,GBP,Low,Unemployment Rate,4.9%,4.9%
+2026-10-20T08:00:00Z,EUR,Low,Current Account,29.2B,27.6B
+2026-10-20T09:00:00Z,EUR,Low,German ZEW Economic Sentiment,30.2,34.7
+2026-10-20T09:00:00Z,EUR,Low,ZEW Economic Sentiment,23.6,25.8
+2026-10-20T09:03:00Z,GBP,Low,10-y Bond Auction,,5.38|3.3
+2026-10-20T12:15:00Z,USD,Low,ADP Weekly Employment Change,,24.8K
+2026-10-20T12:30:00Z,USD,Low,Building Permits,1.39M,1.39M
+2026-10-20T12:30:00Z,USD,Low,Housing Starts,1.30M,1.28M
+2026-10-20T14:00:00Z,USD,Low,Pending Home Sales m/m,-0.6%,0.3%
+2026-10-20T15:19:00Z,NZD,Low,GDT Price Index,,1.2%
+2026-10-20T17:00:00Z,GBP,Low,MPC Member Greene Speaks,,
+2026-10-20T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-10-20T22:30:00Z,AUD,Low,RBA Deputy Gov Hauser Speaks,,
+2026-10-20T23:50:00Z,JPY,Low,Trade Balance,-0.26T,-0.84T
+2026-10-21T02:00:00Z,NZD,Low,Credit Card Spending y/y,,3.5%
+2026-10-21T06:00:00Z,GBP,High,CPI y/y,3.4%,3.1%
+2026-10-21T06:00:00Z,GBP,Low,Core CPI y/y,2.8%,2.6%
+2026-10-21T06:00:00Z,GBP,Low,PPI Input m/m,1.3%,0.3%
+2026-10-21T06:00:00Z,GBP,Low,PPI Output m/m,0.7%,0.7%
+2026-10-21T06:00:00Z,GBP,Low,Public Sector Net Borrowing,23.8B,18.3B
+2026-10-21T06:00:00Z,GBP,Low,RPI y/y,3.9%,3.4%
+2026-10-21T07:15:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-10-21T08:30:00Z,GBP,Low,HPI y/y,1.2%,1.4%
+2026-10-21T09:10:00Z,CNY,Low,Foreign Direct Investment ytd/y,,-5.3%
+2026-10-21T10:00:00Z,EUR,Low,German Buba Monthly Report,,
+2026-10-21T13:00:00Z,GBP,Medium,BOE Gov Bailey Speaks,,
+2026-10-21T14:30:00Z,USD,Low,Crude Oil Inventories,-0.1M,-8.6M
+2026-10-21T21:45:00Z,NZD,High,CPI q/q,0.8%,1.5%
+2026-10-22T07:30:00Z,CHF,Low,Summary of Monetary Policy Discussions,,
+2026-10-22T10:00:00Z,GBP,Low,CBI Industrial Order Expectations,-20,-9
+2026-10-22T12:30:00Z,CAD,Low,IPPI m/m,0.9%,1.3%
+2026-10-22T12:30:00Z,CAD,Low,NHPI m/m,-0.1%,-0.1%
+2026-10-22T12:30:00Z,CAD,Low,RMPI m/m,3.1%,3.1%
+2026-10-22T12:30:00Z,USD,Medium,Unemployment Claims,200K,199K
+2026-10-22T14:00:00Z,EUR,Low,Consumer Confidence,-17,-17
+2026-10-22T14:00:00Z,USD,Low,CB Leading Index m/m,-0.1%,-0.1%
+2026-10-22T14:30:00Z,USD,Low,Natural Gas Storage,83B,67B
+2026-10-22T22:00:00Z,AUD,Low,Flash Manufacturing PMI,,49.3
+2026-10-22T22:00:00Z,AUD,Low,Flash Services PMI,,51.4
+2026-10-22T23:01:00Z,GBP,Low,GfK Consumer Confidence,-14,-13
+2026-10-22T23:30:00Z,JPY,Low,National Core CPI y/y,2.1%,1.7%
+2026-10-23T00:30:00Z,JPY,Low,Flash Manufacturing PMI,54.5,54.1
+2026-10-23T06:00:00Z,GBP,Medium,Retail Sales m/m,-0.1%,0.5%
+2026-10-23T07:15:00Z,EUR,Medium,French Flash Manufacturing PMI,50.5,50.3
+2026-10-23T07:15:00Z,EUR,Medium,French Flash Services PMI,50.7,51.4
+2026-10-23T07:30:00Z,EUR,Medium,German Flash Manufacturing PMI,53.5,53.8
+2026-10-23T07:30:00Z,EUR,Medium,German Flash Services PMI,52.5,52.9
+2026-10-23T08:00:00Z,EUR,Low,Flash Manufacturing PMI,52.7,52.7
+2026-10-23T08:00:00Z,EUR,Low,Flash Services PMI,52.6,53.0
+2026-10-23T08:30:00Z,GBP,Medium,Flash Manufacturing PMI,51.8,52.0
+2026-10-23T08:30:00Z,GBP,Medium,Flash Services PMI,51.8,51.7
+2026-10-23T12:30:00Z,CAD,Low,Core Retail Sales m/m,1.1%,-0.7%
+2026-10-23T12:30:00Z,CAD,Low,Retail Sales m/m,1.3%,-0.7%
+2026-10-23T13:00:00Z,EUR,Low,Belgian NBB Business Climate,-11.8,-12.1
+2026-10-23T13:45:00Z,USD,Medium,Flash Manufacturing PMI,55.4,57.0
+2026-10-23T13:45:00Z,USD,Medium,Flash Services PMI,57.8,58.7
+2026-10-23T14:00:00Z,USD,Medium,Revised UoM Consumer Sentiment,46.3,46.3
+2026-10-23T14:00:00Z,USD,Medium,Revised UoM Inflation Expectations,,4.7%
+2026-10-25T01:00:00Z,GBP,Holiday,Daylight Saving Time Shift,,
+2026-10-25T19:00:00Z,NZD,Holiday,Bank Holiday,,
+2026-10-25T21:10:00Z,AUD,Low,RBA Assist Gov Jones Speaks,,
+2026-10-26T09:00:00Z,EUR,Low,German ifo Business Climate,90.0,89.9
+2026-10-26T11:00:00Z,GBP,Low,CBI Realized Sales,-47,-55
+2026-10-26T23:50:00Z,JPY,Low,SPPI y/y,3.7%,3.7%
+2026-10-27T00:01:00Z,GBP,Low,BRC Shop Price Index y/y,1.6%,1.4%
+2026-10-27T05:00:00Z,JPY,Low,BOJ Core CPI y/y,1.9%,1.8%
+2026-10-27T08:00:00Z,EUR,Low,Spanish Unemployment Rate,9.9%,9.9%
+2026-10-27T09:00:00Z,EUR,Low,M3 Money Supply y/y,3.5%,3.5%
+2026-10-27T09:00:00Z,EUR,Low,Private Loans y/y,3.1%,3.1%
+2026-10-27T12:15:00Z,USD,Low,ADP Weekly Employment Change,,18.5K
+2026-10-27T12:30:00Z,USD,Low,Core Durable Goods Orders m/m,0.6%,0.3%
+2026-10-27T12:30:00Z,USD,Low,Durable Goods Orders m/m,2.0%,0.0%
+2026-10-27T13:00:00Z,USD,Low,HPI m/m,0.2%,0.3%
+2026-10-27T13:00:00Z,USD,Low,S&P/CS Composite-20 HPI y/y,2.6%,2.5%
+2026-10-27T14:00:00Z,USD,Medium,CB Consumer Confidence,81.2,81.9
+2026-10-27T14:00:00Z,USD,Low,New Home Sales,651K,684K
+2026-10-27T14:00:00Z,USD,Low,Richmond Manufacturing Index,0,-2
+2026-10-27T20:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-10-28T00:15:00Z,AUD,Medium,RBA Gov Bullock Speaks,,
+2026-10-28T00:30:00Z,AUD,High,CPI m/m,0.7%,0.4%
+2026-10-28T00:30:00Z,AUD,High,CPI y/y,4.2%,4.0%
+2026-10-28T00:30:00Z,AUD,High,Trimmed Mean CPI m/m,0.3%,0.2%
+2026-10-28T01:00:00Z,NZD,High,Official Cash Rate,3.00%,2.75%
+2026-10-28T01:00:00Z,NZD,High,RBNZ Rate Statement,,
+2026-10-28T02:00:00Z,NZD,High,RBNZ Press Conference,,
+2026-10-28T07:00:00Z,EUR,Low,German GfK Consumer Climate,-30.1,-30.6
+2026-10-28T09:00:00Z,CHF,Low,UBS Economic Expectations,,2.6
+2026-10-28T10:32:00Z,EUR,Low,German 10-y Bond Auction,,3.58|1.2
+2026-10-28T12:30:00Z,GBP,High,Annual Budget Release,,
+2026-10-28T12:30:00Z,GBP,Medium,Autumn Forecast Statement,,
+2026-10-28T12:30:00Z,USD,Low,Goods Trade Balance,-130.4B,-132.6B
+2026-10-28T12:30:00Z,USD,Low,Prelim Wholesale Inventories m/m,0.5%,0.7%
+2026-10-28T13:00:00Z,CNY,Low,CB Leading Index m/m,,-0.2%
+2026-10-28T13:45:00Z,CAD,High,BOC Monetary Policy Report,,
+2026-10-28T13:45:00Z,CAD,High,BOC Rate Statement,,
+2026-10-28T13:45:00Z,CAD,High,Overnight Rate,2.50%,2.25%
+2026-10-28T14:30:00Z,CAD,High,BOC Press Conference,,
+2026-10-28T14:30:00Z,USD,Low,Crude Oil Inventories,0.1M,-3.1M
+2026-10-28T18:00:00Z,USD,High,FOMC Statement,,
+2026-10-28T18:00:00Z,USD,High,Federal Funds Rate,4.00%,4.00%
+2026-10-28T18:30:00Z,USD,High,FOMC Press Conference,,
+2026-10-29T00:00:00Z,NZD,Low,ANZ Business Confidence,,51.9
+2026-10-29T00:30:00Z,AUD,Low,Import Prices q/q,1.3%,5.7%
+2026-10-29T05:00:00Z,JPY,Low,Consumer Confidence,35.1,35.4
+2026-10-29T09:00:00Z,EUR,Low,Italian Monthly Unemployment Rate,6.2%,6.2%
+2026-10-29T09:30:00Z,GBP,Low,M4 Money Supply m/m,0.3%,0.4%
+2026-10-29T09:30:00Z,GBP,Low,Mortgage Approvals,54K,55K
+2026-10-29T09:30:00Z,GBP,Low,Net Lending to Individuals m/m,6.2B,6.9B
+2026-10-29T10:08:00Z,EUR,Low,Italian 10-y Bond Auction,,4.58|1.6
+2026-10-29T12:30:00Z,USD,Medium,Advance GDP Price Index q/q,3.2%,6.2%
+2026-10-29T12:30:00Z,USD,High,Advance GDP q/q,3.2%,1.5%
+2026-10-29T12:30:00Z,USD,High,Core PCE Price Index m/m,0.3%,0.2%
+2026-10-29T12:30:00Z,USD,Low,Personal Income m/m,0.3%,0.2%
+2026-10-29T12:30:00Z,USD,Low,Personal Spending m/m,0.6%,0.9%
+2026-10-29T12:30:00Z,USD,Medium,Unemployment Claims,198K,194K
+2026-10-29T12:50:00Z,CAD,Low,Gov Council Member Gravelle Speaks,,
+2026-10-29T13:15:00Z,EUR,High,Main Refinancing Rate,2.65%,2.65%
+2026-10-29T13:15:00Z,EUR,High,Monetary Policy Statement,,
+2026-10-29T13:45:00Z,EUR,High,ECB Press Conference,,
+2026-10-29T14:30:00Z,USD,Low,Natural Gas Storage,75B,77B
+2026-10-29T15:30:00Z,CAD,Low,Gov Council Member Vincent Speaks,,
+2026-10-29T17:30:00Z,CHF,Low,Gov Board Member Tschudin Speaks,,
+2026-10-29T23:30:00Z,JPY,Medium,Tokyo Core CPI y/y,2.6%,2.7%
+2026-10-29T23:30:00Z,JPY,Low,Unemployment Rate,2.5%,2.5%
+2026-10-29T23:50:00Z,JPY,Low,Prelim Industrial Production m/m,1.2%,-1.7%
+2026-10-29T23:50:00Z,JPY,Low,Retail Sales y/y,3.3%,2.7%
+2026-10-30T00:30:00Z,AUD,Low,PPI q/q,1.0%,1.3%
+2026-10-30T00:30:00Z,AUD,Low,Private Sector Credit m/m,0.5%,0.6%
+2026-10-30T03:02:00Z,JPY,High,BOJ Outlook Report,,
+2026-10-30T03:02:00Z,JPY,High,BOJ Policy Rate,<1.25%,<1.25%
+2026-10-30T03:02:00Z,JPY,High,Monetary Policy Statement,,
+2026-10-30T05:00:00Z,JPY,Low,Housing Starts y/y,2.7%,6.1%
+2026-10-30T06:30:00Z,EUR,Low,French Consumer Spending m/m,0.1%,-0.5%
+2026-10-30T06:30:00Z,EUR,Low,French Flash GDP q/q,0.1%,0.2%
+2026-10-30T06:30:00Z,JPY,High,BOJ Press Conference,,
+2026-10-30T07:00:00Z,EUR,Low,German Import Prices m/m,1.9%,1.0%
+2026-10-30T07:00:00Z,GBP,Low,Nationwide HPI m/m,-0.2%,-0.2%
+2026-10-30T07:29:00Z,EUR,Medium,German Prelim CPI m/m,0.1%,0.6%
+2026-10-30T07:45:00Z,EUR,Low,French Prelim CPI m/m,0.2%,-0.3%
+2026-10-30T07:45:00Z,EUR,Low,French Prelim Private Payrolls q/q,-0.1%,-0.1%
+2026-10-30T08:00:00Z,CHF,Low,KOF Economic Barometer,108.1,109.1
+2026-10-30T08:00:00Z,EUR,Low,Spanish Flash CPI y/y,4.9%,4.9%
+2026-10-30T08:00:00Z,EUR,Low,Spanish Flash GDP q/q,0.6%,0.7%
+2026-10-30T08:55:00Z,EUR,Low,German Unemployment Change,5K,12K
+2026-10-30T09:00:00Z,EUR,Medium,German Prelim GDP q/q,0.1%,0.2%
+2026-10-30T09:00:00Z,EUR,Low,Italian Prelim GDP q/q,0.1%,0.2%
+2026-10-30T10:00:00Z,EUR,Low,Italian Prelim CPI m/m,0.1%,0.7%
+2026-10-30T10:00:00Z,EUR,Low,Prelim Flash GDP q/q,0.2%,0.4%
+2026-10-30T10:00:00Z,EUR,Low,Unemployment Rate,6.4%,6.4%
+2026-10-30T12:30:00Z,CAD,Medium,GDP m/m,0.2%,0.0%
+2026-10-30T12:30:00Z,USD,Medium,Employment Cost Index q/q,0.8%,0.9%
+2026-10-30T13:45:00Z,USD,Low,Chicago PMI,55.8,58.8
+2026-10-30T16:00:00Z,USD,Low,FOMC Member Daly Speaks,,
+2026-10-30T16:30:00Z,USD,Low,FOMC Member Musalem Speaks,,
+2026-10-30T17:30:00Z,USD,Low,FOMC Member Logan Speaks,,
+2026-10-31T01:30:00Z,CNY,Low,Manufacturing PMI,49.9,50.1
+2026-10-31T01:30:00Z,CNY,Low,Non-Manufacturing PMI,50.0,50.2
+2026-11-01T07:00:00Z,USD,Holiday,Daylight Saving Time Shift,,
+2026-11-02T00:00:00Z,AUD,Low,MI Inflation Gauge m/m,,0.3%
+2026-11-02T00:30:00Z,AUD,Low,Building Approvals m/m,1.8%,-6.1%
+2026-11-02T00:30:00Z,JPY,Low,Final Manufacturing PMI,53.3,53.3
+2026-11-02T01:45:00Z,CNY,Low,RatingDog Manufacturing PMI,52.0,52.1
+2026-11-02T05:30:00Z,AUD,Low,Commodity Prices y/y,,15.5%
+2026-11-02T07:00:00Z,EUR,Low,German Retail Sales m/m,0.4%,1.3%
+2026-11-02T07:33:00Z,CHF,Low,Retail Sales y/y,3.0%,3.2%
+2026-11-02T08:15:00Z,EUR,Low,Spanish Manufacturing PMI,50.4,51.0
+2026-11-02T08:30:00Z,CHF,Low,Manufacturing PMI,55.3,55.3
+2026-11-02T08:45:00Z,EUR,Low,Italian Manufacturing PMI,49.9,50.4
+2026-11-02T08:50:00Z,EUR,Low,French Final Manufacturing PMI,49.3,49.3
+2026-11-02T08:55:00Z,EUR,Low,German Final Manufacturing PMI,54.2,54.2
+2026-11-02T09:00:00Z,EUR,Low,Final Manufacturing PMI,52.4,52.4
+2026-11-02T09:30:00Z,GBP,Low,Final Manufacturing PMI,52.8,52.8
+2026-11-02T12:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-11-02T14:30:00Z,CAD,Low,Manufacturing PMI,,51.5
+2026-11-02T14:45:00Z,USD,Low,Final Manufacturing PMI,56.0,56.0
+2026-11-02T15:00:00Z,USD,Low,Construction Spending m/m,0.4%,0.9%
+2026-11-02T15:00:00Z,USD,Medium,ISM Manufacturing PMI,54.5,54.5
+2026-11-02T15:00:00Z,USD,Low,ISM Manufacturing Prices,77.2,77.9
+2026-11-02T19:00:00Z,USD,Low,Loan Officer Survey,,
+2026-11-02T21:45:00Z,NZD,Low,Building Consents m/m,,5.6%
+2026-11-03T00:00:00Z,JPY,Holiday,Bank Holiday,,
+2026-11-03T03:30:00Z,AUD,High,Cash Rate,4.85%,4.60%
+2026-11-03T03:30:00Z,AUD,High,RBA Monetary Policy Statement,,
+2026-11-03T03:30:00Z,AUD,High,RBA Rate Statement,,
+2026-11-03T04:30:00Z,AUD,High,RBA Press Conference,,
+2026-11-03T07:30:00Z,CHF,Medium,CPI m/m,0.0%,0.0%
+2026-11-03T07:45:00Z,EUR,Low,French Gov Budget Balance,,-159.6B
+2026-11-03T09:00:00Z,USD,Low,RCM/TIPP Economic Optimism,46.2,46.8
+2026-11-03T10:02:00Z,GBP,Low,10-y Bond Auction,,5.42|3.6
+2026-11-03T15:00:00Z,USD,Low,Factory Orders m/m,1.2%,0.1%
+2026-11-03T15:00:00Z,USD,Medium,JOLTS Job Openings,7.15M,7.08M
+2026-11-03T15:15:00Z,USD,Low,Omdia Total Vehicle Sales,15.8M,16.0M
+2026-11-03T15:16:00Z,USD,High,Congressional Elections,,
+2026-11-03T15:27:00Z,NZD,Low,GDT Price Index,,2.5%
+2026-11-03T16:00:00Z,CAD,Medium,BOC Gov Macklem Speaks,,
+2026-11-03T18:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-11-03T21:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-11-03T21:45:00Z,NZD,High,Employment Change q/q,0.4%,0.5%
+2026-11-03T21:45:00Z,NZD,Low,Labor Cost Index q/q,0.5%,0.7%
+2026-11-03T21:45:00Z,NZD,High,Unemployment Rate,5.5%,5.6%
+2026-11-03T23:50:00Z,JPY,Low,Monetary Base y/y,-14.0%,-15.2%
+2026-11-04T00:00:00Z,NZD,Low,ANZ Commodity Prices m/m,,0.6%
+2026-11-04T00:30:00Z,AUD,Low,Household Spending m/m,0.2%,0.0%
+2026-11-04T01:45:00Z,CNY,Low,RatingDog Services PMI,51.7,51.6
+2026-11-04T08:00:00Z,EUR,Low,Spanish Unemployment Change,18.7K,23.6K
+2026-11-04T08:15:00Z,EUR,Low,Spanish Services PMI,57.6,58.3
+2026-11-04T08:45:00Z,EUR,Low,Italian Services PMI,51.4,51.7
+2026-11-04T08:50:00Z,EUR,Low,French Final Services PMI,48.4,48.4
+2026-11-04T08:55:00Z,EUR,Low,German Final Services PMI,51.7,51.7
+2026-11-04T09:00:00Z,EUR,Low,Final Services PMI,51.7,51.7
+2026-11-04T09:30:00Z,GBP,Low,Final Services PMI,53.1,53.1
+2026-11-04T10:00:00Z,EUR,Medium,CPI Flash Estimate y/y,4.0%,3.8%
+2026-11-04T10:00:00Z,EUR,Medium,Core CPI Flash Estimate y/y,2.5%,2.5%
+2026-11-04T13:15:00Z,USD,Low,ADP Non-Farm Employment Change,67K,90K
+2026-11-04T13:30:00Z,USD,Low,Trade Balance,-107.9B,-105.6B
+2026-11-04T14:45:00Z,USD,Low,Final Services PMI,57.9,57.9
+2026-11-04T15:00:00Z,USD,Medium,ISM Services PMI,54.8,54.9
+2026-11-04T15:30:00Z,USD,Low,Crude Oil Inventories,-1.7M,-1.9M
+2026-11-04T23:50:00Z,JPY,Low,Monetary Policy Meeting Minutes,,
+2026-11-05T00:30:00Z,AUD,Low,Goods Trade Balance,0.94B,0.50B
+2026-11-05T03:35:00Z,JPY,Low,10-y Bond Auction,,3.10|3.8
+2026-11-05T06:45:00Z,AUD,Low,RBA Deputy Gov Hauser Speaks,,
+2026-11-05T07:00:00Z,EUR,Low,German Factory Orders m/m,4.6%,-10.6%
+2026-11-05T07:45:00Z,EUR,Low,French Industrial Production m/m,0.3%,-0.3%
+2026-11-05T08:00:00Z,CHF,Low,Unemployment Rate,3.1%,3.1%
+2026-11-05T09:00:00Z,EUR,Low,Italian Retail Sales m/m,0.0%,0.3%
+2026-11-05T09:30:00Z,GBP,Low,Construction PMI,46.4,46.1
+2026-11-05T09:39:00Z,EUR,Low,Spanish 10-y Bond Auction,,4.18|1.6
+2026-11-05T09:55:00Z,EUR,Low,French 10-y Bond Auction,,4.93|2.0
+2026-11-05T10:00:00Z,EUR,Low,PPI m/m,2.5%,1.9%
+2026-11-05T10:30:00Z,USD,Low,Challenger Job Cuts y/y,,-19.9%
+2026-11-05T12:00:00Z,GBP,High,BOE Monetary Policy Report,,
+2026-11-05T12:00:00Z,GBP,High,MPC Official Bank Rate Votes,7-0-2,3-0-6
+2026-11-05T12:00:00Z,GBP,High,Monetary Policy Summary,,
+2026-11-05T12:00:00Z,GBP,High,Official Bank Rate,4.00%,3.75%
+2026-11-05T12:30:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-11-05T12:40:00Z,CHF,Medium,SNB Chairman Schlegel Speaks,,
+2026-11-05T13:30:00Z,USD,Low,Prelim Nonfarm Productivity q/q,2.8%,1.4%
+2026-11-05T13:30:00Z,USD,Low,Prelim Unit Labor Costs q/q,0.3%,1.3%
+2026-11-05T13:30:00Z,USD,Medium,Unemployment Claims,197K,194K
+2026-11-05T13:50:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-11-05T14:10:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-11-05T15:30:00Z,CAD,Medium,BOC Gov Macklem Speaks,,
+2026-11-05T15:30:00Z,USD,Low,Natural Gas Storage,81B,80B
+2026-11-05T17:45:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-11-05T18:00:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-11-05T21:00:00Z,CAD,Medium,Annual Budget Release,,
+2026-11-05T23:30:00Z,JPY,Low,Average Cash Earnings y/y,3.8%,3.8%
+2026-11-06T07:00:00Z,EUR,Low,German Industrial Production m/m,0.0%,2.0%
+2026-11-06T07:00:00Z,GBP,Low,Lloyds HPI m/m,0.0%,0.0%
+2026-11-06T07:45:00Z,EUR,Low,French Trade Balance,-5.8B,-6.1B
+2026-11-06T08:00:00Z,CHF,Low,Foreign Currency Reserves,,770B
+2026-11-06T08:00:00Z,CHF,Low,SECO Consumer Climate,-35,-36
+2026-11-06T09:30:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-11-06T10:00:00Z,EUR,Low,Retail Sales m/m,-0.1%,0.1%
+2026-11-06T11:00:00Z,CHF,Low,Gov Board Member Tschudin Speaks,,
+2026-11-06T12:15:00Z,GBP,Low,MPC Member Pill Speaks,,
+2026-11-06T13:30:00Z,CAD,High,Employment Change,14.6K,-68.3K
+2026-11-06T13:30:00Z,USD,High,Average Hourly Earnings m/m,0.3%,0.1%
+2026-11-06T13:30:00Z,USD,High,Non-Farm Employment Change,65K,29K
+2026-11-06T13:30:00Z,USD,High,Unemployment Rate,4.2%,4.2%
+2026-11-06T14:10:00Z,USD,Low,FOMC Member Musalem Speaks,,
+2026-11-06T15:00:00Z,CAD,Medium,Ivey PMI,57.7,58.2
+2026-11-06T15:00:00Z,USD,Medium,Prelim UoM Consumer Sentiment,48.1,46.3
+2026-11-06T15:00:00Z,USD,Medium,Prelim UoM Inflation Expectations,,4.7%
+2026-11-06T16:00:00Z,JPY,High,BOJ Gov Ueda Speaks,,
+2026-11-06T17:15:00Z,USD,Low,FOMC Member Bowman Speaks,,
+2026-11-06T18:00:00Z,USD,Low,FOMC Member Daly Speaks,,
+2026-11-06T20:00:00Z,USD,Low,Consumer Credit m/m,13.4B,8.3B
+2026-11-06T21:45:00Z,NZD,High,Parliamentary Elections,,
+2026-11-15T21:30:00Z,NZD,Low,BusinessNZ Services Index,,50.9
+2026-11-15T23:50:00Z,JPY,Low,Prelim GDP Price Index y/y,2.6%,2.6%
+2026-11-15T23:50:00Z,JPY,Low,Prelim GDP q/q,0.1%,0.3%
+2026-11-16T00:01:00Z,GBP,Low,Rightmove HPI m/m,,1.0%
+2026-11-16T01:30:00Z,CNY,Low,New Home Prices m/m,,-0.14%
+2026-11-16T02:00:00Z,CNY,Low,Fixed Asset Investment ytd/y,-7.0%,-7.2%
+2026-11-16T02:00:00Z,CNY,Low,Industrial Production y/y,5.3%,5.5%
+2026-11-16T02:00:00Z,CNY,Low,NBS Press Conference,,
+2026-11-16T02:00:00Z,CNY,Low,Retail Sales y/y,0.8%,1.1%
+2026-11-16T02:00:00Z,CNY,Low,Unemployment Rate,5.2%,5.2%
+2026-11-16T04:30:00Z,JPY,Low,Revised Industrial Production m/m,2.2%,2.2%
+2026-11-16T10:00:00Z,EUR,Low,Industrial Production m/m,0.3%,-0.5%
+2026-11-16T10:00:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-11-16T13:30:00Z,CAD,High,CPI m/m,0.3%,0.1%
+2026-11-16T13:30:00Z,CAD,Medium,Common CPI y/y,2.5%,2.4%
+2026-11-16T13:30:00Z,CAD,Low,Core CPI m/m,0.2%,0.0%
+2026-11-16T13:30:00Z,CAD,High,Median CPI y/y,2.0%,1.9%
+2026-11-16T13:30:00Z,CAD,High,Trimmed CPI y/y,1.9%,1.8%
+2026-11-16T13:30:00Z,USD,Low,Empire State Manufacturing Index,17.6,25.5
+2026-11-16T14:05:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-11-16T14:48:00Z,USD,Low,Cleveland Fed Inflation Expectations,,3.3%
+2026-11-16T17:00:00Z,USD,High,Fed Chairman Warsh Speaks,,
+2026-11-16T20:00:00Z,NZD,Low,RBNZ Financial Stability Report,,
+2026-11-16T21:45:00Z,NZD,Low,FPI m/m,,0.0%
+2026-11-16T22:50:00Z,AUD,High,RBA Gov Bullock Speaks,,
+2026-11-17T00:30:00Z,AUD,Low,Monetary Policy Meeting Minutes,,
+2026-11-17T02:00:00Z,NZD,High,Inflation Expectations q/q,,2.34%
+2026-11-17T04:30:00Z,JPY,Low,Tertiary Industry Activity m/m,0.0%,-0.1%
+2026-11-17T07:00:00Z,GBP,Medium,Average Earnings Index 3m/y,3.5%,3.7%
+2026-11-17T07:00:00Z,GBP,Low,Claimant Count Change,28.1K,30.3K
+2026-11-17T07:00:00Z,GBP,Low,Unemployment Rate,4.7%,4.7%
+2026-11-17T10:00:00Z,EUR,Low,EU Economic Forecasts,,
+2026-11-17T10:00:00Z,EUR,Low,German ZEW Economic Sentiment,28.3,28.1
+2026-11-17T10:00:00Z,EUR,Low,ZEW Economic Sentiment,18.3,18.5
+2026-11-17T12:30:00Z,USD,Low,FOMC Member Musalem Speaks,,
+2026-11-17T13:15:00Z,CAD,Low,Housing Starts,243K,249K
+2026-11-17T13:15:00Z,USD,Low,ADP Weekly Employment Change,,19.8K
+2026-11-17T13:30:00Z,CAD,Low,Foreign Securities Purchases,14.85B,-17.31B
+2026-11-17T13:30:00Z,USD,High,Core Retail Sales m/m,0.4%,0.9%
+2026-11-17T13:30:00Z,USD,Low,Import Prices m/m,0.7%,1.1%
+2026-11-17T13:30:00Z,USD,High,Retail Sales m/m,0.2%,0.8%
+2026-11-17T14:10:00Z,USD,Low,FOMC Member Waller Speaks,,
+2026-11-17T14:15:00Z,USD,Low,Capacity Utilization Rate,76.8%,76.9%
+2026-11-17T14:15:00Z,USD,Low,Industrial Production m/m,0.1%,0.7%
+2026-11-17T14:30:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-11-17T15:00:00Z,USD,Low,Business Inventories m/m,0.5%,0.4%
+2026-11-17T15:00:00Z,USD,Low,NAHB Housing Market Index,29,29
+2026-11-17T15:50:00Z,NZD,Low,GDT Price Index,,3.0%
+2026-11-17T19:25:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-11-17T21:30:00Z,USD,Low,API Weekly Statistical Bulletin,,
+2026-11-17T21:45:00Z,NZD,Low,PPI Input q/q,1.5%,2.9%
+2026-11-17T21:45:00Z,NZD,Low,PPI Output q/q,1.1%,1.6%
+2026-11-17T23:30:00Z,AUD,Low,MI Leading Index m/m,,-0.1%
+2026-11-17T23:50:00Z,JPY,Low,Trade Balance,-0.88T,-0.70T
+2026-11-18T00:30:00Z,AUD,Medium,Wage Price Index q/q,0.9%,0.8%
+2026-11-18T02:45:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-11-18T07:00:00Z,GBP,High,CPI y/y,3.6%,3.5%
+2026-11-18T07:00:00Z,GBP,Low,Core CPI y/y,2.8%,2.8%
+2026-11-18T07:00:00Z,GBP,Low,PPI Input m/m,0.8%,1.5%
+2026-11-18T07:00:00Z,GBP,Low,PPI Output m/m,0.6%,0.8%
+2026-11-18T07:00:00Z,GBP,Low,RPI y/y,4.1%,3.9%
+2026-11-18T07:02:00Z,CNY,Low,Foreign Direct Investment ytd/y,,-4.3%
+2026-11-18T07:30:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-11-18T09:00:00Z,EUR,Medium,ECB Financial Stability Review,,
+2026-11-18T09:30:00Z,GBP,Low,HPI y/y,0.7%,0.9%
+2026-11-18T10:00:00Z,EUR,Low,Final CPI y/y,4.0%,4.0%
+2026-11-18T10:00:00Z,EUR,Low,Final Core CPI y/y,2.5%,2.5%
+2026-11-18T13:30:00Z,CAD,Low,NHPI m/m,0.1%,-0.2%
+2026-11-18T13:30:00Z,USD,Low,Building Permits,1.38M,1.40M
+2026-11-18T13:30:00Z,USD,Low,Housing Starts,1.25M,1.22M
+2026-11-18T14:25:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-11-18T15:00:00Z,GBP,High,BOE Gov Bailey Speaks,,
+2026-11-18T15:00:00Z,USD,Low,Pending Home Sales m/m,-2.3%,-7.3%
+2026-11-18T15:30:00Z,USD,Low,Crude Oil Inventories,,4.7M
+2026-11-18T17:30:00Z,CAD,Low,Gov Council Member Gravelle Speaks,,
+2026-11-18T18:00:00Z,NZD,Medium,RBNZ Gov Breman Speaks,,
+2026-11-18T18:35:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-11-18T19:00:00Z,USD,High,FOMC Meeting Minutes,,
+2026-11-18T19:30:00Z,USD,Low,FOMC Member Williams Speaks,,
+2026-11-18T21:00:00Z,USD,Low,TIC Long-Term Purchases,160.7B,279.2B
+2026-11-18T21:15:00Z,USD,Low,FOMC Member Kashkari Speaks,,
+2026-11-18T21:45:00Z,NZD,Low,Trade Balance,-1650M,-1971M
+2026-11-18T23:50:00Z,JPY,Low,Core Machinery Orders m/m,1.4%,5.2%
+2026-11-19T00:30:00Z,AUD,High,Employment Change,25.2K,-39.3K
+2026-11-19T00:30:00Z,AUD,High,Unemployment Rate,4.7%,4.7%
+2026-11-19T09:00:00Z,EUR,Low,Current Account,16.6B,8.7B
+2026-11-19T11:00:00Z,EUR,Low,German Buba Monthly Report,,
+2026-11-19T11:00:00Z,GBP,Low,CBI Industrial Order Expectations,-29,-32
+2026-11-19T12:15:00Z,GBP,Low,MPC Member Dhingra Speaks,,
+2026-11-19T13:30:00Z,CAD,Low,IPPI m/m,1.2%,2.0%
+2026-11-19T13:30:00Z,CAD,Low,RMPI m/m,2.0%,4.8%
+2026-11-19T13:30:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-11-19T13:30:00Z,USD,Medium,Philly Fed Manufacturing Index,19.2,20.9
+2026-11-19T13:30:00Z,USD,Medium,Unemployment Claims,199K,200K
+2026-11-19T13:50:00Z,USD,Low,FOMC Member Hammack Speaks,,
+2026-11-19T15:00:00Z,USD,Low,CB Leading Index m/m,0.0%,0.0%
+2026-11-19T15:15:00Z,USD,Low,Mortgage Delinquencies,,4.37%
+2026-11-19T15:30:00Z,USD,Low,Natural Gas Storage,,
+2026-11-19T17:30:00Z,USD,Low,FOMC Member Goolsbee Speaks,,
+2026-11-19T19:15:00Z,USD,Low,FOMC Member Barr Speaks,,
+2026-11-19T21:00:00Z,USD,Low,FOMC Member Barkin Speaks,,
+2026-11-19T23:30:00Z,JPY,Low,National Core CPI y/y,2.3%,2.1%
+2026-11-19T23:30:00Z,USD,Low,FOMC Member Paulson Speaks,,
+2026-11-20T00:01:00Z,GBP,Low,GfK Consumer Confidence,-22,-24
+2026-11-20T01:00:00Z,CNY,Low,1-y Loan Prime Rate,3.00%,3.00%
+2026-11-20T01:00:00Z,CNY,Low,5-y Loan Prime Rate,3.50%,3.50%
+2026-11-20T02:00:00Z,NZD,Low,Credit Card Spending y/y,,6.9%
+2026-11-20T07:00:00Z,EUR,Low,German PPI m/m,0.9%,1.9%
+2026-11-20T07:00:00Z,GBP,Low,Public Sector Net Borrowing,18.0B,24.5B
+2026-11-20T07:00:00Z,GBP,Medium,Retail Sales m/m,0.0%,-0.4%
+2026-11-20T08:15:00Z,EUR,Medium,ECB President Lagarde Speaks,,
+2026-11-20T13:00:00Z,EUR,Low,German Buba President Nagel Speaks,,
+2026-11-20T13:25:00Z,USD,Medium,FOMC Member Waller Speaks,,
+2026-11-20T13:30:00Z,CAD,Low,Core Retail Sales m/m,0.7%,1.2%
+2026-11-20T13:30:00Z,CAD,Low,Retail Sales m/m,0.7%,1.2%
+2026-11-20T15:00:00Z,EUR,Low,Consumer Confidence,-18,-18
+2026-11-20T15:00:00Z,USD,Medium,Revised UoM Consumer Sentiment,52.1,51.0
+2026-11-20T15:00:00Z,USD,Medium,Revised UoM Inflation Expectations,,4.3%
+2026-11-20T17:15:00Z,USD,Low,FOMC Member Cook Speaks,,

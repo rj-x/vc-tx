@@ -1,6 +1,6 @@
 {
   "STAMP": "OBSERVATIONAL seam & gap census \u2014 measurement, never validation; gap-fill folk strategy NOT registered (mint-on-lift only)",
-  "engine_commit": "8effbb323f93fa697e2d1361d585401e107cb9d0",
+  "engine_commit": "66be269975005d686c8ea1a68296294fe26ec8ae",
   "buckets_atr_FLAGGED": [
     0.25,
     1.0
@@ -10,7 +10,7 @@
       "instrument": "uk100fut",
       "spread_pts": 1.3,
       "status": "canonical",
-      "n_live_bars": 62648,
+      "n_live_bars": 112921,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -103,89 +103,89 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 5,
-            "median_abs_atr": 1.312,
-            "up_pct": 20.0,
-            "fill_pct": 80.0,
-            "fill_bars_median": 158.5,
+            "n": 12,
+            "median_abs_atr": 1.58,
+            "up_pct": 58.3,
+            "fill_pct": 83.3,
+            "fill_bars_median": 175.5,
             "persist": {
               "5": {
-                "n": 5,
-                "mean": -0.44,
-                "median": 0.7
+                "n": 12,
+                "mean": -1.22,
+                "median": 0.35
               },
               "10": {
-                "n": 5,
-                "mean": -2.42,
-                "median": 1.5
+                "n": 12,
+                "mean": -0.97,
+                "median": 0.85
               },
               "20": {
-                "n": 5,
-                "mean": -3.12,
-                "median": 0.2
+                "n": 12,
+                "mean": -1.3,
+                "median": -0.1
               },
               "30": {
-                "n": 5,
-                "mean": -4.16,
-                "median": 0.2
+                "n": 12,
+                "mean": 1.37,
+                "median": 1.05
               }
             }
           },
           "0.25-1": {
-            "n": 2,
-            "median_abs_atr": 0.344,
-            "up_pct": 50.0,
-            "fill_pct": 100.0,
-            "fill_bars_median": 386.5,
+            "n": 5,
+            "median_abs_atr": 0.538,
+            "up_pct": 80.0,
+            "fill_pct": 80.0,
+            "fill_bars_median": 320.0,
             "persist": {
               "5": {
-                "n": 2,
-                "mean": 0.65,
-                "median": 0.65
+                "n": 5,
+                "mean": 0.66,
+                "median": 0.7
               },
               "10": {
-                "n": 2,
-                "mean": 0.95,
-                "median": 0.95
+                "n": 5,
+                "mean": 1.54,
+                "median": 1.7
               },
               "20": {
-                "n": 2,
-                "mean": 0.95,
-                "median": 0.95
+                "n": 5,
+                "mean": 2.18,
+                "median": 1.7
               },
               "30": {
-                "n": 2,
-                "mean": 0.45,
-                "median": 0.45
+                "n": 5,
+                "mean": 4.38,
+                "median": 2.1
               }
             }
           },
           ">=1": {
-            "n": 3,
-            "median_abs_atr": 5.452,
-            "up_pct": 0.0,
-            "fill_pct": 66.7,
-            "fill_bars_median": 150.0,
+            "n": 7,
+            "median_abs_atr": 1.942,
+            "up_pct": 42.9,
+            "fill_pct": 85.7,
+            "fill_bars_median": 164.5,
             "persist": {
               "5": {
-                "n": 3,
-                "mean": -1.17,
-                "median": 0.7
+                "n": 7,
+                "mean": -2.56,
+                "median": -0.5
               },
               "10": {
-                "n": 3,
-                "mean": -4.67,
-                "median": 1.5
+                "n": 7,
+                "mean": -2.77,
+                "median": -0.5
               },
               "20": {
-                "n": 3,
-                "mean": -5.83,
-                "median": -0.4
+                "n": 7,
+                "mean": -3.79,
+                "median": -1.4
               },
               "30": {
-                "n": 3,
-                "mean": -7.23,
-                "median": -5.3
+                "n": 7,
+                "mean": -0.79,
+                "median": 0.1
               }
             }
           }
@@ -312,118 +312,118 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 36,
-            "median_abs_atr": 0.226,
-            "up_pct": 44.4,
-            "fill_pct": 72.2,
-            "fill_bars_median": 5.5,
+            "n": 93,
+            "median_abs_atr": 0.251,
+            "up_pct": 50.5,
+            "fill_pct": 77.4,
+            "fill_bars_median": 10.0,
             "persist": {
               "5": {
-                "n": 36,
-                "mean": -0.22,
+                "n": 93,
+                "mean": -0.5,
                 "median": 0.0
               },
               "10": {
-                "n": 36,
-                "mean": -0.36,
-                "median": -0.15
+                "n": 93,
+                "mean": -0.27,
+                "median": 0.0
               },
               "20": {
-                "n": 36,
-                "mean": 0.08,
-                "median": 0.2
+                "n": 93,
+                "mean": -0.0,
+                "median": 0.4
               },
               "30": {
-                "n": 36,
-                "mean": -0.95,
-                "median": -0.15
+                "n": 93,
+                "mean": -1.05,
+                "median": -0.2
               }
             }
           },
           "<0.25": {
-            "n": 19,
-            "median_abs_atr": 0.098,
-            "up_pct": 42.1,
-            "fill_pct": 73.7,
+            "n": 46,
+            "median_abs_atr": 0.108,
+            "up_pct": 37.0,
+            "fill_pct": 78.3,
             "fill_bars_median": 1.0,
             "persist": {
               "5": {
-                "n": 19,
-                "mean": 0.31,
-                "median": 0.4
+                "n": 46,
+                "mean": -0.27,
+                "median": 0.0
               },
               "10": {
-                "n": 19,
-                "mean": 0.19,
+                "n": 46,
+                "mean": -0.28,
                 "median": 0.0
               },
               "20": {
-                "n": 19,
-                "mean": 0.22,
+                "n": 46,
+                "mean": -0.19,
                 "median": 0.0
               },
               "30": {
-                "n": 19,
-                "mean": -0.63,
-                "median": 0.0
+                "n": 46,
+                "mean": -1.11,
+                "median": -0.05
               }
             }
           },
           "0.25-1": {
-            "n": 13,
-            "median_abs_atr": 0.392,
-            "up_pct": 46.2,
-            "fill_pct": 69.2,
-            "fill_bars_median": 27.0,
+            "n": 40,
+            "median_abs_atr": 0.514,
+            "up_pct": 65.0,
+            "fill_pct": 80.0,
+            "fill_bars_median": 60.5,
             "persist": {
               "5": {
-                "n": 13,
-                "mean": -0.27,
-                "median": -0.2
+                "n": 40,
+                "mean": -0.66,
+                "median": 0.35
               },
               "10": {
-                "n": 13,
-                "mean": -0.8,
-                "median": -0.9
+                "n": 40,
+                "mean": -0.26,
+                "median": 0.0
               },
               "20": {
-                "n": 13,
-                "mean": -0.12,
-                "median": 0.4
+                "n": 40,
+                "mean": 0.2,
+                "median": 0.5
               },
               "30": {
-                "n": 13,
-                "mean": -1.42,
-                "median": -0.5
+                "n": 40,
+                "mean": -1.38,
+                "median": -0.35
               }
             }
           },
           ">=1": {
-            "n": 4,
-            "median_abs_atr": 1.466,
-            "up_pct": 50.0,
-            "fill_pct": 75.0,
-            "fill_bars_median": 161.0,
+            "n": 7,
+            "median_abs_atr": 1.443,
+            "up_pct": 57.1,
+            "fill_pct": 57.1,
+            "fill_bars_median": 88.0,
             "persist": {
               "5": {
-                "n": 4,
-                "mean": -2.6,
-                "median": -2.35
+                "n": 7,
+                "mean": -1.11,
+                "median": -1.8
               },
               "10": {
-                "n": 4,
-                "mean": -1.6,
-                "median": -0.95
+                "n": 7,
+                "mean": -0.26,
+                "median": -0.2
               },
               "20": {
-                "n": 4,
-                "mean": 0.07,
-                "median": 0.75
+                "n": 7,
+                "mean": 0.04,
+                "median": 0.7
               },
               "30": {
-                "n": 4,
-                "mean": -0.95,
-                "median": -1.1
+                "n": 7,
+                "mean": 1.19,
+                "median": 0.7
               }
             }
           }
@@ -432,7 +432,7 @@
       "micro": {
         "backtest": {
           "n": 85,
-          "per_1000_bars": 1.36,
+          "per_1000_bars": 0.75,
           "median_abs_atr": 0.122,
           "session_share": {
             "asia": 37.6,
@@ -465,36 +465,36 @@
           }
         },
         "forward": {
-          "n": 74,
-          "per_1000_bars": 1.18,
-          "median_abs_atr": 0.282,
+          "n": 220,
+          "per_1000_bars": 1.95,
+          "median_abs_atr": 0.231,
           "session_share": {
-            "asia": 66.2,
+            "asia": 61.8,
             "dead": 2.7,
-            "london": 13.5,
-            "ny_only": 12.2,
-            "overlap": 5.4
+            "london": 13.2,
+            "ny_only": 10.0,
+            "overlap": 12.3
           },
           "persist": {
             "5": {
-              "n": 74,
-              "mean": 0.24,
-              "median": 0.2
+              "n": 220,
+              "mean": -0.06,
+              "median": 0.0
             },
             "10": {
-              "n": 74,
-              "mean": -0.15,
-              "median": -1.1
+              "n": 220,
+              "mean": -0.26,
+              "median": -0.15
             },
             "20": {
-              "n": 74,
-              "mean": -0.73,
-              "median": -0.2
+              "n": 220,
+              "mean": -0.3,
+              "median": 0.0
             },
             "30": {
-              "n": 74,
-              "mean": -0.83,
-              "median": 0.35
+              "n": 220,
+              "mean": 0.46,
+              "median": 0.2
             }
           }
         }
@@ -509,12 +509,12 @@
           "continuation_median_pts": -8.2
         },
         "forward": {
-          "n": 22,
-          "median_abs_atr": 3.122,
-          "up_pct": 54.5,
+          "n": 59,
+          "median_abs_atr": 3.609,
+          "up_pct": 54.2,
           "window_min": 30,
-          "continuation_mean_pts": -6.8,
-          "continuation_median_pts": -8.35
+          "continuation_mean_pts": 3.12,
+          "continuation_median_pts": -0.3
         }
       }
     },
@@ -522,7 +522,7 @@
       "instrument": "ger40fut",
       "spread_pts": 1.5,
       "status": "canonical",
-      "n_live_bars": 56575,
+      "n_live_bars": 106083,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -586,60 +586,60 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 5,
-            "median_abs_atr": 1.833,
-            "up_pct": 40.0,
-            "fill_pct": 40.0,
-            "fill_bars_median": 3.0,
-            "persist": {
-              "5": {
-                "n": 5,
-                "mean": -0.32,
-                "median": -1.2
-              },
-              "10": {
-                "n": 5,
-                "mean": -0.2,
-                "median": -0.6
-              },
-              "20": {
-                "n": 5,
-                "mean": -1.0,
-                "median": -0.6
-              },
-              "30": {
-                "n": 5,
-                "mean": -0.38,
-                "median": 0.4
-              }
-            }
-          },
-          ">=1": {
-            "n": 4,
-            "median_abs_atr": 2.055,
-            "up_pct": 25.0,
+            "n": 12,
+            "median_abs_atr": 1.954,
+            "up_pct": 66.7,
             "fill_pct": 25.0,
             "fill_bars_median": 3.0,
             "persist": {
               "5": {
-                "n": 4,
-                "mean": -0.1,
-                "median": 1.8
+                "n": 12,
+                "mean": 1.19,
+                "median": -0.25
               },
               "10": {
-                "n": 4,
-                "mean": -0.1,
-                "median": 1.05
+                "n": 12,
+                "mean": 2.49,
+                "median": -0.4
               },
               "20": {
-                "n": 4,
-                "mean": -0.65,
-                "median": 1.4
+                "n": 12,
+                "mean": 5.1,
+                "median": -0.05
               },
               "30": {
-                "n": 4,
-                "mean": 0.33,
+                "n": 12,
+                "mean": 4.48,
                 "median": 1.1
+              }
+            }
+          },
+          ">=1": {
+            "n": 11,
+            "median_abs_atr": 2.07,
+            "up_pct": 63.6,
+            "fill_pct": 18.2,
+            "fill_bars_median": 41.5,
+            "persist": {
+              "5": {
+                "n": 11,
+                "mean": 1.41,
+                "median": 0.0
+              },
+              "10": {
+                "n": 11,
+                "mean": 2.77,
+                "median": -0.3
+              },
+              "20": {
+                "n": 11,
+                "mean": 5.78,
+                "median": 0.5
+              },
+              "30": {
+                "n": 11,
+                "mean": 5.17,
+                "median": 1.8
               }
             }
           },
@@ -795,118 +795,118 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 64,
-            "median_abs_atr": 0.448,
-            "up_pct": 54.7,
-            "fill_pct": 70.3,
-            "fill_bars_median": 4.0,
+            "n": 170,
+            "median_abs_atr": 0.407,
+            "up_pct": 52.4,
+            "fill_pct": 68.8,
+            "fill_bars_median": 5.0,
             "persist": {
               "5": {
-                "n": 64,
-                "mean": 0.01,
-                "median": -0.6
+                "n": 170,
+                "mean": 0.68,
+                "median": -0.2
               },
               "10": {
-                "n": 64,
-                "mean": -0.3,
-                "median": -0.3
+                "n": 170,
+                "mean": 0.87,
+                "median": 0.0
               },
               "20": {
-                "n": 64,
-                "mean": 0.83,
-                "median": 0.4
+                "n": 170,
+                "mean": 1.6,
+                "median": 1.05
               },
               "30": {
-                "n": 64,
-                "mean": 0.85,
-                "median": -0.3
+                "n": 170,
+                "mean": 1.33,
+                "median": 0.55
               }
             }
           },
           "<0.25": {
-            "n": 21,
-            "median_abs_atr": 0.111,
-            "up_pct": 52.4,
-            "fill_pct": 81.0,
+            "n": 59,
+            "median_abs_atr": 0.117,
+            "up_pct": 52.5,
+            "fill_pct": 79.7,
             "fill_bars_median": 0.0,
             "persist": {
               "5": {
-                "n": 21,
-                "mean": -1.07,
-                "median": -0.6
+                "n": 59,
+                "mean": -0.79,
+                "median": -0.3
               },
               "10": {
-                "n": 21,
-                "mean": -0.96,
+                "n": 59,
+                "mean": -0.97,
                 "median": 0.0
               },
               "20": {
-                "n": 21,
-                "mean": -0.08,
+                "n": 59,
+                "mean": -0.46,
                 "median": 0.0
               },
               "30": {
-                "n": 21,
-                "mean": 0.21,
+                "n": 59,
+                "mean": -2.21,
                 "median": -0.9
               }
             }
           },
           "0.25-1": {
-            "n": 28,
-            "median_abs_atr": 0.578,
-            "up_pct": 60.7,
-            "fill_pct": 60.7,
+            "n": 72,
+            "median_abs_atr": 0.469,
+            "up_pct": 61.1,
+            "fill_pct": 56.9,
             "fill_bars_median": 15.0,
             "persist": {
               "5": {
-                "n": 28,
-                "mean": 0.24,
-                "median": -0.3
+                "n": 72,
+                "mean": 1.72,
+                "median": 1.0
               },
               "10": {
-                "n": 28,
-                "mean": -0.03,
-                "median": -0.35
+                "n": 72,
+                "mean": 2.79,
+                "median": 0.6
               },
               "20": {
-                "n": 28,
-                "mean": 0.17,
-                "median": 0.95
+                "n": 72,
+                "mean": 2.75,
+                "median": 3.35
               },
               "30": {
-                "n": 28,
-                "mean": -1.44,
-                "median": -0.95
+                "n": 72,
+                "mean": 2.88,
+                "median": 2.6
               }
             }
           },
           ">=1": {
-            "n": 15,
-            "median_abs_atr": 1.818,
-            "up_pct": 46.7,
-            "fill_pct": 73.3,
-            "fill_bars_median": 21.0,
+            "n": 39,
+            "median_abs_atr": 1.544,
+            "up_pct": 35.9,
+            "fill_pct": 74.4,
+            "fill_bars_median": 64.0,
             "persist": {
               "5": {
-                "n": 15,
-                "mean": 1.08,
-                "median": -1.8
+                "n": 39,
+                "mean": 0.97,
+                "median": -0.8
               },
               "10": {
-                "n": 15,
-                "mean": 0.13,
+                "n": 39,
+                "mean": 0.11,
                 "median": -0.6
               },
               "20": {
-                "n": 15,
-                "mean": 3.32,
-                "median": 6.1
+                "n": 39,
+                "mean": 2.57,
+                "median": -3.9
               },
               "30": {
-                "n": 15,
-                "mean": 6.01,
-                "median": 4.1
+                "n": 39,
+                "mean": 3.81,
+                "median": 3.4
               }
             }
           }
@@ -915,7 +915,7 @@
       "micro": {
         "backtest": {
           "n": 257,
-          "per_1000_bars": 4.54,
+          "per_1000_bars": 2.42,
           "median_abs_atr": 0.079,
           "session_share": {
             "asia": 93.0,
@@ -947,35 +947,35 @@
           }
         },
         "forward": {
-          "n": 129,
-          "per_1000_bars": 2.28,
-          "median_abs_atr": 0.148,
+          "n": 268,
+          "per_1000_bars": 2.53,
+          "median_abs_atr": 0.127,
           "session_share": {
-            "asia": 82.2,
-            "dead": 9.3,
-            "london": 5.4,
-            "ny_only": 2.3,
-            "overlap": 0.8
+            "asia": 76.1,
+            "dead": 11.2,
+            "london": 7.5,
+            "ny_only": 4.1,
+            "overlap": 1.1
           },
           "persist": {
             "5": {
-              "n": 129,
-              "mean": -0.52,
-              "median": -0.7
+              "n": 268,
+              "mean": -0.77,
+              "median": -0.6
             },
             "10": {
-              "n": 129,
-              "mean": -0.0,
+              "n": 268,
+              "mean": -0.24,
               "median": -0.6
             },
             "20": {
-              "n": 129,
-              "mean": -0.32,
-              "median": -0.2
+              "n": 268,
+              "mean": -0.28,
+              "median": -0.6
             },
             "30": {
-              "n": 129,
-              "mean": -0.6,
+              "n": 268,
+              "mean": -0.41,
               "median": 0.4
             }
           }
@@ -991,12 +991,12 @@
           "continuation_median_pts": 43.95
         },
         "forward": {
-          "n": 23,
-          "median_abs_atr": 2.855,
-          "up_pct": 52.2,
+          "n": 60,
+          "median_abs_atr": 3.327,
+          "up_pct": 53.3,
           "window_min": 30,
-          "continuation_mean_pts": -11.1,
-          "continuation_median_pts": -11.8
+          "continuation_mean_pts": -0.25,
+          "continuation_median_pts": 2.65
         }
       }
     },
@@ -1004,7 +1004,7 @@
       "instrument": "nas100fut",
       "spread_pts": 1.8,
       "status": "canonical",
-      "n_live_bars": 58558,
+      "n_live_bars": 109659,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -1068,89 +1068,89 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 5,
-            "median_abs_atr": 1.162,
-            "up_pct": 80.0,
-            "fill_pct": 60.0,
-            "fill_bars_median": 2.0,
+            "n": 12,
+            "median_abs_atr": 1.175,
+            "up_pct": 66.7,
+            "fill_pct": 75.0,
+            "fill_bars_median": 85.0,
             "persist": {
               "5": {
-                "n": 5,
-                "mean": 3.48,
-                "median": 14.2
+                "n": 12,
+                "mean": -9.94,
+                "median": -8.0
               },
               "10": {
-                "n": 5,
-                "mean": 3.76,
-                "median": 12.4
+                "n": 12,
+                "mean": -10.64,
+                "median": 3.1
               },
               "20": {
-                "n": 5,
-                "mean": 5.04,
-                "median": 13.0
+                "n": 12,
+                "mean": -13.28,
+                "median": 7.75
               },
               "30": {
-                "n": 5,
-                "mean": -4.02,
-                "median": 11.2
+                "n": 12,
+                "mean": -17.02,
+                "median": -5.5
               }
             }
           },
           ">=1": {
-            "n": 3,
-            "median_abs_atr": 1.675,
-            "up_pct": 66.7,
-            "fill_pct": 33.3,
-            "fill_bars_median": 1153.0,
+            "n": 7,
+            "median_abs_atr": 1.54,
+            "up_pct": 57.1,
+            "fill_pct": 57.1,
+            "fill_bars_median": 602.0,
             "persist": {
               "5": {
-                "n": 3,
-                "mean": 37.8,
-                "median": 23.6
+                "n": 7,
+                "mean": 6.33,
+                "median": -4.4
               },
               "10": {
-                "n": 3,
-                "mean": 42.53,
-                "median": 20.0
+                "n": 7,
+                "mean": 10.46,
+                "median": 12.4
               },
               "20": {
-                "n": 3,
-                "mean": 27.13,
-                "median": 19.4
+                "n": 7,
+                "mean": 0.94,
+                "median": 13.0
               },
               "30": {
-                "n": 3,
-                "mean": 14.9,
-                "median": 14.9
+                "n": 7,
+                "mean": -6.06,
+                "median": 11.2
               }
             }
           },
           "0.25-1": {
-            "n": 2,
-            "median_abs_atr": 0.28,
-            "up_pct": 100.0,
+            "n": 5,
+            "median_abs_atr": 0.319,
+            "up_pct": 80.0,
             "fill_pct": 100.0,
-            "fill_bars_median": 1.0,
+            "fill_bars_median": 2.0,
             "persist": {
               "5": {
-                "n": 2,
-                "mean": -48.0,
-                "median": -48.0
+                "n": 5,
+                "mean": -32.72,
+                "median": -36.0
               },
               "10": {
-                "n": 2,
-                "mean": -54.4,
-                "median": -54.4
+                "n": 5,
+                "mean": -40.18,
+                "median": -52.3
               },
               "20": {
-                "n": 2,
-                "mean": -28.1,
-                "median": -28.1
+                "n": 5,
+                "mean": -33.2,
+                "median": -14.7
               },
               "30": {
-                "n": 2,
-                "mean": -32.4,
-                "median": -32.4
+                "n": 5,
+                "mean": -32.38,
+                "median": -30.1
               }
             }
           }
@@ -1277,118 +1277,118 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 18,
-            "median_abs_atr": 0.171,
-            "up_pct": 61.1,
-            "fill_pct": 100.0,
+            "n": 48,
+            "median_abs_atr": 0.238,
+            "up_pct": 68.8,
+            "fill_pct": 93.8,
             "fill_bars_median": 2.0,
             "persist": {
               "5": {
-                "n": 18,
-                "mean": 2.4,
-                "median": 1.8
+                "n": 48,
+                "mean": 3.27,
+                "median": 3.5
               },
               "10": {
-                "n": 18,
-                "mean": 4.01,
+                "n": 48,
+                "mean": -1.54,
                 "median": 4.4
               },
               "20": {
-                "n": 18,
-                "mean": 8.02,
-                "median": 4.8
+                "n": 48,
+                "mean": 0.49,
+                "median": 11.5
               },
               "30": {
-                "n": 18,
-                "mean": 1.04,
-                "median": -1.75
+                "n": 48,
+                "mean": -1.92,
+                "median": 1.6
               }
             }
           },
           "<0.25": {
-            "n": 10,
-            "median_abs_atr": 0.119,
-            "up_pct": 50.0,
+            "n": 25,
+            "median_abs_atr": 0.133,
+            "up_pct": 68.0,
             "fill_pct": 100.0,
-            "fill_bars_median": 1.5,
+            "fill_bars_median": 0.0,
             "persist": {
               "5": {
-                "n": 10,
-                "mean": 8.7,
-                "median": 6.45
+                "n": 25,
+                "mean": 1.95,
+                "median": 5.1
               },
               "10": {
-                "n": 10,
-                "mean": 9.73,
-                "median": 8.3
+                "n": 25,
+                "mean": -4.16,
+                "median": 6.2
               },
               "20": {
-                "n": 10,
-                "mean": 11.63,
-                "median": 4.8
+                "n": 25,
+                "mean": -5.85,
+                "median": 11.2
               },
               "30": {
-                "n": 10,
-                "mean": 6.45,
-                "median": 0.05
+                "n": 25,
+                "mean": -7.79,
+                "median": 1.8
               }
             }
           },
           "0.25-1": {
-            "n": 6,
-            "median_abs_atr": 0.352,
-            "up_pct": 66.7,
-            "fill_pct": 100.0,
-            "fill_bars_median": 1.0,
+            "n": 20,
+            "median_abs_atr": 0.397,
+            "up_pct": 65.0,
+            "fill_pct": 90.0,
+            "fill_bars_median": 2.0,
             "persist": {
               "5": {
-                "n": 6,
-                "mean": -13.55,
-                "median": -9.8
+                "n": 20,
+                "mean": 3.35,
+                "median": 0.55
               },
               "10": {
-                "n": 6,
-                "mean": -12.55,
-                "median": -8.9
+                "n": 20,
+                "mean": -1.11,
+                "median": -6.2
               },
               "20": {
-                "n": 6,
-                "mean": -11.13,
-                "median": -9.0
+                "n": 20,
+                "mean": 2.84,
+                "median": 3.45
               },
               "30": {
-                "n": 6,
-                "mean": -23.7,
-                "median": -21.3
+                "n": 20,
+                "mean": -2.54,
+                "median": -5.5
               }
             }
           },
           ">=1": {
-            "n": 2,
-            "median_abs_atr": 1.343,
+            "n": 3,
+            "median_abs_atr": 1.592,
             "up_pct": 100.0,
-            "fill_pct": 100.0,
+            "fill_pct": 66.7,
             "fill_bars_median": 309.0,
             "persist": {
               "5": {
-                "n": 2,
-                "mean": 18.75,
-                "median": 18.75
+                "n": 3,
+                "mean": 13.73,
+                "median": 3.7
               },
               "10": {
-                "n": 2,
-                "mean": 25.1,
-                "median": 25.1
+                "n": 3,
+                "mean": 17.53,
+                "median": 2.4
               },
               "20": {
-                "n": 2,
-                "mean": 47.4,
-                "median": 47.4
+                "n": 3,
+                "mean": 37.73,
+                "median": 18.4
               },
               "30": {
-                "n": 2,
-                "mean": 48.25,
-                "median": 48.25
+                "n": 3,
+                "mean": 51.13,
+                "median": 56.9
               }
             }
           }
@@ -1397,7 +1397,7 @@
       "micro": {
         "backtest": {
           "n": 10,
-          "per_1000_bars": 0.17,
+          "per_1000_bars": 0.09,
           "median_abs_atr": 0.053,
           "session_share": {
             "dead": 40.0,
@@ -1429,36 +1429,36 @@
           }
         },
         "forward": {
-          "n": 18,
-          "per_1000_bars": 0.31,
-          "median_abs_atr": 0.095,
+          "n": 79,
+          "per_1000_bars": 0.72,
+          "median_abs_atr": 0.071,
           "session_share": {
-            "asia": 11.1,
-            "dead": 22.2,
-            "london": 38.9,
-            "ny_only": 22.2,
-            "overlap": 5.6
+            "asia": 8.9,
+            "dead": 15.2,
+            "london": 21.5,
+            "ny_only": 12.7,
+            "overlap": 41.8
           },
           "persist": {
             "5": {
-              "n": 18,
-              "mean": -14.7,
-              "median": -6.15
+              "n": 79,
+              "mean": 4.6,
+              "median": -1.0
             },
             "10": {
-              "n": 18,
-              "mean": -13.63,
-              "median": -10.0
+              "n": 79,
+              "mean": 8.49,
+              "median": 7.5
             },
             "20": {
-              "n": 18,
-              "mean": -18.89,
-              "median": -4.85
+              "n": 79,
+              "mean": 14.14,
+              "median": 11.3
             },
             "30": {
-              "n": 18,
-              "mean": -13.97,
-              "median": -10.4
+              "n": 79,
+              "mean": 23.28,
+              "median": 17.3
             }
           }
         }
@@ -1473,12 +1473,12 @@
           "continuation_median_pts": -20.9
         },
         "forward": {
-          "n": 23,
-          "median_abs_atr": 2.827,
-          "up_pct": 47.8,
+          "n": 60,
+          "median_abs_atr": 3.42,
+          "up_pct": 50.0,
           "window_min": 30,
-          "continuation_mean_pts": -13.67,
-          "continuation_median_pts": 4.0
+          "continuation_mean_pts": 16.58,
+          "continuation_median_pts": 4.85
         }
       }
     },
@@ -1486,7 +1486,7 @@
       "instrument": "us30fut",
       "spread_pts": 2.6,
       "status": "canonical",
-      "n_live_bars": 58510,
+      "n_live_bars": 109596,
       "weekend": {
         "backtest": {
           "ALL (base row)": {
@@ -1550,89 +1550,118 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 5,
-            "median_abs_atr": 1.328,
-            "up_pct": 40.0,
-            "fill_pct": 60.0,
-            "fill_bars_median": 146.0,
+            "n": 12,
+            "median_abs_atr": 1.173,
+            "up_pct": 50.0,
+            "fill_pct": 66.7,
+            "fill_bars_median": 49.0,
             "persist": {
               "5": {
-                "n": 5,
-                "mean": 2.74,
-                "median": 16.5
+                "n": 12,
+                "mean": -4.1,
+                "median": -1.0
               },
               "10": {
-                "n": 5,
-                "mean": 8.74,
-                "median": 4.6
+                "n": 12,
+                "mean": 0.6,
+                "median": -2.65
               },
               "20": {
-                "n": 5,
-                "mean": 0.14,
-                "median": -22.0
+                "n": 12,
+                "mean": -3.72,
+                "median": -10.45
               },
               "30": {
-                "n": 5,
-                "mean": -12.24,
-                "median": -17.5
+                "n": 12,
+                "mean": -5.3,
+                "median": -11.45
               }
             }
           },
           "0.25-1": {
-            "n": 2,
-            "median_abs_atr": 0.489,
-            "up_pct": 100.0,
+            "n": 3,
+            "median_abs_atr": 0.522,
+            "up_pct": 66.7,
             "fill_pct": 100.0,
-            "fill_bars_median": 73.0,
+            "fill_bars_median": 11.0,
             "persist": {
               "5": {
-                "n": 2,
-                "mean": -9.0,
-                "median": -9.0
+                "n": 3,
+                "mean": -9.33,
+                "median": -10.0
               },
               "10": {
-                "n": 2,
-                "mean": 1.0,
-                "median": 1.0
+                "n": 3,
+                "mean": -9.53,
+                "median": -23.5
               },
               "20": {
-                "n": 2,
-                "mean": -1.15,
-                "median": -1.15
+                "n": 3,
+                "mean": -18.3,
+                "median": -30.9
               },
               "30": {
-                "n": 2,
-                "mean": -3.15,
-                "median": -3.15
+                "n": 3,
+                "mean": -31.63,
+                "median": -31.4
               }
             }
           },
           ">=1": {
-            "n": 3,
-            "median_abs_atr": 3.85,
-            "up_pct": 0.0,
-            "fill_pct": 33.3,
+            "n": 7,
+            "median_abs_atr": 1.463,
+            "up_pct": 42.9,
+            "fill_pct": 42.9,
             "fill_bars_median": 224.0,
             "persist": {
               "5": {
-                "n": 3,
-                "mean": 10.57,
-                "median": 26.6
+                "n": 7,
+                "mean": -1.1,
+                "median": 8.0
               },
               "10": {
-                "n": 3,
-                "mean": 13.9,
+                "n": 7,
+                "mean": 5.9,
                 "median": 4.6
               },
               "20": {
-                "n": 3,
-                "mean": 1.0,
-                "median": -22.0
+                "n": 7,
+                "mean": 1.73,
+                "median": -8.9
               },
               "30": {
-                "n": 3,
-                "mean": -18.3,
-                "median": -17.5
+                "n": 7,
+                "mean": 5.39,
+                "median": -5.4
+              }
+            }
+          },
+          "<0.25": {
+            "n": 2,
+            "median_abs_atr": 0.11,
+            "up_pct": 50.0,
+            "fill_pct": 100.0,
+            "fill_bars_median": 0.0,
+            "persist": {
+              "5": {
+                "n": 2,
+                "mean": -6.75,
+                "median": -6.75
+              },
+              "10": {
+                "n": 2,
+                "mean": -2.75,
+                "median": -2.75
+              },
+              "20": {
+                "n": 2,
+                "mean": -0.95,
+                "median": -0.95
+              },
+              "30": {
+                "n": 2,
+                "mean": -3.2,
+                "median": -3.2
               }
             }
           }
@@ -1730,89 +1759,118 @@
         },
         "forward": {
           "ALL (base row)": {
-            "n": 18,
-            "median_abs_atr": 0.162,
-            "up_pct": 55.6,
-            "fill_pct": 100.0,
+            "n": 48,
+            "median_abs_atr": 0.169,
+            "up_pct": 58.3,
+            "fill_pct": 97.9,
             "fill_bars_median": 0.0,
             "persist": {
               "5": {
-                "n": 18,
-                "mean": -5.31,
-                "median": -5.3
+                "n": 48,
+                "mean": -5.62,
+                "median": -6.35
               },
               "10": {
-                "n": 18,
-                "mean": -6.73,
-                "median": -6.5
+                "n": 48,
+                "mean": -7.46,
+                "median": -8.1
               },
               "20": {
-                "n": 18,
-                "mean": -6.47,
+                "n": 48,
+                "mean": -4.86,
                 "median": -0.5
               },
               "30": {
-                "n": 18,
-                "mean": -9.69,
-                "median": -4.7
+                "n": 48,
+                "mean": -3.86,
+                "median": -3.7
               }
             }
           },
           "<0.25": {
-            "n": 14,
-            "median_abs_atr": 0.127,
-            "up_pct": 50.0,
+            "n": 31,
+            "median_abs_atr": 0.134,
+            "up_pct": 58.1,
             "fill_pct": 100.0,
             "fill_bars_median": 0.0,
             "persist": {
               "5": {
-                "n": 14,
-                "mean": -1.24,
-                "median": -2.75
+                "n": 31,
+                "mean": -5.88,
+                "median": -4.5
               },
               "10": {
-                "n": 14,
-                "mean": -4.47,
-                "median": -4.1
+                "n": 31,
+                "mean": -9.94,
+                "median": -7.1
               },
               "20": {
-                "n": 14,
-                "mean": -5.25,
-                "median": -0.5
+                "n": 31,
+                "mean": -8.39,
+                "median": -4.9
               },
               "30": {
-                "n": 14,
-                "mean": -7.83,
-                "median": -2.65
+                "n": 31,
+                "mean": -6.61,
+                "median": -3.4
               }
             }
           },
           "0.25-1": {
-            "n": 4,
+            "n": 16,
             "median_abs_atr": 0.354,
-            "up_pct": 75.0,
+            "up_pct": 56.2,
             "fill_pct": 100.0,
             "fill_bars_median": 0.0,
             "persist": {
               "5": {
-                "n": 4,
-                "mean": -19.55,
-                "median": -18.55
+                "n": 16,
+                "mean": -5.83,
+                "median": -12.45
               },
               "10": {
-                "n": 4,
-                "mean": -14.65,
-                "median": -14.5
+                "n": 16,
+                "mean": -3.41,
+                "median": -10.3
               },
               "20": {
-                "n": 4,
-                "mean": -10.75,
-                "median": -9.45
+                "n": 16,
+                "mean": 0.02,
+                "median": 2.6
               },
               "30": {
-                "n": 4,
-                "mean": -16.23,
-                "median": -13.4
+                "n": 16,
+                "mean": -1.34,
+                "median": -4.7
+              }
+            }
+          },
+          ">=1": {
+            "n": 1,
+            "median_abs_atr": 2.777,
+            "up_pct": 100.0,
+            "fill_pct": 0.0,
+            "fill_bars_median": null,
+            "persist": {
+              "5": {
+                "n": 1,
+                "mean": 5.5,
+                "median": 5.5
+              },
+              "10": {
+                "n": 1,
+                "mean": 4.5,
+                "median": 4.5
+              },
+              "20": {
+                "n": 1,
+                "mean": 26.6,
+                "median": 26.6
+              },
+              "30": {
+                "n": 1,
+                "mean": 41.1,
+                "median": 41.1
               }
             }
           }
@@ -1821,7 +1879,7 @@
       "micro": {
         "backtest": {
           "n": 41,
-          "per_1000_bars": 0.7,
+          "per_1000_bars": 0.37,
           "median_abs_atr": 0.065,
           "session_share": {
             "asia": 7.3,
@@ -1854,35 +1912,35 @@
           }
         },
         "forward": {
-          "n": 42,
-          "per_1000_bars": 0.72,
-          "median_abs_atr": 0.089,
+          "n": 174,
+          "per_1000_bars": 1.59,
+          "median_abs_atr": 0.083,
           "session_share": {
-            "asia": 21.4,
-            "dead": 45.2,
-            "london": 16.7,
-            "overlap": 16.7
+            "asia": 14.9,
+            "dead": 42.0,
+            "london": 17.2,
+            "overlap": 25.9
           },
           "persist": {
             "5": {
-              "n": 42,
-              "mean": -0.87,
-              "median": -2.0
+              "n": 174,
+              "mean": -0.01,
+              "median": -1.55
             },
             "10": {
-              "n": 42,
-              "mean": -3.27,
-              "median": -2.6
+              "n": 174,
+              "mean": 2.56,
+              "median": -1.8
             },
             "20": {
-              "n": 42,
-              "mean": -9.12,
-              "median": -7.3
+              "n": 174,
+              "mean": 0.93,
+              "median": -6.75
             },
             "30": {
-              "n": 42,
-              "mean": -12.8,
-              "median": -9.25
+              "n": 174,
+              "mean": -2.61,
+              "median": -6.3
             }
           }
         }
@@ -1897,12 +1955,12 @@
           "continuation_median_pts": -86.0
         },
         "forward": {
-          "n": 23,
-          "median_abs_atr": 3.495,
-          "up_pct": 34.8,
+          "n": 60,
+          "median_abs_atr": 3.364,
+          "up_pct": 45.0,
           "window_min": 30,
-          "continuation_mean_pts": 14.52,
-          "continuation_median_pts": 5.1
+          "continuation_mean_pts": -23.99,
+          "continuation_median_pts": 6.55
         }
       }
     }

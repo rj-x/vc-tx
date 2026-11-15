@@ -2,188 +2,206 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_cofire_census). QUESTION: does cross-family agreement buy precision worth its coverage cost? Confirming fire = same-direction, within [t-w, t]. Joint n<20 dimmed (°); n<10 UNMEASURABLE (reported, never read). Any pair with real lift becomes a registered composite (H13+) BEFORE any row exists.
+Engine `66be26997` — OBSERVATIONAL, pre-registered (prereg_cofire_census). QUESTION: does cross-family agreement buy precision worth its coverage cost? Confirming fire = same-direction, within [t-w, t]. Joint n<20 dimmed (°); n<10 UNMEASURABLE (reported, never read). Any pair with real lift becomes a registered composite (H13+) BEFORE any row exists.
 
 ## uk100fut (CANONICAL)
 
 | pair | w | window | with: pct (hits/n) | without: pct (hits/n) | Δpp |
 |---|---|---|---|---|---|
+| S0-H1->S0-H3 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 24.9% (132/530) | -24.9 |
 | S0-H1->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 23.5% (16/68) | -23.5 |
-| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 24.3% (49/202) | -24.3 |
+| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 25.0% (132/529) | -25.0 |
 | S0-H1->S0-H7 | w15 | backtest | UNMEASURABLE 42.9% (3/7) | 21.0% (13/62) | +21.9 |
-| S0-H1->S0-H7 | w15 | forward | UNMEASURABLE 12.5% (1/8) | 24.6% (48/195) | -12.1 |
+| S0-H1->S0-H7 | w15 | forward | (°15.4% (2/13)) | 25.1% (130/518) | -9.7 |
 | S0-H1->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (3/3) | 19.7% (13/66) | +80.3 |
+| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 40.0% (2/5) | 24.7% (130/526) | +15.3 |
 | S0-H1->S0-H9 | w15 | backtest | UNMEASURABLE 100.0% (4/4) | 18.5% (12/65) | +81.5 |
-| S0-H1->S0-H9 | w15 | forward | UNMEASURABLE 0.0% (0/5) | 24.7% (49/198) | -24.7 |
-| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 50.0% (1/2) | 23.1% (169/731) | +26.9 |
-| S0-H2->S0-H3 | w15 | forward | UNMEASURABLE 20.0% (1/5) | 23.2% (169/728) | -3.2 |
-| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 24.9% (86/345) | -24.9 |
-| S0-H2->S0-H7 | w5 | forward | UNMEASURABLE 11.1% (1/9) | 23.3% (169/724) | -12.2 |
-| S0-H2->S0-H7 | w15 | backtest | (°22.2% (4/18)) | 24.9% (82/329) | -2.7 |
-| S0-H2->S0-H7 | w15 | forward | 17.9% (5/28) | 23.4% (165/705) | -5.5 |
-| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 60.0% (3/5) | 24.3% (83/342) | +35.7 |
-| S0-H2->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/8) | 23.4% (170/725) | -23.4 |
-| S0-H2->S0-H9 | w15 | backtest | UNMEASURABLE 50.0% (4/8) | 24.2% (82/339) | +25.8 |
-| S0-H2->S0-H9 | w15 | forward | 4.3% (1/23) | 23.8% (169/710) | -19.5 |
-| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 35.0% (7/20) | -35.0 |
-| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 36.8% (7/19) | -36.8 |
-| S0-H3->S0-H2 | w15 | forward | UNMEASURABLE 25.0% (2/8) | 38.5% (5/13) | -13.5 |
-| S0-H3->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 35.0% (7/20) | -35.0 |
-| S0-H7->S0-H1 | w5 | backtest | UNMEASURABLE 50.0% (1/2) | 30.9% (34/110) | +19.1 |
-| S0-H7->S0-H1 | w15 | backtest | UNMEASURABLE 20.0% (1/5) | 31.8% (34/107) | -11.8 |
-| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 44.4% (4/9) | 27.5% (46/167) | +16.9 |
-| S0-H7->S0-H2 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 31.8% (35/110) | -31.8 |
-| S0-H7->S0-H2 | w5 | forward | (°18.2% (2/11)) | 29.1% (48/165) | -10.9 |
-| S0-H7->S0-H2 | w15 | backtest | (°9.1% (1/11)) | 33.7% (34/101) | -24.6 |
-| S0-H7->S0-H2 | w15 | forward | 19.2% (5/26) | 30.0% (45/150) | -10.8 |
-| S0-H7->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 30.6% (34/111) | +69.4 |
-| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 28.6% (50/175) | -28.6 |
-| S0-H7->S0-H9 | w15 | backtest | UNMEASURABLE 100.0% (2/2) | 30.0% (33/110) | +70.0 |
-| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 0.0% (0/4) | 29.1% (50/172) | -29.1 |
+| S0-H1->S0-H9 | w15 | forward | (°20.0% (3/15)) | 25.0% (129/516) | -5.0 |
+| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 28.6% (2/7) | 23.9% (533/2226) | +4.7 |
+| S0-H2->S0-H3 | w15 | forward | (°26.7% (4/15)) | 23.9% (531/2218) | +2.8 |
+| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 25.2% (87/345) | -25.2 |
+| S0-H2->S0-H7 | w5 | forward | (°25.0% (4/16)) | 24.0% (531/2217) | +1.0 |
+| S0-H2->S0-H7 | w15 | backtest | (°22.2% (4/18)) | 25.2% (83/329) | -3.0 |
+| S0-H2->S0-H7 | w15 | forward | 32.2% (19/59) | 23.7% (516/2174) | +8.5 |
+| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 60.0% (3/5) | 24.6% (84/342) | +35.4 |
+| S0-H2->S0-H9 | w5 | forward | 11.8% (4/34) | 24.1% (531/2199) | -12.3 |
+| S0-H2->S0-H9 | w15 | backtest | UNMEASURABLE 50.0% (4/8) | 24.5% (83/339) | +25.5 |
+| S0-H2->S0-H9 | w15 | forward | 19.2% (20/104) | 24.2% (515/2129) | -5.0 |
+| S0-H3->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 30.6% (15/49) | -30.6 |
+| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/2) | 31.2% (15/48) | -31.2 |
+| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 50.0% (2/4) | 28.3% (13/46) | +21.7 |
+| S0-H3->S0-H2 | w15 | forward | (°35.7% (5/14)) | 27.8% (10/36) | +7.9 |
+| S0-H3->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 30.6% (15/49) | -30.6 |
+| S0-H7->S0-H1 | w5 | backtest | UNMEASURABLE 50.0% (1/2) | 31.8% (35/110) | +18.2 |
+| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/4) | 28.5% (123/431) | -28.5 |
+| S0-H7->S0-H1 | w15 | backtest | UNMEASURABLE 20.0% (1/5) | 32.7% (35/107) | -12.7 |
+| S0-H7->S0-H1 | w15 | forward | (°33.3% (6/18)) | 28.1% (117/417) | +5.2 |
+| S0-H7->S0-H2 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 32.7% (36/110) | -32.7 |
+| S0-H7->S0-H2 | w5 | forward | 25.0% (6/24) | 28.5% (117/411) | -3.5 |
+| S0-H7->S0-H2 | w15 | backtest | (°18.2% (2/11)) | 33.7% (34/101) | -15.5 |
+| S0-H7->S0-H2 | w15 | forward | 24.2% (15/62) | 29.0% (108/373) | -4.8 |
+| S0-H7->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 31.5% (35/111) | +68.5 |
+| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 28.4% (123/433) | -28.4 |
+| S0-H7->S0-H9 | w15 | backtest | UNMEASURABLE 100.0% (2/2) | 30.9% (34/110) | +69.1 |
+| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 16.7% (1/6) | 28.4% (122/429) | -11.7 |
 | S0-H9->S0-H1 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 27.8% (15/54) | +72.2 |
-| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 17.9% (14/78) | -17.9 |
+| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 24.1% (74/307) | -24.1 |
 | S0-H9->S0-H1 | w15 | backtest | UNMEASURABLE 50.0% (1/2) | 28.3% (15/53) | +21.7 |
-| S0-H9->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/6) | 19.2% (14/73) | -19.2 |
+| S0-H9->S0-H1 | w15 | forward | 10.0% (2/20) | 25.0% (72/288) | -15.0 |
 | S0-H9->S0-H2 | w5 | backtest | UNMEASURABLE 75.0% (6/8) | 21.3% (10/47) | +53.7 |
-| S0-H9->S0-H2 | w5 | forward | (°10.5% (2/19)) | 20.0% (12/60) | -9.5 |
+| S0-H9->S0-H2 | w5 | forward | 19.4% (13/67) | 25.3% (61/241) | -5.9 |
 | S0-H9->S0-H2 | w15 | backtest | (°66.7% (8/12)) | 18.6% (8/43) | +48.1 |
-| S0-H9->S0-H2 | w15 | forward | 16.7% (4/24) | 18.2% (10/55) | -1.5 |
+| S0-H9->S0-H2 | w15 | forward | 24.5% (23/94) | 23.8% (51/214) | +0.7 |
 | S0-H9->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/1) | 29.6% (16/54) | -29.6 |
-| S0-H9->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 17.9% (14/78) | -17.9 |
+| S0-H9->S0-H7 | w15 | forward | UNMEASURABLE 50.0% (2/4) | 23.7% (72/304) | +26.3 |
 
 ## ger40fut (CANONICAL)
 
 | pair | w | window | with: pct (hits/n) | without: pct (hits/n) | Δpp |
 |---|---|---|---|---|---|
-| S0-H1->S0-H3 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 26.0% (56/215) | -26.0 |
-| S0-H1->S0-H3 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 26.0% (56/215) | -26.0 |
+| S0-H1->S0-H3 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 25.9% (137/528) | -25.9 |
+| S0-H1->S0-H3 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 25.9% (137/528) | -25.9 |
 | S0-H1->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 35.4% (17/48) | -35.4 |
-| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 26.3% (56/213) | -26.3 |
+| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 40.0% (2/5) | 25.8% (135/524) | +14.2 |
 | S0-H1->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/2) | 36.2% (17/47) | -36.2 |
-| S0-H1->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/9) | 27.1% (56/207) | -27.1 |
-| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 26.3% (56/213) | -26.3 |
+| S0-H1->S0-H7 | w15 | forward | 15.0% (3/20) | 26.3% (134/509) | -11.3 |
+| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 22.2% (2/9) | 26.0% (135/520) | -3.8 |
 | S0-H1->S0-H9 | w15 | backtest | UNMEASURABLE 0.0% (0/2) | 36.2% (17/47) | -36.2 |
-| S0-H1->S0-H9 | w15 | forward | UNMEASURABLE 16.7% (1/6) | 26.2% (55/210) | -9.5 |
-| S0-H2->S0-H3 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 25.9% (60/232) | -25.9 |
-| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 33.3% (1/3) | 22.6% (177/784) | +10.7 |
-| S0-H2->S0-H3 | w15 | backtest | UNMEASURABLE 0.0% (0/5) | 26.2% (60/229) | -26.2 |
-| S0-H2->S0-H3 | w15 | forward | UNMEASURABLE 42.9% (3/7) | 22.4% (175/780) | +20.5 |
-| S0-H2->S0-H7 | w5 | forward | UNMEASURABLE 25.0% (2/8) | 22.6% (176/779) | +2.4 |
-| S0-H2->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/4) | 26.1% (60/230) | -26.1 |
-| S0-H2->S0-H7 | w15 | forward | 20.8% (5/24) | 22.7% (173/763) | -1.9 |
-| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 25.3% (59/233) | +74.7 |
-| S0-H2->S0-H9 | w5 | forward | UNMEASURABLE 50.0% (4/8) | 22.3% (174/779) | +27.7 |
-| S0-H2->S0-H9 | w15 | backtest | (°54.5% (6/11)) | 24.2% (54/223) | +30.3 |
-| S0-H2->S0-H9 | w15 | forward | 43.5% (10/23) | 22.0% (168/764) | +21.5 |
-| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 100.0% (2/2) | 20.0% (5/25) | +80.0 |
+| S0-H1->S0-H9 | w15 | forward | (°18.8% (3/16)) | 26.1% (134/513) | -7.3 |
+| S0-H2->S0-H3 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 26.3% (61/232) | -26.3 |
+| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 20.0% (1/5) | 23.5% (513/2183) | -3.5 |
+| S0-H2->S0-H3 | w15 | backtest | UNMEASURABLE 0.0% (0/5) | 26.6% (61/229) | -26.6 |
+| S0-H2->S0-H3 | w15 | forward | (°37.5% (6/16)) | 23.4% (508/2172) | +14.1 |
+| S0-H2->S0-H7 | w5 | forward | 27.3% (6/22) | 23.5% (508/2166) | +3.8 |
+| S0-H2->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/4) | 26.5% (61/230) | -26.5 |
+| S0-H2->S0-H7 | w15 | forward | 24.6% (15/61) | 23.5% (499/2127) | +1.1 |
+| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 25.8% (60/233) | +74.2 |
+| S0-H2->S0-H9 | w5 | forward | 39.3% (11/28) | 23.3% (503/2160) | +16.0 |
+| S0-H2->S0-H9 | w15 | backtest | (°54.5% (6/11)) | 24.7% (55/223) | +29.8 |
+| S0-H2->S0-H9 | w15 | forward | 35.8% (29/81) | 23.0% (485/2107) | +12.8 |
+| S0-H3->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 22.1% (19/86) | -22.1 |
+| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 75.0% (3/4) | 19.3% (16/83) | +55.7 |
 | S0-H3->S0-H2 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 16.7% (1/6) | -16.7 |
-| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 50.0% (1/2) | 24.0% (6/25) | +26.0 |
+| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 25.0% (2/8) | 21.5% (17/79) | +3.5 |
 | S0-H3->S0-H2 | w15 | backtest | UNMEASURABLE 33.3% (1/3) | 0.0% (0/5) | +33.3 |
-| S0-H3->S0-H2 | w15 | forward | UNMEASURABLE 50.0% (4/8) | 15.8% (3/19) | +34.2 |
+| S0-H3->S0-H2 | w15 | forward | 28.6% (8/28) | 18.6% (11/59) | +10.0 |
+| S0-H3->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 22.1% (19/86) | -22.1 |
 | S0-H4->S0-H9 | w5 | backtest | UNMEASURABLE 0.0% (0/3) | 35.5% (11/31) | -35.5 |
 | S0-H4->S0-H9 | w15 | backtest | UNMEASURABLE 0.0% (0/3) | 35.5% (11/31) | -35.5 |
-| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 27.8% (40/144) | -27.8 |
+| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/4) | 26.8% (105/392) | -26.8 |
 | S0-H7->S0-H1 | w15 | backtest | UNMEASURABLE 0.0% (0/3) | 37.5% (21/56) | -37.5 |
-| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/8) | 29.2% (40/137) | -29.2 |
+| S0-H7->S0-H1 | w15 | forward | (°6.2% (1/16)) | 27.4% (104/380) | -21.2 |
 | S0-H7->S0-H2 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 36.2% (21/58) | -36.2 |
-| S0-H7->S0-H2 | w5 | forward | UNMEASURABLE 14.3% (1/7) | 28.3% (39/138) | -14.0 |
+| S0-H7->S0-H2 | w5 | forward | (°7.7% (1/13)) | 27.2% (104/383) | -19.5 |
 | S0-H7->S0-H2 | w15 | backtest | UNMEASURABLE 0.0% (0/5) | 38.9% (21/54) | -38.9 |
-| S0-H7->S0-H2 | w15 | forward | (°9.1% (1/11)) | 29.1% (39/134) | -20.0 |
-| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 27.8% (40/144) | -27.8 |
-| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 24.7% (20/81) | -24.7 |
+| S0-H7->S0-H2 | w15 | forward | 18.9% (7/37) | 27.3% (98/359) | -8.4 |
+| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 26.6% (105/394) | -26.6 |
+| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 0.0% (0/5) | 26.9% (105/391) | -26.9 |
+| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 21.5% (65/303) | -21.5 |
 | S0-H9->S0-H1 | w15 | backtest | UNMEASURABLE 0.0% (0/3) | 16.3% (8/49) | -16.3 |
-| S0-H9->S0-H1 | w15 | forward | UNMEASURABLE 28.6% (2/7) | 23.7% (18/76) | +4.9 |
+| S0-H9->S0-H1 | w15 | forward | (°14.3% (2/14)) | 21.6% (63/291) | -7.3 |
 | S0-H9->S0-H2 | w5 | backtest | UNMEASURABLE 0.0% (0/4) | 16.7% (8/48) | -16.7 |
-| S0-H9->S0-H2 | w5 | forward | (°12.5% (2/16)) | 26.9% (18/67) | -14.4 |
+| S0-H9->S0-H2 | w5 | forward | 7.0% (3/43) | 23.7% (62/262) | -16.7 |
 | S0-H9->S0-H2 | w15 | backtest | UNMEASURABLE 20.0% (1/5) | 14.9% (7/47) | +5.1 |
-| S0-H9->S0-H2 | w15 | forward | 8.3% (2/24) | 30.5% (18/59) | -22.2 |
+| S0-H9->S0-H2 | w15 | forward | 14.1% (9/64) | 23.2% (56/241) | -9.1 |
 | S0-H9->S0-H4 | w5 | backtest | UNMEASURABLE 33.3% (1/3) | 14.3% (7/49) | +19.0 |
 | S0-H9->S0-H4 | w15 | backtest | UNMEASURABLE 25.0% (1/4) | 14.6% (7/48) | +10.4 |
+| S0-H9->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 21.4% (65/304) | -21.4 |
 
 ## nas100fut (CANONICAL)
 
 | pair | w | window | with: pct (hits/n) | without: pct (hits/n) | Δpp |
 |---|---|---|---|---|---|
-| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 50.0% (1/2) | 32.9% (46/140) | +17.1 |
-| S0-H1->S0-H7 | w15 | forward | UNMEASURABLE 33.3% (1/3) | 33.1% (46/139) | +0.2 |
-| S0-H1->S0-H9 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 42.4% (14/33) | -42.4 |
-| S0-H1->S0-H9 | w15 | backtest | UNMEASURABLE 0.0% (0/2) | 43.8% (14/32) | -43.8 |
-| S0-H1->S0-H9 | w15 | forward | UNMEASURABLE 50.0% (1/2) | 32.9% (46/140) | +17.1 |
-| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 100.0% (2/2) | 19.2% (61/318) | +80.8 |
-| S0-H2->S0-H7 | w5 | forward | UNMEASURABLE 28.6% (2/7) | 30.9% (199/643) | -2.3 |
-| S0-H2->S0-H7 | w15 | backtest | (°36.4% (4/11)) | 19.1% (59/309) | +17.3 |
-| S0-H2->S0-H7 | w15 | forward | 15.0% (3/20) | 31.4% (198/630) | -16.4 |
-| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 12.5% (1/8) | 19.9% (62/312) | -7.4 |
-| S0-H2->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/5) | 31.2% (201/645) | -31.2 |
-| S0-H2->S0-H9 | w15 | backtest | 26.1% (6/23) | 19.2% (57/297) | +6.9 |
-| S0-H2->S0-H9 | w15 | forward | (°20.0% (3/15)) | 31.2% (198/635) | -11.2 |
-| S0-H4->S0-H9 | w5 | forward | UNMEASURABLE 100.0% (3/3) | 42.9% (3/7) | +57.1 |
-| S0-H4->S0-H9 | w15 | forward | UNMEASURABLE 100.0% (3/3) | 42.9% (3/7) | +57.1 |
+| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 57.1% (4/7) | 31.7% (153/483) | +25.4 |
+| S0-H1->S0-H7 | w15 | forward | (°46.2% (6/13)) | 31.7% (151/477) | +14.5 |
+| S0-H1->S0-H9 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 39.4% (13/33) | -39.4 |
+| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 40.0% (2/5) | 32.0% (155/485) | +8.0 |
+| S0-H1->S0-H9 | w15 | backtest | UNMEASURABLE 0.0% (0/2) | 40.6% (13/32) | -40.6 |
+| S0-H1->S0-H9 | w15 | forward | (°50.0% (6/12)) | 31.6% (151/478) | +18.4 |
+| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 27.8% (677/2435) | -27.8 |
+| S0-H2->S0-H3 | w15 | forward | UNMEASURABLE 12.5% (1/8) | 27.8% (676/2430) | -15.3 |
+| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 100.0% (2/2) | 19.5% (62/318) | +80.5 |
+| S0-H2->S0-H7 | w5 | forward | 45.0% (9/20) | 27.6% (668/2418) | +17.4 |
+| S0-H2->S0-H7 | w15 | backtest | (°36.4% (4/11)) | 19.4% (60/309) | +17.0 |
+| S0-H2->S0-H7 | w15 | forward | 31.6% (18/57) | 27.7% (659/2381) | +3.9 |
+| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 12.5% (1/8) | 20.2% (63/312) | -7.7 |
+| S0-H2->S0-H9 | w5 | forward | 29.3% (17/58) | 27.7% (660/2380) | +1.6 |
+| S0-H2->S0-H9 | w15 | backtest | 21.7% (5/23) | 19.9% (59/297) | +1.8 |
+| S0-H2->S0-H9 | w15 | forward | 31.9% (38/119) | 27.6% (639/2319) | +4.3 |
+| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 42.9% (6/14) | -42.9 |
+| S0-H3->S0-H2 | w15 | forward | UNMEASURABLE 25.0% (2/8) | 44.4% (4/9) | -19.4 |
+| S0-H4->S0-H9 | w5 | forward | UNMEASURABLE 100.0% (5/5) | 49.1% (27/55) | +50.9 |
+| S0-H4->S0-H9 | w15 | forward | UNMEASURABLE 100.0% (9/9) | 45.1% (23/51) | +54.9 |
+| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 26.2% (93/355) | -26.2 |
 | S0-H7->S0-H1 | w15 | backtest | UNMEASURABLE 0.0% (0/2) | 22.9% (11/48) | -22.9 |
-| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/2) | 29.2% (42/144) | -29.2 |
+| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 16.7% (1/6) | 26.3% (92/350) | -9.6 |
 | S0-H7->S0-H2 | w5 | backtest | UNMEASURABLE 20.0% (1/5) | 22.2% (10/45) | -2.2 |
-| S0-H7->S0-H2 | w5 | forward | UNMEASURABLE 40.0% (2/5) | 28.4% (40/141) | +11.6 |
+| S0-H7->S0-H2 | w5 | forward | UNMEASURABLE 37.5% (3/8) | 25.9% (90/348) | +11.6 |
 | S0-H7->S0-H2 | w15 | backtest | (°36.4% (4/11)) | 17.9% (7/39) | +18.5 |
-| S0-H7->S0-H2 | w15 | forward | (°35.7% (5/14)) | 28.0% (37/132) | +7.7 |
+| S0-H7->S0-H2 | w15 | forward | 18.2% (8/44) | 27.2% (85/312) | -9.0 |
 | S0-H7->S0-H3 | w15 | backtest | UNMEASURABLE 100.0% (1/1) | 20.4% (10/49) | +79.6 |
+| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 100.0% (1/1) | 25.9% (92/355) | +74.1 |
 | S0-H7->S0-H9 | w15 | backtest | UNMEASURABLE 100.0% (1/1) | 20.4% (10/49) | +79.6 |
-| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 66.7% (2/3) | 28.0% (40/143) | +38.7 |
+| S0-H7->S0-H9 | w15 | forward | (°40.0% (4/10)) | 25.7% (89/346) | +14.3 |
+| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 33.3% (1/3) | 20.6% (136/659) | +12.7 |
 | S0-H9->S0-H1 | w15 | backtest | UNMEASURABLE 33.3% (1/3) | 22.4% (19/85) | +10.9 |
-| S0-H9->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 18.1% (40/221) | -18.1 |
+| S0-H9->S0-H1 | w15 | forward | (°15.8% (3/19)) | 20.8% (134/643) | -5.0 |
 | S0-H9->S0-H2 | w5 | backtest | UNMEASURABLE 25.0% (2/8) | 22.5% (18/80) | +2.5 |
-| S0-H9->S0-H2 | w5 | forward | 9.1% (2/22) | 19.0% (38/200) | -9.9 |
+| S0-H9->S0-H2 | w5 | forward | 11.3% (8/71) | 21.8% (129/591) | -10.5 |
 | S0-H9->S0-H2 | w15 | backtest | (°42.9% (6/14)) | 18.9% (14/74) | +24.0 |
-| S0-H9->S0-H2 | w15 | forward | 8.7% (2/23) | 19.1% (38/199) | -10.4 |
-| S0-H9->S0-H4 | w5 | forward | UNMEASURABLE 100.0% (1/1) | 17.6% (39/221) | +82.4 |
-| S0-H9->S0-H4 | w15 | forward | UNMEASURABLE 100.0% (1/1) | 17.6% (39/221) | +82.4 |
+| S0-H9->S0-H2 | w15 | forward | 17.0% (16/94) | 21.3% (121/568) | -4.3 |
+| S0-H9->S0-H4 | w5 | forward | UNMEASURABLE 75.0% (3/4) | 20.4% (134/658) | +54.6 |
+| S0-H9->S0-H4 | w15 | forward | (°50.0% (5/10)) | 20.2% (132/652) | +29.8 |
 | S0-H9->S0-H7 | w15 | backtest | UNMEASURABLE 100.0% (1/1) | 21.8% (19/87) | +78.2 |
+| S0-H9->S0-H7 | w15 | forward | UNMEASURABLE 100.0% (1/1) | 20.6% (136/661) | +79.4 |
 
 ## us30fut (CANONICAL)
 
 | pair | w | window | with: pct (hits/n) | without: pct (hits/n) | Δpp |
 |---|---|---|---|---|---|
-| S0-H1->S0-H3 | w5 | forward | UNMEASURABLE 100.0% (1/1) | 26.8% (82/306) | +73.2 |
-| S0-H1->S0-H3 | w15 | forward | UNMEASURABLE 100.0% (2/2) | 26.6% (81/305) | +73.4 |
+| S0-H1->S0-H3 | w5 | forward | UNMEASURABLE 100.0% (1/1) | 28.7% (217/757) | +71.3 |
+| S0-H1->S0-H3 | w15 | forward | UNMEASURABLE 100.0% (3/3) | 28.5% (215/755) | +71.5 |
 | S0-H1->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/2) | 36.2% (17/47) | -36.2 |
-| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 27.3% (83/304) | -27.3 |
+| S0-H1->S0-H7 | w5 | forward | UNMEASURABLE 44.4% (4/9) | 28.6% (214/749) | +15.8 |
 | S0-H1->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/3) | 37.0% (17/46) | -37.0 |
-| S0-H1->S0-H7 | w15 | forward | (°33.3% (5/15)) | 26.7% (78/292) | +6.6 |
+| S0-H1->S0-H7 | w15 | forward | 30.3% (10/33) | 28.7% (208/725) | +1.6 |
 | S0-H1->S0-H9 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 33.3% (16/48) | +66.7 |
-| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 27.1% (83/306) | -27.1 |
+| S0-H1->S0-H9 | w5 | forward | UNMEASURABLE 25.0% (2/8) | 28.8% (216/750) | -3.8 |
 | S0-H1->S0-H9 | w15 | backtest | UNMEASURABLE 50.0% (1/2) | 34.0% (16/47) | +16.0 |
-| S0-H1->S0-H9 | w15 | forward | UNMEASURABLE 0.0% (0/3) | 27.3% (83/304) | -27.3 |
-| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 100.0% (1/1) | 28.3% (253/895) | +71.7 |
-| S0-H2->S0-H3 | w15 | backtest | UNMEASURABLE 50.0% (1/2) | 26.9% (75/279) | +23.1 |
-| S0-H2->S0-H3 | w15 | forward | UNMEASURABLE 40.0% (2/5) | 28.3% (252/891) | +11.7 |
-| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/4) | 27.4% (76/277) | -27.4 |
-| S0-H2->S0-H7 | w5 | forward | (°36.4% (4/11)) | 28.2% (250/885) | +8.2 |
-| S0-H2->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/9) | 27.9% (76/272) | -27.9 |
-| S0-H2->S0-H7 | w15 | forward | 29.0% (9/31) | 28.3% (245/865) | +0.7 |
-| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 40.0% (2/5) | 26.8% (74/276) | +13.2 |
-| S0-H2->S0-H9 | w5 | forward | (°26.3% (5/19)) | 28.4% (249/877) | -2.1 |
-| S0-H2->S0-H9 | w15 | backtest | (°27.3% (3/11)) | 27.0% (73/270) | +0.3 |
-| S0-H2->S0-H9 | w15 | forward | 24.3% (9/37) | 28.5% (245/859) | -4.2 |
-| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 61.1% (11/18) | -61.1 |
+| S0-H1->S0-H9 | w15 | forward | (°17.6% (3/17)) | 29.0% (215/741) | -11.4 |
+| S0-H2->S0-H3 | w5 | forward | UNMEASURABLE 83.3% (5/6) | 27.3% (728/2670) | +56.0 |
+| S0-H2->S0-H3 | w15 | backtest | UNMEASURABLE 50.0% (1/2) | 26.5% (74/279) | +23.5 |
+| S0-H2->S0-H3 | w15 | forward | (°61.1% (11/18)) | 27.2% (722/2658) | +33.9 |
+| S0-H2->S0-H7 | w5 | backtest | UNMEASURABLE 0.0% (0/4) | 27.1% (75/277) | -27.1 |
+| S0-H2->S0-H7 | w5 | forward | 52.4% (11/21) | 27.2% (722/2655) | +25.2 |
+| S0-H2->S0-H7 | w15 | backtest | UNMEASURABLE 0.0% (0/9) | 27.6% (75/272) | -27.6 |
+| S0-H2->S0-H7 | w15 | forward | 35.4% (23/65) | 27.2% (710/2611) | +8.2 |
+| S0-H2->S0-H9 | w5 | backtest | UNMEASURABLE 40.0% (2/5) | 26.4% (73/276) | +13.6 |
+| S0-H2->S0-H9 | w5 | forward | 30.9% (17/55) | 27.3% (716/2621) | +3.6 |
+| S0-H2->S0-H9 | w15 | backtest | (°27.3% (3/11)) | 26.7% (72/270) | +0.6 |
+| S0-H2->S0-H9 | w15 | forward | 26.9% (28/104) | 27.4% (705/2572) | -0.5 |
+| S0-H3->S0-H1 | w15 | forward | UNMEASURABLE 50.0% (1/2) | 44.4% (20/45) | +5.6 |
 | S0-H3->S0-H2 | w5 | backtest | UNMEASURABLE 100.0% (1/1) | 0.0% (0/3) | +100.0 |
-| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 61.1% (11/18) | -61.1 |
+| S0-H3->S0-H2 | w5 | forward | UNMEASURABLE 66.7% (4/6) | 41.5% (17/41) | +25.2 |
 | S0-H3->S0-H2 | w15 | backtest | UNMEASURABLE 33.3% (1/3) | 0.0% (0/1) | +33.3 |
-| S0-H3->S0-H2 | w15 | forward | UNMEASURABLE 50.0% (2/4) | 60.0% (9/15) | -10.0 |
+| S0-H3->S0-H2 | w15 | forward | (°75.0% (9/12)) | 34.3% (12/35) | +40.7 |
+| S0-H3->S0-H7 | w15 | forward | UNMEASURABLE 0.0% (0/1) | 45.7% (21/46) | -45.7 |
 | S0-H4->S0-H1 | w15 | backtest | UNMEASURABLE 100.0% (1/1) | 33.3% (4/12) | +66.7 |
-| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 28.3% (51/180) | -28.3 |
-| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 20.0% (1/5) | 28.4% (50/176) | -8.4 |
-| S0-H7->S0-H2 | w5 | forward | UNMEASURABLE 12.5% (1/8) | 28.9% (50/173) | -16.4 |
+| S0-H7->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 26.7% (99/371) | -26.7 |
+| S0-H7->S0-H1 | w15 | forward | UNMEASURABLE 16.7% (1/6) | 26.8% (98/366) | -10.1 |
+| S0-H7->S0-H2 | w5 | forward | (°9.1% (1/11)) | 27.1% (98/361) | -18.0 |
 | S0-H7->S0-H2 | w15 | backtest | UNMEASURABLE 0.0% (0/3) | 23.7% (9/38) | -23.7 |
-| S0-H7->S0-H2 | w15 | forward | 29.2% (7/24) | 28.0% (44/157) | +1.2 |
+| S0-H7->S0-H2 | w15 | forward | 18.6% (8/43) | 27.7% (91/329) | -9.1 |
 | S0-H7->S0-H9 | w5 | backtest | UNMEASURABLE 0.0% (0/1) | 22.5% (9/40) | -22.5 |
-| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 28.3% (51/180) | -28.3 |
+| S0-H7->S0-H9 | w5 | forward | UNMEASURABLE 0.0% (0/2) | 26.8% (99/370) | -26.8 |
 | S0-H7->S0-H9 | w15 | backtest | UNMEASURABLE 50.0% (1/2) | 20.5% (8/39) | +29.5 |
-| S0-H7->S0-H9 | w15 | forward | UNMEASURABLE 33.3% (2/6) | 28.0% (49/175) | +5.3 |
-| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/1) | 19.8% (20/101) | -19.8 |
-| S0-H9->S0-H1 | w15 | forward | UNMEASURABLE 0.0% (0/3) | 20.2% (20/99) | -20.2 |
+| S0-H7->S0-H9 | w15 | forward | (°27.3% (3/11)) | 26.6% (96/361) | +0.7 |
+| S0-H9->S0-H1 | w5 | forward | UNMEASURABLE 0.0% (0/3) | 22.9% (93/406) | -22.9 |
+| S0-H9->S0-H1 | w15 | forward | (°25.0% (4/16)) | 22.6% (89/393) | +2.4 |
 | S0-H9->S0-H2 | w5 | backtest | UNMEASURABLE 50.0% (1/2) | 21.1% (8/38) | +28.9 |
-| S0-H9->S0-H2 | w5 | forward | (°17.6% (3/17)) | 20.0% (17/85) | -2.4 |
+| S0-H9->S0-H2 | w5 | forward | 23.6% (13/55) | 22.6% (80/354) | +1.0 |
 | S0-H9->S0-H2 | w15 | backtest | UNMEASURABLE 25.0% (1/4) | 22.2% (8/36) | +2.8 |
-| S0-H9->S0-H2 | w15 | forward | 14.8% (4/27) | 21.3% (16/75) | -6.5 |
+| S0-H9->S0-H2 | w15 | forward | 23.3% (20/86) | 22.6% (73/323) | +0.7 |
 
 ---
 

@@ -20,7 +20,148 @@ utc_time,currency,impact,name
 2026-08-18T06:00:00Z,GBP,High,UK Claimant Count Change
 2026-08-19T06:00:00Z,GBP,High,UK CPI y/y
 2026-08-19T18:00:00Z,USD,High,FOMC Meeting Minutes
+2026-08-26T01:30:00Z,AUD,High,CPI m/m
+2026-08-26T01:30:00Z,AUD,High,CPI y/y
+2026-08-26T01:30:00Z,AUD,High,Trimmed Mean CPI m/m
 2026-08-26T12:30:00Z,USD,High,Core PCE Price Index m/m
 2026-08-26T12:30:00Z,USD,High,Prelim GDP q/q
+2026-08-28T12:30:00Z,CAD,High,GDP m/m
 2026-08-28T14:00:00Z,USD,High,Fed Chairman Warsh Speaks
 2026-08-28T14:00:00Z,USD,High,Prelim Benchmark Payrolls Revision
+2026-08-28T16:15:00Z,All,High,Jackson Hole Symposium
+2026-09-01T14:00:00Z,USD,High,ISM Manufacturing PMI
+2026-09-02T01:30:00Z,AUD,High,GDP q/q
+2026-09-02T02:00:00Z,NZD,High,Official Cash Rate
+2026-09-02T02:00:00Z,NZD,High,RBNZ Monetary Policy Statement
+2026-09-02T02:00:00Z,NZD,High,RBNZ Rate Statement
+2026-09-02T03:00:00Z,NZD,High,RBNZ Press Conference
+2026-09-02T13:45:00Z,CAD,High,BOC Rate Statement
+2026-09-02T13:45:00Z,CAD,High,Overnight Rate
+2026-09-02T14:30:00Z,CAD,High,BOC Press Conference
+2026-09-04T08:50:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-09-04T12:30:00Z,CAD,High,Employment Change
+2026-09-04T12:30:00Z,CAD,High,Unemployment Rate
+2026-09-04T12:30:00Z,USD,High,Average Hourly Earnings m/m
+2026-09-04T12:30:00Z,USD,High,Non-Farm Employment Change
+2026-09-04T12:30:00Z,USD,High,Unemployment Rate
+2026-09-10T12:15:00Z,EUR,High,Main Refinancing Rate
+2026-09-10T12:15:00Z,EUR,High,Monetary Policy Statement
+2026-09-10T12:30:00Z,USD,High,Core PPI m/m
+2026-09-10T12:30:00Z,USD,High,PPI m/m
+2026-09-10T12:45:00Z,EUR,High,ECB Press Conference
+2026-09-11T06:00:00Z,GBP,High,GDP m/m
+2026-09-11T12:30:00Z,USD,High,Core CPI m/m
+2026-09-11T12:30:00Z,USD,High,Core CPI y/y
+2026-09-11T12:30:00Z,USD,High,CPI m/m
+2026-09-11T12:30:00Z,USD,High,CPI y/y
+2026-09-14T12:30:00Z,CAD,High,CPI m/m
+2026-09-14T12:30:00Z,CAD,High,Median CPI y/y
+2026-09-14T12:30:00Z,CAD,High,Trimmed CPI y/y
+2026-09-15T06:00:00Z,GBP,High,Claimant Count Change
+2026-09-16T06:00:00Z,GBP,High,CPI y/y
+2026-09-16T18:00:00Z,USD,High,FOMC Economic Projections
+2026-09-16T18:00:00Z,USD,High,FOMC Statement
+2026-09-16T18:00:00Z,USD,High,Federal Funds Rate
+2026-09-16T18:30:00Z,USD,High,FOMC Press Conference
+2026-09-16T22:45:00Z,NZD,High,GDP q/q
+2026-09-17T11:00:00Z,GBP,High,MPC Official Bank Rate Votes
+2026-09-17T11:00:00Z,GBP,High,Monetary Policy Summary
+2026-09-17T11:00:00Z,GBP,High,Official Bank Rate
+2026-09-18T02:30:00Z,JPY,High,BOJ Policy Rate
+2026-09-18T02:30:00Z,JPY,High,Monetary Policy Statement
+2026-09-18T05:30:00Z,JPY,High,BOJ Press Conference
+2026-09-22T03:10:00Z,AUD,High,RBA Gov Bullock Speaks
+2026-09-24T01:30:00Z,AUD,High,Employment Change
+2026-09-24T01:30:00Z,AUD,High,Unemployment Rate
+2026-09-24T07:30:00Z,CHF,High,SNB Monetary Policy Assessment
+2026-09-24T07:30:00Z,CHF,High,SNB Policy Rate
+2026-09-24T08:00:00Z,CHF,High,SNB Press Conference
+2026-09-25T09:15:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-09-29T04:30:00Z,AUD,High,Cash Rate
+2026-09-29T04:30:00Z,AUD,High,RBA Rate Statement
+2026-09-30T01:30:00Z,AUD,High,CPI m/m
+2026-09-30T01:30:00Z,AUD,High,CPI y/y
+2026-09-30T01:30:00Z,AUD,High,Trimmed Mean CPI m/m
+2026-09-30T12:30:00Z,USD,High,Core PCE Price Index m/m
+2026-09-30T12:30:00Z,USD,High,Final GDP q/q
+2026-10-02T12:30:00Z,USD,High,Average Hourly Earnings m/m
+2026-10-02T12:30:00Z,USD,High,Non-Farm Employment Change
+2026-10-02T12:30:00Z,USD,High,Unemployment Rate
+2026-10-06T06:35:00Z,JPY,High,BOJ Gov Ueda Speaks
+2026-10-07T18:00:00Z,USD,High,FOMC Meeting Minutes
+2026-10-08T12:15:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-10-09T12:30:00Z,CAD,High,Employment Change
+2026-10-09T12:30:00Z,CAD,High,Unemployment Rate
+2026-10-14T12:30:00Z,USD,High,CPI m/m
+2026-10-14T12:30:00Z,USD,High,CPI y/y
+2026-10-14T12:30:00Z,USD,High,Core CPI m/m
+2026-10-14T12:30:00Z,USD,High,Core CPI y/y
+2026-10-15T00:30:00Z,AUD,High,Employment Change
+2026-10-15T00:30:00Z,AUD,High,Unemployment Rate
+2026-10-15T06:00:00Z,GBP,High,GDP m/m
+2026-10-15T12:30:00Z,USD,High,Core PPI m/m
+2026-10-15T12:30:00Z,USD,High,Core Retail Sales m/m
+2026-10-15T12:30:00Z,USD,High,PPI m/m
+2026-10-15T12:30:00Z,USD,High,Retail Sales m/m
+2026-10-16T02:00:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-10-16T03:30:00Z,USD,High,Fed Chairman Warsh Speaks
+2026-10-19T12:30:00Z,CAD,High,CPI m/m
+2026-10-19T12:30:00Z,CAD,High,Median CPI y/y
+2026-10-19T12:30:00Z,CAD,High,Trimmed CPI y/y
+2026-10-21T06:00:00Z,GBP,High,CPI y/y
+2026-10-21T21:45:00Z,NZD,High,CPI q/q
+2026-10-28T00:30:00Z,AUD,High,CPI m/m
+2026-10-28T00:30:00Z,AUD,High,CPI y/y
+2026-10-28T00:30:00Z,AUD,High,Trimmed Mean CPI m/m
+2026-10-28T01:00:00Z,NZD,High,Official Cash Rate
+2026-10-28T01:00:00Z,NZD,High,RBNZ Rate Statement
+2026-10-28T02:00:00Z,NZD,High,RBNZ Press Conference
+2026-10-28T12:30:00Z,GBP,High,Annual Budget Release
+2026-10-28T13:45:00Z,CAD,High,BOC Monetary Policy Report
+2026-10-28T13:45:00Z,CAD,High,BOC Rate Statement
+2026-10-28T13:45:00Z,CAD,High,Overnight Rate
+2026-10-28T14:30:00Z,CAD,High,BOC Press Conference
+2026-10-28T18:00:00Z,USD,High,FOMC Statement
+2026-10-28T18:00:00Z,USD,High,Federal Funds Rate
+2026-10-28T18:30:00Z,USD,High,FOMC Press Conference
+2026-10-29T12:30:00Z,USD,High,Advance GDP q/q
+2026-10-29T12:30:00Z,USD,High,Core PCE Price Index m/m
+2026-10-29T13:15:00Z,EUR,High,Main Refinancing Rate
+2026-10-29T13:15:00Z,EUR,High,Monetary Policy Statement
+2026-10-29T13:45:00Z,EUR,High,ECB Press Conference
+2026-10-30T03:02:00Z,JPY,High,BOJ Outlook Report
+2026-10-30T03:02:00Z,JPY,High,BOJ Policy Rate
+2026-10-30T03:02:00Z,JPY,High,Monetary Policy Statement
+2026-10-30T06:30:00Z,JPY,High,BOJ Press Conference
+2026-11-03T03:30:00Z,AUD,High,Cash Rate
+2026-11-03T03:30:00Z,AUD,High,RBA Monetary Policy Statement
+2026-11-03T03:30:00Z,AUD,High,RBA Rate Statement
+2026-11-03T04:30:00Z,AUD,High,RBA Press Conference
+2026-11-03T15:16:00Z,USD,High,Congressional Elections
+2026-11-03T21:45:00Z,NZD,High,Employment Change q/q
+2026-11-03T21:45:00Z,NZD,High,Unemployment Rate
+2026-11-05T12:00:00Z,GBP,High,BOE Monetary Policy Report
+2026-11-05T12:00:00Z,GBP,High,MPC Official Bank Rate Votes
+2026-11-05T12:00:00Z,GBP,High,Monetary Policy Summary
+2026-11-05T12:00:00Z,GBP,High,Official Bank Rate
+2026-11-05T12:30:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-11-06T13:30:00Z,CAD,High,Employment Change
+2026-11-06T13:30:00Z,USD,High,Average Hourly Earnings m/m
+2026-11-06T13:30:00Z,USD,High,Non-Farm Employment Change
+2026-11-06T13:30:00Z,USD,High,Unemployment Rate
+2026-11-06T16:00:00Z,JPY,High,BOJ Gov Ueda Speaks
+2026-11-06T21:45:00Z,NZD,High,Parliamentary Elections
+2026-11-16T13:30:00Z,CAD,High,CPI m/m
+2026-11-16T13:30:00Z,CAD,High,Median CPI y/y
+2026-11-16T13:30:00Z,CAD,High,Trimmed CPI y/y
+2026-11-16T17:00:00Z,USD,High,Fed Chairman Warsh Speaks
+2026-11-16T22:50:00Z,AUD,High,RBA Gov Bullock Speaks
+2026-11-17T02:00:00Z,NZD,High,Inflation Expectations q/q
+2026-11-17T13:30:00Z,USD,High,Core Retail Sales m/m
+2026-11-17T13:30:00Z,USD,High,Retail Sales m/m
+2026-11-18T07:00:00Z,GBP,High,CPI y/y
+2026-11-18T07:30:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-11-18T15:00:00Z,GBP,High,BOE Gov Bailey Speaks
+2026-11-18T19:00:00Z,USD,High,FOMC Meeting Minutes
+2026-11-19T00:30:00Z,AUD,High,Employment Change
+2026-11-19T00:30:00Z,AUD,High,Unemployment Rate

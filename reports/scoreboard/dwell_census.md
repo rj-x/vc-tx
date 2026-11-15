@@ -2,56 +2,56 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `8effbb323` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; register-16 family). VOCABULARY, not a signal: auction acceptance vs touch — dwell = consecutive in-band 1M closes per level-touch episode (day-broken). Level classes from existing conventions only: the pre-bar session extremes in the ratified retest band (0.25xATR15 — the retest-anchor object), the matrix's h11-node state, and the v3 anchor zones (register 111). Customers: H12's visit definition (future operator proposal), arrival-anatomy (e), the location family. Consumers price their own fields; distributions are the vocabulary's range, not findings.
+Engine `66be26997` — OBSERVATIONAL ORGAN (register 120; prereg_organ_dwell; register-16 family). VOCABULARY, not a signal: auction acceptance vs touch — dwell = consecutive in-band 1M closes per level-touch episode (day-broken). Level classes from existing conventions only: the pre-bar session extremes in the ratified retest band (0.25xATR15 — the retest-anchor object), the matrix's h11-node state, and the v3 anchor zones (register 111). Customers: H12's visit definition (future operator proposal), arrival-anatomy (e), the location family. Consumers price their own fields; distributions are the vocabulary's range, not findings.
 
-## uk100fut (62648 1M bars)
+## uk100fut (112921 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
 | session-extreme | backtest | 785 | 3 | 6 | 12 | 57 | 18.2% |
-| session-extreme | forward | 1097 | 2 | 5 | 10.4 | 81 | 18.2% |
+| session-extreme | forward | 3250 | 2 | 5 | 11 | 108 | 19.2% |
 | h11-node | backtest | 241 | 3 | 7 | 18 | 199 | 9.7% |
-| h11-node | forward | 415 | 2 | 5.5 | 12.6 | 117 | 8.9% |
+| h11-node | forward | 1533 | 2 | 6 | 13 | 232 | 12.3% |
 | v3-zone-1d | backtest | 0 | — | — | — | — | 0 |
 | v3-zone-1d | forward | 0 | — | — | — | — | 0 |
 | v3-zone-4h | backtest | 13 | 8 | 24 | 184.6 | 366 | 3.6% |
-| v3-zone-4h | forward | 22 | 2 | 37.2 | 62.5 | 482 | 3.3% |
+| v3-zone-4h | forward | 29 | 5 | 29 | 68.8 | 482 | 1.4% |
 
-## ger40fut (56575 1M bars)
+## ger40fut (106083 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
 | session-extreme | backtest | 582 | 2 | 5 | 9 | 71 | 17.5% |
-| session-extreme | forward | 1189 | 2 | 5 | 10 | 119 | 17.6% |
+| session-extreme | forward | 3358 | 2 | 5 | 10 | 119 | 19.4% |
 | h11-node | backtest | 348 | 2 | 4 | 7 | 50 | 8.5% |
-| h11-node | forward | 800 | 2 | 4 | 10 | 428 | 15.0% |
+| h11-node | forward | 1876 | 2 | 4 | 10 | 428 | 11.8% |
 | v3-zone-1d | backtest | 0 | — | — | — | — | 0 |
 | v3-zone-1d | forward | 0 | — | — | — | — | 0 |
 | v3-zone-4h | backtest | 0 | — | — | — | — | 0 |
-| v3-zone-4h | forward | 52 | 3.5 | 21.5 | 65.6 | 344 | 4.7% |
+| v3-zone-4h | forward | 147 | 5 | 27 | 88.2 | 456 | 6.3% |
 
-## nas100fut (58558 1M bars)
+## nas100fut (109659 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
 | session-extreme | backtest | 610 | 2 | 6 | 12 | 49 | 19.1% |
-| session-extreme | forward | 1293 | 2 | 4 | 9 | 115 | 16.1% |
+| session-extreme | forward | 3230 | 2 | 5 | 9 | 118 | 16.2% |
 | h11-node | backtest | 266 | 1 | 2 | 4 | 23 | 3.4% |
-| h11-node | forward | 779 | 1 | 3 | 5 | 104 | 7.1% |
+| h11-node | forward | 2019 | 2 | 3 | 6 | 114 | 8.0% |
 | v3-zone-1d | backtest | 0 | — | — | — | — | 0 |
 | v3-zone-1d | forward | 0 | — | — | — | — | 0 |
 | v3-zone-4h | backtest | 17 | 7 | 118 | 135 | 499 | 7.9% |
-| v3-zone-4h | forward | 11 | 3 | 58 | 132 | 331 | 1.9% |
+| v3-zone-4h | forward | 43 | 5 | 24.5 | 75.8 | 331 | 1.7% |
 
-## us30fut (58510 1M bars)
+## us30fut (109596 1M bars)
 
 | class | window | episodes | dwell med | p75 | p90 | max | in-band bar share |
 |---|---|---|---|---|---|---|---|
 | session-extreme | backtest | 633 | 2 | 4 | 8 | 52 | 16.6% |
-| session-extreme | forward | 1208 | 2 | 5 | 10 | 103 | 16.7% |
+| session-extreme | forward | 3424 | 2 | 5 | 10 | 116 | 18.4% |
 | h11-node | backtest | 592 | 1 | 2 | 5 | 32 | 8.7% |
-| h11-node | forward | 919 | 1 | 3 | 8 | 160 | 12.9% |
+| h11-node | forward | 2818 | 1 | 3 | 6 | 160 | 11.7% |
 | v3-zone-1d | backtest | 0 | — | — | — | — | 0 |
 | v3-zone-1d | forward | 0 | — | — | — | — | 0 |
 | v3-zone-4h | backtest | 13 | 2 | 6 | 43.2 | 526 | 4.0% |
-| v3-zone-4h | forward | 86 | 4 | 12.8 | 43.5 | 753 | 7.7% |
+| v3-zone-4h | forward | 141 | 4 | 17 | 46 | 753 | 4.4% |

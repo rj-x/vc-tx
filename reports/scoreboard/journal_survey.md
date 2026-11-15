@@ -2,39 +2,52 @@
 
 Terms: [docs/GLOSSARY.md](../../docs/GLOSSARY.md).
 
-Engine `8effbb323` — OBSERVATIONAL, pre-registered (prereg_journal_survey, register 80). Sentence × variant × session cells, n≥25, instruments pooled (per-instrument split in the JSON). STATISTIC SHAPES (74-B): concentration = field count vs permutation null (variant labels shuffled within sentence×session strata, 100 pinned shuffles); floors = single-cell median vs the session-scoped baseline ensemble range under IDENTICAL management. Survivors are QUESTION CANDIDATES through the front door — LISTED, NOT MINTED. EX-LOCKBOX (register 85): the lockbox span is its own zone — 79152 of 94201 journal rows used, 15049 lockbox-span opens excluded.
+Engine `66be26997` — OBSERVATIONAL, pre-registered (prereg_journal_survey, register 80). Sentence × variant × session cells, n≥25, instruments pooled (per-instrument split in the JSON). STATISTIC SHAPES (74-B): concentration = field count vs permutation null (variant labels shuffled within sentence×session strata, 100 pinned shuffles); floors = single-cell median vs the session-scoped baseline ensemble range under IDENTICAL management. Survivors are QUESTION CANDIDATES through the front door — LISTED, NOT MINTED. EX-LOCKBOX (register 85): the lockbox span is its own zone — 184776 of 199825 journal rows used, 15049 lockbox-span opens excluded.
 
-**Luck budget:** positive-median cells by variant: {'R-ARM15': 4, 'R-H1-DELAY10': 1, 'R-H1-DELAY3': 2, 'R-H1-KNIFE': 1, 'R-NEXIT-EARLY': 2, 'R-NEXIT-FULL': 3, 'R-NEXIT-SENT': 10, 'R-NOTRAIL': 1, 'R-SCALP-H6': 3, 'R-SCALP-H6-REF': 3} of {'R-ARM15': 69, 'R-BE': 66, 'R-H1-CONFIRM': 2, 'R-H1-DELAY10': 5, 'R-H1-DELAY3': 5, 'R-H1-KNIFE': 5, 'R-H1-OWNCURVE': 4, 'R-NEXIT-EARLY': 74, 'R-NEXIT-FULL': 74, 'R-NEXIT-SENT': 72, 'R-NOTRAIL': 59, 'R-OP2': 73, 'R-SCALP-H6': 3, 'R-SCALP-H6-REF': 3} measurable; observed max-in-one-variant 10 vs null median 4 / p95 7; percentile 100.0.
+**Luck budget:** positive-median cells by variant: {'R-ARM15': 7, 'R-H1-CONFIRM': 1, 'R-H1-DELAY3': 1, 'R-NEXIT-EARLY': 3, 'R-NEXIT-FULL': 5, 'R-NEXIT-SENT': 13, 'R-NOTRAIL': 3, 'R-SCALP-H6': 5, 'R-SCALP-H6-REF': 5} of {'R-ARM15': 82, 'R-BE': 82, 'R-H1-CONFIRM': 4, 'R-H1-DELAY10': 5, 'R-H1-DELAY3': 5, 'R-H1-KNIFE': 5, 'R-H1-OWNCURVE': 5, 'R-NEXIT-EARLY': 84, 'R-NEXIT-FULL': 85, 'R-NEXIT-SENT': 83, 'R-NOTRAIL': 79, 'R-OP2': 84, 'R-SCALP-H6': 5, 'R-SCALP-H6-REF': 5} measurable; observed max-in-one-variant 13 vs null median 7 / p95 9; percentile 100.0.
 
 | sentence | variant | session | n | median pts | floor (med/max) | clears range | candidate |
 |---|---|---|---|---|---|---|---|
-| S0-H1 | R-ARM15 | overlap | 27 | 1.2 | -6.39/40.7 | no | — |
-| S0-H1 | R-H1-DELAY10 | overlap | 26 | 0.95 | -4.65/44.4 | no | — |
-| S0-H1 | R-H1-DELAY3 | dead | 56 | 0.58 | -7.11/23.5 | no | — |
-| S0-H1 | R-H1-DELAY3 | overlap | 26 | 0.75 | -3.7/40.15 | no | — |
-| S0-H1 | R-H1-KNIFE | overlap | 29 | 2.02 | -5.85/5.13 | no | — |
-| S0-H1 | R-NEXIT-SENT | ny_only | 136 | 1.7 | -1.3/19.4 | no | — |
-| S0-H1 | R-NEXIT-SENT | overlap | 30 | 0.6 | -1.97/44.2 | no | — |
-| S0-H11 | R-ARM15 | ny_only | 50 | 0.72 | -4.37/26.4 | no | — |
-| S0-H14 | R-NEXIT-SENT | overlap | 32 | 0.49 | -2.88/36.15 | no | — |
-| S0-H16 | R-NEXIT-EARLY | overlap | 70 | 0.35 | -3.15/7.55 | no | — |
-| S0-H16 | R-NEXIT-FULL | overlap | 70 | 0.35 | -2.1/19.0 | no | — |
-| S0-H17 | R-NEXIT-SENT | ny_only | 85 | 0.4 | -1.3/19.4 | no | — |
-| S0-H19 | R-NEXIT-SENT | ny_only | 190 | 0.95 | -1.3/19.4 | no | — |
-| S0-H19 | R-NEXIT-SENT | overlap | 55 | 8.0 | -1.97/44.2 | no | — |
-| S0-H2 | R-NEXIT-SENT | overlap | 120 | 0.45 | -1.97/44.2 | no | — |
-| S0-H20 | R-NEXIT-SENT | london | 129 | 0.1 | -4.95/3.7 | no | — |
-| S0-H6 | R-SCALP-H6 | asia | 135 | 5.44 | 7.55/15.37 | no | — |
-| S0-H6 | R-SCALP-H6 | london | 245 | 9.76 | 15.48/18.45 | no | — |
-| S0-H6 | R-SCALP-H6 | overlap | 135 | 20.17 | 18.54/33.54 | no | — |
-| S0-H6 | R-SCALP-H6-REF | asia | 130 | 5.42 | 7.55/15.37 | no | — |
-| S0-H6 | R-SCALP-H6-REF | london | 249 | 9.24 | 15.48/18.45 | no | — |
-| S0-H6 | R-SCALP-H6-REF | overlap | 136 | 21.68 | 18.54/33.54 | no | — |
-| S0-H7 | R-ARM15 | overlap | 57 | 1.1 | -6.39/40.7 | no | — |
-| S0-H7 | R-NEXIT-SENT | ny_only | 92 | 3.5 | -1.3/19.4 | no | — |
-| S0-H7 | R-NOTRAIL | overlap | 27 | 5.5 | -7.58/85.45 | no | — |
-| S0-H9 | R-ARM15 | dead | 41 | 0.8 | -6.97/37.27 | no | — |
-| S1-H1 | R-NEXIT-EARLY | london | 34 | 0.4 | -3.0/-0.05 | YES | **CANDIDATE** |
-| S1-H1 | R-NEXIT-FULL | london | 34 | 0.4 | -2.23/0.3 | YES | **CANDIDATE** |
-| S1-H11 | R-NEXIT-FULL | overlap | 156 | 0.55 | -2.1/19.0 | no | — |
-| S1-H2 | R-NEXIT-SENT | overlap | 102 | 0.05 | -1.97/44.2 | no | — |
+| S0-H1 | R-H1-CONFIRM | dead | 40 | 3.25 | -9.33/12.26 | no | — |
+| S0-H1 | R-H1-DELAY3 | dead | 136 | 0.23 | -9.05/13.1 | no | — |
+| S0-H1 | R-NEXIT-SENT | ny_only | 390 | 1.65 | -1.45/11.15 | no | — |
+| S0-H1 | R-NEXIT-SENT | overlap | 87 | 2.02 | -2.7/21.7 | no | — |
+| S0-H11 | R-NOTRAIL | overlap | 56 | 6.2 | -9.05/65.3 | no | — |
+| S0-H13 | R-ARM15 | london | 36 | 9.19 | -14.31/5.11 | YES | **CANDIDATE** |
+| S0-H13 | R-NEXIT-SENT | london | 37 | 4.91 | -6.29/1.4 | YES | **CANDIDATE** |
+| S0-H14 | R-NEXIT-SENT | overlap | 81 | 1.09 | -1.9/31.96 | no | — |
+| S0-H16 | R-NEXIT-EARLY | overlap | 144 | 0.8 | -3.97/0.5 | YES | **CANDIDATE** |
+| S0-H16 | R-NEXIT-FULL | overlap | 144 | 0.8 | -2.33/2.7 | no | — |
+| S0-H16 | R-NEXIT-SENT | overlap | 144 | 0.85 | -2.7/21.7 | no | — |
+| S0-H17 | R-ARM15 | dead | 96 | 4.58 | -9.33/12.26 | no | — |
+| S0-H18 | R-ARM15 | dead | 53 | 12.71 | -9.33/12.26 | YES | **CANDIDATE** |
+| S0-H18 | R-ARM15 | ny_only | 71 | 2.0 | -4.19/22.79 | no | — |
+| S0-H18 | R-NOTRAIL | overlap | 39 | 6.9 | -9.05/65.3 | no | — |
+| S0-H2 | R-NEXIT-SENT | ny_only | 1136 | 0.15 | -1.45/11.15 | no | — |
+| S0-H2 | R-NEXIT-SENT | overlap | 433 | 0.5 | -2.7/21.7 | no | — |
+| S0-H20 | R-ARM15 | dead | 26 | 2.21 | -9.33/12.26 | no | — |
+| S0-H20 | R-NEXIT-SENT | ny_only | 65 | 1.5 | -1.45/11.15 | no | — |
+| S0-H6 | R-NEXIT-EARLY | dead | 43 | 0.2 | -2.1/-1.2 | YES | **CANDIDATE** |
+| S0-H6 | R-NEXIT-FULL | dead | 43 | 1.6 | -1.92/-0.85 | YES | **CANDIDATE** |
+| S0-H6 | R-NEXIT-SENT | dead | 41 | 1.8 | -3.63/3.54 | no | — |
+| S0-H6 | R-SCALP-H6 | asia | 318 | 5.89 | 8.36/15.23 | no | — |
+| S0-H6 | R-SCALP-H6 | dead | 42 | 17.73 | 12.61/22.14 | no | — |
+| S0-H6 | R-SCALP-H6 | london | 572 | 11.04 | 17.03/18.98 | no | — |
+| S0-H6 | R-SCALP-H6 | ny_only | 71 | 16.08 | 19.38/34.96 | no | — |
+| S0-H6 | R-SCALP-H6 | overlap | 297 | 21.94 | 20.77/34.69 | no | — |
+| S0-H6 | R-SCALP-H6-REF | asia | 308 | 6.65 | 8.36/15.23 | no | — |
+| S0-H6 | R-SCALP-H6-REF | dead | 41 | 17.15 | 12.61/22.14 | no | — |
+| S0-H6 | R-SCALP-H6-REF | london | 573 | 10.95 | 17.03/18.98 | no | — |
+| S0-H6 | R-SCALP-H6-REF | ny_only | 71 | 16.08 | 19.38/34.96 | no | — |
+| S0-H6 | R-SCALP-H6-REF | overlap | 295 | 22.23 | 20.77/34.69 | no | — |
+| S0-H7 | R-NEXIT-SENT | ny_only | 175 | 2.9 | -1.45/11.15 | no | — |
+| S0-H7 | R-NOTRAIL | overlap | 51 | 3.2 | -9.05/65.3 | no | — |
+| S0-H9 | R-NEXIT-SENT | overlap | 64 | 7.85 | -2.7/21.7 | no | — |
+| S1-H1 | R-ARM15 | dead | 27 | 7.54 | -9.33/12.26 | no | — |
+| S1-H1 | R-NEXIT-EARLY | london | 55 | 1.3 | -3.8/-0.8 | YES | **CANDIDATE** |
+| S1-H1 | R-NEXIT-FULL | london | 55 | 1.3 | -2.6/-0.5 | YES | **CANDIDATE** |
+| S1-H11 | R-NEXIT-FULL | overlap | 416 | 1.15 | -2.33/2.7 | no | — |
+| S1-H9 | R-ARM15 | dead | 40 | 5.45 | -9.33/12.26 | no | — |
+| S1-H9 | R-NEXIT-FULL | overlap | 25 | 10.7 | -2.33/2.7 | YES | **CANDIDATE** |
+| S1-H9 | R-NEXIT-SENT | ny_only | 106 | 0.15 | -1.45/11.15 | no | — |
+| S1-H9 | R-NEXIT-SENT | overlap | 25 | 18.4 | -2.7/21.7 | no | — |

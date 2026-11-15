@@ -2,455 +2,511 @@
 
 Terms: [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-Engine `8effbb323` — emission 2026-09-19; previous 2026-09-16. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
+Engine `66be26997` — emission 2026-11-09; previous 2026-10-24. AN INDEX, NEVER EVIDENCE (register 109): nothing gains evidential status by appearing here — every line points at a stamped artifact and carries that artifact's own statistic, n and null. Statistic shapes are the sources' (74-B). Ages are weeks since first appearance in this ledger (founding emission = 0). Ex-lockbox throughout (the sources are). Nothing advances from this page.
 
-## A. Cells clearing a null on this emission (250)
+## A. Cells clearing a null on this emission (268)
 
 | source | instrument | window | cell | statistic | value | n | percentile | null | age (w) |
 |---|---|---|---|---|---|---|---|---|---|
-| stress_state.md | ger40fut | forward | R-SCALP-H6 by stress state | best-worst state median gap | 5.28 (mixed) | 70 | — | day-state permutation p95 | 2 |
-| zone_anatomy.md | uk100fut, nas100fut, us30fut | forward | loud_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +30.357; +33.589; +14.706 | 3 | — | two-sided in/out permutation p95, per leg | 0 |
-| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | narrow_loud_share in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +13.48; +2.871; +12.162; +8.243 | 4 | — | two-sided in/out permutation p95, per leg | 0 |
-| zone_anatomy.md | uk100fut, nas100fut, us30fut | forward | nd_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -5.542; -8.005; -4.093 | 3 | — | two-sided in/out permutation p95, per leg | 0 |
-| zone_anatomy.md | uk100fut, nas100fut, us30fut | forward | ns_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -5.369; -8.84; -4.15 | 3 | — | two-sided in/out permutation p95, per leg | 0 |
-| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | rel_volume_median in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +0.532; +0.126; +0.546; +0.28 | 4 | — | two-sided in/out permutation p95, per leg | 2 |
-| zone_anatomy.md | uk100fut, ger40fut, nas100fut | forward | svol_sess_median in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -1066.66; -14048.2; -9278 | 3 | — | two-sided in/out permutation p95, per leg | 2 |
-| zone_anatomy.md | ger40fut, nas100fut, us30fut | forward | svol_sess_median in-zone (4h/S) | anatomy shift (>=3-of-4 legs) | +8752; +10470.7; +15353.7 | 3 | — | two-sided in/out permutation p95, per leg | 0 |
-| per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.9 | 10 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | median | 18.21 | 10 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.769 | 39 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | median | 5.76 | 39 | 96.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x open15 | win_rate | 0.667 | 12 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x open15 | median | 6.3 | 12 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | win_rate | 0.841 | 44 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | median | 13.36 | 44 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.909 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x overlap x none | median | 14.14 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.763 | 38 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | median | 5.42 | 38 | 96.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x open15 | win_rate | 0.769 | 13 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x open15 | median | 6.88 | 13 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.85 | 40 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | median | 14.55 | 40 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 1.0 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x overlap x none | median | 14.14 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | backtest | R-ARM15 x asia x none | median | 22.92 | 58 (52) | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | backtest | R-NEXIT-FULL x overlap x open15 | median | 42.6 | 16 (15) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | backtest | R-NEXIT-SENT x overlap x none | median | 23.9 | 66 (54) | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | median | 121.75 | 18 (16) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | win_rate | 0.917 | 12 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | median | 32.97 | 12 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.868 | 38 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | median | 16.11 | 38 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x open15 | win_rate | 0.75 | 12 | 98.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x open15 | median | 15.79 | 12 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.947 | 19 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x none | median | 23.32 | 19 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.762 | 21 | 98.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x asia x none | median | 12.94 | 21 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.889 | 36 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x london x none | median | 16.59 | 36 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x open15 | win_rate | 0.75 | 12 | 98.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x open15 | median | 17.33 | 12 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.958 | 24 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x none | median | 23.68 | 24 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.87 | 23 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x asia x none | median | 13.64 | 23 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-NEXIT-FULL x london x open15 | median | 1.95 | 30 (28) | 96.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | win_rate | 1.0 | 14 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | median | 6.58 | 14 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | win_rate | 0.846 | 13 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | median | 3.02 | 13 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.882 | 17 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | median | 6.05 | 17 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | win_rate | 0.818 | 11 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | median | 3.01 | 11 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.905 | 42 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | median | 3.87 | 42 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.885 | 26 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x asia x none | median | 1.8 | 26 | 97.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.8 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x overlap x none | median | 4.84 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.85 | 40 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x none | median | 3.52 | 40 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.84 | 25 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | median | 1.76 | 25 | 97.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x open15 | win_rate | 0.818 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x open15 | median | 4.25 | 11 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.667 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x overlap x none | median | 4.84 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | win_rate | 0.639 | 41 (36) | 97.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | median | 10.82 | 41 (36) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | median | 10.65 | 31 (20) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | median | 10.65 | 31 (20) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | median | 18.9 | 21 (15) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-SCALP-H6 x london x none | median | 14.37 | 12 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | backtest | R-SCALP-H6-REF x london x none | median | 14.45 | 15 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-ARM15 x dead x close15 | median | 8.19 | 30 (23) | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-NOTRAIL x dead x close15 | median | 165.9 | 30 (23) | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | win_rate | 0.761 | 46 | 97.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | median | 13.75 | 46 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.846 | 26 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x none | median | 28.63 | 26 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.786 | 14 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x asia x none | median | 8.73 | 14 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x open15 | win_rate | 0.667 | 18 | 96.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x open15 | median | 20.23 | 18 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.739 | 46 | 96.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x london x none | median | 13.96 | 46 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.867 | 30 | 99.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x none | median | 29.13 | 30 | 100.0 | field best-of selection null p95 | 2 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.857 | 14 | 99.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x asia x none | median | 9.66 | 14 | 97.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x open15 | win_rate | 0.933 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x open15 | median | 23.67 | 15 | 100.0 | field best-of selection null p95 | 0 |
-| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6 @ 0.25xATR | win_rate | 0.895 | 95 | 100.0 | members' best-over-rungs | 2 |
-| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6-REF @ 0.25xATR | win_rate | 0.875 | 96 | 100.0 | members' best-over-rungs | 2 |
-| scalp_tp_ladder.md (via WATCH hand-offs) | ger40fut | forward | R-SCALP-H6-REF @ 0.25xATR | win_rate | 0.912 | 113 | 95.0 | members' best-over-rungs | 2 |
-| scalp_tp_ladder.md (via WATCH hand-offs) | nas100fut | forward | R-SCALP-H6 @ 0.25xATR | win_rate | 0.932 | 103 | 100.0 | members' best-over-rungs | 2 |
-| scalp_tp_ladder.md (via WATCH hand-offs) | nas100fut | forward | R-SCALP-H6 @ 1.5xATR | median | 41.15 | 85 | 100.0 | members at the same rung | 2 |
-| bar_persistence.md (via WATCH census clears) | uk100fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 28.0 | 50 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | uk100fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 30.4 | 102 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | uk100fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 33.9 | 59 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | uk100fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 35.8 | 134 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H11 net reach 0.5xATR@5 | net_reach_pct | 29.7 | 74 | 99.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 28.6 | 35 | 97.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | ger40fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 35.8 | 148 | 99.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 27.8 | 36 | 96.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | ger40fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 33.9 | 192 | 98.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | nas100fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 52.2 | 46 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | nas100fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 44.8 | 29 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | nas100fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 35.7 | 154 | 99.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | us30fut | backtest | S0-H1 net reach 0.5xATR@5 | net_reach_pct | 28.6 | 49 | 96.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | us30fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 31.3 | 163 | 100.0 | census signal-label selection null p95 | 2 |
-| bar_persistence.md (via WATCH census clears) | us30fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 32.4 | 185 | 100.0 | census signal-label selection null p95 | 2 |
-| narrative_survey.md | uk100fut | both | consistency field count | qualifying pairs | 12 | 37 | 99.0 | pair-count permutation null p95 | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H1|5|backtest|absorption | lift_pp (CONS) | 6.0 | 31 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H1|5|forward|absorption | lift_pp (CONS) | 5.5 | 75 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H1|15|backtest|absorption | lift_pp (CONS) | 6.3 | 32 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H1|15|forward|absorption | lift_pp (CONS) | 4.1 | 82 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H10|5|backtest|map-arrival | lift_pp (CONS) | -13.8 | 23 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H10|5|backtest|absorption | lift_pp (CONS) | 10.0 | 9 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H10|5|forward|map-arrival | lift_pp (CONS) | -5.9 | 16 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H10|5|forward|absorption | lift_pp (CONS) | 15.1 | 51 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H10|15|backtest|absorption | lift_pp (CONS) | 12.3 | 22 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H10|15|backtest|map-arrival | lift_pp (CONS) | -8.2 | 31 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H10|15|forward|map-arrival | lift_pp (CONS) | -7.6 | 28 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H10|15|forward|absorption | lift_pp (CONS) | 17.3 | 91 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H11|5|backtest|trend-flip | lift_pp (CONS) | 3.4 | 34 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H11|5|forward|trend-flip | lift_pp (CONS) | 5.1 | 33 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H11|15|backtest|trend-flip | lift_pp (CONS) | 3.2 | 69 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H11|15|forward|trend-flip | lift_pp (CONS) | 3.5 | 53 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H14|5|backtest|absorption | lift_pp (CONS) | 4.4 | 12 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H14|5|forward|absorption | lift_pp (CONS) | 9.3 | 53 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H14|15|backtest|absorption | lift_pp (CONS) | 14.1 | 23 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H14|15|forward|absorption | lift_pp (CONS) | 4.5 | 79 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H19|5|backtest|opposing | lift_pp (CONS) | -15.0 | 94 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H19|5|forward|opposing | lift_pp (CONS) | -6.2 | 151 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H19|15|backtest|opposing | lift_pp (CONS) | -14.5 | 98 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H19|15|forward|opposing | lift_pp (CONS) | -7.3 | 156 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H2|5|backtest|absorption | lift_pp (CONS) | -9.3 | 135 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H2|5|forward|absorption | lift_pp (CONS) | -4.7 | 308 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H2|15|backtest|absorption | lift_pp (CONS) | -11.5 | 139 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S0-H2|15|forward|absorption | lift_pp (CONS) | -5.1 | 331 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S0-H20|5|backtest|effortless-same | lift_pp (CONS) | -15.0 | 12 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H20|5|forward|effortless-same | lift_pp (CONS) | -8.4 | 17 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H20|15|backtest|effortless-same | lift_pp (CONS) | -20.4 | 15 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H20|15|forward|effortless-same | lift_pp (CONS) | -13.9 | 28 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H6|5|backtest|effortless-same | lift_pp (CONS) | -30.0 | 10 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H6|5|forward|effortless-same | lift_pp (CONS) | -16.1 | 23 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H6|15|backtest|effortless-same | lift_pp (CONS) | -34.5 | 17 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H6|15|forward|effortless-same | lift_pp (CONS) | -21.3 | 34 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H7|5|backtest|opposing | lift_pp (CONS) | 19.5 | 14 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H7|5|forward|opposing | lift_pp (CONS) | 10.9 | 21 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S0-H7|15|backtest|opposing | lift_pp (CONS) | 24.5 | 17 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | forward | S0-H7|15|forward|opposing | lift_pp (CONS) | 13.9 | 25 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | uk100fut | backtest | S1-H11|5|backtest|absorption | lift_pp (CONS) | -13.8 | 22 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S1-H11|5|forward|absorption | lift_pp (CONS) | -9.0 | 91 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S1-H11|15|backtest|absorption | lift_pp (CONS) | -10.8 | 25 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S1-H11|15|forward|absorption | lift_pp (CONS) | -11.1 | 108 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S1-H2|5|backtest|absorption | lift_pp (CONS) | -8.8 | 95 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S1-H2|5|forward|absorption | lift_pp (CONS) | -6.6 | 235 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | backtest | S1-H2|15|backtest|absorption | lift_pp (CONS) | -11.4 | 99 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | uk100fut | forward | S1-H2|15|forward|absorption | lift_pp (CONS) | -6.9 | 252 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | nas100fut | backtest | S0-H14|15|backtest|trend-flip | lift_pp (EXT) | 30.3 | 50 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | nas100fut | forward | S0-H20|5|forward|opposing | lift_pp (EXT) | 37.0 | 34 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | nas100fut | forward | S0-H20|15|forward|opposing | lift_pp (EXT) | 35.6 | 34 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | us30fut | both | consistency field count | qualifying pairs | 9 | 34 | 99.0 | pair-count permutation null p95 | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H10|5|backtest|effortless-same | lift_pp (CONS) | 5.8 | 27 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H10|5|forward|effortless-same | lift_pp (CONS) | 20.5 | 78 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H10|15|backtest|effortless-same | lift_pp (CONS) | 5.1 | 42 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H10|15|forward|effortless-same | lift_pp (CONS) | 14.5 | 144 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H19|5|backtest|opposing | lift_pp (CONS) | -14.6 | 77 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H19|5|backtest|absorption | lift_pp (CONS) | -13.8 | 66 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H19|5|forward|opposing | lift_pp (CONS) | -6.0 | 232 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H19|5|forward|absorption | lift_pp (CONS) | -9.4 | 251 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H19|15|backtest|opposing | lift_pp (CONS) | -13.9 | 80 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H19|15|backtest|absorption | lift_pp (CONS) | -14.3 | 66 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H19|15|forward|opposing | lift_pp (CONS) | -4.9 | 237 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H19|15|forward|absorption | lift_pp (CONS) | -10.0 | 255 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H2|5|backtest|opposing | lift_pp (CONS) | -13.7 | 108 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H2|5|backtest|absorption | lift_pp (CONS) | -7.0 | 105 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H2|5|backtest|effortless-same | lift_pp (CONS) | 17.6 | 16 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | us30fut | forward | S0-H2|5|forward|absorption | lift_pp (CONS) | -3.8 | 409 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H2|5|forward|opposing | lift_pp (CONS) | -3.6 | 321 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H2|5|forward|effortless-same | lift_pp (CONS) | 3.2 | 52 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | us30fut | backtest | S0-H2|15|backtest|opposing | lift_pp (CONS) | -15.3 | 110 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H2|15|backtest|absorption | lift_pp (CONS) | -6.2 | 107 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S0-H2|15|backtest|effortless-same | lift_pp (CONS) | 15.1 | 17 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | us30fut | forward | S0-H2|15|forward|absorption | lift_pp (CONS) | -4.3 | 421 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S0-H2|15|forward|effortless-same | lift_pp (CONS) | 3.9 | 65 | — | survey extremity / consistency null | 0 |
-| narrative_survey.md | us30fut | forward | S0-H2|15|forward|opposing | lift_pp (CONS) | -3.7 | 326 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H11|5|backtest|absorption | lift_pp (CONS) | -6.1 | 46 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H11|5|forward|absorption | lift_pp (CONS) | -12.1 | 186 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H11|15|backtest|absorption | lift_pp (CONS) | -3.7 | 54 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H11|15|forward|absorption | lift_pp (CONS) | -13.1 | 221 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H2|5|backtest|opposing | lift_pp (CONS) | -12.7 | 87 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H2|5|backtest|map-arrival | lift_pp (CONS) | -4.5 | 19 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H2|5|forward|map-arrival | lift_pp (CONS) | -5.2 | 34 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H2|5|forward|opposing | lift_pp (CONS) | -7.7 | 211 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H2|15|backtest|opposing | lift_pp (CONS) | -14.3 | 89 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | backtest | S1-H2|15|backtest|map-arrival | lift_pp (CONS) | -4.8 | 20 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H2|15|forward|map-arrival | lift_pp (CONS) | -6.3 | 36 | — | survey extremity / consistency null | 2 |
-| narrative_survey.md | us30fut | forward | S1-H2|15|forward|opposing | lift_pp (CONS) | -8.1 | 215 | — | survey extremity / consistency null | 2 |
-| journal_survey.md | pooled | both | max positive cells in one variant | concentration | 10 | None | 100.0 | variant-label permutation p95 | 2 |
-| journal_survey.md | pooled | both | {"sentence": "S1-H1", "variant": "R-NEXIT-EARLY", "session": "london", "n": 34,  | question candidate | None | 34 | — | session floors + concentration | 0 |
-| journal_survey.md | pooled | both | {"sentence": "S1-H1", "variant": "R-NEXIT-FULL", "session": "london", "n": 34, " | question candidate | None | 34 | — | session floors + concentration | 0 |
-| event_clock.md | nas100fut | forward | R-ARM15|held:high | glint | 20.1 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-ARM15|held:high | glint | 11.2 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-ARM15|news30:native | glint | -16.5 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-ARM15|open30 | glint | -17.0 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | nas100fut | forward | R-BE|close30 | glint | 12.1 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-BE|close30 | glint | 11.3 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | ger40fut | forward | R-BE|held:high | candidate | 22.4 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | nas100fut | forward | R-BE|held:high | candidate | 21.5 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | uk100fut | forward | R-BE|held:high | candidate | 11.6 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-BE|news30:cross | glint | -18.3 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | ger40fut | forward | R-BE|open30 | glint | -11.0 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | us30fut | forward | R-H1-DELAY3|held:high | glint | 37.8 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NEXIT-EARLY|held:high | glint | 19.9 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|held:high | glint | 22.9 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NEXIT-EARLY|open15 | glint | -17.0 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | nas100fut | forward | R-NEXIT-EARLY|open30 | glint | -14.8 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | nas100fut | forward | R-NEXIT-FULL|open15 | glint | -13.4 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | uk100fut | forward | R-NEXIT-SENT|held:high | glint | 14.0 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news15:cross | glint | 19.1 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NEXIT-SENT|news15:native | glint | 26.1 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news15:native | glint | 38.4 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | nas100fut | forward | R-NEXIT-SENT|news30:native | glint | 16.1 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news30:native | glint | 23.0 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-NOTRAIL|close15 | glint | 24.9 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NOTRAIL|close30 | glint | 10.9 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | us30fut | forward | R-NOTRAIL|close30 | glint | 19.0 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | ger40fut | forward | R-NOTRAIL|held:high | candidate | 18.8 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NOTRAIL|held:high | candidate | 27.6 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-NOTRAIL|held:high | candidate | 25.4 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | us30fut | forward | R-NOTRAIL|news30:cross | glint | -30.0 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | nas100fut | forward | R-NOTRAIL|open30 | glint | 21.5 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | ger40fut | forward | R-OP2|held:high | glint | 32.8 | None | — | per-leg null p95 / member band | 0 |
-| event_clock.md | uk100fut | forward | R-OP2|held:high | glint | 37.2 | None | — | per-leg null p95 / member band | 0 |
-| scalp_risk_grid.md | us30fut | forward | cooldown|R-SCALP-H6-REF|forward|15 | glint | -210.0 | None | — | per-leg null p95 / member band | 0 |
-| scalp_risk_grid.md | us30fut | forward | cooldown|R-SCALP-H6|forward|15 | glint | -235.3 | None | — | per-leg null p95 / member band | 0 |
-| scalp_risk_grid.md | uk100fut | forward | cooldown|R-SCALP-H6|forward|240 | glint | -48.8 | None | — | per-leg null p95 / member band | 2 |
-| vol_regime.md | us30fut | forward | R-ARM15|vol>=95 | glint | 34.36 | None | — | per-leg null p95 / member band | 0 |
-| vol_regime.md | uk100fut | forward | R-NEXIT-SENT|vol>=95 | glint | 3.6 | None | — | per-leg null p95 / member band | 2 |
-| vol_regime.md | nas100fut | forward | R-OP2|vol>=95 | candidate | 8.23 | None | — | per-leg null p95 / member band | 2 |
-| vol_regime.md | uk100fut | forward | R-OP2|vol>=95 | candidate | 1.51 | None | — | per-leg null p95 / member band | 2 |
-| vol_regime.md | us30fut | forward | R-OP2|vol>=95 | candidate | 4.05 | None | — | per-leg null p95 / member band | 2 |
-| event_clock.md | all | both | field count of qualifying window splits | field count | 160 | 408 | 100.0 | label permutation p95 | 2 |
+| zone_anatomy.md | uk100fut, nas100fut, us30fut | forward | loud_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +27.709; +31.918; +17.112 | 3 | — | two-sided in/out permutation p95, per leg | 7 |
+| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | narrow_loud_share in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +12.403; +3.392; +10.116; +7.631 | 4 | — | two-sided in/out permutation p95, per leg | 7 |
+| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | nd_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -5.721; -2.596; -6.847; -5.125 | 4 | — | two-sided in/out permutation p95, per leg | 7 |
+| zone_anatomy.md | uk100fut, nas100fut, us30fut | forward | ns_rate in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -5.606; -7.462; -5.119 | 3 | — | two-sided in/out permutation p95, per leg | 7 |
+| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | rel_volume_median in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | +0.513; +0.123; +0.505; +0.32 | 4 | — | two-sided in/out permutation p95, per leg | 9 |
+| zone_anatomy.md | uk100fut, ger40fut, nas100fut | forward | svol15_median in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -41.512; -59.411; -537.312 | 3 | — | two-sided in/out permutation p95, per leg | 7 |
+| zone_anatomy.md | uk100fut, ger40fut, nas100fut, us30fut | forward | svol_sess_median in-zone (4h/D) | anatomy shift (>=3-of-4 legs) | -1191.56; -14928.1; -9682.92; -1026.36 | 4 | — | two-sided in/out permutation p95, per leg | 9 |
+| zone_anatomy.md | ger40fut, nas100fut, us30fut | forward | svol_sess_median in-zone (4h/S) | anatomy shift (>=3-of-4 legs) | +5319.85; +5594.02; +2379.81 | 3 | — | two-sided in/out permutation p95, per leg | 7 |
+| per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.9 | 10 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | backtest | R-SCALP-H6-REF x london x none | median | 18.21 | 10 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-H1-DELAY3 x overlap x none | median | 15.7 | 13 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | ger40fut | forward | R-NEXIT-SENT x ny_only x news15 | median | 5.6 | 32 (26) | 97.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | ger40fut | forward | R-NOTRAIL x london x none | median | 4.95 | 394 (360) | 96.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-NOTRAIL x overlap x none | median | 4.85 | 139 (132) | 96.0 | field best-of selection null p95 | 2 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.8 | 90 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x asia x none | median | 6.68 | 90 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x open15 | win_rate | 0.731 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x open15 | median | 8.3 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | win_rate | 0.831 | 118 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x london x none | median | 15.32 | 118 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.84 | 25 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x overlap x none | median | 15.06 | 25 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x ny_only x none | win_rate | 0.941 | 17 | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6 x ny_only x none | median | 18.42 | 17 | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.846 | 91 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x asia x none | median | 6.93 | 91 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x open15 | win_rate | 0.731 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x open15 | median | 8.08 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.796 | 113 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x london x none | median | 14.94 | 113 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.808 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x overlap x none | median | 15.25 | 26 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x ny_only x none | win_rate | 0.882 | 17 | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | ger40fut | forward | R-SCALP-H6-REF x ny_only x none | median | 18.53 | 17 | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | nas100fut | backtest | R-ARM15 x asia x none | median | 22.92 | 58 (52) | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | backtest | R-NEXIT-FULL x overlap x open15 | median | 42.6 | 16 (15) | 100.0 | field best-of selection null p95 | 9 |
+| per_market_watch.md | nas100fut | backtest | R-NEXIT-SENT x overlap x none | median | 23.9 | 66 (54) | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | backtest | R-NOTRAIL x overlap x none | median | 121.75 | 18 (16) | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | win_rate | 0.917 | 12 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | backtest | R-SCALP-H6 x overlap x none | median | 32.97 | 12 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-ARM15 x london x open15 | median | 18.71 | 25 (23) | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.798 | 84 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x london x none | median | 15.43 | 84 | 96.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x open15 | win_rate | 0.769 | 26 | 99.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x open15 | median | 18.12 | 26 | 97.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.765 | 68 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x overlap x none | median | 23.54 | 68 | 97.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x ny_only x none | median | 28.32 | 12 | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x dead x none | win_rate | 1.0 | 11 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x dead x none | median | 17.09 | 11 | 97.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.786 | 56 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6 x asia x none | median | 12.86 | 56 | 96.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.815 | 81 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x london x none | median | 15.84 | 81 | 97.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x open15 | win_rate | 0.87 | 23 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x open15 | median | 18.87 | 23 | 97.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.792 | 72 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x overlap x none | median | 24.02 | 72 | 97.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x ny_only x none | win_rate | 0.714 | 14 | 99.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x ny_only x none | median | 28.32 | 14 | 98.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x dead x none | win_rate | 0.917 | 12 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x dead x none | median | 14.86 | 12 | 96.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.8 | 55 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | nas100fut | forward | R-SCALP-H6-REF x asia x none | median | 13.12 | 55 | 96.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-NEXIT-FULL x london x open15 | median | 1.95 | 30 (28) | 96.0 | field best-of selection null p95 | 9 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | win_rate | 1.0 | 14 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x london x none | median | 6.58 | 14 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | win_rate | 0.846 | 13 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6 x asia x none | median | 3.02 | 13 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | win_rate | 0.882 | 17 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x london x none | median | 6.05 | 17 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | win_rate | 0.818 | 11 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | backtest | R-SCALP-H6-REF x asia x none | median | 3.01 | 11 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-H1-DELAY10 x ny_only x none | win_rate | 0.567 | 30 | 95.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | uk100fut | forward | R-H1-DELAY10 x ny_only x none | median | 2.09 | 30 | 96.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | uk100fut | forward | R-NEXIT-SENT x london x news15 | median | 1.7 | 42 (32) | 96.0 | field best-of selection null p95 | 2 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | win_rate | 0.894 | 113 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x none | median | 4.14 | 113 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.816 | 87 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x asia x none | median | 1.79 | 87 | 96.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x open15 | win_rate | 0.889 | 27 | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x london x open15 | median | 4.37 | 27 | 99.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.78 | 41 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6 x overlap x none | median | 4.89 | 41 | 99.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.881 | 118 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x none | median | 4.18 | 118 | 99.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.787 | 80 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x asia x none | median | 1.77 | 80 | 96.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x open15 | win_rate | 0.793 | 29 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x london x open15 | median | 4.09 | 29 | 99.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.718 | 39 | 99.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | uk100fut | forward | R-SCALP-H6-REF x overlap x none | median | 5.13 | 39 | 99.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | win_rate | 0.639 | 41 (36) | 97.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-ARM15 x dead x none | median | 10.82 | 41 (36) | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-EARLY x ny_only x news15 | median | 10.65 | 31 (20) | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-FULL x ny_only x news15 | median | 10.65 | 31 (20) | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-NEXIT-SENT x ny_only x news15 | median | 18.9 | 21 (15) | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-SCALP-H6 x london x none | median | 14.37 | 12 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | backtest | R-SCALP-H6-REF x london x none | median | 14.45 | 15 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-NEXIT-SENT x ny_only x news15 | median | 20.65 | 33 (26) | 100.0 | field best-of selection null p95 | 5 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | win_rate | 0.811 | 132 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x london x none | median | 17.55 | 132 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x none | win_rate | 0.821 | 67 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x none | median | 32.93 | 67 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x asia x none | win_rate | 0.822 | 45 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x asia x none | median | 11.26 | 45 | 97.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x open15 | win_rate | 0.778 | 36 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x overlap x open15 | median | 25.12 | 36 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x ny_only x none | win_rate | 0.8 | 10 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6 x ny_only x none | median | 37.82 | 10 | 100.0 | field best-of selection null p95 | 0 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x london x none | win_rate | 0.832 | 131 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x london x none | median | 17.85 | 131 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x none | win_rate | 0.792 | 72 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x none | median | 31.52 | 72 | 100.0 | field best-of selection null p95 | 10 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x asia x none | win_rate | 0.913 | 46 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x asia x none | median | 11.31 | 46 | 97.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x open15 | win_rate | 0.912 | 34 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x overlap x open15 | median | 27.34 | 34 | 100.0 | field best-of selection null p95 | 7 |
+| per_market_watch.md | us30fut | forward | R-SCALP-H6-REF x ny_only x none | median | 29.49 | 10 | 100.0 | field best-of selection null p95 | 0 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6 @ 0.25xATR | win_rate | 0.867 | 286 | 100.0 | members' best-over-rungs | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6 @ 1xATR | weeks_pos | 7 | 247 | 95.0 | members' best-over-rungs | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6-REF @ 0.25xATR | win_rate | 0.866 | 284 | 100.0 | members' best-over-rungs | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | uk100fut | forward | R-SCALP-H6-REF @ 1xATR | weeks_pos | 7 | 248 | 95.0 | members' best-over-rungs | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | ger40fut | forward | R-SCALP-H6 @ 0.25xATR | win_rate | 0.907 | 300 | 100.0 | members' best-over-rungs | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | nas100fut | forward | R-SCALP-H6 @ 1.5xATR | median | 41.21 | 220 | 95.0 | members at the same rung | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | us30fut | forward | R-SCALP-H6 @ 1.5xATR | median | 47.91 | 227 | 100.0 | members at the same rung | 10 |
+| scalp_tp_ladder.md (via WATCH hand-offs) | us30fut | forward | R-SCALP-H6-REF @ 1.5xATR | median | 46.79 | 231 | 100.0 | members at the same rung | 10 |
+| bar_persistence.md (via WATCH census clears) | uk100fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 28.0 | 50 | 100.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | uk100fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 36.9 | 312 | 100.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | uk100fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 33.9 | 59 | 100.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | uk100fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 36.2 | 401 | 100.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H11 net reach 0.5xATR@5 | net_reach_pct | 29.7 | 74 | 99.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 28.6 | 35 | 97.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | ger40fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 33.3 | 378 | 98.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | ger40fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 27.8 | 36 | 96.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | ger40fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 38.1 | 459 | 100.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | nas100fut | backtest | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 52.2 | 46 | 100.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | nas100fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 32.0 | 410 | 99.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | nas100fut | backtest | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 44.8 | 29 | 100.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | nas100fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 36.3 | 402 | 100.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | us30fut | backtest | S0-H1 net reach 0.5xATR@5 | net_reach_pct | 28.6 | 49 | 96.0 | census signal-label selection null p95 | 10 |
+| bar_persistence.md (via WATCH census clears) | us30fut | forward | S0-H20 net reach 0.5xATR@5 | net_reach_pct | 32.8 | 460 | 100.0 | census signal-label selection null p95 | 9 |
+| bar_persistence.md (via WATCH census clears) | us30fut | forward | S0-H6 net reach 0.5xATR@5 | net_reach_pct | 33.5 | 492 | 100.0 | census signal-label selection null p95 | 10 |
+| narrative_survey.md | nas100fut | backtest | S0-H14|15|backtest|trend-flip | lift_pp (EXT) | 31.1 | 50 | — | survey extremity / consistency null | 7 |
+| narrative_survey.md | us30fut | both | consistency field count | qualifying pairs | 13 | 39 | 99.0 | pair-count permutation null p95 | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H10|5|backtest|map-arrival | lift_pp (CONS) | 11.6 | 25 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H10|5|forward|map-arrival | lift_pp (CONS) | 5.0 | 225 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H10|15|backtest|map-arrival | lift_pp (CONS) | 11.3 | 30 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H10|15|forward|map-arrival | lift_pp (CONS) | 5.5 | 314 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H14|5|backtest|trend-flip | lift_pp (CONS) | 20.3 | 5 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H14|5|forward|trend-flip | lift_pp (CONS) | 9.8 | 44 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H14|15|backtest|trend-flip | lift_pp (CONS) | 8.8 | 35 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H14|15|forward|trend-flip | lift_pp (CONS) | 4.5 | 315 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H19|5|backtest|opposing | lift_pp (CONS) | -14.6 | 77 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H19|5|backtest|absorption | lift_pp (CONS) | -13.8 | 66 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H19|5|forward|opposing | lift_pp (CONS) | -4.7 | 842 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H19|5|forward|absorption | lift_pp (CONS) | -5.5 | 700 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H19|15|backtest|opposing | lift_pp (CONS) | -13.9 | 80 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H19|15|backtest|absorption | lift_pp (CONS) | -14.3 | 66 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H19|15|forward|opposing | lift_pp (CONS) | -4.9 | 852 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H19|15|forward|absorption | lift_pp (CONS) | -5.9 | 714 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H2|5|backtest|opposing | lift_pp (CONS) | -13.7 | 108 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H2|5|backtest|absorption | lift_pp (CONS) | -7.0 | 105 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H2|5|forward|absorption | lift_pp (CONS) | -5.2 | 1100 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H2|5|forward|opposing | lift_pp (CONS) | -3.1 | 1124 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H2|15|backtest|opposing | lift_pp (CONS) | -15.3 | 110 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H2|15|backtest|absorption | lift_pp (CONS) | -6.2 | 107 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H2|15|forward|absorption | lift_pp (CONS) | -5.7 | 1134 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S0-H2|15|forward|opposing | lift_pp (CONS) | -3.4 | 1136 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S0-H20|5|backtest|none | lift_pp (CONS) | -15.2 | 24 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H20|5|forward|none | lift_pp (CONS) | -13.8 | 101 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H20|15|backtest|none | lift_pp (CONS) | -3.6 | 5 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H20|15|forward|none | lift_pp (CONS) | -17.9 | 30 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H6|5|backtest|none | lift_pp (CONS) | -10.8 | 17 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H6|5|forward|none | lift_pp (CONS) | -19.9 | 125 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H6|15|backtest|none | lift_pp (CONS) | -18.6 | 4 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H6|15|forward|none | lift_pp (CONS) | -15.4 | 24 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H7|5|backtest|none | lift_pp (CONS) | -26.9 | 15 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H7|5|forward|none | lift_pp (CONS) | -10.7 | 107 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S0-H7|15|backtest|none | lift_pp (CONS) | -10.3 | 3 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | forward | S0-H7|15|forward|none | lift_pp (CONS) | -20.8 | 21 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S1-H11|5|backtest|map-arrival | lift_pp (CONS) | -8.8 | 19 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S1-H11|5|backtest|absorption | lift_pp (CONS) | -6.1 | 46 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H11|5|forward|absorption | lift_pp (CONS) | -5.3 | 544 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H11|5|forward|map-arrival | lift_pp (CONS) | -20.2 | 16 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S1-H11|15|backtest|map-arrival | lift_pp (CONS) | -10.7 | 25 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S1-H11|15|backtest|absorption | lift_pp (CONS) | -3.7 | 54 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H11|15|forward|absorption | lift_pp (CONS) | -6.1 | 640 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H11|15|forward|map-arrival | lift_pp (CONS) | -11.5 | 26 | — | survey extremity / consistency null | 2 |
+| narrative_survey.md | us30fut | backtest | S1-H2|5|backtest|opposing | lift_pp (CONS) | -12.7 | 87 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S1-H2|5|backtest|map-arrival | lift_pp (CONS) | -3.6 | 19 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H2|5|forward|map-arrival | lift_pp (CONS) | -8.0 | 100 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H2|5|forward|opposing | lift_pp (CONS) | -4.2 | 800 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S1-H2|15|backtest|opposing | lift_pp (CONS) | -14.3 | 89 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | backtest | S1-H2|15|backtest|map-arrival | lift_pp (CONS) | -3.7 | 20 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H2|15|forward|map-arrival | lift_pp (CONS) | -8.8 | 108 | — | survey extremity / consistency null | 9 |
+| narrative_survey.md | us30fut | forward | S1-H2|15|forward|opposing | lift_pp (CONS) | -4.6 | 809 | — | survey extremity / consistency null | 9 |
+| journal_survey.md | pooled | both | max positive cells in one variant | concentration | 13 | None | 100.0 | variant-label permutation p95 | 10 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H13", "variant": "R-ARM15", "session": "london", "n": 36, "medi | question candidate | None | 36 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H13", "variant": "R-NEXIT-SENT", "session": "london", "n": 37,  | question candidate | None | 37 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H16", "variant": "R-NEXIT-EARLY", "session": "overlap", "n": 14 | question candidate | None | 144 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H18", "variant": "R-ARM15", "session": "dead", "n": 53, "median | question candidate | None | 53 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H6", "variant": "R-NEXIT-EARLY", "session": "dead", "n": 43, "m | question candidate | None | 43 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S0-H6", "variant": "R-NEXIT-FULL", "session": "dead", "n": 43, "me | question candidate | None | 43 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S1-H1", "variant": "R-NEXIT-EARLY", "session": "london", "n": 55,  | question candidate | None | 55 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S1-H1", "variant": "R-NEXIT-FULL", "session": "london", "n": 55, " | question candidate | None | 55 | — | session floors + concentration | 0 |
+| journal_survey.md | pooled | both | {"sentence": "S1-H9", "variant": "R-NEXIT-FULL", "session": "overlap", "n": 25,  | question candidate | None | 25 | — | session floors + concentration | 0 |
+| event_clock.md | ger40fut | forward | R-ARM15|close15 | glint | 21.7 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | nas100fut | forward | R-ARM15|close15 | glint | 11.4 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | nas100fut | forward | R-ARM15|held:high | glint | 12.7 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | us30fut | forward | R-ARM15|held:high | glint | 11.5 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | uk100fut | forward | R-ARM15|news15:native | glint | 22.9 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | uk100fut | forward | R-ARM15|news30:native | glint | 22.5 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | us30fut | forward | R-BE|close30 | glint | 12.2 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | ger40fut | forward | R-BE|held:high | glint | 14.1 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | nas100fut | forward | R-BE|held:high | glint | 11.6 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | nas100fut | forward | R-BE|news15:native | glint | -17.1 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | ger40fut | forward | R-BE|open15 | glint | -14.2 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | ger40fut | forward | R-BE|open30 | glint | -14.5 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | us30fut | forward | R-H1-DELAY10|held:high | glint | 23.6 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | nas100fut | forward | R-H1-DELAY3|held:high | glint | 34.5 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | us30fut | forward | R-H1-DELAY3|held:high | glint | 28.6 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | uk100fut | forward | R-H1-OWNCURVE|held:high | glint | 28.0 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | ger40fut | forward | R-NEXIT-EARLY|held:high | candidate | 11.1 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | nas100fut | forward | R-NEXIT-EARLY|held:high | candidate | 23.4 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|held:high | candidate | 12.4 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | us30fut | forward | R-NEXIT-EARLY|held:high | candidate | 11.4 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | nas100fut | forward | R-NEXIT-EARLY|news15:cross | glint | -14.8 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | us30fut | forward | R-NEXIT-EARLY|news15:cross | glint | -11.2 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|news15:native | glint | 21.2 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | us30fut | forward | R-NEXIT-EARLY|news30:cross | glint | -10.4 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|news30:native | glint | 11.7 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | uk100fut | forward | R-NEXIT-EARLY|open15 | glint | 10.8 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | nas100fut | forward | R-NEXIT-FULL|held:high | glint | 15.3 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | us30fut | forward | R-NEXIT-FULL|news15:cross | glint | -12.0 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | uk100fut | forward | R-NEXIT-FULL|news15:native | glint | 22.3 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | us30fut | forward | R-NEXIT-FULL|news30:cross | glint | -11.0 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | uk100fut | forward | R-NEXIT-FULL|news30:native | glint | 12.0 | None | — | per-leg null p95 / member band | 2 |
+| event_clock.md | uk100fut | forward | R-NEXIT-FULL|open15 | glint | 10.7 | None | — | per-leg null p95 / member band | 9 |
+| event_clock.md | nas100fut | forward | R-NEXIT-SENT|news15:cross | glint | -20.0 | None | — | per-leg null p95 / member band | 0 |
+| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news15:cross | glint | 15.6 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news15:native | glint | 30.3 | None | — | per-leg null p95 / member band | 10 |
+| event_clock.md | uk100fut | forward | R-NEXIT-SENT|news30:native | glint | 16.9 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | ger40fut | forward | R-NEXIT-SENT|open15 | glint | -12.8 | None | — | per-leg null p95 / member band | 2 |
+| event_clock.md | ger40fut | forward | R-NOTRAIL|held:high | candidate | 16.4 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | nas100fut | forward | R-NOTRAIL|held:high | candidate | 19.4 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | uk100fut | forward | R-NOTRAIL|held:high | candidate | 18.8 | None | — | per-leg null p95 / member band | 9 |
+| event_clock.md | us30fut | forward | R-NOTRAIL|news30:cross | glint | -25.0 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | nas100fut | forward | R-NOTRAIL|open15 | glint | 21.9 | None | — | per-leg null p95 / member band | 2 |
+| event_clock.md | us30fut | forward | R-NOTRAIL|open15 | glint | 15.5 | None | — | per-leg null p95 / member band | 2 |
+| event_clock.md | nas100fut | forward | R-NOTRAIL|open30 | glint | 15.9 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | us30fut | forward | R-NOTRAIL|open30 | glint | 14.6 | None | — | per-leg null p95 / member band | 2 |
+| event_clock.md | ger40fut | forward | R-OP2|held:high | candidate | 25.8 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | nas100fut | forward | R-OP2|held:high | candidate | 18.8 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | uk100fut | forward | R-OP2|held:high | candidate | 33.2 | None | — | per-leg null p95 / member band | 7 |
+| event_clock.md | us30fut | forward | R-OP2|held:high | candidate | 26.7 | None | — | per-leg null p95 / member band | 5 |
+| event_clock.md | ger40fut | forward | R-SCALP-H6|held:high | glint | -30.9 | None | — | per-leg null p95 / member band | 0 |
+| scalp_risk_grid.md | nas100fut | forward | stop_ladder|R-SCALP-H6-REF|forward|1 | glint | 1342.2 | None | — | per-leg null p95 / member band | 0 |
+| scalp_risk_grid.md | uk100fut | forward | cooldown|R-SCALP-H6|forward|120 | glint | -132.0 | None | — | per-leg null p95 / member band | 5 |
+| scalp_risk_grid.md | uk100fut | forward | cooldown|R-SCALP-H6|forward|180 | glint | -101.9 | None | — | per-leg null p95 / member band | 0 |
+| scalp_risk_grid.md | uk100fut | forward | cooldown|R-SCALP-H6|forward|240 | glint | -142.8 | None | — | per-leg null p95 / member band | 9 |
+| vol_regime.md | ger40fut | forward | R-H1-DELAY10|vol>=95 | glint | 29.2 | None | — | per-leg null p95 / member band | 5 |
+| vol_regime.md | ger40fut | forward | R-OP2|vol>=95 | candidate | 1.79 | None | — | per-leg null p95 / member band | 10 |
+| vol_regime.md | nas100fut | forward | R-OP2|vol>=95 | candidate | 5.24 | None | — | per-leg null p95 / member band | 10 |
+| vol_regime.md | uk100fut | forward | R-OP2|vol>=95 | candidate | 1.14 | None | — | per-leg null p95 / member band | 10 |
+| vol_regime.md | us30fut | forward | R-OP2|vol>=95 | candidate | 6.93 | None | — | per-leg null p95 / member band | 10 |
+| h6_refinement.md | scalp | forward | field count of qualifying splits | field count | 66 | 154 | 100.0 | label permutation p95 | 10 |
+| event_clock.md | all | both | field count of qualifying window splits | field count | 156 | 465 | 100.0 | label permutation p95 | 10 |
 
-## B. WATCH / glint entries (171) — listed, never rules; age = weeks since first appearance here
+## B. WATCH / glint entries (209) — listed, never rules; age = weeks since first appearance here
 
 | kind | source | entry | legs | status | age (w) |
 |---|---|---|---|---|---|
-| anatomy finding | zone_anatomy.md | uk100fut rel_volume_median in-zone (4h/D, backtest) | uk100fut | shift +0.228 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut loud_rate in-zone (4h/D, backtest) | uk100fut | shift +3.74 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut narrow_loud_share in-zone (4h/D, backtest) | uk100fut | shift +4.5 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut nd_rate in-zone (4h/D, backtest) | uk100fut | shift -7.351 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut ns_rate in-zone (4h/D, backtest) | uk100fut | shift -6.435 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut svol15_median in-zone (4h/D, backtest) | uk100fut | shift -15.869 (pct 98.0); sel-pct 69.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut svol_sess_median in-zone (4h/D, backtest) | uk100fut | shift -284.74 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | uk100fut spread_pctile_median in-zone (4h/D, forward) | uk100fut | shift +16.385 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | uk100fut svol15_median in-zone (4h/D, forward) | uk100fut | shift -28.421 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | ger40fut narrow_loud_share in-zone (4h/S, forward) | ger40fut | shift -2.207 (pct 96.0); sel-pct 52.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | ger40fut nd_rate in-zone (4h/S, forward) | ger40fut | shift -1.743 (pct 97.0); sel-pct 62.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | ger40fut ns_rate in-zone (4h/S, forward) | ger40fut | shift -2.399 (pct 100.0); sel-pct 97.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | ger40fut climax_rate in-zone (4h/S, forward) | ger40fut | shift +0.508 (pct 96.0); sel-pct 47.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | ger40fut svol15_median in-zone (4h/S, forward) | ger40fut | shift +104.232 (pct 98.0); sel-pct 87.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | nas100fut svol15_median in-zone (4h/D, forward) | nas100fut | shift -490 (pct 100.0); sel-pct 93.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut rel_volume_median in-zone (4h/S, backtest) | nas100fut | shift -0.425 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut loud_rate in-zone (4h/S, backtest) | nas100fut | shift -21.766 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut spread_pctile_median in-zone (4h/S, backtest) | nas100fut | shift -18.654 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut narrow_loud_share in-zone (4h/S, backtest) | nas100fut | shift -7.579 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut test_rate in-zone (4h/S, backtest) | nas100fut | shift +0.391 (pct 100.0); sel-pct 93.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut nd_rate in-zone (4h/S, backtest) | nas100fut | shift +9.777 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut ns_rate in-zone (4h/S, backtest) | nas100fut | shift +10.853 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut climax_rate in-zone (4h/S, backtest) | nas100fut | shift -0.428 (pct 96.0); sel-pct 32.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut svol_sess_median in-zone (4h/S, backtest) | nas100fut | shift +11279.8 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | nas100fut rel_volume_median in-zone (4h/S, forward) | nas100fut | shift +0.087 (pct 100.0); sel-pct 97.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | nas100fut loud_rate in-zone (4h/S, forward) | nas100fut | shift +5.74 (pct 100.0); sel-pct 97.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | nas100fut narrow_loud_share in-zone (4h/S, forward) | nas100fut | shift +3.736 (pct 100.0); sel-pct 99.0 — beats the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | nas100fut ns_rate in-zone (4h/S, forward) | nas100fut | shift -3.311 (pct 99.0); sel-pct 73.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | nas100fut svol15_median in-zone (4h/S, forward) | nas100fut | shift -399.239 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 0 |
-| anatomy finding | zone_anatomy.md | us30fut spread_pctile_median in-zone (4h/D, forward) | us30fut | shift +7.233 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut test_rate in-zone (4h/D, forward) | us30fut | shift +0.737 (pct 100.0); sel-pct 91.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut rel_volume_median in-zone (4h/S, backtest) | us30fut | shift -0.715 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut loud_rate in-zone (4h/S, backtest) | us30fut | shift -29.106 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut spread_pctile_median in-zone (4h/S, backtest) | us30fut | shift -25.59 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut narrow_loud_share in-zone (4h/S, backtest) | us30fut | shift -12.419 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut test_rate in-zone (4h/S, backtest) | us30fut | shift -0.591 (pct 95.0); sel-pct 25.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut nd_rate in-zone (4h/S, backtest) | us30fut | shift +19.939 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut ns_rate in-zone (4h/S, backtest) | us30fut | shift +16.079 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut climax_rate in-zone (4h/S, backtest) | us30fut | shift -0.62 (pct 95.0); sel-pct 53.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut svol15_median in-zone (4h/S, backtest) | us30fut | shift +44.873 (pct 100.0); sel-pct 89.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut svol_sess_median in-zone (4h/S, backtest) | us30fut | shift +2102.03 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut rel_volume_median in-zone (4h/S, forward) | us30fut | shift -0.085 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut loud_rate in-zone (4h/S, forward) | us30fut | shift -11.378 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut spread_pctile_median in-zone (4h/S, forward) | us30fut | shift -10.208 (pct 96.0); sel-pct 93.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut narrow_loud_share in-zone (4h/S, forward) | us30fut | shift -4.8 (pct 100.0); sel-pct 92.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut nd_rate in-zone (4h/S, forward) | us30fut | shift +2.26 (pct 95.0); sel-pct 30.0 — inside the field's best fake | 2 |
-| anatomy finding | zone_anatomy.md | us30fut svol15_median in-zone (4h/S, forward) | us30fut | shift +76.803 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 2 |
-| candidate pool | per_market_watch.md | R-NEXIT-EARLY x open-window | ger40fut, nas100fut | mechanism EMPTY | 2 |
-| candidate pool | per_market_watch.md | us30fut x open-window strength | us30fut | mechanism EMPTY | 2 |
-| candidate pool | per_market_watch.md | ger40fut S0-H19 reach | ger40fut | mechanism EMPTY | 2 |
-| HELD sentence | per_market_watch.md | nas100fut R-NEXIT-FULL x overlap | nas100fut | n=248 (222 distinct) sel-pct win 33.0 / median 45.0; condition (b) unmet | 2 |
-| HELD sentence | per_market_watch.md | us30fut R-ARM15 x dead | us30fut | n=147 (128 distinct) sel-pct win 5.0 / median 0.0; condition (b) unmet | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best win_rate @ 0.25x | uk100fut | n=95 sel-pct 100.0 beats null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best median @ 1.5x | uk100fut | n=68 sel-pct 85.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best weeks_pos @ 0.5x | uk100fut | n=95 sel-pct 80.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best win_rate @ 0.25x | uk100fut | n=96 sel-pct 100.0 beats null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best median @ 1.5x | uk100fut | n=73 sel-pct 80.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best weeks_pos @ 1x | uk100fut | n=83 sel-pct 80.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best win_rate @ 0.25x | ger40fut | n=119 sel-pct 70.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best median @ 1.5x | ger40fut | n=95 sel-pct 30.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best weeks_pos @ 0.25x | ger40fut | n=119 sel-pct 30.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best win_rate @ 0.25x | ger40fut | n=113 sel-pct 95.0 beats null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best median @ 1.5x | ger40fut | n=93 sel-pct 30.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best weeks_pos @ 0.25x | ger40fut | n=113 sel-pct 5.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best win_rate @ 0.25x | nas100fut | n=103 sel-pct 100.0 beats null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best median @ 1.5x | nas100fut | n=85 sel-pct 100.0 beats null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best weeks_pos @ 0.75x | nas100fut | n=98 sel-pct 80.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best win_rate @ 0.25x | nas100fut | n=109 sel-pct 80.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best median @ 1.5x | nas100fut | n=83 sel-pct 70.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best weeks_pos @ 0.5x | nas100fut | n=109 sel-pct 45.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best win_rate @ 0.25x | us30fut | n=115 sel-pct 0.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best median @ 1.5x | us30fut | n=87 sel-pct 35.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best weeks_pos @ 0.75x | us30fut | n=109 sel-pct 5.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best win_rate @ 0.25x | us30fut | n=117 sel-pct 0.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best median @ 1.5x | us30fut | n=89 sel-pct 35.0 inside null | 2 |
-| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best weeks_pos @ 0.5x | us30fut | n=117 sel-pct 25.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H1 backtest net reach 0.5xATR@5 | uk100fut | n=69 sel-pct 14.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H1 forward net reach 0.5xATR@5 | uk100fut | n=203 sel-pct 26.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H11 backtest net reach 0.5xATR@5 | uk100fut | n=316 sel-pct 11.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H11 forward net reach 0.5xATR@5 | uk100fut | n=323 sel-pct 18.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H13 forward net reach 0.5xATR@5 | uk100fut | unmeasurable n=18 (7 to go) | 0 |
-| census clear | bar_persistence.md | uk100fut S0-H17 backtest net reach 0.5xATR@5 | uk100fut | n=41 sel-pct 2.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H18 backtest net reach 0.5xATR@5 | uk100fut | n=61 sel-pct 28.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H19 backtest net reach 0.5xATR@5 | uk100fut | n=213 sel-pct 18.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H20 backtest net reach 0.5xATR@5 | uk100fut | n=50 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H20 forward net reach 0.5xATR@5 | uk100fut | n=102 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H6 backtest net reach 0.5xATR@5 | uk100fut | n=59 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H6 forward net reach 0.5xATR@5 | uk100fut | n=134 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H7 backtest net reach 0.5xATR@5 | uk100fut | n=112 sel-pct 21.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S0-H9 backtest net reach 0.5xATR@5 | uk100fut | n=55 sel-pct 28.0 inside null | 2 |
-| census clear | bar_persistence.md | uk100fut S1-H1 backtest net reach 0.5xATR@5 | uk100fut | unmeasurable n=5 (20 to go) | 2 |
-| census clear | bar_persistence.md | uk100fut S1-H11 forward net reach 0.5xATR@5 | uk100fut | n=412 sel-pct 37.0 inside null | 0 |
-| census clear | bar_persistence.md | uk100fut S1-H9 backtest net reach 0.5xATR@5 | uk100fut | unmeasurable n=19 (6 to go) | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H11 backtest net reach 0.5xATR@5 | ger40fut | n=74 sel-pct 99.0 beats null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H13 backtest net reach 0.5xATR@5 | ger40fut | unmeasurable n=6 (19 to go) | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H17 forward net reach 0.5xATR@5 | ger40fut | n=137 sel-pct 0.0 inside null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H20 backtest net reach 0.5xATR@5 | ger40fut | n=35 sel-pct 97.0 beats null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H20 forward net reach 0.5xATR@5 | ger40fut | n=148 sel-pct 99.0 beats null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H3 forward net reach 0.5xATR@5 | ger40fut | n=27 sel-pct 43.0 inside null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H6 backtest net reach 0.5xATR@5 | ger40fut | n=36 sel-pct 96.0 beats null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H6 forward net reach 0.5xATR@5 | ger40fut | n=192 sel-pct 98.0 beats null | 2 |
-| census clear | bar_persistence.md | ger40fut S0-H7 forward net reach 0.5xATR@5 | ger40fut | n=145 sel-pct 23.0 inside null | 2 |
-| census clear | bar_persistence.md | ger40fut S1-H1 forward net reach 0.5xATR@5 | ger40fut | unmeasurable n=13 (12 to go) | 2 |
-| census clear | bar_persistence.md | ger40fut S1-H9 backtest net reach 0.5xATR@5 | ger40fut | unmeasurable n=8 (17 to go) | 2 |
-| census clear | bar_persistence.md | ger40fut S1-H9 forward net reach 0.5xATR@5 | ger40fut | n=42 sel-pct 74.0 inside null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H1 backtest net reach 0.5xATR@5 | nas100fut | n=34 sel-pct 13.0 inside null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H1 forward net reach 0.5xATR@5 | nas100fut | n=142 sel-pct 71.0 inside null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H13 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=1 (24 to go) | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H13 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=9 (16 to go) | 0 |
-| census clear | bar_persistence.md | nas100fut S0-H16 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=10 (15 to go) | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H17 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=15 (10 to go) | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H19 forward net reach 0.5xATR@5 | nas100fut | n=392 sel-pct 0.0 inside null | 0 |
-| census clear | bar_persistence.md | nas100fut S0-H2 forward net reach 0.5xATR@5 | nas100fut | n=650 sel-pct 0.0 inside null | 0 |
-| census clear | bar_persistence.md | nas100fut S0-H20 backtest net reach 0.5xATR@5 | nas100fut | n=46 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H20 forward net reach 0.5xATR@5 | nas100fut | n=127 sel-pct 91.0 inside null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H3 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=3 (22 to go) | 0 |
-| census clear | bar_persistence.md | nas100fut S0-H6 backtest net reach 0.5xATR@5 | nas100fut | n=29 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H6 forward net reach 0.5xATR@5 | nas100fut | n=154 sel-pct 99.0 beats null | 2 |
-| census clear | bar_persistence.md | nas100fut S0-H7 forward net reach 0.5xATR@5 | nas100fut | n=146 sel-pct 0.0 inside null | 0 |
-| census clear | bar_persistence.md | nas100fut S1-H1 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=3 (22 to go) | 2 |
-| census clear | bar_persistence.md | nas100fut S1-H1 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=10 (15 to go) | 2 |
-| census clear | bar_persistence.md | nas100fut S1-H11 forward net reach 0.5xATR@5 | nas100fut | n=778 sel-pct 0.0 inside null | 0 |
-| census clear | bar_persistence.md | nas100fut S1-H2 forward net reach 0.5xATR@5 | nas100fut | n=457 sel-pct 0.0 inside null | 0 |
-| census clear | bar_persistence.md | nas100fut S1-H9 forward net reach 0.5xATR@5 | nas100fut | n=31 sel-pct 11.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H1 backtest net reach 0.5xATR@5 | us30fut | n=49 sel-pct 96.0 beats null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H1 forward net reach 0.5xATR@5 | us30fut | n=307 sel-pct 85.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H13 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=5 (20 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H16 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=10 (15 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H16 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=24 (1 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H17 forward net reach 0.5xATR@5 | us30fut | n=169 sel-pct 0.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H19 backtest net reach 0.5xATR@5 | us30fut | n=172 sel-pct 31.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H20 forward net reach 0.5xATR@5 | us30fut | n=163 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H3 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=19 (6 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H4 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=13 (12 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H5 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=1 (24 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H5 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=1 (24 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S0-H6 forward net reach 0.5xATR@5 | us30fut | n=185 sel-pct 100.0 beats null | 2 |
-| census clear | bar_persistence.md | us30fut S0-H7 forward net reach 0.5xATR@5 | us30fut | n=181 sel-pct 0.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S1-H1 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=2 (23 to go) | 2 |
-| census clear | bar_persistence.md | us30fut S1-H1 forward net reach 0.5xATR@5 | us30fut | n=38 sel-pct 11.0 inside null | 0 |
-| census clear | bar_persistence.md | us30fut S1-H11 backtest net reach 0.5xATR@5 | us30fut | n=189 sel-pct 14.0 inside null | 2 |
-| census clear | bar_persistence.md | us30fut S1-H11 forward net reach 0.5xATR@5 | us30fut | n=914 sel-pct 11.0 inside null | 2 |
-| glint | event_clock.md | R-ARM15|held:high | nas100fut, us30fut | glint (2 of 4 legs) | 0 |
-| glint | event_clock.md | R-ARM15|news30:native | us30fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-ARM15|open30 | nas100fut | glint (1 of 4 legs) | 2 |
-| glint | event_clock.md | R-BE|close30 | nas100fut, us30fut | glint (2 of 4 legs) | 2 |
-| glint | event_clock.md | R-BE|news30:cross | us30fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-BE|open30 | ger40fut | glint (1 of 4 legs) | 2 |
-| glint | event_clock.md | R-H1-DELAY3|held:high | us30fut | glint (1 of 1 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-EARLY|held:high | nas100fut, uk100fut | glint (2 of 4 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-EARLY|open15 | nas100fut | glint (1 of 4 legs) | 2 |
-| glint | event_clock.md | R-NEXIT-EARLY|open30 | nas100fut | glint (1 of 4 legs) | 2 |
-| glint | event_clock.md | R-NEXIT-FULL|open15 | nas100fut | glint (1 of 4 legs) | 2 |
-| glint | event_clock.md | R-NEXIT-SENT|held:high | uk100fut | glint (1 of 4 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-SENT|news15:cross | uk100fut | glint (1 of 4 legs) | 0 |
-| glint | event_clock.md | R-NEXIT-SENT|news15:native | nas100fut, uk100fut | glint (2 of 3 legs) | 2 |
-| glint | event_clock.md | R-NEXIT-SENT|news30:native | nas100fut, uk100fut | glint (2 of 3 legs) | 2 |
-| glint | event_clock.md | R-NOTRAIL|close15 | us30fut | glint (1 of 3 legs) | 2 |
-| glint | event_clock.md | R-NOTRAIL|close30 | nas100fut, us30fut | glint (2 of 4 legs) | 0 |
-| glint | event_clock.md | R-NOTRAIL|news30:cross | us30fut | glint (1 of 3 legs) | 0 |
-| glint | event_clock.md | R-NOTRAIL|open30 | nas100fut | glint (1 of 4 legs) | 0 |
-| glint | event_clock.md | R-OP2|held:high | ger40fut, uk100fut | glint (2 of 4 legs) | 0 |
-| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6-REF|forward|15 | us30fut | glint (1 of 4 legs) | 0 |
-| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|15 | us30fut | glint (1 of 4 legs) | 2 |
-| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|240 | uk100fut | glint (1 of 4 legs) | 2 |
-| glint | h6_refinement.md | cofire:S0-H20 | scalp | glint | 2 |
-| glint | h6_refinement.md | quadrant:narrow-quiet | scalp | glint | 2 |
-| glint | h6_refinement.md | quadrant:wide-loud | scalp | glint | 0 |
-| glint | h6_refinement.md | session:asia | scalp | glint | 0 |
-| glint | h6_refinement.md | session:london | scalp | glint | 2 |
-| glint | h6_refinement.md | session:overlap | scalp | glint | 2 |
+| anatomy finding | zone_anatomy.md | uk100fut rel_volume_median in-zone (4h/D, backtest) | uk100fut | shift +0.228 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | uk100fut loud_rate in-zone (4h/D, backtest) | uk100fut | shift +3.74 (pct 100.0); sel-pct 91.0 — inside the field's best fake | 10 |
+| anatomy finding | zone_anatomy.md | uk100fut narrow_loud_share in-zone (4h/D, backtest) | uk100fut | shift +4.5 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | uk100fut nd_rate in-zone (4h/D, backtest) | uk100fut | shift -7.351 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | uk100fut ns_rate in-zone (4h/D, backtest) | uk100fut | shift -6.435 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | uk100fut svol15_median in-zone (4h/D, backtest) | uk100fut | shift -15.869 (pct 98.0); sel-pct 72.0 — inside the field's best fake | 10 |
+| anatomy finding | zone_anatomy.md | uk100fut svol_sess_median in-zone (4h/D, backtest) | uk100fut | shift -284.74 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 10 |
+| anatomy finding | zone_anatomy.md | uk100fut spread_pctile_median in-zone (4h/D, forward) | uk100fut | shift +15.136 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | ger40fut rel_volume_median in-zone (4h/S, forward) | ger40fut | shift -0.108 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 5 |
+| anatomy finding | zone_anatomy.md | ger40fut loud_rate in-zone (4h/S, forward) | ger40fut | shift -5.239 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 5 |
+| anatomy finding | zone_anatomy.md | ger40fut spread_pctile_median in-zone (4h/S, forward) | ger40fut | shift -12.5 (pct 100.0); sel-pct None — inside the field's best fake | 5 |
+| anatomy finding | zone_anatomy.md | ger40fut narrow_loud_share in-zone (4h/S, forward) | ger40fut | shift -2.588 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | ger40fut test_rate in-zone (4h/S, forward) | ger40fut | shift +0.224 (pct 96.0); sel-pct 51.0 — inside the field's best fake | 0 |
+| anatomy finding | zone_anatomy.md | ger40fut nd_rate in-zone (4h/S, forward) | ger40fut | shift +2.607 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | ger40fut ns_rate in-zone (4h/S, forward) | ger40fut | shift +1.474 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | ger40fut climax_rate in-zone (4h/S, forward) | ger40fut | shift +0.279 (pct 98.0); sel-pct 73.0 — inside the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | ger40fut svol15_median in-zone (4h/S, forward) | ger40fut | shift +42.742 (pct 100.0); sel-pct 84.0 — inside the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | nas100fut rel_volume_median in-zone (4h/S, backtest) | nas100fut | shift -0.425 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut loud_rate in-zone (4h/S, backtest) | nas100fut | shift -21.766 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut spread_pctile_median in-zone (4h/S, backtest) | nas100fut | shift -18.654 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut narrow_loud_share in-zone (4h/S, backtest) | nas100fut | shift -7.579 (pct 100.0); sel-pct 99.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut test_rate in-zone (4h/S, backtest) | nas100fut | shift +0.391 (pct 100.0); sel-pct 97.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut nd_rate in-zone (4h/S, backtest) | nas100fut | shift +9.777 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut ns_rate in-zone (4h/S, backtest) | nas100fut | shift +10.853 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut climax_rate in-zone (4h/S, backtest) | nas100fut | shift -0.428 (pct 96.0); sel-pct 32.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut svol_sess_median in-zone (4h/S, backtest) | nas100fut | shift +11279.8 (pct 100.0); sel-pct 100.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | nas100fut rel_volume_median in-zone (4h/S, forward) | nas100fut | shift +0.052 (pct 100.0); sel-pct 93.0 — inside the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | nas100fut nd_rate in-zone (4h/S, forward) | nas100fut | shift -3.025 (pct 100.0); sel-pct 97.0 — beats the field's best fake | 5 |
+| anatomy finding | zone_anatomy.md | nas100fut ns_rate in-zone (4h/S, forward) | nas100fut | shift -2.323 (pct 100.0); sel-pct 91.0 — inside the field's best fake | 7 |
+| anatomy finding | zone_anatomy.md | us30fut spread_pctile_median in-zone (4h/D, forward) | us30fut | shift +6.25 (pct 97.0); sel-pct 97.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut test_rate in-zone (4h/D, forward) | us30fut | shift +0.695 (pct 100.0); sel-pct 95.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut climax_rate in-zone (4h/D, forward) | us30fut | shift +1.036 (pct 100.0); sel-pct 95.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut rel_volume_median in-zone (4h/S, backtest) | us30fut | shift -0.715 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut loud_rate in-zone (4h/S, backtest) | us30fut | shift -29.106 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut spread_pctile_median in-zone (4h/S, backtest) | us30fut | shift -25.59 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut narrow_loud_share in-zone (4h/S, backtest) | us30fut | shift -12.419 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut test_rate in-zone (4h/S, backtest) | us30fut | shift -0.591 (pct 95.0); sel-pct 20.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut nd_rate in-zone (4h/S, backtest) | us30fut | shift +19.939 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut ns_rate in-zone (4h/S, backtest) | us30fut | shift +16.079 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut climax_rate in-zone (4h/S, backtest) | us30fut | shift -0.62 (pct 95.0); sel-pct 56.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut svol15_median in-zone (4h/S, backtest) | us30fut | shift +44.873 (pct 100.0); sel-pct 90.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut svol_sess_median in-zone (4h/S, backtest) | us30fut | shift +2102.03 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut loud_rate in-zone (4h/S, forward) | us30fut | shift -8.146 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut narrow_loud_share in-zone (4h/S, forward) | us30fut | shift -3.176 (pct 100.0); sel-pct 95.0 — inside the field's best fake | 9 |
+| anatomy finding | zone_anatomy.md | us30fut svol15_median in-zone (4h/S, forward) | us30fut | shift +65.213 (pct 100.0); sel-pct 95.0 — beats the field's best fake | 9 |
+| candidate pool | per_market_watch.md | R-NEXIT-EARLY x open-window | ger40fut, nas100fut | mechanism EMPTY | 10 |
+| candidate pool | per_market_watch.md | us30fut x open-window strength | us30fut | mechanism EMPTY | 10 |
+| candidate pool | per_market_watch.md | ger40fut S0-H19 reach | ger40fut | mechanism EMPTY | 10 |
+| HELD sentence | per_market_watch.md | nas100fut R-NEXIT-FULL x overlap | nas100fut | n=1042 (855 distinct) sel-pct win 2.0 / median 0.0; condition (b) unmet | 10 |
+| HELD sentence | per_market_watch.md | us30fut R-ARM15 x dead | us30fut | n=376 (335 distinct) sel-pct win 0.0 / median 0.0; condition (b) unmet | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best win_rate @ 0.25x | uk100fut | n=286 sel-pct 100.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best median @ 1.5x | uk100fut | n=212 sel-pct 70.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6 best weeks_pos @ 1x | uk100fut | n=247 sel-pct 95.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best win_rate @ 0.25x | uk100fut | n=284 sel-pct 100.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best median @ 1.5x | uk100fut | n=220 sel-pct 50.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | uk100fut R-SCALP-H6-REF best weeks_pos @ 1x | uk100fut | n=248 sel-pct 95.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best win_rate @ 0.25x | ger40fut | n=300 sel-pct 100.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best median @ 1.5x | ger40fut | n=226 sel-pct 15.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6 best weeks_pos @ 0.75x | ger40fut | n=273 sel-pct 70.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best win_rate @ 0.25x | ger40fut | n=294 sel-pct 80.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best median @ 1.5x | ger40fut | n=233 sel-pct 20.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | ger40fut R-SCALP-H6-REF best weeks_pos @ 1.5x | ger40fut | n=233 sel-pct 45.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best win_rate @ 0.25x | nas100fut | n=275 sel-pct 65.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best median @ 1.5x | nas100fut | n=220 sel-pct 95.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6 best weeks_pos @ 0.75x | nas100fut | n=265 sel-pct 40.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best win_rate @ 0.25x | nas100fut | n=272 sel-pct 0.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best median @ 1.5x | nas100fut | n=215 sel-pct 70.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | nas100fut R-SCALP-H6-REF best weeks_pos @ 0.5x | nas100fut | n=272 sel-pct 15.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best win_rate @ 0.25x | us30fut | n=317 sel-pct 90.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best median @ 1.5x | us30fut | n=227 sel-pct 100.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6 best weeks_pos @ 0.25x | us30fut | n=317 sel-pct 20.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best win_rate @ 0.25x | us30fut | n=319 sel-pct 5.0 inside null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best median @ 1.5x | us30fut | n=231 sel-pct 100.0 beats null | 10 |
+| ladder hand-off | scalp_tp_ladder.md | us30fut R-SCALP-H6-REF best weeks_pos @ 0.5x | us30fut | n=319 sel-pct 65.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H1 backtest net reach 0.5xATR@5 | uk100fut | n=69 sel-pct 14.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H1 forward net reach 0.5xATR@5 | uk100fut | n=531 sel-pct 43.0 inside null | 9 |
+| census clear | bar_persistence.md | uk100fut S0-H11 backtest net reach 0.5xATR@5 | uk100fut | n=316 sel-pct 11.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H11 forward net reach 0.5xATR@5 | uk100fut | n=868 sel-pct 0.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H17 backtest net reach 0.5xATR@5 | uk100fut | n=41 sel-pct 2.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H17 forward net reach 0.5xATR@5 | uk100fut | n=281 sel-pct 0.0 inside null | 9 |
+| census clear | bar_persistence.md | uk100fut S0-H18 backtest net reach 0.5xATR@5 | uk100fut | n=61 sel-pct 28.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H18 forward net reach 0.5xATR@5 | uk100fut | n=161 sel-pct 0.0 inside null | 2 |
+| census clear | bar_persistence.md | uk100fut S0-H19 backtest net reach 0.5xATR@5 | uk100fut | n=213 sel-pct 18.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H2 forward net reach 0.5xATR@5 | uk100fut | n=2233 sel-pct 0.0 inside null | 0 |
+| census clear | bar_persistence.md | uk100fut S0-H20 backtest net reach 0.5xATR@5 | uk100fut | n=50 sel-pct 100.0 beats null | 9 |
+| census clear | bar_persistence.md | uk100fut S0-H20 forward net reach 0.5xATR@5 | uk100fut | n=312 sel-pct 100.0 beats null | 9 |
+| census clear | bar_persistence.md | uk100fut S0-H4 forward net reach 0.5xATR@5 | uk100fut | unmeasurable n=1 (24 to go) | 2 |
+| census clear | bar_persistence.md | uk100fut S0-H6 backtest net reach 0.5xATR@5 | uk100fut | n=59 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H6 forward net reach 0.5xATR@5 | uk100fut | n=401 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H7 backtest net reach 0.5xATR@5 | uk100fut | n=112 sel-pct 21.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S0-H7 forward net reach 0.5xATR@5 | uk100fut | n=435 sel-pct 0.0 inside null | 9 |
+| census clear | bar_persistence.md | uk100fut S0-H9 backtest net reach 0.5xATR@5 | uk100fut | n=55 sel-pct 28.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S1-H1 backtest net reach 0.5xATR@5 | uk100fut | unmeasurable n=5 (20 to go) | 10 |
+| census clear | bar_persistence.md | uk100fut S1-H1 forward net reach 0.5xATR@5 | uk100fut | n=39 sel-pct 26.0 inside null | 10 |
+| census clear | bar_persistence.md | uk100fut S1-H11 forward net reach 0.5xATR@5 | uk100fut | n=1515 sel-pct 0.0 inside null | 7 |
+| census clear | bar_persistence.md | uk100fut S1-H2 forward net reach 0.5xATR@5 | uk100fut | n=1638 sel-pct 0.0 inside null | 0 |
+| census clear | bar_persistence.md | uk100fut S1-H9 backtest net reach 0.5xATR@5 | uk100fut | unmeasurable n=19 (6 to go) | 10 |
+| census clear | bar_persistence.md | uk100fut S1-H9 forward net reach 0.5xATR@5 | uk100fut | n=131 sel-pct 24.0 inside null | 5 |
+| census clear | bar_persistence.md | ger40fut S0-H1 forward net reach 0.5xATR@5 | ger40fut | n=529 sel-pct 29.0 inside null | 5 |
+| census clear | bar_persistence.md | ger40fut S0-H11 backtest net reach 0.5xATR@5 | ger40fut | n=74 sel-pct 99.0 beats null | 10 |
+| census clear | bar_persistence.md | ger40fut S0-H11 forward net reach 0.5xATR@5 | ger40fut | n=1905 sel-pct 0.0 inside null | 5 |
+| census clear | bar_persistence.md | ger40fut S0-H13 backtest net reach 0.5xATR@5 | ger40fut | unmeasurable n=6 (19 to go) | 10 |
+| census clear | bar_persistence.md | ger40fut S0-H16 forward net reach 0.5xATR@5 | ger40fut | n=60 sel-pct 0.0 inside null | 2 |
+| census clear | bar_persistence.md | ger40fut S0-H17 forward net reach 0.5xATR@5 | ger40fut | n=284 sel-pct 0.0 inside null | 9 |
+| census clear | bar_persistence.md | ger40fut S0-H18 forward net reach 0.5xATR@5 | ger40fut | n=361 sel-pct 7.0 inside null | 5 |
+| census clear | bar_persistence.md | ger40fut S0-H20 backtest net reach 0.5xATR@5 | ger40fut | n=35 sel-pct 97.0 beats null | 9 |
+| census clear | bar_persistence.md | ger40fut S0-H20 forward net reach 0.5xATR@5 | ger40fut | n=378 sel-pct 98.0 beats null | 9 |
+| census clear | bar_persistence.md | ger40fut S0-H3 forward net reach 0.5xATR@5 | ger40fut | n=87 sel-pct 0.0 inside null | 10 |
+| census clear | bar_persistence.md | ger40fut S0-H6 backtest net reach 0.5xATR@5 | ger40fut | n=36 sel-pct 96.0 beats null | 10 |
+| census clear | bar_persistence.md | ger40fut S0-H6 forward net reach 0.5xATR@5 | ger40fut | n=459 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | ger40fut S0-H7 forward net reach 0.5xATR@5 | ger40fut | n=396 sel-pct 8.0 inside null | 10 |
+| census clear | bar_persistence.md | ger40fut S1-H1 forward net reach 0.5xATR@5 | ger40fut | n=41 sel-pct 73.0 inside null | 10 |
+| census clear | bar_persistence.md | ger40fut S1-H11 forward net reach 0.5xATR@5 | ger40fut | n=1846 sel-pct 0.0 inside null | 10 |
+| census clear | bar_persistence.md | ger40fut S1-H9 backtest net reach 0.5xATR@5 | ger40fut | unmeasurable n=8 (17 to go) | 10 |
+| census clear | bar_persistence.md | ger40fut S1-H9 forward net reach 0.5xATR@5 | ger40fut | n=109 sel-pct 4.0 inside null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H1 backtest net reach 0.5xATR@5 | nas100fut | n=34 sel-pct 13.0 inside null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H1 forward net reach 0.5xATR@5 | nas100fut | n=490 sel-pct 88.0 inside null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H11 forward net reach 0.5xATR@5 | nas100fut | n=2558 sel-pct 0.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S0-H13 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=1 (24 to go) | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H13 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=15 (10 to go) | 7 |
+| census clear | bar_persistence.md | nas100fut S0-H16 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=10 (15 to go) | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H16 forward net reach 0.5xATR@5 | nas100fut | n=61 sel-pct 1.0 inside null | 5 |
+| census clear | bar_persistence.md | nas100fut S0-H17 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=15 (10 to go) | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H17 forward net reach 0.5xATR@5 | nas100fut | n=234 sel-pct 0.0 inside null | 5 |
+| census clear | bar_persistence.md | nas100fut S0-H18 forward net reach 0.5xATR@5 | nas100fut | n=380 sel-pct 0.0 inside null | 2 |
+| census clear | bar_persistence.md | nas100fut S0-H19 backtest net reach 0.5xATR@5 | nas100fut | n=204 sel-pct 8.0 inside null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H19 forward net reach 0.5xATR@5 | nas100fut | n=1683 sel-pct 28.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S0-H2 forward net reach 0.5xATR@5 | nas100fut | n=2438 sel-pct 7.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S0-H20 backtest net reach 0.5xATR@5 | nas100fut | n=46 sel-pct 100.0 beats null | 9 |
+| census clear | bar_persistence.md | nas100fut S0-H20 forward net reach 0.5xATR@5 | nas100fut | n=410 sel-pct 99.0 beats null | 9 |
+| census clear | bar_persistence.md | nas100fut S0-H5 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=2 (23 to go) | 5 |
+| census clear | bar_persistence.md | nas100fut S0-H6 backtest net reach 0.5xATR@5 | nas100fut | n=29 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H6 forward net reach 0.5xATR@5 | nas100fut | n=402 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | nas100fut S0-H7 forward net reach 0.5xATR@5 | nas100fut | n=356 sel-pct 0.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S0-H9 forward net reach 0.5xATR@5 | nas100fut | n=662 sel-pct 0.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S1-H1 backtest net reach 0.5xATR@5 | nas100fut | unmeasurable n=3 (22 to go) | 10 |
+| census clear | bar_persistence.md | nas100fut S1-H1 forward net reach 0.5xATR@5 | nas100fut | unmeasurable n=24 (1 to go) | 10 |
+| census clear | bar_persistence.md | nas100fut S1-H11 forward net reach 0.5xATR@5 | nas100fut | n=2015 sel-pct 0.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S1-H2 forward net reach 0.5xATR@5 | nas100fut | n=1747 sel-pct 2.0 inside null | 7 |
+| census clear | bar_persistence.md | nas100fut S1-H9 forward net reach 0.5xATR@5 | nas100fut | n=131 sel-pct 92.0 inside null | 10 |
+| census clear | bar_persistence.md | us30fut S0-H1 backtest net reach 0.5xATR@5 | us30fut | n=49 sel-pct 96.0 beats null | 10 |
+| census clear | bar_persistence.md | us30fut S0-H1 forward net reach 0.5xATR@5 | us30fut | n=758 sel-pct 63.0 inside null | 9 |
+| census clear | bar_persistence.md | us30fut S0-H13 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=21 (4 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S0-H16 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=10 (15 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S0-H16 forward net reach 0.5xATR@5 | us30fut | n=61 sel-pct 1.0 inside null | 10 |
+| census clear | bar_persistence.md | us30fut S0-H17 forward net reach 0.5xATR@5 | us30fut | n=382 sel-pct 21.0 inside null | 9 |
+| census clear | bar_persistence.md | us30fut S0-H19 forward net reach 0.5xATR@5 | us30fut | n=1786 sel-pct 0.0 inside null | 5 |
+| census clear | bar_persistence.md | us30fut S0-H2 forward net reach 0.5xATR@5 | us30fut | n=2676 sel-pct 0.0 inside null | 2 |
+| census clear | bar_persistence.md | us30fut S0-H20 forward net reach 0.5xATR@5 | us30fut | n=460 sel-pct 100.0 beats null | 9 |
+| census clear | bar_persistence.md | us30fut S0-H3 forward net reach 0.5xATR@5 | us30fut | n=47 sel-pct 14.0 inside null | 9 |
+| census clear | bar_persistence.md | us30fut S0-H4 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=13 (12 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S0-H5 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=1 (24 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S0-H5 forward net reach 0.5xATR@5 | us30fut | unmeasurable n=4 (21 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S0-H6 forward net reach 0.5xATR@5 | us30fut | n=492 sel-pct 100.0 beats null | 10 |
+| census clear | bar_persistence.md | us30fut S0-H7 forward net reach 0.5xATR@5 | us30fut | n=372 sel-pct 1.0 inside null | 9 |
+| census clear | bar_persistence.md | us30fut S1-H1 backtest net reach 0.5xATR@5 | us30fut | unmeasurable n=2 (23 to go) | 10 |
+| census clear | bar_persistence.md | us30fut S1-H1 forward net reach 0.5xATR@5 | us30fut | n=67 sel-pct 75.0 inside null | 7 |
+| census clear | bar_persistence.md | us30fut S1-H11 forward net reach 0.5xATR@5 | us30fut | n=2786 sel-pct 4.0 inside null | 9 |
+| census clear | bar_persistence.md | us30fut S1-H2 forward net reach 0.5xATR@5 | us30fut | n=1950 sel-pct 0.0 inside null | 0 |
+| census clear | bar_persistence.md | us30fut S1-H9 forward net reach 0.5xATR@5 | us30fut | n=109 sel-pct 54.0 inside null | 5 |
+| glint | event_clock.md | R-ARM15|close15 | ger40fut, nas100fut | glint (2 of 4 legs) | 5 |
+| glint | event_clock.md | R-ARM15|held:high | nas100fut, us30fut | glint (2 of 4 legs) | 7 |
+| glint | event_clock.md | R-ARM15|news15:native | uk100fut | glint (1 of 3 legs) | 0 |
+| glint | event_clock.md | R-ARM15|news30:native | uk100fut | glint (1 of 3 legs) | 7 |
+| glint | event_clock.md | R-BE|close30 | us30fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-BE|held:high | ger40fut, nas100fut | glint (2 of 4 legs) | 10 |
+| glint | event_clock.md | R-BE|news15:native | nas100fut | glint (1 of 3 legs) | 0 |
+| glint | event_clock.md | R-BE|open15 | ger40fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-BE|open30 | ger40fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-H1-DELAY10|held:high | us30fut | glint (1 of 4 legs) | 2 |
+| glint | event_clock.md | R-H1-DELAY3|held:high | nas100fut, us30fut | glint (2 of 4 legs) | 7 |
+| glint | event_clock.md | R-H1-OWNCURVE|held:high | uk100fut | glint (1 of 4 legs) | 0 |
+| glint | event_clock.md | R-NEXIT-EARLY|news15:cross | nas100fut, us30fut | glint (2 of 4 legs) | 0 |
+| glint | event_clock.md | R-NEXIT-EARLY|news15:native | uk100fut | glint (1 of 3 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-EARLY|news30:cross | us30fut | glint (1 of 4 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-EARLY|news30:native | uk100fut | glint (1 of 3 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-EARLY|open15 | uk100fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-FULL|held:high | nas100fut | glint (1 of 4 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-FULL|news15:cross | us30fut | glint (1 of 4 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-FULL|news15:native | uk100fut | glint (1 of 3 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-FULL|news30:cross | us30fut | glint (1 of 4 legs) | 5 |
+| glint | event_clock.md | R-NEXIT-FULL|news30:native | uk100fut | glint (1 of 3 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-FULL|open15 | uk100fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-SENT|news15:cross | nas100fut, uk100fut | glint (2 of 4 legs) | 7 |
+| glint | event_clock.md | R-NEXIT-SENT|news15:native | uk100fut | glint (1 of 3 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-SENT|news30:native | uk100fut | glint (1 of 3 legs) | 10 |
+| glint | event_clock.md | R-NEXIT-SENT|open15 | ger40fut | glint (1 of 4 legs) | 10 |
+| glint | event_clock.md | R-NOTRAIL|news30:cross | us30fut | glint (1 of 4 legs) | 7 |
+| glint | event_clock.md | R-NOTRAIL|open15 | nas100fut, us30fut | glint (2 of 4 legs) | 2 |
+| glint | event_clock.md | R-NOTRAIL|open30 | nas100fut, us30fut | glint (2 of 4 legs) | 7 |
+| glint | event_clock.md | R-SCALP-H6|held:high | ger40fut | glint (1 of 1 legs) | 0 |
+| glint | scalp_risk_grid.md | stop_ladder|R-SCALP-H6-REF|forward|1 | nas100fut | glint (1 of 4 legs) | 5 |
+| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|120 | uk100fut | glint (1 of 4 legs) | 5 |
+| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|180 | uk100fut | glint (1 of 4 legs) | 0 |
+| glint | scalp_risk_grid.md | cooldown|R-SCALP-H6|forward|240 | uk100fut | glint (1 of 4 legs) | 9 |
+| glint | h6_refinement.md | cofire:S0-H10 | scalp | glint | 0 |
+| glint | h6_refinement.md | cofire:S0-H11 | scalp | glint | 0 |
+| glint | h6_refinement.md | cofire:S0-H14 | scalp | glint | 5 |
+| glint | h6_refinement.md | cofire:S0-H20 | scalp | glint | 9 |
+| glint | h6_refinement.md | cofire:S0-H9 | scalp | glint | 0 |
+| glint | h6_refinement.md | cofire:S1-H11 | scalp | glint | 5 |
+| glint | h6_refinement.md | cofire:S1-H9 | scalp | glint | 2 |
+| glint | h6_refinement.md | cofire:any | scalp | glint | 2 |
+| glint | h6_refinement.md | mtf:against-15M | scalp | glint | 2 |
+| glint | h6_refinement.md | mtf:no-15M-trend | scalp | glint | 2 |
+| glint | h6_refinement.md | quadrant:narrow-quiet | scalp | glint | 10 |
+| glint | h6_refinement.md | quadrant:wide-quiet | scalp | glint | 0 |
+| glint | h6_refinement.md | session:london | scalp | glint | 9 |
+| glint | h6_refinement.md | session:overlap | scalp | glint | 10 |
 
 Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
-- ger40fut: 3335 rows; nearest to measurable — S0-H9 R-NEXIT-EARLY asia dow=Fri (1 to go); S1-H2 R-ARM15 ny_only dow=Tue (1 to go); S0-H17 R-OP2 ny_only new_hh=False (1 to go)
-- nas100fut: 4065 rows; nearest to measurable — S0-H14 R-NEXIT-FULL overlap retest_level=False (1 to go); S0-H14 R-NEXIT-FULL overlap retest_level=True (1 to go); S0-H17 R-ARM15 london mtf=no-15M-trend (1 to go)
-- uk100fut: 3472 rows; nearest to measurable — S0-H14 R-BE london mtf=counter-15M (1 to go); S1-H11 R-NEXIT-SENT ny_only new_lh=False (1 to go); S1-H11 R-NEXIT-SENT ny_only new_lh=True (1 to go)
-- us30fut: 3898 rows; nearest to measurable — S0-H18 R-NEXIT-FULL asia with_trend=False (1 to go); S0-H18 R-NEXIT-FULL asia with_trend=True (1 to go); S0-H14 R-NEXIT-SENT dead new_lh=False (1 to go)
+- ger40fut: 3418 rows; nearest to measurable — S0-H20 R-NEXIT-EARLY overlap vwap_band=2s (1 to go); S0-H20 R-NEXIT-EARLY overlap dow=Mon (1 to go); S0-H20 R-NEXIT-EARLY overlap with_trend=False (1 to go)
+- nas100fut: 3269 rows; nearest to measurable — S0-H20 R-NEXIT-FULL ny_only new_lh=False (1 to go); S0-H20 R-NEXIT-FULL ny_only new_lh=True (1 to go); S1-H2 R-BE dead new_lh=False (1 to go)
+- uk100fut: 4197 rows; nearest to measurable — S0-H9 R-ARM15 london quadrant=narrow-quiet (1 to go); S1-H9 R-ARM15 asia with_trend=False (1 to go); S1-H9 R-ARM15 asia with_trend=True (1 to go)
+- us30fut: 3462 rows; nearest to measurable — S0-H2 R-BE ny_only dow=Wed (1 to go); S0-H10 R-BE ny_only mtf=counter-15M (1 to go); S0-H18 R-ARM15 ny_only mtf=no-15M-trend (1 to go)
 
 ## C. Benched candidates — gate status
 
 | candidate | register | gate | status this emission |
 |---|---|---|---|
-| R-SCOPED-BE (contingent variant) | 92 / 107 | capture_study regime gate (ranging BE@0.25 clears its member band AND the ranging-minus-trending gap beyond luck) | ger40fut not passed (pct 87.0); nas100fut not passed (pct 49.0); uk100fut not passed (pct 18.0); us30fut not passed (pct 54.0) |
+| R-SCOPED-BE (contingent variant) | 92 / 107 | capture_study regime gate (ranging BE@0.25 clears its member band AND the ranging-minus-trending gap beyond luck) | ger40fut not passed (pct 48.0); nas100fut not passed (pct 14.0); uk100fut not passed (pct 31.0); us30fut not passed (pct 35.0) |
 | v1 scalp geometry package (stop derivation + target rung) | 101 / 106 | a target rung clearing on >= 3 of 4 forward legs beside the register-101 stop derivation; one ratification | 0 target rung(s) clearing >= 3 of 4 legs |
 | H6-not-in-London suppression composite | 93 | HOLD — re-proposes only if below-chance suppression reappears on fresh accrual | gated (no live artifact) |
 | per-market candidate pool (3 seeded cells) | 105 item 4 | operator's mechanism sentence, then the track's selection-null and a >= 45-row forward clock | 3 of 3 slots EMPTY |
-| HELD sentences: nas100fut R-NEXIT-FULL x overlap; us30fut R-ARM15 x dead | 105 follow-through | condition (b): selection-percentile > 95 on a future emission | n=248 (222 distinct) sel-pct win 33.0 / median 45.0; condition (b) unmet; n=147 (128 distinct) sel-pct win 5.0 / median 0.0; condition (b) unmet |
+| HELD sentences: nas100fut R-NEXIT-FULL x overlap; us30fut R-ARM15 x dead | 105 follow-through | condition (b): selection-percentile > 95 on a future emission | n=1042 (855 distinct) sel-pct win 2.0 / median 0.0; condition (b) unmet; n=376 (335 distinct) sel-pct win 0.0 / median 0.0; condition (b) unmet |
 | pyramiding counterfactual | 79 / 127 | parked-until-next-sitting-prioritization (register 127 sweep: its stated gate is met; the park is a priority choice) | gated (no live artifact) |
 | H15 sweep-zone entry variant | 79 | PARKED until H15's record justifies | gated (no live artifact) |
 | zone census v3 (departure bases, D1/H4) | 111 | mint-on-lift only; scarcity check first (D1 5-15 active zones per leg expected) | uk100fut ?; ger40fut ?; nas100fut ?; us30fut ? |
@@ -459,39 +515,39 @@ Forensics WATCH list (reports/forensics/; thin cells tracked to measurability):
 
 | thread | register | standing null (current emission) | expiry / re-open condition |
 |---|---|---|---|
-| H4 key-zone census v2 — uk100fut | 97 | backtest in-zone -3.6pp (n424); forward in-zone -2.2pp (n871) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
-| H4 key-zone census v2 — ger40fut | 97 | backtest in-zone -8.0pp (n104); forward in-zone -1.6pp (n629) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
-| H4 key-zone census v2 — nas100fut | 97 | backtest in-zone +7.9pp (n150); forward in-zone -5.2pp (n985) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
-| H4 key-zone census v2 — us30fut | 97 | backtest in-zone -6.8pp (n339); forward in-zone -4.2pp (n544) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
+| H4 key-zone census v2 — uk100fut | 97 | backtest in-zone -4.0pp (n424); forward in-zone -2.7pp (n2285) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
+| H4 key-zone census v2 — ger40fut | 97 | backtest in-zone -8.1pp (n104); forward in-zone -2.0pp (n1754) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
+| H4 key-zone census v2 — nas100fut | 97 | backtest in-zone +7.7pp (n150); forward in-zone -5.1pp (n2827) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
+| H4 key-zone census v2 — us30fut | 97 | backtest in-zone -6.6pp (n339); forward in-zone -3.0pp (n3134) | revisitable only by re-registration on new evidence (v3 is a new definition, register 111) |
 | co-fire census | 88 item 7 | 0 qualifying pairs of 2 measurable (dated re-read) | accrual decides; archive-bound after the sitting |
 | VWAP conditioner | 51 | nothing survives the re-cut (-0.9pp) | re-read when forward fires double from the verdict date, or at the first monthly review |
 | ORB, EMA levels | 51 | examined-and-parked, no artifact | revisitable by re-registration |
 | drift census | 51 | no base-rate change | self-expiring on change |
 | flip gate | 44 | NOT PASSED (procedural) | re-openable only by re-registration |
 
-## E. DELTA since 2026-09-16
+## E. DELTA since 2026-10-24
 
-- CROSSED (clearing now, not last emission): 112 — anatomy:4h|S|forward|svol_sess_median; event:R-ARM15|held:high|nas100fut; event:R-ARM15|held:high|us30fut; event:R-ARM15|news30:native|us30fut; event:R-BE|close30|us30fut; event:R-BE|held:high|uk100fut; event:R-BE|news30:cross|us30fut; event:R-BE|open30|ger40fut; event:R-H1-DELAY3|held:high|us30fut; event:R-NEXIT-EARLY|held:high|nas100fut; event:R-NEXIT-SENT|held:high|uk100fut; event:R-NEXIT-SENT|news15:cross|uk100fut; event:R-NEXIT-SENT|news30:native|uk100fut; event:R-NOTRAIL|close30|nas100fut; event:R-NOTRAIL|held:high|ger40fut; event:R-NOTRAIL|news30:cross|us30fut; event:R-NOTRAIL|open30|nas100fut; event:R-OP2|held:high|ger40fut; event:R-OP2|held:high|uk100fut; handoff:ger40fut|R-SCALP-H6-REF|win_rate; handoff:nas100fut|R-SCALP-H6|win_rate; jsurvey:candidate:True|B-RANDOM|-0.05|-3.0|0.4|{'ger40fut': {'n': 7, 'median': 1.0}, 'nas100fut': {'n': 3, 'median': 3.5}, 'uk100fut': {'n': 8, 'median': -0.9}, 'us30fut': {'n': 16, 'median': 1.15}}|S1-H1|london|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|0.3|-2.23|0.4|{'ger40fut': {'n': 7, 'median': 1.0}, 'nas100fut': {'n': 3, 'median': 3.5}, 'uk100fut': {'n': 8, 'median': -0.9}, 'us30fut': {'n': 16, 'median': 1.15}}|S1-H1|london|R-NEXIT-FULL; pmw:ger40fut|forward|R-SCALP-H6-REF|london|open15:median; pmw:ger40fut|forward|R-SCALP-H6-REF|london|open15:win_rate; … (+87 more, in insights.json)
-- AGED (clearing both emissions): 138 — anatomy:4h|D|forward|loud_rate; anatomy:4h|D|forward|narrow_loud_share; anatomy:4h|D|forward|nd_rate; anatomy:4h|D|forward|ns_rate; anatomy:4h|D|forward|rel_volume_median; anatomy:4h|D|forward|svol_sess_median; census:ger40fut|backtest|S0-H11; census:ger40fut|backtest|S0-H20; census:ger40fut|backtest|S0-H6; census:ger40fut|forward|S0-H20; census:ger40fut|forward|S0-H6; census:nas100fut|backtest|S0-H20; census:nas100fut|backtest|S0-H6; census:nas100fut|forward|S0-H6; census:uk100fut|backtest|S0-H20; census:uk100fut|backtest|S0-H6; census:uk100fut|forward|S0-H20; census:uk100fut|forward|S0-H6; census:us30fut|backtest|S0-H1; census:us30fut|forward|S0-H20; census:us30fut|forward|S0-H6; event:R-ARM15|open30|nas100fut; event:R-BE|close30|nas100fut; event:R-BE|held:high|ger40fut; event:R-BE|held:high|nas100fut; … (+113 more, in insights.json)
-- DIED (cleared last emission, not now): 71 — anatomy:4h|D|forward|svol15_median; census:nas100fut|forward|S0-H20; event:R-ARM15|open15|nas100fut; event:R-NEXIT-EARLY|close30|uk100fut; event:R-NEXIT-EARLY|news30:native|us30fut; event:R-NEXIT-EARLY|open15|ger40fut; event:R-NEXIT-FULL|close30|uk100fut; event:R-NEXIT-FULL|news30:native|us30fut; event:R-NEXIT-FULL|open15|ger40fut; event:R-NEXIT-FULL|open30|nas100fut; event:R-OP2|news30:native|uk100fut; event:R-OP2|open30|uk100fut; event:R-SCALP-H6-REF|open30|nas100fut; h6:luck_budget; pmw:ger40fut|forward|R-ARM15|overlap|none:median; pmw:ger40fut|forward|R-NEXIT-SENT|overlap|none:median; pmw:ger40fut|forward|R-NOTRAIL|london|none:median; pmw:nas100fut|forward|R-NEXIT-SENT|overlap|none:median; pmw:nas100fut|forward|R-NOTRAIL|ny_only|none:median; pmw:uk100fut|forward|R-NOTRAIL|overlap|none:median; pmw:us30fut|forward|R-NOTRAIL|dead|close15:win_rate; srg:cooldown|R-SCALP-H6-REF|forward|30|ger40fut; srg:cooldown|R-SCALP-H6|forward|15|nas100fut; srg:cooldown|R-SCALP-H6|forward|30|us30fut; stress:ger40fut|R-SCALP-H6-REF|forward; … (+46 more, in insights.json)
-- WATCH entries new / gone: 34 / 18 — gone:anatomy-watch:us30fut|4h|D|forward|climax_rate; anatomy-watch:us30fut|4h|S|forward|svol_sess_median; census:nas100fut|forward|S0-H11; census:nas100fut|forward|S0-H9; census:uk100fut|forward|S0-H7; event-glint:R-ARM15|open15; event-glint:R-BE|held:high; event-glint:R-NEXIT-EARLY|close30; event-glint:R-NEXIT-EARLY|news30:native; event-glint:R-NEXIT-FULL|close30; event-glint:R-NEXIT-FULL|news30:native; event-glint:R-NEXIT-FULL|open30; event-glint:R-NOTRAIL|held:high; event-glint:R-OP2|news30:native; event-glint:R-OP2|open30; event-glint:R-SCALP-H6-REF|open30; srg-glint:cooldown|R-SCALP-H6-REF|forward|30; srg-glint:cooldown|R-SCALP-H6|forward|30
+- CROSSED (clearing now, not last emission): 49 — event:R-ARM15|close15|nas100fut; event:R-ARM15|news15:native|uk100fut; event:R-ARM15|news30:native|uk100fut; event:R-BE|news15:native|nas100fut; event:R-H1-DELAY10|held:high|us30fut; event:R-H1-DELAY3|held:high|us30fut; event:R-H1-OWNCURVE|held:high|uk100fut; event:R-NEXIT-EARLY|held:high|uk100fut; event:R-NEXIT-EARLY|held:high|us30fut; event:R-NEXIT-EARLY|news15:cross|nas100fut; event:R-NEXIT-EARLY|news15:cross|us30fut; event:R-NEXIT-FULL|news15:cross|us30fut; event:R-NEXIT-SENT|news15:cross|nas100fut; event:R-NEXIT-SENT|news30:native|uk100fut; event:R-SCALP-H6|held:high|ger40fut; handoff:uk100fut|R-SCALP-H6-REF|weeks_pos; handoff:uk100fut|R-SCALP-H6|weeks_pos; handoff:us30fut|R-SCALP-H6-REF|median; jsurvey:candidate:True|B-RANDOM|-0.5|-2.6|1.3|{'ger40fut': {'n': 13, 'median': 1.0}, 'nas100fut': {'n': 6, 'median': 3.05}, 'uk100fut': {'n': 11, 'median': 0.0}, 'us30fut': {'n': 25, 'median': 2.4}}|S1-H1|london|R-NEXIT-FULL; jsurvey:candidate:True|B-RANDOM|-0.85|-1.92|1.6|{'ger40fut': {'n': 7, 'median': 1.6}, 'nas100fut': {'n': 18, 'median': 1.5}, 'uk100fut': {'n': 5, 'median': -2.2}, 'us30fut': {'n': 13, 'median': 6.4}}|S0-H6|dead|R-NEXIT-FULL; jsurvey:candidate:True|B-RANDOM|-0.8|-3.8|1.3|{'ger40fut': {'n': 13, 'median': 1.0}, 'nas100fut': {'n': 6, 'median': 3.05}, 'uk100fut': {'n': 11, 'median': 0.0}, 'us30fut': {'n': 25, 'median': 2.4}}|S1-H1|london|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|-1.2|-2.1|0.2|{'ger40fut': {'n': 7, 'median': 1.6}, 'nas100fut': {'n': 18, 'median': -3.45}, 'uk100fut': {'n': 5, 'median': -2.2}, 'us30fut': {'n': 13, 'median': 6.4}}|S0-H6|dead|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|0.5|-3.97|0.8|{'ger40fut': {'n': 70, 'median': 1.35}, 'uk100fut': {'n': 74, 'median': 0.7}}|S0-H16|overlap|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|1.4|-6.29|4.91|{'ger40fut': {'n': 12, 'median': 1.9}, 'nas100fut': {'n': 2, 'median': -34.16}, 'uk100fut': {'n': 13, 'median': 8.54}, 'us30fut': {'n': 10, 'median': 1.65}}|S0-H13|london|R-NEXIT-SENT; jsurvey:candidate:True|B-RANDOM|12.26|-9.33|12.71|{'ger40fut': {'n': 5, 'median': -5.37}, 'nas100fut': {'n': 22, 'median': 23.57}, 'uk100fut': {'n': 2, 'median': 25.31}, 'us30fut': {'n': 24, 'median': 2.77}}|S0-H18|dead|R-ARM15; … (+24 more, in insights.json)
+- AGED (clearing both emissions): 219 — anatomy:4h|D|forward|loud_rate; anatomy:4h|D|forward|narrow_loud_share; anatomy:4h|D|forward|nd_rate; anatomy:4h|D|forward|ns_rate; anatomy:4h|D|forward|rel_volume_median; anatomy:4h|D|forward|svol15_median; anatomy:4h|D|forward|svol_sess_median; anatomy:4h|S|forward|svol_sess_median; census:ger40fut|backtest|S0-H11; census:ger40fut|backtest|S0-H20; census:ger40fut|backtest|S0-H6; census:ger40fut|forward|S0-H20; census:ger40fut|forward|S0-H6; census:nas100fut|backtest|S0-H20; census:nas100fut|backtest|S0-H6; census:nas100fut|forward|S0-H20; census:nas100fut|forward|S0-H6; census:uk100fut|backtest|S0-H20; census:uk100fut|backtest|S0-H6; census:uk100fut|forward|S0-H20; census:uk100fut|forward|S0-H6; census:us30fut|backtest|S0-H1; census:us30fut|forward|S0-H20; census:us30fut|forward|S0-H6; event:R-ARM15|close15|ger40fut; … (+194 more, in insights.json)
+- DIED (cleared last emission, not now): 32 — anatomy:4h|S|forward|loud_rate; event:R-BE|news30:cross|us30fut; event:R-H1-DELAY10|held:high|nas100fut; event:R-H1-KNIFE|held:high|us30fut; event:R-NEXIT-EARLY|open30|nas100fut; event:R-NEXIT-FULL|open30|uk100fut; event:R-NEXIT-SENT|held:high|uk100fut; event:R-NEXIT-SENT|news15:native|nas100fut; event:R-NEXIT-SENT|news30:native|nas100fut; event:R-NOTRAIL|close30|us30fut; handoff:ger40fut|R-SCALP-H6-REF|win_rate; handoff:ger40fut|R-SCALP-H6|weeks_pos; jsurvey:candidate:True|B-RANDOM|-0.5|-3.5|0.4|{'ger40fut': {'n': 6, 'median': -1.2}, 'nas100fut': {'n': 2, 'median': -0.15}, 'uk100fut': {'n': 9, 'median': -0.5}, 'us30fut': {'n': 16, 'median': 0.9}}|S0-H3|london|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|-0.5|-3.5|1.3|{'ger40fut': {'n': 11, 'median': 1.0}, 'nas100fut': {'n': 5, 'median': 3.5}, 'uk100fut': {'n': 11, 'median': 0.0}, 'us30fut': {'n': 22, 'median': 2.4}}|S1-H1|london|R-NEXIT-EARLY; jsurvey:candidate:True|B-RANDOM|0.41|-5.52|1.0|{'ger40fut': {'n': 10, 'median': -10.8}, 'nas100fut': {'n': 4, 'median': 11.43}, 'uk100fut': {'n': 11, 'median': 2.7}, 'us30fut': {'n': 19, 'median': -16.1}}|S1-H1|london|R-NEXIT-SENT; jsurvey:candidate:True|B-RANDOM|0.41|-5.52|9.19|{'ger40fut': {'n': 10, 'median': 6.96}, 'nas100fut': {'n': 2, 'median': -34.16}, 'uk100fut': {'n': 11, 'median': 9.84}, 'us30fut': {'n': 9, 'median': 10.4}}|S0-H13|london|R-NEXIT-SENT; jsurvey:candidate:True|B-RANDOM|0.5|-2.2|1.3|{'ger40fut': {'n': 11, 'median': 1.0}, 'nas100fut': {'n': 5, 'median': 3.5}, 'uk100fut': {'n': 11, 'median': 0.0}, 'us30fut': {'n': 22, 'median': 2.4}}|S1-H1|london|R-NEXIT-FULL; jsurvey:candidate:True|B-RANDOM|3.96|-14.91|10.12|{'ger40fut': {'n': 10, 'median': 16.02}, 'nas100fut': {'n': 2, 'median': -34.16}, 'uk100fut': {'n': 11, 'median': 9.84}, 'us30fut': {'n': 9, 'median': -14.31}}|S0-H13|london|R-ARM15; pmw:ger40fut|forward|R-H1-DELAY10|asia|none:median; pmw:uk100fut|forward|R-NEXIT-SENT|london|news15:win_rate; pmw:us30fut|forward|R-NEXIT-SENT|ny_only|news15:win_rate; srg:stop_ladder|R-SCALP-H6-REF|forward|1|ger40fut; survey:nas100fut|S0-H16|5|forward|none; survey:us30fut|S0-H14|15|backtest|map-arrival; survey:us30fut|S0-H14|15|forward|map-arrival; … (+7 more, in insights.json)
+- WATCH entries new / gone: 29 / 10 — gone:anatomy-watch:nas100fut|4h|S|forward|spread_pctile_median; census:nas100fut|forward|S0-H3; event-glint:R-BE|news30:cross; event-glint:R-H1-KNIFE|held:high; event-glint:R-NEXIT-EARLY|held:high; event-glint:R-NEXIT-EARLY|open30; event-glint:R-NEXIT-FULL|open30; event-glint:R-NEXIT-SENT|held:high; event-glint:R-NOTRAIL|close30; h6-glint:cofire:S0-H7
 
 
 ### Unbuilt pre-registrations (register 127 — the idea-to-data alarm; oldest first; 'pre-registered' without a build slot or a parked-until tag is not a legal state; an UNPARKED entry older than 10 registers is LOUD every week until built or re-parked with a dated reason)
 
 | item | register | age (registers / days) | tag |
 |---|---|---|---|
-| item-22 session-JSONL persistence | 22 | 116 / 33 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
-| s9 scenario | 27 | 111 / 33 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
-| scalp location census | 64 | 74 / 27 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
-| exit-and-reverse grammar (capability) | 78 | 60 / 26 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
-| pyramiding counterfactual | 79 | 59 / 26 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
-| R-SCOPED-BE (contingent variant) | 92 | 46 / 23 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
-| time-of-day-bucket variants of the register-130 cut and the 132/133 counterfactuals (second field, same machinery, same fences) | 134 | 4 / 18 | standard-path (due at those modules' next campaign emission; the register-127 latency clock runs from the prereg date) |
+| item-22 session-JSONL persistence | 22 | 116 / 84 | parked-until-operator-restart-window (a live-loop restart is operator-supervised; tagged 2026-08-31, register 127) |
+| s9 scenario | 27 | 111 / 84 | parked-until-operator-ruling (one-line ruling owed; tagged 2026-08-31) |
+| scalp location census | 64 | 74 / 78 | parked-until-next-sitting-prioritization (tagged 2026-08-31) |
+| exit-and-reverse grammar (capability) | 78 | 60 / 77 | parked-until-in-trade-census-flip-legs-read-at-a-sitting (register 78's own gate; tagged 2026-08-31) |
+| pyramiding counterfactual | 79 | 59 / 77 | parked-until-next-sitting-prioritization (its stated gate — in-trade census reads — is MET; the park is a priority choice, dated 2026-08-31) |
+| R-SCOPED-BE (contingent variant) | 92 | 46 / 74 | parked-until-gate (the register-107 readout, re-read weekly — NOT PASSED on any leg) |
+| time-of-day-bucket variants of the register-130 cut and the 132/133 counterfactuals (second field, same machinery, same fences) | 134 | 4 / 69 | standard-path (due at those modules' next campaign emission; the register-127 latency clock runs from the prereg date) |
 
 ### Expiry sweep (register 126 — negative-verdict expiries vs current n; a crossed expiry emits its re-read at the next sitting and can never age silently)
 
-- **EXPIRY-CROSSED**: H8 at/below base rate (register 36/74; condition: >= 30 forward initiation episodes; current: n=733)
+- **EXPIRY-CROSSED**: H8 at/below base rate (register 36/74; condition: >= 30 forward initiation episodes; current: n=2233)
 - hand-checked: VWAP: nothing survives the re-cut (register 51; condition: forward fires double from the verdict date, or the first monthly review (~2026-09-22); current: not machine-checkable as written (hand row stands))
 - hand-checked: quadrant persistence: class doesn't predict next close (register 68/74; condition: forward quadrant n doubles (~1400 bars/quadrant); current: not machine-checkable as written (hand row stands))
 
